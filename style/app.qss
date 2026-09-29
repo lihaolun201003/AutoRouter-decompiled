@@ -1,0 +1,29 @@
+QLabel {
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+QFrame#showedFrame, QWidget#showedFrame{
+    border:1px solid #6a63a9;
+    padding: 2px;
+}
+
+QPlainTextEdit {
+    border:1px solid #6a63a9;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 6px;
+    padding: 2px;
+}
+
+QPushButton {
+    border: 2px outset #6a63a9;
+    border-radius: 6px;
+    font: bold 28px;
+    min-width: 150px;
+    min-height: 50px;
+}
+QPushButton:pressed {
+    border-style: inset;
+    background-color: #cccccc;
+}
