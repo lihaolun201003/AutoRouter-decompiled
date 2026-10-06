@@ -1,0 +1,155 @@
+{
+  "pdf": "publication/report/三维布线v8路径弧长窗口续跑报告.pdf",
+  "sha256": "c3cf0705ad72f3da3fa0dd3adc9bd74ad677d46eafb10bf4c8a96f84af2c2e76",
+  "page_count": 16,
+  "render_dpi": 140,
+  "inspected_pages": 16,
+  "method": "PyMuPDF 逐页渲染 140 DPI + read_image 逐页肉眼检查（Lead 亲自复核）+ 独立机器几何检查",
+  "revision_history": [
+    "rev 22 页（初审，子代理逐页查看）：P2 表格数字被拆行、P4 权衡图图例被数据点压住、停止原因列逐字换行、跨页丢表头",
+    "rev 18 页（第一轮修正）：拆表+短表头+图例上移+表头重复+cantSplit",
+    "rev 16 页（定稿）：把两处原始 JSON 块改为紧凑表格；本记录针对该版本"
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image": "page_01.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "标题、来源说明、§1 P0、§2 支持链首段；中文真实字形，无裁切/重叠",
+      "findings": []
+    },
+    {
+      "page": 2,
+      "image": "page_02.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§2 尾、§3 P2 两张窄表（数值表+计数表）、§3.1 缺陷对照表；33738/33240/-498/14.88/16.23 完整无断行",
+      "findings": []
+    },
+    {
+      "page": 3,
+      "image": "page_03.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§3.1 表尾、§4 中立性表（判定 neutral）、§5 诊断表、§5.1 列表；无内容压盖（机器重叠报告为 PyMuPDF 表格抽取伪影，已逐页肉眼确认）",
+      "findings": []
+    },
+    {
+      "page": 4,
+      "image": "page_04.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§5.2 K16 前缀条目、§5.3 机制分解表、§6 P3 说明；无裁切",
+      "findings": []
+    },
+    {
+      "page": 5,
+      "image": "page_05.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§6 P3 矩阵表续页（表头重复）、数值列完整；行未被拆到两页",
+      "findings": []
+    },
+    {
+      "page": 6,
+      "image": "page_06.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§6 尾、按上限聚合新表（原 JSON 块已改为表格）、§7 P4 口径与 7.1 表头",
+      "findings": []
+    },
+    {
+      "page": 7,
+      "image": "page_07.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§7.1 受限组表续页（表头重复）、§7.2 同策略不限长对照、§8 P5 说明表；数字完整",
+      "findings": []
+    },
+    {
+      "page": 8,
+      "image": "page_08.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§8 P5 计时表（6 次运行，26437/30.63/8160 一致）、中位数表；中文短标签无逐字换行",
+      "findings": []
+    },
+    {
+      "page": 9,
+      "image": "page_09.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§8 一致性说明与预扫口径注释、§9 测试与复核小节开头",
+      "findings": []
+    },
+    {
+      "page": 10,
+      "image": "page_10.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§9 复核表（v8/p3/p4/p5 各组 PASS）、整体判定",
+      "findings": []
+    },
+    {
+      "page": 11,
+      "image": "page_11.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§9 复核表续页（表头重复）、94 组 PASS=64 FAIL=0 未完成=0 引用=30；组名在下划线处换行，数字无拆分",
+      "findings": []
+    },
+    {
+      "page": 12,
+      "image": "page_12.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "§10 结论 6 条（含 v8/A/P4/P5 的直接回答）、§11 产物清单与重跑命令",
+      "findings": []
+    },
+    {
+      "page": 13,
+      "image": "page_13.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "附图：诊断三域结果柱状图（图题在图下方）、真实路径窗口实例三联图（3D/XY 重合/对数曲率轴）；图内标签可读",
+      "findings": []
+    },
+    {
+      "page": 14,
+      "image": "page_14.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "附图：P2 G0 vs G1、P3 家族×目标上限；图例不压数据",
+      "findings": []
+    },
+    {
+      "page": 15,
+      "image": "page_15.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "附图：P4 受限 vs 不限长、P4 权衡散点（标记面积已上限收紧，图例不再被压住）",
+      "findings": []
+    },
+    {
+      "page": 16,
+      "image": "page_16.png",
+      "inspected": true,
+      "verdict": "OK",
+      "notes": "附图：P5 计时箱点图（中位数与范围）；末页留白属正常收尾",
+      "findings": []
+    }
+  ],
+  "summary": {
+    "ok": 16,
+    "issue": 0,
+    "uncertain": 0,
+    "blocked": 0
+  },
+  "geometry_check": "geom_check_final.json",
+  "limitations": [
+    "机器几何检查（PyMuPDF 文本框）看不出光栅图内部的文字重叠；图内可读性由逐页肉眼确认",
+    "页 3/6/7 的文本框“重叠”报告经逐页放大核对为 PyMuPDF 对 Word 表格的抽取伪影，页面实际渲染无压盖",
+    "本记录只覆盖报告版面，不评价实验结论本身（那由 comparison/verification 与正文数字负责）"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "defect": "split_path_interval produced v=0.9999999999999999 instead of 1.0 when a window ended exactly at the route total (1 ulp), so the sub-curve endpoint was interpolated and moved the frozen terminal point by ~1.2e-14 mm; evaluate_elevation then rejected the candidate with ENDPOINT_CHANGED",
+  "fix": "BOUNDARY_SNAP_MM = 1e-9: a sub-interval end within 1e-9 mm of a primitive boundary is snapped to the boundary itself; regression test tests/test_path_window_3d.py::test_windows_touching_the_route_ends_keep_the_exact_frozen_endpoints",
+  "superseded_runs_are_kept_as_evidence": true,
+  "rows": [
+    {
+      "group": "V8_G1_N720",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N720",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N720_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 36438,
+      "defective_moves": 28,
+      "defective_evaluations": 720,
+      "defective_endpoint_changed_rejections": 272,
+      "defective_deferred_steps": 17,
+      "defective_target_attempts": 50,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 24,
+        "LINE_WINDOW_G0": 4
+      },
+      "defective_endpoint_changed_from_decisions": 272,
+      "fixed_final_pairs": 33240,
+      "fixed_moves": 45,
+      "fixed_evaluations": 720,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 38,
+        "LINE_WINDOW_G0": 7
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 0
+    },
+    {
+      "group": "V8_G1_NC720",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC720",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC720_boundaryfix",
+      "defective_present": false,
+      "fixed_present": false
+    },
+    {
+      "group": "V8_G1_N1440",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N1440",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N1440_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 33543,
+      "defective_moves": 43,
+      "defective_evaluations": 1440,
+      "defective_endpoint_changed_rejections": 764,
+      "defective_deferred_steps": 47,
+      "defective_target_attempts": 95,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 36,
+        "LINE_WINDOW_G0": 7
+      },
+      "defective_endpoint_changed_from_decisions": 764,
+      "fixed_final_pairs": 26097,
+      "fixed_moves": 90,
+      "fixed_evaluations": 1440,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 74,
+        "LINE_WINDOW_G0": 16
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 0
+    },
+    {
+      "group": "V8_G1_NC1440",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC1440",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC1440_boundaryfix",
+      "defective_present": false,
+      "fixed_present": false
+    },
+    {
+      "group": "V8_G1_N2880",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N2880",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N2880_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 29503,
+      "defective_moves": 66,
+      "defective_evaluations": 2880,
+      "defective_endpoint_changed_rejections": 1866,
+      "defective_deferred_steps": 114,
+      "defective_target_attempts": 185,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 55,
+        "LINE_WINDOW_G0": 11
+      },
+      "defective_endpoint_changed_from_decisions": 1866,
+      "fixed_final_pairs": 18211,
+      "fixed_moves": 180,
+      "fixed_evaluations": 2880,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 156,
+        "LINE_WINDOW_G0": 24
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 0
+    },
+    {
+      "group": "V8_G1_NC2880",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC2880",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC2880_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 23745,
+      "defective_moves": 47,
+      "defective_evaluations": 2880,
+      "defective_endpoint_changed_rejections": 2230,
+      "defective_deferred_steps": 134,
+      "defective_target_attempts": 190,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 33,
+        "LINE_WINDOW_G0": 14
+      },
+      "defective_endpoint_changed_from_decisions": 2230,
+      "fixed_final_pairs": 16232,
+      "fixed_moves": 151,
+      "fixed_evaluations": 2489,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 131,
+        "LINE_WINDOW_G0": 20
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 8
+    },
+    {
+      "group": "V8_G1_R720",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R720",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R720_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 36438,
+      "defective_moves": 28,
+      "defective_evaluations": 720,
+      "defective_endpoint_changed_rejections": 272,
+      "defective_deferred_steps": 17,
+      "defective_target_attempts": 50,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 24,
+        "LINE_WINDOW_G0": 4
+      },
+      "defective_endpoint_changed_from_decisions": 272,
+      "fixed_final_pairs": 33240,
+      "fixed_moves": 45,
+      "fixed_evaluations": 720,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 38,
+        "LINE_WINDOW_G0": 7
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 0
+    },
+    {
+      "group": "V8_G1_RC720",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC720",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC720_boundaryfix",
+      "defective_present": false,
+      "fixed_present": false
+    },
+    {
+      "group": "V8_G1_R1440",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R1440",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R1440_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 33543,
+      "defective_moves": 43,
+      "defective_evaluations": 1440,
+      "defective_endpoint_changed_rejections": 764,
+      "defective_deferred_steps": 47,
+      "defective_target_attempts": 95,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 36,
+        "LINE_WINDOW_G0": 7
+      },
+      "defective_endpoint_changed_from_decisions": 764,
+      "fixed_final_pairs": 26097,
+      "fixed_moves": 90,
+      "fixed_evaluations": 1440,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 74,
+        "LINE_WINDOW_G0": 16
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 0
+    },
+    {
+      "group": "V8_G1_RC1440",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC1440",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC1440_boundaryfix",
+      "defective_present": false,
+      "fixed_present": false
+    },
+    {
+      "group": "V8_G1_R2880",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R2880",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R2880_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 29503,
+      "defective_moves": 66,
+      "defective_evaluations": 2880,
+      "defective_endpoint_changed_rejections": 1866,
+      "defective_deferred_steps": 114,
+      "defective_target_attempts": 185,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 55,
+        "LINE_WINDOW_G0": 11
+      },
+      "defective_endpoint_changed_from_decisions": 1866,
+      "fixed_final_pairs": 18211,
+      "fixed_moves": 180,
+      "fixed_evaluations": 2880,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 156,
+        "LINE_WINDOW_G0": 24
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 0
+    },
+    {
+      "group": "V8_G1_RC2880",
+      "defective_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC2880",
+      "fixed_folder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC2880_boundaryfix",
+      "defective_present": true,
+      "fixed_present": true,
+      "defective_final_pairs": 23745,
+      "defective_moves": 47,
+      "defective_evaluations": 2880,
+      "defective_endpoint_changed_rejections": 2230,
+      "defective_deferred_steps": 134,
+      "defective_target_attempts": 190,
+      "defective_executed_by_kind": {
+        "PATH_WINDOW_G1": 33,
+        "LINE_WINDOW_G0": 14
+      },
+      "defective_endpoint_changed_from_decisions": 2230,
+      "fixed_final_pairs": 16344,
+      "fixed_moves": 144,
+      "fixed_evaluations": 2489,
+      "fixed_executed_by_kind": {
+        "PATH_WINDOW_G1": 124,
+        "LINE_WINDOW_G0": 20
+      },
+      "fixed_endpoint_changed_rejections": 0,
+      "fixed_deferred_steps": 15
+    }
+  ]
+}

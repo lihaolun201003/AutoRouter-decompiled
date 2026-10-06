@@ -1,0 +1,24 @@
+{
+  "seed": 20261006,
+  "category_sizes": {
+    "high_conflict_both_unelevated": 20,
+    "random_both_unelevated": 20,
+    "single_elevated": 10,
+    "both_elevated": 10
+  },
+  "route_cap_within_category": 2,
+  "route_cap_across_list": 4,
+  "category_order": [
+    "high_conflict_both_unelevated",
+    "random_both_unelevated",
+    "single_elevated",
+    "both_elevated"
+  ],
+  "frozen_before_any_candidate_evaluation": true,
+  "audit_outcomes_not_used_for_experiment_targets": true,
+  "notes": [
+    "the fixed list is used by the audit only; the six v4 experiments use dynamic target selection over all current pairs",
+    "category fill order is high-conflict -> random -> single-elevated -> both-elevated, and the cross-list route cap is applied cumulatively",
+    "if a category cannot reach its requested size the shortfall is recorded, not padded"
+  ]
+}

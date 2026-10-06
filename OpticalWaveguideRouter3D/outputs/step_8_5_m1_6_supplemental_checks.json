@@ -1,0 +1,92 @@
+{
+  "cross_rows_verified": 954,
+  "locality": {
+    "tied_lowest_with_different_unique_partner_counts": 45,
+    "definition": "Distinct other routes in incident unique multis; descriptive only, not a validated safety proxy"
+  },
+  "no_op_controls": [
+    {
+      "multi_id": "M0011",
+      "original_track": 485,
+      "no_op_status": "PASS"
+    },
+    {
+      "multi_id": "M0009",
+      "original_track": 469,
+      "no_op_status": "PASS"
+    },
+    {
+      "multi_id": "M0001",
+      "original_track": 478,
+      "no_op_status": "PASS"
+    },
+    {
+      "multi_id": "M0023",
+      "original_track": 97,
+      "no_op_status": "PASS"
+    }
+  ],
+  "secondary_metrics": [
+    {
+      "multi_id": "M0011",
+      "candidates_at_best_accepted_M": 0,
+      "new_multi_created_histogram": {},
+      "length_delta_range_mm": null,
+      "cross_count_range": null,
+      "worsening_M_candidates": 18,
+      "target_removed_but_no_improvement": 0
+    },
+    {
+      "multi_id": "M0009",
+      "candidates_at_best_accepted_M": 331,
+      "new_multi_created_histogram": {
+        "0": 331
+      },
+      "length_delta_range_mm": [
+        0.0,
+        0.0
+      ],
+      "cross_count_range": [
+        307,
+        311
+      ],
+      "worsening_M_candidates": 10,
+      "target_removed_but_no_improvement": 15
+    },
+    {
+      "multi_id": "M0001",
+      "candidates_at_best_accepted_M": 341,
+      "new_multi_created_histogram": {
+        "0": 341
+      },
+      "length_delta_range_mm": [
+        0.0,
+        0.0
+      ],
+      "cross_count_range": [
+        102,
+        102
+      ],
+      "worsening_M_candidates": 1,
+      "target_removed_but_no_improvement": 4
+    },
+    {
+      "multi_id": "M0023",
+      "candidates_at_best_accepted_M": 342,
+      "new_multi_created_histogram": {
+        "0": 342
+      },
+      "length_delta_range_mm": [
+        5.599999999999994,
+        125.99999999999999
+      ],
+      "cross_count_range": [
+        156,
+        168
+      ],
+      "worsening_M_candidates": 2,
+      "target_removed_but_no_improvement": 2
+    }
+  ],
+  "protected_files_unchanged": 143
+}

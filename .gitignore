@@ -1,56 +1,17 @@
-# --- Python environments and caches ---------------------------------------
-.venv/
-venv/
-env/
-__pycache__/
-*.py[cod]
-*.egg-info/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
-# --- Local scratch and generated environments ------------------------------
-# The original executable's Python 3.8 runtime is rebuilt from the PyInstaller
-# bundle by tools/setup_legacy_runtime.py; it is large and binary, so the recipe
-# is versioned instead of the result.
-_legacy_runtime/
-py38embed.zip
-scratch/
-scratch_*/
-tmp/
-temp/
-
-# The decompiled reference clone, used only for bytecode cross-checks.
-_reference/
-
-# --- Editors ---------------------------------------------------------------
-.vscode/
-.idea/
-*.swp
-*~
-
-# --- Routing output --------------------------------------------------------
-# Every run writes these; keep the folder itself so the tree is complete.
-results/*
-!results/.gitkeep
-# Anything a run drops outside results/ (the legacy code wrote some paths
-# relative to the working directory).
-fiberBoard0data.xlsx
-fiberBoard*rect.xlsx
-fiberBoard*_rect.pdf
-fiberBoard*bend.xlsx
-fiberBoard*bend.png
-fiberBoard*bend.pdf
-fiberBoard*bend.gds
-loss-count*.png
-loss-length*.png
-loss-crossing*.png
-legacy_*.json
-mine_*.json
-
-# --- Misc ------------------------------------------------------------------
-*.log
-.DS_Store
-Thumbs.db
+# Local environments and private PMT input files
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.git/
+**/tmp/
+**/.vscode/
+_repo_stage/
+**/fiberBoard256.xlsx
+**/fiberBoard512.xlsx
+**/fiberBoard0data.xlsx
+**/fixed_1024_legacy_seed.json
+**/step_10_fixed_1024_input.json
+**/step_10_legacy_512_input_audit.json
+*.pyc
+!**/bytecode/*.pyc

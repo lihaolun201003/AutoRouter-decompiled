@@ -1,0 +1,398 @@
+{
+  "record": "《光波导布线全部实验报告（含三维策略v3）》构建与逐页渲染检查记录",
+  "date": "2026-10-05",
+  "scope": "本轮只新增文件；publication/report 下旧 docx/pdf 与 build_all_experiments_report.py 均未改动",
+  "build": {
+    "script": "publication/report/brief_build/build_all_experiments_report_v3.py",
+    "script_sha256": "f3af1185780130087dfd90af0d30349874426f0d627ba19b2c5eaec20ebb7aeb",
+    "python": "bundled DSH python (python-docx 1.2.0)",
+    "command": "python -B publication/report/brief_build/build_all_experiments_report_v3.py",
+    "docx": {
+      "path": "publication/report/brief_build/光波导布线全部实验报告（含三维策略v3）.docx",
+      "bytes": 5543801,
+      "sha256": "1259ea1ac7078112a5f9eac611f4ba260126fa0985876246d6c720afeee18249",
+      "name_field": "光波导布线全部实验报告（含三维策略v3）"
+    },
+    "coverage_check": {
+      "inventory_file": "publication/manifest/experiment_inventory.csv",
+      "inventory_total": 41,
+      "missing_inventory_ids": [],
+      "coverage_entries": 44,
+      "new_section_ids": [
+        "V3-01",
+        "V3-02",
+        "V3-03"
+      ],
+      "verdict": "PASS：原清单 41 项全覆盖，脚本内 ValueError 校验未触发"
+    },
+    "structure": {
+      "tables_total": 39,
+      "images_total": 15,
+      "paragraphs": 1978,
+      "sections": 1
+    },
+    "new_sections": [
+      {
+        "section": "25",
+        "title": "三维策略v3 实验A：缓存与候选窗口余量的 512 四组功能消融",
+        "tables": [
+          "表30",
+          "表31",
+          "表32"
+        ],
+        "figures": [
+          "图7",
+          "图8",
+          "图9"
+        ]
+      },
+      {
+        "section": "26",
+        "title": "三维策略v3 实验B：窗口余量对 331 条自检歧义候选的探针",
+        "tables": [
+          "表33"
+        ],
+        "figures": []
+      },
+      {
+        "section": "27",
+        "title": "三维策略v3 实验C：加余量的固定重定位诊断（新 D / 新 E）",
+        "tables": [
+          "表34",
+          "表35",
+          "表36",
+          "表37",
+          "表38",
+          "表39"
+        ],
+        "figures": [
+          "图10",
+          "图11",
+          "图12"
+        ]
+      },
+      {
+        "section": "28",
+        "title": "全部实验可以得出的结论（原 25，自增后为 28，新增一段“三维策略v3”结论）",
+        "tables": [],
+        "figures": []
+      }
+    ],
+    "new_tables": [
+      {
+        "table": "表30",
+        "title": "512 四组功能消融的分组定义",
+        "data_rows": 4,
+        "width_cm": 17,
+        "best_cells": []
+      },
+      {
+        "table": "表31",
+        "title": "512 四组功能消融的终态结果与代价",
+        "data_rows": 4,
+        "width_cm": 17,
+        "best_cells": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "table": "表32",
+        "title": "512 四组的调度、实际工作量与自检歧义记录",
+        "data_rows": 4,
+        "width_cm": 17,
+        "best_cells": []
+      },
+      {
+        "table": "表33",
+        "title": "窗口余量探针：已记录自检歧义候选的复核结果",
+        "data_rows": 9,
+        "width_cm": 15,
+        "best_cells": []
+      },
+      {
+        "table": "表34",
+        "title": "加余量前后的固定重定位诊断对照（同一起点 43750 对、同一 20 目标清单）",
+        "data_rows": 4,
+        "width_cm": 17,
+        "best_cells": [
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "table": "表35",
+        "title": "旧诊断 E 的 70 条重定位自检歧义候选：逐候选对应结果",
+        "data_rows": 6,
+        "width_cm": 15,
+        "best_cells": []
+      },
+      {
+        "table": "表36",
+        "title": "旧诊断 E 全部自检歧义候选的对应统计（两个口径分开列出）",
+        "data_rows": 2,
+        "width_cm": 17,
+        "best_cells": []
+      },
+      {
+        "table": "表37",
+        "title": "按运动类别分别记录的尝试、生成、评价与接受（新诊断）",
+        "data_rows": 4,
+        "width_cm": 15.5,
+        "best_cells": []
+      },
+      {
+        "table": "表38",
+        "title": "重定位候选的拒绝理由出现次数",
+        "data_rows": 3,
+        "width_cm": 17,
+        "best_cells": []
+      },
+      {
+        "table": "表39",
+        "title": "长度记账（相对诊断起点与相对原始平面）",
+        "data_rows": 2,
+        "width_cm": 16.7,
+        "best_cells": []
+      }
+    ],
+    "new_figures": [
+      {
+        "report_figure": "图7",
+        "source_png": "outputs/3d_strategy_v3/figures/f1_group_pairs.png",
+        "sha256": "08769b4e1b9cb73e535526823137b8d72757c275f01c5e146f1c9298b5da181b"
+      },
+      {
+        "report_figure": "图8",
+        "source_png": "outputs/3d_strategy_v3/figures/f2_pairs_vs_evaluations.png",
+        "sha256": "6215f748ed458cd8dc18ef27528b85cdb335ec3707fb44019a67f790c41f01e7"
+      },
+      {
+        "report_figure": "图9",
+        "source_png": "outputs/3d_strategy_v3/figures/f3_costs.png",
+        "sha256": "0ca7a303d3c6f78c5b609be501de348c01cb9c6d7f8ef0f8c666d63aaf03bbb9"
+      },
+      {
+        "report_figure": "图10",
+        "source_png": "outputs/3d_strategy_v3/figures/f4_diagnostic_comparison.png",
+        "sha256": "53bc4343e33b0dc2a27bcdd92003a73f60db846ed92568f12f1fd14d52130408"
+      },
+      {
+        "report_figure": "图11",
+        "source_png": "outputs/3d_strategy_v3/figures/f5_relocation_rejections.png",
+        "sha256": "2d22c1b5f60d650a20f7b5da7df3e94a68ffc7b5e2dd0fe6dc4bab181ea60c38"
+      },
+      {
+        "report_figure": "图12",
+        "source_png": "outputs/3d_strategy_v3/figures/f7_route34_relocation_before_after.png",
+        "sha256": "5ccd49397557f4f9818dc333a0fe80984c78cb72e6ede8e0ca1ea1a666f5e162"
+      }
+    ],
+    "figure_number_mapping_note": "报告图号由脚本 FIG_NUMBER 全文自增（原 1-6 未变，新增为 7-12）；源图图内标题 f1/f2/f3 自带“图 1/2/3”编号，f4/f5/f7 不带编号。每张新图图注下方都加了“数据来源：源图 outputs/3d_strategy_v3/figures/<文件名>”一行注明源文件名，避免与图内编号混淆。",
+    "old_files_verified_unchanged": [
+      {
+        "path": "publication/report/brief_build/build_all_experiments_report.py",
+        "bytes": 59292,
+        "bytes_expected": 59292,
+        "unchanged": true
+      },
+      {
+        "path": "publication/report/brief_build/光波导布线全部实验报告.docx",
+        "bytes": 2851109,
+        "bytes_expected": 2851109,
+        "unchanged": true
+      },
+      {
+        "path": "publication/report/光波导布线全部实验报告.pdf",
+        "bytes": 1167473,
+        "bytes_expected": 1167473,
+        "unchanged": true
+      },
+      {
+        "path": "publication/report/brief_build/all_experiments_coverage.json",
+        "bytes": 11323,
+        "bytes_expected": 11323,
+        "unchanged": true
+      },
+      {
+        "path": "publication/report/brief_build/all_experiments_figure_provenance.json",
+        "bytes": 2041,
+        "bytes_expected": 2041,
+        "unchanged": true
+      }
+    ],
+    "not_written": [
+      "outputs/",
+      "src/",
+      "tests/",
+      "publication/report 下的旧 docx/pdf 与旧脚本"
+    ],
+    "docx_figure_captions_verified": {
+      "旧版 docx（未改动）": [
+        "图1 自己的二维复现布局",
+        "图2 自己的半径扫描结果",
+        "图3 自己的最差路线局部图",
+        "图4 自己的1024条三维总览",
+        "图5 自己的XZ侧视图",
+        "图6 自己的局部抬层示例"
+      ],
+      "新版 docx": "图1-图6 与旧版逐字相同；新增 图7 f1_group_pairs、图8 f2_pairs_vs_evaluations、图9 f3_costs、图10 f4_diagnostic_comparison、图11 f5_relocation_rejections、图12 f7_route34_relocation_before_after（PNG 数 9→15，图号 6→12）"
+    }
+  },
+  "pdf": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\光波导布线全部实验报告（含三维策略v3）.pdf",
+    "bytes": 1454601,
+    "sha256": "b87e9e081c713cec8414c38a0fd80e2d602de8718b5a7b087aee6ae0d54535cd",
+    "tool": "DSH 自带 LibreOffice Kit convert 子命令",
+    "page_count": 48,
+    "missing_fonts_reported": [
+      "Courier"
+    ],
+    "missing_fonts_note": "convert 报告缺少 Courier（继承样式引用的西文字体），与既有旧 PDF 的同一表现一致；渲染结果 missingFonts 为空，中文与表格文字未出现回退或方框。",
+    "page_count_old_pdf": 30,
+    "pages": 49
+  },
+  "render": {
+    "tool": "DSH 自带 LibreOffice Kit render 子命令（--dpi 130）",
+    "output_dir": "publication/report/brief_build/render_v3_full/",
+    "pages_rendered": 48,
+    "missing_fonts": [],
+    "archives": {
+      "pass1": 48,
+      "pass2": 48
+    },
+    "note": "pass1 为首次渲染（48 页，仅用于发现排版问题）；修复后 pass2 全量渲染；当前目录根下 48 张 PNG 为最终 PDF 的逐页渲染结果。"
+  },
+  "visual_inspection": {
+    "method": "对最终 PDF 的 48 页逐页 read_image 实际查看（不是以脚本退出码代替验收）",
+    "pages_inspected": 48,
+    "issues_found_in_pass1": [
+      "表33（窗口余量探针）跨页断开：第 40 页只剩 1 行数据并重复表头，属孤立行。",
+      "表37 表头“接受（次）”折行后右括号单独占一行。",
+      "表31“停止原因”列把英文枚举名从中间断开（TARGET_LIM/IT、CANDIDATE_/BUDGET_EX/HAUSTED）。",
+      "表31/表32“分组”列把“B 仅生成缓存”“C 仅窗口余量”折成两行。",
+      "表39“重定位长度”列的“不适用（该组未接受重定位）”折成 4 行，行高被拉高。"
+    ],
+    "fixes_applied": [
+      "把表33 的四类零值行合并为一行“仍为歧义 / 判为碰撞 / 判为临界 / 其它非 CLEAR 歧义”，表变成 9 行，整表与其表注、来源同一页，孤立行消失。",
+      "加宽表37 末列（1.4→1.7 cm）并相应收窄首列，表头不再出现孤立括号。",
+      "停止原因改用中文标签“目标上限 / 预算耗尽”，原始枚举名仍写在正文与表注中，列宽 3.0 cm，不再断词。",
+      "表31/表32“分组”列加宽到 2.6/2.7 cm，组名单行显示。",
+      "表39 单元格只保留“不适用”，解释留在表注，行高恢复正常。"
+    ],
+    "verified_ok": [
+      "48 页全部查看：中文（标题、表头、图题、表注、加粗中文）均为宋体显示，无方框字/缺字。",
+      "无空白页；无被裁切的表格或图片；表格文字未超出版心（coverage 记录的最大表宽 17.0 cm = 版心宽度）。",
+      "三线表结构正确（无竖线、无密集网格），表题在上、表注在下，图题在图下并各带“数据来源”行。",
+      "新增三节均另起一页，章节编号由脚本自增为 25/26/27，结论节顺延为 28，与原有 1-24 节不冲突。",
+      "页脚“第 N 页”连续，页眉“光波导布线实验记录”正常。"
+    ],
+    "residual_notes": [
+      "第 34、36、38、40、44 页底部留白较多：这是“表格/图与其表注、图注保持同页”的取舍结果，未发现内容裁切，按可读性优先保留。",
+      "LibreOffice 的分页与 Microsoft Word 可能不同，在 Word 中打开时页码位置可能略有变化（内容与编号不受影响）。",
+      "报告图号（图7-图12）与源图图内标题编号（图1/2/3、f4/f5/f7 无编号）不一致，已在每张图下用“数据来源”行注明源文件名。"
+    ]
+  },
+  "data_caliber_notes": {
+    "A/B/C/D": "本轮四组是“静态生成失败缓存 × 候选窗口余量”的功能消融，不是历史策略 A/B/C；报告在正文与表注中明确写出。",
+    "budget": "四组预算上限同为 720 次候选基本评价，但实际评价次数 666/720/711/720 不同；报告写明“相同预算上限不等于相同实际工作量”，运行时间只作单次实测记录。",
+    "optimum": "D 组终态近距对最低（42,909），C 组额外长度最小（6.912199 mm）；四组未决对均为 3，阈值未放宽。",
+    "probe": "331/331 条已记录自检歧义候选由 AMBIGUOUS_CLEARANCE 变 CLEAR；这 31 个任务的候选总数 666→666、层失败原因变化 0 条；报告写明“自检歧义消除≠目标与完整邻线验收通过≠全局未决对清零”，且未出现“pad 抵消”或绝对性保证表述。",
+    "relocation": "新 E 第一次接受重定位：路线 34 由层 1 改到层 2，全局近距对 43750→43724，终态 42112→42083，终态额外长度相对平面 13.0153→13.4495 mm；逐候选对应按 analysis.json 的 correspondence_relocation_candidates（旧 70 条中 10 条有唯一对应：5 条通过基本评价、5 条仍被拒；其余 60 条所在生成任务本轮未执行），另单列全部移动类别口径 208/148/143/5/60。报告写明“一个候选可有多个拒绝理由，出现次数不能相加成候选数”。",
+    "metric": "全部指标是 0.1 mm 中心线近距对数，报告写明不代表损耗、串扰、无碰撞制造或工艺合规；512 是既有合成输入 LEGACY_512_SMOOTHED_P0。",
+    "sources": "所有数字均由脚本从 outputs/ 下 JSON/CSV 读取后写入；脚本内没有任何手写实验数值（只有标签、枚举中文映射与叙述文字）。"
+  },
+  "office_structure_check": {
+    "tool": "runtime/office-skills/scripts/check_office.py",
+    "verdict": "pass",
+    "output": "publication/report/brief_build/all_experiments_v3_office_checks.json",
+    "tables_detected": 39,
+    "paragraphs": 1978
+  },
+  "docx_format_checks": {
+    "runs_total": 2059,
+    "runs_without_eastAsia_font": 0,
+    "runs_with_non_simsun_eastAsia": 0,
+    "bold_runs_with_non_simsun_eastAsia": 0,
+    "normal_style": "w:line=360 w:lineRule=auto（正文 1.5 倍行距）+ eastAsia 宋体",
+    "table_paragraph_spacing": "w:line=288（约 1.2 倍），1638 处表格段落",
+    "page_margins_twips": {
+      "top": 964,
+      "right": 1134,
+      "bottom": 964,
+      "left": 1134,
+      "header": 397,
+      "footer": 397
+    },
+    "text_width": "17.00 cm",
+    "tables_total": 39,
+    "max_table_width_twips": 9638,
+    "max_table_width_cm": 17,
+    "table_width_verdict": "全部表格宽度 ≤ 17.00 cm = 版心宽度，未超版心"
+  },
+  "numeric_cross_check": {
+    "method": "从新 docx 的 word/document.xml 提取正文，逐项比对由 outputs/ 下 JSON 现场计算出的字符串",
+    "items_checked": 48,
+    "items_missing_in_text": 0,
+    "verdict": "PASS：48 项关键数字（四组终态/额外长度/评价次数、探针候选与样本距离、旧新 D/E 终态与评价次数、重定位全局对数与步长、逐候选对应 70/10/5/60 与 208/148/143、长度记账等）全部与 JSON 一致并出现在正文中"
+  },
+  "wording_checks": {
+    "banned_phrases_absent": [
+      "pad 抵消",
+      "不会改变任何非边界判定",
+      "70 条全部解决。"
+    ],
+    "required_phrases_present_count": 23,
+    "note": "禁用表述全部未出现；必需口径（功能消融≠历史策略 A/B/C、相同预算上限≠相同实际工作量、单次耗时不能支持普遍效率结论、D 最低 C 最短、自检歧义消除≠验收通过≠未决清零、数学 δ 关系、(1−2f)δ、逐候选对应口径、一个候选可有多个拒绝理由等）全部命中。"
+  },
+  "docx": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\brief_build\\光波导布线全部实验报告（含三维策略v3）.docx",
+    "bytes": 5430927,
+    "sha256": "6d57be215d0f15bf9f45ca08c028529965d7a49f15974f9f9be359232550dbba"
+  },
+  "final_round": {
+    "date": "2026-10-05",
+    "reason": "共用图更新（去掉内嵌图号、图 7 三维比例与图例修正）后重新构建，并同步收紧措辞与修正排版。",
+    "rebuild_command": "python -B publication/report/brief_build/build_all_experiments_report_v3.py",
+    "convert_render": "DSH 自带 LibreOffice Kit：convert 生成 PDF，render 逐页渲染 48 张 PNG（publication/report/brief_build/render_v3_full/）",
+    "changes": [
+      "首页两幅二维复现图实际为上下排列，图注由“左为256条 右为512条”改为“上为256条 下为512条”；",
+      "表 35（6 行）改为整表同页，表题、表格、表注连续；",
+      "“新 D 与旧 D 的终态完全相同”改为“决策序列、终态近距集合、未决集合和统计指标保持一致……但 8 条路线的窗口几何发生 1e-5 mm 量级平移”，并注明不声称逐字节相同；",
+      "表 36 表注补写“加余量后通过基本评价”是候选条数、不是被接受的修改次数（143 条为候选数）；",
+      "图 10/11/12 引用的源图已更新为不含内嵌编号的版本，图注继续注明源文件名；",
+      "第 27 节限制段落改为“D 组……决策序列、终态集合与统计指标保持一致，只有 8 条路线的窗口几何有 1e-5 mm 量级的平移”。"
+    ],
+    "page_checks_after_rebuild": {
+      "1": "首页两图上下排列，图注“上为256条 下为512条”，宋体正常；",
+      "40": "实验 B 探针结果与负效应、结论限制；",
+      "41": "第 27 节开头、表 34、新 D/新 E 段落（新措辞）；",
+      "42": "长度段、图 10（源图 f4，无内嵌图号）；",
+      "43": "表 35 整表同页、表 36 与候选/接受口径说明；",
+      "44": "表 37、表 38 与拒绝理由统计口径；",
+      "45": "图 11（f5）、图 12（f7，真实比例子图扁平、Z×20 子图按放大后跨度设置箱体，无图例遮挡）；",
+      "46": "表 39 长度记账、结论与限制（新措辞）。",
+      "48": "图表和数据位置：七张共用图图内均不带编号，两报告各自编号（已删除过期说明）"
+    },
+    "hash_check": "15 条图来源记录与磁盘哈希 0 处不符；两份 PDF 48 页逐页渲染检查通过（含新节与结论页）。"
+  },
+  "round_after_acceptance_fix": {
+    "date": "2026-10-05",
+    "changes": [
+      "表 35 增加“通过完整验收 1 / 在完整验收被拒 4”两行；表 36 增加“通过完整验收/完整验收被拒”两列并改写表注（143→139、4，实际执行 17 次：新 D 8、新 E 9、重定位 1）；第 28 节结论同步改写。"
+    ],
+    "page_checks": {
+      "43": "表 35（整表同页）与表 36 七列、读数段新口径",
+      "44": "表 37/38 与“被接受的修改”段",
+      "48": "第 28 节结论新口径"
+    }
+  }
+}

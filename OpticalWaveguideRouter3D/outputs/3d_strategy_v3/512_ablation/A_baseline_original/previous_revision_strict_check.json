@@ -1,0 +1,43 @@
+{
+  "decisions_identical": true,
+  "collision_sets_identical": true,
+  "curve_identical": true,
+  "terminal_routes_identical": true,
+  "differing_route_ids": [],
+  "ledger_common_fields_identical": true,
+  "ledger_reference": {
+    "final_collision_pair_count": 44274,
+    "accepted_moves": 22,
+    "candidate_evaluations": 666,
+    "target_attempts": 50,
+    "stop_reason": "TARGET_LIMIT",
+    "final_extra_length_mm": 8.405220067084883,
+    "first_elevations": 22,
+    "relocations": 0,
+    "full_neighbor_checks": 335,
+    "generated_candidates": 666,
+    "final_transition_count": 44,
+    "final_unresolved_pair_count": 3,
+    "initial_collision_pair_count": 49518
+  },
+  "ledger_group_A": {
+    "final_collision_pair_count": 44274,
+    "accepted_moves": 22,
+    "candidate_evaluations": 666,
+    "target_attempts": 50,
+    "stop_reason": "TARGET_LIMIT",
+    "final_extra_length_mm": 8.405220067084883,
+    "first_elevations": 22,
+    "relocations": 0,
+    "full_neighbor_checks": 335,
+    "generated_candidates": 666,
+    "final_transition_count": 44,
+    "final_unresolved_pair_count": 3,
+    "initial_collision_pair_count": 49518
+  },
+  "rev2_ledger_sha256": "0471caa4656ad3d91beab8fd5114d0b09a132189419dde870df46afa3e4b94f3",
+  "group_A_ledger_sha256": "83b99ea452118db21cf984ffd0b591551b5e0ff72da5906afc550849eb8dcf6e",
+  "rev2_decisions_sha256": "c322e4b1307d92f5a0d1f4e1f99286858b3d472e7304f74e46e48d608b1c79b1",
+  "group_A_decisions_sha256": "c322e4b1307d92f5a0d1f4e1f99286858b3d472e7304f74e46e48d608b1c79b1",
+  "note": "strict on-disk comparison; the in-run comparison reported DIFFERS only because in-memory tuples (arc _source_*_xy) are lists after JSON saving"
+}

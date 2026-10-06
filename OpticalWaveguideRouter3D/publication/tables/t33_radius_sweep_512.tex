@@ -1,0 +1,23 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{512 通道半径扫描（固定几何复算，R=2–5 mm）}
+  \label{tab:radius-sweep}
+  \begin{tabular}{rrrrrrrrrr}
+    \toprule
+    R (mm) & 平均损耗 (dB) & P95 (dB) & 最大损耗 (dB) & 直线 (dB) & 弯曲 (dB) & 交叉 (dB) & 弯曲占比 (\%) & 平均总长 (mm) & 平均交叉数 \\
+    \midrule
+    2 & 16.5873 & 17.4719 & 17.7056 & 0.691 & 15.611 & 0.286 & 94.1 & 144.35 & 169.02 \\
+    3 & 14.2260 & 15.1981 & 15.4284 & 0.672 & 13.260 & 0.294 & 93.2 & 143.50 & 169.05 \\
+    4 & 9.8096 & 10.7537 & 10.9815 & 0.653 & 8.850 & 0.306 & 90.2 & 142.76 & 169.05 \\
+    5 & 5.5147 & 6.3488 & 6.5761 & 0.636 & 4.559 & 0.320 & 82.7 & 142.13 & 168.97 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  同一布线的固定几何复算：只更换弯曲半径并重算损耗，不重新布线；论文 4.3 节只印出 R=4 mm（9.8/11.0 dB），复现为 9.8096/10.9815 dB。 \\
+  P95 为本次分析由逐路数据实算（n=512）。 \\
+  损耗为解析物理统计口径（交叉事件按每根波导各计一次）；与原版 calc\_index 统计口径不同，两者不混用。 \\
+  \end{flushleft}
+\end{table}

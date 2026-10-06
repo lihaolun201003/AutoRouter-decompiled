@@ -1,0 +1,2518 @@
+[
+  {
+    "route_a_id": 402,
+    "route_b_id": 494,
+    "point_1": {
+      "x": 17.211293192626894,
+      "y": 107.26831096920755
+    },
+    "point_2": {
+      "x": 17.538706807373106,
+      "y": 107.70668903079245
+    },
+    "distance_between_crosses_mm": 0.5471517157060874,
+    "angle_1_deg": 6.2730294520142555,
+    "angle_2_deg": 6.2730294520142555,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Arc-Arc + Arc-Arc",
+    "crossings": [
+      {
+        "point": {
+          "x": 17.211293192626894,
+          "y": 107.26831096920755
+        },
+        "angle_deg": 6.2730294520142555,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.4058577485296367,
+        "progress_b": 0.27443533936001707,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 17.538706807373106,
+          "y": 107.70668903079245
+        },
+        "angle_deg": 6.2730294520142555,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.40792578261256673,
+        "progress_b": 0.27094205747028244,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 16.375,
+            "y": 105.475
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 0,
+          "kind": "cross",
+          "point": {
+            "x": 18.375,
+            "y": 109.5
+          }
+        }
+      ]
+    },
+    "track_index_difference": 23,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 135.375,
+      "algorithmic_end_x": 16.375,
+      "preparation": {
+        "waveguide_id": 402,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 402,
+        "status": "assigned",
+        "track_index": 597,
+        "track_y": 109.5,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 7.375,
+      "algorithmic_end_x": 18.375,
+      "preparation": {
+        "waveguide_id": 494,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 494,
+        "status": "assigned",
+        "track_index": 574,
+        "track_y": 105.475,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "closest"
+    ]
+  },
+  {
+    "route_a_id": 34,
+    "route_b_id": 177,
+    "point_1": {
+      "x": 5.653049017173963,
+      "y": 3.646950982826055
+    },
+    "point_2": {
+      "x": 126.06124940419434,
+      "y": 5.025
+    },
+    "distance_between_crosses_mm": 120.41608588363344,
+    "angle_1_deg": 2.8362859836850456,
+    "angle_2_deg": 15.203604093293077,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "U-U",
+    "detailed_type": "bottomU-bottomU",
+    "topology_combination": "Arc-Arc + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 5.653049017173963,
+          "y": 3.646950982826055
+        },
+        "angle_deg": 2.8362859836850456,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          3
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.970826665538535,
+        "progress_b": 0.9695763463961776,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 126.06124940419434,
+          "y": 5.025
+        },
+        "angle_deg": 15.203604093293077,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.10642007715240254,
+        "progress_b": 0.05112528794694538,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 0,
+          "kind": "cross",
+          "point": {
+            "x": 129.75,
+            "y": 5.025
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 4.275,
+            "y": 5.025
+          }
+        }
+      ]
+    },
+    "track_index_difference": 1,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": true,
+      "rank_a": 0,
+      "rank_b": 1
+    },
+    "metadata_a": {
+      "route_type": "bottomU",
+      "algorithmic_group": "bottomU",
+      "special": false,
+      "algorithmic_start_x": 4.1,
+      "algorithmic_end_x": 138.05,
+      "preparation": {
+        "waveguide_id": 34,
+        "route_type": "u",
+        "side": "bottom"
+      },
+      "assignment": {
+        "waveguide_id": 34,
+        "status": "assigned",
+        "track_index": 0,
+        "track_y": 5.025,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottomU",
+      "algorithmic_group": "bottomU",
+      "special": false,
+      "algorithmic_start_x": 4.275,
+      "algorithmic_end_x": 129.75,
+      "preparation": {
+        "waveguide_id": 177,
+        "route_type": "u",
+        "side": "bottom"
+      },
+      "assignment": {
+        "waveguide_id": 177,
+        "status": "assigned",
+        "track_index": 1,
+        "track_y": 5.2,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "farthest"
+    ]
+  },
+  {
+    "route_a_id": 9,
+    "route_b_id": 10,
+    "point_1": {
+      "x": 39.39999999999999,
+      "y": 5.9
+    },
+    "point_2": {
+      "x": 119.175,
+      "y": 3.130330692969106
+    },
+    "distance_between_crosses_mm": 79.82306491904649,
+    "angle_1_deg": 90.0,
+    "angle_2_deg": 26.491570200356218,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "U-U",
+    "detailed_type": "bottomU-bottomU",
+    "topology_combination": "Arc-Line + Line-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 39.39999999999999,
+          "y": 5.9
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          4
+        ],
+        "progress_a": 0.7377494556715363,
+        "progress_b": 0.9411371288681972,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 119.175,
+          "y": 3.130330692969106
+        },
+        "angle_deg": 26.491570200356218,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          0
+        ],
+        "progress_a": 0.02819048612422673,
+        "progress_b": 0.03123055121697751,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 0,
+          "kind": "cross",
+          "point": {
+            "x": 119.175,
+            "y": 5.9
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 39.4,
+            "y": 5.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 37,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": true,
+      "rank_a": 5,
+      "rank_b": 42
+    },
+    "metadata_a": {
+      "route_type": "bottomU",
+      "algorithmic_group": "bottomU",
+      "special": false,
+      "algorithmic_start_x": 13.275,
+      "algorithmic_end_x": 119.7,
+      "preparation": {
+        "waveguide_id": 9,
+        "route_type": "u",
+        "side": "bottom"
+      },
+      "assignment": {
+        "waveguide_id": 9,
+        "status": "assigned",
+        "track_index": 5,
+        "track_y": 5.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottomU",
+      "algorithmic_group": "bottomU",
+      "special": false,
+      "algorithmic_start_x": 39.4,
+      "algorithmic_end_x": 119.175,
+      "preparation": {
+        "waveguide_id": 10,
+        "route_type": "u",
+        "side": "bottom"
+      },
+      "assignment": {
+        "waveguide_id": 10,
+        "status": "assigned",
+        "track_index": 42,
+        "track_y": 12.375,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "route_pair_type:U-U"
+    ]
+  },
+  {
+    "route_a_id": 0,
+    "route_b_id": 341,
+    "point_1": {
+      "x": 125.425,
+      "y": 88.6292279923314
+    },
+    "point_2": {
+      "x": 132.1,
+      "y": 108.4957720076686
+    },
+    "distance_between_crosses_mm": 20.9579387372263,
+    "angle_1_deg": 82.2413801114132,
+    "angle_2_deg": 82.24138011141338,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 125.425,
+          "y": 88.6292279923314
+        },
+        "angle_deg": 82.2413801114132,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          0
+        ],
+        "progress_a": 0.5797530159095838,
+        "progress_b": 0.5655693950969656,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 132.1,
+          "y": 108.4957720076686
+        },
+        "angle_deg": 82.24138011141338,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.7351492092245185,
+        "progress_b": 0.7209655884119002,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 0,
+          "kind": "cross",
+          "point": {
+            "x": 125.425,
+            "y": 88.675
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 132.1,
+            "y": 108.45
+          }
+        }
+      ]
+    },
+    "track_index_difference": 113,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 121.1,
+      "algorithmic_end_x": 132.1,
+      "preparation": {
+        "waveguide_id": 0,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 0,
+        "status": "assigned",
+        "track_index": 478,
+        "track_y": 88.675,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 136.425,
+      "algorithmic_end_x": 125.425,
+      "preparation": {
+        "waveguide_id": 341,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 341,
+        "status": "assigned",
+        "track_index": 591,
+        "track_y": 108.45,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "route_pair_type:Z-Z",
+      "composition:ordinary-ordinary",
+      "topology_combination:Arc-Line + Arc-Line",
+      "skeleton_2_to_smooth_2",
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 342,
+    "point_1": {
+      "x": 118.25,
+      "y": 88.58908864084343
+    },
+    "point_2": {
+      "x": 119.875,
+      "y": 76.02200199721482
+    },
+    "distance_between_crosses_mm": 12.671712264270708,
+    "angle_1_deg": 47.54584979559903,
+    "angle_2_deg": 47.54584979559903,
+    "composition": "ordinary-special",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-specialZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 118.25,
+          "y": 88.58908864084343
+        },
+        "angle_deg": 47.54584979559903,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.3682258899680836,
+        "progress_b": 0.5982794534708554,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 119.875,
+          "y": 76.02200199721482
+        },
+        "angle_deg": 47.54584979559903,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          0
+        ],
+        "segment_indices_b": [
+          2
+        ],
+        "progress_a": 0.31435748447982687,
+        "progress_b": 0.5130620847210542,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": null,
+    "track_index_difference": null,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": true,
+      "algorithmic_start_x": 124.9,
+      "algorithmic_end_x": 118.25,
+      "preparation": {
+        "waveguide_id": 342,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 342,
+        "status": "unsupported_geometry",
+        "track_index": null,
+        "track_y": null,
+        "reason": "Horizontal span is below 2 * bend_radius."
+      }
+    },
+    "selection_reasons": [
+      "composition:ordinary-special"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 5,
+    "point_1": {
+      "x": 25.303049017173844,
+      "y": 91.27804901717406
+    },
+    "point_2": {
+      "x": 118.49695098282619,
+      "y": 88.3469509828259
+    },
+    "distance_between_crosses_mm": 93.23998444482163,
+    "angle_1_deg": 2.836285983685134,
+    "angle_2_deg": 2.8362859836851086,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Arc + Arc-Arc",
+    "crossings": [
+      {
+        "point": {
+          "x": 25.303049017173844,
+          "y": 91.27804901717406
+        },
+        "angle_deg": 2.836285983685134,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          3
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.7554065982568009,
+        "progress_b": 0.7557064442485857,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 118.49695098282619,
+          "y": 88.3469509828259
+        },
+        "angle_deg": 2.8362859836851086,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.3667954661596149,
+        "progress_b": 0.36709531215139973,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 89.725
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 23.925,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 1,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 95
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 120.05,
+      "algorithmic_end_x": 23.925,
+      "preparation": {
+        "waveguide_id": 5,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 5,
+        "status": "assigned",
+        "track_index": 484,
+        "track_y": 89.725,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "topology_combination:Arc-Arc + Arc-Arc",
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 85,
+    "point_1": {
+      "x": 106.85946578880612,
+      "y": 89.9
+    },
+    "point_2": {
+      "x": 118.89633736930523,
+      "y": 87.87133736930518
+    },
+    "distance_between_crosses_mm": 12.206627278433826,
+    "angle_1_deg": 37.81448850601433,
+    "angle_2_deg": 17.079140854911966,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Arc-Arc + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 106.85946578880612,
+          "y": 89.9
+        },
+        "angle_deg": 37.81448850601433,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.4166905722174713,
+        "progress_b": 0.37539304657774214,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 118.89633736930523,
+          "y": 87.87133736930518
+        },
+        "angle_deg": 17.079140854911966,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.3642256685085072,
+        "progress_b": 0.45257977942847655,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 88.85
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 0,
+          "kind": "cross",
+          "point": {
+            "x": 104.925,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 6,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 100
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 120.925,
+      "algorithmic_end_x": 104.925,
+      "preparation": {
+        "waveguide_id": 85,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 85,
+        "status": "assigned",
+        "track_index": 479,
+        "track_y": 88.85,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "topology_combination:Arc-Arc + Arc-Line"
+    ]
+  },
+  {
+    "route_a_id": 2,
+    "route_b_id": 276,
+    "point_1": {
+      "x": 134.95,
+      "y": 88.325
+    },
+    "point_2": {
+      "x": 141.1,
+      "y": 106.7250628144669
+    },
+    "distance_between_crosses_mm": 19.400639463077688,
+    "angle_1_deg": 90.0,
+    "angle_2_deg": 84.26082952273323,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Arc-Line + Line-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 134.95,
+          "y": 88.325
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          4
+        ],
+        "progress_a": 0.602807265305106,
+        "progress_b": 0.4351103189503793,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 141.1,
+          "y": 106.7250628144669
+        },
+        "angle_deg": 84.26082952273323,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.7382954148061825,
+        "progress_b": 0.29197837816505307,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 134.95,
+            "y": 88.325
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 141.1,
+            "y": 106.7
+          }
+        }
+      ]
+    },
+    "track_index_difference": 105,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 121.45,
+      "algorithmic_end_x": 141.1,
+      "preparation": {
+        "waveguide_id": 2,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 2,
+        "status": "assigned",
+        "track_index": 476,
+        "track_y": 88.325,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 145.6,
+      "algorithmic_end_x": 134.95,
+      "preparation": {
+        "waveguide_id": 276,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 276,
+        "status": "assigned",
+        "track_index": 581,
+        "track_y": 106.7,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "topology_combination:Arc-Line + Line-Line",
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 165,
+    "point_1": {
+      "x": 23.75,
+      "y": 124.2
+    },
+    "point_2": {
+      "x": 29.0,
+      "y": 89.9
+    },
+    "distance_between_crosses_mm": 34.699459649971494,
+    "angle_1_deg": 90.0,
+    "angle_2_deg": 90.0,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Line-Line + Line-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 23.75,
+          "y": 124.2
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          2
+        ],
+        "progress_a": 0.893314791948301,
+        "progress_b": 0.20414101909559276,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 29.0,
+          "y": 89.9
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          4
+        ],
+        "progress_a": 0.7386461267319254,
+        "progress_b": 0.43797734002522526,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 29.0,
+            "y": 89.9
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 23.75,
+            "y": 124.2
+          }
+        }
+      ]
+    },
+    "track_index_difference": 196,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 14.75,
+      "algorithmic_end_x": 29.0,
+      "preparation": {
+        "waveguide_id": 165,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 165,
+        "status": "assigned",
+        "track_index": 681,
+        "track_y": 124.2,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "topology_combination:Line-Line + Line-Line"
+    ]
+  },
+  {
+    "route_a_id": 1,
+    "route_b_id": 341,
+    "point_1": {
+      "x": 125.425,
+      "y": 88.42722031169706
+    },
+    "point_2": {
+      "x": 132.275,
+      "y": 108.52277968830295
+    },
+    "distance_between_crosses_mm": 21.230968104603544,
+    "angle_1_deg": 80.21218094328593,
+    "angle_2_deg": 80.2121809432861,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 125.425,
+          "y": 88.42722031169706
+        },
+        "angle_deg": 80.21218094328593,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          0
+        ],
+        "progress_a": 0.577506282393491,
+        "progress_b": 0.5642803241625872,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 132.275,
+          "y": 108.52277968830295
+        },
+        "angle_deg": 80.2121809432861,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.7353215532462971,
+        "progress_b": 0.7220955950153933,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 0,
+          "kind": "cross",
+          "point": {
+            "x": 125.425,
+            "y": 88.5
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 132.275,
+            "y": 108.45
+          }
+        }
+      ]
+    },
+    "track_index_difference": 114,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 121.275,
+      "algorithmic_end_x": 132.275,
+      "preparation": {
+        "waveguide_id": 1,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 1,
+        "status": "assigned",
+        "track_index": 477,
+        "track_y": 88.5,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 136.425,
+      "algorithmic_end_x": 125.425,
+      "preparation": {
+        "waveguide_id": 341,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 341,
+        "status": "assigned",
+        "track_index": 591,
+        "track_y": 108.45,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 2,
+    "route_b_id": 277,
+    "point_1": {
+      "x": 135.125,
+      "y": 88.325
+    },
+    "point_2": {
+      "x": 141.1,
+      "y": 106.53557368027145
+    },
+    "distance_between_crosses_mm": 19.16574075700168,
+    "angle_1_deg": 90.0,
+    "angle_2_deg": 86.27314685751799,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Arc-Line + Line-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 135.125,
+          "y": 88.325
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          4
+        ],
+        "progress_a": 0.6038655753891292,
+        "progress_b": 0.4351103189503793,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 141.1,
+          "y": 106.53557368027145
+        },
+        "angle_deg": 86.27314685751799,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.7371494818831433,
+        "progress_b": 0.294220718805126,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 135.125,
+            "y": 88.325
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 141.1,
+            "y": 106.525
+          }
+        }
+      ]
+    },
+    "track_index_difference": 104,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 121.45,
+      "algorithmic_end_x": 141.1,
+      "preparation": {
+        "waveguide_id": 2,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 2,
+        "status": "assigned",
+        "track_index": 476,
+        "track_y": 88.325,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 145.775,
+      "algorithmic_end_x": 135.125,
+      "preparation": {
+        "waveguide_id": 277,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 277,
+        "status": "assigned",
+        "track_index": 580,
+        "track_y": 106.525,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 3,
+    "route_b_id": 276,
+    "point_1": {
+      "x": 134.95,
+      "y": 88.15
+    },
+    "point_2": {
+      "x": 141.275,
+      "y": 106.7457720076686
+    },
+    "distance_between_crosses_mm": 19.64200502904913,
+    "angle_1_deg": 90.0,
+    "angle_2_deg": 82.24138011141306,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Arc-Line + Line-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 134.95,
+          "y": 88.15
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          4
+        ],
+        "progress_a": 0.6006906451370596,
+        "progress_b": 0.4362295456040298,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 141.275,
+          "y": 106.7457720076686
+        },
+        "angle_deg": 82.24138011141306,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.7384206533661674,
+        "progress_b": 0.2908512836260753,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 134.95,
+            "y": 88.15
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 141.275,
+            "y": 106.7
+          }
+        }
+      ]
+    },
+    "track_index_difference": 106,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 121.625,
+      "algorithmic_end_x": 141.275,
+      "preparation": {
+        "waveguide_id": 3,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 3,
+        "status": "assigned",
+        "track_index": 475,
+        "track_y": 88.15,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 145.6,
+      "algorithmic_end_x": 134.95,
+      "preparation": {
+        "waveguide_id": 276,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 276,
+        "status": "assigned",
+        "track_index": 581,
+        "track_y": 106.7,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 3,
+    "route_b_id": 277,
+    "point_1": {
+      "x": 135.125,
+      "y": 88.15
+    },
+    "point_2": {
+      "x": 141.275,
+      "y": 106.55006281446691
+    },
+    "distance_between_crosses_mm": 19.400639463077702,
+    "angle_1_deg": 90.0,
+    "angle_2_deg": 84.2608295227332,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-top_to_bottomZ",
+    "topology_combination": "Arc-Line + Line-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 135.125,
+          "y": 88.15
+        },
+        "angle_deg": 90.0,
+        "topology": "Line-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          4
+        ],
+        "progress_a": 0.6017489552210828,
+        "progress_b": 0.4362295456040298,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 141.275,
+          "y": 106.55006281446691
+        },
+        "angle_deg": 84.2608295227332,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          4
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.7372371047221594,
+        "progress_b": 0.29309760481870356,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 135.125,
+            "y": 88.15
+          }
+        },
+        {
+          "segment_index_a": 2,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 141.275,
+            "y": 106.525
+          }
+        }
+      ]
+    },
+    "track_index_difference": 105,
+    "ordering_relation": null,
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 121.625,
+      "algorithmic_end_x": 141.275,
+      "preparation": {
+        "waveguide_id": 3,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 3,
+        "status": "assigned",
+        "track_index": 475,
+        "track_y": 88.15,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "top_to_bottomZ",
+      "algorithmic_group": "top_to_bottomZ",
+      "special": false,
+      "algorithmic_start_x": 145.775,
+      "algorithmic_end_x": 135.125,
+      "preparation": {
+        "waveguide_id": 277,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 277,
+        "status": "assigned",
+        "track_index": 580,
+        "track_y": 106.525,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 6,
+    "point_1": {
+      "x": 25.393799779111887,
+      "y": 91.19379977911196
+    },
+    "point_2": {
+      "x": 118.58120022088815,
+      "y": 88.256200220888
+    },
+    "distance_between_crosses_mm": 93.23369075747479,
+    "angle_1_deg": 5.674311412703423,
+    "angle_2_deg": 5.674311412703378,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Arc + Arc-Arc",
+    "crossings": [
+      {
+        "point": {
+          "x": 25.393799779111887,
+          "y": 91.19379977911196
+        },
+        "angle_deg": 5.674311412703423,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          3
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.7548945414292039,
+        "progress_b": 0.7554948610990868,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 118.58120022088815,
+          "y": 88.256200220888
+        },
+        "angle_deg": 5.674311412703378,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.3662834093320188,
+        "progress_b": 0.36688372900190175,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 89.55
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 24.1,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 2,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 96
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 120.225,
+      "algorithmic_end_x": 24.1,
+      "preparation": {
+        "waveguide_id": 6,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 6,
+        "status": "assigned",
+        "track_index": 483,
+        "track_y": 89.55,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 7,
+    "point_1": {
+      "x": 25.486724376112374,
+      "y": 91.11172437611242
+    },
+    "point_2": {
+      "x": 118.6632756238876,
+      "y": 88.1632756238876
+    },
+    "distance_between_crosses_mm": 93.2231894566678,
+    "angle_1_deg": 8.515825356953886,
+    "angle_2_deg": 8.515825356953956,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Arc + Arc-Arc",
+    "crossings": [
+      {
+        "point": {
+          "x": 25.486724376112374,
+          "y": 91.11172437611242
+        },
+        "angle_deg": 8.515825356953886,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          3
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.7543818551787613,
+        "progress_b": 0.7552839073724344,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 118.6632756238876,
+          "y": 88.1632756238876
+        },
+        "angle_deg": 8.515825356953956,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.3657707230815767,
+        "progress_b": 0.3666727752752499,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 89.375
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 24.275,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 3,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 97
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 120.4,
+      "algorithmic_end_x": 24.275,
+      "preparation": {
+        "waveguide_id": 7,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 7,
+        "status": "assigned",
+        "track_index": 482,
+        "track_y": 89.375,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 8,
+    "point_1": {
+      "x": 25.581832863549536,
+      "y": 91.03183286354957
+    },
+    "point_2": {
+      "x": 118.74316713645045,
+      "y": 88.06816713645047
+    },
+    "distance_between_crosses_mm": 93.20846269545038,
+    "angle_1_deg": 11.362596283942237,
+    "angle_2_deg": 11.362596283942242,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Arc + Arc-Arc",
+    "crossings": [
+      {
+        "point": {
+          "x": 25.581832863549536,
+          "y": 91.03183286354957
+        },
+        "angle_deg": 11.362596283942237,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          3
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.7538682204259284,
+        "progress_b": 0.7550739021481726,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 118.74316713645045,
+          "y": 88.06816713645047
+        },
+        "angle_deg": 11.362596283942242,
+        "topology": "Arc-Arc",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          1
+        ],
+        "progress_a": 0.36525708832874376,
+        "progress_b": 0.36646277005098804,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 89.2
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 24.45,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 4,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 98
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 120.575,
+      "algorithmic_end_x": 24.45,
+      "preparation": {
+        "waveguide_id": 8,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 8,
+        "status": "assigned",
+        "track_index": 481,
+        "track_y": 89.2,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 24,
+    "point_1": {
+      "x": 86.63030399291527,
+      "y": 89.9
+    },
+    "point_2": {
+      "x": 119.64469600708473,
+      "y": 86.4
+    },
+    "distance_between_crosses_mm": 33.19939879071993,
+    "angle_1_deg": 72.54239687627793,
+    "angle_2_deg": 72.54239687627793,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 86.63030399291527,
+          "y": 89.9
+        },
+        "angle_deg": 72.54239687627793,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.500339887523909,
+        "progress_b": 0.6958976144598028,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 119.64469600708473,
+          "y": 86.4
+        },
+        "angle_deg": 72.54239687627793,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          2
+        ],
+        "progress_a": 0.3573684170355242,
+        "progress_b": 0.5210173830342063,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 86.4
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 86.4,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 20,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 114
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 138.4,
+      "algorithmic_end_x": 86.4,
+      "preparation": {
+        "waveguide_id": 24,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 24,
+        "status": "assigned",
+        "track_index": 465,
+        "track_y": 86.4,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 25,
+    "point_1": {
+      "x": 86.75375794011543,
+      "y": 89.9
+    },
+    "point_2": {
+      "x": 119.69624205988457,
+      "y": 86.225
+    },
+    "distance_between_crosses_mm": 33.146838235060095,
+    "angle_1_deg": 74.63304720222241,
+    "angle_2_deg": 74.63304720222241,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 86.75375794011543,
+          "y": 89.9
+        },
+        "angle_deg": 74.63304720222241,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.4998293948866279,
+        "progress_b": 0.695935264225422,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 119.69624205988457,
+          "y": 86.225
+        },
+        "angle_deg": 74.63304720222241,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          2
+        ],
+        "progress_a": 0.3566139968935687,
+        "progress_b": 0.5207566648924186,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 86.225
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 86.575,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 21,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 115
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 138.575,
+      "algorithmic_end_x": 86.575,
+      "preparation": {
+        "waveguide_id": 25,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 25,
+        "status": "assigned",
+        "track_index": 464,
+        "track_y": 86.225,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 26,
+    "point_1": {
+      "x": 86.88404685595926,
+      "y": 89.9
+    },
+    "point_2": {
+      "x": 119.74095314404074,
+      "y": 86.05
+    },
+    "distance_between_crosses_mm": 33.08169872941486,
+    "angle_1_deg": 76.70292825279104,
+    "angle_2_deg": 76.70292825279104,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 86.88404685595926,
+          "y": 89.9
+        },
+        "angle_deg": 76.70292825279104,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.49929063906904547,
+        "progress_b": 0.6959637466253832,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 119.74095314404074,
+          "y": 86.05
+        },
+        "angle_deg": 76.70292825279104,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          2
+        ],
+        "progress_a": 0.3558670714337621,
+        "progress_b": 0.5205305177842439,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 86.05
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 86.75,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 22,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 116
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 138.75,
+      "algorithmic_end_x": 86.75,
+      "preparation": {
+        "waveguide_id": 26,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 26,
+        "status": "assigned",
+        "track_index": 463,
+        "track_y": 86.05,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  },
+  {
+    "route_a_id": 4,
+    "route_b_id": 27,
+    "point_1": {
+      "x": 87.02098378877068,
+      "y": 89.9
+    },
+    "point_2": {
+      "x": 119.77901621122932,
+      "y": 85.875
+    },
+    "distance_between_crosses_mm": 33.00438324209152,
+    "angle_1_deg": 78.75527640762363,
+    "angle_2_deg": 78.75527640762363,
+    "composition": "ordinary-ordinary",
+    "route_pair_type": "Z-Z",
+    "detailed_type": "bottom_to_topZ-bottom_to_topZ",
+    "topology_combination": "Arc-Line + Arc-Line",
+    "crossings": [
+      {
+        "point": {
+          "x": 87.02098378877068,
+          "y": 89.9
+        },
+        "angle_deg": 78.75527640762363,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          2
+        ],
+        "segment_indices_b": [
+          3
+        ],
+        "progress_a": 0.498724393132342,
+        "progress_b": 0.6959844901676641,
+        "raw_event_count": 1
+      },
+      {
+        "point": {
+          "x": 119.77901621122932,
+          "y": 85.875
+        },
+        "angle_deg": 78.75527640762363,
+        "topology": "Arc-Line",
+        "segment_indices_a": [
+          1
+        ],
+        "segment_indices_b": [
+          2
+        ],
+        "progress_a": 0.3551264727946227,
+        "progress_b": 0.5203379961146084,
+        "raw_event_count": 1
+      }
+    ],
+    "skeleton_comparison": {
+      "classification": "skeleton_2_to_smooth_2",
+      "raw_kind_counts": {
+        "cross": 2
+      },
+      "events": [
+        {
+          "segment_index_a": 0,
+          "segment_index_b": 1,
+          "kind": "cross",
+          "point": {
+            "x": 119.875,
+            "y": 85.875
+          }
+        },
+        {
+          "segment_index_a": 1,
+          "segment_index_b": 2,
+          "kind": "cross",
+          "point": {
+            "x": 86.925,
+            "y": 89.9
+          }
+        }
+      ]
+    },
+    "track_index_difference": 23,
+    "ordering_relation": {
+      "scan_order_inversion": false,
+      "endpoint_order_inversion": false,
+      "rank_a": 94,
+      "rank_b": 117
+    },
+    "metadata_a": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 119.875,
+      "algorithmic_end_x": 23.75,
+      "preparation": {
+        "waveguide_id": 4,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 4,
+        "status": "assigned",
+        "track_index": 485,
+        "track_y": 89.9,
+        "reason": null
+      }
+    },
+    "metadata_b": {
+      "route_type": "bottom_to_topZ",
+      "algorithmic_group": "bottom_to_topZ",
+      "special": false,
+      "algorithmic_start_x": 138.925,
+      "algorithmic_end_x": 86.925,
+      "preparation": {
+        "waveguide_id": 27,
+        "route_type": "z",
+        "side": null
+      },
+      "assignment": {
+        "waveguide_id": 27,
+        "status": "assigned",
+        "track_index": 462,
+        "track_y": 85.875,
+        "reason": null
+      }
+    },
+    "selection_reasons": [
+      "canonical additional example"
+    ]
+  }
+]

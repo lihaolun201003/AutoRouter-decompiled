@@ -1,0 +1,626 @@
+{
+  "seed": 20261006,
+  "categories": {
+    "high_conflict_both_unelevated": {
+      "requested": 20,
+      "selected": 20,
+      "shortfall": null,
+      "available_pairs": 42516
+    },
+    "random_both_unelevated": {
+      "requested": 20,
+      "selected": 20,
+      "shortfall": null,
+      "available_pairs": 42516
+    },
+    "single_elevated": {
+      "requested": 10,
+      "selected": 10,
+      "shortfall": null,
+      "available_pairs": 291
+    },
+    "both_elevated": {
+      "requested": 10,
+      "selected": 10,
+      "shortfall": null,
+      "available_pairs": 102
+    }
+  },
+  "selected_count": 60,
+  "max_routes_in_list": 50,
+  "route_use": {
+    "0": 2,
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 4,
+    "5": 4,
+    "6": 4,
+    "7": 4,
+    "8": 4,
+    "9": 4,
+    "10": 2,
+    "11": 2,
+    "12": 2,
+    "13": 2,
+    "14": 2,
+    "15": 1,
+    "20": 2,
+    "21": 2,
+    "24": 2,
+    "25": 2,
+    "26": 1,
+    "31": 2,
+    "34": 4,
+    "35": 3,
+    "74": 1,
+    "151": 3,
+    "152": 2,
+    "153": 2,
+    "177": 4,
+    "180": 2,
+    "181": 2,
+    "185": 4,
+    "186": 1,
+    "265": 3,
+    "266": 1,
+    "273": 2,
+    "274": 2,
+    "275": 2,
+    "287": 2,
+    "290": 2,
+    "291": 2,
+    "300": 2,
+    "303": 4,
+    "334": 2,
+    "335": 2,
+    "347": 3,
+    "433": 2,
+    "436": 1,
+    "437": 4,
+    "462": 2
+  },
+  "max_per_route_in_list": 4,
+  "targets": [
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        290,
+        291
+      ],
+      "priority_rank": 1,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        290,
+        433
+      ],
+      "priority_rank": 2,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        9,
+        180
+      ],
+      "priority_rank": 3,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        9,
+        181
+      ],
+      "priority_rank": 4,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        31,
+        303
+      ],
+      "priority_rank": 5,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        180,
+        303
+      ],
+      "priority_rank": 6,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        291,
+        433
+      ],
+      "priority_rank": 7,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        31,
+        181
+      ],
+      "priority_rank": 8,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        35,
+        347
+      ],
+      "priority_rank": 9,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        4,
+        35
+      ],
+      "priority_rank": 10,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        4,
+        347
+      ],
+      "priority_rank": 11,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        5,
+        6
+      ],
+      "priority_rank": 12,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        5,
+        7
+      ],
+      "priority_rank": 13,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        6,
+        7
+      ],
+      "priority_rank": 14,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        8,
+        437
+      ],
+      "priority_rank": 15,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        8,
+        300
+      ],
+      "priority_rank": 16,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        300,
+        437
+      ],
+      "priority_rank": 17,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        334,
+        462
+      ],
+      "priority_rank": 18,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        335,
+        462
+      ],
+      "priority_rank": 19,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "high_conflict_both_unelevated",
+      "pair": [
+        334,
+        335
+      ],
+      "priority_rank": 20,
+      "rule": "sorted by the v4/v3 target priority (-(degree sum), -max degree, pair); the 20 highest-ranked pairs, at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        0,
+        24
+      ],
+      "priority_rank": 1,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        0,
+        25
+      ],
+      "priority_rank": 2,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        1,
+        24
+      ],
+      "priority_rank": 3,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        1,
+        25
+      ],
+      "priority_rank": 4,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        2,
+        20
+      ],
+      "priority_rank": 5,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        2,
+        21
+      ],
+      "priority_rank": 6,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        3,
+        20
+      ],
+      "priority_rank": 7,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        3,
+        21
+      ],
+      "priority_rank": 8,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        4,
+        5
+      ],
+      "priority_rank": 9,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        4,
+        6
+      ],
+      "priority_rank": 10,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        5,
+        6
+      ],
+      "priority_rank": 11,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        7,
+        8
+      ],
+      "priority_rank": 12,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        7,
+        13
+      ],
+      "priority_rank": 13,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        8,
+        13
+      ],
+      "priority_rank": 14,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        9,
+        10
+      ],
+      "priority_rank": 15,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        9,
+        11
+      ],
+      "priority_rank": 16,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        10,
+        11
+      ],
+      "priority_rank": 17,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        12,
+        14
+      ],
+      "priority_rank": 18,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        12,
+        15
+      ],
+      "priority_rank": 19,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "random_both_unelevated",
+      "pair": [
+        14,
+        26
+      ],
+      "priority_rank": 20,
+      "rule": "random.Random(20261006).shuffle over the sorted both-unelevated pair list, then the first pairs in that sampled order; at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        34,
+        303
+      ],
+      "priority_rank": 1,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        151,
+        303
+      ],
+      "priority_rank": 2,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        34,
+        35
+      ],
+      "priority_rank": 3,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        177,
+        347
+      ],
+      "priority_rank": 4,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        177,
+        437
+      ],
+      "priority_rank": 5,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        74,
+        265
+      ],
+      "priority_rank": 6,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        265,
+        266
+      ],
+      "priority_rank": 7,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        185,
+        437
+      ],
+      "priority_rank": 8,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        185,
+        287
+      ],
+      "priority_rank": 9,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "single_elevated",
+      "pair": [
+        186,
+        287
+      ],
+      "priority_rank": 10,
+      "rule": "one route already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        34,
+        177
+      ],
+      "priority_rank": 1,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        177,
+        185
+      ],
+      "priority_rank": 2,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        34,
+        185
+      ],
+      "priority_rank": 3,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        151,
+        152
+      ],
+      "priority_rank": 4,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        151,
+        153
+      ],
+      "priority_rank": 5,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        152,
+        153
+      ],
+      "priority_rank": 6,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        265,
+        436
+      ],
+      "priority_rank": 7,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        273,
+        274
+      ],
+      "priority_rank": 8,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        273,
+        275
+      ],
+      "priority_rank": 9,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    },
+    {
+      "category": "both_elevated",
+      "pair": [
+        274,
+        275
+      ],
+      "priority_rank": 10,
+      "rule": "both routes already elevated; same priority order, at most 3 per route inside the category"
+    }
+  ]
+}

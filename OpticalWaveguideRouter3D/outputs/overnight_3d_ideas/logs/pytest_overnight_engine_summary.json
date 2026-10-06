@@ -1,0 +1,84 @@
+{
+  "generated_at_utc": "2026-10-05T13:51:56+00:00",
+  "command": ".venv\\Scripts\\python.exe -B -m pytest tests\\test_overnight_engine_3d.py -q",
+  "working_directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D",
+  "exit_code": 1,
+  "pytest_summary_line": "1 failed, 20 passed in 127.19s (0:02:07)",
+  "counts": {
+    "failed": 1,
+    "passed": 20,
+    "skipped": 0,
+    "errors": 0,
+    "xfailed": 0,
+    "xpassed": 0,
+    "warnings": 0,
+    "deselected": 0,
+    "collected": 21,
+    "total_reported": 21,
+    "collected_matches_total_reported": true
+  },
+  "duration_seconds": 127.19,
+  "progress_line": "....................F",
+  "failed_tests": [
+    {
+      "nodeid": "tests/test_overnight_engine_3d.py::test_generated_candidates_note_is_the_documented_string",
+      "block_found": true,
+      "assertion": "AssertionError: generated_candidates_note must be the documented single string, got ('generated_candidates is the RAW generator output; ', 'generated_candidates_after_generation_policy is what survives ', 'dedup and any other generation-policy filtering') - join the three literals at src/overnight_engine_3d.py lines 897-899 (drop the commas or use \"\".join(...))",
+      "assert_lines": [
+        "AssertionError: generated_candidates_note must be the documented single string, got ('generated_candidates is the RAW generator output; ', 'generated_candidates_after_generation_policy is what survives ', 'dedup and any other generation-policy filtering') - join the three literals at src/overnight_engine_3d.py lines 897-899 (drop the commas or use \"\".join(...))",
+        "assert False",
+        "+  where False = isinstance(('generated_candidates is the RAW generator output; ', 'generated_candidates_after_generation_policy is what survives ', 'dedup and any other generation-policy filtering'), str)"
+      ]
+    }
+  ],
+  "errored_tests": [],
+  "artifacts": {
+    "raw_log": {
+      "path": "outputs/overnight_3d_ideas/logs/pytest_overnight_engine.log",
+      "bytes": 1846,
+      "sha256": "5c1095e8667243796597ef044ef3a1f1d3d052111db56e52b60a57fb9ec2cffc"
+    },
+    "test_file": {
+      "path": "tests/test_overnight_engine_3d.py",
+      "bytes": 51486,
+      "sha256": "adf6e4013cedbed4fc77068ccbbc51003c7af9d76327ca27217684d22d371b34",
+      "lines": 934
+    },
+    "module_under_test": {
+      "path": "src/overnight_engine_3d.py",
+      "bytes": 64074,
+      "sha256": "218077c880c0f6f1fa24506f5db454f7af0dce16f63a77a7a4ab08b44d6b1841"
+    }
+  },
+  "findings": [
+    {
+      "id": "IDEA_B_SIDE_RESERVE_NEVER_MATCHES_RELOCATION_ROWS",
+      "test": "tests/test_overnight_engine_3d.py::test_side_reserve_guarantees_relocation_rows_for_the_elevated_victim",
+      "file": "src/overnight_engine_3d.py",
+      "function": "_select_k_prefix / run_strategy pool build",
+      "status": "FIXED BY LEAD AND VERIFIED HERE (test now PASSES)",
+      "fix_verified": "merged-pool rows now carry the victim's real movement (action='RELOCATION' for an already-elevated victim, 'FIRST_ELEVATION' otherwise, 'RETURN' for the idea-H row, line 613), so _select_k_prefix line 338 matches relocation rows again",
+      "evidence": "k_per_target=2 relocation_side_reserve=2 now evaluates >=2 RELOCATION rows of the elevated victim and the prefix still holds <= k_per_target rows; the assertion is byte-identical to the one that failed before the fix"
+    },
+    {
+      "id": "DEDUP_ACCOUNTING_MISMATCH_STEP_VS_LEDGER",
+      "test": "tests/test_overnight_engine_3d.py::test_ledger_separates_raw_generation_from_the_generation_policy_output",
+      "file": "src/overnight_engine_3d.py",
+      "function": "run_strategy",
+      "status": "FIXED BY LEAD AND VERIFIED HERE (new test PASSES)",
+      "fix_verified": "step[\"raw_generated_candidates\"] vs step[\"generated_candidates\"] (post dedup), ledger[\"generated_candidates\"] == ledger[\"generated_candidates_raw\"] and ledger[\"generated_candidates_after_generation_policy\"]",
+      "evidence": "with exact_dedup on: raw 36, after policy 35, and 36-35 == dedup_removed_identical_to_current + dedup_removed_duplicates; with exact_dedup off: after policy == raw"
+    },
+    {
+      "id": "GENERATED_CANDIDATES_NOTE_IS_A_TUPLE_NOT_A_STRING",
+      "test": "tests/test_overnight_engine_3d.py::test_generated_candidates_note_is_the_documented_string",
+      "file": "src/overnight_engine_3d.py",
+      "function": "run_strategy ledger",
+      "line": 897,
+      "status": "FAILS (new defect introduced by the accounting fix; assertion kept)",
+      "observed": "ledger['generated_candidates_note'] is a TUPLE of three strings, not the documented single string",
+      "root_cause": "line 897-899 writes generated_candidates_note=(\"a\", \"b\", \"c\"): the three comma-separated literals form a tuple instead of one concatenated string",
+      "suggested_fix": "remove the commas so the literals concatenate, or use \"\".join((...))"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "completed": [
+    "v8 support chain",
+    "v8 G0/G1 formal arms",
+    "A budget fairness (P3)",
+    "length caps (P4)",
+    "controlled serial timing (P5)",
+    "60-pair/120-side diagnostics",
+    "report + page by page visual QA"
+  ],
+  "remaining": [],
+  "resume_commands": {
+    "verify": ".venv\\Scripts\\python.exe -B scripts\\overnight_final_verification.py . outputs\\overnight_3d_continuation --v8",
+    "tests": ".venv\\Scripts\\python.exe -B -m pytest tests -q",
+    "compare": ".venv\\Scripts\\python.exe -B scripts\\v8_compare.py . outputs\\overnight_3d_continuation",
+    "figures": ".venv\\Scripts\\python.exe -B scripts\\v8_figures.py . outputs\\overnight_3d_continuation",
+    "diagnostics": ".venv\\Scripts\\python.exe -B scripts\\v8_diagnostics.py . outputs\\overnight_3d_continuation",
+    "report": "python scripts\\publication\\build_v8_continuation_report.py . outputs\\overnight_3d_continuation",
+    "rerun_group": ".venv\\Scripts\\python.exe -B scripts\\run_overnight_3d.py . outputs\\overnight_3d_continuation --round v8 --group <GROUP>"
+  }
+}

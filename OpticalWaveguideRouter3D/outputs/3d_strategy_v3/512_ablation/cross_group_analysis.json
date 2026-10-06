@@ -1,0 +1,2519 @@
+{
+  "scale": 512,
+  "dataset": "LEGACY_512_SMOOTHED_P0 (existing synthetic 512 input; no real 1024 data used)",
+  "metric": "centerline close-pair count at 0.1 mm clearance; not loss, crosstalk or manufacturability",
+  "groups": {
+    "A_baseline_original": {
+      "generation_failure_cache": false,
+      "window_slack_mm": 0.0,
+      "final_collision_pairs": 44274,
+      "final_unresolved_pairs": 3,
+      "accepted_moves": 22,
+      "first_elevations": 22,
+      "relocations": 0,
+      "final_extra_length_mm": 8.405220067084883,
+      "step_length_delta_total_mm": 8.405220067108118,
+      "final_transition_count": 44,
+      "target_attempts": 50,
+      "unique_targets": 25,
+      "repeat_attempts": 25,
+      "repeated_targets": [
+        {
+          "pair": [
+            290,
+            433
+          ],
+          "attempts": 14
+        },
+        {
+          "pair": [
+            290,
+            291
+          ],
+          "attempts": 13
+        }
+      ],
+      "generation_cache_enabled": false,
+      "generation_cache_records": 0,
+      "generation_cache_zero_candidate_records": 0,
+      "generation_skip_events": 0,
+      "generation_skipped_target_count": 0,
+      "generated_candidates": 666,
+      "candidate_evaluations": 666,
+      "candidate_budget": 720,
+      "full_neighbor_checks": 335,
+      "zero_candidate_victim_attempts": 69,
+      "generation_failure_reasons": {
+        "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 68,
+        "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 1
+      },
+      "self_rejection_reasons": {
+        "SELF_AMBIGUOUS_CLEARANCE": 331
+      },
+      "full_rejection_reasons": {
+        "NO_STRICT_GLOBAL_DECREASE": 9
+      },
+      "no_acceptable_move_steps": 28,
+      "budget_used_percent": 92.5,
+      "stop_reason": "TARGET_LIMIT",
+      "timings": {
+        "initial_pair_scan_seconds": 14.764953300007619,
+        "assignment_seconds": 184.7652412999887,
+        "runtime_seconds": 199.7273334999336
+      },
+      "recheck_verdict": "PASS",
+      "recheck_checks": 130816,
+      "recheck_seconds": 24.927640700014308,
+      "moved_route_ids": [
+        34,
+        151,
+        152,
+        153,
+        154,
+        177,
+        185,
+        186,
+        265,
+        273,
+        274,
+        275,
+        301,
+        302,
+        338,
+        339,
+        340,
+        345,
+        348,
+        497,
+        498,
+        499
+      ]
+    },
+    "B_generation_cache_only": {
+      "generation_failure_cache": true,
+      "window_slack_mm": 0.0,
+      "final_collision_pairs": 43750,
+      "final_unresolved_pairs": 3,
+      "accepted_moves": 24,
+      "first_elevations": 24,
+      "relocations": 0,
+      "final_extra_length_mm": 8.8930039020197,
+      "step_length_delta_total_mm": 8.893003902046317,
+      "final_transition_count": 48,
+      "target_attempts": 27,
+      "unique_targets": 27,
+      "repeat_attempts": 0,
+      "repeated_targets": [],
+      "generation_cache_enabled": true,
+      "generation_cache_records": 53,
+      "generation_cache_zero_candidate_records": 19,
+      "generation_skip_events": 28,
+      "generation_skipped_target_count": 2,
+      "generated_candidates": 765,
+      "candidate_evaluations": 720,
+      "candidate_budget": 720,
+      "full_neighbor_checks": 364,
+      "zero_candidate_victim_attempts": 19,
+      "generation_failure_reasons": {
+        "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 18,
+        "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 1
+      },
+      "self_rejection_reasons": {
+        "SELF_AMBIGUOUS_CLEARANCE": 356
+      },
+      "full_rejection_reasons": {
+        "NO_STRICT_GLOBAL_DECREASE": 9
+      },
+      "no_acceptable_move_steps": 3,
+      "budget_used_percent": 100.0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "timings": {
+        "initial_pair_scan_seconds": 19.22134519997053,
+        "assignment_seconds": 190.3356291000964,
+        "runtime_seconds": 209.84818090009503
+      },
+      "recheck_verdict": "PASS",
+      "recheck_checks": 130816,
+      "recheck_seconds": 28.378959499998018,
+      "moved_route_ids": [
+        34,
+        151,
+        152,
+        153,
+        154,
+        177,
+        185,
+        186,
+        265,
+        273,
+        274,
+        275,
+        301,
+        302,
+        334,
+        338,
+        339,
+        340,
+        345,
+        348,
+        497,
+        498,
+        499,
+        500
+      ]
+    },
+    "C_window_slack_only": {
+      "generation_failure_cache": false,
+      "window_slack_mm": 1e-05,
+      "final_collision_pairs": 43161,
+      "final_unresolved_pairs": 3,
+      "accepted_moves": 23,
+      "first_elevations": 23,
+      "relocations": 0,
+      "final_extra_length_mm": 6.912198908685241,
+      "step_length_delta_total_mm": 6.9121989086983575,
+      "final_transition_count": 46,
+      "target_attempts": 50,
+      "unique_targets": 26,
+      "repeat_attempts": 24,
+      "repeated_targets": [
+        {
+          "pair": [
+            290,
+            291
+          ],
+          "attempts": 13
+        },
+        {
+          "pair": [
+            290,
+            433
+          ],
+          "attempts": 13
+        }
+      ],
+      "generation_cache_enabled": false,
+      "generation_cache_records": 0,
+      "generation_cache_zero_candidate_records": 0,
+      "generation_skip_events": 0,
+      "generation_skipped_target_count": 0,
+      "generated_candidates": 711,
+      "candidate_evaluations": 711,
+      "candidate_budget": 720,
+      "full_neighbor_checks": 711,
+      "zero_candidate_victim_attempts": 67,
+      "generation_failure_reasons": {
+        "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 2,
+        "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 65
+      },
+      "self_rejection_reasons": {},
+      "full_rejection_reasons": {
+        "NO_STRICT_GLOBAL_DECREASE": 9
+      },
+      "no_acceptable_move_steps": 27,
+      "budget_used_percent": 98.75,
+      "stop_reason": "TARGET_LIMIT",
+      "timings": {
+        "initial_pair_scan_seconds": 22.6209525000304,
+        "assignment_seconds": 351.76618919998873,
+        "runtime_seconds": 374.7198643999873
+      },
+      "recheck_verdict": "PASS",
+      "recheck_checks": 130816,
+      "recheck_seconds": 24.248416399932466,
+      "moved_route_ids": [
+        34,
+        151,
+        152,
+        153,
+        154,
+        177,
+        185,
+        186,
+        265,
+        273,
+        274,
+        275,
+        301,
+        302,
+        338,
+        339,
+        340,
+        345,
+        348,
+        497,
+        498,
+        499,
+        500
+      ]
+    },
+    "D_both_enabled": {
+      "generation_failure_cache": true,
+      "window_slack_mm": 1e-05,
+      "final_collision_pairs": 42909,
+      "final_unresolved_pairs": 3,
+      "accepted_moves": 24,
+      "first_elevations": 24,
+      "relocations": 0,
+      "final_extra_length_mm": 7.156090826145373,
+      "step_length_delta_total_mm": 7.156090826167471,
+      "final_transition_count": 48,
+      "target_attempts": 27,
+      "unique_targets": 27,
+      "repeat_attempts": 0,
+      "repeated_targets": [],
+      "generation_cache_enabled": true,
+      "generation_cache_records": 53,
+      "generation_cache_zero_candidate_records": 19,
+      "generation_skip_events": 26,
+      "generation_skipped_target_count": 2,
+      "generated_candidates": 765,
+      "candidate_evaluations": 720,
+      "candidate_budget": 720,
+      "full_neighbor_checks": 720,
+      "zero_candidate_victim_attempts": 19,
+      "generation_failure_reasons": {
+        "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 2,
+        "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 17
+      },
+      "self_rejection_reasons": {},
+      "full_rejection_reasons": {
+        "NO_STRICT_GLOBAL_DECREASE": 9
+      },
+      "no_acceptable_move_steps": 3,
+      "budget_used_percent": 100.0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "timings": {
+        "initial_pair_scan_seconds": 21.475618300028145,
+        "assignment_seconds": 351.56317099998705,
+        "runtime_seconds": 373.38475279998966
+      },
+      "recheck_verdict": "PASS",
+      "recheck_checks": 130816,
+      "recheck_seconds": 25.797928799991496,
+      "moved_route_ids": [
+        34,
+        151,
+        152,
+        153,
+        154,
+        177,
+        185,
+        186,
+        265,
+        273,
+        274,
+        275,
+        301,
+        302,
+        338,
+        339,
+        340,
+        345,
+        348,
+        436,
+        497,
+        498,
+        499,
+        500
+      ]
+    }
+  },
+  "acceptance_outcomes": {
+    "A_baseline_original": [
+      {
+        "step": 1,
+        "target": [
+          34,
+          177
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 2,
+        "target": [
+          9,
+          34
+        ],
+        "moved": 34,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 3,
+        "target": [
+          9,
+          177
+        ],
+        "moved": 177,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 4,
+        "target": [
+          265,
+          290
+        ],
+        "moved": 265,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 5,
+        "target": [
+          301,
+          302
+        ],
+        "moved": 302,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 6,
+        "target": [
+          301,
+          303
+        ],
+        "moved": 301,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 7,
+        "target": [
+          290,
+          345
+        ],
+        "moved": 345,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 8,
+        "target": [
+          9,
+          273
+        ],
+        "moved": 273,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 9,
+        "target": [
+          290,
+          348
+        ],
+        "moved": 348,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 10,
+        "target": [
+          9,
+          185
+        ],
+        "moved": 185,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 11,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 12,
+        "target": [
+          9,
+          186
+        ],
+        "moved": 186,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 13,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 14,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 15,
+        "target": [
+          9,
+          274
+        ],
+        "moved": 274,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 16,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 17,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 18,
+        "target": [
+          9,
+          275
+        ],
+        "moved": 275,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 19,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 20,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 21,
+        "target": [
+          9,
+          338
+        ],
+        "moved": 338,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 22,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 23,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 24,
+        "target": [
+          9,
+          339
+        ],
+        "moved": 339,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 25,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 26,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 27,
+        "target": [
+          151,
+          290
+        ],
+        "moved": 151,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 28,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 29,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 30,
+        "target": [
+          9,
+          340
+        ],
+        "moved": 340,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 31,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 32,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 33,
+        "target": [
+          152,
+          290
+        ],
+        "moved": 152,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 34,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 35,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 36,
+        "target": [
+          9,
+          497
+        ],
+        "moved": 497,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 37,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 38,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 39,
+        "target": [
+          153,
+          290
+        ],
+        "moved": 153,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 40,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 41,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 42,
+        "target": [
+          9,
+          498
+        ],
+        "moved": 498,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 43,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 44,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 45,
+        "target": [
+          154,
+          290
+        ],
+        "moved": 154,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 46,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 47,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 48,
+        "target": [
+          9,
+          499
+        ],
+        "moved": 499,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 49,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 50,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      }
+    ],
+    "B_generation_cache_only": [
+      {
+        "step": 1,
+        "target": [
+          34,
+          177
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 2,
+        "target": [
+          9,
+          34
+        ],
+        "moved": 34,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 3,
+        "target": [
+          9,
+          177
+        ],
+        "moved": 177,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 4,
+        "target": [
+          265,
+          290
+        ],
+        "moved": 265,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 5,
+        "target": [
+          301,
+          302
+        ],
+        "moved": 302,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 6,
+        "target": [
+          301,
+          303
+        ],
+        "moved": 301,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 7,
+        "target": [
+          290,
+          345
+        ],
+        "moved": 345,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 8,
+        "target": [
+          9,
+          273
+        ],
+        "moved": 273,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 9,
+        "target": [
+          290,
+          348
+        ],
+        "moved": 348,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 10,
+        "target": [
+          9,
+          185
+        ],
+        "moved": 185,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 11,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 12,
+        "target": [
+          9,
+          186
+        ],
+        "moved": 186,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 13,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 14,
+        "target": [
+          9,
+          274
+        ],
+        "moved": 274,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 15,
+        "target": [
+          9,
+          275
+        ],
+        "moved": 275,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 16,
+        "target": [
+          9,
+          338
+        ],
+        "moved": 338,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 17,
+        "target": [
+          9,
+          339
+        ],
+        "moved": 339,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 18,
+        "target": [
+          151,
+          290
+        ],
+        "moved": 151,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 19,
+        "target": [
+          9,
+          340
+        ],
+        "moved": 340,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 20,
+        "target": [
+          152,
+          290
+        ],
+        "moved": 152,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 21,
+        "target": [
+          9,
+          497
+        ],
+        "moved": 497,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 22,
+        "target": [
+          153,
+          290
+        ],
+        "moved": 153,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 23,
+        "target": [
+          9,
+          498
+        ],
+        "moved": 498,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 24,
+        "target": [
+          154,
+          290
+        ],
+        "moved": 154,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 25,
+        "target": [
+          9,
+          499
+        ],
+        "moved": 499,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 26,
+        "target": [
+          9,
+          500
+        ],
+        "moved": 500,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 27,
+        "target": [
+          290,
+          334
+        ],
+        "moved": 334,
+        "status": "ELEVATED"
+      }
+    ],
+    "C_window_slack_only": [
+      {
+        "step": 1,
+        "target": [
+          34,
+          177
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 2,
+        "target": [
+          9,
+          34
+        ],
+        "moved": 34,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 3,
+        "target": [
+          9,
+          177
+        ],
+        "moved": 177,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 4,
+        "target": [
+          265,
+          290
+        ],
+        "moved": 265,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 5,
+        "target": [
+          301,
+          302
+        ],
+        "moved": 302,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 6,
+        "target": [
+          301,
+          303
+        ],
+        "moved": 301,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 7,
+        "target": [
+          290,
+          345
+        ],
+        "moved": 345,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 8,
+        "target": [
+          9,
+          273
+        ],
+        "moved": 273,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 9,
+        "target": [
+          290,
+          348
+        ],
+        "moved": 348,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 10,
+        "target": [
+          9,
+          185
+        ],
+        "moved": 185,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 11,
+        "target": [
+          9,
+          186
+        ],
+        "moved": 186,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 12,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 13,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 14,
+        "target": [
+          9,
+          274
+        ],
+        "moved": 274,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 15,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 16,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 17,
+        "target": [
+          9,
+          275
+        ],
+        "moved": 275,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 18,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 19,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 20,
+        "target": [
+          9,
+          338
+        ],
+        "moved": 338,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 21,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 22,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 23,
+        "target": [
+          9,
+          339
+        ],
+        "moved": 339,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 24,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 25,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 26,
+        "target": [
+          151,
+          290
+        ],
+        "moved": 151,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 27,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 28,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 29,
+        "target": [
+          9,
+          340
+        ],
+        "moved": 340,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 30,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 31,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 32,
+        "target": [
+          152,
+          290
+        ],
+        "moved": 152,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 33,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 34,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 35,
+        "target": [
+          9,
+          497
+        ],
+        "moved": 497,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 36,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 37,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 38,
+        "target": [
+          153,
+          290
+        ],
+        "moved": 153,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 39,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 40,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 41,
+        "target": [
+          9,
+          498
+        ],
+        "moved": 498,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 42,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 43,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 44,
+        "target": [
+          154,
+          290
+        ],
+        "moved": 154,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 45,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 46,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 47,
+        "target": [
+          9,
+          499
+        ],
+        "moved": 499,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 48,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 49,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 50,
+        "target": [
+          9,
+          500
+        ],
+        "moved": 500,
+        "status": "ELEVATED"
+      }
+    ],
+    "D_both_enabled": [
+      {
+        "step": 1,
+        "target": [
+          34,
+          177
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 2,
+        "target": [
+          9,
+          34
+        ],
+        "moved": 34,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 3,
+        "target": [
+          9,
+          177
+        ],
+        "moved": 177,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 4,
+        "target": [
+          265,
+          290
+        ],
+        "moved": 265,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 5,
+        "target": [
+          301,
+          302
+        ],
+        "moved": 302,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 6,
+        "target": [
+          301,
+          303
+        ],
+        "moved": 301,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 7,
+        "target": [
+          290,
+          345
+        ],
+        "moved": 345,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 8,
+        "target": [
+          9,
+          273
+        ],
+        "moved": 273,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 9,
+        "target": [
+          290,
+          348
+        ],
+        "moved": 348,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 10,
+        "target": [
+          9,
+          185
+        ],
+        "moved": 185,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 11,
+        "target": [
+          9,
+          186
+        ],
+        "moved": 186,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 12,
+        "target": [
+          290,
+          291
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 13,
+        "target": [
+          290,
+          433
+        ],
+        "moved": null,
+        "status": "NO_ACCEPTABLE_MOVE"
+      },
+      {
+        "step": 14,
+        "target": [
+          9,
+          274
+        ],
+        "moved": 274,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 15,
+        "target": [
+          9,
+          275
+        ],
+        "moved": 275,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 16,
+        "target": [
+          9,
+          338
+        ],
+        "moved": 338,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 17,
+        "target": [
+          9,
+          339
+        ],
+        "moved": 339,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 18,
+        "target": [
+          151,
+          290
+        ],
+        "moved": 151,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 19,
+        "target": [
+          9,
+          340
+        ],
+        "moved": 340,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 20,
+        "target": [
+          152,
+          290
+        ],
+        "moved": 152,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 21,
+        "target": [
+          9,
+          497
+        ],
+        "moved": 497,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 22,
+        "target": [
+          153,
+          290
+        ],
+        "moved": 153,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 23,
+        "target": [
+          9,
+          498
+        ],
+        "moved": 498,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 24,
+        "target": [
+          154,
+          290
+        ],
+        "moved": 154,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 25,
+        "target": [
+          9,
+          499
+        ],
+        "moved": 499,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 26,
+        "target": [
+          9,
+          500
+        ],
+        "moved": 500,
+        "status": "ELEVATED"
+      },
+      {
+        "step": 27,
+        "target": [
+          290,
+          436
+        ],
+        "moved": 436,
+        "status": "ELEVATED"
+      }
+    ]
+  },
+  "terminal_route_differences": {
+    "A_baseline_original|B_generation_cache_only": [
+      334,
+      500
+    ],
+    "A_baseline_original|C_window_slack_only": [
+      34,
+      151,
+      152,
+      153,
+      154,
+      177,
+      185,
+      186,
+      265,
+      273,
+      274,
+      275,
+      301,
+      302,
+      338,
+      339,
+      340,
+      345,
+      348,
+      497,
+      498,
+      499,
+      500
+    ],
+    "A_baseline_original|D_both_enabled": [
+      34,
+      151,
+      152,
+      153,
+      154,
+      177,
+      185,
+      186,
+      265,
+      273,
+      274,
+      275,
+      301,
+      302,
+      338,
+      339,
+      340,
+      345,
+      348,
+      436,
+      497,
+      498,
+      499,
+      500
+    ],
+    "B_generation_cache_only|C_window_slack_only": [
+      34,
+      151,
+      152,
+      153,
+      154,
+      177,
+      185,
+      186,
+      265,
+      273,
+      274,
+      275,
+      301,
+      302,
+      334,
+      338,
+      339,
+      340,
+      345,
+      348,
+      497,
+      498,
+      499,
+      500
+    ],
+    "B_generation_cache_only|D_both_enabled": [
+      34,
+      151,
+      152,
+      153,
+      154,
+      177,
+      185,
+      186,
+      265,
+      273,
+      274,
+      275,
+      301,
+      302,
+      334,
+      338,
+      339,
+      340,
+      345,
+      348,
+      436,
+      497,
+      498,
+      499,
+      500
+    ],
+    "C_window_slack_only|D_both_enabled": [
+      436
+    ]
+  },
+  "skipped_pairs_detail": {
+    "B_generation_cache_only": [
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 13,
+        "layout_version": 10,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 14,
+        "layout_version": 10,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 15,
+        "layout_version": 11,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 15,
+        "layout_version": 11,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 16,
+        "layout_version": 12,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 16,
+        "layout_version": 12,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 17,
+        "layout_version": 13,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 17,
+        "layout_version": 13,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 18,
+        "layout_version": 14,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 18,
+        "layout_version": 14,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 19,
+        "layout_version": 15,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 19,
+        "layout_version": 15,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 20,
+        "layout_version": 16,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 20,
+        "layout_version": 16,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 21,
+        "layout_version": 17,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 21,
+        "layout_version": 17,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 22,
+        "layout_version": 18,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 22,
+        "layout_version": 18,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 23,
+        "layout_version": 19,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 23,
+        "layout_version": 19,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 24,
+        "layout_version": 20,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 24,
+        "layout_version": 20,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 25,
+        "layout_version": 21,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 25,
+        "layout_version": 21,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 26,
+        "layout_version": 22,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 26,
+        "layout_version": 22,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 27,
+        "layout_version": 23,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 27,
+        "layout_version": 23,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      }
+    ],
+    "D_both_enabled": [
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 15,
+        "layout_version": 11,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 15,
+        "layout_version": 11,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 16,
+        "layout_version": 12,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 16,
+        "layout_version": 12,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 17,
+        "layout_version": 13,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 17,
+        "layout_version": 13,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 18,
+        "layout_version": 14,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 18,
+        "layout_version": 14,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 19,
+        "layout_version": 15,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 19,
+        "layout_version": 15,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 20,
+        "layout_version": 16,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 20,
+        "layout_version": 16,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 21,
+        "layout_version": 17,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 21,
+        "layout_version": 17,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 22,
+        "layout_version": 18,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 22,
+        "layout_version": 18,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 23,
+        "layout_version": 19,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 23,
+        "layout_version": 19,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 24,
+        "layout_version": 20,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 24,
+        "layout_version": 20,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 25,
+        "layout_version": 21,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 25,
+        "layout_version": 21,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 26,
+        "layout_version": 22,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 26,
+        "layout_version": 22,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          291
+        ],
+        "step_index": 27,
+        "layout_version": 23,
+        "cached_generated_counts": {
+          "290": 0,
+          "291": 0
+        }
+      },
+      {
+        "target_pair": [
+          290,
+          433
+        ],
+        "step_index": 27,
+        "layout_version": 23,
+        "cached_generated_counts": {
+          "290": 0,
+          "433": 0
+        }
+      }
+    ]
+  },
+  "relations": {
+    "group_A_matches_rev2_C": {
+      "final_collision_pairs": true,
+      "accepted_moves": true,
+      "candidate_evaluations": true,
+      "decisions_sha256_identical": true,
+      "terminal_routes_identical": true
+    },
+    "group_B_equals_historical_strategy_B": {
+      "step_sequence_identical": true,
+      "terminal_routes_identical": true,
+      "ledger_fields": {
+        "final_collision_pairs": [
+          43750,
+          43750
+        ],
+        "accepted_moves": [
+          24,
+          24
+        ],
+        "candidate_evaluations": [
+          720,
+          720
+        ],
+        "final_extra_length_mm": [
+          8.8930039020197,
+          8.8930039020197
+        ]
+      },
+      "interpretation": "on this 512 input the structural cache removes the two repeated zero-candidate targets, and with zero relocation acceptances the C path then follows the same trajectory as the historical strategy B; this is a mechanism result, not a target that was tuned for"
+    },
+    "group_B_not_adjacent_to_prev_AB": "the historical 512 B terminal (43,750) and the historical revised-C terminal (44,274) must not be described as tied; they are different strategies, and this round reproduces both separately (A=revised C, B=historical B trajectory)."
+  },
+  "note": "A: baseline original. B: structural generation cache only. C: window slack only. D: both. Group letters are this round's feature ablation, not the historical strategy letters."
+}

@@ -1,0 +1,158 @@
+{
+  "label": "F56",
+  "channels": 512,
+  "route_count": 512,
+  "expected_routes": 512,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 3.2946845970804954,
+  "p95_loss_db": 4.900387327122134,
+  "max_loss_db": 5.499482735795704,
+  "min_loss_db": 0.9567207817456451,
+  "std_loss_db": 1.2795261372928666,
+  "worst_route_id": 34,
+  "mean_straight_loss_db": 0.5912785913136311,
+  "mean_bend_loss_db": 2.138393155919491,
+  "mean_crossing_loss_db": 0.5650128498473731,
+  "sum_straight_loss_db": 302.73463875257954,
+  "sum_bend_loss_db": 1094.8572958307736,
+  "sum_crossing_loss_db": 289.28657912185525,
+  "mean_straight_length_mm": 118.25571826272622,
+  "mean_arc_length_mm": 10.555833128370391,
+  "mean_total_length_mm": 128.8115513910966,
+  "sum_total_length_mm": 65951.51431224137,
+  "unique_crossing_events": 46001,
+  "per_route_crossing_events": 92002,
+  "mean_crossing_count": 179.69140625,
+  "max_crossing_count": 341,
+  "min_crossing_angle_deg": 1.3666334456665137,
+  "mean_crossing_angle_deg": 62.34300948223274,
+  "spacing_violation_count": 1231,
+  "spacing_violation_pairs": 1231,
+  "min_spacing_mm": 0.00045104291248869704,
+  "contact_touch_count": 0,
+  "contact_overlap_count": 0,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "6.0": 510,
+    "5.0": 2
+  },
+  "bend_count_distribution": {
+    "2": 512
+  },
+  "runtime_s": 207.43370870000217,
+  "stop_reason": "completed",
+  "order_strategy": "legacy",
+  "candidate_limit": 8,
+  "radius_policy": "adaptive",
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 112,
+        "candidates_considered": 1792,
+        "mean_candidate_cost": 4.26779376819495
+      },
+      "above": {
+        "placed": 112,
+        "candidates_considered": 1776,
+        "mean_candidate_cost": 4.3067789402413945
+      },
+      "below2above": {
+        "placed": 115,
+        "candidates_considered": 2760,
+        "mean_candidate_cost": 2.4281811659052157
+      },
+      "above2below": {
+        "placed": 173,
+        "candidates_considered": 4152,
+        "mean_candidate_cost": 2.5878932733019835
+      }
+    },
+    "order_strategy": "legacy"
+  },
+  "endpoint_changes": 0,
+  "geometry_family": {
+    "freeform": 288,
+    "u": 224
+  },
+  "config": {
+    "settings": {
+      "candidate_limit": 8,
+      "radii": [
+        5.0,
+        6.0
+      ],
+      "radius_policy": "adaptive",
+      "enable_freeform": true,
+      "freeform_shortlist": 8,
+      "position_penalty": 0.01
+    },
+    "order_strategy": "legacy",
+    "allow_port_reorder": false,
+    "plan_stats": {
+      "passes": {
+        "passes": {},
+        "below": {
+          "placed": 112,
+          "candidates_considered": 1792,
+          "mean_candidate_cost": 4.26779376819495
+        },
+        "above": {
+          "placed": 112,
+          "candidates_considered": 1776,
+          "mean_candidate_cost": 4.3067789402413945
+        },
+        "below2above": {
+          "placed": 115,
+          "candidates_considered": 2760,
+          "mean_candidate_cost": 2.4281811659052157
+        },
+        "above2below": {
+          "placed": 173,
+          "candidates_considered": 4152,
+          "mean_candidate_cost": 2.5878932733019835
+        }
+      },
+      "order_strategy": "legacy"
+    }
+  },
+  "angle_histogram": [
+    53,
+    789,
+    2097,
+    4715,
+    3636,
+    7435,
+    27276
+  ],
+  "angle_histogram_bins": [
+    0.0,
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    45.0,
+    60.0,
+    90.0
+  ],
+  "crossing_sensitivity": {
+    "factor_0.5": {
+      "mean_loss_db": 3.241508390132521,
+      "p95_loss_db": 4.897185024435104,
+      "max_loss_db": 5.476640437266772
+    },
+    "factor_1": {
+      "mean_loss_db": 3.2946845970804954,
+      "p95_loss_db": 4.900387327122134,
+      "max_loss_db": 5.499482735795704
+    },
+    "factor_2": {
+      "mean_loss_db": 3.401037010976443,
+      "p95_loss_db": 4.918791707734161,
+      "max_loss_db": 5.54516733285357
+    }
+  }
+}

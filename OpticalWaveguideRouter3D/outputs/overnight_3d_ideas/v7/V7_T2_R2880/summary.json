@@ -1,0 +1,204 @@
+{
+  "scale": 512,
+  "round": "v7",
+  "group": "V7_T2_R2880",
+  "strategy": "V7_T2",
+  "stats": {
+    "group": "V7_T2_R2880",
+    "strategy": "V7_T2",
+    "strategy_spec": {
+      "name": "V7_T2",
+      "target_policy": "LEGACY",
+      "evaluation_policy": "E2_ORDERED_K16",
+      "traversal_policy": "COVERAGE",
+      "max_targets": 2000,
+      "k_per_target": 16,
+      "family_round_robin": false,
+      "relocation_side_reserve": 0,
+      "waiting_age": false,
+      "route_coverage": true,
+      "multi_anchor": false,
+      "exact_dedup": false,
+      "decision_cache": false,
+      "return_action": false,
+      "cache_structural_skips": true,
+      "window_slack_mm": 1e-05,
+      "notes": ""
+    },
+    "mode": "R",
+    "appended_candidate_budget": 2880,
+    "max_targets": 2000,
+    "start_kind": "main",
+    "control": "v6",
+    "initial_collision_pairs": 42909,
+    "final_collision_pairs": 24385,
+    "final_unresolved_pairs": 2,
+    "net_collision_reduction": 18524,
+    "accepted_moves": 170,
+    "first_elevations": 170,
+    "relocations": 0,
+    "returns": 0,
+    "first_elevation_net_reduction": 18524,
+    "relocation_net_reduction": 0,
+    "return_net_reduction": 0,
+    "total_old_collisions_removed": 23510,
+    "total_new_collisions_created": 4986,
+    "generated_candidates": 12978,
+    "candidate_evaluations": 2880,
+    "full_neighbor_checks": 2736,
+    "full_acceptance_passes": 2647,
+    "executed_moves": 170,
+    "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+    "target_attempts": 204,
+    "evaluations_per_action": 16.941176470588236,
+    "net_reduction_per_evaluation": 6.4319444444444445,
+    "relocation_candidate_evaluations": 144,
+    "not_evaluated_candidates": 10098,
+    "deferred_prefix_no_winner": 10,
+    "dedup_removed_duplicates": 0,
+    "decision_cache_hits": 0,
+    "coverage": {
+      "unique_target_pairs": 204,
+      "target_attempts": 204,
+      "repeated_target_attempts": 0,
+      "unique_target_sides": 408,
+      "unique_evaluated_target_sides": 229,
+      "unique_routes_attempted": 352,
+      "unique_routes_evaluated": 229,
+      "unique_routes_touched_by_a_move": 170,
+      "max_attempts_on_one_route": 10,
+      "target_pair_visit_histogram": {
+        "1": 204
+      },
+      "elevation_state_class_attempts": {
+        "UU": 194,
+        "UE": 0,
+        "EE": 10
+      },
+      "elevation_state_class_moves": {
+        "UU": 170,
+        "UE": 0,
+        "EE": 0
+      },
+      "elevation_state_class_evaluations": {
+        "UU": 2736,
+        "UE": 0,
+        "EE": 144
+      },
+      "elevation_state_class_first_evaluation_step": {
+        "UU": 3,
+        "UE": null,
+        "EE": 193
+      },
+      "elevation_state_class_deferred": {
+        "UU": 1,
+        "UE": 0,
+        "EE": 9
+      },
+      "elevation_state_class_target_pairs": {
+        "UU": 194,
+        "UE": 0,
+        "EE": 10
+      }
+    },
+    "stage_length_delta_mm": 45.80390865947993,
+    "final_extra_length_vs_planar_mm": 52.959999485552544,
+    "start_extra_length_vs_planar_mm": 7.156090826072614,
+    "final_transition_count": 388,
+    "final_elevated_route_count": 194,
+    "layer_route_counts": {
+      "0": 318,
+      "1": 181,
+      "2": 13
+    },
+    "basic_rejection_reason_counts": {
+      "TARGET_NOT_CLEARED": 144
+    },
+    "full_rejection_reason_counts": {
+      "NO_STRICT_GLOBAL_DECREASE": 65,
+      "UNRESOLVED_NEIGHBOR": 24
+    },
+    "generation_failure_reason_counts": {
+      "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 52
+    },
+    "budget_checkpoints": {
+      "720": {
+        "candidate_evaluations": 720,
+        "collision_pair_count": 33891,
+        "cumulative_removed": 9805,
+        "cumulative_created": 787
+      },
+      "1440": {
+        "candidate_evaluations": 1440,
+        "collision_pair_count": 28944,
+        "cumulative_removed": 16109,
+        "cumulative_created": 2144
+      },
+      "2880": {
+        "candidate_evaluations": 2880,
+        "collision_pair_count": 24385,
+        "cumulative_removed": 23510,
+        "cumulative_created": 4986
+      }
+    },
+    "timings": {
+      "initial_pair_scan_seconds": 0.0,
+      "assignment_seconds": 2087.625830600038,
+      "runtime_seconds": 2088.847896500025,
+      "run_seconds_including_recheck": 2190.9569362999173
+    },
+    "recheck": {
+      "reloaded_route_count": 512,
+      "collision_pair_set_matches_incremental": true,
+      "unresolved_pair_set_matches_incremental": true,
+      "checks": 130816,
+      "recheck_seconds": 89.91918409999926,
+      "final_transition_count": 388,
+      "elevated_route_count": 194,
+      "layer_route_counts": {
+        "0": 318,
+        "1": 181,
+        "2": 13
+      },
+      "length_ledger": {
+        "saved_final_total_length_mm": 70884.26965663237,
+        "recorded_final_total_length_mm": 70884.26965663237,
+        "total_length_matches": true,
+        "stage_length_delta_mm": 45.80390865947993,
+        "stage_length_delta_matches": true,
+        "step_length_delta_sum_mm": 45.80390865944317,
+        "step_delta_sum_matches_stage": true,
+        "final_extra_length_vs_planar_mm": 52.959999485552544,
+        "recorded_final_extra_length_vs_planar_mm": 52.959999485552544,
+        "final_extra_length_matches": true
+      },
+      "final_pair_state_distribution": {
+        "both_routes_unelevated": 14534,
+        "single_route_elevated": 4499,
+        "both_routes_elevated": 5352,
+        "total": 24385
+      },
+      "verdict": "PASS"
+    },
+    "recheck_geometry": {
+      "endpoint_invariant": true,
+      "joins_C0_C1_direction": true,
+      "transition_radius_pass": true,
+      "xy_projection_preserved": true,
+      "single_elevation_structure": true,
+      "failures": []
+    },
+    "recheck_length_ledger": {
+      "saved_final_total_length_mm": 70884.26965663237,
+      "recorded_final_total_length_mm": 70884.26965663237,
+      "total_length_matches": true,
+      "stage_length_delta_mm": 45.80390865947993,
+      "stage_length_delta_matches": true,
+      "step_length_delta_sum_mm": 45.80390865944317,
+      "step_delta_sum_matches_stage": true,
+      "final_extra_length_vs_planar_mm": 52.959999485552544,
+      "recorded_final_extra_length_vs_planar_mm": 52.959999485552544,
+      "final_extra_length_matches": true
+    }
+  }
+}

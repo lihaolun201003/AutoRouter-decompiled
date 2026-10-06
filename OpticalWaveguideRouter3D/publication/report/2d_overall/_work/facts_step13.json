@@ -1,0 +1,548 @@
+{
+  "topic": "Step 13 固定端点与自由弯角路径 + 几何修复与统计口径（第 4、5 章事实卡）",
+  "facts": [
+    {
+      "id": "F-13-01",
+      "claim": "端点冻结：全部 6 方案 × 2 规模的 endpoint_changes 均为 0；逐路 sx/sy/lx/ly 与方案 A 的最大偏差 ≤1e-9（按 per_route.csv 复算）",
+      "value": "0",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#endpoint_changes；{256,512}/per_route.csv（复算）",
+      "scale": "256/512",
+      "caliber": "逐路端点坐标与方案 A 对比",
+      "note": "端口槽位交换关闭（allow_port_reorder=False）；冻结的是方案 A 的算法输出几何，不是外部真实坐标快照"
+    },
+    {
+      "id": "F-13-02",
+      "claim": "六方案功能定义（源码 docstring 与出版表注）",
+      "value": "A=原版几何（端点来源）；R5U=固定端点+U 型+R5；D0=每路优先 R6、几何不可行才回退 R5（单候选、无搜索）；D56=U 型+多候选自适应 R5/R6；F5=跨侧自由弯角 S 形、半径仅 R5，同侧保留 U 型；F56=同上、半径候选 R5/R6",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/step13.py#L12-L20；OpticalWaveguideRouter3D/publication/tables/t61_step13_main.tex#表注",
+      "scale": "256/512",
+      "caliber": "方案定义",
+      "note": "D0/D56/R5U 的字母数字组合本身在资料中没有正式命名说明，只能按上述功能定义使用"
+    },
+    {
+      "id": "F-13-03",
+      "claim": "自由弯角几何定义：直线引出段 + 圆弧（转角 α）+ 斜向直线 + 圆弧（转角 −α）+ 直线引入段；仅用于跨上下两侧连接（sy≠ly），同侧保留 U 型",
+      "value": "—",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/freeform.py#L1-L32",
+      "scale": "256/512",
+      "caliber": "路径族定义",
+      "note": "端点切线仍垂直于板边，连接身份与端点不变"
+    },
+    {
+      "id": "F-13-04",
+      "claim": "自由弯角候选网格：转角绝对值 7 档 {5,10,20,30,45,60,75}° × 正负号 = 14 个带符号角，t0 分配比例 3 档 {0,0.5,1}，再乘半径档；经几何合法性筛选后按『不含交叉的自损耗』取前 8 个做完整评分",
+      "value": "14 × 3 × 半径档；shortlist=8",
+      "unit": "候选",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/freeform.py#L51-L53；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fixed_endpoints_and_freeform.md#L105-L106",
+      "scale": "256/512",
+      "caliber": "候选生成",
+      "note": "freeform_shortlist=8、candidate_limit=8"
+    },
+    {
+      "id": "F-13-05",
+      "claim": "实际被选中的自由弯角只在 ±5/±10/±20/±30/±45° 上；±60° 与 ±75° 在本批数据中一次都未被选中；t0_fraction 三档均被使用",
+      "value": "256：144 条 freeform，t0={0:65,0.5:55,1:24}",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/F56/per_route.csv（复算 alpha_deg、t0_fraction 分布）；512/F56/per_route.csv",
+      "scale": "256/512",
+      "caliber": "逐路参数统计",
+      "note": "512：288 条 freeform，t0={0:122,0.5:131,1:35}"
+    },
+    {
+      "id": "F-13-06",
+      "claim": "自由弯角的硬约束：斜线水平方向必须指向终点一侧，普适式 sign(α) = −sign(σ)·sign(Dx)（σ=sign(ly−sy)）；Dx=0 在该路径族内无解，必须回退 U 型",
+      "value": "—",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/freeform.py#L26-L29；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L224",
+      "scale": "256/512",
+      "caliber": "几何约束",
+      "note": "旧报告的『终点在右必须 α<0』只对 σ=+1 成立"
+    },
+    {
+      "id": "F-13-07",
+      "claim": "σ=−1（自上而下）的跨侧路线数：256 为 75 条、512 为 173 条；σ=+1 分别为 69 与 115 条",
+      "value": "256: 75/69；512: 173/115",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/F56/per_route.csv（复算 ly_mm<sy_mm 的条数）",
+      "scale": "256/512",
+      "caliber": "逐路几何统计",
+      "note": "σ 只对跨侧连接有定义，75+69=144、173+115=288 与 freeform 条数一致"
+    },
+    {
+      "id": "F-13-08",
+      "claim": "几何族划分：F5/F56 中跨侧连接改用自由弯角，同侧保留 U 型",
+      "value": "256：freeform 144 / u 112；512：freeform 288 / u 224",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/F5/summary.json#geometry_family；{256,512}/F56/summary.json#geometry_family；{256,512}/radius_compare.csv#geometry_F56",
+      "scale": "256/512",
+      "caliber": "几何族计数",
+      "note": "A/R5U/D0/D56 全部为 U 型（256 与 512）"
+    },
+    {
+      "id": "F-13-09",
+      "claim": "D0 的半径回退：每路优先 R6，几何不可行才回退 R5",
+      "value": "256：R6×243 + R5×13；512：R6×502 + R5×10",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#radius_distribution；{256,512}/D0/per_route.csv（复算回退路线号）",
+      "scale": "256/512",
+      "caliber": "逐路半径",
+      "note": "256 回退 R5 的路线号：28,29,48,49,50,64,65,66,76,164,220,221,229；512：36,60,61,76,164,209,292,420,459,460"
+    },
+    {
+      "id": "F-13-10",
+      "claim": "D56（多候选自适应）的半径分布",
+      "value": "256：全 R6（256 条）；512：R6×510 + R5×2（#60、#61）",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#radius_distribution",
+      "scale": "256/512",
+      "caliber": "逐路半径",
+      "note": "512 的两条 R5 路线与 F56 完全相同"
+    },
+    {
+      "id": "F-13-11",
+      "claim": "F56 的自由弯角路线全部选到 R6：256 为 144/144，512 为 288/288；F56 中仅 #60、#61（512）使用 R5，二者都是 U 型路线",
+      "value": "0",
+      "unit": "条 freeform 用 R5",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/F56/per_route.csv（复算 freeform 行的 radius_mm）；512/F56/per_route.csv",
+      "scale": "256/512",
+      "caliber": "逐路半径×几何族",
+      "note": "F5（只允许 R5）是与之对应的半径对照"
+    },
+    {
+      "id": "F-13-12",
+      "claim": "D56 与 F56 的逐路半径 100% 相同（256：256/256；512：512/512，含用 R5 的 #60、#61 也相同）",
+      "value": "1.0",
+      "unit": "一致比例",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/radius_compare.csv#same_radius（256 行/512 行全部 True）",
+      "scale": "256/512",
+      "caliber": "逐路半径对照",
+      "note": "因此 D56→F56 的均值差可归因于路径结构而非半径优势"
+    },
+    {
+      "id": "F-13-13",
+      "claim": "256 补修后主结果（平均/P95/最大，dB）",
+      "value": "A 5.2786/6.1318/6.3333；R5U 5.2778/6.1310/6.3222；D0 4.3815/5.1735/5.3638；D56 4.3393/5.1587/5.3462；F5 3.4981/5.5981/5.9980；F56 2.9703/4.6545/5.0783",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/comparison.csv",
+      "scale": "256",
+      "caliber": "解析物理统计（一次布局内逐路统计）",
+      "note": "全部方案 256/256 完整连接、未布通 0、单路几何违规 0、重合 0"
+    },
+    {
+      "id": "F-13-14",
+      "claim": "512 补修后主结果（平均/P95/最大，dB）",
+      "value": "A 5.5162/6.3510/6.5773；R5U 5.5167/6.3484/6.5780；D0 4.5747/5.3886/5.6207；D56 4.5607/5.3886/5.6217；F5 3.8261/5.8453/6.4459；F56 3.2947/4.9004/5.4995",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/512/comparison.csv",
+      "scale": "512",
+      "caliber": "解析物理统计",
+      "note": "全部方案 512/512 完整连接、未布通 0、单路几何违规 0、重合 0"
+    },
+    {
+      "id": "F-13-15",
+      "claim": "F56 相对 R5U 的平均与最大损耗变化",
+      "value": "256：平均 −2.3075 dB（−43.72%）、最大 −1.2439 dB（−19.67%）；512：平均 −2.2220 dB（−40.28%）、最大 −1.0785 dB（−16.40%）",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/acceptance.json#mean_delta_vs_R5U / max_delta_vs_R5U",
+      "scale": "256/512",
+      "caliber": "相对 R5U 基线的方案级差值",
+      "note": "acceptance.json 以 R5U 为基线"
+    },
+    {
+      "id": "F-13-16",
+      "claim": "D0 相对 R5U：收益几乎全部来自半径（弯曲损耗）",
+      "value": "256：平均 −0.8963、最大 −0.9584 dB；512：平均 −0.9420、最大 −0.9573 dB",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/acceptance.json#mean_delta_vs_R5U / max_delta_vs_R5U",
+      "scale": "256/512",
+      "caliber": "相对 R5U 基线",
+      "note": "同时含半径改动与重新布线两项变化，不是纯参数收益"
+    },
+    {
+      "id": "F-13-17",
+      "claim": "多候选自适应（D56）相对单候选半径回退（D0）的额外收益很小，代价是约 10 倍运行时间",
+      "value": "256：−0.0421 dB（2.1 s → 23.5 s）；512：−0.0140 dB（8.3 s → 91.3 s）",
+      "unit": "dB / s",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv（mean_loss_db 与 runtime_s 相减）",
+      "scale": "256/512",
+      "caliber": "单次实测运行时间",
+      "note": "运行时间只有一次记录，只描述该次实测"
+    },
+    {
+      "id": "F-13-18",
+      "claim": "损耗分解（平均逐路，dB）：自由弯角以弯曲损耗换交叉损耗",
+      "value": "256：弯曲 4.5228→2.1202（−53.1%）、交叉 0.1278→0.2659（+108%）、直线 0.6271→0.5842；512：弯曲 4.5587→2.1384（−53.1%）、交叉 0.3227→0.5650（+75%）、直线 0.6353→0.5913",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#mean_bend_loss_db / mean_crossing_loss_db / mean_straight_loss_db",
+      "scale": "256/512",
+      "caliber": "解析物理统计（R5U → F56）",
+      "note": "交叉项绝对高度受交叉损耗近似表限制（见 unverified）"
+    },
+    {
+      "id": "F-13-19",
+      "claim": "唯一交叉事件数随自由弯角上升",
+      "value": "256：R5U 9498 → F56 10466（+10.2%），A 9468；512：R5U 43413 → F56 46001（+6.0%），A 43393",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#unique_crossing_events",
+      "scale": "256/512",
+      "caliber": "（路线对,位置）聚类后的事件数",
+      "note": "F5 与 F56 分别为 10320 / 45961"
+    },
+    {
+      "id": "F-13-20",
+      "claim": "小角度交叉：自由弯角引入了大量小角交叉",
+      "value": "256：<5° 0→22、<10° 0→151，最小交叉角 19.95°→1.94°；512：<5° 0→53、<10° 3→842，最小交叉角 7.24°→1.37°",
+      "unit": "个 / °",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#crossings_under_10deg / min_crossing_angle_deg；{256,512}/F56/crossing_events.csv（复算 <5°）",
+      "scale": "256/512",
+      "caliber": "事件级（按位置聚类）",
+      "note": "按逐路累计口径会翻倍，两者不可混用"
+    },
+    {
+      "id": "F-13-21",
+      "claim": "近并行间距不足（阈值 = 线宽 + 标称间隔：256 为 0.30 mm、512 为 0.175 mm，为实验假设）随自由弯角上升，但原版 A 自身就不满足该阈值",
+      "value": "256：A 393、R5U 379、D0 78、D56 37、F5 576、F56 415；512：A 692、R5U 711、D0 498、D56 525、F5 1333、F56 1231",
+      "unit": "路线对",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#spacing_violation_count",
+      "scale": "256/512",
+      "caliber": "按路线对计 0/1",
+      "note": "阈值是实验假设，不代表制造规范；因此不能写成『自由弯角导致间距不合规』"
+    },
+    {
+      "id": "F-13-22",
+      "claim": "总长度随自由弯角下降约 9.3%",
+      "value": "256：35924.7 → 32598.1 mm；512：72753.2 → 65951.5 mm",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#sum_total_length_mm",
+      "scale": "256/512",
+      "caliber": "全网总长（R5U → F56）",
+      "note": "直线损耗均值同步略降"
+    },
+    {
+      "id": "F-13-23",
+      "claim": "平均总弯角（补修更正后的值）",
+      "value": "256：A/R5U 170.846°、D0/D56 169.669°、F5 100.195°、F56 100.234°；512：A/R5U 172.201°、D0/D56 170.207°、F5 100.723°、F56 100.918°",
+      "unit": "°",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#mean_bend_total_deg",
+      "scale": "256/512",
+      "caliber": "逐路弯角合计的均值",
+      "note": "旧报告 256 行写的 180.0°/100.7° 有误，512 行正确"
+    },
+    {
+      "id": "F-13-24",
+      "claim": "平均总弯角低于 180° 的成因与条数：0<dx<2R 时原版把两段非完整圆弧在中点相接，转角合计 2·arccos((R−dx/2)/R)<180°",
+      "value": "256：31 条（全部方案）；512：A/R5U 58 条、D0/D56/F56 94 条",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/*/per_route.csv（复算 0<dx<2R 条数）；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L226-L231",
+      "scale": "256/512",
+      "caliber": "逐路几何统计",
+      "note": "阈值随半径变化，故 R6 方案的小 dx 路线数更多"
+    },
+    {
+      "id": "F-13-25",
+      "claim": "最差路线编号：256 的 A/R5U/D0/D56 为 #44，F5/F56 为 #34；512 的 A/R5U/D0/D56 为 #287，F5/F56 为 #34",
+      "value": "—",
+      "unit": "路线号",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#worst_route_id",
+      "scale": "256/512",
+      "caliber": "逐路最大总损耗所在路线",
+      "note": "F56 把最差路线从原版最差路线转移到了另一条"
+    },
+    {
+      "id": "F-13-26",
+      "claim": "原版最差路线在自由弯角方案下的损耗",
+      "value": "256 #44：A 6.3333、R5U 6.3222、D0 5.3638、D56 5.3462、F56 3.7512 dB；512 #287：A 6.5773、R5U 6.5780、D0 5.6207、D56 5.6217、F56 4.3308 dB",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/*/per_route.csv（按 route_id 取值）",
+      "scale": "256/512",
+      "caliber": "逐路总损耗",
+      "note": "F56 时 #44/#287 已不是最差路线"
+    },
+    {
+      "id": "F-13-27",
+      "claim": "256 F56 因修复而重新布线的代价：48 条路线改变，全部发生在自由弯角候选之间（几何族与半径不变），最大单路变化 +0.1798 dB（#7）",
+      "value": "方案平均 +0.001403 dB（2.9688949→2.9702981），最大损耗 5.0782978 不变",
+      "unit": "dB / 条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/per_route_delta.csv（F56 段，复算 changed 与 delta_loss_db）",
+      "scale": "256",
+      "caliber": "新旧产物逐路对照",
+      "note": "#7：交叉 124→155、损耗 3.3353→3.5150；#31：3.5218→3.5281；其余 46 条 |Δ|≤0.021 dB"
+    },
+    {
+      "id": "F-13-28",
+      "claim": "除 256 F56 外，修复未改变任何已存方案的结果：其余 11 个『规模×方案』组合逐路 delta_loss_db 全为 0、changed 全为 False",
+      "value": "0",
+      "unit": "条改变",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/per_route_delta.csv（复算 A/R5U/D0/D56/F5 与 512 全部方案）",
+      "scale": "256/512",
+      "caliber": "新旧产物逐路对照",
+      "note": "256 F56 是唯一有非零差值的组合"
+    },
+    {
+      "id": "F-13-29",
+      "claim": "旧 256 F56 存在 1 处真实重合（几何违规）：路线 #7 与 #31 的斜线段共线于 x+y=149.9，重叠长度 152.007142675 mm",
+      "value": "1 处 / 152.007142675 mm",
+      "unit": "处 / mm",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/legacy_scheme_scan.csv#256,F56（overlap_count=1、overlap_pairs=[[7,31]]、legally_valid=False）；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L18,L33-L42",
+      "scale": "256",
+      "caliber": "路线级重合事件",
+      "note": "旧产物 outputs/opt2d_step13/256/comparison.csv 把它记为 overlap=0、geometry_issue_count=0"
+    },
+    {
+      "id": "F-13-30",
+      "claim": "重合几何的独立复算（本次核查）：由旧 256 F56 per_route.csv 的 sx/sy/lx/ly、α=+45°、R=6、t0=0.5 重建，两弧横向位移 R(cosα−1)=−1.757359 mm；斜线长 L=(2R(cosα−1)−Dx)/sinα，#7（Dx=−111.0）为 152.007143 mm、#31（Dx=−128.4）为 176.614459 mm；两斜线所在直线同为 x+y=149.9，故 #31 完整包含 #7，重叠 = #7 斜线全长",
+      "value": "152.007143 mm（复算）",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13/256/F56/per_route.csv#route_id=7,31（sx/sy/lx/ly、alpha_deg、radius_mm、t0_fraction）",
+      "scale": "256",
+      "caliber": "按 freeform.py 几何公式独立重算",
+      "note": "与补修报告给出的 152.007142675 mm 一致（末位差异来自报告打印的坐标只保留 6 位小数）"
+    },
+    {
+      "id": "F-13-31",
+      "claim": "几何修复内容：直线—直线改由稳健分类器处理（单位方向叉积 |sin|≤1e-8 进平行族、垂距判共线、投影区间判 overlap/touch/无事件）；非平行分支加有限段与残差双重校验；planner/evaluator/spacing 统一经 segment_intersections 一个入口",
+      "value": "—",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L56-L76；OpticalWaveguideRouter3D/publication/report/实验结果简明说明.md",
+      "scale": "—",
+      "caliber": "实现改动",
+      "note": "回归测试在 tests/test_opt2d_step13_fixes.py（报告正文先写 18 项、后写 19 项）"
+    },
+    {
+      "id": "F-13-32",
+      "claim": "同批修复还包括：弧—弧最近距离补齐同一圆心连线上的同向极值候选（反例圆心 (0,0) R5 与 (0.9,0) R6、同 150°→210°：旧给 0.203，修复后 0.1 mm）",
+      "value": "0.1",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L101-L112",
+      "scale": "—",
+      "caliber": "间距最近距离",
+      "note": "另两处：AABB 预筛阈值改为 max(tol, 最小中心距离)；间距违规计分单位由段对改为路线对"
+    },
+    {
+      "id": "F-13-33",
+      "claim": "间距惩罚消融（重新布线，非固定几何；格式 平均 dB / 最大 dB / 间距违规）",
+      "value": "256 F5：默认 3.4981/5.9980/576 → 0.02 3.5075/6.0456/436 → 0.05 3.5133/6.0538/401；256 F56：2.9703/5.0783/415 → 2.9688/5.0781/324 → 2.9734/5.0623/288；512 F5：3.8261/6.4459/1333 → 3.8403/6.5344/1177 → 3.8579/6.5043/952；512 F56：3.2947/5.4995/1231 → 3.3118/5.5429/1078 → 3.3514/5.5438/821",
+      "unit": "dB / 个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/penalty_ablation_F5.csv、penalty_ablation_F56.csv（默认档取自同目录 comparison.csv）",
+      "scale": "256/512",
+      "caliber": "间距违规按路线对计",
+      "note": "512 F56 在 0.05 档把违规压掉 33%，代价是平均 +0.057 dB；旧口径（段对计数、AABB 用 tol）的 449/412 不能与新值直接加减"
+    },
+    {
+      "id": "F-13-34",
+      "claim": "敏感性（固定几何复算，只重算损耗不重新布线）：把 <20° 交叉损耗乘系数后重算",
+      "value": "256 F56 平均 2.9703/3.0212/3.1740/3.4286，最大 5.0783/5.1038/5.1803/5.9941（×1/×2/×5/×10）；256 R5U 平均 5.2778/5.2783/5.2799/5.2825",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/sensitivity.csv",
+      "scale": "256",
+      "caliber": "固定几何复算",
+      "note": "×1~×10 是人为压力情景，不是实测误差范围"
+    },
+    {
+      "id": "F-13-35",
+      "claim": "512 敏感性：F56 的最大损耗优势是单向收窄的，×5 起被 D56 反超、×10 时劣于 R5U",
+      "value": "F56 平均 3.2947/3.4010/3.7201/4.2519，最大 5.4995/5.5452/5.7264/8.4333；同时 D56 最大恒为 5.6217、R5U 恒为 6.5780",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/512/sensitivity.csv",
+      "scale": "512",
+      "caliber": "固定几何复算",
+      "note": "平均优势在 ×10 仍成立（4.2519 vs R5U 5.5285，−1.277 dB）；256 在 ×10 的最大值 5.9941 仍低于 R5U 6.3222"
+    },
+    {
+      "id": "F-13-36",
+      "claim": "接触的两个子口径（256）：段级行数 / 去重后的（路线对, 触点）/ 物理接触",
+      "value": "D0 400 / 198 / 0；D56 452 / 226 / 0；F56 226 / 113 / 0（512 F5 为 5 / 3 / 0）",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/*/contact_events.csv（复算去重）；OpticalWaveguideRouter3D/outputs/opt2d_step14/256/references.csv#raw_segment_touch_count,physical_route_touch_count",
+      "scale": "256/512",
+      "caliber": "段级 / 位置去重 / 路线级物理",
+      "note": "段级行数含重复（同一触点在 (a,b) 与 (b,a) 各记一次，个别点出现 4 次）"
+    },
+    {
+      "id": "F-13-37",
+      "claim": "交叉事件的三层口径（256 F56）：解析段级 / 位置聚类事件 / 不同路线对",
+      "value": "10579 / 10466 / 9967（其中 499 个路线对在两个不同位置各出现一次）",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/base/summary.json#raw_segment_cross_count,unique_crossing_events；OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/F56/crossing_events.csv（复算不同路线对）",
+      "scale": "256",
+      "caliber": "三层计数",
+      "note": "512 F56 的段级与聚类事件同为 46001，不同路线对为 44560"
+    },
+    {
+      "id": "F-13-38",
+      "claim": "逐路交叉计数恒等式：每个交叉事件对两根波导各计一次损耗，故 per_route_crossing_events = 2 × unique_crossing_events",
+      "value": "256 F56：20932 = 2×10466；256 A：18936 = 2×9468；512 A：86786 = 2×43393",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/F56/summary.json#per_route_crossing_events,unique_crossing_events；OpticalWaveguideRouter3D/docs/reports/step_12_opt2d_2d_routing_optimization.md#L60-L63",
+      "scale": "256/512",
+      "caliber": "统计恒等式",
+      "note": "不能把逐路交叉损耗直接除以 2"
+    },
+    {
+      "id": "F-13-39",
+      "claim": "旧报告 256 行『接触数为 0』是报告表格抄写错误，不是数据错误：旧产物 outputs/opt2d_step13/256/comparison.csv 本身就写着 400/452/228",
+      "value": "400/452/228",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13/256/comparison.csv#contact_touch_count；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fixed_endpoints_and_freeform.md#L203-L208（写 0）",
+      "scale": "256",
+      "caliber": "段级接触行数",
+      "note": "旧报告 §6 表同样把 512 的 F5 接触 5 写成 0"
+    },
+    {
+      "id": "F-13-40",
+      "claim": "旧 256 F56 与补修后 256 F56 的全部差异",
+      "value": "平均 2.9688949→2.9702981 dB（+0.0014）；最大 5.0782978 不变；唯一交叉 10435→10466；<10° 153→151；间距违规 417→415；段级接触 228→226；重合 1→0；平均交叉损耗 0.264503→0.265906 dB",
+      "unit": "dB / 个",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/legacy_scheme_scan.csv#256,F56；OpticalWaveguideRouter3D/outputs/opt2d_step13/256/comparison.csv；OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/comparison.csv",
+      "scale": "256",
+      "caliber": "旧产物 vs 补修后产物",
+      "note": "差异幅度均 ≤0.05%，不改变『自由弯角用交叉换弯曲』的方向与幅度"
+    },
+    {
+      "id": "F-13-41",
+      "claim": "受约束自由弯角实验（Step 13 末节）的配置间差异：端点与几何族划分不变，但逐路半径会改变",
+      "value": "256：相对 base，spacing/small/both 分别有 5/11/6 条由 R6 变 R5；512：分别为 10/4/11 条；几何族计数（144/112、288/224）四组完全相同",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_constrained/{256,512}/{base,spacing,small,both}/per_route.csv（复算 radius_mm 与 geometry）",
+      "scale": "256/512",
+      "caliber": "逐路半径与几何族对照",
+      "note": "因此该组实验不是纯约束对照，出版表 t63 表题『几何不变，仅改评分』与实际不符"
+    },
+    {
+      "id": "F-13-42",
+      "claim": "纯约束对照是 Step 14：逐路半径冻结为 F56 的半径，逐路核验全部 same=True",
+      "value": "256/512 全部 True",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/{256,512}/radius_freeze_check.csv#same",
+      "scale": "256/512",
+      "caliber": "逐路半径冻结核验",
+      "note": "Step 13 受约束实验与 Step 14 的条件不同，数字不可混用"
+    },
+    {
+      "id": "F-13-43",
+      "claim": "接受判据（相对 R5U 基线的独立『平均/最大』判据）：全部 6 方案在两规模都判定 mean_not_worse 与 max_not_worse 为 true",
+      "value": "—",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/acceptance.json",
+      "scale": "256/512",
+      "caliber": "接受判据",
+      "note": "256 的 A 相对 R5U 平均 +0.00082 dB、最大 +0.01116 dB，因此 A 的 mean_not_worse/max_not_worse 为 false；A 只是端点来源，不参与重新布线比较"
+    },
+    {
+      "id": "F-13-44",
+      "claim": "运行时间（单次实测）与跨版本不可比性",
+      "value": "256：A 0.5 s、R5U 13.0 s、D0 2.1 s、D56 23.5 s、F5 28.1 s、F56 45.4 s；512：0.7 / 88.5 / 8.3 / 91.3 / 112.1 / 179.7 s；旧产物同一工作为 30.1 / 65.6 s（256 F5/F56）与 140.5 / 207.4 s（512 F5/F56）",
+      "unit": "s",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv#runtime_s；OpticalWaveguideRouter3D/outputs/opt2d_step13/{256,512}/comparison.csv#runtime_s",
+      "scale": "256/512",
+      "caliber": "单次实测",
+      "note": "只描述该次实测，不得宣称普遍效率优势"
+    },
+    {
+      "id": "F-13-45",
+      "claim": "『自由弯角 + 小半径』的负结果：F5（只用 R5）在 512 上最差链路几乎没改善，最大损耗反而差于 D0/D56",
+      "value": "512 F5：平均 −1.6906 dB 但最大仅 −0.1321 dB（6.4459 dB），差于 D0 的 5.6207 dB 与 D56 的 5.6217 dB；256 F5：最大 −0.3241 dB（5.9980 vs R5U 6.3222）",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv；{256,512}/acceptance.json",
+      "scale": "256/512",
+      "caliber": "相对 R5U 基线的方案级差值",
+      "note": "F56 用 R6 把 512 的最大损耗补回 5.4995 dB"
+    },
+    {
+      "id": "F-13-46",
+      "claim": "D56→F56 的均值差（在逐路半径完全相同的前提下）",
+      "value": "256：−1.3690 dB（4.3393→2.9703）；512：−1.2661 dB（4.5607→3.2947）",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv（mean_loss_db 相减）；{256,512}/radius_compare.csv",
+      "scale": "256/512",
+      "caliber": "方案级差值，半径已对齐",
+      "note": "可归因于路径结构（弯角自由度与弯曲次数），不是半径优势"
+    },
+    {
+      "id": "F-13-47",
+      "claim": "两套损耗统计口径的平均值差在 0.0014 dB 以内，但最小交叉角差异显著",
+      "value": "256 解析 5.278568 vs 原版 5.278787；512 解析 5.516158 vs 原版 5.514721；最小交叉角 512 为 23.07°（解析）vs 14.0°（原版）",
+      "unit": "dB / °",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_12_opt2d_2d_routing_optimization.md#L70-L82",
+      "scale": "256/512",
+      "caliber": "解析物理统计 vs 原版 calc_index",
+      "note": "Step 13 全部对照统一使用解析物理统计，原版口径只作参照"
+    },
+    {
+      "id": "F-13-48",
+      "claim": "旧口径的『全部方案无重合、无几何违规』已被撤回，不得继续引用",
+      "value": "—",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L220,L247；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fixed_endpoints_and_freeform.md#L7-L9（勘误框）",
+      "scale": "256/512",
+      "caliber": "结论状态",
+      "note": "补修后重合确为 0，但『旧产物本身无重合』不成立"
+    }
+  ],
+  "corrections": [
+    {
+      "old": "256/512 全部方案『无重合、无几何违规』（Step 13 旧报告摘要与 §1.2、§6）",
+      "corrected": "旧 256 F56 存在 1 处真实重合：路线 #7 与 #31 的斜线段共线于 x+y=149.9，重叠 152.007142675 mm；旧产物把它误判为 cross。补修后重新布线，重合 0、平均只变 +0.0014 dB。512 无重合。",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/legacy_scheme_scan.csv#256,F56；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L18"
+    },
+    {
+      "old": "旧报告 §6 合规表把 256 的接触数写成 0（D0/D56/F56），把 512 的 F5 接触写成 0",
+      "corrected": "256 段级接触实际为 D0 400、D56 452、F56 228（重布后 226）；512 F5 为 5。这些是解析段级行数（含重复），按路线合并后的物理接触为 0。",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13/256/comparison.csv#contact_touch_count；OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/legacy_scheme_scan.csv；OpticalWaveguideRouter3D/outputs/opt2d_step14/256/references.csv"
+    },
+    {
+      "old": "旧报告 §4.1 表 256 行『平均总弯角』：A/R5U/D0/D56 = 180.0°、F5 = 100.7°",
+      "corrected": "A/R5U = 170.846°、D0/D56 = 169.669°、F5 = 100.195°、F56 = 100.234°；512 行的 172.20/170.21/100.72/100.92° 正确。",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/comparison.csv#mean_bend_total_deg；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L222"
+    },
+    {
+      "old": "旧报告 §7.2『间距惩罚的影响（256）』未标注方案，数值 0/0.02/0.05 = 576/449/412",
+      "corrected": "该消融属于 256 通道 F5（默认 576 与 F5 匹配，F56 是 417）。修复后重新布线：F5 576→436→401，F56 415→324→288。旧数值属旧口径（AABB 预筛用 tol、间距按段对计数），不能与新值直接加减。",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/penalty_ablation_F5.csv、penalty_ablation_F56.csv；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L223"
+    },
+    {
+      "old": "旧报告 §3.1 把『终点在右（Dx>0）必须 α<0、在左必须 α>0』当作普适硬约束",
+      "corrected": "该式只对自下而上（σ=+1）成立；自上而下（σ=−1）符号相反。普适规则是 sign(α) = −sign(σ)·sign(Dx)，等价于『斜线水平方向必须指向终点一侧』。256 的 σ=−1 有 75 条、512 有 173 条。",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/freeform.py#L26-L29；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fix_and_reverification.md#L224"
+    },
+    {
+      "old": "出版表 t63 表题『Step 13 受约束复算：base/spacing/small/both（几何不变，仅改评分）』",
+      "corrected": "该组实验重新布线，逐路半径在配置间发生变化：256 相对 base，spacing/small/both 分别有 5/11/6 条由 R6 变 R5；512 分别有 10/4/11 条。只有端点、路线身份与几何族划分（144/112、288/224）不变。因此它不能作为纯约束对照，纯约束对照是 Step 14（逐路半径冻结，radius_freeze_check.csv 全部 same=True）。",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_constrained/{256,512}/{base,spacing,small,both}/per_route.csv（复算）；OpticalWaveguideRouter3D/outputs/opt2d_step14/{256,512}/radius_freeze_check.csv；OpticalWaveguideRouter3D/docs/reports/experimental_results_publication.md#L82-L83"
+    },
+    {
+      "old": "CONTRACT.md 硬性事实边界第 13 条：『R5/R6 是弯曲半径（单位 μm）』",
+      "corrected": "原始产物列名为 radius_mm、取值为 5.0/6.0，参数文档与简明说明均为 mm（板面 150×150 mm、512 节距 0.175 mm、R5 一次 90° 转弯约 2.38 dB）。本文与既有草稿（part1 第 1.3 节）统一按 mm 表述。",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/256/F56/per_route.csv#radius_mm；OpticalWaveguideRouter3D/docs/2d_routing/parameters_and_ports.md#L9-L12；OpticalWaveguideRouter3D/publication/report/实验结果简明说明.md#L5-L11"
+    }
+  ],
+  "unverified": [
+    {
+      "item": "256 D0 的 raw 段级交叉 9676、D56 的 9790（以及 512 F5 的物理接触为 0）",
+      "reason": "这些数字只在 Step 14 报告 §3.1 正文表格中出现，outputs 目录下没有对应的产物字段；能落盘的只有 256 F56 的 raw_segment_cross_count=10579（outputs/opt2d_step14/256/base/summary.json）。引用时应注明来源为报告正文而非产物。"
+    },
+    {
+      "item": "补修报告所称的『独立交叉检验（枚举所有直线段对的夹角正弦与垂距）确认 256 只有 #7–#31 一对近共线重叠』",
+      "reason": "本次只读核查只对 #7/#31 做了独立几何复算（结论一致），没有重跑全枚举脚本（不允许重新运行优化）。"
+    },
+    {
+      "item": "256 通道的端点坐标来源",
+      "reason": "256 没有经核验的独立端口坐标快照，本次『冻结端点』冻结的是方案 A 的算法输出几何（sx/sy/lx/ly），不是外部提供的真实坐标；不能表述为『真实坐标下的最优布线』。"
+    },
+    {
+      "item": "交叉损耗各项的绝对高度",
+      "reason": "交叉损耗表由论文图 3-12 数字化近似，原表本机不可得，平均损耗中交叉项存在约 0.1 dB 量级的模型不确定度；敏感性 ×2/×5/×10 只是人为压力情景，不是实测误差范围。"
+    },
+    {
+      "item": "运行时间作为效率指标",
+      "reason": "每个方案只有一次实测记录，且同一工作在旧产物与补修产物两次运行中不同（256 F56 65.6 s vs 45.4 s），不能据此宣称算法效率优势。"
+    },
+    {
+      "item": "『全部方案无重合』的适用范围",
+      "reason": "补修后 12 个『规模×方案』组合的重合确为 0，但这只说明现有损耗模型与几何检查下未再检出重合；它不构成制造可行性结论。"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "512": {
+    "target_attempts": 50,
+    "unique_targets": 25,
+    "repeat_attempts": 25,
+    "repeated_targets": [
+      {
+        "pair": [
+          290,
+          433
+        ],
+        "attempts": 14,
+        "repeats": 13
+      },
+      {
+        "pair": [
+          290,
+          291
+        ],
+        "attempts": 13,
+        "repeats": 12
+      }
+    ],
+    "failed_no_move": 28,
+    "failed_no_move_with_zero_candidates": 28,
+    "candidate_basic_reason_occurrences": {
+      "SELF_AMBIGUOUS_CLEARANCE": 331
+    },
+    "note": "Reason counts can overlap for a candidate. Repeat attempts = total attempts minus unique targets."
+  },
+  "1024": {
+    "target_attempts": 310,
+    "unique_targets": 165,
+    "repeat_attempts": 145,
+    "repeated_targets": [
+      {
+        "pair": [
+          18,
+          19
+        ],
+        "attempts": 133,
+        "repeats": 132
+      },
+      {
+        "pair": [
+          19,
+          403
+        ],
+        "attempts": 10,
+        "repeats": 9
+      },
+      {
+        "pair": [
+          354,
+          355
+        ],
+        "attempts": 3,
+        "repeats": 2
+      },
+      {
+        "pair": [
+          69,
+          355
+        ],
+        "attempts": 2,
+        "repeats": 1
+      },
+      {
+        "pair": [
+          69,
+          354
+        ],
+        "attempts": 2,
+        "repeats": 1
+      }
+    ],
+    "failed_no_move": 154,
+    "failed_no_move_with_zero_candidates": 154,
+    "candidate_basic_reason_occurrences": {
+      "SELF_AMBIGUOUS_CLEARANCE": 3927
+    },
+    "note": "Reason counts can overlap for a candidate. Repeat attempts = total attempts minus unique targets."
+  },
+  "comparisons": [
+    {
+      "scale": 512,
+      "strategy": "A",
+      "final_pairs": 45400,
+      "extra_length_mm": 8.839448336060741,
+      "evaluations": 720,
+      "stop_reason": "TARGET_LIMIT",
+      "source": "outputs\\3d_strategy_v2\\512_three_layer_abc\\ledger_A.json"
+    },
+    {
+      "scale": 512,
+      "strategy": "B",
+      "final_pairs": 43750,
+      "extra_length_mm": 8.8930039020197,
+      "evaluations": 720,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "source": "outputs\\3d_strategy_v2\\512_three_layer_abc\\ledger_B.json"
+    },
+    {
+      "scale": 512,
+      "strategy": "C_rev2",
+      "final_pairs": 44274,
+      "extra_length_mm": 8.405220067084883,
+      "evaluations": 666,
+      "stop_reason": "TARGET_LIMIT",
+      "source": "outputs\\3d_strategy_v2_rev2\\512_c_fixed\\ledger_C_fixed.json"
+    },
+    {
+      "scale": 1024,
+      "strategy": "A",
+      "final_pairs": 138113,
+      "extra_length_mm": 87.40659726090962,
+      "evaluations": 8172,
+      "stop_reason": "TARGET_LIMIT",
+      "source": "outputs\\3d_strategy_v2\\1024_three_layer_abc\\ledger_A.json"
+    },
+    {
+      "scale": 1024,
+      "strategy": "B",
+      "final_pairs": 130098,
+      "extra_length_mm": 71.9169441050035,
+      "evaluations": 8172,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "source": "outputs\\3d_strategy_v2\\1024_three_layer_abc\\ledger_B.json"
+    },
+    {
+      "scale": 1024,
+      "strategy": "C_rev2",
+      "final_pairs": 130098,
+      "extra_length_mm": 71.9169441050035,
+      "evaluations": 8172,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "source": "outputs\\3d_strategy_v2_rev2\\1024_c_fixed\\ledger_C_fixed.json"
+    }
+  ]
+}

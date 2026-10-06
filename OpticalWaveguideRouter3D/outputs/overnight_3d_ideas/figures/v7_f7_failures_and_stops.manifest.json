@@ -1,0 +1,30 @@
+{
+  "figure": "v7_f7_failures_and_stops",
+  "title": "未评价候选数、deferred 前缀（按 UU/UE/EE）与停止原因分布",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v7_f7_failures_and_stops.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v7_f7_failures_and_stops.pdf",
+  "png_sha256": "a7a30dad3831077e75bee8db813f19acd308d3f520e970ea6f2f585e10245f3b",
+  "pdf_sha256": "799a49ef9ae29df6acfe28f06b9a1a722a0de4082afba9b59e83fd027d46e20c",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v7\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v7\\summary_v7.json"
+  ],
+  "source_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "not_evaluated_candidates",
+    "stop_reason"
+  ],
+  "source_sub_objects": [
+    "coverage.elevation_state_class_deferred.UU",
+    "coverage.elevation_state_class_deferred.UE",
+    "coverage.elevation_state_class_deferred.EE"
+  ],
+  "rows_used": 23,
+  "notes": "NOT_EVALUATED 与拒绝分开记账；deferred 前缀不是 ALL_CANDIDATES_REJECTED",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v7",
+  "generated_utc": "2026-10-05T15:24:07Z"
+}

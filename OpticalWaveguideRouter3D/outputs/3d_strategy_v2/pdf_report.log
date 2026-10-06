@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\publication\report\brief_build\build_3d_strategy_v2_pdf.py", line 234, in <module>
+    table(f'{size} 条连接的终态指标（同预算 {integer(b512 if size == 512 else b1024["candidate_budget"])} 次候选评价）',
+  File "C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\publication\report\brief_build\build_3d_strategy_v2_pdf.py", line 58, in integer
+    return f'{int(float(v)):,}'
+TypeError: float() argument must be a string or a real number, not 'dict'

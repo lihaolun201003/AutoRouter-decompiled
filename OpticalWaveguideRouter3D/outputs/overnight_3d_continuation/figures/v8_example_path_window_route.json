@@ -1,0 +1,91 @@
+{
+  "group": "V8_G1_R2880_boundaryfix",
+  "route_id": 366,
+  "step_index": 184,
+  "target_pair": [
+    174,
+    366
+  ],
+  "action": "FIRST_ELEVATION",
+  "movement": "FIRST_ELEVATION",
+  "net_collision_reduction": 65,
+  "step_length_delta_mm": 0.12341908432669157,
+  "window_phases": [
+    {
+      "planar_run_mm": 7.450941199347085,
+      "delta_z": 1.0,
+      "piece_count": 1,
+      "minimum_curvature_radius_mm": 11.250000000000028,
+      "certificate": {
+        "method": "ANALYTIC_CLOSED_FORM_MAX_AT_PIECE_BOUNDARIES",
+        "formula": "sqrt(kappa_xy^2*(1+z_s^2)+z_ss^2)/(1+z_s^2)^1.5",
+        "planar_run_mm": 7.450941199347085,
+        "delta_z_mm": 1.0,
+        "piece_count": 1,
+        "piece_planar_curvatures": [
+          0.0
+        ],
+        "breakpoint_parameters": [
+          0.0,
+          1.0
+        ],
+        "per_breakpoint": [
+          {
+            "parameter": 0.0,
+            "piece_planar_curvature": 0.0,
+            "curvature_per_mm": 0.08888888888888867,
+            "radius_mm": 11.250000000000028
+          },
+          {
+            "parameter": 1.0,
+            "piece_planar_curvature": 0.0,
+            "curvature_per_mm": 0.08888888888888867,
+            "radius_mm": 11.250000000000028
+          }
+        ],
+        "maximum_curvature_per_mm": 0.08888888888888867,
+        "minimum_curvature_radius_mm": 11.250000000000028,
+        "attained_at_parameter": 0.0,
+        "argument": "inside one piece kappa_xy is constant, 1+z_s^2 increases and the absolute z_ss decreases on [0,1/2], and the profile is symmetric about 1/2, so the maximum over a piece is attained at one of its two ends"
+      }
+    },
+    {
+      "planar_run_mm": 14.901882398694148,
+      "delta_z": -1.0,
+      "piece_count": 1,
+      "minimum_curvature_radius_mm": 44.999999999999986,
+      "certificate": {
+        "method": "ANALYTIC_CLOSED_FORM_MAX_AT_PIECE_BOUNDARIES",
+        "formula": "sqrt(kappa_xy^2*(1+z_s^2)+z_ss^2)/(1+z_s^2)^1.5",
+        "planar_run_mm": 14.901882398694148,
+        "delta_z_mm": -1.0,
+        "piece_count": 1,
+        "piece_planar_curvatures": [
+          0.0
+        ],
+        "breakpoint_parameters": [
+          0.0,
+          1.0
+        ],
+        "per_breakpoint": [
+          {
+            "parameter": 0.0,
+            "piece_planar_curvature": 0.0,
+            "curvature_per_mm": 0.02222222222222223,
+            "radius_mm": 44.999999999999986
+          },
+          {
+            "parameter": 1.0,
+            "piece_planar_curvature": 0.0,
+            "curvature_per_mm": 0.02222222222222223,
+            "radius_mm": 44.999999999999986
+          }
+        ],
+        "maximum_curvature_per_mm": 0.02222222222222223,
+        "minimum_curvature_radius_mm": 44.999999999999986,
+        "attained_at_parameter": 0.0,
+        "argument": "inside one piece kappa_xy is constant, 1+z_s^2 increases and the absolute z_ss decreases on [0,1/2], and the profile is symmetric about 1/2, so the maximum over a piece is attained at one of its two ends"
+      }
+    }
+  ]
+}

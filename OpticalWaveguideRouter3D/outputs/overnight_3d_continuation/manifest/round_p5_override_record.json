@@ -1,0 +1,33 @@
+{
+  "round": "p5",
+  "reason": "the controlled serial timing comparison is declared at the MAIN start and R1440 only (both cache settings, three tag-suffixed repeats each); every other cell was never run and a frozen manifest must not contain groups that are silently not run. No executed group's own cell (spec, mode, budget, start) changed",
+  "old_sha256": "8da211707a46f761fd4193749cfa54b79b557120e71a4f87b624931637d216f2",
+  "new_sha256": "518013a44b7ee533bfd057c2595535bbac73ef98e94d67fe88189c84ad81573e",
+  "old_groups": [
+    "P5_CACHE_OFF_N720",
+    "P5_CACHE_OFF_N1440",
+    "P5_CACHE_OFF_N2880",
+    "P5_CACHE_OFF_R720",
+    "P5_CACHE_OFF_R1440",
+    "P5_CACHE_OFF_R2880",
+    "P5_CACHE_ON_N720",
+    "P5_CACHE_ON_N1440",
+    "P5_CACHE_ON_N2880",
+    "P5_CACHE_ON_R720",
+    "P5_CACHE_ON_R1440",
+    "P5_CACHE_ON_R2880"
+  ],
+  "new_groups": [
+    "P5_CACHE_OFF_R1440",
+    "P5_CACHE_ON_R1440"
+  ],
+  "recorded_at": "2026-10-06T12:39:18",
+  "old_sha256_history": [
+    "a35aa6b10b4fa7d947bbc7d58e6f30f46c3932fad8219016f66a9071190fa326",
+    "3bf9481781532aaf02f137b520fffb0f696c63c4a638f230441b354b2fb839da",
+    "63a9001781532aaf02f137b520fffb0f696c63c4a638f230441b354b2fb839da",
+    "4ea5107fe32c5d9415945cfa441b1dbbb8d26902b0ba40b320f1ad3934539555",
+    "8da211707a46f761fd4193749cfa54b79b557120e71a4f87b624931637d216f2"
+  ],
+  "history_note": "the p5 manifest was re-frozen several times while the round was being narrowed to the two cells the task actually requires (main start, R1440, both cache settings); every previous hash is kept here, and the six timing runs recorded the FIRST one because they were executed before the narrowing"
+}

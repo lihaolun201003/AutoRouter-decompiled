@@ -1,0 +1,54 @@
+[539414.6] start slack relocation diagnostic slack=1e-05
+[539430.7] start state reused: 43750 close pairs, 24 elevated routes; targets 20 (both=10 one=10) equal to the Step 15 list
+[539430.8] FAILED
+Traceback (most recent call last):
+  File "C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\scripts\run_3d_relocation_slack_diagnostic.py", line 559, in <module>
+    main()
+  File "C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\scripts\run_3d_relocation_slack_diagnostic.py", line 435, in main
+    input_sha256=fingerprints, configuration=config_record(config),
+NameError: name 'config' is not defined
+
+[539455.1] start slack relocation diagnostic slack=1e-05
+[539471.7] start state reused: 43750 close pairs, 24 elevated routes; targets 20 (both=10 one=10) equal to the Step 15 list
+[539471.8] mode D: start (window_slack_mm=1e-05)
+[539489.5]   D INITIAL_DONE collisions=43750 uncertain=3
+[539489.5]   D target 1 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.5]   D target 2 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.5]   D target 3 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 4 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 5 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 6 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 7 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 8 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 9 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539489.6]   D target 10 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 16s
+[539493.6]   D target 11 ELEVATED collisions=43663 evaluations=18 20s
+[539497.6]   D target 12 ELEVATED collisions=43576 evaluations=36 24s
+[539514.1]   D target 13 ELEVATED collisions=43315 evaluations=90 41s
+[539531.3]   D target 14 ELEVATED collisions=43056 evaluations=144 58s
+[539548.3]   D target 15 ELEVATED collisions=42799 evaluations=198 75s
+[539565.5]   D target 16 ELEVATED collisions=42544 evaluations=252 92s
+[539583.2]   D target 17 ELEVATED collisions=42291 evaluations=306 110s
+[539587.5]   D target 18 ELEVATED collisions=42112 evaluations=324 114s
+[539587.6] mode D: done final=42112 accepted=8 relocations=0 evaluations=324 stop=TARGET_LIST_FINISHED
+[539587.9] mode E: start (window_slack_mm=1e-05)
+[539607.1]   E INITIAL_DONE collisions=43750 uncertain=3
+[539607.4]   E target 1 NO_CANDIDATES_GENERATED collisions=43750 evaluations=0 18s
+[539607.6]   E target 2 NO_CANDIDATES_GENERATED collisions=43750 evaluations=0 18s
+[539607.8]   E target 3 NO_CANDIDATES_GENERATED collisions=43750 evaluations=0 18s
+[539616.4]   E target 4 RELOCATED collisions=43724 evaluations=18 27s
+[539620.8]   E target 11 ELEVATED collisions=43636 evaluations=36 31s
+[539625.1]   E target 12 ELEVATED collisions=43548 evaluations=54 35s
+[539643.8]   E target 13 ELEVATED collisions=43287 evaluations=108 54s
+[539661.7]   E target 14 ELEVATED collisions=43028 evaluations=162 72s
+[539679.5]   E target 15 ELEVATED collisions=42771 evaluations=216 90s
+[539697.4]   E target 16 ELEVATED collisions=42516 evaluations=270 108s
+[539715.2]   E target 17 ELEVATED collisions=42263 evaluations=324 126s
+[539719.3]   E target 18 ELEVATED collisions=42083 evaluations=342 130s
+[539719.4] mode E: done final=42083 accepted=9 relocations=1 evaluations=342 stop=TARGET_LIST_FINISHED
+[539719.7] candidate correspondence: old ambiguous=208 matched=148 unmatched={'TASK_NOT_PRESENT_IN_NEW_RUN': 60} transitions={'REJECTED -> ACCEPTED_TARGET_PAIR_ONLY': 143, 'REJECTED -> REJECTED': 5}
+[539735.2]   recheck 100000 pairs 13.8s
+[539738.2] mode D: recheck PASS checks=130816 seconds=16.7
+[539755.4]   recheck 100000 pairs 15.4s
+[539758.6] mode E: recheck PASS checks=130816 seconds=18.5
+[539759.0] ALL DONE [{"mode": "D", "window_slack_mm": 1e-05, "final_collision_pairs": 42112, "old_final_collision_pairs": 42112, "net_reduction": 1638, "accepted_moves": 8, "first_elevations": 8, "relocations": 0, "old_relocations": 0, "relocation_victim_attempts": 0, "old_relocation_victim_attempts": 0, "relocation_candidate_evaluations": 0, "old_relocation_candidate_evaluations": 0, "failed_no_movable_route": 10, "failed_no_candidates": 0, "failed_all_rejected": 0, "candidate_evaluations": 324, "old_candidate_evaluations": 324, "generated_candidates": 324, "full_neighbor_checks": 324, "step_length_delta_total_mm": 4.122276684604003, "final_extra_length_vs_planar_mm": 13.015280586550944, "runtime_seconds": 114.15715290000662, "stop_reason": "TARGET_LIST_FINISHED", "final_unresolved_pairs": 3}, {"mode": "E", "window_slack_mm": 1e-05, "final_collision_pairs": 42083, "old_final_collision_pairs": 42112, "net_reduction": 1667, "accepted_moves": 9, "first_elevations": 8, "relocations": 1, "old_relocations": 0, "relocation_victim_attempts": 16, "old_relocation_victim_attempts": 28, "relocation_candidate_evaluations": 18, "old_relocation_candidate_evaluations": 126, "failed_no_movable_route": 0, "failed_no_candidates": 3, "failed_all_rejected": 0, "candidate_evaluations": 342, "old_candidate_evaluations": 450, "generated_candidates": 342, "full_neighbor_checks": 333, "step_length_delta_total_mm": 4.556504953579861, "final_extra_length_vs_planar_mm": 13.449508855526801, "runtime_seconds": 129.8023290000856, "stop_reason": "TARGET_LIST_FINISHED", "final_unresolved_pairs": 3}]

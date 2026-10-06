@@ -1,0 +1,51 @@
+{
+  "scale": 512,
+  "task": "de",
+  "budget_ceiling": 720,
+  "target_count": 20,
+  "start_state": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2\\512_three_layer_abc\\final_routes_B.json",
+    "sha256": "1df60dbdae5c16abef06f90bcca0c1176a5b7d6cef3b497ece4253c941be1710",
+    "collisions": 43750,
+    "elevated_routes": 24
+  },
+  "comparison": [
+    {
+      "mode": "D",
+      "final_collision_pairs": 42112,
+      "net_reduction": 1638,
+      "accepted_moves": 8,
+      "first_elevations": 8,
+      "relocations": 0,
+      "relocation_victim_attempts": 0,
+      "relocation_candidate_evaluations": 0,
+      "failed_no_movable_route": 10,
+      "failed_no_candidates": 0,
+      "failed_all_rejected": 0,
+      "candidate_evaluations": 324,
+      "step_length_delta_total_mm": 4.122276684604003,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "runtime_seconds": 124.71872020000592,
+      "stop_reason": "TARGET_LIST_FINISHED"
+    },
+    {
+      "mode": "E",
+      "final_collision_pairs": 42112,
+      "net_reduction": 1638,
+      "accepted_moves": 8,
+      "first_elevations": 8,
+      "relocations": 0,
+      "relocation_victim_attempts": 28,
+      "relocation_candidate_evaluations": 126,
+      "failed_no_movable_route": 0,
+      "failed_no_candidates": 3,
+      "failed_all_rejected": 7,
+      "candidate_evaluations": 450,
+      "step_length_delta_total_mm": 4.122276684604003,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "runtime_seconds": 187.96669530007057,
+      "stop_reason": "TARGET_LIST_FINISHED"
+    }
+  ],
+  "note": "same budget ceiling; actual candidate counts may differ and are reported"
+}

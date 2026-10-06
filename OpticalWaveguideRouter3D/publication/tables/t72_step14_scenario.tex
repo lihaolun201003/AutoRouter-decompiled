@@ -1,0 +1,31 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{Step 14 ×5 压力情景与固定保护对象余量}
+  \label{tab:step14-scenario}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    配置 & 情景平均 (dB) & 情景最大 (dB) & 保护最大劣化 (dB) & 劣化对象数 & 改善对象数 \\
+    \midrule
+    base & 3.1740 & 5.1803 & 0.0000 & 0 & 0 \\
+    spacing & 3.1610 & 5.1371 & 0.0072 & 1 & 10 \\
+    small & 3.0844 & 5.1257 & 0.0092 & 3 & 8 \\
+    touch & 3.1740 & 5.1803 & 0.0000 & 0 & 0 \\
+    both & 3.1107 & 5.1288 & 0.0021 & 1 & 10 \\
+    opt\_base & 3.1740 & 5.1803 & 0.0000 & 0 & 0 \\
+    \midrule
+    base & 3.7201 & 5.7264 & 0.0000 & 0 & 0 \\
+    spacing & 3.8248 & 5.9657 & 0.3885 & 10 & 1 \\
+    small & 3.5286 & 5.6296 & 0.0238 & 1 & 10 \\
+    touch & 3.7201 & 5.7264 & 0.0000 & 0 & 0 \\
+    both & 3.5934 & 6.1946 & 0.3376 & 6 & 5 \\
+    opt\_base & 3.7052 & 5.6340 & 0.0000 & 0 & 7 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  压力情景=<20° 交叉损耗 ×5（固定几何复算）；保护对象为 Step 14 保存的 11 条固定 ID 集合，所有配置使用同一集合。 \\
+  opt\_base 在 256 与 512 上均实现保护对象零劣化与情景最大损耗严格下降。 \\
+  \end{flushleft}
+\end{table}

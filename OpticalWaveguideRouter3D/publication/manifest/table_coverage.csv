@@ -1,0 +1,16 @@
+﻿table_id,title,tex,data_csv,experiments,sources
+t31,弯曲模型论文/复刻对照,publication/tables/t31_bend_model_thesis_vs_repro.tex,publication/tables/t31_bend_model_thesis_vs_repro_data.csv,R01,论文表 3-1；loss_model.py
+t32,论文值与复现值对照,publication/tables/t32_reproduction_compare.tex,publication/tables/t32_reproduction_compare_data.csv,R02;R03;R04,results/*_summary.json
+t33,512 半径扫描明细,publication/tables/t33_radius_sweep_512.tex,publication/tables/t33_radius_sweep_512_data.csv,R03;R04;R05;R06;G3D-10,results/fiberBoard512_loss_R*_summary.json
+t34,交叉模型敏感性（三口径）,publication/tables/t34_crossing_model_sensitivity.tex,publication/tables/t34_crossing_model_sensitivity_data.csv,R07,data/crossing_loss_from_thesis_fig3_12.csv；逐路明细复算
+t51,Step 12 主表,publication/tables/t51_step12_main.tex,publication/tables/t51_step12_main_data.csv,S12-01,outputs/opt2d/*/comparison.csv
+t52,Step 12 消融表,publication/tables/t52_step12_ablation.tex,publication/tables/t52_step12_ablation_data.csv,S12-02;S12-03;S12-04;S12-05;S12-06,outputs/opt2d/*/sensitivity.json
+t61,Step 13 补修版主表,publication/tables/t61_step13_main.tex,publication/tables/t61_step13_main_data.csv,S13-02,outputs/opt2d_step13_fix/*/comparison.csv
+t62,Step 13 代价表,publication/tables/t62_step13_cost.tex,publication/tables/t62_step13_cost_data.csv,S13-02,同上
+t63,受约束复算表,publication/tables/t63_step13_constrained.tex,publication/tables/t63_step13_constrained_data.csv,S13-03,outputs/opt2d_step13_constrained/*/constrained_comparison.csv
+t64,Step 13 压力情景表,publication/tables/t64_step13_sensitivity.tex,publication/tables/t64_step13_sensitivity_data.csv,S13-04,outputs/opt2d_step13_fix/*/sensitivity.csv
+t71,Step 14 主表与验收,publication/tables/t71_step14_main.tex,publication/tables/t71_step14_main_data.csv,S14-01;S14-02,outputs/opt2d_step14/*/comparison.csv、acceptance.csv
+t72,压力情景与保护余量表,publication/tables/t72_step14_scenario.tex,publication/tables/t72_step14_scenario_data.csv,S14-01;S14-03;S14-09,outputs/opt2d_step14/*/comparison.csv、protection_margins.csv
+t73,接受统计与诊断表,publication/tables/t73_step14_optimize.tex,publication/tables/t73_step14_optimize_data.csv,S14-05;S14-06,outputs/opt2d_step14/*/optimize_record.json、probe/probe_summary.csv
+t74,Step 14 压力情景表,publication/tables/t74_step14_sensitivity.tex,publication/tables/t74_step14_sensitivity_data.csv,S14-07,outputs/opt2d_step14/*/sensitivity.csv
+t81,三维实验汇总,publication/tables/t81_3d_experiments.tex,publication/tables/t81_3d_experiments_data.csv,G3D-05;G3D-06;G3D-07;G3D-08,outputs/step_9_*/step_9_*_summary.json、step_10_fixed_1024_summary.json

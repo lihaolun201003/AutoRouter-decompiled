@@ -1,0 +1,225 @@
+{
+  "512": {
+    "source": "outputs\\3d_strategy_v2_rev2\\512_c_fixed",
+    "route_count": 512,
+    "final_close_pairs": 44274,
+    "final_unresolved_pairs": 3,
+    "residual_pairs_by_elevated_endpoint_count": {
+      "0": 43055,
+      "1": 1141,
+      "2": 78
+    },
+    "top_route_degrees": [
+      {
+        "route_id": 290,
+        "degree": 308,
+        "elevated": false
+      },
+      {
+        "route_id": 9,
+        "degree": 291,
+        "elevated": false
+      },
+      {
+        "route_id": 303,
+        "degree": 290,
+        "elevated": false
+      },
+      {
+        "route_id": 500,
+        "degree": 285,
+        "elevated": false
+      },
+      {
+        "route_id": 31,
+        "degree": 279,
+        "elevated": false
+      },
+      {
+        "route_id": 180,
+        "degree": 277,
+        "elevated": false
+      },
+      {
+        "route_id": 181,
+        "degree": 277,
+        "elevated": false
+      },
+      {
+        "route_id": 433,
+        "degree": 277,
+        "elevated": false
+      },
+      {
+        "route_id": 291,
+        "degree": 276,
+        "elevated": false
+      },
+      {
+        "route_id": 35,
+        "degree": 272,
+        "elevated": false
+      }
+    ],
+    "max_route_degree": 308,
+    "zero_degree_route_count": 2,
+    "candidate_evaluations": 666,
+    "full_candidate_neighbor_checks": 335,
+    "candidate_neighbor_pair_calls_if_full_scan": 171185,
+    "assignment_seconds": 164.72824510000646,
+    "initial_pair_scan_seconds": 17.592956500011496,
+    "stop_reason": "TARGET_LIMIT",
+    "unresolved_pair_details": [
+      {
+        "pair": [
+          45,
+          161
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 17,
+          "TOUCHING_THRESHOLD": 3
+        }
+      },
+      {
+        "pair": [
+          46,
+          232
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 17,
+          "TOUCHING_THRESHOLD": 3
+        }
+      },
+      {
+        "pair": [
+          84,
+          160
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 17,
+          "TOUCHING_THRESHOLD": 3
+        }
+      }
+    ]
+  },
+  "1024": {
+    "source": "outputs\\3d_strategy_v2_rev2\\1024_c_fixed",
+    "route_count": 1024,
+    "final_close_pairs": 130098,
+    "final_unresolved_pairs": 4,
+    "residual_pairs_by_elevated_endpoint_count": {
+      "0": 123090,
+      "1": 3684,
+      "2": 3324
+    },
+    "top_route_degrees": [
+      {
+        "route_id": 575,
+        "degree": 446,
+        "elevated": false
+      },
+      {
+        "route_id": 403,
+        "degree": 445,
+        "elevated": false
+      },
+      {
+        "route_id": 574,
+        "degree": 436,
+        "elevated": false
+      },
+      {
+        "route_id": 814,
+        "degree": 436,
+        "elevated": false
+      },
+      {
+        "route_id": 818,
+        "degree": 436,
+        "elevated": false
+      },
+      {
+        "route_id": 621,
+        "degree": 434,
+        "elevated": false
+      },
+      {
+        "route_id": 816,
+        "degree": 432,
+        "elevated": false
+      },
+      {
+        "route_id": 817,
+        "degree": 432,
+        "elevated": false
+      },
+      {
+        "route_id": 820,
+        "degree": 432,
+        "elevated": false
+      },
+      {
+        "route_id": 821,
+        "degree": 432,
+        "elevated": false
+      }
+    ],
+    "max_route_degree": 446,
+    "zero_degree_route_count": 0,
+    "candidate_evaluations": 8172,
+    "full_candidate_neighbor_checks": 4245,
+    "candidate_neighbor_pair_calls_if_full_scan": 4342635,
+    "assignment_seconds": 2158.042864499963,
+    "initial_pair_scan_seconds": 67.25045789999422,
+    "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+    "unresolved_pair_details": [
+      {
+        "pair": [
+          524,
+          843
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 22,
+          "TOUCHING_THRESHOLD": 3
+        }
+      },
+      {
+        "pair": [
+          526,
+          845
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 22,
+          "TOUCHING_THRESHOLD": 3
+        }
+      },
+      {
+        "pair": [
+          528,
+          812
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 22,
+          "TOUCHING_THRESHOLD": 3
+        }
+      },
+      {
+        "pair": [
+          529,
+          813
+        ],
+        "status": "TOUCHING_THRESHOLD",
+        "pair_result_statuses": {
+          "CLEAR": 22,
+          "TOUCHING_THRESHOLD": 3
+        }
+      }
+    ]
+  }
+}

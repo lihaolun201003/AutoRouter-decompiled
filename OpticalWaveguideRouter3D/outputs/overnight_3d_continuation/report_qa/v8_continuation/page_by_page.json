@@ -1,0 +1,794 @@
+{
+  "artifact": {
+    "pdf": "publication/report/三维布线v8路径弧长窗口续跑报告.pdf",
+    "docx_readonly": "publication/report/brief_build/三维布线v8路径弧长窗口续跑报告.docx",
+    "markdown_readonly": "docs/reports/step_19_v8_continuation.md",
+    "page_count": 16,
+    "page_size_pt": [
+      612,
+      792
+    ],
+    "sha256_verified": "c3cf0705ad72f3da3fa0dd3adc9bd74ad677d46eafb10bf4c8a96f84af2c2e76",
+    "size_bytes": 1559923,
+    "render_dpi": 140,
+    "render_px": [
+      1190,
+      1540
+    ]
+  },
+  "revision_history": {
+    "note": "验收期间源 PDF 被上游重建三次（22→18→18→16 页）。本文件以最终 16 页版本为主表，22 页与 18 页版本的结论保留为历史证据。",
+    "revisions": [
+      {
+        "order": 1,
+        "page_count": 22,
+        "size_bytes": 1528557,
+        "rendered_at": "2026-10-06 12:45:29",
+        "render_dir": "rev_22p_1245/",
+        "status": "22 页已全部逐页查看；结论见 history_22p"
+      },
+      {
+        "order": 2,
+        "page_count": 18,
+        "size_bytes": 1524860,
+        "mtime": "2026-10-06 12:47:09",
+        "sha256": "6e6944a8d4b1eb4437c164d94a07b3459729175969aaf066c1cb621419bcefd8",
+        "status": "中间态，验收中一度被删除重建，未逐页验收"
+      },
+      {
+        "order": 3,
+        "page_count": 18,
+        "size_bytes": 1544322,
+        "mtime": "2026-10-06 12:48:58",
+        "sha256": "d4a8b7ff9d9e2173b183efec95ad6b012e9b57dead4c22458e6a84eaebeb4b37",
+        "status": "18 页已全部逐页查看（终验时同内容的 cf42f0d2… 版经 18/18 页像素一致校验）；结论见 history_18p，渲染留档 rev_18p_1249/"
+      },
+      {
+        "order": 4,
+        "page_count": 16,
+        "size_bytes": 1559923,
+        "mtime": "2026-10-06 12:55 前后",
+        "sha256": "c3cf0705ad72f3da3fa0dd3adc9bd74ad677d46eafb10bf4c8a96f84af2c2e76",
+        "status": "**本文件主表**；16 页全部逐页查看"
+      }
+    ]
+  },
+  "inspection": {
+    "method": "PyMuPDF 1.28.2 以 140 DPI（zoom=140/72）渲染全部页面为 1190×1540 PNG，再用 read_image 对每一页的位图逐页肉眼查看；对可疑区域另做 2.6×–4.5× 放大复核。",
+    "pages_in_document": 16,
+    "pages_rendered": 16,
+    "pages_actually_viewed": 16,
+    "also_viewed_earlier_revisions": {
+      "pages_22p": 22,
+      "pages_18p": 18,
+      "total_visual_pages": 56
+    },
+    "zoom_reviews": [
+      "_zoom_cur_p12_groupcol.png（3.2×）",
+      "_zoom_cur_p15_fig2_smalllabels.png（3.0×）",
+      "_zoom_cur_p16_top_caption.png（3.0×，针对 18 页版）",
+      "_zoom_cur_p17_fig6_legend.png（4.5×）",
+      "_zoom_p2_stage_len_cols.png（2.6×，22 页版）",
+      "_zoom_p2_challenge_word.png（3.4×，22 页版）",
+      "_zoom_p17_top_orphan.png（2.6×，22 页版）",
+      "_zoom_p19_fig2_labels.png（2.8×，22 页版）",
+      "_zoom_p20_fig_challenge_axis.png（3.0×，22 页版）",
+      "_zoom_p21_fig6_legend.png（4.0×，22 页版）"
+    ],
+    "tools_reused_readonly": [
+      "outputs/overnight_3d_continuation/report_qa/v5v8_pdf/_render_pages.py",
+      "outputs/overnight_3d_continuation/report_qa/v5v8_pdf/_geometry_check.py"
+    ],
+    "write_scope": "仅新增文件到 outputs/overnight_3d_continuation/report_qa/v8_continuation/；未修改 PDF/DOCX/MD 与任何 src/tests/scripts 源码。"
+  },
+  "verdict_summary": {
+    "OK": 14,
+    "ISSUE": 2,
+    "UNCERTAIN": 0,
+    "BLOCKED": 0,
+    "OK_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "ISSUE_pages": [
+      15,
+      16
+    ]
+  },
+  "verdict_criteria": "verdict 只针对本页特有的缺陷。仅带全局问题（G1–G6）的页面仍判 OK，但全局问题会写入该页 findings 并置 global_issues_apply。",
+  "global_issues": [
+    {
+      "id": "G1",
+      "severity": "低（原为高）",
+      "pages": [
+        4,
+        8
+      ],
+      "text": "原始 JSON 进正文的**残留**：p4（5.2 列表内 6 行 dict）、p8（一致性声明 3 行内联数组）。本轮已把原先占约 2.5 页的两大段 JSON（旧 p6『按上限聚合』、旧 p9/p10『中位数与范围』）改成规范表格，该问题已从『高』降为『低』。"
+    },
+    {
+      "id": "G2",
+      "severity": "中",
+      "pages": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "text": "窄列内标识符被硬断行：BASE_E2→BASE_/E2、A_FAMILY→A_FAM/ILY、V8_G0_NEUTRALITY_R2880→…R288/+0、V8_G1_NC2880→…NC288/+0、P3_*/P4_* 组名、以及新表 BASE_E2_T200→BASE_E2_T20/+0（断点不一致，『T2』+『00』有误读风险）。末位数字单独成行是本问题最需修的部分。"
+    },
+    {
+      "id": "G3",
+      "severity": "低",
+      "pages": [
+        3,
+        4,
+        6,
+        8,
+        12
+      ],
+      "text": "正文被硬换行残留拆成多段：句中逗号结尾后插入空行，本应连续的句子被切成 2–3 段。"
+    },
+    {
+      "id": "G4",
+      "severity": "低",
+      "pages": [
+        2,
+        3
+      ],
+      "text": "判定句为纯英文且无中文对照（如『判定：G1 improves the same-budget whole-layout result in 7 of 8 cells』『判定：neutral』）。"
+    },
+    {
+      "id": "G5",
+      "severity": "低",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "text": "全文 16 页无页眉、页脚与页码，长文档检索与引用不便。"
+    },
+    {
+      "id": "G6",
+      "severity": "低",
+      "pages": [
+        8,
+        12
+      ],
+      "text": "记号不统一：p12 使用 ASCII『->』与『delta=』而 §3 表头用『Δ 对』；p8 中位数表区间连接号混用『–』（en dash）与 ASCII『-』。"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "image": "page_01.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G5"
+      ],
+      "findings": [
+        "中文全部为真实字形，无方框/豆腐块/乱码/缺字；全角标点与数学符号（Δ ≤ × ² − →）正常",
+        "标题与大节标题为蓝色，层级正常；正文两端对齐，无压盖",
+        "两条公式（z(u)=z_start+(z_end−z_start)·sin²(πu/2)、kappa3D = sqrt(...)/(1+z_s²)^(3/2)）独立居中成行，上下标渲染正确",
+        "底部留白 91pt（11%），属正常分页"
+      ],
+      "notes": "源文本『曲率用 s 为平面弧长的闭式：』本身是断句（docs/reports/step_19_v8_continuation.md 第 17 行同文），属源 Markdown 问题而非渲染缺陷，不计入 ISSUE。"
+    },
+    {
+      "page": 2,
+      "image": "page_02.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2",
+        "G4"
+      ],
+      "findings": [
+        "§3 对照表已拆为上下两张；数字全部单行完整：33738/33240/−498/14.88/8.30/26437/26097/−340/30.63/16.23/18444/18211/−233/57.50/30.10/15837/16232/395/41.20/21.59/19233/18211/−1022/53.63/30.10/16537/16344/−193/35.80/20.79",
+        "『起点』列用单字 主/挑战；第二张表 G0/G1 评价、动作、路径窗动作、直线窗动作 8 行完整，表头与数据同页",
+        "3.1 表表头与 7 行数据同页完整；表头 ENDPOINT_CHANGED 仍被断成『ENDPOINT_CH』+『ANGED』（G2）",
+        "『判定：G1 improves the same-budget whole-layout result in 7 of 8 cells』为纯英文、无中文对照（G4）"
+      ],
+      "notes": "上下两表重复『模式/预算/起点』三列，属作者有意拆分，不影响阅读。"
+    },
+    {
+      "page": 3,
+      "image": "page_03.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "findings": [
+        "页首为 3.1 表最后一行 V8_G1_RC2880，该表表头已在本页重复",
+        "组标识符在单元格内被断行：V8_G1_RC2880→『V8_G1_RC288』+『0』；§4 表 V8_G0_NEUTRALITY_R2880→『V8_G0_NEUTRAL』+『ITY_R2880』（G2）",
+        "§4、§5 两表表头与数据同页完整，True 与『判定：neutral』未被截断",
+        "『新代码在 G0（LINE_ONLY）生成域下必须与历史 v7 T0 结果逐位一致，』与其后的『以证明…』之间被插入空行（G3）",
+        "§5.1 列表 7 条完整"
+      ],
+      "notes": "机器几何检查在本页报 6 处 overlap，全部为 ratio≥0.95 的包含关系（整表块包含单元格块），非重叠。"
+    },
+    {
+      "page": 4,
+      "image": "page_04.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G1",
+        "G3"
+      ],
+      "findings": [
+        "5.2 列表中仍排入 6 行原始 JSON 字典（basic_evaluations / full_neighbor_checks / seconds / excluded_from_optimisation_budgets / basic_cap_per_side / full_cap_per_side / note）（G1 残留，低）",
+        "§6 表『停止原因』列为中文『预算用尽/目标上限』；『阶段长度 mm』列 14.88/30.63/57.50/41.20 均单行完整",
+        "『矩阵：…（24 主配置）』与『＋同样四种设置 × N/R × 2880（8 挑战配置）』之间被插入空行（G3）",
+        "§6 表表头完整（家族/目标上限/模式/预算/起点/实际评价/预算用%/停止原因/终态距对/动作/阶段长度 mm/来源）"
+      ],
+      "notes": "本页 JSON 仅 6 行、未主导页面；本轮主要的两大段 JSON（原 p6/p9/p10）已改成表格。"
+    },
+    {
+      "page": 5,
+      "image": "page_05.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2"
+      ],
+      "findings": [
+        "§6 大表续页表头已重复",
+        "24 行数据数字全部单行完整：33738/14.88/26437/30.63/19233/53.63/16537/35.80/14583/52.10/16285/37.76/33529/22.27/25187/45.45/17905/71.86/15906/58.55/18459/69.23/15877/58.31/17485/74.58",
+        "『家族』列窄：BASE_E2→『BASE_』+『E2』、A_FAMILY→『A_FAM』+『ILY』（G2）",
+        "『停止原因』全部为中文短词『预算用尽/目标上限』",
+        "底部留白 88.5pt（11%）"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 6,
+      "image": "page_06.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2",
+        "G3"
+      ],
+      "findings": [
+        "续页表头已重复；末 5 行数字完整（14563/70.54/18042/71.95/14523/67.25）",
+        "**【本轮修复确认】原『按上限聚合』的约 40 行原始 JSON 已改为规范表格**：标题『按上限聚合（R 主 2880 单元）：』+ 表头『配置/单元数/R2880 终态对/实际评价/触发目标上限/用满预算/阶段长度 mm』+ 4 行数据（BASE_E2_T200 8/19233/2880/2/6/53.63；A_FAMILY_T200 8/18459/2664/4/4/69.23；BASE_E2_T2000 8/19233/2880/0/8/53.63；A_FAMILY_T2000 8/18042/2880/0/8/71.95）",
+        "配置列标识符仍被断行且断点不一致：BASE_E2_T200→『BASE_E2_T20』+『0』、A_FAMILY_T200→『A_FAMILY_T2』+『00』、BASE_E2_T2000→『BASE_E2_T20』+『00』、A_FAMILY_T2000→『A_FAMILY_T2』+『000』（G2；『T2/00』存在误读风险）",
+        "§7 导语仍被拆成三段并各插入空行（G3）",
+        "§7.1 表表头 12 列完整并开始排数据（24.0/28961/23.83/1772/2880/0.17/71 等单行完整）",
+        "底部留白 80.2pt（10%）"
+      ],
+      "notes": "该页是本轮修复的直接证据：JSON → 表格。"
+    },
+    {
+      "page": 7,
+      "image": "page_07.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2"
+      ],
+      "findings": [
+        "§7.1 续页表头已重复；18 行数据数字全部单行完整（40.0/23031/39.83/1009/2.24/143/18444/57.50/2.50/161/14583/52.10/7.90/178/19233/53.63/6.37/154/16285/37.76/22.24/32571/23.92/2096/0.08/50/23364/23.81/2172/0.19/46/26760/39.97/1612/0.03/82/19673/39.81/1699/76/26747/39.97/1602/83/20930/59.96/963/0.04/123/15766/59.91/367/0.09/121/20909/59.96/955/0.04/124/15408/59.77/321/0.23/125）",
+        "§7.2 同策略不限长对照表：表头 + 8 行同页完整，A_FAMILY 在本表未断行（18444/57.50/14583/52.10/19233/53.63/16285/37.76/17485/74.58/14563/70.54/18042/71.95）",
+        "『家族』列 BASE_/E2、A_FAM/ILY 断行（G2）",
+        "底部留白 82.4pt（10%）"
+      ],
+      "notes": "机器几何检查在本页报 18 处 overlap（全文最多），逐条核查为 §7.1 相邻数据行块包围盒的系统性偏移（ratio≈0.43、相交面积恒为 7970pt²），肉眼复核未见任何字形压盖。"
+    },
+    {
+      "page": 8,
+      "image": "page_08.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G1",
+        "G3",
+        "G6"
+      ],
+      "findings": [
+        "§8 受控串行计时表：表头 + 6 行完整，6 个 PASS 全部单行未截断（478.85/505.09/26.24；456.70/501.69/44.99；560.61/606.04/45.43；546.35/587.92/41.57；347.08/385.02/37.94；308.90/332.57/23.67）",
+        "**【本轮修复确认】原『中位数与范围』的约 30 行原始 JSON 已改为规范表格**：标题『中位数与范围（秒）：』+ 表头『缓存/内核中位数(范围)/总进程中位数(范围)/预扫中位数(范围)/分配中位数(范围)』+ OFF 行（478.85（456.70–560.61）/505.09（501.69–606.04）/0.00（0.00-0.00）/478.50（456.34–560.25））与 ON 行（347.08（308.90–546.35）/385.02（332.57–587.92）/0.00（0.00-0.00）/346.72（308.70–545.98））；数值与 §8 表逐项自洽（如 OFF 内核三值 456.70/478.85/560.61 → 中位 478.85、范围 456.70–560.61 ✓）",
+        "轻微：『区间』在单元格内被折成两行（如『478.85（456.70–』+『560.61）』），因折在连接号处故未把数字本身断开，可读",
+        "轻微：连接号不统一——多数用『–』（en dash），『0.00（0.00-0.00）』用 ASCII 『-』（G6）",
+        "仍保留 3 行紧凑内联数组：『一致性（三次运行逐一核对）：终态近距离对 {\"OFF\": [26437, 26437, 26437], \"ON\": [26437, 26437, 26437]}；阶段长度 mm {…}；缓存命中 {…}』（G1 残留，低，属刻意的一致性声明）",
+        "『每次都在独立进程里…串行执行，』与『计时期间不并行其它性能实验。』之间被插入空行（G3）",
+        "§9 标题及三条测试/回归/验收记录完整（803 passed / 307.36s（0:05:07）/ 46 passed 均未截断）",
+        "底部留白 85.5pt（11%）"
+      ],
+      "notes": "该页是本轮第二处修复的直接证据：JSON → 表格。"
+    },
+    {
+      "page": 9,
+      "image": "page_09.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2"
+      ],
+      "findings": [
+        "『复核（每个正式终态保存→重载→全扫 130,816 对）：』表：表头（轮次/组/状态/复核 PASS）完整并已在本页开始",
+        "约 36 行；REUSED_REFERENCE / PASS / True 全部单行完整未截断",
+        "『组』列标识符被断行：V8_G0_NEUTRALITY_N1440→『…N144』+『0』、…N2880→『…N288』+『0』、…NC2880→『…NC28』+『80』、P3_BASE_E2_T200_NC2880→『…NC288』+『0』（G2）",
+        "底部留白 80.5pt（10%）"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 10,
+      "image": "page_10.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2"
+      ],
+      "findings": [
+        "复核表续页，表头已重复",
+        "『组』列标识符继续被断行：P3_BASE_E2_T200_RC288→『…RC288』+『0』、P3_BASE_E2_T2000_N144→『…N144』+『0』、P3_A_FAMILY_T2000_NC2→『…NC2』+『880』、P3_A_FAMILY_T2000_R14→『…R14』+『40』、P4_BASE_E2_CAP24_N288→『…N288』+『0』等（G2）",
+        "PASS/True 全部单行完整；表格边框完整，无跨页行被切断、无页首孤儿残片",
+        "底部留白 89pt（11%）"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 11,
+      "image": "page_11.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G2"
+      ],
+      "findings": [
+        "复核表末页，表头已重复；末 6 行为 P5_CACHE_OFF/ON_R1440 各 3 次，PASS/True 完整",
+        "『整体判定：groups_total=94 PASS=64 FAIL=0 NOT_FINISHED=0 引用=30』完整未截断",
+        "『组』列标识符断行（P4_A_FAMILY_CAP24_N28+80 等）（G2）",
+        "底部留白 98.2pt（12%）"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 12,
+      "image": "page_12.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [
+        "G3",
+        "G6"
+      ],
+      "findings": [
+        "§10 结论 6 条 bullet 中文全部真实字形；关键数值完整：19233/18211 (delta=-1022)/15837/16232 (delta=+395)/2489/2880/53.63 mm/30.10 mm/33/23/10/5 mm/19233/18042/1191/71.95 mm/+18 mm/8160/478.85 s/347.08 s",
+        "结论第 1 条与其后的『最大改善 R 主 2880: …』『路径窗口同时把阶段长度代价降下来…』之间各插入空行，同一 bullet 被拆成三段（G3）",
+        "使用 ASCII『->』与『delta=』，与 §3 表头『Δ 对』不统一（G6）",
+        "§11 产物与复现：目录清单完整；复现命令仍被硬换行拆成两行（『…run_overnight_3d.py .』/『outputs\\overnight_3d_continuation --round v8 …』）且无续行符，直接复制会失败",
+        "底部留白 96pt（12%）"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 13,
+      "image": "page_13.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [],
+      "findings": [
+        "『附：本轮生成的图（每张同时提供 PDF 与 manifest）』标题为蓝色，层级正常",
+        "图 1 v8_diagnostics_side_outcomes（堆叠柱状图，3 项图例、y 轴 sides (of 120)、三组 x 标签）完整未裁切，图内文字清晰；**图题在图下方居中，且与图同页**",
+        "图 2 v8_example_path_window_route 三联图（route 366: 3D geometry / XY projection must coincide exactly / exact analytic curvature of the path windows）完整未裁切；图内两处图例与轴标签（x/y/z (mm)、window parameter u、radius of curvature (mm)）均可读，字号偏小（约 4–5pt；源图 1812×753px 排为 439.2pt 宽，297 DPI，放大无锯齿）；**图题在图下方居中且与图同页**",
+        "【本轮修复确认】上一版（18 页）中『图 2 的图题被推到下一页页首、与下一页的图紧邻造成误配』的问题在本版已消除——图 1、图 2 及各自图题同处第 13 页，次序清晰",
+        "两图源图 1297×667px（213 DPI）、1812×753px（297 DPI），均清晰",
+        "底部留白 227.6pt（29%），因下一页图 3 排不下而分页，属正常分页留白"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 14,
+      "image": "page_14.png",
+      "inspected": true,
+      "verdict": "OK",
+      "global_issues_apply": [],
+      "findings": [
+        "图 3 v8_p2_g0_vs_g1_pairs（main start / challenge start 双面板）完整未裁切，图例 4 项与轴标签可读；challenge 面板 x 轴 720/1440/2880 三个刻度标签齐全；图题在图下方居中",
+        "图 4 v8_p3_family_limit（max_targets = 200 / max_targets = 2000 双面板）完整未裁切，图例 BASE_E2 / A_FAMILY 可读；图题在图下方居中",
+        "两图源图均 1511×681px 排为 439.2pt 宽（248 DPI），清晰无锯齿、无裁切",
+        "底部留白 262.7pt（33%），因下一页图 5 排不下而分页，属正常分页留白"
+      ],
+      "notes": ""
+    },
+    {
+      "page": 15,
+      "image": "page_15.png",
+      "inspected": true,
+      "verdict": "ISSUE",
+      "global_issues_apply": [],
+      "findings": [
+        "图 5 v8_p4_length_cap（main start / challenge start 双面板；实线=cap、点线=不设限参考）完整未裁切，图内 4 项图例与轴标签可读；图题在图下方居中",
+        "图 6 v8_p4_tradeoff（散点图，marker area grows with the transition structure count, clamped）完整未裁切；图例文字 BASE_E2 N / BASE_E2 R / A_FAMILY N / A_FAMILY R **全部完整可读**（旧版『BASE_E2 被压成 ASE_E2』的遮挡问题已修复）",
+        "【页级·低】图 6 仍有轻微瑕疵：图例左侧的标记图例（大圆/大方形）互相重叠并溢出图例框上缘，图例框被图例符号压住一角；文字标签不受影响",
+        "图 6 源图 1040×800px 排为 439.2pt 宽（有效 170 DPI），为全文 7 图中最低；放大后标记与文字仍清晰，无模糊或锯齿",
+        "图 5、图 6 图题均在图下方居中；底部留白 114.9pt（15%）"
+      ],
+      "notes": "本页判 ISSUE 仅因图 6 图例符号溢出图例框（严重程度：低）。该瑕疵机器几何检查为零命中，只有视觉/放大才能发现。"
+    },
+    {
+      "page": 16,
+      "image": "page_16.png",
+      "inspected": true,
+      "verdict": "ISSUE",
+      "global_issues_apply": [
+        "G5"
+      ],
+      "findings": [
+        "图 7 v8_p5_serial_timing（engine kernel seconds / process seconds incl. IO and recheck 双面板；cache OFF/ON 各 3 点 + 均值横线）完整未裁切；图内标题、轴标签、cache OFF/ON 标签均清晰可读；图题在图下方居中",
+        "【页级·中】整页仅此一幅小图（约占 55% 页宽、19% 页高），图下方约 508.7pt（**64%**）页面为空白，为全文最大面积留白",
+        "图 7 无多面板总标题（图 1–6 均有各自的总标题），与其余图格式略不一致（低）",
+        "本页为文档最后一页，无页码/页脚（G5）；图 7 源图 1454×618px 排为 439.2pt 宽（238 DPI），清晰无锯齿"
+      ],
+      "notes": "建议把图 7 与第 15 页的图 5/图 6 合并排布，或让第 15 页多容纳一幅图，以消除末页 64% 空白。"
+    }
+  ],
+  "geometry_check": {
+    "tool": "PyMuPDF get_text('blocks') + get_image_info() 包围盒（复用了只读脚本 v5v8_pdf/_geometry_check.py）",
+    "scope": "仅机器几何：文本/图像块的包围盒是否越出可印区、块与块包围盒是否相交。",
+    "thresholds": {
+      "bleed_pt": 18,
+      "margin_pt": [
+        54,
+        54,
+        54,
+        54
+      ],
+      "overlap_min_area_pt2": 40,
+      "overlap_min_ratio": 0.35
+    },
+    "totals": {
+      "out_of_bleed": 0,
+      "out_of_margin": 0,
+      "overlap_flags": 30,
+      "sample_classification": {
+        "containment_ratio_ge_0.95": 8,
+        "partial_ratio_lt_0.95": 16
+      },
+      "note": "30 为全文档 overlap 计数总和；分类样本受每页最多记录 12 条的上限截断，故 8+16=24 < 30。"
+    },
+    "per_page": [
+      {
+        "page": 1,
+        "blocks": 32,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 2,
+        "blocks": 21,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 3,
+        "blocks": 40,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 6,
+        "overlap_containment": 6,
+        "overlap_partial": 0
+      },
+      {
+        "page": 4,
+        "blocks": 43,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 5,
+        "blocks": 76,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 6,
+        "blocks": 50,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 6,
+        "overlap_containment": 1,
+        "overlap_partial": 5
+      },
+      {
+        "page": 7,
+        "blocks": 28,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 18,
+        "overlap_containment": 1,
+        "overlap_partial": 11
+      },
+      {
+        "page": 8,
+        "blocks": 31,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 9,
+        "blocks": 21,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 10,
+        "blocks": 28,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 11,
+        "blocks": 23,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 12,
+        "blocks": 36,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 13,
+        "blocks": 5,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 14,
+        "blocks": 4,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 15,
+        "blocks": 4,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      },
+      {
+        "page": 16,
+        "blocks": 2,
+        "out_of_bleed": 0,
+        "out_of_margin": 0,
+        "overlap_flags": 0,
+        "overlap_containment": 0,
+        "overlap_partial": 0
+      }
+    ],
+    "pages_with_flags": [
+      {
+        "page": 3,
+        "flags": 6,
+        "containment": 6,
+        "partial": 0
+      },
+      {
+        "page": 6,
+        "flags": 6,
+        "containment": 1,
+        "partial": 5
+      },
+      {
+        "page": 7,
+        "flags": 18,
+        "containment": 1,
+        "partial": 11
+      }
+    ],
+    "interpretation": "越界检查零命中：16 页全部无文本/图像越出 54pt 页边距，也无越出 18pt 出血线（不裁切、不溢边）。overlap 标记共 30 处，集中在 p3(6)、p6(6)、p7(18)。逐条查看后确认两类均为伪影：(1) ratio≈1.00 的是被整表块完全包含的单元格块（包含关系，非重叠，p3 全部属此类）；(2) ratio≈0.43 且相交面积恒为 7970pt² 的是表格相邻数据行的块包围盒系统性偏移（p6/p7，如 §7.1 的『40.0 N 主 23031…』与『40.0 N 挑战 16001…』两两相交）。对 p3/p6/p7 的 140 DPI 位图逐页肉眼复核，未发现任何字形互相压盖。结论：这 30 处均不是可见的排版重叠。",
+    "limitation": "【重要局限】该机器检查只读取 PDF 的文本/图像块包围盒，完全看不出光栅图（位图）内部的文字与图形重叠。实证：旧 22 页版第 21 页 v8_p4_tradeoff 图中图例文字被数据标记遮住（BASE_E2 被压成 ASE_E2），该页在机器检查中 overlap_flags=0、被判 clean，只有靠 read_image 放大才能发现；本版第 15 页图 6 图例符号溢出图例框，机器检查同样零命中。因此机器几何结论与视觉结论必须分开采信，且不能互相替代。",
+    "relation_to_visual": "机器检查用于排除『越界/裁切/块级重叠』这类可量化缺陷（本版：全部通过）；视觉检查用于发现中文字形、断行截断、表头跨页、图内可读性等机器看不到的问题（本版：发现 2 处页级问题与 G1–G6）。两者不一致时以视觉为准并记录差异。"
+  },
+  "history_18p": {
+    "note": "18 页版本（渲染于 12:49:22，sha256 d4a8b7ff…）已 16 页全部逐页查看。留档于 rev_18p_1249/。",
+    "pages_viewed": 18,
+    "verdicts": {
+      "OK": 11,
+      "ISSUE": 7,
+      "UNCERTAIN": 0,
+      "BLOCKED": 0,
+      "ISSUE_pages": [
+        6,
+        7,
+        9,
+        10,
+        16,
+        17,
+        18
+      ]
+    },
+    "key_defects": [
+      "p6 下半页约 40 行原始 JSON；p9、p10 为两整页纯 JSON 且右侧约 70% 空白（本版已改为表格，修复）",
+      "p7 页首出现 JSON 块孤立结尾『}』『）』（本版已消失）",
+      "p16 页首出现前页图题、与下一页图紧邻造成误配（本版图题已回归同页，修复）",
+      "p18 末页 64% 空白（本版仍在第 16 页）"
+    ]
+  },
+  "history_22p": {
+    "note": "22 页版本（渲染于 12:45:29，size 1528557）已 22 页全部逐页查看。留档于 rev_22p_1245/。",
+    "pages_viewed": 22,
+    "verdicts": {
+      "OK": 6,
+      "ISSUE": 16,
+      "UNCERTAIN": 0,
+      "BLOCKED": 0,
+      "OK_pages": [
+        1,
+        9,
+        12,
+        18,
+        19,
+        20
+      ],
+      "ISSUE_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22
+      ]
+    },
+    "key_defects": [
+      {
+        "severity": "高",
+        "page": 2,
+        "text": "对照表数字被拆两行：14.88→『14.8』+『8』、33738→『3373』+『8』（证据 _zoom_p2_stage_len_cols.png）",
+        "fixed": "✅ 已修复（现全部单行）"
+      },
+      {
+        "severity": "高",
+        "pages": [
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          15,
+          16,
+          17
+        ],
+        "text": "长表续页不重复表头、行被跨页切断产生页首孤儿残片（『E2』『enge』『D』『T_EXH AUSTE D』『80』）",
+        "fixed": "✅ 已修复"
+      },
+      {
+        "severity": "高",
+        "pages": [
+          4,
+          8,
+          12,
+          13,
+          14
+        ],
+        "text": "原始 JSON 大段排入正文，第 13 页整页 JSON + 右侧 2/3 空白",
+        "fixed": "✅ 已修复（改为表格）"
+      },
+      {
+        "severity": "中",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15,
+          16,
+          17
+        ],
+        "text": "challenge→chal/leng/e、CANDIDATE_BUDGET_EXHAUSTED→跨 7 行、ENDPOINT_CHANGED→ENDPOINT_CH/ANGED",
+        "fixed": "🟡 部分修复（改中文『预算用尽/目标上限』『主/挑战』；仅余 G2）"
+      },
+      {
+        "severity": "中",
+        "page": 21,
+        "text": "v8_p4_tradeoff 图例被标记遮挡，BASE_E2 被压成 ASE_E2（证据 _zoom_p21_fig6_legend.png）",
+        "fixed": "✅ 已修复"
+      },
+      {
+        "severity": "中",
+        "pages": [
+          24,
+          25
+        ],
+        "text": "图题被推到下一页页首并与下一页的图紧邻",
+        "fixed": "✅ 已修复"
+      },
+      {
+        "severity": "低",
+        "page": 22,
+        "text": "末页图幅下方大面积空白",
+        "fixed": "❌ 仍存在（第 16 页 64%）"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3349 @@
+{
+  "passed": 668,
+  "failed": 0,
+  "historical_count": 656,
+  "new_count": 12,
+  "seconds": 6.102068900014274,
+  "tests": [
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_line_3d_intersection",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_line_parallel",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_line_skew",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_line_endpoint_minimum",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_line_nearly_parallel_interior",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_line_reversal_distance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_same_layer_intersection_kernel",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_same_layer_touch_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_layer_clear_certificate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_layer_insufficient",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_layer_threshold",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_near_layer_hand_calculation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_fixed_z_not_approximate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_line_interior_stationary",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_line_intersection",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_line_other_layer",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_arc_interior_stationary",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_concentric_overlap_angles",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_arc_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_arc_clockwise_wrapped",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_transition_line_interior_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_transition_line_nonzero_interior_reference",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_transition_arc",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_transition_transition_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_transition_transition_separated",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_adaptive_midpoint_zero_deviation_not_safe",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_adaptive_budget_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_adaptive_boundary_ambiguous",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_route_pair_minimum_identity",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_route_uncertainty_propagation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_self_adjacent_join_exclusion",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_self_nonadjacent_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_self_adjacent_overlap_not_skipped",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_self_uncertified_transition_adjacency",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_read_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_invalid_geometry",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_clearance_must_be_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_invalid_settings",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_distance_swap_symmetry",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_lifted_2d_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_lifted_2d_non_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_adjacent_extra_arc_contact_not_skipped",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_planar_minimum_independent_mesh_bounds",
+      "status": "PASS"
+    },
+    {
+      "file": "test_clearance_3d.py",
+      "test": "test_clearance_inequalities_hold",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_horizontal_separate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_vertical_separate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_endpoint_interior",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_endpoint_endpoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_horizontal_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_vertical_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_identical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_containment",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_collinear_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_collinear_gap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_point_on_line",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_point_on_vertical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_point_off_line",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_same_points",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_different_points",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_orthogonal_disjoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_invalid_diagonal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_invalid_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_route_none",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_route_cross_and_indices",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_route_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_route_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_route_segments",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_route_rejects_3d",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_short_routes",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_diagonal_route_rejected_even_against_empty",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_normal_u_z_no_self_intersections",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_self_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_self_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_self_nonadjacent_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_adjacent_reversal_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_shared_corner_keeps_distinct_segment_pairs",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_empty_single_and_disjoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_cross_allowed_and_recorded",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_touch_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_overlap_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_self_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_self_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_self_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_pair_once_order_invariance_and_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_rejects_3d_and_duplicate_ids",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_batch_exact_duplicate_event_suppressed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_endpoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_parallel",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_collinear_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_collinear_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_collinear_disjoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_near_parallel_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_near_parallel_disjoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_two",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_tangent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_none",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_sweep_excludes",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_tangent_outside_line",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_endpoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_line_endpoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_cw",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_ccw_quarter",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_line_arc_mixed_classifications",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_two_crossings",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_external_tangent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_internal_tangent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_separated",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_contained",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_concentric_unequal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_identical_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_partial_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_reversed_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_endpoint_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_complementary_semicircles",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_supporting_intersections_excluded",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_wrap_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_membership_wrap_ccw",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_membership_wrap_cw",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_membership_pi_boundary",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_arc_membership_radial_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_adjacent_smoothing",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_pair_cross_metadata",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_pair_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_pair_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_self_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_adjacent_overlap_retained",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_special_z_smoke",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_invalid_geometry",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_invalid_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_empty_and_disconnected_routes",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_pair_symmetry",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_near_tangent_two_resolved_points",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_adjacent_arcs_keep_second_crossing",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_nonadjacent_endpoint_retained",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_coincident_disjoint_arcs",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_wrap_line_arc",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_tangent_roundoff_deduplicated",
+      "status": "PASS"
+    },
+    {
+      "file": "test_collision.py",
+      "test": "test_analytic_route_arc_arc_keeps_both_points",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_exactly_two",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_single_excluded",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_higher_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_route_types",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_geometry_composition",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_segment_topology",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_line_progress",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_arc_progress",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_reversal_distance_and_progress",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_skeleton_actual_comparison",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_skeleton_categories",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_track_difference",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_category_ranges",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_canonical_order",
+      "status": "PASS"
+    },
+    {
+      "file": "test_double_cross_audit.py",
+      "test": "test_double_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_horizontal_distance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_vertical_distance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_diagonal_distance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_points_close_float_roundoff",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_points_close_rejects_difference_in_either_coordinate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_points_close_custom_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_horizontal_orientation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_vertical_orientation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_other_orientation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_orientation_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_horizontal_segment_length",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_vertical_segment_length",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_diagonal_segment_length_raises",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_intervals_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_intervals_disjoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_intervals_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_intervals_reversed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_intervals_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_inside_horizontal_segment",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_inside_vertical_segment",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_at_segment_endpoints",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_on_extension_outside_segment",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_off_segment_line",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_on_segment_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_degenerate_segment",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_point_on_diagonal_segment_raises",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_duplicates",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_horizontal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_vertical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_corner",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_diagonal_raises",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_tiny_diagonal_raises",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_empty_and_single",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_normalize_preserves_reversal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_track_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_invalid_side",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_z_middle_overlap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_z_invalid_orientation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_not_implemented",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_left",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_right",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_top",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_bottom",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_z_horizontal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_z_vertical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_analytic_lengths_and_directions",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_invalid_arcs",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_left_right_smoothing_and_tangents",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_u_z_smoothing",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_equal_middle_length_omits_line",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_equal_outer_length_omits_lines",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_insufficient_lengths",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_invalid_smoothing_inputs",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_smoothed_validation_errors",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_empty_and_collinear_smoothing",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_up_right",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_up_left",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_down_right",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_down_left",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_small_and_near_threshold",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_invalid_conditions",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_mirror_and_reversal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry.py",
+      "test": "test_special_z_exact_vertical_fit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_point_distance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_point_finite",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_point_equality_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_point_mutation_revalidated",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_layer_compatibility_aliases",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_line_length_direction",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_line_interpolation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_line_degenerate_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_invalid_parameters_all_primitives",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_endpoints",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_midpoint",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_xy_arbitrary_direction",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_up_down_monotonicity",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_endpoint_slopes_exact_zero",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_tangent_finite_difference",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_no_height_change",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_cosine_vertical_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_indicator_fixture",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_indicator_sign_invariance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_length_exceeds_chord",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_length_height_monotonic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_length_independent_midpoint_quadrature",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_length_repeat_and_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_length_sign_and_rotation_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_length_failure_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_arc_length_fixed_z",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_arc_endpoints_clockwise",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_arc_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_route_continuity_and_total",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_route_discontinuity_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_route_empty",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_route_invalid_primitive",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_route_input_isolation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_ordinary_lifting",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_special_lifting",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_lift_interior_circle_xy",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_lift_no_shared_geometry",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_lift_empty",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d.py",
+      "test": "test_lift_layer_mutation_validation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_endpoints",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_midpoint_zero",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_zero_curvature_radius_infinity",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_symmetry",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_height_sign",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_xy_rotation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_true_radius_hand_calculation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_reff_retained_distinct",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_local_radius_reciprocal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_max_curvature_sample_regression",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_numeric_versus_analytic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_invalid_parameter",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_curvature_invalid_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_inverse_radius_fixture",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_inverse_satisfies_requested_radius",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_inverse_no_default_and_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_line_transition_pass",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_perpendicular_line_fail",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_reverse_tangent_fail",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_arc_transition_pass",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_arc_c0_pass_c1_fail",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_position_discontinuity",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_zero_tangent_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_invalid_primitive_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_nonfinite_tangent_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_join_invalid_tolerances",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_small_angle_threshold",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_route_all_joins",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_route_read_only_and_geometry_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_empty_single_route_join_convention",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_mutated_route_discontinuity_is_reported",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_g1_not_parameter_c1",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_transition_endpoint_direction",
+      "status": "PASS"
+    },
+    {
+      "file": "test_geometry_3d_curvature.py",
+      "test": "test_inverse_sign_invariance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_top_middle_both_neighbors",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_bottom_middle_neighbors",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_leftmost_no_adjacent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_rightmost_no_adjacent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_left_no_pending",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_right_no_pending",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_both_no_pending",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_unique_nearest_hand_computed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_tie_preserves_all_routes",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_noncontiguous_ids_not_numeric_adjacency",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_local_id_none_preserved",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_same_pmt_pair_independent_routes",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_committed_exclusion_and_state_transition",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_failed_uncommitted_exclusion",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_special_neighbor_separate_even_if_explicitly_pending",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_unsupported_neighbor_separate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_current_special_not_diagnosed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_undeclared_short_z_not_silently_pending",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_formula_hand_computed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_formula_invalid_branch_and_nonfinite",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_formula_boundary_values",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_neighbor_formula_matches_hand_value",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_no_integer_k_or_assignment_output",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_four_categories_scans_and_terminal_mapping",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_z_paper_differences_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_current_route_excluded_from_neighbor",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_readonly_all_inputs_and_detached_output",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_determinism_and_catalog_permutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_incomplete_state_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_commit_prefix_inconsistent_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_duplicate_prefix_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_missing_endpoint_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_invalid_side_explicit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_overlapping_pmt_ranges_ambiguous",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_wrong_algorithmic_view_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_unknown_state_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_neighbor_out_of_domain_keeps_actual_distance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_hierarchy_diagnostic.py",
+      "test": "test_current_failed_is_not_silently_retried",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_connections_identity_direction_and_unknown_state",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_blank_rows_and_integral_numbers",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_missing_file",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_missing_port1_header",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_missing_port2_header",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_missing_headers",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_missing_port1",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_missing_port2",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_fraction",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_string",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_numeric_string",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_boolean",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_formula",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_duplicate_header",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_header_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_multiple_sheets_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_both_formulas_without_cache_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_restores_direction_positions_and_ids",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_duplicate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_missing",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_out_of_range",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_negative_index",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_fractional_index",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_pair_mismatch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_bad_coordinate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_missing_coordinate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_bad_dx",
+      "status": "PASS"
+    },
+    {
+      "file": "test_io.py",
+      "test": "test_snapshot_nonzero_dz",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_two_layers",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_duplicate_id",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_duplicate_z",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_three_layers_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_clearance_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_radius_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_experimental_required",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_policy_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_configuration_input_copied",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_transition_run_formula",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_sufficient_windows",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_insufficient_windows",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_no_valid_window",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_unknown_crossing_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_endpoint_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_rise_and_fall",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_elevated_fixed_z",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_c0_continuity",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_c1_direction",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_required_radius",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_target_removed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_self_clearance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_synthetic_probe",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_read_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_deterministic_failure",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_length_overhead_positive",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_xy_geometry_preserved",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_no_false_global_claim",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_short_manual_window_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_uncovered_target_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_arc_preserved_without_cutting",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_arc_window_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_layer_assignment_3d.py",
+      "test": "test_boolean_clearance_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_unique_victim_score",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_score_primary_before_id",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_alternate_then_final_id",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_tie_preserved_in_scores",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_special_excluded_even_lower",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_all_special",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_temporary_release",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_release_failure_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_geometry_endpoint_isolation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_special_geometry_rejection",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_local_delta_differential",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_multiplicity_transition",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_multi_delta_formula",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_strict_improvement",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_target_must_disappear",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_increase_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_deterministic_candidate_rank",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_evaluation_rollback_and_occupied_rejection",
+      "status": "PASS"
+    },
+    {
+      "file": "test_local_recovery_feasibility.py",
+      "test": "test_invalid_track_index_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_propagation_zero",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_propagation_one",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_propagation_ten",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_propagation_custom",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_90_radius_2",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_90_radius_3",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_90_radius_4",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_90_radius_5",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_90_radius_6",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_right_angle",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_half_angle",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_zero_angle",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_other_radius",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_bend_above_90",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_total_bends",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_total_empty",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_negative_length",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_negative_coefficient",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_unknown_radius",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_negative_angle",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_angle_unknown_radius",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_zero_angle_unknown_radius",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_total_invalid_bend",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_unsupported_radius_values",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_nonfinite_inputs",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss.py",
+      "test": "test_crossing_not_implemented",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_line_length",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_arc_length",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_mm_conversion",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_full_arc_propagation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_quarter_bend",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_eighth_bend",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_cw_ccw",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_ordinary_two_bends",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_special_sweeps",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_known_sum",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_crossing_not_called",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_angle_reversal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_angle_all_counted",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_no_cross_null",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_geometry_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_unknown_radius_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_loss_analysis.py",
+      "test": "test_loss_invalid_angle_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_point2d_creation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_point3d_creation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_port_stores_point3d",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_waveguide_stores_ports",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_route_stores_multiple_points",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_layer_creation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_board_stores_multiple_layers",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_pmt_stores_ports",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_waveguides_between_same_pmts_keep_independent_ids",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_port_stores_point2d",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_route_stores_point2d_list",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_port_unassigned_local_id",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_port_undetermined_position",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_port_fully_unassigned",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_waveguide_stores_unassigned_ports",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_line_model",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_arc_model",
+      "status": "PASS"
+    },
+    {
+      "file": "test_models.py",
+      "test": "test_smoothed_model",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_line_horizontal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_line_vertical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_line_other_and_degenerate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_physical_left_right_not_input_order",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_physical_top_bottom_and_same_x",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_arc_owner_by_chain",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_arc_chain_storage_permutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_reversed_chain_and_input_direction",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_disconnected_chain_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_arc_details",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_primitive_attribution_arc_point",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_primitive_attribution_keeps_join_membership",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_primitive_wrong_saved_index_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_hv_av_multi_fixture",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_arc_arc_primitive_attribution",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_multi_with_arc_arc",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_pmt_neighbor_uses_geometry_not_ids",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_opposite_side_not_geometric_neighbor",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_unknown_pmt_ambiguous",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_paper_like_real_synthetic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_nonpaper_nonadjacent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_nonpaper_no_vertical_carrier",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_paper_join_ambiguous",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_signature_deterministic_pair_order_swap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_special_two_arc_chain_ownership",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_readonly_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_deserialize_analytic_arc_not_polyline",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_single_arc_two_endpoint_owners_stay_ambiguous",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_attribution.py",
+      "test": "test_outside_eligible_not_paperlike",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_detect_two_short",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_only_one_short",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_all_safe",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_missing_edge",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_eligible",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_multiple_cross_outside",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_spacing_not_pitch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_boundary",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_near_threshold",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_direction_order_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_triplet_once",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_complete_four_graph",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_graph_reference",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_input_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_composition",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_empty",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_multiplicity_audit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_boundary_with_two_short",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_non_cross_ignored",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing.py",
+      "test": "test_multi_invalid_spacing",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_canonical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_sets",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_identities",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_second_side",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_margin",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_severity_order",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_stable_change",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_no_top_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_composition",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_graph_set_difference",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_eligible_equal_count_not_equal_set",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_angles",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_delta.py",
+      "test": "test_delta_no_mutation_determinism",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_real_multi_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_single_cross_allowed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_only_one_short_allowed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_boundary_allowed_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_outside_allowed_diagnostic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_no_cross_allowed",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_one_neighbor_no_triangle",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_reject_geometry_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_reject_pair_cache_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_reject_cross_cache_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_only_commit_publishes",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_cannot_commit_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_stale_evaluation_refused",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_witness_deterministic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_diagnostics_do_not_commit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_off_matches_old_default",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_off_descending_fixture",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_top_u_next_scan",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_bottom_u_next_scan",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_top_bottom_z_next_scan",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_bottom_top_z_next_scan",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_special_not_evaluated",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_exclusive_and_deterministic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_rejected_track_remains_available",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_reject_does_not_publish_assignment",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_real_committed_triangle_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_grid_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_real_arc_double_is_not_rejected",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_guard_witness_independent_of_committed_insertion_order",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_first_witness_stops_pair_and_triangle_work",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_no_neighbors_skips_detector",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_one_neighbor_skips_detector",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_disconnected_neighbors_skip_detector",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_rejection_preserves_adjacency",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_adjacency_updates_only_on_commit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_minimal_cache_has_no_full_events",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_incomplete_accept_cannot_commit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_independent_validation_accepted_set_zero",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_independent_validation_detects_corrupted_safe_metadata",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_wrapper_matches_cross_only_semantics",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_fast_repeated_witness_deterministic_after_short_circuit",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_exhaustion_covers_entire_available_grid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_multi_crossing_guard.py",
+      "test": "test_timeout_during_scan_is_not_exhaustion",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_straight_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_endpoint_touch",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_line_arc_join",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_arc_arc_join_single_cross",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_both_joins_four_touches",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_true_tangent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_reverse_angle_invariant",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_acute_angle",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_pair_swap",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_distinct_pairs_same_coordinate",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_overlap_preserved",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_reject_nonsmooth_join",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_empty",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_invalid_tol",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_two_distinct_points",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_coordinate_tolerance_and_order",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_no_transitive_tolerance_chain",
+      "status": "PASS"
+    },
+    {
+      "file": "test_physical_intersections.py",
+      "test": "test_physical_antiparallel_tangent",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_invalid_route_type",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_invalid_u_side",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_missing_u_side",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_invalid_z_orientation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_missing_z_orientation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_rejects_3d_start",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_rejects_3d_end",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_special_z_not_implemented",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_same_pmt_pair_preserves_waveguide_ids",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_u_left",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_u_right",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_u_top",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_u_bottom",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_z_horizontal",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_z_vertical",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_top",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_bottom",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_down",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_up",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_missing_positions",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_rejects_3d",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_off_boundary",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_invalid_boundaries",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_nonfinite_point",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_batch_order_and_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_prepare_has_no_track_or_geometry_calls",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_grid_legacy",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_grid_float_boundary_and_single_track",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_grid_invalid_configs",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_algorithmic_u_left_and_tie",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_algorithmic_z_lexicographic",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_allocator_all_groups_and_scanning",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_allocator_sort_order_repeatability_and_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_span_unsupported_equal_and_no_occupancy",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_span_tolerance",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_exhaustion_and_no_interval_reuse",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_allocator_ids_and_preparation_consistency",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_allocator_rejects_invalid_positions",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_allocator_does_not_call_geometry_or_route",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_templates_direction_and_immutability",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_delegates_and_never_calls_collision_or_allocator",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_normalized_point_count",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_skips_all_failure_statuses",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_missing_or_invalid_track",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_id_validation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_rejects_bad_preparation_and_positions",
+      "status": "PASS"
+    },
+    {
+      "file": "test_router_2d.py",
+      "test": "test_generation_invalid_failure_state",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_current_degree_and_victim_order",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_strict_decrease_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_candidate_lexicographic_rank",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_successful_replacement_and_global_update",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_failed_candidate_leaves_routes_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_current_elevated_geometry_changes_collision_answer",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_classifier_matches_9c",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_deterministic_replay",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_target_stopping_rule",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_baseline_read_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_later_candidates_check_current_elevated_neighbor",
+      "status": "PASS"
+    },
+    {
+      "file": "test_sequential_elevation_3d.py",
+      "test": "test_already_elevated_fallback",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_default_baseline",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_variant_primary_only",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_ties_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_bottom_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_z_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_special_unchanged",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_top_assigned_set",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_top_track_set",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_nested_comparison",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_no_mutation",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_invalid",
+      "status": "PASS"
+    },
+    {
+      "file": "test_top_u_order.py",
+      "test": "test_order_deterministic",
+      "status": "PASS"
+    }
+  ]
+}

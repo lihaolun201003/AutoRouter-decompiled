@@ -1,0 +1,531 @@
+{
+  "topic": "Step 14 冻结公平对照与保护性优化（二维 opt2d，256/512 通道）",
+  "facts": [
+    {
+      "id": "F-14-01",
+      "claim": "逐路半径冻结核对表：256 共 256 行，f56_radius_mm 与 frozen_radius_mm 全部相同（same=True 256/256，错位 0）",
+      "value": "256/256",
+      "unit": "条路线",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/radius_freeze_check.csv#L1-L257",
+      "scale": "256",
+      "caliber": "逐路半径表逐行比对",
+      "note": "半径列名带 _mm 后缀"
+    },
+    {
+      "id": "F-14-02",
+      "claim": "逐路半径冻结核对表：512 共 512 行，same=True 512/512，错位 0",
+      "value": "512/512",
+      "unit": "条路线",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/radius_freeze_check.csv#L1-L513",
+      "scale": "512",
+      "caliber": "逐路半径表逐行比对",
+      "note": "取值为 6.0 与 5.0 两种"
+    },
+    {
+      "id": "F-14-03",
+      "claim": "冻结半径取值：256 全部为 R6=6.0；512 为 6.0（510 条）+ 5.0（2 条）",
+      "value": "256: {6.0:256}；512: {6.0:510, 5.0:2}",
+      "unit": "mm（路线数）",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv",
+      "scale": "256/512",
+      "caliber": "radius_distribution 字段",
+      "note": "与 radius_freeze_check.csv 取值集合一致；CONTRACT.md 把 R5/R6 写成 μm，与产物列名 f56_radius_mm、150×150 mm 板尺寸冲突，可信口径为 mm"
+    },
+    {
+      "id": "F-14-04",
+      "claim": "冻结后 base 仍等于补修 F56：256 base 的平均/最大/交叉数与 references.csv 的 F56 行逐项相同",
+      "value": "mean 2.9702981166542815；max 5.078297843737668；<20° 657；worst #34",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/references.csv",
+      "scale": "256",
+      "caliber": "一次布局内逐路线统计",
+      "note": "P95 也相同（4.654524100438386）"
+    },
+    {
+      "id": "F-14-05",
+      "claim": "冻结后 base 仍等于补修 F56：512 base 与 references.csv 的 F56 行逐项相同",
+      "value": "mean 3.2946845970804954；max 5.499482735795704；<20° 2939；radius {6.0:510,5.0:2}",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/references.csv",
+      "scale": "512",
+      "caliber": "一次布局内逐路线统计",
+      "note": "512 的 ×5 情景最差路线为 #177，标称最差为 #34"
+    },
+    {
+      "id": "F-14-06",
+      "claim": "Step 14 的 base 等于 Step 13 补修后的 base（跨轮次同一布局）",
+      "value": "step13_constrained 256 base：mean 2.9702981166542815、<20° 657、间距违规 415、段级接触 226",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_constrained/256/constrained_comparison.csv#L2",
+      "scale": "256",
+      "caliber": "同口径比较表",
+      "note": "说明冻结没有改变 base"
+    },
+    {
+      "id": "F-14-07",
+      "claim": "固定保护集合规模：两规模各自 11 条 route_id",
+      "value": "256=11；512=11",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/protection_set.json#L25-L28; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/protection_set.json#L25-L28",
+      "scale": "256/512",
+      "caliber": "all_ids 长度",
+      "note": "protection_margins.csv 各方案 protected_routes 也均为 11"
+    },
+    {
+      "id": "F-14-08",
+      "claim": "256 保护集合成员：#34（base 最差）、#44（D56 最差）、被穿越最多的 10 条 U 型 #9/#186/#185/#177/#43/#35/#52/#10/#11",
+      "value": "11 条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/protection_set.json",
+      "scale": "256",
+      "caliber": "并集去重",
+      "note": ""
+    },
+    {
+      "id": "F-14-09",
+      "claim": "512 保护集合成员：#34（base 最差）、#287（D56 最差）、被穿越最多的 10 条 U 型 #177/#309/#310/#311/#154/#153/#151/#152/#265（#34 与 U 型重复，去重后 11 条）",
+      "value": "11 条",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/protection_set.json",
+      "scale": "512",
+      "caliber": "并集去重",
+      "note": "crossed_u_routes 含 #34，与 base_worst 重复"
+    },
+    {
+      "id": "F-14-10",
+      "claim": "保护集合构造规则：base 最差路线 + D56 最差路线 + 按 crossing_count 降序取前 10 条 U 型，去重保序",
+      "value": "select_protection(top_u=10)",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/step14.py#L121-L138",
+      "scale": "256/512",
+      "caliber": "代码口径",
+      "note": "一次性确定，所有方案共用"
+    },
+    {
+      "id": "F-14-11",
+      "claim": "256 base（=F56 冻结）：完整连接 256/256，平均 2.9703 dB，P95 4.6545 dB，最大 5.0783 dB，#34，小角三档 22/151/657，间距违规 415 对，物理接触 0，重合 0",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv#L2",
+      "scale": "256",
+      "caliber": "一次布局内逐路线统计",
+      "note": "运行 27.7718 s（单次记录）"
+    },
+    {
+      "id": "F-14-12",
+      "claim": "256 spacing：平均 2.9724，P95 4.6980，最大 5.0623，<20° 622，间距违规 293，物理接触 0",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv#L3",
+      "scale": "256",
+      "caliber": "同上",
+      "note": "P95 反而比 base 高 0.0435"
+    },
+    {
+      "id": "F-14-13",
+      "claim": "256 small：平均 2.9986，P95 4.6316，最大 5.0509，小角三档 11/48/315，间距违规 377",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv#L4",
+      "scale": "256",
+      "caliber": "同上",
+      "note": "三档小角交叉全部下降"
+    },
+    {
+      "id": "F-14-14",
+      "claim": "256 touch 与 base 逐项完全相同（物理接触数为 0，惩罚无作用对象）",
+      "value": "mean 2.9703 / max 5.0783 / <20° 657 / 间距 415 全同",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv#L2,L5",
+      "scale": "256",
+      "caliber": "逐项比对",
+      "note": "仅运行时间不同（55.69 s vs 27.77 s）"
+    },
+    {
+      "id": "F-14-15",
+      "claim": "256 both：平均 2.9887，最大 5.0540，小角三档 6/89/371，间距违规 275（六配置中最低）",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv#L6",
+      "scale": "256",
+      "caliber": "同上",
+      "note": ""
+    },
+    {
+      "id": "F-14-16",
+      "claim": "256 opt_base 与 base 逐项相同（严格口径下 0 接受，状态未变）",
+      "value": "mean 2.9703 / max 5.0783 / <20° 657",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv#L7",
+      "scale": "256",
+      "caliber": "同上",
+      "note": "优化搜索本身耗时 233.1 s（optimize_record.json），该行 runtime_s 记的是布局评价 27.77 s"
+    },
+    {
+      "id": "F-14-17",
+      "claim": "512 base（=F56 冻结）：平均 3.2947，P95 4.9004，最大 5.4995，#34，小角三档 53/842/2939，间距违规 1231，物理接触 0，重合 0",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv#L2",
+      "scale": "512",
+      "caliber": "一次布局内逐路线统计",
+      "note": "运行 116.3209 s（单次记录）"
+    },
+    {
+      "id": "F-14-18",
+      "claim": "512 spacing 出现方向性反转：<5° 交叉 53→106，<20° 2939→3263，×5 情景最大 +0.2393 dB，平均 +0.0677 dB（超 0.05 预算）",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv#L3; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/acceptance.csv#L3",
+      "scale": "512",
+      "caliber": "同上",
+      "note": "压间距违规（1231→821）的代价是交叉结构变差"
+    },
+    {
+      "id": "F-14-19",
+      "claim": "512 small：平均 3.3492（+0.0545，超预算），最大 5.4741，小角三档 92/295/1125，间距违规 1153",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv#L4",
+      "scale": "512",
+      "caliber": "同上",
+      "note": "<5° 数量高于 base（53），说明三档并非全部下降"
+    },
+    {
+      "id": "F-14-20",
+      "claim": "512 both：平均 3.4028（+0.1081，超预算），×5 情景最大 6.1946（+0.4682），<20° 1209，间距违规 851",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv#L6; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/sensitivity.csv#L19",
+      "scale": "512",
+      "caliber": "同上",
+      "note": "512 上不可取"
+    },
+    {
+      "id": "F-14-21",
+      "claim": "512 opt_base（保护性局部优化，6 条接受）：平均 3.2936（−0.0011），最大 5.4654（−0.0341），×5 情景最大 5.6340（−0.0924），<20° 2876，间距违规 1228",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv#L7",
+      "scale": "512",
+      "caliber": "同上",
+      "note": "该行 runtime_s=0.0（占位），真实搜索时间见 optimize_record.json"
+    },
+    {
+      "id": "F-14-22",
+      "claim": "完整连接：六配置 × 两规模共 12 行 complete_connection 全部 True，unplaced 0，per_route.csv 行数分别为 256 与 512",
+      "value": "12/12 True",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/{256,512}/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/base/summary.json#L4-L7",
+      "scale": "256/512",
+      "caliber": "连接完整性",
+      "note": "逐路重算的均值/最大值与 comparison.csv 完全一致"
+    },
+    {
+      "id": "F-14-23",
+      "claim": "P95 的统计口径：排序后取第 ceil(0.95N) 个值（步进分位），不是线性插值",
+      "value": "256 base：P95=4.654524100438386（线性插值口径为 4.5838990）；512 base：4.9003873（线性插值 4.8986261）",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/step13.py#L271; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/base/per_route.csv",
+      "scale": "256/512",
+      "caliber": "一次布局内逐路线分位数",
+      "note": "引用 P95 时必须注明分位定义"
+    },
+    {
+      "id": "F-14-24",
+      "claim": "交叉角分档口径：crossings_under_5/10/20_deg 统计唯一物理交叉事件（evaluation.events）按夹角计数",
+      "value": "sum(1 for e in evaluation.events if e.angle_deg < X)",
+      "source": "OpticalWaveguideRouter3D/scripts/opt2d_step14.py#L178-L180; OpticalWaveguideRouter3D/src/opt2d/step13.py#L235-L245",
+      "scale": "256/512",
+      "caliber": "唯一物理交叉事件",
+      "note": "不是解析段级计数，也不是路线对计数"
+    },
+    {
+      "id": "F-14-25",
+      "claim": "间距违规口径：spacing_violation_count 为路线对数量（与 spacing_violation_pairs 相等）",
+      "value": "256 base 415 对；512 base 1231 对",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/base/summary.json#L31-L32",
+      "scale": "256/512",
+      "caliber": "路线对计数",
+      "note": ""
+    },
+    {
+      "id": "F-14-26",
+      "claim": "接触与重合口径：全部 12 行的 physical_route_touch_count 与 contact_overlap_count 均为 0；raw_segment_touch_count 仅 256 非零（base 226、spacing 202、small 234、both 226）",
+      "value": "physical=0 / overlap=0；256 raw 202~234",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv",
+      "scale": "256/512",
+      "caliber": "解析段级 vs 路线级物理合并",
+      "note": "512 的 raw 段级接触全为 0"
+    },
+    {
+      "id": "F-14-27",
+      "claim": "256 保护路线逐路变化：spacing 10/11 改善、最大越界 +0.0072（#185）；small 8/11 改善、最大越界 +0.0092（#185，#186 +0.0079、#177 +0.0017）；both 10/11 改善、最大越界 +0.0021（#52）",
+      "value": "见 claim",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/protection_margins.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/{spacing,small,both}/protection_routes.csv",
+      "scale": "256",
+      "caliber": "逐路标称损耗相对 base",
+      "note": "集合均值会掩盖这些上浮"
+    },
+    {
+      "id": "F-14-28",
+      "claim": "512 保护路线逐路变化：spacing 10 条越界（最大 +0.3885 #311、#287 +0.3411）；both 6 条越界（+0.3376 #311）；small 1 条（+0.0238 #152）；opt_base 0 越界且 7 条改善",
+      "value": "见 claim",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/protection_margins.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/opt_base/protection_routes.csv",
+      "scale": "512",
+      "caliber": "逐路标称损耗相对 base",
+      "note": "opt_base 改善的是 #34/#287/#177/#309/#310/#311/#265"
+    },
+    {
+      "id": "F-14-29",
+      "claim": "保护裕度档位：256 三种约束配置在 +0.01 dB 余量全部通过（both 只需 +0.005）；512 的 spacing/both/small 在 +0.02 dB 余量下仍全部不通过",
+      "value": "256: passes_margin_0.01=True；512: passes_margin_0.02=False",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/protection_margins.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/protection_margins.csv",
+      "scale": "256/512",
+      "caliber": "余量灵敏度分析（诊断）",
+      "note": "零余量是任务口径"
+    },
+    {
+      "id": "F-14-30",
+      "claim": "压力情景定义：夹角 <20° 的交叉事件损耗乘以 factor（×1/×2/×5/×10），几何固定、只复算评价，不重新布线",
+      "value": "DEFAULT_SCENARIO_FACTOR=5.0；DEFAULT_SCENARIO_THRESHOLD_DEG=20.0",
+      "source": "OpticalWaveguideRouter3D/src/opt2d/step14.py#L46-L68",
+      "scale": "256/512",
+      "caliber": "人为压力情景",
+      "note": "代码注释明确写明这是实验情景、不代表真实误差"
+    },
+    {
+      "id": "F-14-31",
+      "claim": "256 压力情景最大损耗（×1/×2/×5/×10）：base 5.0783/5.1038/5.1803/5.9941；spacing 5.0623/5.0810/5.1371/5.7425；small 5.0509/5.0696/5.1257/5.2192；both 5.0540/5.0727/5.1288/5.2971",
+      "value": "见 claim",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/sensitivity.csv",
+      "scale": "256",
+      "caliber": "固定几何复算",
+      "note": "touch 与 opt_base 与 base 相同"
+    },
+    {
+      "id": "F-14-32",
+      "claim": "256 ×10 情景下 small 收益最大：最大损耗比 base 低 0.7749 dB（5.2192 vs 5.9941），both −0.6970、spacing −0.2516",
+      "value": "见 claim",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/sensitivity.csv#L1-L25",
+      "scale": "256",
+      "caliber": "固定几何复算",
+      "note": "×1 口径下三种配置差异都 ≤0.03 dB"
+    },
+    {
+      "id": "F-14-33",
+      "claim": "512 压力情景最大损耗（×1/×2/×5/×10）：base 5.4995/5.5452/5.7264/8.4333；small 5.4741/5.5130/5.6296/7.4829（×10 −0.9504）；spacing 5.5409/5.5798/5.9657/7.8692；both 5.4877/5.4945/6.1946/8.5761",
+      "value": "见 claim",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/sensitivity.csv",
+      "scale": "512",
+      "caliber": "固定几何复算",
+      "note": "spacing 在 ×2/×5 反而更差（+0.0346/+0.2393）"
+    },
+    {
+      "id": "F-14-34",
+      "claim": "512 opt_base 压力情景边界：×1 −0.0341、×2 −0.0535、×5 −0.0924，但 ×10 由 8.4333 升至 8.4996（+0.0663，未改善）",
+      "value": "见 claim",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/sensitivity.csv#L21-L25",
+      "scale": "512",
+      "caliber": "固定几何复算",
+      "note": "发布表 t74 与脚注也如实记录"
+    },
+    {
+      "id": "F-14-35",
+      "claim": "256 严格口径保护性优化：0 接受。68 个候选、68 次完整评价、回滚指纹错位 0、耗时 233.10 s、停止原因 completed",
+      "value": "candidates_tried=68, accepted=0, mismatches=0",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/optimize_record.json",
+      "scale": "256",
+      "caliber": "任务规定的严格验收口径",
+      "note": ""
+    },
+    {
+      "id": "F-14-36",
+      "claim": "256 拒绝原因（可重复计数）：scenario_not_improved 62、max_worse 32、protected_worse_* 合计 196（#35 36、#34 32、#9 29、#11 19、#43 与 #186 各 16、#10 14、#185 13、#177 9、#52 7、#44 5）",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/optimize_record.json; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/optimize_attempts_base.csv",
+      "scale": "256",
+      "caliber": "同一次尝试可命中多条规则",
+      "note": ""
+    },
+    {
+      "id": "F-14-37",
+      "claim": "256 最接近可行的候选：路线 #44 的自由弯角候选（α=−60°、t0=0.5）把 ×5 情景最大从 5.1803 降到 5.1279（−0.0524 dB），平均变化 −0.000028 dB，因 protected_worse_44 被拒",
+      "value": "-0.0524",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/optimize_attempts_base.csv",
+      "scale": "256",
+      "caliber": "严格验收",
+      "note": "attempts 文件的 scenario_gain_db 正号表示改善"
+    },
+    {
+      "id": "F-14-38",
+      "claim": "256 诊断口径（保护余量 +0.01 与 +0.05，仅用于诊断）接受 2 条（#46、#47 自由弯角 α=−60°、t0=1.0）：平均 2.9689、最大 5.0722、×5 情景最大 5.1742、<20° 632、回滚指纹错位 0",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/probe/probe_summary.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/probe/attempts_strict_slack001.csv",
+      "scale": "256",
+      "caliber": "诊断口径（非任务口径）",
+      "note": "+0.01 与 +0.05 两档结果完全相同"
+    },
+    {
+      "id": "F-14-39",
+      "claim": "256 加强候选排序（small_angle_penalty_db 0.5 / 2.0）后严格口径仍 0 接受（各 68 候选）",
+      "value": "accepted=0（两个变体）",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/probe/probe_summary.csv",
+      "scale": "256",
+      "caliber": "候选排序覆盖，验收口径不变",
+      "note": "结论不随排序强度改变"
+    },
+    {
+      "id": "F-14-40",
+      "claim": "512 严格口径接受 6 条：74 个候选、6 接受、74 次完整评价、回滚指纹错位 0、耗时 762.24 s；接受路线为 #177、#290、#190、#402、#105、#44",
+      "value": "74/6/762.24 s/0",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/optimize_record.json; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/optimize_attempts_base.csv",
+      "scale": "512",
+      "caliber": "任务规定的严格验收口径",
+      "note": "#44 不在 512 保护集合内（512 的 D56 最差为 #287）"
+    },
+    {
+      "id": "F-14-41",
+      "claim": "512 opt_base 验收判定：ok=True，平均变化 −0.0010582 dB，全局最大变化 −0.0341072 dB，保护对象最大越界 0",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/acceptance.csv#L7; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/protection_margins.csv#L3",
+      "scale": "512",
+      "caliber": "严格验收",
+      "note": ""
+    },
+    {
+      "id": "F-14-42",
+      "claim": "512 其余配置未通过原因：spacing = 均值预算超限 + 最大值劣化 + 10 条保护路线劣化；small = 均值预算超限 + protected_worse_152；both = 均值预算超限 + 6 条保护路线劣化",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/acceptance.csv#L3-L6",
+      "scale": "512",
+      "caliber": "严格验收",
+      "note": "touch 与 base 判定为通过"
+    },
+    {
+      "id": "F-14-43",
+      "claim": "256 约束配置未通过原因：spacing = protected_worse_185；small = protected_worse_186/185/177；both = protected_worse_52；base/touch/opt_base 通过",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/acceptance.csv",
+      "scale": "256",
+      "caliber": "严格验收",
+      "note": "平均预算（+0.05）并非限制因素，逐路零余量才是"
+    },
+    {
+      "id": "F-14-44",
+      "claim": "512 诊断探测：严格口径 + 候选排序强度 0.5 已接受 5 条，×5 情景最大 5.6392（−0.0872）、平均 3.2940865（−0.0006）、回滚指纹错位 0；保护余量放到 +0.01 结果完全相同",
+      "value": "5 接受（两个变体同结果）",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/probe/probe_summary.csv",
+      "scale": "512",
+      "caliber": "诊断口径",
+      "note": "说明 512 上保护余量不是限制因素"
+    },
+    {
+      "id": "F-14-45",
+      "claim": "Step 13 自适应半径与 Step 14 冻结半径的 256 对照：spacing <20° 626→622（平均 2.9734→2.9724）、small 434→315（2.9930→2.9986）、both 369→371（2.9902→2.9887）",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_constrained/256/constrained_comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv",
+      "scale": "256",
+      "caliber": "同规模、不同半径策略",
+      "note": "说明 Step 13 数字里混有半径选择效应"
+    },
+    {
+      "id": "F-14-46",
+      "claim": "运行时间口径：512 opt_base 在 comparison.csv 中 runtime_s=0.0（占位），真实优化搜索时间 762.240149 s 记录在 optimize_record.json；256 opt_base 的 comparison.csv runtime_s=27.7718 s 是布局评价时间，搜索时间为 233.1024 s",
+      "value": "见 claim",
+      "unit": "s",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv#L7; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/optimize_record.json; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/optimize_record.json",
+      "scale": "256/512",
+      "caliber": "单次运行记录，两种时间不可混用",
+      "note": ""
+    },
+    {
+      "id": "F-14-47",
+      "claim": "raw 段级接触与物理接触对照：256 base raw 226 / 物理 0；256 D56 参照 raw 452 / 物理 0；512 全部 raw 0 / 物理 0",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/references.csv#L2",
+      "scale": "256/512",
+      "caliber": "解析段级 vs 路线级物理合并",
+      "note": "Step 13 报告里的 400/452 个接触为解析段级计数"
+    },
+    {
+      "id": "F-14-48",
+      "claim": "参照行：256 D56（不同半径）平均 4.3393、最大 5.3462、<20° 12、间距违规 37；512 D56 平均 4.5607、<20° 39、间距违规 525",
+      "value": "见 claim",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/references.csv#L2; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/references.csv#L2",
+      "scale": "256/512",
+      "caliber": "不同半径，不能与冻结配置直接比较",
+      "note": "仅作参照，不得并入公平对照表"
+    },
+    {
+      "id": "F-14-49",
+      "claim": "发布表 t71~t74 与原始 CSV 数值一致（平均/P95/最大/间距违规/物理接触/验收判定/压力情景），t71 另给出首个未通过原因",
+      "value": "口径一致",
+      "source": "OpticalWaveguideRouter3D/publication/tables/t71_step14_main_data.csv; t72_step14_scenario_data.csv; t73_step14_optimize_data.csv; t74_step14_sensitivity_data.csv",
+      "scale": "256/512",
+      "caliber": "发布表",
+      "note": "t71 未含交叉角分档与完整连接数，需回原始 comparison.csv"
+    },
+    {
+      "id": "F-14-50",
+      "claim": "保护集合数量在两规模各方案中恒为 11（固定集合确实被复用）",
+      "value": "protected_routes=11（各方案行均为 11）",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/protection_margins.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/protection_margins.csv",
+      "scale": "256/512",
+      "caliber": "保护集合固定性检查",
+      "note": ""
+    }
+  ],
+  "corrections": [
+    {
+      "old": "step_14 报告 §5 的 256 保护路线表：路线 #177 在 spacing 下相对 base 变化 −0.0044 dB",
+      "corrected": "原始产物为 −0.004345 dB，四位小数应为 −0.0043 dB（报告多进了一位）",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/spacing/protection_routes.csv"
+    },
+    {
+      "old": "step_14 报告 §5 的 512 保护路线表：路线 #34（base 最差）在 small 下相对 base 变化 −0.0254 dB（同报告 §7.2 又写作 −0.0253）",
+      "corrected": "原始产物为 −0.025345 dB，四位小数应为 −0.0253 dB；报告 §5 与 §7.2 自相矛盾，以 §7.2 与 CSV 为准",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/small/protection_routes.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/acceptance.csv"
+    },
+    {
+      "old": "step_14 报告 §5 的 512 保护路线表：路线 #154 在 spacing 下相对 base 变化 −0.0105 dB",
+      "corrected": "原始产物为 −0.010446 dB，四位小数应为 −0.0104 dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/spacing/protection_routes.csv"
+    },
+    {
+      "old": "step_14 报告 §7.3 的 512 表：both 配置 ×10 情景最大相对 base +0.1428 dB",
+      "corrected": "精确值为 +0.1428516 dB（8.576149610514074 − 8.433297964612663），四位小数应为 +0.1429 dB",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/sensitivity.csv"
+    },
+    {
+      "old": "把 256 opt_base 与 512 opt_base 的运行时间直接并列（27.8 s / 762.2 s）",
+      "corrected": "两列口径不同：256 opt_base 的 comparison.csv runtime_s=27.7718 s 是布局评价时间；512 opt_base 的 comparison.csv runtime_s=0.0 是占位，762.24 s 取自 optimize_record.json 的优化搜索时间。引用时必须注明来源与口径",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/512/comparison.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/optimize_record.json"
+    },
+    {
+      "old": "CONTRACT.md 第 13 条：R5/R6 是弯曲半径（单位 μm）",
+      "corrected": "产物与代码口径均为 mm：radius_freeze_check.csv 列名为 f56_radius_mm，取值 5.0/6.0；comparison.csv 的 radius_distribution 为 {6.0:256}、{6.0:510,5.0:2}；板尺寸 150×150 mm；公开说明亦写 R5=5 mm、R6=6 mm。应按 mm 使用",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/radius_freeze_check.csv; OpticalWaveguideRouter3D/publication/report/实验结果简明说明.md"
+    },
+    {
+      "old": "step_14 报告 §3.2：用修复后的实现重新扫描全部已存方案，legacy_scheme_scan.csv 前后对比评价结果逐项完全一致",
+      "corrected": "outputs 下只保留一份 legacy_scheme_scan.csv（单一快照，无前/后两列或两份文件）；且该文件 256 行的 F56 记录为 mean 2.9688948893085385、touch 228、overlap 1、legally_valid=False，与 Step 14 使用的 base（mean 2.9702981166542815、touch 226、overlap 0）不是同一状态。该逐项一致的结论无法由现有产物核实",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step13_fix/legacy_scheme_scan.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/256/comparison.csv"
+    },
+    {
+      "old": "step_14 报告 §6.1：目标路线 22 条（256）/ 26 条（512），每路 4 个候选",
+      "corrected": "落盘的 attempts 只覆盖 17 条（256，68 次尝试）与 22 条（512，74 次尝试）不同路线；按代码路径，候选枚举为空的路线不会写入任何尝试记录，因此目标数大于落盘路线数可由实现解释，但 22/26 这两个目标数本身没有产物可直接印证",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d_step14/256/optimize_attempts_base.csv; OpticalWaveguideRouter3D/outputs/opt2d_step14/512/optimize_attempts_base.csv; OpticalWaveguideRouter3D/src/opt2d/step14.py#L364-L368"
+    }
+  ],
+  "unverified": [
+    {
+      "item": "×10 情景的最差路线由极小角（<5°）交叉支配这一机制解释",
+      "reason": "sensitivity.csv 只记录 ×1/×2/×5/×10 的均值/P95/最大值，未记录各情景的最差路线 id，也没有逐事件夹角明细；且 512 small 的 <5° 交叉数从 53 增至 92，却仍把 ×10 情景最大损耗压低 0.9504 dB，与数量支配的说法不吻合。报告应只陈述数值，不陈述机制"
+    },
+    {
+      "item": "step_14 报告 §3.2 的求交边界补测结论（分离残差容差与边界容差后既有评价逐项不变）",
+      "reason": "无法由产物核实：只能看到一份 legacy_scheme_scan.csv 快照，且其 256 F56 行与 Step 14 使用的 base 不是同一状态；本次核查亦未运行任何测试"
+    },
+    {
+      "item": "step_14 报告 §3.1 中 256 D0 的 raw 段级接触 400、唯一物理交叉 9474",
+      "reason": "该行数值来自 Step 13 阶段产物，未在 outputs/opt2d_step14 下留存；legacy_scheme_scan.csv 只给出 D0 的 touch_count=400，未给出物理合并后的数值"
+    },
+    {
+      "item": "运行时间是否具有普遍效率代表性",
+      "reason": "每个配置只有一次运行记录（256 为 27.3~56.4 s，512 为 110.2~143.8 s，优化搜索 233.1 s / 762.2 s），且 touch 与 base 几何逐项相同而时间从 27.8 s 变为 55.7 s，波动明显，不能作为效率结论"
+    },
+    {
+      "item": "Step 14 未覆盖的验证：器件实测、实测误差范围、其它压力因子（如 ×3、×20）与更大端口规模",
+      "reason": "本项目全部损耗为现有损耗模型的计算值，压力情景为人为设定；契约另规定 1024 为合成扩容输入，不计入二维真实验证"
+    }
+  ]
+}

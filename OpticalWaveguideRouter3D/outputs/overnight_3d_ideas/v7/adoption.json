@@ -1,0 +1,338 @@
+{
+  "round": "v7",
+  "generator": "scripts/summarize_overnight.py",
+  "generated_utc": "2026-10-05T15:12:20Z",
+  "status": "DECIDED",
+  "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "rule_source": "scripts/overnight_registry.py ADOPTION_RULE",
+  "target_policy": "LEGACY",
+  "evaluation_policy": "E0_EXHAUSTIVE",
+  "k_per_target": 16,
+  "adopted_group": null,
+  "adopted_cell": null,
+  "adopted_manifest_sha256": null,
+  "adopted_metrics": null,
+  "retained_old_config": true,
+  "old_config": {
+    "target_policy": "LEGACY",
+    "evaluation_policy": "E0_EXHAUSTIVE",
+    "k_per_target": 16
+  },
+  "old_config_source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\scripts\\overnight_registry.py: round_groups() adoption defaults (adoption absent)",
+  "eligible_candidates": [
+    {
+      "group": "V7_T0_R2880",
+      "strategy": "V7_T0",
+      "recheck_verdict": "PASS",
+      "final_collision_pairs": 19233,
+      "stage_length_delta_mm": 53.625801242131274,
+      "candidate_evaluations": 2880
+    },
+    {
+      "group": "V7_T1_R2880",
+      "strategy": "V7_T1",
+      "recheck_verdict": "PASS",
+      "final_collision_pairs": 19233,
+      "stage_length_delta_mm": 53.625801242131274,
+      "candidate_evaluations": 2880
+    },
+    {
+      "group": "V7_T2_R2880",
+      "strategy": "V7_T2",
+      "recheck_verdict": "PASS",
+      "final_collision_pairs": 24385,
+      "stage_length_delta_mm": 45.80390865947993,
+      "candidate_evaluations": 2880
+    }
+  ],
+  "excluded_candidates": [],
+  "decision_path": [
+    {
+      "step": 1,
+      "criterion": "correctness and recheck PASS first",
+      "applied": true,
+      "field": "recheck_verdict + recheck_geometry",
+      "kept": [
+        "V7_T0_R2880",
+        "V7_T1_R2880",
+        "V7_T2_R2880"
+      ],
+      "dropped": [],
+      "detail": "MAIN R2880 R-mode groups only; the rule's first gate"
+    },
+    {
+      "step": 2,
+      "criterion": "then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts)",
+      "applied": true,
+      "field": "final_collision_pairs",
+      "direction": "min",
+      "values": {
+        "V7_T0_R2880": 19233,
+        "V7_T1_R2880": 19233,
+        "V7_T2_R2880": 24385
+      },
+      "kept": [
+        "V7_T0_R2880",
+        "V7_T1_R2880"
+      ],
+      "dropped": [
+        "V7_T2_R2880"
+      ],
+      "unknown_values": []
+    },
+    {
+      "step": 3,
+      "criterion": "tie -> smaller stage length delta",
+      "applied": true,
+      "field": "stage_length_delta_mm",
+      "direction": "min",
+      "values": {
+        "V7_T0_R2880": 53.625801242131274,
+        "V7_T1_R2880": 53.625801242131274
+      },
+      "kept": [
+        "V7_T0_R2880",
+        "V7_T1_R2880"
+      ],
+      "dropped": [],
+      "unknown_values": []
+    },
+    {
+      "step": 4,
+      "criterion": "tie -> fewer actual evaluations",
+      "applied": true,
+      "field": "candidate_evaluations",
+      "direction": "min",
+      "values": {
+        "V7_T0_R2880": 2880,
+        "V7_T1_R2880": 2880
+      },
+      "kept": [
+        "V7_T0_R2880",
+        "V7_T1_R2880"
+      ],
+      "dropped": [],
+      "unknown_values": []
+    },
+    {
+      "step": 5,
+      "criterion": "tie -> keep the old config",
+      "applied": true,
+      "field": "strategy_spec.target_policy + evaluation_policy + k_per_target",
+      "old_config": {
+        "target_policy": "LEGACY",
+        "evaluation_policy": "E0_EXHAUSTIVE",
+        "k_per_target": 16
+      },
+      "old_config_source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\scripts\\overnight_registry.py: round_groups() adoption defaults (adoption absent)",
+      "candidates": [
+        "V7_T0_R2880",
+        "V7_T1_R2880"
+      ],
+      "kept": [],
+      "detail": "all measured criteria tied; the old configuration is retained"
+    }
+  ],
+  "disclosures": {
+    "by_cell": [
+      {
+        "start_kind": "main",
+        "mode": "N",
+        "budget": 720,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "main",
+        "mode": "N",
+        "budget": 1440,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "main",
+        "mode": "N",
+        "budget": 2880,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "challenge",
+        "mode": "N",
+        "budget": 2880,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "main",
+        "mode": "R",
+        "budget": 720,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "main",
+        "mode": "R",
+        "budget": 1440,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "main",
+        "mode": "R",
+        "budget": 2880,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "start_kind": "challenge",
+        "mode": "R",
+        "budget": 2880,
+        "adopted_group": null,
+        "old_config_group": null,
+        "adopted_final_collision_pairs": null,
+        "old_config_final_collision_pairs": null,
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      }
+    ],
+    "regression_count": 0,
+    "regression_cells": [],
+    "criterion": "regression = the adopted configuration terminates with MORE near-distance pairs than the old configuration at the same start state, mode and budget; the rule itself ranks only the MAIN R2880 R-mode cells, so every other budget and mode is disclosed here, never used to rank",
+    "not_comparable": [
+      {
+        "cell": {
+          "start_kind": "main",
+          "mode": "N",
+          "budget": 720,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "main",
+          "mode": "N",
+          "budget": 1440,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "main",
+          "mode": "N",
+          "budget": 2880,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "challenge",
+          "mode": "N",
+          "budget": 2880,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "main",
+          "mode": "R",
+          "budget": 720,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "main",
+          "mode": "R",
+          "budget": 1440,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "main",
+          "mode": "R",
+          "budget": 2880,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      },
+      {
+        "cell": {
+          "start_kind": "challenge",
+          "mode": "R",
+          "budget": 2880,
+          "adopted_group": null,
+          "old_config_group": null,
+          "adopted_final_collision_pairs": null,
+          "old_config_final_collision_pairs": null,
+          "verdict": "NEITHER_GROUP_COMPLETED"
+        },
+        "verdict": "NEITHER_GROUP_COMPLETED"
+      }
+    ]
+  },
+  "round_manifest": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\manifest\\round_v7.json",
+  "round_manifest_sha256": "731f4edc6aa9b67910f4b493159a621c9d267edccb97d4f750d1671182bab26f",
+  "legacy_equivalence": {
+    "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\v7_legacy_vs_v4.json",
+    "present": false,
+    "all_reusable": null,
+    "note": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\v7_legacy_vs_v4.json is absent, so no LEGACY-vs-v4 reuse verdict exists yet; nothing is assumed here"
+  },
+  "notes": []
+}

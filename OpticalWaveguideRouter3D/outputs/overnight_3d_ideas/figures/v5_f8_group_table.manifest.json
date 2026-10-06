@@ -1,0 +1,34 @@
+{
+  "figure": "v5_f8_group_table",
+  "title": "逐组汇总表（comparison.csv 已完成组的原样读数）",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f8_group_table.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f8_group_table.pdf",
+  "png_sha256": "91401509148d8cb7cef18db9b609a0023f90b0c437c4e2625ac6693d2defa3ee",
+  "pdf_sha256": "76959f82e3f5f5f753281e6d2b8683f3d0ac104408dc14827b999638efe4b6b7",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+  ],
+  "source_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "start_kind",
+    "control",
+    "initial_collision_pairs",
+    "final_collision_pairs",
+    "net_collision_reduction",
+    "accepted_moves",
+    "candidate_evaluations",
+    "evaluations_per_action",
+    "net_reduction_per_evaluation",
+    "recheck_verdict"
+  ],
+  "source_sub_objects": [],
+  "rows_used": 16,
+  "notes": "表格只重排 comparison.csv 的读数，不做派生",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v5",
+  "generated_utc": "2026-10-05T14:42:51Z"
+}

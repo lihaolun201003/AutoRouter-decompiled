@@ -1,0 +1,385 @@
+{
+ "meta": {
+  "round": "第 4 次（终稿）排版修订后的逐页视觉验收",
+  "role": "independent_subagent",
+  "verified_at_local": "2026-10-06",
+  "pdf_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\三维布线v8路径弧长窗口续跑报告.pdf",
+  "pdf_sha256": "b57bddc915a9d9e42a8b00d7d58533a2a33b6adfdfbc62aaae345040d04efdff",
+  "fingerprint_match": true,
+  "pdf_bytes": 1584697,
+  "pdf_pages": 13,
+  "page_images_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\report_qa\\v8_continuation_final",
+  "page_images": "page_01.png … page_13.png (140 DPI, 1190x1540)",
+  "image_render_verification": "对第 1/5/9/13 页用同一 PDF 重新渲染 140 DPI 并逐像素比对：全部 pixel-identical，证明所用页图确实来自上述指纹的 PDF",
+  "source_markdown": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\docs\\reports\\step_19_v8_continuation.md",
+  "source_markdown_lines": 391
+ },
+ "summary": {
+  "pages_reviewed": 13,
+  "OK": 13,
+  "ISSUE": 0,
+  "UNCERTAIN": 0,
+  "observations": 4,
+  "ascii_in_cell_breaks": 0,
+  "verdict": "PASS —— 13 页全部通过；本轮 4 项排版修订均已生效，未发现回归"
+ },
+ "revision_claims_verification": {
+  "1_固定列宽_按内容估算_标识符不断行_末位数字不孤立": {
+   "verified": true,
+   "evidence": "用 find_tables 取 1568 个真实单元格矩形，按 y 聚类统计单元格内视觉行数：多行单元格 = 0，token 被换行拆断 = 0；另用参考法（同文本块+同 x 的相邻行且首尾均为 [A-Za-z0-9_]）独立扫描全文，命中 0"
+  },
+  "2_表格字体按可用宽度等比缩放_不低于6.5pt": {
+   "verified": true,
+   "evidence": "全文 span 最小字号 7.0pt（p2 的 ENDPOINT_CHANGED 表头），<6.5pt 的 span 数 = 0；各页最小字号 7.0–10.5pt"
+  },
+  "3_tblHeader 跨页重复表头_cantSplit 单行不跨页": {
+   "verified": true,
+   "evidence": "共 4 处跨页续表（p4→p5、p5→p6、p7→p8、p8→p9），4/4 均在续页首行重复完整表头；行级/块级重叠 = 0，无任何数据行被页面边界切断"
+  },
+  "4_原始 JSON 块已全部改为表格": {
+   "verified": true,
+   "evidence": "源 markdown 仅 1 处围栏代码块（第 375–387 行，内容为目录树清单，非 JSON），渲染为预格式清单（p10）；全文无等宽字体（仅 SimSun/SimHei/SymbolMT），不存在遗留 JSON 代码块。注意：§5.2/§5.3/§8 仍有 3 处行内 JSON 片段以正文形式出现（非代码块，按逗号自然折行，无 token 拆断），不属于「JSON 块」范畴"
+  }
+ },
+ "machine_checks": {
+  "engine": "PyMuPDF 1.28.2 (/ .venv python 3.10.11)",
+  "out_of_bounds_blocks": 0,
+  "block_overlaps_area_gt_30pct": 0,
+  "line_overlaps_area_gt_45pct": 0,
+  "spans_below_6_5pt": 0,
+  "min_font_pt": 7,
+  "per_page_min_font_pt": {
+   "1": 10.5,
+   "2": 7,
+   "3": 8,
+   "4": 8.5,
+   "5": 8.5,
+   "6": 8.5,
+   "7": 9,
+   "8": 9,
+   "9": 9,
+   "10": 8.5,
+   "11": 9,
+   "12": 9,
+   "13": 9
+  },
+  "table_cells_scanned": 1568,
+  "table_cells_with_more_than_one_visual_line": 0,
+  "ascii_token_wraps_in_cell": 0,
+  "ascii_token_wraps_reference_method": 0,
+  "images_total": 7,
+  "blank_pages": 0,
+  "fonts_used": [
+   "SimSun",
+   "SimHei",
+   "SymbolMT"
+  ],
+  "monospace_fonts_used": "无（证明无遗留代码块）",
+  "footer_or_page_numbers": "无",
+  "trailing_white_space_pt_below_content": {
+   "1": 91,
+   "2": 83.7,
+   "3": 106.5,
+   "4": 73.5,
+   "5": 83.7,
+   "6": 76.7,
+   "7": 85.8,
+   "8": 77.3,
+   "9": 113.6,
+   "10": 204.5,
+   "11": 278.1,
+   "12": 254.8,
+   "13": 134.1
+  },
+  "figures": [
+   {
+    "page": 10,
+    "name": "v8_diagnostics_side_outcomes",
+    "source_px": [
+     1297,
+     667
+    ],
+    "effective_dpi": 213,
+    "caption_below": true
+   },
+   {
+    "page": 11,
+    "name": "v8_example_path_window_route",
+    "source_px": [
+     1812,
+     753
+    ],
+    "effective_dpi": 297,
+    "caption_below": true
+   },
+   {
+    "page": 11,
+    "name": "v8_p2_g0_vs_g1_pairs",
+    "source_px": [
+     1511,
+     681
+    ],
+    "effective_dpi": 248,
+    "caption_below": true
+   },
+   {
+    "page": 12,
+    "name": "v8_p3_family_limit",
+    "source_px": [
+     1511,
+     681
+    ],
+    "effective_dpi": 248,
+    "caption_below": true
+   },
+   {
+    "page": 12,
+    "name": "v8_p4_length_cap",
+    "source_px": [
+     1511,
+     708
+    ],
+    "effective_dpi": 248,
+    "caption_below": true
+   },
+   {
+    "page": 13,
+    "name": "v8_p4_tradeoff",
+    "source_px": [
+     1040,
+     800
+    ],
+    "effective_dpi": 170,
+    "caption_below": true
+   },
+   {
+    "page": 13,
+    "name": "v8_p5_serial_timing",
+    "source_px": [
+     1454,
+     618
+    ],
+    "effective_dpi": 238,
+    "caption_below": true
+   }
+  ],
+  "figure_set_completeness": "outputs/overnight_3d_continuation/figures/ 下恰有 7 个 PNG，与 PDF 中 7 张图一一对应、顺序一致，无缺图"
+ },
+ "pages": [
+  {
+   "page": 1,
+   "status": "OK",
+   "content": "标题 + §1 本轮范围与状态恢复（P0）+ §2 v8 几何支持链（P1）",
+   "tables_on_page": 0,
+   "figures": 0,
+   "min_font": 10.5,
+   "notes": [
+    "标题 17pt SimHei 正常",
+    "kappa3D 闭式公式以行内文本呈现，未断行",
+    "无页眉页脚/页码"
+   ]
+  },
+  {
+   "page": 2,
+   "status": "OK",
+   "content": "§2 尾 + §3 v8 正式对照（P2）3 张表 + §3.1 首轮 G1 缺陷与修正",
+   "tables_on_page": 3,
+   "figures": 0,
+   "min_font": 7,
+   "notes": [
+    "全文最小字号 7.0pt 出现在「缺陷版/修正版 ENDPOINT_CHANGED」表头",
+    "300 DPI 放大核验：ENDPOINT_CHANGED 单行完整，未在单元格内断开",
+    "正文表格 9.0pt"
+   ]
+  },
+  {
+   "page": 3,
+   "status": "OK",
+   "content": "§4 代码中立性 + §5 冻结诊断集 + §5.1/§5.2 要点",
+   "tables_on_page": 2,
+   "figures": 0,
+   "min_font": 8,
+   "notes": [
+    "§5.2 行内 JSON（{\"PATH_WINDOW_G1\": 1296, \"LINE_WINDOW_G0\": 89}）在逗号后自然折行，无 token 拆断"
+   ]
+  },
+  {
+   "page": 4,
+   "status": "OK",
+   "content": "§5.3 机制分解 + §6 A 的实际评价公平性（P3）24 行主表",
+   "tables_on_page": 2,
+   "figures": 0,
+   "min_font": 8.5,
+   "notes": [
+    "find_tables 把 §5.3 标题并入表区（检测伪影），视觉上标题在表外、位置正常",
+    "12 列大表所有单元格单行"
+   ]
+  },
+  {
+   "page": 5,
+   "status": "OK",
+   "content": "P3 主表跨页续 + 按上限聚合表 + §7 长度约束下的收益（P4）+ §7.1 受控组",
+   "tables_on_page": 3,
+   "figures": 0,
+   "min_font": 8.5,
+   "notes": [
+    "页首重复 P3 主表 12 列表头 → tblHeader 生效",
+    "§7.1 表 24 行全部单行"
+   ]
+  },
+  {
+   "page": 6,
+   "status": "OK",
+   "content": "§7.1 表跨页续 + §7.2 同策略不限长对照 + §8 受控串行计时（P5）2 表 + §9 开头",
+   "tables_on_page": 4,
+   "figures": 0,
+   "min_font": 8.5,
+   "notes": [
+    "页首重复 §7.1 表 12 列表头 → tblHeader 生效",
+    "续表仅余 1 行数据（寡行），属排版美观问题，非内容缺陷",
+    "计时表首列 OFF/ON 字号略小于同行其他列（自动缩放），不影响阅读"
+   ]
+  },
+  {
+   "page": 7,
+   "status": "OK",
+   "content": "§9 视觉验收要点 + 复核台账表（轮次/组/状态/复核 PASS）起",
+   "tables_on_page": 1,
+   "figures": 0,
+   "min_font": 9,
+   "notes": [
+    "V8_G0_* 行复核 PASS 列为空（数据本身为空）"
+   ]
+  },
+  {
+   "page": 8,
+   "status": "OK",
+   "content": "复核台账表续（p3/p4 全部行）",
+   "tables_on_page": 1,
+   "figures": 0,
+   "min_font": 9,
+   "notes": [
+    "页首重复 4 列表头 → tblHeader 生效",
+    "行未跨页断开"
+   ]
+  },
+  {
+   "page": 9,
+   "status": "OK",
+   "content": "复核台账表末段 + 整体判定 + §10 结论",
+   "tables_on_page": 1,
+   "figures": 0,
+   "min_font": 9,
+   "notes": [
+    "页首重复 4 列表头 → tblHeader 生效（同一逻辑表连续 2 次跨页均重复）",
+    "结论中的数值对比（19233 -> 18211（delta=-1022））单行完整"
+   ]
+  },
+  {
+   "page": 10,
+   "status": "OK",
+   "content": "§11 产物与复现 + 复现命令 + 附图 1（v8_diagnostics_side_outcomes）",
+   "tables_on_page": 0,
+   "figures": 1,
+   "min_font": 8.5,
+   "notes": [
+    "目录清单为预格式块（非 JSON 代码块），列对齐正常",
+    "图题在图下方居中，间距约 15.7pt",
+    "页尾留白 204.5pt（超出正常下边距约 132.5pt）",
+    "图例文字约 3.7pt（栅格图内），整页视图偏小但可辨认"
+   ]
+  },
+  {
+   "page": 11,
+   "status": "OK",
+   "content": "附图 2（v8_example_path_window_route 三联图）+ 附图 3（v8_p2_g0_vs_g1_pairs）",
+   "tables_on_page": 0,
+   "figures": 2,
+   "min_font": 9,
+   "notes": [
+    "三幅图标题与坐标轴标签完整、未被上边距裁切（图块 y0=72.0）",
+    "中间 XY 投影小面板为全图最小元素，600 DPI 放大核验标签清晰可读",
+    "图题均在各自图下方居中",
+    "页尾留白 278.1pt（超出正常下边距约 206.1pt）"
+   ]
+  },
+  {
+   "page": 12,
+   "status": "OK",
+   "content": "附图 4（v8_p3_family_limit）+ 附图 5（v8_p4_length_cap）",
+   "tables_on_page": 0,
+   "figures": 2,
+   "min_font": 9,
+   "notes": [
+    "双栏面板标题、图例、刻度均可读",
+    "页尾留白 254.8pt（超出正常下边距约 182.8pt）"
+   ]
+  },
+  {
+   "page": 13,
+   "status": "OK",
+   "content": "附图 6（v8_p4_tradeoff）+ 附图 7（v8_p5_serial_timing）+ 文档结束",
+   "tables_on_page": 0,
+   "figures": 2,
+   "min_font": 9,
+   "notes": [
+    "附图 6 有效分辨率最低（约 170 DPI），仍清晰",
+    "末尾图题完整，文档无截断、无孤立残行",
+    "页尾留白 134.1pt（超出正常下边距约 62.1pt）"
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "id": "OBS-1",
+   "severity": "轻微/版面",
+   "pages": [
+    10,
+    11,
+    12
+   ],
+   "text": "附图页页尾留白偏大：p11 超出正常下边距约 206pt（≈2.9 英寸）、p12 约 183pt、p10 约 133pt。成因是「图 + 图题」作为不可分割块整体排版，下一页图放不下即整体下移。判定为非缺陷（未切图、未丢内容），但若追求版面紧凑可考虑缩小图高或允许图题与图分离。"
+  },
+  {
+   "id": "OBS-2",
+   "severity": "轻微/可读性",
+   "pages": [
+    10
+   ],
+   "text": "v8_diagnostics_side_outcomes 图内图例为全文档最小文字，实测单行高度约 3.7pt（正文 10.5pt、表格最小 7.0pt）。140 DPI 整页视图下仍可辨认，600 DPI 放大下清晰；因是 matplotlib 栅格图内文字，属图源固有，非报告排版问题。若要改需重新出图。"
+  },
+  {
+   "id": "OBS-3",
+   "severity": "提示/规范",
+   "pages": [
+    6
+   ],
+   "text": "§7.1 受控组表在 p5→p6 处跨页后，p6 页首仅剩 1 行数据（表头重复 + 单行寡行）。不违反 cantSplit，属常见寡行，仅影响美观。"
+  },
+  {
+   "id": "OBS-4",
+   "severity": "提示/规范",
+   "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "text": "全文无页码、无页眉页脚；7 张附图题注为「文件名 (文件名.png)」样式、无「图 N」编号。位置本身规范（均在图下方居中，间距 15.7–17.0pt），但若作为送审稿，建议补页码与图号。"
+  }
+ ],
+ "limitations": [
+  "本轮仅做「验收」，未改动 PDF/DOCX/MD/源码。",
+  "「中文真实字形」通过 13 页全页目视确认（无方框/豆腐块/缺字），未逐字做字体覆盖率比对。",
+  "图内文字可读性以 140 DPI 全页视图与 600 DPI 局部放大双重核验；更小倍率（如打印 100% 纸质）下的可读性未评估。"
+ ]
+}

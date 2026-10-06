@@ -1,0 +1,358 @@
+[
+  {
+    "page": 1,
+    "chars": 778,
+    "first": [
+      "光波导布线全部实验报告 ",
+      "我们完成了二维波导布线复现、轨道与路径优化、交叉和间距诊断，以及三维抬层实验。本报告按"
+    ],
+    "last": [
+      "结果和结论：主要损耗数值接近原报告，256、512 两组均全部布通。这里的损耗是模型计算值；交",
+      "叉表来自原图数字化近似，尚无器件实测结果。 "
+    ]
+  },
+  {
+    "page": 2,
+    "chars": 142,
+    "first": [
+      "数据来源：2D/results/fiberBoard{256,512}_loss_summary.json、fiberBoard512_loss_R4_summary.json；三线表取自 t32。",
+      "2D/3D 目录缩写与 t 表编号见末页。 "
+    ],
+    "last": [
+      "数据来源：2D/results/fiberBoard{256,512}_loss_summary.json、fiberBoard512_loss_R4_summary.json；三线表取自 t32。",
+      "2D/3D 目录缩写与 t 表编号见末页。 "
+    ]
+  },
+  {
+    "page": 3,
+    "chars": 808,
+    "first": [
+      "2 弯曲模型与半径扫描 ",
+      "做了什么：先用原程序的弯曲表重算 2、3、4、5、6 mm 半径的一次 90°转弯损耗，再让 512 条连接"
+    ],
+    "last": [
+      "空间。 ",
+      "数据来源：t31、t33；2D/loss_model.py；2D/results/fiberBoard512_loss_R{2,3,4}_summary.json。 "
+    ]
+  },
+  {
+    "page": 4,
+    "chars": 826,
+    "first": [
+      "3 交叉表敏感性与原程序逐路核对 ",
+      "做了什么：原始交叉损耗数据表没有完整恢复，所以在同一 512 条 R5 几何上分别采用全 90°估算、"
+    ],
+    "last": [
+      "235 条相差一根轨道。把 sn_calc 条件由大于改为大于等于没有影响；去掉 sn_calc 项后仅 43/512 一",
+      "致。这些负假设不能解释图差异，证据表明历史图片与恢复 EXE 来自不同构建。 "
+    ]
+  },
+  {
+    "page": 5,
+    "chars": 242,
+    "first": [
+      "图 3 自己的 512 条 R5 逐路损耗分布 ",
+      "数据来源：t34；2D/data/crossing_loss_from_thesis_fig3_12.csv；2D/scratch/legacy_loss/legacy256_R5.json 及"
+    ],
+    "last": [
+      "legacy512_R{2,3,4,5}.json。 ",
+      "数据来源：2D/docs/exact_legacy_fidelity_report.md 与 migration_report.md。 "
+    ]
+  },
+  {
+    "page": 6,
+    "chars": 1026,
+    "first": [
+      "4 早期输入与二维骨架验证 ",
+      "做了什么：检查 256/512 连接输入，恢复 512 个端点快照和路线分类，再执行简化的独占轨道分配"
+    ],
+    "last": [
+      "数据来源：输入和快照：step_8_legacy_input_validation.md、step_8_legacy_512_snapshot.md、",
+      "step_8_legacy_512_route_preparation.md，均在 3D/docs/reports/。 "
+    ]
+  },
+  {
+    "page": 7,
+    "chars": 1121,
+    "first": [
+      "5 精确求交与多交叉诊断 ",
+      "平滑和特殊 Z 实验：先把 454 条普通骨架全部圆弧平滑，得到 1362 条直段和 908 个四分之一圆弧；"
+    ],
+    "last": [
+      "数据来源：3D/outputs/step_8_5_legacy_512_{physical,multi_crossing,double_cross,loss}_summary.json；",
+      "step_8_5_m1_5_multi_attribution_summary.json。 "
+    ]
+  },
+  {
+    "page": 8,
+    "chars": 887,
+    "first": [
+      "6 排序反转与硬约束负结果 ",
+      "做了什么：把 112 条上侧 U 形路线的主排序反转，保持其他路线不变；再测试遇到端部多交叉就拒"
+    ],
+    "last": [
+      "数据来源：3D/outputs/step_8_5_top_u_order_ab_summary.json、top_u_multi_crossing_delta_summary.json、",
+      "exact_multi_guard_fast_routing.json、exact_multi_guard_exhaustion_summary.json。以上文件名均有 step_8_5_前缀。 "
+    ]
+  },
+  {
+    "page": 9,
+    "chars": 942,
+    "first": [
+      "7 局部单线恢复沙箱与归因诊断 ",
+      "端点长度诊断：先实现 Dynamic D 端点视图，用 4 类合成样本和 4 条真实路线检查每侧最近端点与"
+    ],
+    "last": [
+      "数据来源：3D/docs/reports/step_8_5_m1_dynamic_d_diagnostic.md；",
+      "outputs/step_8_5_m1_5_multi_attribution_summary.json、step_8_5_m1_6_victim_statistics.json。 "
+    ]
+  },
+  {
+    "page": 10,
+    "chars": 825,
+    "first": [
+      "8 候选轨道与自适应半径主实验 ",
+      "做了什么：在 256 和 512 条输入上比较 A 原版 R5、B 统一 R6、C 固定 R5 候选轨道搜索、D 允许"
+    ],
+    "last": [
+      "段改变了部分槽位，结论属于早期探索。 ",
+      "数据来源：3D/outputs/opt2d/{256,512}/comparison.csv；S12-01。 "
+    ]
+  },
+  {
+    "page": 11,
+    "chars": 1106,
+    "first": [
+      "9 轨道优化的全部消融 ",
+      "做了什么：依次改变候选数量、布线顺序、拆线重布、位置惩罚和半径策略，其余采用保存的默认"
+    ],
+    "last": [
+      "较小；未布通配置不作为成功优化结果。 ",
+      "数据来源：t52；3D/outputs/opt2d/{256,512}/sensitivity.json 与 sensitivity/*/summary.json。 "
+    ]
+  },
+  {
+    "page": 12,
+    "chars": 1222,
+    "first": [
+      "10 固定端点与自由弯角六方案 ",
+      "做了什么：逐路固定起终点，比较原版 A、固定 R5 的 U 形搜索 R5U、优先 R6 且失败回退 R5 的 D0、"
+    ],
+    "last": [
+      "数据来源：3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv、radius_compare.csv；256/per_route_delta.csv；历史记录",
+      "在 opt2d_step13/。 "
+    ]
+  },
+  {
+    "page": 13,
+    "chars": 943,
+    "first": [
+      "11 自由弯角的损耗分解与几何代价 ",
+      "表 15 六方案平均损耗分解 "
+    ],
+    "last": [
+      "注：交叉事件是唯一事件，小角列沿用逐路累计计数，间距列为路线对。旧段级 touch 数不作为物理接触数。重合为零仍",
+      "可有间距不足。 "
+    ]
+  },
+  {
+    "page": 14,
+    "chars": 237,
+    "first": [
+      "结果和结论：512 条 A 到 F56 平均弯曲损耗 4.5587→2.1384 dB，总转角 172.20°→100.92°；交叉损耗",
+      "0.3219→0.5650 dB，间距不足 692→1231 对。自由弯角用更高交叉代价换取更大弯曲收益，整体间距"
+    ],
+    "last": [
+      "还需要改善。 ",
+      "数据来源：3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv；Step14 对段级接触重新归并为物理事件。 "
+    ]
+  },
+  {
+    "page": 15,
+    "chars": 973,
+    "first": [
+      "12 最差路线的同一编号跟踪 ",
+      "图 4 自己的最差路线局部图 左为 A 路线 287 右为 F56 路线 34 "
+    ],
+    "last": [
+      "F56 的新最差连接换成 34，最大损耗为 5.0783/5.4995 dB，必须同时看固定 ID 和全局最大。 ",
+      "数据来源：3D/outputs/opt2d_step13_fix/{256,512}/{scheme}/per_route.csv；原跟踪文件 worst_route_tracking.csv。 "
+    ]
+  },
+  {
+    "page": 16,
+    "chars": 20,
+    "first": [],
+    "last": [
+      "光波导布线实验记录 ",
+      "第 16 页 "
+    ]
+  },
+  {
+    "page": 17,
+    "chars": 1287,
+    "first": [
+      "13 自适应半径条件下的约束与惩罚扫描 ",
+      "做了什么：在 base 上分别加入间距惩罚 spacing、小角惩罚 small 及二者 both，重新选择路径；另对"
+    ],
+    "last": [
+      "数据来源：t63；3D/outputs/opt2d_step13_constrained/{256,512}/constrained_comparison.csv；",
+      "opt2d_step13_fix/{256,512}/penalty_ablation_F{5,56}.csv。 "
+    ]
+  },
+  {
+    "page": 18,
+    "chars": 897,
+    "first": [
+      "14 六路径方案的小角交叉压力实验 ",
+      "做了什么：不重新布线，在各方案的固定几何上，把小于 20°的交叉损耗分别乘以 1、2、5、10，再"
+    ],
+    "last": [
+      "善直接推断所有压力情景都改善。 ",
+      "数据来源：t64；3D/outputs/opt2d_step13_fix/{256,512}/sensitivity.csv。 "
+    ]
+  },
+  {
+    "page": 19,
+    "chars": 1220,
+    "first": [
+      "15 冻结半径的六配置与严格验收 ",
+      "做了什么：固定每条路线的端点和 F56 半径，比较 base、spacing、small、touch、both 及保护性局部"
+    ],
+    "last": [
+      "之一。只有 512 条保护优化产生了通过全部规则的非零改善。 ",
+      "数据来源：3D/outputs/opt2d_step14/{256,512}/comparison.csv、acceptance.csv、radius_freeze_check.csv、references.csv。 "
+    ]
+  },
+  {
+    "page": 20,
+    "chars": 1355,
+    "first": [
+      "16 256 条固定保护对象的逐路结果 ",
+      "做了什么：固定同一组 11 条 ID，包含 base 最差、D56 最差及被穿越的 U 形连接。每个配置都评价"
+    ],
+    "last": [
+      "平均预算等其他条件。 ",
+      "数据来源：3D/outputs/opt2d_step14/{256,512}/protection_margins.csv。 "
+    ]
+  },
+  {
+    "page": 21,
+    "chars": 1012,
+    "first": [
+      "17 512 条固定保护对象的逐路结果 ",
+      "做了什么：固定同一组 11 条 ID，包含 base 最差、D56 最差及被穿越的 U 形连接。每个配置都评价"
+    ],
+    "last": [
+      "opt_base 改善 7 条、其余不恶化，满足逐路保护。集合均值或全局最大改善，不能代替逐路验收。 ",
+      "数据来源：3D/outputs/opt2d_step14/512/protection_set.json 与各配置/protection_routes.csv。 "
+    ]
+  },
+  {
+    "page": 22,
+    "chars": 1082,
+    "first": [
+      "18 保护优化过程与放宽条件探针 ",
+      "做了什么：每个目标路线最多试 4 个候选，目标包含固定保护集合和压力情景的高损耗路线。逐候"
+    ],
+    "last": [
+      "数据来源：3D/outputs/opt2d_step14/{256,512}/optimize_attempts_base.csv、optimize_record.json、",
+      "probe/probe_summary.csv。 "
+    ]
+  },
+  {
+    "page": 23,
+    "chars": 1127,
+    "first": [
+      "19 冻结半径后全部压力情景 ",
+      "做了什么：保留六配置已经生成的几何，分别把小于 20°交叉损耗乘以 1、2、5、10，重新计算最大"
+    ],
+    "last": [
+      "一项改善代表所有风险改善。 ",
+      "数据来源：t74；3D/outputs/opt2d_step14/{256,512}/sensitivity.csv、comparison.csv。 "
+    ]
+  },
+  {
+    "page": 24,
+    "chars": 1238,
+    "first": [
+      "20 三维几何与距离检测验证 ",
+      "做了什么：建立三维路线容器和局部抬层几何；用余弦过渡连接不同层，检查端点与切向连续；对"
+    ],
+    "last": [
+      "结论：单路线抬层具有局部可行性；它没有证明多路线同时抬层后全板无碰撞，因此继续执行顺序",
+      "分配和 1024 条压力实例。 "
+    ]
+  },
+  {
+    "page": 25,
+    "chars": 121,
+    "first": [
+      "数据来源：3D/outputs/step_9_d_probe_summary.json、step_9_d_local_validation.json、step_9_d_synthetic.json。 "
+    ],
+    "last": [
+      "第 25 页 ",
+      "数据来源：3D/outputs/step_9_d_probe_summary.json、step_9_d_local_validation.json、step_9_d_synthetic.json。 "
+    ]
+  },
+  {
+    "page": 26,
+    "chars": 840,
+    "first": [
+      "22 两层与三层顺序分配 ",
+      "做了什么：在同一 512 条二维布局上执行两层 30 次探针，再以各 50 次尝试比较两层和三层。每次"
+    ],
+    "last": [
+      "数据来源：t81；3D/outputs/step_9_e_sequential_elevation_summary.json、",
+      "step_9_f_{two_layer_control,three_layer}_summary.json、step_9_f_comparison.json。 "
+    ]
+  },
+  {
+    "page": 27,
+    "chars": 749,
+    "first": [
+      "23 固定 1024 条三层实验 ",
+      "板容量负对照：先在 1024 条横向数据上做板高度容量检查：150 mm 高时 800 条普通分配成功、160"
+    ],
+    "last": [
+      "失败与终态独立复核：累计移除 68782 对、新增 2604 对，净减少 66178 对；845 次因双方已抬、4",
+      "次无改善。独立重载 1024 条终态后全查 523776 路线对，与局部更新账目一致，696 项测试通过。 "
+    ]
+  },
+  {
+    "page": 28,
+    "chars": 293,
+    "first": [
+      "结论：局部抬层能减少约三分之一的近距对，但仍有大量剩余和未决对。这是合成压力实例的几何",
+      "改善，没有计算三维光学损耗，也没有制作器件验证。 "
+    ],
+    "last": [
+      "step_10_fixed_1024_前缀。 ",
+      "数据来源：容量检查：3D/outputs/step_10_fixed_1024_board_capacity_check.json。 "
+    ]
+  },
+  {
+    "page": 29,
+    "chars": 359,
+    "first": [
+      "24 自己的三维结果图怎么读 ",
+      "图 6 自己的 XZ 侧视图 紫色是升层与降层过渡 "
+    ],
+    "last": [
+      "撞已全部消除。 ",
+      "数据来源：3D/outputs/step_11_visualization_summary.json；原图均位于 3D/outputs/figures/。 "
+    ]
+  },
+  {
+    "page": 30,
+    "chars": 1138,
+    "first": [
+      "25 全部实验可以得出的结论 ",
+      "二维复现方面，原版几何和直线加弯曲损耗有逐路一致性证据，主要损耗数值接近原报告。交叉表"
+    ],
+    "last": [
+      "平均和 P95 描述一次布局内各条路线的统计，不是多次随机运行的置信区间。报告包含 41 项原清单记录以及清单之外已",
+      "经执行的早期基线和交叉诊断；纯计划、未执行策略不计作实验。本次整理没有重新运行路由。 "
+    ]
+  }
+]

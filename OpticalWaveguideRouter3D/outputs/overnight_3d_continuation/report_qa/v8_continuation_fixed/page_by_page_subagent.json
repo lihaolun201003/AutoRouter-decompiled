@@ -1,0 +1,719 @@
+{
+ "reviewer": "subagent（独立复审）——目标版本与 Lead 记录相同（同一 sha256）",
+ "note": "本文件与 page_by_page_subagent.json 内容相同；Lead 自己的记录保留在 page_by_page_lead.json / QA_REPORT_lead.md。",
+ "artifact": {
+  "pdf": "publication/report/三维布线v8路径弧长窗口续跑报告.pdf",
+  "pdf_sha256": "c3cf0705ad72f3da3fa0dd3adc9bd74ad677d46eafb10bf4c8a96f84af2c2e76",
+  "pdf_bytes": 1559923,
+  "pdf_mtime": "2026-10-06T04:50:57.646Z",
+  "pages": 16,
+  "page_images": "page_01.png … page_16.png（140 DPI，1190x1540）",
+  "page_image_sha256": {
+   "page_01.png": "23d104dd49b6966d5d7a10ba15c8240ae8f6791afebab2a1a0d63b3e707d632d",
+   "page_02.png": "91f5f322c6bf16e9a1dffd916992e226bfa5e2a2d299dce528dce469ba09bc00",
+   "page_03.png": "5ff6a9c2234d68e6670e244a826974fe614f4148f3e2acedb42009f9a014b8bb",
+   "page_04.png": "350f1ee703b92f30d35212f3f7483fe9b315469ed91e3e7f64bc12c74e7785a2",
+   "page_05.png": "7a497d7dcaa1f7aa1fac07035bb020982a3ad9eb8ee5b74ac60f2ce95f187245",
+   "page_06.png": "4be6de16f5c2e97aa6d48d105c252b1a8c487462cdb40f0808326c3b154d6fa9",
+   "page_07.png": "9a8e10a7055d3b906aefb31a8d7603d39efc93166acc78afbafd48d4ae8bc6a3",
+   "page_08.png": "b69e828b73672d8ea3156fce99181a373fe342c6167a4787f4d829f674c6adfe",
+   "page_09.png": "3c91261131c0748f06ab2e710a5ffe85b50059f81e0e711a1a7db71f56827b50",
+   "page_10.png": "d76109393a2c623276af4bed07b6960212fcdfa564c47411d10ad9ecb8b28d58",
+   "page_11.png": "1e0984d38ec7d6b17967eeab70275f4a7e3be3cb7886bbe80d89ec34d0375303",
+   "page_12.png": "d0b511d51b25a3c459936c263eff1029f0c6bed24b5c1761c9662ec4e1a05da3",
+   "page_13.png": "4f84af693e0c304a1e34f5358c27b4fbb3879b2bf4184076e3fd8de65c4ad09d",
+   "page_14.png": "521542e07c86a7ec89203e7157ca4b5d1a561258e8bc79f939b44fd30b5a2dee",
+   "page_15.png": "985915cf5a9f13790a8fbc16f974b256f93f7c449b375a71e979b53b51d01b27",
+   "page_16.png": "689d8164349edc7ba6192182434e5913f2622334ae11e5b90ed297546bbbbea6"
+  },
+  "source_markdown": "docs/reports/step_19_v8_continuation.md",
+  "source_markdown_mtime": "2026-10-06T04:50:44.498Z",
+  "reviewed_at": "2026-10-06T04:55:31.385Z"
+ },
+ "method": {
+  "visual": "read_image 逐页肉眼查看全部 16 页（未用文字抽取替代）",
+  "figure_legibility": "用 PyMuPDF 从 PDF 内嵌图区以 300 DPI 裁出 7 张图（figcrop_01…figcrop_07）单独目检图内标签",
+  "machine": "geom_check.py（块级/行级越界 + 块级/行级重叠 + 图与文字重叠 + 留白百分比）",
+  "ascii_scan": "ascii_break_scan.py（单元格内 ASCII token 被拆断的机器清点：同块相邻行 + 左边界对齐 + 首尾均为 [A-Za-z0-9_]）"
+ },
+ "stability_note": [
+  "验收期间 PDF 被重建 3 次：04:47 前（1524860 B 旧版）、04:48:58 → 18 页 sha256 d4a8b7ff…、04:50:57 → 16 页 sha256 c3cf0705…（定稿）。",
+  "定稿 16 页版的 page_01…05.png 与中途 18 页版逐字节相同（sha256 一致，结论可复用）；page_06…16 为重建后重新逐页查看。",
+  "本记录只对 sha256 c3cf0705ad72f3da3fa0dd3adc9bd74ad677d46eafb10bf4c8a96f84af2c2e76（16 页）有效；sha 变化即失效须重做。"
+ ],
+ "summary": {
+  "pages_viewed": 16,
+  "total_pages": 16,
+  "OK": 6,
+  "ISSUE": 10,
+  "UNCERTAIN": 0,
+  "severity_breakdown": {
+   "moderate": 1,
+   "minor": 9
+  },
+  "issue_pages": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   9,
+   10,
+   11,
+   16
+  ]
+ },
+ "not_a_problem": [
+  "中文全部为真实字形：16 页逐页确认，无方框/乱码/缺字。",
+  "无越界：块级与行级越界均为 0。",
+  "无真实压字：行级重叠 0 对。机器报告的 31 对块级重叠经目检 + 行级复核，全部是 PyMuPDF 对表格的抽取伪影（相邻表格行、整行块与表头单元格块的包围盒按行距相交）。",
+  "无空白页；无内容截断丢失——所有被拆断的标识符只是换行，字符没有丢失。",
+  "7 张图全部有图题，且图题均位于图下方居中。",
+  "长表跨页均有重复表头（P5/P6/P7/P8/P9/P10/P11 顶部为完整表头）；不再出现只有「ILY」「用尽」「80」的孤立续行碎片。"
+ ],
+ "machine_check": {
+  "source": "geom_check.json（PyMuPDF）",
+  "page_size": "612 x 792 pt = 215.9 x 279.4 mm（Letter）",
+  "limit_of_method": "该检查看不出光栅图内部的文字重叠/截断（图内像素不在文字层）；图内可读性只能靠逐页与 300 DPI 图区目检，本记录已补做。",
+  "totals": {
+   "overflow_blocks_and_lines": 0,
+   "block_overlap_pairs": 31,
+   "line_overlap_pairs": 0,
+   "interpretation": "block 级重叠经逐页目检全部为相邻表格行/表头单元格的包围盒行距artifact；line 级重叠才是真实墨迹压字。"
+  },
+  "per_page": [
+   {
+    "page": 1,
+    "text_lines": 35,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.21,
+    "bottom_gap_pct": 11.5
+   },
+   {
+    "page": 2,
+    "text_lines": 232,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 1,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.25,
+    "bottom_gap_pct": 11.6
+   },
+   {
+    "page": 3,
+    "text_lines": 109,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 6,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 2.63,
+    "bottom_gap_pct": 9.4
+   },
+   {
+    "page": 4,
+    "text_lines": 114,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 2.92,
+    "bottom_gap_pct": 10.5
+   },
+   {
+    "page": 5,
+    "text_lines": 342,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.12,
+    "bottom_gap_pct": 11.2
+   },
+   {
+    "page": 6,
+    "text_lines": 243,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 6,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 2.83,
+    "bottom_gap_pct": 10.1
+   },
+   {
+    "page": 7,
+    "text_lines": 330,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 18,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 2.91,
+    "bottom_gap_pct": 10.4
+   },
+   {
+    "page": 8,
+    "text_lines": 143,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.02,
+    "bottom_gap_pct": 10.8
+   },
+   {
+    "page": 9,
+    "text_lines": 150,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 2.84,
+    "bottom_gap_pct": 10.2
+   },
+   {
+    "page": 10,
+    "text_lines": 123,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.14,
+    "bottom_gap_pct": 11.2
+   },
+   {
+    "page": 11,
+    "text_lines": 139,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.47,
+    "bottom_gap_pct": 12.4
+   },
+   {
+    "page": 12,
+    "text_lines": 42,
+    "images": 0,
+    "image_rects": [],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 3.39,
+    "bottom_gap_pct": 12.1
+   },
+   {
+    "page": 13,
+    "text_lines": 3,
+    "images": 2,
+    "image_rects": [
+     [
+      99.1,
+      94.6,
+      538.2,
+      320.5
+     ],
+     [
+      99.1,
+      357.2,
+      538.2,
+      539.8
+     ]
+    ],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 8.03,
+    "bottom_gap_pct": 28.7
+   },
+   {
+    "page": 14,
+    "text_lines": 2,
+    "images": 2,
+    "image_rects": [
+     [
+      99.1,
+      72,
+      538.2,
+      269.9
+     ],
+     [
+      99.1,
+      306.7,
+      538.2,
+      504.7
+     ]
+    ],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 9.27,
+    "bottom_gap_pct": 33.2
+   },
+   {
+    "page": 15,
+    "text_lines": 2,
+    "images": 2,
+    "image_rects": [
+     [
+      99.1,
+      71.9,
+      538.2,
+      277.8
+     ],
+     [
+      99.1,
+      314.6,
+      538.2,
+      652.4
+     ]
+    ],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 4.05,
+    "bottom_gap_pct": 14.5
+   },
+   {
+    "page": 16,
+    "text_lines": 1,
+    "images": 1,
+    "image_rects": [
+     [
+      99.1,
+      71.9,
+      538.2,
+      258.6
+     ]
+    ],
+    "overflow_blocks": 0,
+    "overflow_lines": 0,
+    "block_overlap_pairs": 0,
+    "line_overlap_pairs": 0,
+    "bottom_gap_cm": 17.95,
+    "bottom_gap_pct": 64.2
+   }
+  ],
+  "ascii_token_wraps_per_page": {
+   "2": 3,
+   "3": 6,
+   "4": 4,
+   "5": 23,
+   "6": 15,
+   "7": 18,
+   "9": 7,
+   "10": 23,
+   "11": 22
+  },
+  "ascii_token_wraps_total": 121
+ },
+ "figures": {
+  "count": 7,
+  "verdict": "7/7 清晰；图内标签在 PDF 内嵌分辨率（170.5–297.0 DPI）下全部可读可辨",
+  "crops": [
+   {
+    "fig": 1,
+    "page": 13,
+    "clip_pt": [
+     91.1,
+     90.6,
+     546.2,
+     368.5
+    ],
+    "native_px": [
+     1297,
+     667
+    ],
+    "crop_px": [
+     1898,
+     1159
+    ],
+    "effective_dpi_in_pdf": 212.6,
+    "file": "figcrop_01_p13.png"
+   },
+   {
+    "fig": 2,
+    "page": 13,
+    "clip_pt": [
+     91.1,
+     353.2,
+     546.2,
+     587.8
+    ],
+    "native_px": [
+     1812,
+     753
+    ],
+    "crop_px": [
+     1898,
+     978
+    ],
+    "effective_dpi_in_pdf": 297,
+    "file": "figcrop_02_p13.png"
+   },
+   {
+    "fig": 3,
+    "page": 14,
+    "clip_pt": [
+     91.1,
+     68,
+     546.2,
+     317.9
+    ],
+    "native_px": [
+     1511,
+     681
+    ],
+    "crop_px": [
+     1898,
+     1042
+    ],
+    "effective_dpi_in_pdf": 247.7,
+    "file": "figcrop_03_p14.png"
+   },
+   {
+    "fig": 4,
+    "page": 14,
+    "clip_pt": [
+     91.1,
+     302.7,
+     546.2,
+     552.7
+    ],
+    "native_px": [
+     1511,
+     681
+    ],
+    "crop_px": [
+     1898,
+     1042
+    ],
+    "effective_dpi_in_pdf": 247.7,
+    "file": "figcrop_04_p14.png"
+   },
+   {
+    "fig": 5,
+    "page": 15,
+    "clip_pt": [
+     91.1,
+     67.9,
+     546.2,
+     325.8
+    ],
+    "native_px": [
+     1511,
+     708
+    ],
+    "crop_px": [
+     1898,
+     1075
+    ],
+    "effective_dpi_in_pdf": 247.7,
+    "file": "figcrop_05_p15.png"
+   },
+   {
+    "fig": 6,
+    "page": 15,
+    "clip_pt": [
+     91.1,
+     310.6,
+     546.2,
+     700.4
+    ],
+    "native_px": [
+     1040,
+     800
+    ],
+    "crop_px": [
+     1898,
+     1626
+    ],
+    "effective_dpi_in_pdf": 170.5,
+    "file": "figcrop_06_p15.png"
+   },
+   {
+    "fig": 7,
+    "page": 16,
+    "clip_pt": [
+     91.1,
+     67.9,
+     546.2,
+     306.6
+    ],
+    "native_px": [
+     1454,
+     618
+    ],
+    "crop_px": [
+     1898,
+     995
+    ],
+    "effective_dpi_in_pdf": 238.4,
+    "file": "figcrop_07_p16.png"
+   }
+  ]
+ },
+ "pages": [
+  {
+   "page": 1,
+   "verdict": "OK",
+   "severity": "none",
+   "content": "标题 + 来源说明 + §1 本轮范围与状态恢复（P0）+ §2 v8 几何支持链",
+   "oneLine": "标题、来源、P0/P1 正文；中文真字形，公式与英文标识符完整，无裁切重叠。",
+   "defects": [],
+   "observations": [
+    "页尾留白 3.21 cm（11.5%），正常收尾。",
+    "曲率闭式、ADJACENT_FAR_MULTIPLE=2.0、round-trip 等 ASCII 词完整（本页机器扫描 0 处断词）。"
+   ]
+  },
+  {
+   "page": 2,
+   "verdict": "ISSUE",
+   "severity": "moderate",
+   "content": "§2 尾 + §3 P2 两张窄表（数值表、计数表）+ §3.1 表头与 7 行",
+   "oneLine": "数字逐位换行已修复；但 §3.1 表头英文标识符在单元格内被拆断（ENDPOINT_CH 换行 ANGED）。",
+   "defects": [
+    "严重度中：§3.1 两个表头单元格把标识符 ENDPOINT_CHANGED 拆成「ENDPOINT_CH」+「ANGED」（本页 2 处；同一表头在 P3 续页再重复一次，全表共 4 处）。",
+    "轻微：V8_G1_NC2880 拆成「V8_G1_NC288」+「0」，末位数字孤立成行。"
+   ],
+   "observations": [
+    "§3 主对照表已拆为两张窄表（数值表 + 计数表），33738/33240/-498/14.88/8.30/16.23 等数字全部完整，未见「14.8」+「8」式逐位换行。",
+    "表头缩短为 G0对/G1对/G0长mm/G1长mm/路径窗动作/直线窗动作，与当前 docs/reports/step_19_v8_continuation.md 第 31–51 行一致（源文已改，非渲染器改动）。",
+    "起点列用中文「主/挑战」，不再出现上一版「chal」+「leng」+「e」三行断词。"
+   ]
+  },
+  {
+   "page": 3,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§3.1 表尾行 + §4 代码中立性表 + §5 冻结诊断集表 + §5.1 列表",
+   "oneLine": "续页表头已重复（好），但英文标识符仍在单元格内被拆断 5 处。",
+   "defects": [
+    "轻微：V8_G0_NEUTRALITY_R2880 / _R720 / _RC2880 被拆成「V8_G0_NEUTRAL」+「ITY_Rxxx」。",
+    "轻微：§3.1 续页表头再次把 ENDPOINT_CHANGED 拆成「ENDPOINT_CH」+「ANGED」（2 处）。",
+    "轻微：V8_G1_RC2880 拆成「V8_G1_RC288」+「0」。",
+    "本页机器扫描合计 6 处。"
+   ],
+   "observations": [
+    "§3.1 表跨页时表头已正确重复（上一版 22 页与中途 18 页版此处丢表头）。",
+    "§5 表数值（33/0/1/0/86、83、84）与表头完整。"
+   ]
+  },
+  {
+   "page": 4,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§5.2 K16 前缀条目 + §5.3 机制分解表 + §6 P3 说明与表头 + 4 行数据",
+   "oneLine": "内容完整；家族列 BASE_E2 被拆成「BASE_」+「E2」4 处。",
+   "defects": [
+    "轻微：家族列 BASE_E2 →「BASE_」+「E2」（本页 4 处，机器扫描确认）。"
+   ],
+   "observations": [
+    "§5.3 机制名 NO_INTERVAL_LONG_ENOUGH / CURVATURE_REJECTED_ONLY 在宽列中完整显示。",
+    "§6 表头 12 列完整；停止原因列用中文短标签「预算用尽/目标上限」，不再出现长英文常量逐字换行。"
+   ]
+  },
+  {
+   "page": 5,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§6 P3 矩阵表续页（表头重复）+ 数据行",
+   "oneLine": "续页表头已重复、行未被拆到两页；家族列 ASCII 断行 23 处。",
+   "defects": [
+    "轻微：家族列 BASE_E2→「BASE_」+「E2」、A_FAMILY→「A_FAM」+「ILY」，本页机器扫描 23 处。"
+   ],
+   "observations": [
+    "本页顶部是完整表头（上一版此处无表头，且首行是被拆开的「E2 … 用尽」碎片行）。",
+    "数值列 33738/26437/19233/18444/14583/16285 等完整。"
+   ]
+  },
+  {
+   "page": 6,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§6 表尾 + 新增「按上限聚合（R 主 2880 单元）」表 + §7 P4 口径 + §7.1 表头与 6 行",
+   "oneLine": "原 JSON 块改为紧凑表格（大改善）；配置名与家族名断行 15 处。",
+   "defects": [
+    "轻微：A_FAMILY→「A_FAM」+「ILY」5 处。",
+    "轻微：聚合表配置列 BASE_E2_T200→「BASE_E2_T20」+「0」、A_FAMILY_T200→「A_FAMILY_T2」+「00」、BASE_E2_T2000→「BASE_E2_T20」+「00」、A_FAMILY_T2000→「A_FAMILY_T2」+「000」（末 1–3 位数字孤立成行）。",
+    "本页机器扫描合计 15 处。"
+   ],
+   "observations": [
+    "上一版占两页且大片留白的原始 JSON 块已改为 7 列表格（配置/单元数/R2880终态对/实际评价/触发目标上限/用满预算/阶段长度mm），数值与 JSON 一致（19233/2880/2/6/53.63 等）。",
+    "§6 表尾续页带完整表头，无孤立续行碎片。"
+   ]
+  },
+  {
+   "page": 7,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§7.1 受限组表续页（表头重复）+ §7.2 同策略不限长对照表",
+   "oneLine": "两张表数值与表头均完整；家族列 ASCII 断行 18 处。",
+   "defects": [
+    "轻微：BASE_+E2、A_FAM+ILY，本页机器扫描 18 处。"
+   ],
+   "observations": [
+    "§7.1 表头在续页重复；cap 24/40/60、28961/23.83/1772/0.17 等数值完整。",
+    "§7.2 表中 BASE_E2/A_FAMILY 在宽列中完整显示。"
+   ]
+  },
+  {
+   "page": 8,
+   "verdict": "OK",
+   "severity": "none",
+   "content": "§7.2 表尾行 + §8 受控串行计时表 + 中位数与范围表 + 一致性说明 + §9 引言",
+   "oneLine": "两张新表数值完整、PASS 未被拆断，无越界无压字。",
+   "defects": [],
+   "observations": [
+    "§8 计时表 6 行 PASS 完整，26437/30.63/8160 与正文一致。",
+    "原 JSON 块（中位数与范围）已改为 5 列表格，含范围写法如 478.85（456.70–560.61），与源文件数值一致。",
+    "本页机器扫描 0 处 ASCII 断词。"
+   ]
+  },
+  {
+   "page": 9,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§9 复核表表头（每正式终态保存→重载→全扫 130,816 对）+ 40 行",
+   "oneLine": "表头存在、状态与 PASS 完整；7 行组名末位数字被挤到下一行。",
+   "defects": [
+    "轻微：组名单元格内断行并留下孤立数字 7 处：V8_G0_NEUTRALITY_N144+0、_N288+0、_NC28+80、_R144+0、_R288+0、_RC28+80、P3_BASE_E2_T200_NC288+0。"
+   ],
+   "observations": [
+    "本页为表格起点，表头「轮次/组/状态/复核 PASS」完整。",
+    "REUSED_REFERENCE 行复核列本就为空（源数据如此），PASS 行 True 完整。"
+   ]
+  },
+  {
+   "page": 10,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§9 复核表续页（表头重复）+ 数据行",
+   "oneLine": "续页表头重复；较长的 P3_* 组名 23 行末位数字孤立。",
+   "defects": [
+    "轻微：23 行组名在单元格内断行并留下孤立 0/00/80/880，如 P3_BASE_E2_T2000_NC28+80、P3_A_FAMILY_T2000_NC2+880（本页机器扫描 23 处）。"
+   ],
+   "observations": [
+    "表头在续页正确重复。",
+    "状态列 PASS / REUSED_REFERENCE 与复核列 True 完整。"
+   ]
+  },
+  {
+   "page": 11,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "§9 复核表尾页（表头重复）+ 整体判定",
+   "oneLine": "整体判定完好；较长 P4_* 组名 22 行末位数字孤立；页尾留白 3.47 cm。",
+   "defects": [
+    "轻微：22 行组名断行留孤立数字，如 P4_BASE_E2_CAP24_R288+0、P4_A_FAMILY_CAP60_NC2+880（机器扫描 22 处）。"
+   ],
+   "observations": [
+    "「整体判定：groups_total=94 PASS=64 FAIL=0 NOT_FINISHED=0 引用=30」完整，英文与数字未被拆断。",
+    "最后 6 行 P5_CACHE_OFF/ON_R1440 在宽列中完整显示。"
+   ]
+  },
+  {
+   "page": 12,
+   "verdict": "OK",
+   "severity": "none",
+   "content": "§10 结论 6 条 + §11 产物与复现（目录树 + 重跑命令）",
+   "oneLine": "结论与产物清单完整收在一页，目录树不再跨页，无断词。",
+   "defects": [],
+   "observations": [
+    "上一版目录树跨页断开，本版整块落在同一页。",
+    "重跑命令较长，在参数之间的空格处折行（未拆断任何 token，机器扫描 0 处）；复制时须知是同一行。",
+    "19233/18211/-1022/15837/16232/53.63/30.10/71.95 等数字完整。"
+   ]
+  },
+  {
+   "page": 13,
+   "verdict": "OK",
+   "severity": "none",
+   "content": "附图标题 + 图1 诊断三域结果柱状图 + 图2 真实路径窗口三联图",
+   "oneLine": "两张图清晰、图题在图下方，图内标签经 300 DPI 裁剪目检全部可读。",
+   "defects": [],
+   "observations": [
+    "图1 图例 4 个类别名完整（BASIC_PASSES_FULL_CHECK_CAPPED / BASIC_PASSES_FULL_NO_NET_GAIN / FULL_ACCEPTED_CANDIDATE_EXISTS / NO_LEGAL_WINDOW_UNDER_CURRENT_RULES）。",
+    "图2 三联（route 366 三维几何 / XY 投影必须重合 / 精确解析曲率对数轴）图例与坐标标签可读。",
+    "嵌入分辨率：图1 212.6 DPI、图2 297.0 DPI。",
+    "页尾留白 8.03 cm（28.7%），因下一组两图放不下而换页。"
+   ]
+  },
+  {
+   "page": 14,
+   "verdict": "OK",
+   "severity": "none",
+   "content": "图3 v8 P2 G0 vs G1 对照曲线 + 图4 P3 家族多样性 vs 目标上限",
+   "oneLine": "两图清晰、图题在图下方，图例不压数据。",
+   "defects": [],
+   "observations": [
+    "图3 的 challenge start 面板无独立图例（与左面板共用），可接受。",
+    "两图嵌入分辨率均 247.7 DPI。",
+    "页尾留白 9.27 cm（33.2%）。"
+   ]
+  },
+  {
+   "page": 15,
+   "verdict": "OK",
+   "severity": "none",
+   "content": "图5 P4 受限 vs 不限长 + 图6 P4 权衡散点",
+   "oneLine": "两图清晰、图例与坐标标签可读、图题在图下方。",
+   "defects": [],
+   "observations": [
+    "图6 嵌入 170.5 DPI（7 张图中最低），300 DPI 裁剪仍完全可读。",
+    "图6 图例标记略微压住图例边框（源图样式），不影响判读。",
+    "图5 嵌入 247.7 DPI。",
+    "页尾留白 4.05 cm（14.5%）。"
+   ]
+  },
+  {
+   "page": 16,
+   "verdict": "ISSUE",
+   "severity": "minor",
+   "content": "图7 P5 受控串行计时点图 + 图题",
+   "oneLine": "图本身清晰，但整页下方 17.95 cm（64.2%）为空白。",
+   "defects": [
+    "轻微：末页仅一图一题，页面下方 17.95 cm（占页高 64.2%）空白；建议与前一组图合并排布或缩为半页。"
+   ],
+   "observations": [
+    "图题 v8_p5_serial_timing（v8_p5_serial_timing.png）位于图下方居中。",
+    "两面板标题、cache OFF/ON 横轴、中位数横线与刻度均可读（嵌入 238.4 DPI）。",
+    "本页无正文文字，无越界。"
+   ]
+  }
+ ],
+ "fix_suggestions": [
+  "给表格单元格加「不拆断 ASCII 词」规则：形如 [A-Za-z0-9_]+ 的标识符整体不换行（DOCX 段落可关闭「允许西文在单词中间换行」，或改用更短展示名）。受影响列：§3.1 表头、§4 新复跑组、§6 家族、聚合表配置、§7.1 家族、§9 组。",
+  "§9 组名列偏窄导致 52 行末位数字孤立（P9 7 / P10 23 / P11 22）；加宽该列或缩短组名（去 P3_/P4_ 前缀、T2000 写作 T2k）即可消除。",
+  "§3.1 表头把 ENDPOINT_CHANGED 改为中文短名（如「端点改变数」），可同时解决表头三行断词与英文拆断。",
+  "末页 P16 有 17.95 cm 空白：可把图7 上移与图5/图6 同页（P15 尚余 4.05 cm，不足时改双栏），或把图7 缩为半页。"
+ ]
+}

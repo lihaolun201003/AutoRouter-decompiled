@@ -1,0 +1,28 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{Step 14 优化接受统计与诊断探针}
+  \label{tab:step14-optimize}
+  \begin{tabular}{lrrrr}
+    \toprule
+    变体 & 候选尝试 & 接受 & 运行 (s) & 回滚指纹不一致 \\
+    \midrule
+    opt\_base（256） & 68 & 0 & 233.1 & 0 \\
+    rank\_small05\_strict（256） & 68 & 0 & 173.4 & 0 \\
+    rank\_small20\_strict（256） & 68 & 0 & 115.7 & 0 \\
+    strict\_slack001（256） & 66 & 2 & 114.4 & 0 \\
+    strict\_slack005（256） & 66 & 2 & 113.3 & 0 \\
+    \midrule
+    opt\_base（512） & 74 & 6 & 762.2 & 0 \\
+    rank\_small05\_strict（512） & 33 & 5 & 427.2 & 0 \\
+    strict\_slack001（512） & 28 & 5 & 432.2 & 0 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  opt\_base 为任务口径（严格验收）：256 接受 0 个候选（当前候选池中未找到可接受改进）、512 接受 6 个。 \\
+  rank\_small*（加严候选排序）与 strict\_slack*（保护余量放宽 0.01/0.05 dB）为诊断口径，不代表任务验收规则。 \\
+  回滚指纹不一致为 0 表示每次拒绝都完整回滚并核对状态一致。 \\
+  \end{flushleft}
+\end{table}

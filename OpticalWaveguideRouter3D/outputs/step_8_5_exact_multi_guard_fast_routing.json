@@ -1,0 +1,3655 @@
+{
+  "completed": false,
+  "wall_seconds": 180.01808040001197,
+  "budget_seconds": 180.0,
+  "committed_ordinary": 217,
+  "guard": {
+    "candidate_attempt_count": 14914,
+    "guard_evaluation_count": 14913,
+    "candidate_existing_pair_checks": 1002357,
+    "candidate_single_cross_neighbors": 438818,
+    "triangle_cache_checks": 3041448,
+    "candidate_triplet_evaluations": 3041448,
+    "guard_multi_rejections": 14696,
+    "allocator_base_checks": 29110,
+    "unique_waveguides_rejected": 23,
+    "rejected_then_later_assigned": 1,
+    "guard_exhausted_waveguides": [
+      451,
+      427,
+      428,
+      430,
+      431,
+      432,
+      506,
+      444,
+      445,
+      441,
+      442,
+      433,
+      457,
+      265,
+      226,
+      227,
+      228,
+      165,
+      216,
+      217,
+      218
+    ],
+    "mean_candidate_evaluation_seconds": 0.011995653315915773,
+    "max_candidate_evaluation_seconds": 0.039549199980683625,
+    "timings": {
+      "allocator_base_checks": 0.010121199011337012,
+      "temporary_route_construction": 0.26201970071997494,
+      "temporary_smoothing": 0.36427329981233925,
+      "candidate_evaluation": 178.89117790025193,
+      "candidate_reject_commit": 0.35712770087411627,
+      "candidate_pair_kernel": 155.68542149412679,
+      "triplet_guard_evaluation": 22.03333128412487
+    }
+  },
+  "config": {
+    "board_height": 150,
+    "waveguide_width": 0.05,
+    "spacing": 0.125,
+    "bend_radius": 5,
+    "tol": 1e-09,
+    "top_u_primary_order": "descending"
+  },
+  "G0_gate_reused": true,
+  "status": null,
+  "assignments": null,
+  "off_assignments": [
+    {
+      "waveguide_id": 0,
+      "status": "assigned",
+      "track_index": 478,
+      "track_y": 88.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 1,
+      "status": "assigned",
+      "track_index": 477,
+      "track_y": 88.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 2,
+      "status": "assigned",
+      "track_index": 476,
+      "track_y": 88.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 3,
+      "status": "assigned",
+      "track_index": 475,
+      "track_y": 88.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 4,
+      "status": "assigned",
+      "track_index": 485,
+      "track_y": 89.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 5,
+      "status": "assigned",
+      "track_index": 484,
+      "track_y": 89.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 6,
+      "status": "assigned",
+      "track_index": 483,
+      "track_y": 89.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 7,
+      "status": "assigned",
+      "track_index": 482,
+      "track_y": 89.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 8,
+      "status": "assigned",
+      "track_index": 481,
+      "track_y": 89.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 9,
+      "status": "assigned",
+      "track_index": 5,
+      "track_y": 5.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 10,
+      "status": "assigned",
+      "track_index": 42,
+      "track_y": 12.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 11,
+      "status": "assigned",
+      "track_index": 41,
+      "track_y": 12.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 12,
+      "status": "assigned",
+      "track_index": 40,
+      "track_y": 12.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 13,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 14,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 15,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 16,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 17,
+      "status": "assigned",
+      "track_index": 632,
+      "track_y": 115.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 18,
+      "status": "assigned",
+      "track_index": 631,
+      "track_y": 115.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 19,
+      "status": "assigned",
+      "track_index": 630,
+      "track_y": 115.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 20,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 21,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 22,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 23,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 24,
+      "status": "assigned",
+      "track_index": 465,
+      "track_y": 86.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 25,
+      "status": "assigned",
+      "track_index": 464,
+      "track_y": 86.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 26,
+      "status": "assigned",
+      "track_index": 463,
+      "track_y": 86.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 27,
+      "status": "assigned",
+      "track_index": 462,
+      "track_y": 85.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 28,
+      "status": "assigned",
+      "track_index": 103,
+      "track_y": 23.049999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 29,
+      "status": "assigned",
+      "track_index": 102,
+      "track_y": 22.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 30,
+      "status": "assigned",
+      "track_index": 101,
+      "track_y": 22.699999999999996,
+      "reason": null
+    },
+    {
+      "waveguide_id": 31,
+      "status": "assigned",
+      "track_index": 466,
+      "track_y": 86.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 32,
+      "status": "assigned",
+      "track_index": 91,
+      "track_y": 20.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 33,
+      "status": "assigned",
+      "track_index": 85,
+      "track_y": 19.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 34,
+      "status": "assigned",
+      "track_index": 0,
+      "track_y": 5.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 35,
+      "status": "assigned",
+      "track_index": 39,
+      "track_y": 11.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 36,
+      "status": "assigned",
+      "track_index": 792,
+      "track_y": 143.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 37,
+      "status": "assigned",
+      "track_index": 791,
+      "track_y": 143.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 38,
+      "status": "assigned",
+      "track_index": 790,
+      "track_y": 143.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 39,
+      "status": "assigned",
+      "track_index": 789,
+      "track_y": 143.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 40,
+      "status": "assigned",
+      "track_index": 767,
+      "track_y": 139.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 41,
+      "status": "assigned",
+      "track_index": 766,
+      "track_y": 139.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 42,
+      "status": "assigned",
+      "track_index": 765,
+      "track_y": 138.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 43,
+      "status": "assigned",
+      "track_index": 774,
+      "track_y": 140.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 44,
+      "status": "assigned",
+      "track_index": 601,
+      "track_y": 110.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 45,
+      "status": "assigned",
+      "track_index": 600,
+      "track_y": 110.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 46,
+      "status": "assigned",
+      "track_index": 599,
+      "track_y": 109.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 47,
+      "status": "assigned",
+      "track_index": 598,
+      "track_y": 109.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 48,
+      "status": "assigned",
+      "track_index": 796,
+      "track_y": 144.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 49,
+      "status": "assigned",
+      "track_index": 795,
+      "track_y": 144.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 50,
+      "status": "assigned",
+      "track_index": 794,
+      "track_y": 143.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 51,
+      "status": "assigned",
+      "track_index": 793,
+      "track_y": 143.79999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 52,
+      "status": "assigned",
+      "track_index": 773,
+      "track_y": 140.29999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 53,
+      "status": "assigned",
+      "track_index": 759,
+      "track_y": 137.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 54,
+      "status": "assigned",
+      "track_index": 758,
+      "track_y": 137.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 55,
+      "status": "assigned",
+      "track_index": 757,
+      "track_y": 137.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 56,
+      "status": "assigned",
+      "track_index": 589,
+      "track_y": 108.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 57,
+      "status": "assigned",
+      "track_index": 588,
+      "track_y": 107.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 58,
+      "status": "assigned",
+      "track_index": 587,
+      "track_y": 107.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 59,
+      "status": "assigned",
+      "track_index": 590,
+      "track_y": 108.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 60,
+      "status": "assigned",
+      "track_index": 785,
+      "track_y": 142.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 61,
+      "status": "assigned",
+      "track_index": 786,
+      "track_y": 142.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 62,
+      "status": "assigned",
+      "track_index": 783,
+      "track_y": 142.04999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 63,
+      "status": "assigned",
+      "track_index": 784,
+      "track_y": 142.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 64,
+      "status": "assigned",
+      "track_index": 761,
+      "track_y": 138.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 65,
+      "status": "assigned",
+      "track_index": 760,
+      "track_y": 138.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 66,
+      "status": "assigned",
+      "track_index": 728,
+      "track_y": 132.42499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 67,
+      "status": "assigned",
+      "track_index": 633,
+      "track_y": 115.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 68,
+      "status": "assigned",
+      "track_index": 635,
+      "track_y": 116.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 69,
+      "status": "assigned",
+      "track_index": 634,
+      "track_y": 115.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 70,
+      "status": "assigned",
+      "track_index": 637,
+      "track_y": 116.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 71,
+      "status": "assigned",
+      "track_index": 636,
+      "track_y": 116.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 72,
+      "status": "assigned",
+      "track_index": 512,
+      "track_y": 94.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 73,
+      "status": "assigned",
+      "track_index": 511,
+      "track_y": 94.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 74,
+      "status": "assigned",
+      "track_index": 513,
+      "track_y": 94.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 75,
+      "status": "assigned",
+      "track_index": 70,
+      "track_y": 17.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 76,
+      "status": "assigned",
+      "track_index": 86,
+      "track_y": 20.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 77,
+      "status": "assigned",
+      "track_index": 616,
+      "track_y": 112.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 78,
+      "status": "assigned",
+      "track_index": 619,
+      "track_y": 113.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 79,
+      "status": "assigned",
+      "track_index": 618,
+      "track_y": 113.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 80,
+      "status": "assigned",
+      "track_index": 617,
+      "track_y": 113.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 81,
+      "status": "assigned",
+      "track_index": 625,
+      "track_y": 114.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 82,
+      "status": "assigned",
+      "track_index": 624,
+      "track_y": 114.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 83,
+      "status": "assigned",
+      "track_index": 623,
+      "track_y": 114.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 84,
+      "status": "assigned",
+      "track_index": 622,
+      "track_y": 113.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 85,
+      "status": "assigned",
+      "track_index": 479,
+      "track_y": 88.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 86,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 87,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 88,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 89,
+      "status": "assigned",
+      "track_index": 613,
+      "track_y": 112.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 90,
+      "status": "assigned",
+      "track_index": 612,
+      "track_y": 112.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 91,
+      "status": "assigned",
+      "track_index": 615,
+      "track_y": 112.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 92,
+      "status": "assigned",
+      "track_index": 614,
+      "track_y": 112.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 93,
+      "status": "assigned",
+      "track_index": 769,
+      "track_y": 139.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 94,
+      "status": "assigned",
+      "track_index": 768,
+      "track_y": 139.42499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 95,
+      "status": "assigned",
+      "track_index": 776,
+      "track_y": 140.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 96,
+      "status": "assigned",
+      "track_index": 775,
+      "track_y": 140.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 97,
+      "status": "assigned",
+      "track_index": 743,
+      "track_y": 135.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 98,
+      "status": "assigned",
+      "track_index": 742,
+      "track_y": 134.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 99,
+      "status": "assigned",
+      "track_index": 741,
+      "track_y": 134.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 100,
+      "status": "assigned",
+      "track_index": 740,
+      "track_y": 134.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 101,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 102,
+      "status": "assigned",
+      "track_index": 605,
+      "track_y": 110.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 103,
+      "status": "assigned",
+      "track_index": 604,
+      "track_y": 110.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 104,
+      "status": "assigned",
+      "track_index": 603,
+      "track_y": 110.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 105,
+      "status": "assigned",
+      "track_index": 608,
+      "track_y": 111.425,
+      "reason": null
+    },
+    {
+      "waveguide_id": 106,
+      "status": "assigned",
+      "track_index": 607,
+      "track_y": 111.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 107,
+      "status": "assigned",
+      "track_index": 712,
+      "track_y": 129.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 108,
+      "status": "assigned",
+      "track_index": 711,
+      "track_y": 129.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 109,
+      "status": "assigned",
+      "track_index": 710,
+      "track_y": 129.27499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 110,
+      "status": "assigned",
+      "track_index": 709,
+      "track_y": 129.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 111,
+      "status": "assigned",
+      "track_index": 644,
+      "track_y": 117.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 112,
+      "status": "assigned",
+      "track_index": 643,
+      "track_y": 117.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 113,
+      "status": "assigned",
+      "track_index": 646,
+      "track_y": 118.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 114,
+      "status": "assigned",
+      "track_index": 645,
+      "track_y": 117.89999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 115,
+      "status": "assigned",
+      "track_index": 649,
+      "track_y": 118.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 116,
+      "status": "assigned",
+      "track_index": 648,
+      "track_y": 118.425,
+      "reason": null
+    },
+    {
+      "waveguide_id": 117,
+      "status": "assigned",
+      "track_index": 647,
+      "track_y": 118.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 118,
+      "status": "assigned",
+      "track_index": 695,
+      "track_y": 126.64999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 119,
+      "status": "assigned",
+      "track_index": 694,
+      "track_y": 126.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 120,
+      "status": "assigned",
+      "track_index": 693,
+      "track_y": 126.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 121,
+      "status": "assigned",
+      "track_index": 692,
+      "track_y": 126.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 122,
+      "status": "assigned",
+      "track_index": 641,
+      "track_y": 117.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 123,
+      "status": "assigned",
+      "track_index": 640,
+      "track_y": 117.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 124,
+      "status": "assigned",
+      "track_index": 639,
+      "track_y": 116.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 125,
+      "status": "assigned",
+      "track_index": 642,
+      "track_y": 117.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 126,
+      "status": "assigned",
+      "track_index": 718,
+      "track_y": 130.67499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 127,
+      "status": "assigned",
+      "track_index": 717,
+      "track_y": 130.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 128,
+      "status": "assigned",
+      "track_index": 699,
+      "track_y": 127.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 129,
+      "status": "assigned",
+      "track_index": 698,
+      "track_y": 127.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 130,
+      "status": "assigned",
+      "track_index": 652,
+      "track_y": 119.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 131,
+      "status": "assigned",
+      "track_index": 651,
+      "track_y": 118.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 132,
+      "status": "assigned",
+      "track_index": 655,
+      "track_y": 119.64999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 133,
+      "status": "assigned",
+      "track_index": 654,
+      "track_y": 119.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 134,
+      "status": "assigned",
+      "track_index": 657,
+      "track_y": 120.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 135,
+      "status": "assigned",
+      "track_index": 656,
+      "track_y": 119.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 136,
+      "status": "assigned",
+      "track_index": 716,
+      "track_y": 130.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 137,
+      "status": "assigned",
+      "track_index": 715,
+      "track_y": 130.14999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 138,
+      "status": "assigned",
+      "track_index": 714,
+      "track_y": 129.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 139,
+      "status": "assigned",
+      "track_index": 713,
+      "track_y": 129.79999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 140,
+      "status": "assigned",
+      "track_index": 697,
+      "track_y": 127.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 141,
+      "status": "assigned",
+      "track_index": 696,
+      "track_y": 126.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 142,
+      "status": "assigned",
+      "track_index": 704,
+      "track_y": 128.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 143,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 144,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 145,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 146,
+      "status": "assigned",
+      "track_index": 480,
+      "track_y": 89.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 147,
+      "status": "assigned",
+      "track_index": 669,
+      "track_y": 122.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 148,
+      "status": "assigned",
+      "track_index": 672,
+      "track_y": 122.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 149,
+      "status": "assigned",
+      "track_index": 671,
+      "track_y": 122.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 150,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 151,
+      "status": "assigned",
+      "track_index": 691,
+      "track_y": 125.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 152,
+      "status": "assigned",
+      "track_index": 690,
+      "track_y": 125.77499999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 153,
+      "status": "assigned",
+      "track_index": 689,
+      "track_y": 125.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 154,
+      "status": "assigned",
+      "track_index": 688,
+      "track_y": 125.425,
+      "reason": null
+    },
+    {
+      "waveguide_id": 155,
+      "status": "assigned",
+      "track_index": 727,
+      "track_y": 132.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 156,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 157,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 158,
+      "status": "assigned",
+      "track_index": 668,
+      "track_y": 121.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 159,
+      "status": "assigned",
+      "track_index": 667,
+      "track_y": 121.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 160,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 161,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 162,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 163,
+      "status": "assigned",
+      "track_index": 677,
+      "track_y": 123.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 164,
+      "status": "assigned",
+      "track_index": 700,
+      "track_y": 127.52499999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 165,
+      "status": "assigned",
+      "track_index": 681,
+      "track_y": 124.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 166,
+      "status": "assigned",
+      "track_index": 680,
+      "track_y": 124.02499999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 167,
+      "status": "assigned",
+      "track_index": 61,
+      "track_y": 15.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 168,
+      "status": "assigned",
+      "track_index": 60,
+      "track_y": 15.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 169,
+      "status": "assigned",
+      "track_index": 59,
+      "track_y": 15.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 170,
+      "status": "assigned",
+      "track_index": 58,
+      "track_y": 15.174999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 171,
+      "status": "assigned",
+      "track_index": 57,
+      "track_y": 15.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 172,
+      "status": "assigned",
+      "track_index": 56,
+      "track_y": 14.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 173,
+      "status": "assigned",
+      "track_index": 55,
+      "track_y": 14.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 174,
+      "status": "assigned",
+      "track_index": 54,
+      "track_y": 14.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 175,
+      "status": "assigned",
+      "track_index": 53,
+      "track_y": 14.299999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 176,
+      "status": "assigned",
+      "track_index": 52,
+      "track_y": 14.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 177,
+      "status": "assigned",
+      "track_index": 1,
+      "track_y": 5.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 178,
+      "status": "assigned",
+      "track_index": 602,
+      "track_y": 110.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 179,
+      "status": "assigned",
+      "track_index": 653,
+      "track_y": 119.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 180,
+      "status": "assigned",
+      "track_index": 679,
+      "track_y": 123.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 181,
+      "status": "assigned",
+      "track_index": 678,
+      "track_y": 123.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 182,
+      "status": "assigned",
+      "track_index": 96,
+      "track_y": 21.824999999999996,
+      "reason": null
+    },
+    {
+      "waveguide_id": 183,
+      "status": "assigned",
+      "track_index": 79,
+      "track_y": 18.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 184,
+      "status": "assigned",
+      "track_index": 78,
+      "track_y": 18.674999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 185,
+      "status": "assigned",
+      "track_index": 3,
+      "track_y": 5.550000000000001,
+      "reason": null
+    },
+    {
+      "waveguide_id": 186,
+      "status": "assigned",
+      "track_index": 2,
+      "track_y": 5.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 187,
+      "status": "assigned",
+      "track_index": 33,
+      "track_y": 10.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 188,
+      "status": "assigned",
+      "track_index": 32,
+      "track_y": 10.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 189,
+      "status": "assigned",
+      "track_index": 31,
+      "track_y": 10.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 190,
+      "status": "assigned",
+      "track_index": 658,
+      "track_y": 120.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 191,
+      "status": "assigned",
+      "track_index": 95,
+      "track_y": 21.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 192,
+      "status": "assigned",
+      "track_index": 94,
+      "track_y": 21.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 193,
+      "status": "assigned",
+      "track_index": 93,
+      "track_y": 21.299999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 194,
+      "status": "assigned",
+      "track_index": 64,
+      "track_y": 16.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 195,
+      "status": "assigned",
+      "track_index": 63,
+      "track_y": 16.049999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 196,
+      "status": "assigned",
+      "track_index": 62,
+      "track_y": 15.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 197,
+      "status": "assigned",
+      "track_index": 77,
+      "track_y": 18.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 198,
+      "status": "assigned",
+      "track_index": 92,
+      "track_y": 21.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 199,
+      "status": "assigned",
+      "track_index": 660,
+      "track_y": 120.52499999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 200,
+      "status": "assigned",
+      "track_index": 659,
+      "track_y": 120.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 201,
+      "status": "assigned",
+      "track_index": 6,
+      "track_y": 6.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 202,
+      "status": "assigned",
+      "track_index": 35,
+      "track_y": 11.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 203,
+      "status": "assigned",
+      "track_index": 49,
+      "track_y": 13.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 204,
+      "status": "assigned",
+      "track_index": 48,
+      "track_y": 13.424999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 205,
+      "status": "assigned",
+      "track_index": 47,
+      "track_y": 13.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 206,
+      "status": "assigned",
+      "track_index": 606,
+      "track_y": 111.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 207,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 208,
+      "status": "assigned",
+      "track_index": 71,
+      "track_y": 17.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 209,
+      "status": "assigned",
+      "track_index": 72,
+      "track_y": 17.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 210,
+      "status": "assigned",
+      "track_index": 638,
+      "track_y": 116.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 211,
+      "status": "assigned",
+      "track_index": 665,
+      "track_y": 121.39999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 212,
+      "status": "assigned",
+      "track_index": 664,
+      "track_y": 121.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 213,
+      "status": "assigned",
+      "track_index": 663,
+      "track_y": 121.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 214,
+      "status": "assigned",
+      "track_index": 662,
+      "track_y": 120.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 215,
+      "status": "assigned",
+      "track_index": 661,
+      "track_y": 120.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 216,
+      "status": "assigned",
+      "track_index": 676,
+      "track_y": 123.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 217,
+      "status": "assigned",
+      "track_index": 675,
+      "track_y": 123.14999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 218,
+      "status": "assigned",
+      "track_index": 674,
+      "track_y": 122.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 219,
+      "status": "assigned",
+      "track_index": 673,
+      "track_y": 122.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 220,
+      "status": "assigned",
+      "track_index": 37,
+      "track_y": 11.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 221,
+      "status": "assigned",
+      "track_index": 36,
+      "track_y": 11.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 222,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 223,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 224,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 225,
+      "status": "assigned",
+      "track_index": 650,
+      "track_y": 118.77499999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 226,
+      "status": "assigned",
+      "track_index": 686,
+      "track_y": 125.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 227,
+      "status": "assigned",
+      "track_index": 685,
+      "track_y": 124.89999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 228,
+      "status": "assigned",
+      "track_index": 684,
+      "track_y": 124.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 229,
+      "status": "assigned",
+      "track_index": 7,
+      "track_y": 6.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 230,
+      "status": "assigned",
+      "track_index": 683,
+      "track_y": 124.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 231,
+      "status": "assigned",
+      "track_index": 682,
+      "track_y": 124.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 232,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 233,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 234,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 235,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 236,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 237,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 238,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 239,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 240,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 241,
+      "status": "assigned",
+      "track_index": 629,
+      "track_y": 115.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 242,
+      "status": "assigned",
+      "track_index": 628,
+      "track_y": 114.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 243,
+      "status": "assigned",
+      "track_index": 627,
+      "track_y": 114.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 244,
+      "status": "assigned",
+      "track_index": 626,
+      "track_y": 114.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 245,
+      "status": "assigned",
+      "track_index": 670,
+      "track_y": 122.27499999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 246,
+      "status": "assigned",
+      "track_index": 621,
+      "track_y": 113.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 247,
+      "status": "assigned",
+      "track_index": 620,
+      "track_y": 113.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 248,
+      "status": "assigned",
+      "track_index": 666,
+      "track_y": 121.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 249,
+      "status": "assigned",
+      "track_index": 30,
+      "track_y": 10.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 250,
+      "status": "assigned",
+      "track_index": 34,
+      "track_y": 10.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 251,
+      "status": "assigned",
+      "track_index": 46,
+      "track_y": 13.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 252,
+      "status": "assigned",
+      "track_index": 45,
+      "track_y": 12.899999999999999,
+      "reason": null
+    },
+    {
+      "waveguide_id": 253,
+      "status": "assigned",
+      "track_index": 44,
+      "track_y": 12.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 254,
+      "status": "assigned",
+      "track_index": 43,
+      "track_y": 12.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 255,
+      "status": "assigned",
+      "track_index": 687,
+      "track_y": 125.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 256,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 257,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 258,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 259,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 260,
+      "status": "assigned",
+      "track_index": 596,
+      "track_y": 109.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 261,
+      "status": "assigned",
+      "track_index": 595,
+      "track_y": 109.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 262,
+      "status": "assigned",
+      "track_index": 594,
+      "track_y": 108.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 263,
+      "status": "assigned",
+      "track_index": 593,
+      "track_y": 108.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 264,
+      "status": "assigned",
+      "track_index": 592,
+      "track_y": 108.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 265,
+      "status": "assigned",
+      "track_index": 701,
+      "track_y": 127.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 266,
+      "status": "assigned",
+      "track_index": 732,
+      "track_y": 133.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 267,
+      "status": "assigned",
+      "track_index": 731,
+      "track_y": 132.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 268,
+      "status": "assigned",
+      "track_index": 730,
+      "track_y": 132.77499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 269,
+      "status": "assigned",
+      "track_index": 503,
+      "track_y": 93.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 270,
+      "status": "assigned",
+      "track_index": 502,
+      "track_y": 92.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 271,
+      "status": "assigned",
+      "track_index": 501,
+      "track_y": 92.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 272,
+      "status": "assigned",
+      "track_index": 500,
+      "track_y": 92.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 273,
+      "status": "assigned",
+      "track_index": 510,
+      "track_y": 94.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 274,
+      "status": "assigned",
+      "track_index": 509,
+      "track_y": 94.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 275,
+      "status": "assigned",
+      "track_index": 508,
+      "track_y": 93.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 276,
+      "status": "assigned",
+      "track_index": 581,
+      "track_y": 106.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 277,
+      "status": "assigned",
+      "track_index": 580,
+      "track_y": 106.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 278,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 279,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 280,
+      "status": "assigned",
+      "track_index": 585,
+      "track_y": 107.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 281,
+      "status": "assigned",
+      "track_index": 584,
+      "track_y": 107.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 282,
+      "status": "assigned",
+      "track_index": 583,
+      "track_y": 107.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 283,
+      "status": "assigned",
+      "track_index": 582,
+      "track_y": 106.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 284,
+      "status": "assigned",
+      "track_index": 799,
+      "track_y": 144.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 285,
+      "status": "assigned",
+      "track_index": 798,
+      "track_y": 144.67499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 286,
+      "status": "assigned",
+      "track_index": 797,
+      "track_y": 144.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 287,
+      "status": "assigned",
+      "track_index": 586,
+      "track_y": 107.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 288,
+      "status": "assigned",
+      "track_index": 777,
+      "track_y": 141.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 289,
+      "status": "assigned",
+      "track_index": 787,
+      "track_y": 142.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 290,
+      "status": "assigned",
+      "track_index": 705,
+      "track_y": 128.39999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 291,
+      "status": "assigned",
+      "track_index": 729,
+      "track_y": 132.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 292,
+      "status": "assigned",
+      "track_index": 107,
+      "track_y": 23.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 293,
+      "status": "assigned",
+      "track_index": 106,
+      "track_y": 23.574999999999996,
+      "reason": null
+    },
+    {
+      "waveguide_id": 294,
+      "status": "assigned",
+      "track_index": 105,
+      "track_y": 23.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 295,
+      "status": "assigned",
+      "track_index": 104,
+      "track_y": 23.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 296,
+      "status": "assigned",
+      "track_index": 82,
+      "track_y": 19.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 297,
+      "status": "assigned",
+      "track_index": 81,
+      "track_y": 19.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 298,
+      "status": "assigned",
+      "track_index": 80,
+      "track_y": 19.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 299,
+      "status": "assigned",
+      "track_index": 88,
+      "track_y": 20.424999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 300,
+      "status": "assigned",
+      "track_index": 467,
+      "track_y": 86.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 301,
+      "status": "assigned",
+      "track_index": 470,
+      "track_y": 87.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 302,
+      "status": "assigned",
+      "track_index": 469,
+      "track_y": 87.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 303,
+      "status": "assigned",
+      "track_index": 468,
+      "track_y": 86.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 304,
+      "status": "assigned",
+      "track_index": 111,
+      "track_y": 24.449999999999996,
+      "reason": null
+    },
+    {
+      "waveguide_id": 305,
+      "status": "assigned",
+      "track_index": 110,
+      "track_y": 24.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 306,
+      "status": "assigned",
+      "track_index": 109,
+      "track_y": 24.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 307,
+      "status": "assigned",
+      "track_index": 108,
+      "track_y": 23.924999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 308,
+      "status": "assigned",
+      "track_index": 87,
+      "track_y": 20.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 309,
+      "status": "assigned",
+      "track_index": 67,
+      "track_y": 16.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 310,
+      "status": "assigned",
+      "track_index": 66,
+      "track_y": 16.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 311,
+      "status": "assigned",
+      "track_index": 65,
+      "track_y": 16.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 312,
+      "status": "assigned",
+      "track_index": 460,
+      "track_y": 85.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 313,
+      "status": "assigned",
+      "track_index": 459,
+      "track_y": 85.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 314,
+      "status": "assigned",
+      "track_index": 458,
+      "track_y": 85.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 315,
+      "status": "assigned",
+      "track_index": 461,
+      "track_y": 85.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 316,
+      "status": "assigned",
+      "track_index": 99,
+      "track_y": 22.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 317,
+      "status": "assigned",
+      "track_index": 100,
+      "track_y": 22.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 318,
+      "status": "assigned",
+      "track_index": 97,
+      "track_y": 22.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 319,
+      "status": "assigned",
+      "track_index": 98,
+      "track_y": 22.174999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 320,
+      "status": "assigned",
+      "track_index": 69,
+      "track_y": 17.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 321,
+      "status": "assigned",
+      "track_index": 68,
+      "track_y": 16.924999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 322,
+      "status": "assigned",
+      "track_index": 51,
+      "track_y": 13.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 323,
+      "status": "assigned",
+      "track_index": 514,
+      "track_y": 94.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 324,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 325,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 326,
+      "status": "assigned",
+      "track_index": 516,
+      "track_y": 95.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 327,
+      "status": "assigned",
+      "track_index": 515,
+      "track_y": 95.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 328,
+      "status": "assigned",
+      "track_index": 610,
+      "track_y": 111.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 329,
+      "status": "assigned",
+      "track_index": 609,
+      "track_y": 111.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 330,
+      "status": "assigned",
+      "track_index": 611,
+      "track_y": 111.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 331,
+      "status": "assigned",
+      "track_index": 762,
+      "track_y": 138.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 332,
+      "status": "assigned",
+      "track_index": 788,
+      "track_y": 142.92499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 333,
+      "status": "assigned",
+      "track_index": 486,
+      "track_y": 90.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 334,
+      "status": "assigned",
+      "track_index": 489,
+      "track_y": 90.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 335,
+      "status": "assigned",
+      "track_index": 488,
+      "track_y": 90.425,
+      "reason": null
+    },
+    {
+      "waveguide_id": 336,
+      "status": "assigned",
+      "track_index": 487,
+      "track_y": 90.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 337,
+      "status": "assigned",
+      "track_index": 492,
+      "track_y": 91.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 338,
+      "status": "assigned",
+      "track_index": 495,
+      "track_y": 91.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 339,
+      "status": "assigned",
+      "track_index": 494,
+      "track_y": 91.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 340,
+      "status": "assigned",
+      "track_index": 493,
+      "track_y": 91.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 341,
+      "status": "assigned",
+      "track_index": 591,
+      "track_y": 108.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 342,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 343,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 344,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 345,
+      "status": "assigned",
+      "track_index": 472,
+      "track_y": 87.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 346,
+      "status": "assigned",
+      "track_index": 471,
+      "track_y": 87.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 347,
+      "status": "assigned",
+      "track_index": 474,
+      "track_y": 87.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 348,
+      "status": "assigned",
+      "track_index": 473,
+      "track_y": 87.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 349,
+      "status": "assigned",
+      "track_index": 84,
+      "track_y": 19.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 350,
+      "status": "assigned",
+      "track_index": 83,
+      "track_y": 19.549999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 351,
+      "status": "assigned",
+      "track_index": 90,
+      "track_y": 20.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 352,
+      "status": "assigned",
+      "track_index": 89,
+      "track_y": 20.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 353,
+      "status": "assigned",
+      "track_index": 76,
+      "track_y": 18.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 354,
+      "status": "assigned",
+      "track_index": 75,
+      "track_y": 18.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 355,
+      "status": "assigned",
+      "track_index": 74,
+      "track_y": 17.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 356,
+      "status": "assigned",
+      "track_index": 73,
+      "track_y": 17.799999999999997,
+      "reason": null
+    },
+    {
+      "waveguide_id": 357,
+      "status": "assigned",
+      "track_index": 496,
+      "track_y": 91.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 358,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 359,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 360,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 361,
+      "status": "assigned",
+      "track_index": 499,
+      "track_y": 92.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 362,
+      "status": "assigned",
+      "track_index": 498,
+      "track_y": 92.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 363,
+      "status": "assigned",
+      "track_index": 11,
+      "track_y": 6.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 364,
+      "status": "assigned",
+      "track_index": 10,
+      "track_y": 6.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 365,
+      "status": "assigned",
+      "track_index": 9,
+      "track_y": 6.6000000000000005,
+      "reason": null
+    },
+    {
+      "waveguide_id": 366,
+      "status": "assigned",
+      "track_index": 8,
+      "track_y": 6.425000000000001,
+      "reason": null
+    },
+    {
+      "waveguide_id": 367,
+      "status": "assigned",
+      "track_index": 525,
+      "track_y": 96.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 368,
+      "status": "assigned",
+      "track_index": 524,
+      "track_y": 96.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 369,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 370,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 371,
+      "status": "assigned",
+      "track_index": 526,
+      "track_y": 97.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 372,
+      "status": "assigned",
+      "track_index": 528,
+      "track_y": 97.425,
+      "reason": null
+    },
+    {
+      "waveguide_id": 373,
+      "status": "assigned",
+      "track_index": 527,
+      "track_y": 97.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 374,
+      "status": "assigned",
+      "track_index": 25,
+      "track_y": 9.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 375,
+      "status": "assigned",
+      "track_index": 24,
+      "track_y": 9.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 376,
+      "status": "assigned",
+      "track_index": 23,
+      "track_y": 9.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 377,
+      "status": "assigned",
+      "track_index": 22,
+      "track_y": 8.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 378,
+      "status": "assigned",
+      "track_index": 522,
+      "track_y": 96.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 379,
+      "status": "assigned",
+      "track_index": 521,
+      "track_y": 96.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 380,
+      "status": "assigned",
+      "track_index": 520,
+      "track_y": 96.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 381,
+      "status": "assigned",
+      "track_index": 523,
+      "track_y": 96.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 382,
+      "status": "assigned",
+      "track_index": 13,
+      "track_y": 7.300000000000001,
+      "reason": null
+    },
+    {
+      "waveguide_id": 383,
+      "status": "assigned",
+      "track_index": 12,
+      "track_y": 7.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 384,
+      "status": "assigned",
+      "track_index": 27,
+      "track_y": 9.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 385,
+      "status": "assigned",
+      "track_index": 26,
+      "track_y": 9.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 386,
+      "status": "assigned",
+      "track_index": 530,
+      "track_y": 97.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 387,
+      "status": "assigned",
+      "track_index": 529,
+      "track_y": 97.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 388,
+      "status": "assigned",
+      "track_index": 533,
+      "track_y": 98.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 389,
+      "status": "assigned",
+      "track_index": 532,
+      "track_y": 98.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 390,
+      "status": "assigned",
+      "track_index": 535,
+      "track_y": 98.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 391,
+      "status": "assigned",
+      "track_index": 534,
+      "track_y": 98.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 392,
+      "status": "assigned",
+      "track_index": 17,
+      "track_y": 8.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 393,
+      "status": "assigned",
+      "track_index": 16,
+      "track_y": 7.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 394,
+      "status": "assigned",
+      "track_index": 15,
+      "track_y": 7.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 395,
+      "status": "assigned",
+      "track_index": 14,
+      "track_y": 7.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 396,
+      "status": "assigned",
+      "track_index": 29,
+      "track_y": 10.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 397,
+      "status": "assigned",
+      "track_index": 28,
+      "track_y": 9.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 398,
+      "status": "assigned",
+      "track_index": 38,
+      "track_y": 11.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 399,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 400,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 401,
+      "status": "assigned",
+      "track_index": 537,
+      "track_y": 99.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 402,
+      "status": "assigned",
+      "track_index": 597,
+      "track_y": 109.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 403,
+      "status": "assigned",
+      "track_index": 562,
+      "track_y": 103.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 404,
+      "status": "assigned",
+      "track_index": 565,
+      "track_y": 103.9,
+      "reason": null
+    },
+    {
+      "waveguide_id": 405,
+      "status": "assigned",
+      "track_index": 564,
+      "track_y": 103.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 406,
+      "status": "assigned",
+      "track_index": 563,
+      "track_y": 103.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 407,
+      "status": "assigned",
+      "track_index": 21,
+      "track_y": 8.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 408,
+      "status": "assigned",
+      "track_index": 20,
+      "track_y": 8.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 409,
+      "status": "assigned",
+      "track_index": 19,
+      "track_y": 8.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 410,
+      "status": "assigned",
+      "track_index": 18,
+      "track_y": 8.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 411,
+      "status": "assigned",
+      "track_index": 50,
+      "track_y": 13.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 412,
+      "status": "assigned",
+      "track_index": 547,
+      "track_y": 100.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 413,
+      "status": "assigned",
+      "track_index": 546,
+      "track_y": 100.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 414,
+      "status": "assigned",
+      "track_index": 549,
+      "track_y": 101.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 415,
+      "status": "assigned",
+      "track_index": 548,
+      "track_y": 100.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 416,
+      "status": "assigned",
+      "track_index": 557,
+      "track_y": 102.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 417,
+      "status": "assigned",
+      "track_index": 556,
+      "track_y": 102.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 418,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 419,
+      "status": "assigned",
+      "track_index": 554,
+      "track_y": 101.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 420,
+      "status": "assigned",
+      "track_index": 4,
+      "track_y": 5.7250000000000005,
+      "reason": null
+    },
+    {
+      "waveguide_id": 421,
+      "status": "assigned",
+      "track_index": 569,
+      "track_y": 104.6,
+      "reason": null
+    },
+    {
+      "waveguide_id": 422,
+      "status": "assigned",
+      "track_index": 568,
+      "track_y": 104.425,
+      "reason": null
+    },
+    {
+      "waveguide_id": 423,
+      "status": "assigned",
+      "track_index": 753,
+      "track_y": 136.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 424,
+      "status": "assigned",
+      "track_index": 752,
+      "track_y": 136.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 425,
+      "status": "assigned",
+      "track_index": 751,
+      "track_y": 136.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 426,
+      "status": "assigned",
+      "track_index": 750,
+      "track_y": 136.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 427,
+      "status": "assigned",
+      "track_index": 749,
+      "track_y": 136.1,
+      "reason": null
+    },
+    {
+      "waveguide_id": 428,
+      "status": "assigned",
+      "track_index": 748,
+      "track_y": 135.925,
+      "reason": null
+    },
+    {
+      "waveguide_id": 429,
+      "status": "assigned",
+      "track_index": 747,
+      "track_y": 135.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 430,
+      "status": "assigned",
+      "track_index": 746,
+      "track_y": 135.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 431,
+      "status": "assigned",
+      "track_index": 745,
+      "track_y": 135.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 432,
+      "status": "assigned",
+      "track_index": 744,
+      "track_y": 135.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 433,
+      "status": "assigned",
+      "track_index": 706,
+      "track_y": 128.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 434,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 435,
+      "status": "assigned",
+      "track_index": 531,
+      "track_y": 97.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 436,
+      "status": "assigned",
+      "track_index": 567,
+      "track_y": 104.25,
+      "reason": null
+    },
+    {
+      "waveguide_id": 437,
+      "status": "assigned",
+      "track_index": 566,
+      "track_y": 104.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 438,
+      "status": "assigned",
+      "track_index": 782,
+      "track_y": 141.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 439,
+      "status": "assigned",
+      "track_index": 772,
+      "track_y": 140.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 440,
+      "status": "assigned",
+      "track_index": 771,
+      "track_y": 139.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 441,
+      "status": "assigned",
+      "track_index": 708,
+      "track_y": 128.92499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 442,
+      "status": "assigned",
+      "track_index": 707,
+      "track_y": 128.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 443,
+      "status": "assigned",
+      "track_index": 722,
+      "track_y": 131.375,
+      "reason": null
+    },
+    {
+      "waveguide_id": 444,
+      "status": "assigned",
+      "track_index": 721,
+      "track_y": 131.2,
+      "reason": null
+    },
+    {
+      "waveguide_id": 445,
+      "status": "assigned",
+      "track_index": 720,
+      "track_y": 131.02499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 446,
+      "status": "assigned",
+      "track_index": 538,
+      "track_y": 99.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 447,
+      "status": "assigned",
+      "track_index": 781,
+      "track_y": 141.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 448,
+      "status": "assigned",
+      "track_index": 780,
+      "track_y": 141.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 449,
+      "status": "assigned",
+      "track_index": 779,
+      "track_y": 141.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 450,
+      "status": "assigned",
+      "track_index": 756,
+      "track_y": 137.325,
+      "reason": null
+    },
+    {
+      "waveguide_id": 451,
+      "status": "assigned",
+      "track_index": 755,
+      "track_y": 137.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 452,
+      "status": "assigned",
+      "track_index": 754,
+      "track_y": 136.975,
+      "reason": null
+    },
+    {
+      "waveguide_id": 453,
+      "status": "assigned",
+      "track_index": 770,
+      "track_y": 139.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 454,
+      "status": "assigned",
+      "track_index": 778,
+      "track_y": 141.17499999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 455,
+      "status": "assigned",
+      "track_index": 540,
+      "track_y": 99.525,
+      "reason": null
+    },
+    {
+      "waveguide_id": 456,
+      "status": "assigned",
+      "track_index": 539,
+      "track_y": 99.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 457,
+      "status": "assigned",
+      "track_index": 703,
+      "track_y": 128.04999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 458,
+      "status": "assigned",
+      "track_index": 724,
+      "track_y": 131.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 459,
+      "status": "assigned",
+      "track_index": 739,
+      "track_y": 134.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 460,
+      "status": "assigned",
+      "track_index": 738,
+      "track_y": 134.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 461,
+      "status": "assigned",
+      "track_index": 737,
+      "track_y": 134.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 462,
+      "status": "assigned",
+      "track_index": 497,
+      "track_y": 92.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 463,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 464,
+      "status": "assigned",
+      "track_index": 763,
+      "track_y": 138.55,
+      "reason": null
+    },
+    {
+      "waveguide_id": 465,
+      "status": "assigned",
+      "track_index": 764,
+      "track_y": 138.725,
+      "reason": null
+    },
+    {
+      "waveguide_id": 466,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 467,
+      "status": "assigned",
+      "track_index": 545,
+      "track_y": 100.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 468,
+      "status": "assigned",
+      "track_index": 544,
+      "track_y": 100.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 469,
+      "status": "assigned",
+      "track_index": 543,
+      "track_y": 100.05,
+      "reason": null
+    },
+    {
+      "waveguide_id": 470,
+      "status": "assigned",
+      "track_index": 542,
+      "track_y": 99.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 471,
+      "status": "assigned",
+      "track_index": 541,
+      "track_y": 99.7,
+      "reason": null
+    },
+    {
+      "waveguide_id": 472,
+      "status": "assigned",
+      "track_index": 553,
+      "track_y": 101.8,
+      "reason": null
+    },
+    {
+      "waveguide_id": 473,
+      "status": "assigned",
+      "track_index": 552,
+      "track_y": 101.625,
+      "reason": null
+    },
+    {
+      "waveguide_id": 474,
+      "status": "assigned",
+      "track_index": 551,
+      "track_y": 101.45,
+      "reason": null
+    },
+    {
+      "waveguide_id": 475,
+      "status": "assigned",
+      "track_index": 550,
+      "track_y": 101.275,
+      "reason": null
+    },
+    {
+      "waveguide_id": 476,
+      "status": "assigned",
+      "track_index": 726,
+      "track_y": 132.075,
+      "reason": null
+    },
+    {
+      "waveguide_id": 477,
+      "status": "assigned",
+      "track_index": 725,
+      "track_y": 131.89999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 478,
+      "status": "assigned",
+      "track_index": 519,
+      "track_y": 95.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 479,
+      "status": "assigned",
+      "track_index": 518,
+      "track_y": 95.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 480,
+      "status": "assigned",
+      "track_index": 517,
+      "track_y": 95.5,
+      "reason": null
+    },
+    {
+      "waveguide_id": 481,
+      "status": "assigned",
+      "track_index": 536,
+      "track_y": 98.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 482,
+      "status": "assigned",
+      "track_index": 560,
+      "track_y": 103.025,
+      "reason": null
+    },
+    {
+      "waveguide_id": 483,
+      "status": "assigned",
+      "track_index": 559,
+      "track_y": 102.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 484,
+      "status": "assigned",
+      "track_index": 558,
+      "track_y": 102.675,
+      "reason": null
+    },
+    {
+      "waveguide_id": 485,
+      "status": "assigned",
+      "track_index": 702,
+      "track_y": 127.875,
+      "reason": null
+    },
+    {
+      "waveguide_id": 486,
+      "status": "assigned",
+      "track_index": 571,
+      "track_y": 104.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 487,
+      "status": "assigned",
+      "track_index": 570,
+      "track_y": 104.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 488,
+      "status": "assigned",
+      "track_index": 555,
+      "track_y": 102.15,
+      "reason": null
+    },
+    {
+      "waveguide_id": 489,
+      "status": "assigned",
+      "track_index": 579,
+      "track_y": 106.35,
+      "reason": null
+    },
+    {
+      "waveguide_id": 490,
+      "status": "assigned",
+      "track_index": 578,
+      "track_y": 106.175,
+      "reason": null
+    },
+    {
+      "waveguide_id": 491,
+      "status": "assigned",
+      "track_index": 577,
+      "track_y": 106.0,
+      "reason": null
+    },
+    {
+      "waveguide_id": 492,
+      "status": "assigned",
+      "track_index": 576,
+      "track_y": 105.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 493,
+      "status": "assigned",
+      "track_index": 575,
+      "track_y": 105.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 494,
+      "status": "assigned",
+      "track_index": 574,
+      "track_y": 105.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 495,
+      "status": "assigned",
+      "track_index": 573,
+      "track_y": 105.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 496,
+      "status": "assigned",
+      "track_index": 572,
+      "track_y": 105.125,
+      "reason": null
+    },
+    {
+      "waveguide_id": 497,
+      "status": "assigned",
+      "track_index": 507,
+      "track_y": 93.75,
+      "reason": null
+    },
+    {
+      "waveguide_id": 498,
+      "status": "assigned",
+      "track_index": 506,
+      "track_y": 93.575,
+      "reason": null
+    },
+    {
+      "waveguide_id": 499,
+      "status": "assigned",
+      "track_index": 505,
+      "track_y": 93.4,
+      "reason": null
+    },
+    {
+      "waveguide_id": 500,
+      "status": "assigned",
+      "track_index": 504,
+      "track_y": 93.225,
+      "reason": null
+    },
+    {
+      "waveguide_id": 501,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 502,
+      "status": "assigned",
+      "track_index": 491,
+      "track_y": 90.95,
+      "reason": null
+    },
+    {
+      "waveguide_id": 503,
+      "status": "assigned",
+      "track_index": 490,
+      "track_y": 90.775,
+      "reason": null
+    },
+    {
+      "waveguide_id": 504,
+      "status": "unsupported_geometry",
+      "track_index": null,
+      "track_y": null,
+      "reason": "Horizontal span is below 2 * bend_radius."
+    },
+    {
+      "waveguide_id": 505,
+      "status": "assigned",
+      "track_index": 719,
+      "track_y": 130.85,
+      "reason": null
+    },
+    {
+      "waveguide_id": 506,
+      "status": "assigned",
+      "track_index": 723,
+      "track_y": 131.54999999999998,
+      "reason": null
+    },
+    {
+      "waveguide_id": 507,
+      "status": "assigned",
+      "track_index": 736,
+      "track_y": 133.825,
+      "reason": null
+    },
+    {
+      "waveguide_id": 508,
+      "status": "assigned",
+      "track_index": 735,
+      "track_y": 133.65,
+      "reason": null
+    },
+    {
+      "waveguide_id": 509,
+      "status": "assigned",
+      "track_index": 734,
+      "track_y": 133.475,
+      "reason": null
+    },
+    {
+      "waveguide_id": 510,
+      "status": "assigned",
+      "track_index": 733,
+      "track_y": 133.3,
+      "reason": null
+    },
+    {
+      "waveguide_id": 511,
+      "status": "assigned",
+      "track_index": 561,
+      "track_y": 103.2,
+      "reason": null
+    }
+  ],
+  "stopped_for_performance": true,
+  "independent_validation_run": false,
+  "source_hashes": {
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\\u81ea\u52a8\u6392\u5e03\\AutoRouter\\fiberBoard512.xlsx": "71a19ec1739de75453608d1d9bd0bb2b9ad102140e4af5057c12e60c0accd7ff",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\\u81ea\u52a8\u6392\u5e03\\AutoRouter\\fiberBoard0data.xlsx": "6901bd1f15388cf15831b57297be9a6a6f51ef1d661196e282dc5f1bbd6a8770"
+  }
+}

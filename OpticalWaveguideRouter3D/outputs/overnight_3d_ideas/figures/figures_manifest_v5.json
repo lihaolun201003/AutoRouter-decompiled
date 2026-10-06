@@ -1,0 +1,254 @@
+{
+  "round": "v5",
+  "generator": "scripts/overnight_figures.py",
+  "font": "simsun.ttc",
+  "generated_utc": "2026-10-05T14:42:51Z",
+  "inputs": {
+    "comparison_csv": "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+    "summary_json": "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+  },
+  "rows_used": 16,
+  "groups_expected": 16,
+  "groups_not_finished": 0,
+  "not_plotted": [],
+  "images": [
+    {
+      "figure": "v5_f1_pairs_vs_budget",
+      "title": "终态近距对数 vs 追加候选评价预算（策略 × N/R 模式 × 两种起点）",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f1_pairs_vs_budget.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f1_pairs_vs_budget.pdf",
+      "png_sha256": "5051efef7c4c56fa1b18fe9f6b44756dafa502d6377f2fd5d6b680ea4f3f65cc",
+      "pdf_sha256": "a5b508dc2688b55e0c5665f6e4a340e3b1cd6e7bbdbffef5bec023b9183a756a",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "budget",
+        "strategy",
+        "mode",
+        "start_kind",
+        "final_collision_pairs",
+        "initial_collision_pairs"
+      ],
+      "source_sub_objects": [],
+      "rows_used": 16,
+      "notes": "只使用 comparison.csv 的列；summary_<round>.json 仅用于核对列集合与未完成组名单",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:28Z"
+    },
+    {
+      "figure": "v5_f2_same_budget_N_vs_R",
+      "title": "同一预算上限下 N 与 R 的终态近距对数对照（按策略分面）",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f2_same_budget_N_vs_R.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f2_same_budget_N_vs_R.pdf",
+      "png_sha256": "53310b7554bb7d2bce3f361d3b0e0e281a726270a14a5a57e8dbaf4470055d4f",
+      "pdf_sha256": "6366274e205bfec51e77a633a368bab2b674ce936c7dee5e558042c3d5b92d77",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "budget",
+        "strategy",
+        "mode",
+        "start_kind",
+        "final_collision_pairs"
+      ],
+      "source_sub_objects": [],
+      "rows_used": 12,
+      "notes": "缺失的单元画为“未完成”而不是 0，任何一方缺失就不给出 R−N 差值",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:30Z"
+    },
+    {
+      "figure": "v5_f3_actions_and_reductions",
+      "title": "执行动作数与净收益按 首次抬升 / 重定位 / RETURN 拆分",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f3_actions_and_reductions.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f3_actions_and_reductions.pdf",
+      "png_sha256": "e17fce0647bccd63d49ddfd14aa93e98de21545191ee673df5bd16cab716652f",
+      "pdf_sha256": "8b866b06738529ec493f2dc8dba3102c1aef17c4e3407ef2159b3730b9d99684",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "group",
+        "strategy",
+        "mode",
+        "budget",
+        "first_elevations",
+        "relocations",
+        "returns",
+        "first_elevation_net_reduction",
+        "relocation_net_reduction",
+        "return_net_reduction",
+        "total_old_collisions_removed",
+        "total_new_collisions_created"
+      ],
+      "source_sub_objects": [],
+      "rows_used": 16,
+      "notes": "NULL 值按 0 高度绘制并在脚注列出，绝不当作 0 读数",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:33Z"
+    },
+    {
+      "figure": "v5_f4_costs",
+      "title": "几何代价：阶段长度变化、终态额外长度、过渡段数量、已抬升路线数",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f4_costs.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f4_costs.pdf",
+      "png_sha256": "8b585a21e595ba3e00e7e68584ad9216da8c10931307552ca016a2cbb10ebcfc",
+      "pdf_sha256": "3afce5286290b8d55d6fe00fbadb2ff93992df41fe2540496195f4da3b8adf15",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "group",
+        "strategy",
+        "mode",
+        "budget",
+        "stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm",
+        "final_transition_count",
+        "final_elevated_route_count"
+      ],
+      "source_sub_objects": [],
+      "rows_used": 16,
+      "notes": "null 直接标注为 null，不折成 0",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:38Z"
+    },
+    {
+      "figure": "v5_f5_evaluation_efficiency",
+      "title": "评价效率：每次动作的评价次数与每次评价的净减少",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f5_evaluation_efficiency.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f5_evaluation_efficiency.pdf",
+      "png_sha256": "7163e16f0eba02219656b923cc0521a3a92d9ddfaeb85cd2f042f3b7d24bd4ac",
+      "pdf_sha256": "f92591d0b6d037b15432aed3084494c5749269d0afc02c73d353ba26bb45ad22",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "group",
+        "strategy",
+        "mode",
+        "budget",
+        "evaluations_per_action",
+        "net_reduction_per_evaluation",
+        "candidate_evaluations",
+        "accepted_moves"
+      ],
+      "source_sub_objects": [],
+      "rows_used": 16,
+      "notes": "分母为 0 的比值保持 null",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:40Z"
+    },
+    {
+      "figure": "v5_f6_coverage",
+      "title": "调度覆盖：不同目标对/目标侧/路线与重复访问",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f6_coverage.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f6_coverage.pdf",
+      "png_sha256": "56a806ac30c229b7d930bef5fd458644f5fc1c13f48dbb5f4e9d14ed7faae757",
+      "pdf_sha256": "382909071fb747f50d01676c20ed6b76b3aac7cf0f5cf6cc9a5c5354f908d1d4",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "group",
+        "strategy",
+        "mode",
+        "budget"
+      ],
+      "source_sub_objects": [
+        "coverage.unique_target_pairs",
+        "coverage.unique_target_sides",
+        "coverage.unique_evaluated_target_sides",
+        "coverage.unique_routes_attempted",
+        "coverage.unique_routes_evaluated",
+        "coverage.unique_routes_touched_by_a_move",
+        "coverage.repeated_target_attempts",
+        "coverage.max_attempts_on_one_route"
+      ],
+      "rows_used": 16,
+      "notes": "coverage 只存在于 summary_<round>.json；comparison.csv 提供每一行的键",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:43Z"
+    },
+    {
+      "figure": "v5_f7_failures_and_stops",
+      "title": "未评价候选数、deferred 前缀（按 UU/UE/EE）与停止原因分布",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f7_failures_and_stops.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f7_failures_and_stops.pdf",
+      "png_sha256": "8dfa77d9380a37ae5b34af86700024f0b7b76b36028a5772a91dcaafa8c3b244",
+      "pdf_sha256": "8a144ce75a38aa7fd94e75117bb7a006a8b2ff0006a68840b9b61f95e7b547ef",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "group",
+        "strategy",
+        "mode",
+        "budget",
+        "not_evaluated_candidates",
+        "stop_reason"
+      ],
+      "source_sub_objects": [
+        "coverage.elevation_state_class_deferred.UU",
+        "coverage.elevation_state_class_deferred.UE",
+        "coverage.elevation_state_class_deferred.EE"
+      ],
+      "rows_used": 16,
+      "notes": "NOT_EVALUATED 与拒绝分开记账；deferred 前缀不是 ALL_CANDIDATES_REJECTED",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:47Z"
+    },
+    {
+      "figure": "v5_f8_group_table",
+      "title": "逐组汇总表（comparison.csv 已完成组的原样读数）",
+      "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f8_group_table.png",
+      "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f8_group_table.pdf",
+      "png_sha256": "91401509148d8cb7cef18db9b609a0023f90b0c437c4e2625ac6693d2defa3ee",
+      "pdf_sha256": "76959f82e3f5f5f753281e6d2b8683f3d0ac104408dc14827b999638efe4b6b7",
+      "source_files": [
+        "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+        "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+      ],
+      "source_columns": [
+        "group",
+        "strategy",
+        "mode",
+        "budget",
+        "start_kind",
+        "control",
+        "initial_collision_pairs",
+        "final_collision_pairs",
+        "net_collision_reduction",
+        "accepted_moves",
+        "candidate_evaluations",
+        "evaluations_per_action",
+        "net_reduction_per_evaluation",
+        "recheck_verdict"
+      ],
+      "source_sub_objects": [],
+      "rows_used": 16,
+      "notes": "表格只重排 comparison.csv 的读数，不做派生",
+      "generator": "scripts/overnight_figures.py",
+      "round": "v5",
+      "generated_utc": "2026-10-05T14:42:51Z"
+    }
+  ],
+  "style_source": "outputs/3d_strategy_v4/512_full_layout/figures",
+  "no_figure_numbers_embedded": true
+}

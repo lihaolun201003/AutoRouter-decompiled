@@ -1,0 +1,461 @@
+[
+ {
+  "page": 1,
+  "lines": 35,
+  "chars": 1471,
+  "first5": [
+   "三维布线 v8 路径弧长窗口续跑报告",
+   "本报告由 scripts/publication/build_v8_continuation_report.py 依据冻结产物自动生",
+   "成；所有数字来自 outputs/overnight_3d_continuation 下的 ",
+   "comparison/diagnostics/verification 文件。",
+   "1 本轮范围与状态恢复（P0）"
+  ],
+  "last5": [
+   "·Δt²/8）、旧/新与新/新 primitive 距离、自近距相邻证明（C1 接头在“离接头 ",
+   "2×clearance 弧长之外”被认证为 CLEAR，声明常数 ADJACENT_FAR_MULTIPLE=2.0，豁免对",
+   "的总弧长间隔 < 0.4 mm）、序列化/反序列化 round-trip、生成缓存指纹、稳定排名键（新",
+   "旧窗口统一成 4 元组）、以及 G1 生成域（保留全部 G0 候选 + 路径窗口，按平面弧长区间",
+   "去重）。"
+  ],
+  "images": [],
+  "drawings": 0,
+  "blocks": 32
+ },
+ {
+  "page": 2,
+  "lines": 232,
+  "chars": 1470,
+  "first5": [
+   "针对性测试：tests/test_path_window_3d.py，覆盖纯直线退化、跨线弧窗口、内部相位共",
+   "享、方向连续、曲率闭式与数值曲率一致、整窗极值、半径贴近时保守拒绝、保守距离界、自",
+   "近距、逻辑结构（逻辑升降 vs 物理片段）、round-trip、缓存失效、G1 保留全部 G0 候",
+   "选。",
+   "3 v8 正式对照（P2）"
+  ],
+  "last5": [
+   "1866",
+   "114",
+   "18211",
+   "0",
+   "0"
+  ],
+  "images": [],
+  "drawings": 53,
+  "blocks": 21
+ },
+ {
+  "page": 3,
+  "lines": 109,
+  "chars": 1114,
+  "first5": [
+   "组",
+   "缺陷版终态",
+   "对",
+   "缺陷版 ",
+   "ENDPOINT_CH"
+  ],
+  "last5": [
+   "G1 下完整验收通过：0",
+   "",
+   "G1 下仍然无窗：33（其中至少一个窗口被曲率判据保守拒绝：10）",
+   "",
+   "G1 下基本通过但完整检查未判定/无净收益：0"
+  ],
+  "images": [],
+  "drawings": 35,
+  "blocks": 40
+ },
+ {
+  "page": 4,
+  "lines": 114,
+  "chars": 1338,
+  "first5": [
+   "5.2 新增候选进入 K16 前缀的情况",
+   "",
+   "G1 新增路径窗口候选合计：8421",
+   "",
+   "被曲率判据保守拒绝的窗口：14007"
+  ],
+  "last5": [
+   "上限",
+   "15837",
+   "144",
+   "41.20",
+   "引用"
+  ],
+  "images": [],
+  "drawings": 26,
+  "blocks": 43
+ },
+ {
+  "page": 5,
+  "lines": 342,
+  "chars": 1395,
+  "first5": [
+   "家族",
+   "目标",
+   "上限",
+   "模式",
+   "预算"
+  ],
+  "last5": [
+   "用尽",
+   "17485",
+   "158",
+   "74.58",
+   "本轮"
+  ],
+  "images": [],
+  "drawings": 38,
+  "blocks": 76
+ },
+ {
+  "page": 6,
+  "lines": 123,
+  "chars": 1148,
+  "first5": [
+   "家族",
+   "目标",
+   "上限",
+   "模式",
+   "预算"
+  ],
+  "last5": [
+   "  \"main_r2880\": 18042,",
+   "  \"actual_evaluations_r2880\": 2880,",
+   "  \"target_limit_hits\": 0,",
+   "  \"budget_full_uses\": 8,",
+   "  \"stage_length_delta_r2880\": 71.94661375845317"
+  ],
+  "images": [],
+  "drawings": 20,
+  "blocks": 55
+ },
+ {
+  "page": 7,
+  "lines": 267,
+  "chars": 1242,
+  "first5": [
+   " }",
+   "}",
+   "7 长度约束下的收益（P4）",
+   "cap 口径：当前全布局总长度 ≤ 起点全布局总长度 + cap；按有符号长度台账计算，",
+   "重定位减少长度时可以获得余量。评价顺序：先做原基本评价并扣预算单位，再检查成本约"
+  ],
+  "last5": [
+   "0.03",
+   "2880",
+   "82",
+   "预算",
+   "用尽"
+  ],
+  "images": [],
+  "drawings": 32,
+  "blocks": 33
+ },
+ {
+  "page": 8,
+  "lines": 274,
+  "chars": 1360,
+  "first5": [
+   "家族",
+   "cap ",
+   "mm",
+   "模式",
+   "起点"
+  ],
+  "last5": [
+   "中位数与范围：",
+   "{",
+   " \"engine\": {",
+   "  \"OFF\": {",
+   "   \"n\": 3,"
+  ],
+  "images": [],
+  "drawings": 60,
+  "blocks": 32
+ },
+ {
+  "page": 9,
+  "lines": 47,
+  "chars": 765,
+  "first5": [
+   "   \"min\": 456.69941779994406,",
+   "   \"median\": 478.85221929999534,",
+   "   \"max\": 560.609741399996",
+   "  },",
+   "  \"ON\": {"
+  ],
+  "last5": [
+   "   \"min\": 456.33552880003117,",
+   "   \"median\": 478.49771330005024,",
+   "   \"max\": 560.2478608000092",
+   "  },",
+   "  \"ON\": {"
+  ],
+  "images": [],
+  "drawings": 0,
+  "blocks": 47
+ },
+ {
+  "page": 10,
+  "lines": 45,
+  "chars": 562,
+  "first5": [
+   "   \"n\": 3,",
+   "   \"min\": 308.70116399996914,",
+   "   \"median\": 346.7213759999722,",
+   "   \"max\": 545.9778906999854",
+   "  }"
+  ],
+  "last5": [
+   "    30.634837951583904",
+   "   ]",
+   "  }",
+   " }",
+   "}"
+  ],
+  "images": [],
+  "drawings": 0,
+  "blocks": 45
+ },
+ {
+  "page": 11,
+  "lines": 128,
+  "chars": 1378,
+  "first5": [
+   "9 测试、全量复核与视觉 QA（P6）",
+   "",
+   "针对性测试：tests/test_path_window_3d.py (25) + ",
+   "tests/test_overnight_engine_3d.py (21) = 46 passed",
+   ""
+  ],
+  "last5": [
+   "True",
+   "v8_neutrality",
+   "V8_G0_NEUTRALITY_R720",
+   "PASS",
+   "True"
+  ],
+  "images": [],
+  "drawings": 36,
+  "blocks": 22
+ },
+ {
+  "page": 12,
+  "lines": 122,
+  "chars": 1297,
+  "first5": [
+   "轮次",
+   "组",
+   "状态",
+   "复核 PASS",
+   "v8_neutrality"
+  ],
+  "last5": [
+   "p3",
+   "P3_A_FAMILY_T2000_N28",
+   "80",
+   "PASS",
+   "True"
+  ],
+  "images": [],
+  "drawings": 37,
+  "blocks": 30
+ },
+ {
+  "page": 13,
+  "lines": 139,
+  "chars": 1041,
+  "first5": [
+   "轮次",
+   "组",
+   "状态",
+   "复核 PASS",
+   "p3"
+  ],
+  "last5": [
+   "p4",
+   "P4_A_FAMILY_CAP60_NC2",
+   "880",
+   "PASS",
+   "True"
+  ],
+  "images": [],
+  "drawings": 34,
+  "blocks": 27
+ },
+ {
+  "page": 14,
+  "lines": 71,
+  "chars": 1442,
+  "first5": [
+   "轮次",
+   "组",
+   "状态",
+   "复核 PASS",
+   "p4"
+  ],
+  "last5": [
+   "11 产物与复现",
+   "outputs/overnight_3d_continuation/",
+   "  plan_p0_state.json            本轮计划与冻结参数",
+   "  code_snapshot.json            正式批次前冻结的源码/测试 SHA256",
+   "  manifest/round_{v8,v8_neutrality,p3,p4,p5}.json (+sha256, override records)"
+  ],
+  "images": [],
+  "drawings": 15,
+  "blocks": 29
+ },
+ {
+  "page": 15,
+  "lines": 12,
+  "chars": 655,
+  "first5": [
+   "  v8/ v8_neutrality/ p3/ p4/ p5/   每组 config/ledger/summary/decisions/recheck/",
+   "  comparison/                   p2/p3/p4/p5/neutrality/defect 的 json+csv",
+   "  diagnostics/                  120 侧诊断 + 机制分解",
+   "  figures/                      对比图、权衡图、计时图、真实路径窗口实例图",
+   "  verification/final_verification.json"
+  ],
+  "last5": [
+   "复现命令见 checkpoint.md 的 resume_commands；重跑单组：",
+   ".venv\\Scripts\\python.exe -B scripts\\run_overnight_3d.py . ",
+   "outputs\\overnight_3d_continuation --round v8 --group V8_G1_R2880 --tag boundaryfix",
+   "附：本轮生成的图（每张同时提供 PDF 与 manifest）",
+   "v8_diagnostics_side_outcomes  (v8_diagnostics_side_outcomes.png)"
+  ],
+  "images": [
+   {
+    "bbox": [
+     99.1,
+     259.5,
+     538.2,
+     485.4
+    ],
+    "w": 1297,
+    "h": 667,
+    "eff_dpi": 213
+   },
+   {
+    "bbox": [
+     99.1,
+     522.2,
+     538.2,
+     704.7
+    ],
+    "w": 1812,
+    "h": 753,
+    "eff_dpi": 297
+   }
+  ],
+  "drawings": 0,
+  "blocks": 12
+ },
+ {
+  "page": 16,
+  "lines": 3,
+  "chars": 158,
+  "first5": [
+   "v8_example_path_window_route  (v8_example_path_window_route.png)",
+   "v8_p2_g0_vs_g1_pairs  (v8_p2_g0_vs_g1_pairs.png)",
+   "v8_p3_family_limit  (v8_p3_family_limit.png)"
+  ],
+  "last5": [
+   "v8_example_path_window_route  (v8_example_path_window_route.png)",
+   "v8_p2_g0_vs_g1_pairs  (v8_p2_g0_vs_g1_pairs.png)",
+   "v8_p3_family_limit  (v8_p3_family_limit.png)"
+  ],
+  "images": [
+   {
+    "bbox": [
+     99.1,
+     96.4,
+     538.2,
+     294.4
+    ],
+    "w": 1511,
+    "h": 681,
+    "eff_dpi": 248
+   },
+   {
+    "bbox": [
+     99.1,
+     331.2,
+     538.2,
+     529.2
+    ],
+    "w": 1511,
+    "h": 681,
+    "eff_dpi": 248
+   }
+  ],
+  "drawings": 0,
+  "blocks": 3
+ },
+ {
+  "page": 17,
+  "lines": 2,
+  "chars": 77,
+  "first5": [
+   "v8_p4_length_cap  (v8_p4_length_cap.png)",
+   "v8_p4_tradeoff  (v8_p4_tradeoff.png)"
+  ],
+  "last5": [
+   "v8_p4_length_cap  (v8_p4_length_cap.png)",
+   "v8_p4_tradeoff  (v8_p4_tradeoff.png)"
+  ],
+  "images": [
+   {
+    "bbox": [
+     99.1,
+     71.9,
+     538.2,
+     277.8
+    ],
+    "w": 1511,
+    "h": 708,
+    "eff_dpi": 248
+   },
+   {
+    "bbox": [
+     99.1,
+     314.6,
+     538.2,
+     652.4
+    ],
+    "w": 1040,
+    "h": 800,
+    "eff_dpi": 170
+   }
+  ],
+  "drawings": 0,
+  "blocks": 2
+ },
+ {
+  "page": 18,
+  "lines": 1,
+  "chars": 46,
+  "first5": [
+   "v8_p5_serial_timing  (v8_p5_serial_timing.png)"
+  ],
+  "last5": [
+   "v8_p5_serial_timing  (v8_p5_serial_timing.png)"
+  ],
+  "images": [
+   {
+    "bbox": [
+     99.1,
+     71.9,
+     538.2,
+     258.6
+    ],
+    "w": 1454,
+    "h": 618,
+    "eff_dpi": 238
+   }
+  ],
+  "drawings": 0,
+  "blocks": 1
+ }
+]

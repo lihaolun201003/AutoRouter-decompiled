@@ -1,0 +1,22 @@
+{
+  "note": "pending driver patch for v8 groups; applied after the P5 serial batch ends",
+  "file": "scripts/run_overnight_3d.py",
+  "edits": [
+    {
+      "old": "        transitions = [p for p in r.primitives if isinstance(p, CosineTransition3D)]",
+      "new": "        transitions = [p for p in r.primitives if isinstance(p, TRANSITION_TYPES)]"
+    },
+    {
+      "old": "from src.geometry_3d import lift_smoothed_route_to_layer, CosineTransition3D",
+      "new": "from src.geometry_3d import (lift_smoothed_route_to_layer, CosineTransition3D,\n    PathWindowTransition3D, TRANSITION_TYPES)"
+    },
+    {
+      "old": "    moved = {i for i, r in stored.items() if any(isinstance(p, CosineTransition3D) for p in r.primitives)}",
+      "new": "    moved = {i for i, r in stored.items() if any(isinstance(p, TRANSITION_TYPES) for p in r.primitives)}"
+    },
+    {
+      "old": "                  final_transition_count=sum(isinstance(p, CosineTransition3D)\n                                             for r in stored.values() for p in r.primitives),",
+      "new": "                  final_transition_count=sum(isinstance(p, TRANSITION_TYPES)\n                                             for r in stored.values() for p in r.primitives),\n                  final_path_window_count=sum(type(p) is PathWindowTransition3D\n                                              for r in stored.values() for p in r.primitives),\n                  minimum_path_window_radius_mm=min(\n                      (p.minimum_curvature_radius() for r in stored.values()\n                       for p in r.primitives if type(p) is PathWindowTransition3D),\n                      default=None),"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "scale": 512,
+  "dataset": "LEGACY_512_SMOOTHED_P0",
+  "group": {
+    "name": "A_baseline_original",
+    "generation_failure_cache": false,
+    "window_slack_mm": 0.0,
+    "note": "historical behaviour, both new features off"
+  },
+  "input_sha256": {
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_plot_geometry.json": "14403f100b73c22f89ea07cf329822347ad541dc6674e1949996a7d5f0523821",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_physical_events.jsonl": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8"
+  },
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "budget": {
+    "scale": 512,
+    "max_targets": 50,
+    "candidate_budget": 720,
+    "budget_counts_basic_rejections": true,
+    "source": "step_9_f_three_layer_attempts.json: 720 candidate rows over 50 target attempts"
+  },
+  "stats": {
+    "final_collision_pairs": 44274,
+    "final_unresolved_pairs": 3,
+    "initial_collision_pairs": 49518,
+    "initial_unresolved_pairs": 3,
+    "accepted_moves": 22,
+    "first_elevations": 22,
+    "relocations": 0,
+    "final_extra_length_mm": 8.405220067084883,
+    "step_length_delta_total_mm": 8.405220067108118,
+    "final_transition_count": 44,
+    "target_attempts": 50,
+    "unique_targets": 25,
+    "repeat_attempts": 25,
+    "repeated_targets": [
+      {
+        "pair": [
+          290,
+          433
+        ],
+        "attempts": 14
+      },
+      {
+        "pair": [
+          290,
+          291
+        ],
+        "attempts": 13
+      }
+    ],
+    "generation_cache_enabled": false,
+    "generation_cache_records": 0,
+    "generation_cache_zero_candidate_records": 0,
+    "generation_skip_events": 0,
+    "generation_skipped_target_count": 0,
+    "generated_candidates": 666,
+    "candidate_evaluations": 666,
+    "candidate_budget": 720,
+    "full_neighbor_checks": 335,
+    "zero_candidate_victim_attempts": 69,
+    "generation_failure_reasons": {
+      "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 68,
+      "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 1
+    },
+    "self_rejection_reasons": {
+      "SELF_AMBIGUOUS_CLEARANCE": 331
+    },
+    "other_basic_reasons": {},
+    "full_rejection_reasons": {
+      "NO_STRICT_GLOBAL_DECREASE": 9
+    },
+    "no_acceptable_move_steps": 28,
+    "failed_no_candidates": 0,
+    "budget_used_percent": 92.5,
+    "stop_reason": "TARGET_LIMIT",
+    "timings": {
+      "initial_pair_scan_seconds": 14.764953300007619,
+      "assignment_seconds": 184.7652412999887,
+      "runtime_seconds": 199.7273334999336
+    },
+    "run_seconds_including_io": 201.30012619995978,
+    "recheck": {
+      "reloaded_route_count": 512,
+      "collision_pair_set_matches_incremental": true,
+      "unresolved_pair_set_matches_incremental": true,
+      "checks": 130816,
+      "recheck_seconds": 24.927640700014308,
+      "final_transition_count": 44,
+      "verdict": "PASS"
+    },
+    "recheck_geometry": {
+      "endpoint_invariant": true,
+      "joins_C0_C1_direction": true,
+      "transition_radius_pass": true,
+      "xy_projection_preserved": true,
+      "xy_failures": []
+    },
+    "previous_revision_comparison": {
+      "verdict": "EXACT_MATCH",
+      "decisions_identical": true,
+      "collision_sets_identical": true,
+      "curve_identical": true,
+      "terminal_routes_identical": true,
+      "differing_route_ids": [],
+      "ledger_common_fields_identical": true,
+      "ledger_reference": {
+        "final_collision_pair_count": 44274,
+        "accepted_moves": 22,
+        "candidate_evaluations": 666,
+        "target_attempts": 50,
+        "stop_reason": "TARGET_LIMIT",
+        "final_extra_length_mm": 8.405220067084883,
+        "first_elevations": 22,
+        "relocations": 0,
+        "full_neighbor_checks": 335,
+        "generated_candidates": 666,
+        "final_transition_count": 44,
+        "final_unresolved_pair_count": 3,
+        "initial_collision_pair_count": 49518
+      },
+      "group_A_decisions_sha256": "c322e4b1307d92f5a0d1f4e1f99286858b3d472e7304f74e46e48d608b1c79b1",
+      "rev2_decisions_sha256": "c322e4b1307d92f5a0d1f4e1f99286858b3d472e7304f74e46e48d608b1c79b1",
+      "strict_note": "strict on-disk comparison; the in-run comparison reported DIFFERS only because in-memory tuples (arc _source_*_xy) are lists after JSON saving",
+      "in_run_memory_comparison": {
+        "previous": {
+          "final_collision_pair_count": 44274,
+          "accepted_moves": 22,
+          "candidate_evaluations": 666,
+          "target_attempts": 50,
+          "stop_reason": "TARGET_LIMIT",
+          "final_extra_length_mm": 8.405220067084883
+        },
+        "current": {
+          "final_collision_pair_count": 44274,
+          "accepted_moves": 22,
+          "candidate_evaluations": 666,
+          "target_attempts": 50,
+          "stop_reason": "TARGET_LIMIT",
+          "final_extra_length_mm": 8.405220067084883
+        },
+        "final_pair_count_matches": true,
+        "accepted_moves_matches": true,
+        "evaluations_match": true,
+        "stop_reason_matches": true,
+        "terminal_routes_identical": false,
+        "verdict": "DIFFERS"
+      }
+    }
+  }
+}

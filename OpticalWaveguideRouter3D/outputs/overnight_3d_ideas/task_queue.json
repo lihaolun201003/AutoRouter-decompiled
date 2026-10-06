@@ -1,0 +1,33 @@
+{
+  "completed": [
+    "v5 (16 groups)",
+    "v6 (24 groups)",
+    "v7 (24 groups)",
+    "ideas A-H (54 groups)",
+    "dctrl (8 groups)"
+  ],
+  "remaining": [
+    {
+      "id": "v8",
+      "status": "not_started",
+      "detail": "path-arc-length windows; support chain design in docs/plans/v8_engineering_breakpoint.md",
+      "resume": ".venv\\Scripts\\python.exe -B scripts\\freeze_overnight_manifest.py . outputs\\overnight_3d_ideas --round v8"
+    },
+    {
+      "id": "combined_strategy",
+      "status": "skipped_with_reason",
+      "detail": "only A was a positive single factor; combining zero-effect and degraded arms would not be attributable"
+    },
+    {
+      "id": "controlled_serial_timing",
+      "status": "not_started",
+      "detail": "no speed claim is made, so no controlled serial timing comparison was run"
+    }
+  ],
+  "resume_commands": {
+    "verify": ".venv\\Scripts\\python.exe -B scripts\\overnight_final_verification.py . outputs\\overnight_3d_ideas",
+    "tests": ".venv\\Scripts\\python.exe -B -m pytest tests -q",
+    "figures": ".venv\\Scripts\\python.exe -B scripts\\overnight_figures.py . outputs\\overnight_3d_ideas --round ideas",
+    "report": "C:\\Users\\lihao\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe scripts\\publication\\build_overnight_report_docx.py ."
+  }
+}

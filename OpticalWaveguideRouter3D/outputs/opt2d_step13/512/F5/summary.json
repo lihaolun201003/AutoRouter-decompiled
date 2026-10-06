@@ -1,0 +1,156 @@
+{
+  "label": "F5",
+  "channels": 512,
+  "route_count": 512,
+  "expected_routes": 512,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 3.8261176330611946,
+  "p95_loss_db": 5.8452830358046866,
+  "max_loss_db": 6.445914389546414,
+  "min_loss_db": 1.010800845884936,
+  "std_loss_db": 1.6496676177945,
+  "worst_route_id": 34,
+  "mean_straight_loss_db": 0.5969186423559837,
+  "mean_bend_loss_db": 2.6664342102748892,
+  "mean_crossing_loss_db": 0.5627647804303215,
+  "sum_straight_loss_db": 305.62234488626336,
+  "sum_bend_loss_db": 1365.2143156607492,
+  "sum_crossing_loss_db": 288.1355675803247,
+  "mean_straight_length_mm": 119.38372847119673,
+  "mean_arc_length_mm": 8.789709914584725,
+  "mean_total_length_mm": 128.17343838578145,
+  "sum_total_length_mm": 65624.80045352013,
+  "unique_crossing_events": 45961,
+  "per_route_crossing_events": 91922,
+  "mean_crossing_count": 179.53515625,
+  "max_crossing_count": 335,
+  "min_crossing_angle_deg": 2.767827495596172,
+  "mean_crossing_angle_deg": 63.01066846658394,
+  "spacing_violation_count": 1333,
+  "spacing_violation_pairs": 1333,
+  "min_spacing_mm": 0.0002515855015516877,
+  "contact_touch_count": 5,
+  "contact_overlap_count": 0,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "5.0": 512
+  },
+  "bend_count_distribution": {
+    "2": 512
+  },
+  "runtime_s": 140.5430011000135,
+  "stop_reason": "completed",
+  "order_strategy": "legacy",
+  "candidate_limit": 8,
+  "radius_policy": "fixed",
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 112,
+        "candidates_considered": 896,
+        "mean_candidate_cost": 5.223645117631913
+      },
+      "above": {
+        "placed": 112,
+        "candidates_considered": 896,
+        "mean_candidate_cost": 5.251653099568874
+      },
+      "below2above": {
+        "placed": 115,
+        "candidates_considered": 1839,
+        "mean_candidate_cost": 2.653713325193347
+      },
+      "above2below": {
+        "placed": 173,
+        "candidates_considered": 2767,
+        "mean_candidate_cost": 2.779894771119123
+      }
+    },
+    "order_strategy": "legacy"
+  },
+  "endpoint_changes": 0,
+  "geometry_family": {
+    "freeform": 288,
+    "u": 224
+  },
+  "config": {
+    "settings": {
+      "candidate_limit": 8,
+      "radii": [
+        5.0
+      ],
+      "radius_policy": "fixed",
+      "enable_freeform": true,
+      "freeform_shortlist": 8,
+      "position_penalty": 0.01
+    },
+    "order_strategy": "legacy",
+    "allow_port_reorder": false,
+    "plan_stats": {
+      "passes": {
+        "passes": {},
+        "below": {
+          "placed": 112,
+          "candidates_considered": 896,
+          "mean_candidate_cost": 5.223645117631913
+        },
+        "above": {
+          "placed": 112,
+          "candidates_considered": 896,
+          "mean_candidate_cost": 5.251653099568874
+        },
+        "below2above": {
+          "placed": 115,
+          "candidates_considered": 1839,
+          "mean_candidate_cost": 2.653713325193347
+        },
+        "above2below": {
+          "placed": 173,
+          "candidates_considered": 2767,
+          "mean_candidate_cost": 2.779894771119123
+        }
+      },
+      "order_strategy": "legacy"
+    }
+  },
+  "angle_histogram": [
+    38,
+    640,
+    2281,
+    4831,
+    3708,
+    6373,
+    28090
+  ],
+  "angle_histogram_bins": [
+    0.0,
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    45.0,
+    60.0,
+    90.0
+  ],
+  "crossing_sensitivity": {
+    "factor_0.5": {
+      "mean_loss_db": 3.7722906841109736,
+      "p95_loss_db": 5.844705683950962,
+      "max_loss_db": 6.420363764707961
+    },
+    "factor_1": {
+      "mean_loss_db": 3.8261176330611946,
+      "p95_loss_db": 5.8452830358046866,
+      "max_loss_db": 6.445914389546414
+    },
+    "factor_2": {
+      "mean_loss_db": 3.933771530961636,
+      "p95_loss_db": 5.859818615634541,
+      "max_loss_db": 6.497015639223319
+    }
+  }
+}

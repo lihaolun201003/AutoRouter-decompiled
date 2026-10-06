@@ -1,0 +1,21 @@
+{
+  "round": "v7",
+  "outcome": "RETAINED_OLD_CONFIG",
+  "note": "The v7 rule found T0 and T1 bit-identical on every criterion of the adoption rule (MAIN R2880 R-mode terminal near-distance pairs, stage length delta, actual evaluations), so it kept the previous configuration. adoption.json reports target_policy=LEGACY / evaluation_policy=E0_EXHAUSTIVE because that field falls back to the registry DEFAULTS when no change is adopted; those two fields are NOT the live configuration and must not be used to freeze a later round.",
+  "live_config": {
+    "target_policy": "LEGACY",
+    "evaluation_policy": "E2_ORDERED_K16",
+    "k_per_target": 16,
+    "max_targets": 200
+  },
+  "live_config_source": "outputs/overnight_3d_ideas/v6/adoption.json (the last round that actually changed the configuration)",
+  "evidence": {
+    "T0_R2880": 19233,
+    "T1_R2880": 19233,
+    "T2_R2880": 24385,
+    "T0_stage_length_delta_mm": null,
+    "T1_stage_length_delta_mm": null,
+    "T2_stage_length_delta_mm": null
+  },
+  "caveat": "the stage-length and evaluation-tie fields are filled in v7/comparison.csv; this note only corrects the semantics of the fallback fields"
+}

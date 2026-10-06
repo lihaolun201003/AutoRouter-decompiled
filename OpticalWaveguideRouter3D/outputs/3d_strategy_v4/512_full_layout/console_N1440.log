@@ -1,0 +1,46 @@
+full rescan of the common start state ...
+  scan 20000 pairs 2.8s
+  scan 40000 pairs 6.0s
+  scan 60000 pairs 10.2s
+  scan 80000 pairs 15.5s
+  scan 100000 pairs 18.4s
+  scan 120000 pairs 20.9s
+  scanned 130816 pairs in 23.1s
+start state: {"recomputed_collision_pair_count": 42909, "recomputed_unresolved_pair_count": 3, "elevated_route_count": 24, "pair_state_distribution": {"both_routes_unelevated": 42516, "single_route_elevated": 291, "both_routes_elevated": 102, "total": 42909}, "verdict": "PASS"}
+[544769.8] N1440: start mode=N appended_candidate_budget=1440 max_targets=200 probe=False
+[544773.9] N1440: INITIAL_DONE pairs=42909 unresolved=3
+[544774.0] N1440: step 1 NO_CANDIDATES_GENERATED pairs=42909 evals=0 1s
+[544774.1] N1440: step 2 NO_CANDIDATES_GENERATED pairs=42909 evals=0 1s
+[544805.2] N1440: step 3 ELEVATED pairs=42648 evals=72 32s
+[544848.6] N1440: step 4 ELEVATED pairs=42392 evals=144 75s
+[544888.7] N1440: step 5 ELEVATED pairs=42139 evals=216 115s
+[544930.0] N1440: step 6 ELEVATED pairs=41888 evals=288 157s
+[544971.3] N1440: step 7 ELEVATED pairs=41639 evals=360 198s
+[544987.7] N1440: step 8 ELEVATED pairs=41386 evals=396 214s
+[544999.3] N1440: step 9 ELEVATED pairs=41111 evals=432 226s
+[545029.4] N1440: step 10 ELEVATED pairs=40843 evals=486 256s
+[545045.7] N1440: step 11 ELEVATED pairs=40583 evals=540 272s
+[545092.2] N1440: step 12 ELEVATED pairs=40327 evals=639 319s
+[545137.1] N1440: step 13 ELEVATED pairs=40072 evals=738 364s
+[545192.4] N1440: step 14 ELEVATED pairs=39820 evals=837 419s
+[545221.6] N1440: step 15 ELEVATED pairs=39573 evals=891 448s
+[545250.8] N1440: step 16 ELEVATED pairs=39328 evals=945 477s
+[545277.0] N1440: step 17 ELEVATED pairs=39089 evals=999 504s
+[545307.8] N1440: step 18 ELEVATED pairs=38845 evals=1053 534s
+[545342.9] N1440: step 19 ELEVATED pairs=38610 evals=1107 569s
+[545376.1] N1440: step 20 ELEVATED pairs=38377 evals=1161 603s
+[545410.6] N1440: step 21 ELEVATED pairs=38148 evals=1233 637s
+[545424.1] N1440: step 22 ELEVATED pairs=37908 evals=1269 651s
+[545459.7] N1440: step 23 ELEVATED pairs=37686 evals=1341 686s
+[545471.7] N1440: step 24 ELEVATED pairs=37453 evals=1377 698s
+[545483.3] N1440: step 25 ELEVATED pairs=37222 evals=1413 710s
+[545491.6] N1440: step 26 ELEVATED pairs=36995 evals=1440 718s
+[545491.9] N1440: done final=36995 moves=24 relocations=0 evals=1440 stop=CANDIDATE_BUDGET_EXHAUSTED seconds=722
+  recheck 20000 pairs 4.7s
+  recheck 40000 pairs 8.1s
+  recheck 60000 pairs 13.8s
+  recheck 80000 pairs 20.4s
+  recheck 100000 pairs 23.3s
+  recheck 120000 pairs 25.9s
+[545523.8] N1440: recheck PASS checks=130816 seconds=27.8
+ALL GROUPS DONE N1440

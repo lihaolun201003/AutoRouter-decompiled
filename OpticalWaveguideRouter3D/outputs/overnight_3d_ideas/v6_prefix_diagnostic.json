@@ -1,0 +1,2186 @@
+{
+  "k": 16,
+  "start_state": "outputs/3d_strategy_v3/512_ablation/D_both_enabled",
+  "basic_cap_per_side": 400,
+  "full_cap_per_side": 60,
+  "frozen_diagnostic_set": [
+    "outputs/3d_strategy_v4/512_full_layout/audit/side_audit.json ",
+    "(120 sides, saved before any v4 candidate evaluation)"
+  ],
+  "accounting": {
+    "basic_evaluations_in_v4_audit_reference": 2781,
+    "full_checks_in_v4_audit_reference": 2583,
+    "basic_evaluations": 2781,
+    "full_checks": 2583,
+    "full_checks_skipped_by_cap": 108
+  },
+  "sides_measured": 87,
+  "sides_with_any_full_accept": 86,
+  "sides_where_prefix_lost_a_better_or_equal_candidate": 75,
+  "total_exhaustive_net": 17551,
+  "total_prefix_net": 14972,
+  "claim_limit": "a fixed-diagnostic-set prefix-versus-full comparison; it is NOT a whole-board optimality guarantee for either policy",
+  "seconds": 2077.881796300062,
+  "rows": [
+    {
+      "target_pair": [
+        290,
+        291
+      ],
+      "moved_route_id": 290,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        290,
+        291
+      ],
+      "moved_route_id": 291,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        290,
+        433
+      ],
+      "moved_route_id": 290,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        290,
+        433
+      ],
+      "moved_route_id": 433,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        9,
+        180
+      ],
+      "moved_route_id": 9,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 254,
+      "k_prefix_winner_net": 247,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        9,
+        180
+      ],
+      "moved_route_id": 180,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 24,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 257,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        9,
+        181
+      ],
+      "moved_route_id": 9,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 254,
+      "k_prefix_winner_net": 254,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        9,
+        181
+      ],
+      "moved_route_id": 181,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 24,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 261,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        31,
+        303
+      ],
+      "moved_route_id": 31,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 270,
+      "k_prefix_winner_net": 262,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        31,
+        303
+      ],
+      "moved_route_id": 303,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 283,
+      "k_prefix_winner_net": 274,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        180,
+        303
+      ],
+      "moved_route_id": 180,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 52,
+      "exhaustive_winner_net": 269,
+      "k_prefix_winner_net": 215,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        180,
+        303
+      ],
+      "moved_route_id": 303,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 274,
+      "k_prefix_winner_net": 188,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        291,
+        433
+      ],
+      "moved_route_id": 291,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 274,
+      "k_prefix_winner_net": 273,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        291,
+        433
+      ],
+      "moved_route_id": 433,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 218,
+      "k_prefix_winner_net": 218,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        31,
+        181
+      ],
+      "moved_route_id": 31,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 270,
+      "k_prefix_winner_net": 253,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        31,
+        181
+      ],
+      "moved_route_id": 181,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 269,
+      "k_prefix_winner_net": 261,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        35,
+        347
+      ],
+      "moved_route_id": 35,
+      "generated": 45,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 45,
+      "full_accepted": 45,
+      "exhaustive_winner_net": 260,
+      "k_prefix_winner_net": 236,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        35,
+        347
+      ],
+      "moved_route_id": 347,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 54,
+      "exhaustive_winner_net": 264,
+      "k_prefix_winner_net": 165,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        35
+      ],
+      "moved_route_id": 4,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 54,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 169,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        35
+      ],
+      "moved_route_id": 35,
+      "generated": 45,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 45,
+      "full_accepted": 45,
+      "exhaustive_winner_net": 260,
+      "k_prefix_winner_net": 260,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        4,
+        347
+      ],
+      "moved_route_id": 4,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        347
+      ],
+      "moved_route_id": 347,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 264,
+      "k_prefix_winner_net": 250,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        5,
+        6
+      ],
+      "moved_route_id": 5,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        5,
+        6
+      ],
+      "moved_route_id": 6,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        5,
+        7
+      ],
+      "moved_route_id": 5,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        5,
+        7
+      ],
+      "moved_route_id": 7,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        6,
+        7
+      ],
+      "moved_route_id": 6,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        6,
+        7
+      ],
+      "moved_route_id": 7,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        8,
+        437
+      ],
+      "moved_route_id": 8,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 54,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 165,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        8,
+        437
+      ],
+      "moved_route_id": 437,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 252,
+      "k_prefix_winner_net": 248,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        8,
+        300
+      ],
+      "moved_route_id": 8,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        8,
+        300
+      ],
+      "moved_route_id": 300,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 259,
+      "k_prefix_winner_net": 231,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        300,
+        437
+      ],
+      "moved_route_id": 300,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 54,
+      "exhaustive_winner_net": 259,
+      "k_prefix_winner_net": 165,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        300,
+        437
+      ],
+      "moved_route_id": 437,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 257,
+      "k_prefix_winner_net": 248,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        334,
+        462
+      ],
+      "moved_route_id": 334,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 257,
+      "k_prefix_winner_net": 212,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        334,
+        462
+      ],
+      "moved_route_id": 462,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 258,
+      "k_prefix_winner_net": 204,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        335,
+        462
+      ],
+      "moved_route_id": 335,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 257,
+      "k_prefix_winner_net": 212,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        335,
+        462
+      ],
+      "moved_route_id": 462,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 258,
+      "k_prefix_winner_net": 204,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        334,
+        335
+      ],
+      "moved_route_id": 334,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 257,
+      "k_prefix_winner_net": 241,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        334,
+        335
+      ],
+      "moved_route_id": 335,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 257,
+      "k_prefix_winner_net": 241,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        0,
+        24
+      ],
+      "moved_route_id": 0,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 87,
+      "k_prefix_winner_net": 87,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        0,
+        24
+      ],
+      "moved_route_id": 24,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 197,
+      "k_prefix_winner_net": 57,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        0,
+        25
+      ],
+      "moved_route_id": 0,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 87,
+      "k_prefix_winner_net": 87,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        0,
+        25
+      ],
+      "moved_route_id": 25,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 197,
+      "k_prefix_winner_net": 57,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        1,
+        24
+      ],
+      "moved_route_id": 1,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 87,
+      "k_prefix_winner_net": 87,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        1,
+        24
+      ],
+      "moved_route_id": 24,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 197,
+      "k_prefix_winner_net": 57,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        1,
+        25
+      ],
+      "moved_route_id": 1,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 87,
+      "k_prefix_winner_net": 87,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        1,
+        25
+      ],
+      "moved_route_id": 25,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 197,
+      "k_prefix_winner_net": 57,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        2,
+        20
+      ],
+      "moved_route_id": 2,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 72,
+      "k_prefix_winner_net": 58,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        2,
+        20
+      ],
+      "moved_route_id": 20,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 61,
+      "k_prefix_winner_net": 53,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        2,
+        21
+      ],
+      "moved_route_id": 2,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 72,
+      "k_prefix_winner_net": 58,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        2,
+        21
+      ],
+      "moved_route_id": 21,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 61,
+      "k_prefix_winner_net": 53,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        3,
+        20
+      ],
+      "moved_route_id": 3,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 72,
+      "k_prefix_winner_net": 58,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        3,
+        20
+      ],
+      "moved_route_id": 20,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 61,
+      "k_prefix_winner_net": 53,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        3,
+        21
+      ],
+      "moved_route_id": 3,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 72,
+      "k_prefix_winner_net": 58,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        3,
+        21
+      ],
+      "moved_route_id": 21,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 61,
+      "k_prefix_winner_net": 53,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        5
+      ],
+      "moved_route_id": 4,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        5
+      ],
+      "moved_route_id": 5,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        6
+      ],
+      "moved_route_id": 4,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        4,
+        6
+      ],
+      "moved_route_id": 6,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        5,
+        6
+      ],
+      "moved_route_id": 5,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        5,
+        6
+      ],
+      "moved_route_id": 6,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        7,
+        8
+      ],
+      "moved_route_id": 7,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        7,
+        8
+      ],
+      "moved_route_id": 8,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 261,
+      "k_prefix_winner_net": 246,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        7,
+        13
+      ],
+      "moved_route_id": 7,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 246,
+      "k_prefix_winner_net": 225,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        7,
+        13
+      ],
+      "moved_route_id": 13,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 192,
+      "k_prefix_winner_net": 125,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        8,
+        13
+      ],
+      "moved_route_id": 8,
+      "generated": 72,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 72,
+      "full_accepted": 60,
+      "exhaustive_winner_net": 246,
+      "k_prefix_winner_net": 134,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        8,
+        13
+      ],
+      "moved_route_id": 13,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 192,
+      "k_prefix_winner_net": 125,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        9,
+        10
+      ],
+      "moved_route_id": 9,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        9,
+        10
+      ],
+      "moved_route_id": 10,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        9,
+        11
+      ],
+      "moved_route_id": 9,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        9,
+        11
+      ],
+      "moved_route_id": 11,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        10,
+        11
+      ],
+      "moved_route_id": 10,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 18,
+      "exhaustive_winner_net": 236,
+      "k_prefix_winner_net": 236,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        10,
+        11
+      ],
+      "moved_route_id": 11,
+      "generated": 9,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 9,
+      "full_accepted": 9,
+      "exhaustive_winner_net": 225,
+      "k_prefix_winner_net": 225,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        12,
+        14
+      ],
+      "moved_route_id": 12,
+      "generated": 45,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 45,
+      "full_accepted": 45,
+      "exhaustive_winner_net": 225,
+      "k_prefix_winner_net": 172,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        12,
+        14
+      ],
+      "moved_route_id": 14,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 192,
+      "k_prefix_winner_net": 181,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        12,
+        15
+      ],
+      "moved_route_id": 12,
+      "generated": 45,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 45,
+      "full_accepted": 45,
+      "exhaustive_winner_net": 225,
+      "k_prefix_winner_net": 172,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        12,
+        15
+      ],
+      "moved_route_id": 15,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 192,
+      "k_prefix_winner_net": 180,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        14,
+        26
+      ],
+      "moved_route_id": 14,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 192,
+      "k_prefix_winner_net": 125,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        14,
+        26
+      ],
+      "moved_route_id": 26,
+      "generated": 36,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 36,
+      "full_accepted": 36,
+      "exhaustive_winner_net": 207,
+      "k_prefix_winner_net": 189,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        34,
+        303
+      ],
+      "moved_route_id": 34,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        34,
+        303
+      ],
+      "moved_route_id": 303,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        151,
+        303
+      ],
+      "moved_route_id": 151,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        151,
+        303
+      ],
+      "moved_route_id": 303,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 274,
+      "k_prefix_winner_net": 243,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        34,
+        35
+      ],
+      "moved_route_id": 34,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        34,
+        35
+      ],
+      "moved_route_id": 35,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        177,
+        347
+      ],
+      "moved_route_id": 177,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        177,
+        347
+      ],
+      "moved_route_id": 347,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 24,
+      "exhaustive_winner_net": 250,
+      "k_prefix_winner_net": 180,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        177,
+        437
+      ],
+      "moved_route_id": 177,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        177,
+        437
+      ],
+      "moved_route_id": 437,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 252,
+      "k_prefix_winner_net": 191,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        74,
+        265
+      ],
+      "moved_route_id": 74,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 54,
+      "exhaustive_winner_net": 254,
+      "k_prefix_winner_net": 167,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        74,
+        265
+      ],
+      "moved_route_id": 265,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        265,
+        266
+      ],
+      "moved_route_id": 265,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        265,
+        266
+      ],
+      "moved_route_id": 266,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        185,
+        437
+      ],
+      "moved_route_id": 185,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        185,
+        437
+      ],
+      "moved_route_id": 437,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 252,
+      "k_prefix_winner_net": 252,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        185,
+        287
+      ],
+      "moved_route_id": 185,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        185,
+        287
+      ],
+      "moved_route_id": 287,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 244,
+      "k_prefix_winner_net": 240,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        186,
+        287
+      ],
+      "moved_route_id": 186,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        186,
+        287
+      ],
+      "moved_route_id": 287,
+      "generated": 27,
+      "raw_failure": {
+        "1": null,
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 27,
+      "full_accepted": 27,
+      "exhaustive_winner_net": 244,
+      "k_prefix_winner_net": 240,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        34,
+        177
+      ],
+      "moved_route_id": 34,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        34,
+        177
+      ],
+      "moved_route_id": 177,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        177,
+        185
+      ],
+      "moved_route_id": 177,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        177,
+        185
+      ],
+      "moved_route_id": 185,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        34,
+        185
+      ],
+      "moved_route_id": 34,
+      "generated": 0,
+      "raw_failure": {
+        "1": "NO_VALID_TRANSITION_WINDOW",
+        "2": "NO_VALID_TRANSITION_WINDOW"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        34,
+        185
+      ],
+      "moved_route_id": 185,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        151,
+        152
+      ],
+      "moved_route_id": 151,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        151,
+        152
+      ],
+      "moved_route_id": 152,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        151,
+        153
+      ],
+      "moved_route_id": 151,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        151,
+        153
+      ],
+      "moved_route_id": 153,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        152,
+        153
+      ],
+      "moved_route_id": 152,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        152,
+        153
+      ],
+      "moved_route_id": 153,
+      "generated": 0,
+      "raw_failure": {
+        "1": "INSUFFICIENT_TRANSITION_SPACE",
+        "2": "INSUFFICIENT_TRANSITION_SPACE"
+      },
+      "cheap_order_used": true,
+      "evaluated": 0,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        265,
+        436
+      ],
+      "moved_route_id": 265,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 0,
+      "exhaustive_winner_net": null,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": false
+    },
+    {
+      "target_pair": [
+        265,
+        436
+      ],
+      "moved_route_id": 436,
+      "generated": 54,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 54,
+      "full_accepted": 9,
+      "exhaustive_winner_net": 9,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        273,
+        274
+      ],
+      "moved_route_id": 273,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 1,
+      "exhaustive_winner_net": 10,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        273,
+        274
+      ],
+      "moved_route_id": 274,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 1,
+      "exhaustive_winner_net": 10,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        273,
+        275
+      ],
+      "moved_route_id": 273,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 1,
+      "exhaustive_winner_net": 10,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        273,
+        275
+      ],
+      "moved_route_id": 275,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 1,
+      "exhaustive_winner_net": 10,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        274,
+        275
+      ],
+      "moved_route_id": 274,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 1,
+      "exhaustive_winner_net": 10,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    },
+    {
+      "target_pair": [
+        274,
+        275
+      ],
+      "moved_route_id": 275,
+      "generated": 18,
+      "raw_failure": {
+        "1": null,
+        "2": null
+      },
+      "cheap_order_used": true,
+      "evaluated": 18,
+      "full_accepted": 1,
+      "exhaustive_winner_net": 10,
+      "k_prefix_winner_net": null,
+      "prefix_lost_better": true
+    }
+  ]
+}

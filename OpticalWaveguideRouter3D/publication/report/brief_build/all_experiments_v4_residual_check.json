@@ -1,0 +1,36 @@
+{
+  "checked_base": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\brief_build\\光波导布线全部实验报告（含三维策略v3）.docx",
+  "base_sha256": "6d57be215d0f15bf9f45ca08c028529965d7a49f15974f9f9be359232550dbba",
+  "backup": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\brief_build\\_backup_20261005_pre_v4\\光波导布线全部实验报告（含三维策略v3）.docx",
+  "patterns": {
+    "wrong_candidate_as_action": "通过完整验收\\s*(\\d+)\\s*次实际执行",
+    "residual_126_as_new": "新诊断[^。]{0,20}126 次"
+  },
+  "matches": {
+    "wrong_candidate_as_action": [],
+    "residual_126_as_new": []
+  },
+  "verdict": "NO_RESIDUAL_FOUND",
+  "correct_accounting": {
+    "D": {
+      "accepted_moves": 8,
+      "first_elevations": 8,
+      "relocations": 0
+    },
+    "E": {
+      "accepted_moves": 9,
+      "first_elevations": 8,
+      "relocations": 1
+    },
+    "total": 17,
+    "note": "executed edits are counted from the ledgers: D 8 and E 9, 17 in total. These are executed modifications, not the number of candidates that passed acceptance (143 matched rows passed the basic evaluation and 139 of those passed full acceptance).",
+    "new_D": 8,
+    "new_E": 9,
+    "new_E_relocations": 1,
+    "new_E_first_elevations": 8,
+    "matched_basic_pass": 143,
+    "matched_full_pass": 139,
+    "matched_full_rejected": 4
+  },
+  "note": "the v3 special report and the v3 total report were scanned paragraph by paragraph; no wording contradicting the accepted_edit_counts convention was found"
+}

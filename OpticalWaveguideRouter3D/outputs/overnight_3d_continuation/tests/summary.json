@@ -1,0 +1,25 @@
+{
+  "frozen_code_snapshot": "outputs/overnight_3d_continuation/code_snapshot.json",
+  "targeted": "tests/test_path_window_3d.py (25) + tests/test_overnight_engine_3d.py (21) = 46 passed",
+  "targeted_command": ".venv\\Scripts\\python.exe -B -m pytest tests/test_path_window_3d.py tests/test_overnight_engine_3d.py -q",
+  "full": "803 passed, 4 skipped in 307.36s (0:05:07) on the FROZEN v8 code",
+  "full_command": ".venv\\Scripts\\python.exe -B -m pytest tests -q",
+  "full_log": "outputs/overnight_3d_continuation/tests/full_suite_frozen_code.log",
+  "historical_baseline": "778 passed, 4 skipped before the v8 support chain; +25 new v8 tests",
+  "visual": "v5v8 report 32/32 pages rendered and inspected: OK 19 / ISSUE 13 / UNCERTAIN 0; see outputs/overnight_3d_continuation/report_qa/v5v8_pdf/QA_REPORT.md; the new continuation report is re-rendered and inspected page by page after it is built",
+  "coverage": [
+    "pure straight-line degeneracy (arc length, curvature and points identical to the historical cosine model)",
+    "line->arc and arc->line windows that cut arcs and cross primitive boundaries",
+    "one shared cosine phase over the whole window (no per-piece restart)",
+    "direction continuity at every piece boundary",
+    "closed-form kappa_3D against an independent numeric evaluation",
+    "exact window maximum vs a 4001-point sampling",
+    "radius-tight arc rejected conservatively (never by relaxing the radius or moving XY)",
+    "conservative distance bounds bracketing a fine sampling; AABB box conservativeness",
+    "self clearance with the declared C1 arc-length cap proof, and the historical proofs kept",
+    "logical ramps vs physical fragments",
+    "serialization round trip bit for bit; legacy files still deserialize",
+    "generation cache key invalidation; incremental pair sets",
+    "non-convergent length integral -> rejection, never an unchecked estimate"
+  ]
+}

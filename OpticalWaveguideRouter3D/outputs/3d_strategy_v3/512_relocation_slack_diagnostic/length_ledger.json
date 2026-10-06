@@ -1,0 +1,264 @@
+{
+  "unit": "mm",
+  "start_state": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2\\512_three_layer_abc\\final_routes_B.json",
+  "note": "single-step delta = new route length - current route length and may be negative",
+  "modes": {
+    "D": {
+      "start_total_length_mm": 70840.20266104877,
+      "planar_total_length_mm": 70831.30965714682,
+      "final_total_length_mm": 70844.32493773337,
+      "delta_vs_diagnostic_start_mm": 4.122276684604003,
+      "delta_vs_diagnostic_start_check_mm": 4.122276684601275,
+      "delta_vs_diagnostic_start_consistent": true,
+      "start_extra_length_vs_planar_mm": 8.89300390194694,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "accepted_move_count": 8,
+      "negative_step_count": 0,
+      "negative_step_total_mm": 0.0,
+      "first_elevation_step_delta_mm": 4.122276684601275,
+      "relocation_step_delta_mm": 0.0,
+      "per_step": [
+        {
+          "step_index": 11,
+          "target_pair": [
+            0,
+            265
+          ],
+          "route_id": 0,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.24389191746908523,
+          "route_length_before_mm": 156.70796326794897,
+          "route_length_after_mm": 156.95185518541805,
+          "extra_length_vs_planar_mm": 0.24389191746908523
+        },
+        {
+          "step_index": 12,
+          "target_pair": [
+            1,
+            265
+          ],
+          "route_id": 1,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.24389191746908523,
+          "route_length_before_mm": 156.70796326794897,
+          "route_length_after_mm": 156.95185518541805,
+          "extra_length_vs_planar_mm": 0.24389191746908523
+        },
+        {
+          "step_index": 13,
+          "target_pair": [
+            4,
+            265
+          ],
+          "route_id": 4,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 14,
+          "target_pair": [
+            5,
+            265
+          ],
+          "route_id": 5,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 15,
+          "target_pair": [
+            6,
+            265
+          ],
+          "route_id": 6,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 16,
+          "target_pair": [
+            7,
+            265
+          ],
+          "route_id": 7,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 17,
+          "target_pair": [
+            8,
+            265
+          ],
+          "route_id": 8,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 18,
+          "target_pair": [
+            13,
+            185
+          ],
+          "route_id": 13,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.24389191746908523,
+          "route_length_before_mm": 150.76069504134688,
+          "route_length_after_mm": 151.00458695881596,
+          "extra_length_vs_planar_mm": 0.24389191746908523
+        }
+      ],
+      "note": "step delta = new route length - previous route length, may be negative; delta_vs_diagnostic_start = final - start of this diagnostic; extra_length_vs_planar = terminal geometry - frozen planar z=0 geometry"
+    },
+    "E": {
+      "start_total_length_mm": 70840.20266104877,
+      "planar_total_length_mm": 70831.30965714682,
+      "final_total_length_mm": 70844.75916600235,
+      "delta_vs_diagnostic_start_mm": 4.556504953579861,
+      "delta_vs_diagnostic_start_check_mm": 4.556504953570993,
+      "delta_vs_diagnostic_start_consistent": true,
+      "start_extra_length_vs_planar_mm": 8.89300390194694,
+      "final_extra_length_vs_planar_mm": 13.449508855526801,
+      "accepted_move_count": 9,
+      "negative_step_count": 0,
+      "negative_step_total_mm": 0.0,
+      "first_elevation_step_delta_mm": 4.122276684601275,
+      "relocation_step_delta_mm": 0.43422826896971856,
+      "per_step": [
+        {
+          "step_index": 4,
+          "target_pair": [
+            34,
+            273
+          ],
+          "route_id": 34,
+          "movement": "RELOCATION",
+          "step_length_delta_mm": 0.43422826896971856,
+          "route_length_before_mm": 139.95185518541808,
+          "route_length_after_mm": 140.3860834543878,
+          "extra_length_vs_planar_mm": 0.6781201864388322
+        },
+        {
+          "step_index": 11,
+          "target_pair": [
+            0,
+            265
+          ],
+          "route_id": 0,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.24389191746908523,
+          "route_length_before_mm": 156.70796326794897,
+          "route_length_after_mm": 156.95185518541805,
+          "extra_length_vs_planar_mm": 0.24389191746908523
+        },
+        {
+          "step_index": 12,
+          "target_pair": [
+            1,
+            265
+          ],
+          "route_id": 1,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.24389191746908523,
+          "route_length_before_mm": 156.70796326794897,
+          "route_length_after_mm": 156.95185518541805,
+          "extra_length_vs_planar_mm": 0.24389191746908523
+        },
+        {
+          "step_index": 13,
+          "target_pair": [
+            4,
+            265
+          ],
+          "route_id": 4,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 14,
+          "target_pair": [
+            5,
+            265
+          ],
+          "route_id": 5,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 15,
+          "target_pair": [
+            6,
+            265
+          ],
+          "route_id": 6,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 16,
+          "target_pair": [
+            7,
+            265
+          ],
+          "route_id": 7,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 17,
+          "target_pair": [
+            8,
+            265
+          ],
+          "route_id": 8,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.6781201864388038,
+          "route_length_before_mm": 241.83296326794897,
+          "route_length_after_mm": 242.51108345438777,
+          "extra_length_vs_planar_mm": 0.6781201864388038
+        },
+        {
+          "step_index": 18,
+          "target_pair": [
+            13,
+            185
+          ],
+          "route_id": 13,
+          "movement": "FIRST_ELEVATION",
+          "step_length_delta_mm": 0.24389191746908523,
+          "route_length_before_mm": 150.76069504134688,
+          "route_length_after_mm": 151.00458695881596,
+          "extra_length_vs_planar_mm": 0.24389191746908523
+        }
+      ],
+      "note": "step delta = new route length - previous route length, may be negative; delta_vs_diagnostic_start = final - start of this diagnostic; extra_length_vs_planar = terminal geometry - frozen planar z=0 geometry"
+    }
+  }
+}

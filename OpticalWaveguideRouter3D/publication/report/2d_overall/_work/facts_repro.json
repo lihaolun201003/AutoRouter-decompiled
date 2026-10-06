@@ -1,0 +1,700 @@
+{
+  "topic": "原程序复现与几何一致性（第2章）+ 排序、多交叉防护与局部恢复（第7章）+ 参数事实（第1章素材）",
+  "scope_note": "本事实卡由分工核查者（原程序复现 + 排序/多交叉防护/局部恢复）产出。原则：原始产物（CSV/JSON/xlsx）优先；已完成的补修复验优先于旧报告；有不一致时查明原因并注明版本与统计口径；不挑选更好看的数字。全部损耗为模型计算值，非器件实测值。",
+  "facts": [
+    {
+      "id": "F-02-01",
+      "claim": "复现对象为 2020-06-19 构建的 AutoRouter.exe；算法基线取自 PYZ-00.pyz 中未 marshal 的 code object 的 Python 3.8 字节码，反编译文本仅作参考；金标准为原 exe 实跑写出的 fiberBoard0data.xlsx（端口布置）与 fiberBoard512_rect.pdf（直线布线图）",
+      "value": "2 个 golden file",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/migration_report.md#L29-L58",
+      "scale": "512",
+      "caliber": "方法与资料来源",
+      "note": "每个反编译修复都给出 opcode 级依据（xdis 反汇编，自行处理 Python 3.8 跳转语义）"
+    },
+    {
+      "id": "F-02-02",
+      "claim": "create_sim_space 输出与 2020 快照逐值一致：512/512 行、索引标签相同、列值最大偏差 0",
+      "value": "512/512，max delta 0",
+      "unit": "行",
+      "source": "OpticalWaveguideRouter2D/docs/exact_legacy_fidelity_report.md#L15",
+      "scale": "512",
+      "caliber": "原字节码状态对照（Py3.8.10/NumPy1.18.5/pandas1.0.4）",
+      "note": "对照运行时由官方 3.8.10 嵌入式包 + 原包内编译扩展组装"
+    },
+    {
+      "id": "F-02-03",
+      "claim": "plotter_rect 轨道选择与原代码实跑逐条一致：512/512，分遍 below→below 112/112、above→above 112/112、below→above 115/115、above→below 173/173；第一处不一致：无",
+      "value": "512/512 exact",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/docs/exact_legacy_fidelity_report.md#L20-L34",
+      "scale": "512",
+      "caliber": "原字节码状态对照",
+      "note": "gate 命令 tools/exact_fidelity_gate.py 退出 0 且 FROZEN GROUPS OK"
+    },
+    {
+      "id": "F-02-04",
+      "claim": "plotter_bend 全部几何列（inflection_x/y、dir、bend_x、bend_y、center、theta）512/512 一致，sx/lx/dx/inflection/ln 最大偏差 0；svg2gds_bend 512/512 路径点阵与宽度一致、文件大小相同，仅 BGNLIB/BGNSTR 的 8 个时间戳字节不同",
+      "value": "512/512；8 字节差异",
+      "unit": "列；路径",
+      "source": "OpticalWaveguideRouter2D/docs/exact_legacy_fidelity_report.md#L17-L18",
+      "scale": "512",
+      "caliber": "原字节码状态对照",
+      "note": "弯曲与 GDS 两级均逐条精确"
+    },
+    {
+      "id": "F-02-05",
+      "claim": "复现与原可执行程序之间不存在第一处分歧：处理顺序标签序列、ports/idx1/idx2、sx/lx 最大差 0、轨道不同的路线 0/112、nodes.MTbelow 快照最大偏差 0（112 路 × 32 端口 × 16 槽）",
+      "value": "0/112 分歧",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/docs/debug_first_divergence.md#L40-L52, #L100-L116",
+      "scale": "512",
+      "caliber": "原字节码状态差分（below→below 逐路）",
+      "note": "sys.settrace 在不修改原字节码的前提下取内部状态"
+    },
+    {
+      "id": "F-02-06",
+      "claim": "与 2020 旧图对照只有 266/512 一致（+1 轨道 235 条、其他 11 条）；差异只出现在依赖 MTbelow 的 noCross 分支：below→below 39/112 精确、62 条高一根、11 条更多，above→below 0/173 全部统一高一根",
+      "value": "266/512 (52%)；39/112；0/173",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/docs/exact_legacy_fidelity_report.md#L36-L51；docs/debug_first_divergence.md#L59-L64",
+      "scale": "512",
+      "caliber": "图形对照（分遍）",
+      "note": "旧图来自另一个构建；above→below 偏移由 below_line=max(df2['inflection']) 单一原因解释"
+    },
+    {
+      "id": "F-02-07",
+      "claim": "被检验并排除的假设：去掉 sn_calc 项的变体只能复现旧图的 43/512，反而更差；未为贴合旧图改代码，也未猜测更早的算法",
+      "value": "43/512（假设排除）",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/docs/exact_legacy_fidelity_report.md#L136-L148",
+      "scale": "512",
+      "caliber": "受控变体对照",
+      "note": "图对照不能作为复现正确性的判据"
+    },
+    {
+      "id": "F-02-08",
+      "claim": "256 既无参照图也无坐标快照，只能靠不变量检查，不能与原件对照；512 快照验证的是同一代码路径",
+      "value": "无参照",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/migration_report.md#L476-L481",
+      "scale": "256",
+      "caliber": "能力边界",
+      "note": "256 由 create_sim_space 按同一算法生成端点布局"
+    },
+    {
+      "id": "F-02-09",
+      "claim": "512 实际使用 477 条轨道（其中 25 条被多条路线共用、同轨区间重叠 0 处）；候选 800 条、步距 0.175 mm、范围 5.0–144.825 mm（产物为 513 行 × 20 列逐路线表）",
+      "value": "477 / 800，25 共用",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512bend.xlsx#inflection",
+      "scale": "512",
+      "caliber": "按 inflection 去重统计（openpyxl 直读）",
+      "note": "与 migration_report.md 正文的 475/25 不一致，见 corrections"
+    },
+    {
+      "id": "F-02-10",
+      "claim": "256 实际使用 245 条轨道（8 条共用、重叠 0 处）；候选 467 条、步距 0.30 mm、范围 5.0–144.8 mm（产物为 257 行 × 20 列）",
+      "value": "245 / 467，8 共用",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard256bend.xlsx#inflection",
+      "scale": "256",
+      "caliber": "按 inflection 去重统计（openpyxl 直读）",
+      "note": "与 migration_report.md 正文的 243/10 不一致，见 corrections"
+    },
+    {
+      "id": "F-02-11",
+      "claim": "按 dx≥2R 划分：256 为 225 条普通 + 31 条 0<dx<2R 特例；512 为 454 条普通 + 58 条特例",
+      "value": "31 / 58",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard{256,512}bend.xlsx#dx",
+      "scale": "256/512",
+      "caliber": "dx<2R 计数",
+      "note": "与 3D 项目 454 ordinary + 58 special-Z 一致；特例为两段非完整弧在中点直接相接"
+    },
+    {
+      "id": "F-02-12",
+      "claim": "损耗模型为论文式 3-19：Lt = 2·Lb + L0·ls + ΣLc；原版 calc_loss 展开后与该式恒等，且未把弧长计入 L0·ls；直波导系数 0.05 dB/cm 等价于原版 straight_loss=-0.005 dB/mm 的透过率约定",
+      "value": "式 3-19 恒等；0.05 dB/cm",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/loss_model_reconstruction_report.md#L18-L21, #L50-L63, #L189-L205",
+      "scale": "512",
+      "caliber": "模型推导（含字节码对齐）",
+      "note": "全部为模型计算值，非实测值"
+    },
+    {
+      "id": "F-02-13",
+      "claim": "弯曲损耗由原版硬编码 tl/ll 密度表导出，复算 90° 弯曲损耗 7.9408/6.8082/4.5860/2.3826/1.9037 dB（R=2/3/4/5/6 mm），与论文表 3-1 的 7.94/6.81/4.59/2.39/1.90 五位全部吻合到两位小数",
+      "value": "5/5 吻合",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/publication/tables/t31_bend_model_thesis_vs_repro_data.csv",
+      "scale": "512",
+      "caliber": "模型复算 vs 论文印刷值",
+      "note": "最大相对差 0.31%；实现用原始密度 2.3826 而非论文的 2.39"
+    },
+    {
+      "id": "F-02-14",
+      "claim": "原版交叉损耗表（angle / loss_db，30 个交叉）在本机不可得：对 PYZ 条目、exe 二进制本体、随附压缩包、全目录 xlsx/xls/csv、反编译源码五处穷尽搜索均无结果",
+      "value": "未找到",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/loss_model_reconstruction_report.md#L146-L166",
+      "scale": "512",
+      "caliber": "缺失参数（已穷尽搜索）",
+      "note": "任务判定 PARTIAL 的主因；原版表值须为负（透过率约定）"
+    },
+    {
+      "id": "F-02-15",
+      "claim": "现用交叉表由论文图 3-12 'cross number 30' 曲线数字化并用论文文字 0.05 dB/30 交叉锚定（缩放 0.05/0.0593）；原图抖动约 0.1 dB，远大于单次交叉 0.0017 dB，故只有趋势可信、绝对高度不可信",
+      "value": "0.05/0.0593 锚定",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/loss_model_reconstruction_report.md#L168-L181",
+      "scale": "512",
+      "caliber": "数字化近似（代码与报告中均标注）",
+      "note": "不是原版仿真数据"
+    },
+    {
+      "id": "F-02-16",
+      "claim": "三口径交叉模型敏感性（同一 512 R5 几何）：全按 90° 的 0.05/30 → 5.4758/6.5224 dB；图 3-12 + 90° 锚定（主口径）→ 5.5147/6.5761 dB；不锚定 → 5.5745/6.6659 dB",
+      "value": "跨度 0.0986 dB",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter3D/publication/tables/t34_crossing_model_sensitivity_data.csv",
+      "scale": "512 R5",
+      "caliber": "固定几何三口径复算",
+      "note": "结论不依赖交叉表形状，但交叉项本身带约 0.1 dB 量级的模型不确定度"
+    },
+    {
+      "id": "F-02-17",
+      "claim": "256 R5 复现平均 5.2788 / 最大 6.3330 / 最小 2.7559 / 标准差 0.7468 dB，论文为 5.3 / 6.4；有符号误差 −0.0212 / −0.0670 dB",
+      "value": "5.2788 / 6.3330",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard256_loss_summary.json",
+      "scale": "256 R5",
+      "caliber": "一次布局内的逐路线统计（非重复实验）",
+      "note": "交叉项用数字化近似"
+    },
+    {
+      "id": "F-02-18",
+      "claim": "512 R5 复现平均 5.5147 / 最大 6.5761 / 最小 2.6721 / 标准差 0.7631 dB，论文为 5.5 / 6.6；有符号误差 +0.0147 / −0.0239 dB",
+      "value": "5.5147 / 6.5761",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512_loss_summary.json",
+      "scale": "512 R5",
+      "caliber": "一次布局内的逐路线统计",
+      "note": "三个 case 六个数字最大相对误差 1.05%"
+    },
+    {
+      "id": "F-02-19",
+      "claim": "512 R4 复现平均 9.8096 / 最大 10.9815 dB，论文为 9.8 / 11.0；512 半径扫描 R2 / R3 平均 16.5873 / 14.2260 dB、最大 17.7056 / 15.4284 dB（论文 4.3 节只印 R4，R2/R3 无对照）",
+      "value": "9.8096；16.5873；14.2260",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512_loss_R4_summary.json；..._R2_summary.json；..._R3_summary.json",
+      "scale": "512 R4/R3/R2",
+      "caliber": "逐路线统计；半径改变须独立布线",
+      "note": "半径越大弯曲损耗越小，与论文表 3-1 趋势一致"
+    },
+    {
+      "id": "F-02-20",
+      "claim": "512 R5 损耗分量占比：弯曲 82.66%、直波导 11.52%、交叉 5.81%（4.5587 / 0.6355 / 0.3205 dB）；256 为 85.68/11.84/2.48；512 R4 为 90.22/6.66/3.12",
+      "value": "82.66 / 11.52 / 5.81",
+      "unit": "%",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512_loss_summary.json#loss_contribution",
+      "scale": "512 R5",
+      "caliber": "分量占比（交叉项不确定度最大）",
+      "note": "低角度交叉权重较高，5.81% 这个份额的不确定度主要来自交叉项"
+    },
+    {
+      "id": "F-02-21",
+      "claim": "512 R5 逐路线原始值：最小交叉角 14.0°、<20° 交叉项 35 个、交叉项总数 86,512（=512×168.97）",
+      "value": "14.0；86512",
+      "unit": "度；项",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512_loss.xlsx#crossing_angles_deg,#crossing_count",
+      "scale": "512 R5",
+      "caliber": "逐路线逐项原始值（未去重）",
+      "note": "与论文 4.1 的 14° 一致；每个物理交叉被计两次，论文 3.3.1 的去重描述未被原版实现"
+    },
+    {
+      "id": "F-02-22",
+      "claim": "256 R5 逐路线原始值：最小交叉角 35.0°、无 <20° 交叉项、交叉项总数 18,936（=256×73.97）",
+      "value": "35.0；18936",
+      "unit": "度；项",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard256_loss.xlsx#crossing_angles_deg,#crossing_count",
+      "scale": "256 R5",
+      "caliber": "逐路线逐项原始值（未去重）",
+      "note": "与论文 4.2 的 35° 一致"
+    },
+    {
+      "id": "F-02-23",
+      "claim": "损耗工作簿为逐路线（route-level）表：257 / 513 行 × 15 列，含 straight_length_mm、bend_arc_length_mm、total_length_mm、bend_radius_mm、bend_count、bend_angles_deg、crossing_count、crossing_angles_deg、straight_loss_db、bend_loss_db、crossing_loss_db、total_loss_db",
+      "value": "256/512 行，15 列",
+      "unit": "行×列",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard256_loss.xlsx；...fiberBoard512_loss.xlsx",
+      "scale": "256/512",
+      "caliber": "逐路线粒度（非段级）",
+      "note": "crossing_count 是逐路线交叉项数，不是路线级物理事件数"
+    },
+    {
+      "id": "F-02-24",
+      "claim": "2D 复现任务判定为 PARTIAL：直线与弯曲损耗完整、论文数值全部复现成功，但交叉损耗原始表缺失、该分量使用已标注的近似数据",
+      "value": "PARTIAL",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/loss_model_reconstruction_report.md#L370-L387",
+      "scale": "256/512",
+      "caliber": "状态判定",
+      "note": "若后续拿到原版 loss 工作簿只需替换数据源并重跑分析"
+    },
+    {
+      "id": "F-02-25",
+      "claim": "全部损耗均为现有损耗模型的计算值，不是器件实测值；平均 / P95 / 最差是一次布局内的逐路线统计，不是重复实验统计",
+      "value": "模型计算值",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/publication/report/2d_overall/_work/CONTRACT.md#L13-L15",
+      "scale": "全部",
+      "caliber": "硬性事实边界",
+      "note": "论文表 3-1 源自实验室实测，但本项目未做任何实测标定"
+    },
+    {
+      "id": "F-07-01",
+      "claim": "正式基线为 ascending + exclusive A + G1 + guard OFF；宽 0.05 / 间距 0.125 / 节距 0.175 / 半径 5 mm / 板高 150 mm；512 输入 → 454 ordinary + 58 special-Z = 512 条解析路线",
+      "value": "454 + 58 = 512",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_top_u_order_ab_summary.json",
+      "scale": "512",
+      "caliber": "基线口径",
+      "note": "special-Z 不占 ordinary track，不在 A 的分配集合内"
+    },
+    {
+      "id": "F-07-02",
+      "claim": "Top-U 主排序反转只改一个变量：group 0 的 primary x 取反（降序），次级 x / PMT ID / 波导 ID 平局次序不变，其余分组与 G1/A/S1 全部不动；112 条 Top-U 路线—轨道映射全部改变，占用轨道索引集合 688..799 不变",
+      "value": "112 条改变",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_top_u_order_ab_v01.md#L3-L20",
+      "scale": "512",
+      "caliber": "单变量 A/B",
+      "note": "隔离五项（非 Top-U 分配/ID/轨道池/网格/几何）全 True"
+    },
+    {
+      "id": "F-07-03",
+      "claim": "主结果：topU-topU 双交叉对 1903 → 0（骨架层同样 1903 → 0，即改善先于平滑）；双交叉对总数 6433 → 4530，其中 ordinary-ordinary 6092 → 4189、ordinary-special 341 不变、Z-Z 2698 不变、bottomU-bottomU 1832 不变",
+      "value": "1903 → 0；6433 → 4530",
+      "unit": "对",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_top_u_order_ab_summary.json#primary,detailed_double",
+      "scale": "512",
+      "caliber": "逐路线对物理事件计数",
+      "note": "减少全部集中在 topU-topU；1903/1903 嵌套对由双交叉变为无"
+    },
+    {
+      "id": "F-07-04",
+      "claim": "连带全局收益：物理交点 55935 → 52129（−3806）、有交叉的路线对 49502 → 47599（−1903）、全局 <20° 交叉 1508 → 984（−524）、平均交叉角 78.6358° → 79.8216°；touch / overlap 两臂均为 0",
+      "value": "−3806 / −1903 / −524",
+      "unit": "点；对；个",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_top_u_order_ab_summary.json#control,variant",
+      "scale": "512",
+      "caliber": "pair-local 坐标合并后的物理事件（非全局唯一坐标）",
+      "note": "角度最小值两臂差异 1.2e-13 属浮点量级"
+    },
+    {
+      "id": "F-07-05",
+      "claim": "反向证据：多波导交叉检出 318 → 345（+27，+8.49%），boundary 2 → 2，legacy-eligible 三角形 1,222,071 不变",
+      "value": "318 → 345",
+      "unit": "个三元组",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_top_u_order_ab_summary.json#control_multi,variant_multi",
+      "scale": "512",
+      "caliber": "spacing=0.125 mm、tol=1e-9 判据（至少两边严格短于阈值）",
+      "note": "改善不是全面改善；eligible 未增加说明不是资格变化"
+    },
+    {
+      "id": "F-07-06",
+      "claim": "已知非交叉损耗均值与最大值两臂完全不变：总长平均 138.3424 mm、传播 0.691712 dB、弯曲 4.572904 dB、已知非交叉 5.264616 dB / 最大 6.187415 dB；但全局最短长度 31.8830 → 21.4330 mm",
+      "value": "均值不变；最短 −10.45 mm",
+      "unit": "dB；mm",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_top_u_order_ab_summary.json#control_losses,variant_losses",
+      "scale": "512",
+      "caliber": "逐路线统计（不含交叉损耗）",
+      "note": "聚合均值相等不蕴含逐波导相等；个别 Top-U 长度被重分配"
+    },
+    {
+      "id": "F-07-07",
+      "claim": "多交叉差分审计（只读）：canonical 三元组 stable 204 / removed 114 / added 141，净 +27，实际周转 255 个（204+114=318、204+141=345）；全部 added 与 removed 都含 Top-U，204 个 stable 全部不含 Top-U",
+      "value": "255 周转（非 27）",
+      "unit": "个三元组",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_top_u_multi_crossing_delta_v01.md#L15-L39",
+      "scale": "512",
+      "caliber": "集合比对",
+      "note": "added 构成：1 个 Top-U 5、2 个 121、3 个 15；Control/Variant physical SHA-256 已记录"
+    },
+    {
+      "id": "F-07-08",
+      "claim": "graph 三角形 2,063,548 → 1,835,220（移除 228,328、新增 0，Variant 为子集）；eligible 集合 1,222,071 完全不变（stable 1,222,071、added 0、removed 0）",
+      "value": "eligible 完全不变",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_top_u_multi_crossing_delta_v01.md#L44-L52",
+      "scale": "512",
+      "caliber": "集合差集基数",
+      "note": "机制是同一 eligible 三元组内三个已存在交点位置改变导致阈值进出，不是新生成了资格"
+    },
+    {
+      "id": "F-07-09",
+      "claim": "新增 multi 的严重度：141 个 added 中 87 个（61.7%）第二短边余量 >0.05 mm，仅 15 个（10.6%）≤0.01 mm；added 平均余量 0.051681 mm 略小于 removed 的 0.053761 mm，中位数基本相同（0.062798 mm）；added 含 <20° 交叉 26 个 vs removed 18 个",
+      "value": "87/141 >0.05 mm；26 vs 18",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_top_u_multi_crossing_delta_v01.md#L54-L93",
+      "scale": "512",
+      "caliber": "second_shortest_margin = 0.125 − s2（描述量）",
+      "note": "204 个 stable 三元组 improved 0 / worsened 0 / within-tol 204；余量不是光损耗或制造风险度量，全局 <20° 改善与新增子集含更多小角度并存，不得只报前者"
+    },
+    {
+      "id": "F-07-10",
+      "claim": "精确几何 multi guard：G0 gate 独立完成 130,816 对解析几何检查并通过；每个候选生成真实 Line/Arc 临时几何、与已提交路径求精确交点、调用现有 classify_multi_crossing，明确 multi 才拒绝；boundary / outside 允许并单独计数，不新增 overlap 拒绝",
+      "value": "G0 PASS",
+      "unit": "对",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L5-L34",
+      "scale": "512",
+      "caliber": "候选级精确 Line/Arc 判据",
+      "note": "普通 single / double / angle 都不是拒绝条件，因此不是流程图全部约束的复现"
+    },
+    {
+      "id": "F-07-11",
+      "claim": "完整 G1 候选级诊断因成本过高在本轮被中止，未产生 G1 结论（报告的实验语义为 V0.2，文件名保留 v01）；报告自称“未完成实验的保留草稿”，不支持 G1 收益或采用结论",
+      "value": "未完成",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L55-L66",
+      "scale": "512",
+      "caliber": "有界中止",
+      "note": "旧完整诊断源码作为历史实现保留，未删除或改写为从未发生"
+    },
+    {
+      "id": "F-07-12",
+      "claim": "180 秒有界试运行（性能门槛，非论文参数/路由约束）：routing 未完成，已 commit ordinary 217（不是最终布通率）、已确认 guard exhausted 21、candidate attempts 14,914、明确 multi 拒绝 14,696、唯一曾被拒波导 23、rejected-then-success 1",
+      "value": "217 / 21 / 14,696",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L96-L119",
+      "scale": "512（部分）",
+      "caliber": "有界中止的部分提交",
+      "note": "14,913 = 217 接受 + 14,696 拒绝；未处理或未完成成员不得记作 assigned/failed/eliminated"
+    },
+    {
+      "id": "F-07-13",
+      "claim": "guard 成本与加速：pair kernel 约占真实运行 86.5% wall time、单候选平均评估 0.011996 s；fast rejection 相对旧 full diagnostic 在 40 条已提交路径的固定 workload（重复 30 次）上 median 0.003903 → 0.000528 s，约 7.39 倍",
+      "value": "≈7.39×（小样本）",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L121-L145",
+      "scale": "512（部分）",
+      "caliber": "固定 40 路径 workload",
+      "note": "不是 512 全量加速比，不能与被中止的总时长算倍率"
+    },
+    {
+      "id": "F-07-14",
+      "claim": "Step L 最终审计 PASS：21 条 exhaustion 均为当前规则下的真实候选耗尽；14,384 次拒绝经 43,152 组 witness 对独立重算全部满足三对各恰一个 CROSS 且至少两边严格小于 0.124999999 mm，交点/边长最大偏差约 2.8e-14 mm",
+      "value": "14,384 / 43,152",
+      "unit": "次",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L181-L194",
+      "scale": "512（部分）",
+      "caliber": "独立 witness 重算",
+      "note": "该证据不是 102,831 / 130,816 对的最终布局验证"
+    },
+    {
+      "id": "F-07-15",
+      "claim": "Step L 最终结论：G1 FAILS ROUTABILITY REQUIREMENT——当前 greedy hard-guard 组合（descending + exclusive track + R5 + 精确 multi 硬拒绝 + 无 reroute/fallback）不能满足 100% ordinary 可布通；final 全局指标记为 N/A — incomplete routing；正式 baseline 仍为 ascending + guard OFF",
+      "value": "FAILS ROUTABILITY",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_exact_multi_guard_exhaustion_summary.json#conclusion,final_global_metrics",
+      "scale": "512（部分）",
+      "caliber": "负实验结果",
+      "note": "不扩展为所有算法或所有 multi 规避方案不可行"
+    },
+    {
+      "id": "F-07-16",
+      "claim": "21 条耗尽均为完成全量扫描后的真实耗尽（不是被 180 秒截断）：top-U 14 条、top→bottom Z 7 条、bottom-U 0、bottom→top Z 0；route 451（top-U，PMT 99—107）进入时 44 条已提交占用 track 799..756，剩余 756 个基础可用候选全部被 explicit multi 拒绝；timeout 发生在 route 219 的未完成扫描，不在该列表中",
+      "value": "14 / 7；756/756 被拒",
+      "unit": "条；个",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_exact_multi_guard_exhaustion_summary.json#exhausted_routes,category_counts,interrupted_route",
+      "scale": "512（部分）",
+      "caliber": "单路线全候选枚举",
+      "note": "已耗尽 ID 完成各自扫描后才列出；未完成成员不能记作失败"
+    },
+    {
+      "id": "F-07-17",
+      "claim": "事务审计：对 route 451/427/428/430 的 occupancy、committed assignments、geometry、pair cache、adjacency 五类 SHA-256 在入口与耗尽后相等；四个入口的 pair 缓存条目为 946 / 1,176 / 1,176 / 1,225",
+      "value": "5 类哈希前后相等",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L196-L212",
+      "scale": "512（部分）",
+      "caliber": "按同状态重建的局部重放（仅到第 4 条耗尽）",
+      "note": "原运行未保存入口/出口 cache checksum，报告已显式声明该限制；失败 reason 文案 'All tracks are occupied.' 与实际含义不符"
+    },
+    {
+      "id": "F-07-18",
+      "claim": "M1.5 全量归因：318 个 legacy-eligible multi 的 954 = 3×318 行 physical CROSS 全部完成归因，涉及 798 个唯一路线对，954 行均无 join 归因歧义；318/318 = 100% 的 multi 都涉及端点相连弯曲；空间标签仅 LEFT 265、仅 RIGHT 23、混合 30；Arc-owner 出现 LEFT 588（84.48%）、RIGHT 108（15.52%）",
+      "value": "954 / 798；318/318",
+      "unit": "行；对",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_5_exact_multi_attribution.md#L19-L56, #L97-L105, #L144-L162",
+      "scale": "512",
+      "caliber": "post-hoc 只读归因（PROJECT-SPECIFIC 标签）",
+      "note": "954 是 3N 计数，不能与全局 55,935 个交点直接比较；“endpoint-bend-related”指连接关系，不表示欧氏距离接近 PMT 边界"
+    },
+    {
+      "id": "F-07-19",
+      "claim": "M1.5 构型分布：简单 signature 中 Arc×H | Arc×V | H×V 占 287/318（90.25%），Arc×Arc 相关组合合计 31；详细 signature 只有 9 种（最大两种为 ARC(LEFT:BOTTOM)×H | ARC(LEFT:BOTTOM)×V | H×V 135 个 42.45%、ARC(LEFT:TOP) 版本 130 个 40.88%）",
+      "value": "287/318；9 种",
+      "unit": "个",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_5_exact_multi_attribution.md#L119-L142",
+      "scale": "512",
+      "caliber": "unordered primitive token 编码",
+      "note": "最常见简单组合不自动满足 PMT 邻接，不能全部标 PAPER_LIKE"
+    },
+    {
+      "id": "F-07-20",
+      "claim": "M1.6 局部精确恢复探针（离线沙箱）：4 个固定案例各扫描 347 个候选（346 替代 + 1 原位），共 1,388 个，几何全部合法；最小 M_after 为 M0011 318（无严格改进候选）、M0009 317、M0001 316、M0023 316；严格改进候选数 0 / 331 / 342 / 344",
+      "value": "318 / 317 / 316 / 316",
+      "unit": "个 multi",
+      "source": "OpticalWaveguideRouter3D/outputs/step_8_5_m1_6_probe_summary.json",
+      "scale": "512",
+      "caliber": "每案例独立从原 318 基线出发",
+      "note": "三次下降不可相加，也不是连续恢复后的 313；原位回放 4 例均 M=318、目标保留、delta 为空"
+    },
+    {
+      "id": "F-07-21",
+      "claim": "M1.6 候选评分与接受规则：只接受目标消失且整数 M 严格下降的候选，按 (M_after, new_multi_created, |轨道位移|, 轨道索引) 字典序；equal-M 与 worse-M 均拒绝（真实数据中确实出现目标已消失但 M 未下降：M0009 15 个、M0001 4 个、M0023 2 个）",
+      "value": "严格单调",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_6_local_exact_recovery_design.md#L112-L128",
+      "scale": "512",
+      "caliber": "单 victim 候选评分",
+      "note": "“目标消失即接受”在当前真实数据中不成立"
+    },
+    {
+      "id": "F-07-22",
+      "claim": "M1.6 独立验证只重算 winner 的 511 个 star pair 与 37,128 / 4,371 / 5,995 个固定第三边，未做全 512 all-pairs 重跑；state = FEASIBILITY_ONLY_NO_COMMIT，无 COMMIT API；M0011 只能标 FIRST_VICTIM_EXHAUSTED，不能标 SINGLE_VICTIM_UNRECOVERABLE",
+      "value": "未 commit",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_6_local_exact_recovery_design.md#L174-L184, #L194-L200；step_8_5_m1_6_checkpoint.md#L38-L42",
+      "scale": "512",
+      "caliber": "离线沙箱可行性探针",
+      "note": "不含 victim 部分依赖冻结 baseline 与几何不变性证明；设计文件与检查点属同一项工作，只计一个实验"
+    },
+    {
+      "id": "F-07-23",
+      "claim": "K 只读审计：【已确认】论文式 3-10—3-15 与 strip 步长 w+d=0.175 mm；【未确认】d 与 pitch 的语义、基础 D、K 的整数化（未见 floor/ceil/round）、窗口边界、公式域外处理及类别回溯方向，故“忠实 legacy K”不可直接可靠实现",
+      "value": "不实现",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_legacy_optimization_compatibility_audit.md#L74-L78, #L115-L135, #L212-L216",
+      "scale": "512",
+      "caliber": "只读兼容性审计（【已确认】/【未确认】分级）",
+      "note": "把 K 式抄进代码并 ceil 不是解决审计问题"
+    },
+    {
+      "id": "F-07-24",
+      "claim": "512 快照实测几何：64 PMT、1024 端点；单 PMT 16 端点相邻 x 差约 0.175 mm、中心跨度 2.625 mm；同侧相邻 PMT 最左端点差 4.5 mm、最近端点差 1.875 mm；由 4.5−16×0.175 反推 D_layout=1.7 mm；PMT ID 不是位置排序键",
+      "value": "0.175 / 4.5 / 1.875 / 1.7",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_legacy_optimization_compatibility_audit.md#L82-L98",
+      "scale": "512",
+      "caliber": "只读加载快照实测",
+      "note": "论文 4.1 已直接明确 PMT 间距 1.7 mm，但与实测纵向端点间距 1.875 mm、原点节距 4.5 mm 并存，哪个是 K 的基础 D 仍未确认"
+    },
+    {
+      "id": "F-07-25",
+      "claim": "M1 只读动态 D / hierarchy 诊断 PASS（38 项新测试），但 terminal_mapping_status = CURRENT_PROJECT_ENDPOINT_VIEW、dangerous_side 与 direction_status 均为 UNCONFIRMED；不代表 hierarchy 已可用于 allocator",
+      "value": "PASS（只读范围）",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_dynamic_d_diagnostic.md#L3, #L58-L64",
+      "scale": "512",
+      "caliber": "只读诊断",
+      "note": "不证明当前终点等价于论文终点；fragment 需把 track 占用改为一对多，与当前 exclusive A 冲突"
+    },
+    {
+      "id": "F-P-01",
+      "claim": "连接输入是真实连接表：512 为自动排布/AutoRouter/fiberBoard512.xlsx（512 行，SHA-256 71a19ec1…，后 256 行含 =A2+60 形式公式并有整数缓存值）；256 为 fiberBoard256.xlsx（256 行、仅 Port1/Port2 两列、无坐标列，32 PMT × 16 端点、无自连接、67 个重复无向对即多出 134 行）",
+      "value": "512 行 / 256 行",
+      "unit": "行",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_route_level_intersections_v01.md#L78-L82；docs/reports/step_8_legacy_input_validation.md#L6-L33",
+      "scale": "256/512",
+      "caliber": "输入恢复（真实连接表）",
+      "note": "解析只读缓存值、不重算公式；2D 复现 256 得到 122 个不同端口对，122+134=256"
+    },
+    {
+      "id": "F-P-02",
+      "claim": "512 端点坐标为历史坐标快照 fiberBoard0data.xlsx（512 行 × 11 列：Port1/Port2/index1/index2/sy/ly/dz/sx/lx/dx，SHA-256 6901bd1f…），是原程序一次真实运行自己写出的，既不是连接表也不是算法生成",
+      "value": "512 × 11",
+      "unit": "行×列",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard0data.xlsx；docs/migration_report.md#L37-L43",
+      "scale": "512",
+      "caliber": "端点布局来源 = 历史坐标快照",
+      "note": "docs/2d_routing/README.md 记录的 SHA-256 只有 63 字符，属该文档笔误"
+    },
+    {
+      "id": "F-P-03",
+      "claim": "端点布局来源三分：512 = 历史坐标快照；256 = 算法生成（create_sim_space 按同一算法生成，无独立快照或参照图）",
+      "value": "快照 / 算法生成",
+      "unit": "—",
+      "source": "OpticalWaveguideRouter2D/docs/migration_report.md#L476-L481；OpticalWaveguideRouter3D/docs/2d_routing/parameters_and_ports.md#L44-L46",
+      "scale": "256/512",
+      "caliber": "来源分类",
+      "note": "不能从 512 公式截半充当 256 布局，也不能拿演示视频替代数值坐标"
+    },
+    {
+      "id": "F-P-04",
+      "claim": "512 端口公式：下侧 (2 + 4.5c + 0.175j, 0) mm、上侧 (4 + 4.5c + 0.175j, 150) mm，c=0..31、j=0..15；下侧 x 范围 2–144.125、上侧 4–146.125；j 由坐标推得，不等于原始端口槽位 ID，index1/index2 也不是槽位",
+      "value": "4.5 / 0.175 mm",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/docs/2d_routing/parameters_and_ports.md#L31-L40",
+      "scale": "512",
+      "caliber": "快照坐标拟合",
+      "note": "原布局生成程序与完整槽位分配规则尚未恢复"
+    },
+    {
+      "id": "F-P-05",
+      "claim": "板尺寸 150 mm × 150 mm（两个规模相同）；波导宽度 0.05 mm；标称边缘间隔 256 为 0.25 mm、512 为 0.125 mm；中心节距 256 为 0.30 mm、512 为 0.175 mm",
+      "value": "150×150；0.05；0.25/0.125",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/docs/2d_routing/parameters_and_ports.md#L7-L14",
+      "scale": "256/512",
+      "caliber": "输入与轨道节距规则",
+      "note": "间隔是布线输入/轨道节距规则，不证明所有曲线之间的实际边缘距离都满足它"
+    },
+    {
+      "id": "F-P-06",
+      "claim": "弯曲半径：512 为 5 mm（论文实验值与当前解析几何取值），旧 EXE 的默认值未确认；256 的独立半径配置未确认，不能给出可靠的“256 间隔:半径”",
+      "value": "5（512）",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter3D/docs/2d_routing/parameters_and_ports.md#L7-L12",
+      "scale": "512（256 未知）",
+      "caliber": "参数来源与缺口",
+      "note": "512 实验的标称间隔:半径 = 0.125:5 = 1:40"
+    },
+    {
+      "id": "F-P-07",
+      "claim": "R5 / R6 指弯曲半径 5 mm / 6 mm，不是实验编号；2D 半径扫描文件名 R2/R3/R4/R5 分别对应 2/3/4/5 mm；实验编号（step_12、512、01_xxx）是另一套编号",
+      "value": "R5=5 mm，R6=6 mm",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512_loss_R{2,3,4}_summary.json；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fixed_endpoints_and_freeform.md#L77-L81",
+      "scale": "256/512",
+      "caliber": "命名口径",
+      "note": "CONTRACT.md 写作“半径（单位 μm）”，与源文档的 mm 不一致；按 5 mm = 5000 μm 表述"
+    },
+    {
+      "id": "F-P-08",
+      "claim": "轨道网格口径不同：2D 复现为 y = 5.0 + i×0.175 mm（i=0..799，末格 144.825，共 800 条候选）；3D opt2d 的 G1 为 y = 5.025 + i×0.175 mm（i=0..799，末格 144.85，上边界 144.975 不因取整扩展）",
+      "value": "起点 5.0 vs 5.025",
+      "unit": "mm",
+      "source": "OpticalWaveguideRouter2D/docs/migration_report.md#L369；OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_6_local_exact_recovery_design.md#L74",
+      "scale": "512",
+      "caliber": "网格原点口径",
+      "note": "对应论文 strip 底边与工程 centerline 两种建模，逐索引不可互换"
+    },
+    {
+      "id": "F-P-09",
+      "claim": "损耗口径不可互换：2D 复现 512 R5 全项（含交叉近似）平均 5.5147 dB；3D Step 8.5 的已知非交叉损耗（不含交叉）平均 5.2646 dB、最大 6.187415 dB；Step 8.5 全阶段 crossing_loss 为 NotImplementedError 且从未被调用",
+      "value": "5.5147 vs 5.2646",
+      "unit": "dB",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512_loss_summary.json；OpticalWaveguideRouter3D/docs/reports/step_8_5_loss_and_angle_v01.md#L8-L15, #L20-L50, #L114-L115",
+      "scale": "512 R5",
+      "caliber": "含交叉近似 vs 不含交叉",
+      "note": "早期仅传播/弯曲的估算不等于完整链路损耗；两者不可并列比较"
+    },
+    {
+      "id": "F-P-10",
+      "claim": "论文 857 / 821 是条带（区域）计数，不能当作可用 track 数或“821 根波导”：150/0.175 = 857.14，扣除两侧 5 mm 后为 800 而非 857，821 明确包含距边缘较近的不可用条带；2D 复现实际使用 477 条轨道，3D G1 为 800 条候选、454 条 ordinary 分配",
+      "value": "857 / 821 为条带计数",
+      "unit": "条",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_legacy_track_assignment_audit.md#L56-L62",
+      "scale": "512",
+      "caliber": "论文口径澄清",
+      "note": "本次不从端点反推 track"
+    }
+  ],
+  "corrections": [
+    {
+      "old": "migration_report.md 正文：256 通道 'lines = 467 candidate tracks of 0.3 mm pitch, 243 used, 10 shared without overlap'",
+      "corrected": "按随包原始产物 OpticalWaveguideRouter2D/results/fiberBoard256bend.xlsx 复算为 467 条候选中使用 245 条、其中 8 条被多条路线共用（同轨区间重叠 0 处）。tools/verify_reconstruction.py 的判据（distinct = len(set(inflection))、shared = 承载多区间的轨道数）给出的也是 245/8。该 xlsx 为 37,073 B，与报告写定的描述一致，表明产物在报告写定后未重跑，故以原始产物为准",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard256bend.xlsx；OpticalWaveguideRouter2D/docs/migration_report.md#L353"
+    },
+    {
+      "old": "migration_report.md 正文：512 通道 'lines = 800 candidate tracks of 0.175 mm pitch, 475 used, 25 shared without overlap'",
+      "corrected": "按原始产物复算为使用 477 条轨道、25 条共用（重叠 0 处）；候选数 800 与步距 0.175 mm 两项正确",
+      "source": "OpticalWaveguideRouter2D/results/fiberBoard512bend.xlsx；OpticalWaveguideRouter2D/docs/migration_report.md#L369"
+    },
+    {
+      "old": "把 3D 项目 opt2d 的 'A-R5-legacy' 臂数值当作 2D 复现数值（例如 512 平均 5.5162 dB、交叉事件 86,786、最小交叉角 23.074°）",
+      "corrected": "两臂不逐位等同。2D 复现（与原始字节码 512/512 一致的那一套）512 R5 为平均 5.5147 / 最大 6.5761 dB、交叉项 86,512、逐路线最小交叉角 14.0°。差异约 1e-3 dB 量级，原因本轮未定位（候选因素：原版分段折线求交与 3D 精确 Line/Arc 内核的计数差异，或同侧连接 U 型构造差异）。涉及“原版几何”的数值一律以 2D 复现为基准，引用 3D 臂须注明口径",
+      "source": "OpticalWaveguideRouter3D/outputs/opt2d/512/comparison.csv；OpticalWaveguideRouter2D/results/fiberBoard512_loss.xlsx；OpticalWaveguideRouter2D/results/fiberBoard512_loss_summary.json"
+    },
+    {
+      "old": "把 3D Step 8.5 的 known_non_crossing_loss_db 平均 5.2646 dB 与 2D 的 5.5147 dB 并列比较",
+      "corrected": "两者口径不同：前者不含交叉损耗（crossing_loss 为 NotImplementedError），后者含已标注的交叉近似；不得放入同一公平比较表，若必须并列须显式标注不可直接比较",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_loss_and_angle_v01.md；OpticalWaveguideRouter2D/results/fiberBoard512_loss_summary.json"
+    },
+    {
+      "old": "CONTRACT.md 第 26 行：'R5/R6 是弯曲半径（单位 μm）'",
+      "corrected": "源文档一律以 mm 记：R5 = 5 mm、R6 = 6 mm（即 5000 / 6000 μm）。撰写时按 mm 表述，并保留“R5/R6 是半径、不是实验编号”这一要点",
+      "source": "OpticalWaveguideRouter3D/docs/2d_routing/parameters_and_ports.md#L7-L11；OpticalWaveguideRouter3D/docs/reports/step_13_opt2d_fixed_endpoints_and_freeform.md#L77-L81"
+    },
+    {
+      "old": "把 Top-U 主排序反转描述为全面改善",
+      "corrected": "同一实验同时给出反向证据：多波导交叉检出 318 → 345（+27），141 个 added 中 87 个余量 >0.05 mm、26 个含 <20° 交叉；结论应为混合权衡，保留为实验候选而非自动替换基线",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_top_u_order_ab_v01.md#L78-L87, #L123-L126；step_8_5_top_u_multi_crossing_delta_v01.md#L146-L149"
+    },
+    {
+      "old": "把 step_8_5_exact_multi_guard_ab_v01.md 当作完整 G1 布局结果引用",
+      "corrected": "该报告实验语义为 V0.2，含完整 G1 中止记录、180 秒有界试运行（217 committed、21 exhausted）与最终的 G1 FAILS ROUTABILITY 判定；final 全局指标为 N/A — incomplete routing，不能填成完整布局数字",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_exact_multi_guard_ab_v01.md#L55-L66, #L236-L248"
+    },
+    {
+      "old": "把 step_8_5_m1_6_local_exact_recovery_design.md 与 step_8_5_m1_6_checkpoint.md 计为两个独立实验",
+      "corrected": "二者是同一项工作的设计报告与检查点，只计一个实验（离线沙箱可行性探针，无 recovery commit）",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_5_m1_6_checkpoint.md#L3-L6"
+    },
+    {
+      "old": "把 '821' 当作 512 已使用的 track 数或 821 根波导；把 857 当作扣除半径后的可用轨道数",
+      "corrected": "857 是全高按 pitch 离散的条带数（150/0.175 = 857.14），若先扣两侧 5 mm 得 800 而非 857，故 r=5 不是得到 857 所需的算术项；821 明确包含距边缘较近的不可用条带。均不能作 allocator 的 track 数",
+      "source": "OpticalWaveguideRouter3D/docs/reports/step_8_legacy_track_assignment_audit.md#L56-L62"
+    },
+    {
+      "old": "把 '原版交叉分析是 DEBUG-only' 当作已确认结论",
+      "corrected": "该旧结论已被推翻：反编译器把 calc_crossing 整个函数体错误缩进到 DEBUG 门内；按字节码恢复后 DEBUG 门只包住“非 56 号路由返回空列表”这一个提前返回，其余逻辑在函数层级执行并正常返回 points",
+      "source": "OpticalWaveguideRouter2D/docs/loss_model_reconstruction_report.md#L127-L142"
+    }
+  ],
+  "unverified": [
+    {
+      "item": "256 通道与原可执行程序的一致性",
+      "reason": "本机没有 256 的参照图或坐标快照（文档明确说明不存在）；256 只能通过行数、轨道合法、同轨无重叠、几何有限等不变量检查，不能证明与原程序逐条一致，也不能从 512 公式截半替代"
+    },
+    {
+      "item": "原版 AutoRouter 交叉损耗表（angle / loss_db 两列，30 个交叉）",
+      "reason": "已对 PYZ 条目、exe 二进制本体、随附压缩包、全目录 xlsx/xls/csv、反编译源码五处穷尽搜索，均无结果；现用论文图 3-12 数字化 + 90° 锚定的近似，原图抖动约 0.1 dB 使绝对高度不可信"
+    },
+    {
+      "item": "3D opt2d 'A-R5-legacy' 臂与 2D 复现 512 结果差异的根因",
+      "reason": "两臂损耗差约 1e-3 dB、交叉项 86,512 vs 86,786、最小交叉角 14.0° vs 23.074°；本轮为只读核查，未重跑任何优化或求交，故只记录差异与候选解释，不下结论"
+    },
+    {
+      "item": "旧 EXE 的默认弯曲半径与 256 的独立半径配置",
+      "reason": "随 EXE 发布的资料中没有默认值记录；论文 256 节存在单位印刷矛盾（PMT 宽 4.8、间距 4.2、区域 150 印为 μm），按“记录原值、不静默修正”处理"
+    },
+    {
+      "item": "论文 K 式的 d 与 pitch 语义、基础 D 的取值、K 的整数化与窗口边界、公式域外处理",
+      "reason": "论文未写成程序规范；Step K / M 审计已逐式核对并标为 AMBIGUOUS，本次不代为选择约定，也不实现"
+    },
+    {
+      "item": "完整链路损耗（含输入/输出耦合与连接器）",
+      "reason": "缺少耦合与连接器数据，现有数值只是部分预算；2D 的 5.5147 dB 含已标注的交叉近似，3D Step 8.5 的 5.2646 dB 不含交叉，两者都不是端到端链路损耗"
+    },
+    {
+      "item": "Top-U 反转若被正式采用后的全局收益",
+      "reason": "该实验只在单次 512 布局上完成一次 Variant 执行；多交叉检出反而 +27，报告明确要求先复审 345 个检出再考虑采用，本轮不做采用决定"
+    },
+    {
+      "item": "局部精确恢复的总体成功率与低分 victim 排序的更优性",
+      "reason": "M1.6 只有 4 个固定案例、各只尝试第一 victim，无 COMMIT；不能证明 lowest-multi-count 排序最优或优于其他顺序，也不能外推 318 全量"
+    },
+    {
+      "item": "21 条 exhaustion 在原始运行时刻的入口/出口缓存 checksum",
+      "reason": "上一轮运行未保存该 checksum；审计依靠完整保存轨迹与全部独立 witness 证明，并附按同一状态重建的局部重放，来源报告已显式声明该限制"
+    },
+    {
+      "item": "本报告未涉及的部分：1024 合成扩容输入、三维结果、Step 12/13 的优化收益归因",
+      "reason": "均属 Lead 或其他核查者范围；本次只收集参数值与口径差异，未复核其数值来源"
+    }
+  ]
+}

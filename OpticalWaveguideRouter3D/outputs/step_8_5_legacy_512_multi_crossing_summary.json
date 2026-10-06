@@ -1,0 +1,3519 @@
+{
+  "configuration": {
+    "spacing_mm": 0.125,
+    "tol_mm": 1e-09,
+    "track_pitch_mm_not_used": 0.175,
+    "criterion": "at least two lengths < spacing - tol"
+  },
+  "physical_cross_count": 55935,
+  "multiplicity": {
+    "cross_pairs_total": 49502,
+    "pairs_with_1_cross": 43069,
+    "pairs_with_2_crosses": 6433,
+    "pairs_with_3_or_more_crosses": 0,
+    "pairs_with_multiple_crosses": 6433,
+    "max_crosses_per_pair": 2,
+    "top20": [
+      {
+        "route_ids": [
+          0,
+          341
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          1,
+          341
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          2,
+          276
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          2,
+          277
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          3,
+          276
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          3,
+          277
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          5
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          6
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          7
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          8
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          24
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          25
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          26
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          27
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          74
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          85
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          146
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          163
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          165
+        ],
+        "cross_count": 2
+      },
+      {
+        "route_ids": [
+          4,
+          166
+        ],
+        "cross_count": 2
+      }
+    ]
+  },
+  "graph_nodes_with_cross": 510,
+  "graph_triangle_candidates": 2063548,
+  "legacy_eligible_triangles": 1222071,
+  "outside_legacy_assumption_triangles": 841477,
+  "multi_waveguide_crossing_count": 318,
+  "non_multi_crossing_triangle_count": 1221751,
+  "boundary_triangle_count": 2,
+  "triangles_with_any_boundary_side": 2,
+  "multi_with_boundary_side": 0,
+  "composition": {
+    "ordinary/ordinary/ordinary": 222,
+    "ordinary/ordinary/special": 96,
+    "ordinary/special/special": 0,
+    "special/special/special": 0
+  },
+  "per_waveguide": [
+    {
+      "waveguide_id": 0,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 1,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 2,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 3,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 4,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 5,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 6,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 7,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 8,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 9,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 10,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 11,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 12,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 13,
+      "special": true,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 14,
+      "special": true,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 15,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 16,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 17,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 18,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 19,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 20,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 21,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 22,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 23,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 24,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 25,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 26,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 27,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 28,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 29,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 30,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 31,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 32,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 33,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 34,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 35,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 36,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 37,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 38,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 39,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 40,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 41,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 42,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 43,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 44,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 45,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 46,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 47,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 48,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 49,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 50,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 51,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 52,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 53,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 54,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 55,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 56,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 57,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 58,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 59,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 60,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 61,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 62,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 63,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 64,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 65,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 66,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 67,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 68,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 69,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 70,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 71,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 72,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 73,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 74,
+      "special": false,
+      "participating_multi_crossing_count": 13
+    },
+    {
+      "waveguide_id": 75,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 76,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 77,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 78,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 79,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 80,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 81,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 82,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 83,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 84,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 85,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 86,
+      "special": true,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 87,
+      "special": true,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 88,
+      "special": true,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 89,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 90,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 91,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 92,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 93,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 94,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 95,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 96,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 97,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 98,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 99,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 100,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 101,
+      "special": true,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 102,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 103,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 104,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 105,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 106,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 107,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 108,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 109,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 110,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 111,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 112,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 113,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 114,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 115,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 116,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 117,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 118,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 119,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 120,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 121,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 122,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 123,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 124,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 125,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 126,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 127,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 128,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 129,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 130,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 131,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 132,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 133,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 134,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 135,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 136,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 137,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 138,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 139,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 140,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 141,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 142,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 143,
+      "special": true,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 144,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 145,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 146,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 147,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 148,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 149,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 150,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 151,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 152,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 153,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 154,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 155,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 156,
+      "special": true,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 157,
+      "special": true,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 158,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 159,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 160,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 161,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 162,
+      "special": true,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 163,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 164,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 165,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 166,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 167,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 168,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 169,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 170,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 171,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 172,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 173,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 174,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 175,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 176,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 177,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 178,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 179,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 180,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 181,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 182,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 183,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 184,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 185,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 186,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 187,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 188,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 189,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 190,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 191,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 192,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 193,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 194,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 195,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 196,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 197,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 198,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 199,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 200,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 201,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 202,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 203,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 204,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 205,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 206,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 207,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 208,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 209,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 210,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 211,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 212,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 213,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 214,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 215,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 216,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 217,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 218,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 219,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 220,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 221,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 222,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 223,
+      "special": true,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 224,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 225,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 226,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 227,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 228,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 229,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 230,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 231,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 232,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 233,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 234,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 235,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 236,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 237,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 238,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 239,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 240,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 241,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 242,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 243,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 244,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 245,
+      "special": false,
+      "participating_multi_crossing_count": 9
+    },
+    {
+      "waveguide_id": 246,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 247,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 248,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 249,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 250,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 251,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 252,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 253,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 254,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 255,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 256,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 257,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 258,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 259,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 260,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 261,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 262,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 263,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 264,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 265,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 266,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 267,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 268,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 269,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 270,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 271,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 272,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 273,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 274,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 275,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 276,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 277,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 278,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 279,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 280,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 281,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 282,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 283,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 284,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 285,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 286,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 287,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 288,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 289,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 290,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 291,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 292,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 293,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 294,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 295,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 296,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 297,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 298,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 299,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 300,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 301,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 302,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 303,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 304,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 305,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 306,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 307,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 308,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 309,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 310,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 311,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 312,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 313,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 314,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 315,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 316,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 317,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 318,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 319,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 320,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 321,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 322,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 323,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 324,
+      "special": true,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 325,
+      "special": true,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 326,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 327,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 328,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 329,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 330,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 331,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 332,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 333,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 334,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 335,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 336,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 337,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 338,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 339,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 340,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 341,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 342,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 343,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 344,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 345,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 346,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 347,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 348,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 349,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 350,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 351,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 352,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 353,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 354,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 355,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 356,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 357,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 358,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 359,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 360,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 361,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 362,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 363,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 364,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 365,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 366,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 367,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 368,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 369,
+      "special": true,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 370,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 371,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 372,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 373,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 374,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 375,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 376,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 377,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 378,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 379,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 380,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 381,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 382,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 383,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 384,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 385,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 386,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 387,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 388,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 389,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 390,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 391,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 392,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 393,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 394,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 395,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 396,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 397,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 398,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 399,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 400,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 401,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 402,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 403,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 404,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 405,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 406,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 407,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 408,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 409,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 410,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 411,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 412,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 413,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 414,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 415,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 416,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 417,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 418,
+      "special": true,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 419,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 420,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 421,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 422,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 423,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 424,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 425,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 426,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 427,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 428,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 429,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 430,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 431,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 432,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 433,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 434,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 435,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 436,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 437,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 438,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 439,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 440,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 441,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 442,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 443,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 444,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 445,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 446,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 447,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 448,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 449,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 450,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 451,
+      "special": false,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 452,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 453,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 454,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 455,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 456,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 457,
+      "special": false,
+      "participating_multi_crossing_count": 12
+    },
+    {
+      "waveguide_id": 458,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 459,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 460,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 461,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 462,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 463,
+      "special": true,
+      "participating_multi_crossing_count": 4
+    },
+    {
+      "waveguide_id": 464,
+      "special": false,
+      "participating_multi_crossing_count": 6
+    },
+    {
+      "waveguide_id": 465,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 466,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 467,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 468,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 469,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 470,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 471,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 472,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 473,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 474,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 475,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 476,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 477,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 478,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 479,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 480,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 481,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 482,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 483,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 484,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 485,
+      "special": false,
+      "participating_multi_crossing_count": 13
+    },
+    {
+      "waveguide_id": 486,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 487,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 488,
+      "special": false,
+      "participating_multi_crossing_count": 5
+    },
+    {
+      "waveguide_id": 489,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 490,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 491,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 492,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 493,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 494,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 495,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 496,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 497,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 498,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 499,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 500,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 501,
+      "special": true,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 502,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 503,
+      "special": false,
+      "participating_multi_crossing_count": 1
+    },
+    {
+      "waveguide_id": 504,
+      "special": true,
+      "participating_multi_crossing_count": 2
+    },
+    {
+      "waveguide_id": 505,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 506,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 507,
+      "special": false,
+      "participating_multi_crossing_count": 3
+    },
+    {
+      "waveguide_id": 508,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 509,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 510,
+      "special": false,
+      "participating_multi_crossing_count": 0
+    },
+    {
+      "waveguide_id": 511,
+      "special": false,
+      "participating_multi_crossing_count": 2
+    }
+  ],
+  "top20_waveguides": [
+    {
+      "waveguide_id": 74,
+      "special": false,
+      "participating_multi_crossing_count": 13
+    },
+    {
+      "waveguide_id": 485,
+      "special": false,
+      "participating_multi_crossing_count": 13
+    },
+    {
+      "waveguide_id": 457,
+      "special": false,
+      "participating_multi_crossing_count": 12
+    },
+    {
+      "waveguide_id": 245,
+      "special": false,
+      "participating_multi_crossing_count": 9
+    },
+    {
+      "waveguide_id": 85,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 102,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 103,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 142,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 265,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 437,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 465,
+      "special": false,
+      "participating_multi_crossing_count": 8
+    },
+    {
+      "waveguide_id": 87,
+      "special": true,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 88,
+      "special": true,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 116,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 125,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 327,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 332,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 387,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 416,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    },
+    {
+      "waveguide_id": 436,
+      "special": false,
+      "participating_multi_crossing_count": 7
+    }
+  ],
+  "crossing_angle_auxiliary": {
+    "min_deg": 15.20360409329224,
+    "mean_deg": 60.0330124377221,
+    "angle_occurrences": 954,
+    "triplets_with_below_20_deg": 48
+  },
+  "runtime": {
+    "pair_map_seconds": 0.10229400004027411,
+    "graph_seconds": 0.00983350002206862,
+    "triangle_enumeration_seconds": 0.9648592013400048,
+    "criterion_seconds": 9.84722259605769,
+    "total_seconds": 12.90194499999052
+  },
+  "jsonl_records": 318,
+  "jsonl_truncated": false,
+  "outside_examples": [
+    {
+      "route_ids": [
+        0,
+        24,
+        25
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            25
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            25
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        26
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            26
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            26
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        27
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            27
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            27
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        31
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            31
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            31
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        67
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            67
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            67
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        111
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            111
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            111
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        112
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            112
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            112
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        300
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            300
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            300
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        301
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            301
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            301
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        302
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            302
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            302
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        303
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            303
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            303
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        312
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            312
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            312
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        313
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            313
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            313
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        314
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            314
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            314
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        315
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            315
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            315
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        341
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            341
+          ],
+          "count": 2
+        },
+        {
+          "route_ids": [
+            24,
+            341
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        345
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            345
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            345
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        347
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            347
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            347
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        24,
+        348
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            24
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            348
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            24,
+            348
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "route_ids": [
+        0,
+        25,
+        26
+      ],
+      "pair_cross_counts": [
+        {
+          "route_ids": [
+            0,
+            25
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            0,
+            26
+          ],
+          "count": 1
+        },
+        {
+          "route_ids": [
+            25,
+            26
+          ],
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "boundary_examples": [
+    {
+      "route_ids": [
+        3,
+        101,
+        301
+      ],
+      "point_ab": {
+        "x": 123.625,
+        "y": 87.15
+      },
+      "point_ac": {
+        "x": 123.79933636113567,
+        "y": 87.275
+      },
+      "point_bc": {
+        "x": 123.625,
+        "y": 87.275
+      },
+      "side_lengths_mm": [
+        0.21451845331818825,
+        0.125,
+        0.17433636113567275
+      ],
+      "short_side_count": 0,
+      "spacing_mm": 0.125,
+      "classification": "boundary",
+      "boundary_side_count": 1
+    },
+    {
+      "route_ids": [
+        78,
+        92,
+        145
+      ],
+      "point_ab": {
+        "x": 59.749336361135676,
+        "y": 112.475
+      },
+      "point_ac": {
+        "x": 59.575,
+        "y": 112.35
+      },
+      "point_bc": {
+        "x": 59.575,
+        "y": 112.475
+      },
+      "side_lengths_mm": [
+        0.21451845331818825,
+        0.17433636113567275,
+        0.125
+      ],
+      "short_side_count": 0,
+      "spacing_mm": 0.125,
+      "classification": "boundary",
+      "boundary_side_count": 1
+    }
+  ],
+  "physical_events_sha256": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8",
+  "protected_files_unchanged": true,
+  "allocator_counts": {
+    "assigned": 454,
+    "unsupported_geometry": 58
+  }
+}

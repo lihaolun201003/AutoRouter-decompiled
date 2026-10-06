@@ -1,0 +1,32 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{Step 12 消融：候选数/顺序/拆线重布/位置正则/半径策略}
+  \label{tab:step12-ablation}
+  \begin{tabular}{lrrrr}
+    \toprule
+    配置 & 256 平均损耗 (dB) & 256 未布通 & 512 平均损耗 (dB) & 512 未布通 \\
+    \midrule
+    cand\_k1 & 5.2786 & 0 & 5.5162 & 0 \\
+    cand\_k4 & 5.2780 & 0 & 5.5146 & 0 \\
+    cand\_k8 & 5.2772 & 0 & 5.5146 & 0 \\
+    cand\_k16 & 5.2768 & 0 & 5.5146 & 0 \\
+    order\_span & 5.4182 & 76 & 5.6471 & 144 \\
+    order\_congestion & 5.2839 & 33 & 5.4622 & 99 \\
+    refine\_on & 5.2772 & 0 & 5.5146 & 0 \\
+    penalty\_0 & 5.2951 & 59 & 5.4948 & 113 \\
+    penalty\_0.001 & 5.2772 & 0 & 5.5817 & 44 \\
+    penalty\_0.01 & 5.2786 & 0 & 5.5146 & 0 \\
+    penalty\_0.05 & 5.2786 & 0 & 5.5154 & 0 \\
+    radius\_fixed\_R6 & 4.3394 & 0 & 4.5564 & 2 \\
+    radius\_adaptive & 4.3394 & 0 & 4.5593 & 0 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  默认配置为 K=8、legacy 顺序、位置正则 0.001（256）/0.01（512）dB/位；候选数消融取 1/4/8/16。 \\
+  含未布通的配置（顺序 span/congestion、正则 0、512 的固定 R6）损耗均值不能与完整布通配置同口径比较，故不参与排名。 \\
+  损耗为解析物理统计口径（交叉事件按每根波导各计一次）；与原版 calc\_index 统计口径不同，两者不混用。 \\
+  \end{flushleft}
+\end{table}

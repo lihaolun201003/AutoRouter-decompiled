@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-06",
+  "status": "RESEARCH_AND_MODEL_DESIGN_ONLY",
+  "material_platform_selected": false,
+  "optical_solver_run": false,
+  "routing_experiments_run": false,
+  "sources": [
+    {
+      "id": "crossing_SI_2014",
+      "doi": "10.1117/12.2039860",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/1434591/1/898807.pdf",
+      "verification": "RELEVANT_FULL_TEXT_AND_FIGURE_5_VERIFIED",
+      "platform": "50x50 um rectangular SI Truemode polyacrylate; 853 nm",
+      "values": {
+        "n_core": 1.556,
+        "n_clad": 1.5264,
+        "angle_range_deg": [
+          10,
+          90
+        ],
+        "fit_db_per_crossing": "1.0779 * theta_deg ** (-0.873)"
+      },
+      "limit": "Not calibrated for circular GI, vertical projected crossings, parallel coupling, or angles outside measured range."
+    },
+    {
+      "id": "propagation_board_2018",
+      "doi": "10.1109/JLT.2018.2847461",
+      "url": "https://www.ttm.com/sites/default/files/documents/Practical-Evaluation-of-Polymer-Waveguides-for-High-Speed-and-Meter-Scale-On-Board-Optical-Interconnects.pdf",
+      "verification": "RELEVANT_FULL_TEXT_VERIFIED",
+      "platform": "approximately 52x54 um silsesquioxane polymer waveguide",
+      "values": {
+        "propagation_db_per_cm_850_nm": 0.046,
+        "propagation_db_per_cm_1310_nm": 0.342
+      },
+      "limit": "Propagation and scattered-cladding crosstalk evidence only for its material, launch, and geometry."
+    },
+    {
+      "id": "shuffling_GI_2018",
+      "doi": "10.1587/transele.E101.C.509",
+      "url": "https://globals.ieice.org/en_transactions/electronics/10.1587/transele.E101.C.509/_pdf",
+      "verification": "RELEVANT_FULL_TEXT_VERIFIED",
+      "platform": "approximately 50 um circular GI Mosquito; 850 nm",
+      "values": {
+        "one_side_vertical_offset_mm": 0.38,
+        "lateral_ramp_length_mm": 30,
+        "crossing_section_lateral_length_mm": 17,
+        "lower_S_bend_mean_total_IL_db_GI_in_GI_out": 1.89,
+        "lower_S_bend_mean_total_IL_db_SMF_in_105SI_out": 0.97
+      },
+      "limit": "Device total IL depends on both launch and collection conditions; not per-lift excess loss. The 17 mm crossing section continues to change vertical height and is not a constant-z plateau."
+    },
+    {
+      "id": "direct_inscription_GI_2019",
+      "doi": "10.1364/OE.27.022419",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31510536/",
+      "verification": "ORIGINAL_ABSTRACT_VERIFIED",
+      "bibliography": "Optics Express 27(16), 22419-22428",
+      "values": {
+        "propagation_db_per_cm_850_nm_upper_bound": 0.044,
+        "bend_db_per_mm_upper_bound_at_R_4_mm": 0.08
+      },
+      "limit": "Bend units and propagation de-embedding cannot be converted to a generic per-bend value."
+    },
+    {
+      "id": "crossover_GI_2022",
+      "doi": "10.1109/JLT.2022.3193229",
+      "url": "https://opg.optica.org/jlt/abstract.cfm?uri=jlt-40-19-6465",
+      "verification": "ORIGINAL_ABSTRACT_VERIFIED",
+      "values": {
+        "wavelength_nm": 850,
+        "local_height_gap_mm": 0.7,
+        "device_total_IL_db": 1.64,
+        "device_crosstalk_db_upper_bound": -45
+      },
+      "limit": "Total device IL, not transition loss. Detailed trajectory not full-text-verified in this investigation."
+    },
+    {
+      "id": "bend_SI_2007",
+      "doi": "10.1364/OE.15.000669",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19532290/",
+      "verification": "ORIGINAL_ABSTRACT_VERIFIED",
+      "values": {
+        "square_core_width_um": 50,
+        "delta_n": 0.0296,
+        "best_radius_mm": 13.5,
+        "reported_minimum_90deg_bend_loss_db": 0.74
+      },
+      "limit": "Useful decomposition methodology; numerical values do not calibrate circular GI 3D S bends."
+    },
+    {
+      "id": "double_layer_2023",
+      "doi": "10.1364/OE.489977",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37475219/",
+      "verification": "ORIGINAL_ABSTRACT_VERIFIED",
+      "bibliography": "Optics Express 31(15), 23754-23767",
+      "values": {
+        "core_cross_section_um": [
+          20,
+          20
+        ],
+        "reported_layer_distance_um": 24.5,
+        "propagation_db_per_cm_850_nm_upper_bound": 0.25,
+        "crosstalk_db_850_nm_upper_bound": -52
+      },
+      "limit": "Center/edge definition of layer distance not full-text-verified. Different platform and core size."
+    },
+    {
+      "id": "high_delta_GI_2026",
+      "doi": "10.1364/OE.582449",
+      "url": "https://keio.elsevierpure.com/en/publications/fabrication-of-graded-index-core-polymer-optical-waveguides-enabl/",
+      "verification": "ORIGINAL_ABSTRACT_VERIFIED",
+      "bibliography": "Optics Express 34(4), 6895-6907",
+      "values": {
+        "radius_mm_approximately": 1,
+        "bend_angle_deg": 90,
+        "bend_loss_db_upper_bound": 0.1
+      },
+      "limit": "High-delta GI-specific; exact index profile and launch not obtained."
+    },
+    {
+      "id": "system_coupling_2026",
+      "doi": "10.1109/ACCESS.2026.3725486",
+      "url": "https://ieeexplore.ieee.org/document/11660440",
+      "verification": "PUBLISHER_INDEXED_ORIGINAL_ABSTRACT_VERIFIED",
+      "bibliography": "IEEE Access 14, 129103-129119; published 2026-08-20",
+      "platform": "5x5 um EpoCore/EpoClad; 1550 nm",
+      "limit": "Eigenmode/CMT/system methodology only; not 50 um multimode coupling parameters."
+    }
+  ],
+  "method_sources": [
+    {
+      "doi": "10.1109/JQE.1973.1077767",
+      "url": "https://authors.library.caltech.edu/records/cxyby-d3e87",
+      "verification": "ORIGINAL_ABSTRACT_AND_BIBLIOGRAPHY_VERIFIED"
+    },
+    {
+      "url": "https://www.keysight.com/us/en/products/software/optical-solutions-software/photonic-design-solutions/rsoft-beamprop-bpm.html",
+      "verification": "OFFICIAL_METHOD_CAPABILITY_PAGE_VERIFIED"
+    }
+  ],
+  "project_geometry_source": "scripts/run_3d_strategy_v4.py",
+  "geometry_boundary_derivations": [
+    {
+      "height_mm": 1,
+      "minimum_XY_run_mm_at_Rmin_5_mm": 4.967294132898051,
+      "maximum_slope_angle_deg_at_that_run": 17.5484006137923
+    },
+    {
+      "height_mm": 2,
+      "minimum_XY_run_mm_at_Rmin_5_mm": 7.024814731040727,
+      "maximum_slope_angle_deg_at_that_run": 24.094842552110702
+    }
+  ],
+  "comparison_source": "outputs/overnight_3d_ideas/v6/comparison.csv",
+  "comparison_source_sha256": "baea1ce4d0611a71260510943464545d14f6c9456abc16fdfdec4b05a978f453",
+  "comparison_groups": [
+    {
+      "group": "V6_E0_N2880",
+      "route_count": 512,
+      "final_geometric_close_pairs": 30999,
+      "stage_length_delta_mm_all_routes": 23.781978350074496,
+      "final_transition_segment_count": 154,
+      "recheck_verdict": "PASS"
+    },
+    {
+      "group": "V6_E2_N2880",
+      "route_count": 512,
+      "final_geometric_close_pairs": 18444,
+      "stage_length_delta_mm_all_routes": 57.50418600924604,
+      "final_transition_segment_count": 370,
+      "recheck_verdict": "PASS"
+    }
+  ],
+  "propagation_only_scenario_arithmetic": {
+    "coefficient_source": "src/loss.py historical assumption; not adopted as a calibrated 3D coefficient",
+    "alpha_db_per_mm": 0.005,
+    "delta_length_mm_all_512_routes": 33.722207659171545,
+    "mean_increment_db_per_route": 0.0003293184341715971,
+    "interpretation": "Average incremental propagation term only; no bend, transition, interaction, or receiver prediction."
+  },
+  "report_source": "docs/reports/3d_loss_model_research_20261006.md",
+  "report_sha256": "f3cff94127f6a40204c3de731107009430726bb7db8aca68b948fff865b2b13e"
+}

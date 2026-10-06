@@ -1,0 +1,209 @@
+{
+  "pages": 30,
+  "images": 9,
+  "tables": 29,
+  "covered_inventory": 41,
+  "chinese_font": "宋体",
+  "body_line_spacing": 1.5,
+  "table_line_spacing": 1.2,
+  "table_vertical_padding_twips": 80,
+  "experiment_sections": 25,
+  "each_experiment_begins_on_new_page_except_first_with_intro": true,
+  "logical_continuation_pages": 5,
+  "table_data_unchanged": true,
+  "font_runs_checked": 1643,
+  "numeric_cells_centered": 967,
+  "no_decimal_tabs": true,
+  "source_images_exact": true,
+  "no_blank_or_source_only_pages": true,
+  "pdf_fonts": [
+    "/BCDEEE+SimSun",
+    "/BCDFEE+Calibri",
+    "/BCDGEE+Calibri-Bold",
+    "/BCDHEE+Calibri"
+  ],
+  "size_bytes": 1167473,
+  "qa_render_directory": "render_per_experiment",
+  "page_stats": [
+    {
+      "page": 1,
+      "chars": 826,
+      "first": "光波导布线全部实验报告",
+      "last": "2D/3D 目录缩写与 t 表编号见末页。"
+    },
+    {
+      "page": 2,
+      "chars": 571,
+      "first": "2 弯曲模型与半径扫描",
+      "last": "示一次布局内 95%的路线损耗不超过该值。"
+    },
+    {
+      "page": 3,
+      "chars": 268,
+      "first": "实验 2 续 损耗分布与结论",
+      "last": "数据来源：t31、t33；2D/loss_model.py；2D/results/fiberBoard512_loss_R{2,3,4}_summary.json。"
+    },
+    {
+      "page": 4,
+      "chars": 1021,
+      "first": "3 交叉表敏感性与原程序逐路核对",
+      "last": "数据来源：2D/docs/exact_legacy_fidelity_report.md 与 migration_report.md。"
+    },
+    {
+      "page": 5,
+      "chars": 1028,
+      "first": "4 早期输入与二维骨架验证",
+      "last": "step_8_legacy_512_route_preparation.md，均在 3D/docs/reports/。"
+    },
+    {
+      "page": 6,
+      "chars": 1120,
+      "first": "5 精确求交与多交叉诊断",
+      "last": "step_8_5_m1_5_multi_attribution_summary.json。"
+    },
+    {
+      "page": 7,
+      "chars": 885,
+      "first": "6 排序反转与硬约束负结果",
+      "last": "exact_multi_guard_fast_routing.json、exact_multi_guard_exhaustion_summary.json。以上文件名均有 step_8_5_前缀。"
+    },
+    {
+      "page": 8,
+      "chars": 979,
+      "first": "7 局部单线恢复沙箱与归因诊断",
+      "last": "outputs/step_8_5_m1_5_multi_attribution_summary.json、step_8_5_m1_6_victim_statistics.json。"
+    },
+    {
+      "page": 9,
+      "chars": 822,
+      "first": "8 候选轨道与自适应半径主实验",
+      "last": "数据来源：3D/outputs/opt2d/{256,512}/comparison.csv；S12-01。"
+    },
+    {
+      "page": 10,
+      "chars": 1098,
+      "first": "9 轨道优化的全部消融",
+      "last": "数据来源：t52；3D/outputs/opt2d/{256,512}/sensitivity.json 与 sensitivity/*/summary.json。"
+    },
+    {
+      "page": 11,
+      "chars": 1220,
+      "first": "10 固定端点与自由弯角六方案",
+      "last": "在 opt2d_step13/。"
+    },
+    {
+      "page": 12,
+      "chars": 559,
+      "first": "11 自由弯角的损耗分解与几何代价",
+      "last": "注：不同分量分别描述代价，不按单项最低值给方案作总体排名。"
+    },
+    {
+      "page": 13,
+      "chars": 601,
+      "first": "实验 11 续 交叉与间距代价",
+      "last": "数据来源：3D/outputs/opt2d_step13_fix/{256,512}/comparison.csv；Step14 对段级接触重新归并为物理事件。"
+    },
+    {
+      "page": 14,
+      "chars": 154,
+      "first": "12 最差路线的同一编号跟踪",
+      "last": "下面另固定原版最差路线编号，比较同一连接的损耗变化。"
+    },
+    {
+      "page": 15,
+      "chars": 857,
+      "first": "实验 12 续 同一连接的逐路结果",
+      "last": "数据来源：3D/outputs/opt2d_step13_fix/{256,512}/{scheme}/per_route.csv；原跟踪文件 worst_route_tracking.csv。"
+    },
+    {
+      "page": 16,
+      "chars": 529,
+      "first": "13 自适应半径条件下的约束与惩罚扫描",
+      "last": "注：重新布线并自适应半径，不是固定几何只改分数。作为早期权衡实验，不按后续严格保护口径评为最终方案。"
+    },
+    {
+      "page": 17,
+      "chars": 789,
+      "first": "实验 13 续 间距惩罚扫描",
+      "last": "opt2d_step13_fix/{256,512}/penalty_ablation_F{5,56}.csv。"
+    },
+    {
+      "page": 18,
+      "chars": 895,
+      "first": "14 六路径方案的小角交叉压力实验",
+      "last": "数据来源：t64；3D/outputs/opt2d_step13_fix/{256,512}/sensitivity.csv。"
+    },
+    {
+      "page": 19,
+      "chars": 1218,
+      "first": "15 冻结半径的六配置与严格验收",
+      "last": "数据来源：3D/outputs/opt2d_step14/{256,512}/comparison.csv、acceptance.csv、radius_freeze_check.csv、references.csv。"
+    },
+    {
+      "page": 20,
+      "chars": 1352,
+      "first": "16 256 条固定保护对象的逐路结果",
+      "last": "数据来源：3D/outputs/opt2d_step14/{256,512}/protection_margins.csv。"
+    },
+    {
+      "page": 21,
+      "chars": 1009,
+      "first": "17 512 条固定保护对象的逐路结果",
+      "last": "数据来源：3D/outputs/opt2d_step14/512/protection_set.json 与各配置/protection_routes.csv。"
+    },
+    {
+      "page": 22,
+      "chars": 1078,
+      "first": "18 保护优化过程与放宽条件探针",
+      "last": "probe/probe_summary.csv。"
+    },
+    {
+      "page": 23,
+      "chars": 1125,
+      "first": "19 冻结半径后全部压力情景",
+      "last": "数据来源：t74；3D/outputs/opt2d_step14/{256,512}/sensitivity.csv、comparison.csv。"
+    },
+    {
+      "page": 24,
+      "chars": 752,
+      "first": "20 三维几何与距离检测验证",
+      "last": "数据来源：3D/outputs/step_9_a_tests.json、step_9_b_curvature_join_validation.json、step_9_c_clearance_validation.json。"
+    },
+    {
+      "page": 25,
+      "chars": 571,
+      "first": "21 单路线抬层探针",
+      "last": "数据来源：3D/outputs/step_9_d_probe_summary.json、step_9_d_local_validation.json、step_9_d_synthetic.json。"
+    },
+    {
+      "page": 26,
+      "chars": 846,
+      "first": "22 两层与三层顺序分配",
+      "last": "step_9_f_{two_layer_control,three_layer}_summary.json、step_9_f_comparison.json。"
+    },
+    {
+      "page": 27,
+      "chars": 319,
+      "first": "23 固定 1024 条三层实验",
+      "last": "图 4 自己的 1024 条三维总览 真实高度 0 1 2 mm 显示高度放大 20 倍"
+    },
+    {
+      "page": 28,
+      "chars": 636,
+      "first": "实验 23 续 终态结果与核对",
+      "last": "数据来源：3D/outputs/step_10_fixed_1024_{summary,initial_stats,validation,final_route_state,board_capacity_check}.json。"
+    },
+    {
+      "page": 29,
+      "chars": 357,
+      "first": "24 自己的三维结果图怎么读",
+      "last": "数据来源：3D/outputs/step_11_visualization_summary.json；原图均位于 3D/outputs/figures/。"
+    },
+    {
+      "page": 30,
+      "chars": 1144,
+      "first": "25 全部实验可以得出的结论",
+      "last": "经执行的早期基线和交叉诊断；纯计划、未执行策略不计作实验。本次整理没有重新运行路由。"
+    }
+  ]
+}

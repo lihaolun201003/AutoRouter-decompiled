@@ -1,0 +1,16 @@
+{
+  "note": "staged src + test patches to apply right after the P5 serial batch (no src edit while a formal run is in flight)",
+  "patches": [
+    {
+      "file": "src/path_window_3d.py",
+      "old": "    before_length=route.total_length()\n    after_length=elevated.total_length()",
+      "new": "    try:\n        before_length=route.total_length()\n        after_length=elevated.total_length()\n    except RuntimeError as ex:\n        # A non-converged arc-length integral is a REJECTION, never an unchecked\n        # estimate and never a crash inside the search loop.\n        raise ValueError('PATH_WINDOW_LENGTH_NOT_CONVERGED:'+str(ex))",
+      "why": "the length integral must report non-convergence as a candidate rejection, not crash the run"
+    }
+  ],
+  "tests_to_add": [
+    "a deliberately non-converging tolerance raises RuntimeError from PathWindowTransition3D.length",
+    "build_path_window_candidate converts that non-convergence into ValueError(PATH_WINDOW_LENGTH_NOT_CONVERGED:...)",
+    "the generator counts it as a build rejection instead of generating a candidate"
+  ]
+}

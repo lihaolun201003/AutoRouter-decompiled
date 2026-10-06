@@ -1,0 +1,691 @@
+{
+  "script": "scripts/visualize_3d_strategy_v3.py",
+  "project_root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D",
+  "output_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures",
+  "command": ".venv\\Scripts\\python.exe -B scripts/visualize_3d_strategy_v3.py . outputs/3d_strategy_v3/figures",
+  "figure_files": [
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f1_group_pairs.png",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f1_group_pairs.pdf",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f2_pairs_vs_evaluations.png",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f2_pairs_vs_evaluations.pdf",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f3_costs.png",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f3_costs.pdf",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f6_route_geometry.png",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f6_route_geometry.pdf"
+  ],
+  "figures": [
+    {
+      "name": "f1_group_pairs",
+      "title": "四组终态近距对（源图 f1_group_pairs）",
+      "inputs": [
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\A_baseline_original\\ledger.json",
+          "sha256": "83b99ea452118db21cf984ffd0b591551b5e0ff72da5906afc550849eb8dcf6e"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\B_generation_cache_only\\ledger.json",
+          "sha256": "65e7d8f8e9393cbe21b1832963603fd27c14dffd736a58c274a96c0a77faac21"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\C_window_slack_only\\ledger.json",
+          "sha256": "36ebd494ed3b68f78431aa6cce5d6b83ccc7d84a75aea69cedd47d2c309b076a"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled\\ledger.json",
+          "sha256": "8ee5a2a9a204bb1f866ca6b00b59987078272642785998d183e52f8ff83c0d6d"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\cross_group_analysis.json",
+          "sha256": "5f9f4b7343af7b49bf2d5f95b515c39ffae7431039048ab97bc706a8b99034cc"
+        }
+      ]
+    },
+    {
+      "name": "f2_pairs_vs_evaluations",
+      "title": "近距对随实际候选评价次数变化（源图 f2_pairs_vs_evaluations）",
+      "inputs": [
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\A_baseline_original\\curve.json",
+          "sha256": "848315b752b31374fc481747b2ae47c6c702d3ae5758a9e00991931baff23755"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\B_generation_cache_only\\curve.json",
+          "sha256": "e5d491a2bf1aa008a44fc4a9e281151580544cc85490f55461fb0bbff9258130"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\C_window_slack_only\\curve.json",
+          "sha256": "1399fdfe73640d0f98e1a75c854c0682a3196c8a0991a98c8797290e2223391d"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled\\curve.json",
+          "sha256": "aba6bd5296e88b7c6eca848890c054e7b37bb5f084a432443f845aed0eaa2580"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\A_baseline_original\\ledger.json",
+          "sha256": "83b99ea452118db21cf984ffd0b591551b5e0ff72da5906afc550849eb8dcf6e"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\B_generation_cache_only\\ledger.json",
+          "sha256": "65e7d8f8e9393cbe21b1832963603fd27c14dffd736a58c274a96c0a77faac21"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\C_window_slack_only\\ledger.json",
+          "sha256": "36ebd494ed3b68f78431aa6cce5d6b83ccc7d84a75aea69cedd47d2c309b076a"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled\\ledger.json",
+          "sha256": "8ee5a2a9a204bb1f866ca6b00b59987078272642785998d183e52f8ff83c0d6d"
+        }
+      ]
+    },
+    {
+      "name": "f3_costs",
+      "title": "额外长度、运行时间与预算利用（源图 f3_costs）",
+      "inputs": [
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\A_baseline_original\\ledger.json",
+          "sha256": "83b99ea452118db21cf984ffd0b591551b5e0ff72da5906afc550849eb8dcf6e"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\B_generation_cache_only\\ledger.json",
+          "sha256": "65e7d8f8e9393cbe21b1832963603fd27c14dffd736a58c274a96c0a77faac21"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\C_window_slack_only\\ledger.json",
+          "sha256": "36ebd494ed3b68f78431aa6cce5d6b83ccc7d84a75aea69cedd47d2c309b076a"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled\\ledger.json",
+          "sha256": "8ee5a2a9a204bb1f866ca6b00b59987078272642785998d183e52f8ff83c0d6d"
+        }
+      ]
+    },
+    {
+      "name": "f6_route_geometry",
+      "title": "真实路线几何（源图 f6_route_geometry）",
+      "inputs": [
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled\\final_routes.json",
+          "sha256": "58bd664a92815cec1a07e7e9ff6489bda9f34f3667320963eb0b17aaef4f1151"
+        },
+        {
+          "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_plot_geometry.json",
+          "sha256": "14403f100b73c22f89ea07cf329822347ad541dc6674e1949996a7d5f0523821"
+        }
+      ],
+      "route": {
+        "criterion": "在 final_routes.json 全部路线中按（余弦过渡段数最多，峰值 z 最高，抬升平面段总长最长，route_id 最小）排序取第一条",
+        "candidate_count": 24,
+        "max_transition_count": 2,
+        "tied_at_max_transitions": 24,
+        "route_id": 301,
+        "main_layer": 2,
+        "transition_count": 2,
+        "peak_z_mm": 2.0,
+        "elevated_planar_length_mm": 254.5833137918179,
+        "primitive_count": 9
+      },
+      "z_exaggeration": 20,
+      "measured_max_xy_deviation_mm": 1.1370071466249427e-13
+    }
+  ],
+  "fonts": {
+    "family": "SimSun",
+    "source": "C:\\Windows\\Fonts\\simsun.ttc",
+    "resolved": "C:\\Windows\\Fonts\\simsun.ttc",
+    "registered_with": "matplotlib.font_manager.fontManager.addfont",
+    "axes_unicode_minus": false,
+    "note": "宋体缺 U+2212，所有文本只用 ASCII '-'；脚本检查缺字并在发现时失败。"
+  },
+  "group_naming": {
+    "letters": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "meaning": {
+      "A": "基线原版",
+      "B": "仅结构化生成缓存",
+      "C": "仅窗口松弛",
+      "D": "两者同时启用"
+    },
+    "disclaimer": "组字母为本轮功能消融分组，不是历史策略字母 A/B/C。",
+    "per_group_flags": {
+      "A": {
+        "generation_failure_cache_enabled": false,
+        "window_slack_mm": 0.0
+      },
+      "B": {
+        "generation_failure_cache_enabled": true,
+        "window_slack_mm": 0.0
+      },
+      "C": {
+        "generation_failure_cache_enabled": false,
+        "window_slack_mm": 1e-05
+      },
+      "D": {
+        "generation_failure_cache_enabled": true,
+        "window_slack_mm": 1e-05
+      }
+    }
+  },
+  "values_read_from_json": {
+    "A": {
+      "final_collision_pair_count": 44274,
+      "net_collision_reduction": 5244,
+      "reduction_percent": 10.590088452683872,
+      "initial_collision_pair_count": 49518,
+      "final_extra_length_mm": 8.405220067084883,
+      "runtime_seconds": 199.7273334999336,
+      "candidate_evaluations": 666,
+      "candidate_budget": 720,
+      "budget_used_percent": 92.5,
+      "stop_reason": "TARGET_LIMIT"
+    },
+    "B": {
+      "final_collision_pair_count": 43750,
+      "net_collision_reduction": 5768,
+      "reduction_percent": 11.648289510884931,
+      "initial_collision_pair_count": 49518,
+      "final_extra_length_mm": 8.8930039020197,
+      "runtime_seconds": 209.84818090009503,
+      "candidate_evaluations": 720,
+      "candidate_budget": 720,
+      "budget_used_percent": 100.0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED"
+    },
+    "C": {
+      "final_collision_pair_count": 43161,
+      "net_collision_reduction": 6357,
+      "reduction_percent": 12.83775596752696,
+      "initial_collision_pair_count": 49518,
+      "final_extra_length_mm": 6.912198908685241,
+      "runtime_seconds": 374.7198643999873,
+      "candidate_evaluations": 711,
+      "candidate_budget": 720,
+      "budget_used_percent": 98.75,
+      "stop_reason": "TARGET_LIMIT"
+    },
+    "D": {
+      "final_collision_pair_count": 42909,
+      "net_collision_reduction": 6609,
+      "reduction_percent": 13.346661819944263,
+      "initial_collision_pair_count": 49518,
+      "final_extra_length_mm": 7.156090826145373,
+      "runtime_seconds": 373.38475279998966,
+      "candidate_evaluations": 720,
+      "candidate_budget": 720,
+      "budget_used_percent": 100.0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED"
+    }
+  },
+  "expected_value_checks": [
+    {
+      "item": "initial_collision_pair_count",
+      "source": "ledger.json",
+      "actual": [
+        49518
+      ],
+      "expected": 49518,
+      "match": true
+    },
+    {
+      "item": "final_collision_pair_count",
+      "group": "A",
+      "source": "ledger.json",
+      "actual": 44274.0,
+      "expected": 44274.0,
+      "match": true
+    },
+    {
+      "item": "final_collision_pair_count",
+      "group": "B",
+      "source": "ledger.json",
+      "actual": 43750.0,
+      "expected": 43750.0,
+      "match": true
+    },
+    {
+      "item": "final_collision_pair_count",
+      "group": "C",
+      "source": "ledger.json",
+      "actual": 43161.0,
+      "expected": 43161.0,
+      "match": true
+    },
+    {
+      "item": "final_collision_pair_count",
+      "group": "D",
+      "source": "ledger.json",
+      "actual": 42909.0,
+      "expected": 42909.0,
+      "match": true
+    },
+    {
+      "item": "reduction_percent",
+      "group": "A",
+      "source": "ledger.json",
+      "actual": 10.590088452683872,
+      "expected": 10.59,
+      "match": true
+    },
+    {
+      "item": "reduction_percent",
+      "group": "B",
+      "source": "ledger.json",
+      "actual": 11.648289510884931,
+      "expected": 11.65,
+      "match": true
+    },
+    {
+      "item": "reduction_percent",
+      "group": "C",
+      "source": "ledger.json",
+      "actual": 12.83775596752696,
+      "expected": 12.84,
+      "match": true
+    },
+    {
+      "item": "reduction_percent",
+      "group": "D",
+      "source": "ledger.json",
+      "actual": 13.346661819944263,
+      "expected": 13.35,
+      "match": true
+    },
+    {
+      "item": "final_extra_length_mm",
+      "group": "A",
+      "source": "ledger.json",
+      "actual": 8.405220067084883,
+      "expected": 8.40522,
+      "match": true
+    },
+    {
+      "item": "final_extra_length_mm",
+      "group": "B",
+      "source": "ledger.json",
+      "actual": 8.8930039020197,
+      "expected": 8.893004,
+      "match": true
+    },
+    {
+      "item": "final_extra_length_mm",
+      "group": "C",
+      "source": "ledger.json",
+      "actual": 6.912198908685241,
+      "expected": 6.912199,
+      "match": true
+    },
+    {
+      "item": "final_extra_length_mm",
+      "group": "D",
+      "source": "ledger.json",
+      "actual": 7.156090826145373,
+      "expected": 7.156091,
+      "match": true
+    },
+    {
+      "item": "runtime_seconds",
+      "group": "A",
+      "source": "ledger.json",
+      "actual": 199.7273334999336,
+      "expected": 199.7,
+      "match": true
+    },
+    {
+      "item": "runtime_seconds",
+      "group": "B",
+      "source": "ledger.json",
+      "actual": 209.84818090009503,
+      "expected": 209.8,
+      "match": true
+    },
+    {
+      "item": "runtime_seconds",
+      "group": "C",
+      "source": "ledger.json",
+      "actual": 374.7198643999873,
+      "expected": 374.7,
+      "match": true
+    },
+    {
+      "item": "runtime_seconds",
+      "group": "D",
+      "source": "ledger.json",
+      "actual": 373.38475279998966,
+      "expected": 373.4,
+      "match": true
+    },
+    {
+      "item": "candidate_evaluations",
+      "group": "A",
+      "source": "ledger.json",
+      "actual": 666.0,
+      "expected": 666.0,
+      "match": true
+    },
+    {
+      "item": "candidate_evaluations",
+      "group": "B",
+      "source": "ledger.json",
+      "actual": 720.0,
+      "expected": 720.0,
+      "match": true
+    },
+    {
+      "item": "candidate_evaluations",
+      "group": "C",
+      "source": "ledger.json",
+      "actual": 711.0,
+      "expected": 711.0,
+      "match": true
+    },
+    {
+      "item": "candidate_evaluations",
+      "group": "D",
+      "source": "ledger.json",
+      "actual": 720.0,
+      "expected": 720.0,
+      "match": true
+    }
+  ],
+  "layout_checks": [
+    {
+      "outside_canvas": [],
+      "note_overlaps": [],
+      "skipped_ownerless_texts": [
+        "A 基线原版\n缓存关 / 松弛 0 mm",
+        "A 基线原版\n缓存关 / 松弛 0 mm",
+        "B 仅结构化生成缓存\n缓存开 / 松弛 0 mm",
+        "B 仅结构化生成缓存\n缓存开 / 松弛 0 mm",
+        "C 仅窗口松弛\n缓存关 / 松弛 1e-05 mm",
+        "C 仅窗口松弛\n缓存关 / 松弛 1e-05 mm",
+        "D 两者同时启用\n缓存开 / 松弛 1e-05 mm",
+        "D 两者同时启用\n缓存开 / 松弛 1e-05 mm",
+        "终态近距对数（0.1 mm 净距）",
+        "0",
+        "0",
+        "10000",
+        "10000",
+        "20000",
+        "20000",
+        "30000",
+        "30000",
+        "40000",
+        "40000",
+        "50000",
+        "50000",
+        "60000",
+        "60000"
+      ],
+      "figure": "f1_group_pairs"
+    },
+    {
+      "outside_canvas": [],
+      "note_overlaps": [],
+      "skipped_ownerless_texts": [
+        "实际候选评价次数 candidate_evaluations（次）",
+        "0",
+        "0",
+        "100",
+        "100",
+        "200",
+        "200",
+        "300",
+        "300",
+        "400",
+        "400",
+        "500",
+        "500",
+        "600",
+        "600",
+        "700",
+        "700",
+        "近距对数 collision_pair_count（0.1 mm 净距）",
+        "42000",
+        "42000",
+        "43000",
+        "43000",
+        "44000",
+        "44000",
+        "45000",
+        "45000",
+        "46000",
+        "46000",
+        "47000",
+        "47000",
+        "48000",
+        "48000",
+        "49000",
+        "49000",
+        "50000",
+        "50000",
+        "51000",
+        "51000",
+        "660",
+        "660",
+        "680",
+        "680",
+        "700",
+        "700",
+        "720",
+        "720",
+        "43000",
+        "43000",
+        "43500",
+        "43500",
+        "44000",
+        "44000",
+        "44500",
+        "44500"
+      ],
+      "figure": "f2_pairs_vs_evaluations"
+    },
+    {
+      "outside_canvas": [],
+      "note_overlaps": [],
+      "skipped_ownerless_texts": [
+        "A",
+        "A",
+        "B",
+        "B",
+        "C",
+        "C",
+        "D",
+        "D",
+        "额外长度 final_extra_length_mm（mm）",
+        "0",
+        "0",
+        "2",
+        "2",
+        "4",
+        "4",
+        "6",
+        "6",
+        "8",
+        "8",
+        "10",
+        "10",
+        "12",
+        "12",
+        "A",
+        "A",
+        "B",
+        "B",
+        "C",
+        "C",
+        "D",
+        "D",
+        "候选评价预算使用率（%）",
+        "0",
+        "0",
+        "20",
+        "20",
+        "40",
+        "40",
+        "60",
+        "60",
+        "80",
+        "80",
+        "100",
+        "100",
+        "120",
+        "120",
+        "140",
+        "140",
+        "运行时间 runtime_seconds（s，单次实测）",
+        "0",
+        "0",
+        "100",
+        "100",
+        "200",
+        "200",
+        "300",
+        "300",
+        "400",
+        "400",
+        "500",
+        "500",
+        "600",
+        "600"
+      ],
+      "figure": "f3_costs"
+    },
+    {
+      "outside_canvas": [],
+      "note_overlaps": [],
+      "skipped_ownerless_texts": [
+        "x（mm）",
+        "0",
+        "0",
+        "50",
+        "50",
+        "100",
+        "100",
+        "150",
+        "150",
+        "y（mm）",
+        "-20",
+        "-20",
+        "0",
+        "0",
+        "20",
+        "20",
+        "40",
+        "40",
+        "60",
+        "60",
+        "80",
+        "80",
+        "100",
+        "100",
+        "120",
+        "120",
+        "140",
+        "140",
+        "160",
+        "160",
+        "x（mm）",
+        "0",
+        "0",
+        "20",
+        "20",
+        "40",
+        "40",
+        "60",
+        "60",
+        "80",
+        "80",
+        "100",
+        "100",
+        "120",
+        "120",
+        "140",
+        "140",
+        "160",
+        "160",
+        "z（mm，真实值 0 / 1 / 2 mm）",
+        "0",
+        "0",
+        "1",
+        "1",
+        "2",
+        "2",
+        "20",
+        "20",
+        "60",
+        "60",
+        "100",
+        "100",
+        "130",
+        "130",
+        "0",
+        "0",
+        "50",
+        "50",
+        "100",
+        "100",
+        "150",
+        "150",
+        "0",
+        "0",
+        "1",
+        "1",
+        "2",
+        "2",
+        "20",
+        "20",
+        "60",
+        "60",
+        "100",
+        "100",
+        "130",
+        "130",
+        "0",
+        "0",
+        "50",
+        "50",
+        "100",
+        "100",
+        "150",
+        "150",
+        "0",
+        "0",
+        "1",
+        "1",
+        "2",
+        "2",
+        "层 0（z = 0 mm）",
+        "层 1（z = 1 mm）",
+        "层 2（z = 2 mm）",
+        "余弦过渡段",
+        "平面参考（Layer(0,0)，未抬升）",
+        "起点",
+        "终点"
+      ],
+      "figure": "f6_route_geometry"
+    }
+  ],
+  "warnings": [],
+  "z_exaggeration": 20,
+  "selected_route": {
+    "criterion": "在 final_routes.json 全部路线中按（余弦过渡段数最多，峰值 z 最高，抬升平面段总长最长，route_id 最小）排序取第一条",
+    "candidate_count": 24,
+    "max_transition_count": 2,
+    "tied_at_max_transitions": 24,
+    "route_id": 301,
+    "main_layer": 2,
+    "transition_count": 2,
+    "peak_z_mm": 2.0,
+    "elevated_planar_length_mm": 254.5833137918179,
+    "primitive_count": 9
+  },
+  "figure6_notes": {
+    "planar_reference": "outputs/step_8_5_legacy_512_plot_geometry.json 经 src.multi_attribution.deserialize_plot + src.geometry_3d.lift_smoothed_route_to_layer，Layer(0, 0)",
+    "transition_deserialization": "src.fixed_1024_routing.deserialize_route3d",
+    "true_scale_panel": "（c）标题写明“真实高度比例”，z 与 x/y 同尺度",
+    "exaggerated_panel": "（d）标题写明“Z 轴放大 20 倍（真实层高 0/1/2 mm）”"
+  }
+}

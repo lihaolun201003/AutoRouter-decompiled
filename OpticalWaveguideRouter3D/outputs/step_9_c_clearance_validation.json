@@ -1,0 +1,613 @@
+{
+  "status": "PASS",
+  "clearance_source": "EXPLICIT_SYNTHETIC_INPUT_NOT_MANUFACTURING_STANDARD",
+  "synthetic_cases": [
+    {
+      "name": "layer_clear",
+      "seconds": 0.00022159999934956431,
+      "primitive_a_type": "LineSegment3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 0.5,
+      "distance_mm": 1,
+      "closest_point_a": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 1.0
+      },
+      "parameter_a": 0.5,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 1,
+      "upper_bound_mm": 1.000000001,
+      "error_bound_mm": 1.000000082740371e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+      "intersection_status": "DISJOINT",
+      "xy_intersection_kinds": [
+        "cross"
+      ],
+      "minimum_distance_mm": 1,
+      "margin_mm": 0.5,
+      "status": "CLEAR",
+      "layer_certificate": {
+        "status": "CLEAR_BY_LAYER_SEPARATION",
+        "distance_lower_bound_mm": 1,
+        "minimum_distance_mm": null,
+        "clearance_mm": 0.5
+      }
+    },
+    {
+      "name": "layer_collision",
+      "seconds": 0.0001702000154182315,
+      "primitive_a_type": "LineSegment3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 1.5,
+      "distance_mm": 1,
+      "closest_point_a": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 1.0
+      },
+      "parameter_a": 0.5,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 1,
+      "upper_bound_mm": 1.000000001,
+      "error_bound_mm": 1.000000082740371e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+      "intersection_status": "DISJOINT",
+      "xy_intersection_kinds": [
+        "cross"
+      ],
+      "minimum_distance_mm": 1,
+      "margin_mm": -0.5,
+      "status": "COLLISION",
+      "layer_certificate": null
+    },
+    {
+      "name": "layer_threshold",
+      "seconds": 0.00016820000018924475,
+      "primitive_a_type": "LineSegment3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 1.0,
+      "distance_mm": 1,
+      "closest_point_a": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 1.0
+      },
+      "parameter_a": 0.5,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 1,
+      "upper_bound_mm": 1.000000001,
+      "error_bound_mm": 1.000000082740371e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+      "intersection_status": "DISJOINT",
+      "xy_intersection_kinds": [
+        "cross"
+      ],
+      "minimum_distance_mm": 1,
+      "margin_mm": 0.0,
+      "status": "TOUCHING_THRESHOLD",
+      "layer_certificate": null
+    },
+    {
+      "name": "same_layer_cross",
+      "seconds": 0.0002001000102609396,
+      "primitive_a_type": "LineSegment3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 0,
+      "closest_point_a": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "parameter_a": 0.5,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 0,
+      "upper_bound_mm": 1e-09,
+      "error_bound_mm": 1e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+      "intersection_status": "INTERSECTING_WITHIN_GEOMETRY_TOL",
+      "xy_intersection_kinds": [
+        "cross"
+      ],
+      "minimum_distance_mm": 0,
+      "margin_mm": -0.1,
+      "status": "COLLISION",
+      "layer_certificate": null
+    },
+    {
+      "name": "near_layer",
+      "seconds": 0.00015440001152455807,
+      "primitive_a_type": "LineSegment3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 0.09433981132056604,
+      "closest_point_a": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "closest_point_b": {
+        "x": 0,
+        "y": 0.08,
+        "z": 0.05
+      },
+      "parameter_a": 0.0,
+      "parameter_b": 0.0,
+      "lower_bound_mm": 0.09433981032056604,
+      "upper_bound_mm": 0.09433981232056604,
+      "error_bound_mm": 9.999999994736442e-10,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+      "intersection_status": "DISJOINT",
+      "xy_intersection_kinds": [],
+      "minimum_distance_mm": 0.09433981132056604,
+      "margin_mm": -0.005660188679433964,
+      "status": "COLLISION",
+      "layer_certificate": null
+    },
+    {
+      "name": "transition_interior_cross",
+      "seconds": 0.00016609998419880867,
+      "primitive_a_type": "CosineTransition3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 0.0,
+      "closest_point_a": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "parameter_a": 0.5,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 0.0,
+      "upper_bound_mm": 1e-09,
+      "error_bound_mm": 1e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ADAPTIVE_CHORD_BOUNDS",
+      "intersection_status": "INTERSECTING_WITNESS",
+      "xy_intersection_kinds": [],
+      "minimum_distance_mm": 0.0,
+      "margin_mm": -0.1,
+      "status": "COLLISION",
+      "layer_certificate": null
+    },
+    {
+      "name": "transition_interior_nonzero",
+      "seconds": 0.0028863000334240496,
+      "primitive_a_type": "CosineTransition3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 0.1481830363217812,
+      "closest_point_a": {
+        "x": 5.022993985064029,
+        "y": 0.0,
+        "z": 0.5036118553146549
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.65
+      },
+      "parameter_a": 0.5022993985064029,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 0.14818299881149494,
+      "upper_bound_mm": 0.1481830373217812,
+      "error_bound_mm": 3.751028626597375e-08,
+      "converged": true,
+      "subdivision_count": 12,
+      "method": "ADAPTIVE_CHORD_BOUNDS",
+      "intersection_status": "DISJOINT",
+      "xy_intersection_kinds": [],
+      "minimum_distance_mm": 0.1481830363217812,
+      "margin_mm": 0.0481830363217812,
+      "status": "CLEAR",
+      "layer_certificate": null
+    },
+    {
+      "name": "not_converged",
+      "seconds": 0.0001503999810665846,
+      "primitive_a_type": "CosineTransition3D",
+      "primitive_b_type": "LineSegment3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 0.14841210066657062,
+      "closest_point_a": {
+        "x": 5.014851485148515,
+        "y": 0.0,
+        "z": 0.5023328573678365
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.65
+      },
+      "parameter_a": 0.5014851485148515,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 0.0,
+      "upper_bound_mm": 0.14841210166657062,
+      "error_bound_mm": 0.14841210066657062,
+      "converged": false,
+      "subdivision_count": 0,
+      "method": "ADAPTIVE_CHORD_BOUNDS",
+      "intersection_status": "UNRESOLVED",
+      "xy_intersection_kinds": [],
+      "minimum_distance_mm": 0.14841210066657062,
+      "margin_mm": 0.04841210066657062,
+      "status": "DISTANCE_NOT_CONVERGED",
+      "layer_certificate": null
+    },
+    {
+      "name": "transition_arc",
+      "seconds": 0.00021919998107478023,
+      "primitive_a_type": "CosineTransition3D",
+      "primitive_b_type": "PlanarArcSegment3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 9.155133597044475e-16,
+      "closest_point_a": {
+        "x": 5.000000000000001,
+        "y": 0.0,
+        "z": 0.5000000000000002
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "parameter_a": 0.5000000000000001,
+      "parameter_b": 0.0,
+      "lower_bound_mm": 0.0,
+      "upper_bound_mm": 1.0000009155133598e-09,
+      "error_bound_mm": 1e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ADAPTIVE_CHORD_BOUNDS",
+      "intersection_status": "UNRESOLVED",
+      "xy_intersection_kinds": [],
+      "minimum_distance_mm": 9.155133597044475e-16,
+      "margin_mm": -0.09999999999999909,
+      "status": "COLLISION",
+      "layer_certificate": null
+    },
+    {
+      "name": "transition_transition",
+      "seconds": 0.00017820001812651753,
+      "primitive_a_type": "CosineTransition3D",
+      "primitive_b_type": "CosineTransition3D",
+      "clearance_mm": 0.1,
+      "distance_mm": 0.0,
+      "closest_point_a": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "closest_point_b": {
+        "x": 5.0,
+        "y": 0.0,
+        "z": 0.5
+      },
+      "parameter_a": 0.5,
+      "parameter_b": 0.5,
+      "lower_bound_mm": 0.0,
+      "upper_bound_mm": 1e-09,
+      "error_bound_mm": 1e-09,
+      "converged": true,
+      "subdivision_count": 0,
+      "method": "ADAPTIVE_CHORD_BOUNDS",
+      "intersection_status": "INTERSECTING_WITNESS",
+      "xy_intersection_kinds": [],
+      "minimum_distance_mm": 0.0,
+      "margin_mm": -0.1,
+      "status": "COLLISION",
+      "layer_certificate": null
+    }
+  ],
+  "independent_transition_reference": {
+    "distance_mm": 0.14818303632178076,
+    "parameter": 0.5022993995075293
+  },
+  "lifted_saved_pairs": [
+    {
+      "label": "saved_cross",
+      "route_ids": [
+        0,
+        24
+      ],
+      "raw_2d_intersection_kinds": [
+        "cross"
+      ],
+      "intersection_consistent": true,
+      "minimum_distance_mm": 0.0,
+      "status": "COLLISION",
+      "primitive_pair_count": 25,
+      "read_only": true
+    },
+    {
+      "label": "saved_cross",
+      "route_ids": [
+        0,
+        25
+      ],
+      "raw_2d_intersection_kinds": [
+        "cross"
+      ],
+      "intersection_consistent": true,
+      "minimum_distance_mm": 0.0,
+      "status": "COLLISION",
+      "primitive_pair_count": 25,
+      "read_only": true
+    },
+    {
+      "label": "saved_cross",
+      "route_ids": [
+        0,
+        26
+      ],
+      "raw_2d_intersection_kinds": [
+        "cross"
+      ],
+      "intersection_consistent": true,
+      "minimum_distance_mm": 0.0,
+      "status": "COLLISION",
+      "primitive_pair_count": 25,
+      "read_only": true
+    },
+    {
+      "label": "saved_non_cross",
+      "route_ids": [
+        0,
+        1
+      ],
+      "raw_2d_intersection_kinds": [],
+      "intersection_consistent": true,
+      "minimum_distance_mm": 0.17499999999999716,
+      "status": "CLEAR",
+      "primitive_pair_count": 25,
+      "read_only": true
+    },
+    {
+      "label": "saved_non_cross",
+      "route_ids": [
+        0,
+        2
+      ],
+      "raw_2d_intersection_kinds": [],
+      "intersection_consistent": true,
+      "minimum_distance_mm": 0.3499999999999801,
+      "status": "CLEAR",
+      "primitive_pair_count": 25,
+      "read_only": true
+    },
+    {
+      "label": "saved_non_cross",
+      "route_ids": [
+        0,
+        3
+      ],
+      "raw_2d_intersection_kinds": [],
+      "intersection_consistent": true,
+      "minimum_distance_mm": 0.5249999999999915,
+      "status": "CLEAR",
+      "primitive_pair_count": 25,
+      "read_only": true
+    }
+  ],
+  "self_results": [
+    {
+      "route_id": 1,
+      "clearance_mm": 0.1,
+      "pair_results": [
+        {
+          "primitive_a_type": "LineSegment3D",
+          "primitive_b_type": "LineSegment3D",
+          "clearance_mm": 0.1,
+          "distance_mm": 10.04987562112089,
+          "closest_point_a": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "closest_point_b": {
+            "x": 10,
+            "y": 0,
+            "z": 1
+          },
+          "parameter_a": 1.0,
+          "parameter_b": 0.0,
+          "lower_bound_mm": 10.04987562012089,
+          "upper_bound_mm": 10.04987562212089,
+          "error_bound_mm": 1.000000082740371e-09,
+          "converged": true,
+          "subdivision_count": 0,
+          "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+          "intersection_status": "DISJOINT",
+          "xy_intersection_kinds": [],
+          "minimum_distance_mm": 10.04987562112089,
+          "margin_mm": 9.94987562112089,
+          "status": "CLEAR",
+          "layer_certificate": {
+            "status": "CLEAR_BY_LAYER_SEPARATION",
+            "distance_lower_bound_mm": 1,
+            "minimum_distance_mm": null,
+            "clearance_mm": 0.1
+          },
+          "primitive_a_index": 0,
+          "primitive_b_index": 2
+        }
+      ],
+      "adjacent_results": [
+        {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "STRICT_MONOTONE_SEPARATING_COORDINATE",
+          "axis": 0,
+          "positive_clearance_evaluated": false,
+          "primitive_a_index": 0,
+          "primitive_b_index": 1
+        },
+        {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "STRICT_MONOTONE_SEPARATING_COORDINATE",
+          "axis": 0,
+          "positive_clearance_evaluated": false,
+          "primitive_a_index": 1,
+          "primitive_b_index": 2
+        }
+      ],
+      "self_clearance_policy": "NONADJACENT_CLEARANCE_PLUS_ADJACENT_EXTRA_CONTACT_CHECK",
+      "status": "CLEAR",
+      "minimum_distance_mm": 10.04987562112089,
+      "margin_mm": 9.94987562112089,
+      "lower_bound_mm": 10.04987562012089,
+      "upper_bound_mm": 10.04987562212089,
+      "error_bound_mm": 1.000000082740371e-09,
+      "primitive_a_index": 0,
+      "primitive_b_index": 2,
+      "closest_point_a": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "closest_point_b": {
+        "x": 10,
+        "y": 0,
+        "z": 1
+      },
+      "parameter_a": 1.0,
+      "parameter_b": 0.0,
+      "minimum_primitive_candidates": [
+        [
+          0,
+          2
+        ]
+      ],
+      "minimum_primitive_identity_certified": true,
+      "minimum_distance_scope": "ALL_EVALUATED_PAIRS",
+      "intersection_status": "DISJOINT"
+    },
+    {
+      "route_id": 2,
+      "clearance_mm": 0.1,
+      "pair_results": [
+        {
+          "primitive_a_type": "LineSegment3D",
+          "primitive_b_type": "LineSegment3D",
+          "clearance_mm": 0.1,
+          "distance_mm": 0,
+          "closest_point_a": {
+            "x": 1.3333333333333333,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "closest_point_b": {
+            "x": 1.3333333333333333,
+            "y": -2.220446049250313e-16,
+            "z": 0.0
+          },
+          "parameter_a": 0.6666666666666666,
+          "parameter_b": 0.6666666666666667,
+          "lower_bound_mm": 0,
+          "upper_bound_mm": 1.000000222044605e-09,
+          "error_bound_mm": 1.000000222044605e-09,
+          "converged": true,
+          "subdivision_count": 0,
+          "method": "ANALYTIC_PLANAR_XY_PLUS_Z",
+          "intersection_status": "INTERSECTING_WITHIN_GEOMETRY_TOL",
+          "xy_intersection_kinds": [
+            "cross"
+          ],
+          "minimum_distance_mm": 0,
+          "margin_mm": -0.1,
+          "status": "COLLISION",
+          "layer_certificate": null,
+          "primitive_a_index": 0,
+          "primitive_b_index": 2
+        }
+      ],
+      "adjacent_results": [
+        {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "2D_EXACT_CONTACTS",
+          "positive_clearance_evaluated": false,
+          "primitive_a_index": 0,
+          "primitive_b_index": 1
+        },
+        {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "2D_EXACT_CONTACTS",
+          "positive_clearance_evaluated": false,
+          "primitive_a_index": 1,
+          "primitive_b_index": 2
+        }
+      ],
+      "self_clearance_policy": "NONADJACENT_CLEARANCE_PLUS_ADJACENT_EXTRA_CONTACT_CHECK",
+      "status": "COLLISION",
+      "minimum_distance_mm": 0,
+      "margin_mm": -0.1,
+      "lower_bound_mm": 0,
+      "upper_bound_mm": 1.000000222044605e-09,
+      "error_bound_mm": 1.000000222044605e-09,
+      "primitive_a_index": 0,
+      "primitive_b_index": 2,
+      "closest_point_a": {
+        "x": 1.3333333333333333,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "closest_point_b": {
+        "x": 1.3333333333333333,
+        "y": -2.220446049250313e-16,
+        "z": 0.0
+      },
+      "parameter_a": 0.6666666666666666,
+      "parameter_b": 0.6666666666666667,
+      "minimum_primitive_candidates": [
+        [
+          0,
+          2
+        ]
+      ],
+      "minimum_primitive_identity_certified": true,
+      "minimum_distance_scope": "ALL_EVALUATED_PAIRS",
+      "intersection_status": "INTERSECTING"
+    }
+  ],
+  "input_hashes": {
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_plot_geometry.json": "14403f100b73c22f89ea07cf329822347ad541dc6674e1949996a7d5f0523821",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_physical_events.jsonl": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8"
+  },
+  "source_unchanged": true
+}

@@ -1,0 +1,33 @@
+{
+  "figure": "v6_f6_coverage",
+  "title": "调度覆盖：不同目标对/目标侧/路线与重复访问",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v6_f6_coverage.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v6_f6_coverage.pdf",
+  "png_sha256": "a5ff6807cad619cf0f870414313e98b1aad9d75157c0440c95bbb79d4f5c9a31",
+  "pdf_sha256": "2c569cf5748639f61a435b5bbfbc44f66582c56e1dd0d099621bb87f52ded7af",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v6\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v6\\summary_v6.json"
+  ],
+  "source_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget"
+  ],
+  "source_sub_objects": [
+    "coverage.unique_target_pairs",
+    "coverage.unique_target_sides",
+    "coverage.unique_evaluated_target_sides",
+    "coverage.unique_routes_attempted",
+    "coverage.unique_routes_evaluated",
+    "coverage.unique_routes_touched_by_a_move",
+    "coverage.repeated_target_attempts",
+    "coverage.max_attempts_on_one_route"
+  ],
+  "rows_used": 22,
+  "notes": "coverage 只存在于 summary_<round>.json；comparison.csv 提供每一行的键",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v6",
+  "generated_utc": "2026-10-05T15:22:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "check": "window_slack_probe wording-fix rebuild: field-by-field comparison against the pre-fix backup",
+  "task": "team task-1 item (6): remove absolute-guarantee wording from scripts/verify_window_slack_v3.py, rebuild the probe JSON, verify the numbers are unchanged",
+  "review_date": "2026-10-05",
+  "rerun_command": ".venv\\Scripts\\python.exe -B scripts\\verify_window_slack_v3.py . outputs\\3d_strategy_v3\\window_slack_probe",
+  "script": "scripts/verify_window_slack_v3.py",
+  "script_changes": [
+    "module docstring: dropped 'become provably CLEAR'; the window move is now stated as pad clear/length -> (clearance+slack)/length, usable interval inset by delta=slack/length at both ends, window width shrinking by 2*delta, start move delta*(1-2f), run/length unchanged, and a marginal window dropping out of the enumeration once hi-lo < run/length",
+    "record.slack_basis: dropped 'so it cannot change any non-boundary decision'; now reports the measured result (331/331 recorded ambiguities rebuilt as CLEAR, task candidate totals 666 -> 666) and states that this is the outcome of this probe only",
+    "record.method: replaced 'each window shifted by slack/length (the exact window move ...)' with the corresponding-window matching within 2*delta and the delta*(1-2f) move",
+    "record.limitation: bounded to the measured 512 rows only, plus the note that a marginal window can drop out of the enumeration when its width shrinks by 2*delta",
+    "hoisted total_candidates_at_slack_zero / total_candidates_at_probe_slack into local variables shared by task_window_counts and the measured slack_basis text (same sums; no numeric change)"
+  ],
+  "files": {
+    "rebuilt": "outputs/3d_strategy_v3/window_slack_probe/window_slack_probe.json",
+    "rebuilt_sha256": "9cb209473edc59c373ca9d321e56438a224b5d97ec7dc45e4db00b0f8deb3241",
+    "backup_before_fix": "outputs/3d_strategy_v3/window_slack_probe/window_slack_probe.json.pre_wording_fix.bak",
+    "backup_sha256": "cabc805571b4375868c29efcd0cc4567101dcf44777accf1a9ec081f8879b58e"
+  },
+  "comparison": {
+    "leaf_paths_compared": 841,
+    "leaf_paths_only_in_rebuilt": [],
+    "leaf_paths_only_in_backup": [],
+    "changed_paths": [
+      "slack_basis",
+      "method",
+      "limitation"
+    ],
+    "changed_paths_are_wording_only": true,
+    "all_other_leaves_identical": true,
+    "changed_text_before_after": {
+      "slack_basis": {
+        "before": "slack = 1e-5 mm is >=10x the worst converged ADAPTIVE_CHORD_BOUNDS error bound (distance_tol=1e-6 mm) and 1e4x the analytic classification tol (1e-9 mm); it shifts a ~5 mm window by 2e-6 of its length and the 300 mm board by 3e-8, so it cannot change any non-boundary decision. The 0.1 mm clearance criterion is unchanged.",
+        "after": "slack = 1e-5 mm is >=10x the worst converged ADAPTIVE_CHORD_BOUNDS error bound (distance_tol=1e-6 mm) and 1e4x the analytic classification tol (1e-9 mm); in this rebuild it insets each usable window by delta=slack/length at both ends (width shrinks by 2*delta) and moves a window start by delta*(1-2f). Measured on the saved 512 rows: 331/331 recorded ambiguities rebuilt as CLEAR, with task candidate totals 666 -> 666. The 0.1 mm clearance criterion is unchanged, and this is the measured outcome of this probe only, not a guarantee about other inputs or candidates."
+      },
+      "method": {
+        "before": "Reconstruct every recorded SELF_AMBIGUOUS_CLEARANCE row from frozen planar geometry and saved CROSS anchors, then rebuild it with each window shifted by slack/length (the exact window move that elevation_candidates performs when the pad grows). No routing, no threshold change, no acceptance-rule change.",
+        "after": "Reconstruct every recorded SELF_AMBIGUOUS_CLEARANCE row from frozen planar geometry and saved CROSS anchors, then rebuild it with the corresponding window of the slack-grown enumeration, matched within 2*delta of the recorded start (the delta*(1-2f) move elevation_candidates performs when the pad grows by slack/length). No routing, no clearance-threshold change, no acceptance-rule change; the reported numbers are the measured outcome of this rebuild on the saved 512 rows."
+      },
+      "limitation": {
+        "before": "Covers the saved 512 ambiguous rows only; 1024 was not individually rebuilt in the review and is not claimed here. Self-clearance status alone is reported, not complete candidate acceptability; centerline proximity is not loss or manufacturability.",
+        "after": "Measured on the saved 512 ambiguous rows only; 1024 and other inputs were not individually rebuilt here and no claim is made about them. A marginally feasible window can drop out of the enumeration once its width shrinks by 2*delta, so unchanged candidate totals on these 31 tasks are an observation about these tasks, not a rule. Self-clearance status alone is reported, not complete candidate acceptability; centerline proximity is not loss or manufacturability."
+      }
+    }
+  },
+  "key_numbers": {
+    "recorded_rows": {
+      "before": 331,
+      "after": 331
+    },
+    "unique_tasks": {
+      "before": 31,
+      "after": 31
+    },
+    "status_after_shift_CLEAR": {
+      "before": 331,
+      "after": 331
+    },
+    "status_after_shift_any_other_status": {
+      "before": 0,
+      "after": 0
+    },
+    "total_candidates_at_slack_zero": {
+      "before": 666,
+      "after": 666
+    },
+    "total_candidates_at_probe_slack": {
+      "before": 666,
+      "after": 666
+    },
+    "tasks_with_fewer_candidates_after_shift": {
+      "before": 0,
+      "after": 0
+    },
+    "failure_shifts_on_recorded_tasks": {
+      "before": {},
+      "after": {}
+    },
+    "samples_identical": true,
+    "source_hashes_identical": true,
+    "per_task_candidate_counts_and_failure_reasons_identical": true,
+    "review_date": {
+      "before": "2026-10-05",
+      "after": "2026-10-05"
+    }
+  },
+  "thresholds_unchanged": {
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5,
+    "window_slack_mm": 0.00001,
+    "note": "the rebuild changed wording only; the 0.1 mm clearance criterion, the radius rule and every acceptance rule were not touched"
+  },
+  "verdict": "PASS",
+  "note": "Only three wording fields (slack_basis, method, limitation) differ from the pre-fix backup; every number, task record, failure reason, sample and source hash is equal. The probe JSON reference in docs/reports/step_16_strategy_v3.md section 1.4 therefore still holds."
+}

@@ -1,0 +1,24 @@
+{
+  "k": 16,
+  "start_state": "outputs/3d_strategy_v3/512_ablation/D_both_enabled",
+  "basic_cap": 400,
+  "full_cap": 60,
+  "frozen_diagnostic_set": [
+    "outputs/3d_strategy_v4/512_full_layout/audit/side_audit.json ",
+    "(120 sides, saved before any v4 candidate evaluation)"
+  ],
+  "accounting": {
+    "basic_evaluations_in_v4_audit_reference": 2781,
+    "full_checks_in_v4_audit_reference": 2583,
+    "basic_evaluations": 2601,
+    "full_checks": 60,
+    "full_checks_skipped_by_cap": 2541
+  },
+  "sides_measured": 90,
+  "sides_with_any_full_accept": 3,
+  "sides_where_prefix_lost_a_better_or_equal_candidate": 2,
+  "total_exhaustive_net": 769,
+  "total_prefix_net": 758,
+  "claim_limit": "a fixed-diagnostic-set prefix-versus-full comparison; it is NOT a whole-board optimality guarantee for either policy",
+  "seconds": 498.57537330000196
+}

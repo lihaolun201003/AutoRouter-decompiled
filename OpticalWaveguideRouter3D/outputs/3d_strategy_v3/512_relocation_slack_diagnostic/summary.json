@@ -1,0 +1,397 @@
+{
+  "scale": 512,
+  "task": "relocation_slack_diagnostic",
+  "dataset": "LEGACY_512_SMOOTHED_P0",
+  "window_slack_mm": 1e-05,
+  "generation_failure_cache": false,
+  "budget_ceiling": 720,
+  "target_count": 20,
+  "start_state": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2\\512_three_layer_abc\\final_routes_B.json",
+    "sha256": "1df60dbdae5c16abef06f90bcca0c1176a5b7d6cef3b497ece4253c941be1710",
+    "collisions": 43750,
+    "elevated_routes": 24,
+    "total_length_mm": 70840.20266104877,
+    "extra_length_vs_planar_mm": 8.89300390194694,
+    "unresolved_pairs": 3
+  },
+  "comparison": [
+    {
+      "mode": "D",
+      "window_slack_mm": 1e-05,
+      "final_collision_pairs": 42112,
+      "old_final_collision_pairs": 42112,
+      "net_reduction": 1638,
+      "accepted_moves": 8,
+      "first_elevations": 8,
+      "relocations": 0,
+      "old_relocations": 0,
+      "relocation_victim_attempts": 0,
+      "old_relocation_victim_attempts": 0,
+      "relocation_candidate_evaluations": 0,
+      "old_relocation_candidate_evaluations": 0,
+      "failed_no_movable_route": 10,
+      "failed_no_candidates": 0,
+      "failed_all_rejected": 0,
+      "candidate_evaluations": 324,
+      "old_candidate_evaluations": 324,
+      "generated_candidates": 324,
+      "full_neighbor_checks": 324,
+      "step_length_delta_total_mm": 4.122276684604003,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "runtime_seconds": 114.15715290000662,
+      "stop_reason": "TARGET_LIST_FINISHED",
+      "final_unresolved_pairs": 3
+    },
+    {
+      "mode": "E",
+      "window_slack_mm": 1e-05,
+      "final_collision_pairs": 42083,
+      "old_final_collision_pairs": 42112,
+      "net_reduction": 1667,
+      "accepted_moves": 9,
+      "first_elevations": 8,
+      "relocations": 1,
+      "old_relocations": 0,
+      "relocation_victim_attempts": 16,
+      "old_relocation_victim_attempts": 28,
+      "relocation_candidate_evaluations": 18,
+      "old_relocation_candidate_evaluations": 126,
+      "failed_no_movable_route": 0,
+      "failed_no_candidates": 3,
+      "failed_all_rejected": 0,
+      "candidate_evaluations": 342,
+      "old_candidate_evaluations": 450,
+      "generated_candidates": 342,
+      "full_neighbor_checks": 333,
+      "step_length_delta_total_mm": 4.556504953579861,
+      "final_extra_length_vs_planar_mm": 13.449508855526801,
+      "runtime_seconds": 129.8023290000856,
+      "stop_reason": "TARGET_LIST_FINISHED",
+      "final_unresolved_pairs": 3
+    }
+  ],
+  "movement_stats": {
+    "D": {
+      "FIRST_ELEVATION": {
+        "victim_attempts_total": 8,
+        "victim_attempts_with_generation": 8,
+        "victim_attempts_skipped_no_generation": 0,
+        "skip_statuses": {},
+        "generated_candidates": 324,
+        "basic_evaluations": 324,
+        "basic_passed": 324,
+        "basic_rejected": 0,
+        "full_acceptance_checks": 324,
+        "full_acceptance_passed": 324,
+        "accepted_edits": 8,
+        "generation_failures": {},
+        "basic_rejection_reason_occurrences": {},
+        "basic_rejection_candidates_with_reason": {},
+        "full_rejection_reason_occurrences": {},
+        "full_rejection_candidates_with_reason": {}
+      },
+      "RELOCATION": {
+        "victim_attempts_total": 28,
+        "victim_attempts_with_generation": 0,
+        "victim_attempts_skipped_no_generation": 28,
+        "skip_statuses": {
+          "ROUTE_ALREADY_ELEVATED_NOT_ALLOWED_IN_D": 28
+        },
+        "generated_candidates": 0,
+        "basic_evaluations": 0,
+        "basic_passed": 0,
+        "basic_rejected": 0,
+        "full_acceptance_checks": 0,
+        "full_acceptance_passed": 0,
+        "accepted_edits": 0,
+        "generation_failures": {},
+        "basic_rejection_reason_occurrences": {},
+        "basic_rejection_candidates_with_reason": {},
+        "full_rejection_reason_occurrences": {},
+        "full_rejection_candidates_with_reason": {}
+      }
+    },
+    "E": {
+      "FIRST_ELEVATION": {
+        "victim_attempts_total": 8,
+        "victim_attempts_with_generation": 8,
+        "victim_attempts_skipped_no_generation": 0,
+        "skip_statuses": {},
+        "generated_candidates": 324,
+        "basic_evaluations": 324,
+        "basic_passed": 324,
+        "basic_rejected": 0,
+        "full_acceptance_checks": 324,
+        "full_acceptance_passed": 324,
+        "accepted_edits": 8,
+        "generation_failures": {},
+        "basic_rejection_reason_occurrences": {},
+        "basic_rejection_candidates_with_reason": {},
+        "full_rejection_reason_occurrences": {},
+        "full_rejection_candidates_with_reason": {}
+      },
+      "RELOCATION": {
+        "victim_attempts_total": 16,
+        "victim_attempts_with_generation": 16,
+        "victim_attempts_skipped_no_generation": 0,
+        "skip_statuses": {},
+        "generated_candidates": 18,
+        "basic_evaluations": 18,
+        "basic_passed": 9,
+        "basic_rejected": 9,
+        "full_acceptance_checks": 9,
+        "full_acceptance_passed": 1,
+        "accepted_edits": 1,
+        "generation_failures": {
+          "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 4,
+          "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 11
+        },
+        "basic_rejection_reason_occurrences": {
+          "TARGET_NOT_CLEARED": 9
+        },
+        "basic_rejection_candidates_with_reason": {
+          "TARGET_NOT_CLEARED": 9
+        },
+        "full_rejection_reason_occurrences": {
+          "NO_STRICT_GLOBAL_DECREASE": 8
+        },
+        "full_rejection_candidates_with_reason": {
+          "NO_STRICT_GLOBAL_DECREASE": 8
+        }
+      }
+    }
+  },
+  "step_status": {
+    "D": {
+      "NO_MOVABLE_ROUTE": 10,
+      "ELEVATED": 8,
+      "TARGET_NO_LONGER_COLLIDING": 2
+    },
+    "E": {
+      "NO_CANDIDATES_GENERATED": 3,
+      "RELOCATED": 1,
+      "TARGET_NO_LONGER_COLLIDING": 8,
+      "ELEVATED": 8
+    }
+  },
+  "length_ledger": {
+    "D": {
+      "start_total_length_mm": 70840.20266104877,
+      "planar_total_length_mm": 70831.30965714682,
+      "final_total_length_mm": 70844.32493773337,
+      "delta_vs_diagnostic_start_mm": 4.122276684604003,
+      "delta_vs_diagnostic_start_check_mm": 4.122276684601275,
+      "delta_vs_diagnostic_start_consistent": true,
+      "start_extra_length_vs_planar_mm": 8.89300390194694,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "accepted_move_count": 8,
+      "negative_step_count": 0,
+      "negative_step_total_mm": 0.0,
+      "first_elevation_step_delta_mm": 4.122276684601275,
+      "relocation_step_delta_mm": 0.0,
+      "note": "step delta = new route length - previous route length, may be negative; delta_vs_diagnostic_start = final - start of this diagnostic; extra_length_vs_planar = terminal geometry - frozen planar z=0 geometry"
+    },
+    "E": {
+      "start_total_length_mm": 70840.20266104877,
+      "planar_total_length_mm": 70831.30965714682,
+      "final_total_length_mm": 70844.75916600235,
+      "delta_vs_diagnostic_start_mm": 4.556504953579861,
+      "delta_vs_diagnostic_start_check_mm": 4.556504953570993,
+      "delta_vs_diagnostic_start_consistent": true,
+      "start_extra_length_vs_planar_mm": 8.89300390194694,
+      "final_extra_length_vs_planar_mm": 13.449508855526801,
+      "accepted_move_count": 9,
+      "negative_step_count": 0,
+      "negative_step_total_mm": 0.0,
+      "first_elevation_step_delta_mm": 4.122276684601275,
+      "relocation_step_delta_mm": 0.43422826896971856,
+      "note": "step delta = new route length - previous route length, may be negative; delta_vs_diagnostic_start = final - start of this diagnostic; extra_length_vs_planar = terminal geometry - frozen planar z=0 geometry"
+    }
+  },
+  "candidate_correspondence": {
+    "refreshed_by": "scripts/analyze_relocation_slack_diagnostic.py",
+    "file": "candidate_correspondence.json",
+    "ALL_MOVEMENT_CLASSES": {
+      "scope": "ALL movement classes (208 recorded rows: relocation + first elevation)",
+      "old_self_ambiguous_rows": 208,
+      "matched": 148,
+      "unmatched": {
+        "TASK_NOT_REACHED_IN_NEW_RUN": 60
+      },
+      "ambiguous_multiple_matches": 0,
+      "old_to_new_basic_status": {
+        "REJECTED -> ACCEPTED_TARGET_PAIR_ONLY": 143,
+        "REJECTED -> REJECTED": 5
+      }
+    },
+    "RELOCATION_ONLY": {
+      "scope": "RELOCATION candidates only (70 of the 208 recorded rows)",
+      "old_self_ambiguous_rows": 70,
+      "matched": 10,
+      "unmatched": {
+        "TASK_NOT_REACHED_IN_NEW_RUN": 60
+      },
+      "ambiguous_multiple_matches": 0,
+      "old_to_new_basic_status": {
+        "REJECTED -> REJECTED": 5,
+        "REJECTED -> ACCEPTED_TARGET_PAIR_ONLY": 5
+      }
+    }
+  },
+  "rechecks": {
+    "D": {
+      "tag": "D",
+      "reloaded_route_count": 512,
+      "collision_pair_set_matches_incremental": true,
+      "unresolved_pair_set_matches_incremental": true,
+      "rechecked_close_pair_count": 42112,
+      "rechecked_unresolved_pair_count": 3,
+      "checks": 130816,
+      "recheck_seconds": 16.653223700006492,
+      "final_transition_count": 64,
+      "verdict": "PASS"
+    },
+    "E": {
+      "tag": "E",
+      "reloaded_route_count": 512,
+      "collision_pair_set_matches_incremental": true,
+      "unresolved_pair_set_matches_incremental": true,
+      "rechecked_close_pair_count": 42083,
+      "rechecked_unresolved_pair_count": 3,
+      "checks": 130816,
+      "recheck_seconds": 18.51876450004056,
+      "final_transition_count": 64,
+      "verdict": "PASS"
+    }
+  },
+  "recheck_geometry": {
+    "D": {
+      "endpoint_invariant": true,
+      "joins_C0_C1_direction": true,
+      "transition_radius_pass": true,
+      "xy_projection_preserved": true,
+      "xy_failures": []
+    },
+    "E": {
+      "endpoint_invariant": true,
+      "joins_C0_C1_direction": true,
+      "transition_radius_pass": true,
+      "xy_projection_preserved": true,
+      "xy_failures": []
+    }
+  },
+  "note": "same budget ceiling for both modes; actual candidate counts differ and are reported as measured",
+  "per_target_evaluations": {
+    "new_D": {
+      "sum_of_per_target_evaluations": 324,
+      "sum_of_recorded_candidate_rows": 324,
+      "ledger_candidate_evaluations": 324,
+      "every_target_matches_its_rows": true,
+      "expected_total": 324,
+      "verdict": "PASS"
+    },
+    "new_E": {
+      "sum_of_per_target_evaluations": 342,
+      "sum_of_recorded_candidate_rows": 342,
+      "ledger_candidate_evaluations": 342,
+      "every_target_matches_its_rows": true,
+      "expected_total": 342,
+      "verdict": "PASS"
+    }
+  },
+  "validations": {
+    "unit_conversion_all": {
+      "checked_rows": 148,
+      "violations": 0,
+      "max_abs_shift_mm": 1.0000000016197055e-05,
+      "max_abs_shift_param": 1.8148820335461835e-07,
+      "expected_bound_mm": 2e-05,
+      "within_bound": true,
+      "rule": "start_shift_mm = start_shift_param x the primitive length; the parameter shift is bounded by 2*slack/length, so the millimetre shift is bounded by 2*slack"
+    },
+    "unit_conversion_relocation": {
+      "checked_rows": 10,
+      "violations": 0,
+      "max_abs_shift_mm": 1.0000000016197055e-05,
+      "max_abs_shift_param": 8.067769274866521e-08,
+      "expected_bound_mm": 2e-05,
+      "within_bound": true,
+      "rule": "start_shift_mm = start_shift_param x the primitive length; the parameter shift is bounded by 2*slack/length, so the millimetre shift is bounded by 2*slack"
+    },
+    "movement_class_filter": {
+      "all_scope_rows": 208,
+      "all_scope_classes": [
+        "FIRST_ELEVATION",
+        "RELOCATION"
+      ],
+      "relocation_scope_rows": 70,
+      "relocation_scope_classes": [
+        "RELOCATION"
+      ],
+      "relocation_rows_inside_all_scope": 70,
+      "expected_all": 208,
+      "expected_relocation": 70,
+      "verdict": "PASS"
+    },
+    "match_uniqueness": {
+      "all_scope": {
+        "matched": 148,
+        "ambiguous_multiple": 0,
+        "unmatched": {
+          "TASK_NOT_REACHED_IN_NEW_RUN": 60
+        }
+      },
+      "relocation_scope": {
+        "matched": 10,
+        "ambiguous_multiple": 0,
+        "unmatched": {
+          "TASK_NOT_REACHED_IN_NEW_RUN": 60
+        }
+      },
+      "every_matched_has_exactly_one_match": true,
+      "note": "a MATCHED row requires exactly one admissible candidate; several admissible candidates are recorded as AMBIGUOUS_MULTIPLE_MATCHES and are not forced into a match"
+    },
+    "per_target_evaluations": {
+      "new_D": {
+        "sum_of_per_target_evaluations": 324,
+        "sum_of_recorded_candidate_rows": 324,
+        "ledger_candidate_evaluations": 324,
+        "every_target_matches_its_rows": true,
+        "expected_total": 324,
+        "verdict": "PASS"
+      },
+      "new_E": {
+        "sum_of_per_target_evaluations": 342,
+        "sum_of_recorded_candidate_rows": 342,
+        "ledger_candidate_evaluations": 342,
+        "every_target_matches_its_rows": true,
+        "expected_total": 342,
+        "verdict": "PASS"
+      }
+    },
+    "accepted_edit_counts": {
+      "new_D": 8,
+      "new_E": 9,
+      "total": 17,
+      "new_E_relocations": 1,
+      "new_E_first_elevations": 8,
+      "matched_basic_pass": 143,
+      "matched_full_pass": 139,
+      "matched_full_rejected": 4,
+      "note": "passing acceptance is not execution: only the selected winner of a step is executed"
+    },
+    "benefit_decomposition": {
+      "decomposition_holds": true,
+      "relocation_removed_equals_expected": true,
+      "saved_by_first_elevations": true,
+      "final_difference_is_29": true
+    },
+    "length_consistency": {
+      "agree_within_1e_9": true,
+      "step_delta_mm": 0.43422826896971856,
+      "difference_mm": 0.43422826897585765
+    },
+    "verdict": "PASS"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "control_config": {
+    "board_height": 150,
+    "waveguide_width": 0.05,
+    "spacing": 0.125,
+    "bend_radius": 5,
+    "tol": 1e-09,
+    "top_u_primary_order": "ascending"
+  },
+  "variant_config": {
+    "board_height": 150,
+    "waveguide_width": 0.05,
+    "spacing": 0.125,
+    "bend_radius": 5,
+    "tol": 1e-09,
+    "top_u_primary_order": "descending"
+  },
+  "isolation": {
+    "non_top_assignments_unchanged": true,
+    "top_assigned_ids_unchanged": true,
+    "top_track_pool_unchanged": true,
+    "grid_unchanged": true,
+    "non_top_geometry_unchanged": true
+  },
+  "invariant_counts": {
+    "input": 512,
+    "assigned": 454,
+    "unsupported": 58,
+    "no_available_track": 0,
+    "skeletons": 454,
+    "ordinary_curves": 454,
+    "special_curves": 58,
+    "total": 512
+  },
+  "changed_top_assignments": 112,
+  "checked_pairs": 130816,
+  "geometry_errors": [],
+  "self_counts": {
+    "cross": 0,
+    "touch": 0,
+    "overlap": 0
+  },
+  "control": {
+    "cross_points": 55935,
+    "cross_pairs": 49502,
+    "touch": 0,
+    "overlap": 0,
+    "touch_pairs": 0,
+    "overlap_pairs": 0,
+    "double_pairs": 6433,
+    "higher_pairs": 0,
+    "composition": {
+      "ordinary-ordinary": 6092,
+      "ordinary-special": 341,
+      "special-special": 0
+    },
+    "route_types": {
+      "U-U": 3735,
+      "U-Z": 0,
+      "Z-Z": 2698
+    },
+    "detailed_double": {
+      "topU-topU": 1903,
+      "bottomU-bottomU": 1832,
+      "bottomU-topU": 0,
+      "ordinaryZ-topU": 0,
+      "specialZ-topU": 0,
+      "ordinaryZ-ordinaryZ": 2357,
+      "ordinaryZ-specialZ": 341,
+      "specialZ-specialZ": 0
+    },
+    "top_interactions": {
+      "topU-topU": {
+        "cross_points": 6833,
+        "cross_pairs": 4930,
+        "double_pairs": 1903,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-bottomU": {
+        "cross_points": 0,
+        "cross_pairs": 0,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-ordinaryZ": {
+        "cross_points": 8502,
+        "cross_pairs": 8502,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-specialZ": {
+        "cross_points": 2198,
+        "cross_pairs": 2198,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-all": {
+        "cross_points": 17533,
+        "cross_pairs": 15630,
+        "double_pairs": 1903,
+        "touch": 0,
+        "overlap": 0
+      }
+    }
+  },
+  "variant": {
+    "cross_points": 52129,
+    "cross_pairs": 47599,
+    "touch": 0,
+    "overlap": 0,
+    "touch_pairs": 0,
+    "overlap_pairs": 0,
+    "double_pairs": 4530,
+    "higher_pairs": 0,
+    "composition": {
+      "ordinary-ordinary": 4189,
+      "ordinary-special": 341,
+      "special-special": 0
+    },
+    "route_types": {
+      "U-U": 1832,
+      "U-Z": 0,
+      "Z-Z": 2698
+    },
+    "detailed_double": {
+      "topU-topU": 0,
+      "bottomU-bottomU": 1832,
+      "bottomU-topU": 0,
+      "ordinaryZ-topU": 0,
+      "specialZ-topU": 0,
+      "ordinaryZ-ordinaryZ": 2357,
+      "ordinaryZ-specialZ": 341,
+      "specialZ-specialZ": 0
+    },
+    "top_interactions": {
+      "topU-topU": {
+        "cross_points": 3027,
+        "cross_pairs": 3027,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-bottomU": {
+        "cross_points": 0,
+        "cross_pairs": 0,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-ordinaryZ": {
+        "cross_points": 8502,
+        "cross_pairs": 8502,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-specialZ": {
+        "cross_points": 2198,
+        "cross_pairs": 2198,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      },
+      "topU-all": {
+        "cross_points": 13727,
+        "cross_pairs": 13727,
+        "double_pairs": 0,
+        "touch": 0,
+        "overlap": 0
+      }
+    }
+  },
+  "primary": {
+    "control": 1903,
+    "variant": 0,
+    "absolute_change": -1903,
+    "relative_change_percent": -100.0
+  },
+  "skeleton_top_u_double": {
+    "control": 1903,
+    "variant": 0
+  },
+  "nested_skeleton": {
+    "control": 1903,
+    "variant": 0
+  },
+  "nested_physical": {
+    "pair_count": 1903,
+    "control_double": 1903,
+    "variant_double": 0
+  },
+  "control_multi": {
+    "detected": 318,
+    "boundary": 2,
+    "legacy_eligible": 1222071,
+    "outside": 841477
+  },
+  "variant_multi": {
+    "candidates": 1835220,
+    "legacy_eligible": 1222071,
+    "outside": 613149,
+    "detected": 345,
+    "boundary": 2,
+    "non_multi": 1221724
+  },
+  "control_angles": {
+    "count": 55935,
+    "min": 2.8362859836847427,
+    "max": 90.0,
+    "mean": 78.63576658695646,
+    "median": 90.0,
+    "sum": 4398491.60404141,
+    "below_20_count": 1508
+  },
+  "variant_angles": {
+    "count": 52129,
+    "min": 2.8362859836848604,
+    "max": 90.0,
+    "mean": 79.82164188239051,
+    "median": 90.0,
+    "sum": 4161022.3696871344,
+    "below_20_count": 984
+  },
+  "control_losses": {
+    "total_length_mm": {
+      "count": 512,
+      "min": 31.88296326794895,
+      "max": 281.48296326794895,
+      "mean": 138.3424016741145,
+      "median": 151.63538982797678,
+      "sum": 70831.30965714663
+    },
+    "propagation_loss_db": {
+      "count": 512,
+      "min": 0.15941481633974475,
+      "max": 1.4074148163397449,
+      "mean": 0.6917120083705726,
+      "median": 0.758176949139884,
+      "sum": 354.15654828573315
+    },
+    "bend_loss_db": {
+      "count": 512,
+      "min": 1.6738161415274746,
+      "max": 4.78,
+      "mean": 4.572903817256148,
+      "median": 4.78,
+      "sum": 2341.326754435148
+    },
+    "known_non_crossing_loss_db": {
+      "count": 512,
+      "min": 2.425182126039724,
+      "max": 6.187414816339745,
+      "mean": 5.264615825626721,
+      "median": 5.310039816339745,
+      "sum": 2695.483302720881
+    }
+  },
+  "variant_losses": {
+    "total_length_mm": {
+      "count": 512,
+      "min": 21.43296326794899,
+      "max": 281.48296326794895,
+      "mean": 138.3424016741145,
+      "median": 152.62755552066824,
+      "sum": 70831.30965714663
+    },
+    "propagation_loss_db": {
+      "count": 512,
+      "min": 0.10716481633974495,
+      "max": 1.4074148163397449,
+      "mean": 0.6917120083705726,
+      "median": 0.7631377776033412,
+      "sum": 354.15654828573315
+    },
+    "bend_loss_db": {
+      "count": 512,
+      "min": 1.6738161415274746,
+      "max": 4.78,
+      "mean": 4.572903817256148,
+      "median": 4.78,
+      "sum": 2341.326754435148
+    },
+    "known_non_crossing_loss_db": {
+      "count": 512,
+      "min": 2.425182126039724,
+      "max": 6.187414816339745,
+      "mean": 5.264615825626721,
+      "median": 5.349539816339745,
+      "sum": 2695.483302720881
+    }
+  },
+  "variant_raw_counts": {
+    "cross": 52126,
+    "touch": 12
+  },
+  "track_ranges": {
+    "topU": {
+      "control_min": 688,
+      "control_max": 799,
+      "variant_min": 688,
+      "variant_max": 799
+    },
+    "bottomU": {
+      "control_min": 0,
+      "control_max": 111,
+      "variant_min": 0,
+      "variant_max": 111
+    },
+    "top_to_bottomZ": {
+      "control_min": 580,
+      "control_max": 687,
+      "variant_min": 580,
+      "variant_max": 687
+    },
+    "bottom_to_topZ": {
+      "control_min": 458,
+      "control_max": 579,
+      "variant_min": 458,
+      "variant_max": 579
+    }
+  },
+  "runtime": {
+    "control_load_rebuild_seconds": 0.5129074999713339,
+    "variant_allocator_geometry_seconds": 0.3458731000428088,
+    "skeleton_diagnostic_seconds": 0.3850603000028059,
+    "geometry_self_seconds": 0.04660830000648275,
+    "variant_raw_collision_seconds": 17.005122897040565,
+    "physical_consolidation_seconds": 2.5090248992783017,
+    "double_cross_analysis_seconds": 0.6748320999904536,
+    "multi_crossing_seconds": 7.413312199991196,
+    "loss_angle_seconds": 0.08961249998537824,
+    "total_seconds": 30.214109399996232
+  },
+  "prior_outputs_unchanged": true,
+  "physical_source_sha256": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8"
+}

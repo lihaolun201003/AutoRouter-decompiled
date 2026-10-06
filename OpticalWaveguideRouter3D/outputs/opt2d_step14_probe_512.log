@@ -1,0 +1,19 @@
+[512] 建立 base（F56 + 冻结半径）...
+base: mean=3.2947 max=5.4995 scenario5_max=5.7264 保护集合=[34, 287, 177, 309, 310, 311, 154, 153, 151, 152, 265]
+[512] 变体 rank_small05_strict（排序={'small_angle_penalty_db': 0.5}, 保护余量=0）...
+  [accept] route 177 u scenario_max=5.6854 (-0.0410) mean-0.0002
+  [accept] route 290 u scenario_max=5.6822 (-0.0032) mean-0.0000
+  [accept] route 190 freeform scenario_max=5.6820 (-0.0002) mean+0.0003
+  [accept] route 402 freeform scenario_max=5.6790 (-0.0031) mean-0.0002
+  [accept] route 105 freeform scenario_max=5.6392 (-0.0398) mean-0.0005
+  -> accepted=5 scenario_max=5.6392 (gain +0.0872) mean-0.0006
+[512] 变体 strict_slack001（排序={'small_angle_penalty_db': 0.5}, 保护余量=0.01）...
+  [accept] route 177 u scenario_max=5.6854 (-0.0410) mean-0.0002
+  [accept] route 290 u scenario_max=5.6822 (-0.0032) mean-0.0000
+  [accept] route 190 freeform scenario_max=5.6820 (-0.0002) mean+0.0003
+  [accept] route 402 freeform scenario_max=5.6790 (-0.0031) mean-0.0002
+  [accept] route 105 freeform scenario_max=5.6392 (-0.0398) mean-0.0005
+  -> accepted=5 scenario_max=5.6392 (gain +0.0872) mean-0.0006
+            variant  rank_small_penalty_db  protected_slack_db  accepted  candidates_tried  evaluations  runtime_s  rollback_fingerprint_mismatches  mean_loss_db  max_loss_db  scenario5_max_loss_db  scenario_gain_db  crossings_under_5_deg  crossings_under_20_deg  spacing_violation_count  physical_route_touch_count                                                                                                                                                                                                                            rejected
+rank_small05_strict                    0.5                0.00         5                33           33 427.172374                                0      3.294087     5.483709               5.639185          0.087203                     53                    2888                     1226                           0 {"max_worse": 9, "protected_worse_34": 9, "scenario_not_improved": 27, "protected_worse_265": 12, "protected_worse_154": 6, "protected_worse_153": 2, "protected_worse_151": 2, "protected_worse_152": 2, "protected_worse_287": 1}
+    strict_slack001                    0.5                0.01         5                28           28 432.198706                                0      3.294087     5.483709               5.639185          0.087203                     53                    2888                     1226                           0                                                                                {"max_worse": 5, "protected_worse_34": 4, "scenario_not_improved": 22, "protected_worse_265": 4, "protected_worse_287": 1, "protected_worse_154": 3}

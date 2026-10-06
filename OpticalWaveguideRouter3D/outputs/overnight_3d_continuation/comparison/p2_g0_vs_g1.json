@@ -1,0 +1,4533 @@
+{
+  "cells": [
+    {
+      "mode": "N",
+      "budget": 720,
+      "challenge": false,
+      "g0": {
+        "group": "V7_T0_N720",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_N720\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 33738,
+        "candidate_evaluations": 720,
+        "accepted_moves": 45,
+        "first_elevations": 45,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 50,
+        "net_collision_reduction": 9171,
+        "stage_length_delta_mm": 14.883190706808819,
+        "final_extra_length_vs_planar_mm": 22.039281532881432,
+        "final_transition_count": 138,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 3,
+        "final_elevated_route_count": 69,
+        "full_neighbor_checks": 720,
+        "full_acceptance_passes": 711,
+        "not_evaluated_candidates": 1827,
+        "generated_candidates": 2547,
+        "max_targets": 200,
+        "appended_candidate_budget": 720,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 12.7375,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 605.9950909999898,
+          "runtime_seconds": 606.7979560999665,
+          "run_seconds_including_recheck": 699.3533656999934
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "1440": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "2880": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 50,
+          "target_attempts": 50,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 100,
+          "unique_evaluated_target_sides": 45,
+          "unique_routes_attempted": 52,
+          "unique_routes_evaluated": 45,
+          "unique_routes_touched_by_a_move": 45,
+          "max_attempts_on_one_route": 27,
+          "target_pair_visit_histogram": {
+            "1": 50
+          },
+          "elevation_state_class_attempts": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 45,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 720,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "N",
+        "budget": 720
+      },
+      "g1": {
+        "group": "V8_G1_N720",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N720_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 33240,
+        "candidate_evaluations": 720,
+        "accepted_moves": 45,
+        "first_elevations": 45,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 50,
+        "net_collision_reduction": 9669,
+        "stage_length_delta_mm": 8.304339505077223,
+        "final_extra_length_vs_planar_mm": 15.460430331149837,
+        "final_transition_count": 138,
+        "final_path_window_transition_count": 76,
+        "final_logical_ramp_count": 138,
+        "final_physical_fragment_count": 142,
+        "final_unresolved_pairs": 3,
+        "final_elevated_route_count": 69,
+        "full_neighbor_checks": 717,
+        "full_acceptance_passes": 711,
+        "not_evaluated_candidates": 5185,
+        "generated_candidates": 5905,
+        "max_targets": 200,
+        "appended_candidate_budget": 720,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 13.429166666666667,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 532.5261805000482,
+          "runtime_seconds": 532.8946205000393,
+          "run_seconds_including_recheck": 578.5468956000404
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "1440": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "2880": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 50,
+          "target_attempts": 50,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 100,
+          "unique_evaluated_target_sides": 45,
+          "unique_routes_attempted": 52,
+          "unique_routes_evaluated": 45,
+          "unique_routes_touched_by_a_move": 45,
+          "max_attempts_on_one_route": 34,
+          "target_pair_visit_histogram": {
+            "1": 50
+          },
+          "elevation_state_class_attempts": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 45,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 720,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 5326,
+          "PATH_WINDOW_G1": 579
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 2304,
+          "path_window_candidates": 3601,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 12275,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 15876,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 5326,
+          "PATH_WINDOW_G1": 579
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 141,
+          "PATH_WINDOW_G1": 579
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 141,
+          "PATH_WINDOW_G1": 570
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 38,
+          "LINE_WINDOW_G0": 7
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 38,
+          "LINE_WINDOW_G0": 7
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 8138,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 5.294411275883505,
+        "line_window_step_length_delta_mm": 3.009928229192809,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "N",
+        "budget": 720
+      },
+      "delta_final_pairs": -498,
+      "delta_stage_length_mm": -6.578851201731595,
+      "delta_moves": 0,
+      "g1_better": true
+    },
+    {
+      "mode": "N",
+      "budget": 1440,
+      "challenge": false,
+      "g0": {
+        "group": "V7_T0_N1440",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_N1440\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 26437,
+        "candidate_evaluations": 1440,
+        "accepted_moves": 90,
+        "first_elevations": 90,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 99,
+        "net_collision_reduction": 16472,
+        "stage_length_delta_mm": 30.634837951583904,
+        "final_extra_length_vs_planar_mm": 37.79092877765652,
+        "final_transition_count": 228,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 1,
+        "final_elevated_route_count": 114,
+        "full_neighbor_checks": 1440,
+        "full_acceptance_passes": 1367,
+        "not_evaluated_candidates": 3357,
+        "generated_candidates": 4797,
+        "max_targets": 200,
+        "appended_candidate_budget": 1440,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 11.438888888888888,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 1221.5340902000898,
+          "runtime_seconds": 1222.3259196000872,
+          "run_seconds_including_recheck": 1316.3385224000085
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "1440": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26437,
+            "cumulative_removed": 18318,
+            "cumulative_created": 1846
+          },
+          "2880": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26437,
+            "cumulative_removed": 18318,
+            "cumulative_created": 1846
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 98,
+          "target_attempts": 99,
+          "repeated_target_attempts": 1,
+          "unique_target_sides": 196,
+          "unique_evaluated_target_sides": 91,
+          "unique_routes_attempted": 99,
+          "unique_routes_evaluated": 90,
+          "unique_routes_touched_by_a_move": 90,
+          "max_attempts_on_one_route": 58,
+          "target_pair_visit_histogram": {
+            "1": 97,
+            "2": 1
+          },
+          "elevation_state_class_attempts": {
+            "UU": 99,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 90,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 1440,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 2,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 98,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "N",
+        "budget": 1440
+      },
+      "g1": {
+        "group": "V8_G1_N1440",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N1440_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 26097,
+        "candidate_evaluations": 1440,
+        "accepted_moves": 90,
+        "first_elevations": 90,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 95,
+        "net_collision_reduction": 16812,
+        "stage_length_delta_mm": 16.23487384233158,
+        "final_extra_length_vs_planar_mm": 23.390964668404195,
+        "final_transition_count": 228,
+        "final_path_window_transition_count": 148,
+        "final_logical_ramp_count": 228,
+        "final_physical_fragment_count": 244,
+        "final_unresolved_pairs": 2,
+        "final_elevated_route_count": 114,
+        "full_neighbor_checks": 1437,
+        "full_acceptance_passes": 1339,
+        "not_evaluated_candidates": 16645,
+        "generated_candidates": 18085,
+        "max_targets": 200,
+        "appended_candidate_budget": 1440,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 11.675,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 1087.7559600999812,
+          "runtime_seconds": 1088.1334047999699,
+          "run_seconds_including_recheck": 1157.578464500024
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "1440": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26097,
+            "cumulative_removed": 19633,
+            "cumulative_created": 2821
+          },
+          "2880": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26097,
+            "cumulative_removed": 19633,
+            "cumulative_created": 2821
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 95,
+          "target_attempts": 95,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 190,
+          "unique_evaluated_target_sides": 91,
+          "unique_routes_attempted": 94,
+          "unique_routes_evaluated": 90,
+          "unique_routes_touched_by_a_move": 90,
+          "max_attempts_on_one_route": 39,
+          "target_pair_visit_histogram": {
+            "1": 95
+          },
+          "elevation_state_class_attempts": {
+            "UU": 95,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 90,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 1440,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 95,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 16946,
+          "PATH_WINDOW_G1": 1139
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 6192,
+          "path_window_candidates": 11893,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 25907,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 37800,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 16946,
+          "PATH_WINDOW_G1": 1139
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 301,
+          "PATH_WINDOW_G1": 1139
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 301,
+          "PATH_WINDOW_G1": 1038
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 74,
+          "LINE_WINDOW_G0": 16
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 74,
+          "LINE_WINDOW_G0": 16
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 13656,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 8.858777011045603,
+        "line_window_step_length_delta_mm": 7.37609683126324,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "N",
+        "budget": 1440
+      },
+      "delta_final_pairs": -340,
+      "delta_stage_length_mm": -14.399964109252323,
+      "delta_moves": 0,
+      "g1_better": true
+    },
+    {
+      "mode": "N",
+      "budget": 2880,
+      "challenge": false,
+      "g0": {
+        "group": "V7_T0_N2880",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_N2880\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 18444,
+        "candidate_evaluations": 2880,
+        "accepted_moves": 161,
+        "first_elevations": 161,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 190,
+        "net_collision_reduction": 24465,
+        "stage_length_delta_mm": 57.50418600924604,
+        "final_extra_length_vs_planar_mm": 64.66027683531865,
+        "final_transition_count": 370,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 1,
+        "final_elevated_route_count": 185,
+        "full_neighbor_checks": 2880,
+        "full_acceptance_passes": 2403,
+        "not_evaluated_candidates": 7326,
+        "generated_candidates": 10206,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 17.888198757763973,
+        "net_reduction_per_evaluation": 8.494791666666666,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 2404.530796899926,
+          "runtime_seconds": 2405.3306906999787,
+          "run_seconds_including_recheck": 2491.563458299963
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "1440": {
+            "candidate_evaluations": 1428,
+            "collision_pair_count": 26525,
+            "cumulative_removed": 18180,
+            "cumulative_created": 1796
+          },
+          "2880": {
+            "candidate_evaluations": 2880,
+            "collision_pair_count": 18444,
+            "cumulative_removed": 28224,
+            "cumulative_created": 3759
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 170,
+          "target_attempts": 190,
+          "repeated_target_attempts": 20,
+          "unique_target_sides": 340,
+          "unique_evaluated_target_sides": 166,
+          "unique_routes_attempted": 164,
+          "unique_routes_evaluated": 163,
+          "unique_routes_touched_by_a_move": 161,
+          "max_attempts_on_one_route": 104,
+          "target_pair_visit_histogram": {
+            "1": 167,
+            "3": 1,
+            "6": 1,
+            "14": 1
+          },
+          "elevation_state_class_attempts": {
+            "UU": 189,
+            "UE": 1,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 160,
+            "UE": 1,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2864,
+            "UE": 16,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": 171,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 21,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 170,
+            "UE": 1,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "N",
+        "budget": 2880
+      },
+      "g1": {
+        "group": "V8_G1_N2880",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N2880_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 18211,
+        "candidate_evaluations": 2880,
+        "accepted_moves": 180,
+        "first_elevations": 180,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 185,
+        "net_collision_reduction": 24698,
+        "stage_length_delta_mm": 30.096940291361534,
+        "final_extra_length_vs_planar_mm": 37.25303111743415,
+        "final_transition_count": 408,
+        "final_path_window_transition_count": 312,
+        "final_logical_ramp_count": 408,
+        "final_physical_fragment_count": 448,
+        "final_unresolved_pairs": 0,
+        "final_elevated_route_count": 204,
+        "full_neighbor_checks": 2855,
+        "full_acceptance_passes": 2677,
+        "not_evaluated_candidates": 30932,
+        "generated_candidates": 33812,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 8.575694444444444,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 2548.9303962999256,
+          "runtime_seconds": 2549.3082505000057,
+          "run_seconds_including_recheck": 2657.923462899984
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "1440": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26097,
+            "cumulative_removed": 19633,
+            "cumulative_created": 2821
+          },
+          "2880": {
+            "candidate_evaluations": 2880,
+            "collision_pair_count": 18211,
+            "cumulative_removed": 31469,
+            "cumulative_created": 6771
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 185,
+          "target_attempts": 185,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 370,
+          "unique_evaluated_target_sides": 188,
+          "unique_routes_attempted": 183,
+          "unique_routes_evaluated": 181,
+          "unique_routes_touched_by_a_move": 180,
+          "max_attempts_on_one_route": 56,
+          "target_pair_visit_histogram": {
+            "1": 185
+          },
+          "elevation_state_class_attempts": {
+            "UU": 185,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 180,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2880,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 185,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 31402,
+          "PATH_WINDOW_G1": 2410
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 13203,
+          "path_window_candidates": 20609,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 53569,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 74178,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 31402,
+          "PATH_WINDOW_G1": 2410
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 470,
+          "PATH_WINDOW_G1": 2410
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 470,
+          "PATH_WINDOW_G1": 2207
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 156,
+          "LINE_WINDOW_G0": 24
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 156,
+          "LINE_WINDOW_G0": 24
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 20379,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 19.032795044394412,
+        "line_window_step_length_delta_mm": 11.064145246894853,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "N",
+        "budget": 2880
+      },
+      "delta_final_pairs": -233,
+      "delta_stage_length_mm": -27.407245717884507,
+      "delta_moves": 19,
+      "g1_better": true
+    },
+    {
+      "mode": "N",
+      "budget": 2880,
+      "challenge": true,
+      "g0": {
+        "group": "V7_T0_NC2880",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_NC2880\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 15837,
+        "candidate_evaluations": 2353,
+        "accepted_moves": 144,
+        "first_elevations": 144,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "TARGET_LIMIT",
+        "target_attempts": 200,
+        "net_collision_reduction": 15162,
+        "stage_length_delta_mm": 41.199631881157984,
+        "final_extra_length_vs_planar_mm": 72.1377010573051,
+        "final_transition_count": 442,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 0,
+        "final_elevated_route_count": 221,
+        "full_neighbor_checks": 2353,
+        "full_acceptance_passes": 2014,
+        "not_evaluated_candidates": 7133,
+        "generated_candidates": 9486,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.34027777777778,
+        "net_reduction_per_evaluation": 6.443688907777306,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 2146.1929116999963,
+          "runtime_seconds": 2147.1047728999984,
+          "run_seconds_including_recheck": 2256.9517468000995
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 708,
+            "collision_pair_count": 23767,
+            "cumulative_removed": 8493,
+            "cumulative_created": 1261
+          },
+          "1440": {
+            "candidate_evaluations": 1430,
+            "collision_pair_count": 18893,
+            "cumulative_removed": 14809,
+            "cumulative_created": 2703
+          },
+          "2880": {
+            "candidate_evaluations": 2353,
+            "collision_pair_count": 15837,
+            "cumulative_removed": 19840,
+            "cumulative_created": 4678
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 200,
+          "target_attempts": 200,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 400,
+          "unique_evaluated_target_sides": 153,
+          "unique_routes_attempted": 160,
+          "unique_routes_evaluated": 149,
+          "unique_routes_touched_by_a_move": 144,
+          "max_attempts_on_one_route": 72,
+          "target_pair_visit_histogram": {
+            "1": 200
+          },
+          "elevation_state_class_attempts": {
+            "UU": 192,
+            "UE": 8,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 138,
+            "UE": 6,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2257,
+            "UE": 96,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 7,
+            "UE": 140,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 7,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 192,
+            "UE": 8,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "N",
+        "budget": 2880,
+        "challenge": true
+      },
+      "g1": {
+        "group": "V8_G1_NC2880",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC2880_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 16232,
+        "candidate_evaluations": 2489,
+        "accepted_moves": 151,
+        "first_elevations": 151,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "TARGET_LIMIT",
+        "target_attempts": 200,
+        "net_collision_reduction": 14767,
+        "stage_length_delta_mm": 21.594136454106774,
+        "final_extra_length_vs_planar_mm": 52.532205630253884,
+        "final_transition_count": 456,
+        "final_path_window_transition_count": 262,
+        "final_logical_ramp_count": 456,
+        "final_physical_fragment_count": 466,
+        "final_unresolved_pairs": 0,
+        "final_elevated_route_count": 228,
+        "full_neighbor_checks": 2437,
+        "full_acceptance_passes": 2162,
+        "not_evaluated_candidates": 32938,
+        "generated_candidates": 35427,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.483443708609272,
+        "net_reduction_per_evaluation": 5.9329047810365605,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 1998.328198100091,
+          "runtime_seconds": 1998.8876800000435,
+          "run_seconds_including_recheck": 2095.1619420999195
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 708,
+            "collision_pair_count": 23585,
+            "cumulative_removed": 8864,
+            "cumulative_created": 1450
+          },
+          "1440": {
+            "candidate_evaluations": 1437,
+            "collision_pair_count": 19121,
+            "cumulative_removed": 15386,
+            "cumulative_created": 3508
+          },
+          "2880": {
+            "candidate_evaluations": 2489,
+            "collision_pair_count": 16232,
+            "cumulative_removed": 21015,
+            "cumulative_created": 6248
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 195,
+          "target_attempts": 200,
+          "repeated_target_attempts": 5,
+          "unique_target_sides": 390,
+          "unique_evaluated_target_sides": 156,
+          "unique_routes_attempted": 167,
+          "unique_routes_evaluated": 154,
+          "unique_routes_touched_by_a_move": 151,
+          "max_attempts_on_one_route": 65,
+          "target_pair_visit_histogram": {
+            "1": 192,
+            "2": 2,
+            "4": 1
+          },
+          "elevation_state_class_attempts": {
+            "UU": 200,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 151,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2489,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 7,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 8,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 195,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 33242,
+          "PATH_WINDOW_G1": 2185
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 11601,
+          "path_window_candidates": 23826,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 52710,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 76536,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 33242,
+          "PATH_WINDOW_G1": 2185
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 304,
+          "PATH_WINDOW_G1": 2185
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 304,
+          "PATH_WINDOW_G1": 1858
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 131,
+          "LINE_WINDOW_G0": 20
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 131,
+          "LINE_WINDOW_G0": 20
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 11909,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 15.413613297795422,
+        "line_window_step_length_delta_mm": 6.180523156291088,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "N",
+        "budget": 2880,
+        "challenge": true
+      },
+      "delta_final_pairs": 395,
+      "delta_stage_length_mm": -19.60549542705121,
+      "delta_moves": 7,
+      "g1_better": false
+    },
+    {
+      "mode": "R",
+      "budget": 720,
+      "challenge": false,
+      "g0": {
+        "group": "V7_T0_R720",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R720\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 33738,
+        "candidate_evaluations": 720,
+        "accepted_moves": 45,
+        "first_elevations": 45,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 50,
+        "net_collision_reduction": 9171,
+        "stage_length_delta_mm": 14.883190706808819,
+        "final_extra_length_vs_planar_mm": 22.039281532881432,
+        "final_transition_count": 138,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 3,
+        "final_elevated_route_count": 69,
+        "full_neighbor_checks": 720,
+        "full_acceptance_passes": 711,
+        "not_evaluated_candidates": 1827,
+        "generated_candidates": 2547,
+        "max_targets": 200,
+        "appended_candidate_budget": 720,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 12.7375,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 618.0184858000139,
+          "runtime_seconds": 618.8163351000985,
+          "run_seconds_including_recheck": 712.340515900054
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "1440": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "2880": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 50,
+          "target_attempts": 50,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 100,
+          "unique_evaluated_target_sides": 45,
+          "unique_routes_attempted": 52,
+          "unique_routes_evaluated": 45,
+          "unique_routes_touched_by_a_move": 45,
+          "max_attempts_on_one_route": 27,
+          "target_pair_visit_histogram": {
+            "1": 50
+          },
+          "elevation_state_class_attempts": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 45,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 720,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "R",
+        "budget": 720
+      },
+      "g1": {
+        "group": "V8_G1_R720",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R720_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 33240,
+        "candidate_evaluations": 720,
+        "accepted_moves": 45,
+        "first_elevations": 45,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 50,
+        "net_collision_reduction": 9669,
+        "stage_length_delta_mm": 8.304339505077223,
+        "final_extra_length_vs_planar_mm": 15.460430331149837,
+        "final_transition_count": 138,
+        "final_path_window_transition_count": 76,
+        "final_logical_ramp_count": 138,
+        "final_physical_fragment_count": 142,
+        "final_unresolved_pairs": 3,
+        "final_elevated_route_count": 69,
+        "full_neighbor_checks": 717,
+        "full_acceptance_passes": 711,
+        "not_evaluated_candidates": 5185,
+        "generated_candidates": 5905,
+        "max_targets": 200,
+        "appended_candidate_budget": 720,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 13.429166666666667,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 532.3120648000622,
+          "runtime_seconds": 532.6586223000195,
+          "run_seconds_including_recheck": 578.2893714000238
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "1440": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "2880": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 50,
+          "target_attempts": 50,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 100,
+          "unique_evaluated_target_sides": 45,
+          "unique_routes_attempted": 52,
+          "unique_routes_evaluated": 45,
+          "unique_routes_touched_by_a_move": 45,
+          "max_attempts_on_one_route": 34,
+          "target_pair_visit_histogram": {
+            "1": 50
+          },
+          "elevation_state_class_attempts": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 45,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 720,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 50,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 5326,
+          "PATH_WINDOW_G1": 579
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 2304,
+          "path_window_candidates": 3601,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 12275,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 15876,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 5326,
+          "PATH_WINDOW_G1": 579
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 141,
+          "PATH_WINDOW_G1": 579
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 141,
+          "PATH_WINDOW_G1": 570
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 38,
+          "LINE_WINDOW_G0": 7
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 38,
+          "LINE_WINDOW_G0": 7
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 8138,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 5.294411275883505,
+        "line_window_step_length_delta_mm": 3.009928229192809,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "R",
+        "budget": 720
+      },
+      "delta_final_pairs": -498,
+      "delta_stage_length_mm": -6.578851201731595,
+      "delta_moves": 0,
+      "g1_better": true
+    },
+    {
+      "mode": "R",
+      "budget": 1440,
+      "challenge": false,
+      "g0": {
+        "group": "V7_T0_R1440",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R1440\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 26437,
+        "candidate_evaluations": 1440,
+        "accepted_moves": 90,
+        "first_elevations": 90,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 99,
+        "net_collision_reduction": 16472,
+        "stage_length_delta_mm": 30.634837951583904,
+        "final_extra_length_vs_planar_mm": 37.79092877765652,
+        "final_transition_count": 228,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 1,
+        "final_elevated_route_count": 114,
+        "full_neighbor_checks": 1440,
+        "full_acceptance_passes": 1367,
+        "not_evaluated_candidates": 3357,
+        "generated_candidates": 4797,
+        "max_targets": 200,
+        "appended_candidate_budget": 1440,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 11.438888888888888,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 1220.1213721999666,
+          "runtime_seconds": 1220.9094909999985,
+          "run_seconds_including_recheck": 1314.3797079999931
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "1440": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26437,
+            "cumulative_removed": 18318,
+            "cumulative_created": 1846
+          },
+          "2880": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26437,
+            "cumulative_removed": 18318,
+            "cumulative_created": 1846
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 98,
+          "target_attempts": 99,
+          "repeated_target_attempts": 1,
+          "unique_target_sides": 196,
+          "unique_evaluated_target_sides": 91,
+          "unique_routes_attempted": 99,
+          "unique_routes_evaluated": 90,
+          "unique_routes_touched_by_a_move": 90,
+          "max_attempts_on_one_route": 58,
+          "target_pair_visit_histogram": {
+            "1": 97,
+            "2": 1
+          },
+          "elevation_state_class_attempts": {
+            "UU": 99,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 90,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 1440,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 2,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 98,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "R",
+        "budget": 1440
+      },
+      "g1": {
+        "group": "V8_G1_R1440",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R1440_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 26097,
+        "candidate_evaluations": 1440,
+        "accepted_moves": 90,
+        "first_elevations": 90,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 95,
+        "net_collision_reduction": 16812,
+        "stage_length_delta_mm": 16.23487384233158,
+        "final_extra_length_vs_planar_mm": 23.390964668404195,
+        "final_transition_count": 228,
+        "final_path_window_transition_count": 148,
+        "final_logical_ramp_count": 228,
+        "final_physical_fragment_count": 244,
+        "final_unresolved_pairs": 2,
+        "final_elevated_route_count": 114,
+        "full_neighbor_checks": 1437,
+        "full_acceptance_passes": 1339,
+        "not_evaluated_candidates": 16645,
+        "generated_candidates": 18085,
+        "max_targets": 200,
+        "appended_candidate_budget": 1440,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 11.675,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 1080.3428802000126,
+          "runtime_seconds": 1080.725230799988,
+          "run_seconds_including_recheck": 1149.4125826000236
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "1440": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26097,
+            "cumulative_removed": 19633,
+            "cumulative_created": 2821
+          },
+          "2880": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26097,
+            "cumulative_removed": 19633,
+            "cumulative_created": 2821
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 95,
+          "target_attempts": 95,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 190,
+          "unique_evaluated_target_sides": 91,
+          "unique_routes_attempted": 94,
+          "unique_routes_evaluated": 90,
+          "unique_routes_touched_by_a_move": 90,
+          "max_attempts_on_one_route": 39,
+          "target_pair_visit_histogram": {
+            "1": 95
+          },
+          "elevation_state_class_attempts": {
+            "UU": 95,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 90,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 1440,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 95,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 16946,
+          "PATH_WINDOW_G1": 1139
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 6192,
+          "path_window_candidates": 11893,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 25907,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 37800,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 16946,
+          "PATH_WINDOW_G1": 1139
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 301,
+          "PATH_WINDOW_G1": 1139
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 301,
+          "PATH_WINDOW_G1": 1038
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 74,
+          "LINE_WINDOW_G0": 16
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 74,
+          "LINE_WINDOW_G0": 16
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 13656,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 8.858777011045603,
+        "line_window_step_length_delta_mm": 7.37609683126324,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "R",
+        "budget": 1440
+      },
+      "delta_final_pairs": -340,
+      "delta_stage_length_mm": -14.399964109252323,
+      "delta_moves": 0,
+      "g1_better": true
+    },
+    {
+      "mode": "R",
+      "budget": 2880,
+      "challenge": false,
+      "g0": {
+        "group": "V7_T0_R2880",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R2880\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 19233,
+        "candidate_evaluations": 2880,
+        "accepted_moves": 154,
+        "first_elevations": 154,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 190,
+        "net_collision_reduction": 23676,
+        "stage_length_delta_mm": 53.625801242131274,
+        "final_extra_length_vs_planar_mm": 60.78189206820389,
+        "final_transition_count": 356,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 1,
+        "final_elevated_route_count": 178,
+        "full_neighbor_checks": 2880,
+        "full_acceptance_passes": 2272,
+        "not_evaluated_candidates": 7281,
+        "generated_candidates": 10161,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 112,
+        "evaluations_per_action": 18.7012987012987,
+        "net_reduction_per_evaluation": 8.220833333333333,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 2311.406959200045,
+          "runtime_seconds": 2312.2212034999393,
+          "run_seconds_including_recheck": 2396.5498331999406
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33738,
+            "cumulative_removed": 9883,
+            "cumulative_created": 712
+          },
+          "1440": {
+            "candidate_evaluations": 1428,
+            "collision_pair_count": 26525,
+            "cumulative_removed": 18180,
+            "cumulative_created": 1796
+          },
+          "2880": {
+            "candidate_evaluations": 2880,
+            "collision_pair_count": 19233,
+            "cumulative_removed": 27367,
+            "cumulative_created": 3691
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 163,
+          "target_attempts": 190,
+          "repeated_target_attempts": 27,
+          "unique_target_sides": 326,
+          "unique_evaluated_target_sides": 158,
+          "unique_routes_attempted": 158,
+          "unique_routes_evaluated": 156,
+          "unique_routes_touched_by_a_move": 154,
+          "max_attempts_on_one_route": 119,
+          "target_pair_visit_histogram": {
+            "1": 161,
+            "9": 1,
+            "20": 1
+          },
+          "elevation_state_class_attempts": {
+            "UU": 183,
+            "UE": 7,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 154,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2768,
+            "UE": 112,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": 171,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 22,
+            "UE": 7,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 163,
+            "UE": 1,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "R",
+        "budget": 2880
+      },
+      "g1": {
+        "group": "V8_G1_R2880",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R2880_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 18211,
+        "candidate_evaluations": 2880,
+        "accepted_moves": 180,
+        "first_elevations": 180,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+        "target_attempts": 185,
+        "net_collision_reduction": 24698,
+        "stage_length_delta_mm": 30.096940291361534,
+        "final_extra_length_vs_planar_mm": 37.25303111743415,
+        "final_transition_count": 408,
+        "final_path_window_transition_count": 312,
+        "final_logical_ramp_count": 408,
+        "final_physical_fragment_count": 448,
+        "final_unresolved_pairs": 0,
+        "final_elevated_route_count": 204,
+        "full_neighbor_checks": 2855,
+        "full_acceptance_passes": 2677,
+        "not_evaluated_candidates": 30932,
+        "generated_candidates": 33812,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 0,
+        "evaluations_per_action": 16.0,
+        "net_reduction_per_evaluation": 8.575694444444444,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 2540.720999400015,
+          "runtime_seconds": 2541.0872587000486,
+          "run_seconds_including_recheck": 2652.247978999978
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 720,
+            "collision_pair_count": 33240,
+            "cumulative_removed": 10655,
+            "cumulative_created": 986
+          },
+          "1440": {
+            "candidate_evaluations": 1440,
+            "collision_pair_count": 26097,
+            "cumulative_removed": 19633,
+            "cumulative_created": 2821
+          },
+          "2880": {
+            "candidate_evaluations": 2880,
+            "collision_pair_count": 18211,
+            "cumulative_removed": 31469,
+            "cumulative_created": 6771
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 185,
+          "target_attempts": 185,
+          "repeated_target_attempts": 0,
+          "unique_target_sides": 370,
+          "unique_evaluated_target_sides": 188,
+          "unique_routes_attempted": 183,
+          "unique_routes_evaluated": 181,
+          "unique_routes_touched_by_a_move": 180,
+          "max_attempts_on_one_route": 56,
+          "target_pair_visit_histogram": {
+            "1": 185
+          },
+          "elevation_state_class_attempts": {
+            "UU": 185,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 180,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2880,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 3,
+            "UE": null,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 0,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 185,
+            "UE": 0,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 31402,
+          "PATH_WINDOW_G1": 2410
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 13203,
+          "path_window_candidates": 20609,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 53569,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 74178,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 31402,
+          "PATH_WINDOW_G1": 2410
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 470,
+          "PATH_WINDOW_G1": 2410
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 470,
+          "PATH_WINDOW_G1": 2207
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 156,
+          "LINE_WINDOW_G0": 24
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 156,
+          "LINE_WINDOW_G0": 24
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 20379,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 19.032795044394412,
+        "line_window_step_length_delta_mm": 11.064145246894853,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "R",
+        "budget": 2880
+      },
+      "delta_final_pairs": -1022,
+      "delta_stage_length_mm": -23.52886095076974,
+      "delta_moves": 26,
+      "g1_better": true
+    },
+    {
+      "mode": "R",
+      "budget": 2880,
+      "challenge": true,
+      "g0": {
+        "group": "V7_T0_RC2880",
+        "round": "v7",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_RC2880\\summary.json",
+        "source_root": "overnight_3d_ideas",
+        "final_collision_pairs": 16537,
+        "candidate_evaluations": 2481,
+        "accepted_moves": 132,
+        "first_elevations": 129,
+        "relocations": 3,
+        "returns": 0,
+        "stop_reason": "TARGET_LIMIT",
+        "target_attempts": 200,
+        "net_collision_reduction": 14462,
+        "stage_length_delta_mm": 35.80434004327981,
+        "final_extra_length_vs_planar_mm": 66.74240921942692,
+        "final_transition_count": 412,
+        "final_path_window_transition_count": null,
+        "final_logical_ramp_count": null,
+        "final_physical_fragment_count": null,
+        "final_unresolved_pairs": 0,
+        "final_elevated_route_count": 206,
+        "full_neighbor_checks": 2481,
+        "full_acceptance_passes": 1841,
+        "not_evaluated_candidates": 9066,
+        "generated_candidates": 11547,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": null,
+        "stage_length_cap_checks": null,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 48,
+        "evaluations_per_action": 18.795454545454547,
+        "net_reduction_per_evaluation": 5.829101168883515,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 2120.561692700023,
+          "runtime_seconds": 2121.4770968001103,
+          "run_seconds_including_recheck": 2227.3480517000426
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 708,
+            "collision_pair_count": 23767,
+            "cumulative_removed": 8493,
+            "cumulative_created": 1261
+          },
+          "1440": {
+            "candidate_evaluations": 1430,
+            "collision_pair_count": 18893,
+            "cumulative_removed": 14809,
+            "cumulative_created": 2703
+          },
+          "2880": {
+            "candidate_evaluations": 2481,
+            "collision_pair_count": 16537,
+            "cumulative_removed": 18620,
+            "cumulative_created": 4158
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 180,
+          "target_attempts": 200,
+          "repeated_target_attempts": 20,
+          "unique_target_sides": 360,
+          "unique_evaluated_target_sides": 141,
+          "unique_routes_attempted": 147,
+          "unique_routes_evaluated": 133,
+          "unique_routes_touched_by_a_move": 129,
+          "max_attempts_on_one_route": 65,
+          "target_pair_visit_histogram": {
+            "1": 175,
+            "2": 1,
+            "5": 1,
+            "6": 3
+          },
+          "elevation_state_class_attempts": {
+            "UU": 197,
+            "UE": 3,
+            "EE": 0
+          },
+          "elevation_state_class_moves": {
+            "UU": 129,
+            "UE": 3,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2433,
+            "UE": 48,
+            "EE": 0
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 7,
+            "UE": 140,
+            "EE": null
+          },
+          "elevation_state_class_deferred": {
+            "UU": 27,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 177,
+            "UE": 3,
+            "EE": 0
+          }
+        },
+        "candidates_by_window_kind": null,
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": null,
+        "tag": null,
+        "arm": "G0_LINE_ONLY",
+        "mode": "R",
+        "budget": 2880,
+        "challenge": true
+      },
+      "g1": {
+        "group": "V8_G1_RC2880",
+        "round": "v8",
+        "status": "PRESENT",
+        "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC2880_boundaryfix\\summary.json",
+        "source_root": "continuation",
+        "final_collision_pairs": 16344,
+        "candidate_evaluations": 2489,
+        "accepted_moves": 144,
+        "first_elevations": 144,
+        "relocations": 0,
+        "returns": 0,
+        "stop_reason": "TARGET_LIMIT",
+        "target_attempts": 200,
+        "net_collision_reduction": 14655,
+        "stage_length_delta_mm": 20.790938794249087,
+        "final_extra_length_vs_planar_mm": 51.7290079703962,
+        "final_transition_count": 442,
+        "final_path_window_transition_count": 248,
+        "final_logical_ramp_count": 442,
+        "final_physical_fragment_count": 452,
+        "final_unresolved_pairs": 0,
+        "final_elevated_route_count": 221,
+        "full_neighbor_checks": 2229,
+        "full_acceptance_passes": 2097,
+        "not_evaluated_candidates": 33289,
+        "generated_candidates": 35778,
+        "max_targets": 200,
+        "appended_candidate_budget": 2880,
+        "stage_length_cap_mm": null,
+        "stage_length_cap_rejections": 0,
+        "stage_length_cap_checks": 0,
+        "stage_length_cap_headroom_mm": null,
+        "decision_cache_hits": 0,
+        "relocation_candidate_evaluations": 208,
+        "evaluations_per_action": 17.28472222222222,
+        "net_reduction_per_evaluation": 5.887906789875452,
+        "timings": {
+          "initial_pair_scan_seconds": 0.0,
+          "assignment_seconds": 1877.6782489999896,
+          "runtime_seconds": 1878.2412470999407,
+          "run_seconds_including_recheck": 1981.079750600038
+        },
+        "recheck_verdict": "PASS",
+        "recheck_geometry_pass": true,
+        "budget_checkpoints": {
+          "720": {
+            "candidate_evaluations": 708,
+            "collision_pair_count": 23585,
+            "cumulative_removed": 8864,
+            "cumulative_created": 1450
+          },
+          "1440": {
+            "candidate_evaluations": 1437,
+            "collision_pair_count": 19121,
+            "cumulative_removed": 15386,
+            "cumulative_created": 3508
+          },
+          "2880": {
+            "candidate_evaluations": 2489,
+            "collision_pair_count": 16344,
+            "cumulative_removed": 20525,
+            "cumulative_created": 5870
+          }
+        },
+        "coverage": {
+          "unique_target_pairs": 192,
+          "target_attempts": 200,
+          "repeated_target_attempts": 8,
+          "unique_target_sides": 384,
+          "unique_evaluated_target_sides": 153,
+          "unique_routes_attempted": 161,
+          "unique_routes_evaluated": 147,
+          "unique_routes_touched_by_a_move": 144,
+          "max_attempts_on_one_route": 62,
+          "target_pair_visit_histogram": {
+            "1": 187,
+            "2": 3,
+            "3": 1,
+            "4": 1
+          },
+          "elevation_state_class_attempts": {
+            "UU": 187,
+            "UE": 0,
+            "EE": 13
+          },
+          "elevation_state_class_moves": {
+            "UU": 144,
+            "UE": 0,
+            "EE": 0
+          },
+          "elevation_state_class_evaluations": {
+            "UU": 2281,
+            "UE": 0,
+            "EE": 208
+          },
+          "elevation_state_class_first_evaluation_step": {
+            "UU": 7,
+            "UE": null,
+            "EE": 183
+          },
+          "elevation_state_class_deferred": {
+            "UU": 2,
+            "UE": 0,
+            "EE": 13
+          },
+          "elevation_state_class_target_pairs": {
+            "UU": 186,
+            "UE": 0,
+            "EE": 6
+          }
+        },
+        "candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 33593,
+          "PATH_WINDOW_G1": 2185
+        },
+        "evaluated_by_window_kind": null,
+        "executed_by_window_kind": null,
+        "generation_accounting": {
+          "line_window_candidates": 11646,
+          "path_window_candidates": 24132,
+          "path_window_dedup_removed": 0,
+          "path_window_curvature_rejected": 52944,
+          "path_window_build_rejected": 0,
+          "path_window_cap_truncated": 0,
+          "path_window_pairs_before_rejection": 77076,
+          "path_window_rejection_reasons": {}
+        },
+        "tag": "boundaryfix",
+        "generated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 33593,
+          "PATH_WINDOW_G1": 2185
+        },
+        "evaluated_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 304,
+          "PATH_WINDOW_G1": 2185
+        },
+        "full_accepted_candidates_by_window_kind": {
+          "LINE_WINDOW_G0": 304,
+          "PATH_WINDOW_G1": 1793
+        },
+        "executed_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 124,
+          "LINE_WINDOW_G0": 20
+        },
+        "first_elevation_moves_by_window_kind": {
+          "PATH_WINDOW_G1": 124,
+          "LINE_WINDOW_G0": 20
+        },
+        "relocation_moves_by_window_kind": {},
+        "stage_length_cap_rejected_step_length_mm": 0.0,
+        "stage_length_cap_rejections_by_action": {},
+        "stage_length_cap_used_percent": null,
+        "path_window_first_elevation_net_reduction": 11797,
+        "path_window_relocation_net_reduction": 0,
+        "path_window_step_length_delta_mm": 14.610415637920653,
+        "line_window_step_length_delta_mm": 6.180523156291088,
+        "arm": "G1_PATH_WINDOWS",
+        "mode": "R",
+        "budget": 2880,
+        "challenge": true
+      },
+      "delta_final_pairs": -193,
+      "delta_stage_length_mm": -15.013401249030721,
+      "delta_moves": 12,
+      "g1_better": true
+    }
+  ],
+  "rows": [
+    {
+      "group": "V7_T0_N720",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_N720\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 33738,
+      "candidate_evaluations": 720,
+      "accepted_moves": 45,
+      "first_elevations": 45,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 50,
+      "net_collision_reduction": 9171,
+      "stage_length_delta_mm": 14.883190706808819,
+      "final_extra_length_vs_planar_mm": 22.039281532881432,
+      "final_transition_count": 138,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 3,
+      "final_elevated_route_count": 69,
+      "full_neighbor_checks": 720,
+      "full_acceptance_passes": 711,
+      "not_evaluated_candidates": 1827,
+      "generated_candidates": 2547,
+      "max_targets": 200,
+      "appended_candidate_budget": 720,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 12.7375,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 605.9950909999898,
+        "runtime_seconds": 606.7979560999665,
+        "run_seconds_including_recheck": 699.3533656999934
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "1440": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "2880": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 50,
+        "target_attempts": 50,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 100,
+        "unique_evaluated_target_sides": 45,
+        "unique_routes_attempted": 52,
+        "unique_routes_evaluated": 45,
+        "unique_routes_touched_by_a_move": 45,
+        "max_attempts_on_one_route": 27,
+        "target_pair_visit_histogram": {
+          "1": 50
+        },
+        "elevation_state_class_attempts": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 45,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 720,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "N",
+      "budget": 720
+    },
+    {
+      "group": "V8_G1_N720",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N720_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 33240,
+      "candidate_evaluations": 720,
+      "accepted_moves": 45,
+      "first_elevations": 45,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 50,
+      "net_collision_reduction": 9669,
+      "stage_length_delta_mm": 8.304339505077223,
+      "final_extra_length_vs_planar_mm": 15.460430331149837,
+      "final_transition_count": 138,
+      "final_path_window_transition_count": 76,
+      "final_logical_ramp_count": 138,
+      "final_physical_fragment_count": 142,
+      "final_unresolved_pairs": 3,
+      "final_elevated_route_count": 69,
+      "full_neighbor_checks": 717,
+      "full_acceptance_passes": 711,
+      "not_evaluated_candidates": 5185,
+      "generated_candidates": 5905,
+      "max_targets": 200,
+      "appended_candidate_budget": 720,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 13.429166666666667,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 532.5261805000482,
+        "runtime_seconds": 532.8946205000393,
+        "run_seconds_including_recheck": 578.5468956000404
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "1440": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "2880": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 50,
+        "target_attempts": 50,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 100,
+        "unique_evaluated_target_sides": 45,
+        "unique_routes_attempted": 52,
+        "unique_routes_evaluated": 45,
+        "unique_routes_touched_by_a_move": 45,
+        "max_attempts_on_one_route": 34,
+        "target_pair_visit_histogram": {
+          "1": 50
+        },
+        "elevation_state_class_attempts": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 45,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 720,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 5326,
+        "PATH_WINDOW_G1": 579
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 2304,
+        "path_window_candidates": 3601,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 12275,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 15876,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 5326,
+        "PATH_WINDOW_G1": 579
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 141,
+        "PATH_WINDOW_G1": 579
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 141,
+        "PATH_WINDOW_G1": 570
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 38,
+        "LINE_WINDOW_G0": 7
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 38,
+        "LINE_WINDOW_G0": 7
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 8138,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 5.294411275883505,
+      "line_window_step_length_delta_mm": 3.009928229192809,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "N",
+      "budget": 720
+    },
+    {
+      "group": "V7_T0_N1440",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_N1440\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 26437,
+      "candidate_evaluations": 1440,
+      "accepted_moves": 90,
+      "first_elevations": 90,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 99,
+      "net_collision_reduction": 16472,
+      "stage_length_delta_mm": 30.634837951583904,
+      "final_extra_length_vs_planar_mm": 37.79092877765652,
+      "final_transition_count": 228,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 1,
+      "final_elevated_route_count": 114,
+      "full_neighbor_checks": 1440,
+      "full_acceptance_passes": 1367,
+      "not_evaluated_candidates": 3357,
+      "generated_candidates": 4797,
+      "max_targets": 200,
+      "appended_candidate_budget": 1440,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 11.438888888888888,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 1221.5340902000898,
+        "runtime_seconds": 1222.3259196000872,
+        "run_seconds_including_recheck": 1316.3385224000085
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "1440": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26437,
+          "cumulative_removed": 18318,
+          "cumulative_created": 1846
+        },
+        "2880": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26437,
+          "cumulative_removed": 18318,
+          "cumulative_created": 1846
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 98,
+        "target_attempts": 99,
+        "repeated_target_attempts": 1,
+        "unique_target_sides": 196,
+        "unique_evaluated_target_sides": 91,
+        "unique_routes_attempted": 99,
+        "unique_routes_evaluated": 90,
+        "unique_routes_touched_by_a_move": 90,
+        "max_attempts_on_one_route": 58,
+        "target_pair_visit_histogram": {
+          "1": 97,
+          "2": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 99,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 90,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 1440,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 2,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 98,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "N",
+      "budget": 1440
+    },
+    {
+      "group": "V8_G1_N1440",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N1440_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 26097,
+      "candidate_evaluations": 1440,
+      "accepted_moves": 90,
+      "first_elevations": 90,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 95,
+      "net_collision_reduction": 16812,
+      "stage_length_delta_mm": 16.23487384233158,
+      "final_extra_length_vs_planar_mm": 23.390964668404195,
+      "final_transition_count": 228,
+      "final_path_window_transition_count": 148,
+      "final_logical_ramp_count": 228,
+      "final_physical_fragment_count": 244,
+      "final_unresolved_pairs": 2,
+      "final_elevated_route_count": 114,
+      "full_neighbor_checks": 1437,
+      "full_acceptance_passes": 1339,
+      "not_evaluated_candidates": 16645,
+      "generated_candidates": 18085,
+      "max_targets": 200,
+      "appended_candidate_budget": 1440,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 11.675,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 1087.7559600999812,
+        "runtime_seconds": 1088.1334047999699,
+        "run_seconds_including_recheck": 1157.578464500024
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "1440": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26097,
+          "cumulative_removed": 19633,
+          "cumulative_created": 2821
+        },
+        "2880": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26097,
+          "cumulative_removed": 19633,
+          "cumulative_created": 2821
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 95,
+        "target_attempts": 95,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 190,
+        "unique_evaluated_target_sides": 91,
+        "unique_routes_attempted": 94,
+        "unique_routes_evaluated": 90,
+        "unique_routes_touched_by_a_move": 90,
+        "max_attempts_on_one_route": 39,
+        "target_pair_visit_histogram": {
+          "1": 95
+        },
+        "elevation_state_class_attempts": {
+          "UU": 95,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 90,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 1440,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 95,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 16946,
+        "PATH_WINDOW_G1": 1139
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 6192,
+        "path_window_candidates": 11893,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 25907,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 37800,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 16946,
+        "PATH_WINDOW_G1": 1139
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 301,
+        "PATH_WINDOW_G1": 1139
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 301,
+        "PATH_WINDOW_G1": 1038
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 74,
+        "LINE_WINDOW_G0": 16
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 74,
+        "LINE_WINDOW_G0": 16
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 13656,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 8.858777011045603,
+      "line_window_step_length_delta_mm": 7.37609683126324,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "N",
+      "budget": 1440
+    },
+    {
+      "group": "V7_T0_N2880",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_N2880\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 18444,
+      "candidate_evaluations": 2880,
+      "accepted_moves": 161,
+      "first_elevations": 161,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 190,
+      "net_collision_reduction": 24465,
+      "stage_length_delta_mm": 57.50418600924604,
+      "final_extra_length_vs_planar_mm": 64.66027683531865,
+      "final_transition_count": 370,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 1,
+      "final_elevated_route_count": 185,
+      "full_neighbor_checks": 2880,
+      "full_acceptance_passes": 2403,
+      "not_evaluated_candidates": 7326,
+      "generated_candidates": 10206,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 17.888198757763973,
+      "net_reduction_per_evaluation": 8.494791666666666,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 2404.530796899926,
+        "runtime_seconds": 2405.3306906999787,
+        "run_seconds_including_recheck": 2491.563458299963
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "1440": {
+          "candidate_evaluations": 1428,
+          "collision_pair_count": 26525,
+          "cumulative_removed": 18180,
+          "cumulative_created": 1796
+        },
+        "2880": {
+          "candidate_evaluations": 2880,
+          "collision_pair_count": 18444,
+          "cumulative_removed": 28224,
+          "cumulative_created": 3759
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 170,
+        "target_attempts": 190,
+        "repeated_target_attempts": 20,
+        "unique_target_sides": 340,
+        "unique_evaluated_target_sides": 166,
+        "unique_routes_attempted": 164,
+        "unique_routes_evaluated": 163,
+        "unique_routes_touched_by_a_move": 161,
+        "max_attempts_on_one_route": 104,
+        "target_pair_visit_histogram": {
+          "1": 167,
+          "3": 1,
+          "6": 1,
+          "14": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 189,
+          "UE": 1,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 160,
+          "UE": 1,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2864,
+          "UE": 16,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": 171,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 21,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 170,
+          "UE": 1,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "N",
+      "budget": 2880
+    },
+    {
+      "group": "V8_G1_N2880",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_N2880_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 18211,
+      "candidate_evaluations": 2880,
+      "accepted_moves": 180,
+      "first_elevations": 180,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 185,
+      "net_collision_reduction": 24698,
+      "stage_length_delta_mm": 30.096940291361534,
+      "final_extra_length_vs_planar_mm": 37.25303111743415,
+      "final_transition_count": 408,
+      "final_path_window_transition_count": 312,
+      "final_logical_ramp_count": 408,
+      "final_physical_fragment_count": 448,
+      "final_unresolved_pairs": 0,
+      "final_elevated_route_count": 204,
+      "full_neighbor_checks": 2855,
+      "full_acceptance_passes": 2677,
+      "not_evaluated_candidates": 30932,
+      "generated_candidates": 33812,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 8.575694444444444,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 2548.9303962999256,
+        "runtime_seconds": 2549.3082505000057,
+        "run_seconds_including_recheck": 2657.923462899984
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "1440": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26097,
+          "cumulative_removed": 19633,
+          "cumulative_created": 2821
+        },
+        "2880": {
+          "candidate_evaluations": 2880,
+          "collision_pair_count": 18211,
+          "cumulative_removed": 31469,
+          "cumulative_created": 6771
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 185,
+        "target_attempts": 185,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 370,
+        "unique_evaluated_target_sides": 188,
+        "unique_routes_attempted": 183,
+        "unique_routes_evaluated": 181,
+        "unique_routes_touched_by_a_move": 180,
+        "max_attempts_on_one_route": 56,
+        "target_pair_visit_histogram": {
+          "1": 185
+        },
+        "elevation_state_class_attempts": {
+          "UU": 185,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 180,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2880,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 185,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 31402,
+        "PATH_WINDOW_G1": 2410
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 13203,
+        "path_window_candidates": 20609,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 53569,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 74178,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 31402,
+        "PATH_WINDOW_G1": 2410
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 470,
+        "PATH_WINDOW_G1": 2410
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 470,
+        "PATH_WINDOW_G1": 2207
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 156,
+        "LINE_WINDOW_G0": 24
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 156,
+        "LINE_WINDOW_G0": 24
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 20379,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 19.032795044394412,
+      "line_window_step_length_delta_mm": 11.064145246894853,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "N",
+      "budget": 2880
+    },
+    {
+      "group": "V7_T0_NC2880",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_NC2880\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 15837,
+      "candidate_evaluations": 2353,
+      "accepted_moves": 144,
+      "first_elevations": 144,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "TARGET_LIMIT",
+      "target_attempts": 200,
+      "net_collision_reduction": 15162,
+      "stage_length_delta_mm": 41.199631881157984,
+      "final_extra_length_vs_planar_mm": 72.1377010573051,
+      "final_transition_count": 442,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 0,
+      "final_elevated_route_count": 221,
+      "full_neighbor_checks": 2353,
+      "full_acceptance_passes": 2014,
+      "not_evaluated_candidates": 7133,
+      "generated_candidates": 9486,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.34027777777778,
+      "net_reduction_per_evaluation": 6.443688907777306,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 2146.1929116999963,
+        "runtime_seconds": 2147.1047728999984,
+        "run_seconds_including_recheck": 2256.9517468000995
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 708,
+          "collision_pair_count": 23767,
+          "cumulative_removed": 8493,
+          "cumulative_created": 1261
+        },
+        "1440": {
+          "candidate_evaluations": 1430,
+          "collision_pair_count": 18893,
+          "cumulative_removed": 14809,
+          "cumulative_created": 2703
+        },
+        "2880": {
+          "candidate_evaluations": 2353,
+          "collision_pair_count": 15837,
+          "cumulative_removed": 19840,
+          "cumulative_created": 4678
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 200,
+        "target_attempts": 200,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 400,
+        "unique_evaluated_target_sides": 153,
+        "unique_routes_attempted": 160,
+        "unique_routes_evaluated": 149,
+        "unique_routes_touched_by_a_move": 144,
+        "max_attempts_on_one_route": 72,
+        "target_pair_visit_histogram": {
+          "1": 200
+        },
+        "elevation_state_class_attempts": {
+          "UU": 192,
+          "UE": 8,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 138,
+          "UE": 6,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2257,
+          "UE": 96,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 7,
+          "UE": 140,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 7,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 192,
+          "UE": 8,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "N",
+      "budget": 2880,
+      "challenge": true
+    },
+    {
+      "group": "V8_G1_NC2880",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_NC2880_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 16232,
+      "candidate_evaluations": 2489,
+      "accepted_moves": 151,
+      "first_elevations": 151,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "TARGET_LIMIT",
+      "target_attempts": 200,
+      "net_collision_reduction": 14767,
+      "stage_length_delta_mm": 21.594136454106774,
+      "final_extra_length_vs_planar_mm": 52.532205630253884,
+      "final_transition_count": 456,
+      "final_path_window_transition_count": 262,
+      "final_logical_ramp_count": 456,
+      "final_physical_fragment_count": 466,
+      "final_unresolved_pairs": 0,
+      "final_elevated_route_count": 228,
+      "full_neighbor_checks": 2437,
+      "full_acceptance_passes": 2162,
+      "not_evaluated_candidates": 32938,
+      "generated_candidates": 35427,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.483443708609272,
+      "net_reduction_per_evaluation": 5.9329047810365605,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 1998.328198100091,
+        "runtime_seconds": 1998.8876800000435,
+        "run_seconds_including_recheck": 2095.1619420999195
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 708,
+          "collision_pair_count": 23585,
+          "cumulative_removed": 8864,
+          "cumulative_created": 1450
+        },
+        "1440": {
+          "candidate_evaluations": 1437,
+          "collision_pair_count": 19121,
+          "cumulative_removed": 15386,
+          "cumulative_created": 3508
+        },
+        "2880": {
+          "candidate_evaluations": 2489,
+          "collision_pair_count": 16232,
+          "cumulative_removed": 21015,
+          "cumulative_created": 6248
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 195,
+        "target_attempts": 200,
+        "repeated_target_attempts": 5,
+        "unique_target_sides": 390,
+        "unique_evaluated_target_sides": 156,
+        "unique_routes_attempted": 167,
+        "unique_routes_evaluated": 154,
+        "unique_routes_touched_by_a_move": 151,
+        "max_attempts_on_one_route": 65,
+        "target_pair_visit_histogram": {
+          "1": 192,
+          "2": 2,
+          "4": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 200,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 151,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2489,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 7,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 8,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 195,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 33242,
+        "PATH_WINDOW_G1": 2185
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 11601,
+        "path_window_candidates": 23826,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 52710,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 76536,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 33242,
+        "PATH_WINDOW_G1": 2185
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 304,
+        "PATH_WINDOW_G1": 2185
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 304,
+        "PATH_WINDOW_G1": 1858
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 131,
+        "LINE_WINDOW_G0": 20
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 131,
+        "LINE_WINDOW_G0": 20
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 11909,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 15.413613297795422,
+      "line_window_step_length_delta_mm": 6.180523156291088,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "N",
+      "budget": 2880,
+      "challenge": true
+    },
+    {
+      "group": "V7_T0_R720",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R720\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 33738,
+      "candidate_evaluations": 720,
+      "accepted_moves": 45,
+      "first_elevations": 45,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 50,
+      "net_collision_reduction": 9171,
+      "stage_length_delta_mm": 14.883190706808819,
+      "final_extra_length_vs_planar_mm": 22.039281532881432,
+      "final_transition_count": 138,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 3,
+      "final_elevated_route_count": 69,
+      "full_neighbor_checks": 720,
+      "full_acceptance_passes": 711,
+      "not_evaluated_candidates": 1827,
+      "generated_candidates": 2547,
+      "max_targets": 200,
+      "appended_candidate_budget": 720,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 12.7375,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 618.0184858000139,
+        "runtime_seconds": 618.8163351000985,
+        "run_seconds_including_recheck": 712.340515900054
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "1440": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "2880": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 50,
+        "target_attempts": 50,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 100,
+        "unique_evaluated_target_sides": 45,
+        "unique_routes_attempted": 52,
+        "unique_routes_evaluated": 45,
+        "unique_routes_touched_by_a_move": 45,
+        "max_attempts_on_one_route": 27,
+        "target_pair_visit_histogram": {
+          "1": 50
+        },
+        "elevation_state_class_attempts": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 45,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 720,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "R",
+      "budget": 720
+    },
+    {
+      "group": "V8_G1_R720",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R720_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 33240,
+      "candidate_evaluations": 720,
+      "accepted_moves": 45,
+      "first_elevations": 45,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 50,
+      "net_collision_reduction": 9669,
+      "stage_length_delta_mm": 8.304339505077223,
+      "final_extra_length_vs_planar_mm": 15.460430331149837,
+      "final_transition_count": 138,
+      "final_path_window_transition_count": 76,
+      "final_logical_ramp_count": 138,
+      "final_physical_fragment_count": 142,
+      "final_unresolved_pairs": 3,
+      "final_elevated_route_count": 69,
+      "full_neighbor_checks": 717,
+      "full_acceptance_passes": 711,
+      "not_evaluated_candidates": 5185,
+      "generated_candidates": 5905,
+      "max_targets": 200,
+      "appended_candidate_budget": 720,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 13.429166666666667,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 532.3120648000622,
+        "runtime_seconds": 532.6586223000195,
+        "run_seconds_including_recheck": 578.2893714000238
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "1440": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "2880": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 50,
+        "target_attempts": 50,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 100,
+        "unique_evaluated_target_sides": 45,
+        "unique_routes_attempted": 52,
+        "unique_routes_evaluated": 45,
+        "unique_routes_touched_by_a_move": 45,
+        "max_attempts_on_one_route": 34,
+        "target_pair_visit_histogram": {
+          "1": 50
+        },
+        "elevation_state_class_attempts": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 45,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 720,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 50,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 5326,
+        "PATH_WINDOW_G1": 579
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 2304,
+        "path_window_candidates": 3601,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 12275,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 15876,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 5326,
+        "PATH_WINDOW_G1": 579
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 141,
+        "PATH_WINDOW_G1": 579
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 141,
+        "PATH_WINDOW_G1": 570
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 38,
+        "LINE_WINDOW_G0": 7
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 38,
+        "LINE_WINDOW_G0": 7
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 8138,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 5.294411275883505,
+      "line_window_step_length_delta_mm": 3.009928229192809,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "R",
+      "budget": 720
+    },
+    {
+      "group": "V7_T0_R1440",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R1440\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 26437,
+      "candidate_evaluations": 1440,
+      "accepted_moves": 90,
+      "first_elevations": 90,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 99,
+      "net_collision_reduction": 16472,
+      "stage_length_delta_mm": 30.634837951583904,
+      "final_extra_length_vs_planar_mm": 37.79092877765652,
+      "final_transition_count": 228,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 1,
+      "final_elevated_route_count": 114,
+      "full_neighbor_checks": 1440,
+      "full_acceptance_passes": 1367,
+      "not_evaluated_candidates": 3357,
+      "generated_candidates": 4797,
+      "max_targets": 200,
+      "appended_candidate_budget": 1440,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 11.438888888888888,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 1220.1213721999666,
+        "runtime_seconds": 1220.9094909999985,
+        "run_seconds_including_recheck": 1314.3797079999931
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "1440": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26437,
+          "cumulative_removed": 18318,
+          "cumulative_created": 1846
+        },
+        "2880": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26437,
+          "cumulative_removed": 18318,
+          "cumulative_created": 1846
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 98,
+        "target_attempts": 99,
+        "repeated_target_attempts": 1,
+        "unique_target_sides": 196,
+        "unique_evaluated_target_sides": 91,
+        "unique_routes_attempted": 99,
+        "unique_routes_evaluated": 90,
+        "unique_routes_touched_by_a_move": 90,
+        "max_attempts_on_one_route": 58,
+        "target_pair_visit_histogram": {
+          "1": 97,
+          "2": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 99,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 90,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 1440,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 2,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 98,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "R",
+      "budget": 1440
+    },
+    {
+      "group": "V8_G1_R1440",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R1440_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 26097,
+      "candidate_evaluations": 1440,
+      "accepted_moves": 90,
+      "first_elevations": 90,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 95,
+      "net_collision_reduction": 16812,
+      "stage_length_delta_mm": 16.23487384233158,
+      "final_extra_length_vs_planar_mm": 23.390964668404195,
+      "final_transition_count": 228,
+      "final_path_window_transition_count": 148,
+      "final_logical_ramp_count": 228,
+      "final_physical_fragment_count": 244,
+      "final_unresolved_pairs": 2,
+      "final_elevated_route_count": 114,
+      "full_neighbor_checks": 1437,
+      "full_acceptance_passes": 1339,
+      "not_evaluated_candidates": 16645,
+      "generated_candidates": 18085,
+      "max_targets": 200,
+      "appended_candidate_budget": 1440,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 11.675,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 1080.3428802000126,
+        "runtime_seconds": 1080.725230799988,
+        "run_seconds_including_recheck": 1149.4125826000236
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "1440": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26097,
+          "cumulative_removed": 19633,
+          "cumulative_created": 2821
+        },
+        "2880": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26097,
+          "cumulative_removed": 19633,
+          "cumulative_created": 2821
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 95,
+        "target_attempts": 95,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 190,
+        "unique_evaluated_target_sides": 91,
+        "unique_routes_attempted": 94,
+        "unique_routes_evaluated": 90,
+        "unique_routes_touched_by_a_move": 90,
+        "max_attempts_on_one_route": 39,
+        "target_pair_visit_histogram": {
+          "1": 95
+        },
+        "elevation_state_class_attempts": {
+          "UU": 95,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 90,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 1440,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 95,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 16946,
+        "PATH_WINDOW_G1": 1139
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 6192,
+        "path_window_candidates": 11893,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 25907,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 37800,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 16946,
+        "PATH_WINDOW_G1": 1139
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 301,
+        "PATH_WINDOW_G1": 1139
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 301,
+        "PATH_WINDOW_G1": 1038
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 74,
+        "LINE_WINDOW_G0": 16
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 74,
+        "LINE_WINDOW_G0": 16
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 13656,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 8.858777011045603,
+      "line_window_step_length_delta_mm": 7.37609683126324,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "R",
+      "budget": 1440
+    },
+    {
+      "group": "V7_T0_R2880",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R2880\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 19233,
+      "candidate_evaluations": 2880,
+      "accepted_moves": 154,
+      "first_elevations": 154,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 190,
+      "net_collision_reduction": 23676,
+      "stage_length_delta_mm": 53.625801242131274,
+      "final_extra_length_vs_planar_mm": 60.78189206820389,
+      "final_transition_count": 356,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 1,
+      "final_elevated_route_count": 178,
+      "full_neighbor_checks": 2880,
+      "full_acceptance_passes": 2272,
+      "not_evaluated_candidates": 7281,
+      "generated_candidates": 10161,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 112,
+      "evaluations_per_action": 18.7012987012987,
+      "net_reduction_per_evaluation": 8.220833333333333,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 2311.406959200045,
+        "runtime_seconds": 2312.2212034999393,
+        "run_seconds_including_recheck": 2396.5498331999406
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33738,
+          "cumulative_removed": 9883,
+          "cumulative_created": 712
+        },
+        "1440": {
+          "candidate_evaluations": 1428,
+          "collision_pair_count": 26525,
+          "cumulative_removed": 18180,
+          "cumulative_created": 1796
+        },
+        "2880": {
+          "candidate_evaluations": 2880,
+          "collision_pair_count": 19233,
+          "cumulative_removed": 27367,
+          "cumulative_created": 3691
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 163,
+        "target_attempts": 190,
+        "repeated_target_attempts": 27,
+        "unique_target_sides": 326,
+        "unique_evaluated_target_sides": 158,
+        "unique_routes_attempted": 158,
+        "unique_routes_evaluated": 156,
+        "unique_routes_touched_by_a_move": 154,
+        "max_attempts_on_one_route": 119,
+        "target_pair_visit_histogram": {
+          "1": 161,
+          "9": 1,
+          "20": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 183,
+          "UE": 7,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 154,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2768,
+          "UE": 112,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": 171,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 22,
+          "UE": 7,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 163,
+          "UE": 1,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "R",
+      "budget": 2880
+    },
+    {
+      "group": "V8_G1_R2880",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R2880_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 18211,
+      "candidate_evaluations": 2880,
+      "accepted_moves": 180,
+      "first_elevations": 180,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 185,
+      "net_collision_reduction": 24698,
+      "stage_length_delta_mm": 30.096940291361534,
+      "final_extra_length_vs_planar_mm": 37.25303111743415,
+      "final_transition_count": 408,
+      "final_path_window_transition_count": 312,
+      "final_logical_ramp_count": 408,
+      "final_physical_fragment_count": 448,
+      "final_unresolved_pairs": 0,
+      "final_elevated_route_count": 204,
+      "full_neighbor_checks": 2855,
+      "full_acceptance_passes": 2677,
+      "not_evaluated_candidates": 30932,
+      "generated_candidates": 33812,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 0,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 8.575694444444444,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 2540.720999400015,
+        "runtime_seconds": 2541.0872587000486,
+        "run_seconds_including_recheck": 2652.247978999978
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 720,
+          "collision_pair_count": 33240,
+          "cumulative_removed": 10655,
+          "cumulative_created": 986
+        },
+        "1440": {
+          "candidate_evaluations": 1440,
+          "collision_pair_count": 26097,
+          "cumulative_removed": 19633,
+          "cumulative_created": 2821
+        },
+        "2880": {
+          "candidate_evaluations": 2880,
+          "collision_pair_count": 18211,
+          "cumulative_removed": 31469,
+          "cumulative_created": 6771
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 185,
+        "target_attempts": 185,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 370,
+        "unique_evaluated_target_sides": 188,
+        "unique_routes_attempted": 183,
+        "unique_routes_evaluated": 181,
+        "unique_routes_touched_by_a_move": 180,
+        "max_attempts_on_one_route": 56,
+        "target_pair_visit_histogram": {
+          "1": 185
+        },
+        "elevation_state_class_attempts": {
+          "UU": 185,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 180,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2880,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 3,
+          "UE": null,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 185,
+          "UE": 0,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 31402,
+        "PATH_WINDOW_G1": 2410
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 13203,
+        "path_window_candidates": 20609,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 53569,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 74178,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 31402,
+        "PATH_WINDOW_G1": 2410
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 470,
+        "PATH_WINDOW_G1": 2410
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 470,
+        "PATH_WINDOW_G1": 2207
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 156,
+        "LINE_WINDOW_G0": 24
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 156,
+        "LINE_WINDOW_G0": 24
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 20379,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 19.032795044394412,
+      "line_window_step_length_delta_mm": 11.064145246894853,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "R",
+      "budget": 2880
+    },
+    {
+      "group": "V7_T0_RC2880",
+      "round": "v7",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_RC2880\\summary.json",
+      "source_root": "overnight_3d_ideas",
+      "final_collision_pairs": 16537,
+      "candidate_evaluations": 2481,
+      "accepted_moves": 132,
+      "first_elevations": 129,
+      "relocations": 3,
+      "returns": 0,
+      "stop_reason": "TARGET_LIMIT",
+      "target_attempts": 200,
+      "net_collision_reduction": 14462,
+      "stage_length_delta_mm": 35.80434004327981,
+      "final_extra_length_vs_planar_mm": 66.74240921942692,
+      "final_transition_count": 412,
+      "final_path_window_transition_count": null,
+      "final_logical_ramp_count": null,
+      "final_physical_fragment_count": null,
+      "final_unresolved_pairs": 0,
+      "final_elevated_route_count": 206,
+      "full_neighbor_checks": 2481,
+      "full_acceptance_passes": 1841,
+      "not_evaluated_candidates": 9066,
+      "generated_candidates": 11547,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": null,
+      "stage_length_cap_checks": null,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 48,
+      "evaluations_per_action": 18.795454545454547,
+      "net_reduction_per_evaluation": 5.829101168883515,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 2120.561692700023,
+        "runtime_seconds": 2121.4770968001103,
+        "run_seconds_including_recheck": 2227.3480517000426
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 708,
+          "collision_pair_count": 23767,
+          "cumulative_removed": 8493,
+          "cumulative_created": 1261
+        },
+        "1440": {
+          "candidate_evaluations": 1430,
+          "collision_pair_count": 18893,
+          "cumulative_removed": 14809,
+          "cumulative_created": 2703
+        },
+        "2880": {
+          "candidate_evaluations": 2481,
+          "collision_pair_count": 16537,
+          "cumulative_removed": 18620,
+          "cumulative_created": 4158
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 180,
+        "target_attempts": 200,
+        "repeated_target_attempts": 20,
+        "unique_target_sides": 360,
+        "unique_evaluated_target_sides": 141,
+        "unique_routes_attempted": 147,
+        "unique_routes_evaluated": 133,
+        "unique_routes_touched_by_a_move": 129,
+        "max_attempts_on_one_route": 65,
+        "target_pair_visit_histogram": {
+          "1": 175,
+          "2": 1,
+          "5": 1,
+          "6": 3
+        },
+        "elevation_state_class_attempts": {
+          "UU": 197,
+          "UE": 3,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 129,
+          "UE": 3,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2433,
+          "UE": 48,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 7,
+          "UE": 140,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 27,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 177,
+          "UE": 3,
+          "EE": 0
+        }
+      },
+      "candidates_by_window_kind": null,
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": null,
+      "tag": null,
+      "arm": "G0_LINE_ONLY",
+      "mode": "R",
+      "budget": 2880,
+      "challenge": true
+    },
+    {
+      "group": "V8_G1_RC2880",
+      "round": "v8",
+      "status": "PRESENT",
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_RC2880_boundaryfix\\summary.json",
+      "source_root": "continuation",
+      "final_collision_pairs": 16344,
+      "candidate_evaluations": 2489,
+      "accepted_moves": 144,
+      "first_elevations": 144,
+      "relocations": 0,
+      "returns": 0,
+      "stop_reason": "TARGET_LIMIT",
+      "target_attempts": 200,
+      "net_collision_reduction": 14655,
+      "stage_length_delta_mm": 20.790938794249087,
+      "final_extra_length_vs_planar_mm": 51.7290079703962,
+      "final_transition_count": 442,
+      "final_path_window_transition_count": 248,
+      "final_logical_ramp_count": 442,
+      "final_physical_fragment_count": 452,
+      "final_unresolved_pairs": 0,
+      "final_elevated_route_count": 221,
+      "full_neighbor_checks": 2229,
+      "full_acceptance_passes": 2097,
+      "not_evaluated_candidates": 33289,
+      "generated_candidates": 35778,
+      "max_targets": 200,
+      "appended_candidate_budget": 2880,
+      "stage_length_cap_mm": null,
+      "stage_length_cap_rejections": 0,
+      "stage_length_cap_checks": 0,
+      "stage_length_cap_headroom_mm": null,
+      "decision_cache_hits": 0,
+      "relocation_candidate_evaluations": 208,
+      "evaluations_per_action": 17.28472222222222,
+      "net_reduction_per_evaluation": 5.887906789875452,
+      "timings": {
+        "initial_pair_scan_seconds": 0.0,
+        "assignment_seconds": 1877.6782489999896,
+        "runtime_seconds": 1878.2412470999407,
+        "run_seconds_including_recheck": 1981.079750600038
+      },
+      "recheck_verdict": "PASS",
+      "recheck_geometry_pass": true,
+      "budget_checkpoints": {
+        "720": {
+          "candidate_evaluations": 708,
+          "collision_pair_count": 23585,
+          "cumulative_removed": 8864,
+          "cumulative_created": 1450
+        },
+        "1440": {
+          "candidate_evaluations": 1437,
+          "collision_pair_count": 19121,
+          "cumulative_removed": 15386,
+          "cumulative_created": 3508
+        },
+        "2880": {
+          "candidate_evaluations": 2489,
+          "collision_pair_count": 16344,
+          "cumulative_removed": 20525,
+          "cumulative_created": 5870
+        }
+      },
+      "coverage": {
+        "unique_target_pairs": 192,
+        "target_attempts": 200,
+        "repeated_target_attempts": 8,
+        "unique_target_sides": 384,
+        "unique_evaluated_target_sides": 153,
+        "unique_routes_attempted": 161,
+        "unique_routes_evaluated": 147,
+        "unique_routes_touched_by_a_move": 144,
+        "max_attempts_on_one_route": 62,
+        "target_pair_visit_histogram": {
+          "1": 187,
+          "2": 3,
+          "3": 1,
+          "4": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 187,
+          "UE": 0,
+          "EE": 13
+        },
+        "elevation_state_class_moves": {
+          "UU": 144,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 2281,
+          "UE": 0,
+          "EE": 208
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 7,
+          "UE": null,
+          "EE": 183
+        },
+        "elevation_state_class_deferred": {
+          "UU": 2,
+          "UE": 0,
+          "EE": 13
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 186,
+          "UE": 0,
+          "EE": 6
+        }
+      },
+      "candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 33593,
+        "PATH_WINDOW_G1": 2185
+      },
+      "evaluated_by_window_kind": null,
+      "executed_by_window_kind": null,
+      "generation_accounting": {
+        "line_window_candidates": 11646,
+        "path_window_candidates": 24132,
+        "path_window_dedup_removed": 0,
+        "path_window_curvature_rejected": 52944,
+        "path_window_build_rejected": 0,
+        "path_window_cap_truncated": 0,
+        "path_window_pairs_before_rejection": 77076,
+        "path_window_rejection_reasons": {}
+      },
+      "tag": "boundaryfix",
+      "generated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 33593,
+        "PATH_WINDOW_G1": 2185
+      },
+      "evaluated_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 304,
+        "PATH_WINDOW_G1": 2185
+      },
+      "full_accepted_candidates_by_window_kind": {
+        "LINE_WINDOW_G0": 304,
+        "PATH_WINDOW_G1": 1793
+      },
+      "executed_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 124,
+        "LINE_WINDOW_G0": 20
+      },
+      "first_elevation_moves_by_window_kind": {
+        "PATH_WINDOW_G1": 124,
+        "LINE_WINDOW_G0": 20
+      },
+      "relocation_moves_by_window_kind": {},
+      "stage_length_cap_rejected_step_length_mm": 0.0,
+      "stage_length_cap_rejections_by_action": {},
+      "stage_length_cap_used_percent": null,
+      "path_window_first_elevation_net_reduction": 11797,
+      "path_window_relocation_net_reduction": 0,
+      "path_window_step_length_delta_mm": 14.610415637920653,
+      "line_window_step_length_delta_mm": 6.180523156291088,
+      "arm": "G1_PATH_WINDOWS",
+      "mode": "R",
+      "budget": 2880,
+      "challenge": true
+    }
+  ],
+  "verdict": "G1 improves the same-budget whole-layout result in 7 of 8 cells"
+}

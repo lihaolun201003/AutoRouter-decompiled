@@ -1,0 +1,138 @@
+{
+  "label": "D56",
+  "channels": 256,
+  "route_count": 256,
+  "expected_routes": 256,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 4.339336273056113,
+  "p95_loss_db": 5.158696622156018,
+  "max_loss_db": 5.34616684118662,
+  "min_loss_db": 2.209925988400894,
+  "std_loss_db": 0.6818773796485549,
+  "worst_route_id": 44,
+  "mean_straight_loss_db": 0.6181090119469258,
+  "mean_bend_loss_db": 3.5888976469729195,
+  "mean_crossing_loss_db": 0.13232961413626765,
+  "sum_straight_loss_db": 158.23590705841303,
+  "sum_bend_loss_db": 918.7577976250623,
+  "sum_crossing_loss_db": 33.8763812188845,
+  "mean_straight_length_mm": 123.62180238938515,
+  "mean_arc_length_mm": 17.767695247328987,
+  "mean_total_length_mm": 141.38949763671414,
+  "sum_total_length_mm": 36195.711394998754,
+  "unique_crossing_events": 9564,
+  "per_route_crossing_events": 19128,
+  "mean_crossing_count": 74.71875,
+  "max_crossing_count": 126,
+  "min_crossing_angle_deg": 18.19487233876619,
+  "mean_crossing_angle_deg": 87.08430152268419,
+  "spacing_violation_count": 37,
+  "spacing_violation_pairs": 37,
+  "min_spacing_mm": 0.006613359164745702,
+  "contact_touch_count": 452,
+  "contact_overlap_count": 0,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "6.0": 256
+  },
+  "bend_count_distribution": {
+    "2": 256
+  },
+  "runtime_s": 23.47553220001282,
+  "stop_reason": "completed",
+  "order_strategy": "legacy",
+  "candidate_limit": 8,
+  "radius_policy": "adaptive",
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 56,
+        "candidates_considered": 896,
+        "mean_candidate_cost": 4.197161925319865
+      },
+      "above": {
+        "placed": 56,
+        "candidates_considered": 896,
+        "mean_candidate_cost": 4.150912775803344
+      },
+      "below2above": {
+        "placed": 69,
+        "candidates_considered": 1104,
+        "mean_candidate_cost": 4.349633534225619
+      },
+      "above2below": {
+        "placed": 75,
+        "candidates_considered": 1194,
+        "mean_candidate_cost": 4.580015850371966
+      }
+    },
+    "order_strategy": "legacy"
+  },
+  "endpoint_changes": 0,
+  "geometry_family": {
+    "u": 256
+  },
+  "config": {
+    "settings": {
+      "candidate_limit": 8,
+      "radii": [
+        5.0,
+        6.0
+      ],
+      "radius_policy": "adaptive",
+      "enable_freeform": false,
+      "position_penalty": 0.001
+    },
+    "order_strategy": "legacy",
+    "allow_port_reorder": false,
+    "plan_stats": {
+      "passes": {
+        "passes": {},
+        "below": {
+          "placed": 56,
+          "candidates_considered": 896,
+          "mean_candidate_cost": 4.197161925319865
+        },
+        "above": {
+          "placed": 56,
+          "candidates_considered": 896,
+          "mean_candidate_cost": 4.150912775803344
+        },
+        "below2above": {
+          "placed": 69,
+          "candidates_considered": 1104,
+          "mean_candidate_cost": 4.349633534225619
+        },
+        "above2below": {
+          "placed": 75,
+          "candidates_considered": 1194,
+          "mean_candidate_cost": 4.580015850371966
+        }
+      },
+      "order_strategy": "legacy"
+    }
+  },
+  "angle_histogram": [
+    0,
+    0,
+    12,
+    12,
+    24,
+    169,
+    9347
+  ],
+  "angle_histogram_bins": [
+    0.0,
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    45.0,
+    60.0,
+    90.0
+  ]
+}

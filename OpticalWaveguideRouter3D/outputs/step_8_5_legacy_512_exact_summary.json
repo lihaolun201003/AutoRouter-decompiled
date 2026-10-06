@@ -1,0 +1,4281 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\\u81ea\u52a8\u6392\u5e03\\AutoRouter\\fiberBoard512.xlsx",
+      "sha256": "71a19ec1739de75453608d1d9bd0bb2b9ad102140e4af5057c12e60c0accd7ff"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\\u81ea\u52a8\u6392\u5e03\\AutoRouter\\fiberBoard0data.xlsx",
+      "sha256": "6901bd1f15388cf15831b57297be9a6a6f51ef1d661196e282dc5f1bbd6a8770"
+    }
+  ],
+  "config": {
+    "board_height": 150.0,
+    "waveguide_width": 0.05,
+    "spacing": 0.125,
+    "bend_radius": 5.0,
+    "tol": 1e-09
+  },
+  "allocator_assigned": 454,
+  "allocator_unsupported_special_z": 58,
+  "analytic_geometry_available": 512,
+  "valid_geometry": 512,
+  "invalid_geometry": 0,
+  "failures": [],
+  "self_events": [],
+  "self_counts": {
+    "cross": 0,
+    "touch": 0,
+    "overlap": 0
+  },
+  "global_stats": {
+    "pair_count": 130816,
+    "cross_events": 55932,
+    "touch_events": 12,
+    "overlap_events": 0,
+    "cross_pairs": 49499,
+    "touch_pairs": 3,
+    "overlap_pairs": 0,
+    "any_pairs": 49502
+  },
+  "groups": {
+    "ordinary-ordinary": {
+      "pair_count": 102831,
+      "cross_events": 47186,
+      "touch_events": 0,
+      "overlap_events": 0,
+      "cross_pairs": 41094,
+      "touch_pairs": 0,
+      "overlap_pairs": 0,
+      "any_pairs": 41094
+    },
+    "ordinary-special": {
+      "pair_count": 26332,
+      "cross_events": 8706,
+      "touch_events": 0,
+      "overlap_events": 0,
+      "cross_pairs": 8365,
+      "touch_pairs": 0,
+      "overlap_pairs": 0,
+      "any_pairs": 8365
+    },
+    "special-special": {
+      "pair_count": 1653,
+      "cross_events": 40,
+      "touch_events": 12,
+      "overlap_events": 0,
+      "cross_pairs": 40,
+      "touch_pairs": 3,
+      "overlap_pairs": 0,
+      "any_pairs": 43
+    }
+  },
+  "ordinary_separate": {
+    "pair_count": 102831,
+    "cross_events": 47186,
+    "touch_events": 0,
+    "overlap_events": 0,
+    "cross_pairs": 41094,
+    "touch_pairs": 0,
+    "overlap_pairs": 0,
+    "any_pairs": 41094
+  },
+  "pair_errors": [],
+  "per_waveguide": [
+    {
+      "waveguide_id": 0,
+      "special": false,
+      "cross_events": 96,
+      "cross_pairs": 95,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 1,
+      "special": false,
+      "cross_events": 96,
+      "cross_pairs": 95,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 2,
+      "special": false,
+      "cross_events": 82,
+      "cross_pairs": 80,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 3,
+      "special": false,
+      "cross_events": 82,
+      "cross_pairs": 80,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 4,
+      "special": false,
+      "cross_events": 335,
+      "cross_pairs": 285,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 5,
+      "special": false,
+      "cross_events": 335,
+      "cross_pairs": 285,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 6,
+      "special": false,
+      "cross_events": 335,
+      "cross_pairs": 285,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 7,
+      "special": false,
+      "cross_events": 335,
+      "cross_pairs": 285,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 8,
+      "special": false,
+      "cross_events": 335,
+      "cross_pairs": 285,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 9,
+      "special": false,
+      "cross_events": 378,
+      "cross_pairs": 304,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 10,
+      "special": false,
+      "cross_events": 292,
+      "cross_pairs": 250,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 11,
+      "special": false,
+      "cross_events": 292,
+      "cross_pairs": 250,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 12,
+      "special": false,
+      "cross_events": 292,
+      "cross_pairs": 250,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 13,
+      "special": true,
+      "cross_events": 217,
+      "cross_pairs": 215,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 14,
+      "special": true,
+      "cross_events": 217,
+      "cross_pairs": 215,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 15,
+      "special": true,
+      "cross_events": 217,
+      "cross_pairs": 215,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 16,
+      "special": true,
+      "cross_events": 217,
+      "cross_pairs": 215,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 17,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 18,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 19,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 20,
+      "special": true,
+      "cross_events": 71,
+      "cross_pairs": 62,
+      "touch_events": 4,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 21,
+      "special": true,
+      "cross_events": 72,
+      "cross_pairs": 63,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 22,
+      "special": true,
+      "cross_events": 27,
+      "cross_pairs": 27,
+      "touch_events": 4,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 23,
+      "special": true,
+      "cross_events": 28,
+      "cross_pairs": 28,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 24,
+      "special": false,
+      "cross_events": 286,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 25,
+      "special": false,
+      "cross_events": 286,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 26,
+      "special": false,
+      "cross_events": 286,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 27,
+      "special": false,
+      "cross_events": 286,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 28,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 29,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 30,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 31,
+      "special": false,
+      "cross_events": 327,
+      "cross_pairs": 292,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 32,
+      "special": false,
+      "cross_events": 198,
+      "cross_pairs": 175,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 33,
+      "special": false,
+      "cross_events": 223,
+      "cross_pairs": 197,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 34,
+      "special": false,
+      "cross_events": 473,
+      "cross_pairs": 370,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 35,
+      "special": false,
+      "cross_events": 353,
+      "cross_pairs": 288,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 36,
+      "special": false,
+      "cross_events": 136,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 37,
+      "special": false,
+      "cross_events": 136,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 38,
+      "special": false,
+      "cross_events": 136,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 39,
+      "special": false,
+      "cross_events": 136,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 40,
+      "special": false,
+      "cross_events": 237,
+      "cross_pairs": 205,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 41,
+      "special": false,
+      "cross_events": 237,
+      "cross_pairs": 205,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 42,
+      "special": false,
+      "cross_events": 237,
+      "cross_pairs": 205,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 43,
+      "special": false,
+      "cross_events": 208,
+      "cross_pairs": 180,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 44,
+      "special": false,
+      "cross_events": 261,
+      "cross_pairs": 261,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 45,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 247,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 46,
+      "special": false,
+      "cross_events": 256,
+      "cross_pairs": 246,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 47,
+      "special": false,
+      "cross_events": 256,
+      "cross_pairs": 246,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 48,
+      "special": false,
+      "cross_events": 134,
+      "cross_pairs": 123,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 49,
+      "special": false,
+      "cross_events": 134,
+      "cross_pairs": 123,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 50,
+      "special": false,
+      "cross_events": 134,
+      "cross_pairs": 123,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 51,
+      "special": false,
+      "cross_events": 134,
+      "cross_pairs": 123,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 52,
+      "special": false,
+      "cross_events": 225,
+      "cross_pairs": 199,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 53,
+      "special": false,
+      "cross_events": 287,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 54,
+      "special": false,
+      "cross_events": 287,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 55,
+      "special": false,
+      "cross_events": 287,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 56,
+      "special": false,
+      "cross_events": 122,
+      "cross_pairs": 111,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 57,
+      "special": false,
+      "cross_events": 122,
+      "cross_pairs": 111,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 58,
+      "special": false,
+      "cross_events": 122,
+      "cross_pairs": 111,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 59,
+      "special": false,
+      "cross_events": 219,
+      "cross_pairs": 200,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 60,
+      "special": false,
+      "cross_events": 150,
+      "cross_pairs": 91,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 61,
+      "special": false,
+      "cross_events": 150,
+      "cross_pairs": 91,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 62,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 105,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 63,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 105,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 64,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 125,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 65,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 125,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 66,
+      "special": false,
+      "cross_events": 176,
+      "cross_pairs": 156,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 67,
+      "special": false,
+      "cross_events": 224,
+      "cross_pairs": 206,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 68,
+      "special": false,
+      "cross_events": 241,
+      "cross_pairs": 234,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 69,
+      "special": false,
+      "cross_events": 241,
+      "cross_pairs": 234,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 70,
+      "special": false,
+      "cross_events": 222,
+      "cross_pairs": 222,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 71,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 250,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 72,
+      "special": false,
+      "cross_events": 217,
+      "cross_pairs": 209,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 73,
+      "special": false,
+      "cross_events": 217,
+      "cross_pairs": 209,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 74,
+      "special": false,
+      "cross_events": 323,
+      "cross_pairs": 280,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 75,
+      "special": false,
+      "cross_events": 191,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 76,
+      "special": false,
+      "cross_events": 152,
+      "cross_pairs": 100,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 77,
+      "special": false,
+      "cross_events": 185,
+      "cross_pairs": 172,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 78,
+      "special": false,
+      "cross_events": 283,
+      "cross_pairs": 262,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 79,
+      "special": false,
+      "cross_events": 283,
+      "cross_pairs": 262,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 80,
+      "special": false,
+      "cross_events": 283,
+      "cross_pairs": 262,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 81,
+      "special": false,
+      "cross_events": 248,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 82,
+      "special": false,
+      "cross_events": 255,
+      "cross_pairs": 244,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 83,
+      "special": false,
+      "cross_events": 255,
+      "cross_pairs": 244,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 84,
+      "special": false,
+      "cross_events": 253,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 85,
+      "special": false,
+      "cross_events": 200,
+      "cross_pairs": 179,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 86,
+      "special": true,
+      "cross_events": 184,
+      "cross_pairs": 178,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 87,
+      "special": true,
+      "cross_events": 184,
+      "cross_pairs": 178,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 88,
+      "special": true,
+      "cross_events": 184,
+      "cross_pairs": 178,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 89,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 263,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 90,
+      "special": false,
+      "cross_events": 241,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 91,
+      "special": false,
+      "cross_events": 259,
+      "cross_pairs": 259,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 92,
+      "special": false,
+      "cross_events": 262,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 93,
+      "special": false,
+      "cross_events": 234,
+      "cross_pairs": 192,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 94,
+      "special": false,
+      "cross_events": 234,
+      "cross_pairs": 192,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 95,
+      "special": false,
+      "cross_events": 208,
+      "cross_pairs": 167,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 96,
+      "special": false,
+      "cross_events": 208,
+      "cross_pairs": 167,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 97,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 98,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 99,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 100,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 101,
+      "special": true,
+      "cross_events": 124,
+      "cross_pairs": 114,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 102,
+      "special": false,
+      "cross_events": 187,
+      "cross_pairs": 175,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 103,
+      "special": false,
+      "cross_events": 187,
+      "cross_pairs": 175,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 104,
+      "special": false,
+      "cross_events": 187,
+      "cross_pairs": 175,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 105,
+      "special": false,
+      "cross_events": 268,
+      "cross_pairs": 268,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 106,
+      "special": false,
+      "cross_events": 271,
+      "cross_pairs": 259,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 107,
+      "special": false,
+      "cross_events": 154,
+      "cross_pairs": 130,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 108,
+      "special": false,
+      "cross_events": 154,
+      "cross_pairs": 130,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 109,
+      "special": false,
+      "cross_events": 154,
+      "cross_pairs": 130,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 110,
+      "special": false,
+      "cross_events": 154,
+      "cross_pairs": 130,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 111,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 238,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 112,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 238,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 113,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 252,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 114,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 252,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 115,
+      "special": false,
+      "cross_events": 191,
+      "cross_pairs": 191,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 116,
+      "special": false,
+      "cross_events": 210,
+      "cross_pairs": 199,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 117,
+      "special": false,
+      "cross_events": 210,
+      "cross_pairs": 199,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 118,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 233,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 119,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 233,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 120,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 233,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 121,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 233,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 122,
+      "special": false,
+      "cross_events": 271,
+      "cross_pairs": 256,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 123,
+      "special": false,
+      "cross_events": 271,
+      "cross_pairs": 256,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 124,
+      "special": false,
+      "cross_events": 271,
+      "cross_pairs": 256,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 125,
+      "special": false,
+      "cross_events": 210,
+      "cross_pairs": 210,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 126,
+      "special": false,
+      "cross_events": 106,
+      "cross_pairs": 77,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 127,
+      "special": false,
+      "cross_events": 106,
+      "cross_pairs": 77,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 128,
+      "special": false,
+      "cross_events": 168,
+      "cross_pairs": 154,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 129,
+      "special": false,
+      "cross_events": 168,
+      "cross_pairs": 154,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 130,
+      "special": false,
+      "cross_events": 306,
+      "cross_pairs": 266,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 131,
+      "special": false,
+      "cross_events": 306,
+      "cross_pairs": 266,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 132,
+      "special": false,
+      "cross_events": 291,
+      "cross_pairs": 265,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 133,
+      "special": false,
+      "cross_events": 291,
+      "cross_pairs": 265,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 134,
+      "special": false,
+      "cross_events": 150,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 135,
+      "special": false,
+      "cross_events": 193,
+      "cross_pairs": 191,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 136,
+      "special": false,
+      "cross_events": 132,
+      "cross_pairs": 105,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 137,
+      "special": false,
+      "cross_events": 132,
+      "cross_pairs": 105,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 138,
+      "special": false,
+      "cross_events": 132,
+      "cross_pairs": 105,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 139,
+      "special": false,
+      "cross_events": 132,
+      "cross_pairs": 105,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 140,
+      "special": false,
+      "cross_events": 201,
+      "cross_pairs": 182,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 141,
+      "special": false,
+      "cross_events": 201,
+      "cross_pairs": 182,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 142,
+      "special": false,
+      "cross_events": 142,
+      "cross_pairs": 123,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 143,
+      "special": true,
+      "cross_events": 255,
+      "cross_pairs": 246,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 144,
+      "special": true,
+      "cross_events": 255,
+      "cross_pairs": 246,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 145,
+      "special": true,
+      "cross_events": 264,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 146,
+      "special": false,
+      "cross_events": 333,
+      "cross_pairs": 280,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 147,
+      "special": false,
+      "cross_events": 244,
+      "cross_pairs": 220,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 148,
+      "special": false,
+      "cross_events": 94,
+      "cross_pairs": 94,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 149,
+      "special": false,
+      "cross_events": 94,
+      "cross_pairs": 94,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 150,
+      "special": true,
+      "cross_events": 142,
+      "cross_pairs": 138,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 151,
+      "special": false,
+      "cross_events": 319,
+      "cross_pairs": 281,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 152,
+      "special": false,
+      "cross_events": 319,
+      "cross_pairs": 281,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 153,
+      "special": false,
+      "cross_events": 319,
+      "cross_pairs": 281,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 154,
+      "special": false,
+      "cross_events": 319,
+      "cross_pairs": 281,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 155,
+      "special": false,
+      "cross_events": 203,
+      "cross_pairs": 182,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 156,
+      "special": true,
+      "cross_events": 196,
+      "cross_pairs": 194,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 157,
+      "special": true,
+      "cross_events": 196,
+      "cross_pairs": 194,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 158,
+      "special": false,
+      "cross_events": 162,
+      "cross_pairs": 139,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 159,
+      "special": false,
+      "cross_events": 162,
+      "cross_pairs": 139,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 160,
+      "special": true,
+      "cross_events": 106,
+      "cross_pairs": 87,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 161,
+      "special": true,
+      "cross_events": 108,
+      "cross_pairs": 88,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 162,
+      "special": true,
+      "cross_events": 121,
+      "cross_pairs": 119,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 163,
+      "special": false,
+      "cross_events": 189,
+      "cross_pairs": 164,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 164,
+      "special": false,
+      "cross_events": 104,
+      "cross_pairs": 92,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 165,
+      "special": false,
+      "cross_events": 172,
+      "cross_pairs": 144,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 166,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 143,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 167,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 168,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 169,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 170,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 171,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 172,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 173,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 174,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 175,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 176,
+      "special": false,
+      "cross_events": 299,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 177,
+      "special": false,
+      "cross_events": 446,
+      "cross_pairs": 357,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 178,
+      "special": false,
+      "cross_events": 187,
+      "cross_pairs": 175,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 179,
+      "special": false,
+      "cross_events": 306,
+      "cross_pairs": 270,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 180,
+      "special": false,
+      "cross_events": 327,
+      "cross_pairs": 286,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 181,
+      "special": false,
+      "cross_events": 327,
+      "cross_pairs": 286,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 182,
+      "special": false,
+      "cross_events": 150,
+      "cross_pairs": 99,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 183,
+      "special": false,
+      "cross_events": 183,
+      "cross_pairs": 146,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 184,
+      "special": false,
+      "cross_events": 183,
+      "cross_pairs": 146,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 185,
+      "special": false,
+      "cross_events": 349,
+      "cross_pairs": 294,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 186,
+      "special": false,
+      "cross_events": 349,
+      "cross_pairs": 294,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 187,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 232,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 188,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 232,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 189,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 232,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 190,
+      "special": false,
+      "cross_events": 302,
+      "cross_pairs": 265,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 191,
+      "special": false,
+      "cross_events": 149,
+      "cross_pairs": 114,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 192,
+      "special": false,
+      "cross_events": 149,
+      "cross_pairs": 114,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 193,
+      "special": false,
+      "cross_events": 149,
+      "cross_pairs": 114,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 194,
+      "special": false,
+      "cross_events": 250,
+      "cross_pairs": 210,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 195,
+      "special": false,
+      "cross_events": 250,
+      "cross_pairs": 210,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 196,
+      "special": false,
+      "cross_events": 250,
+      "cross_pairs": 210,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 197,
+      "special": false,
+      "cross_events": 195,
+      "cross_pairs": 161,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 198,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 137,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 199,
+      "special": false,
+      "cross_events": 291,
+      "cross_pairs": 262,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 200,
+      "special": false,
+      "cross_events": 291,
+      "cross_pairs": 262,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 201,
+      "special": false,
+      "cross_events": 256,
+      "cross_pairs": 222,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 202,
+      "special": false,
+      "cross_events": 211,
+      "cross_pairs": 188,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 203,
+      "special": false,
+      "cross_events": 196,
+      "cross_pairs": 168,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 204,
+      "special": false,
+      "cross_events": 196,
+      "cross_pairs": 168,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 205,
+      "special": false,
+      "cross_events": 196,
+      "cross_pairs": 168,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 206,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 264,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 207,
+      "special": true,
+      "cross_events": 225,
+      "cross_pairs": 224,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 208,
+      "special": false,
+      "cross_events": 156,
+      "cross_pairs": 102,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 209,
+      "special": false,
+      "cross_events": 156,
+      "cross_pairs": 102,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 210,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 211,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 212,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 213,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 214,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 215,
+      "special": false,
+      "cross_events": 284,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 216,
+      "special": false,
+      "cross_events": 303,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 217,
+      "special": false,
+      "cross_events": 305,
+      "cross_pairs": 254,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 218,
+      "special": false,
+      "cross_events": 305,
+      "cross_pairs": 254,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 219,
+      "special": false,
+      "cross_events": 305,
+      "cross_pairs": 254,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 220,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 137,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 221,
+      "special": false,
+      "cross_events": 164,
+      "cross_pairs": 137,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 222,
+      "special": true,
+      "cross_events": 240,
+      "cross_pairs": 236,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 223,
+      "special": true,
+      "cross_events": 240,
+      "cross_pairs": 236,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 224,
+      "special": true,
+      "cross_events": 239,
+      "cross_pairs": 235,
+      "touch_events": 4,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 225,
+      "special": false,
+      "cross_events": 286,
+      "cross_pairs": 264,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 226,
+      "special": false,
+      "cross_events": 330,
+      "cross_pairs": 273,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 227,
+      "special": false,
+      "cross_events": 330,
+      "cross_pairs": 273,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 228,
+      "special": false,
+      "cross_events": 330,
+      "cross_pairs": 273,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 229,
+      "special": false,
+      "cross_events": 222,
+      "cross_pairs": 197,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 230,
+      "special": false,
+      "cross_events": 32,
+      "cross_pairs": 32,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 231,
+      "special": false,
+      "cross_events": 32,
+      "cross_pairs": 32,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 232,
+      "special": true,
+      "cross_events": 110,
+      "cross_pairs": 89,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 233,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 234,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 235,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 236,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 237,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 238,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 239,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 240,
+      "special": true,
+      "cross_events": 66,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 241,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 242,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 243,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 244,
+      "special": false,
+      "cross_events": 254,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 245,
+      "special": false,
+      "cross_events": 120,
+      "cross_pairs": 113,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 246,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 247,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 248,
+      "special": false,
+      "cross_events": 161,
+      "cross_pairs": 157,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 249,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 232,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 250,
+      "special": false,
+      "cross_events": 211,
+      "cross_pairs": 188,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 251,
+      "special": false,
+      "cross_events": 221,
+      "cross_pairs": 191,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 252,
+      "special": false,
+      "cross_events": 221,
+      "cross_pairs": 191,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 253,
+      "special": false,
+      "cross_events": 221,
+      "cross_pairs": 191,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 254,
+      "special": false,
+      "cross_events": 221,
+      "cross_pairs": 191,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 255,
+      "special": false,
+      "cross_events": 224,
+      "cross_pairs": 176,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 256,
+      "special": true,
+      "cross_events": 56,
+      "cross_pairs": 54,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 257,
+      "special": true,
+      "cross_events": 55,
+      "cross_pairs": 53,
+      "touch_events": 4,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 258,
+      "special": true,
+      "cross_events": 48,
+      "cross_pairs": 39,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 259,
+      "special": true,
+      "cross_events": 47,
+      "cross_pairs": 38,
+      "touch_events": 4,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 260,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 245,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 261,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 245,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 262,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 245,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 263,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 245,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 264,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 245,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 265,
+      "special": false,
+      "cross_events": 406,
+      "cross_pairs": 323,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 266,
+      "special": false,
+      "cross_events": 322,
+      "cross_pairs": 263,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 267,
+      "special": false,
+      "cross_events": 322,
+      "cross_pairs": 263,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 268,
+      "special": false,
+      "cross_events": 322,
+      "cross_pairs": 263,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 269,
+      "special": false,
+      "cross_events": 199,
+      "cross_pairs": 192,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 270,
+      "special": false,
+      "cross_events": 199,
+      "cross_pairs": 192,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 271,
+      "special": false,
+      "cross_events": 199,
+      "cross_pairs": 192,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 272,
+      "special": false,
+      "cross_events": 199,
+      "cross_pairs": 192,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 273,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 274,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 275,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 276,
+      "special": false,
+      "cross_events": 38,
+      "cross_pairs": 34,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 277,
+      "special": false,
+      "cross_events": 38,
+      "cross_pairs": 34,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 278,
+      "special": true,
+      "cross_events": 0,
+      "cross_pairs": 0,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 279,
+      "special": true,
+      "cross_events": 0,
+      "cross_pairs": 0,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 280,
+      "special": false,
+      "cross_events": 192,
+      "cross_pairs": 177,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 281,
+      "special": false,
+      "cross_events": 192,
+      "cross_pairs": 177,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 282,
+      "special": false,
+      "cross_events": 192,
+      "cross_pairs": 177,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 283,
+      "special": false,
+      "cross_events": 192,
+      "cross_pairs": 177,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 284,
+      "special": false,
+      "cross_events": 108,
+      "cross_pairs": 102,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 285,
+      "special": false,
+      "cross_events": 108,
+      "cross_pairs": 102,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 286,
+      "special": false,
+      "cross_events": 108,
+      "cross_pairs": 102,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 287,
+      "special": false,
+      "cross_events": 285,
+      "cross_pairs": 271,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 288,
+      "special": false,
+      "cross_events": 221,
+      "cross_pairs": 197,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 289,
+      "special": false,
+      "cross_events": 186,
+      "cross_pairs": 171,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 290,
+      "special": false,
+      "cross_events": 409,
+      "cross_pairs": 315,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 291,
+      "special": false,
+      "cross_events": 353,
+      "cross_pairs": 282,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 292,
+      "special": false,
+      "cross_events": 84,
+      "cross_pairs": 66,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 293,
+      "special": false,
+      "cross_events": 84,
+      "cross_pairs": 66,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 294,
+      "special": false,
+      "cross_events": 84,
+      "cross_pairs": 66,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 295,
+      "special": false,
+      "cross_events": 84,
+      "cross_pairs": 66,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 296,
+      "special": false,
+      "cross_events": 229,
+      "cross_pairs": 203,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 297,
+      "special": false,
+      "cross_events": 229,
+      "cross_pairs": 203,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 298,
+      "special": false,
+      "cross_events": 229,
+      "cross_pairs": 203,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 299,
+      "special": false,
+      "cross_events": 202,
+      "cross_pairs": 177,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 300,
+      "special": false,
+      "cross_events": 338,
+      "cross_pairs": 282,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 301,
+      "special": false,
+      "cross_events": 333,
+      "cross_pairs": 303,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 302,
+      "special": false,
+      "cross_events": 333,
+      "cross_pairs": 303,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 303,
+      "special": false,
+      "cross_events": 333,
+      "cross_pairs": 303,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 304,
+      "special": false,
+      "cross_events": 62,
+      "cross_pairs": 55,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 305,
+      "special": false,
+      "cross_events": 62,
+      "cross_pairs": 55,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 306,
+      "special": false,
+      "cross_events": 62,
+      "cross_pairs": 55,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 307,
+      "special": false,
+      "cross_events": 62,
+      "cross_pairs": 55,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 308,
+      "special": false,
+      "cross_events": 221,
+      "cross_pairs": 194,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 309,
+      "special": false,
+      "cross_events": 315,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 310,
+      "special": false,
+      "cross_events": 315,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 311,
+      "special": false,
+      "cross_events": 315,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 312,
+      "special": false,
+      "cross_events": 140,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 313,
+      "special": false,
+      "cross_events": 140,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 314,
+      "special": false,
+      "cross_events": 140,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 315,
+      "special": false,
+      "cross_events": 267,
+      "cross_pairs": 214,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 316,
+      "special": false,
+      "cross_events": 142,
+      "cross_pairs": 111,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 317,
+      "special": false,
+      "cross_events": 142,
+      "cross_pairs": 111,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 318,
+      "special": false,
+      "cross_events": 162,
+      "cross_pairs": 136,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 319,
+      "special": false,
+      "cross_events": 162,
+      "cross_pairs": 136,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 320,
+      "special": false,
+      "cross_events": 192,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 321,
+      "special": false,
+      "cross_events": 192,
+      "cross_pairs": 150,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 322,
+      "special": false,
+      "cross_events": 190,
+      "cross_pairs": 164,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 323,
+      "special": false,
+      "cross_events": 204,
+      "cross_pairs": 194,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 324,
+      "special": true,
+      "cross_events": 229,
+      "cross_pairs": 224,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 325,
+      "special": true,
+      "cross_events": 229,
+      "cross_pairs": 224,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 326,
+      "special": false,
+      "cross_events": 310,
+      "cross_pairs": 270,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 327,
+      "special": false,
+      "cross_events": 301,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 328,
+      "special": false,
+      "cross_events": 149,
+      "cross_pairs": 141,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 329,
+      "special": false,
+      "cross_events": 149,
+      "cross_pairs": 141,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 330,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 259,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 331,
+      "special": false,
+      "cross_events": 225,
+      "cross_pairs": 184,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 332,
+      "special": false,
+      "cross_events": 160,
+      "cross_pairs": 112,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 333,
+      "special": false,
+      "cross_events": 116,
+      "cross_pairs": 115,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 334,
+      "special": false,
+      "cross_events": 341,
+      "cross_pairs": 282,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 335,
+      "special": false,
+      "cross_events": 341,
+      "cross_pairs": 282,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 336,
+      "special": false,
+      "cross_events": 341,
+      "cross_pairs": 282,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 337,
+      "special": false,
+      "cross_events": 332,
+      "cross_pairs": 279,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 338,
+      "special": false,
+      "cross_events": 342,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 339,
+      "special": false,
+      "cross_events": 342,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 340,
+      "special": false,
+      "cross_events": 342,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 341,
+      "special": false,
+      "cross_events": 90,
+      "cross_pairs": 83,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 342,
+      "special": true,
+      "cross_events": 152,
+      "cross_pairs": 139,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 343,
+      "special": true,
+      "cross_events": 152,
+      "cross_pairs": 139,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 344,
+      "special": true,
+      "cross_events": 152,
+      "cross_pairs": 139,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 345,
+      "special": false,
+      "cross_events": 364,
+      "cross_pairs": 291,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 346,
+      "special": false,
+      "cross_events": 273,
+      "cross_pairs": 230,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 347,
+      "special": false,
+      "cross_events": 346,
+      "cross_pairs": 288,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 348,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 288,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 349,
+      "special": false,
+      "cross_events": 178,
+      "cross_pairs": 142,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 350,
+      "special": false,
+      "cross_events": 178,
+      "cross_pairs": 142,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 351,
+      "special": false,
+      "cross_events": 154,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 352,
+      "special": false,
+      "cross_events": 154,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 353,
+      "special": false,
+      "cross_events": 200,
+      "cross_pairs": 166,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 354,
+      "special": false,
+      "cross_events": 200,
+      "cross_pairs": 166,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 355,
+      "special": false,
+      "cross_events": 200,
+      "cross_pairs": 166,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 356,
+      "special": false,
+      "cross_events": 200,
+      "cross_pairs": 166,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 357,
+      "special": false,
+      "cross_events": 151,
+      "cross_pairs": 143,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 358,
+      "special": true,
+      "cross_events": 175,
+      "cross_pairs": 174,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 359,
+      "special": true,
+      "cross_events": 175,
+      "cross_pairs": 174,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 360,
+      "special": true,
+      "cross_events": 175,
+      "cross_pairs": 174,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 361,
+      "special": false,
+      "cross_events": 330,
+      "cross_pairs": 276,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 362,
+      "special": false,
+      "cross_events": 323,
+      "cross_pairs": 275,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 363,
+      "special": false,
+      "cross_events": 202,
+      "cross_pairs": 179,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 364,
+      "special": false,
+      "cross_events": 202,
+      "cross_pairs": 179,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 365,
+      "special": false,
+      "cross_events": 202,
+      "cross_pairs": 179,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 366,
+      "special": false,
+      "cross_events": 202,
+      "cross_pairs": 179,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 367,
+      "special": false,
+      "cross_events": 226,
+      "cross_pairs": 217,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 368,
+      "special": false,
+      "cross_events": 226,
+      "cross_pairs": 217,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 369,
+      "special": true,
+      "cross_events": 265,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 370,
+      "special": true,
+      "cross_events": 265,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 371,
+      "special": false,
+      "cross_events": 285,
+      "cross_pairs": 247,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 372,
+      "special": false,
+      "cross_events": 311,
+      "cross_pairs": 266,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 373,
+      "special": false,
+      "cross_events": 311,
+      "cross_pairs": 266,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 374,
+      "special": false,
+      "cross_events": 206,
+      "cross_pairs": 184,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 375,
+      "special": false,
+      "cross_events": 206,
+      "cross_pairs": 184,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 376,
+      "special": false,
+      "cross_events": 206,
+      "cross_pairs": 184,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 377,
+      "special": false,
+      "cross_events": 206,
+      "cross_pairs": 184,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 378,
+      "special": false,
+      "cross_events": 293,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 379,
+      "special": false,
+      "cross_events": 293,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 380,
+      "special": false,
+      "cross_events": 293,
+      "cross_pairs": 269,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 381,
+      "special": false,
+      "cross_events": 298,
+      "cross_pairs": 258,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 382,
+      "special": false,
+      "cross_events": 174,
+      "cross_pairs": 153,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 383,
+      "special": false,
+      "cross_events": 174,
+      "cross_pairs": 153,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 384,
+      "special": false,
+      "cross_events": 158,
+      "cross_pairs": 133,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 385,
+      "special": false,
+      "cross_events": 158,
+      "cross_pairs": 133,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 386,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 249,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 387,
+      "special": false,
+      "cross_events": 264,
+      "cross_pairs": 249,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 388,
+      "special": false,
+      "cross_events": 255,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 389,
+      "special": false,
+      "cross_events": 255,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 390,
+      "special": false,
+      "cross_events": 250,
+      "cross_pairs": 225,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 391,
+      "special": false,
+      "cross_events": 237,
+      "cross_pairs": 231,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 392,
+      "special": false,
+      "cross_events": 147,
+      "cross_pairs": 128,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 393,
+      "special": false,
+      "cross_events": 147,
+      "cross_pairs": 128,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 394,
+      "special": false,
+      "cross_events": 147,
+      "cross_pairs": 128,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 395,
+      "special": false,
+      "cross_events": 147,
+      "cross_pairs": 128,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 396,
+      "special": false,
+      "cross_events": 137,
+      "cross_pairs": 108,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 397,
+      "special": false,
+      "cross_events": 137,
+      "cross_pairs": 108,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 398,
+      "special": false,
+      "cross_events": 122,
+      "cross_pairs": 85,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 399,
+      "special": true,
+      "cross_events": 270,
+      "cross_pairs": 254,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 400,
+      "special": true,
+      "cross_events": 270,
+      "cross_pairs": 254,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 401,
+      "special": false,
+      "cross_events": 262,
+      "cross_pairs": 252,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 402,
+      "special": false,
+      "cross_events": 272,
+      "cross_pairs": 256,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 403,
+      "special": false,
+      "cross_events": 248,
+      "cross_pairs": 208,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 404,
+      "special": false,
+      "cross_events": 123,
+      "cross_pairs": 103,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 405,
+      "special": false,
+      "cross_events": 123,
+      "cross_pairs": 103,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 406,
+      "special": false,
+      "cross_events": 153,
+      "cross_pairs": 129,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 407,
+      "special": false,
+      "cross_events": 265,
+      "cross_pairs": 229,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 408,
+      "special": false,
+      "cross_events": 265,
+      "cross_pairs": 229,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 409,
+      "special": false,
+      "cross_events": 265,
+      "cross_pairs": 229,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 410,
+      "special": false,
+      "cross_events": 265,
+      "cross_pairs": 229,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 411,
+      "special": false,
+      "cross_events": 211,
+      "cross_pairs": 187,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 412,
+      "special": false,
+      "cross_events": 210,
+      "cross_pairs": 209,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 413,
+      "special": false,
+      "cross_events": 210,
+      "cross_pairs": 209,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 414,
+      "special": false,
+      "cross_events": 208,
+      "cross_pairs": 180,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 415,
+      "special": false,
+      "cross_events": 208,
+      "cross_pairs": 180,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 416,
+      "special": false,
+      "cross_events": 168,
+      "cross_pairs": 147,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 417,
+      "special": false,
+      "cross_events": 168,
+      "cross_pairs": 147,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 418,
+      "special": true,
+      "cross_events": 174,
+      "cross_pairs": 163,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 419,
+      "special": false,
+      "cross_events": 191,
+      "cross_pairs": 181,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 420,
+      "special": false,
+      "cross_events": 120,
+      "cross_pairs": 116,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 421,
+      "special": false,
+      "cross_events": 158,
+      "cross_pairs": 134,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 422,
+      "special": false,
+      "cross_events": 158,
+      "cross_pairs": 134,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 423,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 424,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 425,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 426,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 427,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 428,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 429,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 430,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 431,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 432,
+      "special": false,
+      "cross_events": 275,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 433,
+      "special": false,
+      "cross_events": 352,
+      "cross_pairs": 283,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 434,
+      "special": true,
+      "cross_events": 175,
+      "cross_pairs": 174,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 435,
+      "special": false,
+      "cross_events": 260,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 436,
+      "special": false,
+      "cross_events": 301,
+      "cross_pairs": 279,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 437,
+      "special": false,
+      "cross_events": 301,
+      "cross_pairs": 279,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 438,
+      "special": false,
+      "cross_events": 190,
+      "cross_pairs": 131,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 439,
+      "special": false,
+      "cross_events": 203,
+      "cross_pairs": 153,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 440,
+      "special": false,
+      "cross_events": 203,
+      "cross_pairs": 153,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 441,
+      "special": false,
+      "cross_events": 287,
+      "cross_pairs": 249,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 442,
+      "special": false,
+      "cross_events": 287,
+      "cross_pairs": 249,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 443,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 444,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 445,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 446,
+      "special": false,
+      "cross_events": 272,
+      "cross_pairs": 259,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 447,
+      "special": false,
+      "cross_events": 195,
+      "cross_pairs": 148,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 448,
+      "special": false,
+      "cross_events": 195,
+      "cross_pairs": 148,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 449,
+      "special": false,
+      "cross_events": 195,
+      "cross_pairs": 148,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 450,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 218,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 451,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 218,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 452,
+      "special": false,
+      "cross_events": 258,
+      "cross_pairs": 218,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 453,
+      "special": false,
+      "cross_events": 213,
+      "cross_pairs": 170,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 454,
+      "special": false,
+      "cross_events": 202,
+      "cross_pairs": 178,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 455,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 456,
+      "special": false,
+      "cross_events": 257,
+      "cross_pairs": 248,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 457,
+      "special": false,
+      "cross_events": 225,
+      "cross_pairs": 201,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 458,
+      "special": false,
+      "cross_events": 181,
+      "cross_pairs": 160,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 459,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 141,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 460,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 141,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 461,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 141,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 462,
+      "special": false,
+      "cross_events": 334,
+      "cross_pairs": 283,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 463,
+      "special": true,
+      "cross_events": 257,
+      "cross_pairs": 252,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 464,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 125,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 465,
+      "special": false,
+      "cross_events": 170,
+      "cross_pairs": 125,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 466,
+      "special": true,
+      "cross_events": 253,
+      "cross_pairs": 245,
+      "touch_events": 4,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 467,
+      "special": false,
+      "cross_events": 252,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 468,
+      "special": false,
+      "cross_events": 252,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 469,
+      "special": false,
+      "cross_events": 252,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 470,
+      "special": false,
+      "cross_events": 252,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 471,
+      "special": false,
+      "cross_events": 252,
+      "cross_pairs": 243,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 472,
+      "special": false,
+      "cross_events": 259,
+      "cross_pairs": 241,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 473,
+      "special": false,
+      "cross_events": 259,
+      "cross_pairs": 241,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 474,
+      "special": false,
+      "cross_events": 259,
+      "cross_pairs": 241,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 475,
+      "special": false,
+      "cross_events": 259,
+      "cross_pairs": 241,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 476,
+      "special": false,
+      "cross_events": 156,
+      "cross_pairs": 134,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 477,
+      "special": false,
+      "cross_events": 156,
+      "cross_pairs": 134,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 478,
+      "special": false,
+      "cross_events": 232,
+      "cross_pairs": 228,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 479,
+      "special": false,
+      "cross_events": 232,
+      "cross_pairs": 228,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 480,
+      "special": false,
+      "cross_events": 232,
+      "cross_pairs": 228,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 481,
+      "special": false,
+      "cross_events": 276,
+      "cross_pairs": 264,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 482,
+      "special": false,
+      "cross_events": 270,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 483,
+      "special": false,
+      "cross_events": 270,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 484,
+      "special": false,
+      "cross_events": 270,
+      "cross_pairs": 253,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 485,
+      "special": false,
+      "cross_events": 253,
+      "cross_pairs": 224,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 486,
+      "special": false,
+      "cross_events": 124,
+      "cross_pairs": 104,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 487,
+      "special": false,
+      "cross_events": 124,
+      "cross_pairs": 104,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 488,
+      "special": false,
+      "cross_events": 168,
+      "cross_pairs": 147,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 489,
+      "special": false,
+      "cross_events": 66,
+      "cross_pairs": 63,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 490,
+      "special": false,
+      "cross_events": 66,
+      "cross_pairs": 63,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 491,
+      "special": false,
+      "cross_events": 66,
+      "cross_pairs": 63,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 492,
+      "special": false,
+      "cross_events": 66,
+      "cross_pairs": 63,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 493,
+      "special": false,
+      "cross_events": 66,
+      "cross_pairs": 63,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 494,
+      "special": false,
+      "cross_events": 68,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 495,
+      "special": false,
+      "cross_events": 68,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 496,
+      "special": false,
+      "cross_events": 68,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 497,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 498,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 499,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 500,
+      "special": false,
+      "cross_events": 344,
+      "cross_pairs": 300,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 501,
+      "special": true,
+      "cross_events": 64,
+      "cross_pairs": 64,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 502,
+      "special": false,
+      "cross_events": 325,
+      "cross_pairs": 279,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 503,
+      "special": false,
+      "cross_events": 325,
+      "cross_pairs": 279,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 504,
+      "special": true,
+      "cross_events": 181,
+      "cross_pairs": 177,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 505,
+      "special": false,
+      "cross_events": 263,
+      "cross_pairs": 235,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 506,
+      "special": false,
+      "cross_events": 181,
+      "cross_pairs": 160,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 507,
+      "special": false,
+      "cross_events": 249,
+      "cross_pairs": 223,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 508,
+      "special": false,
+      "cross_events": 249,
+      "cross_pairs": 223,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 509,
+      "special": false,
+      "cross_events": 249,
+      "cross_pairs": 223,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 510,
+      "special": false,
+      "cross_events": 249,
+      "cross_pairs": 223,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 511,
+      "special": false,
+      "cross_events": 178,
+      "cross_pairs": 166,
+      "touch_events": 0,
+      "overlap_events": 0
+    }
+  ],
+  "top10": [
+    {
+      "waveguide_id": 34,
+      "special": false,
+      "cross_events": 473,
+      "cross_pairs": 370,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 177,
+      "special": false,
+      "cross_events": 446,
+      "cross_pairs": 357,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 290,
+      "special": false,
+      "cross_events": 409,
+      "cross_pairs": 315,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 265,
+      "special": false,
+      "cross_events": 406,
+      "cross_pairs": 323,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 9,
+      "special": false,
+      "cross_events": 378,
+      "cross_pairs": 304,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 345,
+      "special": false,
+      "cross_events": 364,
+      "cross_pairs": 291,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 35,
+      "special": false,
+      "cross_events": 353,
+      "cross_pairs": 288,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 291,
+      "special": false,
+      "cross_events": 353,
+      "cross_pairs": 282,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 433,
+      "special": false,
+      "cross_events": 352,
+      "cross_pairs": 283,
+      "touch_events": 0,
+      "overlap_events": 0
+    },
+    {
+      "waveguide_id": 185,
+      "special": false,
+      "cross_events": 349,
+      "cross_pairs": 294,
+      "touch_events": 0,
+      "overlap_events": 0
+    }
+  ],
+  "special_with_cross": 56,
+  "collision_seconds": 19.0223449000041,
+  "ordinary_separate_seconds": 14.107686700008344,
+  "total_seconds": 33.506709999986924,
+  "checks": {
+    "ordinary_454": true,
+    "special_58": true,
+    "total_512": true,
+    "unique_ids": true,
+    "id_coverage": true,
+    "geometry_all_valid": true,
+    "full_pairs": true,
+    "collision_completed": true,
+    "inputs_unchanged": true,
+    "allocator_unchanged": true
+  },
+  "raw_events_path": "outputs\\step_8_5_legacy_512_exact_events.jsonl"
+}

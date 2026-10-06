@@ -1,0 +1,95 @@
+{
+  "round": "p5",
+  "frozen_at": "2026-10-06T12:39:18",
+  "adoption": {},
+  "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "main_start": "outputs/3d_strategy_v3/512_ablation/D_both_enabled",
+  "challenge_start": "outputs/3d_strategy_v4/512_full_layout/N2880",
+  "main_budgets": [
+    720,
+    1440,
+    2880
+  ],
+  "challenge_budget": 2880,
+  "clearance_mm": 0.1,
+  "required_radius_mm": 5.0,
+  "window_slack_mm": 1e-05,
+  "idea_titles": {
+    "A": "candidate family diversity round-robin vs unified-score top-K",
+    "B": "reserved relocation evaluation slots vs joint top-K",
+    "C": "target waiting age vs original degree ordering",
+    "D": "route coverage scheduling inside the state layers vs existing traversal",
+    "E": "multi-target witness anchor vs single-target anchor",
+    "F": "exact geometry dedup vs original candidate sequence",
+    "G": "candidate-neighbour decision cache (identical results required)",
+    "H": "RETURN to frozen plane as an extra action vs plain R"
+  },
+  "group_count": 2,
+  "groups": [
+    "P5_CACHE_OFF_R1440",
+    "P5_CACHE_ON_R1440"
+  ],
+  "cells": [
+    {
+      "group": "P5_CACHE_OFF_R1440",
+      "strategy": "P5_CACHE_OFF",
+      "spec": {
+        "name": "P5_CACHE_OFF",
+        "target_policy": "LEGACY",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "generation_domain": "LINE_ONLY",
+        "path_window_settings": null,
+        "stage_length_cap_mm": null,
+        "notes": ""
+      },
+      "mode": "R",
+      "budget": 1440,
+      "start_kind": "main",
+      "control": "P5_SERIAL_TIMING_PAIR"
+    },
+    {
+      "group": "P5_CACHE_ON_R1440",
+      "strategy": "P5_CACHE_ON",
+      "spec": {
+        "name": "P5_CACHE_ON",
+        "target_policy": "LEGACY",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": true,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "generation_domain": "LINE_ONLY",
+        "path_window_settings": null,
+        "stage_length_cap_mm": null,
+        "notes": ""
+      },
+      "mode": "R",
+      "budget": 1440,
+      "start_kind": "main",
+      "control": "P5_SERIAL_TIMING_PAIR"
+    }
+  ],
+  "note": "frozen before the first formal evaluation of this round; the runner refuses any group that is not listed here"
+}

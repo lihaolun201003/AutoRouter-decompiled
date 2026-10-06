@@ -1,0 +1,22 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{512 通道交叉损耗模型的敏感性（固定几何复算）}
+  \label{tab:crossing-sensitivity}
+  \begin{tabular}{llrr}
+    \toprule
+    口径 & 说明 & 平均损耗 (dB) & 最大损耗 (dB) \\
+    \midrule
+    A & 全部按 90°（0.05 dB/30），忽略角度依赖 & 5.4758 & 6.5224 \\
+    B & 图 3-12 数字化 + 90° 锚定（项目主口径） & 5.5147 & 6.5761 \\
+    C & 图 3-12 原始值（不锚定） & 5.5745 & 6.6659 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  三种口径均为固定几何复算（不改布线）：非交叉部分相同，只替换交叉项；逐路交叉条目按每根波导各计一次。 \\
+  与 OpticalWaveguideRouter2D/docs/loss\_model\_reconstruction\_report.md 第 7 节的记录值（均值 5.4758/5.5147/5.5745 与最大 6.5224/6.5761/6.6659）一致（±0.002 dB，差异来自文档记录的四位舍入）。 \\
+  主口径（B）即全部复现图的损耗口径。 \\
+  \end{flushleft}
+\end{table}

@@ -1,0 +1,139 @@
+{
+  "label": "D0",
+  "channels": 256,
+  "route_count": 256,
+  "expected_routes": 256,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 4.38147530856685,
+  "p95_loss_db": 5.173467380005264,
+  "max_loss_db": 5.363756184094816,
+  "min_loss_db": 2.207485494149183,
+  "std_loss_db": 0.6898323422035416,
+  "worst_route_id": 44,
+  "mean_straight_loss_db": 0.6087769806969258,
+  "mean_bend_loss_db": 3.6375320289876942,
+  "mean_crossing_loss_db": 0.13516629888223036,
+  "sum_straight_loss_db": 155.8469070584131,
+  "sum_bend_loss_db": 931.2081994208447,
+  "sum_crossing_loss_db": 34.60257251385101,
+  "mean_straight_length_mm": 121.75539613938516,
+  "mean_arc_length_mm": 17.60816124538888,
+  "mean_total_length_mm": 139.36355738477403,
+  "sum_total_length_mm": 35677.0706905021,
+  "unique_crossing_events": 9474,
+  "per_route_crossing_events": 18948,
+  "mean_crossing_count": 74.015625,
+  "max_crossing_count": 126,
+  "min_crossing_angle_deg": 18.194872338766697,
+  "mean_crossing_angle_deg": 86.41413529110946,
+  "spacing_violation_count": 78,
+  "spacing_violation_pairs": 78,
+  "min_spacing_mm": 0.006613359164767019,
+  "contact_touch_count": 400,
+  "contact_overlap_count": 0,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "6.0": 243,
+    "5.0": 13
+  },
+  "bend_count_distribution": {
+    "2": 256
+  },
+  "runtime_s": 2.1498662000522017,
+  "stop_reason": "completed",
+  "order_strategy": "legacy",
+  "candidate_limit": 1,
+  "radius_policy": "fallback",
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 56,
+        "candidates_considered": 56,
+        "mean_candidate_cost": 4.282447535868707
+      },
+      "above": {
+        "placed": 56,
+        "candidates_considered": 56,
+        "mean_candidate_cost": 4.253018282296538
+      },
+      "below2above": {
+        "placed": 69,
+        "candidates_considered": 69,
+        "mean_candidate_cost": 4.355080580534905
+      },
+      "above2below": {
+        "placed": 75,
+        "candidates_considered": 75,
+        "mean_candidate_cost": 4.57561377491935
+      }
+    },
+    "order_strategy": "legacy"
+  },
+  "endpoint_changes": 0,
+  "geometry_family": {
+    "u": 256
+  },
+  "config": {
+    "settings": {
+      "candidate_limit": 1,
+      "radii": [
+        6.0,
+        5.0
+      ],
+      "radius_policy": "fallback",
+      "enable_freeform": false,
+      "position_penalty": 0.001
+    },
+    "order_strategy": "legacy",
+    "allow_port_reorder": false,
+    "plan_stats": {
+      "passes": {
+        "passes": {},
+        "below": {
+          "placed": 56,
+          "candidates_considered": 56,
+          "mean_candidate_cost": 4.282447535868707
+        },
+        "above": {
+          "placed": 56,
+          "candidates_considered": 56,
+          "mean_candidate_cost": 4.253018282296538
+        },
+        "below2above": {
+          "placed": 69,
+          "candidates_considered": 69,
+          "mean_candidate_cost": 4.355080580534905
+        },
+        "above2below": {
+          "placed": 75,
+          "candidates_considered": 75,
+          "mean_candidate_cost": 4.57561377491935
+        }
+      },
+      "order_strategy": "legacy"
+    }
+  },
+  "angle_histogram": [
+    0,
+    0,
+    3,
+    2,
+    80,
+    290,
+    9099
+  ],
+  "angle_histogram_bins": [
+    0.0,
+    5.0,
+    10.0,
+    20.0,
+    30.0,
+    45.0,
+    60.0,
+    90.0
+  ]
+}

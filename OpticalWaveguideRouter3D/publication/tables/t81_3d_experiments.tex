@@ -1,0 +1,23 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{三维实验汇总（几何指标；无光学损耗计算）}
+  \label{tab:3d-experiments}
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    实验（规模） & 层数 & 尝试 & 成功抬层 & 近距 pair（初 → 终） & 额外长度 (mm) & 运行 (s) \\
+    \midrule
+    9-E 顺序层分配（512） & 2 & 30 & 12 & 49\,518 → 47\,508 & 2.93 & 23.5 \\
+    9-F 两层对照（512） & 2 & 50 & 16 & 49\,518 → 46\,624 & 3.90 & 40.6 \\
+    9-F 三层（512） & 3 & 50 & 22 & 49\,518 → 45\,400 & 8.84 & 81.3 \\
+    10 固定 1024（1024，合成实例） & 3 & 1\,024 & 175 & 204\,291 → 138\,113 & 87.41 & 1172.7 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  近距 pair=自定义中心线 clearance<0.1 mm 的路线对数；不是制造违规数，也不是光学风险指标。 \\
+  9-E 目标 30 次 attempt、9-F 两组各 50 次、Step 10 上限 1024 次；三次实验的初始 pair 均为 49 518（512 布局）/204 291（1024 实例）。 \\
+  全部实验为几何/算法指标，项目未建立三维光学损耗模型，不得据此推断损耗改善。 \\
+  \end{flushleft}
+\end{table}

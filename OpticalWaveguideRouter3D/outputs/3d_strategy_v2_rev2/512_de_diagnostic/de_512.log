@@ -1,0 +1,47 @@
+[531565.3] start de diagnostic size=512
+[531587.8] start state: 43750 colliding pairs, 24 elevated routes; targets: both-elevated=10 one-elevated=10 total=20
+[531587.8] mode D: start
+[531613.0]   D target 1 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 2 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 3 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 4 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 5 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 6 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 7 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.1]   D target 8 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.2]   D target 9 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531613.2]   D target 10 NO_MOVABLE_ROUTE collisions=43750 evaluations=0 23s
+[531618.3]   D target 11 ELEVATED collisions=43663 evaluations=18 28s
+[531623.5]   D target 12 ELEVATED collisions=43576 evaluations=36 33s
+[531640.5]   D target 13 ELEVATED collisions=43315 evaluations=90 50s
+[531657.4]   D target 14 ELEVATED collisions=43056 evaluations=144 67s
+[531674.2]   D target 15 ELEVATED collisions=42799 evaluations=198 84s
+[531691.5]   D target 16 ELEVATED collisions=42544 evaluations=252 102s
+[531709.5]   D target 17 ELEVATED collisions=42291 evaluations=306 120s
+[531714.6]   D target 18 ELEVATED collisions=42112 evaluations=324 125s
+[531714.7] mode D: done final=42112 accepted=8 relocations=0 evaluations=324 stop=TARGET_LIST_FINISHED
+[531738.6]   recheck 100000 pairs 20.8s
+[531742.9] mode D: recheck PASS
+[531742.9] mode E: start
+[531770.1]   E target 1 NO_CANDIDATES_GENERATED collisions=43750 evaluations=0 25s
+[531770.4]   E target 2 NO_CANDIDATES_GENERATED collisions=43750 evaluations=0 25s
+[531770.7]   E target 3 NO_CANDIDATES_GENERATED collisions=43750 evaluations=0 25s
+[531780.8]   E target 4 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=18 35s
+[531790.7]   E target 5 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=36 45s
+[531800.1]   E target 6 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=54 55s
+[531807.4]   E target 7 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=72 62s
+[531817.3]   E target 8 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=90 72s
+[531827.2]   E target 9 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=108 82s
+[531837.0]   E target 10 ALL_CANDIDATES_REJECTED collisions=43750 evaluations=126 92s
+[531842.0]   E target 11 ELEVATED collisions=43663 evaluations=144 97s
+[531847.2]   E target 12 ELEVATED collisions=43576 evaluations=162 102s
+[531863.4]   E target 13 ELEVATED collisions=43315 evaluations=216 118s
+[531879.0]   E target 14 ELEVATED collisions=43056 evaluations=270 134s
+[531895.0]   E target 15 ELEVATED collisions=42799 evaluations=324 150s
+[531911.6]   E target 16 ELEVATED collisions=42544 evaluations=378 166s
+[531928.4]   E target 17 ELEVATED collisions=42291 evaluations=432 183s
+[531933.2]   E target 18 ELEVATED collisions=42112 evaluations=450 188s
+[531933.4] mode E: done final=42112 accepted=8 relocations=0 evaluations=450 stop=TARGET_LIST_FINISHED
+[531955.6]   recheck 100000 pairs 19.4s
+[531959.6] mode E: recheck PASS
+[531959.6] de ALL DONE [{"mode": "D", "final_collision_pairs": 42112, "net_reduction": 1638, "accepted_moves": 8, "first_elevations": 8, "relocations": 0, "relocation_victim_attempts": 0, "relocation_candidate_evaluations": 0, "failed_no_movable_route": 10, "failed_no_candidates": 0, "failed_all_rejected": 0, "candidate_evaluations": 324, "step_length_delta_total_mm": 4.122276684604003, "final_extra_length_vs_planar_mm": 13.015280586550944, "runtime_seconds": 124.71872020000592, "stop_reason": "TARGET_LIST_FINISHED"}, {"mode": "E", "final_collision_pairs": 42112, "net_reduction": 1638, "accepted_moves": 8, "first_elevations": 8, "relocations": 0, "relocation_victim_attempts": 28, "relocation_candidate_evaluations": 126, "failed_no_movable_route": 0, "failed_no_candidates": 3, "failed_all_rejected": 7, "candidate_evaluations": 450, "step_length_delta_total_mm": 4.122276684604003, "final_extra_length_vs_planar_mm": 13.015280586550944, "runtime_seconds": 187.96669530007057, "stop_reason": "TARGET_LIST_FINISHED"}]

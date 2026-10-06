@@ -1,0 +1,133 @@
+{
+  "label": "order_congestion",
+  "channels": 512,
+  "route_count": 413,
+  "expected_routes": 512,
+  "complete_connection": false,
+  "unplaced_count": 99,
+  "unplaced_ids_sample": [
+    230,
+    231,
+    496,
+    486,
+    487,
+    148,
+    149,
+    421,
+    422,
+    158,
+    159,
+    134,
+    135,
+    412,
+    413,
+    147,
+    207,
+    390,
+    391,
+    115
+  ],
+  "mean_loss_db": 5.462206441777188,
+  "p95_loss_db": 6.32474132699514,
+  "max_loss_db": 6.713872357641443,
+  "min_loss_db": 2.6721160396762684,
+  "std_loss_db": 0.805730179810815,
+  "worst_route_id": 31,
+  "mean_straight_loss_db": 0.6415096367938664,
+  "mean_bend_loss_db": 4.512127493692015,
+  "mean_crossing_loss_db": 0.30856931129130705,
+  "sum_straight_loss_db": 264.94347999586694,
+  "sum_bend_loss_db": 1863.508654894806,
+  "sum_crossing_loss_db": 127.43912556330983,
+  "mean_straight_length_mm": 128.3019273587733,
+  "mean_arc_length_mm": 14.873905988134748,
+  "mean_total_length_mm": 143.17583334690804,
+  "sum_total_length_mm": 59131.61917227314,
+  "unique_crossing_events": 31268,
+  "per_route_crossing_events": 62536,
+  "mean_crossing_count": 151.41888619854723,
+  "max_crossing_count": 345,
+  "min_crossing_angle_deg": 2.836285983684864,
+  "mean_crossing_angle_deg": 82.49839574868076,
+  "spacing_violation_count": 696,
+  "spacing_violation_pairs": 696,
+  "min_spacing_mm": 0.0006249609423914172,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "5.0": 413
+  },
+  "bend_count_distribution": {
+    "2": 413
+  },
+  "runtime_s": 47.14678820001427,
+  "stop_reason": "incomplete",
+  "order_strategy": "congestion",
+  "candidate_limit": 8,
+  "radius_policy": "fixed",
+  "refine": null,
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 112,
+        "candidates_considered": 896,
+        "mean_candidate_cost": 5.457539543769291
+      },
+      "above": {
+        "placed": 112,
+        "candidates_considered": 896,
+        "mean_candidate_cost": 5.5230179459440265
+      },
+      "below2above": {
+        "placed": 84,
+        "candidates_considered": 623,
+        "mean_candidate_cost": 5.826222445003854
+      },
+      "above2below": {
+        "placed": 105,
+        "candidates_considered": 648,
+        "mean_candidate_cost": 5.2673499731920055
+      }
+    },
+    "order_strategy": "congestion"
+  },
+  "config": {
+    "kind": "planner",
+    "candidate_limit": 8,
+    "order_strategy": "congestion",
+    "radii": [
+      5.0
+    ],
+    "radius_policy": "fixed",
+    "position_penalty": 0.01,
+    "refine_rounds": 0,
+    "rip_count": null,
+    "plan_stats": {
+      "passes": {
+        "passes": {},
+        "below": {
+          "placed": 112,
+          "candidates_considered": 896,
+          "mean_candidate_cost": 5.457539543769291
+        },
+        "above": {
+          "placed": 112,
+          "candidates_considered": 896,
+          "mean_candidate_cost": 5.5230179459440265
+        },
+        "below2above": {
+          "placed": 84,
+          "candidates_considered": 623,
+          "mean_candidate_cost": 5.826222445003854
+        },
+        "above2below": {
+          "placed": 105,
+          "candidates_considered": 648,
+          "mean_candidate_cost": 5.2673499731920055
+        }
+      },
+      "order_strategy": "congestion"
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "round": "v5",
+  "generator": "scripts/summarize_overnight.py",
+  "generated_utc": "2026-10-05T14:42:22Z",
+  "status": "DECIDED",
+  "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "rule_source": "scripts/overnight_registry.py ADOPTION_RULE",
+  "target_policy": "LEGACY",
+  "evaluation_policy": "E0_EXHAUSTIVE",
+  "k_per_target": 16,
+  "adopted_group": "V5_LEGACY_R2880",
+  "adopted_cell": {
+    "start_kind": "main",
+    "mode": "R",
+    "budget": 2880
+  },
+  "adopted_manifest_sha256": "ee77fdd079c1ab6bc1cd8bb3ebef379dc06fb1f0a10b58d3a5a8f4c19eff8d38",
+  "adopted_metrics": {
+    "initial_collision_pairs": 42909,
+    "final_collision_pairs": 30999,
+    "net_collision_reduction": 11910,
+    "stage_length_delta_mm": 23.781978350074496,
+    "candidate_evaluations": 2880,
+    "accepted_moves": 53,
+    "recheck_verdict": "PASS"
+  },
+  "retained_old_config": false,
+  "old_config": {
+    "target_policy": "LEGACY",
+    "evaluation_policy": "E0_EXHAUSTIVE",
+    "k_per_target": 16
+  },
+  "old_config_source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v5\\adoption.json (previously written adoption decision)",
+  "eligible_candidates": [
+    {
+      "group": "V5_LEGACY_R2880",
+      "strategy": "V5_LEGACY",
+      "recheck_verdict": "PASS",
+      "final_collision_pairs": 30999,
+      "stage_length_delta_mm": 23.781978350074496,
+      "candidate_evaluations": 2880
+    },
+    {
+      "group": "V5_STRATIFIED_R2880",
+      "strategy": "V5_STRATIFIED",
+      "recheck_verdict": "PASS",
+      "final_collision_pairs": 33343,
+      "stage_length_delta_mm": 21.72373187841731,
+      "candidate_evaluations": 2880
+    }
+  ],
+  "excluded_candidates": [],
+  "decision_path": [
+    {
+      "step": 1,
+      "criterion": "correctness and recheck PASS first",
+      "applied": true,
+      "field": "recheck_verdict + recheck_geometry",
+      "kept": [
+        "V5_LEGACY_R2880",
+        "V5_STRATIFIED_R2880"
+      ],
+      "dropped": [],
+      "detail": "MAIN R2880 R-mode groups only; the rule's first gate"
+    },
+    {
+      "step": 2,
+      "criterion": "then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts)",
+      "applied": true,
+      "field": "final_collision_pairs",
+      "direction": "min",
+      "values": {
+        "V5_LEGACY_R2880": 30999,
+        "V5_STRATIFIED_R2880": 33343
+      },
+      "kept": [
+        "V5_LEGACY_R2880"
+      ],
+      "dropped": [
+        "V5_STRATIFIED_R2880"
+      ],
+      "unknown_values": []
+    },
+    {
+      "step": 3,
+      "criterion": "tie -> smaller stage length delta",
+      "applied": false,
+      "field": "stage_length_delta_mm",
+      "values": {
+        "V5_LEGACY_R2880": 23.781978350074496
+      },
+      "reason": "a single candidate already remained"
+    },
+    {
+      "step": 4,
+      "criterion": "tie -> fewer actual evaluations",
+      "applied": false,
+      "field": "candidate_evaluations",
+      "values": {
+        "V5_LEGACY_R2880": 2880
+      },
+      "reason": "a single candidate already remained"
+    }
+  ],
+  "disclosures": {
+    "by_cell": [
+      {
+        "start_kind": "main",
+        "mode": "N",
+        "budget": 720,
+        "adopted_group": "V5_LEGACY_N720",
+        "old_config_group": "V5_LEGACY_N720",
+        "adopted_final_collision_pairs": 40072,
+        "old_config_final_collision_pairs": 40072,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "main",
+        "mode": "N",
+        "budget": 1440,
+        "adopted_group": "V5_LEGACY_N1440",
+        "old_config_group": "V5_LEGACY_N1440",
+        "adopted_final_collision_pairs": 36995,
+        "old_config_final_collision_pairs": 36995,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "main",
+        "mode": "N",
+        "budget": 2880,
+        "adopted_group": "V5_LEGACY_N2880",
+        "old_config_group": "V5_LEGACY_N2880",
+        "adopted_final_collision_pairs": 30999,
+        "old_config_final_collision_pairs": 30999,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "challenge",
+        "mode": "N",
+        "budget": 2880,
+        "adopted_group": "V5_LEGACY_NC2880",
+        "old_config_group": "V5_LEGACY_NC2880",
+        "adopted_final_collision_pairs": 21351,
+        "old_config_final_collision_pairs": 21351,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "main",
+        "mode": "R",
+        "budget": 720,
+        "adopted_group": "V5_LEGACY_R720",
+        "old_config_group": "V5_LEGACY_R720",
+        "adopted_final_collision_pairs": 40072,
+        "old_config_final_collision_pairs": 40072,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "main",
+        "mode": "R",
+        "budget": 1440,
+        "adopted_group": "V5_LEGACY_R1440",
+        "old_config_group": "V5_LEGACY_R1440",
+        "adopted_final_collision_pairs": 36995,
+        "old_config_final_collision_pairs": 36995,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "main",
+        "mode": "R",
+        "budget": 2880,
+        "adopted_group": "V5_LEGACY_R2880",
+        "old_config_group": "V5_LEGACY_R2880",
+        "adopted_final_collision_pairs": 30999,
+        "old_config_final_collision_pairs": 30999,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      },
+      {
+        "start_kind": "challenge",
+        "mode": "R",
+        "budget": 2880,
+        "adopted_group": "V5_LEGACY_RC2880",
+        "old_config_group": "V5_LEGACY_RC2880",
+        "adopted_final_collision_pairs": 21351,
+        "old_config_final_collision_pairs": 21351,
+        "verdict": "IDENTICAL",
+        "delta_final_collision_pairs": 0,
+        "regression": false,
+        "delta_stage_length_delta_mm": 0.0,
+        "delta_candidate_evaluations": 0,
+        "adopted_recheck_verdict": "PASS",
+        "old_config_recheck_verdict": "PASS"
+      }
+    ],
+    "regression_count": 0,
+    "regression_cells": [],
+    "criterion": "regression = the adopted configuration terminates with MORE near-distance pairs than the old configuration at the same start state, mode and budget; the rule itself ranks only the MAIN R2880 R-mode cells, so every other budget and mode is disclosed here, never used to rank",
+    "not_comparable": []
+  },
+  "round_manifest": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\manifest\\round_v5.json",
+  "round_manifest_sha256": "ee77fdd079c1ab6bc1cd8bb3ebef379dc06fb1f0a10b58d3a5a8f4c19eff8d38",
+  "legacy_equivalence": {
+    "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\v5_legacy_vs_v4.json",
+    "present": true,
+    "all_reusable": true,
+    "note": "read verbatim from scripts/overnight_equiv_check.py output; the summarizer never re-derives this verdict",
+    "criterion": "the two runs must agree on every compared quantity; only then may the reviewed v4 group be cited as the v5 LEGACY baseline",
+    "source_v4": "outputs\\3d_strategy_v4\\512_full_layout",
+    "source_new": "outputs\\overnight_3d_ideas\\v5",
+    "groups": [
+      {
+        "group": "V5_LEGACY_N720",
+        "mode": "N",
+        "budget": 720,
+        "status": "IDENTICAL",
+        "reusable_as_baseline": true,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_R720",
+        "mode": "R",
+        "budget": 720,
+        "status": "IDENTICAL",
+        "reusable_as_baseline": true,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_N1440",
+        "mode": "N",
+        "budget": 1440,
+        "status": "NOT_FINISHED",
+        "reusable_as_baseline": null,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_R1440",
+        "mode": "R",
+        "budget": 1440,
+        "status": "NOT_FINISHED",
+        "reusable_as_baseline": null,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_N2880",
+        "mode": "N",
+        "budget": 2880,
+        "status": "NOT_FINISHED",
+        "reusable_as_baseline": null,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_R2880",
+        "mode": "R",
+        "budget": 2880,
+        "status": "NOT_FINISHED",
+        "reusable_as_baseline": null,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_NC2880",
+        "mode": "N",
+        "budget": 2880,
+        "status": "NOT_FINISHED",
+        "reusable_as_baseline": null,
+        "failing_checks": []
+      },
+      {
+        "group": "V5_LEGACY_RC2880",
+        "mode": "R",
+        "budget": 2880,
+        "status": "NOT_FINISHED",
+        "reusable_as_baseline": null,
+        "failing_checks": []
+      }
+    ]
+  },
+  "notes": []
+}

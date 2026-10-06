@@ -1,0 +1,154 @@
+{
+  "label": "D-R5R6",
+  "channels": 512,
+  "route_count": 512,
+  "expected_routes": 512,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 4.559293017965906,
+  "p95_loss_db": 5.388607518057481,
+  "max_loss_db": 5.6129347926492565,
+  "min_loss_db": 2.1364655768343748,
+  "std_loss_db": 0.6899094660889324,
+  "worst_route_id": 287,
+  "mean_straight_loss_db": 0.6239094931004748,
+  "mean_bend_loss_db": 3.604020589516299,
+  "mean_crossing_loss_db": 0.3313629353491323,
+  "sum_straight_loss_db": 319.4416604674433,
+  "sum_bend_loss_db": 1845.2585418323297,
+  "sum_crossing_loss_db": 169.65782289875582,
+  "mean_straight_length_mm": 124.78189862009496,
+  "mean_arc_length_mm": 17.81177190061075,
+  "mean_total_length_mm": 142.5936705207057,
+  "sum_total_length_mm": 73007.95930660122,
+  "unique_crossing_events": 43170,
+  "per_route_crossing_events": 86340,
+  "mean_crossing_count": 168.6328125,
+  "max_crossing_count": 273,
+  "min_crossing_angle_deg": 21.03946978131697,
+  "mean_crossing_angle_deg": 82.77262452487467,
+  "spacing_violation_count": 516,
+  "spacing_violation_pairs": 516,
+  "min_spacing_mm": 0.0021350368014976433,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "6.0": 510,
+    "5.0": 2
+  },
+  "bend_count_distribution": {
+    "2": 512
+  },
+  "runtime_s": 159.1537038999959,
+  "stop_reason": "completed",
+  "order_strategy": "legacy",
+  "candidate_limit": 8,
+  "radius_policy": "adaptive",
+  "refine": {
+    "rounds": [
+      {
+        "round": 0,
+        "attempt": 0,
+        "rip_count": 25,
+        "failed": [
+          81,
+          91,
+          273,
+          274
+        ],
+        "accepted": false,
+        "reason": "reroute_failed"
+      },
+      {
+        "round": 0,
+        "attempt": 1,
+        "rip_count": 21,
+        "failed": [
+          275,
+          436,
+          497,
+          498,
+          499
+        ],
+        "accepted": false,
+        "reason": "reroute_failed"
+      }
+    ],
+    "stop_reason": "no_improvement",
+    "iterations": 1,
+    "runtime_s": 24.286795899970457
+  },
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 112,
+        "candidates_considered": 1792,
+        "mean_candidate_cost": 4.2725019969738
+      },
+      "above": {
+        "placed": 112,
+        "candidates_considered": 1776,
+        "mean_candidate_cost": 4.304164360796245
+      },
+      "below2above": {
+        "placed": 115,
+        "candidates_considered": 1840,
+        "mean_candidate_cost": 4.824277362142625
+      },
+      "above2below": {
+        "placed": 173,
+        "candidates_considered": 2762,
+        "mean_candidate_cost": 4.742973972650663
+      }
+    },
+    "order_strategy": "legacy"
+  },
+  "legacy_mean_loss_db": 4.555818291336265,
+  "legacy_max_loss_db": 5.612280140762588,
+  "legacy_min_loss_db": 2.1364656921305007,
+  "legacy_mean_crossing_count": 168.50390625,
+  "legacy_max_crossing_count": 273,
+  "legacy_mean_length_mm": 142.5905,
+  "legacy_bend_radius_used": 6.0,
+  "config": {
+    "kind": "planner",
+    "candidate_limit": 8,
+    "order_strategy": "legacy",
+    "radii": [
+      5.0,
+      6.0
+    ],
+    "radius_policy": "adaptive",
+    "position_penalty": 0.01,
+    "refine_rounds": 3,
+    "rip_count": 25,
+    "plan_stats": {
+      "passes": {
+        "passes": {},
+        "below": {
+          "placed": 112,
+          "candidates_considered": 1792,
+          "mean_candidate_cost": 4.2725019969738
+        },
+        "above": {
+          "placed": 112,
+          "candidates_considered": 1776,
+          "mean_candidate_cost": 4.304164360796245
+        },
+        "below2above": {
+          "placed": 115,
+          "candidates_considered": 1840,
+          "mean_candidate_cost": 4.824277362142625
+        },
+        "above2below": {
+          "placed": 173,
+          "candidates_considered": 2762,
+          "mean_candidate_cost": 4.742973972650663
+        }
+      },
+      "order_strategy": "legacy"
+    }
+  }
+}

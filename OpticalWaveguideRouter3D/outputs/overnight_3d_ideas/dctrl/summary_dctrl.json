@@ -1,0 +1,1472 @@
+{
+  "round": "dctrl",
+  "generator": "scripts/summarize_overnight.py",
+  "generated_utc": "2026-10-05T16:18:39Z",
+  "round_manifest": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\manifest\\round_dctrl.json",
+  "round_manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+  "round_manifest_frozen_at": "2026-10-05T23:39:02",
+  "round_manifest_adoption": {
+    "round": "v6",
+    "generator": "scripts/summarize_overnight.py",
+    "generated_utc": "2026-10-05T14:58:06Z",
+    "status": "DECIDED",
+    "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+    "rule_source": "scripts/overnight_registry.py ADOPTION_RULE",
+    "target_policy": "LEGACY",
+    "evaluation_policy": "E2_ORDERED_K16",
+    "k_per_target": 16,
+    "adopted_group": "V6_E2_R2880",
+    "adopted_cell": {
+      "start_kind": "main",
+      "mode": "R",
+      "budget": 2880
+    },
+    "adopted_manifest_sha256": "bf1dc5d92a8dad5fa2463aebbc67b331e779e276961420be79738bbfa8dc6848",
+    "adopted_metrics": {
+      "initial_collision_pairs": 42909,
+      "final_collision_pairs": 19233,
+      "net_collision_reduction": 23676,
+      "stage_length_delta_mm": 53.625801242131274,
+      "candidate_evaluations": 2880,
+      "accepted_moves": 154,
+      "recheck_verdict": "PASS"
+    },
+    "retained_old_config": false,
+    "old_config": {
+      "target_policy": "LEGACY",
+      "evaluation_policy": "E0_EXHAUSTIVE",
+      "k_per_target": 16
+    },
+    "old_config_source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\scripts\\overnight_registry.py: round_groups() adoption defaults (adoption absent)",
+    "eligible_candidates": [
+      {
+        "group": "V6_E0_R2880",
+        "strategy": "V6_E0",
+        "recheck_verdict": "PASS",
+        "final_collision_pairs": 30999,
+        "stage_length_delta_mm": 23.781978350074496,
+        "candidate_evaluations": 2880
+      },
+      {
+        "group": "V6_E1_R2880",
+        "strategy": "V6_E1",
+        "recheck_verdict": "PASS",
+        "final_collision_pairs": 30999,
+        "stage_length_delta_mm": 23.781978350074496,
+        "candidate_evaluations": 2880
+      },
+      {
+        "group": "V6_E2_R2880",
+        "strategy": "V6_E2",
+        "recheck_verdict": "PASS",
+        "final_collision_pairs": 19233,
+        "stage_length_delta_mm": 53.625801242131274,
+        "candidate_evaluations": 2880
+      }
+    ],
+    "excluded_candidates": [],
+    "decision_path": [
+      {
+        "step": 1,
+        "criterion": "correctness and recheck PASS first",
+        "applied": true,
+        "field": "recheck_verdict + recheck_geometry",
+        "kept": [
+          "V6_E0_R2880",
+          "V6_E1_R2880",
+          "V6_E2_R2880"
+        ],
+        "dropped": [],
+        "detail": "MAIN R2880 R-mode groups only; the rule's first gate"
+      },
+      {
+        "step": 2,
+        "criterion": "then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts)",
+        "applied": true,
+        "field": "final_collision_pairs",
+        "direction": "min",
+        "values": {
+          "V6_E0_R2880": 30999,
+          "V6_E1_R2880": 30999,
+          "V6_E2_R2880": 19233
+        },
+        "kept": [
+          "V6_E2_R2880"
+        ],
+        "dropped": [
+          "V6_E0_R2880",
+          "V6_E1_R2880"
+        ],
+        "unknown_values": []
+      },
+      {
+        "step": 3,
+        "criterion": "tie -> smaller stage length delta",
+        "applied": false,
+        "field": "stage_length_delta_mm",
+        "values": {
+          "V6_E2_R2880": 53.625801242131274
+        },
+        "reason": "a single candidate already remained"
+      },
+      {
+        "step": 4,
+        "criterion": "tie -> fewer actual evaluations",
+        "applied": false,
+        "field": "candidate_evaluations",
+        "values": {
+          "V6_E2_R2880": 2880
+        },
+        "reason": "a single candidate already remained"
+      }
+    ],
+    "disclosures": {
+      "by_cell": [
+        {
+          "start_kind": "main",
+          "mode": "N",
+          "budget": 720,
+          "adopted_group": "V6_E2_N720",
+          "old_config_group": "V6_E0_N720",
+          "adopted_final_collision_pairs": 33738,
+          "old_config_final_collision_pairs": 40072,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -6334,
+          "regression": false,
+          "delta_stage_length_delta_mm": 8.726553462882293,
+          "delta_candidate_evaluations": 0,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "main",
+          "mode": "N",
+          "budget": 1440,
+          "adopted_group": "V6_E2_N1440",
+          "old_config_group": "V6_E0_N1440",
+          "adopted_final_collision_pairs": 26437,
+          "old_config_final_collision_pairs": 36995,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -10558,
+          "regression": false,
+          "delta_stage_length_delta_mm": 17.399551359849283,
+          "delta_candidate_evaluations": 0,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "main",
+          "mode": "N",
+          "budget": 2880,
+          "adopted_group": "V6_E2_N2880",
+          "old_config_group": "V6_E0_N2880",
+          "adopted_final_collision_pairs": 18444,
+          "old_config_final_collision_pairs": 30999,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -12555,
+          "regression": false,
+          "delta_stage_length_delta_mm": 33.722207659171545,
+          "delta_candidate_evaluations": 0,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "challenge",
+          "mode": "N",
+          "budget": 2880,
+          "adopted_group": "V6_E2_NC2880",
+          "old_config_group": "V6_E0_NC2880",
+          "adopted_final_collision_pairs": 15837,
+          "old_config_final_collision_pairs": 21351,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -5514,
+          "regression": false,
+          "delta_stage_length_delta_mm": 12.290139522898244,
+          "delta_candidate_evaluations": -527,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "main",
+          "mode": "R",
+          "budget": 720,
+          "adopted_group": "V6_E2_R720",
+          "old_config_group": "V6_E0_R720",
+          "adopted_final_collision_pairs": 33738,
+          "old_config_final_collision_pairs": 40072,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -6334,
+          "regression": false,
+          "delta_stage_length_delta_mm": 8.726553462882293,
+          "delta_candidate_evaluations": 0,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "main",
+          "mode": "R",
+          "budget": 1440,
+          "adopted_group": "V6_E2_R1440",
+          "old_config_group": "V6_E0_R1440",
+          "adopted_final_collision_pairs": 26437,
+          "old_config_final_collision_pairs": 36995,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -10558,
+          "regression": false,
+          "delta_stage_length_delta_mm": 17.399551359849283,
+          "delta_candidate_evaluations": 0,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "main",
+          "mode": "R",
+          "budget": 2880,
+          "adopted_group": "V6_E2_R2880",
+          "old_config_group": "V6_E0_R2880",
+          "adopted_final_collision_pairs": 19233,
+          "old_config_final_collision_pairs": 30999,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -11766,
+          "regression": false,
+          "delta_stage_length_delta_mm": 29.843822892056778,
+          "delta_candidate_evaluations": 0,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        },
+        {
+          "start_kind": "challenge",
+          "mode": "R",
+          "budget": 2880,
+          "adopted_group": "V6_E2_RC2880",
+          "old_config_group": "V6_E0_RC2880",
+          "adopted_final_collision_pairs": 16537,
+          "old_config_final_collision_pairs": 21351,
+          "verdict": "IMPROVEMENT",
+          "delta_final_collision_pairs": -4814,
+          "regression": false,
+          "delta_stage_length_delta_mm": 6.894847685020068,
+          "delta_candidate_evaluations": -399,
+          "adopted_recheck_verdict": "PASS",
+          "old_config_recheck_verdict": "PASS"
+        }
+      ],
+      "regression_count": 0,
+      "regression_cells": [],
+      "criterion": "regression = the adopted configuration terminates with MORE near-distance pairs than the old configuration at the same start state, mode and budget; the rule itself ranks only the MAIN R2880 R-mode cells, so every other budget and mode is disclosed here, never used to rank",
+      "not_comparable": []
+    },
+    "round_manifest": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\manifest\\round_v6.json",
+    "round_manifest_sha256": "bf1dc5d92a8dad5fa2463aebbc67b331e779e276961420be79738bbfa8dc6848",
+    "legacy_equivalence": {
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\v6_legacy_vs_v4.json",
+      "present": false,
+      "all_reusable": null,
+      "note": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\v6_legacy_vs_v4.json is absent, so no LEGACY-vs-v4 reuse verdict exists yet; nothing is assumed here"
+    },
+    "notes": []
+  },
+  "round_manifest_adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "group_source": "frozen manifest only; the round folder is never globbed for rows",
+  "groups_expected": 8,
+  "groups_completed": 6,
+  "groups_not_finished": 2,
+  "skipped_groups": [
+    {
+      "group": "IDEA_D_CONTROL_N2880",
+      "manifest_group": "IDEA_D_CONTROL_N2880",
+      "reason": "not finished: missing summary.json, ledger.json, recheck.json"
+    },
+    {
+      "group": "IDEA_D_CONTROL_NC2880",
+      "manifest_group": "IDEA_D_CONTROL_NC2880",
+      "reason": "not finished: missing summary.json, ledger.json, recheck.json"
+    }
+  ],
+  "skipped_unknown_directories": [],
+  "excluded_rows": [],
+  "excluded_row_count": 0,
+  "column_order": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "start_kind",
+    "control",
+    "initial_collision_pairs",
+    "final_collision_pairs",
+    "net_collision_reduction",
+    "accepted_moves",
+    "first_elevations",
+    "relocations",
+    "returns",
+    "first_elevation_net_reduction",
+    "relocation_net_reduction",
+    "return_net_reduction",
+    "total_old_collisions_removed",
+    "total_new_collisions_created",
+    "generated_candidates",
+    "candidate_evaluations",
+    "full_neighbor_checks",
+    "full_acceptance_passes",
+    "executed_moves",
+    "stop_reason",
+    "target_attempts",
+    "evaluations_per_action",
+    "net_reduction_per_evaluation",
+    "relocation_candidate_evaluations",
+    "not_evaluated_candidates",
+    "stage_length_delta_mm",
+    "final_extra_length_vs_planar_mm",
+    "final_transition_count",
+    "final_elevated_route_count",
+    "recheck_verdict",
+    "manifest_sha256"
+  ],
+  "identity_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "start_kind",
+    "control"
+  ],
+  "identity_source": "frozen manifest cells of round_dctrl.json",
+  "column_sources": {
+    "group": [
+      "manifest.group",
+      "stats.group",
+      "config.group"
+    ],
+    "strategy": [
+      "manifest.strategy",
+      "stats.strategy",
+      "config.strategy"
+    ],
+    "mode": [
+      "manifest.mode",
+      "stats.mode",
+      "config.mode"
+    ],
+    "budget": [
+      "manifest.budget",
+      "stats.appended_candidate_budget",
+      "config.appended_candidate_budget"
+    ],
+    "start_kind": [
+      "manifest.start_kind",
+      "stats.start_kind",
+      "config.start_kind"
+    ],
+    "control": [
+      "manifest.control",
+      "stats.control",
+      "config.control"
+    ],
+    "initial_collision_pairs": [
+      "stats.initial_collision_pairs",
+      "ledger.initial_collision_pair_count"
+    ],
+    "final_collision_pairs": [
+      "stats.final_collision_pairs",
+      "ledger.final_collision_pair_count"
+    ],
+    "net_collision_reduction": [
+      "stats.net_collision_reduction",
+      "ledger.net_collision_reduction"
+    ],
+    "accepted_moves": [
+      "stats.accepted_moves",
+      "ledger.accepted_moves"
+    ],
+    "first_elevations": [
+      "stats.first_elevations",
+      "ledger.first_elevations"
+    ],
+    "relocations": [
+      "stats.relocations",
+      "ledger.relocations"
+    ],
+    "returns": [
+      "stats.returns",
+      "ledger.returns"
+    ],
+    "first_elevation_net_reduction": [
+      "stats.first_elevation_net_reduction",
+      "ledger.first_elevation_net_reduction"
+    ],
+    "relocation_net_reduction": [
+      "stats.relocation_net_reduction",
+      "ledger.relocation_net_reduction"
+    ],
+    "return_net_reduction": [
+      "stats.return_net_reduction",
+      "ledger.return_net_reduction"
+    ],
+    "total_old_collisions_removed": [
+      "stats.total_old_collisions_removed",
+      "ledger.total_old_collisions_removed"
+    ],
+    "total_new_collisions_created": [
+      "stats.total_new_collisions_created",
+      "ledger.total_new_collisions_created"
+    ],
+    "generated_candidates": [
+      "stats.generated_candidates",
+      "ledger.generated_candidates"
+    ],
+    "candidate_evaluations": [
+      "stats.candidate_evaluations",
+      "ledger.candidate_evaluations"
+    ],
+    "full_neighbor_checks": [
+      "stats.full_neighbor_checks",
+      "ledger.full_neighbor_checks"
+    ],
+    "full_acceptance_passes": [
+      "stats.full_acceptance_passes",
+      "ledger.full_acceptance_passes"
+    ],
+    "executed_moves": [
+      "stats.executed_moves",
+      "ledger.executed_moves"
+    ],
+    "stop_reason": [
+      "stats.stop_reason",
+      "ledger.stop_reason"
+    ],
+    "target_attempts": [
+      "stats.target_attempts",
+      "ledger.target_attempts"
+    ],
+    "evaluations_per_action": [
+      "stats.evaluations_per_action",
+      "ledger.evaluations_per_action"
+    ],
+    "net_reduction_per_evaluation": [
+      "stats.net_reduction_per_evaluation",
+      "ledger.net_reduction_per_evaluation"
+    ],
+    "relocation_candidate_evaluations": [
+      "stats.relocation_candidate_evaluations",
+      "ledger.relocation_candidate_evaluations"
+    ],
+    "not_evaluated_candidates": [
+      "stats.not_evaluated_candidates",
+      "ledger.not_evaluated_candidates"
+    ],
+    "stage_length_delta_mm": [
+      "stats.stage_length_delta_mm",
+      "ledger.stage_length_delta_mm"
+    ],
+    "final_extra_length_vs_planar_mm": [
+      "stats.final_extra_length_vs_planar_mm",
+      "ledger.final_extra_length_vs_planar_mm"
+    ],
+    "final_transition_count": [
+      "stats.final_transition_count",
+      "ledger.final_transition_count"
+    ],
+    "final_elevated_route_count": [
+      "stats.final_elevated_route_count",
+      "ledger.final_elevated_route_count"
+    ],
+    "recheck_verdict": [
+      "stats.recheck.verdict",
+      "recheck.verdict"
+    ],
+    "manifest_sha256": [
+      "config.manifest_sha256"
+    ]
+  },
+  "json_only_fields": [
+    "missing_fields",
+    "column_sources",
+    "strategy_spec",
+    "recheck_geometry",
+    "coverage",
+    "manifest_group",
+    "frozen_identity_source",
+    "frozen_identity_mismatch",
+    "run_reported_identity",
+    "warnings"
+  ],
+  "row_schema_note": "each row carries the comparison.csv columns plus missing_fields, column_sources, strategy_spec, recheck_geometry, coverage, the frozen identity and the run's own reported identity; a value absent from every declared source is null and named in missing_fields",
+  "missing_fields": [],
+  "legacy_equivalence": {
+    "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\dctrl_legacy_vs_v4.json",
+    "present": false,
+    "all_reusable": null,
+    "note": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\equiv\\dctrl_legacy_vs_v4.json is absent, so no LEGACY-vs-v4 reuse verdict exists yet; nothing is assumed here"
+  },
+  "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "adoption_rule_source": "scripts/overnight_registry.py ADOPTION_RULE",
+  "rows": [
+    {
+      "group": "IDEA_D_CONTROL_N720",
+      "strategy": "IDEA_D_CONTROL",
+      "mode": "N",
+      "budget": 720,
+      "start_kind": "main",
+      "control": "LEGACY_E2_BASE",
+      "initial_collision_pairs": 42909,
+      "final_collision_pairs": 34006,
+      "net_collision_reduction": 8903,
+      "accepted_moves": 45,
+      "first_elevations": 45,
+      "relocations": 0,
+      "returns": 0,
+      "first_elevation_net_reduction": 8903,
+      "relocation_net_reduction": 0,
+      "return_net_reduction": 0,
+      "total_old_collisions_removed": 9302,
+      "total_new_collisions_created": 399,
+      "generated_candidates": 2268,
+      "candidate_evaluations": 720,
+      "full_neighbor_checks": 666,
+      "full_acceptance_passes": 666,
+      "executed_moves": 45,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 51,
+      "evaluations_per_action": 16.0,
+      "net_reduction_per_evaluation": 12.365277777777777,
+      "relocation_candidate_evaluations": 0,
+      "not_evaluated_candidates": 1548,
+      "stage_length_delta_mm": 17.922788589581614,
+      "final_extra_length_vs_planar_mm": 25.078879415654228,
+      "final_transition_count": 138,
+      "final_elevated_route_count": 69,
+      "recheck_verdict": "PASS",
+      "manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+      "recheck_geometry": {
+        "endpoint_invariant": true,
+        "joins_C0_C1_direction": true,
+        "transition_radius_pass": true,
+        "xy_projection_preserved": true,
+        "single_elevation_structure": true,
+        "failures": []
+      },
+      "coverage": {
+        "unique_target_pairs": 51,
+        "target_attempts": 51,
+        "repeated_target_attempts": 0,
+        "unique_target_sides": 102,
+        "unique_evaluated_target_sides": 45,
+        "unique_routes_attempted": 52,
+        "unique_routes_evaluated": 45,
+        "unique_routes_touched_by_a_move": 45,
+        "max_attempts_on_one_route": 33,
+        "target_pair_visit_histogram": {
+          "1": 51
+        },
+        "elevation_state_class_attempts": {
+          "UU": 34,
+          "UE": 17,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 29,
+          "UE": 16,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 464,
+          "UE": 256,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 5,
+          "UE": 4,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 0,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 34,
+          "UE": 17,
+          "EE": 0
+        }
+      },
+      "strategy_spec": {
+        "name": "IDEA_D_CONTROL",
+        "target_policy": "STRATIFIED",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "notes": ""
+      },
+      "missing_fields": [],
+      "column_sources": {
+        "group": "manifest.group",
+        "strategy": "manifest.strategy",
+        "mode": "manifest.mode",
+        "budget": "manifest.budget",
+        "start_kind": "manifest.start_kind",
+        "control": "manifest.control",
+        "initial_collision_pairs": "stats.initial_collision_pairs",
+        "final_collision_pairs": "stats.final_collision_pairs",
+        "net_collision_reduction": "stats.net_collision_reduction",
+        "accepted_moves": "stats.accepted_moves",
+        "first_elevations": "stats.first_elevations",
+        "relocations": "stats.relocations",
+        "returns": "stats.returns",
+        "first_elevation_net_reduction": "stats.first_elevation_net_reduction",
+        "relocation_net_reduction": "stats.relocation_net_reduction",
+        "return_net_reduction": "stats.return_net_reduction",
+        "total_old_collisions_removed": "stats.total_old_collisions_removed",
+        "total_new_collisions_created": "stats.total_new_collisions_created",
+        "generated_candidates": "stats.generated_candidates",
+        "candidate_evaluations": "stats.candidate_evaluations",
+        "full_neighbor_checks": "stats.full_neighbor_checks",
+        "full_acceptance_passes": "stats.full_acceptance_passes",
+        "executed_moves": "stats.executed_moves",
+        "stop_reason": "stats.stop_reason",
+        "target_attempts": "stats.target_attempts",
+        "evaluations_per_action": "stats.evaluations_per_action",
+        "net_reduction_per_evaluation": "stats.net_reduction_per_evaluation",
+        "relocation_candidate_evaluations": "stats.relocation_candidate_evaluations",
+        "not_evaluated_candidates": "stats.not_evaluated_candidates",
+        "stage_length_delta_mm": "stats.stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm": "stats.final_extra_length_vs_planar_mm",
+        "final_transition_count": "stats.final_transition_count",
+        "final_elevated_route_count": "stats.final_elevated_route_count",
+        "recheck_verdict": "stats.recheck.verdict",
+        "manifest_sha256": "config.manifest_sha256"
+      },
+      "manifest_group": "IDEA_D_CONTROL_N720",
+      "frozen_identity_source": "manifest.cell (frozen round_dctrl.json)",
+      "frozen_identity_mismatch": [],
+      "run_reported_identity": {
+        "group": "IDEA_D_CONTROL_N720",
+        "strategy": "IDEA_D_CONTROL",
+        "mode": "N",
+        "budget": 720,
+        "start_kind": "main",
+        "control": "LEGACY_E2_BASE"
+      },
+      "warnings": []
+    },
+    {
+      "group": "IDEA_D_CONTROL_N1440",
+      "strategy": "IDEA_D_CONTROL",
+      "mode": "N",
+      "budget": 1440,
+      "start_kind": "main",
+      "control": "LEGACY_E2_BASE",
+      "initial_collision_pairs": 42909,
+      "final_collision_pairs": 28286,
+      "net_collision_reduction": 14623,
+      "accepted_moves": 76,
+      "first_elevations": 76,
+      "relocations": 0,
+      "returns": 0,
+      "first_elevation_net_reduction": 14623,
+      "relocation_net_reduction": 0,
+      "return_net_reduction": 0,
+      "total_old_collisions_removed": 15494,
+      "total_new_collisions_created": 871,
+      "generated_candidates": 4464,
+      "candidate_evaluations": 1440,
+      "full_neighbor_checks": 1322,
+      "full_acceptance_passes": 1134,
+      "executed_moves": 76,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 96,
+      "evaluations_per_action": 18.94736842105263,
+      "net_reduction_per_evaluation": 10.154861111111112,
+      "relocation_candidate_evaluations": 0,
+      "not_evaluated_candidates": 3024,
+      "stage_length_delta_mm": 27.65457937597239,
+      "final_extra_length_vs_planar_mm": 34.810670202045,
+      "final_transition_count": 200,
+      "final_elevated_route_count": 100,
+      "recheck_verdict": "PASS",
+      "manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+      "recheck_geometry": {
+        "endpoint_invariant": true,
+        "joins_C0_C1_direction": true,
+        "transition_radius_pass": true,
+        "xy_projection_preserved": true,
+        "single_elevation_structure": true,
+        "failures": []
+      },
+      "coverage": {
+        "unique_target_pairs": 83,
+        "target_attempts": 96,
+        "repeated_target_attempts": 13,
+        "unique_target_sides": 166,
+        "unique_evaluated_target_sides": 78,
+        "unique_routes_attempted": 84,
+        "unique_routes_evaluated": 78,
+        "unique_routes_touched_by_a_move": 76,
+        "max_attempts_on_one_route": 63,
+        "target_pair_visit_histogram": {
+          "1": 81,
+          "4": 1,
+          "11": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 64,
+          "UE": 32,
+          "EE": 0
+        },
+        "elevation_state_class_moves": {
+          "UU": 49,
+          "UE": 27,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 944,
+          "UE": 496,
+          "EE": 0
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 5,
+          "UE": 4,
+          "EE": null
+        },
+        "elevation_state_class_deferred": {
+          "UU": 11,
+          "UE": 4,
+          "EE": 0
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 54,
+          "UE": 29,
+          "EE": 0
+        }
+      },
+      "strategy_spec": {
+        "name": "IDEA_D_CONTROL",
+        "target_policy": "STRATIFIED",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "notes": ""
+      },
+      "missing_fields": [],
+      "column_sources": {
+        "group": "manifest.group",
+        "strategy": "manifest.strategy",
+        "mode": "manifest.mode",
+        "budget": "manifest.budget",
+        "start_kind": "manifest.start_kind",
+        "control": "manifest.control",
+        "initial_collision_pairs": "stats.initial_collision_pairs",
+        "final_collision_pairs": "stats.final_collision_pairs",
+        "net_collision_reduction": "stats.net_collision_reduction",
+        "accepted_moves": "stats.accepted_moves",
+        "first_elevations": "stats.first_elevations",
+        "relocations": "stats.relocations",
+        "returns": "stats.returns",
+        "first_elevation_net_reduction": "stats.first_elevation_net_reduction",
+        "relocation_net_reduction": "stats.relocation_net_reduction",
+        "return_net_reduction": "stats.return_net_reduction",
+        "total_old_collisions_removed": "stats.total_old_collisions_removed",
+        "total_new_collisions_created": "stats.total_new_collisions_created",
+        "generated_candidates": "stats.generated_candidates",
+        "candidate_evaluations": "stats.candidate_evaluations",
+        "full_neighbor_checks": "stats.full_neighbor_checks",
+        "full_acceptance_passes": "stats.full_acceptance_passes",
+        "executed_moves": "stats.executed_moves",
+        "stop_reason": "stats.stop_reason",
+        "target_attempts": "stats.target_attempts",
+        "evaluations_per_action": "stats.evaluations_per_action",
+        "net_reduction_per_evaluation": "stats.net_reduction_per_evaluation",
+        "relocation_candidate_evaluations": "stats.relocation_candidate_evaluations",
+        "not_evaluated_candidates": "stats.not_evaluated_candidates",
+        "stage_length_delta_mm": "stats.stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm": "stats.final_extra_length_vs_planar_mm",
+        "final_transition_count": "stats.final_transition_count",
+        "final_elevated_route_count": "stats.final_elevated_route_count",
+        "recheck_verdict": "stats.recheck.verdict",
+        "manifest_sha256": "config.manifest_sha256"
+      },
+      "manifest_group": "IDEA_D_CONTROL_N1440",
+      "frozen_identity_source": "manifest.cell (frozen round_dctrl.json)",
+      "frozen_identity_mismatch": [],
+      "run_reported_identity": {
+        "group": "IDEA_D_CONTROL_N1440",
+        "strategy": "IDEA_D_CONTROL",
+        "mode": "N",
+        "budget": 1440,
+        "start_kind": "main",
+        "control": "LEGACY_E2_BASE"
+      },
+      "warnings": []
+    },
+    {
+      "group": "IDEA_D_CONTROL_R720",
+      "strategy": "IDEA_D_CONTROL",
+      "mode": "R",
+      "budget": 720,
+      "start_kind": "main",
+      "control": "LEGACY_E2_BASE",
+      "initial_collision_pairs": 42909,
+      "final_collision_pairs": 39408,
+      "net_collision_reduction": 3501,
+      "accepted_moves": 17,
+      "first_elevations": 16,
+      "relocations": 1,
+      "returns": 0,
+      "first_elevation_net_reduction": 3470,
+      "relocation_net_reduction": 31,
+      "return_net_reduction": 0,
+      "total_old_collisions_removed": 3687,
+      "total_new_collisions_created": 186,
+      "generated_candidates": 2313,
+      "candidate_evaluations": 720,
+      "full_neighbor_checks": 503,
+      "full_acceptance_passes": 258,
+      "executed_moves": 17,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 54,
+      "evaluations_per_action": 42.35294117647059,
+      "net_reduction_per_evaluation": 4.8625,
+      "relocation_candidate_evaluations": 464,
+      "not_evaluated_candidates": 1593,
+      "stage_length_delta_mm": 5.204955486391555,
+      "final_extra_length_vs_planar_mm": 12.361046312464168,
+      "final_transition_count": 80,
+      "final_elevated_route_count": 40,
+      "recheck_verdict": "PASS",
+      "manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+      "recheck_geometry": {
+        "endpoint_invariant": true,
+        "joins_C0_C1_direction": true,
+        "transition_radius_pass": true,
+        "xy_projection_preserved": true,
+        "single_elevation_structure": true,
+        "failures": []
+      },
+      "coverage": {
+        "unique_target_pairs": 29,
+        "target_attempts": 54,
+        "repeated_target_attempts": 25,
+        "unique_target_sides": 58,
+        "unique_evaluated_target_sides": 20,
+        "unique_routes_attempted": 28,
+        "unique_routes_evaluated": 17,
+        "unique_routes_touched_by_a_move": 16,
+        "max_attempts_on_one_route": 29,
+        "target_pair_visit_histogram": {
+          "1": 27,
+          "13": 1,
+          "14": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 18,
+          "UE": 18,
+          "EE": 18
+        },
+        "elevation_state_class_moves": {
+          "UU": 15,
+          "UE": 2,
+          "EE": 0
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 240,
+          "UE": 256,
+          "EE": 224
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 9,
+          "UE": 4,
+          "EE": 14
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 14,
+          "EE": 14
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 18,
+          "UE": 5,
+          "EE": 6
+        }
+      },
+      "strategy_spec": {
+        "name": "IDEA_D_CONTROL",
+        "target_policy": "STRATIFIED",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "notes": ""
+      },
+      "missing_fields": [],
+      "column_sources": {
+        "group": "manifest.group",
+        "strategy": "manifest.strategy",
+        "mode": "manifest.mode",
+        "budget": "manifest.budget",
+        "start_kind": "manifest.start_kind",
+        "control": "manifest.control",
+        "initial_collision_pairs": "stats.initial_collision_pairs",
+        "final_collision_pairs": "stats.final_collision_pairs",
+        "net_collision_reduction": "stats.net_collision_reduction",
+        "accepted_moves": "stats.accepted_moves",
+        "first_elevations": "stats.first_elevations",
+        "relocations": "stats.relocations",
+        "returns": "stats.returns",
+        "first_elevation_net_reduction": "stats.first_elevation_net_reduction",
+        "relocation_net_reduction": "stats.relocation_net_reduction",
+        "return_net_reduction": "stats.return_net_reduction",
+        "total_old_collisions_removed": "stats.total_old_collisions_removed",
+        "total_new_collisions_created": "stats.total_new_collisions_created",
+        "generated_candidates": "stats.generated_candidates",
+        "candidate_evaluations": "stats.candidate_evaluations",
+        "full_neighbor_checks": "stats.full_neighbor_checks",
+        "full_acceptance_passes": "stats.full_acceptance_passes",
+        "executed_moves": "stats.executed_moves",
+        "stop_reason": "stats.stop_reason",
+        "target_attempts": "stats.target_attempts",
+        "evaluations_per_action": "stats.evaluations_per_action",
+        "net_reduction_per_evaluation": "stats.net_reduction_per_evaluation",
+        "relocation_candidate_evaluations": "stats.relocation_candidate_evaluations",
+        "not_evaluated_candidates": "stats.not_evaluated_candidates",
+        "stage_length_delta_mm": "stats.stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm": "stats.final_extra_length_vs_planar_mm",
+        "final_transition_count": "stats.final_transition_count",
+        "final_elevated_route_count": "stats.final_elevated_route_count",
+        "recheck_verdict": "stats.recheck.verdict",
+        "manifest_sha256": "config.manifest_sha256"
+      },
+      "manifest_group": "IDEA_D_CONTROL_R720",
+      "frozen_identity_source": "manifest.cell (frozen round_dctrl.json)",
+      "frozen_identity_mismatch": [],
+      "run_reported_identity": {
+        "group": "IDEA_D_CONTROL_R720",
+        "strategy": "IDEA_D_CONTROL",
+        "mode": "R",
+        "budget": 720,
+        "start_kind": "main",
+        "control": "LEGACY_E2_BASE"
+      },
+      "warnings": []
+    },
+    {
+      "group": "IDEA_D_CONTROL_R1440",
+      "strategy": "IDEA_D_CONTROL",
+      "mode": "R",
+      "budget": 1440,
+      "start_kind": "main",
+      "control": "LEGACY_E2_BASE",
+      "initial_collision_pairs": 42909,
+      "final_collision_pairs": 36520,
+      "net_collision_reduction": 6389,
+      "accepted_moves": 39,
+      "first_elevations": 30,
+      "relocations": 9,
+      "returns": 0,
+      "first_elevation_net_reduction": 6050,
+      "relocation_net_reduction": 339,
+      "return_net_reduction": 0,
+      "total_old_collisions_removed": 7024,
+      "total_new_collisions_created": 635,
+      "generated_candidates": 4968,
+      "candidate_evaluations": 1440,
+      "full_neighbor_checks": 1011,
+      "full_acceptance_passes": 500,
+      "executed_moves": 39,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 101,
+      "evaluations_per_action": 36.92307692307692,
+      "net_reduction_per_evaluation": 4.436805555555556,
+      "relocation_candidate_evaluations": 960,
+      "not_evaluated_candidates": 3528,
+      "stage_length_delta_mm": 11.224811944775865,
+      "final_extra_length_vs_planar_mm": 18.38090277084848,
+      "final_transition_count": 108,
+      "final_elevated_route_count": 54,
+      "recheck_verdict": "PASS",
+      "manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+      "recheck_geometry": {
+        "endpoint_invariant": true,
+        "joins_C0_C1_direction": true,
+        "transition_radius_pass": true,
+        "xy_projection_preserved": true,
+        "single_elevation_structure": true,
+        "failures": []
+      },
+      "coverage": {
+        "unique_target_pairs": 53,
+        "target_attempts": 101,
+        "repeated_target_attempts": 48,
+        "unique_target_sides": 106,
+        "unique_evaluated_target_sides": 43,
+        "unique_routes_attempted": 42,
+        "unique_routes_evaluated": 31,
+        "unique_routes_touched_by_a_move": 30,
+        "max_attempts_on_one_route": 36,
+        "target_pair_visit_histogram": {
+          "1": 49,
+          "6": 1,
+          "12": 1,
+          "15": 1,
+          "19": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 33,
+          "UE": 34,
+          "EE": 34
+        },
+        "elevation_state_class_moves": {
+          "UU": 29,
+          "UE": 6,
+          "EE": 4
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 464,
+          "UE": 512,
+          "EE": 464
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 9,
+          "UE": 4,
+          "EE": 14
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 26,
+          "EE": 25
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 33,
+          "UE": 10,
+          "EE": 11
+        }
+      },
+      "strategy_spec": {
+        "name": "IDEA_D_CONTROL",
+        "target_policy": "STRATIFIED",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "notes": ""
+      },
+      "missing_fields": [],
+      "column_sources": {
+        "group": "manifest.group",
+        "strategy": "manifest.strategy",
+        "mode": "manifest.mode",
+        "budget": "manifest.budget",
+        "start_kind": "manifest.start_kind",
+        "control": "manifest.control",
+        "initial_collision_pairs": "stats.initial_collision_pairs",
+        "final_collision_pairs": "stats.final_collision_pairs",
+        "net_collision_reduction": "stats.net_collision_reduction",
+        "accepted_moves": "stats.accepted_moves",
+        "first_elevations": "stats.first_elevations",
+        "relocations": "stats.relocations",
+        "returns": "stats.returns",
+        "first_elevation_net_reduction": "stats.first_elevation_net_reduction",
+        "relocation_net_reduction": "stats.relocation_net_reduction",
+        "return_net_reduction": "stats.return_net_reduction",
+        "total_old_collisions_removed": "stats.total_old_collisions_removed",
+        "total_new_collisions_created": "stats.total_new_collisions_created",
+        "generated_candidates": "stats.generated_candidates",
+        "candidate_evaluations": "stats.candidate_evaluations",
+        "full_neighbor_checks": "stats.full_neighbor_checks",
+        "full_acceptance_passes": "stats.full_acceptance_passes",
+        "executed_moves": "stats.executed_moves",
+        "stop_reason": "stats.stop_reason",
+        "target_attempts": "stats.target_attempts",
+        "evaluations_per_action": "stats.evaluations_per_action",
+        "net_reduction_per_evaluation": "stats.net_reduction_per_evaluation",
+        "relocation_candidate_evaluations": "stats.relocation_candidate_evaluations",
+        "not_evaluated_candidates": "stats.not_evaluated_candidates",
+        "stage_length_delta_mm": "stats.stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm": "stats.final_extra_length_vs_planar_mm",
+        "final_transition_count": "stats.final_transition_count",
+        "final_elevated_route_count": "stats.final_elevated_route_count",
+        "recheck_verdict": "stats.recheck.verdict",
+        "manifest_sha256": "config.manifest_sha256"
+      },
+      "manifest_group": "IDEA_D_CONTROL_R1440",
+      "frozen_identity_source": "manifest.cell (frozen round_dctrl.json)",
+      "frozen_identity_mismatch": [],
+      "run_reported_identity": {
+        "group": "IDEA_D_CONTROL_R1440",
+        "strategy": "IDEA_D_CONTROL",
+        "mode": "R",
+        "budget": 1440,
+        "start_kind": "main",
+        "control": "LEGACY_E2_BASE"
+      },
+      "warnings": []
+    },
+    {
+      "group": "IDEA_D_CONTROL_R2880",
+      "strategy": "IDEA_D_CONTROL",
+      "mode": "R",
+      "budget": 2880,
+      "start_kind": "main",
+      "control": "LEGACY_E2_BASE",
+      "initial_collision_pairs": 42909,
+      "final_collision_pairs": 30864,
+      "net_collision_reduction": 12045,
+      "accepted_moves": 69,
+      "first_elevations": 60,
+      "relocations": 9,
+      "returns": 0,
+      "first_elevation_net_reduction": 11706,
+      "relocation_net_reduction": 339,
+      "return_net_reduction": 0,
+      "total_old_collisions_removed": 13375,
+      "total_new_collisions_created": 1330,
+      "generated_candidates": 11097,
+      "candidate_evaluations": 2880,
+      "full_neighbor_checks": 1964,
+      "full_acceptance_passes": 971,
+      "executed_moves": 69,
+      "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+      "target_attempts": 191,
+      "evaluations_per_action": 41.73913043478261,
+      "net_reduction_per_evaluation": 4.182291666666667,
+      "relocation_candidate_evaluations": 1927,
+      "not_evaluated_candidates": 8217,
+      "stage_length_delta_mm": 20.27848254473065,
+      "final_extra_length_vs_planar_mm": 27.434573370803264,
+      "final_transition_count": 168,
+      "final_elevated_route_count": 84,
+      "recheck_verdict": "PASS",
+      "manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+      "recheck_geometry": {
+        "endpoint_invariant": true,
+        "joins_C0_C1_direction": true,
+        "transition_radius_pass": true,
+        "xy_projection_preserved": true,
+        "single_elevation_structure": true,
+        "failures": []
+      },
+      "coverage": {
+        "unique_target_pairs": 83,
+        "target_attempts": 191,
+        "repeated_target_attempts": 108,
+        "unique_target_sides": 166,
+        "unique_evaluated_target_sides": 73,
+        "unique_routes_attempted": 72,
+        "unique_routes_evaluated": 61,
+        "unique_routes_touched_by_a_move": 60,
+        "max_attempts_on_one_route": 80,
+        "target_pair_visit_histogram": {
+          "1": 79,
+          "15": 1,
+          "19": 1,
+          "36": 1,
+          "42": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 63,
+          "UE": 64,
+          "EE": 64
+        },
+        "elevation_state_class_moves": {
+          "UU": 59,
+          "UE": 6,
+          "EE": 4
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 937,
+          "UE": 992,
+          "EE": 951
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 9,
+          "UE": 4,
+          "EE": 14
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 56,
+          "EE": 55
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 63,
+          "UE": 10,
+          "EE": 11
+        }
+      },
+      "strategy_spec": {
+        "name": "IDEA_D_CONTROL",
+        "target_policy": "STRATIFIED",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "notes": ""
+      },
+      "missing_fields": [],
+      "column_sources": {
+        "group": "manifest.group",
+        "strategy": "manifest.strategy",
+        "mode": "manifest.mode",
+        "budget": "manifest.budget",
+        "start_kind": "manifest.start_kind",
+        "control": "manifest.control",
+        "initial_collision_pairs": "stats.initial_collision_pairs",
+        "final_collision_pairs": "stats.final_collision_pairs",
+        "net_collision_reduction": "stats.net_collision_reduction",
+        "accepted_moves": "stats.accepted_moves",
+        "first_elevations": "stats.first_elevations",
+        "relocations": "stats.relocations",
+        "returns": "stats.returns",
+        "first_elevation_net_reduction": "stats.first_elevation_net_reduction",
+        "relocation_net_reduction": "stats.relocation_net_reduction",
+        "return_net_reduction": "stats.return_net_reduction",
+        "total_old_collisions_removed": "stats.total_old_collisions_removed",
+        "total_new_collisions_created": "stats.total_new_collisions_created",
+        "generated_candidates": "stats.generated_candidates",
+        "candidate_evaluations": "stats.candidate_evaluations",
+        "full_neighbor_checks": "stats.full_neighbor_checks",
+        "full_acceptance_passes": "stats.full_acceptance_passes",
+        "executed_moves": "stats.executed_moves",
+        "stop_reason": "stats.stop_reason",
+        "target_attempts": "stats.target_attempts",
+        "evaluations_per_action": "stats.evaluations_per_action",
+        "net_reduction_per_evaluation": "stats.net_reduction_per_evaluation",
+        "relocation_candidate_evaluations": "stats.relocation_candidate_evaluations",
+        "not_evaluated_candidates": "stats.not_evaluated_candidates",
+        "stage_length_delta_mm": "stats.stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm": "stats.final_extra_length_vs_planar_mm",
+        "final_transition_count": "stats.final_transition_count",
+        "final_elevated_route_count": "stats.final_elevated_route_count",
+        "recheck_verdict": "stats.recheck.verdict",
+        "manifest_sha256": "config.manifest_sha256"
+      },
+      "manifest_group": "IDEA_D_CONTROL_R2880",
+      "frozen_identity_source": "manifest.cell (frozen round_dctrl.json)",
+      "frozen_identity_mismatch": [],
+      "run_reported_identity": {
+        "group": "IDEA_D_CONTROL_R2880",
+        "strategy": "IDEA_D_CONTROL",
+        "mode": "R",
+        "budget": 2880,
+        "start_kind": "main",
+        "control": "LEGACY_E2_BASE"
+      },
+      "warnings": []
+    },
+    {
+      "group": "IDEA_D_CONTROL_RC2880",
+      "strategy": "IDEA_D_CONTROL",
+      "mode": "R",
+      "budget": 2880,
+      "start_kind": "challenge",
+      "control": "LEGACY_E2_BASE",
+      "initial_collision_pairs": 30999,
+      "final_collision_pairs": 22129,
+      "net_collision_reduction": 8870,
+      "accepted_moves": 62,
+      "first_elevations": 58,
+      "relocations": 4,
+      "returns": 0,
+      "first_elevation_net_reduction": 8783,
+      "relocation_net_reduction": 87,
+      "return_net_reduction": 0,
+      "total_old_collisions_removed": 10663,
+      "total_new_collisions_created": 1793,
+      "generated_candidates": 12474,
+      "candidate_evaluations": 2845,
+      "full_neighbor_checks": 1819,
+      "full_acceptance_passes": 888,
+      "executed_moves": 62,
+      "stop_reason": "TARGET_LIMIT",
+      "target_attempts": 200,
+      "evaluations_per_action": 45.88709677419355,
+      "net_reduction_per_evaluation": 3.117750439367311,
+      "relocation_candidate_evaluations": 1952,
+      "not_evaluated_candidates": 9629,
+      "stage_length_delta_mm": 15.014187751177815,
+      "final_extra_length_vs_planar_mm": 45.952256927324925,
+      "final_transition_count": 270,
+      "final_elevated_route_count": 135,
+      "recheck_verdict": "PASS",
+      "manifest_sha256": "44c51e34bf7b6b3abf22205c3c14663c617b18d4ff12f54ee67bf73d8d482ec7",
+      "recheck_geometry": {
+        "endpoint_invariant": true,
+        "joins_C0_C1_direction": true,
+        "transition_radius_pass": true,
+        "xy_projection_preserved": true,
+        "single_elevation_structure": true,
+        "failures": []
+      },
+      "coverage": {
+        "unique_target_pairs": 91,
+        "target_attempts": 200,
+        "repeated_target_attempts": 109,
+        "unique_target_sides": 182,
+        "unique_evaluated_target_sides": 71,
+        "unique_routes_attempted": 75,
+        "unique_routes_evaluated": 62,
+        "unique_routes_touched_by_a_move": 58,
+        "max_attempts_on_one_route": 91,
+        "target_pair_visit_histogram": {
+          "1": 85,
+          "2": 1,
+          "11": 1,
+          "14": 1,
+          "16": 1,
+          "29": 1,
+          "43": 1
+        },
+        "elevation_state_class_attempts": {
+          "UU": 66,
+          "UE": 67,
+          "EE": 67
+        },
+        "elevation_state_class_moves": {
+          "UU": 58,
+          "UE": 3,
+          "EE": 1
+        },
+        "elevation_state_class_evaluations": {
+          "UU": 893,
+          "UE": 912,
+          "EE": 1040
+        },
+        "elevation_state_class_first_evaluation_step": {
+          "UU": 21,
+          "UE": 28,
+          "EE": 5
+        },
+        "elevation_state_class_deferred": {
+          "UU": 0,
+          "UE": 54,
+          "EE": 64
+        },
+        "elevation_state_class_target_pairs": {
+          "UU": 66,
+          "UE": 15,
+          "EE": 11
+        }
+      },
+      "strategy_spec": {
+        "name": "IDEA_D_CONTROL",
+        "target_policy": "STRATIFIED",
+        "evaluation_policy": "E2_ORDERED_K16",
+        "traversal_policy": "BASE",
+        "max_targets": 200,
+        "k_per_target": 16,
+        "family_round_robin": false,
+        "relocation_side_reserve": 0,
+        "waiting_age": false,
+        "route_coverage": false,
+        "multi_anchor": false,
+        "exact_dedup": false,
+        "decision_cache": false,
+        "return_action": false,
+        "cache_structural_skips": false,
+        "window_slack_mm": 1e-05,
+        "notes": ""
+      },
+      "missing_fields": [],
+      "column_sources": {
+        "group": "manifest.group",
+        "strategy": "manifest.strategy",
+        "mode": "manifest.mode",
+        "budget": "manifest.budget",
+        "start_kind": "manifest.start_kind",
+        "control": "manifest.control",
+        "initial_collision_pairs": "stats.initial_collision_pairs",
+        "final_collision_pairs": "stats.final_collision_pairs",
+        "net_collision_reduction": "stats.net_collision_reduction",
+        "accepted_moves": "stats.accepted_moves",
+        "first_elevations": "stats.first_elevations",
+        "relocations": "stats.relocations",
+        "returns": "stats.returns",
+        "first_elevation_net_reduction": "stats.first_elevation_net_reduction",
+        "relocation_net_reduction": "stats.relocation_net_reduction",
+        "return_net_reduction": "stats.return_net_reduction",
+        "total_old_collisions_removed": "stats.total_old_collisions_removed",
+        "total_new_collisions_created": "stats.total_new_collisions_created",
+        "generated_candidates": "stats.generated_candidates",
+        "candidate_evaluations": "stats.candidate_evaluations",
+        "full_neighbor_checks": "stats.full_neighbor_checks",
+        "full_acceptance_passes": "stats.full_acceptance_passes",
+        "executed_moves": "stats.executed_moves",
+        "stop_reason": "stats.stop_reason",
+        "target_attempts": "stats.target_attempts",
+        "evaluations_per_action": "stats.evaluations_per_action",
+        "net_reduction_per_evaluation": "stats.net_reduction_per_evaluation",
+        "relocation_candidate_evaluations": "stats.relocation_candidate_evaluations",
+        "not_evaluated_candidates": "stats.not_evaluated_candidates",
+        "stage_length_delta_mm": "stats.stage_length_delta_mm",
+        "final_extra_length_vs_planar_mm": "stats.final_extra_length_vs_planar_mm",
+        "final_transition_count": "stats.final_transition_count",
+        "final_elevated_route_count": "stats.final_elevated_route_count",
+        "recheck_verdict": "stats.recheck.verdict",
+        "manifest_sha256": "config.manifest_sha256"
+      },
+      "manifest_group": "IDEA_D_CONTROL_RC2880",
+      "frozen_identity_source": "manifest.cell (frozen round_dctrl.json)",
+      "frozen_identity_mismatch": [],
+      "run_reported_identity": {
+        "group": "IDEA_D_CONTROL_RC2880",
+        "strategy": "IDEA_D_CONTROL",
+        "mode": "R",
+        "budget": 2880,
+        "start_kind": "challenge",
+        "control": "LEGACY_E2_BASE"
+      },
+      "warnings": []
+    }
+  ]
+}

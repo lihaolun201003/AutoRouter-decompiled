@@ -1,0 +1,61 @@
+{
+  "figures": [
+    {
+      "name": "f4_diagnostic_comparison.png",
+      "pdf": "f4_diagnostic_comparison.pdf"
+    },
+    {
+      "name": "f5_relocation_rejections.png",
+      "pdf": "f5_relocation_rejections.pdf"
+    },
+    {
+      "name": "f7_route34_relocation_before_after.png",
+      "pdf": "f7_route34_relocation_before_after.pdf"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2_rev2\\512_de_diagnostic\\ledger_D.json",
+      "sha256": "3dae64e29e2c53c990195a69868a59d378945f19c0b54aa7d3b19c8b0b007cad"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2_rev2\\512_de_diagnostic\\ledger_E.json",
+      "sha256": "dd2235f00b61231584f31c0be21d69c05408b432fe0c07093a1bc00cc9d1dac2"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_relocation_slack_diagnostic\\ledger_D.json",
+      "sha256": "7937ac1fb94748d0df3ee75efd28b659d3d7625ccab922f4c9347236d4f423c2"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_relocation_slack_diagnostic\\ledger_E.json",
+      "sha256": "3ceac0170bc545d3684f83340333de87c9cd7ffc9834db5e9689209c3c558ec9"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_relocation_slack_diagnostic\\analysis.json",
+      "sha256": "90bbf280365d019b0dd84c9504ead26f955558194c9ddca987d2fee33f2071a5"
+    }
+  ],
+  "route_id": 34,
+  "zoom_factor": 20,
+  "box_aspect": {
+    "true_scale": [
+      137.95000000000005,
+      9.025,
+      2.0
+    ],
+    "z_magnified": [
+      137.95000000000005,
+      9.025,
+      40.0
+    ],
+    "note": "set_box_aspect uses the displayed span of each axis, so one data unit has the same physical length on X, Y and Z. (c) true scale: z span 2 mm; (d): z span 40 mm (= 2 mm x 20), i.e. the same X/Y extent is 20 times taller on screen."
+  },
+  "displayed_spans_mm": {
+    "x": 137.95000000000005,
+    "y": 9.025,
+    "z_true": 2.0,
+    "z_magnified": 40.0
+  },
+  "embedded_figure_numbers": false,
+  "note": "shared figures carry no embedded figure number; each report numbers them independently. true-scale 3D and Z-magnified 3D are separate panels; the magnification is written in the title"
+}

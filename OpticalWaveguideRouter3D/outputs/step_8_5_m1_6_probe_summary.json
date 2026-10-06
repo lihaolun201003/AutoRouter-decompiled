@@ -1,0 +1,243 @@
+{
+  "status": "FEASIBILITY_ONLY_NO_COMMIT",
+  "statistics": {
+    "unique_lowest": 241,
+    "tied_lowest": 77,
+    "lowest_only_ordinary": 270,
+    "lowest_only_special": 29,
+    "lowest_mixed": 19,
+    "no_movable": 0,
+    "distributions": {
+      "min": {
+        "1": 77,
+        "2": 84,
+        "3": 59,
+        "4": 63,
+        "5": 20,
+        "6": 12,
+        "7": 3
+      },
+      "middle": {
+        "1": 13,
+        "2": 41,
+        "3": 63,
+        "4": 90,
+        "5": 46,
+        "6": 37,
+        "7": 19,
+        "8": 6,
+        "9": 3
+      },
+      "max": {
+        "1": 1,
+        "2": 7,
+        "3": 22,
+        "4": 47,
+        "5": 59,
+        "6": 47,
+        "7": 41,
+        "8": 50,
+        "9": 6,
+        "12": 12,
+        "13": 26
+      }
+    },
+    "means": {
+      "min": 2.7264150943396226,
+      "middle": 4.10062893081761,
+      "max": 6.5062893081761
+    },
+    "skip_special_first_ordinary_scores": {
+      "2": 2,
+      "4": 5,
+      "3": 8,
+      "6": 7,
+      "5": 6,
+      "7": 1
+    }
+  },
+  "cases": [
+    {
+      "label": "A_paper_ordinary",
+      "multi_id": "M0011",
+      "target": [
+        4,
+        404,
+        436
+      ],
+      "victim": 4,
+      "victim_order": [
+        4,
+        404,
+        436
+      ],
+      "scores": {
+        "4": 3,
+        "404": 5,
+        "436": 7
+      },
+      "candidate_count": 347,
+      "geometry_valid": 347,
+      "anomaly_free": 347,
+      "minimum_M_after": 318,
+      "strict_improvement_candidates": 0,
+      "best": null,
+      "seconds": 87.71739149995847
+    },
+    {
+      "label": "B_cross_side_nonpaper",
+      "multi_id": "M0009",
+      "target": [
+        3,
+        101,
+        302
+      ],
+      "victim": 302,
+      "victim_order": [
+        302,
+        3
+      ],
+      "scores": {
+        "3": 2,
+        "101": 1,
+        "302": 1
+      },
+      "candidate_count": 347,
+      "geometry_valid": 347,
+      "anomaly_free": 347,
+      "minimum_M_after": 317,
+      "strict_improvement_candidates": 331,
+      "best": {
+        "target_multi_removed": true,
+        "new_multi_created": 0,
+        "old_multi_removed": 1,
+        "M_before": 318,
+        "M_after": 317,
+        "removed": [
+          [
+            3,
+            101,
+            302
+          ]
+        ],
+        "added": [],
+        "track_index": 457,
+        "track_y": 85.0,
+        "track_displacement": 12,
+        "length_delta_mm": 0.0,
+        "noncross_anomalies": {},
+        "physical_cross_count": 311,
+        "accepted": true,
+        "geometry_valid": true
+      },
+      "seconds": 85.33709099999396
+    },
+    {
+      "label": "C_arc_arc",
+      "multi_id": "M0001",
+      "target": [
+        0,
+        300,
+        345
+      ],
+      "victim": 0,
+      "victim_order": [
+        0,
+        300,
+        345
+      ],
+      "scores": {
+        "0": 2,
+        "300": 2,
+        "345": 2
+      },
+      "candidate_count": 347,
+      "geometry_valid": 347,
+      "anomaly_free": 347,
+      "minimum_M_after": 316,
+      "strict_improvement_candidates": 342,
+      "best": {
+        "target_multi_removed": true,
+        "new_multi_created": 0,
+        "old_multi_removed": 2,
+        "M_before": 318,
+        "M_after": 316,
+        "removed": [
+          [
+            0,
+            300,
+            345
+          ],
+          [
+            0,
+            300,
+            348
+          ]
+        ],
+        "added": [],
+        "track_index": 452,
+        "track_y": 84.125,
+        "track_displacement": 26,
+        "length_delta_mm": 0.0,
+        "noncross_anomalies": {},
+        "physical_cross_count": 102,
+        "accepted": true,
+        "geometry_valid": true
+      },
+      "seconds": 32.136528600007296
+    },
+    {
+      "label": "D_special_carrier",
+      "multi_id": "M0023",
+      "target": [
+        13,
+        182,
+        318
+      ],
+      "victim": 318,
+      "victim_order": [
+        318,
+        182
+      ],
+      "scores": {
+        "13": 1,
+        "182": 3,
+        "318": 2
+      },
+      "candidate_count": 347,
+      "geometry_valid": 347,
+      "anomaly_free": 347,
+      "minimum_M_after": 316,
+      "strict_improvement_candidates": 344,
+      "best": {
+        "target_multi_removed": true,
+        "new_multi_created": 0,
+        "old_multi_removed": 2,
+        "M_before": 318,
+        "M_after": 316,
+        "removed": [
+          [
+            13,
+            182,
+            318
+          ],
+          [
+            14,
+            182,
+            318
+          ]
+        ],
+        "added": [],
+        "track_index": 113,
+        "track_y": 24.799999999999997,
+        "track_displacement": 16,
+        "length_delta_mm": 5.599999999999994,
+        "noncross_anomalies": {},
+        "physical_cross_count": 156,
+        "accepted": true,
+        "geometry_valid": true
+      },
+      "seconds": 33.49028279999038
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "scope": "read-only artifact checks and saved-route length recomputation; no routing, pair scan, or optical prediction",
+  "quantile": "linear interpolation at (n-1)*0.95",
+  "start_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled\\final_routes.json",
+  "start_sha256": "58bd664a92815cec1a07e7e9ff6489bda9f34f3667320963eb0b17aaef4f1151",
+  "selected": {
+    "BASE_E2_R2880": {
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\v7\\V7_T0_R2880",
+      "final_routes_sha256": "b5daabd9ce8ea1f3d0ce8a30b6fb22cf32481cf62deab8b65a4e1e00167a7c13",
+      "ledger_sha256": "dffdc28d2cc539a6a349135c29bfa6dd99381c346a74fed3fe60a103bba6e493",
+      "route_count": 512,
+      "final_pairs": 19233,
+      "candidate_evaluations": 2880,
+      "stage_total_delta_mm": 53.625801242131274,
+      "recomputed_total_length_mm": 70892.09154921492,
+      "total_error_mm": -1.0186340659856796e-10,
+      "recomputed_stage_error_mm": -1.1169731806148775e-11,
+      "stage_delta_per_route_mm": {
+        "n": 512,
+        "mean": 0.10473789305101583,
+        "p95_linear": 0.6781201864388038,
+        "min": 0.0,
+        "max": 0.6781201864388322
+      },
+      "length_per_route_mm": {
+        "n": 512,
+        "mean": 138.4611163070604,
+        "p95_linear": 242.07685518541805,
+        "min": 31.88296326794895,
+        "max": 281.72685518541806
+      },
+      "logical_transition_count": 356,
+      "transition_count_per_route": {
+        "n": 512,
+        "mean": 0.6953125,
+        "p95_linear": 2.0,
+        "min": 0,
+        "max": 2
+      },
+      "path_window_count": 0,
+      "path_windows_containing_arcs": 0,
+      "path_windows_spanning_primitives": 0,
+      "only_propagation_scenario": {
+        "alpha_db_per_mm": 0.005,
+        "status": "HISTORICAL_UNCALIBRATED_SCENARIO_ONLY",
+        "mean_stage_increment_db": 0.0005236894652550792
+      }
+    },
+    "G1_R2880_boundaryfix": {
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\v8\\V8_G1_R2880_boundaryfix",
+      "final_routes_sha256": "b0cc9cc4ca073b1b509c24d77031a0cd270f9574a7ca2a837d28ffa7eb3dc456",
+      "ledger_sha256": "5751a3cb72525e65d6199c6659396f621fabe9594939bda0013a66b62968abe6",
+      "route_count": 512,
+      "final_pairs": 18211,
+      "candidate_evaluations": 2880,
+      "stage_total_delta_mm": 30.096940291361534,
+      "recomputed_total_length_mm": 70868.56268826408,
+      "total_error_mm": -1.7462298274040222e-10,
+      "recomputed_stage_error_mm": -7.226930165415979e-11,
+      "stage_delta_per_route_mm": {
+        "n": 512,
+        "mean": 0.058783086506424345,
+        "p95_linear": 0.21716840807869214,
+        "min": 0.0,
+        "max": 0.678120186438818
+      },
+      "length_per_route_mm": {
+        "n": 512,
+        "mean": 138.41516150051578,
+        "p95_linear": 241.9155798216859,
+        "min": 31.88296326794895,
+        "max": 281.5655798216859
+      },
+      "logical_transition_count": 408,
+      "transition_count_per_route": {
+        "n": 512,
+        "mean": 0.796875,
+        "p95_linear": 2.0,
+        "min": 0,
+        "max": 2
+      },
+      "path_window_count": 312,
+      "path_windows_containing_arcs": 20,
+      "path_windows_spanning_primitives": 20,
+      "only_propagation_scenario": {
+        "alpha_db_per_mm": 0.005,
+        "status": "HISTORICAL_UNCALIBRATED_SCENARIO_ONLY",
+        "mean_stage_increment_db": 0.0002939154325321217
+      }
+    },
+    "A_T2000_R2880": {
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\p3\\P3_A_FAMILY_T2000_R2880",
+      "final_routes_sha256": "3a005c51dd66a1c099e8c09e10b181d9b8d9de786b9653537d4165e0d262af59",
+      "ledger_sha256": "aef8a30b1ea94f55cec7c7421bd0cdb8662d0525d56e6314772e4cdef4d40318",
+      "route_count": 512,
+      "final_pairs": 18042,
+      "candidate_evaluations": 2880,
+      "stage_total_delta_mm": 71.94661375845317,
+      "recomputed_total_length_mm": 70910.4123617312,
+      "total_error_mm": -1.4551915228366852e-10,
+      "recomputed_stage_error_mm": -4.129674380237702e-11,
+      "stage_delta_per_route_mm": {
+        "n": 512,
+        "mean": 0.14052072999689819,
+        "p95_linear": 0.678120186438818,
+        "min": 0.0,
+        "max": 0.6781201864388322
+      },
+      "length_per_route_mm": {
+        "n": 512,
+        "mean": 138.49689914400625,
+        "p95_linear": 242.27225790645443,
+        "min": 31.88296326794895,
+        "max": 281.72685518541806
+      },
+      "logical_transition_count": 346,
+      "transition_count_per_route": {
+        "n": 512,
+        "mean": 0.67578125,
+        "p95_linear": 2.0,
+        "min": 0,
+        "max": 2
+      },
+      "path_window_count": 0,
+      "path_windows_containing_arcs": 0,
+      "path_windows_spanning_primitives": 0,
+      "only_propagation_scenario": {
+        "alpha_db_per_mm": 0.005,
+        "status": "HISTORICAL_UNCALIBRATED_SCENARIO_ONLY",
+        "mean_stage_increment_db": 0.0007026036499844909
+      }
+    },
+    "E_T2000_R2880": {
+      "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\pe\\PE_E_T2000_R2880",
+      "final_routes_sha256": "80a3a076d51467f1bf9ba9924afd606b4fd14126e11fc4cba2c42a944d029349",
+      "ledger_sha256": "b003c3c3169b3036ef9362cb4764069725e28c44d2c950eb2e94ad734b54e6b9",
+      "route_count": 512,
+      "final_pairs": 15935,
+      "candidate_evaluations": 2880,
+      "stage_total_delta_mm": 80.29249451839132,
+      "recomputed_total_length_mm": 70918.75824249112,
+      "total_error_mm": -1.6007106751203537e-10,
+      "recomputed_stage_error_mm": -6.181721801112872e-11,
+      "stage_delta_per_route_mm": {
+        "n": 512,
+        "mean": 0.15682127835611231,
+        "p95_linear": 0.6781201864388038,
+        "min": 0.0,
+        "max": 0.6781201864388322
+      },
+      "length_per_route_mm": {
+        "n": 512,
+        "mean": 138.51319969236548,
+        "p95_linear": 242.07685518541805,
+        "min": 31.88296326794895,
+        "max": 281.72685518541806
+      },
+      "logical_transition_count": 418,
+      "transition_count_per_route": {
+        "n": 512,
+        "mean": 0.81640625,
+        "p95_linear": 2.0,
+        "min": 0,
+        "max": 2
+      },
+      "path_window_count": 0,
+      "path_windows_containing_arcs": 0,
+      "path_windows_spanning_primitives": 0,
+      "only_propagation_scenario": {
+        "alpha_db_per_mm": 0.005,
+        "status": "HISTORICAL_UNCALIBRATED_SCENARIO_ONLY",
+        "mean_stage_increment_db": 0.0007841063917805616
+      }
+    }
+  },
+  "manifests": [
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p3.json",
+      "sha256": "121cb1dc4629506a048ec9eeffd460ae25aa97b7959cbe00d8663c874e3fe312",
+      "matches_sidecar": true
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p4.json",
+      "sha256": "90497c38776353a19fb7824ffe92f6b1d19473578eebe3077f841f0def32c15e",
+      "matches_sidecar": true
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p5.json",
+      "sha256": "518013a44b7ee533bfd057c2595535bbac73ef98e94d67fe88189c84ad81573e",
+      "matches_sidecar": true
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_pe.json",
+      "sha256": "edc073fda7bb221a140dca3f84e3f52b568fc2dd6a5dd0588267ecab46f115e3",
+      "matches_sidecar": true
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8.json",
+      "sha256": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "matches_sidecar": true
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8_neutrality.json",
+      "sha256": "b9c3455cb51d076b06f14e2cb310c65fe071c3d44571c4a3ea0b0e483fa18f96",
+      "matches_sidecar": true
+    }
+  ],
+  "inventory_checks": [
+    {
+      "category": "report",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\三维布线v8路径弧长窗口续跑报告.pdf",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "report",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\brief_build\\三维布线v8路径弧长窗口续跑报告.docx",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "report",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\docs\\reports\\step_19_v8_continuation.md",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\neutrality_v8_code.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p2_g0_vs_g1.csv",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p2_g0_vs_g1.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p2_g1_defect_record.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p3_family_and_target_limit.csv",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p3_family_and_target_limit.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p4_length_cap.csv",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p4_length_cap.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p5_serial_timing.csv",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\p5_serial_timing.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\pe_multi_anchor_limit.csv",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "comparison",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\comparison\\pe_multi_anchor_limit.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p3.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p3.sha256",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p4.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p4.sha256",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p5.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p5.sha256",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_p5_override_record.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_pe.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_pe.sha256",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8.sha256",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8_neutrality.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8_neutrality.sha256",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "manifest",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\manifest\\round_v8_neutrality_override_record.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "tests_log",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\tests\\full_suite_frozen_code.log",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "tests_log",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\tests\\summary.json",
+      "exists": true,
+      "matches_sha256": true
+    },
+    {
+      "category": "verification",
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_continuation\\verification\\final_verification.json",
+      "exists": true,
+      "matches_sha256": true
+    }
+  ],
+  "g1_minus_base_per_route_length_mm": {
+    "n": 512,
+    "mean": -0.045954806544591484,
+    "p95_linear": 0.08261655373692633,
+    "min": -0.5955036327018775,
+    "max": 0.43422826896970435,
+    "positive": 28,
+    "negative": 132,
+    "unchanged": 352,
+    "only_propagation_scenario_db": {
+      "mean": -0.00022977403272295743,
+      "p95_linear": 0.0004130827686846317,
+      "min": -0.002977518163509387,
+      "max": 0.002171141344848522
+    }
+  },
+  "inventory_declared_count": 1886,
+  "inventory_verified_subset_count": 32,
+  "inventory_subset_mismatches": [],
+  "verification_status_counts": {
+    "REUSED_REFERENCE": 36,
+    "PASS": 74
+  },
+  "verification_by_round": {
+    "p3": {
+      "REUSED_REFERENCE": 22,
+      "PASS": 10
+    },
+    "p4": {
+      "PASS": 24
+    },
+    "p5": {
+      "PASS": 6
+    },
+    "pe": {
+      "REUSED_REFERENCE": 6,
+      "PASS": 10
+    },
+    "v8": {
+      "REUSED_REFERENCE": 8,
+      "PASS": 16
+    },
+    "v8_neutrality": {
+      "PASS": 8
+    }
+  }
+}

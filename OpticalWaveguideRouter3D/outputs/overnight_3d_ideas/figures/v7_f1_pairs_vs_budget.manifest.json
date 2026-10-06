@@ -1,0 +1,26 @@
+{
+  "figure": "v7_f1_pairs_vs_budget",
+  "title": "终态近距对数 vs 追加候选评价预算（策略 × N/R 模式 × 两种起点）",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v7_f1_pairs_vs_budget.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v7_f1_pairs_vs_budget.pdf",
+  "png_sha256": "b5f636f003b6b44d0bf6daad05a0e9fd5ac9c472a4002097fbc78acd70cf64c1",
+  "pdf_sha256": "64b5ea37e6513124ae39d3fe17d2d7cf276491774b8888a5ec49e0d8543c5931",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v7\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v7\\summary_v7.json"
+  ],
+  "source_columns": [
+    "budget",
+    "strategy",
+    "mode",
+    "start_kind",
+    "final_collision_pairs",
+    "initial_collision_pairs"
+  ],
+  "source_sub_objects": [],
+  "rows_used": 23,
+  "notes": "只使用 comparison.csv 的列；summary_<round>.json 仅用于核对列集合与未完成组名单",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v7",
+  "generated_utc": "2026-10-05T15:23:17Z"
+}

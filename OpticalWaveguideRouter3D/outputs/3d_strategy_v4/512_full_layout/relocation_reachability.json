@@ -1,0 +1,156 @@
+{
+  "question": "why do the R groups show no relocation? every run uses the same deterministic target priority; this file measures how far the relocation-capable targets are from the front of that order",
+  "common_start_state": {
+    "collision_pairs": 42909,
+    "elevated_route_count": 24,
+    "pair_state_distribution": {
+      "both_routes_unelevated": 42516,
+      "single_route_elevated": 291,
+      "both_routes_elevated": 102,
+      "total": 42909
+    }
+  },
+  "records": [
+    {
+      "group": "COMMON_START_STATE",
+      "residual_pair_count": 42909,
+      "elevated_route_count": 24,
+      "state_distribution": {
+        "both_routes_unelevated": 42516,
+        "single_route_elevated": 291,
+        "both_routes_elevated": 102,
+        "total": 42909
+      },
+      "pairs_involving_an_elevated_route": 393,
+      "fraction_of_residual_pairs": 0.9159,
+      "best_rank_of_any_such_pair": 34254,
+      "pairs_where_the_elevated_route_is_tried_first": 383,
+      "best_rank_of_those": 34254,
+      "target_attempt_limit": 200,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    },
+    {
+      "group": "N720",
+      "residual_pair_count": 40072,
+      "elevated_route_count": 35,
+      "state_distribution": {
+        "both_routes_unelevated": 39545,
+        "single_route_elevated": 370,
+        "both_routes_elevated": 157,
+        "total": 40072
+      },
+      "pairs_involving_an_elevated_route": 527,
+      "fraction_of_residual_pairs": 1.3151,
+      "best_rank_of_any_such_pair": 31181,
+      "pairs_where_the_elevated_route_is_tried_first": 507,
+      "best_rank_of_those": 31181,
+      "target_attempt_limit": 13,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    },
+    {
+      "group": "R720",
+      "residual_pair_count": 40072,
+      "elevated_route_count": 35,
+      "state_distribution": {
+        "both_routes_unelevated": 39545,
+        "single_route_elevated": 370,
+        "both_routes_elevated": 157,
+        "total": 40072
+      },
+      "pairs_involving_an_elevated_route": 527,
+      "fraction_of_residual_pairs": 1.3151,
+      "best_rank_of_any_such_pair": 31181,
+      "pairs_where_the_elevated_route_is_tried_first": 507,
+      "best_rank_of_those": 31181,
+      "target_attempt_limit": 13,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    },
+    {
+      "group": "N1440",
+      "residual_pair_count": 36995,
+      "elevated_route_count": 48,
+      "state_distribution": {
+        "both_routes_unelevated": 36339,
+        "single_route_elevated": 358,
+        "both_routes_elevated": 298,
+        "total": 36995
+      },
+      "pairs_involving_an_elevated_route": 656,
+      "fraction_of_residual_pairs": 1.7732,
+      "best_rank_of_any_such_pair": 27378,
+      "pairs_where_the_elevated_route_is_tried_first": 639,
+      "best_rank_of_those": 27378,
+      "target_attempt_limit": 26,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    },
+    {
+      "group": "R1440",
+      "residual_pair_count": 36995,
+      "elevated_route_count": 48,
+      "state_distribution": {
+        "both_routes_unelevated": 36339,
+        "single_route_elevated": 358,
+        "both_routes_elevated": 298,
+        "total": 36995
+      },
+      "pairs_involving_an_elevated_route": 656,
+      "fraction_of_residual_pairs": 1.7732,
+      "best_rank_of_any_such_pair": 27378,
+      "pairs_where_the_elevated_route_is_tried_first": 639,
+      "best_rank_of_those": 27378,
+      "target_attempt_limit": 26,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    },
+    {
+      "group": "N2880",
+      "residual_pair_count": 30999,
+      "elevated_route_count": 77,
+      "state_distribution": {
+        "both_routes_unelevated": 29834,
+        "single_route_elevated": 393,
+        "both_routes_elevated": 772,
+        "total": 30999
+      },
+      "pairs_involving_an_elevated_route": 1165,
+      "fraction_of_residual_pairs": 3.7582,
+      "best_rank_of_any_such_pair": 21795,
+      "pairs_where_the_elevated_route_is_tried_first": 1131,
+      "best_rank_of_those": 21795,
+      "target_attempt_limit": 66,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    },
+    {
+      "group": "R2880",
+      "residual_pair_count": 30999,
+      "elevated_route_count": 77,
+      "state_distribution": {
+        "both_routes_unelevated": 29834,
+        "single_route_elevated": 393,
+        "both_routes_elevated": 772,
+        "total": 30999
+      },
+      "pairs_involving_an_elevated_route": 1165,
+      "fraction_of_residual_pairs": 3.7582,
+      "best_rank_of_any_such_pair": 21795,
+      "pairs_where_the_elevated_route_is_tried_first": 1131,
+      "best_rank_of_those": 21795,
+      "target_attempt_limit": 66,
+      "best_such_pair_is_within_the_attempt_limit": false,
+      "best_such_pair_is_within_the_appended_budget_share": false,
+      "explanation": "the shared target priority is dominated by the 512-route conflict hubs; pairs that involve an already-elevated route rank far beyond the number of targets any of the six runs actually attempted, so a relocation is never generated, evaluated or accepted"
+    }
+  ],
+  "note": "rank 1 is the pair the selection rule would attempt next; the runs attempted at most 200 targets, so a pair ranked far beyond that can never be reached by any budget"
+}

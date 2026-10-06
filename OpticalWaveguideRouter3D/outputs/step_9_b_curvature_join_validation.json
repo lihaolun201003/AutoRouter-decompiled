@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "derivation": "PROJECT-SPECIFIC TRUE CURVATURE OF CURRENT COSINE MODEL",
+  "fixture": {
+    "start": [
+      0,
+      0,
+      0
+    ],
+    "end": [
+      10,
+      0,
+      1
+    ],
+    "max_curvature_per_mm": 0.049348022005446794,
+    "minimum_curvature_radius_mm": 20.264236728467555,
+    "effective_radius_indicator_mm": 25.25,
+    "indicator_to_true_radius_ratio": 1.2460375556375314,
+    "explicit_required_radius_mm": 20.264236728467555,
+    "inverse_minimum_xy_run_mm": 10.0
+  },
+  "numeric_method": "Point-only 5-point finite differences; h=0.001 and 0.0005; one-sided at endpoints",
+  "numeric_tolerance_per_mm": 2e-07,
+  "numeric_rows": [
+    {
+      "t": 0,
+      "s_mm": 0.0,
+      "analytic_curvature_per_mm": 0.049348022005446794,
+      "numeric_curvature_per_mm": 0.049348022011802654,
+      "numeric_half_step_curvature_per_mm": 0.04934802200584437,
+      "absolute_error_per_mm": 6.3558602825253274e-12,
+      "radius_of_curvature_mm": 20.264236728467555
+    },
+    {
+      "t": 0.1,
+      "s_mm": 1.0,
+      "analytic_curvature_per_mm": 0.04676737356269076,
+      "numeric_curvature_per_mm": 0.046767373562814504,
+      "numeric_half_step_curvature_per_mm": 0.046767373562422214,
+      "absolute_error_per_mm": 1.237412949883776e-13,
+      "radius_of_curvature_mm": 21.382428043762587
+    },
+    {
+      "t": 0.25,
+      "s_mm": 2.5,
+      "analytic_curvature_per_mm": 0.03425840056569086,
+      "numeric_curvature_per_mm": 0.03425840056489707,
+      "numeric_half_step_curvature_per_mm": 0.0342584005639163,
+      "absolute_error_per_mm": 7.937886459252752e-13,
+      "radius_of_curvature_mm": 29.189920821974425
+    },
+    {
+      "t": 0.5,
+      "s_mm": 5.0,
+      "analytic_curvature_per_mm": 0.0,
+      "numeric_curvature_per_mm": 8.027732847833864e-13,
+      "numeric_half_step_curvature_per_mm": 9.849561876135477e-12,
+      "absolute_error_per_mm": 8.027732847833864e-13,
+      "radius_of_curvature_mm": "Infinity"
+    },
+    {
+      "t": 0.75,
+      "s_mm": 7.5,
+      "analytic_curvature_per_mm": 0.03425840056569086,
+      "numeric_curvature_per_mm": 0.03425840056846183,
+      "numeric_half_step_curvature_per_mm": 0.03425840056029907,
+      "absolute_error_per_mm": 2.7709709526924087e-12,
+      "radius_of_curvature_mm": 29.189920821974425
+    },
+    {
+      "t": 0.9,
+      "s_mm": 9.0,
+      "analytic_curvature_per_mm": 0.04676737356269077,
+      "numeric_curvature_per_mm": 0.04676737356445018,
+      "numeric_half_step_curvature_per_mm": 0.046767373572583947,
+      "absolute_error_per_mm": 1.759412060486909e-12,
+      "radius_of_curvature_mm": 21.382428043762584
+    },
+    {
+      "t": 1,
+      "s_mm": 10.0,
+      "analytic_curvature_per_mm": 0.049348022005446794,
+      "numeric_curvature_per_mm": 0.04934802200795968,
+      "numeric_half_step_curvature_per_mm": 0.04934802207177608,
+      "absolute_error_per_mm": 2.5128857328304832e-12,
+      "radius_of_curvature_mm": 20.264236728467555
+    }
+  ],
+  "max_numeric_error_per_mm": 6.3558602825253274e-12,
+  "joins": [
+    {
+      "label": "line_aligned",
+      "route_id": 10,
+      "joins": [
+        {
+          "position_continuous": true,
+          "tangent_continuous": true,
+          "dot_product": 1.0,
+          "angle_rad": 0.0,
+          "status": "C0_C1_PASS",
+          "position_gap_mm": 0.0,
+          "direction_status": "C1_DIRECTION_CONTINUOUS",
+          "detail": null
+        }
+      ],
+      "all_C0": true,
+      "all_C1_direction": true
+    },
+    {
+      "label": "line_perpendicular",
+      "route_id": 10,
+      "joins": [
+        {
+          "position_continuous": true,
+          "tangent_continuous": false,
+          "dot_product": 0.0,
+          "angle_rad": 1.5707963267948966,
+          "status": "TANGENT_DIRECTION_MISMATCH",
+          "position_gap_mm": 0.0,
+          "direction_status": "TANGENT_DIRECTION_MISMATCH",
+          "detail": null
+        }
+      ],
+      "all_C0": true,
+      "all_C1_direction": false
+    },
+    {
+      "label": "line_reversed",
+      "route_id": 10,
+      "joins": [
+        {
+          "position_continuous": true,
+          "tangent_continuous": false,
+          "dot_product": -1.0,
+          "angle_rad": 3.141592653589793,
+          "status": "TANGENT_DIRECTION_MISMATCH",
+          "position_gap_mm": 0.0,
+          "direction_status": "TANGENT_DIRECTION_MISMATCH",
+          "detail": null
+        }
+      ],
+      "all_C0": true,
+      "all_C1_direction": false
+    },
+    {
+      "label": "arc_aligned",
+      "route_id": 10,
+      "joins": [
+        {
+          "position_continuous": true,
+          "tangent_continuous": true,
+          "dot_product": 1.0,
+          "angle_rad": 6.123233995736766e-17,
+          "status": "C0_C1_PASS",
+          "position_gap_mm": 6.123233995736766e-17,
+          "direction_status": "C1_DIRECTION_CONTINUOUS",
+          "detail": null
+        }
+      ],
+      "all_C0": true,
+      "all_C1_direction": true
+    },
+    {
+      "label": "arc_mismatched",
+      "route_id": 10,
+      "joins": [
+        {
+          "position_continuous": true,
+          "tangent_continuous": false,
+          "dot_product": 0.0,
+          "angle_rad": 1.5707963267948966,
+          "status": "TANGENT_DIRECTION_MISMATCH",
+          "position_gap_mm": 0.0,
+          "direction_status": "TANGENT_DIRECTION_MISMATCH",
+          "detail": null
+        }
+      ],
+      "all_C0": true,
+      "all_C1_direction": false
+    }
+  ],
+  "input_read_only": true
+}

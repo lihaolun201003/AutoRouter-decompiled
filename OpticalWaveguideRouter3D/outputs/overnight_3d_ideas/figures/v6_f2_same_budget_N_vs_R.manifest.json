@@ -1,0 +1,25 @@
+{
+  "figure": "v6_f2_same_budget_N_vs_R",
+  "title": "同一预算上限下 N 与 R 的终态近距对数对照（按策略分面）",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v6_f2_same_budget_N_vs_R.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v6_f2_same_budget_N_vs_R.pdf",
+  "png_sha256": "a832cb6253fdd985dfb3fbf1c2ab22a42b686624785e6900b4e850e43f22c6df",
+  "pdf_sha256": "56c7d662d376ecbe0b09be9a71e5b3f63c137fc61702cc8d64c6b15e8fe07fd3",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v6\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v6\\summary_v6.json"
+  ],
+  "source_columns": [
+    "budget",
+    "strategy",
+    "mode",
+    "start_kind",
+    "final_collision_pairs"
+  ],
+  "source_sub_objects": [],
+  "rows_used": 18,
+  "notes": "缺失的单元画为“未完成”而不是 0，任何一方缺失就不给出 R−N 差值",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v6",
+  "generated_utc": "2026-10-05T15:22:18Z"
+}

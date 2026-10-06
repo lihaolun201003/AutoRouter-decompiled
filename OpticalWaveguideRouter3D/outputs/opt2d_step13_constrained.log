@@ -1,0 +1,13 @@
+[256] base ...
+  mean=2.9703 max=5.0783 p95=4.6545 <20deg=657 spacing=415 touch=226 overlap=0
+[256] spacing ...
+  mean=2.9734 max=5.0623 p95=4.6980 <20deg=626 spacing=288 touch=202 overlap=0
+[256] small ...
+  mean=2.9930 max=5.0454 p95=4.6368 <20deg=434 spacing=430 touch=226 overlap=0
+[256] both ...
+  mean=2.9902 max=5.0556 p95=4.6283 <20deg=369 spacing=279 touch=224 overlap=0
+ config  mean_loss_db  p95_loss_db  max_loss_db  worst_route_id  spacing_violation_count  contact_touch_count  contact_overlap_count  geometry_issue_count  complete_connection  mean_crossing_loss_db  mean_bend_loss_db                       angle_histogram                                     angle_bins  crossings_under_5_deg  crossings_under_10_deg  crossings_under_20_deg  crossings_under_30_deg  route_44_loss_db  top10_crossed_u_sum_loss_db  top10_crossed_u_mean_loss_db
+   base      2.970298     4.654524     5.078298              34                      415                  226                      0                     0                 True               0.265906           2.120192 [22, 129, 506, 1075, 941, 1675, 6118] [0.0, 5.0, 10.0, 20.0, 30.0, 45.0, 60.0, 90.0]                     22                     151                     657                    1732          3.751205                    47.858098                      4.785810
+spacing      2.973399     4.697982     5.062256              34                      288                  202                      0                     0                 True               0.264095           2.126189  [4, 133, 489, 1042, 921, 1750, 6139] [0.0, 5.0, 10.0, 20.0, 30.0, 45.0, 60.0, 90.0]                      4                     137                     626                    1668          3.697366                    47.749580                      4.774958
+  small      2.992977     4.636840     5.045441              34                      430                  226                      0                     0                 True               0.252945           2.154916  [15, 63, 356, 1066, 912, 1850, 6146] [0.0, 5.0, 10.0, 20.0, 30.0, 45.0, 60.0, 90.0]                     15                      78                     434                    1500          3.691890                    47.734824                      4.773482
+   both      2.990230     4.628274     5.055649              34                      279                  224                      0                     0                 True               0.242931           2.164618   [6, 79, 284, 1090, 775, 1819, 6201] [0.0, 5.0, 10.0, 20.0, 30.0, 45.0, 60.0, 90.0]                      6                      85                     369                    1459          3.606057                    47.181473                      4.718147

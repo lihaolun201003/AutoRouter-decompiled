@@ -1,0 +1,86 @@
+{
+  "session": "v8 continuation (autonomous)",
+  "started_local": "2026-10-06T08:51:15+08:00",
+  "window_hours": 10,
+  "working_directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D",
+  "restored_state": {
+    "rounds_finished": {
+      "v5": 16,
+      "v6": 24,
+      "v7": 24,
+      "ideas": 54,
+      "dctrl": 8
+    },
+    "group_count_accounting": {
+      "historical_base_plus_single_factor_ablations": 118,
+      "dctrl_extra": 8,
+      "final_verification_groups_total": 126,
+      "final_verification_new_pass": 104,
+      "final_verification_reused_reference": 22,
+      "note": "126 = 104 newly run PASS groups + 22 reused references; the 118/8 split is the earlier accounting and is not interchangeable with 126"
+    },
+    "a2880_budget_facts": {
+      "source": "outputs/overnight_3d_ideas/ideas/IDEA_A_FAMILY_N2880/summary.json and IDEA_A_FAMILY_R2880",
+      "A_FAMILY_N2880": {
+        "candidate_evaluations": 2753,
+        "stop_reason": "TARGET_LIMIT",
+        "max_targets": 200
+      },
+      "A_FAMILY_R2880": {
+        "candidate_evaluations": 2664,
+        "stop_reason": "TARGET_LIMIT",
+        "max_targets": 200
+      },
+      "interpretation": "these two arms stopped at the 200 target-attempt limit, so they share the budget ceiling with BASE_E2 but not the actual number of evaluations; P3 adds the actual-evaluation-aligned comparison at max_targets 2000"
+    }
+  },
+  "stale_state_corrections": [
+    "checkpoint.md still says round v5 = running; the v5/v6/v7/ideas/dctrl summaries and final_verification show all of them finished PASS",
+    "task_queue.json said v8/controlled-serial-timing not_started; this session is executing both"
+  ],
+  "planned_new_groups": {
+    "v8_P2": {
+      "G1_path_windows": 8,
+      "note": "6 main + 2 challenge; G0 is referenced from V7_T0 / V6_E2 (byte-identical spec) plus 3 fresh neutrality re-runs under the frozen v8 code"
+    },
+    "v8_neutrality": {
+      "groups": [
+        "V8_G0_NEUTRALITY_R2880",
+        "V8_G0_NEUTRALITY_R720",
+        "V8_G0_NEUTRALITY_RC2880"
+      ]
+    },
+    "p3_A_fairness": {
+      "new_groups": 10,
+      "detail": "A_FAMILY x max_targets2000 x N/R x 720/1440/2880 (6) + A_FAMILY challenge 200/2000 x N/R (4); BASE_E2 cells referenced from V7_T0 (max200) and V7_T1 (max2000)"
+    },
+    "p4_length_cap": {
+      "new_groups": 24,
+      "detail": "BASE_E2/A_FAMILY x cap 24/40/60 x N/R at 2880 (12 main) + 12 challenge"
+    },
+    "p5_serial_timing": {
+      "runs": 6,
+      "detail": "cache OFF/ON x 3 alternating order, main start R1440, serial and exclusive"
+    }
+  },
+  "frozen_generation_settings": {
+    "generation_domain_G0": "LINE_ONLY",
+    "generation_domain_G1": "PATH_WINDOWS",
+    "path_window_placements": [
+      0,
+      0.5,
+      1
+    ],
+    "path_window_length_factors": [
+      1,
+      1.5,
+      2,
+      3
+    ],
+    "path_window_candidate_cap": 4096,
+    "dedup_rule": "canonical planar arc-length interval (start,end) per layer; the G0 window wins a tie",
+    "margin": "window_slack_mm = 1e-5 (unchanged)",
+    "adjacency_policy": "a C1 joint containing a path window is certified outside 2x clearance of arc length from the joint (declared constant ADJACENT_FAR_MULTIPLE = 2.0)",
+    "interface_freeze": "clearance 0.1 mm, layer z 0/1/2 mm, required radius 5.0 mm, unresolved semantics unchanged"
+  }
+}

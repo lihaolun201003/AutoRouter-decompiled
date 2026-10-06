@@ -1,0 +1,77 @@
+{
+  "scale": 512,
+  "dataset": "LEGACY_512_SMOOTHED_P0",
+  "input_files": [
+    "outputs/step_8_5_legacy_512_plot_geometry.json",
+    "outputs/step_8_5_legacy_512_physical_events.jsonl"
+  ],
+  "input_sha256": {
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_plot_geometry.json": "14403f100b73c22f89ea07cf329822347ad541dc6674e1949996a7d5f0523821",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_physical_events.jsonl": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8"
+  },
+  "start_state_directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\512_ablation\\D_both_enabled",
+  "start_kind": "main",
+  "start_state_sha256": {
+    "final_routes.json": "58bd664a92815cec1a07e7e9ff6489bda9f34f3667320963eb0b17aaef4f1151",
+    "collision_sets.json": "82f633450ab88ca612fd080a4a6d2ed4e23df9a5418810d5563a6afb3349c19d",
+    "ledger.json": "8ee5a2a9a204bb1f866ca6b00b59987078272642785998d183e52f8ff83c0d6d",
+    "decisions.json": "9cc823a9f68f8c96b199cb831c3e6dd74e496db32326bd952662d86a4758af76",
+    "summary.json": "1516a9c734ff9b0ca25dd3c0ba29eae2f30b37d93eba95a842a1d44c89f0a0cc"
+  },
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "strategy": "PE_E_T2000",
+  "strategy_spec": {
+    "name": "PE_E_T2000",
+    "target_policy": "LEGACY",
+    "evaluation_policy": "E2_ORDERED_K16",
+    "traversal_policy": "BASE",
+    "max_targets": 2000,
+    "k_per_target": 16,
+    "family_round_robin": false,
+    "relocation_side_reserve": 0,
+    "waiting_age": false,
+    "route_coverage": false,
+    "multi_anchor": true,
+    "exact_dedup": false,
+    "decision_cache": false,
+    "return_action": false,
+    "cache_structural_skips": false,
+    "window_slack_mm": 1e-05,
+    "generation_domain": "LINE_ONLY",
+    "path_window_settings": null,
+    "stage_length_cap_mm": null,
+    "notes": ""
+  },
+  "mode": "R",
+  "allow_relocation": true,
+  "appended_candidate_budget": 1440,
+  "max_targets": 2000,
+  "candidate_budget_scope": "appended to the start state; the historical evaluations that produced it are excluded",
+  "generation_failure_cache": true,
+  "round": "pe",
+  "group": "PE_E_T2000_R1440",
+  "control": "IDEAS_ROUND_E_ARM",
+  "adoption": {},
+  "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "manifest_sha256": "edc073fda7bb221a140dca3f84e3f52b568fc2dd6a5dd0588267ecab46f115e3",
+  "tag": ""
+}

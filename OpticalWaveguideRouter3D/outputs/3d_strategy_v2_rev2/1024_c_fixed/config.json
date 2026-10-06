@@ -1,0 +1,48 @@
+{
+  "scale": 1024,
+  "task": "c_fixed",
+  "dataset": "FIXED_1024_FROM_LEGACY_512_DOUBLE_COVER",
+  "input_files": [
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\data\\fixed_1024_legacy_seed.json"
+  ],
+  "input_sha256": {
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\data\\fixed_1024_legacy_seed.json": "0679978220852f21f70a4e6777c07342095d8c21a59e66a6480812a45426eb54"
+  },
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "budget_unit": "one evaluate_elevation basic call per candidate row",
+  "budget_counts_basic_rejections": true,
+  "frozen_budget": {
+    "scale": 1024,
+    "max_targets": 1024,
+    "candidate_budget": 8172,
+    "budget_counts_basic_rejections": true,
+    "source": "step_10_fixed_1024_attempts.json: 8172 candidate rows over 1024 target attempts"
+  },
+  "failure_cache_rule": "global layout version: any accepted edit invalidates a cached failure",
+  "second_victim_rule": "selected victim attempt priority_index == 1",
+  "strategy": "C",
+  "notes": [
+    "relocation of already-elevated routes is enabled",
+    "failure cache tracks the global layout version (corrected)",
+    "A/B results are reused from the previous verified run (not re-executed)"
+  ]
+}

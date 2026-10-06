@@ -1,0 +1,122 @@
+{
+  "seed": 20261006,
+  "target_count": 60,
+  "side_count": 120,
+  "route_diversity": {
+    "routes_used": 50,
+    "max_per_route": 4
+  },
+  "category_fill": {
+    "high_conflict_both_unelevated": {
+      "requested": 20,
+      "selected": 20,
+      "shortfall": null,
+      "available_pairs": 42516
+    },
+    "random_both_unelevated": {
+      "requested": 20,
+      "selected": 20,
+      "shortfall": null,
+      "available_pairs": 42516
+    },
+    "single_elevated": {
+      "requested": 10,
+      "selected": 10,
+      "shortfall": null,
+      "available_pairs": 291
+    },
+    "both_elevated": {
+      "requested": 10,
+      "selected": 10,
+      "shortfall": null,
+      "available_pairs": 102
+    }
+  },
+  "outcome_counts": {
+    "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 33,
+    "CANDIDATES_EXIST_BASIC_ALL_REJECTED": 0,
+    "BASIC_PASSES_FULL_NO_NET_GAIN": 1,
+    "BASIC_PASSES_FULL_CHECK_CAPPED": 0,
+    "FULL_ACCEPTED_CANDIDATE_EXISTS": 86
+  },
+  "previous_budget_cross_tab": {
+    "PREVIOUS_BUDGET_COVERED": {
+      "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 6
+    },
+    "PREVIOUS_BUDGET_NOT_COVERED": {
+      "FULL_ACCEPTED_CANDIDATE_EXISTS": 86,
+      "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 27,
+      "BASIC_PASSES_FULL_NO_NET_GAIN": 1
+    }
+  },
+  "by_category": {
+    "high_conflict_both_unelevated": {
+      "sides": 40,
+      "generated_candidates": 1152,
+      "no_legal_window_sides": 4,
+      "previous_budget_covered_sides": 4,
+      "full_accepted_sides": 36,
+      "outcomes": {
+        "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 4,
+        "FULL_ACCEPTED_CANDIDATE_EXISTS": 36
+      }
+    },
+    "random_both_unelevated": {
+      "sides": 40,
+      "generated_candidates": 1233,
+      "no_legal_window_sides": 4,
+      "previous_budget_covered_sides": 0,
+      "full_accepted_sides": 36,
+      "outcomes": {
+        "FULL_ACCEPTED_CANDIDATE_EXISTS": 36,
+        "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 4
+      }
+    },
+    "single_elevated": {
+      "sides": 20,
+      "generated_candidates": 216,
+      "no_legal_window_sides": 13,
+      "previous_budget_covered_sides": 0,
+      "full_accepted_sides": 7,
+      "outcomes": {
+        "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 13,
+        "FULL_ACCEPTED_CANDIDATE_EXISTS": 7
+      }
+    },
+    "both_elevated": {
+      "sides": 20,
+      "generated_candidates": 180,
+      "no_legal_window_sides": 12,
+      "previous_budget_covered_sides": 2,
+      "full_accepted_sides": 7,
+      "outcomes": {
+        "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 12,
+        "BASIC_PASSES_FULL_NO_NET_GAIN": 1,
+        "FULL_ACCEPTED_CANDIDATE_EXISTS": 7
+      }
+    }
+  },
+  "generation_failure_reason_counts": {
+    "INSUFFICIENT_TRANSITION_SPACE": 26,
+    "NO_VALID_TRANSITION_WINDOW": 7
+  },
+  "basic_rejection_reason_counts": {
+    "TARGET_NOT_CLEARED": 90
+  },
+  "full_rejection_reason_counts": {
+    "NO_STRICT_GLOBAL_DECREASE": 86
+  },
+  "zero_generation_means_no_legal_window_under_current_rules_only": true,
+  "wording": "\"no candidate\" below always means \"no legal window under the current generation rules\"; it is never \"geometrically infeasible\".",
+  "audit_ledger": {
+    "basic_evaluations": 2781,
+    "full_neighbor_checks": 2583,
+    "basic_evaluations_skipped_by_cap": 0,
+    "full_checks_skipped_by_cap": 108,
+    "basic_cap_per_side": 400,
+    "full_cap_per_side": 60,
+    "excluded_from_optimisation_budgets": true,
+    "note": "these evaluations are booked separately and are NOT part of any of the six appended candidate budgets"
+  },
+  "seconds": 1025.0140182999894
+}

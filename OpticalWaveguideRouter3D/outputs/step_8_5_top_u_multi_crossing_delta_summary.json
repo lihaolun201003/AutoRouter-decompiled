@@ -1,0 +1,535 @@
+{
+  "criterion": {
+    "spacing_mm": 0.125,
+    "tol_mm": 1e-09
+  },
+  "counts": {
+    "stable": 204,
+    "removed": 114,
+    "added": 141
+  },
+  "net_change": 27,
+  "graph_set_diff": {
+    "stable": 1835220,
+    "removed": 228328,
+    "added": 0
+  },
+  "eligible_set_diff": {
+    "stable": 1222071,
+    "removed": 0,
+    "added": 0
+  },
+  "groups": {
+    "stable": {
+      "count": 204,
+      "top_u_counts": {
+        "0": 204,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "composition": {
+        "ordinary/ordinary/ordinary": 132,
+        "ordinary/ordinary/special": 72
+      },
+      "descriptive": {
+        "severity": {
+          "s1": {
+            "count": 204,
+            "min": 7.102330047814576e-05,
+            "max": 0.11771533337427798,
+            "mean": 0.04463273622759196,
+            "median": 0.04263553983880186,
+            "sum": 9.10507819042876
+          },
+          "s2": {
+            "count": 204,
+            "min": 0.00013158259243084558,
+            "max": 0.12433636113566848,
+            "mean": 0.07663594175572451,
+            "median": 0.07137605084084697,
+            "sum": 15.633732118167801
+          },
+          "s3": {
+            "count": 204,
+            "min": 0.0001495268800003541,
+            "max": 0.16883938771823723,
+            "mean": 0.0899650315500349,
+            "median": 0.09189470827158809,
+            "sum": 18.35286643620712
+          },
+          "second_shortest_margin_mm": {
+            "count": 204,
+            "min": 0.0006636388643315172,
+            "max": 0.12486841740756915,
+            "mean": 0.04836405824427548,
+            "median": 0.05362394915915303,
+            "sum": 9.866267881832199
+          }
+        },
+        "minimum_angle_per_triplet": {
+          "count": 204,
+          "min": 15.203604093292832,
+          "max": 50.20818050044273,
+          "mean": 29.716017179161078,
+          "median": 26.4915702003562,
+          "sum": 6062.06750454886
+        },
+        "mean_angle_per_triplet": {
+          "count": 204,
+          "min": 58.328019655348704,
+          "max": 60.64494960028022,
+          "mean": 60.04647301766173,
+          "median": 59.98736515729471,
+          "sum": 12249.480495602995
+        },
+        "contains_angle_below_20": 30
+      },
+      "top20_top_u": []
+    },
+    "removed": {
+      "count": 114,
+      "top_u_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 114,
+        "3": 0
+      },
+      "composition": {
+        "ordinary/ordinary/ordinary": 90,
+        "ordinary/ordinary/special": 24
+      },
+      "descriptive": {
+        "severity": {
+          "s1": {
+            "count": 114,
+            "min": 0.007921644115583604,
+            "max": 0.08798377511311628,
+            "mean": 0.03591655971549968,
+            "median": 0.029168699187493985,
+            "sum": 4.0944878075669635
+          },
+          "s2": {
+            "count": 114,
+            "min": 0.010423600060714662,
+            "max": 0.12433636113567559,
+            "mean": 0.07123924538980028,
+            "median": 0.06220240505110297,
+            "sum": 8.121273974437232
+          },
+          "s3": {
+            "count": 114,
+            "min": 0.011231864648175117,
+            "max": 0.1523176791564806,
+            "mean": 0.08020896266032922,
+            "median": 0.06706356807265662,
+            "sum": 9.143821743277531
+          },
+          "second_shortest_margin_mm": {
+            "count": 114,
+            "min": 0.0006636388643244118,
+            "max": 0.11457639993928534,
+            "mean": 0.05376075461019972,
+            "median": 0.06279759494889703,
+            "sum": 6.128726025562768
+          }
+        },
+        "minimum_angle_per_triplet": {
+          "count": 114,
+          "min": 15.20360409329224,
+          "max": 42.7149601486005,
+          "mean": 26.95547750660756,
+          "median": 26.491570200356207,
+          "sum": 3072.924435753262
+        },
+        "mean_angle_per_triplet": {
+          "count": 114,
+          "min": 59.4181668229235,
+          "max": 60.552493435005154,
+          "mean": 60.008925084145574,
+          "median": 59.915962083317716,
+          "sum": 6841.0174595925955
+        },
+        "contains_angle_below_20": 18
+      },
+      "top20_top_u": [
+        {
+          "waveguide_id": 485,
+          "count": 13
+        },
+        {
+          "waveguide_id": 457,
+          "count": 12
+        },
+        {
+          "waveguide_id": 142,
+          "count": 8
+        },
+        {
+          "waveguide_id": 265,
+          "count": 8
+        },
+        {
+          "waveguide_id": 465,
+          "count": 8
+        },
+        {
+          "waveguide_id": 332,
+          "count": 7
+        },
+        {
+          "waveguide_id": 128,
+          "count": 6
+        },
+        {
+          "waveguide_id": 129,
+          "count": 6
+        },
+        {
+          "waveguide_id": 164,
+          "count": 6
+        },
+        {
+          "waveguide_id": 461,
+          "count": 6
+        },
+        {
+          "waveguide_id": 464,
+          "count": 6
+        },
+        {
+          "waveguide_id": 55,
+          "count": 5
+        },
+        {
+          "waveguide_id": 64,
+          "count": 5
+        },
+        {
+          "waveguide_id": 140,
+          "count": 5
+        },
+        {
+          "waveguide_id": 441,
+          "count": 5
+        },
+        {
+          "waveguide_id": 450,
+          "count": 5
+        },
+        {
+          "waveguide_id": 42,
+          "count": 4
+        },
+        {
+          "waveguide_id": 54,
+          "count": 4
+        },
+        {
+          "waveguide_id": 95,
+          "count": 4
+        },
+        {
+          "waveguide_id": 97,
+          "count": 4
+        }
+      ],
+      "opposite_provenance": {
+        "eligible_not_detected": 114
+      },
+      "margin_bins_mm": {
+        "(0,.001]": 8,
+        "(.001,.01]": 7,
+        "(.01,.05]": 25,
+        ">.05": 74
+      }
+    },
+    "added": {
+      "count": 141,
+      "top_u_counts": {
+        "0": 0,
+        "1": 5,
+        "2": 121,
+        "3": 15
+      },
+      "composition": {
+        "ordinary/ordinary/special": 33,
+        "ordinary/ordinary/ordinary": 108
+      },
+      "descriptive": {
+        "severity": {
+          "s1": {
+            "count": 141,
+            "min": 0.0037608886102873385,
+            "max": 0.09758990515834398,
+            "mean": 0.035007960422198794,
+            "median": 0.029168699187465563,
+            "sum": 4.9361224195300295
+          },
+          "s2": {
+            "count": 141,
+            "min": 0.005027247936468844,
+            "max": 0.12433636113567559,
+            "mean": 0.07331948305013057,
+            "median": 0.06220240505111008,
+            "sum": 10.33804711006841
+          },
+          "s3": {
+            "count": 141,
+            "min": 0.005628878676675432,
+            "max": 0.1523176791564806,
+            "mean": 0.08162687331842351,
+            "median": 0.06706356807270147,
+            "sum": 11.509389137897715
+          },
+          "second_shortest_margin_mm": {
+            "count": 141,
+            "min": 0.0006636388643244118,
+            "max": 0.11997275206353115,
+            "mean": 0.05168051694986942,
+            "median": 0.06279759494888992,
+            "sum": 7.286952889931589
+          }
+        },
+        "minimum_angle_per_triplet": {
+          "count": 141,
+          "min": 15.20360409329224,
+          "max": 42.714960148600404,
+          "mean": 25.91865326543748,
+          "median": 21.56518501524337,
+          "sum": 3654.530110426685
+        },
+        "mean_angle_per_triplet": {
+          "count": 141,
+          "min": 51.353978997459535,
+          "max": 60.55249343500523,
+          "mean": 59.980734027466106,
+          "median": 59.915962083317716,
+          "sum": 8457.28349787272
+        },
+        "contains_angle_below_20": 26
+      },
+      "top20_top_u": [
+        {
+          "waveguide_id": 332,
+          "count": 12
+        },
+        {
+          "waveguide_id": 36,
+          "count": 11
+        },
+        {
+          "waveguide_id": 50,
+          "count": 9
+        },
+        {
+          "waveguide_id": 51,
+          "count": 9
+        },
+        {
+          "waveguide_id": 155,
+          "count": 9
+        },
+        {
+          "waveguide_id": 286,
+          "count": 9
+        },
+        {
+          "waveguide_id": 331,
+          "count": 9
+        },
+        {
+          "waveguide_id": 37,
+          "count": 8
+        },
+        {
+          "waveguide_id": 48,
+          "count": 8
+        },
+        {
+          "waveguide_id": 49,
+          "count": 7
+        },
+        {
+          "waveguide_id": 55,
+          "count": 6
+        },
+        {
+          "waveguide_id": 285,
+          "count": 6
+        },
+        {
+          "waveguide_id": 38,
+          "count": 5
+        },
+        {
+          "waveguide_id": 42,
+          "count": 5
+        },
+        {
+          "waveguide_id": 52,
+          "count": 5
+        },
+        {
+          "waveguide_id": 54,
+          "count": 5
+        },
+        {
+          "waveguide_id": 66,
+          "count": 5
+        },
+        {
+          "waveguide_id": 97,
+          "count": 5
+        },
+        {
+          "waveguide_id": 100,
+          "count": 5
+        },
+        {
+          "waveguide_id": 289,
+          "count": 5
+        }
+      ],
+      "opposite_provenance": {
+        "eligible_not_detected": 141
+      },
+      "margin_bins_mm": {
+        "(0,.001]": 6,
+        "(.001,.01]": 9,
+        "(.01,.05]": 39,
+        ">.05": 87
+      }
+    }
+  },
+  "stable_severity": {
+    "counts": {
+      "improved": 0,
+      "worsened": 0,
+      "unchanged": 204
+    },
+    "delta": {
+      "count": 204,
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "sum": 0.0
+    },
+    "control_descriptive": {
+      "severity": {
+        "s1": {
+          "count": 204,
+          "min": 7.102330047814576e-05,
+          "max": 0.11771533337427798,
+          "mean": 0.04463273622759196,
+          "median": 0.04263553983880186,
+          "sum": 9.10507819042876
+        },
+        "s2": {
+          "count": 204,
+          "min": 0.00013158259243084558,
+          "max": 0.12433636113566848,
+          "mean": 0.07663594175572451,
+          "median": 0.07137605084084697,
+          "sum": 15.633732118167801
+        },
+        "s3": {
+          "count": 204,
+          "min": 0.0001495268800003541,
+          "max": 0.16883938771823723,
+          "mean": 0.0899650315500349,
+          "median": 0.09189470827158809,
+          "sum": 18.35286643620712
+        },
+        "second_shortest_margin_mm": {
+          "count": 204,
+          "min": 0.0006636388643315172,
+          "max": 0.12486841740756915,
+          "mean": 0.04836405824427548,
+          "median": 0.05362394915915303,
+          "sum": 9.866267881832199
+        }
+      },
+      "minimum_angle_per_triplet": {
+        "count": 204,
+        "min": 15.203604093292832,
+        "max": 50.20818050044273,
+        "mean": 29.716017179161078,
+        "median": 26.4915702003562,
+        "sum": 6062.06750454886
+      },
+      "mean_angle_per_triplet": {
+        "count": 204,
+        "min": 58.328019655348704,
+        "max": 60.64494960028022,
+        "mean": 60.04647301766173,
+        "median": 59.98736515729471,
+        "sum": 12249.480495602995
+      },
+      "contains_angle_below_20": 30
+    },
+    "variant_descriptive": {
+      "severity": {
+        "s1": {
+          "count": 204,
+          "min": 7.102330047814576e-05,
+          "max": 0.11771533337427798,
+          "mean": 0.04463273622759196,
+          "median": 0.04263553983880186,
+          "sum": 9.10507819042876
+        },
+        "s2": {
+          "count": 204,
+          "min": 0.00013158259243084558,
+          "max": 0.12433636113566848,
+          "mean": 0.07663594175572451,
+          "median": 0.07137605084084697,
+          "sum": 15.633732118167801
+        },
+        "s3": {
+          "count": 204,
+          "min": 0.0001495268800003541,
+          "max": 0.16883938771823723,
+          "mean": 0.0899650315500349,
+          "median": 0.09189470827158809,
+          "sum": 18.35286643620712
+        },
+        "second_shortest_margin_mm": {
+          "count": 204,
+          "min": 0.0006636388643315172,
+          "max": 0.12486841740756915,
+          "mean": 0.04836405824427548,
+          "median": 0.05362394915915303,
+          "sum": 9.866267881832199
+        }
+      },
+      "minimum_angle_per_triplet": {
+        "count": 204,
+        "min": 15.203604093292832,
+        "max": 50.20818050044273,
+        "mean": 29.716017179161078,
+        "median": 26.4915702003562,
+        "sum": 6062.06750454886
+      },
+      "mean_angle_per_triplet": {
+        "count": 204,
+        "min": 58.328019655348704,
+        "max": 60.64494960028022,
+        "mean": 60.04647301766173,
+        "median": 59.98736515729471,
+        "sum": 12249.480495602995
+      },
+      "contains_angle_below_20": 30
+    }
+  },
+  "no_top_u_invariant": true,
+  "prior_files_unchanged": true,
+  "runtime_seconds": 12.005035899986979,
+  "examples_count": 8,
+  "source_hashes": {
+    "control_physical": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8",
+    "variant_physical": "e168bc1f68bc70e47a95444dd35719655930c8750e17c4c98d3e88d0baf27a50"
+  },
+  "variant_source_note": "Step I did not record a Variant file hash; this audit records it and checks I counts/isolation."
+}

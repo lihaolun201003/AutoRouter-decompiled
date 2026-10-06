@@ -1,244 +1,56 @@
-# OpticalWaveguideRouter2D
+# AutoRouter 毕业设计项目
 
-**OpticalWaveguideRouter2D** is a Python 3.10.11 reconstruction of the legacy
-**AutoRouter** program for 2D optical waveguide routing — the *Legacy AutoRouter
-Reference Implementation*.
+本仓库保存二维 AutoRouter 重建、二维优化、三维光波导布线实验，以及相关汇报、论文资料和实验成果。2026 年 10 月 6 日同步后，二维工程位于 `OpticalWaveguideRouter2D/`，三维工程位于 `OpticalWaveguideRouter3D/`。
 
-It was reconstructed from the original AutoRouter Python 3.8 executable and
-validated directly against its original runtime behaviour: the original
-bytecode was recovered from the packaged executable, re-run under the
-interpreter and libraries it was built with, and compared with this
-implementation stage by stage. Every one of the 512 routed waveguides, every
-bend parameter and every GDSII path matches.
+## 最近完成的工作
 
-This repository is kept as a behavioural reference. New 3D routing algorithms
-are not developed here.
+- **9 月 26 日**：TOA-cos 论文精读，整理余弦曲线、横向偏移和辅助槽机制，制作 16 页讲解 PPT 与讲稿。
+- **9 月 29 日**：从 PyInstaller 程序恢复字节码与源码，迁移到 Python 3.10，通过原 Python 3.8 环境的逐阶段对照，记录 512 条二维路线、弯曲参数和 GDS 几何全部一致；恢复损耗分量并扫描弯曲半径，制作二维成果汇报。
+- **10 月 4 日**：建立二维解析几何统一评价，冻结连接与端点，开发自由弯角路线和受保护的局部优化；修复数值几何及统计口径。
+- **10 月 5 日**：研究三维失败缓存、窗口余量、候选调度和预算瓶颈，完成 v2–v4 实验与专题报告。
+- **10 月 5 日夜间至 6 日**：完成 v5–v8 策略消融与路径弧长窗口支持，保存完整结果、重载复核、独立审查和光学损耗模型调研。
 
----
+详见 [项目审视](项目审视_20261006.md)。文件时间只能辅助判断工作顺序，不能证明每日工作时长。
 
-## Features
+## 已核实的主要成果
 
-- 256-channel and 512-channel 2D optical waveguide routing
-- legacy port placement, port numbering and channel ordering
-- 2D rectilinear (Manhattan) routing, with the legacy four layer slots (`dz`)
-- crossing avoidance (`noCross` / `sn_calc` / `ln_calc`)
-- circular bend reconstruction: tangent points, arc centres, angular spans
-- PNG / PDF visualisation (layout plate and straight-routing plate)
-- Excel intermediate and output data
-- GDSII output through `gdspy.FlexPath(..., corners="circular bend")`
-- PyQt5 GUI with a background routing thread, parameter validation and a log pane
-- command line interface for both board sizes
+二维 F56 模型平均损耗：256 通道 5.2786 → 2.9703 dB，512 通道 5.5162 → 3.2947 dB；这些是模型估计，小角交叉和间距违规仍有代价，不是器件实测。
 
----
+三维主起点、R 模式、实际追加 2880 次评价：
 
-## Legacy fidelity
+| 保存终态 | 剩余近距路线对 | 阶段总长度增长 mm | 逻辑升降段 |
+| --- | ---: | ---: | ---: |
+| BASE E2 | 19,233 | 53.625801 | 356 |
+| G1 修复版 | 18,211 | 30.096940 | 408 |
+| A T2000 | 18,042 | 71.946614 | 346 |
+| E T2000 | 15,935 | 80.292495 | 418 |
 
-### Environment
+G1 改善了几何近距与总长度，E 减少近距最多，但长度与升降代价更高。三维模型仍未完成逐链路插损和串扰标定，不能据此判断哪个方案光学性能最好。G1 的目标上限为 200，其余表列为 2000；主 BASE 两种上限终态相同，方案差异并非单一机制对照。
 
-| | Interpreter | NumPy | pandas |
-| --- | --- | --- | --- |
-| original AutoRouter runtime | Python 3.8.10 | 1.18.5 | 1.0.4 |
-| this reconstruction | Python 3.10.11 | 2.2.6 | 2.3.3 |
+## 文件入口
 
-The original runtime is not shipped here (it is large and binary);
-`tools/setup_legacy_runtime.py` rebuilds it locally from the PyInstaller bundle
-that ships with `AutoRouter.exe`.
-
-### Verified equivalence
-
-The original `problem_graph`, `wiring_rect_826` and `wiring_bend_826` code
-objects were executed unmodified under Python 3.8.10 / NumPy 1.18.5 /
-pandas 1.0.4, and their output was diffed against this reconstruction:
-
-```text
-create_sim_space   512/512 exact       port table, index labels, sx/sy/lx/ly/dx/dz
-plotter_rect       512/512 exact       every route on the identical inflection track
-plotter_bend       512/512 exact       inflection_x/y, dir, bend_x, bend_y, center, theta
-GDS geometry       512/512 paths exact identical point arrays and widths
-```
-
-Per routing pass:
-
-```text
-below -> below   112/112
-above -> above   112/112
-below -> above   115/115
-above -> below   173/173
-```
-
-The GDSII files are identical except for the creation timestamps that GDSII
-itself embeds (`BGNLIB` / `BGNSTR`, 8 bytes). In other words this is an **exact
-behavioural and routing-geometry reconstruction of the analysed AutoRouter
-executable**; it is not a claim of byte-for-byte identity with the compiled
-executable.
-
-The full evidence chain, including the hypotheses tested and rejected, is in
-[docs/exact_legacy_fidelity_report.md](docs/exact_legacy_fidelity_report.md) and
-[docs/debug_first_divergence.md](docs/debug_first_divergence.md).
-
-### Note on the historical `fiberBoard512_rect.pdf`
-
-A figure dated 2020 ships alongside the executable and was used as the reference
-at first. It turned out to come from a **different AutoRouter build** and
-disagrees with the executable that was decompiled: on `below -> below` it places
-62 of 112 routes one track higher, which then shifts all 173 `above -> below`
-routes. The ground truth is therefore the original executable's runtime
-behaviour, not that figure. The figure is kept in `docs/` as
-`legacy_2020_fiberBoard512_rect.pdf` so that the distinction stays visible.
-
----
-
-## Install (Windows, Python 3.10.11)
-
-```powershell
-py -3.10 -m venv .venv
-
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-
-# gdspy publishes no Windows wheel and compiles a C++ extension, so it is
-# installed by a dedicated script that also works without a C++ toolchain.
-.\.venv\Scripts\python.exe tools\install_gdspy.py
-```
-
-`tools\install_gdspy.py` installs the unmodified official gdspy 1.6.13 source
-and adds a pure-Python `gdspy/clipper.py` fallback for the optional C++
-extension that this project never reaches — paths are written with
-`gdsii_path=True`, which does not use polygon clipping. See
-[docs/migration_report.md](docs/migration_report.md) section 3.1.
-
-Activating the environment is not required; call the interpreter in `.venv`
-directly as shown above.
-
----
-
-## Run
-
-### GUI
-
-```powershell
-.\.venv\Scripts\python.exe app.py
-```
-
-### 256-channel routing
-
-```powershell
-.\.venv\Scripts\python.exe main.py --channels 256
-```
-
-### 512-channel routing
-
-```powershell
-.\.venv\Scripts\python.exe main.py --channels 512
-```
-
-### Explicit paths and parameters
-
-```powershell
-.\.venv\Scripts\python.exe main.py --input data\fiberBoard512.xlsx --channels 512 --output results
-.\.venv\Scripts\python.exe main.py --help
-```
-
-With no `--input` the workbook is resolved from `data\fiberBoard<N>.xlsx`, so
-both board sizes run out of the box after a clone. Parameters are in
-millimetres: `--input --output --channels --line-width --pitch --bend-radius
---width --height`. `--pitch` is the edge-to-edge waveguide gap and defaults to
-0.125 mm for 512 channels and 0.25 mm for 256 channels, the values in the
-verified 2D parameter table.
-
-A run writes `fiberBoard<N>bend.png/.pdf/.xlsx/.gds`, `fiberBoard<N>rect.xlsx`,
-`fiberBoard<N>_rect.pdf` and `fiberBoard0data.xlsx` into the output folder, which
-is created if it does not exist.
-
----
-
-## Verification
-
-```powershell
-# real-data acceptance tests (no mocks)
-.\.venv\Scripts\python.exe -m pytest tests -q
-
-# end-to-end output audit: GDSII re-read, PNG measurement, track audit
-.\.venv\Scripts\python.exe tools\verify_reconstruction.py 256 --output results
-.\.venv\Scripts\python.exe tools\verify_reconstruction.py 512 --output results
-
-# debug map for visual inspection
-.\.venv\Scripts\python.exe tools\render_debug_map.py 512 --output results
-```
-
-The exact-fidelity gate compares against the original program and needs the
-legacy runtime, which is rebuilt from the local `AutoRouter.exe` bundle:
-
-```powershell
-.\.venv\Scripts\python.exe tools\setup_legacy_runtime.py
-
-_legacy_runtime\py38\python.exe tools\legacy_runtime_trace.py `
-    --out scratch\legacy_full.json --channels 512 --full
-
-.\.venv\Scripts\python.exe tools\exact_fidelity_gate.py
-```
-
-The gate exits non-zero when the reference is missing or when the frozen passes
-(`above -> above`, `below -> above`) regress.
-
----
-
-## Layout
-
-```text
-app.py                      PyQt5 GUI
-main.py                     Router (QThread) pipeline and CLI
-problem_graph.py            input parsing and port placement
-wiring_rect_826.py          straight routing, crossing avoidance, four layers
-wiring_bend_826.py          circular bends, visualisation, GDSII export
-waveguide_calculator.py     length / crossing / loss statistics
-requirements.txt            runtime dependencies
-data/                       real 256 and 512 workbooks, legacy port snapshot
-resource/  style/           GUI icon and stylesheet from the original bundle
-results/                    run output (generated)
-tests/                      real-data acceptance tests
-tools/                      installation, verification, fidelity and bytecode utilities
-docs/                       migration report, fidelity report, divergence analysis
-```
-
-### Tools
-
-| Tool | Purpose |
+| 目录或文件 | 内容 |
 | --- | --- |
-| `install_gdspy.py` | install gdspy, with or without a C++ toolchain |
-| `setup_legacy_runtime.py` | rebuild the original Python 3.8 runtime from the bundle |
-| `extract_pyz.py` | unpack `PYZ-00.pyz` into importable `.pyc` modules |
-| `raw_dis.py`, `skeleton_dis.py` | version-correct Python 3.8 bytecode disassembly |
-| `legacy_runtime_trace.py` | run the original bytecode and trace its internal state |
-| `reconstruction_trace.py` | the same trace taken from this implementation |
-| `exact_fidelity_gate.py` | the fidelity gate (routing, bends, GDSII, frozen passes) |
-| `verify_reconstruction.py` | output audit (GDSII re-read, PNG, track overlap) |
-| `render_debug_map.py` | per-route debug map for visual inspection |
-| `compare_with_legacy_pdf.py` | compare a run against the legacy outputs |
+| `OpticalWaveguideRouter2D/` | 可运行二维参考工程、损耗模型、测试、工具与结果 |
+| `OpticalWaveguideRouter3D/src/`、`scripts/`、`tests/` | 三维几何、优化、实验与验证代码 |
+| `OpticalWaveguideRouter3D/docs/reports/` | Step 1–19 报告与独立审查 |
+| `OpticalWaveguideRouter3D/outputs/` | 实验统计、路线终态、图像、冻结配置和测试记录 |
+| `OpticalWaveguideRouter3D/publication/` | 论文用图、表、Word/PDF 实验报告 |
+| `OpticalWaveguideRouter3D/thesis/` | 本科论文格式模板；尚无完整论文正文 |
+| `汇报材料/`、根目录 PPT、`work/` | 阶段汇报、讲稿、论文精读与构建脚本 |
+| `上海交通大学/`、`OpticalWaveguideRouter3D/references/` | 文献和物理模型资料 |
+| `自动排布/` | 保留的原程序、反编译材料、历史展示成果；依赖运行时未上传 |
 
----
+三维的最新技术结论以 [Step 19 独立审查](OpticalWaveguideRouter3D/docs/reports/step_19_codex_review_20261006.md) 为准；三维子目录原 README 的 Step 10 数字属于历史阶段。
 
-## Scope and known limitations
+## 数据范围与使用
 
-- Only 256 and 512 channels are supported. The legacy port table defines no other
-  fiber board, and `create_sim_space` rejects any other channel count.
-- `dz` is 0 for every connection, exactly as in the original. The four-layer
-  machinery is present in all four routing passes and in the four-colour figure,
-  but only layer 0 ever holds geometry. Nothing was invented here.
-- `waveguide_calculator.calc_index` runs on the real workbooks, but no
-  crossing-angle loss table or index table ships with the repository, so those
-  numbers cannot be validated and were not fabricated.
-- The decompiled module defined `create_sim_space` twice; the superseded
-  896-channel version is kept as `create_sim_space_896_legacy()` for reference
-  and is not reachable from the pipeline.
-- A few legacy behaviours are preserved deliberately: an unused `it = [...]` in
-  `wiring_rect_above2below`, the `int(filename)` in `draw_chart`, the
-  never-called `Viewer()` in `app.py`, and the deprecated module-level
-  `gdspy.write_gds`. They are listed in
-  [docs/migration_report.md](docs/migration_report.md) section 6.4.
+按项目所有者要求，实验成果、路线终态、图表、报告和 PPT 公开保留。原始 PMT 接口工作簿 `fiberBoard256.xlsx`、`fiberBoard512.xlsx`、`fiberBoard0data.xlsx`、固定连接种子及原始输入快照不在本次版本中；同名副本全局排除。需要重跑依赖真实输入的实验时，应在本地私下补齐文件，不能提交到本仓库。仅凭此公开版本无法完整复现所有真实 PMT 输入实验。
 
-## Licence
+本地虚拟环境、安装依赖、缓存、Office 临时文件及重复 staging 未上传。旧压缩包含原始输入，故以其中已提取且过滤后的工程内容替代。视频和 PPT 使用 Git LFS，克隆后执行 `git lfs pull` 获取完整文件。
 
-No licence file is included. The routing code is a reconstruction of the legacy
-AutoRouter program. `gdspy`, `matplotlib`, `numpy`, `pandas`, `scipy`,
-`openpyxl` and `PyQt5` remain under their own licences.
+排除规则和文件 SHA256 见 [上传清单](UPLOAD_MANIFEST.json)。已有 Git 历史保留，过去提交过的接口工作簿仍可能从旧提交读取；本次同步仅从当前版本移除。
+
+## 验证
+
+2026-10-06 本地完整工程运行 `python -m pytest tests -q`：二维 **34 passed**，三维 **807 passed、4 skipped**。没有重新执行大型优化。因为公开版省略原始输入，依赖私有数据的测试和重跑需先补齐本地输入。依赖版本未完全锁定，通用 Router3D、通用 IO、三维 GUI/GDS 与经过标定的光学模型仍有未完成部分。

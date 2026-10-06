@@ -1,0 +1,31 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{Step 14 压力情景：交叉损耗放大 ×1/×2/×5/×10 的最大逐路损耗}
+  \label{tab:step14-sensitivity}
+  \begin{tabular}{lrrrr}
+    \toprule
+    配置 & ×1 (dB) & ×2 (dB) & ×5 (dB) & ×10 (dB) \\
+    \midrule
+    base & 5.0783 & 5.1038 & 5.1803 & 5.9941 \\
+    spacing & 5.0623 & 5.0810 & 5.1371 & 5.7425 \\
+    small & 5.0509 & 5.0696 & 5.1257 & 5.2192 \\
+    touch & 5.0783 & 5.1038 & 5.1803 & 5.9941 \\
+    both & 5.0540 & 5.0727 & 5.1288 & 5.2971 \\
+    opt\_base & 5.0783 & 5.1038 & 5.1803 & 5.9941 \\
+    \midrule
+    base & 5.4995 & 5.5452 & 5.7264 & 8.4333 \\
+    spacing & 5.5409 & 5.5798 & 5.9657 & 7.8692 \\
+    small & 5.4741 & 5.5130 & 5.6296 & 7.4829 \\
+    touch & 5.4995 & 5.5452 & 5.7264 & 8.4333 \\
+    both & 5.4877 & 5.4945 & 6.1946 & 8.5761 \\
+    opt\_base & 5.4654 & 5.4916 & 5.6340 & 8.4996 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  固定几何复算；512 的 opt\_base 在 ×10 由 8.4333 升至 8.4996 dB（如实记录为略恶化），×1–×5 均下降。 \\
+  ×5/×10 是实验压力情景，不代表已验证的真实物理误差范围。 \\
+  \end{flushleft}
+\end{table}

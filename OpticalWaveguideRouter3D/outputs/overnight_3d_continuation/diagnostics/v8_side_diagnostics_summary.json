@@ -1,0 +1,60 @@
+{
+  "frozen_diagnostic_set": {
+    "source": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v4\\512_full_layout\\audit",
+    "seed": 20261006,
+    "targets": 60,
+    "sides": 120
+  },
+  "v4_outcome_counts": {
+    "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 33,
+    "FULL_ACCEPTED_CANDIDATE_EXISTS": 86,
+    "BASIC_PASSES_FULL_NO_NET_GAIN": 1
+  },
+  "g0_outcome_counts": {
+    "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 33,
+    "BASIC_PASSES_FULL_NO_NET_GAIN": 4,
+    "FULL_ACCEPTED_CANDIDATE_EXISTS": 83
+  },
+  "g1_outcome_counts": {
+    "NO_LEGAL_WINDOW_UNDER_CURRENT_RULES": 33,
+    "BASIC_PASSES_FULL_NO_NET_GAIN": 2,
+    "FULL_ACCEPTED_CANDIDATE_EXISTS": 84,
+    "BASIC_PASSES_FULL_CHECK_CAPPED": 1
+  },
+  "old_no_window_sides": 33,
+  "old_no_window_now_g0_candidates": 0,
+  "old_no_window_now_g1_candidates": 0,
+  "old_no_window_g1_basic_passed": 0,
+  "old_no_window_g1_full_passed": 0,
+  "old_no_window_g1_still_no_window": 33,
+  "old_no_window_g1_curvature_rejected_only": 10,
+  "old_no_window_g1_undecided": 0,
+  "g1_extra_candidates_total": 8421,
+  "k16_prefix_by_kind": {
+    "G0": {
+      "LINE_WINDOW_G0": 1385
+    },
+    "G1": {
+      "PATH_WINDOW_G1": 1296,
+      "LINE_WINDOW_G0": 89
+    }
+  },
+  "k16_prefix_size": {
+    "G0": 1385,
+    "G1": 1385
+  },
+  "sides_where_path_windows_enter_the_prefix": 81,
+  "sides_where_g1_prefix_is_all_path_windows": 81,
+  "g1_curvature_rejected_total": 14007,
+  "g1_dedup_removed_total": 0,
+  "ledger": {
+    "basic_evaluations": 13983,
+    "full_neighbor_checks": 888,
+    "seconds": 2325.9408054000232,
+    "excluded_from_optimisation_budgets": true,
+    "basic_cap_per_side": 400,
+    "full_cap_per_side": 60,
+    "note": "generation + basic + capped full checks only, on the FROZEN PLANAR state; these evaluations are booked separately and are NOT part of any appended candidate budget"
+  },
+  "wording": "a side with zero candidates has no legal window under the evaluated generation rules; it is never 'geometrically infeasible'"
+}

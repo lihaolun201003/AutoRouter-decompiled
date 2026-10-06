@@ -1,0 +1,28 @@
+{
+  "figure": "v7_f5_evaluation_efficiency",
+  "title": "评价效率：每次动作的评价次数与每次评价的净减少",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v7_f5_evaluation_efficiency.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v7_f5_evaluation_efficiency.pdf",
+  "png_sha256": "d75a7043b0ffa2cfd60a726f04160f678614e445e59d3bb8fcfbc75ba2cc01eb",
+  "pdf_sha256": "354c3b031e9e3defe919ffe0cb6869ddf63edbe2dcbdce449f7e0f5125b00db1",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v7\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v7\\summary_v7.json"
+  ],
+  "source_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "evaluations_per_action",
+    "net_reduction_per_evaluation",
+    "candidate_evaluations",
+    "accepted_moves"
+  ],
+  "source_sub_objects": [],
+  "rows_used": 23,
+  "notes": "分母为 0 的比值保持 null",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v7",
+  "generated_utc": "2026-10-05T15:23:51Z"
+}

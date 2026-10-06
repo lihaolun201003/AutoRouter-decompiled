@@ -1,0 +1,165 @@
+{
+  "document": {
+    "name": "三维波导布线策略v3实验报告",
+    "docx": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\brief_build\\三维波导布线策略v3实验报告.docx",
+    "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\publication\\report\\三维波导布线策略v3实验报告.pdf",
+    "docx_sha256": "ba1bb431bf756a77cc7e228489b489c341e484ad64cae4ff76bcc7285ea9d5f2",
+    "pdf_sha256": "17529b73ba87c181982f585ce06bcbf48887915211114f15814735a12b1126cc",
+    "docx_bytes": 3464755,
+    "pdf_bytes": 946784
+  },
+  "build": {
+    "script": "publication/report/brief_build/build_3d_strategy_v3_report.py",
+    "converter": "DSH bundled LibreOffice Kit (convert, native backend)",
+    "renderer": "DSH bundled LibreOffice Kit (render, pdfium, 120 dpi)",
+    "render_dir": "publication/report/brief_build/render_v3_report/",
+    "page_count": 20,
+    "missing_fonts": [],
+    "converter_missing_fonts": [
+      "Courier"
+    ],
+    "converter_missing_fonts_note": "Courier 来自默认样式，未用于任何中文文本；渲染器报告缺字 0，逐页确认中文为宋体。",
+    "final_build_note": "在最终一轮收尾修正后重新构建（图 4/5/6/7 更新、表 15 拆成两张表、措辞收紧），并重新逐页渲染检查。"
+  },
+  "typography": {
+    "chinese_font": "宋体（docx: w:eastAsia=宋体 全量设置，含样式、表格、页眉页脚；标题与加粗同为宋体，未用黑体）",
+    "body_line_spacing": "1.5",
+    "table_line_spacing": "1.2",
+    "table_style": "原生 Word 三线表（仅顶线/表头线/底线，无竖线无网格），表题在上、表注在下",
+    "alignment": "文字列左对齐，数值列与表头居中；单位写在表头",
+    "decimals": "长度 4~6 位、次数整数、百分比 2 位，同列统一",
+    "best_marking": "仅在严格可比范围内加粗（表1：D 终态近距对；表3：C 额外长度；表6：新 E 终态近距对）",
+    "page_break": "每个主要实验另起一页（第2、3、4、5、6章）",
+    "zero_na_missing": "0=明确统计为零；不适用=该组无重定位、长度代价无意义；缺失=无保存数据（本轮无缺失项）"
+  },
+  "page_checks": [
+    {
+      "page": 1,
+      "observed": "封面与目的；全文宋体；1.5 倍行距；无 markdown 残留（原 ** 已移除）"
+    },
+    {
+      "page": 2,
+      "observed": "表1 三线表；仅 D 42,909 加粗（原有 B 误加粗已修正）"
+    },
+    {
+      "page": 3,
+      "observed": "图1 完整、图注在下方；表2 与表注同页"
+    },
+    {
+      "page": 4,
+      "observed": "图2 与图注；2.3 标题与表题"
+    },
+    {
+      "page": 5,
+      "observed": "表3 整表同页（keep-together 生效），表注紧随"
+    },
+    {
+      "page": 6,
+      "observed": "第3章另起一页（原第6页孤儿已并回第5页）"
+    },
+    {
+      "page": 7,
+      "observed": "第3章另起一页；表4 十行整表同页"
+    },
+    {
+      "page": 8,
+      "observed": "3.2 结果与 3.3 结论限制；无裁切"
+    },
+    {
+      "page": 9,
+      "observed": "第4章另起一页；表5 设置复核整表同页"
+    },
+    {
+      "page": 10,
+      "observed": "表6 四行对照，单位在表头，新 E 加粗"
+    },
+    {
+      "page": 11,
+      "observed": "图4 与图注；4.3 方法；表7 整表同页"
+    },
+    {
+      "page": 12,
+      "observed": "表8、4.4 节、表9 同页；注文完整"
+    },
+    {
+      "page": 13,
+      "observed": "表10 与图5；几何口径对照段"
+    },
+    {
+      "page": 14,
+      "observed": "图7（更新版）：(a) 无图例、路线细条不被遮挡；(c) 真实比例三维按显示跨度设置箱体、保持扁平；(d) Z 显示值放大 20 倍且箱体高度用放大后跨度，标题写明；图注与表11同页"
+    },
+    {
+      "page": 15,
+      "observed": "图7（路线34重定位前后）与图注；表11 整表同页"
+    },
+    {
+      "page": 16,
+      "observed": "表12 长度记账（不适用与 0 区分）；4.6 结论与限制"
+    },
+    {
+      "page": 17,
+      "observed": "表14 两次测试真实结果；表15 拆为“计数”表（130,816 / 42,112 / 42,083 / PASS 均单行完整显示）与表16“集合与几何不变量”表"
+    },
+    {
+      "page": 18,
+      "observed": "表14 两次测试真实结果（739 passed/4 skipped 92.24 s；61 passed 221.66 s）；表15 整表同页"
+    },
+    {
+      "page": 19,
+      "observed": "表16 台账核对续页（表头重复）；本轮执行与沿用历史的分段"
+    },
+    {
+      "page": 20,
+      "observed": "第6章结论汇总、第7章限制；表17 与表注"
+    },
+    {
+      "page": 21,
+      "observed": "表17 续页与注；第8章数据与复现命令（逐条独立段落，无 <br/> 残留）"
+    }
+  ],
+  "issues_found_and_fixed": [
+    "图 7 三维箱体比例：改为按各轴显示跨度设置 set_box_aspect，真比例图箱体 Z 跨度 2 mm（保持扁平），Z×20 图 Z 跨度 40 mm 且数据同步放大 20 倍，图内标题写明；",
+    "图 7 XY 子图图例遮挡：等比例下路线是细条，任何图内图例都会压住曲线或标题，故 (a) 不再放图例，颜色说明写入图题；",
+    "共用图内嵌编号：f1/f2/f3/f4/f5/f6/f7 图内不再带 图N 编号，由专题报告与总报告各自编号（两报告编号互不冲突）；",
+    "表 15 数字拆行：原 14 列过窄导致 130,816 / 42,112 / PASS 折断，拆为“计数”与“集合与几何不变量”两张表，数字完整显示；",
+    "重复“限制：限制：”：已删除重复前缀；",
+    "第 6 页孤儿：把 2.4 的“限制”并入“结论与机制”段并精简表 3 表注，正文回到第 5 页，下一实验仍另起一页；",
+    "封面 markdown 星号、B 组误加粗：已修正（上一轮）。"
+  ],
+  "not_checked_limitations": [
+    "LibreOffice 分页与 Microsoft Word 可能存在细微差异；本报告以 LibreOffice 渲染结果做分页验收",
+    "PDF 由 docx 转换得到，两者内容一致；Word 打开 docx 时若字体缺失会回退（本机已确认宋体存在）"
+  ],
+  "wording_changes": [
+    "“新 D 与旧 D 的终态完全相同” → “决策序列、终态近距集合、未决集合和统计指标保持一致，但 8 条路线的窗口几何发生 1e-5 mm 量级平移；不声称几何或原始 decisions 逐字节相同。”",
+    "补“收益分解”：26（路线 34 重定位直接移除）+ 3（路线 0、1、13 首次抬升各少新增 1 对）= 29 对差异；",
+    "补“长度口径”：重定位单步 +0.434228 mm 与最终 D/E 终态额外长度差 0.434228 mm 在 1e-9 mm 内一致；",
+    "表 8 表注写明 143 是通过基本评价的候选条数，不是接受次数（两组合计接受 9 次，重定位 1 次）。"
+  ],
+  "hash_check": {
+    "report_image_hashes_match_disk": true,
+    "input_hashes_match_disk": true,
+    "figure_manifests_match_disk": true,
+    "embedded_figure_numbers": false,
+    "note": "重建后再次核对：7 张图 + 10 个输入文件哈希与磁盘一致。"
+  },
+  "round_after_acceptance_fix": {
+    "date": "2026-10-05",
+    "trigger": "核实并通过验收口径：148 条有唯一对应候选中 143 条通过基本评价，其中 139 条通过完整验收、4 条被完整验收拒绝（NO_STRICT_GLOBAL_DECREASE）；通过验收不等于实际执行，两条诊断实际执行 17 次修改（新 D 8 次、新 E 9 次，重定位 1 次）。",
+    "changes": [
+      "表 7 增加两行：通过完整验收 1 条、在完整验收被拒 4 条（重定位范围）；",
+      "表 8 增加两列：通过完整验收（143 → 139）与完整验收被拒（4），并把表注改为一句话口径：通过验收不等于实际执行；",
+      "4.3 读数段与结论（5）按数据改写（139/4/17/8/9/1）；",
+      "表 16 台账核对行改为“成立（新 D 8 次、新 E 9 次均成立）”；",
+      "复现命令段行距压缩，避免末页只留两行命令（页数由 21 回到 20）。"
+    ],
+    "page_checks": {
+      "10": "表 7 两张新增行显示正常",
+      "11": "表 8 七列不拆行，139/4/17 完整显示",
+      "18": "表 16 核对行“成立（新 D 8 次、新 E 9 次均成立）”",
+      "19": "结论（5）新口径",
+      "20": "复现命令与图表位置，无孤儿页"
+    }
+  }
+}

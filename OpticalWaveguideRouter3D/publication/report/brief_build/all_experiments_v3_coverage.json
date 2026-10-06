@@ -1,0 +1,587 @@
+{
+  "inventory_coverage": {
+    "R02": "1 原二维波导布线复现",
+    "R03": "1 原二维波导布线复现",
+    "R04": "1 原二维波导布线复现",
+    "R01": "2 弯曲模型与半径扫描",
+    "R05": "2 弯曲模型与半径扫描",
+    "R06": "2 弯曲模型与半径扫描",
+    "R07": "3 交叉表敏感性与原程序逐路核对",
+    "R09": "3 交叉表敏感性与原程序逐路核对",
+    "R08": "5 精确求交与多交叉诊断",
+    "G3D-10": "5 精确求交与多交叉诊断",
+    "S12-01": "8 候选轨道与自适应半径主实验",
+    "S12-02": "9 轨道优化的全部消融",
+    "S12-03": "9 轨道优化的全部消融",
+    "S12-04": "9 轨道优化的全部消融",
+    "S12-05": "9 轨道优化的全部消融",
+    "S12-06": "9 轨道优化的全部消融",
+    "S13-01": "10 固定端点与自由弯角六方案",
+    "S13-02": "10 固定端点与自由弯角六方案",
+    "S13-07": "10 固定端点与自由弯角六方案",
+    "S13-06": "12 最差路线的同一编号跟踪",
+    "S13-03": "13 自适应半径条件下的约束与惩罚扫描",
+    "S13-05": "13 自适应半径条件下的约束与惩罚扫描",
+    "S13-04": "14 六路径方案的小角交叉压力实验",
+    "S14-01": "15 冻结半径的六配置与严格验收",
+    "S14-02": "15 冻结半径的六配置与严格验收",
+    "S14-08": "15 冻结半径的六配置与严格验收",
+    "S14-09": "15 冻结半径的六配置与严格验收",
+    "S14-04": "16 256条固定保护对象的逐路结果",
+    "S14-03": "保护余量诊断",
+    "S14-05": "18 保护优化过程与放宽条件探针",
+    "S14-06": "18 保护优化过程与放宽条件探针",
+    "S14-07": "19 冻结半径后全部压力情景",
+    "G3D-01": "20 三维几何与距离检测验证",
+    "G3D-02": "20 三维几何与距离检测验证",
+    "G3D-03": "20 三维几何与距离检测验证",
+    "G3D-04": "21 单路线抬层探针",
+    "G3D-05": "22 两层与三层顺序分配",
+    "G3D-06": "22 两层与三层顺序分配",
+    "G3D-07": "22 两层与三层顺序分配",
+    "G3D-08": "23 固定1024条三层实验",
+    "G3D-09": "24 自己的三维结果图怎么读",
+    "V3-01": "25 三维策略v3 实验A：缓存与候选窗口余量的 512 四组功能消融",
+    "V3-02": "26 三维策略v3 实验B：窗口余量对 331 条自检歧义候选的探针",
+    "V3-03": "27 三维策略v3 实验C：加余量的固定重定位诊断（新 D / 新 E）"
+  },
+  "additional_sections": [
+    "早期输入与二维骨架验证",
+    "排序反转与硬约束负结果",
+    "局部单线恢复沙箱",
+    "三维策略v3 实验A：缓存与候选窗口余量的 512 四组功能消融",
+    "三维策略v3 实验B：窗口余量对 331 条自检歧义候选的探针",
+    "三维策略v3 实验C：加余量的固定重定位诊断（新 D / 新 E）"
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "title": "复现损耗与原报告数值",
+      "rows": 3,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 2,
+      "title": "一次90°转弯的模型核对",
+      "rows": 5,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 3,
+      "title": "512条连接的完整半径扫描",
+      "rows": 4,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "number": 4,
+      "title": "固定几何的交叉模型复算",
+      "rows": 3,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 5,
+      "title": "真实输入和快照恢复检查",
+      "rows": 2,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 6,
+      "title": "早期512条轨道分配",
+      "rows": 1,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 7,
+      "title": "454条零宽直角骨架的全局检查",
+      "rows": 1,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 8,
+      "title": "多交叉和双交叉的分类审计",
+      "rows": 7,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 9,
+      "title": "上侧U形排序的A B对照",
+      "rows": 5,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 10,
+      "title": "硬约束的局部速度基准",
+      "rows": 1,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 11,
+      "title": "四类局部恢复的独立结果",
+      "rows": 4,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 12,
+      "title": "两种规模的A B C D主对照",
+      "rows": 8,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ]
+      ]
+    },
+    {
+      "number": 13,
+      "title": "全部保存的轨道消融结果",
+      "rows": 13,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          1
+        ]
+      ]
+    },
+    {
+      "number": 14,
+      "title": "补修后固定端点的全部六方案",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ]
+      ]
+    },
+    {
+      "number": 15,
+      "title": "六方案平均损耗分解",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 16,
+      "title": "六方案交叉与间距结果",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 17,
+      "title": "固定原版最差连接的逐路结果",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          2
+        ]
+      ]
+    },
+    {
+      "number": 18,
+      "title": "未冻结半径的四配置结果",
+      "rows": 8,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 19,
+      "title": "两个路径族的全部间距惩罚扫描",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 20,
+      "title": "补修后六方案的最大损耗压力结果",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 21,
+      "title": "固定半径后的全部配置及验收",
+      "rows": 12,
+      "width_cm": 16.9,
+      "best_cells": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          4
+        ]
+      ]
+    },
+    {
+      "number": 22,
+      "title": "256条实验固定11条连接的损耗变化",
+      "rows": 11,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 23,
+      "title": "512条实验固定11条连接的损耗变化",
+      "rows": 11,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 24,
+      "title": "实际优化和全部保存的诊断探针",
+      "rows": 8,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 25,
+      "title": "六配置的全倍率最大损耗",
+      "rows": 12,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          6,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          4
+        ]
+      ]
+    },
+    {
+      "number": 26,
+      "title": "三维基础验证记录",
+      "rows": 3,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 27,
+      "title": "三个真实路线对的独立抬层结果",
+      "rows": 3,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 28,
+      "title": "512条连接的三组抬层结果",
+      "rows": 3,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    {
+      "number": 29,
+      "title": "1024条合成输入的终态指标",
+      "rows": 1,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 30,
+      "title": "512 四组功能消融的分组定义",
+      "rows": 4,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 31,
+      "title": "512 四组功能消融的终态结果与代价",
+      "rows": 4,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "number": 32,
+      "title": "512 四组的调度、实际工作量与自检歧义记录",
+      "rows": 4,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 33,
+      "title": "窗口余量探针：已记录自检歧义候选的复核结果",
+      "rows": 9,
+      "width_cm": 15.0,
+      "best_cells": []
+    },
+    {
+      "number": 34,
+      "title": "加余量前后的固定重定位诊断对照（同一起点 43750 对、同一 20 目标清单）",
+      "rows": 4,
+      "width_cm": 17.0,
+      "best_cells": [
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    {
+      "number": 35,
+      "title": "旧诊断 E 的 70 条重定位自检歧义候选：逐候选对应结果",
+      "rows": 8,
+      "width_cm": 15.0,
+      "best_cells": []
+    },
+    {
+      "number": 36,
+      "title": "旧诊断 E 全部自检歧义候选的对应统计（两个口径分开列出）",
+      "rows": 2,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 37,
+      "title": "按运动类别分别记录的尝试、生成、评价与接受（新诊断）",
+      "rows": 4,
+      "width_cm": 15.499999999999998,
+      "best_cells": []
+    },
+    {
+      "number": 38,
+      "title": "重定位候选的拒绝理由出现次数",
+      "rows": 3,
+      "width_cm": 17.0,
+      "best_cells": []
+    },
+    {
+      "number": 39,
+      "title": "长度记账（相对诊断起点与相对原始平面）",
+      "rows": 2,
+      "width_cm": 16.7,
+      "best_cells": []
+    }
+  ],
+  "images": [
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\results\\fiberBoard256bend.png",
+      "sha256": "21c87736c75b456d4b62170d961553acb029ed6913005578cddad6c77a9f9522"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\results\\fiberBoard512bend.png",
+      "sha256": "96cc3e356243f9a9c174d991edbbc8f18bb1065a0745f3f75b704899ff9042b8"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\results\\loss_vs_radius.png",
+      "sha256": "2841e8eef7b16a92d5eb1d35e421b64cee2513d19ab0acefd90b5b40e0ee85cf"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\opt2d_step13\\512\\figures\\worst_route_A.png",
+      "sha256": "65ac6273d940b93ad1ec2e6a1ca93d73aac2c3a3eee8c89effd28d46079af643"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\opt2d_step13\\512\\figures\\worst_route_F56.png",
+      "sha256": "ddc4fa9cd5dd7ea17237ccd4020803d42a30767e7f5d93e6309ffffb5782d2b9"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\figures\\step_11_1024_3d_overview_z20.png",
+      "sha256": "ead0e3f3f2f76fe990ecba17d9346f9f17aafef11639e59136f31d7579924ff0"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\figures\\step_11_1024_xz_side.png",
+      "sha256": "a47874f4a0328fbdc8a69b51433be31297d666800064e5b5c444f010ade9d484"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\figures\\step_11_layer1_elevation_side.png",
+      "sha256": "c996b98aeab37356a0dd34c17437c0f2645484578b222af6b12481e110ac7eba"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\figures\\step_11_layer2_elevation_side.png",
+      "sha256": "691d7d6ed8b7943f54c9eed8a3e340ade92eea4c85936756c5ce2ac48a362636"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f1_group_pairs.png",
+      "sha256": "927f803a77916acd462af14f38a6d271803f121f58c02af67d9c45c1f25831fa"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f2_pairs_vs_evaluations.png",
+      "sha256": "c2689ea0aaafb47a3aa10e7f99062d63942b0192cc8f96c0e8052456d953a292"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f3_costs.png",
+      "sha256": "985a3990b69f36738bb06fb101e67b16b934d6d077da010f38ba7900f9349765"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f4_diagnostic_comparison.png",
+      "sha256": "ea8c2789a899fb25711ccc5a38967170cea197227790d4de699e5238e8e73c1a"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f5_relocation_rejections.png",
+      "sha256": "981b3399d725eea005728ff658898734150ccc867601099708e8b29fb0d45b2e"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v3\\figures\\f7_route34_relocation_before_after.png",
+      "sha256": "5b3700f3d75c17282610057917aa89e2732794135f8d709543075ccac93511b0"
+    }
+  ]
+}

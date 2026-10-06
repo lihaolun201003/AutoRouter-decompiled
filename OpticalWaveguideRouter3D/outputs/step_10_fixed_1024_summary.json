@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "route_count": 1024,
+  "pmt_count": 128,
+  "endpoint_count": 2048,
+  "board": {
+    "width_mm": 300.0,
+    "height_mm": 200.0
+  },
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "geometry_stats": {
+    "geometry_count": 1024,
+    "route3d_count": 1024,
+    "track_config": {
+      "board_height": 200.0,
+      "waveguide_width": 0.05,
+      "spacing": 0.125,
+      "bend_radius": 5.0,
+      "tol": 1e-09,
+      "top_u_primary_order": "ascending"
+    },
+    "track_count": 1086,
+    "assignment_status_counts": {
+      "assigned": 960,
+      "unsupported_geometry": 64
+    },
+    "route_types": {
+      "('z', None)": 576,
+      "('u', 'bottom')": 224,
+      "('u', 'top')": 224
+    },
+    "original_height_track_count": 800,
+    "baseline_read_only": true,
+    "allocator_modified": false,
+    "initial_total_length_mm": 226070.8583584702,
+    "dataset_and_geometry_seconds": 0.35877789999358356,
+    "configuration": {
+      "layers": [
+        {
+          "id": 0,
+          "z": 0.0
+        },
+        {
+          "id": 1,
+          "z": 1.0
+        },
+        {
+          "id": 2,
+          "z": 2.0
+        }
+      ],
+      "clearance_mm": 0.1,
+      "required_radius_mm": 5.0,
+      "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+      "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+    },
+    "initial_collision_pairs": 204291,
+    "initial_unresolved_pairs": 4,
+    "initial_pair_scan_seconds": 40.96634699997958
+  },
+  "layer_route_counts": {
+    "0": 849,
+    "1": 72,
+    "2": 103
+  },
+  "initial_collision_pairs": 204291,
+  "final_collision_pairs": 138113,
+  "net_collision_reduction": 66178,
+  "reduction_percent": 32.39398700872775,
+  "successful_elevations": 175,
+  "target_attempts": 1024,
+  "stop_reason": "TARGET_LIMIT",
+  "both_already_elevated": 845,
+  "no_improving": 4,
+  "second_victim_successes": 2,
+  "old_collisions_removed": 68782,
+  "new_collisions_created": 2604,
+  "initial_total_route_length_mm": 226070.8583584702,
+  "total_route_length_mm": 226158.2649557311,
+  "total_extra_length_mm": 87.40659726097303,
+  "average_extra_length_per_elevation_mm": 0.499466270062703,
+  "average_extra_length_per_route_mm": 0.08535800513766897,
+  "max_extra_length_mm": 0.6781201864388322,
+  "transition_count": 350,
+  "runtime": {
+    "dataset_geometry_seconds": 0.35877789999358356,
+    "initial_pair_scan_seconds": 40.96634699997958,
+    "assignment_seconds": 1086.5642724001082,
+    "final_validation_seconds": 42.74530319997575,
+    "total_seconds": 1172.6593039999716
+  },
+  "final_all_pair_validation_matches": true,
+  "baseline_unchanged": true,
+  "allocator_modified": false,
+  "source_seed_sha256": "0679978220852f21f70a4e6777c07342095d8c21a59e66a6480812a45426eb54",
+  "initial_unresolved_pair_count": 4,
+  "final_unresolved_pair_count": 4,
+  "candidate_basic_rejections": {
+    "SELF_AMBIGUOUS_CLEARANCE": 3568
+  }
+}

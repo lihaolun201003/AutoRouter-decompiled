@@ -1,0 +1,36 @@
+start-state rescan (main) ...
+  main PASS pairs=42909 unresolved=3 elevated=24
+[553074.5] V5_STRATIFIED_N1440: start mode=N budget=1440 spec={"name": "V5_STRATIFIED", "target_policy": "STRATIFIED", "evaluation_policy": "E0_EXHAUSTIVE", "traversal_policy": "BASE", "max_targets": 200, "k_per_target": 16, "family_round_robin": false, "relocation_side_reserve": 0, "waiting_age": false, "route_coverage": false, "multi_anchor": false, "exact_dedup": false, "decision_cache": false, "return_action": false, "cache_structural_skips": false, "window_slack_mm": 1e-05, "notes": ""}
+[553074.5] V5_STRATIFIED_N1440: start state=main C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\outputs\3d_strategy_v3\512_ablation\D_both_enabled pairs=42909
+[553080.0] V5_STRATIFIED_N1440: INITIAL_DONE pairs=42909
+[553080.3] V5_STRATIFIED_N1440: step 1 NO_CANDIDATES_GENERATED pairs=42909 evals=0 0s
+[553085.1] V5_STRATIFIED_N1440: step 2 NO_CANDIDATES_GENERATED pairs=42909 evals=0 5s
+[553085.3] V5_STRATIFIED_N1440: step 3 NO_CANDIDATES_GENERATED pairs=42909 evals=0 5s
+[553111.9] V5_STRATIFIED_N1440: step 4 ELEVATED pairs=42635 evals=27 32s
+[553169.2] V5_STRATIFIED_N1440: step 5 ELEVATED pairs=42375 evals=99 89s
+[553245.6] V5_STRATIFIED_N1440: step 6 ELEVATED pairs=42120 evals=171 166s
+[553245.8] V5_STRATIFIED_N1440: step 7 NO_CANDIDATES_GENERATED pairs=42120 evals=171 166s
+[553315.9] V5_STRATIFIED_N1440: step 8 ELEVATED pairs=41868 evals=243 236s
+[553383.8] V5_STRATIFIED_N1440: step 9 ELEVATED pairs=41618 evals=315 304s
+[553413.0] V5_STRATIFIED_N1440: step 10 ELEVATED pairs=41373 evals=342 333s
+[553449.3] V5_STRATIFIED_N1440: step 11 ELEVATED pairs=41120 evals=378 369s
+[553499.9] V5_STRATIFIED_N1440: step 12 ELEVATED pairs=40851 evals=432 420s
+[553560.5] V5_STRATIFIED_N1440: step 13 ELEVATED pairs=40598 evals=486 481s
+[553595.6] V5_STRATIFIED_N1440: step 14 ELEVATED pairs=40338 evals=540 516s
+[553664.3] V5_STRATIFIED_N1440: step 15 ELEVATED pairs=40082 evals=639 584s
+[553722.8] V5_STRATIFIED_N1440: step 16 ELEVATED pairs=39841 evals=693 643s
+[553794.3] V5_STRATIFIED_N1440: step 17 ELEVATED pairs=39589 evals=792 714s
+[553839.7] V5_STRATIFIED_N1440: step 18 ELEVATED pairs=39341 evals=846 760s
+[553890.7] V5_STRATIFIED_N1440: step 19 ELEVATED pairs=39098 evals=900 811s
+[553943.9] V5_STRATIFIED_N1440: step 20 ELEVATED pairs=38851 evals=954 864s
+[553988.6] V5_STRATIFIED_N1440: step 21 ELEVATED pairs=38606 evals=1008 909s
+[554037.1] V5_STRATIFIED_N1440: step 22 ELEVATED pairs=38365 evals=1062 957s
+[554109.2] V5_STRATIFIED_N1440: step 23 ELEVATED pairs=38118 evals=1161 1029s
+[554158.9] V5_STRATIFIED_N1440: step 24 ELEVATED pairs=37888 evals=1215 1079s
+[554206.8] V5_STRATIFIED_N1440: step 25 ELEVATED pairs=37652 evals=1269 1127s
+[554269.4] V5_STRATIFIED_N1440: step 26 ELEVATED pairs=37426 evals=1323 1189s
+[554316.1] V5_STRATIFIED_N1440: step 27 ELEVATED pairs=37204 evals=1395 1236s
+[554369.5] V5_STRATIFIED_N1440: step 28 ELEVATED pairs=36974 evals=1440 1290s
+[554370.0] V5_STRATIFIED_N1440: done final=36974 moves=24 first=24 reloc=0 ret=0 evals=1440 stop=CANDIDATE_BUDGET_EXHAUSTED
+[554438.1] V5_STRATIFIED_N1440: recheck PASS checks=130816
+GROUP DONE V5_STRATIFIED_N1440 PASS

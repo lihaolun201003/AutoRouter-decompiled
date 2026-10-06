@@ -1,0 +1,987 @@
+{
+  "review_kind": "Codex independent lightweight geometry verification; no optimization, formal run, full-suite test or 130816-pair sweep",
+  "created_utc": "2026-10-06T05:27:41.070232+00:00",
+  "source_sha256": {
+    "src/geometry_3d.py": "94b18b1a686a723124dfd4cebc68050ea171fb1103575b0eec712ee89c39bf9f",
+    "src/path_window_3d.py": "afab716be3d1d7b8d2ac8b0e5bb17e5bbf217b424190164fd949896f42aa395e",
+    "src/clearance_3d.py": "bf5c161ab61583efee980c5c88648eacc5c6c38c5c918814d178bf7489450220",
+    "src/geometry_3d_diagnostics.py": "5ef0a21e0c08a0fd4f675a904908739d19c6f61d9a732a89639747e869749127",
+    "src/layer_assignment_3d.py": "18be662880c52b94ba1f5701d893780128f6d2f80b21625a1decaf5995ded0dd",
+    "src/strategy_v2_3d.py": "0d468f822a75a8569a5662db1a6e7394ed59b09798b4cbba9a9befa97f5b9738",
+    "src/three_layer_assignment_3d.py": "33640cf7e4ffe953eec28de7f9ddb12eba89bb29242a14fe4efde6b817ec9067",
+    "src/overnight_engine_3d.py": "c43bcf12e83edcc6a28d05668ad599c72a40d68547f462a5f4aedf315f2300af",
+    "src/fixed_1024_routing.py": "c558eacab2978bfd023904f19ffe9a82b64cde0f6163d3051d1bc3cbe7736851",
+    "tests/test_path_window_3d.py": "b99b1bd910b122609fde2e21b4e27db587e27cdc3d2ec858e2503bec358ee50a"
+  },
+  "source_locations": {
+    "path_window_shared_phase_length_curvature": "src/geometry_3d.py:265-526",
+    "split_boundary_snap": "src/path_window_3d.py:82-105",
+    "curvature_helper": "src/path_window_3d.py:108-126",
+    "formal_exact_curvature_filter": "src/path_window_3d.py:338-349",
+    "self_clearance_top_level_pairs_only": "src/clearance_3d.py:517-536",
+    "adjacent_cap_cut_and_claim": "src/clearance_3d.py:437-492",
+    "outer_join_validation_only": "src/geometry_3d_diagnostics.py:98-117",
+    "cache_fingerprint": "src/overnight_engine_3d.py:277-299",
+    "new_window_serialization": "src/fixed_1024_routing.py:140-180"
+  },
+  "counterexamples": {
+    "internal_self_clearance": {
+      "construction": {
+        "route_id": 999,
+        "continuity_tol": 1e-09,
+        "primitives": [
+          {
+            "type": "PathWindowTransition3D",
+            "geometry": {
+              "pieces": [
+                {
+                  "type": "LineSegment3D",
+                  "geometry": {
+                    "start": {
+                      "x": -1000,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "end": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    }
+                  }
+                },
+                {
+                  "type": "PlanarArcSegment3D",
+                  "geometry": {
+                    "center_x": 0,
+                    "center_y": 10,
+                    "z": 0,
+                    "radius": 10,
+                    "start_angle": -1.5707963267948966,
+                    "sweep_angle": 3.141592653589793,
+                    "_source_start_xy": null,
+                    "_source_end_xy": null
+                  }
+                },
+                {
+                  "type": "PlanarArcSegment3D",
+                  "geometry": {
+                    "center_x": 0,
+                    "center_y": 10,
+                    "z": 0,
+                    "radius": 10,
+                    "start_angle": 1.5707963267948966,
+                    "sweep_angle": 3.141592653589793,
+                    "_source_start_xy": null,
+                    "_source_end_xy": null
+                  }
+                },
+                {
+                  "type": "LineSegment3D",
+                  "geometry": {
+                    "start": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "end": {
+                      "x": 1000,
+                      "y": 0,
+                      "z": 0
+                    }
+                  }
+                }
+              ],
+              "z_start": 0.0,
+              "z_end": 1.0
+            }
+          }
+        ]
+      },
+      "parameters": [
+        0.48477048602428946,
+        0.5152295139757107
+      ],
+      "all_internal_C1": true,
+      "minimum_radius_mm": 10.00000578518753,
+      "planar_offset_gap_mm": 62.83185307179586,
+      "actual_point_distance_mm": 0.047826677378038696,
+      "clearance_mm": 0.1,
+      "kernel_status": "CLEAR",
+      "checked_top_level_pair_count": 0,
+      "interpretation": "General multi-piece primitive support-chain hole; does not prove any fixed formal final route violates self clearance."
+    },
+    "curvature_helper_is_only_conservative": {
+      "construction": {
+        "route_id": 999,
+        "continuity_tol": 1e-09,
+        "primitives": [
+          {
+            "type": "PathWindowTransition3D",
+            "geometry": {
+              "pieces": [
+                {
+                  "type": "LineSegment3D",
+                  "geometry": {
+                    "start": {
+                      "x": -20,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "end": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    }
+                  }
+                },
+                {
+                  "type": "PlanarArcSegment3D",
+                  "geometry": {
+                    "center_x": 0,
+                    "center_y": 5,
+                    "z": 0,
+                    "radius": 5,
+                    "start_angle": -1.5707963267948966,
+                    "sweep_angle": 0.7853981633974483,
+                    "_source_start_xy": null,
+                    "_source_end_xy": null
+                  }
+                },
+                {
+                  "type": "LineSegment3D",
+                  "geometry": {
+                    "start": {
+                      "x": 3.5355339059327378,
+                      "y": 1.4644660940672622,
+                      "z": 0
+                    },
+                    "end": {
+                      "x": 17.67766952966369,
+                      "y": 15.606601717798213,
+                      "z": 0
+                    }
+                  }
+                }
+              ],
+              "z_start": 0,
+              "z_end": 1
+            }
+          }
+        ]
+      },
+      "helper_arguments": [
+        1,
+        5,
+        0.2
+      ],
+      "helper_result": [
+        null,
+        false
+      ],
+      "minimum_radius_mm": 5.0062603596556245,
+      "maximum_curvature_per_mm": 0.19974989875851942,
+      "all_internal_C1": true,
+      "interpretation": "Refutes generic no-legal-length claim in helper/docstring. Formal path_window_candidates does NOT call this helper and instead filters using exact candidate.minimum_radius_mm; no formal ranking impact identified."
+    },
+    "adjacent_cap_field_is_not_true_3d_arclength_bound": {
+      "construction": {
+        "route_id": 999,
+        "continuity_tol": 1e-09,
+        "primitives": [
+          {
+            "type": "PathWindowTransition3D",
+            "geometry": {
+              "pieces": [
+                {
+                  "type": "LineSegment3D",
+                  "geometry": {
+                    "start": {
+                      "x": -8,
+                      "y": 0,
+                      "z": 0
+                    },
+                    "end": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0
+                    }
+                  }
+                }
+              ],
+              "z_start": 0,
+              "z_end": 2
+            }
+          }
+        ]
+      },
+      "following_line": {
+        "route_id": 999,
+        "continuity_tol": 1e-09,
+        "primitives": [
+          {
+            "type": "LineSegment3D",
+            "geometry": {
+              "start": {
+                "x": 0,
+                "y": 0,
+                "z": 2
+              },
+              "end": {
+                "x": 10,
+                "y": 0,
+                "z": 2
+              }
+            }
+          }
+        ]
+      },
+      "minimum_radius_mm": 6.484555753109618,
+      "clearance_mm": 0.1,
+      "fixed_simpson_subintervals": 1000,
+      "tested_A_parameter_cut": 0.975,
+      "true_3d_arclength_A_at_cut_mm": 0.20003166508275083,
+      "B_cut_arclength_mm": 0.2,
+      "untested_rectangle_3d_arclength_supremum_mm": 0.40003166508275084,
+      "kernel_result": {
+        "status": "ADJACENT_JOIN_EXEMPT",
+        "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+        "arc_length_cap_mm": 0.1,
+        "adjacent_far_arc_length_mm": 0.2,
+        "exempt_pair_arc_length_below_mm": 0.4,
+        "positive_clearance_evaluated": false,
+        "region_checks": [
+          {
+            "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+            "a_range": [
+              0.0,
+              0.975
+            ],
+            "b_range": [
+              0.0,
+              1.0
+            ],
+            "status": "CLEAR",
+            "minimum_distance_mm": 0.20002375566745312,
+            "lower_bound_mm": 0.20002375466745312,
+            "upper_bound_mm": 0.20002375666745312
+          },
+          {
+            "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+            "a_range": [
+              0.0,
+              1.0
+            ],
+            "b_range": [
+              0.02,
+              1.0
+            ],
+            "status": "CLEAR",
+            "minimum_distance_mm": 0.2,
+            "lower_bound_mm": 0.199999999,
+            "upper_bound_mm": 0.200000001
+          }
+        ]
+      },
+      "interpretation": "Refutes the reported 0.4mm true-arclength cap; actual cuts use planar-arclength lower bounds and far=2*clearance. No point with clearance violation is demonstrated by this example."
+    }
+  },
+  "formal_fixed_groups": [
+    {
+      "group": "V8_G1_N1440_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "fa847e1acb911e289a169f5be63e0dd0c78a2b347b972cc8846424a000757daa",
+        "config.json": "d9f7c4a93ff9fed8759f0b8ce38a4a557c9e201bbd6a039f123a79a56d756b77",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "f055c899e539b40640899b19dcba9bfb64267530cadb10b824b5cd5c9f79a6b3",
+        "ledger.json": "5b453faae0a3e785695e380c1c67a4ad9b8ddcec81bc39b157b3d6303bd505b4"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 148,
+      "multi_piece": 8,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 8,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 8,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 8
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 290,
+        "primitive_indices": [
+          0,
+          1
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721368
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368024017,
+              "lower_bound_mm": 0.20000049268024017,
+              "upper_bound_mm": 0.20000049468024017
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.002038648733876731,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.19999999999998863,
+              "lower_bound_mm": 0.19999999899998863,
+              "upper_bound_mm": 0.20000000099998863
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_N2880_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "b0cc9cc4ca073b1b509c24d77031a0cd270f9574a7ca2a837d28ffa7eb3dc456",
+        "config.json": "39640a350a57b2f2a5b9bf743b405568e9eefd75649d0fa2c6366ae67ab45d55",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "950dac07ce29afee807283c804490fe6a9aaa718e4bfd081602b586d2f3b66c5",
+        "ledger.json": "6321d3f3cb277bf416aba8a291d9b1a0c4695860ae450f6e6e81393c93386478"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 312,
+      "multi_piece": 20,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 20,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 20,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 20
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 290,
+        "primitive_indices": [
+          0,
+          1
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721368
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368024017,
+              "lower_bound_mm": 0.20000049268024017,
+              "upper_bound_mm": 0.20000049468024017
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.002038648733876731,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.19999999999998863,
+              "lower_bound_mm": 0.19999999899998863,
+              "upper_bound_mm": 0.20000000099998863
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_N720_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "b0b713f6e56679590eed5f6961ea2931e85941974897bffe24f701ebe6fc143d",
+        "config.json": "e3ac248e8092e78f73d238034a1dd2c9941933a0c92258445f898da61ad900bf",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "b963d5fb8552937693ab312c801fdb78f0b7ca3b11bd6c419a51d8846ebf63df",
+        "ledger.json": "e0381b726fb1c10353df6db69d9925b7373f76d6b081a95fcc4e2d9aad10b315"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 76,
+      "multi_piece": 2,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 2,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 2,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 2
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 433,
+        "primitive_indices": [
+          0,
+          1
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721368
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368025438,
+              "lower_bound_mm": 0.20000049268025438,
+              "upper_bound_mm": 0.20000049468025438
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.002469770061662297,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000000000000284,
+              "lower_bound_mm": 0.19999999900000284,
+              "upper_bound_mm": 0.20000000100000284
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_NC2880_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "fa28285964dd7cbefe0464da46cb35e0e1c0fccf830be629a444d8ac6874636e",
+        "config.json": "cf872395ffe440814d0e67b00ce2f354d2b40697478ea302e0e1c1961ee123c7",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "c2fc0df7d559b57399775448498ad32ac76ec689c00f33c404a035708857ee4e",
+        "ledger.json": "962b573f8f6fe96eddcf92da559a5a91203afc58d41a278290dc6aecfb7afc94"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 262,
+      "multi_piece": 5,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 5,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 5,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 5
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 52,
+        "primitive_indices": [
+          1,
+          2
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721367
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368024017,
+              "lower_bound_mm": 0.20000049268024017,
+              "upper_bound_mm": 0.20000049468024017
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.0041322305511920345,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000000000001705,
+              "lower_bound_mm": 0.19999999900001705,
+              "upper_bound_mm": 0.20000000100001705
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_R1440_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "fa847e1acb911e289a169f5be63e0dd0c78a2b347b972cc8846424a000757daa",
+        "config.json": "0e184ce037e3a3205ca7e233e27e43442672a1231a095768a05ccfc1900a2927",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "3c69d2c82d7832fac972f41954a1d5d5f54f3d5df4ba079930e805b8d40b6335",
+        "ledger.json": "146137eb14269be72db28677ac48cc85c6a8aba9b94b2711f55905f45b1fce0d"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 148,
+      "multi_piece": 8,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 8,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 8,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 8
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 290,
+        "primitive_indices": [
+          0,
+          1
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721368
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368024017,
+              "lower_bound_mm": 0.20000049268024017,
+              "upper_bound_mm": 0.20000049468024017
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.002038648733876731,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.19999999999998863,
+              "lower_bound_mm": 0.19999999899998863,
+              "upper_bound_mm": 0.20000000099998863
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_R2880_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "b0cc9cc4ca073b1b509c24d77031a0cd270f9574a7ca2a837d28ffa7eb3dc456",
+        "config.json": "36010d5199062258b6e26e6311dc3f850466f06205ad7fd8a6ff5e314e244530",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "85984abc8329ef902a96e1af2585cd00e71632069cd1716ebbe2a7717f338ba9",
+        "ledger.json": "5751a3cb72525e65d6199c6659396f621fabe9594939bda0013a66b62968abe6"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 312,
+      "multi_piece": 20,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 20,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 20,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 20
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 290,
+        "primitive_indices": [
+          0,
+          1
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721368
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368024017,
+              "lower_bound_mm": 0.20000049268024017,
+              "upper_bound_mm": 0.20000049468024017
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.002038648733876731,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.19999999999998863,
+              "lower_bound_mm": 0.19999999899998863,
+              "upper_bound_mm": 0.20000000099998863
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_R720_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "b0b713f6e56679590eed5f6961ea2931e85941974897bffe24f701ebe6fc143d",
+        "config.json": "83644144b6d79523a24fc29594d883fe3687b7e3f9489dc662bd745a4ee9b7d6",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "cc5155b6fe9735b503ef2c12a028a6d95874f901f15d4a234e4383ba2d85c24e",
+        "ledger.json": "50df552d637d2252076f2f0f9d4c8839001721a1e5c29b78c8e2da6c93b1b944"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 76,
+      "multi_piece": 2,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 2,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 2,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 2
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 433,
+        "primitive_indices": [
+          0,
+          1
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721368
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368025438,
+              "lower_bound_mm": 0.20000049268025438,
+              "upper_bound_mm": 0.20000049468025438
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.002469770061662297,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000000000000284,
+              "lower_bound_mm": 0.19999999900000284,
+              "upper_bound_mm": 0.20000000100000284
+            }
+          ]
+        }
+      }
+    },
+    {
+      "group": "V8_G1_RC2880_boundaryfix",
+      "input_sha256": {
+        "final_routes.json": "aeb6a7b568482fd7dce29829004d6299b70e9c7a4337aa52231bfbdcb80de6ce",
+        "config.json": "65b0ff66c9f2275d4b363b765ab9343ccc67ca811b625b4aa2bbc35a332c591f",
+        "code_version.json": "517271f5d40b39e421579415cd10c8a7125cbe753eabe9dc6595ca3883952d94",
+        "recheck.json": "bbb7ae498d0ebd3c4b877b66cdf31d5e031ecf140b2af73f1ef19b1e30726454",
+        "ledger.json": "961dd7e8a11bbf7f853928d5a9365cfbdf8fc7f3e3352830da1f142de56a98bc"
+      },
+      "manifest_sha256_recorded": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+      "recheck_verdict": "PASS",
+      "windows": 248,
+      "multi_piece": 5,
+      "max_pieces": 3,
+      "internal_C1_failures": 0,
+      "nonadj_piece_pairs": 5,
+      "potential_xy_near": [],
+      "min_internal_nonadj_XY_mm": 7.0710678118654755,
+      "windows_without_monotone_XY": 5,
+      "multi_piece_types": {
+        "LineSegment3D>PlanarArcSegment3D>LineSegment3D": 5
+      },
+      "max_arc_source_endpoint_residual_mm": 0.0,
+      "code_hashes_match_current": {
+        "src/geometry_3d.py": true,
+        "src/path_window_3d.py": true,
+        "src/clearance_3d.py": true,
+        "src/geometry_3d_diagnostics.py": true,
+        "src/layer_assignment_3d.py": true,
+        "src/strategy_v2_3d.py": true,
+        "src/three_layer_assignment_3d.py": true,
+        "src/overnight_engine_3d.py": true,
+        "src/fixed_1024_routing.py": true
+      },
+      "one_relevant_adjacent_cap_check": {
+        "route_id": 52,
+        "primitive_indices": [
+          1,
+          2
+        ],
+        "piece_count": 3,
+        "result": {
+          "status": "ADJACENT_JOIN_EXEMPT",
+          "proof": "C1_CONTINUOUS_JOINT_OUTSIDE_ARC_LENGTH_CAP",
+          "arc_length_cap_mm": 0.1,
+          "adjacent_far_arc_length_mm": 0.2,
+          "exempt_pair_arc_length_below_mm": 0.4,
+          "positive_clearance_evaluated": false,
+          "region_checks": [
+            {
+              "region": "A_FAR_FROM_JOINT_VS_FULL_B",
+              "a_range": [
+                0.0,
+                0.9865788767721367
+              ],
+              "b_range": [
+                0.0,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000049368024017,
+              "lower_bound_mm": 0.20000049268024017,
+              "upper_bound_mm": 0.20000049468024017
+            },
+            {
+              "region": "FULL_A_VS_B_FAR_FROM_JOINT",
+              "a_range": [
+                0.0,
+                1.0
+              ],
+              "b_range": [
+                0.0041322305511920345,
+                1.0
+              ],
+              "status": "CLEAR",
+              "minimum_distance_mm": 0.20000000000001705,
+              "lower_bound_mm": 0.19999999900001705,
+              "upper_bound_mm": 0.20000000100001705
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "formal_internal_piece_check_summary": {
+    "group_count": 8,
+    "nonadjacent_internal_piece_pairs_checked": 70,
+    "minimum_XY_distance_mm": 7.0710678118654755,
+    "all_internal_C1_pass": true,
+    "all_internal_nonadj_XY_pairs_clear": true,
+    "scope_note": "Checks only inside already-executed final path windows. N/R duplicate trajectories are counted per saved group, not independent statistical samples. Does not certify candidate populations rejected or never executed."
+  },
+  "boundary_regression": {
+    "command": ".venv\\Scripts\\python.exe -B -m pytest tests/test_path_window_3d.py -k windows_touching_the_route_ends_keep_the_exact_frozen_endpoints -q -p no:cacheprovider",
+    "log": "outputs/codex_review_20261006/boundary_endpoint_regression.log",
+    "status": "PASS",
+    "exit_code": 0,
+    "passed": 4,
+    "deselected": 25,
+    "result": "....                                                                     [100%]\r\n4 passed, 25 deselected in 0.87s",
+    "log_sha256": "844e2616dc92f1f58c1a5c76180cb05229dd8ceb7d1214ea1d90c71262b68103",
+    "test_file_sha256": "b99b1bd910b122609fde2e21b4e27db587e27cdc3d2ec858e2503bec358ee50a",
+    "scope": "Four endpoint regression cases on the current boundary-fix code. This does not replace the historical 803-passed frozen-code suite and does not validate other geometric claims."
+  },
+  "provenance_limits": {
+    "original_code_snapshot_path_window_sha256": "b391e938163f9421090c8fe9666f0af299e007278ad0e645daf344582d37288a",
+    "fixed_current_path_window_sha256": "afab716be3d1d7b8d2ac8b0e5bb17e5bbf217b424190164fd949896f42aa395e",
+    "current_round_v8_manifest_sha256": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+    "all_fixed_groups_record_same_current_manifest": true,
+    "original_full_suite_log": "outputs/overnight_3d_continuation/tests/full_suite_frozen_code.log",
+    "original_full_suite_result": "803 passed, 4 skipped in 307.36s (0:05:07)",
+    "original_targeted_test_summary": "25 path_window + 21 engine = 46 passed; stored tests/summary.json and report lines 256-257 still describe original frozen code",
+    "current_test_file_cases": 29,
+    "original_snapshot_test_sha256": "38c9513c6338a27a771eecb5d2b86ece19fa326261104dad426648751a8614be",
+    "current_test_file_sha256": "b99b1bd910b122609fde2e21b4e27db587e27cdc3d2ec858e2503bec358ee50a",
+    "interpretation": "Per-group code_version authenticates the boundary-fix source now inspected. Original snapshot and 803-case full-suite result belong to the pre-boundary-fix freeze; the separately run four endpoint cases add only local regression evidence. No persisted DeepSeek raw 29-case post-fix log was located in the requested tests directory."
+  }
+}

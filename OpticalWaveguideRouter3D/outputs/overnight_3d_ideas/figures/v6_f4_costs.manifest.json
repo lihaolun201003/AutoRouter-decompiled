@@ -1,0 +1,28 @@
+{
+  "figure": "v6_f4_costs",
+  "title": "几何代价：阶段长度变化、终态额外长度、过渡段数量、已抬升路线数",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v6_f4_costs.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v6_f4_costs.pdf",
+  "png_sha256": "6618a2600063cd346f0838a5f8731e021286a0ed3e5835e2c90d548dc6a684b2",
+  "pdf_sha256": "4ae24715d335e7d1ceff4e24027336fb3c877e568f36003b2c9dce932c5b725c",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v6\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v6\\summary_v6.json"
+  ],
+  "source_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "stage_length_delta_mm",
+    "final_extra_length_vs_planar_mm",
+    "final_transition_count",
+    "final_elevated_route_count"
+  ],
+  "source_sub_objects": [],
+  "rows_used": 22,
+  "notes": "null 直接标注为 null，不折成 0",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v6",
+  "generated_utc": "2026-10-05T15:22:38Z"
+}

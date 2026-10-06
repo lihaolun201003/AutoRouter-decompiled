@@ -1,0 +1,88 @@
+{
+  "label": "opt_base",
+  "channels": 256,
+  "route_count": 256,
+  "expected_routes": 256,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 2.9702981166542815,
+  "p95_loss_db": 4.654524100438386,
+  "max_loss_db": 5.078297843737668,
+  "min_loss_db": 0.9572665435320014,
+  "std_loss_db": 1.3183601228326234,
+  "worst_route_id": 34,
+  "mean_straight_loss_db": 0.5841994013785358,
+  "mean_bend_loss_db": 2.1201924363464135,
+  "mean_crossing_loss_db": 0.26590627892933205,
+  "sum_straight_loss_db": 149.5550467529049,
+  "sum_bend_loss_db": 542.7692637046816,
+  "sum_crossing_loss_db": 68.07200740590906,
+  "mean_straight_length_mm": 116.83988027570715,
+  "mean_arc_length_mm": 10.496519204572147,
+  "mean_total_length_mm": 127.3363994802793,
+  "sum_total_length_mm": 32598.118266951507,
+  "unique_crossing_events": 10466,
+  "per_route_crossing_events": 20932,
+  "mean_crossing_count": 81.765625,
+  "max_crossing_count": 168,
+  "min_crossing_angle_deg": 1.9405375695502647,
+  "mean_crossing_angle_deg": 62.184820770955874,
+  "spacing_violation_count": 415,
+  "spacing_violation_pairs": 415,
+  "min_spacing_mm": 0.002250697388303173,
+  "contact_touch_count": 226,
+  "raw_segment_touch_count": 226,
+  "physical_route_touch_count": 0,
+  "raw_segment_cross_count": 10579,
+  "contact_overlap_count": 0,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "6.0": 256
+  },
+  "bend_count_distribution": {
+    "2": 256
+  },
+  "runtime_s": 27.771817000000738,
+  "stop_reason": "completed",
+  "order_strategy": "legacy",
+  "candidate_limit": 8,
+  "radius_policy": "adaptive",
+  "plan_stats": {
+    "passes": {
+      "passes": {},
+      "below": {
+        "placed": 56,
+        "candidates_considered": 448,
+        "mean_candidate_cost": 4.197161925319865
+      },
+      "above": {
+        "placed": 56,
+        "candidates_considered": 448,
+        "mean_candidate_cost": 4.150912775803344
+      },
+      "below2above": {
+        "placed": 69,
+        "candidates_considered": 1099,
+        "mean_candidate_cost": 1.7822287003583763
+      },
+      "above2below": {
+        "placed": 75,
+        "candidates_considered": 1197,
+        "mean_candidate_cost": 2.2662047236782445
+      }
+    },
+    "order_strategy": "legacy"
+  },
+  "endpoint_changes": 0,
+  "geometry_family": {
+    "freeform": 144,
+    "u": 112
+  },
+  "config": {
+    "base_scheme": "F56",
+    "start": "base",
+    "optimized": true
+  }
+}

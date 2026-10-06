@@ -1,0 +1,360 @@
+{
+  "double_cross_pairs": 6433,
+  "physical_events_sha256": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8",
+  "composition": {
+    "ordinary-ordinary": {
+      "count": 6092,
+      "percentage": 94.69920721280896
+    },
+    "ordinary-special": {
+      "count": 341,
+      "percentage": 5.300792787191046
+    },
+    "special-special": {
+      "count": 0,
+      "percentage": 0.0
+    }
+  },
+  "route_types": {
+    "Z-Z": 2698,
+    "U-U": 3735,
+    "U-Z": 0
+  },
+  "detailed_types": {
+    "bottom_to_topZ-bottom_to_topZ": 1159,
+    "bottom_to_topZ-top_to_bottomZ": 833,
+    "bottom_to_topZ-specialZ": 188,
+    "bottomU-bottomU": 1832,
+    "specialZ-top_to_bottomZ": 153,
+    "top_to_bottomZ-top_to_bottomZ": 365,
+    "topU-topU": 1903
+  },
+  "segment_topologies": {
+    "Arc-Line + Arc-Line": 2631,
+    "Arc-Line + Line-Line": 723,
+    "Arc-Arc + Arc-Arc": 393,
+    "Arc-Arc + Arc-Line": 730,
+    "Line-Line + Line-Line": 1956
+  },
+  "bend_related_intersections": 8231,
+  "bend_related_pairs": 4477,
+  "distance_mm": {
+    "count": 6433,
+    "min": 0.5471517157060874,
+    "max": 120.41608588363344,
+    "mean": 36.34065670094383,
+    "median": 33.14718127611648,
+    "sum": 233779.44455717166
+  },
+  "distance_bins": {
+    ">5": 6394,
+    "[1,5]": 38,
+    "[.175,1)": 1,
+    "<.125": 0,
+    "[.125,.175)": 0
+  },
+  "progress_bins": {
+    "[.25,.75)": 14215,
+    "[.75,.9)": 5362,
+    "[.1,.25)": 4631,
+    "[.9,1]": 718,
+    "[0,.1)": 806
+  },
+  "skeleton_comparison": {
+    "skeleton_2_to_smooth_2": 6092,
+    "skeleton_1_to_smooth_2": 0,
+    "skeleton_0_to_smooth_2": 0,
+    "other": 0
+  },
+  "track_difference": {
+    "count": 6092,
+    "min": 1,
+    "max": 221,
+    "mean": 41.788411030860146,
+    "median": 25.0,
+    "sum": 254575.0
+  },
+  "track_difference_bins": {
+    ">20": 3472,
+    "1": 258,
+    "2-5": 662,
+    "6-20": 1700,
+    "0": 0
+  },
+  "ordering": {
+    "different_group": 1153,
+    "same_group": 4939,
+    "scan_order_inversion": 0,
+    "endpoint_order_inversion_same_group": 3735
+  },
+  "algorithmic_group_pair_counts": {
+    "bottom_to_topZ / top_to_bottomZ": 1153,
+    "bottom_to_topZ / bottom_to_topZ": 929,
+    "bottomU / bottomU": 1832,
+    "topU / topU": 1903,
+    "top_to_bottomZ / top_to_bottomZ": 275
+  },
+  "category_track_ranges": {
+    "bottom_to_topZ": {
+      "min_y": 85.175,
+      "max_y": 106.35,
+      "min_index": 458,
+      "max_index": 579,
+      "count": 122
+    },
+    "bottomU": {
+      "min_y": 5.025,
+      "max_y": 24.449999999999996,
+      "min_index": 0,
+      "max_index": 111,
+      "count": 112
+    },
+    "top_to_bottomZ": {
+      "min_y": 106.525,
+      "max_y": 125.25,
+      "min_index": 580,
+      "max_index": 687,
+      "count": 108
+    },
+    "topU": {
+      "min_y": 125.425,
+      "max_y": 144.85,
+      "min_index": 688,
+      "max_index": 799,
+      "count": 112
+    }
+  },
+  "category_range_overlap": {
+    "bottom_to_topZ": {
+      "bottom_to_topZ": true,
+      "bottomU": false,
+      "top_to_bottomZ": false,
+      "topU": false
+    },
+    "bottomU": {
+      "bottom_to_topZ": false,
+      "bottomU": true,
+      "top_to_bottomZ": false,
+      "topU": false
+    },
+    "top_to_bottomZ": {
+      "bottom_to_topZ": false,
+      "bottomU": false,
+      "top_to_bottomZ": true,
+      "topU": false
+    },
+    "topU": {
+      "bottom_to_topZ": false,
+      "bottomU": false,
+      "top_to_bottomZ": false,
+      "topU": true
+    }
+  },
+  "top20_waveguides": [
+    {
+      "waveguide_id": 34,
+      "double_cross_pair_count": 103
+    },
+    {
+      "waveguide_id": 290,
+      "double_cross_pair_count": 94
+    },
+    {
+      "waveguide_id": 177,
+      "double_cross_pair_count": 89
+    },
+    {
+      "waveguide_id": 265,
+      "double_cross_pair_count": 83
+    },
+    {
+      "waveguide_id": 9,
+      "double_cross_pair_count": 74
+    },
+    {
+      "waveguide_id": 345,
+      "double_cross_pair_count": 73
+    },
+    {
+      "waveguide_id": 291,
+      "double_cross_pair_count": 71
+    },
+    {
+      "waveguide_id": 433,
+      "double_cross_pair_count": 69
+    },
+    {
+      "waveguide_id": 35,
+      "double_cross_pair_count": 65
+    },
+    {
+      "waveguide_id": 60,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 61,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 62,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 63,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 266,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 267,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 268,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 334,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 335,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 336,
+      "double_cross_pair_count": 59
+    },
+    {
+      "waveguide_id": 438,
+      "double_cross_pair_count": 59
+    }
+  ],
+  "top20_pairs": [
+    {
+      "route_a_id": 34,
+      "route_b_id": 177,
+      "distance_between_crosses_mm": 120.41608588363344,
+      "topology": "Arc-Arc + Arc-Line"
+    },
+    {
+      "route_a_id": 301,
+      "route_b_id": 302,
+      "distance_between_crosses_mm": 120.2296361360869,
+      "topology": "Arc-Arc + Arc-Arc"
+    },
+    {
+      "route_a_id": 302,
+      "route_b_id": 303,
+      "distance_between_crosses_mm": 120.22963613608627,
+      "topology": "Arc-Arc + Arc-Arc"
+    },
+    {
+      "route_a_id": 301,
+      "route_b_id": 303,
+      "distance_between_crosses_mm": 120.22329523065135,
+      "topology": "Arc-Arc + Arc-Arc"
+    },
+    {
+      "route_a_id": 31,
+      "route_b_id": 301,
+      "distance_between_crosses_mm": 113.55509789230838,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 31,
+      "route_b_id": 302,
+      "distance_between_crosses_mm": 113.08688003519711,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 31,
+      "route_b_id": 303,
+      "distance_between_crosses_mm": 112.47613975115684,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 301,
+      "route_b_id": 340,
+      "distance_between_crosses_mm": 104.61379245518845,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 301,
+      "route_b_id": 339,
+      "distance_between_crosses_mm": 104.44538362697335,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 302,
+      "route_b_id": 340,
+      "distance_between_crosses_mm": 104.44538362697335,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 302,
+      "route_b_id": 339,
+      "distance_between_crosses_mm": 104.28082561667699,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 303,
+      "route_b_id": 340,
+      "distance_between_crosses_mm": 104.28082561667699,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 301,
+      "route_b_id": 338,
+      "distance_between_crosses_mm": 104.28082561667698,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 303,
+      "route_b_id": 339,
+      "distance_between_crosses_mm": 104.11519257921057,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 302,
+      "route_b_id": 338,
+      "distance_between_crosses_mm": 104.11519257921056,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 303,
+      "route_b_id": 338,
+      "distance_between_crosses_mm": 103.94665216178707,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 9,
+      "route_b_id": 34,
+      "distance_between_crosses_mm": 102.07632727772865,
+      "topology": "Arc-Line + Arc-Line"
+    },
+    {
+      "route_a_id": 338,
+      "route_b_id": 339,
+      "distance_between_crosses_mm": 101.7111447314814,
+      "topology": "Arc-Arc + Arc-Arc"
+    },
+    {
+      "route_a_id": 339,
+      "route_b_id": 340,
+      "distance_between_crosses_mm": 101.71114473148128,
+      "topology": "Arc-Arc + Arc-Arc"
+    },
+    {
+      "route_a_id": 338,
+      "route_b_id": 340,
+      "distance_between_crosses_mm": 101.7048334876398,
+      "topology": "Arc-Arc + Arc-Arc"
+    }
+  ],
+  "examples_count": 20,
+  "unchanged": true,
+  "runtime_seconds": 1.8565316000021994
+}

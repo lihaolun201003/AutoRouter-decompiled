@@ -1,0 +1,122 @@
+[517923.7] start size=512 strategies=['A', 'B', 'C'] out=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\outputs\3d_strategy_v2\512_three_layer_abc
+[517924.2] strategy A: start
+[517939.9]   A INITIAL_DONE collisions=49518 uncertain=3
+[517941.3]   A step 1 ELEVATED collisions=49423 evaluations=18 15s
+[517942.6]   A step 2 ELEVATED collisions=49328 evaluations=36 17s
+[517945.7]   A step 3 ELEVATED collisions=49264 evaluations=72 20s
+[517948.8]   A step 4 ELEVATED collisions=49201 evaluations=108 23s
+[517951.8]   A step 5 ELEVATED collisions=49124 evaluations=144 26s
+[517951.8]   A step 6 BOTH_ALREADY_ELEVATED collisions=49124 evaluations=144 26s
+[517954.7]   A step 7 ELEVATED collisions=49047 evaluations=180 29s
+[517954.7]   A step 8 BOTH_ALREADY_ELEVATED collisions=49047 evaluations=180 29s
+[517956.7]   A step 9 ELEVATED collisions=48762 evaluations=198 31s
+[517958.7]   A step 10 ELEVATED collisions=48478 evaluations=216 33s
+[517960.7]   A step 11 ELEVATED collisions=48196 evaluations=234 35s
+[517960.7]   A step 12 BOTH_ALREADY_ELEVATED collisions=48196 evaluations=234 35s
+[517962.7]   A step 13 ELEVATED collisions=47915 evaluations=252 37s
+[517962.7]   A step 14 BOTH_ALREADY_ELEVATED collisions=47915 evaluations=252 37s
+[517970.5]   A step 15 ELEVATED collisions=47706 evaluations=288 45s
+[517970.5]   A step 16 BOTH_ALREADY_ELEVATED collisions=47706 evaluations=288 45s
+[517970.5]   A step 17 BOTH_ALREADY_ELEVATED collisions=47706 evaluations=288 45s
+[517978.1]   A step 18 ELEVATED collisions=47497 evaluations=324 52s
+[517978.1]   A step 19 BOTH_ALREADY_ELEVATED collisions=47497 evaluations=324 52s
+[517978.1]   A step 20 BOTH_ALREADY_ELEVATED collisions=47497 evaluations=324 52s
+[517985.6]   A step 21 ELEVATED collisions=47288 evaluations=360 60s
+[517985.6]   A step 22 BOTH_ALREADY_ELEVATED collisions=47288 evaluations=360 60s
+[517985.6]   A step 23 BOTH_ALREADY_ELEVATED collisions=47288 evaluations=360 60s
+[517993.1]   A step 24 ELEVATED collisions=47079 evaluations=396 67s
+[517993.1]   A step 25 BOTH_ALREADY_ELEVATED collisions=47079 evaluations=396 67s
+[517993.1]   A step 26 BOTH_ALREADY_ELEVATED collisions=47079 evaluations=396 67s
+[517997.7]   A step 27 ELEVATED collisions=46842 evaluations=432 72s
+[517997.7]   A step 28 BOTH_ALREADY_ELEVATED collisions=46842 evaluations=432 72s
+[517997.7]   A step 29 BOTH_ALREADY_ELEVATED collisions=46842 evaluations=432 72s
+[518002.2]   A step 30 ELEVATED collisions=46605 evaluations=468 76s
+[518002.2]   A step 31 BOTH_ALREADY_ELEVATED collisions=46605 evaluations=468 76s
+[518002.3]   A step 32 BOTH_ALREADY_ELEVATED collisions=46605 evaluations=468 76s
+[518006.8]   A step 33 ELEVATED collisions=46368 evaluations=504 81s
+[518006.9]   A step 34 BOTH_ALREADY_ELEVATED collisions=46368 evaluations=504 81s
+[518006.9]   A step 35 BOTH_ALREADY_ELEVATED collisions=46368 evaluations=504 81s
+[518011.2]   A step 36 ELEVATED collisions=46158 evaluations=540 85s
+[518011.3]   A step 37 BOTH_ALREADY_ELEVATED collisions=46158 evaluations=540 85s
+[518011.3]   A step 38 BOTH_ALREADY_ELEVATED collisions=46158 evaluations=540 85s
+[518015.7]   A step 39 ELEVATED collisions=45950 evaluations=576 90s
+[518015.7]   A step 40 BOTH_ALREADY_ELEVATED collisions=45950 evaluations=576 90s
+[518015.7]   A step 41 BOTH_ALREADY_ELEVATED collisions=45950 evaluations=576 90s
+[518020.2]   A step 42 ELEVATED collisions=45744 evaluations=612 94s
+[518020.2]   A step 43 BOTH_ALREADY_ELEVATED collisions=45744 evaluations=612 94s
+[518020.2]   A step 44 BOTH_ALREADY_ELEVATED collisions=45744 evaluations=612 94s
+[518024.7]   A step 45 ELEVATED collisions=45540 evaluations=648 99s
+[518024.7]   A step 46 BOTH_ALREADY_ELEVATED collisions=45540 evaluations=648 99s
+[518024.7]   A step 47 BOTH_ALREADY_ELEVATED collisions=45540 evaluations=648 99s
+[518034.3]   A step 48 ELEVATED collisions=45400 evaluations=720 109s
+[518034.3]   A step 49 BOTH_ALREADY_ELEVATED collisions=45400 evaluations=720 109s
+[518034.4]   A step 50 BOTH_ALREADY_ELEVATED collisions=45400 evaluations=720 109s
+[518034.4] strategy A: done 110s final=45400 accepted=22 evaluations=720 stop=TARGET_LIMIT
+[518048.0]   recheck 100000 pairs 11.3s
+[518051.2] strategy A: recheck PASS pairs_match=True unknown_match=True
+[518051.2] historical A comparison: {"status": "COMPARED", "historical_final_pairs": 45400, "measured_final_pairs": 45400, "historical_initial_pairs": 49518, "measured_initial_pairs": 49518, "historical_successful_elevations": 22, "measured_accepted_first_elevations": 22, "historical_total_extra_length_mm": 8.839448336077709, "measured_total_extra_length_mm": 8.839448336060741, "historical_runtime_seconds": 81.25087109999731, "measured_runtime_seconds": 108.6084704999812, "historical_final_pair_set_size": 45400, "final_pair_sets_equal": true, "historical_unresolved_set_size": 3, "unresolved_pair_sets_equal": true, "matches_history": true}
+[518051.2] strategy B: start
+[518066.9]   B INITIAL_DONE collisions=49518 uncertain=3
+[518066.9]   B step 1 NO_ACCEPTABLE_MOVE collisions=49518 evaluations=0 14s
+[518068.5]   B step 2 ELEVATED collisions=49203 evaluations=9 16s
+[518070.0]   B step 3 ELEVATED collisions=48891 evaluations=18 17s
+[518071.5]   B step 4 ELEVATED collisions=48765 evaluations=27 19s
+[518075.2]   B step 5 ELEVATED collisions=48462 evaluations=63 22s
+[518079.0]   B step 6 ELEVATED collisions=48160 evaluations=99 26s
+[518091.4]   B step 7 ELEVATED collisions=47874 evaluations=171 39s
+[518099.8]   B step 8 ELEVATED collisions=47582 evaluations=216 47s
+[518111.8]   B step 9 ELEVATED collisions=47302 evaluations=270 59s
+[518113.2]   B step 10 ELEVATED collisions=47177 evaluations=279 60s
+[518113.3]   B step 11 NO_ACCEPTABLE_MOVE collisions=47177 evaluations=279 60s
+[518114.6]   B step 12 ELEVATED collisions=47050 evaluations=288 62s
+[518114.7]   B step 13 NO_ACCEPTABLE_MOVE collisions=47050 evaluations=288 62s
+[518123.1]   B step 14 ELEVATED collisions=46761 evaluations=333 70s
+[518131.5]   B step 15 ELEVATED collisions=46474 evaluations=378 79s
+[518135.1]   B step 16 ELEVATED collisions=46189 evaluations=405 82s
+[518138.8]   B step 17 ELEVATED collisions=45906 evaluations=432 86s
+[518143.6]   B step 18 ELEVATED collisions=45776 evaluations=450 91s
+[518147.2]   B step 19 ELEVATED collisions=45495 evaluations=477 94s
+[518151.9]   B step 20 ELEVATED collisions=45365 evaluations=495 99s
+[518160.6]   B step 21 ELEVATED collisions=45086 evaluations=540 108s
+[518165.2]   B step 22 ELEVATED collisions=44956 evaluations=558 112s
+[518173.9]   B step 23 ELEVATED collisions=44679 evaluations=603 121s
+[518178.6]   B step 24 ELEVATED collisions=44549 evaluations=621 126s
+[518187.1]   B step 25 ELEVATED collisions=44274 evaluations=666 134s
+[518195.3]   B step 26 ELEVATED collisions=44001 evaluations=711 142s
+[518196.6]   B step 27 ELEVATED collisions=43750 evaluations=720 144s
+[518196.6] strategy B: done 145s final=43750 accepted=24 evaluations=720 stop=CANDIDATE_BUDGET_EXHAUSTED
+[518213.1]   recheck 100000 pairs 14.3s
+[518216.1] strategy B: recheck PASS pairs_match=True unknown_match=True
+[518216.1] strategy C: start
+[518231.6]   C INITIAL_DONE collisions=49518 uncertain=3
+[518231.6]   C step 1 NO_ACCEPTABLE_MOVE collisions=49518 evaluations=0 14s
+[518233.2]   C step 2 ELEVATED collisions=49203 evaluations=9 16s
+[518234.8]   C step 3 ELEVATED collisions=48891 evaluations=18 17s
+[518236.3]   C step 4 ELEVATED collisions=48765 evaluations=27 19s
+[518240.2]   C step 5 ELEVATED collisions=48462 evaluations=63 23s
+[518244.0]   C step 6 ELEVATED collisions=48160 evaluations=99 26s
+[518257.5]   C step 7 ELEVATED collisions=47874 evaluations=171 40s
+[518266.3]   C step 8 ELEVATED collisions=47582 evaluations=216 49s
+[518279.0]   C step 9 ELEVATED collisions=47302 evaluations=270 61s
+[518280.5]   C step 10 ELEVATED collisions=47177 evaluations=279 63s
+[518280.5]   C step 11 NO_ACCEPTABLE_MOVE collisions=47177 evaluations=279 63s
+[518282.0]   C step 12 ELEVATED collisions=47050 evaluations=288 64s
+[518282.0]   C step 13 NO_ACCEPTABLE_MOVE collisions=47050 evaluations=288 64s
+[518290.7]   C step 14 ELEVATED collisions=46761 evaluations=333 73s
+[518299.3]   C step 15 ELEVATED collisions=46474 evaluations=378 82s
+[518303.1]   C step 16 ELEVATED collisions=46189 evaluations=405 85s
+[518307.0]   C step 17 ELEVATED collisions=45906 evaluations=432 89s
+[518311.6]   C step 18 ELEVATED collisions=45776 evaluations=450 94s
+[518315.3]   C step 19 ELEVATED collisions=45495 evaluations=477 98s
+[518319.9]   C step 20 ELEVATED collisions=45365 evaluations=495 102s
+[518328.5]   C step 21 ELEVATED collisions=45086 evaluations=540 111s
+[518332.9]   C step 22 ELEVATED collisions=44956 evaluations=558 115s
+[518341.5]   C step 23 ELEVATED collisions=44679 evaluations=603 124s
+[518346.2]   C step 24 ELEVATED collisions=44549 evaluations=621 128s
+[518354.6]   C step 25 ELEVATED collisions=44274 evaluations=666 137s
+[518363.0]   C step 26 ELEVATED collisions=44001 evaluations=711 145s
+[518364.3]   C step 27 ELEVATED collisions=43750 evaluations=720 147s
+[518364.3] strategy C: done 148s final=43750 accepted=24 evaluations=720 stop=CANDIDATE_BUDGET_EXHAUSTED
+[518381.1]   recheck 100000 pairs 14.5s
+[518384.0] strategy C: recheck PASS pairs_match=True unknown_match=True
+[518384.0] ALL DONE [{"strategy": "A", "initial_collision_pairs": 49518, "final_collision_pairs": 45400, "reduction_percent": 8.3162, "old_collisions_removed": 4156, "new_collisions_created": 38, "unresolved_final": 3, "accepted_moves": 22, "first_elevations": 22, "relocations": 0, "elevated_route_count": 22, "target_attempts": 50, "final_extra_length_mm": 8.839448, "total_step_length_delta_mm": 8.839448, "final_transition_count": 44, "candidate_evaluations": 720, "generated_candidates": 720, "full_neighbor_checks": 348, "candidate_budget": 720, "stop_reason": "TARGET_LIMIT", "assignment_seconds": 94.484, "runtime_seconds": 108.608}, {"strategy": "B", "initial_collision_pairs": 49518, "final_collision_pairs": 43750, "reduction_percent": 11.6483, "old_collisions_removed": 5860, "new_collisions_created": 92, "unresolved_final": 3, "accepted_moves": 24, "first_elevations": 24, "relocations": 0, "elevated_route_count": 24, "target_attempts": 27, "final_extra_length_mm": 8.893004, "total_step_length_delta_mm": 8.893004, "final_transition_count": 48, "candidate_evaluations": 720, "generated_candidates": 765, "full_neighbor_checks": 364, "candidate_budget": 720, "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED", "assignment_seconds": 129.688, "runtime_seconds": 143.716}, {"strategy": "C", "initial_collision_pairs": 49518, "final_collision_pairs": 43750, "reduction_percent": 11.6483, "old_collisions_removed": 5860, "new_collisions_created": 92, "unresolved_final": 3, "accepted_moves": 24, "first_elevations": 24, "relocations": 0, "elevated_route_count": 24, "target_attempts": 27, "final_extra_length_mm": 8.893004, "total_step_length_delta_mm": 8.893004, "final_transition_count": 48, "candidate_evaluations": 720, "generated_candidates": 765, "full_neighbor_checks": 364, "candidate_budget": 720, "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED", "assignment_seconds": 132.709, "runtime_seconds": 146.603}]

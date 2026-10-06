@@ -1,0 +1,15 @@
+{
+    "source_sha256":  {
+                          "ledger.json":  "d3aba574ff7ed1e12da7a4082f92bb1f8de4d882a910c85ed851c7476e5bd4ad",
+                          "summary.json":  "35ae8ce7c43b4ffb420ecc3bf052ca87b7f02aa627a773355d3d8ddcdf11577f",
+                          "final_routes.json":  "f73343b5c0da5cf51549085704dbb49cdce485556b56ce5c43406b541d083168",
+                          "config.json":  "da99666aaea4803c78af637215781cb5c0a224a53d50b5bb24300a547d461e9b",
+                          "collision_sets.json":  "997ff0875b00b88f9269f74b009f89f180d9158bd6e075264e43557783015a5b"
+                      },
+    "reused_group":  "V6_E0_NC2880",
+    "source_directory":  "outputs/overnight_3d_ideas/v5/V5_LEGACY_NC2880",
+    "source_group":  "V5_LEGACY_NC2880",
+    "reason":  "V6_E0 is the configuration already accepted by the v5 adoption rule; it was not re-run. The artifacts are copied verbatim so the v6 comparison table has a first-class E0 row, and the v6 E1 arm independently reproduced them bit-for-bit at all three main budgets (see v6_comparison_and_identity.json).",
+    "status":  "REUSED_BASELINE_NOT_A_NEW_RUN",
+    "not_rerun_because":  "running it again would duplicate an already rechecked run with an identical spec"
+}

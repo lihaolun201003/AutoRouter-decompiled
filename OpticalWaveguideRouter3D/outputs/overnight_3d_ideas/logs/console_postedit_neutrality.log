@@ -1,0 +1,21 @@
+start-state rescan (main) ...
+  main PASS pairs=42909 unresolved=3 elevated=24
+[553800.5] V5_LEGACY_N720_postedit: start mode=N budget=720 spec={"name": "V5_LEGACY", "target_policy": "LEGACY", "evaluation_policy": "E0_EXHAUSTIVE", "traversal_policy": "BASE", "max_targets": 200, "k_per_target": 16, "family_round_robin": false, "relocation_side_reserve": 0, "waiting_age": false, "route_coverage": false, "multi_anchor": false, "exact_dedup": false, "decision_cache": false, "return_action": false, "cache_structural_skips": false, "window_slack_mm": 1e-05, "notes": ""}
+[553800.5] V5_LEGACY_N720_postedit: start state=main C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\outputs\3d_strategy_v3\512_ablation\D_both_enabled pairs=42909
+[553806.0] V5_LEGACY_N720_postedit: INITIAL_DONE pairs=42909
+[553806.3] V5_LEGACY_N720_postedit: step 1 NO_CANDIDATES_GENERATED pairs=42909 evals=0 0s
+[553806.5] V5_LEGACY_N720_postedit: step 2 NO_CANDIDATES_GENERATED pairs=42909 evals=0 1s
+[553848.7] V5_LEGACY_N720_postedit: step 3 ELEVATED pairs=42648 evals=72 43s
+[553909.9] V5_LEGACY_N720_postedit: step 4 ELEVATED pairs=42392 evals=144 104s
+[553964.0] V5_LEGACY_N720_postedit: step 5 ELEVATED pairs=42139 evals=216 158s
+[554015.6] V5_LEGACY_N720_postedit: step 6 ELEVATED pairs=41888 evals=288 210s
+[554071.3] V5_LEGACY_N720_postedit: step 7 ELEVATED pairs=41639 evals=360 265s
+[554099.2] V5_LEGACY_N720_postedit: step 8 ELEVATED pairs=41386 evals=396 293s
+[554117.5] V5_LEGACY_N720_postedit: step 9 ELEVATED pairs=41111 evals=432 311s
+[554155.9] V5_LEGACY_N720_postedit: step 10 ELEVATED pairs=40843 evals=486 350s
+[554177.9] V5_LEGACY_N720_postedit: step 11 ELEVATED pairs=40583 evals=540 372s
+[554237.9] V5_LEGACY_N720_postedit: step 12 ELEVATED pairs=40327 evals=639 432s
+[554280.8] V5_LEGACY_N720_postedit: step 13 ELEVATED pairs=40072 evals=720 475s
+[554281.1] V5_LEGACY_N720_postedit: done final=40072 moves=11 first=11 reloc=0 ret=0 evals=720 stop=CANDIDATE_BUDGET_EXHAUSTED
+[554321.7] V5_LEGACY_N720_postedit: recheck PASS checks=130816
+GROUP DONE V5_LEGACY_N720 PASS

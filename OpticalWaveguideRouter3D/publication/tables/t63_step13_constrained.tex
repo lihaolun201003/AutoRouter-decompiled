@@ -1,0 +1,27 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{Step 13 受约束复算：base/spacing/small/both（几何不变，仅改评分）}
+  \label{tab:step13-constrained}
+  \begin{tabular}{lrrrrrrr}
+    \toprule
+    配置 & 平均损耗 (dB) & 最大损耗 (dB) & <5° 交叉 & <10° 交叉 & <20° 交叉 & 间距违规 & 段级接触 \\
+    \midrule
+    base & 2.9703 & 5.0783 & 22 & 151 & 657 & 415 & 226 \\
+    spacing & 2.9734 & 5.0623 & 4 & 137 & 626 & 288 & 202 \\
+    small & 2.9930 & 5.0454 & 15 & 78 & 434 & 430 & 226 \\
+    both & 2.9902 & 5.0556 & 6 & 85 & 369 & 279 & 224 \\
+    \midrule
+    base & 3.2947 & 5.4995 & 53 & 842 & 2\,939 & 1\,231 & 0 \\
+    spacing & 3.3514 & 5.5438 & 96 & 816 & 3\,147 & 821 & 0 \\
+    small & 3.3269 & 5.4754 & 76 & 406 & 1\,448 & 1\,089 & 0 \\
+    both & 3.3886 & 5.4894 & 77 & 410 & 1\,458 & 859 & 0 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  本组实验在固定几何（F56）上仅改变评分权重，不改变半径与端点：spacing=0.05 dB/路线对；small=<20° 每事件 0.05 dB；both 同时启用。 \\
+  256 的 base 子目录内容即 F56 几何；与 Step 14 的对照实验不同（Step 14 同时冻结半径），两者条件不可混用。 \\
+  \end{flushleft}
+\end{table}

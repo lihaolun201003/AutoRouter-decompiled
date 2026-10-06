@@ -1,0 +1,201 @@
+{
+  "scale": 512,
+  "round": "v7",
+  "group": "V7_T1_N720",
+  "strategy": "V7_T1",
+  "stats": {
+    "group": "V7_T1_N720",
+    "strategy": "V7_T1",
+    "strategy_spec": {
+      "name": "V7_T1",
+      "target_policy": "LEGACY",
+      "evaluation_policy": "E2_ORDERED_K16",
+      "traversal_policy": "BASE",
+      "max_targets": 2000,
+      "k_per_target": 16,
+      "family_round_robin": false,
+      "relocation_side_reserve": 0,
+      "waiting_age": false,
+      "route_coverage": false,
+      "multi_anchor": false,
+      "exact_dedup": false,
+      "decision_cache": false,
+      "return_action": false,
+      "cache_structural_skips": false,
+      "window_slack_mm": 1e-05,
+      "notes": ""
+    },
+    "mode": "N",
+    "appended_candidate_budget": 720,
+    "max_targets": 2000,
+    "start_kind": "main",
+    "control": "v6",
+    "initial_collision_pairs": 42909,
+    "final_collision_pairs": 33738,
+    "final_unresolved_pairs": 3,
+    "net_collision_reduction": 9171,
+    "accepted_moves": 45,
+    "first_elevations": 45,
+    "relocations": 0,
+    "returns": 0,
+    "first_elevation_net_reduction": 9171,
+    "relocation_net_reduction": 0,
+    "return_net_reduction": 0,
+    "total_old_collisions_removed": 9883,
+    "total_new_collisions_created": 712,
+    "generated_candidates": 2547,
+    "candidate_evaluations": 720,
+    "full_neighbor_checks": 720,
+    "full_acceptance_passes": 711,
+    "executed_moves": 45,
+    "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+    "target_attempts": 50,
+    "evaluations_per_action": 16.0,
+    "net_reduction_per_evaluation": 12.7375,
+    "relocation_candidate_evaluations": 0,
+    "not_evaluated_candidates": 1827,
+    "deferred_prefix_no_winner": 0,
+    "dedup_removed_duplicates": 0,
+    "decision_cache_hits": 0,
+    "coverage": {
+      "unique_target_pairs": 50,
+      "target_attempts": 50,
+      "repeated_target_attempts": 0,
+      "unique_target_sides": 100,
+      "unique_evaluated_target_sides": 45,
+      "unique_routes_attempted": 52,
+      "unique_routes_evaluated": 45,
+      "unique_routes_touched_by_a_move": 45,
+      "max_attempts_on_one_route": 27,
+      "target_pair_visit_histogram": {
+        "1": 50
+      },
+      "elevation_state_class_attempts": {
+        "UU": 50,
+        "UE": 0,
+        "EE": 0
+      },
+      "elevation_state_class_moves": {
+        "UU": 45,
+        "UE": 0,
+        "EE": 0
+      },
+      "elevation_state_class_evaluations": {
+        "UU": 720,
+        "UE": 0,
+        "EE": 0
+      },
+      "elevation_state_class_first_evaluation_step": {
+        "UU": 3,
+        "UE": null,
+        "EE": null
+      },
+      "elevation_state_class_deferred": {
+        "UU": 0,
+        "UE": 0,
+        "EE": 0
+      },
+      "elevation_state_class_target_pairs": {
+        "UU": 50,
+        "UE": 0,
+        "EE": 0
+      }
+    },
+    "stage_length_delta_mm": 14.883190706808819,
+    "final_extra_length_vs_planar_mm": 22.039281532881432,
+    "start_extra_length_vs_planar_mm": 7.156090826072614,
+    "final_transition_count": 138,
+    "final_elevated_route_count": 69,
+    "layer_route_counts": {
+      "0": 443,
+      "1": 57,
+      "2": 12
+    },
+    "basic_rejection_reason_counts": {},
+    "full_rejection_reason_counts": {
+      "NO_STRICT_GLOBAL_DECREASE": 9
+    },
+    "generation_failure_reason_counts": {
+      "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 18
+    },
+    "budget_checkpoints": {
+      "720": {
+        "candidate_evaluations": 720,
+        "collision_pair_count": 33738,
+        "cumulative_removed": 9883,
+        "cumulative_created": 712
+      },
+      "1440": {
+        "candidate_evaluations": 720,
+        "collision_pair_count": 33738,
+        "cumulative_removed": 9883,
+        "cumulative_created": 712
+      },
+      "2880": {
+        "candidate_evaluations": 720,
+        "collision_pair_count": 33738,
+        "cumulative_removed": 9883,
+        "cumulative_created": 712
+      }
+    },
+    "timings": {
+      "initial_pair_scan_seconds": 0.0,
+      "assignment_seconds": 640.0397191999946,
+      "runtime_seconds": 640.9835253000492,
+      "run_seconds_including_recheck": 722.6959443000378
+    },
+    "recheck": {
+      "reloaded_route_count": 512,
+      "collision_pair_set_matches_incremental": true,
+      "unresolved_pair_set_matches_incremental": true,
+      "checks": 130816,
+      "recheck_seconds": 67.37987599999178,
+      "final_transition_count": 138,
+      "elevated_route_count": 69,
+      "layer_route_counts": {
+        "0": 443,
+        "1": 57,
+        "2": 12
+      },
+      "length_ledger": {
+        "saved_final_total_length_mm": 70853.3489386797,
+        "recorded_final_total_length_mm": 70853.3489386797,
+        "total_length_matches": true,
+        "stage_length_delta_mm": 14.883190706808819,
+        "stage_length_delta_matches": true,
+        "step_length_delta_sum_mm": 14.883190706836672,
+        "step_delta_sum_matches_stage": true,
+        "final_extra_length_vs_planar_mm": 22.039281532881432,
+        "recorded_final_extra_length_vs_planar_mm": 22.039281532881432,
+        "final_extra_length_matches": true
+      },
+      "final_pair_state_distribution": {
+        "both_routes_unelevated": 31756,
+        "single_route_elevated": 1107,
+        "both_routes_elevated": 875,
+        "total": 33738
+      },
+      "verdict": "PASS"
+    },
+    "recheck_geometry": {
+      "endpoint_invariant": true,
+      "joins_C0_C1_direction": true,
+      "transition_radius_pass": true,
+      "xy_projection_preserved": true,
+      "single_elevation_structure": true,
+      "failures": []
+    },
+    "recheck_length_ledger": {
+      "saved_final_total_length_mm": 70853.3489386797,
+      "recorded_final_total_length_mm": 70853.3489386797,
+      "total_length_matches": true,
+      "stage_length_delta_mm": 14.883190706808819,
+      "stage_length_delta_matches": true,
+      "step_length_delta_sum_mm": 14.883190706836672,
+      "step_delta_sum_matches_stage": true,
+      "final_extra_length_vs_planar_mm": 22.039281532881432,
+      "recorded_final_extra_length_vs_planar_mm": 22.039281532881432,
+      "final_extra_length_matches": true
+    }
+  }
+}

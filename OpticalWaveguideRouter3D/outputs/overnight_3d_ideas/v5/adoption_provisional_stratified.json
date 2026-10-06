@@ -1,0 +1,21 @@
+{
+  "status": "PROVISIONAL",
+  "decided_at": "2026-10-05T13:45:20.762Z",
+  "reason": "v5's formal adoption rule is not closed yet - the MAIN R2880 R-mode cell is still running. This file freezes the scheduler arm that v5's already-completed 720 groups and its in-flight 1440/2880 groups select, so the v6 E1/E2 groups can be scheduled without changing any decision rule.",
+  "decision_rule": "unchanged: scripts/overnight_registry.py ADOPTION_RULE, primary criterion = MAIN R2880 R-mode terminal near-distance pair count",
+  "observed_before_launch": {
+    "main_720_R": {
+      "V5_LEGACY_R720": 40072,
+      "V5_STRATIFIED_R720": 38884
+    },
+    "main_1440_R_in_flight": {
+      "V5_LEGACY_R1440": 37686,
+      "V5_STRATIFIED_R1440": 36938
+    },
+    "note": "evidence only; if the formal adoption selects LEGACY, the STRATIFIED arm is reported as a declared robustness arm and the LEGACY arm is run as the formal v6"
+  },
+  "target_policy": "STRATIFIED",
+  "evaluation_policy": "E0_EXHAUSTIVE",
+  "k_per_target": 16,
+  "adopted_group": null
+}

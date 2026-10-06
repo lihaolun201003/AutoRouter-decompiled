@@ -1,0 +1,1399 @@
+{
+  "review_date": "2026-10-05",
+  "scale": 512,
+  "clearance_mm": 0.1,
+  "window_slack_mm": 1e-05,
+  "slack_basis": "slack = 1e-5 mm is >=10x the worst converged ADAPTIVE_CHORD_BOUNDS error bound (distance_tol=1e-6 mm) and 1e4x the analytic classification tol (1e-9 mm); in this rebuild it insets each usable window by delta=slack/length at both ends (width shrinks by 2*delta) and moves a window start by delta*(1-2f). Measured on the saved 512 rows: 331/331 recorded ambiguities rebuilt as CLEAR, with task candidate totals 666 -> 666. The 0.1 mm clearance criterion is unchanged, and this is the measured outcome of this probe only, not a guarantee about other inputs or candidates.",
+  "source": {
+    "decisions": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2_rev2\\512_c_fixed\\decisions_C_fixed.json",
+    "decisions_sha256": "c322e4b1307d92f5a0d1f4e1f99286858b3d472e7304f74e46e48d608b1c79b1",
+    "plot_sha256": "14403f100b73c22f89ea07cf329822347ad541dc6674e1949996a7d5f0523821",
+    "events_sha256": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8",
+    "layer_assignment_3d_sha256": "0519ecfb8b4dda45bf8f04feaee2e11b3808dbf800ed2b440e5d082375967f21"
+  },
+  "method": "Reconstruct every recorded SELF_AMBIGUOUS_CLEARANCE row from frozen planar geometry and saved CROSS anchors, then rebuild it with the corresponding window of the slack-grown enumeration, matched within 2*delta of the recorded start (the delta*(1-2f) move elevation_candidates performs when the pad grows by slack/length). No routing, no clearance-threshold change, no acceptance-rule change; the reported numbers are the measured outcome of this rebuild on the saved 512 rows.",
+  "recorded_rows": 331,
+  "unique_tasks": 31,
+  "status_after_shift": {
+    "CLEAR": 331,
+    "still_ambiguous": 0,
+    "collision": 0,
+    "touching_threshold": 0,
+    "other_ambiguous_status": 0,
+    "build_rejected": 0,
+    "window_not_available": 0
+  },
+  "other_statuses": {},
+  "task_window_counts": {
+    "tasks": [
+      {
+        "target": [
+          9,
+          34
+        ],
+        "moved": 34,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 9,
+        "candidates_at_probe_slack": 9,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "2|0.04007498296": [
+            0.0008068576038725291,
+            0.04258589037220788,
+            0.08436492314054322,
+            0.9495818768766786,
+            0.9543500181565105,
+            0.9591181594363425
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          177
+        ],
+        "moved": 177,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 9,
+        "candidates_at_probe_slack": 9,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "2|0.043016186515": [
+            0.0008660749079887422,
+            0.01096010260965591,
+            0.021054130311323076,
+            0.9450225604194381,
+            0.9505701494980268,
+            0.9561177385766153
+          ]
+        }
+      },
+      {
+        "target": [
+          265,
+          290
+        ],
+        "moved": 265,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 9,
+        "candidates_at_probe_slack": 9,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "2|0.04711685215": [
+            0.0009486364714251839,
+            0.44668805324434074,
+            0.8924274700172563,
+            0.9414415951096475,
+            0.9466880532443407,
+            0.951934511379034
+          ]
+        }
+      },
+      {
+        "target": [
+          301,
+          302
+        ],
+        "moved": 301,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "0|0.060374283049": [
+            0.001215557581282285,
+            0.469812858475446,
+            0.9384101593696098
+          ],
+          "4|0.086051002821": [
+            0.001732524902555219,
+            0.45697449858929967,
+            0.9122164722760442
+          ],
+          "0|0.085382129907": [
+            0.001215557581282285,
+            0.4573089350466998,
+            0.9134023125121173
+          ],
+          "4|0.121694495246": [
+            0.001732524902555219,
+            0.4391527523770849,
+            0.8765729798516146
+          ]
+        }
+      },
+      {
+        "target": [
+          301,
+          302
+        ],
+        "moved": 302,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "0|0.060502973665": [
+            0.001218148599269184,
+            0.46974851316768973,
+            0.9382788777361103
+          ],
+          "4|0.085790917752": [
+            0.0017272884283246975,
+            0.45710454112378807,
+            0.9124817938192514
+          ],
+          "0|0.08556412592": [
+            0.001218148599269184,
+            0.45721793703979574,
+            0.9132177254803223
+          ],
+          "4|0.121326679414": [
+            0.0017272884283246975,
+            0.4393366602930437,
+            0.8769460321577627
+          ]
+        }
+      },
+      {
+        "target": [
+          301,
+          303
+        ],
+        "moved": 301,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "0|0.060374283049": [
+            0.001215557581282285,
+            0.469812858475446,
+            0.9384101593696098
+          ],
+          "4|0.086051002821": [
+            0.001732524902555219,
+            0.45697449858929967,
+            0.9122164722760442
+          ],
+          "0|0.085382129907": [
+            0.001215557581282285,
+            0.4573089350466998,
+            0.9134023125121173
+          ],
+          "4|0.121694495246": [
+            0.001732524902555219,
+            0.4391527523770849,
+            0.8765729798516146
+          ]
+        }
+      },
+      {
+        "target": [
+          301,
+          303
+        ],
+        "moved": 303,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "0|0.060632214072": [
+            0.0012207506866036008,
+            0.46968389296389773,
+            0.9381470352411919
+          ],
+          "4|0.085532400135": [
+            0.001722083512699096,
+            0.45723379993228286,
+            0.9127455163518666
+          ],
+          "0|0.085746899458": [
+            0.0012207506866036008,
+            0.4571265502711898,
+            0.9130323498557761
+          ],
+          "4|0.120961080294": [
+            0.001722083512699096,
+            0.4395194598530733,
+            0.8773168361934475
+          ]
+        }
+      },
+      {
+        "target": [
+          290,
+          345
+        ],
+        "moved": 345,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 12,
+        "candidates_at_slack_zero": 54,
+        "candidates_at_probe_slack": 54,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "0|0.060118537221": [
+            0.0012104084720121029,
+            0.4699407313896196,
+            0.9386710543072272
+          ],
+          "4|0.086575932686": [
+            0.0017430936819172113,
+            0.385905933439082,
+            0.7700687731962468,
+            0.8601308932461873,
+            0.885905933439082,
+            0.9116809736319766
+          ],
+          "2|0.100147059231": [
+            0.00201633064516129,
+            0.4499264703844219,
+            0.8978366101236825
+          ],
+          "0|0.085020450688": [
+            0.0012104084720121029,
+            0.4574897746561843,
+            0.9137691408403565
+          ],
+          "4|0.12243685818": [
+            0.0017430936819172113,
+            0.36797547069223935,
+            0.7342078477025614,
+            0.8601308932461873,
+            0.8679754706922392,
+            0.8758200481382913
+          ],
+          "2|0.141629329396": [
+            0.00201633064516129,
+            0.4291853353017587,
+            0.8563543399583561
+          ]
+        }
+      },
+      {
+        "target": [
+          290,
+          345
+        ],
+        "moved": 290,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.046883380254": [
+            0.0009439358187824444,
+            0.3302628875041749,
+            0.6595818391895674,
+            0.7083530910806985,
+            0.8302628875041749,
+            0.9521726839276512
+          ],
+          "2|0.066303112204": [
+            0.0009439358187824444,
+            0.3205530215287138,
+            0.6401621072386452,
+            0.7083530910806985,
+            0.8205530215287138,
+            0.9327529519767291
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          273
+        ],
+        "moved": 273,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.055640371189": [
+            0.0011202464295715486,
+            0.005223779681515854,
+            0.009327312933460159,
+            0.06720817698123775,
+            0.5052237796815159,
+            0.943239382381794
+          ],
+          "2|0.063398776488": [
+            0.0012764518187619656,
+            0.468300611755805,
+            0.9353247716928481
+          ],
+          "4|0.09792595639": [
+            0.0019716116313454905,
+            0.4510370218051716,
+            0.9001024319789976
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          273
+        ],
+        "moved": 9,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.051514587896": [
+            0.0010371791547835105,
+            0.06407936666909335,
+            0.1271215541834032,
+            0.1807105003889033,
+            0.5640793666690933,
+            0.9474482329492835
+          ],
+          "2|0.072852628862": [
+            0.0010371791547835105,
+            0.05341034618581517,
+            0.10578351321684683,
+            0.1807105003889033,
+            0.5534103461858152,
+            0.926110191982727
+          ]
+        }
+      },
+      {
+        "target": [
+          290,
+          348
+        ],
+        "moved": 348,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 12,
+        "candidates_at_slack_zero": 54,
+        "candidates_at_probe_slack": 54,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "0|0.059991475095": [
+            0.0012078502415458939,
+            0.47000426245250393,
+            0.938800674663462
+          ],
+          "4|0.086840806606": [
+            0.0017484265734265733,
+            0.38555686942425393,
+            0.7693653122750813,
+            0.859702972027972,
+            0.8855568694242539,
+            0.911410766820536
+          ],
+          "2|0.064259950037": [
+            0.0012937904269081498,
+            0.46787002498146607,
+            0.934446259536024
+          ],
+          "0|0.084840757706": [
+            0.0012078502415458939,
+            0.4575796211469472,
+            0.9139513920523485
+          ],
+          "4|0.12281144647": [
+            0.0017484265734265733,
+            0.36757154949243404,
+            0.7333946724114415,
+            0.859702972027972,
+            0.8675715494924341,
+            0.8754401269568961
+          ],
+          "2|0.09087729286": [
+            0.0012937904269081498,
+            0.4545613535700806,
+            0.907828916713253
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          185
+        ],
+        "moved": 185,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 9,
+        "candidates_at_probe_slack": 9,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "2|0.05670427098": [
+            0.0011416666666666667,
+            0.4327654306911161,
+            0.8643891947155656,
+            0.9233767990290971,
+            0.9327654306911162,
+            0.9421540623531353
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          186
+        ],
+        "moved": 186,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 9,
+        "candidates_at_probe_slack": 9,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "2|0.056478614416": [
+            0.001137123365548607,
+            0.43426967910803715,
+            0.8674022348505257,
+            0.9261550959973744,
+            0.9342696791080372,
+            0.9423842622186999
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          274
+        ],
+        "moved": 274,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.055749653624": [
+            0.0011224466891133558,
+            0.005234039630385278,
+            0.0093456325716572,
+            0.06734017957351293,
+            0.5052340396303853,
+            0.9431278996872576
+          ],
+          "2|0.063398776488": [
+            0.0012764518187619656,
+            0.468300611755805,
+            0.9353247716928481
+          ],
+          "4|0.097589275793": [
+            0.0019648330058939095,
+            0.45120536210348383,
+            0.9004458912010738
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          274
+        ],
+        "moved": 9,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.051514587896": [
+            0.0010371791547835105,
+            0.06317192565275942,
+            0.12530667215073535,
+            0.17889561835623544,
+            0.5631719256527594,
+            0.9474482329492834
+          ],
+          "2|0.072852628862": [
+            0.0010371791547835105,
+            0.052502905169481244,
+            0.10396863118417897,
+            0.17889561835623544,
+            0.5525029051694812,
+            0.926110191982727
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          275
+        ],
+        "moved": 275,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.055859366183": [
+            0.0011246556086589824,
+            0.005244339961398117,
+            0.009364024314137253,
+            0.06747270171492832,
+            0.5052443399613982,
+            0.943015978207868
+          ],
+          "2|0.063398776488": [
+            0.0012764518187619656,
+            0.468300611755805,
+            0.9353247716928481
+          ],
+          "4|0.097254902357": [
+            0.0019581008321096424,
+            0.4513725488216804,
+            0.9007869968112512
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          275
+        ],
+        "moved": 9,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.051514587896": [
+            0.0010371791547835105,
+            0.06226448463642551,
+            0.1234917901180675,
+            0.1770807363235676,
+            0.5622644846364255,
+            0.9474482329492835
+          ],
+          "2|0.072852628862": [
+            0.0010371791547835105,
+            0.05159546415314733,
+            0.10215374915151114,
+            0.1770807363235676,
+            0.5515954641531473,
+            0.926110191982727
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          338
+        ],
+        "moved": 338,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.057325956582": [
+            0.0011541834968263128,
+            0.005369044175745612,
+            0.009583904854664912,
+            0.06921822843072199,
+            0.5053690441757456,
+            0.9415198599207693
+          ],
+          "2|0.052508394692": [
+            0.0010571881606765328,
+            0.47374580265398863,
+            0.9464344171473008
+          ],
+          "4|0.093107668938": [
+            0.0018746016869728211,
+            0.45344616553078404,
+            0.9050177293745952
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          339
+        ],
+        "moved": 339,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.05744196748": [
+            0.0011565192252095983,
+            0.005331784804065961,
+            0.009507050382922325,
+            0.06926205631371556,
+            0.5053317848040659,
+            0.9414015132944163
+          ],
+          "2|0.052508394692": [
+            0.0010571881606765328,
+            0.47374580265398863,
+            0.9464344171473008
+          ],
+          "4|0.092803253393": [
+            0.0018684726763194767,
+            0.45359837330345304,
+            0.9053282739305867
+          ]
+        }
+      },
+      {
+        "target": [
+          151,
+          290
+        ],
+        "moved": 151,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.062916961848": [
+            0.00126675110829639,
+            0.08934030308758127,
+            0.17741385506686613,
+            0.242864319131025,
+            0.5893403030875812,
+            0.9358162870441374
+          ],
+          "2|0.088978020748": [
+            0.00126675110829639,
+            0.07630977363729502,
+            0.15135279616629363,
+            0.242864319131025,
+            0.576309773637295,
+            0.9097552281435649
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          340
+        ],
+        "moved": 340,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.057558448874": [
+            0.0011588644264194671,
+            0.00525865033411214,
+            0.009358436241804812,
+            0.06923461396909733,
+            0.5052586503341121,
+            0.941282686699127
+          ],
+          "2|0.052508394692": [
+            0.0010571881606765328,
+            0.47374580265398863,
+            0.9464344171473008
+          ],
+          "4|0.092500821934": [
+            0.0018623836126629423,
+            0.4537495890329112,
+            0.9056367944531594
+          ]
+        }
+      },
+      {
+        "target": [
+          152,
+          290
+        ],
+        "moved": 152,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.062639270339": [
+            0.0012611601513240857,
+            0.0894248227328824,
+            0.17758848531444069,
+            0.24275007595587,
+            0.5894248227328824,
+            0.9360995695098948
+          ],
+          "2|0.08858530565": [
+            0.0012611601513240857,
+            0.07645180507714346,
+            0.1516424500029628,
+            0.24275007595587,
+            0.5764518050771434,
+            0.910153534198417
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          497
+        ],
+        "moved": 497,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.096922812446": [
+            0.0019514146341463414,
+            0.4515385937769234,
+            0.9011257729197005
+          ],
+          "4|0.055969511413": [
+            0.0011268732394366196,
+            0.43877580767399804,
+            0.8764247421085595,
+            0.9346479999999999,
+            0.938775807673998,
+            0.9429036153479962
+          ],
+          "2|0.063398776488": [
+            0.0012764518187619654,
+            0.468300611755805,
+            0.9353247716928481
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          497
+        ],
+        "moved": 9,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.051514587896": [
+            0.0010371791547835105,
+            0.06135704362009151,
+            0.12167690808539951,
+            0.1752658542908996,
+            0.5613570436200915,
+            0.9474482329492835
+          ],
+          "2|0.072852628862": [
+            0.0010371791547835105,
+            0.05068802313681333,
+            0.10033886711884314,
+            0.1752658542908996,
+            0.5506880231368133,
+            0.926110191982727
+          ]
+        }
+      },
+      {
+        "target": [
+          153,
+          290
+        ],
+        "moved": 153,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.062364019308": [
+            0.0012556183301946013,
+            0.08956507845578114,
+            0.17787453858136767,
+            0.24274979454954526,
+            0.5895650784557811,
+            0.936380362362017
+          ],
+          "2|0.088196041909": [
+            0.0012556183301946013,
+            0.07664906715508937,
+            0.15204251597998414,
+            0.24274979454954526,
+            0.5766490671550895,
+            0.9105483397606335
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          498
+        ],
+        "moved": 498,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.096592982749": [
+            0.0019447739426349054,
+            0.4517035086255192,
+            0.9014622433084035
+          ],
+          "4|0.056080091875": [
+            0.0011290996330793114,
+            0.43865484539731675,
+            0.8761805911615541,
+            0.9345188823031328,
+            0.9386548453973167,
+            0.9427908084915005
+          ],
+          "2|0.063398776488": [
+            0.0012764518187619654,
+            0.468300611755805,
+            0.9353247716928481
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          498
+        ],
+        "moved": 9,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.051514587896": [
+            0.0010371791547835105,
+            0.060449602603757584,
+            0.11986202605273165,
+            0.17345097225823175,
+            0.5604496026037575,
+            0.9474482329492835
+          ],
+          "2|0.072852628862": [
+            0.0010371791547835105,
+            0.0497805821204794,
+            0.09852398508617528,
+            0.17345097225823175,
+            0.5497805821204794,
+            0.926110191982727
+          ]
+        }
+      },
+      {
+        "target": [
+          154,
+          290
+        ],
+        "moved": 154,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.062091176723": [
+            0.001250125,
+            0.08975701524011316,
+            0.1782639054802263,
+            0.24285533220354308,
+            0.5897570152401131,
+            0.9366586982766832
+          ],
+          "2|0.087810184226": [
+            0.001250125,
+            0.07689751148886191,
+            0.1525448979777238,
+            0.24285533220354308,
+            0.5768975114888619,
+            0.9109396907741807
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          499
+        ],
+        "moved": 499,
+        "layer1_recorded_ambiguous": 12,
+        "layer2_recorded_ambiguous": 0,
+        "candidates_at_slack_zero": 27,
+        "candidates_at_probe_slack": 27,
+        "base_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "probe_failures": {
+          "1": null,
+          "2": "INSUFFICIENT_TRANSITION_SPACE"
+        },
+        "shifted_groups": {
+          "0|0.096265390269": [
+            0.0019381782945736437,
+            0.45186730486564586,
+            0.9017964314367181
+          ],
+          "4|0.056191110157": [
+            0.0011313348416289591,
+            0.43853340419759423,
+            0.8759354735535595,
+            0.9343892533936652,
+            0.9385334041975942,
+            0.9426775550015233
+          ],
+          "2|0.063398776488": [
+            0.0012764518187619656,
+            0.468300611755805,
+            0.9353247716928481
+          ]
+        }
+      },
+      {
+        "target": [
+          9,
+          499
+        ],
+        "moved": 9,
+        "layer1_recorded_ambiguous": 5,
+        "layer2_recorded_ambiguous": 5,
+        "candidates_at_slack_zero": 18,
+        "candidates_at_probe_slack": 18,
+        "base_failures": {
+          "1": null,
+          "2": null
+        },
+        "probe_failures": {
+          "1": null,
+          "2": null
+        },
+        "shifted_groups": {
+          "2|0.051514587896": [
+            0.0010371791547835105,
+            0.05954216158742367,
+            0.11804714402006382,
+            0.17163609022556392,
+            0.5595421615874236,
+            0.9474482329492834
+          ],
+          "2|0.072852628862": [
+            0.0010371791547835105,
+            0.048873141104145486,
+            0.09670910305350745,
+            0.17163609022556392,
+            0.5488731411041454,
+            0.926110191982727
+          ]
+        }
+      }
+    ],
+    "tasks_with_fewer_candidates_after_shift": 0,
+    "total_candidates_at_slack_zero": 666,
+    "total_candidates_at_probe_slack": 666
+  },
+  "failure_shifts_on_recorded_tasks": {},
+  "samples": [
+    {
+      "step_index": 2,
+      "target": [
+        9,
+        34
+      ],
+      "moved": 34,
+      "candidate_index": 0,
+      "layer": 1,
+      "recorded_rise_window": [
+        2,
+        0.0008067769261799112,
+        0.04088175988596486
+      ],
+      "recorded_fall_window": [
+        2,
+        0.949581796198986,
+        0.9896567791587709
+      ],
+      "matched_rise_window": [
+        2,
+        0.0008068576038725291,
+        0.04088184056365748
+      ],
+      "matched_fall_window": [
+        2,
+        0.9495818768766786,
+        0.9896568598364636
+      ],
+      "start_shift_mm": [
+        9.999999999989999e-06,
+        1.0000000002435839e-05
+      ],
+      "self_clearance_status_after_shift": "CLEAR",
+      "minimum_distance_mm": 0.10000999999999749
+    },
+    {
+      "step_index": 2,
+      "target": [
+        9,
+        34
+      ],
+      "moved": 34,
+      "candidate_index": 1,
+      "layer": 1,
+      "recorded_rise_window": [
+        2,
+        0.0008067769261799112,
+        0.04088175988596486
+      ],
+      "recorded_fall_window": [
+        2,
+        0.9543500181565105,
+        0.9944250011162955
+      ],
+      "matched_rise_window": [
+        2,
+        0.0008068576038725291,
+        0.04088184056365748
+      ],
+      "matched_fall_window": [
+        2,
+        0.9543500181565105,
+        0.9944250011162955
+      ],
+      "start_shift_mm": [
+        9.999999999989999e-06,
+        0.0
+      ],
+      "self_clearance_status_after_shift": "CLEAR",
+      "minimum_distance_mm": 0.10000999999999749
+    },
+    {
+      "step_index": 2,
+      "target": [
+        9,
+        34
+      ],
+      "moved": 34,
+      "candidate_index": 2,
+      "layer": 1,
+      "recorded_rise_window": [
+        2,
+        0.0008067769261799112,
+        0.04088175988596486
+      ],
+      "recorded_fall_window": [
+        2,
+        0.9591182401140351,
+        0.9991932230738201
+      ],
+      "matched_rise_window": [
+        2,
+        0.0008068576038725291,
+        0.04088184056365748
+      ],
+      "matched_fall_window": [
+        2,
+        0.9591181594363425,
+        0.9991931423961274
+      ],
+      "start_shift_mm": [
+        9.999999999989999e-06,
+        -1.0000000002435839e-05
+      ],
+      "self_clearance_status_after_shift": "CLEAR",
+      "minimum_distance_mm": 0.10000999999999749
+    },
+    {
+      "step_index": 2,
+      "target": [
+        9,
+        34
+      ],
+      "moved": 34,
+      "candidate_index": 5,
+      "layer": 1,
+      "recorded_rise_window": [
+        2,
+        0.042585890372207884,
+        0.08266087333199283
+      ],
+      "recorded_fall_window": [
+        2,
+        0.9591182401140351,
+        0.9991932230738201
+      ],
+      "matched_rise_window": [
+        2,
+        0.04258589037220788,
+        0.08266087333199282
+      ],
+      "matched_fall_window": [
+        2,
+        0.9591181594363425,
+        0.9991931423961274
+      ],
+      "start_shift_mm": [
+        -8.600758993893011e-16,
+        -1.0000000002435839e-05
+      ],
+      "self_clearance_status_after_shift": "CLEAR",
+      "minimum_distance_mm": 0.10001000000000282
+    },
+    {
+      "step_index": 2,
+      "target": [
+        9,
+        34
+      ],
+      "moved": 34,
+      "candidate_index": 8,
+      "layer": 1,
+      "recorded_rise_window": [
+        2,
+        0.08436500381823585,
+        0.12443998677802079
+      ],
+      "recorded_fall_window": [
+        2,
+        0.9591182401140351,
+        0.9991932230738201
+      ],
+      "matched_rise_window": [
+        2,
+        0.08436492314054322,
+        0.12443990610032817
+      ],
+      "matched_fall_window": [
+        2,
+        0.9591181594363425,
+        0.9991931423961274
+      ],
+      "start_shift_mm": [
+        -1.0000000000715688e-05,
+        -1.0000000002435839e-05
+      ],
+      "self_clearance_status_after_shift": "CLEAR",
+      "minimum_distance_mm": 0.10001000000000282
+    }
+  ],
+  "limitation": "Measured on the saved 512 ambiguous rows only; 1024 and other inputs were not individually rebuilt here and no claim is made about them. A marginally feasible window can drop out of the enumeration once its width shrinks by 2*delta, so unchanged candidate totals on these 31 tasks are an observation about these tasks, not a rule. Self-clearance status alone is reported, not complete candidate acceptability; centerline proximity is not loss or manufacturability."
+}

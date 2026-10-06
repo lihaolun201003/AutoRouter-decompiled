@@ -1,0 +1,53 @@
+{
+  "directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v2_rev2\\512_de_diagnostic",
+  "files": {
+    "target_list.json": {
+      "sha256": "01d3b734fe018dc5a7c3aedb273faffbee90c044b201e306b245eb2ca551fe8d"
+    },
+    "ledger_D.json": {
+      "sha256": "3dae64e29e2c53c990195a69868a59d378945f19c0b54aa7d3b19c8b0b007cad"
+    },
+    "ledger_E.json": {
+      "sha256": "dd2235f00b61231584f31c0be21d69c05408b432fe0c07093a1bc00cc9d1dac2"
+    },
+    "decisions_D.json": {
+      "sha256": "c13124e0ea26ada80817cd38f6ecda62c72d287c9ee2104574001b675a5f114e"
+    },
+    "decisions_E.json": {
+      "sha256": "0f27411b2d88c4c75cfb095fecb7ba306499889a5e6cf727982bb53ebdceb215"
+    },
+    "final_routes_D.json": {
+      "sha256": "e41dfac992aba5d3af3be96d44856f1b39bc4d04610da59abf66f097189700d6"
+    },
+    "final_routes_E.json": {
+      "sha256": "e41dfac992aba5d3af3be96d44856f1b39bc4d04610da59abf66f097189700d6"
+    }
+  },
+  "reuse": "old results are read only; nothing in the old directory is modified",
+  "old_ledgers": {
+    "D": {
+      "final_collision_pair_count": 42112,
+      "accepted_moves": 8,
+      "relocations": 0,
+      "relocation_victim_attempts": 0,
+      "relocation_candidate_evaluations": 0,
+      "candidate_evaluations": 324,
+      "step_length_delta_total_mm": 4.122276684604003,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "runtime_seconds": 124.71872020000592,
+      "stop_reason": "TARGET_LIST_FINISHED"
+    },
+    "E": {
+      "final_collision_pair_count": 42112,
+      "accepted_moves": 8,
+      "relocations": 0,
+      "relocation_victim_attempts": 28,
+      "relocation_candidate_evaluations": 126,
+      "candidate_evaluations": 450,
+      "step_length_delta_total_mm": 4.122276684604003,
+      "final_extra_length_vs_planar_mm": 13.015280586550944,
+      "runtime_seconds": 187.96669530007057,
+      "stop_reason": "TARGET_LIST_FINISHED"
+    }
+  }
+}

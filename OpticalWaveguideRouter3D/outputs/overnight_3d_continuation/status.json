@@ -1,0 +1,157 @@
+{
+  "task": "v8 path-arc-length windows, A budget fairness, length caps, serial timing, report QA",
+  "updated": "2026-10-06T13:18:30",
+  "v8": {
+    "implemented": true,
+    "support_chain": "src/geometry_3d.py PathWindowTransition3D + src/path_window_3d.py + full chain",
+    "targeted_tests": "tests/test_path_window_3d.py (25) and tests/test_overnight_engine_3d.py (21)",
+    "full_regression": "803 passed, 4 skipped",
+    "g0_equivalence": "neutral",
+    "p2_cells": 8,
+    "p2_g1_better_cells": 7,
+    "p2_verdict": "G1 improves the same-budget whole-layout result in 7 of 8 cells"
+  },
+  "diagnostics": {
+    "sides": 120,
+    "old_no_window_sides": 33,
+    "old_no_window_now_g1_candidates": 0,
+    "old_no_window_g1_full_passed": 0,
+    "ledger": {
+      "basic_evaluations": 13983,
+      "full_neighbor_checks": 888,
+      "seconds": 2325.9408054000232,
+      "excluded_from_optimisation_budgets": true,
+      "basic_cap_per_side": 400,
+      "full_cap_per_side": 60,
+      "note": "generation + basic + capped full checks only, on the FROZEN PLANAR state; these evaluations are booked separately and are NOT part of any appended candidate budget"
+    }
+  },
+  "p3": {
+    "cells": 32,
+    "by_limit": {
+      "BASE_E2_T200": {
+        "cells": 8,
+        "main_r2880": 19233,
+        "actual_evaluations_r2880": 2880,
+        "target_limit_hits": 2,
+        "budget_full_uses": 6,
+        "stage_length_delta_r2880": 53.625801242131274
+      },
+      "A_FAMILY_T200": {
+        "cells": 8,
+        "main_r2880": 18459,
+        "actual_evaluations_r2880": 2664,
+        "target_limit_hits": 4,
+        "budget_full_uses": 4,
+        "stage_length_delta_r2880": 69.23413301269466
+      },
+      "BASE_E2_T2000": {
+        "cells": 8,
+        "main_r2880": 19233,
+        "actual_evaluations_r2880": 2880,
+        "target_limit_hits": 0,
+        "budget_full_uses": 8,
+        "stage_length_delta_r2880": 53.625801242131274
+      },
+      "A_FAMILY_T2000": {
+        "cells": 8,
+        "main_r2880": 18042,
+        "actual_evaluations_r2880": 2880,
+        "target_limit_hits": 0,
+        "budget_full_uses": 8,
+        "stage_length_delta_r2880": 71.94661375845317
+      }
+    }
+  },
+  "p4": {
+    "capped": 24,
+    "uncapped": 8
+  },
+  "p5": {
+    "engine_median": {
+      "OFF": {
+        "n": 3,
+        "min": 456.69941779994406,
+        "median": 478.85221929999534,
+        "max": 560.609741399996
+      },
+      "ON": {
+        "n": 3,
+        "min": 308.89813569991384,
+        "median": 347.08120319992304,
+        "max": 546.3514722000109
+      }
+    },
+    "total_median": {
+      "OFF": {
+        "n": 3,
+        "min": 501.6909521999769,
+        "median": 505.09356459998526,
+        "max": 606.0356511999853
+      },
+      "ON": {
+        "n": 3,
+        "min": 332.5707593000261,
+        "median": 385.02073650003877,
+        "max": 587.9215562999016
+      }
+    },
+    "consistency": {
+      "cache_hits": {
+        "OFF": [
+          0,
+          0,
+          0
+        ],
+        "ON": [
+          8160,
+          8160,
+          8160
+        ]
+      },
+      "final_pairs": {
+        "OFF": [
+          26437,
+          26437,
+          26437
+        ],
+        "ON": [
+          26437,
+          26437,
+          26437
+        ]
+      },
+      "stage_length_delta": {
+        "OFF": [
+          30.634837951583904,
+          30.634837951583904,
+          30.634837951583904
+        ],
+        "ON": [
+          30.634837951583904,
+          30.634837951583904,
+          30.634837951583904
+        ]
+      }
+    }
+  },
+  "extra_queue_pe": {
+    "rows": 16,
+    "e_t200_r2880": 32565,
+    "e_t2000_r2880": 15935,
+    "finding": "E stops at 668 evaluations under max_targets=200 whatever the budget; with max_targets=2000 the same budget is fully used and R2880 reaches 15935 pairs"
+  },
+  "verification": {
+    "groups_total": 110,
+    "groups_pass": 74,
+    "groups_fail": 0,
+    "groups_not_finished": 0,
+    "all_finished_groups_pass": true
+  },
+  "pool": {
+    "total": 10,
+    "seconds": 1359.1,
+    "failures": 0
+  },
+  "not_done": []
+}

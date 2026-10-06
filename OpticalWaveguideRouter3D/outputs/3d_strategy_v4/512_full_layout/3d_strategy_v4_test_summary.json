@@ -1,0 +1,21 @@
+{
+  "runs": [
+    {
+      "command": ".venv\\Scripts\\python.exe -B -m pytest tests\\ -q",
+      "summary": "未找到结果行",
+      "seconds": "未知",
+      "log": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v4\\512_full_layout\\pytest_full_v4.log"
+    },
+    {
+      "command": "..\\OpticalWaveguideRouter2D\\.venv\\Scripts\\python.exe -B -m pytest tests\\test_opt2d.py tests\\test_opt2d_step13.py tests\\test_opt2d_step13_fixes.py tests\\test_opt2d_step14.py -q",
+      "summary": "未找到结果行",
+      "seconds": "未知",
+      "log": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v4\\512_full_layout\\pytest_opt2d_2d_env_v4.log"
+    }
+  ],
+  "note": "the 3D interpreter skips four test MODULES at module level (pytest.importorskip(\"scipy\")); those four modules are executed separately with the 2D project interpreter",
+  "generated_from": [
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v4\\512_full_layout\\pytest_full_v4.log",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v4\\512_full_layout\\pytest_opt2d_2d_env_v4.log"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "geometry_count": 1024,
+  "route3d_count": 1024,
+  "track_config": {
+    "board_height": 200.0,
+    "waveguide_width": 0.05,
+    "spacing": 0.125,
+    "bend_radius": 5.0,
+    "tol": 1e-09,
+    "top_u_primary_order": "ascending"
+  },
+  "track_count": 1086,
+  "assignment_status_counts": {
+    "assigned": 960,
+    "unsupported_geometry": 64
+  },
+  "route_types": {
+    "('z', None)": 576,
+    "('u', 'bottom')": 224,
+    "('u', 'top')": 224
+  },
+  "original_height_track_count": 800,
+  "baseline_read_only": true,
+  "allocator_modified": false,
+  "initial_total_length_mm": 226070.8583584702,
+  "dataset_and_geometry_seconds": 0.35877789999358356,
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "initial_collision_pairs": 204291,
+  "initial_unresolved_pairs": 4,
+  "initial_pair_scan_seconds": 40.96634699997958
+}

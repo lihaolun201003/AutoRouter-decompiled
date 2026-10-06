@@ -1,0 +1,165 @@
+{
+  "scale": 512,
+  "dataset": "LEGACY_512_SMOOTHED_P0",
+  "group": {
+    "name": "N1440",
+    "mode": "N",
+    "budget": 1440
+  },
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "stats": {
+    "mode": "N",
+    "appended_candidate_budget": 1440,
+    "max_targets": 200,
+    "initial_collision_pairs": 42909,
+    "initial_unresolved_pairs": 3,
+    "final_collision_pairs": 36995,
+    "final_unresolved_pairs": 3,
+    "net_collision_reduction": 5914,
+    "initial_pair_state_distribution": {
+      "both_routes_unelevated": 42516,
+      "single_route_elevated": 291,
+      "both_routes_elevated": 102,
+      "total": 42909
+    },
+    "final_pair_state_distribution": {
+      "both_routes_unelevated": 36339,
+      "single_route_elevated": 358,
+      "both_routes_elevated": 298,
+      "total": 36995
+    },
+    "accepted_moves": 24,
+    "first_elevations": 24,
+    "relocations": 0,
+    "first_elevation_net_reduction": 5914,
+    "relocation_net_reduction": 0,
+    "total_old_collisions_removed": 6106,
+    "total_new_collisions_created": 192,
+    "generated_candidates": 1449,
+    "candidate_evaluations": 1440,
+    "full_neighbor_checks": 1440,
+    "full_acceptance_passes": 1440,
+    "executed_moves": 24,
+    "budget_exhausted": true,
+    "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+    "target_attempts": 26,
+    "generation_skip_events": 8,
+    "no_movable_route_skip_events": 0,
+    "relocation_candidate_evaluations": 0,
+    "first_elevation_candidate_evaluations": 1440,
+    "stage_length_delta_mm": 13.23528659173462,
+    "final_extra_length_vs_planar_mm": 20.391377417807234,
+    "start_extra_length_vs_planar_mm": 7.156090826072614,
+    "step_length_delta_min_mm": 0.24389191746908523,
+    "final_transition_count": 96,
+    "final_elevated_route_count": 48,
+    "layer_route_counts": {
+      "0": 464,
+      "1": 28,
+      "2": 20
+    },
+    "basic_rejection_reason_counts": {},
+    "full_rejection_reason_counts": {},
+    "generation_failure_reason_counts": {
+      "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 7
+    },
+    "budget_checkpoints": {
+      "720": {
+        "candidate_evaluations": 639,
+        "collision_pair_count": 40327,
+        "cumulative_removed": 2627,
+        "cumulative_created": 45
+      },
+      "1440": {
+        "candidate_evaluations": 1440,
+        "collision_pair_count": 36995,
+        "cumulative_removed": 6106,
+        "cumulative_created": 192
+      },
+      "2880": {
+        "candidate_evaluations": 1440,
+        "collision_pair_count": 36995,
+        "cumulative_removed": 6106,
+        "cumulative_created": 192
+      }
+    },
+    "timings": {
+      "initial_pair_scan_seconds": 0.0,
+      "assignment_seconds": 717.9085123999976,
+      "runtime_seconds": 718.3622714000521
+    },
+    "run_seconds_including_io": 753.8954750000266,
+    "recheck": {
+      "reloaded_route_count": 512,
+      "collision_pair_set_matches_incremental": true,
+      "unresolved_pair_set_matches_incremental": true,
+      "checks": 130816,
+      "recheck_seconds": 27.782973199966364,
+      "final_transition_count": 96,
+      "elevated_route_count": 48,
+      "layer_route_counts": {
+        "0": 464,
+        "1": 28,
+        "2": 20
+      },
+      "length_ledger": {
+        "saved_final_total_length_mm": 70851.70103456463,
+        "recorded_final_total_length_mm": 70851.70103456463,
+        "total_length_matches": true,
+        "stage_length_delta_mm": 13.23528659173462,
+        "stage_length_delta_matches": true,
+        "step_length_delta_sum_mm": 13.235286591743531,
+        "step_delta_sum_matches_stage": true,
+        "final_extra_length_vs_planar_mm": 20.391377417807234,
+        "recorded_final_extra_length_vs_planar_mm": 20.391377417807234,
+        "final_extra_length_matches": true
+      },
+      "final_pair_state_distribution": {
+        "both_routes_unelevated": 36339,
+        "single_route_elevated": 358,
+        "both_routes_elevated": 298,
+        "total": 36995
+      },
+      "verdict": "PASS"
+    },
+    "recheck_geometry": {
+      "endpoint_invariant": true,
+      "joins_C0_C1_direction": true,
+      "transition_radius_pass": true,
+      "xy_projection_preserved": true,
+      "single_elevation_structure": true,
+      "xy_failures": []
+    },
+    "recheck_length_ledger": {
+      "saved_final_total_length_mm": 70851.70103456463,
+      "recorded_final_total_length_mm": 70851.70103456463,
+      "total_length_matches": true,
+      "stage_length_delta_mm": 13.23528659173462,
+      "stage_length_delta_matches": true,
+      "step_length_delta_sum_mm": 13.235286591743531,
+      "step_delta_sum_matches_stage": true,
+      "final_extra_length_vs_planar_mm": 20.391377417807234,
+      "recorded_final_extra_length_vs_planar_mm": 20.391377417807234,
+      "final_extra_length_matches": true
+    }
+  }
+}

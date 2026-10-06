@@ -1,0 +1,24 @@
+% 由 scripts/publication/tables.py 自动生成，请勿手改。
+% 需要宏包：booktabs（\usepackage{booktabs}）
+\begin{table}[htbp]
+  \centering
+  \caption{论文值与复现值对照（256/512/512-R4）}
+  \label{tab:repro-compare}
+  \begin{tabular}{llrrrr}
+    \toprule
+    复现 case & 指标 & 论文值 (dB) & 复现值 (dB) & 绝对差 (dB) & 相对差 (\%) \\
+    \midrule
+    256 通道 R5（论文 4.2） & 平均 & 5.30 & 5.2788 & -0.0212 & -0.40 \\
+     & 最大 & 6.40 & 6.3330 & -0.0670 & -1.05 \\
+    512 通道 R5（论文 4.1） & 平均 & 5.50 & 5.5147 & 0.0147 & +0.27 \\
+     & 最大 & 6.60 & 6.5761 & -0.0239 & -0.36 \\
+    512 通道 R4（论文 4.3） & 平均 & 9.80 & 9.8096 & 0.0096 & +0.10 \\
+     & 最大 & 11.00 & 10.9815 & -0.0185 & -0.17 \\
+    \bottomrule
+  \end{tabular}
+  \par\vspace{2pt}
+  \begin{flushleft}\footnotesize
+  论文值来自论文 4.1/4.2/4.3 节；复现值取自 OpticalWaveguideRouter2D/results 的逐路损耗明细汇总。 \\
+  复现几何与原版布线逐位一致（原版字节码对照），差异来自交叉损耗表的数字化近似。 \\
+  \end{flushleft}
+\end{table}

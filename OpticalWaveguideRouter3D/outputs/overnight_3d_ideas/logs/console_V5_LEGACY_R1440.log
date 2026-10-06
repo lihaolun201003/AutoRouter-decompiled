@@ -1,0 +1,34 @@
+start-state rescan (main) ...
+  main PASS pairs=42909 unresolved=3 elevated=24
+[553073.5] V5_LEGACY_R1440: start mode=R budget=1440 spec={"name": "V5_LEGACY", "target_policy": "LEGACY", "evaluation_policy": "E0_EXHAUSTIVE", "traversal_policy": "BASE", "max_targets": 200, "k_per_target": 16, "family_round_robin": false, "relocation_side_reserve": 0, "waiting_age": false, "route_coverage": false, "multi_anchor": false, "exact_dedup": false, "decision_cache": false, "return_action": false, "cache_structural_skips": false, "window_slack_mm": 1e-05, "notes": ""}
+[553073.5] V5_LEGACY_R1440: start state=main C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter3D\outputs\3d_strategy_v3\512_ablation\D_both_enabled pairs=42909
+[553079.1] V5_LEGACY_R1440: INITIAL_DONE pairs=42909
+[553079.3] V5_LEGACY_R1440: step 1 NO_CANDIDATES_GENERATED pairs=42909 evals=0 0s
+[553079.4] V5_LEGACY_R1440: step 2 NO_CANDIDATES_GENERATED pairs=42909 evals=0 0s
+[553127.8] V5_LEGACY_R1440: step 3 ELEVATED pairs=42648 evals=72 49s
+[553202.2] V5_LEGACY_R1440: step 4 ELEVATED pairs=42392 evals=144 123s
+[553267.7] V5_LEGACY_R1440: step 5 ELEVATED pairs=42139 evals=216 189s
+[553332.2] V5_LEGACY_R1440: step 6 ELEVATED pairs=41888 evals=288 253s
+[553399.4] V5_LEGACY_R1440: step 7 ELEVATED pairs=41639 evals=360 320s
+[553432.1] V5_LEGACY_R1440: step 8 ELEVATED pairs=41386 evals=396 353s
+[553452.5] V5_LEGACY_R1440: step 9 ELEVATED pairs=41111 evals=432 373s
+[553503.4] V5_LEGACY_R1440: step 10 ELEVATED pairs=40843 evals=486 424s
+[553532.7] V5_LEGACY_R1440: step 11 ELEVATED pairs=40583 evals=540 454s
+[553604.9] V5_LEGACY_R1440: step 12 ELEVATED pairs=40327 evals=639 526s
+[553673.4] V5_LEGACY_R1440: step 13 ELEVATED pairs=40072 evals=738 594s
+[553755.5] V5_LEGACY_R1440: step 14 ELEVATED pairs=39820 evals=837 676s
+[553803.3] V5_LEGACY_R1440: step 15 ELEVATED pairs=39573 evals=891 724s
+[553846.6] V5_LEGACY_R1440: step 16 ELEVATED pairs=39328 evals=945 768s
+[553886.2] V5_LEGACY_R1440: step 17 ELEVATED pairs=39089 evals=999 807s
+[553931.1] V5_LEGACY_R1440: step 18 ELEVATED pairs=38845 evals=1053 852s
+[553983.3] V5_LEGACY_R1440: step 19 ELEVATED pairs=38610 evals=1107 904s
+[554035.6] V5_LEGACY_R1440: step 20 ELEVATED pairs=38377 evals=1161 957s
+[554092.3] V5_LEGACY_R1440: step 21 ELEVATED pairs=38148 evals=1233 1013s
+[554111.4] V5_LEGACY_R1440: step 22 ELEVATED pairs=37908 evals=1269 1032s
+[554164.0] V5_LEGACY_R1440: step 23 ELEVATED pairs=37686 evals=1341 1085s
+[554181.1] V5_LEGACY_R1440: step 24 ELEVATED pairs=37453 evals=1377 1102s
+[554198.3] V5_LEGACY_R1440: step 25 ELEVATED pairs=37222 evals=1413 1119s
+[554210.5] V5_LEGACY_R1440: step 26 ELEVATED pairs=36995 evals=1440 1132s
+[554210.9] V5_LEGACY_R1440: done final=36995 moves=24 first=24 reloc=0 ret=0 evals=1440 stop=CANDIDATE_BUDGET_EXHAUSTED
+[554262.1] V5_LEGACY_R1440: recheck PASS checks=130816
+GROUP DONE V5_LEGACY_R1440 PASS

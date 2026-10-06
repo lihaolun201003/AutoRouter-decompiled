@@ -1,0 +1,22 @@
+....................F                                                    [100%]
+================================== FAILURES ===================================
+___________ test_generated_candidates_note_is_the_documented_string ___________
+
+    def test_generated_candidates_note_is_the_documented_string():
+        """The accounting fix declares generated_candidates_note as a STRING that
+        states the raw vs post-policy distinction; three comma-separated literals
+        make it a tuple of three strings instead."""
+        result = run(*crossed_pair_layout(), mode='N', spec=StrategySpec('NOTE'))
+        note = result['ledger']['generated_candidates_note']
+>       assert isinstance(note, str), (
+            'generated_candidates_note must be the documented single string, got %r - join the '
+            'three literals at src/overnight_engine_3d.py lines 897-899 (drop the commas or use '
+            '"".join(...))' % (note,))
+E       AssertionError: generated_candidates_note must be the documented single string, got ('generated_candidates is the RAW generator output; ', 'generated_candidates_after_generation_policy is what survives ', 'dedup and any other generation-policy filtering') - join the three literals at src/overnight_engine_3d.py lines 897-899 (drop the commas or use "".join(...))
+E       assert False
+E        +  where False = isinstance(('generated_candidates is the RAW generator output; ', 'generated_candidates_after_generation_policy is what survives ', 'dedup and any other generation-policy filtering'), str)
+
+tests\test_overnight_engine_3d.py:929: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_overnight_engine_3d.py::test_generated_candidates_note_is_the_documented_string
+1 failed, 20 passed in 127.19s (0:02:07)

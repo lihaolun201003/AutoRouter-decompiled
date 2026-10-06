@@ -1,0 +1,83 @@
+{
+  "task": "overnight 3d strategy v5-v8 + 8 mechanism ablations",
+  "finished_utc": "2026-10-05T16:45:30.788Z",
+  "result": "COMPLETE for rounds v5, v6, v7 and the eight single-factor mechanisms; v8 NOT implemented (engineering breakpoint recorded)",
+  "rounds": {
+    "v5": {
+      "groups": 16,
+      "verdict": "PASS",
+      "adopted": "LEGACY (STRATIFIED not adopted)",
+      "primary_cell": {
+        "LEGACY_R2880": 30999,
+        "STRATIFIED_R2880": 33343
+      }
+    },
+    "v6": {
+      "groups": 24,
+      "verdict": "PASS",
+      "adopted": "E2_ORDERED_K16",
+      "primary_cell": {
+        "E0_R2880": 30999,
+        "E1_R2880": 30999,
+        "E2_R2880": 19233
+      }
+    },
+    "v7": {
+      "groups": 24,
+      "verdict": "PASS",
+      "adopted": "RETAINED_OLD_CONFIG",
+      "primary_cell": {
+        "T0_R2880": 19233,
+        "T1_R2880": 19233,
+        "T2_R2880": 24385
+      }
+    },
+    "ideas": {
+      "groups": 54,
+      "verdict": "PASS",
+      "best_single_factor": "A family round-robin (better at every budget)",
+      "zero_effect": [
+        "B",
+        "C",
+        "F",
+        "G",
+        "H"
+      ],
+      "degraded": [
+        "E",
+        "D(mixed)"
+      ]
+    },
+    "dctrl": {
+      "groups": 8,
+      "verdict": "PASS",
+      "purpose": "single-factor control for idea D"
+    }
+  },
+  "verification": {
+    "groups_total": 126,
+    "pass": 104,
+    "fail": 0,
+    "reused_reference": 22,
+    "reference_fail": 0,
+    "not_finished": 0,
+    "all_finished_groups_pass": true,
+    "note": "dctrl round was initially missing from the verification loop; added and the whole check re-run, report updated"
+  },
+  "tests": {
+    "full_regression": "778 passed, 4 skipped",
+    "engine_targeted": "21 passed"
+  },
+  "not_done": [
+    "v8 path-arc-length windows (not implemented, not run)",
+    "combined strategy (deliberately not run)",
+    "controlled serial timing comparison"
+  ],
+  "report": {
+    "markdown": "docs/reports/step_18_overnight_3d_v5_v8.md",
+    "docx": "publication/report/brief_build/三维布线通宵轮次v5v8实验报告.docx",
+    "pdf": "publication/report/三维布线通宵轮次v5v8实验报告.pdf",
+    "pages": 32
+  },
+  "percent": 92
+}

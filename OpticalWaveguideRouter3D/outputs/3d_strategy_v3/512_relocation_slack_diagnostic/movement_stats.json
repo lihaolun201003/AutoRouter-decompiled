@@ -1,0 +1,107 @@
+{
+  "counting_rule": "a candidate is one basic evaluate_elevation call, rejections included; reason occurrences count reason strings and may exceed the number of rejected candidates because one candidate can carry several reasons; candidates_with_reason counts each candidate once per reason; the two are never summed",
+  "modes": {
+    "D": {
+      "FIRST_ELEVATION": {
+        "victim_attempts_total": 8,
+        "victim_attempts_with_generation": 8,
+        "victim_attempts_skipped_no_generation": 0,
+        "skip_statuses": {},
+        "generated_candidates": 324,
+        "basic_evaluations": 324,
+        "basic_passed": 324,
+        "basic_rejected": 0,
+        "full_acceptance_checks": 324,
+        "full_acceptance_passed": 324,
+        "accepted_edits": 8,
+        "generation_failures": {},
+        "basic_rejection_reason_occurrences": {},
+        "basic_rejection_candidates_with_reason": {},
+        "full_rejection_reason_occurrences": {},
+        "full_rejection_candidates_with_reason": {}
+      },
+      "RELOCATION": {
+        "victim_attempts_total": 28,
+        "victim_attempts_with_generation": 0,
+        "victim_attempts_skipped_no_generation": 28,
+        "skip_statuses": {
+          "ROUTE_ALREADY_ELEVATED_NOT_ALLOWED_IN_D": 28
+        },
+        "generated_candidates": 0,
+        "basic_evaluations": 0,
+        "basic_passed": 0,
+        "basic_rejected": 0,
+        "full_acceptance_checks": 0,
+        "full_acceptance_passed": 0,
+        "accepted_edits": 0,
+        "generation_failures": {},
+        "basic_rejection_reason_occurrences": {},
+        "basic_rejection_candidates_with_reason": {},
+        "full_rejection_reason_occurrences": {},
+        "full_rejection_candidates_with_reason": {}
+      }
+    },
+    "E": {
+      "FIRST_ELEVATION": {
+        "victim_attempts_total": 8,
+        "victim_attempts_with_generation": 8,
+        "victim_attempts_skipped_no_generation": 0,
+        "skip_statuses": {},
+        "generated_candidates": 324,
+        "basic_evaluations": 324,
+        "basic_passed": 324,
+        "basic_rejected": 0,
+        "full_acceptance_checks": 324,
+        "full_acceptance_passed": 324,
+        "accepted_edits": 8,
+        "generation_failures": {},
+        "basic_rejection_reason_occurrences": {},
+        "basic_rejection_candidates_with_reason": {},
+        "full_rejection_reason_occurrences": {},
+        "full_rejection_candidates_with_reason": {}
+      },
+      "RELOCATION": {
+        "victim_attempts_total": 16,
+        "victim_attempts_with_generation": 16,
+        "victim_attempts_skipped_no_generation": 0,
+        "skip_statuses": {},
+        "generated_candidates": 18,
+        "basic_evaluations": 18,
+        "basic_passed": 9,
+        "basic_rejected": 9,
+        "full_acceptance_checks": 9,
+        "full_acceptance_passed": 1,
+        "accepted_edits": 1,
+        "generation_failures": {
+          "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 4,
+          "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 11
+        },
+        "basic_rejection_reason_occurrences": {
+          "TARGET_NOT_CLEARED": 9
+        },
+        "basic_rejection_candidates_with_reason": {
+          "TARGET_NOT_CLEARED": 9
+        },
+        "full_rejection_reason_occurrences": {
+          "NO_STRICT_GLOBAL_DECREASE": 8
+        },
+        "full_rejection_candidates_with_reason": {
+          "NO_STRICT_GLOBAL_DECREASE": 8
+        }
+      }
+    }
+  },
+  "step_status": {
+    "D": {
+      "NO_MOVABLE_ROUTE": 10,
+      "ELEVATED": 8,
+      "TARGET_NO_LONGER_COLLIDING": 2
+    },
+    "E": {
+      "NO_CANDIDATES_GENERATED": 3,
+      "RELOCATED": 1,
+      "TARGET_NO_LONGER_COLLIDING": 8,
+      "ELEVATED": 8
+    }
+  }
+}

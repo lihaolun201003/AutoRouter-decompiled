@@ -1,0 +1,90 @@
+{
+  "scale": 512,
+  "dataset": "LEGACY_512_SMOOTHED_P0",
+  "input_files": [
+    "outputs/step_8_5_legacy_512_plot_geometry.json",
+    "outputs/step_8_5_legacy_512_physical_events.jsonl"
+  ],
+  "input_sha256": {
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_plot_geometry.json": "14403f100b73c22f89ea07cf329822347ad541dc6674e1949996a7d5f0523821",
+    "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\step_8_5_legacy_512_physical_events.jsonl": "af7e4edffc63e9f1193449494c834f73666ad5b15830a9de9d6185ea3a2e3eb8"
+  },
+  "start_state_directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\3d_strategy_v4\\512_full_layout\\N2880",
+  "start_kind": "challenge",
+  "start_state_sha256": {
+    "final_routes.json": "e251b2cbd856a6fbacf09f79f0cd7c20d180caf9c917299833dc8e93f027539e",
+    "collision_sets.json": "f3fc876f72e5fbc6d9e21ca6700e7ceec6087e8999779a5acd380c11a7422e69",
+    "ledger.json": "daa25db6aa9b3bd942d790997c04c94824a808b0c2aa8e6c64dea21a8764e5f5",
+    "decisions.json": "c711d5f295c8b8782fe90cb5190f4e9c732cedf55a37eca8f4d29532cf2c041e",
+    "summary.json": "671b255bbf4c3915549287135c8a7c1755447e9537063071c2c94c1ddc0502b3"
+  },
+  "configuration": {
+    "layers": [
+      {
+        "id": 0,
+        "z": 0.0
+      },
+      {
+        "id": 1,
+        "z": 1.0
+      },
+      {
+        "id": 2,
+        "z": 2.0
+      }
+    ],
+    "clearance_mm": 0.1,
+    "required_radius_mm": 5.0,
+    "transition_policy": "LINE_ONLY_FINITE_WINDOWS",
+    "parameter_status": "EXPERIMENTAL_SYNTHETIC"
+  },
+  "strategy": "V8_G1",
+  "strategy_spec": {
+    "name": "V8_G1",
+    "target_policy": "LEGACY",
+    "evaluation_policy": "E2_ORDERED_K16",
+    "traversal_policy": "BASE",
+    "max_targets": 200,
+    "k_per_target": 16,
+    "family_round_robin": false,
+    "relocation_side_reserve": 0,
+    "waiting_age": false,
+    "route_coverage": false,
+    "multi_anchor": false,
+    "exact_dedup": false,
+    "decision_cache": false,
+    "return_action": false,
+    "cache_structural_skips": false,
+    "window_slack_mm": 1e-05,
+    "generation_domain": "PATH_WINDOWS",
+    "path_window_settings": {
+      "placements": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "length_factors": [
+        1.0,
+        1.5,
+        2.0,
+        3.0
+      ],
+      "cap": 4096
+    },
+    "stage_length_cap_mm": null,
+    "notes": ""
+  },
+  "mode": "R",
+  "allow_relocation": true,
+  "appended_candidate_budget": 2880,
+  "max_targets": 200,
+  "candidate_budget_scope": "appended to the start state; the historical evaluations that produced it are excluded",
+  "generation_failure_cache": true,
+  "round": "v8",
+  "group": "V8_G1_RC2880",
+  "control": "ADOPTED_V7_T0_V6_E2",
+  "adoption": {},
+  "adoption_rule": "correctness and recheck PASS first; then the fixed MAIN R2880 terminal near-distance pair count (fewer adopts); tie -> smaller stage length delta; tie -> fewer actual evaluations; tie -> keep the old config",
+  "manifest_sha256": "da89467a7650b8b3b471c83dc30db7ba0c7eaa6bc191e66c1a5a5df5ffefec1a",
+  "tag": "boundaryfix"
+}

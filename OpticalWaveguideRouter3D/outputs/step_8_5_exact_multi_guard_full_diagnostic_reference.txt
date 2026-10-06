@@ -1,0 +1,111 @@
+"""Opt-in exact candidate guard; committed routes never move."""
+from collections import ChainMap, Counter
+from dataclasses import dataclass, asdict
+from itertools import combinations
+from time import perf_counter
+from .models import SmoothedRoute2D
+from .collision import find_smoothed_route_intersections_2d
+from .physical_intersections import consolidate_route_intersections_2d
+from .multi_crossing import classify_multi_crossing, build_crossing_pair_map
+
+
+@dataclass
+class CandidateEvaluation:
+    """Temporary pair events and verdict, valid for one committed generation."""
+    route: SmoothedRoute2D
+    generation: int
+    events: dict
+    witness: object | None
+
+
+class ExactMultiCrossingGuard:
+    """Reject only definite eligible multi; diagnostics are not constraints."""
+
+    def __init__(self, spacing_mm: float = 0.125, tol: float = 1e-9):
+        if not 0 <= tol < spacing_mm:
+            raise ValueError("Require positive spacing and smaller nonnegative tolerance.")
+        self.spacing_mm, self.tol = spacing_mm, tol
+        self.routes: dict[int, SmoothedRoute2D] = {}
+        self.pair_cache: dict = {}
+        self.cross_cache: dict = {}
+        self.stats = Counter()
+        self.timings = Counter()
+        self.rejections: list[dict] = []
+        self.rejected_ids: set[int] = set()
+        self.later_assigned: set[int] = set()
+        self.exhausted: list[int] = []
+
+    def evaluate(self, route: SmoothedRoute2D) -> CandidateEvaluation:
+        """Read committed geometry/cache; keep all candidate events temporary."""
+        if route.waveguide_id in self.routes:
+            raise ValueError("Route already committed.")
+        self.stats['guard_evaluation_count'] += 1
+        events = {}
+        for identifier, existing in sorted(self.routes.items()):
+            t = perf_counter()
+            raw = find_smoothed_route_intersections_2d(route, existing, self.tol)
+            self.timings['candidate_existing_collision'] += perf_counter() - t
+            t = perf_counter()
+            physical = consolidate_route_intersections_2d(route, existing, raw, self.tol)
+            self.timings['physical_consolidation'] += perf_counter() - t
+            events[tuple(sorted((identifier, route.waveguide_id)))] = physical
+            self.stats['candidate_existing_pair_checks'] += 1
+        t = perf_counter()
+        crosses = build_crossing_pair_map(e for value in events.values() for e in value)
+        neighbors = sorted(i for i in self.routes if tuple(sorted((i, route.waveguide_id))) in crosses)
+        pairs = ChainMap(crosses, self.cross_cache)
+        witness = None
+        # No early exit: diagnostics and deterministic minimum witness cover all triangles.
+        for a, b in combinations(neighbors, 2):
+            if (a, b) not in self.cross_cache:
+                continue
+            ids = tuple(sorted((a, b, route.waveguide_id)))
+            result = classify_multi_crossing(ids, pairs, self.spacing_mm, self.tol)
+            self.stats['candidate_triplet_evaluations'] += 1
+            if result.classification == 'multi_waveguide_crossing':
+                if witness is None or result.route_ids < witness.route_ids:
+                    witness = result
+            elif result.classification == 'boundary':
+                self.stats['guard_boundary_observations'] += 1
+            elif result.classification == 'outside_legacy_single_cross_assumption':
+                self.stats['guard_outside_observations'] += 1
+        self.timings['triplet_guard_evaluation'] += perf_counter() - t
+        return CandidateEvaluation(route, len(self.routes), events, witness)
+
+    def reject(self, evaluation: CandidateEvaluation, track_index: int, track_y: float) -> None:
+        """Record a rejection without publishing geometry or pairs."""
+        if evaluation.witness is None:
+            raise ValueError("Cannot reject without a definite multi witness.")
+        t = perf_counter()
+        self.stats['guard_multi_rejections'] += 1
+        self.rejected_ids.add(evaluation.route.waveguide_id)
+        self.rejections.append(dict(waveguide_id=evaluation.route.waveguide_id,
+            track_index=track_index, track_y=track_y, witness=asdict(evaluation.witness)))
+        self.timings['candidate_reject_commit'] += perf_counter() - t
+
+    def commit(self, evaluation: CandidateEvaluation) -> None:
+        """Publish accepted events only, refusing stale candidate evaluations."""
+        if evaluation.witness is not None or evaluation.generation != len(self.routes):
+            raise ValueError("Rejected or stale candidate cannot commit.")
+        identifier = evaluation.route.waveguide_id
+        if identifier in self.routes:
+            raise ValueError("Route already committed.")
+        t = perf_counter()
+        self.routes[identifier] = evaluation.route
+        self.pair_cache.update(evaluation.events)
+        self.cross_cache.update(build_crossing_pair_map(
+            e for value in evaluation.events.values() for e in value))
+        if identifier in self.rejected_ids:
+            self.later_assigned.add(identifier)
+        self.timings['candidate_reject_commit'] += perf_counter() - t
+
+    def summary(self) -> dict:
+        """Return explicit zero counters as well as observations."""
+        keys = ('candidate_attempt_count', 'guard_evaluation_count',
+                'candidate_existing_pair_checks', 'candidate_triplet_evaluations',
+                'guard_multi_rejections', 'guard_boundary_observations',
+                'guard_outside_observations', 'allocator_base_checks')
+        return dict(**{k: self.stats[k] for k in keys},
+            unique_waveguides_rejected=len(self.rejected_ids),
+            rejected_then_later_assigned=len(self.later_assigned),
+            guard_exhausted_waveguides=list(self.exhausted), timings=dict(self.timings))

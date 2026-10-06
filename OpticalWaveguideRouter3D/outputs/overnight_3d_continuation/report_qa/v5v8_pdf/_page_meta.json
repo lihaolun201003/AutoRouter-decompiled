@@ -1,0 +1,376 @@
+[
+ {
+  "page": 1,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "页尾表头悬空，其数据行全部落到第2页",
+  "findings": [
+   "中文为真实字形，标题、正文、括号全角标点均正常，未见方框/豆腐块/乱码/缺字",
+   "页尾仅有一条表头行『组|终态近距对|动作|首次抬升|重定位|评价|阶段长度(mm)|与 v4』，其 6 行数据全部排在第 2 页页首，且第 2 页未重复表头 → 表头孤行 + 跨页表头缺失",
+   "全局问题 G1：段落内硬换行残留，句子中途被拆行，如『…42,909 近距对、』换行后『3 未决、24 已抬升）』另起一行并缩进，行距不均",
+   "全局问题 G2：内联代码字面反引号被印出，如 `src/overnight_engine_3d.py`",
+   "全页无越界、无裁切，中文与英文/数字混排未出现错误断词"
+  ]
+ },
+ {
+  "page": 2,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "承接第1页：6 行数据表无表头",
+  "findings": [
+   "页首为 V5_LEGACY_N720…R2880 共 6 行数据，无表头（表头留在第 1 页页尾）→ 跨页表格表头未重复",
+   "1.1 主试结果表 11 列，表头与数据同页，千分位数字、负号(−)、箭头(→) 显示正确",
+   "单元格内换行：『STRATIFIED N』被拆成两行显示，可读但略突兀",
+   "中文正常，无缺字、无越界、无裁切",
+   "全文 11 张表均无『表 X』题注（全局问题 G3）"
+  ]
+ },
+ {
+  "page": 3,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "两表均表头+数据同页",
+  "findings": [
+   "1.2 / 1.3 两张表表头与数据同页完整，数字、百分比、+/− 号显示正常",
+   "『STRATIFIED R 挑战 2880』等长单元格文字折行，未溢出、未裁切",
+   "中文为真实字形，无豆腐块；英文术语未在词中断开",
+   "存在全局性问题 G1（硬换行残留）与 G2（反引号残留），非本页特有"
+  ]
+ },
+ {
+  "page": 4,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "纯文本页",
+  "findings": [
+   "1.4/1.5/二、2.x 正文与小节标题，中英混排正常，中文无缺字",
+   "『PASS』『LEGACY』『STRATIFIED』等英文词未被错误断行",
+   "无表格、无图、无越界、无裁切",
+   "存在全局性问题 G1、G2，非本页特有"
+  ]
+ },
+ {
+  "page": 5,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "Markdown 标题标记泄漏到正文（已放大取证）",
+  "findings": [
+   "【确认缺陷】正文出现字面 Markdown 标记：『对照 E0/E1 = 21,351。### 2.3 关键结论』——`###` 未被转换为标题而直接印在正文段落内，且『2.3 关键结论』因此未被排成标题样式，而是粘在上一段句尾",
+   "证据：pages/page_05.png 及 5× 放大图 _zoom_p5_heading2.png",
+   "2.2 正式结果表表头 + 7 行数据同页完整，mm 单位与百分比正常",
+   "中文正常，无缺字、无裁切、无越界"
+  ]
+ },
+ {
+  "page": 6,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "编号列表与标题正常",
+  "findings": [
+   "4~6 号编号列表层级与缩进正常",
+   "『PER_TARGET_K_PREFIX』『CANDIDATE_BUDGET_EXHAUSTED』『TARGET_LIMIT』等长英文标识符完整，未在词中断开",
+   "『2.4 采纳结论』标题样式（蓝色加粗）正常",
+   "存在全局性问题 G1、G2，非本页特有"
+  ]
+ },
+ {
+  "page": 7,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "3.1 表表头与数据同页",
+  "findings": [
+   "3.1 结果表 7 行×7 列，表头与数据同页，挑战列内括号说明折行合理，未溢出",
+   "3.2/3.3 正文与箭头(→)显示正常，中文无缺字",
+   "无裁切、无越界",
+   "存在全局性问题 G1、G2，非本页特有"
+  ]
+ },
+ {
+  "page": 8,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "4.1 表末行在页底被切断",
+  "findings": [
+   "机制消融总表（BASE/A/B/C/E/F/G/H）表头 + 8 行数据同页完整；D 未列入总表，由 4.4 单独给出对照表，与源文结构一致，不属缺陷",
+   "【确认缺陷】4.1 表最后一行『2880 R | 19,233 | 18,459 | −774 | 53.625801 | 69.234133 | 2,664 / 达目标上限』在页面下缘被强行断开：本页只印出『2,664 / 达』，剩余文字落到第 9 页",
+   "证据：pages/page_08.png 与 pages/page_09.png 对照"
+  ]
+ },
+ {
+  "page": 9,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "承接第8页：页首出现表格残行",
+  "findings": [
+   "【确认缺陷】页首出现第 8 页 4.1 表被拆分后的残行：该行 6 个单元格为空、仅末列印出『目标上限』，且该残行没有重复表头，读者无法判断其归属",
+   "其余为 4.2/4.3 正文与项目符号列表，跨页断行位置合理，中文正常，无裁切、无越界",
+   "全局性问题 G2：`dedup_removed_duplicates = 0` 等反引号残留"
+  ]
+ },
+ {
+  "page": 10,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "4.4 表完整",
+  "findings": [
+   "4.4 对照表表头 + 6 行数据同页完整，单元格内『（1,817 次评价，达目标上限）』折行合理，未溢出、未裁切",
+   "『五、测试、复核与产物』标题层级正常",
+   "『778 passed, 4 skipped（436.75 s）』等数字与英文未被截断或错误断行",
+   "存在全局性问题 G1、G2，非本页特有"
+  ]
+ },
+ {
+  "page": 11,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "5.2 复核表完整",
+  "findings": [
+   "5.2 全量复核表（项/数量）表头 + 6 行同页完整，『PASS 104』『FAIL 0』『引用基线 22』等数值清晰可读",
+   "正文中 passed/skipped/return/transition 等英文词完整，未在词中断开",
+   "中文正常，无缺字、无越界、无裁切",
+   "存在全局性问题 G1、G2，非本页特有"
+  ]
+ },
+ {
+  "page": 12,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "反引号残留最密集的一页；本页自述未做像素级检查",
+  "findings": [
+   "5.3 交付产物为反引号密集列表，字面反引号使版面明显杂乱——全局问题 G2 在本页最突出",
+   "本页正文自述：『本环境未找到技能所要求的 bundled LibreOffice kit，因此没有做逐页位图渲染检查…排版外观未经像素级检查』，与本轮逐页视觉验收的必要性一致",
+   "『共 32 张 PNG』『331 段、11 张表、32 张内嵌图』『32 页』等数字完整，与本 PDF 实际情况（32 页、32 幅图）一致",
+   "无裁切、无越界"
+  ]
+ },
+ {
+  "page": 13,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "5.4 缺陷记录 3 条 + 5.5 流程偏差 3 条，编号与缩进正常，中文无缺字",
+   "`generated_candidates_note` 等长标识符完整；跨行处不在词中断开",
+   "无表格溢出、无裁切、无越界"
+  ]
+ },
+ {
+  "page": 14,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "六、本轮结论 与 6.1/6.2 正文，数字、箭头(→)、负号(−) 显示正常",
+   "『40,072→33,738』『33,343 vs 30,999』『+4,212』等关键数值完整未被截断",
+   "中文为真实字形，无豆腐块、无缺字"
+  ]
+ },
+ {
+  "page": 15,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "6.3/6.4 项目符号列表正常；7.2 剩余队列表表头『项|状态』与 5 行数据同页完整",
+   "『v8 生成域 G0/G1 与几何支持链』等长单元格折行，未溢出页边",
+   "无裁切、无越界、无空白页"
+  ]
+ },
+ {
+  "page": 16,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "正文结束 + 附录首图；图题位置正确",
+  "findings": [
+   "7.3 命令行块以近似等宽字体呈现，路径反斜杠、参数(--round、-ExecutionPolicy Bypass)完整，命令自动换行处续行缩进合理，未见字符被吃掉",
+   "7.4 一句话结论正常",
+   "【图】附录首图 v5_f1_pairs_vs_budget：双子图 (a)(b) 完整，坐标轴、图例、数值标注齐全，未被裁切",
+   "【图题位置正确】图题『v5 目标调度 v5_f1_pairs_vs_budget （v5_f1_pairs_vs_budget.png）』位于图片下方并居中，符合规范",
+   "图内左下角『数据来源: …comparison.csv』注释折算字号约 2.5pt，印刷后不可读（全局问题 G4）"
+  ]
+ },
+ {
+  "page": 17,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "两幅图均完整，图题在图下方",
+  "findings": [
+   "两幅图 v5_f2_same_budget_N_vs_R（双子图）与 v5_f3_actions_and_reductions（双子图）均完整、未被裁切",
+   "两图图题均位于各自图下方并居中，位置规范",
+   "柱状图 x 轴分组标签旋转 90° 且折算字号约 4pt，正常阅读距离辨识困难（图设计问题，全局 G4）",
+   "图内『数据来源』注释放大后才可辨认"
+  ]
+ },
+ {
+  "page": 18,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "单幅大图；下部留白约 35-40%",
+  "findings": [
+   "单幅大图 v5_f4_costs（2×2 四子图）完整，四个子图标题、刻度、数值标注齐全，未被裁切",
+   "图题位于图下方并居中，位置规范",
+   "图下方留白约占页高 35-40%，系下一幅大图无法排入本页所致，属正常分页，非内容缺失、非空白页"
+  ]
+ },
+ {
+  "page": 19,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "两幅图 v5_f5_evaluation_efficiency 与 v5_f6_coverage 均完整、未裁切",
+   "图例、双色柱、数值标注齐全；图题均在图下方并居中",
+   "无越界、无重叠"
+  ]
+ },
+ {
+  "page": 20,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "本页 3 幅图，其中 group_table 不可读",
+  "findings": [
+   "本页排入三幅图：v5_f7_failures_and_stops、v5_f8_group_table、v6_f1_pairs_vs_budget，三图均完整未裁切，三图图题均在图下方居中",
+   "【确认缺陷】v5_f8_group_table 为 15 行×14 列的宽表截图，被缩放到 439×126pt（源图 1219×349px）→ 表内文字折算印刷字号约 3.2pt，正常阅读距离完全不可读（图像本身约 200 DPI 清晰，属缩放过大而非分辨率不足）",
+   "证据：pages/page_20.png 与 6× 放大图 _zoom_p20_grouptable.png（放大后方可辨认）"
+  ]
+ },
+ {
+  "page": 21,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "已放大核对，图未被裁切",
+  "findings": [
+   "两幅图：v6_f2_same_budget_N_vs_R（3 联子图 E0/E1/E2）与 v6_f3_actions_and_reductions（2 联）",
+   "已用 4× 放大图 _zoom_p21_fig1.png 核对：三个子图的坐标轴、图例、数值标注齐全，第三联未被右侧裁切",
+   "两图图题均在图下方居中，位置规范",
+   "3 联图压缩在 439pt 宽内，轴刻度与图例折算字号约 4pt，印刷偏小（全局 G4）",
+   "页面下部约 35% 留白，属正常分页"
+  ]
+ },
+ {
+  "page": 22,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "单幅大图 v6_f4_costs（2×2 子图）完整未裁切，图题在图下方居中",
+   "下部约 35% 留白，属正常分页"
+  ]
+ },
+ {
+  "page": 23,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "两幅图 v6_f5_evaluation_efficiency 与 v6_f6_coverage 完整未裁切",
+   "图题均在图下方居中；下部留白属正常分页"
+  ]
+ },
+ {
+  "page": 24,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "group_table 不可读 + 末图图题被推到下一页",
+  "findings": [
+   "三幅图：v6_f7_failures_and_stops、v6_f8_group_table、v7_f1_pairs_vs_budget，三图本身完整未裁切",
+   "【确认缺陷 1】v6_f8_group_table 为 21 行×14 列宽表截图，源图 1219×386px 缩放到 439×139pt，表内文字折算字号约 3.2pt，不可读（见 6× 放大图 _zoom_p24_grouptable.png）",
+   "【确认缺陷 2】末图 v7_f1_pairs_vs_budget 排在 y485.6–696.8pt，其图题在本页排不下，被推到第 25 页页首",
+   "证据：pages/page_24.png 与 _zoom_p24_bottom.png（本页图下方只有『数据来源』脚注，无图题）"
+  ]
+ },
+ {
+  "page": 25,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "页首孤立图题，与自己的图分离且紧邻另一幅图",
+  "findings": [
+   "【确认缺陷】页首 y71.7pt 出现『v7 目标覆盖 v7_f1_pairs_vs_budget （v7_f1_pairs_vs_budget.png）』——该图题属于第 24 页末的图，跨页后与图分离；其正下方紧排的却是另一幅图 v7_f2（3 联 V7.T0/T1/T2），读者极易把图题误配到 v7_f2 上",
+   "证据：5× 放大图 _zoom_p25_top.png 与 _zoom_p24_bottom.png 对照",
+   "本页其余顺序正确：图 v7_f2 → 图题 v7_f2 → 图 v7_f3 → 图题 v7_f3，配对无误",
+   "两幅图均完整未裁切，图题居中于图下方；下部留白属正常分页"
+  ]
+ },
+ {
+  "page": 26,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "",
+  "findings": [
+   "单幅大图 v7_f4_costs（2×2）完整未裁切，图题在图下方居中",
+   "下部约 35% 留白，属正常分页"
+  ]
+ },
+ {
+  "page": 27,
+  "verdict": "OK",
+  "global_issues_apply": true,
+  "notes": "已放大复核，图内标注正常",
+  "findings": [
+   "两幅图 v7_f5_evaluation_efficiency 与 v7_f6_coverage 完整未裁切，图题均在图下方居中",
+   "曾怀疑左子图个别柱顶数值标注异常，用 5× 放大图 _zoom_p27_panels.png 复核：标注实为 16.00/16.34/16.09 与 8.4948/6.4437/8.2208/5.8291/5.1090 等正常值，未见截断或乱码，该疑点排除"
+  ]
+ },
+ {
+  "page": 28,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "group_table 不可读 + 末图图题被推到下一页 + 图例遮挡数据",
+  "findings": [
+   "三幅图：v7_f7_failures_and_stops、v7_f8_group_table、ideas_f1_pairs_vs_budget",
+   "【确认缺陷 1】v7_f8_group_table 为多行×14 列宽表截图（源图 1219×391px 缩放到 439×141pt），表内文字折算字号约 3pt，不可读",
+   "【确认缺陷 2】末图 ideas_f1_pairs_vs_budget 排在页面底部 y487.5–698.1pt，其图题被推到第 29 页页首（与第 24→25 页同一模式）",
+   "【图内问题】ideas_f1 的 (a) 子图含 18 项图例，图例框排在图内右半部并压住曲线末端与数值标注（图例遮挡数据）；(b) challenge 子图为空图（仅有『challenge 起点尚无已完成组』说明），占据较大空白区"
+  ]
+ },
+ {
+  "page": 29,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "页首孤立图题 + ideas_f2 被压成 58pt 窄条",
+  "findings": [
+   "【确认缺陷 1】页首 y71.7pt 为第 28 页末图 ideas_f1_pairs_vs_budget 的图题，与其图分离，且正下方紧邻的是另一幅图，易误配（与第 25 页同一模式）",
+   "【确认缺陷 2】图 ideas_f2_same_budget_N_vs_R 源图为 1219×161px，排版高度仅 58pt：多个小面板被压成一条，图内文字与数字完全不可读，其『数据来源』注释渲染为一团灰色涂抹",
+   "证据：pages/page_29.png（页首窄条图）",
+   "其后的 ideas_f3_actions_and_reductions（1219×696px）完整、可读，图题在图下方居中",
+   "页面下部约 40% 留白，属正常分页"
+  ]
+ },
+ {
+  "page": 30,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "x 轴刻度标签严重重叠（已放大取证）",
+  "findings": [
+   "图 ideas_f4_costs（2×2 子图）本身完整未裁切，图题在图下方居中",
+   "【确认缺陷】因分组数过多（数十组 IDEAS.* 名称），四个子图的 x 轴刻度标签互相重叠、堆叠成 3~4 行，渲染为一整片灰色不可读区域；这不是单纯字号小，而是标签真实互相叠印",
+   "证据：9× 放大图 _zoom_p30_ticks.png（可见 'IDEAS.A_FAMILY_N720'、'IDEAS.B_N720' 等数十个标签完全叠在一起）",
+   "柱体与柱顶数值标注本身清晰可辨"
+  ]
+ },
+ {
+  "page": 31,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "刻度标签重叠 + 数值标注互相重叠并覆盖柱体",
+  "findings": [
+   "两幅图 ideas_f5_evaluation_efficiency 与 ideas_f6_coverage 完整未裁切，图题均在图下方居中",
+   "【确认缺陷】x 轴刻度标签与第 30 页同一原因严重重叠成灰色不可读块；此外 ideas_f5 (a) 子图中一组低值柱的数值标注互相重叠并覆盖在柱体上，形成不可读灰块",
+   "证据：7× 放大图 _zoom_p31_boxes.png",
+   "页面下部约 40% 留白，属正常分页"
+  ]
+ },
+ {
+  "page": 32,
+  "verdict": "ISSUE",
+  "global_issues_apply": true,
+  "notes": "末页；刻度标签重叠 + group_table 不可读",
+  "findings": [
+   "末页排入 ideas_f7_failures_and_stops 与 ideas_f8_group_table 两幅图，图与图题配对正确（图 → 图题），全文 32 幅图各有且仅有一个图题，计数一致",
+   "【确认缺陷 1】ideas_f7 的 x 轴刻度标签同样严重重叠成灰色不可读块",
+   "【确认缺陷 2】ideas_f8_group_table 为超多行×14 列宽表截图，行高极小，文字折算字号约 2.5pt，不可读",
+   "【观感问题】ideas_f7 (c) 子图红柱柱顶与坐标区上边界齐平（y 上限等于数值，无留白），观感上像被截断；柱旁的分组明细标注文字极小且与绘图区重叠。经 7× 放大核对（_zoom_p32_panelb.png），柱体本身未被裁切，故仅记为观感问题而非数据裁切",
+   "文档在此页正常结束，无截断、无空白尾页"
+  ]
+ }
+]

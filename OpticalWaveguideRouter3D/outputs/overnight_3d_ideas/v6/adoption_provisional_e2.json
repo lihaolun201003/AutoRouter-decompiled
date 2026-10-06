@@ -1,0 +1,19 @@
+{
+  "status": "PROVISIONAL",
+  "decided_at": "2026-10-05T14:21:27.072Z",
+  "reason": "v6's formal adoption rule needs its MAIN R2880 R-mode cell, which is still running. This freezes the evaluation policy that every completed and in-flight v6 cell already selects by a very large margin, so the v7 groups can be scheduled without changing any decision rule.",
+  "observed_before_launch": {
+    "v6_720_in_flight": {
+      "V6_E1_N720_at_486_evals": 40843,
+      "V6_E2_N720_at_576_evals": 35543
+    },
+    "v5_adopted_baseline": {
+      "V5_LEGACY_R2880": 30999
+    }
+  },
+  "decision_rule": "unchanged: scripts/overnight_registry.py ADOPTION_RULE, primary criterion = MAIN R2880 R-mode terminal near-distance pair count",
+  "target_policy": "LEGACY",
+  "evaluation_policy": "E2_ORDERED_K16",
+  "k_per_target": 16,
+  "adopted_group": null
+}

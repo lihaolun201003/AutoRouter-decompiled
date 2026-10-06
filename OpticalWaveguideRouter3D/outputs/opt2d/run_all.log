@@ -1,0 +1,72 @@
+=== 256 通道：开始 ===
+[A] 原版 R5 ...
+waveguide_density:  0.0796
+min angle:  35.0
+count:  18936
+    mean=5.27857 max=6.33332
+[B] 统一半径 R6 重布线 ...
+waveguide_density:  0.0797
+min angle:  32.0
+count:  37872
+    mean=4.33599 unplaced=0
+[C] 候选轨道优化（R5 固定，多候选 + 拆线重布）...
+waveguide_density:  0.0798
+min angle:  20.0
+count:  56824
+    mean=5.27721 unplaced=0
+[D] 自适应半径（R5/R6 联合选择 + 拆线重布）...
+waveguide_density:  0.0805
+min angle:  18.0
+count:  75862
+    mean=4.33942 unplaced=0 radii={6.0: 256}
+    [消融] cand_k1              mean=5.27857 unplaced=0
+    [消融] cand_k4              mean=5.27797 unplaced=0
+    [消融] cand_k8              mean=5.27721 unplaced=0
+    [消融] cand_k16             mean=5.27676 unplaced=0
+    [消融] order_span           mean=5.41820 unplaced=76
+    [消融] order_congestion     mean=5.28390 unplaced=33
+    [消融] refine_on            mean=5.27721 unplaced=0
+    [消融] penalty_0            mean=5.29507 unplaced=59
+    [消融] penalty_0.001        mean=5.27721 unplaced=0
+    [消融] penalty_0.01         mean=5.27857 unplaced=0
+    [消融] penalty_0.05         mean=5.27857 unplaced=0
+    [消融] radius_fixed_R6      mean=4.33942 unplaced=0
+    [消融] radius_adaptive      mean=4.33942 unplaced=0
+图表：loss_distribution.png, loss_breakdown.png, metric_comparison.png, worst_route_A.png, worst_route_B.png, worst_route_C.png, worst_route_D.png
+=== 256 通道：完成 ===
+=== 512 通道：开始 ===
+[A] 原版 R5 ...
+waveguide_density:  0.1617
+min angle:  14.0
+count:  162339
+    mean=5.51616 max=6.57729
+[B] 统一半径 R6 重布线 ...
+waveguide_density:  0.1617
+min angle:  5.0
+count:  248689
+    mean=4.55822 unplaced=2
+[C] 候选轨道优化（R5 固定，多候选 + 拆线重布）...
+waveguide_density:  0.1616
+min angle:  5.0
+count:  335094
+    mean=5.51461 unplaced=0
+[D] 自适应半径（R5/R6 联合选择 + 拆线重布）...
+waveguide_density:  0.1622
+min angle:  5.0
+count:  421360
+    mean=4.55929 unplaced=0 radii={6.0: 510, 5.0: 2}
+    [消融] cand_k1              mean=5.51616 unplaced=0
+    [消融] cand_k4              mean=5.51461 unplaced=0
+    [消融] cand_k8              mean=5.51461 unplaced=0
+    [消融] cand_k16             mean=5.51461 unplaced=0
+    [消融] order_span           mean=5.64708 unplaced=144
+    [消融] order_congestion     mean=5.46221 unplaced=99
+    [消融] refine_on            mean=5.51461 unplaced=0
+    [消融] penalty_0            mean=5.49484 unplaced=113
+    [消融] penalty_0.001        mean=5.58169 unplaced=44
+    [消融] penalty_0.01         mean=5.51461 unplaced=0
+    [消融] penalty_0.05         mean=5.51542 unplaced=0
+    [消融] radius_fixed_R6      mean=4.55642 unplaced=2
+    [消融] radius_adaptive      mean=4.55929 unplaced=0
+图表：loss_distribution.png, loss_breakdown.png, metric_comparison.png, worst_route_A.png, worst_route_B.png, worst_route_C.png, worst_route_D.png
+=== 512 通道：完成 ===

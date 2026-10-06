@@ -1,0 +1,63 @@
+{
+  "label": "opt_base",
+  "channels": 512,
+  "route_count": 512,
+  "expected_routes": 512,
+  "complete_connection": true,
+  "unplaced_count": 0,
+  "unplaced_ids_sample": [],
+  "mean_loss_db": 3.293626370611567,
+  "p95_loss_db": 4.907631415880663,
+  "max_loss_db": 5.465375546782072,
+  "min_loss_db": 0.9567207817456451,
+  "std_loss_db": 1.2824554837479374,
+  "worst_route_id": 34,
+  "mean_straight_loss_db": 0.5915397634876007,
+  "mean_bend_loss_db": 2.1433507376100907,
+  "mean_crossing_loss_db": 0.5587358695138754,
+  "sum_straight_loss_db": 302.86835890565203,
+  "sum_bend_loss_db": 1097.3955776563607,
+  "sum_crossing_loss_db": 286.0727651911044,
+  "mean_straight_length_mm": 118.30795269752014,
+  "mean_arc_length_mm": 10.580376820976563,
+  "mean_total_length_mm": 128.8883295184967,
+  "sum_total_length_mm": 65990.82471347023,
+  "unique_crossing_events": 46239,
+  "per_route_crossing_events": 92478,
+  "mean_crossing_count": 180.62109375,
+  "max_crossing_count": 369,
+  "min_crossing_angle_deg": 1.3666334456665137,
+  "mean_crossing_angle_deg": 62.58224207141773,
+  "spacing_violation_count": 1228,
+  "spacing_violation_pairs": 1228,
+  "min_spacing_mm": 0.00045104291248869704,
+  "contact_touch_count": 0,
+  "raw_segment_touch_count": 0,
+  "physical_route_touch_count": 0,
+  "raw_segment_cross_count": 46239,
+  "contact_overlap_count": 0,
+  "geometry_issue_count": 0,
+  "geometry_issue_kinds": {},
+  "radius_distribution": {
+    "6.0": 510,
+    "5.0": 2
+  },
+  "bend_count_distribution": {
+    "2": 512
+  },
+  "runtime_s": 0.0,
+  "stop_reason": "trial",
+  "order_strategy": "legacy",
+  "candidate_limit": 8,
+  "radius_policy": "adaptive",
+  "endpoint_changes": 0,
+  "geometry_family": {
+    "freeform": 288,
+    "u": 224
+  },
+  "config": {
+    "base_scheme": "F56",
+    "start": "base",
+    "optimized": true
+  }
+}

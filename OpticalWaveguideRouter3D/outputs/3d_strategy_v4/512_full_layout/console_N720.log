@@ -1,0 +1,33 @@
+full rescan of the common start state ...
+  scan 20000 pairs 2.8s
+  scan 40000 pairs 6.0s
+  scan 60000 pairs 10.2s
+  scan 80000 pairs 15.4s
+  scan 100000 pairs 18.4s
+  scan 120000 pairs 20.8s
+  scanned 130816 pairs in 23.1s
+start state: {"recomputed_collision_pair_count": 42909, "recomputed_unresolved_pair_count": 3, "elevated_route_count": 24, "pair_state_distribution": {"both_routes_unelevated": 42516, "single_route_elevated": 291, "both_routes_elevated": 102, "total": 42909}, "verdict": "PASS"}
+[544769.7] N720: start mode=N appended_candidate_budget=720 max_targets=200 probe=False
+[544773.7] N720: INITIAL_DONE pairs=42909 unresolved=3
+[544773.8] N720: step 1 NO_CANDIDATES_GENERATED pairs=42909 evals=0 1s
+[544773.9] N720: step 2 NO_CANDIDATES_GENERATED pairs=42909 evals=0 1s
+[544805.5] N720: step 3 ELEVATED pairs=42648 evals=72 32s
+[544849.6] N720: step 4 ELEVATED pairs=42392 evals=144 76s
+[544890.3] N720: step 5 ELEVATED pairs=42139 evals=216 117s
+[544931.9] N720: step 6 ELEVATED pairs=41888 evals=288 159s
+[544973.2] N720: step 7 ELEVATED pairs=41639 evals=360 200s
+[544989.3] N720: step 8 ELEVATED pairs=41386 evals=396 216s
+[545001.4] N720: step 9 ELEVATED pairs=41111 evals=432 228s
+[545031.7] N720: step 10 ELEVATED pairs=40843 evals=486 258s
+[545048.5] N720: step 11 ELEVATED pairs=40583 evals=540 275s
+[545095.7] N720: step 12 ELEVATED pairs=40327 evals=639 322s
+[545129.6] N720: step 13 ELEVATED pairs=40072 evals=720 356s
+[545129.9] N720: done final=40072 moves=11 relocations=0 evals=720 stop=CANDIDATE_BUDGET_EXHAUSTED seconds=360
+  recheck 20000 pairs 4.9s
+  recheck 40000 pairs 8.7s
+  recheck 60000 pairs 14.6s
+  recheck 80000 pairs 22.5s
+  recheck 100000 pairs 26.4s
+  recheck 120000 pairs 30.0s
+[545166.7] N720: recheck PASS checks=130816 seconds=32.4
+ALL GROUPS DONE N720

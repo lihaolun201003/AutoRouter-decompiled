@@ -1,0 +1,32 @@
+{
+  "figure": "v5_f3_actions_and_reductions",
+  "title": "执行动作数与净收益按 首次抬升 / 重定位 / RETURN 拆分",
+  "png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f3_actions_and_reductions.png",
+  "pdf": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter3D\\outputs\\overnight_3d_ideas\\figures\\v5_f3_actions_and_reductions.pdf",
+  "png_sha256": "e17fce0647bccd63d49ddfd14aa93e98de21545191ee673df5bd16cab716652f",
+  "pdf_sha256": "8b866b06738529ec493f2dc8dba3102c1aef17c4e3407ef2159b3730b9d99684",
+  "source_files": [
+    "outputs\\overnight_3d_ideas\\v5\\comparison.csv",
+    "outputs\\overnight_3d_ideas\\v5\\summary_v5.json"
+  ],
+  "source_columns": [
+    "group",
+    "strategy",
+    "mode",
+    "budget",
+    "first_elevations",
+    "relocations",
+    "returns",
+    "first_elevation_net_reduction",
+    "relocation_net_reduction",
+    "return_net_reduction",
+    "total_old_collisions_removed",
+    "total_new_collisions_created"
+  ],
+  "source_sub_objects": [],
+  "rows_used": 16,
+  "notes": "NULL 值按 0 高度绘制并在脚注列出，绝不当作 0 读数",
+  "generator": "scripts/overnight_figures.py",
+  "round": "v5",
+  "generated_utc": "2026-10-05T14:42:33Z"
+}

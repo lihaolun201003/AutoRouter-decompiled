@@ -1,0 +1,219 @@
+{
+  "strategy": "V6_E2",
+  "strategy_spec": {
+    "name": "V6_E2",
+    "target_policy": "STRATIFIED",
+    "evaluation_policy": "E2_ORDERED_K16",
+    "traversal_policy": "BASE",
+    "max_targets": 200,
+    "k_per_target": 16,
+    "family_round_robin": false,
+    "relocation_side_reserve": 0,
+    "waiting_age": false,
+    "route_coverage": false,
+    "multi_anchor": false,
+    "exact_dedup": false,
+    "decision_cache": false,
+    "return_action": false,
+    "cache_structural_skips": false,
+    "window_slack_mm": 1e-05,
+    "notes": ""
+  },
+  "mode": "R",
+  "allow_relocation": true,
+  "appended_candidate_budget": 720,
+  "historical_evaluations_excluded": 720,
+  "historical_budget_note": "the 720 candidate evaluations that produced the common start state are not part of this budget",
+  "max_targets": 200,
+  "target_attempts": 54,
+  "route_count": 512,
+  "initial_collision_pair_count": 42909,
+  "final_collision_pair_count": 39408,
+  "net_collision_reduction": 3501,
+  "reduction_percent": 8.159127455778508,
+  "initial_unresolved_pair_count": 3,
+  "final_unresolved_pair_count": 3,
+  "initial_pair_state_distribution": {
+    "both_routes_unelevated": 42516,
+    "single_route_elevated": 291,
+    "both_routes_elevated": 102,
+    "total": 42909
+  },
+  "final_pair_state_distribution": {
+    "both_routes_unelevated": 38423,
+    "single_route_elevated": 674,
+    "both_routes_elevated": 311,
+    "total": 39408
+  },
+  "total_old_collisions_removed": 3687,
+  "total_new_collisions_created": 186,
+  "accepted_moves": 17,
+  "first_elevations": 16,
+  "relocations": 1,
+  "returns": 0,
+  "first_elevation_old_removed": 3656,
+  "first_elevation_new_created": 186,
+  "first_elevation_net_reduction": 3470,
+  "relocation_old_removed": 31,
+  "relocation_new_created": 0,
+  "relocation_net_reduction": 31,
+  "return_old_removed": 0,
+  "return_new_created": 0,
+  "return_net_reduction": 0,
+  "first_elevation_step_length_delta_mm": 5.204955486414704,
+  "relocation_step_length_delta_mm": 0.0,
+  "return_step_length_delta_mm": 0.0,
+  "step_length_delta_min_mm": 0.0,
+  "initial_elevated_route_count": 24,
+  "final_elevated_route_count": 40,
+  "layer_route_counts": {
+    "0": 472,
+    "1": 34,
+    "2": 6
+  },
+  "initial_total_length_mm": 70838.46574797289,
+  "final_total_length_mm": 70843.67070345928,
+  "stage_length_delta_mm": 5.204955486391555,
+  "total_step_length_delta_mm": 5.204955486414704,
+  "planar_total_length_mm": 70831.30965714682,
+  "start_extra_length_vs_planar_mm": 7.156090826072614,
+  "final_extra_length_vs_planar_mm": 12.361046312464168,
+  "final_transition_count": 80,
+  "generated_candidates": 2313,
+  "generated_candidates_note": [
+    "generated_candidates is the RAW generator output; ",
+    "generated_candidates_after_generation_policy is what survives ",
+    "dedup and any other generation-policy filtering"
+  ],
+  "generated_candidates_raw": 2313,
+  "generated_candidates_after_generation_policy": 2313,
+  "candidate_evaluations": 720,
+  "appended_candidate_budget_used_percent": 100.0,
+  "full_neighbor_checks": 503,
+  "full_acceptance_passes": 258,
+  "executed_moves": 17,
+  "evaluations_per_action": 42.35294117647059,
+  "net_reduction_per_evaluation": 4.8625,
+  "not_evaluated_candidates": 1593,
+  "not_evaluated_by_k_prefix": 1577,
+  "not_evaluated_by_budget": 16,
+  "budget_exhausted": true,
+  "budget_used_up": true,
+  "aborted_steps": 1,
+  "aborted_steps_that_still_executed_a_move": 0,
+  "failed_no_movable_route": 0,
+  "failed_no_candidates": 8,
+  "failed_all_rejected": 0,
+  "failed_no_winner": 0,
+  "deferred_prefix_no_winner": 28,
+  "deferred_target_entries": 3,
+  "zero_candidate_victim_attempts": 23,
+  "already_elevated_victim_skips": 0,
+  "relocation_victim_attempts": 54,
+  "relocation_candidates_generated": 1170,
+  "relocation_candidate_evaluations": 464,
+  "relocation_victims_selected": 1,
+  "relocation_steps_reaching_evaluation": 29,
+  "first_elevation_victim_attempts": 54,
+  "first_elevation_candidate_evaluations": 256,
+  "return_candidates_built": 0,
+  "return_candidate_evaluations": 0,
+  "dedup_removed_duplicates": 0,
+  "dedup_removed_identical_to_current": 0,
+  "decision_cache_hits": 0,
+  "decision_cache_misses": 0,
+  "decision_cache_enabled": false,
+  "pair_status_calls_substituted_by_cache": 0,
+  "generation_failure_cache_enabled": true,
+  "generation_cache_records": 58,
+  "generation_cache_zero_candidate_records": 23,
+  "generation_skip_events": 40,
+  "generation_skipped_target_count": 7,
+  "no_movable_route_skip_events": 0,
+  "no_movable_route_skipped_target_count": 0,
+  "skipped_events_consumed_no_candidate_evaluation": true,
+  "structural_skip_version_cache_enabled": false,
+  "structural_skip_rechecks_avoided": 0,
+  "basic_rejection_reason_counts": {
+    "TARGET_NOT_CLEARED": 217
+  },
+  "full_rejection_reason_counts": {
+    "NO_STRICT_GLOBAL_DECREASE": 245
+  },
+  "generation_failure_reason_counts": {
+    "{1: 'NO_VALID_TRANSITION_WINDOW', 2: 'NO_VALID_TRANSITION_WINDOW'}": 7,
+    "{1: 'INSUFFICIENT_TRANSITION_SPACE', 2: 'INSUFFICIENT_TRANSITION_SPACE'}": 16
+  },
+  "budget_checkpoints": {
+    "720": {
+      "candidate_evaluations": 720,
+      "collision_pair_count": 39408,
+      "cumulative_removed": 3687,
+      "cumulative_created": 186
+    },
+    "1440": {
+      "candidate_evaluations": 720,
+      "collision_pair_count": 39408,
+      "cumulative_removed": 3687,
+      "cumulative_created": 186
+    },
+    "2880": {
+      "candidate_evaluations": 720,
+      "collision_pair_count": 39408,
+      "cumulative_removed": 3687,
+      "cumulative_created": 186
+    }
+  },
+  "window_slack_mm": 1e-05,
+  "stop_reason": "CANDIDATE_BUDGET_EXHAUSTED",
+  "coverage": {
+    "unique_target_pairs": 29,
+    "target_attempts": 54,
+    "repeated_target_attempts": 25,
+    "unique_target_sides": 58,
+    "unique_evaluated_target_sides": 20,
+    "unique_routes_attempted": 28,
+    "unique_routes_evaluated": 17,
+    "unique_routes_touched_by_a_move": 16,
+    "max_attempts_on_one_route": 29,
+    "target_pair_visit_histogram": {
+      "1": 27,
+      "13": 1,
+      "14": 1
+    },
+    "elevation_state_class_attempts": {
+      "UU": 18,
+      "UE": 18,
+      "EE": 18
+    },
+    "elevation_state_class_moves": {
+      "UU": 15,
+      "UE": 2,
+      "EE": 0
+    },
+    "elevation_state_class_evaluations": {
+      "UU": 240,
+      "UE": 256,
+      "EE": 224
+    },
+    "elevation_state_class_first_evaluation_step": {
+      "UU": 9,
+      "UE": 4,
+      "EE": 14
+    },
+    "elevation_state_class_deferred": {
+      "UU": 0,
+      "UE": 14,
+      "EE": 14
+    },
+    "elevation_state_class_target_pairs": {
+      "UU": 18,
+      "UE": 5,
+      "EE": 6
+    }
+  },
+  "initial_pair_scan_seconds": 0.0,
+  "assignment_seconds": 588.8896871999605,
+  "runtime_seconds": 589.6103387000039,
+  "baseline_unchanged": true
+}
