@@ -1,0 +1,68 @@
+{
+  "schema": "four_side_1024_abcd_strict_crosscheck_v1",
+  "roles": {
+    "router": "four_side_1024.d56.index.D56Index(crossing_policy='strict')",
+    "validator": "four_side_1024.d56.validate_d56 policy='strict' (authoritative)"
+  },
+  "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_d56_optimized\\routes.json",
+  "routes_sha256": "ce96833a41f21f0515008c179f0c4cc50ca53ba069dc4cb85c0d27ce0a94a5c1",
+  "routed_route_count": 467,
+  "compared_pair_count": 64685,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "validator_invalid_pairs": 1,
+  "router_invalid_pairs": 1,
+  "invalid_both_pairs": 1,
+  "strict_invalid_pairs": [
+    {
+      "route_a": 460,
+      "route_b": 989,
+      "validator_valid": false,
+      "validator_kinds": [
+        "crossing_window_overlap"
+      ],
+      "validator_first_distance_mm": 0.0,
+      "validator_first_position": [
+        37.842888012500026,
+        110.9950908949412
+      ],
+      "router_valid": false,
+      "router_reason": "crossing_window_overlap",
+      "router_min_spacing_mm": null
+    }
+  ],
+  "strict_failed_route_count": 2,
+  "strict_failed_route_ids": [
+    460,
+    989
+  ],
+  "strict_passed_route_count": 465,
+  "validator_failed_route_ids": [
+    460,
+    989
+  ],
+  "router_failed_route_ids": [
+    460,
+    989
+  ],
+  "validator_passed_route_count": 465,
+  "router_passed_route_count": 465,
+  "crossing_count": {
+    "validator": 57027,
+    "router": 57027,
+    "matches": true,
+    "per_pair_mismatch_count": 0,
+    "per_pair_mismatches": []
+  },
+  "window_consistency": {
+    "validator_window_count": 57029,
+    "router_window_count": 57029,
+    "count_matches": true,
+    "validator_max_half_mm": 2.3398006021992983,
+    "validator_mean_half_mm": 0.19869905403640628,
+    "router_max_half_mm": 2.3398046447488188,
+    "router_mean_total_window_mm": 0.7948085000787062
+  },
+  "runtime_seconds": 10.04058890000124,
+  "passed": true
+}

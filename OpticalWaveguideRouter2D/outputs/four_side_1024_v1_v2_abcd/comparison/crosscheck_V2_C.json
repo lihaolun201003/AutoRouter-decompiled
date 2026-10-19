@@ -1,0 +1,42 @@
+{
+  "schema": "four_side_1024_abcd_strict_crosscheck_v1",
+  "roles": {
+    "router": "four_side_1024.d56.index.D56Index(crossing_policy='strict')",
+    "validator": "four_side_1024.d56.validate_d56 policy='strict' (authoritative)"
+  },
+  "routes_file": "outputs\\four_side_1024_v1_v2_abcd\\V2_C\\routes.json",
+  "routes_sha256": "24939de22f2368189e753611fa97850edbb328b3f5a677e18bce4eb13fd5ac0a",
+  "routed_route_count": 417,
+  "compared_pair_count": 37745,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "validator_invalid_pairs": 0,
+  "router_invalid_pairs": 0,
+  "invalid_both_pairs": 0,
+  "strict_invalid_pairs": [],
+  "strict_failed_route_count": 0,
+  "strict_failed_route_ids": [],
+  "strict_passed_route_count": 417,
+  "validator_failed_route_ids": [],
+  "router_failed_route_ids": [],
+  "validator_passed_route_count": 417,
+  "router_passed_route_count": 417,
+  "crossing_count": {
+    "validator": 37163,
+    "router": 37163,
+    "matches": true,
+    "per_pair_mismatch_count": 0,
+    "per_pair_mismatches": []
+  },
+  "window_consistency": {
+    "validator_window_count": 37163,
+    "router_window_count": 37163,
+    "count_matches": true,
+    "validator_max_half_mm": 1.8258311756426577,
+    "validator_mean_half_mm": 0.1967968499314371,
+    "router_max_half_mm": 1.8258311420646238,
+    "router_mean_total_window_mm": 0.7871979882737168
+  },
+  "runtime_seconds": 5.046217199998864,
+  "passed": true
+}

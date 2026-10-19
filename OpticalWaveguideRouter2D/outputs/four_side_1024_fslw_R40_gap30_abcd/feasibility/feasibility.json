@@ -1,0 +1,4687 @@
+{
+ "process": {
+  "radius_mm": 40.0,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "board_mm": 150.0,
+  "fixed_radius_40mm": true
+ },
+ "required_family_tests": [
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [],
+   "n_primitives": 1,
+   "n_arcs": 0,
+   "name": "opposite_straight_N_S",
+   "description": "single N-S straight waveguide (dx=0)",
+   "p": [
+    75.0,
+    0.0
+   ],
+   "q": [
+    75.0,
+    150.0
+   ],
+   "primitives": [
+    [
+     "line",
+     150.0
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 4,
+   "n_arcs": 2,
+   "name": "opposite_E_W_U",
+   "description": "E-W opposite via a transfer track (U family, dx=80=2R)",
+   "p": [
+    20.0,
+    0.0
+   ],
+   "q": [
+    100.0,
+    150.0
+   ],
+   "primitives": [
+    [
+     "line",
+     35.0
+    ],
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "line",
+     35.0
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 3,
+   "n_arcs": 1,
+   "name": "adjacent_N_E_L",
+   "description": "N-E adjacent rigid single L (q.y=75 >= R, x=60 <= 110)",
+   "p": [
+    60.0,
+    0.0
+   ],
+   "q": [
+    150.0,
+    75.0
+   ],
+   "primitives": [
+    [
+     "line",
+     35.0
+    ],
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "line",
+     50.0
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 4,
+   "n_arcs": 3,
+   "name": "adjacent_E_S_turn_shift",
+   "description": "E-S adjacent with a low target row (TURN_S family)",
+   "p": [
+    35.0,
+    0.0
+   ],
+   "q": [
+    150.0,
+    20.0
+   ],
+   "primitives": [
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "arc_r40.0",
+     41.41
+    ],
+    [
+     "arc_r40.0",
+     41.41
+    ],
+    [
+     "line",
+     22.085
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 4,
+   "n_arcs": 2,
+   "name": "opposite_short_S",
+   "description": "opposite with |dx|=20 < 2R uses the short-S pair",
+   "p": [
+    40.0,
+    0.0
+   ],
+   "q": [
+    60.0,
+    150.0
+   ],
+   "primitives": [
+    [
+     "line",
+     73.5425
+    ],
+    [
+     "arc_r40.0",
+     41.41
+    ],
+    [
+     "arc_r40.0",
+     41.41
+    ],
+    [
+     "line",
+     23.5425
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 7,
+   "n_arcs": 3,
+   "name": "adjacent_Z3",
+   "description": "adjacent three-corner staircase (Z3)",
+   "p": [
+    10.0,
+    0.0
+   ],
+   "q": [
+    150.0,
+    140.0
+   ],
+   "primitives": [
+    [
+     "line",
+     5.0
+    ],
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "line",
+     10.0
+    ],
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "line",
+     15.0
+    ],
+    [
+     "arc_r40.0",
+     90.0
+    ],
+    [
+     "line",
+     10.0
+    ]
+   ]
+  },
+  {
+   "ok": false,
+   "errors": [
+    "no_geometry"
+   ],
+   "name": "adjacent_Z5",
+   "description": "adjacent five-corner staircase (Z5)",
+   "p": [
+    5.0,
+    0.0
+   ],
+   "q": [
+    150.0,
+    5.0
+   ],
+   "primitives": []
+  },
+  {
+   "ok": false,
+   "errors": [
+    "no_geometry"
+   ],
+   "name": "adjacent_LEFT_C",
+   "description": "adjacent C-shaped four-corner path (LEFT family)",
+   "p": [
+    120.0,
+    0.0
+   ],
+   "q": [
+    150.0,
+    100.0
+   ],
+   "primitives": []
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 4,
+   "n_arcs": 2,
+   "name": "short_S_d5",
+   "description": "short-S lateral shift d=5.0 mm (theta=20.364 deg, advance=27.839 mm)",
+   "p": [
+    40.0,
+    40.0
+   ],
+   "q": [
+    67.83882181415011,
+    45.0
+   ],
+   "primitives": [
+    [
+     "line",
+     5.0
+    ],
+    [
+     "arc_r40.0",
+     20.364
+    ],
+    [
+     "arc_r40.0",
+     20.364
+    ],
+    [
+     "line",
+     5.0
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 4,
+   "n_arcs": 2,
+   "name": "short_S_d40",
+   "description": "short-S lateral shift d=40.0 mm (theta=60.000 deg, advance=69.282 mm)",
+   "p": [
+    40.0,
+    40.0
+   ],
+   "q": [
+    109.2820323027551,
+    80.00000000000001
+   ],
+   "primitives": [
+    [
+     "line",
+     5.0
+    ],
+    [
+     "arc_r40.0",
+     60.0
+    ],
+    [
+     "arc_r40.0",
+     60.0
+    ],
+    [
+     "line",
+     5.0
+    ]
+   ]
+  },
+  {
+   "ok": true,
+   "errors": [],
+   "radii": [
+    40.0
+   ],
+   "n_primitives": 4,
+   "n_arcs": 2,
+   "name": "short_S_d79",
+   "description": "short-S lateral shift d=79.0 mm (theta=89.284 deg, advance=79.994 mm)",
+   "p": [
+    40.0,
+    40.0
+   ],
+   "q": [
+    119.99374975584031,
+    119.0
+   ],
+   "primitives": [
+    [
+     "line",
+     5.0
+    ],
+    [
+     "arc_r40.0",
+     89.284
+    ],
+    [
+     "arc_r40.0",
+     89.284
+    ],
+    [
+     "line",
+     5.0
+    ]
+   ]
+  }
+ ],
+ "family_tests_passed": 9,
+ "family_tests_total": 11,
+ "adjacent_grid": {
+  "resolution_mm": 15.0,
+  "families": [
+   "L",
+   "TURN_S",
+   "SHIFT_TURN",
+   "Z3",
+   "Z5",
+   "LEFT"
+  ],
+  "cells": [
+   {
+    "sx": 0.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 45.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 60.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 75.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 90.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 105.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 120.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 135.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 15.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 15.0,
+    "qy": 15.0,
+    "families": [
+     "TURN_S",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 30.0,
+    "families": [
+     "TURN_S",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 45.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 75.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 90.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 30.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 30.0,
+    "qy": 15.0,
+    "families": [
+     "TURN_S",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 30.0,
+    "families": [
+     "TURN_S",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 45.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 75.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 90.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3",
+     "Z5"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 45.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 45.0,
+    "qy": 15.0,
+    "families": [
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 30.0,
+    "families": [
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 45.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 75.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 90.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 60.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 60.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 60.0,
+    "qy": 30.0,
+    "families": [
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 45.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 75.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 90.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qy": 45.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 75.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 90.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qy": 45.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 75.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 90.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qy": 45.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 60.0,
+    "families": [
+     "L",
+     "TURN_S"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 75.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 90.0,
+    "families": [
+     "L"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 105.0,
+    "families": [
+     "L",
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 120.0,
+    "families": [
+     "L",
+     "TURN_S",
+     "SHIFT_TURN",
+     "Z3",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 135.0,
+    "families": [
+     "L",
+     "SHIFT_TURN",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 45.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 60.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 75.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 90.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qy": 105.0,
+    "families": [
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qy": 120.0,
+    "families": [
+     "SHIFT_TURN",
+     "Z3",
+     "Z5",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qy": 135.0,
+    "families": [
+     "SHIFT_TURN",
+     "Z3",
+     "Z5",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 45.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 60.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 75.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 90.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qy": 105.0,
+    "families": [
+     "SHIFT_TURN"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qy": 120.0,
+    "families": [
+     "SHIFT_TURN",
+     "Z3",
+     "Z5",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qy": 135.0,
+    "families": [
+     "SHIFT_TURN",
+     "Z3",
+     "Z5",
+     "LEFT"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qy": 150.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 0.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 15.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 30.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 45.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 60.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 75.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 90.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 105.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 120.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 135.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qy": 150.0,
+    "families": []
+   }
+  ],
+  "feasible_cells": 62,
+  "total_cells": 121,
+  "feasible_fraction": 0.512396694214876
+ },
+ "route_level_feasibility": {
+  "V1_z1": {
+   "topology": "V1",
+   "plane": "z1",
+   "connections": 512,
+   "with_candidate": 512,
+   "without_candidate": 0,
+   "without_candidate_pairs": {},
+   "family_candidate_counts": {
+    "straight": 32,
+    "S": 158400,
+    "U": 33600
+   },
+   "blocked_routes": []
+  },
+  "V1_z2": {
+   "topology": "V1",
+   "plane": "z2",
+   "connections": 512,
+   "with_candidate": 398,
+   "without_candidate": 114,
+   "without_candidate_pairs": {
+    "EN": 31,
+    "ES": 26,
+    "NW": 28,
+    "SW": 29
+   },
+   "family_candidate_counts": {
+    "L": 292,
+    "TURN_S": 1372,
+    "SHIFT_TURN": 615,
+    "Z3": 1517,
+    "LEFT": 126
+   },
+   "blocked_routes": [
+    {
+     "route_id": 575,
+     "pair": "EN",
+     "source_endpoint": "N08:2:7",
+     "target_endpoint": "E14:2:15",
+     "canonical_p": [
+      70.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.875
+     ]
+    },
+    {
+     "route_id": 576,
+     "pair": "EN",
+     "source_endpoint": "N08:2:8",
+     "target_endpoint": "E15:2:16",
+     "canonical_p": [
+      70.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.625
+     ]
+    },
+    {
+     "route_id": 581,
+     "pair": "EN",
+     "source_endpoint": "N09:2:5",
+     "target_endpoint": "E13:2:13",
+     "canonical_p": [
+      78.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.375
+     ]
+    },
+    {
+     "route_id": 582,
+     "pair": "EN",
+     "source_endpoint": "N09:2:6",
+     "target_endpoint": "E14:2:14",
+     "canonical_p": [
+      78.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.125
+     ]
+    },
+    {
+     "route_id": 583,
+     "pair": "EN",
+     "source_endpoint": "N09:2:7",
+     "target_endpoint": "E15:2:15",
+     "canonical_p": [
+      79.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.875
+     ]
+    },
+    {
+     "route_id": 584,
+     "pair": "EN",
+     "source_endpoint": "N09:2:8",
+     "target_endpoint": "E16:2:16",
+     "canonical_p": [
+      79.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.625
+     ]
+    },
+    {
+     "route_id": 588,
+     "pair": "EN",
+     "source_endpoint": "N10:2:4",
+     "target_endpoint": "E13:2:12",
+     "canonical_p": [
+      87.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.625
+     ]
+    },
+    {
+     "route_id": 589,
+     "pair": "EN",
+     "source_endpoint": "N10:2:5",
+     "target_endpoint": "E14:2:13",
+     "canonical_p": [
+      87.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.375
+     ]
+    },
+    {
+     "route_id": 590,
+     "pair": "EN",
+     "source_endpoint": "N10:2:6",
+     "target_endpoint": "E15:2:14",
+     "canonical_p": [
+      87.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.125
+     ]
+    },
+    {
+     "route_id": 591,
+     "pair": "EN",
+     "source_endpoint": "N10:2:7",
+     "target_endpoint": "E16:2:15",
+     "canonical_p": [
+      88.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.875
+     ]
+    },
+    {
+     "route_id": 595,
+     "pair": "EN",
+     "source_endpoint": "N11:2:3",
+     "target_endpoint": "E13:2:11",
+     "canonical_p": [
+      96.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.875
+     ]
+    },
+    {
+     "route_id": 596,
+     "pair": "EN",
+     "source_endpoint": "N11:2:4",
+     "target_endpoint": "E14:2:12",
+     "canonical_p": [
+      96.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.625
+     ]
+    },
+    {
+     "route_id": 597,
+     "pair": "EN",
+     "source_endpoint": "N11:2:5",
+     "target_endpoint": "E15:2:13",
+     "canonical_p": [
+      96.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.375
+     ]
+    },
+    {
+     "route_id": 598,
+     "pair": "EN",
+     "source_endpoint": "N11:2:6",
+     "target_endpoint": "E16:2:14",
+     "canonical_p": [
+      96.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.125
+     ]
+    },
+    {
+     "route_id": 602,
+     "pair": "EN",
+     "source_endpoint": "N12:2:2",
+     "target_endpoint": "E13:2:10",
+     "canonical_p": [
+      104.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.125
+     ]
+    },
+    {
+     "route_id": 603,
+     "pair": "EN",
+     "source_endpoint": "N12:2:3",
+     "target_endpoint": "E14:2:11",
+     "canonical_p": [
+      105.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.875
+     ]
+    },
+    {
+     "route_id": 604,
+     "pair": "EN",
+     "source_endpoint": "N12:2:4",
+     "target_endpoint": "E15:2:12",
+     "canonical_p": [
+      105.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.625
+     ]
+    },
+    {
+     "route_id": 605,
+     "pair": "EN",
+     "source_endpoint": "N12:2:5",
+     "target_endpoint": "E16:2:13",
+     "canonical_p": [
+      105.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.375
+     ]
+    },
+    {
+     "route_id": 609,
+     "pair": "EN",
+     "source_endpoint": "N13:2:1",
+     "target_endpoint": "E13:2:9",
+     "canonical_p": [
+      113.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.375
+     ]
+    },
+    {
+     "route_id": 610,
+     "pair": "EN",
+     "source_endpoint": "N13:2:2",
+     "target_endpoint": "E14:2:10",
+     "canonical_p": [
+      113.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.125
+     ]
+    },
+    {
+     "route_id": 611,
+     "pair": "EN",
+     "source_endpoint": "N13:2:3",
+     "target_endpoint": "E15:2:11",
+     "canonical_p": [
+      114.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.875
+     ]
+    },
+    {
+     "route_id": 612,
+     "pair": "EN",
+     "source_endpoint": "N13:2:4",
+     "target_endpoint": "E16:2:12",
+     "canonical_p": [
+      114.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.625
+     ]
+    },
+    {
+     "route_id": 617,
+     "pair": "EN",
+     "source_endpoint": "N14:2:1",
+     "target_endpoint": "E14:2:9",
+     "canonical_p": [
+      122.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.375
+     ]
+    },
+    {
+     "route_id": 618,
+     "pair": "EN",
+     "source_endpoint": "N14:2:2",
+     "target_endpoint": "E15:2:10",
+     "canonical_p": [
+      122.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.125
+     ]
+    },
+    {
+     "route_id": 619,
+     "pair": "EN",
+     "source_endpoint": "N14:2:3",
+     "target_endpoint": "E16:2:11",
+     "canonical_p": [
+      123.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.875
+     ]
+    },
+    {
+     "route_id": 625,
+     "pair": "EN",
+     "source_endpoint": "N15:2:1",
+     "target_endpoint": "E15:2:9",
+     "canonical_p": [
+      131.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.375
+     ]
+    },
+    {
+     "route_id": 626,
+     "pair": "EN",
+     "source_endpoint": "N15:2:2",
+     "target_endpoint": "E16:2:10",
+     "canonical_p": [
+      131.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.125
+     ]
+    },
+    {
+     "route_id": 632,
+     "pair": "EN",
+     "source_endpoint": "N15:2:8",
+     "target_endpoint": "E06:2:16",
+     "canonical_p": [
+      133.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      95.625
+     ]
+    },
+    {
+     "route_id": 633,
+     "pair": "EN",
+     "source_endpoint": "N16:2:1",
+     "target_endpoint": "E16:2:9",
+     "canonical_p": [
+      140.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.375
+     ]
+    },
+    {
+     "route_id": 639,
+     "pair": "EN",
+     "source_endpoint": "N16:2:7",
+     "target_endpoint": "E06:2:15",
+     "canonical_p": [
+      142.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      95.875
+     ]
+    },
+    {
+     "route_id": 640,
+     "pair": "EN",
+     "source_endpoint": "N16:2:8",
+     "target_endpoint": "E07:2:16",
+     "canonical_p": [
+      142.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      86.625
+     ]
+    },
+    {
+     "route_id": 646,
+     "pair": "ES",
+     "source_endpoint": "E01:2:6",
+     "target_endpoint": "S06:2:14",
+     "canonical_p": [
+      143.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      96.125
+     ]
+    },
+    {
+     "route_id": 647,
+     "pair": "ES",
+     "source_endpoint": "E01:2:7",
+     "target_endpoint": "S07:2:15",
+     "canonical_p": [
+      142.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      86.875
+     ]
+    },
+    {
+     "route_id": 648,
+     "pair": "ES",
+     "source_endpoint": "E01:2:8",
+     "target_endpoint": "S08:2:16",
+     "canonical_p": [
+      142.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      77.625
+     ]
+    },
+    {
+     "route_id": 653,
+     "pair": "ES",
+     "source_endpoint": "E02:2:5",
+     "target_endpoint": "S06:2:13",
+     "canonical_p": [
+      134.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      96.375
+     ]
+    },
+    {
+     "route_id": 654,
+     "pair": "ES",
+     "source_endpoint": "E02:2:6",
+     "target_endpoint": "S07:2:14",
+     "canonical_p": [
+      134.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      87.125
+     ]
+    },
+    {
+     "route_id": 655,
+     "pair": "ES",
+     "source_endpoint": "E02:2:7",
+     "target_endpoint": "S08:2:15",
+     "canonical_p": [
+      133.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      77.875
+     ]
+    },
+    {
+     "route_id": 656,
+     "pair": "ES",
+     "source_endpoint": "E02:2:8",
+     "target_endpoint": "S09:2:16",
+     "canonical_p": [
+      133.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      68.625
+     ]
+    },
+    {
+     "route_id": 662,
+     "pair": "ES",
+     "source_endpoint": "E03:2:6",
+     "target_endpoint": "S08:2:14",
+     "canonical_p": [
+      125.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      78.125
+     ]
+    },
+    {
+     "route_id": 663,
+     "pair": "ES",
+     "source_endpoint": "E03:2:7",
+     "target_endpoint": "S09:2:15",
+     "canonical_p": [
+      124.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      68.875
+     ]
+    },
+    {
+     "route_id": 664,
+     "pair": "ES",
+     "source_endpoint": "E03:2:8",
+     "target_endpoint": "S10:2:16",
+     "canonical_p": [
+      124.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      59.625
+     ]
+    },
+    {
+     "route_id": 670,
+     "pair": "ES",
+     "source_endpoint": "E04:2:6",
+     "target_endpoint": "S09:2:14",
+     "canonical_p": [
+      116.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      69.125
+     ]
+    },
+    {
+     "route_id": 671,
+     "pair": "ES",
+     "source_endpoint": "E04:2:7",
+     "target_endpoint": "S10:2:15",
+     "canonical_p": [
+      115.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      59.875
+     ]
+    },
+    {
+     "route_id": 672,
+     "pair": "ES",
+     "source_endpoint": "E04:2:8",
+     "target_endpoint": "S11:2:16",
+     "canonical_p": [
+      115.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      50.625
+     ]
+    },
+    {
+     "route_id": 688,
+     "pair": "ES",
+     "source_endpoint": "E06:2:8",
+     "target_endpoint": "S13:2:16",
+     "canonical_p": [
+      97.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.625
+     ]
+    },
+    {
+     "route_id": 695,
+     "pair": "ES",
+     "source_endpoint": "E07:2:7",
+     "target_endpoint": "S13:2:15",
+     "canonical_p": [
+      88.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.875
+     ]
+    },
+    {
+     "route_id": 696,
+     "pair": "ES",
+     "source_endpoint": "E07:2:8",
+     "target_endpoint": "S14:2:16",
+     "canonical_p": [
+      88.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.625
+     ]
+    },
+    {
+     "route_id": 702,
+     "pair": "ES",
+     "source_endpoint": "E08:2:6",
+     "target_endpoint": "S13:2:14",
+     "canonical_p": [
+      80.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.125
+     ]
+    },
+    {
+     "route_id": 703,
+     "pair": "ES",
+     "source_endpoint": "E08:2:7",
+     "target_endpoint": "S14:2:15",
+     "canonical_p": [
+      79.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.875
+     ]
+    },
+    {
+     "route_id": 704,
+     "pair": "ES",
+     "source_endpoint": "E08:2:8",
+     "target_endpoint": "S15:2:16",
+     "canonical_p": [
+      79.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.625
+     ]
+    },
+    {
+     "route_id": 710,
+     "pair": "ES",
+     "source_endpoint": "E09:2:6",
+     "target_endpoint": "S14:2:14",
+     "canonical_p": [
+      71.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.125
+     ]
+    },
+    {
+     "route_id": 711,
+     "pair": "ES",
+     "source_endpoint": "E09:2:7",
+     "target_endpoint": "S15:2:15",
+     "canonical_p": [
+      70.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.875
+     ]
+    },
+    {
+     "route_id": 712,
+     "pair": "ES",
+     "source_endpoint": "E09:2:8",
+     "target_endpoint": "S16:2:16",
+     "canonical_p": [
+      70.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.625
+     ]
+    },
+    {
+     "route_id": 718,
+     "pair": "ES",
+     "source_endpoint": "E10:2:6",
+     "target_endpoint": "S15:2:14",
+     "canonical_p": [
+      62.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.125
+     ]
+    },
+    {
+     "route_id": 719,
+     "pair": "ES",
+     "source_endpoint": "E10:2:7",
+     "target_endpoint": "S16:2:15",
+     "canonical_p": [
+      61.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.875
+     ]
+    },
+    {
+     "route_id": 725,
+     "pair": "ES",
+     "source_endpoint": "E11:2:5",
+     "target_endpoint": "S15:2:13",
+     "canonical_p": [
+      53.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.375
+     ]
+    },
+    {
+     "route_id": 726,
+     "pair": "ES",
+     "source_endpoint": "E11:2:6",
+     "target_endpoint": "S16:2:14",
+     "canonical_p": [
+      53.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.125
+     ]
+    },
+    {
+     "route_id": 769,
+     "pair": "SW",
+     "source_endpoint": "S01:2:1",
+     "target_endpoint": "W01:2:9",
+     "canonical_p": [
+      144.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.625
+     ]
+    },
+    {
+     "route_id": 770,
+     "pair": "SW",
+     "source_endpoint": "S01:2:2",
+     "target_endpoint": "W02:2:10",
+     "canonical_p": [
+      144.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.875
+     ]
+    },
+    {
+     "route_id": 771,
+     "pair": "SW",
+     "source_endpoint": "S01:2:3",
+     "target_endpoint": "W03:2:11",
+     "canonical_p": [
+      143.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      26.125
+     ]
+    },
+    {
+     "route_id": 772,
+     "pair": "SW",
+     "source_endpoint": "S01:2:4",
+     "target_endpoint": "W04:2:12",
+     "canonical_p": [
+      143.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      35.375
+     ]
+    },
+    {
+     "route_id": 773,
+     "pair": "SW",
+     "source_endpoint": "S01:2:5",
+     "target_endpoint": "W05:2:13",
+     "canonical_p": [
+      143.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      44.625
+     ]
+    },
+    {
+     "route_id": 774,
+     "pair": "SW",
+     "source_endpoint": "S01:2:6",
+     "target_endpoint": "W06:2:14",
+     "canonical_p": [
+      143.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      53.875
+     ]
+    },
+    {
+     "route_id": 775,
+     "pair": "SW",
+     "source_endpoint": "S01:2:7",
+     "target_endpoint": "W07:2:15",
+     "canonical_p": [
+      142.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      63.125
+     ]
+    },
+    {
+     "route_id": 776,
+     "pair": "SW",
+     "source_endpoint": "S01:2:8",
+     "target_endpoint": "W08:2:16",
+     "canonical_p": [
+      142.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      72.375
+     ]
+    },
+    {
+     "route_id": 777,
+     "pair": "SW",
+     "source_endpoint": "S02:2:1",
+     "target_endpoint": "W02:2:9",
+     "canonical_p": [
+      135.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.625
+     ]
+    },
+    {
+     "route_id": 778,
+     "pair": "SW",
+     "source_endpoint": "S02:2:2",
+     "target_endpoint": "W03:2:10",
+     "canonical_p": [
+      135.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.875
+     ]
+    },
+    {
+     "route_id": 779,
+     "pair": "SW",
+     "source_endpoint": "S02:2:3",
+     "target_endpoint": "W04:2:11",
+     "canonical_p": [
+      134.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      35.125
+     ]
+    },
+    {
+     "route_id": 780,
+     "pair": "SW",
+     "source_endpoint": "S02:2:4",
+     "target_endpoint": "W05:2:12",
+     "canonical_p": [
+      134.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      44.375
+     ]
+    },
+    {
+     "route_id": 781,
+     "pair": "SW",
+     "source_endpoint": "S02:2:5",
+     "target_endpoint": "W06:2:13",
+     "canonical_p": [
+      134.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      53.625
+     ]
+    },
+    {
+     "route_id": 782,
+     "pair": "SW",
+     "source_endpoint": "S02:2:6",
+     "target_endpoint": "W07:2:14",
+     "canonical_p": [
+      134.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      62.875
+     ]
+    },
+    {
+     "route_id": 783,
+     "pair": "SW",
+     "source_endpoint": "S02:2:7",
+     "target_endpoint": "W08:2:15",
+     "canonical_p": [
+      133.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      72.125
+     ]
+    },
+    {
+     "route_id": 784,
+     "pair": "SW",
+     "source_endpoint": "S02:2:8",
+     "target_endpoint": "W09:2:16",
+     "canonical_p": [
+      133.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      81.375
+     ]
+    },
+    {
+     "route_id": 785,
+     "pair": "SW",
+     "source_endpoint": "S03:2:1",
+     "target_endpoint": "W03:2:9",
+     "canonical_p": [
+      126.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.625
+     ]
+    },
+    {
+     "route_id": 786,
+     "pair": "SW",
+     "source_endpoint": "S03:2:2",
+     "target_endpoint": "W04:2:10",
+     "canonical_p": [
+      126.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.875
+     ]
+    },
+    {
+     "route_id": 787,
+     "pair": "SW",
+     "source_endpoint": "S03:2:3",
+     "target_endpoint": "W05:2:11",
+     "canonical_p": [
+      125.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      44.125
+     ]
+    },
+    {
+     "route_id": 788,
+     "pair": "SW",
+     "source_endpoint": "S03:2:4",
+     "target_endpoint": "W06:2:12",
+     "canonical_p": [
+      125.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      53.375
+     ]
+    },
+    {
+     "route_id": 789,
+     "pair": "SW",
+     "source_endpoint": "S03:2:5",
+     "target_endpoint": "W07:2:13",
+     "canonical_p": [
+      125.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      62.625
+     ]
+    },
+    {
+     "route_id": 790,
+     "pair": "SW",
+     "source_endpoint": "S03:2:6",
+     "target_endpoint": "W08:2:14",
+     "canonical_p": [
+      125.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      71.875
+     ]
+    },
+    {
+     "route_id": 791,
+     "pair": "SW",
+     "source_endpoint": "S03:2:7",
+     "target_endpoint": "W09:2:15",
+     "canonical_p": [
+      124.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      81.125
+     ]
+    },
+    {
+     "route_id": 793,
+     "pair": "SW",
+     "source_endpoint": "S04:2:1",
+     "target_endpoint": "W04:2:9",
+     "canonical_p": [
+      117.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.625
+     ]
+    },
+    {
+     "route_id": 794,
+     "pair": "SW",
+     "source_endpoint": "S04:2:2",
+     "target_endpoint": "W05:2:10",
+     "canonical_p": [
+      117.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      43.875
+     ]
+    },
+    {
+     "route_id": 795,
+     "pair": "SW",
+     "source_endpoint": "S04:2:3",
+     "target_endpoint": "W06:2:11",
+     "canonical_p": [
+      116.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      53.125
+     ]
+    },
+    {
+     "route_id": 796,
+     "pair": "SW",
+     "source_endpoint": "S04:2:4",
+     "target_endpoint": "W07:2:12",
+     "canonical_p": [
+      116.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      62.375
+     ]
+    },
+    {
+     "route_id": 848,
+     "pair": "SW",
+     "source_endpoint": "S10:2:8",
+     "target_endpoint": "W01:2:16",
+     "canonical_p": [
+      61.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      9.375
+     ]
+    },
+    {
+     "route_id": 855,
+     "pair": "SW",
+     "source_endpoint": "S11:2:7",
+     "target_endpoint": "W01:2:15",
+     "canonical_p": [
+      52.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      9.125
+     ]
+    },
+    {
+     "route_id": 976,
+     "pair": "NW",
+     "source_endpoint": "W10:2:8",
+     "target_endpoint": "N01:2:16",
+     "canonical_p": [
+      88.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      9.375
+     ]
+    },
+    {
+     "route_id": 983,
+     "pair": "NW",
+     "source_endpoint": "W11:2:7",
+     "target_endpoint": "N01:2:15",
+     "canonical_p": [
+      97.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      9.125
+     ]
+    },
+    {
+     "route_id": 984,
+     "pair": "NW",
+     "source_endpoint": "W11:2:8",
+     "target_endpoint": "N02:2:16",
+     "canonical_p": [
+      97.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      18.375
+     ]
+    },
+    {
+     "route_id": 990,
+     "pair": "NW",
+     "source_endpoint": "W12:2:6",
+     "target_endpoint": "N01:2:14",
+     "canonical_p": [
+      105.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      8.875
+     ]
+    },
+    {
+     "route_id": 991,
+     "pair": "NW",
+     "source_endpoint": "W12:2:7",
+     "target_endpoint": "N02:2:15",
+     "canonical_p": [
+      106.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      18.125
+     ]
+    },
+    {
+     "route_id": 992,
+     "pair": "NW",
+     "source_endpoint": "W12:2:8",
+     "target_endpoint": "N03:2:16",
+     "canonical_p": [
+      106.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      27.375
+     ]
+    },
+    {
+     "route_id": 997,
+     "pair": "NW",
+     "source_endpoint": "W13:2:5",
+     "target_endpoint": "N01:2:13",
+     "canonical_p": [
+      114.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      8.625
+     ]
+    },
+    {
+     "route_id": 998,
+     "pair": "NW",
+     "source_endpoint": "W13:2:6",
+     "target_endpoint": "N02:2:14",
+     "canonical_p": [
+      114.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      17.875
+     ]
+    },
+    {
+     "route_id": 999,
+     "pair": "NW",
+     "source_endpoint": "W13:2:7",
+     "target_endpoint": "N03:2:15",
+     "canonical_p": [
+      115.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      27.125
+     ]
+    },
+    {
+     "route_id": 1000,
+     "pair": "NW",
+     "source_endpoint": "W13:2:8",
+     "target_endpoint": "N04:2:16",
+     "canonical_p": [
+      115.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      36.375
+     ]
+    },
+    {
+     "route_id": 1004,
+     "pair": "NW",
+     "source_endpoint": "W14:2:4",
+     "target_endpoint": "N01:2:12",
+     "canonical_p": [
+      123.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      8.375
+     ]
+    },
+    {
+     "route_id": 1005,
+     "pair": "NW",
+     "source_endpoint": "W14:2:5",
+     "target_endpoint": "N02:2:13",
+     "canonical_p": [
+      123.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      17.625
+     ]
+    },
+    {
+     "route_id": 1006,
+     "pair": "NW",
+     "source_endpoint": "W14:2:6",
+     "target_endpoint": "N03:2:14",
+     "canonical_p": [
+      123.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      26.875
+     ]
+    },
+    {
+     "route_id": 1007,
+     "pair": "NW",
+     "source_endpoint": "W14:2:7",
+     "target_endpoint": "N04:2:15",
+     "canonical_p": [
+      124.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      36.125
+     ]
+    },
+    {
+     "route_id": 1008,
+     "pair": "NW",
+     "source_endpoint": "W14:2:8",
+     "target_endpoint": "N05:2:16",
+     "canonical_p": [
+      124.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      45.375
+     ]
+    },
+    {
+     "route_id": 1011,
+     "pair": "NW",
+     "source_endpoint": "W15:2:3",
+     "target_endpoint": "N01:2:11",
+     "canonical_p": [
+      132.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      8.125
+     ]
+    },
+    {
+     "route_id": 1012,
+     "pair": "NW",
+     "source_endpoint": "W15:2:4",
+     "target_endpoint": "N02:2:12",
+     "canonical_p": [
+      132.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      17.375
+     ]
+    },
+    {
+     "route_id": 1013,
+     "pair": "NW",
+     "source_endpoint": "W15:2:5",
+     "target_endpoint": "N03:2:13",
+     "canonical_p": [
+      132.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      26.625
+     ]
+    },
+    {
+     "route_id": 1014,
+     "pair": "NW",
+     "source_endpoint": "W15:2:6",
+     "target_endpoint": "N04:2:14",
+     "canonical_p": [
+      132.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      35.875
+     ]
+    },
+    {
+     "route_id": 1015,
+     "pair": "NW",
+     "source_endpoint": "W15:2:7",
+     "target_endpoint": "N05:2:15",
+     "canonical_p": [
+      133.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      45.125
+     ]
+    },
+    {
+     "route_id": 1016,
+     "pair": "NW",
+     "source_endpoint": "W15:2:8",
+     "target_endpoint": "N06:2:16",
+     "canonical_p": [
+      133.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      54.375
+     ]
+    },
+    {
+     "route_id": 1018,
+     "pair": "NW",
+     "source_endpoint": "W16:2:2",
+     "target_endpoint": "N01:2:10",
+     "canonical_p": [
+      140.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.875
+     ]
+    },
+    {
+     "route_id": 1019,
+     "pair": "NW",
+     "source_endpoint": "W16:2:3",
+     "target_endpoint": "N02:2:11",
+     "canonical_p": [
+      141.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      17.125
+     ]
+    },
+    {
+     "route_id": 1020,
+     "pair": "NW",
+     "source_endpoint": "W16:2:4",
+     "target_endpoint": "N03:2:12",
+     "canonical_p": [
+      141.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      26.375
+     ]
+    },
+    {
+     "route_id": 1021,
+     "pair": "NW",
+     "source_endpoint": "W16:2:5",
+     "target_endpoint": "N04:2:13",
+     "canonical_p": [
+      141.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      35.625
+     ]
+    },
+    {
+     "route_id": 1022,
+     "pair": "NW",
+     "source_endpoint": "W16:2:6",
+     "target_endpoint": "N05:2:14",
+     "canonical_p": [
+      141.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      44.875
+     ]
+    },
+    {
+     "route_id": 1023,
+     "pair": "NW",
+     "source_endpoint": "W16:2:7",
+     "target_endpoint": "N06:2:15",
+     "canonical_p": [
+      142.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      54.125
+     ]
+    },
+    {
+     "route_id": 1024,
+     "pair": "NW",
+     "source_endpoint": "W16:2:8",
+     "target_endpoint": "N07:2:16",
+     "canonical_p": [
+      142.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      63.375
+     ]
+    }
+   ]
+  },
+  "V2_z1": {
+   "topology": "V2",
+   "plane": "z1",
+   "connections": 512,
+   "with_candidate": 512,
+   "without_candidate": 0,
+   "without_candidate_pairs": {},
+   "family_candidate_counts": {
+    "straight": 128,
+    "S": 153600
+   },
+   "blocked_routes": []
+  },
+  "V2_z2": {
+   "topology": "V2",
+   "plane": "z2",
+   "connections": 512,
+   "with_candidate": 384,
+   "without_candidate": 128,
+   "without_candidate_pairs": {
+    "EN": 32,
+    "ES": 32,
+    "NW": 32,
+    "SW": 32
+   },
+   "family_candidate_counts": {
+    "L": 384,
+    "TURN_S": 1393,
+    "SHIFT_TURN": 765,
+    "Z3": 2016,
+    "LEFT": 144
+   },
+   "blocked_routes": [
+    {
+     "route_id": 609,
+     "pair": "EN",
+     "source_endpoint": "N13:2:9",
+     "target_endpoint": "E16:2:15",
+     "canonical_p": [
+      115.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.875
+     ]
+    },
+    {
+     "route_id": 610,
+     "pair": "EN",
+     "source_endpoint": "N13:2:10",
+     "target_endpoint": "E16:2:16",
+     "canonical_p": [
+      115.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.625
+     ]
+    },
+    {
+     "route_id": 611,
+     "pair": "EN",
+     "source_endpoint": "N13:2:11",
+     "target_endpoint": "E15:2:15",
+     "canonical_p": [
+      116.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.875
+     ]
+    },
+    {
+     "route_id": 612,
+     "pair": "EN",
+     "source_endpoint": "N13:2:12",
+     "target_endpoint": "E15:2:16",
+     "canonical_p": [
+      116.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.625
+     ]
+    },
+    {
+     "route_id": 613,
+     "pair": "EN",
+     "source_endpoint": "N13:2:13",
+     "target_endpoint": "E14:2:15",
+     "canonical_p": [
+      116.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.875
+     ]
+    },
+    {
+     "route_id": 614,
+     "pair": "EN",
+     "source_endpoint": "N13:2:14",
+     "target_endpoint": "E14:2:16",
+     "canonical_p": [
+      116.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.625
+     ]
+    },
+    {
+     "route_id": 615,
+     "pair": "EN",
+     "source_endpoint": "N13:2:15",
+     "target_endpoint": "E13:2:15",
+     "canonical_p": [
+      117.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.875
+     ]
+    },
+    {
+     "route_id": 616,
+     "pair": "EN",
+     "source_endpoint": "N13:2:16",
+     "target_endpoint": "E13:2:16",
+     "canonical_p": [
+      117.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.625
+     ]
+    },
+    {
+     "route_id": 617,
+     "pair": "EN",
+     "source_endpoint": "N14:2:9",
+     "target_endpoint": "E16:2:13",
+     "canonical_p": [
+      124.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.375
+     ]
+    },
+    {
+     "route_id": 618,
+     "pair": "EN",
+     "source_endpoint": "N14:2:10",
+     "target_endpoint": "E16:2:14",
+     "canonical_p": [
+      124.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.125
+     ]
+    },
+    {
+     "route_id": 619,
+     "pair": "EN",
+     "source_endpoint": "N14:2:11",
+     "target_endpoint": "E15:2:13",
+     "canonical_p": [
+      125.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.375
+     ]
+    },
+    {
+     "route_id": 620,
+     "pair": "EN",
+     "source_endpoint": "N14:2:12",
+     "target_endpoint": "E15:2:14",
+     "canonical_p": [
+      125.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.125
+     ]
+    },
+    {
+     "route_id": 621,
+     "pair": "EN",
+     "source_endpoint": "N14:2:13",
+     "target_endpoint": "E14:2:13",
+     "canonical_p": [
+      125.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.375
+     ]
+    },
+    {
+     "route_id": 622,
+     "pair": "EN",
+     "source_endpoint": "N14:2:14",
+     "target_endpoint": "E14:2:14",
+     "canonical_p": [
+      125.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.125
+     ]
+    },
+    {
+     "route_id": 623,
+     "pair": "EN",
+     "source_endpoint": "N14:2:15",
+     "target_endpoint": "E13:2:13",
+     "canonical_p": [
+      126.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.375
+     ]
+    },
+    {
+     "route_id": 624,
+     "pair": "EN",
+     "source_endpoint": "N14:2:16",
+     "target_endpoint": "E13:2:14",
+     "canonical_p": [
+      126.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.125
+     ]
+    },
+    {
+     "route_id": 625,
+     "pair": "EN",
+     "source_endpoint": "N15:2:9",
+     "target_endpoint": "E16:2:11",
+     "canonical_p": [
+      133.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.875
+     ]
+    },
+    {
+     "route_id": 626,
+     "pair": "EN",
+     "source_endpoint": "N15:2:10",
+     "target_endpoint": "E16:2:12",
+     "canonical_p": [
+      133.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.625
+     ]
+    },
+    {
+     "route_id": 627,
+     "pair": "EN",
+     "source_endpoint": "N15:2:11",
+     "target_endpoint": "E15:2:11",
+     "canonical_p": [
+      134.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.875
+     ]
+    },
+    {
+     "route_id": 628,
+     "pair": "EN",
+     "source_endpoint": "N15:2:12",
+     "target_endpoint": "E15:2:12",
+     "canonical_p": [
+      134.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.625
+     ]
+    },
+    {
+     "route_id": 629,
+     "pair": "EN",
+     "source_endpoint": "N15:2:13",
+     "target_endpoint": "E14:2:11",
+     "canonical_p": [
+      134.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.875
+     ]
+    },
+    {
+     "route_id": 630,
+     "pair": "EN",
+     "source_endpoint": "N15:2:14",
+     "target_endpoint": "E14:2:12",
+     "canonical_p": [
+      134.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.625
+     ]
+    },
+    {
+     "route_id": 631,
+     "pair": "EN",
+     "source_endpoint": "N15:2:15",
+     "target_endpoint": "E13:2:11",
+     "canonical_p": [
+      135.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.875
+     ]
+    },
+    {
+     "route_id": 632,
+     "pair": "EN",
+     "source_endpoint": "N15:2:16",
+     "target_endpoint": "E13:2:12",
+     "canonical_p": [
+      135.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.625
+     ]
+    },
+    {
+     "route_id": 633,
+     "pair": "EN",
+     "source_endpoint": "N16:2:9",
+     "target_endpoint": "E16:2:9",
+     "canonical_p": [
+      142.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.375
+     ]
+    },
+    {
+     "route_id": 634,
+     "pair": "EN",
+     "source_endpoint": "N16:2:10",
+     "target_endpoint": "E16:2:10",
+     "canonical_p": [
+      142.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.125
+     ]
+    },
+    {
+     "route_id": 635,
+     "pair": "EN",
+     "source_endpoint": "N16:2:11",
+     "target_endpoint": "E15:2:9",
+     "canonical_p": [
+      143.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.375
+     ]
+    },
+    {
+     "route_id": 636,
+     "pair": "EN",
+     "source_endpoint": "N16:2:12",
+     "target_endpoint": "E15:2:10",
+     "canonical_p": [
+      143.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.125
+     ]
+    },
+    {
+     "route_id": 637,
+     "pair": "EN",
+     "source_endpoint": "N16:2:13",
+     "target_endpoint": "E14:2:9",
+     "canonical_p": [
+      143.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.375
+     ]
+    },
+    {
+     "route_id": 638,
+     "pair": "EN",
+     "source_endpoint": "N16:2:14",
+     "target_endpoint": "E14:2:10",
+     "canonical_p": [
+      143.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.125
+     ]
+    },
+    {
+     "route_id": 639,
+     "pair": "EN",
+     "source_endpoint": "N16:2:15",
+     "target_endpoint": "E13:2:9",
+     "canonical_p": [
+      144.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.375
+     ]
+    },
+    {
+     "route_id": 640,
+     "pair": "EN",
+     "source_endpoint": "N16:2:16",
+     "target_endpoint": "E13:2:10",
+     "canonical_p": [
+      144.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.125
+     ]
+    },
+    {
+     "route_id": 641,
+     "pair": "ES",
+     "source_endpoint": "E01:2:1",
+     "target_endpoint": "S16:2:9",
+     "canonical_p": [
+      144.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.375
+     ]
+    },
+    {
+     "route_id": 642,
+     "pair": "ES",
+     "source_endpoint": "E01:2:2",
+     "target_endpoint": "S16:2:10",
+     "canonical_p": [
+      144.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.125
+     ]
+    },
+    {
+     "route_id": 643,
+     "pair": "ES",
+     "source_endpoint": "E01:2:3",
+     "target_endpoint": "S15:2:9",
+     "canonical_p": [
+      143.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.375
+     ]
+    },
+    {
+     "route_id": 644,
+     "pair": "ES",
+     "source_endpoint": "E01:2:4",
+     "target_endpoint": "S15:2:10",
+     "canonical_p": [
+      143.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.125
+     ]
+    },
+    {
+     "route_id": 645,
+     "pair": "ES",
+     "source_endpoint": "E01:2:5",
+     "target_endpoint": "S14:2:9",
+     "canonical_p": [
+      143.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.375
+     ]
+    },
+    {
+     "route_id": 646,
+     "pair": "ES",
+     "source_endpoint": "E01:2:6",
+     "target_endpoint": "S14:2:10",
+     "canonical_p": [
+      143.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.125
+     ]
+    },
+    {
+     "route_id": 647,
+     "pair": "ES",
+     "source_endpoint": "E01:2:7",
+     "target_endpoint": "S13:2:9",
+     "canonical_p": [
+      142.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.375
+     ]
+    },
+    {
+     "route_id": 648,
+     "pair": "ES",
+     "source_endpoint": "E01:2:8",
+     "target_endpoint": "S13:2:10",
+     "canonical_p": [
+      142.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.125
+     ]
+    },
+    {
+     "route_id": 649,
+     "pair": "ES",
+     "source_endpoint": "E02:2:1",
+     "target_endpoint": "S16:2:11",
+     "canonical_p": [
+      135.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.875
+     ]
+    },
+    {
+     "route_id": 650,
+     "pair": "ES",
+     "source_endpoint": "E02:2:2",
+     "target_endpoint": "S16:2:12",
+     "canonical_p": [
+      135.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.625
+     ]
+    },
+    {
+     "route_id": 651,
+     "pair": "ES",
+     "source_endpoint": "E02:2:3",
+     "target_endpoint": "S15:2:11",
+     "canonical_p": [
+      134.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.875
+     ]
+    },
+    {
+     "route_id": 652,
+     "pair": "ES",
+     "source_endpoint": "E02:2:4",
+     "target_endpoint": "S15:2:12",
+     "canonical_p": [
+      134.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.625
+     ]
+    },
+    {
+     "route_id": 653,
+     "pair": "ES",
+     "source_endpoint": "E02:2:5",
+     "target_endpoint": "S14:2:11",
+     "canonical_p": [
+      134.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.875
+     ]
+    },
+    {
+     "route_id": 654,
+     "pair": "ES",
+     "source_endpoint": "E02:2:6",
+     "target_endpoint": "S14:2:12",
+     "canonical_p": [
+      134.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.625
+     ]
+    },
+    {
+     "route_id": 655,
+     "pair": "ES",
+     "source_endpoint": "E02:2:7",
+     "target_endpoint": "S13:2:11",
+     "canonical_p": [
+      133.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.875
+     ]
+    },
+    {
+     "route_id": 656,
+     "pair": "ES",
+     "source_endpoint": "E02:2:8",
+     "target_endpoint": "S13:2:12",
+     "canonical_p": [
+      133.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.625
+     ]
+    },
+    {
+     "route_id": 657,
+     "pair": "ES",
+     "source_endpoint": "E03:2:1",
+     "target_endpoint": "S16:2:13",
+     "canonical_p": [
+      126.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.375
+     ]
+    },
+    {
+     "route_id": 658,
+     "pair": "ES",
+     "source_endpoint": "E03:2:2",
+     "target_endpoint": "S16:2:14",
+     "canonical_p": [
+      126.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.125
+     ]
+    },
+    {
+     "route_id": 659,
+     "pair": "ES",
+     "source_endpoint": "E03:2:3",
+     "target_endpoint": "S15:2:13",
+     "canonical_p": [
+      125.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.375
+     ]
+    },
+    {
+     "route_id": 660,
+     "pair": "ES",
+     "source_endpoint": "E03:2:4",
+     "target_endpoint": "S15:2:14",
+     "canonical_p": [
+      125.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.125
+     ]
+    },
+    {
+     "route_id": 661,
+     "pair": "ES",
+     "source_endpoint": "E03:2:5",
+     "target_endpoint": "S14:2:13",
+     "canonical_p": [
+      125.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.375
+     ]
+    },
+    {
+     "route_id": 662,
+     "pair": "ES",
+     "source_endpoint": "E03:2:6",
+     "target_endpoint": "S14:2:14",
+     "canonical_p": [
+      125.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.125
+     ]
+    },
+    {
+     "route_id": 663,
+     "pair": "ES",
+     "source_endpoint": "E03:2:7",
+     "target_endpoint": "S13:2:13",
+     "canonical_p": [
+      124.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.375
+     ]
+    },
+    {
+     "route_id": 664,
+     "pair": "ES",
+     "source_endpoint": "E03:2:8",
+     "target_endpoint": "S13:2:14",
+     "canonical_p": [
+      124.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.125
+     ]
+    },
+    {
+     "route_id": 665,
+     "pair": "ES",
+     "source_endpoint": "E04:2:1",
+     "target_endpoint": "S16:2:15",
+     "canonical_p": [
+      117.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.875
+     ]
+    },
+    {
+     "route_id": 666,
+     "pair": "ES",
+     "source_endpoint": "E04:2:2",
+     "target_endpoint": "S16:2:16",
+     "canonical_p": [
+      117.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.625
+     ]
+    },
+    {
+     "route_id": 667,
+     "pair": "ES",
+     "source_endpoint": "E04:2:3",
+     "target_endpoint": "S15:2:15",
+     "canonical_p": [
+      116.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.875
+     ]
+    },
+    {
+     "route_id": 668,
+     "pair": "ES",
+     "source_endpoint": "E04:2:4",
+     "target_endpoint": "S15:2:16",
+     "canonical_p": [
+      116.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.625
+     ]
+    },
+    {
+     "route_id": 669,
+     "pair": "ES",
+     "source_endpoint": "E04:2:5",
+     "target_endpoint": "S14:2:15",
+     "canonical_p": [
+      116.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.875
+     ]
+    },
+    {
+     "route_id": 670,
+     "pair": "ES",
+     "source_endpoint": "E04:2:6",
+     "target_endpoint": "S14:2:16",
+     "canonical_p": [
+      116.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.625
+     ]
+    },
+    {
+     "route_id": 671,
+     "pair": "ES",
+     "source_endpoint": "E04:2:7",
+     "target_endpoint": "S13:2:15",
+     "canonical_p": [
+      115.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.875
+     ]
+    },
+    {
+     "route_id": 672,
+     "pair": "ES",
+     "source_endpoint": "E04:2:8",
+     "target_endpoint": "S13:2:16",
+     "canonical_p": [
+      115.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.625
+     ]
+    },
+    {
+     "route_id": 769,
+     "pair": "SW",
+     "source_endpoint": "S01:2:1",
+     "target_endpoint": "W01:2:1",
+     "canonical_p": [
+      144.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.625
+     ]
+    },
+    {
+     "route_id": 770,
+     "pair": "SW",
+     "source_endpoint": "S01:2:2",
+     "target_endpoint": "W01:2:2",
+     "canonical_p": [
+      144.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.875
+     ]
+    },
+    {
+     "route_id": 771,
+     "pair": "SW",
+     "source_endpoint": "S01:2:3",
+     "target_endpoint": "W02:2:1",
+     "canonical_p": [
+      143.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.625
+     ]
+    },
+    {
+     "route_id": 772,
+     "pair": "SW",
+     "source_endpoint": "S01:2:4",
+     "target_endpoint": "W02:2:2",
+     "canonical_p": [
+      143.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.875
+     ]
+    },
+    {
+     "route_id": 773,
+     "pair": "SW",
+     "source_endpoint": "S01:2:5",
+     "target_endpoint": "W03:2:1",
+     "canonical_p": [
+      143.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.625
+     ]
+    },
+    {
+     "route_id": 774,
+     "pair": "SW",
+     "source_endpoint": "S01:2:6",
+     "target_endpoint": "W03:2:2",
+     "canonical_p": [
+      143.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.875
+     ]
+    },
+    {
+     "route_id": 775,
+     "pair": "SW",
+     "source_endpoint": "S01:2:7",
+     "target_endpoint": "W04:2:1",
+     "canonical_p": [
+      142.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.625
+     ]
+    },
+    {
+     "route_id": 776,
+     "pair": "SW",
+     "source_endpoint": "S01:2:8",
+     "target_endpoint": "W04:2:2",
+     "canonical_p": [
+      142.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.875
+     ]
+    },
+    {
+     "route_id": 777,
+     "pair": "SW",
+     "source_endpoint": "S02:2:1",
+     "target_endpoint": "W01:2:3",
+     "canonical_p": [
+      135.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.125
+     ]
+    },
+    {
+     "route_id": 778,
+     "pair": "SW",
+     "source_endpoint": "S02:2:2",
+     "target_endpoint": "W01:2:4",
+     "canonical_p": [
+      135.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.375
+     ]
+    },
+    {
+     "route_id": 779,
+     "pair": "SW",
+     "source_endpoint": "S02:2:3",
+     "target_endpoint": "W02:2:3",
+     "canonical_p": [
+      134.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.125
+     ]
+    },
+    {
+     "route_id": 780,
+     "pair": "SW",
+     "source_endpoint": "S02:2:4",
+     "target_endpoint": "W02:2:4",
+     "canonical_p": [
+      134.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.375
+     ]
+    },
+    {
+     "route_id": 781,
+     "pair": "SW",
+     "source_endpoint": "S02:2:5",
+     "target_endpoint": "W03:2:3",
+     "canonical_p": [
+      134.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.125
+     ]
+    },
+    {
+     "route_id": 782,
+     "pair": "SW",
+     "source_endpoint": "S02:2:6",
+     "target_endpoint": "W03:2:4",
+     "canonical_p": [
+      134.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.375
+     ]
+    },
+    {
+     "route_id": 783,
+     "pair": "SW",
+     "source_endpoint": "S02:2:7",
+     "target_endpoint": "W04:2:3",
+     "canonical_p": [
+      133.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.125
+     ]
+    },
+    {
+     "route_id": 784,
+     "pair": "SW",
+     "source_endpoint": "S02:2:8",
+     "target_endpoint": "W04:2:4",
+     "canonical_p": [
+      133.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.375
+     ]
+    },
+    {
+     "route_id": 785,
+     "pair": "SW",
+     "source_endpoint": "S03:2:1",
+     "target_endpoint": "W01:2:5",
+     "canonical_p": [
+      126.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.625
+     ]
+    },
+    {
+     "route_id": 786,
+     "pair": "SW",
+     "source_endpoint": "S03:2:2",
+     "target_endpoint": "W01:2:6",
+     "canonical_p": [
+      126.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.875
+     ]
+    },
+    {
+     "route_id": 787,
+     "pair": "SW",
+     "source_endpoint": "S03:2:3",
+     "target_endpoint": "W02:2:5",
+     "canonical_p": [
+      125.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.625
+     ]
+    },
+    {
+     "route_id": 788,
+     "pair": "SW",
+     "source_endpoint": "S03:2:4",
+     "target_endpoint": "W02:2:6",
+     "canonical_p": [
+      125.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.875
+     ]
+    },
+    {
+     "route_id": 789,
+     "pair": "SW",
+     "source_endpoint": "S03:2:5",
+     "target_endpoint": "W03:2:5",
+     "canonical_p": [
+      125.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.625
+     ]
+    },
+    {
+     "route_id": 790,
+     "pair": "SW",
+     "source_endpoint": "S03:2:6",
+     "target_endpoint": "W03:2:6",
+     "canonical_p": [
+      125.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.875
+     ]
+    },
+    {
+     "route_id": 791,
+     "pair": "SW",
+     "source_endpoint": "S03:2:7",
+     "target_endpoint": "W04:2:5",
+     "canonical_p": [
+      124.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.625
+     ]
+    },
+    {
+     "route_id": 792,
+     "pair": "SW",
+     "source_endpoint": "S03:2:8",
+     "target_endpoint": "W04:2:6",
+     "canonical_p": [
+      124.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.875
+     ]
+    },
+    {
+     "route_id": 793,
+     "pair": "SW",
+     "source_endpoint": "S04:2:1",
+     "target_endpoint": "W01:2:7",
+     "canonical_p": [
+      117.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.125
+     ]
+    },
+    {
+     "route_id": 794,
+     "pair": "SW",
+     "source_endpoint": "S04:2:2",
+     "target_endpoint": "W01:2:8",
+     "canonical_p": [
+      117.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.375
+     ]
+    },
+    {
+     "route_id": 795,
+     "pair": "SW",
+     "source_endpoint": "S04:2:3",
+     "target_endpoint": "W02:2:7",
+     "canonical_p": [
+      116.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.125
+     ]
+    },
+    {
+     "route_id": 796,
+     "pair": "SW",
+     "source_endpoint": "S04:2:4",
+     "target_endpoint": "W02:2:8",
+     "canonical_p": [
+      116.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.375
+     ]
+    },
+    {
+     "route_id": 797,
+     "pair": "SW",
+     "source_endpoint": "S04:2:5",
+     "target_endpoint": "W03:2:7",
+     "canonical_p": [
+      116.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.125
+     ]
+    },
+    {
+     "route_id": 798,
+     "pair": "SW",
+     "source_endpoint": "S04:2:6",
+     "target_endpoint": "W03:2:8",
+     "canonical_p": [
+      116.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.375
+     ]
+    },
+    {
+     "route_id": 799,
+     "pair": "SW",
+     "source_endpoint": "S04:2:7",
+     "target_endpoint": "W04:2:7",
+     "canonical_p": [
+      115.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.125
+     ]
+    },
+    {
+     "route_id": 800,
+     "pair": "SW",
+     "source_endpoint": "S04:2:8",
+     "target_endpoint": "W04:2:8",
+     "canonical_p": [
+      115.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.375
+     ]
+    },
+    {
+     "route_id": 993,
+     "pair": "NW",
+     "source_endpoint": "W13:2:9",
+     "target_endpoint": "N01:2:7",
+     "canonical_p": [
+      115.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.125
+     ]
+    },
+    {
+     "route_id": 994,
+     "pair": "NW",
+     "source_endpoint": "W13:2:10",
+     "target_endpoint": "N01:2:8",
+     "canonical_p": [
+      115.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      7.375
+     ]
+    },
+    {
+     "route_id": 995,
+     "pair": "NW",
+     "source_endpoint": "W13:2:11",
+     "target_endpoint": "N02:2:7",
+     "canonical_p": [
+      116.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.125
+     ]
+    },
+    {
+     "route_id": 996,
+     "pair": "NW",
+     "source_endpoint": "W13:2:12",
+     "target_endpoint": "N02:2:8",
+     "canonical_p": [
+      116.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      16.375
+     ]
+    },
+    {
+     "route_id": 997,
+     "pair": "NW",
+     "source_endpoint": "W13:2:13",
+     "target_endpoint": "N03:2:7",
+     "canonical_p": [
+      116.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.125
+     ]
+    },
+    {
+     "route_id": 998,
+     "pair": "NW",
+     "source_endpoint": "W13:2:14",
+     "target_endpoint": "N03:2:8",
+     "canonical_p": [
+      116.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      25.375
+     ]
+    },
+    {
+     "route_id": 999,
+     "pair": "NW",
+     "source_endpoint": "W13:2:15",
+     "target_endpoint": "N04:2:7",
+     "canonical_p": [
+      117.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.125
+     ]
+    },
+    {
+     "route_id": 1000,
+     "pair": "NW",
+     "source_endpoint": "W13:2:16",
+     "target_endpoint": "N04:2:8",
+     "canonical_p": [
+      117.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      34.375
+     ]
+    },
+    {
+     "route_id": 1001,
+     "pair": "NW",
+     "source_endpoint": "W14:2:9",
+     "target_endpoint": "N01:2:5",
+     "canonical_p": [
+      124.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.625
+     ]
+    },
+    {
+     "route_id": 1002,
+     "pair": "NW",
+     "source_endpoint": "W14:2:10",
+     "target_endpoint": "N01:2:6",
+     "canonical_p": [
+      124.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.875
+     ]
+    },
+    {
+     "route_id": 1003,
+     "pair": "NW",
+     "source_endpoint": "W14:2:11",
+     "target_endpoint": "N02:2:5",
+     "canonical_p": [
+      125.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.625
+     ]
+    },
+    {
+     "route_id": 1004,
+     "pair": "NW",
+     "source_endpoint": "W14:2:12",
+     "target_endpoint": "N02:2:6",
+     "canonical_p": [
+      125.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.875
+     ]
+    },
+    {
+     "route_id": 1005,
+     "pair": "NW",
+     "source_endpoint": "W14:2:13",
+     "target_endpoint": "N03:2:5",
+     "canonical_p": [
+      125.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.625
+     ]
+    },
+    {
+     "route_id": 1006,
+     "pair": "NW",
+     "source_endpoint": "W14:2:14",
+     "target_endpoint": "N03:2:6",
+     "canonical_p": [
+      125.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.875
+     ]
+    },
+    {
+     "route_id": 1007,
+     "pair": "NW",
+     "source_endpoint": "W14:2:15",
+     "target_endpoint": "N04:2:5",
+     "canonical_p": [
+      126.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.625
+     ]
+    },
+    {
+     "route_id": 1008,
+     "pair": "NW",
+     "source_endpoint": "W14:2:16",
+     "target_endpoint": "N04:2:6",
+     "canonical_p": [
+      126.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.875
+     ]
+    },
+    {
+     "route_id": 1009,
+     "pair": "NW",
+     "source_endpoint": "W15:2:9",
+     "target_endpoint": "N01:2:3",
+     "canonical_p": [
+      133.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.125
+     ]
+    },
+    {
+     "route_id": 1010,
+     "pair": "NW",
+     "source_endpoint": "W15:2:10",
+     "target_endpoint": "N01:2:4",
+     "canonical_p": [
+      133.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      6.375
+     ]
+    },
+    {
+     "route_id": 1011,
+     "pair": "NW",
+     "source_endpoint": "W15:2:11",
+     "target_endpoint": "N02:2:3",
+     "canonical_p": [
+      134.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.125
+     ]
+    },
+    {
+     "route_id": 1012,
+     "pair": "NW",
+     "source_endpoint": "W15:2:12",
+     "target_endpoint": "N02:2:4",
+     "canonical_p": [
+      134.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      15.375
+     ]
+    },
+    {
+     "route_id": 1013,
+     "pair": "NW",
+     "source_endpoint": "W15:2:13",
+     "target_endpoint": "N03:2:3",
+     "canonical_p": [
+      134.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.125
+     ]
+    },
+    {
+     "route_id": 1014,
+     "pair": "NW",
+     "source_endpoint": "W15:2:14",
+     "target_endpoint": "N03:2:4",
+     "canonical_p": [
+      134.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      24.375
+     ]
+    },
+    {
+     "route_id": 1015,
+     "pair": "NW",
+     "source_endpoint": "W15:2:15",
+     "target_endpoint": "N04:2:3",
+     "canonical_p": [
+      135.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.125
+     ]
+    },
+    {
+     "route_id": 1016,
+     "pair": "NW",
+     "source_endpoint": "W15:2:16",
+     "target_endpoint": "N04:2:4",
+     "canonical_p": [
+      135.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      33.375
+     ]
+    },
+    {
+     "route_id": 1017,
+     "pair": "NW",
+     "source_endpoint": "W16:2:9",
+     "target_endpoint": "N01:2:1",
+     "canonical_p": [
+      142.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.625
+     ]
+    },
+    {
+     "route_id": 1018,
+     "pair": "NW",
+     "source_endpoint": "W16:2:10",
+     "target_endpoint": "N01:2:2",
+     "canonical_p": [
+      142.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      5.875
+     ]
+    },
+    {
+     "route_id": 1019,
+     "pair": "NW",
+     "source_endpoint": "W16:2:11",
+     "target_endpoint": "N02:2:1",
+     "canonical_p": [
+      143.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.625
+     ]
+    },
+    {
+     "route_id": 1020,
+     "pair": "NW",
+     "source_endpoint": "W16:2:12",
+     "target_endpoint": "N02:2:2",
+     "canonical_p": [
+      143.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      14.875
+     ]
+    },
+    {
+     "route_id": 1021,
+     "pair": "NW",
+     "source_endpoint": "W16:2:13",
+     "target_endpoint": "N03:2:1",
+     "canonical_p": [
+      143.625,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.625
+     ]
+    },
+    {
+     "route_id": 1022,
+     "pair": "NW",
+     "source_endpoint": "W16:2:14",
+     "target_endpoint": "N03:2:2",
+     "canonical_p": [
+      143.875,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      23.875
+     ]
+    },
+    {
+     "route_id": 1023,
+     "pair": "NW",
+     "source_endpoint": "W16:2:15",
+     "target_endpoint": "N04:2:1",
+     "canonical_p": [
+      144.125,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.625
+     ]
+    },
+    {
+     "route_id": 1024,
+     "pair": "NW",
+     "source_endpoint": "W16:2:16",
+     "target_endpoint": "N04:2:2",
+     "canonical_p": [
+      144.375,
+      0.0
+     ],
+     "canonical_q": [
+      150.0,
+      32.875
+     ]
+    }
+   ]
+  }
+ },
+ "classification_notes": [
+  "A (mathematically impossible at R=40): the adjacent families need a 40 mm quarter turn plus >=2R=80 mm straight runs between double-corner segments; with the canonical port at s_x and the target row q_y the reachable set is the complement of the infeasible regions in the grid above. The final quarter turn into the x=150 edge must be centred at x<=110 and at y = q_y +/- R, which forces q_y >= R (approach from below) or the approach-from-above shape that needs >= 2R of horizontal travel before the descent; that is what blocks the s_x >= 40 / q_y < 40 and s_x >= 120 regions.",
+  "B (template coverage): every gap in the grid was re-tested with the full family set (L, TURN_S, SHIFT_TURN, Z3, Z5, LEFT); adding more families does not fill the mathematically empty regions, but exotic multi-S chains are not enumerated - recorded as residual template risk.",
+  "C (program error): ruled out for the reported families by validate() re-checks and by the independent validator round-trip on emitted geometry."
+ ]
+}

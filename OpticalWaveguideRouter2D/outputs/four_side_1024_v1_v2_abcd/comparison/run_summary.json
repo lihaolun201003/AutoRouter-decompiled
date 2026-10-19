@@ -1,0 +1,303 @@
+{
+ "generated_from": "routes.json engine self-report",
+ "experiments": {
+  "V1_A": {
+   "experiment": "V1_A",
+   "routed": 358,
+   "opposite": 324,
+   "adjacent": 34,
+   "by_pair": {
+    "NS": 252,
+    "EW": 72,
+    "EN": 21,
+    "ES": 1,
+    "SW": 9,
+    "NW": 3
+   },
+   "mean_length_mm": 188.46278851326565,
+   "total_length_mm": 67469.6782877491,
+   "crossing_count": 47608,
+   "evaluations": 163698,
+   "runtime_seconds": 338.7458649,
+   "policy": "strict",
+   "strategy": {
+    "name": "A_opposite_first",
+    "group_order": [
+     "NS",
+     "EW",
+     "EN",
+     "ES",
+     "SW",
+     "NW"
+    ],
+    "within_group": "x_desc",
+    "dynamic_adjacent_order": false,
+    "algorithm": "A"
+   },
+   "budget": {
+    "eval_budget": 800000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V1_B": {
+   "experiment": "V1_B",
+   "routed": 462,
+   "opposite": 52,
+   "adjacent": 410,
+   "by_pair": {
+    "NS": 27,
+    "EW": 25,
+    "EN": 128,
+    "ES": 41,
+    "SW": 113,
+    "NW": 128
+   },
+   "mean_length_mm": 149.42036819732598,
+   "total_length_mm": 69032.2101071646,
+   "crossing_count": 55846,
+   "evaluations": 161584,
+   "runtime_seconds": 134.27842789999886,
+   "policy": "strict",
+   "strategy": {
+    "name": "B_adjacent_first",
+    "group_order": [
+     "NW",
+     "EN",
+     "SW",
+     "ES",
+     "NS",
+     "EW"
+    ],
+    "within_group": "x_desc",
+    "dynamic_adjacent_order": false,
+    "algorithm": "B"
+   },
+   "budget": {
+    "eval_budget": 800000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V1_C": {
+   "experiment": "V1_C",
+   "routed": 367,
+   "opposite": 208,
+   "adjacent": 159,
+   "by_pair": {
+    "NS": 77,
+    "EW": 131,
+    "EN": 34,
+    "ES": 54,
+    "SW": 43,
+    "NW": 28
+   },
+   "mean_length_mm": 165.48413951764397,
+   "total_length_mm": 60732.679202975334,
+   "crossing_count": 41530,
+   "evaluations": 158002,
+   "runtime_seconds": 167.47107519999918,
+   "policy": "strict",
+   "strategy": {
+    "name": "C_round_robin",
+    "algorithm": "C",
+    "design": {
+     "start_side": "E",
+     "direction": "ccw",
+     "batch": 32
+    },
+    "within_group": "x_desc"
+   },
+   "budget": {
+    "eval_budget": 800000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V1_D": {
+   "experiment": "V1_D",
+   "routed": 423,
+   "opposite": 109,
+   "adjacent": 314,
+   "by_pair": {
+    "NS": 91,
+    "EW": 18,
+    "EN": 93,
+    "ES": 31,
+    "SW": 71,
+    "NW": 119
+   },
+   "mean_length_mm": 147.37125912040997,
+   "total_length_mm": 62338.04260793342,
+   "crossing_count": 90179,
+   "evaluations": 220047,
+   "runtime_seconds": 484.6247389,
+   "policy": "strict",
+   "strategy": {
+    "name": "D_joint_candidate_lns",
+    "algorithm": "D",
+    "pool_size": 64,
+    "batch_max": 12,
+    "batch_pool": 6,
+    "pair_level_compatibility": true,
+    "joint_multi_route_replacement": true,
+    "objective": [
+     "routed_count",
+     "crossings",
+     "total_length"
+    ],
+    "seed": 20261019
+   },
+   "budget": {
+    "eval_budget": 400000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V2_A": {
+   "experiment": "V2_A",
+   "routed": 411,
+   "opposite": 360,
+   "adjacent": 51,
+   "by_pair": {
+    "NS": 256,
+    "EW": 104,
+    "EN": 10,
+    "ES": 2,
+    "SW": 27,
+    "NW": 12
+   },
+   "mean_length_mm": 149.08618629605198,
+   "total_length_mm": 61274.422567677364,
+   "crossing_count": 38185,
+   "evaluations": 137473,
+   "runtime_seconds": 291.34439139999995,
+   "policy": "strict",
+   "strategy": {
+    "name": "A_opposite_first",
+    "group_order": [
+     "NS",
+     "EW",
+     "EN",
+     "ES",
+     "SW",
+     "NW"
+    ],
+    "within_group": "x_desc",
+    "dynamic_adjacent_order": false,
+    "algorithm": "A"
+   },
+   "budget": {
+    "eval_budget": 800000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V2_B": {
+   "experiment": "V2_B",
+   "routed": 386,
+   "opposite": 65,
+   "adjacent": 321,
+   "by_pair": {
+    "NS": 38,
+    "EW": 27,
+    "EN": 122,
+    "ES": 43,
+    "SW": 43,
+    "NW": 113
+   },
+   "mean_length_mm": 152.30777711100498,
+   "total_length_mm": 58790.801964847924,
+   "crossing_count": 38373,
+   "evaluations": 125504,
+   "runtime_seconds": 242.1237044999998,
+   "policy": "strict",
+   "strategy": {
+    "name": "B_adjacent_first",
+    "group_order": [
+     "NW",
+     "EN",
+     "SW",
+     "ES",
+     "NS",
+     "EW"
+    ],
+    "within_group": "x_desc",
+    "dynamic_adjacent_order": false,
+    "algorithm": "B"
+   },
+   "budget": {
+    "eval_budget": 800000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V2_C": {
+   "experiment": "V2_C",
+   "routed": 417,
+   "opposite": 229,
+   "adjacent": 188,
+   "by_pair": {
+    "NS": 118,
+    "EW": 111,
+    "EN": 33,
+    "ES": 70,
+    "SW": 59,
+    "NW": 26
+   },
+   "mean_length_mm": 138.7607638099905,
+   "total_length_mm": 57863.23850876604,
+   "crossing_count": 37163,
+   "evaluations": 136966,
+   "runtime_seconds": 146.8572511000002,
+   "policy": "strict",
+   "strategy": {
+    "name": "C_round_robin",
+    "algorithm": "C",
+    "design": {
+     "start_side": "E",
+     "direction": "ccw",
+     "batch": 32
+    },
+    "within_group": "x_desc"
+   },
+   "budget": {
+    "eval_budget": 800000,
+    "time_budget_seconds": 1800.0
+   }
+  },
+  "V2_D": {
+   "experiment": "V2_D",
+   "routed": 427,
+   "opposite": 133,
+   "adjacent": 294,
+   "by_pair": {
+    "NS": 96,
+    "EW": 37,
+    "EN": 84,
+    "ES": 43,
+    "SW": 104,
+    "NW": 63
+   },
+   "mean_length_mm": 133.27279266471274,
+   "total_length_mm": 56907.482467832335,
+   "crossing_count": 69930,
+   "evaluations": 192544,
+   "runtime_seconds": 454.2683692999999,
+   "policy": "strict",
+   "strategy": {
+    "name": "D_joint_candidate_lns",
+    "algorithm": "D",
+    "pool_size": 64,
+    "batch_max": 12,
+    "batch_pool": 6,
+    "pair_level_compatibility": true,
+    "joint_multi_route_replacement": true,
+    "objective": [
+     "routed_count",
+     "crossings",
+     "total_length"
+    ],
+    "seed": 20261019
+   },
+   "budget": {
+    "eval_budget": 400000,
+    "time_budget_seconds": 1800.0
+   }
+  }
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "experiment": "V1_D_z1",
+ "topology": "V1",
+ "algorithm": "D",
+ "plane": "z1",
+ "z_mm": 0.0,
+ "port_model": "real_2x16_dual_height",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "waveguide_width_mm": 0.05,
+  "min_edge_gap_mm": 0.03,
+  "min_centerline_clearance_mm": 0.08,
+  "min_bend_radius_mm": 40.0,
+  "fixed_radius_40mm": true,
+  "radius_note": "all arcs are exactly R=40 mm (D56 fixed-radius family); this is not a search over all R>=40 mm geometries",
+  "propagation_loss_db_per_cm": 0.05,
+  "bend_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "no femtosecond-laser-written glass bend-loss function is known; R=40 mm is a geometry constraint only, not a measured loss value"
+  },
+  "crossing_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing count is a geometric metric only"
+  },
+  "legacy_polymer_estimate": {
+   "available": true,
+   "status": "legacy_estimate",
+   "note": "the previous polymer bend-loss model may be quoted for comparison only, never as glass truth"
+  },
+  "sagitta_mm": 0.0005,
+  "min_cross_angle_deg": 5.0,
+  "interface_standard": {
+   "name": "IEC 61754-7-3:2019 2x16 MPO",
+   "fiber_column_pitch_mm": 0.25,
+   "fiber_row_pitch_mm": 0.5,
+   "rows": 2,
+   "columns": 16,
+   "connectors_per_side": 16,
+   "connector_pitch_mm": 9.0,
+   "connector_pitch_status": "provisional; full MPO housing interference at 9 mm pitch unresolved"
+  },
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "z_transition": "not_implemented",
+  "layer": 0,
+  "routing_layers_per_plane": 1,
+  "planes": 2,
+  "manufacturing_claim": "simulation under the two-height interface assumption; glass thickness and connector mounting direction are not confirmed, no z transition is implemented, not a claim of manufacturability",
+  "historical_baseline": {
+   "endpoint_mode": "virtual_unfolded",
+   "virtual_port_pitch_mm": 0.175,
+   "radius_mm": 5.0,
+   "edge_gap_mm": 0.125,
+   "clearance_mm": 0.175,
+   "output_dir": "outputs/four_side_1024_v1_v2_abcd"
+  }
+ },
+ "strategy": {
+  "name": "D_joint_candidate_lns",
+  "algorithm": "D",
+  "radius_mm": 40.0,
+  "clearance_mm": 0.08,
+  "pool_size": 64,
+  "batch_max": 12,
+  "batch_pool": 6,
+  "pair_level_compatibility": true,
+  "joint_multi_route_replacement": true,
+  "objective": [
+   "routed_count",
+   "crossings",
+   "total_length"
+  ],
+  "seed": 20261019
+ },
+ "budget": {
+  "candidate_budget_per_route": 200,
+  "eval_budget": 200000,
+  "time_budget_seconds": 900.0,
+  "ripup_rounds": 4,
+  "seed": 20261019
+ },
+ "main_pass": {
+  "algorithm": "D_joint_candidate_lns",
+  "attempted": 512,
+  "accepted": 341,
+  "evaluations": 82635,
+  "pair_checks": 14547,
+  "restarts": [
+   {
+    "label": "restart0",
+    "accepted": 332,
+    "evals": 13032,
+    "seconds": 22.347516499999983,
+    "score": [
+     -332,
+     38086,
+     55710.59831238062
+    ]
+   },
+   {
+    "label": "restart1",
+    "accepted": 340,
+    "evals": 26308,
+    "seconds": 22.78354599999875,
+    "score": [
+     -340,
+     41579,
+     56434.80223142888
+    ]
+   },
+   {
+    "label": "restart2",
+    "accepted": 340,
+    "evals": 39584,
+    "seconds": 21.854799199998524,
+    "score": [
+     -340,
+     41579,
+     56434.80223142888
+    ]
+   }
+  ],
+  "baseline_score": [
+   -340,
+   83158,
+   56434.80223142888
+  ],
+  "final_score": [
+   -341,
+   82832,
+   56337.56436213259
+  ],
+  "lns_attempts": 1200,
+  "lns_count_improvements": 1,
+  "lns_quality_improvements": 68,
+  "stop_reason": "completed",
+  "duration_seconds": 583.7561822999996
+ },
+ "final_audit_removed": []
+}

@@ -1,0 +1,15 @@
+2026-10-19T17:02:07.597060+08:00 ABCD experiment start: V2_B topology=V2 algorithm=B csv=C:\Users\lihao\Desktop\optical_1024_multitomulti_connectivity_v2_symmetric.csv policy=strict seed=20261019 candidate_budget=900 eval_budget=800000 time_budget=1800.0
+2026-10-19T17:02:07.710942+08:00 budget: eval_budget=800000 (explicit) time_budget=1800.0s deadline_set=True
+2026-10-19T17:02:14.073881+08:00 B_adjacent_first: attempted 128/1024 accepted=113 evals=4274 elapsed=6.4s
+2026-10-19T17:02:19.552351+08:00 B_adjacent_first: attempted 256/1024 accepted=235 evals=6957 elapsed=11.8s
+2026-10-19T17:03:01.445725+08:00 B_adjacent_first: attempted 384/1024 accepted=278 evals=23600 elapsed=53.7s
+2026-10-19T17:03:43.338606+08:00 B_adjacent_first: attempted 512/1024 accepted=321 evals=42736 elapsed=95.6s
+2026-10-19T17:04:09.497840+08:00 B_adjacent_first: attempted 640/1024 accepted=341 evals=62696 elapsed=121.8s
+2026-10-19T17:04:46.163523+08:00 B_adjacent_first: attempted 768/1024 accepted=359 evals=82373 elapsed=158.5s
+2026-10-19T17:05:26.611277+08:00 B_adjacent_first: attempted 896/1024 accepted=374 evals=103576 elapsed=198.9s
+2026-10-19T17:06:02.619051+08:00 B_adjacent_first: attempted 1024/1024 accepted=386 evals=124931 elapsed=234.9s
+2026-10-19T17:06:02.619051+08:00 main pass: {'attempted': 1024, 'accepted': 386, 'placed': 386, 'evaluations': 124931, 'stop_reason': None, 'duration_seconds': 234.90788410000096}
+2026-10-19T17:06:04.755004+08:00 ripup round 1: committed=0 progress=0 accepted=386 failed=638 elapsed=2.1s
+2026-10-19T17:06:04.756004+08:00 ripup: {'rounds': 4, 'transactions': 3, 'improvements': 0, 'duration_seconds': 2.090316999998322}
+2026-10-19T17:06:09.832205+08:00 final internal audit removed 0 route(s)
+2026-10-19T17:06:09.886192+08:00 DONE V2_B: routed=386/1024 opposite=65 adjacent=321 evals=125504 runtime=242.1s

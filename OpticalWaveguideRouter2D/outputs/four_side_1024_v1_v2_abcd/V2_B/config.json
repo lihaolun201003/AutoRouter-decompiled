@@ -1,0 +1,63 @@
+{
+ "experiment": "V2_B",
+ "topology": "V2",
+ "algorithm": "B",
+ "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+ "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "policy": "strict",
+ "seed": 20261019,
+ "candidate_budget_per_route": 900,
+ "eval_budget": 800000,
+ "time_budget_seconds": 1800.0,
+ "ripup_rounds": 4,
+ "ripup_routes": 3,
+ "no_deep": false,
+ "strategy": {
+  "name": "B_adjacent_first",
+  "group_order": [
+   "NW",
+   "EN",
+   "SW",
+   "ES",
+   "NS",
+   "EW"
+  ],
+  "within_group": "x_desc",
+  "dynamic_adjacent_order": false,
+  "algorithm": "B"
+ },
+ "physics": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "layer": 0,
+  "routing_layers": 1,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.125,
+  "centerline_clearance_mm": 0.175,
+  "min_radius_mm": 5.0,
+  "sagitta_mm": 0.0005,
+  "connector_pitch_mm": 9.0,
+  "virtual_pitch_mm": 0.175,
+  "endpoint_mode": "virtual_unfolded"
+ },
+ "budget_used": {
+  "evaluations": 125504,
+  "total_runtime_seconds": 242.1237044999998
+ },
+ "main_pass": {
+  "attempted": 1024,
+  "accepted": 386,
+  "placed": 386,
+  "evaluations": 124931,
+  "stop_reason": null,
+  "duration_seconds": 234.90788410000096
+ },
+ "ripup": {
+  "rounds": 4,
+  "transactions": 3,
+  "improvements": 0,
+  "duration_seconds": 2.090316999998322
+ }
+}

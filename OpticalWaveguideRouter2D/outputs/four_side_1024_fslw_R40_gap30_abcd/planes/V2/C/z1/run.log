@@ -1,0 +1,12 @@
+2026-10-19T18:47:18.784715+08:00 FSLW plane run start: topology=V2 plane=z1 algorithm=C radius=40.0 gap=0.03 clearance=0.08 eval_budget=200000 time_budget=900.0 seed=20261019
+2026-10-19T18:47:18.800715+08:00 ports: 512 connections, 1024 ports, row->plane ok=True
+2026-10-19T18:47:20.126904+08:00 C_round_robin: attempted 128/512 accepted=127 evals=234 elapsed=1.3s
+2026-10-19T18:47:24.006425+08:00 C_round_robin: attempted 256/512 accepted=248 evals=1381 elapsed=5.2s
+2026-10-19T18:47:29.953144+08:00 C_round_robin: attempted 384/512 accepted=365 evals=2977 elapsed=11.1s
+2026-10-19T18:47:33.860919+08:00 C_round_robin: attempted 512/512 accepted=485 evals=3645 elapsed=15.0s
+2026-10-19T18:47:34.017954+08:00 ripup round 1: committed=2 progress=2 accepted=487 failed=25
+2026-10-19T18:47:34.085046+08:00 ripup round 2: committed=3 progress=1 accepted=488 failed=24
+2026-10-19T18:47:34.087050+08:00 ripup round 3: committed=3 progress=0 accepted=488 failed=24
+2026-10-19T18:47:34.087050+08:00 ripup: {'rounds': 3, 'improvements': 3, 'duration_seconds': 0.22558630000276025}
+2026-10-19T18:47:46.507759+08:00 final internal audit removed 0 route(s)
+2026-10-19T18:47:46.523758+08:00 DONE V2_C_z1: routed=488/512 evals=3694 runtime=27.7s

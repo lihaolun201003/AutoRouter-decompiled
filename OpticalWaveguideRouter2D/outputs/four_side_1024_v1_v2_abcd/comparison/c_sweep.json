@@ -1,0 +1,122 @@
+{
+ "policy": "strict",
+ "topology": "V1",
+ "note": "C design ablation; each variant is a full 1024-identity run under the identical geometry/candidate/policy budget. The frozen design is used unchanged for both V1_C and V2_C.",
+ "frozen_design": {
+  "start_side": "E",
+  "direction": "ccw",
+  "batch": 32
+ },
+ "designs": [
+  {
+   "design_name": "C_ccw_E_b32",
+   "direction": "ccw",
+   "start_side": "E",
+   "batch": 32,
+   "routed": 367,
+   "opposite": 208,
+   "adjacent": 159,
+   "mean_length_mm": 165.48413951764397,
+   "evaluations": 158002,
+   "runtime_seconds": 198.70881430000009
+  },
+  {
+   "design_name": "C_ccw_N_b8",
+   "direction": "ccw",
+   "start_side": "N",
+   "batch": 8,
+   "routed": 357,
+   "opposite": 203,
+   "adjacent": 154,
+   "mean_length_mm": 169.65037411235153,
+   "evaluations": 156176,
+   "runtime_seconds": 314.61997450000126
+  },
+  {
+   "design_name": "C_cw_E_b32",
+   "direction": "cw",
+   "start_side": "E",
+   "batch": 32,
+   "routed": 353,
+   "opposite": 190,
+   "adjacent": 163,
+   "mean_length_mm": 166.15589146498223,
+   "evaluations": 160983,
+   "runtime_seconds": 316.86151210000025
+  },
+  {
+   "design_name": "C_cw_N_b8",
+   "direction": "cw",
+   "start_side": "N",
+   "batch": 8,
+   "routed": 350,
+   "opposite": 202,
+   "adjacent": 148,
+   "mean_length_mm": 169.5806116047398,
+   "evaluations": 160367,
+   "runtime_seconds": 319.07483429999957
+  },
+  {
+   "design_name": "C_ccw_E_b8",
+   "direction": "ccw",
+   "start_side": "E",
+   "batch": 8,
+   "routed": 347,
+   "opposite": 189,
+   "adjacent": 158,
+   "mean_length_mm": 170.98255232281974,
+   "evaluations": 157892,
+   "runtime_seconds": 314.07572749999963
+  },
+  {
+   "design_name": "C_cw_E_b8",
+   "direction": "cw",
+   "start_side": "E",
+   "batch": 8,
+   "routed": 345,
+   "opposite": 183,
+   "adjacent": 162,
+   "mean_length_mm": 167.21415931196825,
+   "evaluations": 159792,
+   "runtime_seconds": 316.14975179999965
+  },
+  {
+   "design_name": "C_cw_N_b32",
+   "direction": "cw",
+   "start_side": "N",
+   "batch": 32,
+   "routed": 336,
+   "opposite": 185,
+   "adjacent": 151,
+   "mean_length_mm": 176.5840244515761,
+   "evaluations": 157173,
+   "runtime_seconds": 318.2849062999994
+  },
+  {
+   "design_name": "C_ccw_N_b32",
+   "direction": "ccw",
+   "start_side": "N",
+   "batch": 32,
+   "routed": 328,
+   "opposite": 184,
+   "adjacent": 144,
+   "mean_length_mm": 178.89717972989462,
+   "evaluations": 157539,
+   "runtime_seconds": 306.27128059999995
+  }
+ ],
+ "selected": [
+  {
+   "design_name": "C_ccw_E_b32",
+   "direction": "ccw",
+   "start_side": "E",
+   "batch": 32,
+   "routed": 367,
+   "opposite": 208,
+   "adjacent": 159,
+   "mean_length_mm": 165.48413951764397,
+   "evaluations": 158002,
+   "runtime_seconds": 198.70881430000009
+  }
+ ]
+}

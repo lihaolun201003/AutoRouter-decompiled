@@ -68,3 +68,24 @@ G1 改善了几何近距与总长度，E 减少近距最多，但长度与升降
 [完整报告](docs/reports/four_side_1024_d56_optimized.md)、
 [失败诊断](docs/reports/d56_1024_failure_diagnosis.md)、
 [产物目录](OpticalWaveguideRouter2D/outputs/four_side_1024_d56_optimized/)。
+
+### ABCD 四算法对照：462/1024（2026-10-19）
+
+单层虚拟展开基线（`virtual_unfolded`，R = 5 mm、125 um 间距）上运行 V1/V2 两种连接拓扑
+x A/B/C/D 四种布线算法，共 8 组全量 1024 条实验：最佳 **V1_B 462/1024（45.12 %）**；
+同一批结果在新的 `strict` 局部交叉窗口口径下复验，历史 467 条中 465 条合法
+（唯一违规对为真实的 2.77 mm 亚间距伴行）。含 C 四边轮流消融与 D 的全局联合候选 + LNS。
+详见 [完整报告](docs/reports/four_side_1024_v1_v2_abcd.md)、
+[产物目录](OpticalWaveguideRouter2D/outputs/four_side_1024_v1_v2_abcd/)。
+
+### FSLW R>=40 mm / 30 um 双高度真实 2x16 接口：694/1024（2026-10-19）
+
+飞秒激光直写参数（R >= 40 mm 固定、边缘间距 30 um）下，按 IEC 61754-7-3:2019 真实 2x16
+接口建立**双高度**模型（CSV row1 -> z1 对边平面、row2 -> z2 邻边平面，每平面独立二维寻路，
+跨平面投影交叉不计冲突，无 z 过渡）。16 个平面实验 + 8 个 1024 通道组合布局：
+最佳 **V2_C 694/1024（67.77 %）**；邻边平面有 **22.3 %（V1）/25.0 %（V2）连接在 R=40 下
+几何上无合法 D56 路径**（真实结构瓶颈，非算法预算问题）。全部平面通过独立严格验收
+（0 间距/重叠/相切/窗互叠违规，路由器与独立校验器 mismatch=0）；报告明确声明
+"双高度假设、无 z 过渡、不宣称可制造、弯曲/交叉损耗未知"。
+详见 [完整报告](docs/reports/four_side_1024_fslw_R40_gap30_abcd.md)、
+[产物目录](OpticalWaveguideRouter2D/outputs/four_side_1024_fslw_R40_gap30_abcd/)。

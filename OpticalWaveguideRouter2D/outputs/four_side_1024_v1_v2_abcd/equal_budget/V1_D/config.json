@@ -1,0 +1,97 @@
+{
+ "experiment": "V1_D",
+ "topology": "V1",
+ "algorithm": "D",
+ "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v1.csv",
+ "csv_sha256": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+ "policy": "strict",
+ "seed": 20261019,
+ "candidate_budget_per_route": 900,
+ "eval_budget": 163698,
+ "time_budget_seconds": 600.0,
+ "ripup_rounds": 0,
+ "ripup_routes": 3,
+ "no_deep": false,
+ "strategy": {
+  "name": "D_joint_candidate_lns",
+  "algorithm": "D",
+  "pool_size": 64,
+  "batch_max": 12,
+  "batch_pool": 6,
+  "pair_level_compatibility": true,
+  "joint_multi_route_replacement": true,
+  "objective": [
+   "routed_count",
+   "crossings",
+   "total_length"
+  ],
+  "seed": 20261019
+ },
+ "physics": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "layer": 0,
+  "routing_layers": 1,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.125,
+  "centerline_clearance_mm": 0.175,
+  "min_radius_mm": 5.0,
+  "sagitta_mm": 0.0005,
+  "connector_pitch_mm": 9.0,
+  "virtual_pitch_mm": 0.175,
+  "endpoint_mode": "virtual_unfolded"
+ },
+ "budget_used": {
+  "evaluations": 143344,
+  "total_runtime_seconds": 292.62761240000145
+ },
+ "main_pass": {
+  "algorithm": "D_joint_candidate_lns",
+  "attempted": 1024,
+  "accepted": 423,
+  "evaluations": 143344,
+  "pair_checks": 20405,
+  "restarts": [
+   {
+    "label": "restart0",
+    "accepted": 422,
+    "evals": 40313,
+    "seconds": 7.523347299998932,
+    "score": [
+     -422,
+     50667,
+     66879.88669773708
+    ]
+   },
+   {
+    "label": "restart1",
+    "accepted": 338,
+    "evals": 81850,
+    "seconds": 6.904115900000761,
+    "score": [
+     -338,
+     38987,
+     58241.71724469403
+    ]
+   }
+  ],
+  "baseline_score": [
+   -422,
+   101334,
+   66879.88669773708
+  ],
+  "final_score": [
+   -423,
+   93993,
+   62922.00613446929
+  ],
+  "lns_attempts": 1701,
+  "lns_count_improvements": 1,
+  "lns_quality_improvements": 164,
+  "stop_reason": "budget",
+  "duration_seconds": 290.6620519999997
+ },
+ "ripup": null
+}

@@ -1,0 +1,119 @@
+{
+ "experiment": "V1_D",
+ "topology": "V1",
+ "algorithm": "D",
+ "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v1.csv",
+ "csv_sha256": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+ "policy": "strict",
+ "seed": 20261019,
+ "candidate_budget_per_route": 900,
+ "eval_budget": 600000,
+ "time_budget_seconds": 1800.0,
+ "ripup_rounds": 0,
+ "ripup_routes": 3,
+ "no_deep": false,
+ "strategy": {
+  "name": "D_joint_candidate_lns",
+  "algorithm": "D",
+  "pool_size": 96,
+  "batch_max": 12,
+  "batch_pool": 6,
+  "pair_level_compatibility": true,
+  "joint_multi_route_replacement": true,
+  "objective": [
+   "routed_count",
+   "crossings",
+   "total_length"
+  ],
+  "seed": 20261019
+ },
+ "physics": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "layer": 0,
+  "routing_layers": 1,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.125,
+  "centerline_clearance_mm": 0.175,
+  "min_radius_mm": 5.0,
+  "sagitta_mm": 0.0005,
+  "connector_pitch_mm": 9.0,
+  "virtual_pitch_mm": 0.175,
+  "endpoint_mode": "virtual_unfolded"
+ },
+ "budget_used": {
+  "evaluations": 343091,
+  "total_runtime_seconds": 443.683200200001
+ },
+ "main_pass": {
+  "algorithm": "D_joint_candidate_lns",
+  "attempted": 1024,
+  "accepted": 429,
+  "evaluations": 343091,
+  "pair_checks": 28171,
+  "restarts": [
+   {
+    "label": "restart0",
+    "accepted": 428,
+    "evals": 58310,
+    "seconds": 11.811222599999383,
+    "score": [
+     -428,
+     51698,
+     67725.87142224671
+    ]
+   },
+   {
+    "label": "restart1",
+    "accepted": 351,
+    "evals": 123170,
+    "seconds": 13.599027399999613,
+    "score": [
+     -351,
+     40786,
+     59612.703796795686
+    ]
+   },
+   {
+    "label": "restart2",
+    "accepted": 351,
+    "evals": 188030,
+    "seconds": 12.788571699999011,
+    "score": [
+     -351,
+     40786,
+     59612.703796795686
+    ]
+   },
+   {
+    "label": "restart3",
+    "accepted": 351,
+    "evals": 252890,
+    "seconds": 12.478464699999677,
+    "score": [
+     -351,
+     40786,
+     59612.703796795686
+    ]
+   }
+  ],
+  "baseline_score": [
+   -428,
+   103396,
+   67725.87142224671
+  ],
+  "final_score": [
+   -429,
+   90282,
+   62958.44148295673
+  ],
+  "lns_attempts": 2500,
+  "lns_count_improvements": 1,
+  "lns_quality_improvements": 338,
+  "stop_reason": "completed",
+  "duration_seconds": 441.68390010000076
+ },
+ "ripup": null
+}

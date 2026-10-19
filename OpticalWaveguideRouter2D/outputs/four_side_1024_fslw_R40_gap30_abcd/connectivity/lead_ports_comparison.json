@@ -1,0 +1,191 @@
+{
+  "lead_ports_available": true,
+  "lead_ports_source": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\fslw\\ports.py",
+    "exists": true,
+    "bytes": 11648,
+    "sha256": "1bc96f1f04a2ab4bd185c1305c32ce6259ee3008dfdbb1eaf97f11e6a62d5249",
+    "mtime": "2026-10-19 18:22:38"
+  },
+  "our_endpoint_count": 2048,
+  "lead_endpoint_count": 2048,
+  "endpoint_identity_sets_equal": true,
+  "missing_in_lead": [],
+  "extra_in_lead": [],
+  "field_mismatches": {
+    "endpoint_plane": 0,
+    "endpoint_label": 0,
+    "endpoint_channel": 0
+  },
+  "max_deltas_mm": {
+    "endpoint_routing_xy": 0.0,
+    "endpoint_physical_along": 0.0,
+    "endpoint_z": 0.0
+  },
+  "topologies": {
+    "V1": {
+      "route_id_sets_equal": true,
+      "our_routes": 1024,
+      "lead_routes": 1024,
+      "route_field_mismatches": 0,
+      "route_mismatch_sample": [],
+      "row_plane_violations": 0,
+      "planes": {
+        "z1": {
+          "lead_validation_passed": true,
+          "lead_validation_issues": [],
+          "route_id_sets_equal": true,
+          "our_routes": 512,
+          "lead_routes": 512,
+          "endpoint_set_mismatches": 0,
+          "max_routing_xy_delta_mm": 0.0,
+          "expected_row": 1,
+          "z_mm": 0.0
+        },
+        "z2": {
+          "lead_validation_passed": true,
+          "lead_validation_issues": [],
+          "route_id_sets_equal": true,
+          "our_routes": 512,
+          "lead_routes": 512,
+          "endpoint_set_mismatches": 0,
+          "max_routing_xy_delta_mm": 0.0,
+          "expected_row": 2,
+          "z_mm": 0.5
+        }
+      }
+    },
+    "V2": {
+      "route_id_sets_equal": true,
+      "our_routes": 1024,
+      "lead_routes": 1024,
+      "route_field_mismatches": 0,
+      "route_mismatch_sample": [],
+      "row_plane_violations": 0,
+      "planes": {
+        "z1": {
+          "lead_validation_passed": true,
+          "lead_validation_issues": [],
+          "route_id_sets_equal": true,
+          "our_routes": 512,
+          "lead_routes": 512,
+          "endpoint_set_mismatches": 0,
+          "max_routing_xy_delta_mm": 0.0,
+          "expected_row": 1,
+          "z_mm": 0.0
+        },
+        "z2": {
+          "lead_validation_passed": true,
+          "lead_validation_issues": [],
+          "route_id_sets_equal": true,
+          "our_routes": 512,
+          "lead_routes": 512,
+          "endpoint_set_mismatches": 0,
+          "max_routing_xy_delta_mm": 0.0,
+          "expected_row": 2,
+          "z_mm": 0.5
+        }
+      }
+    }
+  },
+  "planes": {
+    "V1_z1": {
+      "lead_validation_passed": true,
+      "lead_validation_issues": [],
+      "route_id_sets_equal": true,
+      "our_routes": 512,
+      "lead_routes": 512,
+      "endpoint_set_mismatches": 0,
+      "max_routing_xy_delta_mm": 0.0,
+      "expected_row": 1,
+      "z_mm": 0.0
+    },
+    "V1_z2": {
+      "lead_validation_passed": true,
+      "lead_validation_issues": [],
+      "route_id_sets_equal": true,
+      "our_routes": 512,
+      "lead_routes": 512,
+      "endpoint_set_mismatches": 0,
+      "max_routing_xy_delta_mm": 0.0,
+      "expected_row": 2,
+      "z_mm": 0.5
+    },
+    "V2_z1": {
+      "lead_validation_passed": true,
+      "lead_validation_issues": [],
+      "route_id_sets_equal": true,
+      "our_routes": 512,
+      "lead_routes": 512,
+      "endpoint_set_mismatches": 0,
+      "max_routing_xy_delta_mm": 0.0,
+      "expected_row": 1,
+      "z_mm": 0.0
+    },
+    "V2_z2": {
+      "lead_validation_passed": true,
+      "lead_validation_issues": [],
+      "route_id_sets_equal": true,
+      "our_routes": 512,
+      "lead_routes": 512,
+      "endpoint_set_mismatches": 0,
+      "max_routing_xy_delta_mm": 0.0,
+      "expected_row": 2,
+      "z_mm": 0.5
+    }
+  },
+  "physical_tables": {
+    "V1": {
+      "our_ports": 2048,
+      "lead_ports": 2048,
+      "identity_sets_equal": true,
+      "max_coordinate_delta_mm": 0.0,
+      "plane_label_violations": 0
+    },
+    "V2": {
+      "our_ports": 2048,
+      "lead_ports": 2048,
+      "identity_sets_equal": true,
+      "max_coordinate_delta_mm": 0.0,
+      "plane_label_violations": 0
+    }
+  },
+  "connector_records": {
+    "identity_sets_equal": true,
+    "our_connectors": 64,
+    "lead_connectors": 64,
+    "max_center_delta_mm": 0.0
+  },
+  "code_notes": [
+    "ports.load_plane / ports.all_routes do NOT set route[\"row\"] although SPEC §9 asks for it; this comparison falls back to route[\"source_row\"].",
+    "ports.validate_plane duplicate route_id check compares a list to itself (sorted(...) != sorted(...)) -> always False; harmless because load_plane already guarantees 512 unique CSV route ids, but the guard is a no-op.",
+    "ports.validate_plane non-finite coordinate check is abs(x - x) > 0 -> always False; invalid/NaN routing_xy would not be caught by ports.py (our audit checks coordinates directly).",
+    "ports.load_plane skips row-mixing detection for routes whose source row does not match the plane (continue before the target_row check); our audit checks both roles."
+  ],
+  "endpoint_plane_violations": 0,
+  "endpoint_label_violations": 0,
+  "endpoint_channel_violations": 0,
+  "plane_violation_sample": [],
+  "passed": true,
+  "summary": {
+    "endpoints_compared": 2048,
+    "endpoint_identity_sets_equal": true,
+    "max_routing_xy_delta_mm": 0.0,
+    "max_physical_along_delta_mm": 0.0,
+    "max_z_delta_mm": 0.0,
+    "endpoint_plane_violations": 0,
+    "route_field_mismatches": {
+      "V1": 0,
+      "V2": 0
+    },
+    "row_plane_violations": {
+      "V1": 0,
+      "V2": 0
+    },
+    "physical_table_max_delta_mm": {
+      "V1": 0.0,
+      "V2": 0.0
+    },
+    "passed": true
+  }
+}

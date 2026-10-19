@@ -1,0 +1,110 @@
+{
+ "policy": "strict",
+ "note": "D is compared at (a) the same candidate-evaluation budget as the best A/B/C experiment on that topology and (b) an extended budget; both runs use the same geometry, candidate pool rules and strict acceptance policy.",
+ "topologies": {
+  "V1": {
+   "sequential": {
+    "equal_budget_evaluations": 163698,
+    "runs": {
+     "A": {
+      "routed": 358,
+      "opposite": 324,
+      "adjacent": 34,
+      "evaluations": 163698,
+      "runtime_seconds": 338.7458649
+     },
+     "B": {
+      "routed": 462,
+      "opposite": 52,
+      "adjacent": 410,
+      "evaluations": 161584,
+      "runtime_seconds": 134.27842789999886
+     },
+     "C": {
+      "routed": 367,
+      "opposite": 208,
+      "adjacent": 159,
+      "evaluations": 158002,
+      "runtime_seconds": 167.47107519999918
+     }
+    }
+   },
+   "d_equal_budget": {
+    "routed": 423,
+    "opposite": 107,
+    "adjacent": 316,
+    "evaluations": 143344,
+    "runtime_seconds": 292.62761240000145,
+    "eval_budget": 163698
+   },
+   "d_primary": {
+    "routed": 423,
+    "opposite": 109,
+    "adjacent": 314,
+    "evaluations": 220047,
+    "runtime_seconds": 484.6247389,
+    "eval_budget": 400000
+   },
+   "d_extended": {
+    "routed": 429,
+    "opposite": 112,
+    "adjacent": 317,
+    "evaluations": 343091,
+    "runtime_seconds": 443.683200200001,
+    "eval_budget": 600000
+   }
+  },
+  "V2": {
+   "sequential": {
+    "equal_budget_evaluations": 137473,
+    "runs": {
+     "A": {
+      "routed": 411,
+      "opposite": 360,
+      "adjacent": 51,
+      "evaluations": 137473,
+      "runtime_seconds": 291.34439139999995
+     },
+     "B": {
+      "routed": 386,
+      "opposite": 65,
+      "adjacent": 321,
+      "evaluations": 125504,
+      "runtime_seconds": 242.1237044999998
+     },
+     "C": {
+      "routed": 417,
+      "opposite": 229,
+      "adjacent": 188,
+      "evaluations": 136966,
+      "runtime_seconds": 146.8572511000002
+     }
+    }
+   },
+   "d_equal_budget": {
+    "routed": 426,
+    "opposite": 124,
+    "adjacent": 302,
+    "evaluations": 113930,
+    "runtime_seconds": 239.0967509000002,
+    "eval_budget": 137473
+   },
+   "d_primary": {
+    "routed": 427,
+    "opposite": 133,
+    "adjacent": 294,
+    "evaluations": 192544,
+    "runtime_seconds": 454.2683692999999,
+    "eval_budget": 400000
+   },
+   "d_extended": {
+    "routed": 427,
+    "opposite": 136,
+    "adjacent": 291,
+    "evaluations": 292995,
+    "runtime_seconds": 411.49717599999894,
+    "eval_budget": 600000
+   }
+  }
+ }
+}

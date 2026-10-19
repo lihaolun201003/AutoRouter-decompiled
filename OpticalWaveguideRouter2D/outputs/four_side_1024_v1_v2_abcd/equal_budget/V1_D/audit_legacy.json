@@ -1,0 +1,4459 @@
+{
+ "passed": false,
+ "policy_used": "legacy",
+ "route_count": 1024,
+ "routed_count": 423,
+ "failed_status_count": 601,
+ "d56_checked_count": 423,
+ "d56_passed_count": 423,
+ "d56_failed_count": 0,
+ "pair_audit": "exact_independent",
+ "pair_audited_route_count": 423,
+ "candidate_pair_count": 51426,
+ "crossing_count": 37848,
+ "crossing_pair_count": 34503,
+ "crossing_angle_histogram": {
+  "0-1": 0,
+  "1-5": 0,
+  "5-10": 1,
+  "10-20": 0,
+  "20-30": 0,
+  "30-45": 0,
+  "45-60": 0,
+  "60-75": 72,
+  "75-90": 37775
+ },
+ "small_angle_threshold_deg": 10.0,
+ "small_angle_crossing_count": 1,
+ "min_non_crossing_centerline_mm": 0.17499999999998295,
+ "spacing_violation_pairs": 6019,
+ "overlap_pairs": 0,
+ "touch_pairs": 0,
+ "crossing_zone_overlap_pairs": 0,
+ "crossing_window_overlap_pairs": 0,
+ "double_cross_pairs": null,
+ "crossing_window_excessive_pairs": null,
+ "crossing_window_count": null,
+ "crossing_window_max_mm": null,
+ "crossing_window_mean_mm": null,
+ "crossing_window_total_length_mean_mm": null,
+ "violation_pair_count": 6019,
+ "runtime_seconds": 2.122571300000345,
+ "self_intersections": 0,
+ "self_overlaps": 0,
+ "self_spacing_violations": 0,
+ "radius_violations": 0,
+ "boundary_violations": 0,
+ "diagonal_line_violations": 0,
+ "free_or_short_s_arc_violations": 0,
+ "errors": [
+  "inter_route_violations:6019"
+ ],
+ "warnings": [],
+ "policy": "legacy",
+ "violations": [
+  {
+   "route_a": 5,
+   "route_b": 641,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436470538,
+   "x": 40.4614507601526,
+   "y": 7.674901167182359
+  },
+  {
+   "route_a": 5,
+   "route_b": 642,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1746350012119784,
+   "x": 40.39122053865634,
+   "y": 7.849817500605978
+  },
+  {
+   "route_a": 5,
+   "route_b": 643,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417190908,
+   "x": 40.31315991296799,
+   "y": 8.024726697085955
+  },
+  {
+   "route_a": 5,
+   "route_b": 744,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495869848180234,
+   "x": 37.29997934924091,
+   "y": 10.723401662741942
+  },
+  {
+   "route_a": 5,
+   "route_b": 770,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1744845940734257,
+   "x": 5.536766293737892,
+   "y": 17.216958629639088
+  },
+  {
+   "route_a": 5,
+   "route_b": 771,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143312022,
+   "x": 5.533670548545194,
+   "y": 26.508095158242767
+  },
+  {
+   "route_a": 5,
+   "route_b": 772,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494591757376113,
+   "x": 5.530556155137318,
+   "y": 35.78870466783955
+  },
+  {
+   "route_a": 5,
+   "route_b": 774,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185278,
+   "x": 8.375314061840742,
+   "y": 11.496003422973146
+  },
+  {
+   "route_a": 5,
+   "route_b": 775,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317735305,
+   "x": 8.550219848411313,
+   "y": 11.41452183622189
+  },
+  {
+   "route_a": 5,
+   "route_b": 776,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1747333520545311,
+   "x": 8.725133323972734,
+   "y": 11.341035042401018
+  },
+  {
+   "route_a": 5,
+   "route_b": 778,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17167947071494755,
+   "x": 5.553724479561218,
+   "y": 25.289093681975192
+  },
+  {
+   "route_a": 5,
+   "route_b": 786,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1644795590411844,
+   "x": 16.226997301088,
+   "y": 10.911426486428487
+  },
+  {
+   "route_a": 5,
+   "route_b": 794,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1644795590411844,
+   "x": 23.30199730108799,
+   "y": 10.911426486428487
+  },
+  {
+   "route_a": 5,
+   "route_b": 802,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16447955904118117,
+   "x": 33.35199730108798,
+   "y": 10.91142648642849
+  },
+  {
+   "route_a": 5,
+   "route_b": 855,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16821124494598294,
+   "x": 38.470142120377474,
+   "y": 10.121605622472991
+  },
+  {
+   "route_a": 5,
+   "route_b": 862,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16954940989544376,
+   "x": 38.72551152351903,
+   "y": 9.947274704947723
+  },
+  {
+   "route_a": 5,
+   "route_b": 876,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17130609005319108,
+   "x": 39.15327609386297,
+   "y": 9.598153045026596
+  },
+  {
+   "route_a": 5,
+   "route_b": 883,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17191873494394905,
+   "x": 39.335405632832824,
+   "y": 9.423459367471974
+  },
+  {
+   "route_a": 5,
+   "route_b": 890,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17242178115093765,
+   "x": 39.50054890444517,
+   "y": 9.248710890575468
+  },
+  {
+   "route_a": 5,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121195885,
+   "x": 17.766220538656356,
+   "y": 10.89898249939402
+  },
+  {
+   "route_a": 5,
+   "route_b": 899,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189842,
+   "x": 26.863159912967994,
+   "y": 10.89907330291405
+  },
+  {
+   "route_a": 5,
+   "route_b": 900,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1739057059944611,
+   "x": 35.922884095080754,
+   "y": 10.947657187569776
+  },
+  {
+   "route_a": 5,
+   "route_b": 901,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947845296,
+   "x": 40.131830676191996,
+   "y": 8.374517769739226
+  },
+  {
+   "route_a": 5,
+   "route_b": 902,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17379145061828005,
+   "x": 40.02749355089721,
+   "y": 8.54939572530914
+  },
+  {
+   "route_a": 5,
+   "route_b": 903,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17351682445456262,
+   "x": 39.913148417114975,
+   "y": 8.72425841222728
+  },
+  {
+   "route_a": 5,
+   "route_b": 904,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17320425796391703,
+   "x": 39.787946737216714,
+   "y": 8.899102128981959
+  },
+  {
+   "route_a": 9,
+   "route_b": 13,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16520260614691118,
+   "x": 6.804898696926533,
+   "y": 40.91141873956451
+  },
+  {
+   "route_a": 9,
+   "route_b": 14,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16749262057628567,
+   "x": 6.978753689711857,
+   "y": 40.59721983309838
+  },
+  {
+   "route_a": 9,
+   "route_b": 15,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16903744583099733,
+   "x": 7.152981277084512,
+   "y": 40.32695165869785
+  },
+  {
+   "route_a": 9,
+   "route_b": 30,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1664514623695655,
+   "x": 18.81695933850845,
+   "y": 38.08726109435779
+  },
+  {
+   "route_a": 9,
+   "route_b": 31,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16262066983696297,
+   "x": 19.3696099186631,
+   "y": 38.086080811277
+  },
+  {
+   "route_a": 9,
+   "route_b": 38,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889781673,
+   "x": 28.010812245824003,
+   "y": 38.09570425606709
+  },
+  {
+   "route_a": 9,
+   "route_b": 105,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387036604,
+   "x": 76.85714440533486,
+   "y": 27.864402456172527
+  },
+  {
+   "route_a": 9,
+   "route_b": 147,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889781673,
+   "x": 28.71081224582399,
+   "y": 38.22689574393288
+  },
+  {
+   "route_a": 9,
+   "route_b": 248,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17433487591060662,
+   "x": 73.61560488141492,
+   "y": 37.74554788959324
+  },
+  {
+   "route_a": 9,
+   "route_b": 516,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17395923685860723,
+   "x": 8.761937604609425,
+   "y": 38.87622071241901
+  },
+  {
+   "route_a": 9,
+   "route_b": 537,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743208310724987,
+   "x": 35.60535900930698,
+   "y": 38.1102537622031
+  },
+  {
+   "route_a": 9,
+   "route_b": 648,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495869848181655,
+   "x": 76.70002065075909,
+   "y": 8.549601662741928
+  },
+  {
+   "route_a": 9,
+   "route_b": 755,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317732818,
+   "x": 9.25021984841134,
+   "y": 38.58952183622185
+  },
+  {
+   "route_a": 9,
+   "route_b": 774,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340494,
+   "x": 6.2367662937378725,
+   "y": 53.916958629639126
+  },
+  {
+   "route_a": 9,
+   "route_b": 775,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143313746,
+   "x": 6.233670548545188,
+   "y": 63.20809515824275
+  },
+  {
+   "route_a": 9,
+   "route_b": 776,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494591757375233,
+   "x": 6.230556155137304,
+   "y": 72.48870466783956
+  },
+  {
+   "route_a": 9,
+   "route_b": 835,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317732996,
+   "x": 76.87478015158865,
+   "y": 11.360478163778128
+  },
+  {
+   "route_a": 9,
+   "route_b": 843,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17368160326412863,
+   "x": 74.42314080163204,
+   "y": 37.35511615237105
+  },
+  {
+   "route_a": 9,
+   "route_b": 897,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1741650243360997,
+   "x": 8.900417487831952,
+   "y": 38.760920421234175
+  },
+  {
+   "route_a": 9,
+   "route_b": 904,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495869848180234,
+   "x": 73.29997934924091,
+   "y": 37.89840166274192
+  },
+  {
+   "route_a": 9,
+   "route_b": 921,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495767018556307,
+   "x": 35.724196540333345,
+   "y": 38.0738211649072
+  },
+  {
+   "route_a": 9,
+   "route_b": 922,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436468495,
+   "x": 44.83645076015261,
+   "y": 38.07389883281764
+  },
+  {
+   "route_a": 9,
+   "route_b": 923,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121196063,
+   "x": 53.941220538656346,
+   "y": 38.073982499394006
+  },
+  {
+   "route_a": 9,
+   "route_b": 924,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189132,
+   "x": 63.03815991296799,
+   "y": 38.07407330291404
+  },
+  {
+   "route_a": 9,
+   "route_b": 925,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.174152388202205,
+   "x": 72.095243418688,
+   "y": 38.11756491397074
+  },
+  {
+   "route_a": 9,
+   "route_b": 926,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947846007,
+   "x": 76.13183067619198,
+   "y": 35.549517769739225
+  },
+  {
+   "route_a": 9,
+   "route_b": 927,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1737914506182605,
+   "x": 76.02749355089722,
+   "y": 35.72439572530914
+  },
+  {
+   "route_a": 9,
+   "route_b": 928,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17351682445456618,
+   "x": 75.91314841711497,
+   "y": 35.89925841222728
+  },
+  {
+   "route_a": 9,
+   "route_b": 997,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17489349688277134,
+   "x": 6.274946748441385,
+   "y": 116.5763714967537
+  },
+  {
+   "route_a": 9,
+   "route_b": 1011,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317733706,
+   "x": 6.2747801515886685,
+   "y": 134.36572183622187
+  },
+  {
+   "route_a": 9,
+   "route_b": 1018,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185349,
+   "x": 6.2746859381592675,
+   "y": 143.27220342297312
+  },
+  {
+   "route_a": 13,
+   "route_b": 15,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17146683141759406,
+   "x": 7.31436973699674,
+   "y": 23.18557558259692
+  },
+  {
+   "route_a": 13,
+   "route_b": 24,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889782378,
+   "x": 63.61418775417606,
+   "y": 20.05189574393287
+  },
+  {
+   "route_a": 13,
+   "route_b": 28,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1323511088978092,
+   "x": 20.060812245824074,
+   "y": 19.92070425606708
+  },
+  {
+   "route_a": 13,
+   "route_b": 72,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599336922,
+   "x": 45.63004949221745,
+   "y": 19.91191595328128
+  },
+  {
+   "route_a": 13,
+   "route_b": 75,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16645146236956876,
+   "x": 92.73304066149157,
+   "y": 20.060338905642162
+  },
+  {
+   "route_a": 13,
+   "route_b": 215,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15394734877532912,
+   "x": 109.1738945579071,
+   "y": 19.713273674387644
+  },
+  {
+   "route_a": 13,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1739961138887401,
+   "x": 17.740070323662863,
+   "y": 19.932197563561232
+  },
+  {
+   "route_a": 13,
+   "route_b": 600,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16755196703186204,
+   "x": 101.42841719304462,
+   "y": 19.91303401573701
+  },
+  {
+   "route_a": 13,
+   "route_b": 665,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599338146,
+   "x": 39.60504949221739,
+   "y": 20.06068404671867
+  },
+  {
+   "route_a": 13,
+   "route_b": 680,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495869848180234,
+   "x": 109.29997934924091,
+   "y": 19.723401662741907
+  },
+  {
+   "route_a": 13,
+   "route_b": 720,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1747333520545311,
+   "x": 10.12513332397274,
+   "y": 20.341035042400975
+  },
+  {
+   "route_a": 13,
+   "route_b": 755,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17367974098020156,
+   "x": 9.250660129509905,
+   "y": 20.793261880858424
+  },
+  {
+   "route_a": 13,
+   "route_b": 771,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1703093338703704,
+   "x": 6.957144405334861,
+   "y": 25.165602456172536
+  },
+  {
+   "route_a": 13,
+   "route_b": 772,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1714181601800082,
+   "x": 6.954507620057605,
+   "y": 34.57668548605159
+  },
+  {
+   "route_a": 13,
+   "route_b": 774,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737827933,
+   "x": 6.948839356937425,
+   "y": 53.32492856993789
+  },
+  {
+   "route_a": 13,
+   "route_b": 775,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214153878,
+   "x": 6.9458859286851755,
+   "y": 62.66999368179891
+  },
+  {
+   "route_a": 13,
+   "route_b": 776,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1738406837456979,
+   "x": 6.942881522603029,
+   "y": 71.99919555814148
+  },
+  {
+   "route_a": 13,
+   "route_b": 847,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17437322725982085,
+   "x": 109.89848661362991,
+   "y": 19.477183483565103
+  },
+  {
+   "route_a": 13,
+   "route_b": 866,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17437187631853135,
+   "x": 112.87468593815926,
+   "y": 11.27899657702686
+  },
+  {
+   "route_a": 13,
+   "route_b": 874,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.171679948819488,
+   "x": 111.29713997440973,
+   "y": 18.460853775326672
+  },
+  {
+   "route_a": 13,
+   "route_b": 897,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17305877873721087,
+   "x": 8.900970610631395,
+   "y": 21.042151201789352
+  },
+  {
+   "route_a": 13,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436468495,
+   "x": 17.661450760152604,
+   "y": 19.89889883281763
+  },
+  {
+   "route_a": 13,
+   "route_b": 906,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121196063,
+   "x": 26.76622053865634,
+   "y": 19.89898249939399
+  },
+  {
+   "route_a": 13,
+   "route_b": 907,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189487,
+   "x": 35.86315991296799,
+   "y": 19.899073302914026
+  },
+  {
+   "route_a": 13,
+   "route_b": 908,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 44.95185896779273,
+   "y": 19.899172636054242
+  },
+  {
+   "route_a": 13,
+   "route_b": 909,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1740355394784494,
+   "x": 54.03183067619198,
+   "y": 19.899282230260745
+  },
+  {
+   "route_a": 13,
+   "route_b": 910,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17482711780567384,
+   "x": 63.07886881563829,
+   "y": 19.941440787731338
+  },
+  {
+   "route_a": 13,
+   "route_b": 912,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743208310725008,
+   "x": 81.194640990693,
+   "y": 19.935253762203082
+  },
+  {
+   "route_a": 13,
+   "route_b": 976,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473335205452933,
+   "x": 6.974866676027253,
+   "y": 90.167235042401
+  },
+  {
+   "route_a": 13,
+   "route_b": 983,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1745603031773335,
+   "x": 6.974780151588655,
+   "y": 99.06572183622187
+  },
+  {
+   "route_a": 13,
+   "route_b": 990,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185358,
+   "x": 6.974685938159256,
+   "y": 107.97220342297315
+  },
+  {
+   "route_a": 13,
+   "route_b": 997,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1741650243360926,
+   "x": 6.974582512168035,
+   "y": 116.88712042123417
+  },
+  {
+   "route_a": 13,
+   "route_b": 1011,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1747334914331221,
+   "x": 6.933670548545173,
+   "y": 134.76690484175722
+  },
+  {
+   "route_a": 13,
+   "route_b": 1018,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340997,
+   "x": 6.936766293737866,
+   "y": 143.7080413703609
+  },
+  {
+   "route_a": 14,
+   "route_b": 15,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13170537174259422,
+   "x": 7.171647314128714,
+   "y": 33.32973937238193
+  },
+  {
+   "route_a": 14,
+   "route_b": 29,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1626206698369597,
+   "x": 19.019609918663036,
+   "y": 28.911080811277003
+  },
+  {
+   "route_a": 14,
+   "route_b": 44,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599336922,
+   "x": 28.33004949221746,
+   "y": 28.911915953281294
+  },
+  {
+   "route_a": 14,
+   "route_b": 54,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599336922,
+   "x": 46.69495050778255,
+   "y": 29.060684046718677
+  },
+  {
+   "route_a": 14,
+   "route_b": 88,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1323511088978158,
+   "x": 64.314187754176,
+   "y": 29.05189574393288
+  },
+  {
+   "route_a": 14,
+   "route_b": 94,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475327762,
+   "x": 121.85954610729002,
+   "y": 9.070228196179634
+  },
+  {
+   "route_a": 14,
+   "route_b": 105,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037475,
+   "x": 75.66560245617251,
+   "y": 29.055944405334863
+  },
+  {
+   "route_a": 14,
+   "route_b": 110,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1703093338703797,
+   "x": 121.85714440533488,
+   "y": 18.689402456172502
+  },
+  {
+   "route_a": 14,
+   "route_b": 126,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17141816017999195,
+   "x": 121.8545076200576,
+   "y": 19.450485486051562
+  },
+  {
+   "route_a": 14,
+   "route_b": 155,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13981537672321495,
+   "x": 92.19516224364754,
+   "y": 29.055203411794537
+  },
+  {
+   "route_a": 14,
+   "route_b": 173,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16645146236957825,
+   "x": 111.78304066149153,
+   "y": 29.060338905642183
+  },
+  {
+   "route_a": 14,
+   "route_b": 204,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17055692736184563,
+   "x": 108.01030844753575,
+   "y": 29.055437632815238
+  },
+  {
+   "route_a": 14,
+   "route_b": 215,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1703093338703797,
+   "x": 121.85714440533488,
+   "y": 21.808197543827447
+  },
+  {
+   "route_a": 14,
+   "route_b": 529,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17399611388874509,
+   "x": 26.74007032366285,
+   "y": 28.932197563561246
+  },
+  {
+   "route_a": 14,
+   "route_b": 608,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16755196703186512,
+   "x": 110.42841719304462,
+   "y": 28.913034015737022
+  },
+  {
+   "route_a": 14,
+   "route_b": 662,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1737914506182605,
+   "x": 121.02749355089722,
+   "y": 26.549395725309136
+  },
+  {
+   "route_a": 14,
+   "route_b": 664,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17320425796390282,
+   "x": 120.78794673721671,
+   "y": 26.89910212898195
+  },
+  {
+   "route_a": 14,
+   "route_b": 688,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495869848180234,
+   "x": 118.29997934924091,
+   "y": 28.72340166274192
+  },
+  {
+   "route_a": 14,
+   "route_b": 720,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317732818,
+   "x": 10.12521984841134,
+   "y": 29.41452183622185
+  },
+  {
+   "route_a": 14,
+   "route_b": 755,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17339014282489806,
+   "x": 9.250804928587556,
+   "y": 29.91207190378649
+  },
+  {
+   "route_a": 14,
+   "route_b": 772,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037256,
+   "x": 7.1321444053348735,
+   "y": 34.34060245617253
+  },
+  {
+   "route_a": 14,
+   "route_b": 774,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17225148570625767,
+   "x": 7.126723037582275,
+   "y": 53.136584566088985
+  },
+  {
+   "route_a": 14,
+   "route_b": 775,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737826926,
+   "x": 7.123839356937433,
+   "y": 62.499928569937865
+  },
+  {
+   "route_a": 14,
+   "route_b": 776,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214153878,
+   "x": 7.120885928685187,
+   "y": 71.84499368179891
+  },
+  {
+   "route_a": 14,
+   "route_b": 874,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17437187631853135,
+   "x": 121.87468593815926,
+   "y": 11.27899657702686
+  },
+  {
+   "route_a": 14,
+   "route_b": 876,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1747333520545311,
+   "x": 121.87486667602727,
+   "y": 9.157764957598989
+  },
+  {
+   "route_a": 14,
+   "route_b": 892,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1713060900531751,
+   "x": 120.15327609386298,
+   "y": 27.598153045026585
+  },
+  {
+   "route_a": 14,
+   "route_b": 897,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17267430622296587,
+   "x": 8.901162846888518,
+   "y": 30.18464094102334
+  },
+  {
+   "route_a": 14,
+   "route_b": 913,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436468495,
+   "x": 26.661450760152604,
+   "y": 28.898898832817643
+  },
+  {
+   "route_a": 14,
+   "route_b": 914,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121196063,
+   "x": 35.76622053865634,
+   "y": 28.898982499394005
+  },
+  {
+   "route_a": 14,
+   "route_b": 915,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189487,
+   "x": 44.86315991296799,
+   "y": 28.89907330291404
+  },
+  {
+   "route_a": 14,
+   "route_b": 916,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 53.95185896779274,
+   "y": 28.899172636054256
+  },
+  {
+   "route_a": 14,
+   "route_b": 917,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1740355394784494,
+   "x": 63.03183067619199,
+   "y": 28.89928223026076
+  },
+  {
+   "route_a": 14,
+   "route_b": 918,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17482711780566162,
+   "x": 72.07886881563829,
+   "y": 28.941440787731352
+  },
+  {
+   "route_a": 14,
+   "route_b": 976,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317733706,
+   "x": 7.1497801515886685,
+   "y": 90.2407218362219
+  },
+  {
+   "route_a": 14,
+   "route_b": 983,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185349,
+   "x": 7.1496859381592675,
+   "y": 99.14720342297315
+  },
+  {
+   "route_a": 14,
+   "route_b": 990,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1741650243360926,
+   "x": 7.149582512168046,
+   "y": 108.0621204212342
+  },
+  {
+   "route_a": 14,
+   "route_b": 997,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494591757375233,
+   "x": 7.105556155137304,
+   "y": 117.01129533216044
+  },
+  {
+   "route_a": 14,
+   "route_b": 1011,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340847,
+   "x": 7.111766293737876,
+   "y": 134.8830413703609
+  },
+  {
+   "route_a": 14,
+   "route_b": 1018,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17419081662702754,
+   "x": 7.114838721758709,
+   "y": 143.83562750410476
+  },
+  {
+   "route_a": 15,
+   "route_b": 24,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1664514623695751,
+   "x": 65.20804066149151,
+   "y": 19.535338905642188
+  },
+  {
+   "route_a": 15,
+   "route_b": 28,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599337063,
+   "x": 100.34495050778253,
+   "y": 19.535684046718686
+  },
+  {
+   "route_a": 15,
+   "route_b": 72,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889781226,
+   "x": 64.13918775417591,
+   "y": 19.52689574393289
+  },
+  {
+   "route_a": 15,
+   "route_b": 75,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17141816018000028,
+   "x": 93.55168548605155,
+   "y": 19.52830762005761
+  },
+  {
+   "route_a": 15,
+   "route_b": 95,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1687621247532758,
+   "x": 130.85954610729002,
+   "y": 9.59522819617965
+  },
+  {
+   "route_a": 15,
+   "route_b": 110,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1722514857062783,
+   "x": 121.11158456608892,
+   "y": 19.525523037582282
+  },
+  {
+   "route_a": 15,
+   "route_b": 126,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17384068374568015,
+   "x": 121.79919555814146,
+   "y": 19.51668152260303
+  },
+  {
+   "route_a": 15,
+   "route_b": 215,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889780874,
+   "x": 65.41081224582408,
+   "y": 19.526895743932887
+  },
+  {
+   "route_a": 15,
+   "route_b": 236,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17384068374569606,
+   "x": 130.84288152260302,
+   "y": 13.424604441858516
+  },
+  {
+   "route_a": 15,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17254376445540684,
+   "x": 18.23157312485172,
+   "y": 19.39828297897111
+  },
+  {
+   "route_a": 15,
+   "route_b": 600,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.14576596897863475,
+   "x": 102.80273338386384,
+   "y": 19.389964000603857
+  },
+  {
+   "route_a": 15,
+   "route_b": 607,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1589781220848565,
+   "x": 111.032365282522,
+   "y": 19.386159285845856
+  },
+  {
+   "route_a": 15,
+   "route_b": 614,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16450653191826192,
+   "x": 119.42557390467104,
+   "y": 19.386434202635378
+  },
+  {
+   "route_a": 15,
+   "route_b": 665,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1687621247532755,
+   "x": 38.42857180382037,
+   "y": 19.533346107290015
+  },
+  {
+   "route_a": 15,
+   "route_b": 696,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17495869848180234,
+   "x": 127.29997934924091,
+   "y": 19.198401662741933
+  },
+  {
+   "route_a": 15,
+   "route_b": 720,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185278,
+   "x": 10.125314061840742,
+   "y": 19.97100342297314
+  },
+  {
+   "route_a": 15,
+   "route_b": 755,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1730587787372162,
+   "x": 9.250970610631398,
+   "y": 20.5171512017894
+  },
+  {
+   "route_a": 15,
+   "route_b": 771,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16645146236956315,
+   "x": 7.3115389056422,
+   "y": 24.583040661491527
+  },
+  {
+   "route_a": 15,
+   "route_b": 772,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475326727,
+   "x": 7.309546107290028,
+   "y": 34.07142819617964
+  },
+  {
+   "route_a": 15,
+   "route_b": 774,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1714181601800061,
+   "x": 7.304507620057627,
+   "y": 52.926685486051554
+  },
+  {
+   "route_a": 15,
+   "route_b": 775,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17225148570626295,
+   "x": 7.30172303758229,
+   "y": 62.31158456608894
+  },
+  {
+   "route_a": 15,
+   "route_b": 776,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737826426,
+   "x": 7.298839356937444,
+   "y": 71.67492856993788
+  },
+  {
+   "route_a": 15,
+   "route_b": 883,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317734417,
+   "x": 130.87478015158865,
+   "y": 8.90927816377813
+  },
+  {
+   "route_a": 15,
+   "route_b": 892,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1736816032641002,
+   "x": 128.42314080163203,
+   "y": 18.65511615237106
+  },
+  {
+   "route_a": 15,
+   "route_b": 897,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17222091115250393,
+   "x": 8.901389544423749,
+   "y": 20.815973672320887
+  },
+  {
+   "route_a": 15,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 17.42685896779274,
+   "y": 19.374172636054265
+  },
+  {
+   "route_a": 15,
+   "route_b": 906,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947845296,
+   "x": 26.506830676191996,
+   "y": 19.374282230260768
+  },
+  {
+   "route_a": 15,
+   "route_b": 907,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1748271178056659,
+   "x": 35.55386881563831,
+   "y": 19.416440787731364
+  },
+  {
+   "route_a": 15,
+   "route_b": 908,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17459448682339243,
+   "x": 44.61727353402151,
+   "y": 19.41333668352823
+  },
+  {
+   "route_a": 15,
+   "route_b": 909,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17432083107249663,
+   "x": 53.669640990693026,
+   "y": 19.410253762203112
+  },
+  {
+   "route_a": 15,
+   "route_b": 910,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17399611388874509,
+   "x": 62.709929676337154,
+   "y": 19.407197563561255
+  },
+  {
+   "route_a": 15,
+   "route_b": 912,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17313204111442046,
+   "x": 80.74872090824917,
+   "y": 19.401198905343513
+  },
+  {
+   "route_a": 15,
+   "route_b": 976,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17437187631853313,
+   "x": 7.324685938159278,
+   "y": 90.32220342297316
+  },
+  {
+   "route_a": 15,
+   "route_b": 983,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433608905,
+   "x": 7.324582512168056,
+   "y": 99.23712042123421
+  },
+  {
+   "route_a": 15,
+   "route_b": 990,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1749459175737382,
+   "x": 7.2805561551373135,
+   "y": 108.18629533216046
+  },
+  {
+   "route_a": 15,
+   "route_b": 997,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143313746,
+   "x": 7.283670548545199,
+   "y": 117.11690484175725
+  },
+  {
+   "route_a": 15,
+   "route_b": 1011,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1741908166270334,
+   "x": 7.289838721758725,
+   "y": 135.0106275041048
+  },
+  {
+   "route_a": 15,
+   "route_b": 1018,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17384068374568581,
+   "x": 7.292881522603051,
+   "y": 143.97580444185854
+  },
+  {
+   "route_a": 23,
+   "route_b": 43,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599337263,
+   "x": 28.15504949221746,
+   "y": 11.436915953281312
+  },
+  {
+   "route_a": 23,
+   "route_b": 643,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1749576701855844,
+   "x": 58.69919654033335,
+   "y": 8.024978835092792
+  },
+  {
+   "route_a": 23,
+   "route_b": 644,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436470627,
+   "x": 58.63645076015261,
+   "y": 8.199901167182365
+  },
+  {
+   "route_a": 23,
+   "route_b": 645,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1746350012119784,
+   "x": 58.56622053865635,
+   "y": 8.374817500605984
+  },
+  {
+   "route_a": 23,
+   "route_b": 777,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214155383,
+   "x": 14.895885928685198,
+   "y": 16.619993681798903
+  },
+  {
+   "route_a": 23,
+   "route_b": 779,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17419081662702293,
+   "x": 14.889838721758714,
+   "y": 35.264372495895216
+  },
+  {
+   "route_a": 23,
+   "route_b": 780,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340494,
+   "x": 14.886766293737878,
+   "y": 44.56695862963913
+  },
+  {
+   "route_a": 23,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143313793,
+   "x": 14.883670548545194,
+   "y": 53.858095158242755
+  },
+  {
+   "route_a": 23,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494591757374614,
+   "x": 14.88055615513731,
+   "y": 63.13870466783955
+  },
+  {
+   "route_a": 23,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433608372,
+   "x": 17.550417487831947,
+   "y": 12.110920421234194
+  },
+  {
+   "route_a": 23,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185278,
+   "x": 17.725314061840734,
+   "y": 12.021003422973152
+  },
+  {
+   "route_a": 23,
+   "route_b": 794,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17081092663347597,
+   "x": 22.406703114052416,
+   "y": 11.442727173706942
+  },
+  {
+   "route_a": 23,
+   "route_b": 802,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1708109266334646,
+   "x": 32.4567031140524,
+   "y": 11.442727173706947
+  },
+  {
+   "route_a": 23,
+   "route_b": 810,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1708109266334646,
+   "x": 40.9317031140524,
+   "y": 11.442727173706947
+  },
+  {
+   "route_a": 23,
+   "route_b": 818,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1708109266334646,
+   "x": 49.40670311405239,
+   "y": 11.442727173706947
+  },
+  {
+   "route_a": 23,
+   "route_b": 855,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17130609005317687,
+   "x": 57.32827609386301,
+   "y": 10.123153045026587
+  },
+  {
+   "route_a": 23,
+   "route_b": 862,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17191873494395438,
+   "x": 57.51040563283284,
+   "y": 9.948459367471978
+  },
+  {
+   "route_a": 23,
+   "route_b": 876,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1728438091383886,
+   "x": 57.82584646358185,
+   "y": 9.598921904569194
+  },
+  {
+   "route_a": 23,
+   "route_b": 883,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17320425796390104,
+   "x": 57.96294673721674,
+   "y": 9.42410212898195
+  },
+  {
+   "route_a": 23,
+   "route_b": 890,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17351682445456795,
+   "x": 58.08814841711498,
+   "y": 9.249258412227285
+  },
+  {
+   "route_a": 23,
+   "route_b": 899,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1749576701855684,
+   "x": 27.07419654033335,
+   "y": 11.42382116490722
+  },
+  {
+   "route_a": 23,
+   "route_b": 900,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436469028,
+   "x": 36.18645076015262,
+   "y": 11.42389883281766
+  },
+  {
+   "route_a": 23,
+   "route_b": 901,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121196063,
+   "x": 45.291220538656354,
+   "y": 11.423982499394025
+  },
+  {
+   "route_a": 23,
+   "route_b": 902,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17452021363973227,
+   "x": 54.351386710641336,
+   "y": 11.466276225702352
+  },
+  {
+   "route_a": 23,
+   "route_b": 903,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145502,
+   "x": 58.40185896779276,
+   "y": 8.724627363945727
+  },
+  {
+   "route_a": 23,
+   "route_b": 904,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1740355394784583,
+   "x": 58.306830676192,
+   "y": 8.89951776973923
+  },
+  {
+   "route_a": 23,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317733706,
+   "x": 14.924780151588674,
+   "y": 17.015721836221886
+  },
+  {
+   "route_a": 23,
+   "route_b": 1019,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17489349688277045,
+   "x": 14.924946748441391,
+   "y": 143.2263714967537
+  },
+  {
+   "route_a": 24,
+   "route_b": 28,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17225817467024881,
+   "x": 17.2083230618653,
+   "y": 21.124912462141097
+  },
+  {
+   "route_a": 24,
+   "route_b": 72,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1626206698369597,
+   "x": 45.14460991866305,
+   "y": 20.086080811277
+  },
+  {
+   "route_a": 24,
+   "route_b": 104,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475326363,
+   "x": 68.03454610729003,
+   "y": 9.454863783571032
+  },
+  {
+   "route_a": 24,
+   "route_b": 215,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17417240284820107,
+   "x": 65.05845028196177,
+   "y": 19.623316160433674
+  },
+  {
+   "route_a": 24,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1740136536136962,
+   "x": 16.72462969372527,
+   "y": 21.49413773975268
+  },
+  {
+   "route_a": 24,
+   "route_b": 665,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889782378,
+   "x": 40.33581224582393,
+   "y": 20.226895743932882
+  },
+  {
+   "route_a": 24,
+   "route_b": 779,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1738406837456956,
+   "x": 15.067881522603027,
+   "y": 35.12419555814147
+  },
+  {
+   "route_a": 24,
+   "route_b": 780,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1741908166270318,
+   "x": 15.0648387217587,
+   "y": 44.43937249589523
+  },
+  {
+   "route_a": 24,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340494,
+   "x": 15.061766293737861,
+   "y": 53.74195862963913
+  },
+  {
+   "route_a": 24,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143313416,
+   "x": 15.058670548545173,
+   "y": 63.03309515824278
+  },
+  {
+   "route_a": 24,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494591757375233,
+   "x": 15.055556155137293,
+   "y": 72.31370466783954
+  },
+  {
+   "route_a": 24,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433608372,
+   "x": 17.725417487831958,
+   "y": 20.760920421234157
+  },
+  {
+   "route_a": 24,
+   "route_b": 826,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609082,
+   "x": 68.04958251216806,
+   "y": 9.789079578765811
+  },
+  {
+   "route_a": 24,
+   "route_b": 835,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17489455539465837,
+   "x": 64.54874727769732,
+   "y": 19.872854577338803
+  },
+  {
+   "route_a": 24,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317733706,
+   "x": 18.075219848411333,
+   "y": 20.589521836221852
+  },
+  {
+   "route_a": 24,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17490353993196917,
+   "x": 17.818400257948017,
+   "y": 20.695573539932735
+  },
+  {
+   "route_a": 24,
+   "route_b": 906,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436468495,
+   "x": 26.83645076015261,
+   "y": 20.07389883281764
+  },
+  {
+   "route_a": 24,
+   "route_b": 907,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121195707,
+   "x": 35.941220538656346,
+   "y": 20.073982499394006
+  },
+  {
+   "route_a": 24,
+   "route_b": 908,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189842,
+   "x": 45.03815991296799,
+   "y": 20.074073302914034
+  },
+  {
+   "route_a": 24,
+   "route_b": 909,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 54.126858967792735,
+   "y": 20.074172636054254
+  },
+  {
+   "route_a": 24,
+   "route_b": 910,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17371243020044605,
+   "x": 63.18009418756682,
+   "y": 20.11785455077139
+  },
+  {
+   "route_a": 24,
+   "route_b": 912,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17351682445456973,
+   "x": 67.08814841711497,
+   "y": 17.899258412227283
+  },
+  {
+   "route_a": 24,
+   "route_b": 1012,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17489349688276512,
+   "x": 15.099946748441372,
+   "y": 134.4013714967537
+  },
+  {
+   "route_a": 24,
+   "route_b": 1019,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473335205452933,
+   "x": 15.099866676027254,
+   "y": 143.29223504240102
+  },
+  {
+   "route_a": 28,
+   "route_b": 72,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889781673,
+   "x": 46.36081224582391,
+   "y": 19.745704256067093
+  },
+  {
+   "route_a": 28,
+   "route_b": 75,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1687621247532755,
+   "x": 93.04642819617962,
+   "y": 19.88334610729001
+  },
+  {
+   "route_a": 28,
+   "route_b": 124,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387036604,
+   "x": 104.03214440533488,
+   "y": 10.214402456172522
+  },
+  {
+   "route_a": 28,
+   "route_b": 215,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13170537174259778,
+   "x": 99.61906062761804,
+   "y": 19.702152685871276
+  },
+  {
+   "route_a": 28,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17375096756181918,
+   "x": 16.568544925493306,
+   "y": 22.15901213190854
+  },
+  {
+   "route_a": 28,
+   "route_b": 665,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1626206698369597,
+   "x": 39.119609918663045,
+   "y": 19.88651918872297
+  },
+  {
+   "route_a": 28,
+   "route_b": 728,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1748934968827811,
+   "x": 19.125053251558615,
+   "y": 20.100171496753685
+  },
+  {
+   "route_a": 28,
+   "route_b": 779,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1714181601799989,
+   "x": 15.779507620057618,
+   "y": 34.40168548605156
+  },
+  {
+   "route_a": 28,
+   "route_b": 780,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1722514857062677,
+   "x": 15.776723037582284,
+   "y": 43.786584566088976
+  },
+  {
+   "route_a": 28,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1728999773782592,
+   "x": 15.773839356937435,
+   "y": 53.149928569937885
+  },
+  {
+   "route_a": 28,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214153878,
+   "x": 15.770885928685193,
+   "y": 62.49499368179891
+  },
+  {
+   "route_a": 28,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17384068374568015,
+   "x": 15.76788152260304,
+   "y": 71.82419555814145
+  },
+  {
+   "route_a": 28,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17419081662703073,
+   "x": 15.764838721758718,
+   "y": 81.13937249589522
+  },
+  {
+   "route_a": 28,
+   "route_b": 862,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.174893496882774,
+   "x": 104.04994674844139,
+   "y": 9.573628503246312
+  },
+  {
+   "route_a": 28,
+   "route_b": 866,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17393758928396608,
+   "x": 101.42326879464198,
+   "y": 19.113512590766465
+  },
+  {
+   "route_a": 28,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17367974098020866,
+   "x": 18.0756601295099,
+   "y": 20.618261880858455
+  },
+  {
+   "route_a": 28,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17372167341107755,
+   "x": 17.832389598620637,
+   "y": 20.771423278683095
+  },
+  {
+   "route_a": 28,
+   "route_b": 906,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189842,
+   "x": 26.688159912967993,
+   "y": 19.72407330291404
+  },
+  {
+   "route_a": 28,
+   "route_b": 907,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 35.776858967792734,
+   "y": 19.72417263605426
+  },
+  {
+   "route_a": 28,
+   "route_b": 908,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947844586,
+   "x": 44.856830676192,
+   "y": 19.724282230260766
+  },
+  {
+   "route_a": 28,
+   "route_b": 909,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17482711780566773,
+   "x": 53.903868815638305,
+   "y": 19.766440787731355
+  },
+  {
+   "route_a": 28,
+   "route_b": 910,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17459448682339243,
+   "x": 62.9672735340215,
+   "y": 19.763336683528223
+  },
+  {
+   "route_a": 28,
+   "route_b": 912,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17399611388872732,
+   "x": 81.05992967633716,
+   "y": 19.757197563561252
+  },
+  {
+   "route_a": 28,
+   "route_b": 984,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17489349688277045,
+   "x": 15.799946748441391,
+   "y": 99.1013714967537
+  },
+  {
+   "route_a": 28,
+   "route_b": 991,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473335205452756,
+   "x": 15.79986667602727,
+   "y": 107.99223504240102
+  },
+  {
+   "route_a": 28,
+   "route_b": 998,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317733529,
+   "x": 15.799780151588674,
+   "y": 116.89072183622189
+  },
+  {
+   "route_a": 28,
+   "route_b": 1005,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17437187631853135,
+   "x": 15.799685938159271,
+   "y": 125.79720342297314
+  },
+  {
+   "route_a": 28,
+   "route_b": 1012,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609793,
+   "x": 15.799582512168055,
+   "y": 134.7121204212342
+  },
+  {
+   "route_a": 28,
+   "route_b": 1019,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1749459175737382,
+   "x": 15.755556155137308,
+   "y": 143.66129533216045
+  },
+  {
+   "route_a": 29,
+   "route_b": 44,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889782473,
+   "x": 99.78918775417606,
+   "y": 28.52689574393288
+  },
+  {
+   "route_a": 29,
+   "route_b": 54,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1687621247532755,
+   "x": 47.87142819617963,
+   "y": 28.53334610729
+  },
+  {
+   "route_a": 29,
+   "route_b": 88,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16645146236956876,
+   "x": 65.90804066149155,
+   "y": 28.53533890564217
+  },
+  {
+   "route_a": 29,
+   "route_b": 105,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737829943,
+   "x": 76.29992856993786,
+   "y": 28.522639356937425
+  },
+  {
+   "route_a": 29,
+   "route_b": 155,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1669951906194416,
+   "x": 93.67433830110907,
+   "y": 28.534990733946948
+  },
+  {
+   "route_a": 29,
+   "route_b": 204,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17301155877588176,
+   "x": 107.39004833084286,
+   "y": 28.52205964744746
+  },
+  {
+   "route_a": 29,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16520260614690585,
+   "x": 16.504898696926546,
+   "y": 31.21141873956445
+  },
+  {
+   "route_a": 29,
+   "route_b": 529,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17254376445539923,
+   "x": 27.231573124851707,
+   "y": 28.3982829789711
+  },
+  {
+   "route_a": 29,
+   "route_b": 662,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17284380913837794,
+   "x": 111.82584646358183,
+   "y": 26.548921904569195
+  },
+  {
+   "route_a": 29,
+   "route_b": 664,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17191873494394727,
+   "x": 111.51040563283281,
+   "y": 26.898459367471972
+  },
+  {
+   "route_a": 29,
+   "route_b": 728,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1747333520545169,
+   "x": 19.125133323972747,
+   "y": 28.816035042400983
+  },
+  {
+   "route_a": 29,
+   "route_b": 779,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037184,
+   "x": 15.957144405334862,
+   "y": 34.165602456172536
+  },
+  {
+   "route_a": 29,
+   "route_b": 780,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1714181601800075,
+   "x": 15.954507620057605,
+   "y": 43.57668548605159
+  },
+  {
+   "route_a": 29,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17225148570625767,
+   "x": 15.951723037582264,
+   "y": 52.96158456608899
+  },
+  {
+   "route_a": 29,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737827933,
+   "x": 15.948839356937425,
+   "y": 62.32492856993789
+  },
+  {
+   "route_a": 29,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214155408,
+   "x": 15.945885928685179,
+   "y": 71.6699936817989
+  },
+  {
+   "route_a": 29,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1738406837456979,
+   "x": 15.94288152260303,
+   "y": 80.99919555814148
+  },
+  {
+   "route_a": 29,
+   "route_b": 847,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456153904467442,
+   "x": 109.89858076952234,
+   "y": 28.033608834966707
+  },
+  {
+   "route_a": 29,
+   "route_b": 866,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609082,
+   "x": 113.04958251216806,
+   "y": 11.189079578765812
+  },
+  {
+   "route_a": 29,
+   "route_b": 874,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1722243011910649,
+   "x": 111.29741215059553,
+   "y": 27.107749331974894
+  },
+  {
+   "route_a": 29,
+   "route_b": 892,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1682112449460078,
+   "x": 110.64514212037741,
+   "y": 27.596605622473003
+  },
+  {
+   "route_a": 29,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17339014282490695,
+   "x": 18.075804928587548,
+   "y": 29.387071903786477
+  },
+  {
+   "route_a": 29,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17305877873721087,
+   "x": 17.900970610631397,
+   "y": 29.517151201789364
+  },
+  {
+   "route_a": 29,
+   "route_b": 913,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 26.426858967792732,
+   "y": 28.37417263605425
+  },
+  {
+   "route_a": 29,
+   "route_b": 914,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947844586,
+   "x": 35.50683067619199,
+   "y": 28.374282230260757
+  },
+  {
+   "route_a": 29,
+   "route_b": 915,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17482711780566773,
+   "x": 44.553868815638296,
+   "y": 28.416440787731347
+  },
+  {
+   "route_a": 29,
+   "route_b": 916,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1745944868234003,
+   "x": 53.61727353402149,
+   "y": 28.413336683528215
+  },
+  {
+   "route_a": 29,
+   "route_b": 917,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743208310724987,
+   "x": 62.66964099069301,
+   "y": 28.410253762203094
+  },
+  {
+   "route_a": 29,
+   "route_b": 918,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17399611388874509,
+   "x": 71.70992967633714,
+   "y": 28.40719756356124
+  },
+  {
+   "route_a": 29,
+   "route_b": 984,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1747333520545311,
+   "x": 15.974866676027254,
+   "y": 99.16723504240102
+  },
+  {
+   "route_a": 29,
+   "route_b": 991,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1745603031773335,
+   "x": 15.974780151588655,
+   "y": 108.06572183622185
+  },
+  {
+   "route_a": 29,
+   "route_b": 998,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185349,
+   "x": 15.974685938159256,
+   "y": 116.97220342297315
+  },
+  {
+   "route_a": 29,
+   "route_b": 1005,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609438,
+   "x": 15.974582512168036,
+   "y": 125.88712042123417
+  },
+  {
+   "route_a": 29,
+   "route_b": 1012,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1749459175737347,
+   "x": 15.930556155137287,
+   "y": 134.83629533216043
+  },
+  {
+   "route_a": 29,
+   "route_b": 1019,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143312117,
+   "x": 15.933670548545173,
+   "y": 143.76690484175722
+  },
+  {
+   "route_a": 30,
+   "route_b": 38,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1626206698369564,
+   "x": 47.00539008133697,
+   "y": 37.53651918872296
+  },
+  {
+   "route_a": 30,
+   "route_b": 94,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1664514623695655,
+   "x": 122.0365389056422,
+   "y": 8.756840661491527
+  },
+  {
+   "route_a": 30,
+   "route_b": 106,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1714181601800175,
+   "x": 84.90168548605158,
+   "y": 37.5283076200576
+  },
+  {
+   "route_a": 30,
+   "route_b": 110,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475327856,
+   "x": 122.03454610729003,
+   "y": 18.4202281961796
+  },
+  {
+   "route_a": 30,
+   "route_b": 123,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1722514857062503,
+   "x": 94.286584566089,
+   "y": 37.52552303758225
+  },
+  {
+   "route_a": 30,
+   "route_b": 126,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1703093338703797,
+   "x": 122.03214440533489,
+   "y": 19.21440245617248
+  },
+  {
+   "route_a": 30,
+   "route_b": 147,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475327856,
+   "x": 26.80357180382037,
+   "y": 37.53334610729
+  },
+  {
+   "route_a": 30,
+   "route_b": 215,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475327856,
+   "x": 122.03454610729003,
+   "y": 22.07737180382035
+  },
+  {
+   "route_a": 30,
+   "route_b": 237,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214155885,
+   "x": 116.6050063182011,
+   "y": 37.51968592868518
+  },
+  {
+   "route_a": 30,
+   "route_b": 248,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1626206698369564,
+   "x": 73.54460991866303,
+   "y": 37.53651918872296
+  },
+  {
+   "route_a": 30,
+   "route_b": 516,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1682112449460078,
+   "x": 119.64514212037741,
+   "y": 36.59660562247301
+  },
+  {
+   "route_a": 30,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16142671725084057,
+   "x": 16.50678664137458,
+   "y": 40.589523492090294
+  },
+  {
+   "route_a": 30,
+   "route_b": 537,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17254376445539923,
+   "x": 36.23157312485171,
+   "y": 37.398282978971096
+  },
+  {
+   "route_a": 30,
+   "route_b": 670,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17284380913837794,
+   "x": 120.82584646358183,
+   "y": 35.5489219045692
+  },
+  {
+   "route_a": 30,
+   "route_b": 671,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17242178115093765,
+   "x": 120.67554890444517,
+   "y": 35.723710890575475
+  },
+  {
+   "route_a": 30,
+   "route_b": 672,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17191873494395082,
+   "x": 120.51040563283281,
+   "y": 35.89845936747197
+  },
+  {
+   "route_a": 30,
+   "route_b": 728,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317732996,
+   "x": 19.12521984841134,
+   "y": 37.889521836221846
+  },
+  {
+   "route_a": 30,
+   "route_b": 780,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037184,
+   "x": 16.132144405334873,
+   "y": 43.34060245617253
+  },
+  {
+   "route_a": 30,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17141816018001305,
+   "x": 16.12950762005762,
+   "y": 52.75168548605154
+  },
+  {
+   "route_a": 30,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.172251485706273,
+   "x": 16.12672303758228,
+   "y": 62.136584566088956
+  },
+  {
+   "route_a": 30,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737827933,
+   "x": 16.123839356937438,
+   "y": 71.49992856993785
+  },
+  {
+   "route_a": 30,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214155408,
+   "x": 16.12088592868519,
+   "y": 80.84499368179891
+  },
+  {
+   "route_a": 30,
+   "route_b": 874,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609082,
+   "x": 122.04958251216806,
+   "y": 11.18907957876581
+  },
+  {
+   "route_a": 30,
+   "route_b": 876,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317734417,
+   "x": 122.04978015158868,
+   "y": 9.08427816377812
+  },
+  {
+   "route_a": 30,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17305877873721442,
+   "x": 18.075970610631394,
+   "y": 38.517151201789375
+  },
+  {
+   "route_a": 30,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17267430622296587,
+   "x": 17.901162846888518,
+   "y": 38.65964094102334
+  },
+  {
+   "route_a": 30,
+   "route_b": 921,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 35.42685896779273,
+   "y": 37.374172636054254
+  },
+  {
+   "route_a": 30,
+   "route_b": 922,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947845296,
+   "x": 44.50683067619198,
+   "y": 37.374282230260754
+  },
+  {
+   "route_a": 30,
+   "route_b": 923,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17482711780566956,
+   "x": 53.553868815638296,
+   "y": 37.41644078773135
+  },
+  {
+   "route_a": 30,
+   "route_b": 924,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17459448682340226,
+   "x": 62.61727353402149,
+   "y": 37.413336683528215
+  },
+  {
+   "route_a": 30,
+   "route_b": 925,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743208310724987,
+   "x": 71.66964099069301,
+   "y": 37.4102537622031
+  },
+  {
+   "route_a": 30,
+   "route_b": 926,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17399611388874728,
+   "x": 80.70992967633714,
+   "y": 37.40719756356124
+  },
+  {
+   "route_a": 30,
+   "route_b": 927,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17360644353628835,
+   "x": 89.7368400086605,
+   "y": 37.40417569180701
+  },
+  {
+   "route_a": 30,
+   "route_b": 928,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17313204111442046,
+   "x": 98.74872090824914,
+   "y": 37.4011989053435
+  },
+  {
+   "route_a": 30,
+   "route_b": 984,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317733706,
+   "x": 16.14978015158867,
+   "y": 99.24072183622188
+  },
+  {
+   "route_a": 30,
+   "route_b": 991,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185349,
+   "x": 16.149685938159266,
+   "y": 108.14720342297315
+  },
+  {
+   "route_a": 30,
+   "route_b": 998,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609438,
+   "x": 16.149582512168045,
+   "y": 117.0621204212342
+  },
+  {
+   "route_a": 30,
+   "route_b": 1005,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494591757375233,
+   "x": 16.105556155137304,
+   "y": 126.01129533216044
+  },
+  {
+   "route_a": 30,
+   "route_b": 1012,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143315187,
+   "x": 16.10867054854519,
+   "y": 134.94190484175726
+  },
+  {
+   "route_a": 30,
+   "route_b": 1019,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340694,
+   "x": 16.111766293737873,
+   "y": 143.8830413703609
+  },
+  {
+   "route_a": 31,
+   "route_b": 38,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599337604,
+   "x": 46.51995050778254,
+   "y": 37.71068404671868
+  },
+  {
+   "route_a": 31,
+   "route_b": 95,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16645146236955288,
+   "x": 131.0365389056422,
+   "y": 9.281840661491533
+  },
+  {
+   "route_a": 31,
+   "route_b": 106,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037764,
+   "x": 84.66560245617251,
+   "y": 37.70594440533487
+  },
+  {
+   "route_a": 31,
+   "route_b": 123,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1714181601800175,
+   "x": 94.07668548605156,
+   "y": 37.703307620057615
+  },
+  {
+   "route_a": 31,
+   "route_b": 147,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1664514623695655,
+   "x": 27.116959338508476,
+   "y": 37.71033890564218
+  },
+  {
+   "route_a": 31,
+   "route_b": 236,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17341813214155968,
+   "x": 131.0208859286852,
+   "y": 13.578806318201092
+  },
+  {
+   "route_a": 31,
+   "route_b": 237,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737828688,
+   "x": 116.77507143006216,
+   "y": 37.69763935693743
+  },
+  {
+   "route_a": 31,
+   "route_b": 248,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599337405,
+   "x": 74.03004949221747,
+   "y": 37.71068404671868
+  },
+  {
+   "route_a": 31,
+   "route_b": 516,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16954940989543132,
+   "x": 128.90051152351904,
+   "y": 36.59727470494772
+  },
+  {
+   "route_a": 31,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15394734877532912,
+   "x": 16.510526325612332,
+   "y": 41.249905442092924
+  },
+  {
+   "route_a": 31,
+   "route_b": 537,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17313204111441535,
+   "x": 36.05127909175084,
+   "y": 37.57619890534351
+  },
+  {
+   "route_a": 31,
+   "route_b": 616,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15897812208485315,
+   "x": 120.20736528252203,
+   "y": 37.561159285845854
+  },
+  {
+   "route_a": 31,
+   "route_b": 670,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17320425796390282,
+   "x": 129.96294673721673,
+   "y": 35.54910212898196
+  },
+  {
+   "route_a": 31,
+   "route_b": 671,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17284380913837083,
+   "x": 129.82584646358185,
+   "y": 35.72392190456919
+  },
+  {
+   "route_a": 31,
+   "route_b": 672,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17242178115095186,
+   "x": 129.67554890444515,
+   "y": 35.89871089057547
+  },
+  {
+   "route_a": 31,
+   "route_b": 728,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.174371876318542,
+   "x": 19.125314061840733,
+   "y": 38.146003422973145
+  },
+  {
+   "route_a": 31,
+   "route_b": 780,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1687621247532755,
+   "x": 16.309546107290032,
+   "y": 43.07142819617963
+  },
+  {
+   "route_a": 31,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387036892,
+   "x": 16.30714440533488,
+   "y": 52.5156024561725
+  },
+  {
+   "route_a": 31,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17141816018001305,
+   "x": 16.30450762005763,
+   "y": 61.92668548605154
+  },
+  {
+   "route_a": 31,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1722514857062677,
+   "x": 16.301723037582292,
+   "y": 71.31158456608894
+  },
+  {
+   "route_a": 31,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17289997737826426,
+   "x": 16.298839356937442,
+   "y": 80.67492856993788
+  },
+  {
+   "route_a": 31,
+   "route_b": 883,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17437187631853135,
+   "x": 131.04968593815926,
+   "y": 8.827796577026852
+  },
+  {
+   "route_a": 31,
+   "route_b": 892,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17494726381520392,
+   "x": 130.91946525638673,
+   "y": 11.111805666576872
+  },
+  {
+   "route_a": 31,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17267430622296587,
+   "x": 18.07616284688852,
+   "y": 38.83464094102336
+  },
+  {
+   "route_a": 31,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17222091115249327,
+   "x": 17.901389544423754,
+   "y": 38.99097367232088
+  },
+  {
+   "route_a": 31,
+   "route_b": 921,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417189842,
+   "x": 35.51315991296799,
+   "y": 37.54907330291404
+  },
+  {
+   "route_a": 31,
+   "route_b": 922,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789145857,
+   "x": 44.60185896779274,
+   "y": 37.549172636054266
+  },
+  {
+   "route_a": 31,
+   "route_b": 923,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947844586,
+   "x": 53.68183067619199,
+   "y": 37.54928223026077
+  },
+  {
+   "route_a": 31,
+   "route_b": 924,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17482711780567564,
+   "x": 62.72886881563831,
+   "y": 37.59144078773136
+  },
+  {
+   "route_a": 31,
+   "route_b": 925,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.174594486823424,
+   "x": 71.79227353402149,
+   "y": 37.58833668352822
+  },
+  {
+   "route_a": 31,
+   "route_b": 926,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17432083107250287,
+   "x": 80.84464099069301,
+   "y": 37.5852537622031
+  },
+  {
+   "route_a": 31,
+   "route_b": 927,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17399611388874286,
+   "x": 89.88492967633715,
+   "y": 37.58219756356125
+  },
+  {
+   "route_a": 31,
+   "route_b": 928,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.173606443536279,
+   "x": 98.91184000866053,
+   "y": 37.57917569180703
+  },
+  {
+   "route_a": 31,
+   "route_b": 984,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1743718763185349,
+   "x": 16.324685938159277,
+   "y": 99.32220342297313
+  },
+  {
+   "route_a": 31,
+   "route_b": 991,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609082,
+   "x": 16.324582512168057,
+   "y": 108.23712042123418
+  },
+  {
+   "route_a": 31,
+   "route_b": 998,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1749459175737382,
+   "x": 16.28055615513731,
+   "y": 117.18629533216046
+  },
+  {
+   "route_a": 31,
+   "route_b": 1005,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17473349143313793,
+   "x": 16.2836705485452,
+   "y": 126.11690484175725
+  },
+  {
+   "route_a": 31,
+   "route_b": 1012,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17448459407340694,
+   "x": 16.286766293737884,
+   "y": 135.0580413703609
+  },
+  {
+   "route_a": 31,
+   "route_b": 1019,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17419081662703395,
+   "x": 16.289838721758727,
+   "y": 144.0106275041048
+  },
+  {
+   "route_a": 32,
+   "route_b": 45,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1323511088978158,
+   "x": 108.789187754176,
+   "y": 47.05189574393288
+  },
+  {
+   "route_a": 32,
+   "route_b": 76,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599336922,
+   "x": 46.330049492217455,
+   "y": 46.911915953281294
+  },
+  {
+   "route_a": 32,
+   "route_b": 77,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13235110889781673,
+   "x": 47.23581224582401,
+   "y": 46.92070425606709
+  },
+  {
+   "route_a": 32,
+   "route_b": 107,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1626206698369564,
+   "x": 63.66960991866304,
+   "y": 46.911080811277
+  },
+  {
+   "route_a": 32,
+   "route_b": 112,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475327856,
+   "x": 140.03454610729003,
+   "y": 17.72022819617961
+  },
+  {
+   "route_a": 32,
+   "route_b": 125,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16876212475327249,
+   "x": 111.57142819617965,
+   "y": 47.058346107290006
+  },
+  {
+   "route_a": 32,
+   "route_b": 138,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16356709630393607,
+   "x": 81.41325399853346,
+   "y": 46.91121392644496
+  },
+  {
+   "route_a": 32,
+   "route_b": 164,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037184,
+   "x": 35.70939754382748,
+   "y": 47.055944405334856
+  },
+  {
+   "route_a": 32,
+   "route_b": 174,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15500654599336722,
+   "x": 100.68004949221745,
+   "y": 46.911915953281294
+  },
+  {
+   "route_a": 32,
+   "route_b": 207,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1664514623695879,
+   "x": 130.13304066149152,
+   "y": 47.06033890564218
+  },
+  {
+   "route_a": 32,
+   "route_b": 248,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387036604,
+   "x": 140.03214440533486,
+   "y": 40.1581975438275
+  },
+  {
+   "route_a": 32,
+   "route_b": 253,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17384068374566014,
+   "x": 140.01788152260303,
+   "y": 12.37460444185853
+  },
+  {
+   "route_a": 32,
+   "route_b": 255,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1744845940734342,
+   "x": 140.01176629373788,
+   "y": 11.722205782969489
+  },
+  {
+   "route_a": 32,
+   "route_b": 521,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.13170537174259067,
+   "x": 16.521647314128703,
+   "y": 51.329739372381965
+  },
+  {
+   "route_a": 32,
+   "route_b": 545,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1739961138887229,
+   "x": 44.74007032366283,
+   "y": 46.93219756356125
+  },
+  {
+   "route_a": 32,
+   "route_b": 624,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.16755196703185202,
+   "x": 128.4284171930446,
+   "y": 46.913034015737026
+  },
+  {
+   "route_a": 32,
+   "route_b": 655,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15508436781948912,
+   "x": 139.88809661882135,
+   "y": 14.023840784659562
+  },
+  {
+   "route_a": 32,
+   "route_b": 665,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.15508436781948862,
+   "x": 139.88809661882135,
+   "y": 30.97384078465958
+  },
+  {
+   "route_a": 32,
+   "route_b": 680,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17320425796390282,
+   "x": 138.96294673721673,
+   "y": 44.89910212898195
+  },
+  {
+   "route_a": 32,
+   "route_b": 728,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433609438,
+   "x": 19.12541748783196,
+   "y": 47.585920421234164
+  },
+  {
+   "route_a": 32,
+   "route_b": 781,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1687621247532755,
+   "x": 16.484546107290015,
+   "y": 52.24642819617963
+  },
+  {
+   "route_a": 32,
+   "route_b": 782,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17030933387037184,
+   "x": 16.482144405334868,
+   "y": 61.69060245617253
+  },
+  {
+   "route_a": 32,
+   "route_b": 783,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17141816018000028,
+   "x": 16.47950762005761,
+   "y": 71.10168548605155
+  },
+  {
+   "route_a": 32,
+   "route_b": 784,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1722514857062677,
+   "x": 16.476723037582275,
+   "y": 80.48658456608898
+  },
+  {
+   "route_a": 32,
+   "route_b": 840,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456153904467442,
+   "x": 136.8985807695223,
+   "y": 46.55860883496672
+  },
+  {
+   "route_a": 32,
+   "route_b": 890,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17416502433610503,
+   "x": 140.04958251216806,
+   "y": 8.562879578765802
+  },
+  {
+   "route_a": 32,
+   "route_b": 892,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17456030317734417,
+   "x": 140.04978015158866,
+   "y": 9.960478163778127
+  },
+  {
+   "route_a": 32,
+   "route_b": 898,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17222091115250038,
+   "x": 18.07638954442375,
+   "y": 48.34097367232086
+  },
+  {
+   "route_a": 32,
+   "route_b": 905,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17167583046806456,
+   "x": 17.901662084765967,
+   "y": 48.51298415335907
+  },
+  {
+   "route_a": 32,
+   "route_b": 929,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17480233436468495,
+   "x": 44.661450760152604,
+   "y": 46.89889883281764
+  },
+  {
+   "route_a": 32,
+   "route_b": 930,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17463500121196063,
+   "x": 53.76622053865635,
+   "y": 46.89898249939401
+  },
+  {
+   "route_a": 32,
+   "route_b": 931,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17445339417190553,
+   "x": 62.86315991296799,
+   "y": 46.89907330291403
+  },
+  {
+   "route_a": 32,
+   "route_b": 932,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17425472789146568,
+   "x": 71.95185896779273,
+   "y": 46.89917263605425
+  },
+  {
+   "route_a": 32,
+   "route_b": 933,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.17403553947845296,
+   "x": 81.03183067619199,
+   "y": 46.89928223026076
+  },
+  {
+   "route_a": 32,
+   "route_b": 934,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1748271178056598,
+   "x": 90.07886881563829,
+   "y": 46.94144078773135
+  },
+  {
+   "route_a": 32,
+   "route_b": 935,
+   "kind": "spacing",
+   "kinds": [
+    "spacing"
+   ],
+   "distance_mm": 0.1745944868234121,
+   "x": 99.14227353402148,
+   "y": 46.93833668352821
+  }
+ ],
+ "violation_total": 6019,
+ "route_errors": [],
+ "wall_seconds": 2.1414440000007744
+}

@@ -1,0 +1,60 @@
+2026-10-19T18:32:11.064684+08:00 FSLW plane run start: topology=V2 plane=z2 algorithm=D radius=40.0 gap=0.03 clearance=0.08 eval_budget=200000 time_budget=900.0 seed=20261019
+2026-10-19T18:32:11.084691+08:00 ports: 512 connections, 1024 ports, row->plane ok=True
+2026-10-19T18:32:11.141694+08:00 D start: pool_size=64 restarts=3 batch_max=12 batch_pool=6 eval_budget=200000 deadline_set=True
+2026-10-19T18:34:58.107638+08:00 D pool: 256/512 identities, 11641 candidates, 167.0s
+2026-10-19T18:35:58.436144+08:00 FSLW plane run start: topology=V2 plane=z2 algorithm=D radius=40.0 gap=0.03 clearance=0.08 eval_budget=200000 time_budget=900.0 seed=20261019
+2026-10-19T18:35:58.459141+08:00 ports: 512 connections, 1024 ports, row->plane ok=True
+2026-10-19T18:35:58.511658+08:00 D start: pool_size=64 restarts=3 batch_max=12 batch_pool=6 eval_budget=200000 deadline_set=True
+2026-10-19T18:37:59.013808+08:00 D pool: 512/512 identities, 23244 candidates, 347.9s
+2026-10-19T18:37:59.013808+08:00 D pool complete: 23244 candidates for 512 identities (45.4/identity) in 347.9s
+2026-10-19T18:38:54.085099+08:00 D pool: 256/512 identities, 11641 candidates, 175.6s
+2026-10-19T18:40:44.723833+08:00 FSLW plane run start: topology=V2 plane=z2 algorithm=D radius=40.0 gap=0.03 clearance=0.08 eval_budget=200000 time_budget=900.0 seed=20261019
+2026-10-19T18:40:44.739836+08:00 ports: 512 connections, 1024 ports, row->plane ok=True
+2026-10-19T18:40:44.798360+08:00 D start: pool_size=48 restarts=3 batch_max=12 batch_pool=6 eval_budget=200000 deadline_set=True
+2026-10-19T18:40:48.541379+08:00 D pool: 256/512 identities, 1221 candidates, 3.7s
+2026-10-19T18:40:52.062213+08:00 D pool: 512/512 identities, 2446 candidates, 7.3s
+2026-10-19T18:40:52.062213+08:00 D pool complete: 2446 candidates for 512 identities (4.8/identity) in 7.3s
+2026-10-19T18:40:56.207737+08:00 D restart0 done: accepted=146 evals=1834 4.1s
+2026-10-19T18:40:56.207737+08:00 D restart0 is the new best: (-146, 6443, 24669.019013846188)
+2026-10-19T18:40:59.284350+08:00 D restart1 done: accepted=120 evals=3675 2.9s
+2026-10-19T18:41:02.759299+08:00 D restart2 done: accepted=120 evals=5516 3.3s
+2026-10-19T18:41:02.931248+08:00 D after restarts: best=(-146, 7010, 24669.019013846188) evals=5516
+2026-10-19T18:41:06.159861+08:00 D baseline score (routed, crossings, length)=(-146, 12886, 24669.019013846188)
+2026-10-19T18:41:36.967598+08:00 D pool: 512/512 identities, 23244 candidates, 338.5s
+2026-10-19T18:41:36.967598+08:00 D pool complete: 23244 candidates for 512 identities (45.4/identity) in 338.5s
+2026-10-19T18:41:45.877720+08:00 D restart0: 256/512 accepted=147 evals=3446 8.9s
+2026-10-19T18:41:58.358818+08:00 D restart0 done: accepted=165 evals=14233 21.4s
+2026-10-19T18:41:58.358818+08:00 D restart0 is the new best: (-165, 6881, 25663.802213740662)
+2026-10-19T18:42:15.433003+08:00 D restart1 done: accepted=143 evals=29748 16.9s
+2026-10-19T18:42:32.741320+08:00 D restart2 done: accepted=143 evals=45263 17.1s
+2026-10-19T18:42:32.964342+08:00 D after restarts: best=(-165, 7040, 25663.802213740662) evals=45263
+2026-10-19T18:42:36.146053+08:00 D baseline score (routed, crossings, length)=(-165, 13762, 25663.802213740662)
+2026-10-19T18:43:48.546855+08:00 D LNS 25/1000: accepted=146 batch=2 evals=6556 pairchecks=2507 score=(-146, 12886, 24668.446421084347) elapsed=162.4s
+2026-10-19T18:44:53.158567+08:00 D LNS 25/1200: accepted=165 batch=2 evals=46310 pairchecks=2973 score=(-165, 13762, 25663.802213740677) elapsed=137.0s
+2026-10-19T18:45:26.969975+08:00 FSLW plane run start: topology=V2 plane=z2 algorithm=D radius=40.0 gap=0.03 clearance=0.08 eval_budget=200000 time_budget=600.0 seed=20261019
+2026-10-19T18:45:26.984975+08:00 ports: 512 connections, 1024 ports, row->plane ok=True
+2026-10-19T18:45:27.027487+08:00 D start: pool_size=40 restarts=2 batch_max=12 batch_pool=6 eval_budget=200000 deadline_set=True
+2026-10-19T18:45:30.407509+08:00 D pool: 256/512 identities, 1221 candidates, 3.4s
+2026-10-19T18:45:34.042335+08:00 D pool: 512/512 identities, 2446 candidates, 7.0s
+2026-10-19T18:45:34.042335+08:00 D pool complete: 2446 candidates for 512 identities (4.8/identity) in 7.0s
+2026-10-19T18:45:38.515834+08:00 D restart0 done: accepted=146 evals=1834 4.5s
+2026-10-19T18:45:38.515834+08:00 D restart0 is the new best: (-146, 6443, 24669.019013846188)
+2026-10-19T18:45:41.869269+08:00 D restart1 done: accepted=120 evals=3675 3.1s
+2026-10-19T18:45:42.040303+08:00 D after restarts: best=(-146, 7010, 24669.019013846188) evals=3675
+2026-10-19T18:45:45.068732+08:00 D baseline score (routed, crossings, length)=(-146, 12886, 24669.019013846188)
+2026-10-19T18:47:22.953526+08:00 D LNS 50/1200: accepted=165 batch=2 evals=47188 pairchecks=5392 score=(-165, 13762, 25663.802213740666) elapsed=286.8s
+2026-10-19T18:48:20.246852+08:00 FSLW plane run start: topology=V2 plane=z2 algorithm=D radius=40.0 gap=0.03 clearance=0.08 eval_budget=200000 time_budget=600.0 seed=20261019
+2026-10-19T18:48:20.261850+08:00 ports: 512 connections, 1024 ports, row->plane ok=True
+2026-10-19T18:48:20.327290+08:00 D start: pool_size=40 restarts=2 batch_max=12 batch_pool=6 eval_budget=200000 deadline_set=True
+2026-10-19T18:48:23.578203+08:00 D pool: 256/512 identities, 1221 candidates, 3.2s
+2026-10-19T18:48:26.731412+08:00 D pool: 512/512 identities, 2446 candidates, 6.4s
+2026-10-19T18:48:26.731412+08:00 D pool complete: 2446 candidates for 512 identities (4.8/identity) in 6.4s
+2026-10-19T18:48:30.410047+08:00 D restart0 done: accepted=146 evals=1834 3.7s
+2026-10-19T18:48:30.411047+08:00 D restart0 is the new best: (-146, 6443, 24669.019013846188)
+2026-10-19T18:48:33.601954+08:00 D restart1 done: accepted=120 evals=3675 3.1s
+2026-10-19T18:48:33.811928+08:00 D after restarts: best=(-146, 7010, 24669.019013846188) evals=3675
+2026-10-19T18:48:36.461266+08:00 D baseline score (routed, crossings, length)=(-146, 12886, 24669.019013846188)
+2026-10-19T18:50:48.749283+08:00 D LNS 25/40: accepted=146 batch=2 evals=4715 pairchecks=2507 score=(-146, 12886, 24668.446421084347) elapsed=132.3s
+2026-10-19T18:51:53.040738+08:00 D LNS done: attempts=40 count_improvements=0 quality_improvements=5 accepted=146 score=(-146, 12883, 24653.8162751113) evals=5282 pairchecks=5298
+2026-10-19T18:51:55.275226+08:00 final internal audit removed 0 route(s)
+2026-10-19T18:51:55.295663+08:00 DONE V2_D_z2: routed=146/512 evals=5282 runtime=215.0s

@@ -103,3 +103,28 @@ python -m four_side_1024.d56.validate_d56 --routes outputs/four_side_1024_d56_op
 python -m four_side_1024.d56.outputs_d56 --run-dir outputs/four_side_1024_d56_optimized --run-status complete
 python -m pytest four_side_1024/d56/tests_d56 -q
 ```
+
+## ABCD 与 FSLW 两轮新实验（2026-10-19 晚）
+
+| 包 | 内容 | 最佳结果 |
+|---|---|---|
+| `abcd/` | V1/V2 连接拓扑 x A/B/C/D 四种算法在**单层虚拟展开**基线（R = 5 mm、125 um 间距）上的 8 组全量 1024 条实验、C 的轮流设计消融、D 的全局联合候选 + LNS、strict 局部交叉窗口验收 | 462/1024（V1_B）；strict 口径复验使历史 467 -> 465 |
+| `fslw/` | **双高度真实 2x16 接口**（row1->z1 对边平面、row2->z2 邻边平面）在飞秒直写参数 **R >= 40 mm（固定 40）**、边缘间距 **30 um** 下的 16 个平面实验 + 8 个 1024 通道组合布局 + 4 配置参数敏感性 | **694/1024（V2_C）**；邻边平面 22.3 %/25.0 % 连接几何上无合法 R=40 路径 |
+
+公共能力：`abcd/SPEC.md`（strict 交叉窗口数学定义、8 组实验矩阵、产物契约）、
+`fslw/SPEC.md`（双高度接口模型、R=40 几何、敏感性矩阵、诚实边界声明）、
+两套独立几何实现（路由器索引 `d56/index.py` 与独立校验器 `abcd` 复用 validator /
+`fslw/validate_fslw.py`），交叉验证 mismatch = 0。
+
+入口：
+
+```shell
+# ABCD 轮（虚拟展开单层基线）
+python -m four_side_1024.abcd.run --experiment V1_B --policy strict
+python -m four_side_1024.abcd.finalize_all
+
+# FSLW 轮（双高度真实 2x16，R>=40 mm，30 um 间距）
+python -m four_side_1024.fslw.run --topology V2 --plane z2 --algorithm C
+python -m four_side_1024.fslw.validate_fslw --scan-root outputs/four_side_1024_fslw_R40_gap30_abcd/planes
+python -m four_side_1024.fslw.plots --root outputs/four_side_1024_fslw_R40_gap30_abcd --all
+```

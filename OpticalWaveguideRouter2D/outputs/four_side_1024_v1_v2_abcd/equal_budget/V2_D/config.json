@@ -1,0 +1,97 @@
+{
+ "experiment": "V2_D",
+ "topology": "V2",
+ "algorithm": "D",
+ "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+ "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "policy": "strict",
+ "seed": 20261019,
+ "candidate_budget_per_route": 900,
+ "eval_budget": 137473,
+ "time_budget_seconds": 600.0,
+ "ripup_rounds": 0,
+ "ripup_routes": 3,
+ "no_deep": false,
+ "strategy": {
+  "name": "D_joint_candidate_lns",
+  "algorithm": "D",
+  "pool_size": 64,
+  "batch_max": 12,
+  "batch_pool": 6,
+  "pair_level_compatibility": true,
+  "joint_multi_route_replacement": true,
+  "objective": [
+   "routed_count",
+   "crossings",
+   "total_length"
+  ],
+  "seed": 20261019
+ },
+ "physics": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "layer": 0,
+  "routing_layers": 1,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.125,
+  "centerline_clearance_mm": 0.175,
+  "min_radius_mm": 5.0,
+  "sagitta_mm": 0.0005,
+  "connector_pitch_mm": 9.0,
+  "virtual_pitch_mm": 0.175,
+  "endpoint_mode": "virtual_unfolded"
+ },
+ "budget_used": {
+  "evaluations": 113930,
+  "total_runtime_seconds": 239.0967509000002
+ },
+ "main_pass": {
+  "algorithm": "D_joint_candidate_lns",
+  "attempted": 1024,
+  "accepted": 426,
+  "evaluations": 113930,
+  "pair_checks": 23561,
+  "restarts": [
+   {
+    "label": "restart0",
+    "accepted": 425,
+    "evals": 33832,
+    "seconds": 4.919335699998555,
+    "score": [
+     -425,
+     37826,
+     58975.34150806027
+    ]
+   },
+   {
+    "label": "restart1",
+    "accepted": 397,
+    "evals": 68777,
+    "seconds": 5.5307190000003175,
+    "score": [
+     -397,
+     37815,
+     57773.43513751609
+    ]
+   }
+  ],
+  "baseline_score": [
+   -425,
+   75652,
+   58975.34150806027
+  ],
+  "final_score": [
+   -426,
+   71466,
+   57295.02864304433
+  ],
+  "lns_attempts": 1335,
+  "lns_count_improvements": 1,
+  "lns_quality_improvements": 262,
+  "stop_reason": "budget",
+  "duration_seconds": 237.6337782999999
+ },
+ "ripup": null
+}
