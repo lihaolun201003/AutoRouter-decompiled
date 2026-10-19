@@ -1,0 +1,124 @@
+{
+  "schema": "d56_diag_transforms_v1",
+  "pairs": [
+    {
+      "source_side": "N",
+      "target_side": "S",
+      "route_count": 256,
+      "kind": {
+        "opposite": 13
+      },
+      "reflected": false,
+      "distinct_transforms": 1,
+      "pos_checks": 13,
+      "dir_checks": 13,
+      "max_position_error": 1.5888218580782548e-14,
+      "max_direction_error": 0.0,
+      "validate_errors": [],
+      "csv_route_count": 256
+    },
+    {
+      "source_side": "E",
+      "target_side": "W",
+      "route_count": 256,
+      "kind": {
+        "opposite": 13
+      },
+      "reflected": false,
+      "distinct_transforms": 1,
+      "pos_checks": 13,
+      "dir_checks": 13,
+      "max_position_error": 1.4210854715202004e-14,
+      "max_direction_error": 0.0,
+      "validate_errors": [],
+      "csv_route_count": 256
+    },
+    {
+      "source_side": "E",
+      "target_side": "S",
+      "route_count": 128,
+      "kind": {
+        "adjacent": 13
+      },
+      "reflected": true,
+      "distinct_transforms": 1,
+      "pos_checks": 13,
+      "dir_checks": 13,
+      "max_position_error": 1.888293221827313e-14,
+      "max_direction_error": 0.0,
+      "validate_errors": [],
+      "csv_route_count": 128
+    },
+    {
+      "source_side": "N",
+      "target_side": "E",
+      "route_count": 128,
+      "kind": {
+        "adjacent": 13
+      },
+      "reflected": true,
+      "distinct_transforms": 1,
+      "pos_checks": 13,
+      "dir_checks": 13,
+      "max_position_error": 1.4210854715202004e-14,
+      "max_direction_error": 0.0,
+      "validate_errors": [],
+      "csv_route_count": 128
+    },
+    {
+      "source_side": "S",
+      "target_side": "W",
+      "route_count": 128,
+      "kind": {
+        "adjacent": 13
+      },
+      "reflected": true,
+      "distinct_transforms": 1,
+      "pos_checks": 13,
+      "dir_checks": 13,
+      "max_position_error": 1.4210854715202004e-14,
+      "max_direction_error": 0.0,
+      "validate_errors": [],
+      "csv_route_count": 128
+    },
+    {
+      "source_side": "W",
+      "target_side": "N",
+      "route_count": 128,
+      "kind": {
+        "adjacent": 13
+      },
+      "reflected": true,
+      "distinct_transforms": 1,
+      "pos_checks": 13,
+      "dir_checks": 13,
+      "max_position_error": 0.0,
+      "max_direction_error": 0.0,
+      "validate_errors": [],
+      "csv_route_count": 128
+    }
+  ],
+  "directed_pairs_present": {
+    "E->S": 128,
+    "E->W": 256,
+    "N->E": 128,
+    "N->S": 256,
+    "S->W": 128,
+    "W->N": 128
+  },
+  "global_invariants": {
+    "routes": 1024,
+    "determinants": {
+      "1.0": 512,
+      "-1.0": 512
+    },
+    "reflected_routes": 512,
+    "max_world_roundtrip_position_error": 1.1546319456101628e-14,
+    "max_source_inward_mapping_error": 0.0
+  },
+  "tolerance": {
+    "position": 1e-07,
+    "direction": 1e-07
+  },
+  "conclusion": "all four-side local transforms are rigid (det=+/-1), map source inward to (0,1) exactly, place canonical endpoints on the canonical boundaries, and inverse-transform the unchanged D56 legacy formulas to the fixed world endpoints / incidence directions with error below 1e-7 mm"
+}

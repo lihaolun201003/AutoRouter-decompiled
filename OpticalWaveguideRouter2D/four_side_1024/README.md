@@ -76,3 +76,30 @@ CSV 的 `row=1` 和 `row=2` 指接头内部两排通道。它们共同进入同�
 输出包含不可变输入信息、配置、物理/计算端点、路线解析几何、成功及失败原因、策略统计、图像、SVG、单层 GDS 和运行日志。全体路由图标注实际成功数量；GDS 几何使用同一布线层。正式实验结论、交叉分布、瓶颈和损耗对照写入实验报告。旧 AutoRouter 损耗模型只作为估计对照，不是新玻璃实测值。
 
 失败表示在指定时间、候选数和候选评价预算内未找到合法候选。有限候选搜索没有覆盖所有可能曲线，不能据此证明该路线在数学上不可能完成；也不能把一部分成功路线当作全体布通。即使计算端点上的路线全部通过几何检查，也需要另行解决物理端口耦合、接头外壳冲突以及同层交叉工艺，才能讨论器件制造。
+
+## D56 优化引擎（`four_side_1024/d56/`，467/1024）
+
+`d56/` 是本轮新增的独立包，**不修改**上面的 legacy 适配器与原 256/512 代码：
+
+| 文件 | 作用 |
+|---|---|
+| `SPEC.md` | D56 几何契约、JSON schema、双口径验收说明、变更记录 |
+| `frames.py` | 6 个有向边对的 canonical 刚体框架 |
+| `candidates.py` | D56 候选族（对边 `straight/U/Z`，邻边 `L/Z3`），车道由实际障碍带推导 |
+| `index.py` | primitive 级空间哈希 + 解析交点/最小距离的精确单层冲突索引（exact / legacy 两种交叉区口径） |
+| `search.py` | 顺序调度（A/B/C/D/E）、候选排序、事务式 Rip-up and Reroute、最终自审计 |
+| `run.py` | 实验驱动（策略/预算/checkpoint） |
+| `validate_d56.py` | 独立 D56 校验器（不 import `conflicts.py`），authoritative audit |
+| `outputs_d56.py` / `plots_d56.py` | 13 个交付产物（PNG/SVG/GDS/JSON）管线 |
+| `tests_d56/` | pytest 套件（86 passed） |
+
+结果：**467/1024**（精确交叉区口径；历史口径敏感性 72/1024）。完整报告见
+[`docs/reports/four_side_1024_d56_optimized.md`](../../../docs/reports/four_side_1024_d56_optimized.md)，
+失败诊断见 [`docs/reports/d56_1024_failure_diagnosis.md`](../../../docs/reports/d56_1024_failure_diagnosis.md)。
+
+```shell
+python -m four_side_1024.d56.run --strategy A --groups NW,EN,SW,ES,NS,EW --within x_desc --out outputs/four_side_1024_d56_optimized
+python -m four_side_1024.d56.validate_d56 --routes outputs/four_side_1024_d56_optimized/routes.json --compare-exact
+python -m four_side_1024.d56.outputs_d56 --run-dir outputs/four_side_1024_d56_optimized --run-status complete
+python -m pytest four_side_1024/d56/tests_d56 -q
+```

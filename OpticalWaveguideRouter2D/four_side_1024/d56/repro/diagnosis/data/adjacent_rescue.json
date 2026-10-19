@@ -1,0 +1,359 @@
+{
+  "schema": "d56_diag_adjacent_rescue_v1",
+  "policy": "primitive_pair",
+  "direct_L_valid": 508,
+  "direct_L_failed": {
+    "584": "Insufficient segment length for original radius: 0",
+    "591": "Insufficient segment length for original radius: 0",
+    "712": "Insufficient segment length for original radius: 0",
+    "719": "Insufficient segment length for original radius: 0"
+  },
+  "genuine_conflict_pairs": 209,
+  "genuine_conflict_pairs_detail": {
+    "same_pair": 0,
+    "cross_pair": 209
+  },
+  "scenarios": {
+    "low": {
+      "kept_direct_L": 299,
+      "reroute_candidates": 209,
+      "independent_rescued": 135,
+      "independent_by_pair": {
+        "SW": 68,
+        "NW": 67
+      },
+      "independent_by_mode": {
+        "flex": 135
+      },
+      "independent_unrescued": [
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        856,
+        863,
+        864,
+        870,
+        871,
+        872,
+        877,
+        878,
+        879,
+        884,
+        885,
+        886,
+        891,
+        892,
+        893,
+        896,
+        898,
+        951,
+        952,
+        958,
+        959,
+        960,
+        967,
+        976,
+        983,
+        984,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016
+      ],
+      "sequential_rescued": 39,
+      "sequential_total": 338,
+      "sequential_by_pair": {
+        "SW": 23,
+        "NW": 16
+      },
+      "sequential_attempts": {
+        "false": 170,
+        "true": 39
+      },
+      "mean_candidates_tried": 123.5,
+      "median_candidates_tried": 146.0,
+      "rescued_detail": [
+        {
+          "route_id": 794,
+          "placed": true,
+          "mode": "flex",
+          "t1": 30.1625,
+          "t2": 130.0,
+          "tried": 17
+        },
+        {
+          "route_id": 795,
+          "placed": true,
+          "mode": "flex",
+          "t1": 39.3375,
+          "t2": 130.0,
+          "tried": 17
+        },
+        {
+          "route_id": 798,
+          "placed": true,
+          "mode": "flex",
+          "t1": 56.8625,
+          "t2": 130.0,
+          "tried": 30
+        },
+        {
+          "route_id": 800,
+          "placed": true,
+          "mode": "flex",
+          "t1": 85.2125,
+          "t2": 130.0,
+          "tried": 17
+        },
+        {
+          "route_id": 803,
+          "placed": true,
+          "mode": "flex",
+          "t1": 48.3375,
+          "t2": 130.0,
+          "tried": 17
+        },
+        {
+          "route_id": 805,
+          "placed": true,
+          "mode": "flex",
+          "t1": 41.6875,
+          "t2": 120.0,
+          "tried": 60
+        },
+        {
+          "route_id": 808,
+          "placed": true,
+          "mode": "flex",
+          "t1": 94.2125,
+          "t2": 130.0,
+          "tried": 17
+        },
+        {
+          "route_id": 816,
+          "placed": true,
+          "mode": "flex",
+          "t1": 103.2125,
+          "t2": 135.0,
+          "tried": 10
+        },
+        {
+          "route_id": 824,
+          "placed": true,
+          "mode": "flex",
+          "t1": 112.2125,
+          "t2": 145.0,
+          "tried": 2
+        },
+        {
+          "route_id": 827,
+          "placed": true,
+          "mode": "flex",
+          "t1": 75.3375,
+          "t2": 130.0,
+          "tried": 17
+        }
+      ]
+    },
+    "high": {
+      "kept_direct_L": 299,
+      "reroute_candidates": 209,
+      "independent_rescued": 163,
+      "independent_by_pair": {
+        "EN": 88,
+        "ES": 75
+      },
+      "independent_by_mode": {
+        "flex": 163
+      },
+      "independent_unrescued": [
+        583,
+        590,
+        597,
+        602,
+        603,
+        604,
+        610,
+        611,
+        617,
+        618,
+        625,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        711,
+        718,
+        725,
+        726,
+        731,
+        732,
+        733,
+        738,
+        739,
+        740,
+        746,
+        747,
+        753,
+        754,
+        761
+      ],
+      "sequential_rescued": 55,
+      "sequential_total": 354,
+      "sequential_by_pair": {
+        "EN": 30,
+        "ES": 25
+      },
+      "sequential_attempts": {
+        "true": 55,
+        "false": 154
+      },
+      "mean_candidates_tried": 110.7,
+      "median_candidates_tried": 127.0,
+      "rescued_detail": [
+        {
+          "route_id": 513,
+          "placed": true,
+          "mode": "flex",
+          "t1": 126.0125,
+          "t2": 145.0,
+          "tried": 2
+        },
+        {
+          "route_id": 514,
+          "placed": true,
+          "mode": "flex",
+          "t1": 106.8375,
+          "t2": 145.0,
+          "tried": 5
+        },
+        {
+          "route_id": 515,
+          "placed": true,
+          "mode": "flex",
+          "t1": 97.6625,
+          "t2": 140.0,
+          "tried": 14
+        },
+        {
+          "route_id": 516,
+          "placed": true,
+          "mode": "flex",
+          "t1": 63.4875,
+          "t2": 145.0,
+          "tried": 40
+        },
+        {
+          "route_id": 517,
+          "placed": true,
+          "mode": "flex",
+          "t1": 89.3125,
+          "t2": 140.0,
+          "tried": 5
+        },
+        {
+          "route_id": 518,
+          "placed": true,
+          "mode": "flex",
+          "t1": 80.1375,
+          "t2": 140.0,
+          "tried": 5
+        },
+        {
+          "route_id": 519,
+          "placed": true,
+          "mode": "flex",
+          "t1": 70.9625,
+          "t2": 140.0,
+          "tried": 5
+        },
+        {
+          "route_id": 521,
+          "placed": true,
+          "mode": "flex",
+          "t1": 117.0125,
+          "t2": 140.0,
+          "tried": 4
+        },
+        {
+          "route_id": 522,
+          "placed": true,
+          "mode": "flex",
+          "t1": 97.8375,
+          "t2": 90.0,
+          "tried": 64
+        },
+        {
+          "route_id": 523,
+          "placed": true,
+          "mode": "flex",
+          "t1": 88.6625,
+          "t2": 70.0,
+          "tried": 104
+        }
+      ]
+    }
+  },
+  "kept_set_verification": {
+    "kept": 299,
+    "routes_with_conflict": 0
+  },
+  "elapsed_seconds": 283.30834719999984
+}

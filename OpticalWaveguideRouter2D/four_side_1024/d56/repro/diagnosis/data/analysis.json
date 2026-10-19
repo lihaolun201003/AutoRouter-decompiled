@@ -1,0 +1,1634 @@
+{
+  "schema": "d56_diag_analysis_v1",
+  "baseline": {
+    "success": 80,
+    "failed": 944,
+    "attempted": 667,
+    "not_attempted": 357,
+    "evaluations": 429559,
+    "scanned": 547948,
+    "rejection_counts": {
+      "original_noCross": 37142,
+      "original_track_endpoint_order": 5241,
+      "spacing_pairs": 327826,
+      "legacy_bend_does_not_fit": 72775,
+      "crossing_zone_overlap_pairs": 440,
+      "overlap_pairs": 84407,
+      "touch_pairs": 84407,
+      "search_budget_exhausted": 358
+    },
+    "group_order": [
+      "SW",
+      "ES",
+      "NW",
+      "EN",
+      "NS",
+      "EW"
+    ],
+    "elapsed": 602.1169276
+  },
+  "q1_order_replay": {
+    "full_unlimited": {
+      "accepted": 91,
+      "attempted": 1024,
+      "elapsed": 2021.7,
+      "by_pair": {
+        "SW": {
+          "attempted": 128,
+          "accepted": 32
+        },
+        "ES": {
+          "attempted": 128,
+          "accepted": 16
+        },
+        "NW": {
+          "attempted": 128,
+          "accepted": 0
+        },
+        "EN": {
+          "attempted": 128,
+          "accepted": 8
+        },
+        "NS": {
+          "attempted": 256,
+          "accepted": 26
+        },
+        "EW": {
+          "attempted": 256,
+          "accepted": 9
+        }
+      },
+      "per_pair_stats": {
+        "SW": {
+          "attempted": 128,
+          "accepted": 32,
+          "scanned": 93701,
+          "order_fail": 1793,
+          "nocross_fail": 18351,
+          "bend_fail": 9890,
+          "validate_fail": 0,
+          "exact": 63667,
+          "exact_reject": 63635,
+          "route_count": 128,
+          "mean_scanned_per_route": 732.0,
+          "mean_exact_per_route": 497.4,
+          "scanned_to_exact_ratio": 0.6795,
+          "order_fail_fraction": 0.0191,
+          "nocross_fail_fraction": 0.1958,
+          "bend_fail_fraction": 0.1055,
+          "validate_reached_fraction": 0.6795,
+          "exact_reject_fraction": 0.9995
+        },
+        "ES": {
+          "attempted": 128,
+          "accepted": 16,
+          "scanned": 106776,
+          "order_fail": 526,
+          "nocross_fail": 5458,
+          "bend_fail": 20956,
+          "validate_fail": 0,
+          "exact": 79836,
+          "exact_reject": 79820,
+          "route_count": 128,
+          "mean_scanned_per_route": 834.2,
+          "mean_exact_per_route": 623.7,
+          "scanned_to_exact_ratio": 0.7477,
+          "order_fail_fraction": 0.0049,
+          "nocross_fail_fraction": 0.0511,
+          "bend_fail_fraction": 0.1963,
+          "validate_reached_fraction": 0.7477,
+          "exact_reject_fraction": 0.9998
+        },
+        "NW": {
+          "attempted": 128,
+          "accepted": 0,
+          "scanned": 118912,
+          "order_fail": 258,
+          "nocross_fail": 0,
+          "bend_fail": 23023,
+          "validate_fail": 0,
+          "exact": 95631,
+          "exact_reject": 95631,
+          "route_count": 128,
+          "mean_scanned_per_route": 929.0,
+          "mean_exact_per_route": 747.1,
+          "scanned_to_exact_ratio": 0.8042,
+          "order_fail_fraction": 0.0022,
+          "nocross_fail_fraction": 0.0,
+          "bend_fail_fraction": 0.1936,
+          "validate_reached_fraction": 0.8042,
+          "exact_reject_fraction": 1.0
+        },
+        "EN": {
+          "attempted": 128,
+          "accepted": 8,
+          "scanned": 111488,
+          "order_fail": 566,
+          "nocross_fail": 4158,
+          "bend_fail": 20569,
+          "validate_fail": 0,
+          "exact": 86195,
+          "exact_reject": 86187,
+          "route_count": 128,
+          "mean_scanned_per_route": 871.0,
+          "mean_exact_per_route": 673.4,
+          "scanned_to_exact_ratio": 0.7731,
+          "order_fail_fraction": 0.0051,
+          "nocross_fail_fraction": 0.0373,
+          "bend_fail_fraction": 0.1845,
+          "validate_reached_fraction": 0.7731,
+          "exact_reject_fraction": 0.9999
+        },
+        "NS": {
+          "attempted": 256,
+          "accepted": 26,
+          "scanned": 197622,
+          "order_fail": 4521,
+          "nocross_fail": 17897,
+          "bend_fail": 0,
+          "validate_fail": 0,
+          "exact": 175204,
+          "exact_reject": 175178,
+          "route_count": 256,
+          "mean_scanned_per_route": 772.0,
+          "mean_exact_per_route": 684.4,
+          "scanned_to_exact_ratio": 0.8866,
+          "order_fail_fraction": 0.0229,
+          "nocross_fail_fraction": 0.0906,
+          "bend_fail_fraction": 0.0,
+          "validate_reached_fraction": 0.8866,
+          "exact_reject_fraction": 0.9999
+        },
+        "EW": {
+          "attempted": 256,
+          "accepted": 9,
+          "scanned": 201165,
+          "order_fail": 183,
+          "nocross_fail": 1718,
+          "bend_fail": 0,
+          "validate_fail": 0,
+          "exact": 199264,
+          "exact_reject": 199255,
+          "route_count": 256,
+          "mean_scanned_per_route": 785.8,
+          "mean_exact_per_route": 778.4,
+          "scanned_to_exact_ratio": 0.9906,
+          "order_fail_fraction": 0.0009,
+          "nocross_fail_fraction": 0.0085,
+          "bend_fail_fraction": 0.0,
+          "validate_reached_fraction": 0.9906,
+          "exact_reject_fraction": 1.0
+        }
+      },
+      "first_blocker_table": {
+        "SW": {
+          "failed_routes_with_blocker": 108,
+          "top_blockers": [
+            {
+              "blocker": 824,
+              "count": 8,
+              "share": 0.0741
+            },
+            {
+              "blocker": 832,
+              "count": 8,
+              "share": 0.0741
+            },
+            {
+              "blocker": 773,
+              "count": 7,
+              "share": 0.0648
+            },
+            {
+              "blocker": 774,
+              "count": 7,
+              "share": 0.0648
+            },
+            {
+              "blocker": 776,
+              "count": 7,
+              "share": 0.0648
+            },
+            {
+              "blocker": 784,
+              "count": 7,
+              "share": 0.0648
+            }
+          ]
+        },
+        "ES": {
+          "failed_routes_with_blocker": 116,
+          "top_blockers": [
+            {
+              "blocker": 649,
+              "count": 17,
+              "share": 0.1466
+            },
+            {
+              "blocker": 848,
+              "count": 8,
+              "share": 0.069
+            },
+            {
+              "blocker": 856,
+              "count": 8,
+              "share": 0.069
+            },
+            {
+              "blocker": 864,
+              "count": 7,
+              "share": 0.0603
+            },
+            {
+              "blocker": 872,
+              "count": 6,
+              "share": 0.0517
+            },
+            {
+              "blocker": 880,
+              "count": 5,
+              "share": 0.0431
+            }
+          ]
+        },
+        "NW": {
+          "failed_routes_with_blocker": 128,
+          "top_blockers": [
+            {
+              "blocker": 753,
+              "count": 9,
+              "share": 0.0703
+            },
+            {
+              "blocker": 840,
+              "count": 7,
+              "share": 0.0547
+            },
+            {
+              "blocker": 762,
+              "count": 7,
+              "share": 0.0547
+            },
+            {
+              "blocker": 745,
+              "count": 7,
+              "share": 0.0547
+            },
+            {
+              "blocker": 737,
+              "count": 7,
+              "share": 0.0547
+            },
+            {
+              "blocker": 729,
+              "count": 7,
+              "share": 0.0547
+            }
+          ]
+        },
+        "EN": {
+          "failed_routes_with_blocker": 120,
+          "top_blockers": [
+            {
+              "blocker": 762,
+              "count": 8,
+              "share": 0.0667
+            },
+            {
+              "blocker": 761,
+              "count": 7,
+              "share": 0.0583
+            },
+            {
+              "blocker": 633,
+              "count": 7,
+              "share": 0.0583
+            },
+            {
+              "blocker": 625,
+              "count": 7,
+              "share": 0.0583
+            },
+            {
+              "blocker": 617,
+              "count": 7,
+              "share": 0.0583
+            },
+            {
+              "blocker": 609,
+              "count": 7,
+              "share": 0.0583
+            }
+          ]
+        },
+        "NS": {
+          "failed_routes_with_blocker": 255,
+          "top_blockers": [
+            {
+              "blocker": 649,
+              "count": 68,
+              "share": 0.2667
+            },
+            {
+              "blocker": 16,
+              "count": 29,
+              "share": 0.1137
+            },
+            {
+              "blocker": 15,
+              "count": 28,
+              "share": 0.1098
+            },
+            {
+              "blocker": 26,
+              "count": 16,
+              "share": 0.0627
+            },
+            {
+              "blocker": 2,
+              "count": 14,
+              "share": 0.0549
+            },
+            {
+              "blocker": 25,
+              "count": 14,
+              "share": 0.0549
+            }
+          ]
+        },
+        "EW": {
+          "failed_routes_with_blocker": 255,
+          "top_blockers": [
+            {
+              "blocker": 649,
+              "count": 18,
+              "share": 0.0706
+            },
+            {
+              "blocker": 15,
+              "count": 16,
+              "share": 0.0627
+            },
+            {
+              "blocker": 753,
+              "count": 16,
+              "share": 0.0627
+            },
+            {
+              "blocker": 745,
+              "count": 16,
+              "share": 0.0627
+            },
+            {
+              "blocker": 21,
+              "count": 16,
+              "share": 0.0627
+            },
+            {
+              "blocker": 700,
+              "count": 16,
+              "share": 0.0627
+            }
+          ]
+        }
+      },
+      "blocker_concentration": {
+        "blocker_count": 85,
+        "top1_share": 0.1049,
+        "top5_share": 0.2424,
+        "top10_share": 0.3666,
+        "top20_share": 0.5407
+      },
+      "baseline_comparison": {
+        "compared": 586,
+        "mismatched": [
+          {
+            "route_id": 239,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 255,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 357,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 356,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 341,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 340,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 339,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 323,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 306,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 291,
+            "kind": "replay_accept_baseline_not_attempted"
+          },
+          {
+            "route_id": 290,
+            "kind": "replay_accept_baseline_not_attempted"
+          }
+        ],
+        "not_comparable": [
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          256,
+          512,
+          511,
+          510,
+          509,
+          508,
+          507,
+          506,
+          505,
+          504,
+          503,
+          502,
+          501,
+          500,
+          499,
+          498,
+          497,
+          496,
+          495,
+          494,
+          493,
+          492,
+          491,
+          490,
+          489,
+          488,
+          487,
+          486,
+          485,
+          484,
+          483,
+          482,
+          481,
+          480,
+          479,
+          478,
+          477,
+          476,
+          475,
+          474,
+          473,
+          472,
+          471,
+          470,
+          469,
+          468,
+          467,
+          466,
+          465,
+          464,
+          463,
+          462,
+          461,
+          460,
+          459,
+          458,
+          457,
+          456,
+          455,
+          454,
+          453,
+          452,
+          451,
+          450,
+          449,
+          448,
+          447,
+          446,
+          445,
+          444,
+          443,
+          442,
+          441,
+          440,
+          439,
+          438,
+          437,
+          436,
+          435,
+          434,
+          433,
+          432,
+          431,
+          430,
+          429,
+          428,
+          427,
+          426,
+          425,
+          424,
+          423,
+          422,
+          421,
+          420,
+          419,
+          418,
+          417,
+          416,
+          415,
+          414,
+          413,
+          412,
+          411,
+          410,
+          409,
+          408,
+          407,
+          406,
+          405,
+          404,
+          403,
+          402,
+          401,
+          400,
+          399,
+          398,
+          397,
+          396,
+          395,
+          394,
+          393,
+          392,
+          391,
+          390,
+          389,
+          388,
+          387,
+          386,
+          385,
+          384,
+          383,
+          382,
+          381,
+          380,
+          379,
+          378,
+          377,
+          376,
+          375,
+          374,
+          373,
+          372,
+          371,
+          370,
+          369,
+          368,
+          367,
+          366,
+          365,
+          364,
+          363,
+          362,
+          361,
+          360,
+          359,
+          358,
+          355,
+          354,
+          353,
+          352,
+          351,
+          350,
+          349,
+          348,
+          347,
+          346,
+          345,
+          344,
+          343,
+          342,
+          338,
+          337,
+          336,
+          335,
+          334,
+          333,
+          332,
+          331,
+          330,
+          329,
+          328,
+          327,
+          326,
+          325,
+          324,
+          322,
+          321,
+          320,
+          319,
+          318,
+          317,
+          316,
+          315,
+          314,
+          313,
+          312,
+          311,
+          310,
+          309,
+          308,
+          307,
+          305,
+          304,
+          303,
+          302,
+          301,
+          300,
+          299,
+          298,
+          297,
+          296,
+          295,
+          294,
+          293,
+          292,
+          289,
+          288,
+          287,
+          286,
+          285,
+          284,
+          283,
+          282,
+          281,
+          280,
+          279,
+          278,
+          277,
+          276,
+          275,
+          274,
+          273,
+          272,
+          271,
+          270,
+          269,
+          268,
+          267,
+          266,
+          265,
+          264,
+          263,
+          262,
+          261,
+          260,
+          259,
+          258,
+          257
+        ],
+        "accepted_replay": 91,
+        "accepted_mismatch": [
+          {
+            "route_id": 239,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 255,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 357,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 356,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 341,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 340,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 339,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 323,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 306,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 291,
+            "kind": "not_in_baseline"
+          },
+          {
+            "route_id": 290,
+            "kind": "not_in_baseline"
+          }
+        ]
+      }
+    },
+    "order_adjacent_only": {
+      "accepted": 56,
+      "attempted": 512,
+      "elapsed": 979.6,
+      "by_pair": {
+        "SW": {
+          "attempted": 128,
+          "accepted": 32
+        },
+        "ES": {
+          "attempted": 128,
+          "accepted": 16
+        },
+        "NW": {
+          "attempted": 128,
+          "accepted": 0
+        },
+        "EN": {
+          "attempted": 128,
+          "accepted": 8
+        }
+      },
+      "per_pair_stats": {
+        "SW": {
+          "attempted": 128,
+          "accepted": 32,
+          "scanned": 93701,
+          "order_fail": 1793,
+          "nocross_fail": 18351,
+          "bend_fail": 9890,
+          "validate_fail": 0,
+          "exact": 63667,
+          "exact_reject": 63635,
+          "route_count": 128,
+          "mean_scanned_per_route": 732.0,
+          "mean_exact_per_route": 497.4,
+          "scanned_to_exact_ratio": 0.6795,
+          "order_fail_fraction": 0.0191,
+          "nocross_fail_fraction": 0.1958,
+          "bend_fail_fraction": 0.1055,
+          "validate_reached_fraction": 0.6795,
+          "exact_reject_fraction": 0.9995
+        },
+        "ES": {
+          "attempted": 128,
+          "accepted": 16,
+          "scanned": 106776,
+          "order_fail": 526,
+          "nocross_fail": 5458,
+          "bend_fail": 20956,
+          "validate_fail": 0,
+          "exact": 79836,
+          "exact_reject": 79820,
+          "route_count": 128,
+          "mean_scanned_per_route": 834.2,
+          "mean_exact_per_route": 623.7,
+          "scanned_to_exact_ratio": 0.7477,
+          "order_fail_fraction": 0.0049,
+          "nocross_fail_fraction": 0.0511,
+          "bend_fail_fraction": 0.1963,
+          "validate_reached_fraction": 0.7477,
+          "exact_reject_fraction": 0.9998
+        },
+        "NW": {
+          "attempted": 128,
+          "accepted": 0,
+          "scanned": 118912,
+          "order_fail": 258,
+          "nocross_fail": 0,
+          "bend_fail": 23023,
+          "validate_fail": 0,
+          "exact": 95631,
+          "exact_reject": 95631,
+          "route_count": 128,
+          "mean_scanned_per_route": 929.0,
+          "mean_exact_per_route": 747.1,
+          "scanned_to_exact_ratio": 0.8042,
+          "order_fail_fraction": 0.0022,
+          "nocross_fail_fraction": 0.0,
+          "bend_fail_fraction": 0.1936,
+          "validate_reached_fraction": 0.8042,
+          "exact_reject_fraction": 1.0
+        },
+        "EN": {
+          "attempted": 128,
+          "accepted": 8,
+          "scanned": 111488,
+          "order_fail": 566,
+          "nocross_fail": 4158,
+          "bend_fail": 20569,
+          "validate_fail": 0,
+          "exact": 86195,
+          "exact_reject": 86187,
+          "route_count": 128,
+          "mean_scanned_per_route": 871.0,
+          "mean_exact_per_route": 673.4,
+          "scanned_to_exact_ratio": 0.7731,
+          "order_fail_fraction": 0.0051,
+          "nocross_fail_fraction": 0.0373,
+          "bend_fail_fraction": 0.1845,
+          "validate_reached_fraction": 0.7731,
+          "exact_reject_fraction": 0.9999
+        }
+      }
+    },
+    "order_opposite_only": {
+      "accepted": 182,
+      "attempted": 512,
+      "elapsed": 1427.5,
+      "by_pair": {
+        "NS": {
+          "attempted": 256,
+          "accepted": 144
+        },
+        "EW": {
+          "attempted": 256,
+          "accepted": 38
+        }
+      },
+      "per_pair_stats": {
+        "NS": {
+          "attempted": 256,
+          "accepted": 144,
+          "scanned": 113405,
+          "order_fail": 17169,
+          "nocross_fail": 34313,
+          "bend_fail": 0,
+          "validate_fail": 0,
+          "exact": 61923,
+          "exact_reject": 61779,
+          "route_count": 256,
+          "mean_scanned_per_route": 443.0,
+          "mean_exact_per_route": 241.9,
+          "scanned_to_exact_ratio": 0.546,
+          "order_fail_fraction": 0.1514,
+          "nocross_fail_fraction": 0.3026,
+          "bend_fail_fraction": 0.0,
+          "validate_reached_fraction": 0.546,
+          "exact_reject_fraction": 0.9977
+        },
+        "EW": {
+          "attempted": 256,
+          "accepted": 38,
+          "scanned": 191700,
+          "order_fail": 6586,
+          "nocross_fail": 25803,
+          "bend_fail": 0,
+          "validate_fail": 0,
+          "exact": 159311,
+          "exact_reject": 159273,
+          "route_count": 256,
+          "mean_scanned_per_route": 748.8,
+          "mean_exact_per_route": 622.3,
+          "scanned_to_exact_ratio": 0.831,
+          "order_fail_fraction": 0.0344,
+          "nocross_fail_fraction": 0.1346,
+          "bend_fail_fraction": 0.0,
+          "validate_reached_fraction": 0.831,
+          "exact_reject_fraction": 0.9998
+        }
+      }
+    }
+  },
+  "policyC_full_run": {
+    "label": "policyC_full_unlimited",
+    "policy": "primitive_pair",
+    "template": "legacy",
+    "pairs": [
+      "SW",
+      "ES",
+      "NW",
+      "EN",
+      "NS",
+      "EW"
+    ],
+    "attempted": 1024,
+    "accepted": 417,
+    "elapsed_seconds": 1199.7190237000004,
+    "by_pair": {
+      "SW": {
+        "attempted": 128,
+        "accepted": 46
+      },
+      "ES": {
+        "attempted": 128,
+        "accepted": 66
+      },
+      "NW": {
+        "attempted": 128,
+        "accepted": 92
+      },
+      "EN": {
+        "attempted": 128,
+        "accepted": 68
+      },
+      "NS": {
+        "attempted": 256,
+        "accepted": 102
+      },
+      "EW": {
+        "attempted": 256,
+        "accepted": 43
+      }
+    },
+    "rejection_counts": {
+      "original_noCross": 133792,
+      "original_track_endpoint_order": 17719,
+      "legacy_bend_does_not_fit": 26873
+    },
+    "checked_pairs": 17501507,
+    "seed_accepted": null
+  },
+  "q5_exact_evaluations": {
+    "exact_evaluations": 699706,
+    "repeated_same_blocker": 681741,
+    "repeated_fraction": 0.9743,
+    "repeats_per_route": 694.2,
+    "max_repeat_run": 852,
+    "run_length_histogram": {
+      "1": 899,
+      "2": 447,
+      "3": 271,
+      "4": 191,
+      "5": 531,
+      "6": 327,
+      "7": 363,
+      "8": 244,
+      "9": 1003,
+      "10": 155,
+      "11": 166,
+      "12": 219,
+      "13": 275,
+      "14": 215,
+      "15": 131,
+      "16": 165,
+      "17": 323,
+      "18": 123,
+      "19": 460,
+      "20": 494
+    }
+  },
+  "q5_exact_evaluations_baseline_667": {
+    "exact_evaluations": 429993,
+    "repeated_same_blocker": 421798,
+    "repeated_fraction": 0.9809,
+    "repeats_per_route": 672.7,
+    "max_repeat_run": 852,
+    "run_length_histogram": {
+      "1": 443,
+      "2": 224,
+      "3": 124,
+      "4": 125,
+      "5": 322,
+      "6": 221,
+      "7": 56,
+      "8": 77,
+      "9": 279,
+      "10": 64,
+      "11": 87,
+      "12": 180,
+      "13": 138,
+      "14": 148,
+      "15": 79,
+      "16": 80,
+      "17": 245,
+      "18": 66,
+      "19": 107,
+      "20": 197
+    }
+  },
+  "q8_spacing_distances": {
+    "n": 609700,
+    "min_distance": 2.27e-06,
+    "max_distance": 0.1749999,
+    "mean_deficit": 0.00912769,
+    "deficit_bins": {
+      "[0.13,0.15)": 42076,
+      "[0.174,0.1749)": 123226,
+      "[0.1,0.13)": 4048,
+      "[0.0,0.01)": 414,
+      "[0.155,0.16)": 13262,
+      "[0.16,0.165)": 38901,
+      "[0.05,0.1)": 2565,
+      "[0.15,0.155)": 24207,
+      "[0.165,0.17)": 90260,
+      "[0.17,0.172)": 68692,
+      "[0.172,0.174)": 179319,
+      "[0.01,0.05)": 4784,
+      "[0.1749,0.1750001)": 17946
+    },
+    "share_deficit_le_5um": 0.6383,
+    "share_deficit_le_1um": 0.2315,
+    "share_distance_ge_0p174": 0.2315
+  },
+  "q8_spacing_distances_baseline_667": {
+    "n": 342920,
+    "min_distance": 0.00014062,
+    "max_distance": 0.1749999,
+    "mean_deficit": 0.0094959,
+    "deficit_bins": {
+      "[0.13,0.15)": 27463,
+      "[0.174,0.1749)": 66192,
+      "[0.1,0.13)": 1569,
+      "[0.0,0.01)": 384,
+      "[0.155,0.16)": 5477,
+      "[0.16,0.165)": 24362,
+      "[0.05,0.1)": 1404,
+      "[0.15,0.155)": 18542,
+      "[0.165,0.17)": 54722,
+      "[0.17,0.172)": 31100,
+      "[0.172,0.174)": 104830,
+      "[0.01,0.05)": 1520,
+      "[0.1749,0.1750001)": 5355
+    },
+    "share_deficit_le_5um": 0.605,
+    "share_deficit_le_1um": 0.2086,
+    "share_distance_ge_0p174": 0.2086
+  },
+  "q8_spacing_sample_rescue": {
+    "sample_size": 600,
+    "outcomes": {
+      "crossing|arc_involved|corrected_legal": 572,
+      "crossing|arc_involved|genuinely_illegal": 22,
+      "deficit_bucket_<=5um": 357,
+      "deficit_bucket_>5um": 228,
+      "no_crossing|line_line|genuinely_illegal": 6
+    },
+    "corrected_legal": 572,
+    "corrected_legal_fraction": 0.9533,
+    "examples": [
+      {
+        "route_id": 863,
+        "blocker": 771,
+        "pair": "SW",
+        "distance": 0.17432921874095975,
+        "crossings": 1,
+        "kinds": {
+          "line|arc": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 789,
+        "blocker": 775,
+        "pair": "SW",
+        "distance": 0.15394734877532557,
+        "crossings": 1,
+        "kinds": {
+          "arc|line": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 779,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.13170537174259067,
+        "crossings": 1,
+        "kinds": {
+          "arc|line": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 878,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.17452131457027953,
+        "crossings": 1,
+        "kinds": {
+          "line|arc": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 809,
+        "blocker": 774,
+        "pair": "SW",
+        "distance": 0.167492620576283,
+        "crossings": 1,
+        "kinds": {
+          "arc|line": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 802,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.17452131457027598,
+        "crossings": 2,
+        "kinds": {
+          "arc|line": 1,
+          "line|arc": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 793,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.16142671725083346,
+        "crossings": 1,
+        "kinds": {
+          "arc|line": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 878,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.17452131457027953,
+        "crossings": 1,
+        "kinds": {
+          "line|arc": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 788,
+        "blocker": 774,
+        "pair": "SW",
+        "distance": 0.15394734877532557,
+        "crossings": 1,
+        "kinds": {
+          "arc|line": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 869,
+        "blocker": 770,
+        "pair": "SW",
+        "distance": 0.17411795289350707,
+        "crossings": 1,
+        "kinds": {
+          "line|arc": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 878,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.17452131457027953,
+        "crossings": 1,
+        "kinds": {
+          "line|arc": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      },
+      {
+        "route_id": 786,
+        "blocker": 772,
+        "pair": "SW",
+        "distance": 0.15394734877533267,
+        "crossings": 1,
+        "kinds": {
+          "arc|line": 1
+        },
+        "exact_window_legal": true,
+        "primitive_pair_legal": true,
+        "corrected_legal": true
+      }
+    ]
+  },
+  "q7_cross_group_blocking": {
+    "SW": {
+      "first_blocker_events": 63635,
+      "cross_group": 0,
+      "cross_group_fraction": 0.0
+    },
+    "ES": {
+      "first_blocker_events": 79820,
+      "cross_group": 1164,
+      "cross_group_fraction": 0.0146
+    },
+    "NW": {
+      "first_blocker_events": 95631,
+      "cross_group": 95631,
+      "cross_group_fraction": 1.0
+    },
+    "EN": {
+      "first_blocker_events": 86187,
+      "cross_group": 42287,
+      "cross_group_fraction": 0.4906
+    },
+    "NS": {
+      "first_blocker_events": 104720,
+      "cross_group": 33780,
+      "cross_group_fraction": 0.3226
+    }
+  },
+  "q5_deployed_statistics": {
+    "scanned": 547948,
+    "evaluations": 429559,
+    "early_exit": 118389,
+    "early_exit_fraction": 0.2161,
+    "mean_scans_per_attempted_route": 821.5,
+    "mean_evaluations_per_attempted_route": 644.0,
+    "rejection_counts": {
+      "original_noCross": 37142,
+      "original_track_endpoint_order": 5241,
+      "spacing_pairs": 327826,
+      "legacy_bend_does_not_fit": 72775,
+      "crossing_zone_overlap_pairs": 440,
+      "overlap_pairs": 84407,
+      "touch_pairs": 84407,
+      "search_budget_exhausted": 358
+    }
+  },
+  "budget": {
+    "total_runtime_seconds": 602.1169276,
+    "search_runtime_seconds": 600.0421952999895,
+    "candidate_evaluations": 429559,
+    "evaluation_budget": 900000,
+    "evaluation_budget_used_fraction": 0.4773,
+    "time_budget_seconds": 600,
+    "not_attempted_routes": 357,
+    "per_group_durations": {
+      "SW": 87.72,
+      "ES": 96.47,
+      "NW": 138.54,
+      "EN": 132.22,
+      "NS": 144.87,
+      "EW": 0.0
+    }
+  },
+  "q2_q4_rule_rejection_samples": {
+    "order_reject": {
+      "sampled": 1647,
+      "bend_fits": 1524,
+      "bend_fit_fraction": 0.9253,
+      "validate_ok_fraction": 0.9253,
+      "exact_legal": 5,
+      "exact_legal_fraction": 0.003,
+      "by_pair": {
+        "SW": {
+          "sampled": 351,
+          "legal": 1,
+          "legal_fraction": 0.0028
+        },
+        "ES": {
+          "sampled": 143,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "NW": {
+          "sampled": 128,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "EN": {
+          "sampled": 163,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "NS": {
+          "sampled": 816,
+          "legal": 4,
+          "legal_fraction": 0.0049
+        },
+        "EW": {
+          "sampled": 46,
+          "legal": 0,
+          "legal_fraction": 0.0
+        }
+      }
+    },
+    "nocross_reject": {
+      "sampled": 8211,
+      "bend_fits": 7392,
+      "bend_fit_fraction": 0.9003,
+      "validate_ok_fraction": 0.9003,
+      "exact_legal": 1,
+      "exact_legal_fraction": 0.0001,
+      "by_pair": {
+        "SW": {
+          "sampled": 3103,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "ES": {
+          "sampled": 950,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "EN": {
+          "sampled": 741,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "NS": {
+          "sampled": 3085,
+          "legal": 0,
+          "legal_fraction": 0.0
+        },
+        "EW": {
+          "sampled": 332,
+          "legal": 1,
+          "legal_fraction": 0.003
+        }
+      }
+    },
+    "estimated_wrong_order_rejections": 15.7,
+    "estimated_wrong_nocross_rejections": 3.7,
+    "total_order_rejections": 5241,
+    "total_nocross_rejections": 37142
+  },
+  "q7_track_usage": {
+    "SW": {
+      "accepted": 32,
+      "distinct_track_y": 32,
+      "tracks_shared_by_multiple_routes": 0,
+      "interface_modes": {
+        "direct_L_interface": 20,
+        "legacy_track": 12
+      },
+      "track_index_min": 23,
+      "track_index_max": 869
+    },
+    "ES": {
+      "accepted": 16,
+      "distinct_track_y": 16,
+      "tracks_shared_by_multiple_routes": 0,
+      "interface_modes": {
+        "legacy_track": 4,
+        "direct_L_interface": 12
+      },
+      "track_index_min": 13,
+      "track_index_max": 903
+    },
+    "EN": {
+      "accepted": 8,
+      "distinct_track_y": 8,
+      "tracks_shared_by_multiple_routes": 0,
+      "interface_modes": {
+        "direct_L_interface": 8
+      },
+      "track_index_min": 513,
+      "track_index_max": 915
+    },
+    "NS": {
+      "accepted": 24,
+      "distinct_track_y": 24,
+      "tracks_shared_by_multiple_routes": 0,
+      "interface_modes": {
+        "legacy_track": 24
+      },
+      "track_index_min": 320,
+      "track_index_max": 773
+    }
+  },
+  "q1_by_pair_table": [
+    {
+      "pair": "SW",
+      "attempted": 128,
+      "accepted": 32,
+      "mean_scanned": 732.0,
+      "mean_exact": 497.4,
+      "order_fail": 1793,
+      "nocross_fail": 18351,
+      "bend_fail": 9890,
+      "exact": 63667,
+      "spacing": 56963,
+      "overlap": 6383,
+      "touch": 6383,
+      "zone": 289,
+      "nearest_blocked_median": 0.000141,
+      "nearest_blocked_p10": 0.000141,
+      "nearest_blocked_max": 0.173676
+    },
+    {
+      "pair": "ES",
+      "attempted": 128,
+      "accepted": 16,
+      "mean_scanned": 834.2,
+      "mean_exact": 623.7,
+      "order_fail": 526,
+      "nocross_fail": 5458,
+      "bend_fail": 20956,
+      "exact": 79836,
+      "spacing": 7215,
+      "overlap": 72598,
+      "touch": 72598,
+      "zone": 7,
+      "nearest_blocked_median": 0.165827,
+      "nearest_blocked_p10": 0.001265,
+      "nearest_blocked_max": 0.174946
+    },
+    {
+      "pair": "NW",
+      "attempted": 128,
+      "accepted": 0,
+      "mean_scanned": 929.0,
+      "mean_exact": 747.1,
+      "order_fail": 258,
+      "nocross_fail": 0,
+      "bend_fail": 23023,
+      "exact": 95631,
+      "spacing": 91709,
+      "overlap": 3807,
+      "touch": 3807,
+      "zone": 115,
+      "nearest_blocked_median": 0.0125,
+      "nearest_blocked_p10": 0.003493,
+      "nearest_blocked_max": 0.174485
+    },
+    {
+      "pair": "EN",
+      "attempted": 128,
+      "accepted": 8,
+      "mean_scanned": 871.0,
+      "mean_exact": 673.4,
+      "order_fail": 566,
+      "nocross_fail": 4158,
+      "bend_fail": 20569,
+      "exact": 86195,
+      "spacing": 86063,
+      "overlap": 118,
+      "touch": 118,
+      "zone": 6,
+      "nearest_blocked_median": 0.0125,
+      "nearest_blocked_p10": 0.0125,
+      "nearest_blocked_max": 0.170155
+    },
+    {
+      "pair": "NS",
+      "attempted": 256,
+      "accepted": 26,
+      "mean_scanned": 772.0,
+      "mean_exact": 684.4,
+      "order_fail": 4521,
+      "nocross_fail": 17897,
+      "bend_fail": 0,
+      "exact": 175204,
+      "spacing": 169930,
+      "overlap": 5127,
+      "touch": 5127,
+      "zone": 121,
+      "nearest_blocked_median": 0.115372,
+      "nearest_blocked_p10": 0.0125,
+      "nearest_blocked_max": 0.174946
+    },
+    {
+      "pair": "EW",
+      "attempted": 256,
+      "accepted": 9,
+      "mean_scanned": 785.8,
+      "mean_exact": 778.4,
+      "order_fail": 183,
+      "nocross_fail": 1718,
+      "bend_fail": 0,
+      "exact": 199264,
+      "spacing": 197820,
+      "overlap": 1216,
+      "touch": 1216,
+      "zone": 219,
+      "nearest_blocked_median": 0.0125,
+      "nearest_blocked_p10": 0.010799,
+      "nearest_blocked_max": 0.174946
+    }
+  ]
+}

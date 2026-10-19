@@ -1,0 +1,106 @@
+2026-10-19T15:55:21.776+08:00 ========================================================================
+2026-10-19T15:55:21.776+08:00 D56 audit-only preflight start | run_dir=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_d56_optimized | input_dir=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_d56_optimized
+2026-10-19T15:55:21.787+08:00 four_side_1024.inputs.load(): 1024 connections, 2048 endpoints, 64 connectors, csv_sha256=0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b
+2026-10-19T15:55:21.800+08:00 routes file routes.json exists (1145885 bytes)
+2026-10-19T15:55:21.801+08:00 loaded 10 ablation records from ablations.json
+2026-10-19T15:55:21.811+08:00 ablation table available with 10 configurations
+2026-10-19T15:55:21.820+08:00 run_status=complete (source=cli_override)
+2026-10-19T15:55:21.820+08:00 acceptance_policy=exact (source=algorithm); sensitivity_policy=legacy
+2026-10-19T15:55:21.847+08:00 records: 467 routed / 557 failed / 1024 total
+2026-10-19T15:55:21.848+08:00 exact geometry audit of 467 routed records (width=0.05 mm, clearance=0.175 mm, sagitta=0.0005 mm)
+2026-10-19T15:55:22.262+08:00 geometry audit progress: 128/467 routes, 4976 crossings, 0.42s
+2026-10-19T15:55:23.064+08:00 geometry audit progress: 256/467 routes, 14639 crossings, 1.22s
+2026-10-19T15:55:25.135+08:00 geometry audit progress: 384/467 routes, 39541 crossings, 3.29s
+2026-10-19T15:55:26.327+08:00 final exact audit: 467 routed records checked, 57029 recorded crossings, 8919 non-crossing spacing violations, 0 overlaps, 0 touches, 0 crossing-zone overlaps, 0 records with geometry errors, 4.48s
+2026-10-19T15:55:27.718+08:00 independent validator [main/exact]: status=passed passed=True (1.39s)
+2026-10-19T15:55:27.719+08:00 audit-only report written: scratch\outputs_dryrun\final_preflight.json
+2026-10-19T15:55:27.720+08:00 D56 audit-only preflight done | success=467/1024 | policy=exact | validator=passed | 5.94s
+2026-10-19T15:55:31.890+08:00 ========================================================================
+2026-10-19T15:55:31.891+08:00 D56 artifact pipeline start | python=3.10.11 | run_dir=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_d56_optimized | input_dir=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_d56_optimized
+2026-10-19T15:55:31.901+08:00 four_side_1024.inputs.load(): 1024 connections, 2048 endpoints, 64 connectors, csv_sha256=0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b
+2026-10-19T15:55:31.915+08:00 routes file routes.json exists (1145885 bytes)
+2026-10-19T15:55:31.915+08:00 loaded 10 ablation records from ablations.json
+2026-10-19T15:55:31.916+08:00 ablation table available with 10 configurations
+2026-10-19T15:55:31.924+08:00 run_status=complete (source=cli_override)
+2026-10-19T15:55:31.925+08:00 acceptance_policy=exact (source=algorithm); sensitivity_policy=legacy
+2026-10-19T15:55:31.951+08:00 records: 467 routed / 557 failed / 1024 total
+2026-10-19T15:55:31.952+08:00 routes.json preserved in place (1145885 bytes)
+2026-10-19T15:55:31.952+08:00 exact geometry audit of 467 routed records (width=0.05 mm, clearance=0.175 mm, sagitta=0.0005 mm)
+2026-10-19T15:55:32.384+08:00 geometry audit progress: 128/467 routes, 4976 crossings, 0.43s
+2026-10-19T15:55:33.188+08:00 geometry audit progress: 256/467 routes, 14639 crossings, 1.24s
+2026-10-19T15:55:35.253+08:00 geometry audit progress: 384/467 routes, 39541 crossings, 3.30s
+2026-10-19T15:55:36.514+08:00 final exact audit: 467 routed records checked, 57029 recorded crossings, 8919 non-crossing spacing violations, 0 overlaps, 0 touches, 0 crossing-zone overlaps, 0 records with geometry errors, 4.56s
+2026-10-19T15:55:36.557+08:00 routes_geometry.json: 467 analytic routes (810332 bytes)
+2026-10-19T15:55:36.559+08:00 failed_routes.json preserved in place (963064 bytes, 557 failed records recomputed)
+2026-10-19T15:55:37.611+08:00 01_connectivity.png: 1024 original connections
+2026-10-19T15:55:37.992+08:00 02_routing_all.png: 467 routed routes
+2026-10-19T15:55:38.247+08:00 03_opposite_routes.png: 53/512 opposite routes
+2026-10-19T15:55:38.575+08:00 04_adjacent_routes.png: 414/512 adjacent routes
+2026-10-19T15:55:38.940+08:00 05_crossing_heatmap.png: 3 densest cells annotated
+2026-10-19T15:55:39.548+08:00 06_routing_detail.png: 4 hotspot windows
+2026-10-19T15:55:39.579+08:00 routing_all.svg: 467 routes, 153073 bytes, sagitta=0.01 mm
+2026-10-19T15:55:39.627+08:00 routing_all.gds: 467 paths / layer [0] / 373106 bytes / verified=True
+2026-10-19T15:55:41.140+08:00 independent validator [main/exact]: status=passed passed=True (1.51s)
+2026-10-19T15:55:44.603+08:00 independent validator [sensitivity/legacy]: status=failed passed=False (3.37s)
+2026-10-19T15:55:44.784+08:00 statistics: success=467/1024 failed=557 crossings=57029 small-angle<10 deg=9 mean_length=149.561812 mm
+2026-10-19T15:55:45.168+08:00 07_strategy_comparison.png: mode=ablations
+2026-10-19T15:55:45.295+08:00 statistics.json written (2590697 bytes)
+2026-10-19T15:55:45.296+08:00 artifact ok: 01_connectivity.png (7129468 bytes)
+2026-10-19T15:55:45.297+08:00 artifact ok: 02_routing_all.png (1396954 bytes)
+2026-10-19T15:55:45.297+08:00 artifact ok: 03_opposite_routes.png (213096 bytes)
+2026-10-19T15:55:45.297+08:00 artifact ok: 04_adjacent_routes.png (1127460 bytes)
+2026-10-19T15:55:45.297+08:00 artifact ok: 05_crossing_heatmap.png (111677 bytes)
+2026-10-19T15:55:45.297+08:00 artifact ok: 06_routing_detail.png (881359 bytes)
+2026-10-19T15:55:45.298+08:00 artifact ok: 07_strategy_comparison.png (160896 bytes)
+2026-10-19T15:55:45.298+08:00 artifact ok: routing_all.svg (153560 bytes)
+2026-10-19T15:55:45.298+08:00 artifact ok: routing_all.gds (373106 bytes)
+2026-10-19T15:55:45.298+08:00 artifact ok: routes.json (1145885 bytes)
+2026-10-19T15:55:45.298+08:00 artifact ok: failed_routes.json (963064 bytes)
+2026-10-19T15:55:45.299+08:00 artifact ok: statistics.json (2590697 bytes)
+2026-10-19T15:55:45.299+08:00 artifact ok: run.log (6129 bytes)
+2026-10-19T15:55:45.299+08:00 D56 artifact pipeline done | success=467/1024 | crossings=57029 | run_status=complete | independent_audit=passed | 13.41s
+2026-10-19T15:55:52.889+08:00 ========================================================================
+2026-10-19T15:55:52.890+08:00 D56 artifact pipeline start | python=3.10.11 | run_dir=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_d56_optimized | input_dir=C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_d56_optimized
+2026-10-19T15:55:52.900+08:00 four_side_1024.inputs.load(): 1024 connections, 2048 endpoints, 64 connectors, csv_sha256=0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b
+2026-10-19T15:55:52.914+08:00 routes file routes.json exists (1145885 bytes)
+2026-10-19T15:55:52.915+08:00 loaded 10 ablation records from ablations.json
+2026-10-19T15:55:52.915+08:00 ablation table available with 10 configurations
+2026-10-19T15:55:52.921+08:00 loaded fallback geometry for 467 routes from routes_geometry.json
+2026-10-19T15:55:52.931+08:00 run_status=complete (source=cli_override)
+2026-10-19T15:55:52.931+08:00 acceptance_policy=exact (source=algorithm); sensitivity_policy=legacy
+2026-10-19T15:55:52.959+08:00 records: 467 routed / 557 failed / 1024 total
+2026-10-19T15:55:52.960+08:00 routes.json preserved in place (1145885 bytes)
+2026-10-19T15:55:52.960+08:00 exact geometry audit of 467 routed records (width=0.05 mm, clearance=0.175 mm, sagitta=0.0005 mm)
+2026-10-19T15:55:53.434+08:00 geometry audit progress: 128/467 routes, 4976 crossings, 0.47s
+2026-10-19T15:55:54.292+08:00 geometry audit progress: 256/467 routes, 14639 crossings, 1.33s
+2026-10-19T15:55:56.558+08:00 geometry audit progress: 384/467 routes, 39541 crossings, 3.60s
+2026-10-19T15:55:57.829+08:00 final exact audit: 467 routed records checked, 57029 recorded crossings, 8919 non-crossing spacing violations, 0 overlaps, 0 touches, 0 crossing-zone overlaps, 0 records with geometry errors, 4.87s
+2026-10-19T15:55:57.868+08:00 routes_geometry.json: 467 analytic routes (810332 bytes)
+2026-10-19T15:55:57.869+08:00 failed_routes.json preserved in place (963064 bytes, 557 failed records recomputed)
+2026-10-19T15:55:58.781+08:00 01_connectivity.png: 1024 original connections
+2026-10-19T15:55:59.147+08:00 02_routing_all.png: 467 routed routes
+2026-10-19T15:55:59.417+08:00 03_opposite_routes.png: 53/512 opposite routes
+2026-10-19T15:55:59.762+08:00 04_adjacent_routes.png: 414/512 adjacent routes
+2026-10-19T15:56:00.107+08:00 05_crossing_heatmap.png: 3 densest cells annotated
+2026-10-19T15:56:00.695+08:00 06_routing_detail.png: 4 hotspot windows
+2026-10-19T15:56:00.724+08:00 routing_all.svg: 467 routes, 153073 bytes, sagitta=0.01 mm
+2026-10-19T15:56:00.770+08:00 routing_all.gds: 467 paths / layer [0] / 373106 bytes / verified=True
+2026-10-19T15:56:02.310+08:00 independent validator [main/exact]: status=passed passed=True (1.54s)
+2026-10-19T15:56:05.822+08:00 independent validator [sensitivity/legacy]: status=failed passed=False (3.44s)
+2026-10-19T15:56:05.986+08:00 statistics: success=467/1024 failed=557 crossings=57029 small-angle<10 deg=9 mean_length=149.561812 mm
+2026-10-19T15:56:06.367+08:00 07_strategy_comparison.png: mode=ablations
+2026-10-19T15:56:06.383+08:00 statistics.json written (77879 bytes)
+2026-10-19T15:56:06.384+08:00 artifact ok: 01_connectivity.png (7129468 bytes)
+2026-10-19T15:56:06.384+08:00 artifact ok: 02_routing_all.png (1396954 bytes)
+2026-10-19T15:56:06.384+08:00 artifact ok: 03_opposite_routes.png (213096 bytes)
+2026-10-19T15:56:06.385+08:00 artifact ok: 04_adjacent_routes.png (1127460 bytes)
+2026-10-19T15:56:06.385+08:00 artifact ok: 05_crossing_heatmap.png (111677 bytes)
+2026-10-19T15:56:06.385+08:00 artifact ok: 06_routing_detail.png (881359 bytes)
+2026-10-19T15:56:06.385+08:00 artifact ok: 07_strategy_comparison.png (160896 bytes)
+2026-10-19T15:56:06.385+08:00 artifact ok: routing_all.svg (153560 bytes)
+2026-10-19T15:56:06.386+08:00 artifact ok: routing_all.gds (373106 bytes)
+2026-10-19T15:56:06.386+08:00 artifact ok: routes.json (1145885 bytes)
+2026-10-19T15:56:06.386+08:00 artifact ok: failed_routes.json (963064 bytes)
+2026-10-19T15:56:06.386+08:00 artifact ok: statistics.json (77879 bytes)
+2026-10-19T15:56:06.386+08:00 artifact ok: run.log (10534 bytes)
+2026-10-19T15:56:06.386+08:00 D56 artifact pipeline done | success=467/1024 | crossings=57029 | run_status=complete | independent_audit=passed | 13.50s

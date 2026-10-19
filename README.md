@@ -58,3 +58,13 @@ G1 改善了几何近距与总长度，E 减少近距最多，但长度与升降
 ## 1024 四边单层布线实验
 
 本次新增代码、测试、1024连接CSV、全部实验图像与几何数据、SVG/GDS、运行日志和报告，入口见 [发布结果与复现说明](OpticalWaveguideRouter2D/four_side_1024/PUBLISHED_RESULTS.md)。最新原算法适配版在600秒总预算内保留80条；预算结束时仍有357条未开始，不能解读为1024条均已完成求解。
+
+### D56 优化版：467/1024（2026-10-19）
+
+保持 D56 弯曲几何与全部物理约束不变，新引擎（`OpticalWaveguideRouter2D/four_side_1024/d56/`）
+把四边单层布通数从历史 80 条提升到 **467/1024（45.61%）**：对边 53 / 邻边 414，
+独立校验 0 间距/0 重叠/0 半径/0 板界违规，R = 5 mm 未改。同算法在历史交叉口径下为 72 条
+（历史公式对弧交叉欠豁免 4.9 nm~51 µm）。详见
+[完整报告](docs/reports/four_side_1024_d56_optimized.md)、
+[失败诊断](docs/reports/d56_1024_failure_diagnosis.md)、
+[产物目录](OpticalWaveguideRouter2D/outputs/four_side_1024_d56_optimized/)。

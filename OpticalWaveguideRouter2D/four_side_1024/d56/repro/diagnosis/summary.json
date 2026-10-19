@@ -1,0 +1,1529 @@
+{
+  "schema": "d56_1024_failure_diagnosis_summary_v1",
+  "report": "docs/reports/d56_1024_failure_diagnosis.md",
+  "baseline": {
+    "success": 80,
+    "failed": 944,
+    "attempted": 667,
+    "not_attempted": 357,
+    "scanned": 547948,
+    "evaluations": 429559,
+    "runtime_seconds": 600.0421952999895,
+    "by_pair": {
+      "NS": 24,
+      "EW": 0,
+      "EN": 8,
+      "ES": 16,
+      "SW": 32,
+      "NW": 0
+    }
+  },
+  "replay_validation": {
+    "total_attempted": 1024,
+    "accepted": 91,
+    "compared_routes": 586,
+    "mismatched_routes": 11,
+    "accepted_geometry_mismatch": 11,
+    "note": "586 comparable failed routes reproduce scanned/evaluated/rejection counts/blockers exactly; the 11 mismatches are baseline-not-attempted routes that the budget-free replay accepted"
+  },
+  "control_experiments": {
+    "deployed_baseline_600s": 80,
+    "deployed_unlimited": 91,
+    "deployed_unlimited_by_pair": {
+      "SW": {
+        "attempted": 128,
+        "accepted": 32
+      },
+      "ES": {
+        "attempted": 128,
+        "accepted": 16
+      },
+      "NW": {
+        "attempted": 128,
+        "accepted": 0
+      },
+      "EN": {
+        "attempted": 128,
+        "accepted": 8
+      },
+      "NS": {
+        "attempted": 256,
+        "accepted": 26
+      },
+      "EW": {
+        "attempted": 256,
+        "accepted": 9
+      }
+    },
+    "corrected_crossing_policy_unlimited": 417,
+    "corrected_crossing_policy_by_pair": {
+      "SW": {
+        "attempted": 128,
+        "accepted": 46
+      },
+      "ES": {
+        "attempted": 128,
+        "accepted": 66
+      },
+      "NW": {
+        "attempted": 128,
+        "accepted": 92
+      },
+      "EN": {
+        "attempted": 128,
+        "accepted": 68
+      },
+      "NS": {
+        "attempted": 256,
+        "accepted": 102
+      },
+      "EW": {
+        "attempted": 256,
+        "accepted": 43
+      }
+    },
+    "adjacent_only_unlimited": 56,
+    "opposite_only_unlimited": 182,
+    "opposite_only_by_pair": {
+      "NS": {
+        "attempted": 256,
+        "accepted": 144
+      },
+      "EW": {
+        "attempted": 256,
+        "accepted": 38
+      }
+    },
+    "independent_sum_adjacent_plus_opposite": 238,
+    "interference_loss": 147
+  },
+  "q1_order_replay": {
+    "conclusion": "placing adjacent routes first costs the opposite relation 147 routes (opposite-alone 182 -> 35 in the joint baseline order)",
+    "per_pair_table": [
+      {
+        "pair": "SW",
+        "attempted": 128,
+        "accepted": 32,
+        "mean_scanned": 732.0,
+        "mean_exact": 497.4,
+        "order_fail": 1793,
+        "nocross_fail": 18351,
+        "bend_fail": 9890,
+        "exact": 63667,
+        "spacing": 56963,
+        "overlap": 6383,
+        "touch": 6383,
+        "zone": 289,
+        "nearest_blocked_median": 0.000141,
+        "nearest_blocked_p10": 0.000141,
+        "nearest_blocked_max": 0.173676
+      },
+      {
+        "pair": "ES",
+        "attempted": 128,
+        "accepted": 16,
+        "mean_scanned": 834.2,
+        "mean_exact": 623.7,
+        "order_fail": 526,
+        "nocross_fail": 5458,
+        "bend_fail": 20956,
+        "exact": 79836,
+        "spacing": 7215,
+        "overlap": 72598,
+        "touch": 72598,
+        "zone": 7,
+        "nearest_blocked_median": 0.165827,
+        "nearest_blocked_p10": 0.001265,
+        "nearest_blocked_max": 0.174946
+      },
+      {
+        "pair": "NW",
+        "attempted": 128,
+        "accepted": 0,
+        "mean_scanned": 929.0,
+        "mean_exact": 747.1,
+        "order_fail": 258,
+        "nocross_fail": 0,
+        "bend_fail": 23023,
+        "exact": 95631,
+        "spacing": 91709,
+        "overlap": 3807,
+        "touch": 3807,
+        "zone": 115,
+        "nearest_blocked_median": 0.0125,
+        "nearest_blocked_p10": 0.003493,
+        "nearest_blocked_max": 0.174485
+      },
+      {
+        "pair": "EN",
+        "attempted": 128,
+        "accepted": 8,
+        "mean_scanned": 871.0,
+        "mean_exact": 673.4,
+        "order_fail": 566,
+        "nocross_fail": 4158,
+        "bend_fail": 20569,
+        "exact": 86195,
+        "spacing": 86063,
+        "overlap": 118,
+        "touch": 118,
+        "zone": 6,
+        "nearest_blocked_median": 0.0125,
+        "nearest_blocked_p10": 0.0125,
+        "nearest_blocked_max": 0.170155
+      },
+      {
+        "pair": "NS",
+        "attempted": 256,
+        "accepted": 26,
+        "mean_scanned": 772.0,
+        "mean_exact": 684.4,
+        "order_fail": 4521,
+        "nocross_fail": 17897,
+        "bend_fail": 0,
+        "exact": 175204,
+        "spacing": 169930,
+        "overlap": 5127,
+        "touch": 5127,
+        "zone": 121,
+        "nearest_blocked_median": 0.115372,
+        "nearest_blocked_p10": 0.0125,
+        "nearest_blocked_max": 0.174946
+      },
+      {
+        "pair": "EW",
+        "attempted": 256,
+        "accepted": 9,
+        "mean_scanned": 785.8,
+        "mean_exact": 778.4,
+        "order_fail": 183,
+        "nocross_fail": 1718,
+        "bend_fail": 0,
+        "exact": 199264,
+        "spacing": 197820,
+        "overlap": 1216,
+        "touch": 1216,
+        "zone": 219,
+        "nearest_blocked_median": 0.0125,
+        "nearest_blocked_p10": 0.010799,
+        "nearest_blocked_max": 0.174946
+      }
+    ],
+    "blocker_concentration": {
+      "blocker_count": 85,
+      "top1_share": 0.1049,
+      "top5_share": 0.2424,
+      "top10_share": 0.3666,
+      "top20_share": 0.5407
+    },
+    "first_blocker_table": {
+      "SW": {
+        "failed_routes_with_blocker": 108,
+        "top_blockers": [
+          {
+            "blocker": 824,
+            "count": 8,
+            "share": 0.0741
+          },
+          {
+            "blocker": 832,
+            "count": 8,
+            "share": 0.0741
+          },
+          {
+            "blocker": 773,
+            "count": 7,
+            "share": 0.0648
+          },
+          {
+            "blocker": 774,
+            "count": 7,
+            "share": 0.0648
+          },
+          {
+            "blocker": 776,
+            "count": 7,
+            "share": 0.0648
+          },
+          {
+            "blocker": 784,
+            "count": 7,
+            "share": 0.0648
+          }
+        ]
+      },
+      "ES": {
+        "failed_routes_with_blocker": 116,
+        "top_blockers": [
+          {
+            "blocker": 649,
+            "count": 17,
+            "share": 0.1466
+          },
+          {
+            "blocker": 848,
+            "count": 8,
+            "share": 0.069
+          },
+          {
+            "blocker": 856,
+            "count": 8,
+            "share": 0.069
+          },
+          {
+            "blocker": 864,
+            "count": 7,
+            "share": 0.0603
+          },
+          {
+            "blocker": 872,
+            "count": 6,
+            "share": 0.0517
+          },
+          {
+            "blocker": 880,
+            "count": 5,
+            "share": 0.0431
+          }
+        ]
+      },
+      "NW": {
+        "failed_routes_with_blocker": 128,
+        "top_blockers": [
+          {
+            "blocker": 753,
+            "count": 9,
+            "share": 0.0703
+          },
+          {
+            "blocker": 840,
+            "count": 7,
+            "share": 0.0547
+          },
+          {
+            "blocker": 762,
+            "count": 7,
+            "share": 0.0547
+          },
+          {
+            "blocker": 745,
+            "count": 7,
+            "share": 0.0547
+          },
+          {
+            "blocker": 737,
+            "count": 7,
+            "share": 0.0547
+          },
+          {
+            "blocker": 729,
+            "count": 7,
+            "share": 0.0547
+          }
+        ]
+      },
+      "EN": {
+        "failed_routes_with_blocker": 120,
+        "top_blockers": [
+          {
+            "blocker": 762,
+            "count": 8,
+            "share": 0.0667
+          },
+          {
+            "blocker": 761,
+            "count": 7,
+            "share": 0.0583
+          },
+          {
+            "blocker": 633,
+            "count": 7,
+            "share": 0.0583
+          },
+          {
+            "blocker": 625,
+            "count": 7,
+            "share": 0.0583
+          },
+          {
+            "blocker": 617,
+            "count": 7,
+            "share": 0.0583
+          },
+          {
+            "blocker": 609,
+            "count": 7,
+            "share": 0.0583
+          }
+        ]
+      },
+      "NS": {
+        "failed_routes_with_blocker": 255,
+        "top_blockers": [
+          {
+            "blocker": 649,
+            "count": 68,
+            "share": 0.2667
+          },
+          {
+            "blocker": 16,
+            "count": 29,
+            "share": 0.1137
+          },
+          {
+            "blocker": 15,
+            "count": 28,
+            "share": 0.1098
+          },
+          {
+            "blocker": 26,
+            "count": 16,
+            "share": 0.0627
+          },
+          {
+            "blocker": 2,
+            "count": 14,
+            "share": 0.0549
+          },
+          {
+            "blocker": 25,
+            "count": 14,
+            "share": 0.0549
+          }
+        ]
+      },
+      "EW": {
+        "failed_routes_with_blocker": 255,
+        "top_blockers": [
+          {
+            "blocker": 649,
+            "count": 18,
+            "share": 0.0706
+          },
+          {
+            "blocker": 15,
+            "count": 16,
+            "share": 0.0627
+          },
+          {
+            "blocker": 753,
+            "count": 16,
+            "share": 0.0627
+          },
+          {
+            "blocker": 745,
+            "count": 16,
+            "share": 0.0627
+          },
+          {
+            "blocker": 21,
+            "count": 16,
+            "share": 0.0627
+          },
+          {
+            "blocker": 700,
+            "count": 16,
+            "share": 0.0627
+          }
+        ]
+      }
+    },
+    "nearest_blocked_distance_note": "q1_route_rows.csv columns nearest_blocked_distance are the closest spacing-rejected candidate distance for that route"
+  },
+  "q2_nocross": {
+    "total_rejections": 37142,
+    "sampled": 8211,
+    "geometry_constructible_fraction": 0.9003,
+    "exact_legal_fraction": 0.0001,
+    "estimated_wrong_rejections": 3.7,
+    "conclusion": "noCross is analytically conservative but rejects essentially no geometrically legal candidate in this dense CSV (0.012% sampled)"
+  },
+  "q3_transforms": {
+    "max_position_error": 1.1546319456101628e-14,
+    "max_direction_error": 0.0,
+    "determinants": {
+      "1.0": 512,
+      "-1.0": 512
+    },
+    "pairs": [
+      {
+        "source_side": "N",
+        "target_side": "S",
+        "kind": {
+          "opposite": 13
+        },
+        "route_count": 256,
+        "max_position_error": 1.5888218580782548e-14,
+        "max_direction_error": 0.0
+      },
+      {
+        "source_side": "E",
+        "target_side": "W",
+        "kind": {
+          "opposite": 13
+        },
+        "route_count": 256,
+        "max_position_error": 1.4210854715202004e-14,
+        "max_direction_error": 0.0
+      },
+      {
+        "source_side": "E",
+        "target_side": "S",
+        "kind": {
+          "adjacent": 13
+        },
+        "route_count": 128,
+        "max_position_error": 1.888293221827313e-14,
+        "max_direction_error": 0.0
+      },
+      {
+        "source_side": "N",
+        "target_side": "E",
+        "kind": {
+          "adjacent": 13
+        },
+        "route_count": 128,
+        "max_position_error": 1.4210854715202004e-14,
+        "max_direction_error": 0.0
+      },
+      {
+        "source_side": "S",
+        "target_side": "W",
+        "kind": {
+          "adjacent": 13
+        },
+        "route_count": 128,
+        "max_position_error": 1.4210854715202004e-14,
+        "max_direction_error": 0.0
+      },
+      {
+        "source_side": "W",
+        "target_side": "N",
+        "kind": {
+          "adjacent": 13
+        },
+        "route_count": 128,
+        "max_position_error": 0.0,
+        "max_direction_error": 0.0
+      }
+    ],
+    "conclusion": "all six directed side pairs transform exactly (round-trip error < 2e-14 mm, direction error 0)"
+  },
+  "q4_legacy_order": {
+    "total_rejections": 5241,
+    "sampled": 1647,
+    "exact_legal_fraction": 0.003,
+    "estimated_wrong_rejections": 15.7,
+    "conclusion": "legacy_order_ok triggers on 0.96% of scans and wrongly rejects ~0.3% of its triggers"
+  },
+  "q5_redundancy": {
+    "baseline": {
+      "scanned": 547948,
+      "evaluations": 429559,
+      "early_exit": 118389,
+      "early_exit_fraction": 0.2161,
+      "mean_scans_per_attempted_route": 821.5,
+      "mean_evaluations_per_attempted_route": 644.0,
+      "rejection_counts": {
+        "original_noCross": 37142,
+        "original_track_endpoint_order": 5241,
+        "spacing_pairs": 327826,
+        "legacy_bend_does_not_fit": 72775,
+        "crossing_zone_overlap_pairs": 440,
+        "overlap_pairs": 84407,
+        "touch_pairs": 84407,
+        "search_budget_exhausted": 358
+      }
+    },
+    "budget_free": {
+      "exact_evaluations": 699706,
+      "repeated_same_blocker": 681741,
+      "repeated_fraction": 0.9743,
+      "repeats_per_route": 694.2,
+      "max_repeat_run": 852,
+      "run_length_histogram": {
+        "1": 899,
+        "2": 447,
+        "3": 271,
+        "4": 191,
+        "5": 531,
+        "6": 327,
+        "7": 363,
+        "8": 244,
+        "9": 1003,
+        "10": 155,
+        "11": 166,
+        "12": 219,
+        "13": 275,
+        "14": 215,
+        "15": 131,
+        "16": 165,
+        "17": 323,
+        "18": 123,
+        "19": 460,
+        "20": 494
+      }
+    },
+    "baseline_667": {
+      "exact_evaluations": 429993,
+      "repeated_same_blocker": 421798,
+      "repeated_fraction": 0.9809,
+      "repeats_per_route": 672.7,
+      "max_repeat_run": 852,
+      "run_length_histogram": {
+        "1": 443,
+        "2": 224,
+        "3": 124,
+        "4": 125,
+        "5": 322,
+        "6": 221,
+        "7": 56,
+        "8": 77,
+        "9": 279,
+        "10": 64,
+        "11": 87,
+        "12": 180,
+        "13": 138,
+        "14": 148,
+        "15": 79,
+        "16": 80,
+        "17": 245,
+        "18": 66,
+        "19": 107,
+        "20": 197
+      }
+    },
+    "conclusion": "98.1% of exact evaluations repeat the same first blocker at the previous track (mean 672.7 per route); only ~1.9% test a new obstruction"
+  },
+  "q6_adjacent_templates": {
+    "fixed_template_coverage": {
+      "SW": {
+        "n": 128,
+        "direct_ok": 128,
+        "fixed_mean": 0.81,
+        "fixed_zero": 8,
+        "flex_ok": 128
+      },
+      "ES": {
+        "n": 128,
+        "direct_ok": 126,
+        "fixed_mean": 0.81,
+        "fixed_zero": 8,
+        "flex_ok": 128
+      },
+      "NW": {
+        "n": 128,
+        "direct_ok": 128,
+        "fixed_mean": 0.81,
+        "fixed_zero": 8,
+        "flex_ok": 128
+      },
+      "EN": {
+        "n": 128,
+        "direct_ok": 126,
+        "fixed_mean": 0.81,
+        "fixed_zero": 8,
+        "flex_ok": 128
+      }
+    },
+    "direct_L_valid": 508,
+    "flexible_template_geometric_coverage": 512,
+    "rescue_best": {
+      "kept_direct_L": 299,
+      "reroute_candidates": 209,
+      "independent_rescued": 163,
+      "sequential_rescued": 55,
+      "sequential_total": 354,
+      "independent_upper_bound": 462,
+      "needs_more_than_3_bends": 46
+    },
+    "conclusion": "fixed t2=145 template leaves 32 routes with zero geometric alternative and 19% track-coverage gap; variable terminal turn recovers all geometric coverage and rescues 135-163/209 excluded routes independently (338-354 sequential)"
+  },
+  "q7_track_state": {
+    "accepted_routes": 80,
+    "distinct_track_y": 80,
+    "shared_tracks": 0,
+    "cross_group_first_blocker": {
+      "SW": {
+        "first_blocker_events": 63635,
+        "cross_group": 0,
+        "cross_group_fraction": 0.0
+      },
+      "ES": {
+        "first_blocker_events": 79820,
+        "cross_group": 1164,
+        "cross_group_fraction": 0.0146
+      },
+      "NW": {
+        "first_blocker_events": 95631,
+        "cross_group": 95631,
+        "cross_group_fraction": 1.0
+      },
+      "EN": {
+        "first_blocker_events": 86187,
+        "cross_group": 42287,
+        "cross_group_fraction": 0.4906
+      },
+      "NS": {
+        "first_blocker_events": 104720,
+        "cross_group": 33780,
+        "cross_group_fraction": 0.3226
+      }
+    },
+    "conclusion": "WGyset is not an exclusive global resource (code appends; all accepted routes on distinct tracks by geometry). The real gap is that noCross state is per-pair-group while conflicts are global (NW: 100% of first blockers are cross-group)."
+  },
+  "q8_crossing_zone": {
+    "spacing_rejections": 342920,
+    "distance_distribution": {
+      "[0.13,0.15)": 27463,
+      "[0.174,0.1749)": 66192,
+      "[0.1,0.13)": 1569,
+      "[0.0,0.01)": 384,
+      "[0.155,0.16)": 5477,
+      "[0.16,0.165)": 24362,
+      "[0.05,0.1)": 1404,
+      "[0.15,0.155)": 18542,
+      "[0.165,0.17)": 54722,
+      "[0.17,0.172)": 31100,
+      "[0.172,0.174)": 104830,
+      "[0.01,0.05)": 1520,
+      "[0.1749,0.1750001)": 5355
+    },
+    "share_deficit_le_5um": 0.605,
+    "share_deficit_le_1um": 0.2086,
+    "mean_deficit_mm": 0.0094959,
+    "sampled_spacing_rejections": 600,
+    "sampled_corrected_legal": 572,
+    "sampled_corrected_legal_fraction": 0.9533,
+    "sampled_outcomes": {
+      "crossing|arc_involved|corrected_legal": 572,
+      "crossing|arc_involved|genuinely_illegal": 22,
+      "deficit_bucket_<=5um": 357,
+      "deficit_bucket_>5um": 228,
+      "no_crossing|line_line|genuinely_illegal": 6
+    },
+    "exact_vs_deployed_confusion": {
+      "deployed_vs_primitive_pair": {
+        "both_legal": 122086,
+        "a_legal_b_illegal": 0,
+        "a_illegal_b_legal": 6483,
+        "both_illegal": 209
+      },
+      "deployed_vs_exact_window": {
+        "both_legal": 122086,
+        "a_legal_b_illegal": 0,
+        "a_illegal_b_legal": 6483,
+        "both_illegal": 209
+      },
+      "primitive_pair_vs_exact_window": {
+        "both_legal": 128569,
+        "a_legal_b_illegal": 0,
+        "a_illegal_b_legal": 0,
+        "both_illegal": 209
+      }
+    },
+    "direct_L_deployed_illegal_pairs": 6692,
+    "direct_L_corrected_illegal_pairs": 209,
+    "direct_L_genuine_conflicts": {
+      "EN|SW": 105,
+      "ES|NW": 104
+    },
+    "route_level_rescue": {
+      "deployed_unlimited": 91,
+      "corrected": 417,
+      "gain": 326
+    },
+    "conclusion": "the clearance/sin(angle) exemption window is exact for straight crossings but too short for arc crossings (0.8-15 um deficits); 95.3% of sampled spacing rejections become legal against their first blocker under an exact window; fixing only this takes 91 -> 417."
+  },
+  "capacity": {
+    "boundary": {
+      "N": {
+        "n": 512,
+        "min": 4.7875,
+        "max": 145.2125,
+        "pitch_violations": 0,
+        "gaps_equal_pitch": 496,
+        "connector_gap_values": [
+          3.575
+        ],
+        "connector_gap_count": 15,
+        "footprint_mm": 89.6,
+        "footprint_fraction_of_edge": 0.597333,
+        "inter_connector_gap_detail": [
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          }
+        ],
+        "spare_lanes_in_gaps": 285
+      },
+      "S": {
+        "n": 512,
+        "min": 4.7875,
+        "max": 145.2125,
+        "pitch_violations": 0,
+        "gaps_equal_pitch": 496,
+        "connector_gap_values": [
+          3.575
+        ],
+        "connector_gap_count": 15,
+        "footprint_mm": 89.6,
+        "footprint_fraction_of_edge": 0.597333,
+        "inter_connector_gap_detail": [
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          }
+        ],
+        "spare_lanes_in_gaps": 285
+      },
+      "E": {
+        "n": 512,
+        "min": 4.7875,
+        "max": 145.2125,
+        "pitch_violations": 0,
+        "gaps_equal_pitch": 496,
+        "connector_gap_values": [
+          3.575
+        ],
+        "connector_gap_count": 15,
+        "footprint_mm": 89.6,
+        "footprint_fraction_of_edge": 0.597333,
+        "inter_connector_gap_detail": [
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          }
+        ],
+        "spare_lanes_in_gaps": 285
+      },
+      "W": {
+        "n": 512,
+        "min": 4.7875,
+        "max": 145.2125,
+        "pitch_violations": 0,
+        "gaps_equal_pitch": 496,
+        "connector_gap_values": [
+          3.575
+        ],
+        "connector_gap_count": 15,
+        "footprint_mm": 89.6,
+        "footprint_fraction_of_edge": 0.597333,
+        "inter_connector_gap_detail": [
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          },
+          {
+            "gap": 3.575,
+            "usable": 3.225,
+            "extra_lanes": 19
+          }
+        ],
+        "spare_lanes_in_gaps": 285
+      }
+    },
+    "band": {
+      "N": {
+        "stub_band_depth_mm": 5.0,
+        "turn_band_depth_mm": 5.0,
+        "n_stubs": 512,
+        "blocked_intervals": 16,
+        "free_intervals": [
+          [
+            0.0,
+            4.6125
+          ],
+          [
+            10.3875,
+            13.6125
+          ],
+          [
+            19.3875,
+            22.6125
+          ],
+          [
+            28.3875,
+            31.6125
+          ],
+          [
+            37.3875,
+            40.6125
+          ],
+          [
+            46.3875,
+            49.6125
+          ],
+          [
+            55.3875,
+            58.6125
+          ],
+          [
+            64.3875,
+            67.6125
+          ],
+          [
+            73.3875,
+            76.6125
+          ],
+          [
+            82.3875,
+            85.6125
+          ],
+          [
+            91.3875,
+            94.6125
+          ],
+          [
+            100.3875,
+            103.6125
+          ],
+          [
+            109.3875,
+            112.6125
+          ],
+          [
+            118.3875,
+            121.6125
+          ],
+          [
+            127.3875,
+            130.6125
+          ],
+          [
+            136.3875,
+            139.6125
+          ],
+          [
+            145.3875,
+            150.0
+          ]
+        ],
+        "spare_full_depth_lanes_on_grid": 339
+      },
+      "S": {
+        "stub_band_depth_mm": 5.0,
+        "turn_band_depth_mm": 5.0,
+        "n_stubs": 512,
+        "blocked_intervals": 16,
+        "free_intervals": [
+          [
+            0.0,
+            4.6125
+          ],
+          [
+            10.3875,
+            13.6125
+          ],
+          [
+            19.3875,
+            22.6125
+          ],
+          [
+            28.3875,
+            31.6125
+          ],
+          [
+            37.3875,
+            40.6125
+          ],
+          [
+            46.3875,
+            49.6125
+          ],
+          [
+            55.3875,
+            58.6125
+          ],
+          [
+            64.3875,
+            67.6125
+          ],
+          [
+            73.3875,
+            76.6125
+          ],
+          [
+            82.3875,
+            85.6125
+          ],
+          [
+            91.3875,
+            94.6125
+          ],
+          [
+            100.3875,
+            103.6125
+          ],
+          [
+            109.3875,
+            112.6125
+          ],
+          [
+            118.3875,
+            121.6125
+          ],
+          [
+            127.3875,
+            130.6125
+          ],
+          [
+            136.3875,
+            139.6125
+          ],
+          [
+            145.3875,
+            150.0
+          ]
+        ],
+        "spare_full_depth_lanes_on_grid": 339
+      },
+      "E": {
+        "stub_band_depth_mm": 5.0,
+        "turn_band_depth_mm": 5.0,
+        "n_stubs": 512,
+        "blocked_intervals": 16,
+        "free_intervals": [
+          [
+            0.0,
+            4.6125
+          ],
+          [
+            10.3875,
+            13.6125
+          ],
+          [
+            19.3875,
+            22.6125
+          ],
+          [
+            28.3875,
+            31.6125
+          ],
+          [
+            37.3875,
+            40.6125
+          ],
+          [
+            46.3875,
+            49.6125
+          ],
+          [
+            55.3875,
+            58.6125
+          ],
+          [
+            64.3875,
+            67.6125
+          ],
+          [
+            73.3875,
+            76.6125
+          ],
+          [
+            82.3875,
+            85.6125
+          ],
+          [
+            91.3875,
+            94.6125
+          ],
+          [
+            100.3875,
+            103.6125
+          ],
+          [
+            109.3875,
+            112.6125
+          ],
+          [
+            118.3875,
+            121.6125
+          ],
+          [
+            127.3875,
+            130.6125
+          ],
+          [
+            136.3875,
+            139.6125
+          ],
+          [
+            145.3875,
+            150.0
+          ]
+        ],
+        "spare_full_depth_lanes_on_grid": 339
+      },
+      "W": {
+        "stub_band_depth_mm": 5.0,
+        "turn_band_depth_mm": 5.0,
+        "n_stubs": 512,
+        "blocked_intervals": 16,
+        "free_intervals": [
+          [
+            0.0,
+            4.6125
+          ],
+          [
+            10.3875,
+            13.6125
+          ],
+          [
+            19.3875,
+            22.6125
+          ],
+          [
+            28.3875,
+            31.6125
+          ],
+          [
+            37.3875,
+            40.6125
+          ],
+          [
+            46.3875,
+            49.6125
+          ],
+          [
+            55.3875,
+            58.6125
+          ],
+          [
+            64.3875,
+            67.6125
+          ],
+          [
+            73.3875,
+            76.6125
+          ],
+          [
+            82.3875,
+            85.6125
+          ],
+          [
+            91.3875,
+            94.6125
+          ],
+          [
+            100.3875,
+            103.6125
+          ],
+          [
+            109.3875,
+            112.6125
+          ],
+          [
+            118.3875,
+            121.6125
+          ],
+          [
+            127.3875,
+            130.6125
+          ],
+          [
+            136.3875,
+            139.6125
+          ],
+          [
+            145.3875,
+            150.0
+          ]
+        ],
+        "spare_full_depth_lanes_on_grid": 339
+      }
+    },
+    "lane_demand": {
+      "per_pair": {
+        "NS": {
+          "n": 256,
+          "dx_equal_zero": 16,
+          "dx_lt_2R_shortS": 46,
+          "dx_min": 0.0,
+          "dx_max": 132.375,
+          "dx_mean": 46.8828,
+          "middle_total_mm": 9637.25,
+          "world_horizontal_total_mm": 9637.25,
+          "world_vertical_total_mm": 36002.078
+        },
+        "EW": {
+          "n": 256,
+          "dx_equal_zero": 16,
+          "dx_lt_2R_shortS": 46,
+          "dx_min": 0.0,
+          "dx_max": 132.375,
+          "dx_mean": 46.8828,
+          "middle_total_mm": 9637.25,
+          "world_horizontal_total_mm": 36002.078,
+          "world_vertical_total_mm": 9637.25
+        }
+      },
+      "lane_length_supply_per_orientation_mm": 112000.0,
+      "horizontal_demand_fraction": 0.4075,
+      "vertical_demand_fraction": 0.4075,
+      "note": "world-frame lengths of the exact legacy U path built at reference track 75 mm; supply = 800 grid lanes x (150-2R) mm; per-pair dx is the canonical-mode transverse displacement"
+    },
+    "accepted_occupancy": {
+      "horizontal_rows": {
+        "rows_or_columns_with_near_parallel_geometry": 316,
+        "mean_occupied_length_mm": 2.59,
+        "largest_free_interval_mm": 149.206,
+        "mean_free_intervals": 2.8
+      },
+      "vertical_columns": {
+        "rows_or_columns_with_near_parallel_geometry": 305,
+        "mean_occupied_length_mm": 2.734,
+        "largest_free_interval_mm": 148.815,
+        "mean_free_intervals": 2.94
+      },
+      "grid_rows": 800,
+      "accepted_routes": 80,
+      "method": "arc/line centerline sampled at sagitta 0.001 mm; near-parallel = |tangent|<0.5; 0.5 mm dilation"
+    },
+    "corners": {
+      "SW": {
+        "vertical_stubs_within_10mm": 30,
+        "horizontal_stubs_within_10mm": 30,
+        "mandatory_lines_total": 60,
+        "corner_band_area_mm2": 100.0
+      },
+      "SE": {
+        "vertical_stubs_within_10mm": 30,
+        "horizontal_stubs_within_10mm": 30,
+        "mandatory_lines_total": 60,
+        "corner_band_area_mm2": 100.0
+      },
+      "NW": {
+        "vertical_stubs_within_10mm": 30,
+        "horizontal_stubs_within_10mm": 30,
+        "mandatory_lines_total": 60,
+        "corner_band_area_mm2": 100.0
+      },
+      "NE": {
+        "vertical_stubs_within_10mm": 30,
+        "horizontal_stubs_within_10mm": 30,
+        "mandatory_lines_total": 60,
+        "corner_band_area_mm2": 100.0
+      }
+    },
+    "conclusion": "global lane-length demand is only 40.75% of supply; boundary bands are 100% occupied at zero clearance margin (port pitch = clearance = 0.175 mm); capacity is not the wall"
+  },
+  "budget": {
+    "total_runtime_seconds": 602.1169276,
+    "search_runtime_seconds": 600.0421952999895,
+    "candidate_evaluations": 429559,
+    "evaluation_budget": 900000,
+    "evaluation_budget_used_fraction": 0.4773,
+    "time_budget_seconds": 600,
+    "not_attempted_routes": 357,
+    "per_group_durations": {
+      "SW": 87.72,
+      "ES": 96.47,
+      "NW": 138.54,
+      "EN": 132.22,
+      "NS": 144.87,
+      "EW": 0.0
+    }
+  },
+  "rescue_summary": {
+    "deployed_600s": 80,
+    "deployed_unlimited": 91,
+    "corrected_crossing_only": 417,
+    "corrected_plus_adjacent_template_upper_bound": 462,
+    "remaining_gap_needs": [
+      "richer >=5-bend templates",
+      "global ordering / rip-up",
+      "exact crossing policy everywhere"
+    ]
+  },
+  "reproduction_commands": [
+    "Set-Location 'C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D'",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/probe_replay.py --label full_unlimited --validate-baseline --out-dir scratch/diagnosis/data/replay",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/probe_transforms.py",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/probe_direct_l.py",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/probe_policy_search.py --policy primitive_pair --label policyC_full_unlimited --out-dir scratch/diagnosis/data/policy_search",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/probe_adjacent_rescue.py",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/probe_capacity.py",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/analyze_replay.py",
+    "& '.venv\\Scripts\\python.exe' scratch/diagnosis/make_summary.py"
+  ]
+}

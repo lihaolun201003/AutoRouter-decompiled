@@ -1,0 +1,967 @@
+{
+ "schema": "four_side_1024_d56_ablations_v1",
+ "policy": "exact crossing-region policy (see report section 6); legacy-policy sensitivity reported separately",
+ "experiments": [
+  {
+   "label": "Legacy_80",
+   "strategy": "legacy_AutoRouter_four_side_adapter",
+   "success": 80,
+   "success_rate": 0.078125,
+   "failed": 944,
+   "by_pair": {
+    "NS": {
+     "success": 24,
+     "failed": 232
+    },
+    "EW": {
+     "success": 0,
+     "failed": 256
+    },
+    "EN": {
+     "success": 8,
+     "failed": 120
+    },
+    "ES": {
+     "success": 16,
+     "failed": 112
+    },
+    "SW": {
+     "success": 32,
+     "failed": 96
+    },
+    "NW": {
+     "success": 0,
+     "failed": 128
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 24,
+     "failed": 488
+    },
+    "adjacent": {
+     "success": 56,
+     "failed": 456
+    }
+   },
+   "mean_length_mm": 143.14499504060012,
+   "max_length_mm": 281.4539816339745,
+   "total_length_mm": 11451.599603248012,
+   "crossing_count": 1141,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 0,
+    "10-20": 2,
+    "20-30": 0,
+    "30-45": 0,
+    "45-60": 0,
+    "60-75": 24,
+    "75-90": 1115
+   },
+   "small_angle_crossing_count": 0,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 429559,
+   "runtime_seconds": 602.1169276,
+   "geometry": "D56, reverse-engineered AutoRouter first-free adapter",
+   "note": "historical reverse-engineered AutoRouter four-side D56 adapter (600 s budget)",
+   "crossing_policy": "legacy (historical)"
+  },
+  {
+   "label": "General_526",
+   "strategy": "General_526",
+   "success": 526,
+   "success_rate": 0.513671875,
+   "failed": 498,
+   "by_pair": {
+    "NS": {
+     "success": 245,
+     "failed": 11
+    },
+    "EW": {
+     "success": 245,
+     "failed": 11
+    },
+    "EN": {
+     "success": 30,
+     "failed": 98
+    },
+    "ES": {
+     "success": 0,
+     "failed": 128
+    },
+    "SW": {
+     "success": 0,
+     "failed": 128
+    },
+    "NW": {
+     "success": 6,
+     "failed": 122
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 490,
+     "failed": 22
+    },
+    "adjacent": {
+     "success": 36,
+     "failed": 476
+    }
+   },
+   "mean_length_mm": 159.24492913522238,
+   "max_length_mm": 200.68781297946927,
+   "total_length_mm": 83762.83272512726,
+   "crossing_count": 98197,
+   "crossing_angle_histogram": {
+    "[0,1)": 0,
+    "[1,5)": 76,
+    "[5,10)": 951,
+    "[10,20)": 4981,
+    "[20,30)": 7986,
+    "[30,45)": 16930,
+    "[45,60)": 20543,
+    "[60,75)": 21287,
+    "[75,90]": 25443
+   },
+   "small_angle_crossing_count": 1027,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 71290,
+   "runtime_seconds": 399.2018320999341,
+   "geometry": "free curve (Dubins), not D56",
+   "note": "historical free-curve/Dubins search; NOT D56 geometry, reference only",
+   "crossing_policy": "legacy (historical)"
+  },
+  {
+   "label": "A_legacy_order",
+   "strategy": "A_legacy_fixed_order",
+   "success": 437,
+   "success_rate": 0.4267578125,
+   "failed": 587,
+   "by_pair": {
+    "NS": {
+     "success": 47,
+     "failed": 209
+    },
+    "EW": {
+     "success": 20,
+     "failed": 236
+    },
+    "EN": {
+     "success": 25,
+     "failed": 103
+    },
+    "ES": {
+     "success": 128,
+     "failed": 0
+    },
+    "SW": {
+     "success": 128,
+     "failed": 0
+    },
+    "NW": {
+     "success": 89,
+     "failed": 39
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 67,
+     "failed": 445
+    },
+    "adjacent": {
+     "success": 370,
+     "failed": 142
+    }
+   },
+   "mean_length_mm": 151.3062336954363,
+   "max_length_mm": 284.4289816339745,
+   "total_length_mm": 66120.82412490566,
+   "crossing_count": 48086,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 6,
+    "10-20": 480,
+    "20-30": 995,
+    "30-45": 2287,
+    "45-60": 2150,
+    "60-75": 1672,
+    "75-90": 40496
+   },
+   "small_angle_crossing_count": 6,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 159602,
+   "runtime_seconds": 201.0712048000005,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "exact same candidate families/index, only the original SW->ES->NW->EN->NS->EW order (isolates the order effect)",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "B_opposite_first",
+   "strategy": "B_opposite_first",
+   "success": 358,
+   "success_rate": 0.349609375,
+   "failed": 666,
+   "by_pair": {
+    "NS": {
+     "success": 252,
+     "failed": 4
+    },
+    "EW": {
+     "success": 72,
+     "failed": 184
+    },
+    "EN": {
+     "success": 21,
+     "failed": 107
+    },
+    "ES": {
+     "success": 1,
+     "failed": 127
+    },
+    "SW": {
+     "success": 9,
+     "failed": 119
+    },
+    "NW": {
+     "success": 3,
+     "failed": 125
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 324,
+     "failed": 188
+    },
+    "adjacent": {
+     "success": 34,
+     "failed": 478
+    }
+   },
+   "mean_length_mm": 188.46278851326565,
+   "max_length_mm": 284.4289816339745,
+   "total_length_mm": 67469.6782877491,
+   "crossing_count": 47608,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 11,
+    "10-20": 615,
+    "20-30": 1153,
+    "30-45": 2254,
+    "45-60": 1732,
+    "60-75": 1252,
+    "75-90": 40591
+   },
+   "small_angle_crossing_count": 11,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 162990,
+   "runtime_seconds": 193.50031490000038,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "NS -> EW -> EN -> ES -> SW -> NW (opposite first)",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "C_opposite_first_dynamic_adjacent",
+   "strategy": "C_opposite_first_dynamic_adjacent",
+   "success": 359,
+   "success_rate": 0.3505859375,
+   "failed": 665,
+   "by_pair": {
+    "NS": {
+     "success": 255,
+     "failed": 1
+    },
+    "EW": {
+     "success": 70,
+     "failed": 186
+    },
+    "EN": {
+     "success": 19,
+     "failed": 109
+    },
+    "ES": {
+     "success": 2,
+     "failed": 126
+    },
+    "SW": {
+     "success": 9,
+     "failed": 119
+    },
+    "NW": {
+     "success": 4,
+     "failed": 124
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 325,
+     "failed": 187
+    },
+    "adjacent": {
+     "success": 34,
+     "failed": 478
+    }
+   },
+   "mean_length_mm": 187.82955644790698,
+   "max_length_mm": 284.4289816339745,
+   "total_length_mm": 67430.8107647986,
+   "crossing_count": 47999,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 9,
+    "10-20": 600,
+    "20-30": 1166,
+    "30-45": 2328,
+    "45-60": 1789,
+    "60-75": 1250,
+    "75-90": 40857
+   },
+   "small_angle_crossing_count": 9,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 161141,
+   "runtime_seconds": 236.37349489999997,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "opposite first; adjacent pairs ordered dynamically by local congestion",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "D_global_congestion",
+   "strategy": "D_global_congestion",
+   "success": 315,
+   "success_rate": 0.3076171875,
+   "failed": 709,
+   "by_pair": {
+    "NS": {
+     "success": 100,
+     "failed": 156
+    },
+    "EW": {
+     "success": 118,
+     "failed": 138
+    },
+    "EN": {
+     "success": 35,
+     "failed": 93
+    },
+    "ES": {
+     "success": 34,
+     "failed": 94
+    },
+    "SW": {
+     "success": 14,
+     "failed": 114
+    },
+    "NW": {
+     "success": 14,
+     "failed": 114
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 218,
+     "failed": 294
+    },
+    "adjacent": {
+     "success": 97,
+     "failed": 415
+    }
+   },
+   "mean_length_mm": 205.2645039920136,
+   "max_length_mm": 313.7571449019235,
+   "total_length_mm": 64658.31875748429,
+   "crossing_count": 47397,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 3,
+    "10-20": 402,
+    "20-30": 776,
+    "30-45": 1731,
+    "45-60": 1873,
+    "60-75": 2167,
+    "75-90": 40445
+   },
+   "small_angle_crossing_count": 3,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 156613,
+   "runtime_seconds": 217.57400359999974,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "all 1024 routes sorted by predicted chord congestion",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "E_adjacent_first",
+   "strategy": "E_adjacent_first",
+   "success": 428,
+   "success_rate": 0.41796875,
+   "failed": 596,
+   "by_pair": {
+    "NS": {
+     "success": 26,
+     "failed": 230
+    },
+    "EW": {
+     "success": 13,
+     "failed": 243
+    },
+    "EN": {
+     "success": 128,
+     "failed": 0
+    },
+    "ES": {
+     "success": 124,
+     "failed": 4
+    },
+    "SW": {
+     "success": 78,
+     "failed": 50
+    },
+    "NW": {
+     "success": 59,
+     "failed": 69
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 39,
+     "failed": 473
+    },
+    "adjacent": {
+     "success": 389,
+     "failed": 123
+    }
+   },
+   "mean_length_mm": 151.7644508045216,
+   "max_length_mm": 284.4289816339745,
+   "total_length_mm": 64955.18494433524,
+   "crossing_count": 48413,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 8,
+    "10-20": 474,
+    "20-30": 1007,
+    "30-45": 2316,
+    "45-60": 2303,
+    "60-75": 1635,
+    "75-90": 40670
+   },
+   "small_angle_crossing_count": 8,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 154567,
+   "runtime_seconds": 166.10220039999967,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "adjacent (rigid L) first: EN,ES,SW,NW then NS,EW",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "E_best_order",
+   "strategy": "A_legacy_fixed_order",
+   "success": 467,
+   "success_rate": 0.4560546875,
+   "failed": 557,
+   "by_pair": {
+    "NS": {
+     "success": 28,
+     "failed": 228
+    },
+    "EW": {
+     "success": 25,
+     "failed": 231
+    },
+    "EN": {
+     "success": 128,
+     "failed": 0
+    },
+    "ES": {
+     "success": 43,
+     "failed": 85
+    },
+    "SW": {
+     "success": 115,
+     "failed": 13
+    },
+    "NW": {
+     "success": 128,
+     "failed": 0
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 53,
+     "failed": 459
+    },
+    "adjacent": {
+     "success": 414,
+     "failed": 98
+    }
+   },
+   "mean_length_mm": 149.56181186262123,
+   "max_length_mm": 305.6321449019234,
+   "total_length_mm": 69845.36613984412,
+   "crossing_count": 57029,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 9,
+    "10-20": 581,
+    "20-30": 1208,
+    "30-45": 3129,
+    "45-60": 3086,
+    "60-75": 1881,
+    "75-90": 47135
+   },
+   "small_angle_crossing_count": 9,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 172372,
+   "runtime_seconds": 169.56573240000034,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "final: NW,EN,SW,ES then NS,EW (adjacent rigid geometry first)",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "E_best_order_ripup",
+   "strategy": "A_legacy_fixed_order",
+   "success": 467,
+   "success_rate": 0.4560546875,
+   "failed": 557,
+   "by_pair": {
+    "NS": {
+     "success": 28,
+     "failed": 228
+    },
+    "EW": {
+     "success": 25,
+     "failed": 231
+    },
+    "EN": {
+     "success": 128,
+     "failed": 0
+    },
+    "ES": {
+     "success": 43,
+     "failed": 85
+    },
+    "SW": {
+     "success": 115,
+     "failed": 13
+    },
+    "NW": {
+     "success": 128,
+     "failed": 0
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 53,
+     "failed": 459
+    },
+    "adjacent": {
+     "success": 414,
+     "failed": 98
+    }
+   },
+   "mean_length_mm": 149.56181186262123,
+   "max_length_mm": 305.6321449019234,
+   "total_length_mm": 69845.36613984412,
+   "crossing_count": 57029,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 9,
+    "10-20": 581,
+    "20-30": 1208,
+    "30-45": 3129,
+    "45-60": 3086,
+    "60-75": 1881,
+    "75-90": 47135
+   },
+   "small_angle_crossing_count": 9,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 172372,
+   "runtime_seconds": 142.37066570000025,
+   "crossing_policy": "exact",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "final order + transactional rip-up/reroute",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  },
+  {
+   "label": "E_best_order_historical_window",
+   "strategy": "A_legacy_fixed_order",
+   "success": 72,
+   "success_rate": 0.0703125,
+   "failed": 952,
+   "by_pair": {
+    "NS": {
+     "success": 1,
+     "failed": 255
+    },
+    "EW": {
+     "success": 9,
+     "failed": 247
+    },
+    "EN": {
+     "success": 6,
+     "failed": 122
+    },
+    "ES": {
+     "success": 12,
+     "failed": 116
+    },
+    "SW": {
+     "success": 39,
+     "failed": 89
+    },
+    "NW": {
+     "success": 5,
+     "failed": 123
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "success": 10,
+     "failed": 502
+    },
+    "adjacent": {
+     "success": 62,
+     "failed": 450
+    }
+   },
+   "mean_length_mm": 151.9371303174404,
+   "max_length_mm": 314.80954490192346,
+   "total_length_mm": 10939.473382855707,
+   "crossing_count": 1162,
+   "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 0,
+    "10-20": 0,
+    "20-30": 0,
+    "30-45": 0,
+    "45-60": 0,
+    "60-75": 4,
+    "75-90": 1158
+   },
+   "small_angle_crossing_count": 0,
+   "spacing_violation_pairs": 0,
+   "overlap_pairs": 0,
+   "radius_violations": 0,
+   "boundary_violations": 0,
+   "candidate_evaluations": 260339,
+   "runtime_seconds": 318.4668701999999,
+   "crossing_policy": "legacy (historical)",
+   "geometry": "D56 orthogonal + R=5 arcs",
+   "note": "final order but acceptance uses the historical straight-line crossing window (strict comparison)",
+   "crossing_angle_histogram_unit": "degrees, bins as labelled",
+   "touch_pairs": 0,
+   "crossing_window_overlap_pairs": 0,
+   "min_non_crossing_centerline_mm": null,
+   "diagonal_line_violations": 0,
+   "free_or_short_s_arc_violations": 0,
+   "independent_audit": {
+    "passed": true,
+    "policy": {
+     "board_mm": 150.0,
+     "radius_mm": 5.0,
+     "radius_tolerance_mm": 1e-09,
+     "waveguide_width_mm": 0.05,
+     "edge_gap_mm": 0.125,
+     "centerline_clearance_mm": 0.175,
+     "sagitta_mm": 0.0005,
+     "orthogonality_tolerance_mm": 1e-09,
+     "pose_tolerance_mm": 1e-07,
+     "crossing_window": "clearance/sin(angle)+2*sagitta along BOTH curves",
+     "crossing_small_angle_deg": 10.0,
+     "crossing_histogram_bins_deg": [
+      "0-1",
+      "1-5",
+      "5-10",
+      "10-20",
+      "20-30",
+      "30-45",
+      "45-60",
+      "60-75",
+      "75-90"
+     ],
+     "legend": "D56 = orthogonal lines + radius-5 quarter arcs + legacy short-S theta pairs"
+    },
+    "violations": []
+   }
+  }
+ ],
+ "crossing_count_note": "crossing counts are recomputed by the independent validator from the exact route geometry (not the engine placement-order counter)"
+}
