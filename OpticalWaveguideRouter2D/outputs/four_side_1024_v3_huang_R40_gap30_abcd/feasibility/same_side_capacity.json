@@ -1,0 +1,260 @@
+{
+ "process": {
+  "radius_mm": 40.0,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "board_mm": 150.0
+ },
+ "note": "each subset is routed ALONE in the plane with the same router, strict index and candidate library as the mixed runs",
+ "planes": {
+  "z1": {
+   "relations": {
+    "same": {
+     "total": 222,
+     "routed": 101,
+     "failed": 121,
+     "evaluations": 13357,
+     "seconds": 44.9,
+     "families": {
+      "SAME_HAIRPIN_B": 34,
+      "SAME_HAIRPIN_A": 58,
+      "SAME_U": 9
+     },
+     "rejection_reasons": {
+      "double_cross": 4773,
+      "spacing": 3331,
+      "tangent_touch": 1808,
+      "overlap": 5
+     }
+    },
+    "opposite": {
+     "total": 196,
+     "routed": 186,
+     "failed": 10,
+     "evaluations": 3766,
+     "seconds": 8.4,
+     "families": {
+      "straight": 4,
+      "S": 162,
+      "U": 20
+     },
+     "rejection_reasons": {
+      "double_cross": 939,
+      "spacing": 630,
+      "tangent_touch": 185,
+      "overlap": 66
+     }
+    },
+    "adjacent": {
+     "total": 94,
+     "routed": 63,
+     "failed": 31,
+     "evaluations": 2503,
+     "seconds": 12.8,
+     "families": {
+      "SHIFT_TURN": 11,
+      "L": 32,
+      "TURN_S": 19,
+      "Z3": 1
+     },
+     "rejection_reasons": {
+      "double_cross": 1365,
+      "spacing": 282,
+      "tangent_touch": 35,
+      "overlap": 1
+     }
+    }
+   },
+   "same_sides": {
+    "N": {
+     "total": 56,
+     "routed": 54,
+     "failed": 2,
+     "evaluations": 613,
+     "seconds": 4.9,
+     "families": {
+      "SAME_HAIRPIN_B": 20,
+      "SAME_HAIRPIN_A": 30,
+      "SAME_U": 4
+     },
+     "rejection_reasons": {
+      "tangent_touch": 66,
+      "spacing": 21
+     }
+    },
+    "E": {
+     "total": 58,
+     "routed": 55,
+     "failed": 3,
+     "evaluations": 484,
+     "seconds": 4.5,
+     "families": {
+      "SAME_HAIRPIN_A": 29,
+      "SAME_HAIRPIN_B": 18,
+      "SAME_U": 8
+     },
+     "rejection_reasons": {
+      "tangent_touch": 94,
+      "spacing": 39
+     }
+    },
+    "S": {
+     "total": 53,
+     "routed": 52,
+     "failed": 1,
+     "evaluations": 410,
+     "seconds": 3.5,
+     "families": {
+      "SAME_HAIRPIN_B": 20,
+      "SAME_HAIRPIN_A": 27,
+      "SAME_U": 5
+     },
+     "rejection_reasons": {
+      "spacing": 27,
+      "tangent_touch": 22
+     }
+    },
+    "W": {
+     "total": 55,
+     "routed": 54,
+     "failed": 1,
+     "evaluations": 327,
+     "seconds": 3.7,
+     "families": {
+      "SAME_HAIRPIN_A": 30,
+      "SAME_HAIRPIN_B": 16,
+      "SAME_U": 8
+     },
+     "rejection_reasons": {
+      "tangent_touch": 28,
+      "spacing": 21
+     }
+    }
+   }
+  },
+  "z2": {
+   "relations": {
+    "same": {
+     "total": 226,
+     "routed": 102,
+     "failed": 124,
+     "evaluations": 12734,
+     "seconds": 40.4,
+     "families": {
+      "SAME_HAIRPIN_A": 51,
+      "SAME_HAIRPIN_B": 39,
+      "SAME_U": 12
+     },
+     "rejection_reasons": {
+      "double_cross": 4588,
+      "spacing": 3241,
+      "tangent_touch": 2177,
+      "overlap": 43
+     }
+    },
+    "opposite": {
+     "total": 188,
+     "routed": 160,
+     "failed": 28,
+     "evaluations": 6422,
+     "seconds": 10.4,
+     "families": {
+      "straight": 5,
+      "S": 133,
+      "U": 22
+     },
+     "rejection_reasons": {
+      "double_cross": 3167,
+      "spacing": 1449,
+      "tangent_touch": 251,
+      "overlap": 229
+     }
+    },
+    "adjacent": {
+     "total": 98,
+     "routed": 61,
+     "failed": 37,
+     "evaluations": 3901,
+     "seconds": 17.7,
+     "families": {
+      "SHIFT_TURN": 10,
+      "L": 36,
+      "TURN_S": 15
+     },
+     "rejection_reasons": {
+      "double_cross": 1712,
+      "tangent_touch": 951,
+      "spacing": 343
+     }
+    }
+   },
+   "same_sides": {
+    "N": {
+     "total": 56,
+     "routed": 55,
+     "failed": 1,
+     "evaluations": 326,
+     "seconds": 3.4,
+     "families": {
+      "SAME_HAIRPIN_A": 30,
+      "SAME_HAIRPIN_B": 18,
+      "SAME_U": 7
+     },
+     "rejection_reasons": {
+      "tangent_touch": 33,
+      "spacing": 6,
+      "double_cross": 2
+     }
+    },
+    "E": {
+     "total": 54,
+     "routed": 52,
+     "failed": 2,
+     "evaluations": 481,
+     "seconds": 3.4,
+     "families": {
+      "SAME_HAIRPIN_A": 30,
+      "SAME_HAIRPIN_B": 16,
+      "SAME_U": 6
+     },
+     "rejection_reasons": {
+      "tangent_touch": 117,
+      "spacing": 24,
+      "double_cross": 13,
+      "overlap": 10
+     }
+    },
+    "S": {
+     "total": 59,
+     "routed": 57,
+     "failed": 2,
+     "evaluations": 623,
+     "seconds": 4.2,
+     "families": {
+      "SAME_HAIRPIN_B": 21,
+      "SAME_HAIRPIN_A": 30,
+      "SAME_U": 6
+     },
+     "rejection_reasons": {
+      "tangent_touch": 213,
+      "spacing": 44
+     }
+    },
+    "W": {
+     "total": 57,
+     "routed": 57,
+     "failed": 0,
+     "evaluations": 560,
+     "seconds": 3.4,
+     "families": {
+      "SAME_HAIRPIN_A": 32,
+      "SAME_HAIRPIN_B": 21,
+      "SAME_U": 4
+     },
+     "rejection_reasons": {}
+    }
+   }
+  }
+ }
+}

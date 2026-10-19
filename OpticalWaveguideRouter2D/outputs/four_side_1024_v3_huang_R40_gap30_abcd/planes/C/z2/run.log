@@ -1,0 +1,11 @@
+2026-10-19T21:10:41.275845+08:00 V3 plane run start: plane=z2 algorithm=C radius=40.0 gap=0.03 clearance=0.08 eval_budget=300000 time_budget=900.0 seed=20261019
+2026-10-19T21:10:41.429393+08:00 ports: 512 connections, 1024 ports, relations={'same': 226, 'adjacent': 98, 'opposite': 188}, passed=True
+2026-10-19T21:10:41.441393+08:00 frames: {"same": 226, "opposite": 188, "adjacent": 98}
+2026-10-19T21:11:12.004601+08:00 attempted 128/512 accepted=78 {'same': 34, 'opposite': 29, 'adjacent': 15} evals=4010 elapsed=30.5s
+2026-10-19T21:12:09.796651+08:00 attempted 256/512 accepted=121 {'same': 45, 'opposite': 52, 'adjacent': 24} evals=13863 elapsed=88.3s
+2026-10-19T21:13:03.301181+08:00 attempted 384/512 accepted=162 {'same': 52, 'opposite': 81, 'adjacent': 29} evals=25813 elapsed=141.8s
+2026-10-19T21:13:51.502822+08:00 attempted 512/512 accepted=218 {'same': 60, 'opposite': 129, 'adjacent': 29} evals=39904 elapsed=190.0s
+2026-10-19T21:13:52.211443+08:00 ripup round 1: committed=0 progress=0 accepted=218 failed=294
+2026-10-19T21:13:52.212442+08:00 ripup: {'rounds': 3, 'improvements': 0, 'duration_seconds': 0.7090943999974115}
+2026-10-19T21:14:02.988249+08:00 final internal audit removed 0 route(s)
+2026-10-19T21:14:03.020244+08:00 DONE C_z2: routed=218/512 by_relation={'same': 60, 'opposite': 129, 'adjacent': 29} evals=40027 runtime=201.7s

@@ -128,3 +128,14 @@ python -m four_side_1024.fslw.run --topology V2 --plane z2 --algorithm C
 python -m four_side_1024.fslw.validate_fslw --scan-root outputs/four_side_1024_fslw_R40_gap30_abcd/planes
 python -m four_side_1024.fslw.plots --root outputs/four_side_1024_fslw_R40_gap30_abcd --all
 ```
+
+## V3-Huang 同边 U 型/回折轮（2026-10-19）
+
+`v3/` 包实现用户提供的 V3-Huang 1024 通道连接（same 448 / opposite 384 / adjacent 192）
+在双高度真实 2×16 接口、R=40 mm 固定、30 µm 间距下的 ABCD 实验：同边规范帧
+（四边旋转到 y=0，起向 +y 终向 −y）、同边族 `SAME_U` 与 `SAME_HAIRPIN_A/B`
+（短 S + 相邻两段四分之一弧半圆回折）、A/B/C/D 调度（A 对边优先、B 同边优先、
+C 四边轮流 batch=16、D 全局联合 + LNS）、独立 strict 校验器 `validate_v3.py`、
+Phase-3 几何测试 `feasibility.py` 与类别隔离容量 `same_side_capacity.py`。
+全部代码/报告/证据见 `outputs/four_side_1024_v3_huang_R40_gap30_abcd/` 与
+`docs/reports/four_side_1024_v3_huang_R40_gap30_abcd.md`。

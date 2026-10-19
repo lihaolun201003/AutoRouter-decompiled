@@ -1,0 +1,55 @@
+{
+ "schema": "four_side_1024_v3_strict_crosscheck_v1",
+ "roles": {
+  "router": "four_side_1024.d56.index.D56Index(width=0.05, gap=0.03, crossing_policy='strict')",
+  "validator": "four_side_1024.v3.validate_v3 policy='strict' (authoritative)"
+ },
+ "routes_file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\B\\z2\\routes.json",
+ "routes_sha256": "3ded2aaf77a43f8575431c3c87c847be8880ef8c33bc33e3d0de8e189c87518b",
+ "plane": "z2",
+ "process": {
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "centerline_clearance_mm": 0.08,
+  "radius_mm": 40.0,
+  "parameters_source": "routes.json:process"
+ },
+ "routed_route_count": 233,
+ "routed_by_relation": {
+  "adjacent": 25,
+  "opposite": 106,
+  "same": 102
+ },
+ "compared_pair_count": 21376,
+ "mismatch_count": 0,
+ "mismatches": [],
+ "validator_invalid_pairs": 0,
+ "router_invalid_pairs": 0,
+ "invalid_both_pairs": 0,
+ "strict_invalid_pairs": [],
+ "strict_failed_route_count": 0,
+ "strict_failed_route_ids": [],
+ "strict_passed_route_count": 233,
+ "validator_failed_route_ids": [],
+ "router_failed_route_ids": [],
+ "validator_passed_route_count": 233,
+ "router_passed_route_count": 233,
+ "crossing_count": {
+  "validator": 34029,
+  "router": 34029,
+  "matches": true,
+  "per_pair_mismatch_count": 0,
+  "per_pair_mismatches": []
+ },
+ "window_consistency": {
+  "validator_window_count": 34029,
+  "router_window_count": 34029,
+  "count_matches": true,
+  "validator_max_half_mm": 1.3668078872925544,
+  "validator_mean_half_mm": 0.12071725938703384,
+  "router_max_half_mm": 1.366808533894934,
+  "router_mean_total_window_mm": 0.48285719925833726
+ },
+ "runtime_seconds": 12.087139399998705,
+ "passed": true
+}

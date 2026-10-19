@@ -1,0 +1,664 @@
+{
+  "passed": true,
+  "failed_checks": [],
+  "inputs": {
+    "csv": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_fiber_pairs.csv",
+      "sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+      "expected_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+      "bytes": 39565
+    },
+    "xlsx": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_four_side_connectors.xlsx",
+      "sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+      "expected_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+      "bytes": 91589,
+      "sheet_names": [
+        "Sheet1",
+        "接口映射",
+        "连接类别统计",
+        "64x64连接矩阵",
+        "光纤级连接_参考",
+        "接头对重数",
+        "生成说明"
+      ]
+    },
+    "provenance": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\PROVENANCE.json"
+  },
+  "model": {
+    "port_model": "real_2x16_dual_height",
+    "interface_standard": "IEC 61754-7-3:2019 2x16 MPO",
+    "board_mm": [
+      150.0,
+      150.0
+    ],
+    "connectors_per_side": 16,
+    "connector_pitch_mm": 9.0,
+    "first_connector_center_mm": 7.5,
+    "fiber_column_pitch_mm": 0.25,
+    "fiber_row_pitch_mm": 0.5,
+    "rows": 2,
+    "columns": 16,
+    "channels_per_connector": 32,
+    "plane_z_mm": {
+      "1": 0.0,
+      "2": 0.5
+    },
+    "plane_rule": "CSV row 1 -> z1 (512 conns), row 2 -> z2 (512 conns); relation comes from the CSV relation column, never from the row",
+    "relation_rule": "relation column: same/opposite/adjacent; pair = sorted side letters (same -> NN/SS/EE/WW, opposite -> NS/EW, adjacent -> EN/NW/ES/SW)",
+    "along_formula": "along = connector_center + (column - 8.5) * 0.25",
+    "physical_3d_definition": "(x, y, z) with z = z1 for row 1, z2 for row 2",
+    "z_transition": "not_implemented (two independent 2D planes)",
+    "layer": "0 (independent 2D plane)",
+    "cross_plane_rule": "cross-plane XY projections are NOT same-layer conflicts",
+    "manufacturing_status": "simulation under the two-height interface assumption; glass thickness / connector mounting unconfirmed; not a claim of manufacturability"
+  },
+  "expected": {
+    "rows": 1024,
+    "route_id_min": 1,
+    "route_id_max": 1024,
+    "class_counts": {
+      "same": 448,
+      "opposite": 384,
+      "adjacent": 192
+    },
+    "pair_counts": {
+      "NN": 112,
+      "SS": 112,
+      "EE": 112,
+      "WW": 112,
+      "NS": 192,
+      "EW": 192,
+      "EN": 48,
+      "NW": 48,
+      "ES": 48,
+      "SW": 48
+    },
+    "plane_row_counts": {
+      "z1": {
+        "same": 222,
+        "opposite": 196,
+        "adjacent": 94
+      },
+      "z2": {
+        "same": 226,
+        "opposite": 188,
+        "adjacent": 98
+      }
+    },
+    "plane_connections": {
+      "z1": 512,
+      "z2": 512
+    },
+    "plane_endpoints": {
+      "z1": 1024,
+      "z2": 1024
+    },
+    "connectors": 64,
+    "endpoints": 2048,
+    "fibres_per_connector": 32,
+    "physical_ports": 2048,
+    "matrix_total": 2048,
+    "excel_sheets": 7
+  },
+  "checks": {
+    "sha256_provenance": {
+      "passed": true,
+      "available": true,
+      "mismatches": [],
+      "files": [
+        {
+          "file": "connectors_xlsx",
+          "stored_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+          "source_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+          "actual_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+          "matches_stored": true,
+          "matches_source": true,
+          "matches_task_expected": true
+        },
+        {
+          "file": "fiber_pairs_csv",
+          "stored_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+          "source_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+          "actual_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+          "matches_stored": true,
+          "matches_source": true,
+          "matches_task_expected": true
+        }
+      ],
+      "provenance": {
+        "staged_at": "2026-10-19T20:48:43.275505+08:00",
+        "note": "V3-Huang 1024-channel four-side connector-level topology and fiber-level pairing; byte-identical copies of the user-supplied files, never edited.",
+        "files": {
+          "connectors_xlsx": {
+            "source_path": "C:\\Users\\lihao\\Desktop\\fiberBoard1024_黄志杰风格_四边接口连接.xlsx.xlsx",
+            "source_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+            "stored_path": "data\\v3_huang\\fiberBoard1024_huang_four_side_connectors.xlsx",
+            "stored_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+            "bytes": 91589
+          },
+          "fiber_pairs_csv": {
+            "source_path": "C:\\Users\\lihao\\Desktop\\fiberBoard1024_黄志杰风格_光纤配对.csv.csv",
+            "source_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+            "stored_path": "data\\v3_huang\\fiberBoard1024_huang_fiber_pairs.csv",
+            "stored_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+            "bytes": 39565
+          }
+        }
+      },
+      "bytes_expected": {
+        "connectors_xlsx": 91589,
+        "fiber_pairs_csv": 39565
+      }
+    },
+    "csv_header": {
+      "passed": true,
+      "observed": [
+        "route_id",
+        "source_side",
+        "source_connector",
+        "source_row",
+        "source_column",
+        "source_channel",
+        "target_side",
+        "target_connector",
+        "target_row",
+        "target_column",
+        "target_channel",
+        "relation"
+      ],
+      "expected": [
+        "route_id",
+        "source_side",
+        "source_connector",
+        "source_row",
+        "source_column",
+        "source_channel",
+        "target_side",
+        "target_connector",
+        "target_row",
+        "target_column",
+        "target_channel",
+        "relation"
+      ]
+    },
+    "excel_sheet_count": {
+      "passed": true,
+      "observed": 7,
+      "expected": 7,
+      "sheet_names": [
+        "Sheet1",
+        "接口映射",
+        "连接类别统计",
+        "64x64连接矩阵",
+        "光纤级连接_参考",
+        "接头对重数",
+        "生成说明"
+      ]
+    },
+    "connections": {
+      "passed": true,
+      "observed": 1024,
+      "expected": 1024
+    },
+    "route_ids": {
+      "passed": true,
+      "unique": 1024,
+      "min": 1,
+      "max": 1024
+    },
+    "class_counts": {
+      "passed": true,
+      "observed": {
+        "same": 448,
+        "opposite": 384,
+        "adjacent": 192
+      },
+      "expected": {
+        "same": 448,
+        "opposite": 384,
+        "adjacent": 192
+      },
+      "source": "CSV relation column (never inferred from the row number)"
+    },
+    "pair_counts": {
+      "passed": true,
+      "observed": {
+        "NN": 112,
+        "SS": 112,
+        "EE": 112,
+        "WW": 112,
+        "NS": 192,
+        "EW": 192,
+        "EN": 48,
+        "NW": 48,
+        "ES": 48,
+        "SW": 48
+      },
+      "expected": {
+        "NN": 112,
+        "SS": 112,
+        "EE": 112,
+        "WW": 112,
+        "NS": 192,
+        "EW": 192,
+        "EN": 48,
+        "NW": 48,
+        "ES": 48,
+        "SW": 48
+      }
+    },
+    "relation_matches_sides": {
+      "passed": true,
+      "violations": 0,
+      "sample": [],
+      "note": "consistency check only; classification itself uses the CSV column"
+    },
+    "channel_formula": {
+      "passed": true,
+      "violations": 0,
+      "sample": [],
+      "formula": "channel = (row-1)*16 + column"
+    },
+    "connector_letter": {
+      "passed": true,
+      "violations": 0,
+      "sample": []
+    },
+    "no_same_side_self_connector": {
+      "passed": true,
+      "violations": 0,
+      "sample": []
+    },
+    "endpoints_used_once": {
+      "passed": true,
+      "distinct": 2048,
+      "expected": 2048,
+      "usage_min": 1,
+      "usage_max": 1,
+      "missing": 0,
+      "extra": 0
+    },
+    "endpoint_count": {
+      "passed": true,
+      "observed": 2048,
+      "expected": 2048
+    },
+    "connector_fibres": {
+      "passed": true,
+      "connectors": 64,
+      "expected_connectors": 64,
+      "fibres_each": 32,
+      "channels_ok": 64
+    },
+    "no_mixed_rows": {
+      "passed": true,
+      "violations": 0,
+      "sample": []
+    },
+    "dual_height_split": {
+      "passed": true,
+      "planes": {
+        "z1": {
+          "row": 1,
+          "z_mm": 0.0,
+          "connections": 512,
+          "expected_connections": 512,
+          "class_counts": {
+            "same": 222,
+            "opposite": 196,
+            "adjacent": 94
+          },
+          "expected_class_counts": {
+            "same": 222,
+            "opposite": 196,
+            "adjacent": 94
+          }
+        },
+        "z2": {
+          "row": 2,
+          "z_mm": 0.5,
+          "connections": 512,
+          "expected_connections": 512,
+          "class_counts": {
+            "same": 226,
+            "opposite": 188,
+            "adjacent": 98
+          },
+          "expected_class_counts": {
+            "same": 226,
+            "opposite": 188,
+            "adjacent": 98
+          }
+        }
+      },
+      "rule": "CSV row 1 -> z1, row 2 -> z2 (mixed classes, relation from column)"
+    },
+    "plane_endpoint_lists": {
+      "passed": true,
+      "planes": {
+        "z1": {
+          "count": 1024,
+          "expected": 1024,
+          "unique": 1024,
+          "rows": [
+            1
+          ]
+        },
+        "z2": {
+          "count": 1024,
+          "expected": 1024,
+          "unique": 1024,
+          "rows": [
+            2
+          ]
+        }
+      }
+    },
+    "physical_ports": {
+      "passed": true,
+      "count": 2048,
+      "expected": 2048,
+      "distinct_identities": 2048,
+      "duplicates": 0,
+      "max_coordinate_error_mm": 0.0,
+      "unique_3d": 2048,
+      "projected_xy_distinct": 1024,
+      "cross_plane_projected_duplicate_ports": 1024,
+      "z1": 1024,
+      "z2": 1024
+    },
+    "port_pitches": {
+      "passed": true,
+      "column_pitch_mm": 0.25,
+      "column_pitch_observed": [
+        0.25
+      ],
+      "row_z_separation_mm": 0.5,
+      "fiber_row_pitch_mm": 0.5,
+      "connector_pitch_mm": 9.0,
+      "connector_centers_first_last": [
+        7.5,
+        142.5
+      ]
+    },
+    "connector_degree": {
+      "passed": true,
+      "row_sums": [
+        32
+      ],
+      "expected": 32,
+      "total": 2048,
+      "note": "undirected connector matrix: each connector is incident to exactly 32 fibre connections (row sum 32; matrix total 2048 = 2 x 1024)"
+    },
+    "excel_sheet1_pairs": {
+      "passed": true,
+      "sheet_rows": 1024,
+      "csv_rows": 1024,
+      "same_order": true,
+      "same_multiset": true,
+      "min_port": 1,
+      "max_port": 64,
+      "self_pairs": 0
+    },
+    "excel_port_map": {
+      "passed": true,
+      "rows": 64,
+      "names_match": true,
+      "centers_match": true,
+      "distinct_targets_match": true,
+      "distinct_targets_range": [
+        12,
+        23
+      ]
+    },
+    "excel_64x64_matrix": {
+      "passed": true,
+      "shape": [
+        64,
+        64
+      ],
+      "names_match": true,
+      "equals_csv_connector_counts": true,
+      "symmetric": true,
+      "diagonal_zero": true,
+      "row_sums": [
+        32
+      ],
+      "total": 2048,
+      "total_expected": 2048,
+      "note": "symmetric matrix counts each undirected connection twice (sum=2048=2*1024); per-connector degree 32"
+    },
+    "excel_fibre_sheet_equals_csv": {
+      "passed": true,
+      "rows": 1024,
+      "expected_rows": 1024,
+      "header_match": true,
+      "mismatches": 0,
+      "sample": []
+    },
+    "excel_pair_multiplicity": {
+      "passed": true,
+      "rows": 549,
+      "unique_pairs": 549,
+      "csv_unique_pairs": 549,
+      "counts_match": true,
+      "classes_match": true,
+      "total": 1024
+    },
+    "excel_class_statistics": {
+      "passed": true,
+      "sheet_counts": {
+        "same": 448,
+        "opposite": 384,
+        "adjacent": 192,
+        "total": 1024
+      },
+      "sheet_pair_counts": {
+        "NN": 112,
+        "NW": 48,
+        "SS": 112,
+        "ES": 48,
+        "EE": 112,
+        "SW": 48,
+        "WW": 112,
+        "NS": 192,
+        "EW": 192,
+        "EN": 48
+      },
+      "csv_counts": {
+        "same": 448,
+        "opposite": 384,
+        "adjacent": 192
+      },
+      "csv_pair_counts": {
+        "NN": 112,
+        "SS": 112,
+        "EE": 112,
+        "WW": 112,
+        "NS": 192,
+        "EW": 192,
+        "EN": 48,
+        "NW": 48,
+        "ES": 48,
+        "SW": 48
+      }
+    }
+  },
+  "counts": {
+    "connections": 1024,
+    "class_counts": {
+      "same": 448,
+      "opposite": 384,
+      "adjacent": 192
+    },
+    "pair_counts": {
+      "NN": 112,
+      "SS": 112,
+      "EE": 112,
+      "WW": 112,
+      "NS": 192,
+      "EW": 192,
+      "EN": 48,
+      "NW": 48,
+      "ES": 48,
+      "SW": 48
+    },
+    "planes": {
+      "z1": {
+        "row": 1,
+        "z_mm": 0.0,
+        "connections": 512,
+        "expected_connections": 512,
+        "class_counts": {
+          "same": 222,
+          "opposite": 196,
+          "adjacent": 94
+        },
+        "expected_class_counts": {
+          "same": 222,
+          "opposite": 196,
+          "adjacent": 94
+        }
+      },
+      "z2": {
+        "row": 2,
+        "z_mm": 0.5,
+        "connections": 512,
+        "expected_connections": 512,
+        "class_counts": {
+          "same": 226,
+          "opposite": 188,
+          "adjacent": 98
+        },
+        "expected_class_counts": {
+          "same": 226,
+          "opposite": 188,
+          "adjacent": 98
+        }
+      }
+    },
+    "connectors": 64,
+    "endpoints": 2048,
+    "unique_connector_pairs": 549,
+    "physical_ports": 2048
+  },
+  "excel": {
+    "sheet_names": [
+      "Sheet1",
+      "接口映射",
+      "连接类别统计",
+      "64x64连接矩阵",
+      "光纤级连接_参考",
+      "接头对重数",
+      "生成说明"
+    ],
+    "sheet_roles": {
+      "ports": "Sheet1",
+      "port_map": "接口映射",
+      "class_stats": "连接类别统计",
+      "matrix": "64x64连接矩阵",
+      "fibre_reference": "光纤级连接_参考",
+      "pair_multiplicity": "接头对重数",
+      "generation_notes": "生成说明"
+    },
+    "port_pairs": 1024,
+    "port_map_rows": 64,
+    "matrix_shape": [
+      64,
+      64
+    ],
+    "fibre_rows": 1024,
+    "multiplicities": 549,
+    "class_stats": {
+      "same": 448,
+      "opposite": 384,
+      "adjacent": 192,
+      "total": 1024
+    },
+    "notes": [
+      {
+        "item": "源数据",
+        "description": "用户上传 fiberBoard512.xlsx；512条Port1-Port2需求"
+      },
+      {
+        "item": "1024扩展策略",
+        "description": "原上/下各32接头每2个相邻接头合并为1个32芯接口；原图分别映射到 N/S 和 E/W，复制为1024条"
+      },
+      {
+        "item": "加入邻边",
+        "description": "从NS和EW各取96条对边边，按两种方向交换端点，增加192条邻边、保持全部接口度数"
+      },
+      {
+        "item": "同边比例",
+        "description": "448/1024=43.75%，完全保持黄原始同边比例；其余是对边384、邻边192"
+      },
+      {
+        "item": "接口数量",
+        "description": "N/E/S/W各16个，一共64，每个32芯（2行×16列）；接头中心间距9mm"
+      },
+      {
+        "item": "主表用法",
+        "description": "Sheet1仅 Port1 Port2，与黄原始表保持同名字段；数字对应接口映射sheet"
+      },
+      {
+        "item": "光纤配对方法",
+        "description": "对生成的32-正则接头图取Euler回路并交替分配Row 1/Row 2（每行各512条），同排内按接头目标分组排序分配16列"
+      },
+      {
+        "item": "光纤CSV",
+        "description": "包含source_*/target_*等12个字段；2048个光纤端点恰好各使用一次。仅作为新拓扑基准和算法输入候选"
+      },
+      {
+        "item": "不是实测",
+        "description": "尚未运行R40 D56寻路，因此不保证1024条的布通率或最小间距"
+      },
+      {
+        "item": "注意现有代码",
+        "description": "当前 four_side_1024/fslw/ports.py 明确拒绝同边连接、预设 row1对边row2邻边；直接运行本CSV会报错，需要扩展加载器"
+      },
+      {
+        "item": "旧输入兼容性",
+        "description": "原版 problem_graph.py 硬编码 above_list/below_list 接头号与16芯，不可把新编号1..64的Sheet1直接当旧512输入运行"
+      },
+      {
+        "item": "算法边界",
+        "description": "本任务只生成连接拓扑与光纤分配，不更改原V1/V2 CSV，也未开发路由算法"
+      },
+      {
+        "item": "确定性随机种子",
+        "description": "20261019"
+      },
+      {
+        "item": "源仓库",
+        "description": "https://github.com/lihaolun201003/AutoRouter-decompiled"
+      }
+    ]
+  },
+  "warnings": [
+    "All coordinates in this audit are simulation under the two-height interface assumption (z1 = 0.0 mm, z2 = 0.5 mm are model values); glass thickness and connector mounting direction are not confirmed.",
+    "No z transition (via / taper / fanout) is implemented; the two planes are independent 2D routing problems and cross-plane XY projections are NOT same-layer conflicts.",
+    "9 mm connector pitch mechanical interference is unresolved: the provisional MPO housing envelope 12.59 mm overlaps neighbouring housings by 3.59 mm (the 3.75 mm fiber span itself fits); this is inherited from the FSLW round.",
+    "The V3 topology is a synthetic 1024-channel expansion of the user-provided 512 fiberBoard (doubling + 96 NS/EW direction exchanges + Euler row/column fibre assignment); it is a topology baseline, not a measured or hardware validated demand (see the workbook generation-notes sheet).",
+    "Same-side connections (448 = 43.75%) require hairpin/U (refold) routing; the previous fslw loader rejects same-side connections and assumes row1=opposite / row2=adjacent, so V3 needs the new loader/validator.",
+    "The relation is authoritative from the CSV relation column; the row only selects the dual-height plane. Row 1 contains 222 same + 196 opposite + 94 adjacent; row 2 contains 226 + 188 + 98.",
+    "Excel Sheet1 Port1/Port2 uses 1-based connector indices 1..64 following the port-map sheet (N01=1 ... W16=64); all 1024 rows match the CSV in order.",
+    "Cross-plane XY projections are not same-layer conflicts; conflict checking is per plane only."
+  ],
+  "note_lines": [
+    "用户上传 fiberBoard512.xlsx；512条Port1-Port2需求",
+    "原上/下各32接头每2个相邻接头合并为1个32芯接口；原图分别映射到 N/S 和 E/W，复制为1024条",
+    "从NS和EW各取96条对边边，按两种方向交换端点，增加192条邻边、保持全部接口度数",
+    "448/1024=43.75%，完全保持黄原始同边比例；其余是对边384、邻边192",
+    "N/E/S/W各16个，一共64，每个32芯（2行×16列）；接头中心间距9mm",
+    "Sheet1仅 Port1 Port2，与黄原始表保持同名字段；数字对应接口映射sheet",
+    "对生成的32-正则接头图取Euler回路并交替分配Row 1/Row 2（每行各512条），同排内按接头目标分组排序分配16列",
+    "包含source_*/target_*等12个字段；2048个光纤端点恰好各使用一次。仅作为新拓扑基准和算法输入候选",
+    "尚未运行R40 D56寻路，因此不保证1024条的布通率或最小间距",
+    "当前 four_side_1024/fslw/ports.py 明确拒绝同边连接、预设 row1对边row2邻边；直接运行本CSV会报错，需要扩展加载器",
+    "原版 problem_graph.py 硬编码 above_list/below_list 接头号与16芯，不可把新编号1..64的Sheet1直接当旧512输入运行",
+    "本任务只生成连接拓扑与光纤分配，不更改原V1/V2 CSV，也未开发路由算法",
+    "20261019",
+    "https://github.com/lihaolun201003/AutoRouter-decompiled"
+  ]
+}

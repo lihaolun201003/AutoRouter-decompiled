@@ -1,0 +1,293 @@
+{
+ "schema": "four_side_1024_v3_planes_summary_v1",
+ "tool": "four_side_1024.v3.combine",
+ "generated_at": "2026-10-19T21:21:09+0800",
+ "topology": "V3_Huang",
+ "algorithm": "C",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "min_radius_mm": 40.0,
+  "radius_mm": 40.0,
+  "fixed_radius_40mm": true,
+  "sagitta_mm": 0.0005,
+  "propagation_loss_db_per_cm": 0.05,
+  "min_cross_angle_deg": 5.0,
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "connections_per_plane": 512,
+  "total_connections": 1024,
+  "source": "four_side_1024.v3.config (process imported from fslw.config by the frozen V3 config module)",
+  "overrides": {
+   "experiment": "V3_C_z1",
+   "topology": "V3_Huang",
+   "algorithm": "C",
+   "plane": "z1",
+   "z_mm": 0.0,
+   "port_model": "real_2x16_dual_height",
+   "name": "C_round_robin",
+   "eval_budget": 300000,
+   "time_budget_seconds": 900.0,
+   "seed": 20261019,
+   "waveguide_width_mm": 0.05,
+   "min_edge_gap_mm": 0.03,
+   "min_centerline_clearance_mm": 0.08,
+   "min_bend_radius_mm": 40.0,
+   "propagation_loss_db_per_cm": 0.05,
+   "sagitta_mm": 0.0005,
+   "min_cross_angle_deg": 5.0
+  },
+  "plane": "z1",
+  "z_mm": 0.0,
+  "topology": "V3_Huang",
+  "algorithm": "C",
+  "experiment": "V3_C_z1",
+  "seed": 20261019,
+  "eval_budget": 300000,
+  "time_budget_seconds": 900.0
+ },
+ "planes": {
+  "z1": {
+   "plane": "z1",
+   "row": 1,
+   "z_mm": 0.0,
+   "run_dir": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z1",
+   "routed": 247,
+   "unrouted": 265,
+   "connections_total": 512,
+   "routing_rate": 0.482421875,
+   "by_class": {
+    "same": {
+     "success": 63,
+     "routed": 63,
+     "failed": 159,
+     "total": 222,
+     "routing_rate": 0.28378378378378377,
+     "expected_total": 448,
+     "matches_expected": false,
+     "pairs": [
+      "NN",
+      "SS",
+      "EE",
+      "WW"
+     ]
+    },
+    "opposite": {
+     "success": 147,
+     "routed": 147,
+     "failed": 49,
+     "total": 196,
+     "routing_rate": 0.75,
+     "expected_total": 384,
+     "matches_expected": false,
+     "pairs": [
+      "NS",
+      "EW"
+     ]
+    },
+    "adjacent": {
+     "success": 37,
+     "routed": 37,
+     "failed": 57,
+     "total": 94,
+     "routing_rate": 0.39361702127659576,
+     "expected_total": 192,
+     "matches_expected": false,
+     "pairs": [
+      "NE",
+      "NW",
+      "ES",
+      "SW"
+     ]
+    }
+   },
+   "path_shapes": {
+    "straight": 2,
+    "short_S": 133,
+    "L": 12,
+    "U": 63,
+    "multi_bend_refold": 25,
+    "other": 12
+   },
+   "u_route_count": 63,
+   "crossing_count": 34144,
+   "mean_length_mm": 202.7883031521555,
+   "audit_passed": true,
+   "vector_files": {
+    "gds": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z1\\routing_all.gds",
+    "svg": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z1\\routing_all.svg",
+    "created": false
+   }
+  },
+  "z2": {
+   "plane": "z2",
+   "row": 2,
+   "z_mm": 0.5,
+   "run_dir": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z2",
+   "routed": 218,
+   "unrouted": 294,
+   "connections_total": 512,
+   "routing_rate": 0.42578125,
+   "by_class": {
+    "same": {
+     "success": 60,
+     "routed": 60,
+     "failed": 166,
+     "total": 226,
+     "routing_rate": 0.26548672566371684,
+     "expected_total": 448,
+     "matches_expected": false,
+     "pairs": [
+      "NN",
+      "SS",
+      "EE",
+      "WW"
+     ]
+    },
+    "opposite": {
+     "success": 129,
+     "routed": 129,
+     "failed": 59,
+     "total": 188,
+     "routing_rate": 0.6861702127659575,
+     "expected_total": 384,
+     "matches_expected": false,
+     "pairs": [
+      "NS",
+      "EW"
+     ]
+    },
+    "adjacent": {
+     "success": 29,
+     "routed": 29,
+     "failed": 69,
+     "total": 98,
+     "routing_rate": 0.29591836734693877,
+     "expected_total": 192,
+     "matches_expected": false,
+     "pairs": [
+      "NE",
+      "NW",
+      "ES",
+      "SW"
+     ]
+    }
+   },
+   "path_shapes": {
+    "straight": 3,
+    "short_S": 114,
+    "L": 3,
+    "U": 60,
+    "multi_bend_refold": 26,
+    "other": 12
+   },
+   "u_route_count": 60,
+   "crossing_count": 28811,
+   "mean_length_mm": 210.3417390291575,
+   "audit_passed": true,
+   "vector_files": {
+    "gds": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z2\\routing_all.gds",
+    "svg": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z2\\routing_all.svg",
+    "created": false
+   }
+  }
+ },
+ "combined": {
+  "routed": 465,
+  "unrouted": 559,
+  "connections_total": 1024,
+  "routing_rate": 0.4541015625,
+  "same_side_routed": 123,
+  "total_length_mm": 95943.20998693875,
+  "same_plane_crossings": 62955,
+  "cross_plane_projected_overlap_informational": 64432,
+  "propagation_loss_total_db": 479.71604993469396,
+  "u_route_count": 123,
+  "refold_route_count": 51
+ },
+ "gds": {
+  "combined": {
+   "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\combined\\C\\routing_1024_two_height.gds",
+   "bytes": 1025550,
+   "layer_documentation": "routing_1024_two_height.gds: layer 0 = plane z1 (row 1, model height 0.0), layer 1 = plane z2 (row 2, model height 0.5). The two GDS layers represent two PHYSICAL HEIGHTS of the same single-layer process; they are NOT a multi-layer waveguide stack, and no z-transition/via/fanout is implemented. Cross-plane XY projections are not conflicts (SPEC §2).",
+   "layers": [
+    0,
+    1
+   ],
+   "datatypes": [
+    0
+   ],
+   "paths_per_layer": {
+    "0": 247,
+    "1": 218
+   },
+   "plane_counts": {
+    "z1": {
+     "layer": 0,
+     "paths": 247,
+     "routed": 247
+    },
+    "z2": {
+     "layer": 1,
+     "paths": 218,
+     "routed": 218
+    }
+   },
+   "width_mm": 0.05,
+   "arc_chord_sagitta_mm": 0.0005,
+   "unit_m": 0.001,
+   "precision_m": 1e-09,
+   "verified": true,
+   "status": "research dual-height geometry; chordal arcs; not a fabrication release"
+  },
+  "plane_layer_ownership": {
+   "planes/<A>/z1/routing_all.gds": "single layer 0 (plane z1)",
+   "planes/<A>/z2/routing_all.gds": "single layer 0 (plane z2)",
+   "routing_1024_two_height.gds": "routing_1024_two_height.gds: layer 0 = plane z1 (row 1, model height 0.0), layer 1 = plane z2 (row 2, model height 0.5). The two GDS layers represent two PHYSICAL HEIGHTS of the same single-layer process; they are NOT a multi-layer waveguide stack, and no z-transition/via/fanout is implemented. Cross-plane XY projections are not conflicts (SPEC §2)."
+  }
+ },
+ "figures": {
+  "layer_2d_png": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\combined\\C\\layer_2d.png",
+   "svg": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\combined\\C\\layer_2d.svg",
+   "kind": "layer_2d",
+   "routed": 465,
+   "per_plane": {
+    "z1": 247,
+    "z2": 218
+   }
+  },
+  "overlay_3d_png": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\combined\\C\\overlay_3d.png",
+   "kind": "overlay_3d",
+   "routed": 465,
+   "per_plane": {
+    "z1": 247,
+    "z2": 218
+   },
+   "z_model": {
+    "z1": 0.0,
+    "z2": 0.5,
+    "z2_minus_z1_mm": 0.5,
+    "note": "vertical scale exaggerated for display"
+   }
+  }
+ },
+ "files": {
+  "routes_1024_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\combined\\C\\routes_1024.json",
+  "statistics_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\combined\\C\\statistics.json"
+ },
+ "wall_seconds": 9.419742099998984
+}

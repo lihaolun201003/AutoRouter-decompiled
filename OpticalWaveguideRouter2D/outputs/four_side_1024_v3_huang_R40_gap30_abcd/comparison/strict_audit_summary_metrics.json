@@ -1,0 +1,487 @@
+{
+ "schema": "four_side_1024_v3_strict_audit_summary_metrics_v1",
+ "tool": "four_side_1024.v3.compare",
+ "generated_at": "2026-10-19T21:24:54+0800",
+ "root": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd",
+ "policy": "strict",
+ "radius_mm": 40.0,
+ "edge_gap_mm": 0.03,
+ "clearance_mm": 0.08,
+ "canonical_validator_summary": {
+  "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\comparison\\strict_audit_summary.json",
+  "present": true,
+  "note": "the validator owns comparison/strict_audit_summary.json; this file is the metrics-side merge and never overwrites it"
+ },
+ "experiments": {
+  "planes/A/z1": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\A\\z1\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 236,
+   "checked_count": 236,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 25248,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 25248,
+   "crossing_window_max_mm": 1.0736272009531953,
+   "sha256": "864072a074ea1fac5431bff396d65c16e7877cf02ae366267a1faf9b86fdcf80",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 236,
+     "failed_status_count": 276,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 222,
+      "adjacent": 94,
+      "opposite": 196
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 222,
+      "opposite": 196,
+      "adjacent": 94
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\A\\z1\\config.json"
+    }
+   }
+  },
+  "planes/A/z2": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\A\\z2\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 219,
+   "checked_count": 219,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 22955,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 22955,
+   "crossing_window_max_mm": 0.9117188827344972,
+   "sha256": "4ea45d17d7f203fd6c8a64aad4fc19b44b0bd0fae483ebc9c58cdf5301f441a5",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 219,
+     "failed_status_count": 293,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 226,
+      "adjacent": 98,
+      "opposite": 188
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 226,
+      "opposite": 188,
+      "adjacent": 98
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\A\\z2\\config.json"
+    }
+   }
+  },
+  "planes/B/z1": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\B\\z1\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 240,
+   "checked_count": 240,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 34977,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 34977,
+   "crossing_window_max_mm": 1.0832714572511597,
+   "sha256": "9b621aea46cf5f122e929d4f075c6a9b5a07bbb7339f007a48b997d87dea2aea",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 240,
+     "failed_status_count": 272,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 222,
+      "adjacent": 94,
+      "opposite": 196
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 222,
+      "opposite": 196,
+      "adjacent": 94
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\B\\z1\\config.json"
+    }
+   }
+  },
+  "planes/B/z2": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\B\\z2\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 233,
+   "checked_count": 233,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 34029,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 34029,
+   "crossing_window_max_mm": 1.3668078872925544,
+   "sha256": "0528ef88fd0c9a2283f39238a392fea8160e8ade5e275fab9baf63eaac1070b4",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 233,
+     "failed_status_count": 279,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 226,
+      "adjacent": 98,
+      "opposite": 188
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 226,
+      "opposite": 188,
+      "adjacent": 98
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\B\\z2\\config.json"
+    }
+   }
+  },
+  "planes/C/z1": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z1\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 247,
+   "checked_count": 247,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 34144,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 34144,
+   "crossing_window_max_mm": 1.0528581638838341,
+   "sha256": "7d7c17cd1083b99c899b96773babc295c8283f62cdbacca1cd25210f9f40cbf6",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 247,
+     "failed_status_count": 265,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 222,
+      "adjacent": 94,
+      "opposite": 196
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 222,
+      "opposite": 196,
+      "adjacent": 94
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z1\\config.json"
+    }
+   }
+  },
+  "planes/C/z2": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z2\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 218,
+   "checked_count": 218,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 28811,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 28811,
+   "crossing_window_max_mm": 1.0736272009531964,
+   "sha256": "c7b2ce88300579b7693755c3ae5db75144e9dc7d32296d2f5a2c051fac342c4e",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 218,
+     "failed_status_count": 294,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 226,
+      "adjacent": 98,
+      "opposite": 188
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 226,
+      "opposite": 188,
+      "adjacent": 98
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\C\\z2\\config.json"
+    }
+   }
+  },
+  "planes/D/z1": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\D\\z1\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 221,
+   "checked_count": 221,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 24712,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 24712,
+   "crossing_window_max_mm": 1.0622917858791676,
+   "sha256": "33338a1b137e15f6872a0edb3afc23ea79cabf1c8159a38acb5898c497eef686",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 221,
+     "failed_status_count": 291,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 222,
+      "adjacent": 94,
+      "opposite": 196
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 222,
+      "opposite": 196,
+      "adjacent": 94
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\D\\z1\\config.json"
+    }
+   }
+  },
+  "planes/D/z2": {
+   "file": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\D\\z2\\audit_strict.json",
+   "passed": true,
+   "policy": "strict",
+   "routed_count": 209,
+   "checked_count": 209,
+   "failed_count": 0,
+   "error_count": 0,
+   "crossing_count": 23720,
+   "spacing_violation_pairs": 0,
+   "violation_pair_count": 0,
+   "runtime_seconds": null,
+   "crossing_window_count": 23720,
+   "crossing_window_max_mm": 1.0496570209453173,
+   "sha256": "a0945dacc297fa05725c97b1ac130c72b71f13f520681dd811310d79be362e0d",
+   "v3_extras": {
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 209,
+     "failed_status_count": 303,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "same": 226,
+      "adjacent": 98,
+      "opposite": 188
+     },
+     "expected_plane_relation_counts": {
+      "total": 512,
+      "same": 226,
+      "opposite": 188,
+      "adjacent": 98
+     },
+     "record_plane_conflicts": 0,
+     "csv_route_ids_match_plane": true,
+     "relation_column_mismatches": 0,
+     "endpoint_identity_mismatches": 0,
+     "route_plane_mismatches": 0,
+     "same_side_connector_issues": 0,
+     "topology_issues": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "min_cross_angle_deg": 5.0,
+     "max_half_window_mm": 4.0,
+     "fixed_radius_40mm": true,
+     "parameters_source": "routes.json:process",
+     "config_json": "outputs\\four_side_1024_v3_huang_R40_gap30_abcd\\planes\\D\\z2\\config.json"
+    }
+   }
+  }
+ },
+ "missing_audits": [],
+ "all_available_passed": true,
+ "audits_present": 8,
+ "audits_expected": 8,
+ "total_routed_audited": 1823,
+ "total_violation_pairs": 0
+}

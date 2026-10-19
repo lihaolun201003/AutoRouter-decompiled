@@ -1,0 +1,31 @@
+2026-10-19T21:10:41.288358+08:00 V3 plane run start: plane=z1 algorithm=D radius=40.0 gap=0.03 clearance=0.08 eval_budget=300000 time_budget=900.0 seed=20261019
+2026-10-19T21:10:41.421394+08:00 ports: 512 connections, 1024 ports, relations={'same': 222, 'adjacent': 94, 'opposite': 196}, passed=True
+2026-10-19T21:10:41.436393+08:00 frames: {"same": 222, "opposite": 196, "adjacent": 94}
+2026-10-19T21:10:41.454393+08:00 D start: pool_size=48 restarts=2 batch_max=12 batch_pool=6 eval_budget=300000 deadline_set=True
+2026-10-19T21:10:51.929511+08:00 D pool: 256/512 identities, 6055 candidates, 10.5s
+2026-10-19T21:11:01.996636+08:00 D pool: 512/512 identities, 11732 candidates, 20.5s
+2026-10-19T21:11:01.997637+08:00 D pool complete: 11732 candidates for 512 identities (22.9/identity) in 20.5s
+2026-10-19T21:11:21.479453+08:00 D restart0: 512/512 accepted=220 evals=6975 19.5s
+2026-10-19T21:11:21.480448+08:00 D restart0 done: accepted=220 evals=6975 19.5s
+2026-10-19T21:11:21.480448+08:00 D restart0 is the new best: (-220, 25192, 43377.97785743779)
+2026-10-19T21:11:37.405667+08:00 D restart1 done: accepted=202 evals=13888 15.4s
+2026-10-19T21:11:37.880423+08:00 D after restarts: best=(-220, 24587, 43377.97785743779) evals=13888
+2026-10-19T21:11:48.644873+08:00 D baseline score (routed, crossings, length)=(-220, 50384, 43377.97785743779)
+2026-10-19T21:12:19.754947+08:00 D LNS 25/400: accepted=221 batch=2 evals=14995 pairchecks=682 score=(-221, 50438, 43515.68706455136) elapsed=31.1s
+2026-10-19T21:12:50.705066+08:00 D LNS 50/400: accepted=221 batch=2 evals=15817 pairchecks=1352 score=(-221, 50436, 43515.68706455133) elapsed=62.1s
+2026-10-19T21:13:24.432142+08:00 D LNS 75/400: accepted=221 batch=12 evals=16705 pairchecks=1973 score=(-221, 50356, 43456.13225107312) elapsed=95.8s
+2026-10-19T21:13:51.374305+08:00 D LNS 100/400: accepted=221 batch=2 evals=17578 pairchecks=2502 score=(-221, 50354, 43456.13225107312) elapsed=122.7s
+2026-10-19T21:14:15.948483+08:00 D LNS 125/400: accepted=221 batch=2 evals=18383 pairchecks=3310 score=(-221, 50352, 43456.132251073104) elapsed=147.3s
+2026-10-19T21:14:37.560611+08:00 D LNS 150/400: accepted=221 batch=12 evals=19305 pairchecks=3780 score=(-221, 50162, 43315.557055615645) elapsed=168.9s
+2026-10-19T21:15:17.504631+08:00 D LNS 200/400: accepted=221 batch=2 evals=20968 pairchecks=4699 score=(-221, 50045, 43315.89028221171) elapsed=208.9s
+2026-10-19T21:15:41.345790+08:00 D LNS 225/400: accepted=221 batch=12 evals=21902 pairchecks=5789 score=(-221, 49877, 43167.9633948287) elapsed=232.7s
+2026-10-19T21:16:00.911393+08:00 D LNS 250/400: accepted=221 batch=2 evals=22742 pairchecks=6153 score=(-221, 49873, 43159.893400264526) elapsed=252.3s
+2026-10-19T21:16:16.597979+08:00 D LNS 275/400: accepted=221 batch=2 evals=23555 pairchecks=6630 score=(-221, 49862, 43159.89340026453) elapsed=268.0s
+2026-10-19T21:16:37.722503+08:00 D LNS 300/400: accepted=221 batch=12 evals=24451 pairchecks=7289 score=(-221, 49861, 43159.89340026454) elapsed=289.1s
+2026-10-19T21:16:52.070131+08:00 D LNS 325/400: accepted=221 batch=2 evals=25308 pairchecks=7971 score=(-221, 49812, 43159.89340026458) elapsed=303.4s
+2026-10-19T21:17:08.243905+08:00 D LNS 350/400: accepted=221 batch=2 evals=26157 pairchecks=8703 score=(-221, 49804, 43159.89340026456) elapsed=319.6s
+2026-10-19T21:17:22.319165+08:00 D LNS 375/400: accepted=221 batch=12 evals=27091 pairchecks=9518 score=(-221, 49802, 43159.89340026453) elapsed=333.7s
+2026-10-19T21:17:39.745603+08:00 D LNS 400/400: accepted=221 batch=2 evals=27970 pairchecks=10243 score=(-221, 49800, 43159.89340026454) elapsed=351.1s
+2026-10-19T21:17:39.746602+08:00 D LNS done: attempts=400 count_improvements=1 quality_improvements=38 accepted=221 score=(-221, 49800, 43159.89340026454) evals=27970 pairchecks=10243
+2026-10-19T21:17:45.194152+08:00 final internal audit removed 0 route(s)
+2026-10-19T21:17:45.219365+08:00 DONE D_z1: routed=221/512 by_relation={'same': 70, 'opposite': 133, 'adjacent': 18} evals=27970 runtime=423.9s

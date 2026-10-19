@@ -1,0 +1,607 @@
+{
+ "scope": "V3-Huang 1024-channel mixed same/opposite/adjacent dual-height experiment (R=40 mm fixed, 30 um edge gap, strict 0.080 mm clearance): code package, frozen inputs, 8 plane runs, 4 combined layouts, U/refold statistics and Phase-7 visualisations",
+ "latest_result": "Best combined layout B 473/1024 (46.19 %); A 455, C 465, D 430; 8/8 planes pass the independent strict audit with 0 violations and router-vs-validator mismatch=0 (160367 route pairs); same-side 548/1792 routed (30.6 %), opposite 1095/1536 (71.3 %), adjacent 180/768 (23.4 %)",
+ "entry_points": {
+  "report": "docs/reports/four_side_1024_v3_huang_R40_gap30_abcd.md",
+  "code": "OpticalWaveguideRouter2D/four_side_1024/v3/",
+  "spec": "OpticalWaveguideRouter2D/four_side_1024/v3/SPEC.md",
+  "inputs": "OpticalWaveguideRouter2D/data/v3_huang/",
+  "outputs": "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/"
+ },
+ "file_count": 144,
+ "total_bytes": 78207751,
+ "files": {
+  ".gitattributes": {
+   "bytes": 724,
+   "sha256": "a19608f483068a957a92692bf8242a7b595c1adfe4714d832dcdd84d4ef8b350"
+  },
+  "OpticalWaveguideRouter2D/data/v3_huang/PROVENANCE.json": {
+   "bytes": 1054,
+   "sha256": "5b56aa3f5f6989c606937380652419d0f76b1552204d62c4b00c766ee932f047"
+  },
+  "OpticalWaveguideRouter2D/data/v3_huang/fiberBoard1024_huang_fiber_pairs.csv": {
+   "bytes": 39565,
+   "sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23"
+  },
+  "OpticalWaveguideRouter2D/data/v3_huang/fiberBoard1024_huang_four_side_connectors.xlsx": {
+   "bytes": 91589,
+   "sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/PUBLISHED_RESULTS.md": {
+   "bytes": 9651,
+   "sha256": "de1677bc07d8cd8d4339602d8ed070b3a1d9ab91ca41219982930e31ac74a8b0"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/README.md": {
+   "bytes": 11554,
+   "sha256": "5e5355e08caa42681dffeb80ed95f50be3eaff29bb0776a9dfed2e3fc1c22205"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/SPEC.md": {
+   "bytes": 8026,
+   "sha256": "e8dd6546dac16070ab4521a839f5430cae909b554c77a3277297210343072b89"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/__init__.py": {
+   "bytes": 82,
+   "sha256": "c7591f29aeece00e57247cc22676deb8d75800ad9c7aecc6d097d3e2257a8a6b"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/candidates.py": {
+   "bytes": 3082,
+   "sha256": "cf90d965dbb6089a6a027be6128dfbedbdd8a9156baab1f2f81c82cc9825efe5"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/combine.py": {
+   "bytes": 13768,
+   "sha256": "7f32ba1cb929d734b95e9e8c61b54db1adc20e42673b4da1e05cfb571a329157"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/compare.py": {
+   "bytes": 63802,
+   "sha256": "fc2e49f4ee9a6d7738bfa3cff1f29f3dc9e55a1a73f87e4f99e9cd32c54d4852"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/config.py": {
+   "bytes": 5516,
+   "sha256": "c08c26e86204e9b1280daf8220e3d2fea79d1c677e8ab8cf42fddefe35cccd5d"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/crosscheck_v3.py": {
+   "bytes": 25150,
+   "sha256": "346a8545190e56941a1a473051513e493d7a4f456e343d2755075e4a1d2958eb"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/d_lns.py": {
+   "bytes": 29637,
+   "sha256": "927004b8d323c25054bb4436328399136ff9ea5b2689701a02cc128e15532ce9"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/feasibility.py": {
+   "bytes": 21552,
+   "sha256": "3702a46fdb3249972f7cf89ef67a6bbd39cf6f56b69d119e6743dc774741525c"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/frames.py": {
+   "bytes": 3625,
+   "sha256": "5dc3e291863cbe1f458a850d29a248321343c4ebf54348c07cd659fb4e094d0a"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/geom_same.py": {
+   "bytes": 9808,
+   "sha256": "a86049edef69627d0a1ed40602fbcfc46dcdd5183746077178a5372181ff0236"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/inputs.py": {
+   "bytes": 13833,
+   "sha256": "0f2c3431d36117ee2a7aba242f3e0e7b037631742a23042f3c1fdf83775a265b"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/metrics.py": {
+   "bytes": 114582,
+   "sha256": "ece27400ba49037f86c994a86df6eeec649584f4782ded38e025f7a3f29f6715"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/plots.py": {
+   "bytes": 75968,
+   "sha256": "ac14dc293101e5806542bb4b49cffe64e0f81ac419ff1d7b73c120dfa09ad433"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/ports.py": {
+   "bytes": 6194,
+   "sha256": "82f91dceb848d561d0231712e3209521cb6fc3e56530f020bda77e12d5627868"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/ports_audit_v3.py": {
+   "bytes": 100029,
+   "sha256": "326e0969a6521f8bc2e72ebef166d0a870482e5ae3f30ce62cc7fce5013a1e27"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/run.py": {
+   "bytes": 17704,
+   "sha256": "051b7f6591e28faf8f09d36024dd5312e3689286f2d6810829b7d31aee530ac2"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/same_side_capacity.py": {
+   "bytes": 4729,
+   "sha256": "94fff936c06c7ad8107836ada8088c2cfbd18c4201aadcd114e7423325c09aaf"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/search.py": {
+   "bytes": 3588,
+   "sha256": "bcab62c81db1d22ec65ab42cceee09cc183d9c4cb14f0d5601bdc6340616ac76"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/strategies.py": {
+   "bytes": 5443,
+   "sha256": "9661e37daa9753785f12e65400bc08b93c93110ce0bec1f118e0f3b7b138ebfc"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/tests_v3/test_metrics_v3.py": {
+   "bytes": 29243,
+   "sha256": "86fcaaa74af11ad3c8e44e58d293d63cebf40960fef1b33c406751ac42c7ba2d"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/tests_v3/test_ports_v3.py": {
+   "bytes": 20365,
+   "sha256": "e9a49dd20910f7b41a65e887aba3181540d86c6584ef36ef64857cf4df56193d"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/tests_v3/test_v3_core.py": {
+   "bytes": 6769,
+   "sha256": "fb5433767ec11036df8a3ffc3ee7654b1e0393186a9c7bd629836b5b3e24884e"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/tests_v3/test_validate_v3.py": {
+   "bytes": 23447,
+   "sha256": "d799f35824e04465e6128ac0797b1ca582bdb3b8722c9d3e1392bc34390df443"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/v3/validate_v3.py": {
+   "bytes": 159224,
+   "sha256": "cf56bd33114707c3d0acf8414ef815d667ed2ef5d8f147894b7995c1da1dce56"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/UPLOAD_README.md": {
+   "bytes": 4606,
+   "sha256": "3ee797a68a5901722df6f89306ef8a7206fa476bf311f5fe6b69b9ae4e6a6465"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/A/planes_summary.json": {
+   "bytes": 7815,
+   "sha256": "e51b9dafd42c3f1f11d14fbbf710996ada6992b4be3271912e86257397a3428b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/A/routes_1024.json": {
+   "bytes": 3328428,
+   "sha256": "abe50df80fc26d399ca4bdabf506a296adedaa7cc94814c83158767bc654a35c"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/A/statistics.json": {
+   "bytes": 123088,
+   "sha256": "6e5aa87bb676d19623eb3595feb202db1dcaff8eb216f5e3f8c18eade8035fd6"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/layer_2d.png": {
+   "bytes": 3390534,
+   "sha256": "1ca974a5db19daf839934699990ad423f2c6f5136b1d34a4aa409104ca94d6b4"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/layer_2d.svg": {
+   "bytes": 1409420,
+   "sha256": "9dac01790437b036650edcfa3259829ea2db17b9bf6a65d53c69b8bc3c6089c0"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/overlay_3d.png": {
+   "bytes": 3260912,
+   "sha256": "30f90a241f6bcb375765f38ec3f9b5e5fbe6dbe2c09f4e3e550803bf02c2872e"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/planes_summary.json": {
+   "bytes": 7818,
+   "sha256": "11a97db8846f449fbedf52f61dc59c4d95428f7743189de42b7e745ebdca59ef"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/routes_1024.json": {
+   "bytes": 4108523,
+   "sha256": "cbbc8f4cfb21b0937b877a3e7d40355a459dd925adb62ac5f18a64be07edae34"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/routing_1024_two_height.gds": {
+   "bytes": 1138790,
+   "sha256": "97306ef289ff13e8f78989add72456818a9d39d15b0be1a2afbf8b58c7bcd689"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/B/statistics.json": {
+   "bytes": 258065,
+   "sha256": "41bb23118a1c86d5cd982e1cbbb713de9ad18c99825296be0404a9a91dd35a65"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/C/layer_2d.png": {
+   "bytes": 3245312,
+   "sha256": "2e70f25e05f327b20ad1feb19d2142c618e8ebe7ed7f3fa58063314fe2a063a4"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/C/planes_summary.json": {
+   "bytes": 7802,
+   "sha256": "3edaf552a36e1d45df0e03861eb15413f9246cf83ad7c6828b615f6b40334e03"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/C/routes_1024.json": {
+   "bytes": 3622926,
+   "sha256": "b78ba786f70d581c06163d8480de846946250e2952bafb3310207bd79782adde"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/C/statistics.json": {
+   "bytes": 169519,
+   "sha256": "0a93205381b3cf6b2eefe92463204beabe49a113fcb4668c1fdfa9317a978626"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/D/planes_summary.json": {
+   "bytes": 7822,
+   "sha256": "7bbb098514ff7b64336bb58ddccc1d5d210048e957017031633957e5792cb86f"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/D/routes_1024.json": {
+   "bytes": 3436959,
+   "sha256": "11f009749feb27ff0051d6043f83172dfc0436b04ea5fddc26297010ef4ca7b3"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/combined/D/statistics.json": {
+   "bytes": 200149,
+   "sha256": "0ef3d84e2d9960a3ff25093a41888b4c6995d6f177a1b52aefefac8882221155"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/README.md": {
+   "bytes": 4281,
+   "sha256": "3358f791eff08dd8f837248113ed0459cb8ff8ddd6fba83d94bad4ecde0d01b5"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/algo_routed_rate_compare.png": {
+   "bytes": 79937,
+   "sha256": "bb3a6b27158ab7309a55ba71fb9f5159cc1aeefc6a09a596e456fd37c7e3839e"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/all_metrics.csv": {
+   "bytes": 13037,
+   "sha256": "662be7e76cd1f9e4f61fccfd5adf8495c354e59f89d105daf0be4d8e403b01c6"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/all_metrics.json": {
+   "bytes": 77077,
+   "sha256": "31f83ee48366688412c9dce93d16bf23efe677a044bab6e9dfa2288aef22b7b6"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/class_routed_compare.png": {
+   "bytes": 115548,
+   "sha256": "863441f87da72cdf96b6b7b09c7c5ab656df96730bf7577823291037de53bfda"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/combined_layouts_abcd.png": {
+   "bytes": 8082394,
+   "sha256": "c72123699ffaea5a2763e1988b8135544f24187705a5e37af69861985294bcfb"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/connector_matrix_64x64.json": {
+   "bytes": 60018,
+   "sha256": "39e1d8ca38b9746d8f136f5bb25a19cabc73da0f1b15c55a92ae30631d546859"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/connector_matrix_64x64.png": {
+   "bytes": 177601,
+   "sha256": "4e35ba8d7dae5b0bd72899c8d8576737ea4025d0bb15a9e4c623e2e9365ac0d4"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__A__z1.json": {
+   "bytes": 1706,
+   "sha256": "55b74fbe8b22bcd45903a38fb79046f71d17b96d46f905fee6dfe8f15d5c6375"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__A__z2.json": {
+   "bytes": 1708,
+   "sha256": "d4a2426ff9630bb4ffea24b78a602a5c4b1d2e29a75b2cae4f448578ebf69f2b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__B__z1.json": {
+   "bytes": 1710,
+   "sha256": "a3934c20833a656dee5f5ec1e689a2566f299dddf3de9a7ee6cbc069e8df2547"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__B__z2.json": {
+   "bytes": 1709,
+   "sha256": "bc3ffb8c5ef7ee71ae2f05ab91f571e3d429c57fecd2c40aa3ae64d53e0448e7"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__C__z1.json": {
+   "bytes": 1707,
+   "sha256": "3634cf79dc617a122f6274b0a27a7961117a469a9605c4bd845d3b47ba0f7dc0"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__C__z2.json": {
+   "bytes": 1707,
+   "sha256": "0e082a823bdb20ec14a197eeefad42eb8143ebf42aa1afc1732a3df7b2e29005"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__D__z1.json": {
+   "bytes": 1708,
+   "sha256": "f82529e6128f0996e5873d312ba66116ffdafdf6df6ee6a377411520a47a3218"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_planes__D__z2.json": {
+   "bytes": 1707,
+   "sha256": "e8d5c3a178b33eef5b722a5a7ccc308f0681bc6d7792842085b4bfcd45644d83"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/crosscheck_summary.json": {
+   "bytes": 7019,
+   "sha256": "ef1d590ca405c39f5e76aed43f512fee7df5bbce1f4b6b23b18917e4ba1de49f"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/demand_1024_connector.png": {
+   "bytes": 5445024,
+   "sha256": "755b0d9778c1874f678b95d78c3db1914912487fd1a77b374bc33e2379227ab8"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/key_numbers.json": {
+   "bytes": 20462,
+   "sha256": "5cf8d0a0db23ae87bb261bab7255644ce912be0d2a12a6018bf4b00dfce644a8"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/layouts_z1_abcd.png": {
+   "bytes": 5199639,
+   "sha256": "5cac174f3d1f3ec6289000b58ae6acbaae25e7ac26640a6d6fbe1d311a99ae03"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/layouts_z2_abcd.png": {
+   "bytes": 5056100,
+   "sha256": "91b0031622126f37f461f05c6edaaab6fdca573f06a9f9fe0c1c5b282f874c80"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/metric_bars_U.png": {
+   "bytes": 59131,
+   "sha256": "865b9466479f02a8d2e44e61d9a739cbac293ee961612fdbd5892a52cc9ce1ef"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/metric_bars_combined_routed.png": {
+   "bytes": 72146,
+   "sha256": "b78d168e5ca85b760d868744a282b85e618a6ab209f1295f96720e71aa3dbc91"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/metric_bars_same_side.png": {
+   "bytes": 69226,
+   "sha256": "4d0e84875e22db6c5ccb3809dbb3af54e96eb26e5b4986e5ebd2ad6da75f694f"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/nested_u_zoom.png": {
+   "bytes": 492456,
+   "sha256": "2caa41f7f96c886b35ca57f72a50e260efff0fd974c3968772a13ac3e1a29a69"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/overlay_3d_abcd.png": {
+   "bytes": 6118041,
+   "sha256": "68b6cdc463e43e2e6bd17b3cc6239179bbd85c2b4cc017a8b20bca764265e84b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/refold_routes_only.png": {
+   "bytes": 1098044,
+   "sha256": "7b9db7a921c980b2913d02f9598ef29c6a0303c9b44c2ece1a9ebd1ea7ee8914"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/shape_mix.png": {
+   "bytes": 78425,
+   "sha256": "7917ecc82873a12686d0806056e4e88f902bf68942c605b82db9bb72e06fddde"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/strict_audit_summary.json": {
+   "bytes": 58370,
+   "sha256": "a1e7f1bade82d6310859a6ef67a86265bac1315f327e77bfd8093297dcfdedeb"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/strict_audit_summary.md": {
+   "bytes": 6632,
+   "sha256": "191de079dbb9c0dbbd3d5074cfd6c8a51d8516ce2458d0ca0e710a739f5cc529"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/strict_audit_summary_metrics.json": {
+   "bytes": 15041,
+   "sha256": "4bf02c92a7f0de0cb07542b94bc16276c456b08adb18ed25061079f642647ac8"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/u_depth_histogram.png": {
+   "bytes": 101675,
+   "sha256": "7e1c46c0501c67dad6553dd2e8daf935e1b3e9f89d85b421312a31a55d030081"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/u_routes_only.png": {
+   "bytes": 4386243,
+   "sha256": "d8837551030e0462cc751faf614d666a2978b24505b3d02ee1584ada679593f4"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/comparison/u_track_occupancy.png": {
+   "bytes": 80219,
+   "sha256": "4354b8b5107c07b1ea31b7b8485467bbdd64cc42439330a991222862ae21c927"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/feasibility/feasibility.json": {
+   "bytes": 19781,
+   "sha256": "7a121eff1a46937ee0c5da1b18fee6ae38c0722e4ef2da27475e0668a57499f9"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/feasibility/feasibility.md": {
+   "bytes": 1157,
+   "sha256": "8742fff2ae760804119dd7b460dd7f48fc09c0a7197e2e9f2e437b8d52e20533"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/feasibility/same_side_capacity.json": {
+   "bytes": 5189,
+   "sha256": "001e54f0fd94894e5cc7f4e5566459658e3a134e5a9d170d56b014698c2d2730"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/feasibility/same_side_capacity.md": {
+   "bytes": 515,
+   "sha256": "ce95052358b61d458ec5d87da6a0665eb46d8351629a7777920c85e34faad8f9"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/feasibility/same_side_feasibility_grid.png": {
+   "bytes": 65740,
+   "sha256": "0286c2e23a7ce7de2d4bb01cc1c5a482df2b029982ff2a76a2f5a7a47c5713ee"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/inputs/INPUT_MANIFEST.json": {
+   "bytes": 712,
+   "sha256": "0801c6062cc35c929b42099e0a75cf7d7000a5c242e689a92b5bb236e26f5bb0"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z1/audit_strict.json": {
+   "bytes": 3845,
+   "sha256": "864072a074ea1fac5431bff396d65c16e7877cf02ae366267a1faf9b86fdcf80"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z1/config.json": {
+   "bytes": 4435,
+   "sha256": "58a8d25485b557850d45cded450eaea42f5b70aa9d6ca75c480d9ad6970a2461"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z1/routes.json": {
+   "bytes": 506079,
+   "sha256": "46d770270affcbe6bd01e6e6535cb883e629f6e2bf3744b3b24bf5cb41869c92"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z1/run.log": {
+   "bytes": 1306,
+   "sha256": "2a33ac705ac0a59d3ce9dc56e325ec3668a709bd58a8cd34be4b720220ee01d1"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z1/statistics.json": {
+   "bytes": 402516,
+   "sha256": "5c61e3ef701199e9259d7939d5306bd31f634323c6b3928da31f1a0beb549f80"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z2/audit_strict.json": {
+   "bytes": 3845,
+   "sha256": "4ea45d17d7f203fd6c8a64aad4fc19b44b0bd0fae483ebc9c58cdf5301f441a5"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z2/config.json": {
+   "bytes": 4436,
+   "sha256": "8240f1ba3b7154eb00386d536adbce39d358b393f3545f0e5f8931cf2ee0b1be"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z2/routes.json": {
+   "bytes": 493950,
+   "sha256": "6d40259526f6a157c48bb071fe98ceeef700d3ecd46f0dd63d92fd7e378b8e02"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z2/run.log": {
+   "bytes": 1306,
+   "sha256": "2a012dd727c63d9a461430f9b16702b439f8239add62bceec726b6b2723b8d23"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/A/z2/statistics.json": {
+   "bytes": 382991,
+   "sha256": "50432505a237a551103aeeb1836be9690760c797c9315d89299647b9d9e13cd1"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z1/audit_strict.json": {
+   "bytes": 3848,
+   "sha256": "9b621aea46cf5f122e929d4f075c6a9b5a07bbb7339f007a48b997d87dea2aea"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z1/config.json": {
+   "bytes": 4432,
+   "sha256": "7cd1e12a3f3e0a8bfade03f04206601a7a055f454d0dff03de021274abb0ddbf"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z1/routes.json": {
+   "bytes": 552297,
+   "sha256": "75fc67ed19b70aa6a656edeeab4649360f97ac69b3b2a83734f1f9b34068f6f1"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z1/run.log": {
+   "bytes": 1320,
+   "sha256": "121f1b6a6d02c3788a473b7baae8066a9c40a8ae0b8241c17f3328f75c691977"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z1/statistics.json": {
+   "bytes": 473923,
+   "sha256": "391bc00daa55c88bccbd30a63dd477538f9e1473ddb92c9d83f5db000877e8b9"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z2/audit_strict.json": {
+   "bytes": 3849,
+   "sha256": "0528ef88fd0c9a2283f39238a392fea8160e8ade5e275fab9baf63eaac1070b4"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z2/config.json": {
+   "bytes": 4434,
+   "sha256": "ec472671bb2039a82997354db452af131785f8f57b9f10ba531b75b269ecca77"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z2/routes.json": {
+   "bytes": 548976,
+   "sha256": "3ded2aaf77a43f8575431c3c87c847be8880ef8c33bc33e3d0de8e189c87518b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z2/run.log": {
+   "bytes": 1321,
+   "sha256": "4b8189e1c9872ded3f63b6b010be8ca2989da6011f5225faa8d801304243ffb7"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/B/z2/statistics.json": {
+   "bytes": 464840,
+   "sha256": "775424a4548268994c1d2ac66ea1630a839ee55d7985267b21b5566054f29fed"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z1/audit_strict.json": {
+   "bytes": 3846,
+   "sha256": "7d7c17cd1083b99c899b96773babc295c8283f62cdbacca1cd25210f9f40cbf6"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z1/config.json": {
+   "bytes": 4377,
+   "sha256": "1dc4cf7318dd7dada752242a661ce7f0273a1de63045e1b902cf14eb5d8064e7"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z1/routes.json": {
+   "bytes": 532204,
+   "sha256": "490179e8afba6bd145c39fc26754b990861f4174855b037221d9fcbc991d3b08"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z1/run.log": {
+   "bytes": 1364,
+   "sha256": "0405c6ab4a0be986472dd09baf81b4f31fa8567cba7fb18693dd29b98acf76f5"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z1/statistics.json": {
+   "bytes": 433948,
+   "sha256": "6f179fe9e9ae336a1986a62ef89b30dd9c3a1916e9f07591a88bd47d70f2f8c4"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z2/audit_strict.json": {
+   "bytes": 3846,
+   "sha256": "c7b2ce88300579b7693755c3ae5db75144e9dc7d32296d2f5a2c051fac342c4e"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z2/config.json": {
+   "bytes": 4379,
+   "sha256": "1776f8123349021c7d7ca7e88b1abf0841d7b61f4435f61ec34d4b01c95a5730"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z2/routes.json": {
+   "bytes": 518303,
+   "sha256": "645a30554896dcce2fe9c7cd8f90f055a6c56cf69688e1390c8b6da763f416c7"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z2/run.log": {
+   "bytes": 1365,
+   "sha256": "cc32cbeac42851c6a368b76bc10e3b05d20a4cc04672eab7b4233fea79f061b9"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/C/z2/statistics.json": {
+   "bytes": 404049,
+   "sha256": "904e482159c2651599750be723d5aefe4ab48c3faaa887802547dab1f804f53b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z1/audit_strict.json": {
+   "bytes": 3844,
+   "sha256": "33338a1b137e15f6872a0edb3afc23ea79cabf1c8159a38acb5898c497eef686"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z1/config.json": {
+   "bytes": 5138,
+   "sha256": "c986221809c0e58da429bfbbf65e6956858a1d47a916249939ab47b1134b9ce3"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z1/routes.json": {
+   "bytes": 456676,
+   "sha256": "0cc8b8821f1445bc2bf2de1b266bcbedcb8d7231dbb4bdab08fc61c84d4ab96f"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z1/run.log": {
+   "bytes": 4045,
+   "sha256": "e46fca4b16cf95896da91f291e288f6331091d87cba9ee59b069607690526a2e"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z1/statistics.json": {
+   "bytes": 412864,
+   "sha256": "ca7c9ef7c86ef4c0a6f05372666be43132457e8d5668990f68d63c31c70ece6d"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z2/audit_strict.json": {
+   "bytes": 3843,
+   "sha256": "a0945dacc297fa05725c97b1ac130c72b71f13f520681dd811310d79be362e0d"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z2/config.json": {
+   "bytes": 5137,
+   "sha256": "baa5f6ac06257375031cdaaa2cd652325d888f46123af54f12ad5eba3a67f523"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z2/routes.json": {
+   "bytes": 453643,
+   "sha256": "56ef5fe336ca32c23abd1274fc269b86ef89daa3b7eacc3d6691a770346fbd5b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z2/run.log": {
+   "bytes": 3665,
+   "sha256": "a0f97e5f994b82790712bab062d7a0ef154e9d67bc5351b9a12f712174ed6734"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/planes/D/z2/statistics.json": {
+   "bytes": 408360,
+   "sha256": "6a5f8a855c83ad23bb106282fbe6da421040f9ac601fab783dc4db44dd7fc4d6"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/report/report_data.json": {
+   "bytes": 1889870,
+   "sha256": "f544b6eb08fbdbc158b04186f73a141fcab3d1caf6eb270264f8ee9d97207e7b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/shapes/same_side_statistics.json": {
+   "bytes": 1474737,
+   "sha256": "30ba8a0e6f7cad945954960fc7558916459e508b6272a81e2dc5789ed0381efe"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/shapes/u_track_statistics.json": {
+   "bytes": 133281,
+   "sha256": "93d9d71ea0a61c1bdbc569e099f3904f65a43e3144fd8e89983afbe61e7cca95"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/README.md": {
+   "bytes": 11371,
+   "sha256": "05426c01003ce7c0bfc8a2b1e30220a28f304337c5f93d838237e1a06e4d2b1e"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/class_composition.png": {
+   "bytes": 159566,
+   "sha256": "006306b2184e0019faf6017129094b7b81cb44724998700e60b5aa56e26eb59e"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/connector_matrix_64x64.csv": {
+   "bytes": 8787,
+   "sha256": "4f6161619303ce837a91754bb0fd4c67c68b6cb0644bfdbb23020a0e06d6b112"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/connector_matrix_heatmap_64x64.png": {
+   "bytes": 127920,
+   "sha256": "ce287b76f26849fd9eab5ebf70660707ce9bce8028da74b9159f60d1b053108d"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/connector_pair_multiplicity_v3.csv": {
+   "bytes": 11977,
+   "sha256": "57e5fb1b2c3a0591f6521765f286c4b1b6468547b170400b76dfe11a88512454"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/lead_v3_module_comparison.json": {
+   "bytes": 12811,
+   "sha256": "ca053a6dff702a7b5d4f88dbe39376b9fdb8dcd19e5dfba96e095cb63888cbd0"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/physical_ports_v3.csv": {
+   "bytes": 156594,
+   "sha256": "6f3a7f2505b7abeaa3a1bdc4d385d81f46a9d552f6575d7f10f0c2450c0791e9"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/plane_endpoints_z1_v3.json": {
+   "bytes": 451141,
+   "sha256": "c2014f93ec734827d37ac3bf421d931e7e0cebd4547b72fc148f27b87e832164"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/plane_endpoints_z2_v3.json": {
+   "bytes": 451717,
+   "sha256": "65d5e6ccdf404c8f9c16ebd7eb3dc8bec1264eb344d6b3831035240132de772a"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v3_huang_R40_gap30_abcd/topology/topology_validation_v3.json": {
+   "bytes": 21110,
+   "sha256": "bd25d849fa1e2cbea4d682cd52d2ff0055d2a07f5bbde3340797b46df124ea55"
+  },
+  "README.md": {
+   "bytes": 8696,
+   "sha256": "8f9f81da9741871ffc241f0f0f2893e8055d466f4b45ab38fd8c0ef6415b184e"
+  },
+  "docs/reports/four_side_1024_v3_huang_R40_gap30_abcd.md": {
+   "bytes": 30995,
+   "sha256": "9e390124f31ae4ba94cccb5427073bed6897a36cf5891067a722b06f0d8c8267"
+  }
+ },
+ "omitted": {
+  "reason": "size: per-run renderings are regenerable from the uploaded code and routes.json; omission list recorded in the output UPLOAD_README.md",
+  "categories": [
+   "per-plane routing_all.png/svg/gds, routing_detail.png, crossing_heatmap.png, radius_check.png, congestion_zoom.png",
+   "per-plane failed_routes.json (embedded in routes.json), CHECKPOINT.json",
+   "combined A/D heavy renderings (layer_2d.png/svg, overlay_3d.png, GDS)",
+   "topology demand/plane-demand large PNG copies",
+   "shapes PNG duplicates of the comparison figures"
+  ]
+ },
+ "honesty": {
+  "geometry": "R=40 mm fixed; no radius/gap/layer/endpoint relaxation; only real validated D56 geometry counted",
+  "comparison": "the same-side candidate library was extended this round, so V3 vs V1/V2 routed counts are descriptive only (report section 9.5)",
+  "loss": "propagation loss 0.05 dB/cm from analytic lengths only; bend and crossing loss unknown_uncalibrated; no invented optical numbers",
+  "dual_height": "simulation under the two-height interface assumption; no z transition implemented; not a claim of manufacturability"
+ }
+}

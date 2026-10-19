@@ -1,0 +1,1229 @@
+{
+ "process": {
+  "radius_mm": 40.0,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "board_mm": 150.0
+ },
+ "tests": [
+  {
+   "name": "1_single_N_N",
+   "description": "single same-edge N-N route (route 138, SAME_U)",
+   "checks": {
+    "ok": true,
+    "errors": [],
+    "n_primitives": 5,
+    "n_arcs": 2,
+    "radii": [
+     40.0
+    ],
+    "length_mm": 214.66370614359172,
+    "family": "SAME_U",
+    "route_id": 138,
+    "canonical_p": [
+     106.125,
+     0.0
+    ],
+    "canonical_q": [
+     17.125,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "1_single_E_E",
+   "description": "single same-edge E-E route (route 433, SAME_U)",
+   "checks": {
+    "ok": true,
+    "errors": [],
+    "n_primitives": 5,
+    "n_arcs": 2,
+    "radii": [
+     40.0
+    ],
+    "length_mm": 241.16370614359175,
+    "family": "SAME_U",
+    "route_id": 433,
+    "canonical_p": [
+     18.125,
+     0.0
+    ],
+    "canonical_q": [
+     133.625,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "1_single_S_S",
+   "description": "single same-edge S-S route (route 757, SAME_U)",
+   "checks": {
+    "ok": true,
+    "errors": [],
+    "n_primitives": 5,
+    "n_arcs": 2,
+    "radii": [
+     40.0
+    ],
+    "length_mm": 258.66370614359175,
+    "family": "SAME_U",
+    "route_id": 757,
+    "canonical_p": [
+     9.125,
+     0.0
+    ],
+    "canonical_q": [
+     142.125,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "1_single_W_W",
+   "description": "single same-edge W-W route (route 916, SAME_U)",
+   "checks": {
+    "ok": true,
+    "errors": [],
+    "n_primitives": 5,
+    "n_arcs": 2,
+    "radii": [
+     40.0
+    ],
+    "length_mm": 250.66370614359175,
+    "family": "SAME_U",
+    "route_id": 916,
+    "canonical_p": [
+     141.125,
+     0.0
+    ],
+    "canonical_q": [
+     16.125,
+     0.0
+    ]
+   }
+  },
+  {
+   "name": "2_nested_u_1",
+   "description": "1 nested same-side U tracks at increasing depth",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "100": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      }
+     },
+     "total_crossings": 0,
+     "violations": [],
+     "passed": true
+    },
+    "depths": [
+     40.0
+    ]
+   }
+  },
+  {
+   "name": "2_nested_u_2",
+   "description": "2 nested same-side U tracks at increasing depth",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "100": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      },
+      "101": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      }
+     },
+     "total_crossings": 0,
+     "violations": [],
+     "passed": true
+    },
+    "depths": [
+     40.0,
+     50.0
+    ]
+   }
+  },
+  {
+   "name": "2_nested_u_3",
+   "description": "3 nested same-side U tracks at increasing depth",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "100": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      },
+      "101": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      },
+      "102": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      }
+     },
+     "total_crossings": 0,
+     "violations": [],
+     "passed": true
+    },
+    "depths": [
+     40.0,
+     50.0,
+     60.0
+    ]
+   }
+  },
+  {
+   "name": "3_short_same_side",
+   "description": "shortest same-side connection (|dx|=5.25 mm)",
+   "checks": {
+    "ok": true,
+    "errors": [],
+    "n_primitives": 5,
+    "n_arcs": 4,
+    "radii": [
+     40.0
+    ],
+    "length_mm": 325.90118515792636,
+    "route_id": 636,
+    "canonical_dx": 5.25
+   }
+  },
+  {
+   "name": "4_long_same_side",
+   "description": "longest same-side connection (|dx|=133.00 mm)",
+   "checks": {
+    "ok": true,
+    "errors": [],
+    "n_primitives": 5,
+    "n_arcs": 2,
+    "radii": [
+     40.0
+    ],
+    "length_mm": 258.66370614359175,
+    "route_id": 757,
+    "canonical_dx": 133.0
+   }
+  },
+  {
+   "name": "5_same_plus_opposite",
+   "description": "same-side U coexisting with one opposite route (route ids (1, 18, 'SAME_HAIRPIN_B', 'NS'))",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "1000": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      },
+      "2000": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      }
+     },
+     "total_crossings": 0,
+     "violations": [],
+     "passed": true
+    }
+   }
+  },
+  {
+   "name": "5_same_plus_adjacent",
+   "description": "same-side U coexisting with one adjacent route (route ids (1, 13, 'SAME_HAIRPIN_B', 'NE'))",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "1000": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      },
+      "2000": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      }
+     },
+     "total_crossings": 0,
+     "violations": [],
+     "passed": true
+    }
+   }
+  },
+  {
+   "name": "6_four_sides_u",
+   "description": "one same-side U on each of the four sides ([1, 401, 753, 913])",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "1": {
+       "valid": true,
+       "reason": null,
+       "crossings": 6,
+       "blockers": []
+      },
+      "401": {
+       "valid": true,
+       "reason": null,
+       "crossings": 6,
+       "blockers": []
+      },
+      "753": {
+       "valid": true,
+       "reason": null,
+       "crossings": 8,
+       "blockers": []
+      },
+      "913": {
+       "valid": true,
+       "reason": null,
+       "crossings": 8,
+       "blockers": []
+      }
+     },
+     "total_crossings": 28,
+     "violations": [],
+     "passed": true
+    },
+    "route_ids": [
+     1,
+     401,
+     753,
+     913
+    ]
+   }
+  },
+  {
+   "name": "7_parallel_spacing",
+   "description": "spacing detection: 0.05 mm parallel offset rejected, properly separated nested arches accepted",
+   "checks": {
+    "ok": true,
+    "checks": {
+     "offset_0.05": {
+      "expected": "invalid",
+      "passed": false,
+      "reason": "spacing"
+     },
+     "nested_10mm": {
+      "expected": "valid",
+      "passed": true,
+      "reason": null
+     }
+    }
+   }
+  },
+  {
+   "name": "8_legal_crossing",
+   "description": "same-side U crossed once by an opposite route",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "1000": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      },
+      "2000": {
+       "valid": true,
+       "reason": null,
+       "crossings": 0,
+       "blockers": []
+      }
+     },
+     "total_crossings": 0,
+     "violations": [],
+     "passed": true
+    },
+    "route_ids": [
+     1,
+     18,
+     "SAME_HAIRPIN_B",
+     "NS"
+    ]
+   }
+  },
+  {
+   "name": "9_illegal_overlap_rejected",
+   "description": "nested U arches at the SAME depth (collinear overlapping tops) must be rejected",
+   "checks": {
+    "ok": true,
+    "pair": {
+     "pairs": {
+      "6001": {
+       "valid": false,
+       "reason": "tangent_touch",
+       "crossings": 0,
+       "blockers": [
+        6002
+       ]
+      },
+      "6002": {
+       "valid": false,
+       "reason": "tangent_touch",
+       "crossings": 0,
+       "blockers": [
+        6001
+       ]
+      }
+     },
+     "total_crossings": 0,
+     "violations": [
+      {
+       "route_id": 6001,
+       "reason": "tangent_touch"
+      },
+      {
+       "route_id": 6002,
+       "reason": "tangent_touch"
+      }
+     ],
+     "passed": false
+    }
+   }
+  },
+  {
+   "name": "10_transaction_rollback",
+   "description": "conflicting candidate rejected, accepted after rollback, rejected again after re-add",
+   "checks": {
+    "ok": true,
+    "rejected_while_present": true,
+    "accepted_after_rollback": true,
+    "rejected_again_after_readd": true,
+    "first_reason": "overlap"
+   }
+  }
+ ],
+ "tests_passed": 16,
+ "tests_total": 16,
+ "same_side_grid": {
+  "resolution_mm": 15.0,
+  "cells": [
+   {
+    "sx": 0.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 15.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 30.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 45.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 60.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 75.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 90.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 105.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 120.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 135.0,
+    "families": []
+   },
+   {
+    "sx": 0.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 15.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 15.0,
+    "qx": 15.0,
+    "families": []
+   },
+   {
+    "sx": 15.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 15.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 30.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 30.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 30.0,
+    "families": []
+   },
+   {
+    "sx": 30.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 30.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 45.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 45.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 45.0,
+    "families": []
+   },
+   {
+    "sx": 45.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 45.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 60.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 60.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 60.0,
+    "families": []
+   },
+   {
+    "sx": 60.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 60.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 75.0,
+    "families": []
+   },
+   {
+    "sx": 75.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 75.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 90.0,
+    "families": []
+   },
+   {
+    "sx": 90.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 90.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 105.0,
+    "families": []
+   },
+   {
+    "sx": 105.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 105.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 120.0,
+    "families": []
+   },
+   {
+    "sx": 120.0,
+    "qx": 135.0,
+    "families": [
+     "SAME_HAIRPIN_A"
+    ]
+   },
+   {
+    "sx": 120.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qx": 15.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 30.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 45.0,
+    "families": [
+     "SAME_U",
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 60.0,
+    "families": [
+     "SAME_HAIRPIN_A",
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 75.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 90.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 105.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 120.0,
+    "families": [
+     "SAME_HAIRPIN_B"
+    ]
+   },
+   {
+    "sx": 135.0,
+    "qx": 135.0,
+    "families": []
+   },
+   {
+    "sx": 135.0,
+    "qx": 150.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 0.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 15.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 30.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 45.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 60.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 75.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 90.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 105.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 120.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 135.0,
+    "families": []
+   },
+   {
+    "sx": 150.0,
+    "qx": 150.0,
+    "families": []
+   }
+  ],
+  "feasible_cells": 72,
+  "total_cells": 121,
+  "feasible_fraction": 0.5950413223140496
+ }
+}

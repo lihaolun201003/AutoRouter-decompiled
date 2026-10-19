@@ -1,0 +1,183 @@
+{
+ "experiment": "V3_D_z2",
+ "topology": "V3_Huang",
+ "algorithm": "D",
+ "plane": "z2",
+ "z_mm": 0.5,
+ "port_model": "real_2x16_dual_height",
+ "process": {
+  "round": "V3-Huang round 3 (same/opposite/adjacent mixed dual-height topology)",
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "waveguide_width_mm": 0.05,
+  "min_edge_gap_mm": 0.03,
+  "min_centerline_clearance_mm": 0.08,
+  "min_bend_radius_mm": 40.0,
+  "fixed_radius_40mm": true,
+  "radius_note": "all arcs are exactly R=40 mm (D56 fixed-radius family)",
+  "propagation_loss_db_per_cm": 0.05,
+  "bend_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "no femtosecond-laser-written glass bend-loss function is known; R=40 mm is a geometry constraint only, not a measured loss value"
+  },
+  "crossing_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing count is a geometric metric only"
+  },
+  "legacy_polymer_estimate": {
+   "available": true,
+   "status": "legacy_estimate",
+   "note": "the previous polymer bend-loss model may be quoted for comparison only, never as glass truth"
+  },
+  "sagitta_mm": 0.0005,
+  "min_cross_angle_deg": 5.0,
+  "interface_standard": {
+   "name": "IEC 61754-7-3:2019 2x16 MPO",
+   "fiber_column_pitch_mm": 0.25,
+   "fiber_row_pitch_mm": 0.5,
+   "rows": 2,
+   "columns": 16,
+   "connectors_per_side": 16,
+   "connector_pitch_mm": 9.0,
+   "connector_pitch_status": "provisional; full MPO housing interference at 9 mm pitch unresolved"
+  },
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "z_transition": "not_implemented",
+  "layer": 0,
+  "routing_layers_per_plane": 1,
+  "planes": 2,
+  "topology": "V3_Huang",
+  "topology_contract": {
+   "connections": 1024,
+   "relation_counts": {
+    "same": 448,
+    "opposite": 384,
+    "adjacent": 192
+   },
+   "pair_counts": {
+    "NN": 112,
+    "SS": 112,
+    "EE": 112,
+    "WW": 112,
+    "NS": 192,
+    "EW": 192,
+    "NE": 48,
+    "NW": 48,
+    "ES": 48,
+    "SW": 48
+   },
+   "connectors": 64,
+   "fibers_per_connector": 32,
+   "endpoints": 2048,
+   "planes": {
+    "z1": {
+     "total": 512,
+     "same": 222,
+     "opposite": 196,
+     "adjacent": 94
+    },
+    "z2": {
+     "total": 512,
+     "same": 226,
+     "opposite": 188,
+     "adjacent": 98
+    }
+   }
+  },
+  "relation_source": "CSV column relation (never inferred from the row number)",
+  "plane_source": "CSV source_row/target_row (row 1 -> z1, row 2 -> z2)",
+  "input_files": {
+   "csv": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_fiber_pairs.csv",
+   "xlsx": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_four_side_connectors.xlsx",
+   "csv_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+   "xlsx_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de"
+  },
+  "manufacturing_claim": "simulation under the two-height interface assumption; glass thickness and connector mounting direction are not confirmed, no z transition is implemented, not a claim of manufacturability",
+  "historical_baseline": {
+   "output_dir": "outputs/four_side_1024_fslw_R40_gap30_abcd",
+   "report": "docs/reports/four_side_1024_fslw_R40_gap30_abcd.md",
+   "note": "R>=40 mm, 30 um edge gap, dual-height real 2x16; no same-side connections; candidate library lacks the V3 same-side U/hairpin/refold families, so routed counts are not directly comparable without a same-library control run"
+  }
+ },
+ "strategy": {
+  "name": "D_joint_candidate_lns",
+  "algorithm": "D",
+  "radius_mm": 40.0,
+  "clearance_mm": 0.08,
+  "pool_size": 48,
+  "batch_max": 12,
+  "batch_pool": 6,
+  "pair_level_compatibility": true,
+  "joint_multi_route_replacement": true,
+  "objective": [
+   "routed_count",
+   "crossings",
+   "total_length"
+  ],
+  "seed": 20261019
+ },
+ "budget": {
+  "candidate_budget_per_route": 900,
+  "eval_budget": 300000,
+  "time_budget_seconds": 900.0,
+  "ripup_rounds": 4,
+  "seed": 20261019
+ },
+ "main_pass": {
+  "algorithm": "D_joint_candidate_lns",
+  "attempted": 512,
+  "accepted": 209,
+  "evaluations": 27957,
+  "pair_checks": 6439,
+  "restarts": [
+   {
+    "label": "restart0",
+    "accepted": 208,
+    "evals": 7017,
+    "seconds": 19.53196890000254,
+    "score": [
+     -208,
+     24313,
+     42139.352594696065
+    ]
+   },
+   {
+    "label": "restart1",
+    "accepted": 205,
+    "evals": 13949,
+    "seconds": 17.54423830000087,
+    "score": [
+     -205,
+     22228,
+     40162.59546703564
+    ]
+   }
+  ],
+  "baseline_score": [
+   -208,
+   48626,
+   42139.352594696065
+  ],
+  "final_score": [
+   -209,
+   47939,
+   41841.683012774585
+  ],
+  "lns_attempts": 400,
+  "lns_count_improvements": 1,
+  "lns_quality_improvements": 48,
+  "stop_reason": "completed",
+  "duration_seconds": 400.1993794000009
+ },
+ "final_audit_removed": []
+}

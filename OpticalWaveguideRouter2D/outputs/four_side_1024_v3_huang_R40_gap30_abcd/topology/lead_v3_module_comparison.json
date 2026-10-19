@@ -1,0 +1,459 @@
+{
+  "lead_modules_available": true,
+  "module_paths": {
+    "inputs": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\v3\\inputs.py",
+    "ports": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\v3\\ports.py",
+    "config": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\v3\\config.py"
+  },
+  "module_sources": {
+    "inputs": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\v3\\inputs.py",
+      "exists": true,
+      "bytes": 13833,
+      "sha256": "0f2c3431d36117ee2a7aba242f3e0e7b037631742a23042f3c1fdf83775a265b",
+      "mtime": "2026-10-19 20:51:44"
+    },
+    "ports": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\v3\\ports.py",
+      "exists": true,
+      "bytes": 6194,
+      "sha256": "82f91dceb848d561d0231712e3209521cb6fc3e56530f020bda77e12d5627868",
+      "mtime": "2026-10-19 20:51:22"
+    },
+    "config": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\four_side_1024\\v3\\config.py",
+      "exists": true,
+      "bytes": 5516,
+      "sha256": "c08c26e86204e9b1280daf8220e3d2fea79d1c677e8ab8cf42fddefe35cccd5d",
+      "mtime": "2026-10-19 20:50:59"
+    }
+  },
+  "config": {
+    "mismatches": [],
+    "lead": {
+      "BOARD_MM": 150.0,
+      "CONNECTORS_PER_SIDE": 16,
+      "COLUMNS": 16,
+      "ROWS": 2,
+      "CONNECTOR_PITCH_MM": 9.0,
+      "FIBER_COLUMN_PITCH_MM": 0.25,
+      "FIBER_ROW_PITCH_MM": 0.5,
+      "PLANE_Z_MM": {
+        "1": 0.0,
+        "2": 0.5
+      },
+      "PLANE_NAME": {
+        "1": "z1",
+        "2": "z2"
+      },
+      "PLANE_ROW": {
+        "z1": 1,
+        "z2": 2
+      },
+      "PORT_MODEL": "real_2x16_dual_height",
+      "TOPOLOGY": "V3_Huang",
+      "EXPECTED": {
+        "connections": 1024,
+        "relation_counts": {
+          "same": 448,
+          "opposite": 384,
+          "adjacent": 192
+        },
+        "pair_counts": {
+          "NN": 112,
+          "SS": 112,
+          "EE": 112,
+          "WW": 112,
+          "NS": 192,
+          "EW": 192,
+          "NE": 48,
+          "NW": 48,
+          "ES": 48,
+          "SW": 48
+        },
+        "connectors": 64,
+        "fibers_per_connector": 32,
+        "endpoints": 2048,
+        "planes": {
+          "z1": {
+            "total": 512,
+            "same": 222,
+            "opposite": 196,
+            "adjacent": 94
+          },
+          "z2": {
+            "total": 512,
+            "same": 226,
+            "opposite": 188,
+            "adjacent": 98
+          }
+        }
+      },
+      "EXPECTED_CSV_SHA256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+      "EXPECTED_XLSX_SHA256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de"
+    },
+    "passed": true
+  },
+  "endpoints": {
+    "ours": 2048,
+    "lead": 2048,
+    "identity_sets_equal": true,
+    "missing_in_lead": [],
+    "extra_in_lead": [],
+    "max_routing_xy_delta_mm": 0.0,
+    "max_physical_along_delta_mm": 0.0,
+    "max_z_delta_mm": 0.0,
+    "plane_violations": 0,
+    "field_violations": 0,
+    "plane_violation_sample": [],
+    "field_violation_sample": [],
+    "passed": true
+  },
+  "routes": {
+    "ours": 1024,
+    "lead": 1024,
+    "route_id_sets_equal": true,
+    "field_mismatches": 0,
+    "relation_column_mismatches": 0,
+    "pair_label_mismatches": 0,
+    "row_plane_violations": 0,
+    "field_mismatch_sample": [],
+    "passed": true
+  },
+  "planes": {
+    "z1": {
+      "lead_validation_passed": true,
+      "lead_validation_issues": [],
+      "route_id_sets_equal": true,
+      "our_routes": 512,
+      "lead_routes": 512,
+      "endpoint_set_mismatches": 0,
+      "max_routing_xy_delta_mm": 0.0,
+      "plane_field_violations": 0,
+      "our_relations": {
+        "same": 222,
+        "opposite": 196,
+        "adjacent": 94
+      },
+      "lead_relations": {
+        "same": 222,
+        "adjacent": 94,
+        "opposite": 196
+      }
+    },
+    "z2": {
+      "lead_validation_passed": true,
+      "lead_validation_issues": [],
+      "route_id_sets_equal": true,
+      "our_routes": 512,
+      "lead_routes": 512,
+      "endpoint_set_mismatches": 0,
+      "max_routing_xy_delta_mm": 0.0,
+      "plane_field_violations": 0,
+      "our_relations": {
+        "same": 226,
+        "opposite": 188,
+        "adjacent": 98
+      },
+      "lead_relations": {
+        "same": 226,
+        "adjacent": 98,
+        "opposite": 188
+      }
+    }
+  },
+  "physical_ports": {
+    "ours": 2048,
+    "lead": 2048,
+    "identity_sets_equal": true,
+    "max_coordinate_delta_mm": 0.0,
+    "field_violations": 0,
+    "passed": true
+  },
+  "lead_topology_validation": {
+    "passed": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_fiber_pairs.csv",
+    "csv_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+    "csv_sha256_match": true,
+    "connections": 1024,
+    "relation_counts": {
+      "same": 448,
+      "adjacent": 192,
+      "opposite": 384
+    },
+    "pair_counts": {
+      "NN": 112,
+      "NE": 48,
+      "NS": 192,
+      "NW": 48,
+      "EE": 112,
+      "ES": 48,
+      "EW": 192,
+      "SS": 112,
+      "SW": 48,
+      "WW": 112
+    },
+    "by_side": {
+      "N": 400,
+      "E": 352,
+      "S": 160,
+      "W": 112
+    },
+    "planes": {
+      "z1": {
+        "total": 512,
+        "relation_counts": {
+          "same": 222,
+          "adjacent": 94,
+          "opposite": 196
+        },
+        "pairs": {
+          "NN": 56,
+          "NE": 22,
+          "NS": 100,
+          "NW": 22,
+          "EE": 58,
+          "ES": 22,
+          "EW": 96,
+          "SS": 53,
+          "SW": 28,
+          "WW": 55
+        },
+        "endpoints": 1024
+      },
+      "z2": {
+        "total": 512,
+        "relation_counts": {
+          "same": 226,
+          "adjacent": 98,
+          "opposite": 188
+        },
+        "pairs": {
+          "NN": 56,
+          "NE": 26,
+          "NS": 92,
+          "NW": 26,
+          "EE": 54,
+          "EW": 96,
+          "ES": 26,
+          "SS": 59,
+          "SW": 20,
+          "WW": 57
+        },
+        "endpoints": 1024
+      }
+    },
+    "endpoints_used_once": true,
+    "issues": []
+  },
+  "lead_excel_validation": {
+    "xlsx_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_four_side_connectors.xlsx",
+    "xlsx_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+    "xlsx_sha256_match": true,
+    "sheets": [
+      "Sheet1",
+      "接口映射",
+      "连接类别统计",
+      "64x64连接矩阵",
+      "光纤级连接_参考",
+      "接头对重数",
+      "生成说明"
+    ],
+    "checks": {
+      "sheet1": {
+        "header": [
+          "Port1",
+          "Port2"
+        ],
+        "pairs": 1024,
+        "pass": true
+      },
+      "mapping": {
+        "rows": 64,
+        "header": [
+          "Port编号",
+          "接口名称",
+          "板边",
+          "边内序号",
+          "沿边中心坐标(mm)",
+          "可用芯数",
+          "Row 1 / z1",
+          "Row 2 / z2",
+          "不同目标数"
+        ],
+        "pass": true
+      },
+      "matrix": {
+        "labels": 64,
+        "total": 2048,
+        "symmetric": true,
+        "csv_total": 1024,
+        "mismatches": 0,
+        "sample_mismatches": [],
+        "pass_": true
+      },
+      "fibre_reference": {
+        "rows": 1024,
+        "matches_csv": true
+      },
+      "statistics": {
+        "header": [
+          "连接类型",
+          "数量",
+          "占比",
+          "备注"
+        ],
+        "rows": [
+          [
+            "同边 same",
+            "448",
+            "0.4375",
+            "保留原版 43.75% 同边比例，支持回折需求"
+          ],
+          [
+            "对边 opposite",
+            "384",
+            "0.375",
+            "NS 192 + EW 192"
+          ],
+          [
+            "邻边 adjacent",
+            "192",
+            "0.1875",
+            "NE/NW/ES/SW各48"
+          ],
+          [
+            "总计",
+            "1024",
+            "1",
+            "四边64接口，每接头32根光纤"
+          ],
+          [
+            "来源变换",
+            "原版记录×2",
+            "边对交换",
+            "物理光纤分配"
+          ],
+          [
+            "方法",
+            "两份512表，原32接头/边压缩为16接头/边",
+            "96次NS/EW边交换→192条邻边",
+            "Euler交替分配Row1/Row2各512条"
+          ],
+          [
+            "空间边对",
+            "连接数",
+            "None",
+            "空间边对",
+            "连接数"
+          ],
+          [
+            "NN",
+            "112",
+            "None",
+            "NW",
+            "48"
+          ],
+          [
+            "SS",
+            "112",
+            "None",
+            "ES",
+            "48"
+          ],
+          [
+            "EE",
+            "112",
+            "None",
+            "SW",
+            "48"
+          ],
+          [
+            "WW",
+            "112",
+            "None",
+            "合计",
+            "1024"
+          ],
+          [
+            "NS",
+            "192",
+            "None",
+            "NN+SS",
+            "224"
+          ],
+          [
+            "EW",
+            "192",
+            "None",
+            "EE+WW",
+            "224"
+          ],
+          [
+            "EN",
+            "48",
+            "None",
+            "NS+EW",
+            "384"
+          ]
+        ]
+      }
+    },
+    "issues": [],
+    "passed": true
+  },
+  "code_notes": [
+    "Lead v3/ports.py routes do not set a \"row\" field (only plane/z_mm and source_row/target_row); the V3 route schema should state whether \"row\" is required. Our comparison derives the row from source_row.",
+    "Lead v3/inputs.py rewrites record[\"relation\"] from the two sides and keeps the original CSV column in record[\"relation_csv\"]; both agree on the frozen CSV (our audit verifies the CSV column directly, so the conventions coincide).",
+    "Lead v3/inputs.py pair labels are directional for adjacent pairs (NE/ES/SW/NW), while the Excel statistics sheet uses the sorted form (EN/ES/SW/NW); both are the same 48 connections. Our audit canonicalises pair labels when comparing.",
+    "Lead v3/inputs.py excel_crosscheck compares the fibre-level reference sheet as sorted tuples and checks only row counts for the port map / statistics sheets; our audit additionally compares the entire port map, class-statistics pair table and connector-pair multiplicity sheet (all pass).",
+    "Lead v3/ports.py inherits the FSLW 2x16 physical port geometry unchanged; the dual-height assumption (no z transition, glass thickness / connector mounting unconfirmed) therefore carries over to V3."
+  ],
+  "lead_topology_validation_passed": true,
+  "lead_topology_validation_issues": [],
+  "lead_excel_validation_passed": true,
+  "lead_excel_validation_issues": [],
+  "lead_csv_sha256_match": true,
+  "lead_xlsx_sha256_match": true,
+  "passed": true,
+  "summary": {
+    "passed": true,
+    "endpoint_identities": 2048,
+    "endpoint_identity_sets_equal": true,
+    "max_routing_xy_delta_mm": 0.0,
+    "max_physical_along_delta_mm": 0.0,
+    "max_z_delta_mm": 0.0,
+    "endpoint_plane_violations": 0,
+    "routes": {
+      "ours": 1024,
+      "lead": 1024,
+      "route_id_sets_equal": true,
+      "field_mismatches": 0,
+      "relation_column_mismatches": 0,
+      "pair_label_mismatches": 0,
+      "row_plane_violations": 0
+    },
+    "planes": {
+      "z1": {
+        "lead_validation_passed": true,
+        "route_id_sets_equal": true,
+        "endpoint_set_mismatches": 0,
+        "max_routing_xy_delta_mm": 0.0
+      },
+      "z2": {
+        "lead_validation_passed": true,
+        "route_id_sets_equal": true,
+        "endpoint_set_mismatches": 0,
+        "max_routing_xy_delta_mm": 0.0
+      }
+    },
+    "physical_ports": {
+      "identity_sets_equal": true,
+      "max_coordinate_delta_mm": 0.0,
+      "field_violations": 0
+    },
+    "config_mismatches": [],
+    "lead_topology_validation_passed": true,
+    "lead_excel_validation_passed": true
+  }
+}
