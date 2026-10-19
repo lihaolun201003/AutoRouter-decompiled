@@ -19,9 +19,9 @@
 | `feasibility/` | Phase-2 几何可行性：9 类必需路径族检查、邻边可行域网格、逐条"无合法候选"路线清单 |
 | `planes/<V1|V2>/<A-D>/<z1|z2>/` | 16 个平级实验的 `routes.json`（512 条身份）、`statistics.json`、`config.json`、`audit_strict.json`、`run.log` |
 | `combined/<V1|V2>/<A-D>/` | 8 个 1024 通道组合布局：`routes_1024.json`（含 plane/z 标签）、`statistics.json`、`planes_summary.json`、`layer_2d.png`；最佳组 V2_C 额外含 `layer_2d.svg`、`overlay_3d.png`、`routing_1024_two_height.gds`（layer0=z1/layer1=z2，两个物理高度） |
-| `sensitivity/` | 参数敏感性 O/G/R/N 四组 x 两个平面的结果与统计 |
+| `sensitivity/` | 参数敏感性 O/G/R/N 四组 x 两个平面：结果、统计与独立 `audit_strict.json` |
 | `c_sweep/` | 算法 C 的两个设计消融 |
-| `comparison/` | 全部对比资产：all_metrics.csv/json、八组布通率、平面/分层对比、敏感性对比、交叉热图、半径检查、严格审计与交叉验证汇总 |
+| `comparison/` | 全部对比资产：all_metrics.csv/json、八组布通率、平面/分层对比、敏感性对比、交叉热图、半径检查；**24 个运行的权威严格审计汇总**（`strict_audit_summary.json` + `.md`：16 平面 + 8 敏感性，12 288 条身份、7 605 条布通轨迹、867 020 交叉、0 违规）、`crosscheck_*.json` ×24（918 942 对路线 mismatch = 0）、`previous_rounds_untouched.json` |
 
 ## 因体积未上传（可完整重建）
 

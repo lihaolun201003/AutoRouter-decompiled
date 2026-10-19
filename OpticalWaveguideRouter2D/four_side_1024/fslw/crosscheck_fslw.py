@@ -161,7 +161,8 @@ def crosscheck(routes_path, *, width=None, edge_gap=None, clearance=None,
             router_valid = bool(result.valid)
             router_reason = None if router_valid else result.reason
             validator_result = V.evaluate_pair(
-                first_validator, validator_prepared[index_b], policy="strict")
+                first_validator, validator_prepared[index_b],
+                clearance=param_clearance, sagitta=V.SAGITTA, policy="strict")
             validator_valid = True if validator_result is None else \
                 bool(validator_result["valid"])
             validator_crossing_count_pair = 0

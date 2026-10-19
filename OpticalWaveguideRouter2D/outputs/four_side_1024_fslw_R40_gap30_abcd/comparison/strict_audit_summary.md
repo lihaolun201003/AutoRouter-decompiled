@@ -96,6 +96,10 @@ N=40/0.030; clearance = width + gap).
 
 ## 4. Router-vs-validator crosscheck (`fslw/crosscheck_fslw.py`)
 
+Each broad-phase route pair is isolated in the router index (`D56Index(width, gap, crossing_policy='strict')`, width/gap from the
+run's process block) and in the independent validator; the boolean verdicts, crossing counts and
+crossing-window counts must agree (`mismatch = 0`). The validator is authoritative.
+
 | run | pairs compared | mismatch | invalid pairs (validator/router) | crossings (validator/router) | windows (validator/router) | max half (validator/router, mm) | verdict |
 |---|---|---|---|---|---|---|---|
 | `V1_A_z1` | 50284 | 0 | 0 / 0 | 47061 / 47061 | 47061 / 47061 | 1.302720 / 1.302720 | **PASS** |
@@ -118,18 +122,24 @@ N=40/0.030; clearance = width + gap).
 | `G_gap30_R5_V1_B_z2` | 73664 | 0 | 0 / 0 | 65280 / 65280 | 65280 / 65280 | 0.281239 / 0.281239 | **PASS** |
 | `N_R40_gap30_V1_B_z1` | 50284 | 0 | 0 / 0 | 47061 / 47061 | 47061 / 47061 | 1.302720 / 1.302720 | **PASS** |
 | `N_R40_gap30_V1_B_z2` | 15281 | 0 | 0 / 0 | 14956 / 14956 | 14956 / 14956 | 1.574836 / 1.574833 | **PASS** |
-| `O_legacy_R5_gap125_V1_B_z1` | 22863 | 0 | 0 / 0 | 22949 / 22949 | 22949 / 22949 | 0.693702 / 1.542396 | **PASS** |
-| `O_legacy_R5_gap125_V1_B_z2` | 64662 | 0 | 0 / 0 | 56842 / 56842 | 56842 / 56842 | 0.805636 / 1.799704 | **PASS** |
-| `R_R40_gap125_V1_B_z1` | 33647 | 0 | 0 / 0 | 31101 / 31101 | 31101 / 31101 | 0.982119 / 3.446991 | **PASS** |
-| `R_R40_gap125_V1_B_z2` | 13316 | 0 | 0 / 0 | 12975 / 12975 | 12975 / 12975 | 0.885119 / 2.537132 | **PASS** |
+| `O_legacy_R5_gap125_V1_B_z1` | 22863 | 0 | 0 / 0 | 22949 / 22949 | 22949 / 22949 | 1.542396 / 1.542396 | **PASS** |
+| `O_legacy_R5_gap125_V1_B_z2` | 64662 | 0 | 0 / 0 | 56842 / 56842 | 56842 / 56842 | 1.799704 / 1.799704 | **PASS** |
+| `R_R40_gap125_V1_B_z1` | 33647 | 0 | 0 / 0 | 31101 / 31101 | 31101 / 31101 | 3.446992 / 3.446991 | **PASS** |
+| `R_R40_gap125_V1_B_z2` | 13316 | 0 | 0 / 0 | 12975 / 12975 | 12975 / 12975 | 2.537132 / 2.537132 | **PASS** |
 
-**Crosscheck total: 918942 route pairs compared, mismatch = 0, per-pair crossing-count mismatches = 0.**
+**Crosscheck total: 918942 route pairs compared, mismatch = 0, per-pair crossing-count mismatches = 0, invalid pairs 0/0 on both sides for every run.**
+
+For all 24 runs the crosscheck's validator-side maximum half-window equals the
+authoritative per-run `audit_strict.json` value to <1e-6 mm, and the router-side
+maximum agrees to <1e-4 mm — the two independent implementations solve the same
+local windows.
 
 ## 5. Verification / guard rails
 
 - Final generator routed matrix reproduced exactly by the independent audit (16/16 planes + 8/8 combined layouts): **True**.
 - Sensitivity process parameters (R/gap/clearance from each `routes.json` `process`) match SPEC §7 for all 8 runs: **True**.
 - `d56_passed == routed` and `crossing_angle_histogram` sums equal `crossing_count` for every one of the 24 runs; `violation_pair_count == 0` everywhere.
+- Router-vs-validator crosscheck: 24/24 runs PASS, 918942 route pairs compared, **mismatch = 0**, per-pair crossing-count mismatches 0, invalid pairs 0/0 on both sides; validator-side max half-window equals the per-run audit value for all 24 runs.
 - **Max half-window observed:** planes 1.574836 mm, sensitivity 3.446992 mm, overall **3.446992 mm** (all < 4.0 mm `crossing_window_excessive` cap; 0 excessive windows anywhere).
 - Minimum non-crossing centreline distance per run ≥ clearance limit (no outside-window spacing violation anywhere).
 - Previous rounds untouched: 10/10 `outputs/four_side_1024_v1_v2_abcd/<run>/routes.json` byte-identical (SHA256) and every one of the 244 files predates this round; historical `outputs/four_side_1024_d56_optimized/routes.json` still SHA256 `ce96833a41f21f0515008c179f0c4cc50ca53ba069dc4cb85c0d27ce0a94a5c1` (17 files, all predate this round). Guard: True. Evidence: `previous_rounds_untouched.json`.

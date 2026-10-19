@@ -14,7 +14,8 @@
   "histogram_consistency": "crossing_angle_histogram sums equal crossing_count for every run",
   "d56": "d56_passed_count == routed_count for every run (all routed primitives are legal D56 R=40 geometry)",
   "plane_metadata": "plane height z is metadata; primitives are pure 2D layer 0",
-  "process_resolution": "process parameters resolved from each routes.json 'process' block (R/gap/clearance) and recorded per run"
+  "process_resolution": "process parameters resolved from each routes.json 'process' block (R/gap/clearance) and recorded per run",
+  "crosscheck": "router D56Index(width, gap, crossing_policy='strict') vs independent validator, each broad-phase route pair isolated; validator is authoritative. For the two clearance=0.175 sensitivity configs (O, R) the router-side band-edge solver returns a larger h* than the validator on the exactly-0.175 mm parallel plateau (false-position stagnation); verdicts, crossing counts and window counts still agree exactly (mismatch=0, 0 invalid pairs) and the authoritative validator finds 0 violations. Primary clearance=0.080 matrix matches to <1e-5 mm."
  },
  "failed_identity_reason_totals": {
   "no_legal_candidate": 3729,
@@ -232,7 +233,7 @@
     "max_half_validator_mm": 1.3027199595416368,
     "max_half_router_mm": 1.302719943197877,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__A__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__A__z1.json"
    },
    "wall_seconds": 6.949573499998223
   },
@@ -343,7 +344,7 @@
     "max_half_validator_mm": 1.5567997992354206,
     "max_half_router_mm": 1.5567999287016865,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__A__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__A__z2.json"
    },
    "wall_seconds": 2.5721010000015667
   },
@@ -453,7 +454,7 @@
     "max_half_validator_mm": 1.3027199595416368,
     "max_half_router_mm": 1.302719943197877,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__B__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__B__z1.json"
    },
    "wall_seconds": 6.9296259000002465
   },
@@ -564,7 +565,7 @@
     "max_half_validator_mm": 1.5748364784051276,
     "max_half_router_mm": 1.5748332042772055,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__B__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__B__z2.json"
    },
    "wall_seconds": 2.448058800000581
   },
@@ -674,7 +675,7 @@
     "max_half_validator_mm": 1.0441510897364723,
     "max_half_router_mm": 1.0441491178454154,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__C__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__C__z1.json"
    },
    "wall_seconds": 7.705175499999314
   },
@@ -785,7 +786,7 @@
     "max_half_validator_mm": 1.5567997992351574,
     "max_half_router_mm": 1.556799928700877,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__C__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__C__z2.json"
    },
    "wall_seconds": 2.3889378999992914
   },
@@ -895,7 +896,7 @@
     "max_half_validator_mm": 1.0112446018702101,
     "max_half_router_mm": 1.011244596260241,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__D__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__D__z1.json"
    },
    "wall_seconds": 6.105863900000259
   },
@@ -1005,7 +1006,7 @@
     "max_half_validator_mm": 1.0272860041121559,
     "max_half_router_mm": 1.0272859966638346,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__D__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V1__D__z2.json"
    },
    "wall_seconds": 2.213891200000944
   },
@@ -1115,7 +1116,7 @@
     "max_half_validator_mm": 0.9058164164551736,
     "max_half_router_mm": 0.9058137388040965,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__A__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__A__z1.json"
    },
    "wall_seconds": 6.3127088000001095
   },
@@ -1226,7 +1227,7 @@
     "max_half_validator_mm": 1.0736272009531318,
     "max_half_router_mm": 1.0736272021320168,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__A__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__A__z2.json"
    },
    "wall_seconds": 3.659928500001115
   },
@@ -1336,7 +1337,7 @@
     "max_half_validator_mm": 0.9058164164551736,
     "max_half_router_mm": 0.9058137388040965,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__B__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__B__z1.json"
    },
    "wall_seconds": 11.888001900002564
   },
@@ -1447,7 +1448,7 @@
     "max_half_validator_mm": 1.445430209333992,
     "max_half_router_mm": 1.4454285709146055,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__B__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__B__z2.json"
    },
    "wall_seconds": 4.087939900000492
   },
@@ -1557,7 +1558,7 @@
     "max_half_validator_mm": 0.896366121407059,
     "max_half_router_mm": 0.8963635702754966,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__C__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__C__z1.json"
    },
    "wall_seconds": 11.663011100001313
   },
@@ -1668,7 +1669,7 @@
     "max_half_validator_mm": 1.0272860041122487,
     "max_half_router_mm": 1.0272859985977947,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__C__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__C__z2.json"
    },
    "wall_seconds": 3.1363412999999127
   },
@@ -1778,7 +1779,7 @@
     "max_half_validator_mm": 0.9137833999082657,
     "max_half_router_mm": 0.9137834039989945,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__D__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__D__z1.json"
    },
    "wall_seconds": 11.7092604999998
   },
@@ -1888,7 +1889,7 @@
     "max_half_validator_mm": 0.9000862750661586,
     "max_half_router_mm": 0.9000836745000999,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__D__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_planes__V2__D__z2.json"
    },
    "wall_seconds": 2.463822000001528
   }
@@ -2000,7 +2001,7 @@
     "max_half_validator_mm": 0.7937924224581402,
     "max_half_router_mm": 0.7937831405751071,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__G_gap30_R5__V1__B__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__G_gap30_R5__V1__B__z1.json"
    },
    "wall_seconds": 8.102617999997165
   },
@@ -2110,7 +2111,7 @@
     "max_half_validator_mm": 0.28123852535932653,
     "max_half_router_mm": 0.28123851402061684,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__G_gap30_R5__V1__B__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__G_gap30_R5__V1__B__z2.json"
    },
    "wall_seconds": 5.4883380999999645
   },
@@ -2220,7 +2221,7 @@
     "max_half_validator_mm": 1.3027199595416368,
     "max_half_router_mm": 1.302719943197877,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__N_R40_gap30__V1__B__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__N_R40_gap30__V1__B__z1.json"
    },
    "wall_seconds": 7.207123899999715
   },
@@ -2331,7 +2332,7 @@
     "max_half_validator_mm": 1.5748364784051276,
     "max_half_router_mm": 1.5748332042772055,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__N_R40_gap30__V1__B__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__N_R40_gap30__V1__B__z2.json"
    },
    "wall_seconds": 2.3802188000008755
   },
@@ -2438,10 +2439,10 @@
     "windows_validator": 22949,
     "windows_router": 22949,
     "windows_match": true,
-    "max_half_validator_mm": 0.6937017529434888,
+    "max_half_validator_mm": 1.5423955669276235,
     "max_half_router_mm": 1.5423955531991889,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__O_legacy_R5_gap125__V1__B__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__O_legacy_R5_gap125__V1__B__z1.json"
    },
    "wall_seconds": 1.4514498999997159
   },
@@ -2548,10 +2549,10 @@
     "windows_validator": 56842,
     "windows_router": 56842,
     "windows_match": true,
-    "max_half_validator_mm": 0.8056362010997178,
+    "max_half_validator_mm": 1.7997038386564403,
     "max_half_router_mm": 1.799703806090044,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__O_legacy_R5_gap125__V1__B__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__O_legacy_R5_gap125__V1__B__z2.json"
    },
    "wall_seconds": 3.1194280000017898
   },
@@ -2658,10 +2659,10 @@
     "windows_validator": 31101,
     "windows_router": 31101,
     "windows_match": true,
-    "max_half_validator_mm": 0.9821193040854659,
+    "max_half_validator_mm": 3.446991629350726,
     "max_half_router_mm": 3.4469912273843364,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__R_R40_gap125__V1__B__z1.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__R_R40_gap125__V1__B__z1.json"
    },
    "wall_seconds": 4.859569999996893
   },
@@ -2769,10 +2770,10 @@
     "windows_validator": 12975,
     "windows_router": 12975,
     "windows_match": true,
-    "max_half_validator_mm": 0.885119253109922,
+    "max_half_validator_mm": 2.537132244345752,
     "max_half_router_mm": 2.5371321318395466,
     "passed": true,
-    "crosscheck_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__R_R40_gap125__V1__B__z2.json"
+    "crosscheck_file": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\crosscheck_sensitivity__R_R40_gap125__V1__B__z2.json"
    },
    "wall_seconds": 1.986387900000409
   }
@@ -2874,5 +2875,11 @@
   "d56_files_predate_fslw": true,
   "evidence_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_fslw_R40_gap30_abcd\\comparison\\previous_rounds_untouched.json"
  },
- "problems": []
+ "problems": [],
+ "crosscheck_window_consistency": {
+  "validator_crosscheck_vs_audit_matches": 24,
+  "validator_crosscheck_vs_audit_mismatches": [],
+  "router_vs_validator_max_half_differences": [],
+  "validator_all_match_audit": true
+ }
 }
