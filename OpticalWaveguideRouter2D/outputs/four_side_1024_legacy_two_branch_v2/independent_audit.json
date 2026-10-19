@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "errors": [],
+  "route_count": 80,
+  "input_connection_count": 1024,
+  "methods": [
+    "independent geometry.intersections",
+    "independent exact primitive length and pose",
+    "analytic stroke bounds",
+    "dense NumPy nonadjacent segment self intersections",
+    "raw binary GDS UNITS/PATH/LAYER/DATATYPE/WIDTH/XY parser",
+    "independent documented legacy-polymer arithmetic"
+  ],
+  "shapely_available": false,
+  "shapely_additional_simple_failures": [],
+  "source_sha256": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+  "max_endpoint_error_mm": 1.1546319456101628e-14,
+  "max_direction_vector_error": 2.83276944882399e-16,
+  "max_length_record_error_mm": 0.0,
+  "independent_total_length_mm": 11451.599603248014,
+  "min_radius_mm": 5.0,
+  "self_intersections": 0,
+  "self_overlaps": 0,
+  "pair_overlaps": [],
+  "tangent_contacts": [],
+  "dense_polyline_self_simple_failures": [],
+  "crossing_count": 1141,
+  "exported_crossing_count": 1141,
+  "max_crossing_position_error_mm": 2.842170943040401e-14,
+  "max_crossing_angle_error_deg": 5.684341886080801e-13,
+  "crossing_mismatches": [],
+  "legacy_loss": {
+    "max_component_error_db": 1.7763568394002505e-15,
+    "mismatched_routes": [],
+    "independent_mean_known_components_db": 4.739352488281119,
+    "model": "old polymer model only, not glass measurements"
+  },
+  "gds": {
+    "passed": true,
+    "errors": [],
+    "paths": 80,
+    "layers": [
+      0
+    ],
+    "unit_m": 0.001,
+    "precision_m": 1e-09,
+    "width_mm": 0.05,
+    "max_width_error_mm": 0.0,
+    "max_endpoint_error_mm": 4.0194366942304644e-14,
+    "polyline_self_simple_failures": [],
+    "sha256": "e85b94d6522f2febb1c195bbda9e80e8152577de02e09474f1b9df4b599599a0"
+  },
+  "limitations": "Independent audit verifies centers/angles/poses/lengths/simple curves and GDS, not optical fabrication. Local inter-route spacing is separately verified by the main exact conflict audit.",
+  "runtime_seconds": 0.5573285999707878
+}

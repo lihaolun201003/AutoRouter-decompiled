@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\malin docs\\IEC 61754-7-3-2019.pdf",
+      "sha256": "93af4997d521357faf1e0fc24d4a157546e322550650a763bd5ec04c0f0caf25"
+    },
+    {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\malin docs\\YDT 1272.5-2019.pdf",
+      "sha256": "96dcd79626181f44dcb4650f7027aa21283d1c90c815cf200d00da2157967ea0"
+    }
+  ],
+  "physical_column_pitch_mm": 0.25,
+  "physical_row_pitch_mm": 0.5,
+  "physical_16_column_span_mm": 3.75,
+  "ferrule_width_mm_range": [
+    6.3,
+    6.5
+  ],
+  "ferrule_height_mm_range": [
+    2.4,
+    2.5
+  ],
+  "mpo_coupling_sleeve_H_mm_range": [
+    12.19,
+    12.59
+  ],
+  "mpo_coupling_sleeve_R_mm_max": 7.7,
+  "provisional_connector_center_pitch_mm": 9.0,
+  "mpo_body_overlap_per_adjacent_pair_mm_range": [
+    3.19,
+    3.59
+  ],
+  "mpo_body_16_connector_total_width_mm_range": [
+    195.04,
+    201.44
+  ],
+  "legacy_tests": {
+    "passed": 34,
+    "warnings": 3,
+    "elapsed_seconds": 66.19,
+    "command": ".venv/Scripts/python.exe -m pytest tests -v"
+  },
+  "agents_md_found": false,
+  "limitations": [
+    "A 2x16 connector face is transverse to the optical axis; the two rows cannot both be mapped to one physical planar edge without a coupling/unfolding design.",
+    "virtual_unfolded is a computational mode, not proof of physical connector coupling.",
+    "The 9 mm pitch fits bare 6.5 mm ferrules but conflicts with a full MPO sleeve with H aligned with the 16-column direction.",
+    "150 mm side cannot contain 16 such full MPO sleeves in this orientation at any non-overlapping pitch; package selection or mounting arrangement remains unresolved."
+  ]
+}

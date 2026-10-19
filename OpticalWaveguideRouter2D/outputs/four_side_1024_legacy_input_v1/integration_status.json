@@ -1,0 +1,49 @@
+{
+  "status": "input_connected",
+  "connections": 1024,
+  "endpoints": 2048,
+  "connectors": 64,
+  "endpoint_validation_passed": true,
+  "routing_executed": false,
+  "enabled_cross_branches": [
+    "below2above",
+    "above2below"
+  ],
+  "per_route_evaluation_limit": null,
+  "algorithm": "reverse_engineered_AutoRouter_with_required_four_side_adapters",
+  "source_provenance": {
+    "source_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\wiring_rect_826.py",
+    "source_file_sha256": "a860aa23a7ae26e294b605c38df296da46ab762a67dac5afafe995a3922dc517",
+    "extraction": "Direct nested FunctionDef AST extraction; function bodies unchanged",
+    "rules": {
+      "sn_calc": {
+        "qualified_name": "wiring_rect_826.plotter_rect.sn_calc",
+        "lineno": 114,
+        "end_lineno": 129,
+        "source_segment_sha256": "009570077f055da140bf54b62f73cb16da5f6a92309e7b4870805b9793a9a9b7",
+        "ast_sha256": "d21b7dbce9c052371d4fa23ce274adb0579d53cd7a7b146f0cabd76ec09ae1c6",
+        "body_ast_sha256": "af9863ae4aff30a0ab87ede6be585bd8dc70d335258bf797a9e4aa5bdc10f697"
+      },
+      "noCross": {
+        "qualified_name": "wiring_rect_826.plotter_rect.noCross",
+        "lineno": 131,
+        "end_lineno": 210,
+        "source_segment_sha256": "ccdb20c791a98b5c18729d9e69d649940d909d11266743293339f8ac24af3b27",
+        "ast_sha256": "b327cfb6cf1d3da8aed8a4e6ba314e389c07c2fed97031af3a61d6b1f67432ce",
+        "body_ast_sha256": "b3c1ff56a2d2e0fabdf4727deba315b1e171fe1747870a48ceeefe4f2f6f3aef"
+      }
+    },
+    "original_WGyset": "wiring_rect_826.WGyset",
+    "adapted_surroundings": [
+      "32-channel MT coordinate/track state",
+      "caller supplied ln_calc coordinate/channel callback",
+      "caller supplied four-side coordinate frame and track scan"
+    ],
+    "unchanged_legacy_constants": {
+      "sn_calc_fallback": 8
+    },
+    "limitation": "Rule bodies retain their original two-side track semantics. Four-side transforms and global geometry checking are the caller responsibility."
+  },
+  "code_tests_passed": 35,
+  "full_routing_experiment_rerun": false
+}

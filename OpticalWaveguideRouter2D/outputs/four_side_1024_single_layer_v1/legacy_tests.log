@@ -1,0 +1,50 @@
+============================= test session starts =============================
+platform win32 -- Python 3.10.11, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D
+collecting ... collected 34 items
+
+tests/test_loss_model.py::test_straight_loss_100mm_is_half_db PASSED     [  2%]
+tests/test_loss_model.py::test_bend_loss_90deg_r5 PASSED                 [  5%]
+tests/test_loss_model.py::test_bend_loss_45deg_is_half_of_90deg PASSED   [  8%]
+tests/test_loss_model.py::test_two_90deg_bends_r5 PASSED                 [ 11%]
+tests/test_loss_model.py::test_thesis_bend_table_3_1_is_reproduced PASSED [ 14%]
+tests/test_loss_model.py::test_arc_length_form_equals_angle_form PASSED  [ 17%]
+tests/test_loss_model.py::test_unknown_radius_and_angle_are_errors_not_guesses PASSED [ 20%]
+tests/test_loss_model.py::test_crossing_table_is_anchored_to_the_thesis_stated_value PASSED [ 23%]
+tests/test_loss_model.py::test_crossing_loss_is_larger_at_shallow_angles PASSED [ 26%]
+tests/test_loss_model.py::test_calc_loss_sign_and_legacy_accumulation_order PASSED [ 29%]
+tests/test_loss_model.py::test_a_crossing_adds_loss_in_both_code_paths PASSED [ 32%]
+tests/test_loss_model.py::test_calc_index_returns_one_angle_list_per_route PASSED [ 35%]
+tests/test_loss_model.py::test_512_summary_reproduces_the_thesis PASSED  [ 38%]
+tests/test_reconstruction.py::test_core_modules_import PASSED            [ 41%]
+tests/test_reconstruction.py::test_create_sim_space_matches_legacy_snapshot PASSED [ 44%]
+tests/test_reconstruction.py::test_create_sim_space_geometry[256] PASSED [ 47%]
+tests/test_reconstruction.py::test_create_sim_space_geometry[512] PASSED [ 50%]
+tests/test_reconstruction.py::test_create_sim_space_rejects_unknown_board PASSED [ 52%]
+tests/test_reconstruction.py::test_read_sim_space_roundtrip PASSED       [ 55%]
+tests/test_reconstruction.py::test_straight_routing_geometry[256] PASSED [ 58%]
+tests/test_reconstruction.py::test_straight_routing_geometry[512] PASSED [ 61%]
+tests/test_reconstruction.py::test_bend_geometry[256] PASSED             [ 64%]
+tests/test_reconstruction.py::test_bend_geometry[512] PASSED             [ 67%]
+tests/test_reconstruction.py::test_end_to_end_outputs[256] PASSED        [ 70%]
+tests/test_reconstruction.py::test_end_to_end_outputs[512] PASSED        [ 73%]
+tests/test_reconstruction.py::test_gds_roundtrip[256] PASSED             [ 76%]
+tests/test_reconstruction.py::test_gds_roundtrip[512] PASSED             [ 79%]
+tests/test_reconstruction.py::test_workbook_stays_literal_eval_readable PASSED [ 82%]
+tests/test_reconstruction.py::test_waveguide_calculator_helpers PASSED   [ 85%]
+tests/test_reconstruction.py::test_calc_index_length_column PASSED       [ 88%]
+tests/test_reconstruction.py::test_draw_chart_writes_three_plots PASSED  [ 91%]
+tests/test_reconstruction.py::test_bend_geometry_at_dx_equal_diameter PASSED [ 94%]
+tests/test_reconstruction.py::test_bend_geometry_below_diameter PASSED   [ 97%]
+tests/test_reconstruction.py::test_gui_launches_and_routes PASSED        [100%]
+
+============================== warnings summary ===============================
+tests/test_reconstruction.py::test_read_sim_space_roundtrip
+tests/test_reconstruction.py::test_read_sim_space_roundtrip
+tests/test_reconstruction.py::test_gui_launches_and_routes
+  C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\.venv\lib\site-packages\gdspy\__init__.py:84: DeprecationWarning: [GDSPY] write_gds and the global library is deprecated.  Use GdsLibrary.write_gds instead.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 34 passed, 3 warnings in 66.19s (0:01:06) ==================

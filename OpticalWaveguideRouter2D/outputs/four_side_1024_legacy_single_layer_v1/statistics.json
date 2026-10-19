@@ -1,0 +1,670 @@
+{
+  "algorithm": "legacy_AutoRouter_four_side_adapter",
+  "success_count": 66,
+  "failed_count": 958,
+  "success_rate": 0.064453125,
+  "total_connections": 1024,
+  "layer": 0,
+  "routing_layers": 1,
+  "endpoint_mode": "virtual_unfolded",
+  "mean_length_mm": 136.3642134913493,
+  "max_length_mm": 279.5369449019234,
+  "total_length_mm": 9000.038090429054,
+  "crossing_count": 800,
+  "crossing_angle_histogram": {
+    "0-1": 0,
+    "1-5": 0,
+    "5-10": 2,
+    "10-20": 1,
+    "20-30": 0,
+    "30-45": 0,
+    "45-60": 0,
+    "60-75": 11,
+    "75-90": 786
+  },
+  "small_angle_threshold_deg": 10,
+  "small_angle_crossing_count": 2,
+  "spacing_violation_pairs": 0,
+  "overlap_pairs": 0,
+  "self_intersections": 0,
+  "radius_violations": 0,
+  "boundary_violations": 0,
+  "final_audit_removed_count": 0,
+  "minimum_checked_non_crossing_centerline_mm": null,
+  "by_pair": {
+    "NS": {
+      "success": 12,
+      "failed": 244
+    },
+    "EW": {
+      "success": 3,
+      "failed": 253
+    },
+    "EN": {
+      "success": 11,
+      "failed": 117
+    },
+    "ES": {
+      "success": 15,
+      "failed": 113
+    },
+    "SW": {
+      "success": 25,
+      "failed": 103
+    },
+    "NW": {
+      "success": 0,
+      "failed": 128
+    }
+  },
+  "actual_routing_attempted_count": 1024,
+  "failure_reason_counts": {
+    "per_route_track_budget_exhausted": 935,
+    "original_first_free_no_legal_track": 23
+  },
+  "failed_track_rejection_counts": {
+    "original_noCross": 25798,
+    "spacing_pairs": 219236,
+    "per_route_track_budget_exhausted": 935,
+    "original_track_endpoint_order": 1758,
+    "legacy_bend_does_not_fit": 36488,
+    "overlap_pairs": 20001,
+    "touch_pairs": 20001,
+    "crossing_zone_overlap_pairs": 146
+  },
+  "densest_crossing_cells": [
+    {
+      "x_min_mm": 5,
+      "y_min_mm": 10,
+      "count": 32
+    },
+    {
+      "x_min_mm": 105,
+      "y_min_mm": 40,
+      "count": 21
+    },
+    {
+      "x_min_mm": 15,
+      "y_min_mm": 10,
+      "count": 15
+    },
+    {
+      "x_min_mm": 105,
+      "y_min_mm": 30,
+      "count": 14
+    },
+    {
+      "x_min_mm": 105,
+      "y_min_mm": 70,
+      "count": 14
+    },
+    {
+      "x_min_mm": 105,
+      "y_min_mm": 85,
+      "count": 14
+    },
+    {
+      "x_min_mm": 105,
+      "y_min_mm": 95,
+      "count": 14
+    },
+    {
+      "x_min_mm": 40,
+      "y_min_mm": 10,
+      "count": 12
+    },
+    {
+      "x_min_mm": 50,
+      "y_min_mm": 40,
+      "count": 12
+    },
+    {
+      "x_min_mm": 60,
+      "y_min_mm": 40,
+      "count": 12
+    },
+    {
+      "x_min_mm": 70,
+      "y_min_mm": 40,
+      "count": 9
+    },
+    {
+      "x_min_mm": 80,
+      "y_min_mm": 40,
+      "count": 9
+    },
+    {
+      "x_min_mm": 25,
+      "y_min_mm": 10,
+      "count": 8
+    },
+    {
+      "x_min_mm": 35,
+      "y_min_mm": 10,
+      "count": 8
+    },
+    {
+      "x_min_mm": 50,
+      "y_min_mm": 10,
+      "count": 8
+    },
+    {
+      "x_min_mm": 50,
+      "y_min_mm": 30,
+      "count": 8
+    },
+    {
+      "x_min_mm": 60,
+      "y_min_mm": 10,
+      "count": 8
+    },
+    {
+      "x_min_mm": 60,
+      "y_min_mm": 30,
+      "count": 8
+    },
+    {
+      "x_min_mm": 10,
+      "y_min_mm": 10,
+      "count": 7
+    },
+    {
+      "x_min_mm": 20,
+      "y_min_mm": 10,
+      "count": 7
+    }
+  ],
+  "most_crossed_routes": [
+    {
+      "route_id": 680,
+      "crossings": 77
+    },
+    {
+      "route_id": 322,
+      "crossings": 55
+    },
+    {
+      "route_id": 306,
+      "crossings": 54
+    },
+    {
+      "route_id": 274,
+      "crossings": 51
+    },
+    {
+      "route_id": 520,
+      "crossings": 51
+    },
+    {
+      "route_id": 657,
+      "crossings": 43
+    },
+    {
+      "route_id": 763,
+      "crossings": 43
+    },
+    {
+      "route_id": 665,
+      "crossings": 42
+    },
+    {
+      "route_id": 673,
+      "crossings": 39
+    },
+    {
+      "route_id": 856,
+      "crossings": 39
+    },
+    {
+      "route_id": 681,
+      "crossings": 37
+    },
+    {
+      "route_id": 848,
+      "crossings": 36
+    },
+    {
+      "route_id": 689,
+      "crossings": 34
+    },
+    {
+      "route_id": 697,
+      "crossings": 32
+    },
+    {
+      "route_id": 705,
+      "crossings": 31
+    },
+    {
+      "route_id": 713,
+      "crossings": 30
+    },
+    {
+      "route_id": 721,
+      "crossings": 30
+    },
+    {
+      "route_id": 730,
+      "crossings": 28
+    },
+    {
+      "route_id": 256,
+      "crossings": 27
+    },
+    {
+      "route_id": 738,
+      "crossings": 27
+    }
+  ],
+  "hardest_failed_routes": [
+    {
+      "route_id": 641,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 642,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 643,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 644,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 645,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 646,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 647,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 648,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "848": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1024,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1023,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1022,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1021,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1020,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1019,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1018,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "840": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 1017,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "763": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 640,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "754": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 639,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "754": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 638,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "754": 1
+      },
+      "generation_rejections": {}
+    },
+    {
+      "route_id": 637,
+      "reason": "original_first_free_no_legal_track",
+      "evaluated": 1,
+      "scanned_tracks": 801,
+      "rejection_counts": {
+        "spacing_pairs": 1,
+        "legacy_bend_does_not_fit": 800
+      },
+      "blockers": {
+        "754": 1
+      },
+      "generation_rejections": {}
+    }
+  ],
+  "legacy_loss_estimate": {
+    "model": "legacy polymer AutoRouter table and digitized crossing curve; not new glass measurements",
+    "mean_known_components_db": 3.7251301175745133,
+    "max_known_components_db": 8.556105836929667,
+    "sum_known_components_db": 245.85858775991775,
+    "routes_with_unmodeled_subdegree_crossings": 0,
+    "unmodeled_crossing_incidences": 0,
+    "complete_estimates": true,
+    "crossing_accounting": "one contribution per route at each unique physical crossing; no duplicate pair iteration"
+  },
+  "search": {
+    "algorithm": "legacy_AutoRouter_first_free_noCross_four_side_adapter",
+    "groups": [
+      {
+        "pair": "SW",
+        "attempted": 128,
+        "success": 25,
+        "failed": 103,
+        "duration_seconds": 38.92916529998183
+      },
+      {
+        "pair": "ES",
+        "attempted": 128,
+        "success": 15,
+        "failed": 113,
+        "duration_seconds": 39.569406300084665
+      },
+      {
+        "pair": "NW",
+        "attempted": 128,
+        "success": 0,
+        "failed": 128,
+        "duration_seconds": 48.689569199923426
+      },
+      {
+        "pair": "EN",
+        "attempted": 128,
+        "success": 11,
+        "failed": 117,
+        "duration_seconds": 42.67795229994226
+      },
+      {
+        "pair": "NS",
+        "attempted": 256,
+        "success": 12,
+        "failed": 244,
+        "duration_seconds": 88.65957770007662
+      },
+      {
+        "pair": "EW",
+        "attempted": 256,
+        "success": 3,
+        "failed": 253,
+        "duration_seconds": 104.28404380008578
+      }
+    ],
+    "group_order": [
+      "SW",
+      "ES",
+      "NW",
+      "EN",
+      "NS",
+      "EW"
+    ],
+    "search_runtime_seconds": 362.9902080000611,
+    "scanned_tracks": 306394,
+    "candidate_evaluations": 241077,
+    "source_provenance": {
+      "source_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\wiring_rect_826.py",
+      "source_file_sha256": "a860aa23a7ae26e294b605c38df296da46ab762a67dac5afafe995a3922dc517",
+      "extraction": "Direct nested FunctionDef AST extraction; function bodies unchanged",
+      "rules": {
+        "sn_calc": {
+          "qualified_name": "wiring_rect_826.plotter_rect.sn_calc",
+          "lineno": 114,
+          "end_lineno": 129,
+          "source_segment_sha256": "009570077f055da140bf54b62f73cb16da5f6a92309e7b4870805b9793a9a9b7",
+          "ast_sha256": "d21b7dbce9c052371d4fa23ce274adb0579d53cd7a7b146f0cabd76ec09ae1c6",
+          "body_ast_sha256": "af9863ae4aff30a0ab87ede6be585bd8dc70d335258bf797a9e4aa5bdc10f697"
+        },
+        "noCross": {
+          "qualified_name": "wiring_rect_826.plotter_rect.noCross",
+          "lineno": 131,
+          "end_lineno": 210,
+          "source_segment_sha256": "ccdb20c791a98b5c18729d9e69d649940d909d11266743293339f8ac24af3b27",
+          "ast_sha256": "b327cfb6cf1d3da8aed8a4e6ba314e389c07c2fed97031af3a61d6b1f67432ce",
+          "body_ast_sha256": "b3c1ff56a2d2e0fabdf4727deba315b1e171fe1747870a48ceeefe4f2f6f3aef"
+        }
+      },
+      "original_WGyset": "wiring_rect_826.WGyset",
+      "adapted_surroundings": [
+        "32-channel MT coordinate/track state",
+        "caller supplied ln_calc coordinate/channel callback",
+        "caller supplied four-side coordinate frame and track scan"
+      ],
+      "unchanged_legacy_constants": {
+        "sn_calc_fallback": 8
+      },
+      "limitation": "Rule bodies retain their original two-side track semantics. Four-side transforms and global geometry checking are the caller responsibility."
+    },
+    "strategy_count": 1,
+    "dubins": false,
+    "ripup": false,
+    "optimized_candidate_scoring": false,
+    "endpoint_reassignment": false,
+    "legacy_fixed_track_pitch_mm": 0.175,
+    "adaptations": [
+      "four-side rigid frames",
+      "adjacent 90-degree interface",
+      "32-channel explicit ln_calc and MT state",
+      "fixed pins: order routes instead of permuting coordinates",
+      "all orientations share exact geometric audit and one routing layer",
+      "full precision legacy bend formulas instead of four-decimal storage"
+    ]
+  },
+  "gds": {
+    "paths": 66,
+    "layers": [
+      0
+    ],
+    "unit_m": 0.001,
+    "precision_m": 1e-09,
+    "arc_chord_sagitta_mm": 0.0005,
+    "width_mm": 0.05,
+    "status": "research virtual_unfolded geometry; sampled arcs; not a fabrication release"
+  },
+  "mechanical_body_conflict_pairs": 60,
+  "manufacturable_device_certified": false,
+  "total_runtime_seconds": 364.69495540007483
+}

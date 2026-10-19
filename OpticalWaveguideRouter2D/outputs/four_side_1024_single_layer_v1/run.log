@@ -1,0 +1,34 @@
+2026-10-19T12:27:24.367057+08:00 phase1: load original CSV and render connectivity before routing
+2026-10-19T12:27:25.206090+08:00 phase1 passed: 1024 routes, 2048 identities, sha256=0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b
+2026-10-19T12:27:31.144563+08:00 generated candidates 256/1024, elapsed=5.93s
+2026-10-19T12:27:39.247335+08:00 generated candidates 512/1024, elapsed=14.04s
+2026-10-19T12:27:44.452871+08:00 generated candidates 768/1024, elapsed=19.24s
+2026-10-19T12:27:49.728315+08:00 generated candidates 1024/1024, elapsed=24.52s
+2026-10-19T12:27:58.813467+08:00 csv: attempted=256/1024 accepted=144 evaluations=3834 elapsed=33.6s
+2026-10-19T12:28:33.928588+08:00 csv: attempted=512/1024 accepted=288 evaluations=8755 elapsed=68.7s
+2026-10-19T12:28:55.092916+08:00 csv: attempted=768/1024 accepted=331 evaluations=13350 elapsed=89.9s
+2026-10-19T12:29:13.057505+08:00 csv: attempted=1024/1024 accepted=335 evaluations=18052 elapsed=107.8s
+2026-10-19T12:29:15.001001+08:00 csv complete: 335/1024, 85.22s, ripup +0
+2026-10-19T12:29:28.561112+08:00 longest: attempted=256/1024 accepted=102 evaluations=23687 elapsed=123.4s
+2026-10-19T12:29:49.204197+08:00 longest: attempted=512/1024 accepted=153 evaluations=29268 elapsed=144.0s
+2026-10-19T12:30:07.469119+08:00 longest: attempted=768/1024 accepted=182 evaluations=34062 elapsed=162.3s
+2026-10-19T12:30:20.293714+08:00 longest: attempted=1024/1024 accepted=194 evaluations=37813 elapsed=175.1s
+2026-10-19T12:30:24.046094+08:00 longest complete: 194/1024, 69.04s, ripup +0
+2026-10-19T12:30:48.473555+08:00 congested: attempted=256/1024 accepted=128 evaluations=42865 elapsed=203.3s
+2026-10-19T12:31:10.589503+08:00 congested: attempted=512/1024 accepted=203 evaluations=48144 elapsed=225.4s
+2026-10-19T12:31:30.967012+08:00 congested: attempted=768/1024 accepted=262 evaluations=52768 elapsed=245.8s
+2026-10-19T12:31:40.120766+08:00 congested: attempted=1024/1024 accepted=267 evaluations=56403 elapsed=254.9s
+2026-10-19T12:31:42.762932+08:00 congested complete: 268/1024, 78.72s, ripup +1
+2026-10-19T12:31:56.810668+08:00 opposite_first: attempted=256/1024 accepted=244 evaluations=59323 elapsed=271.6s
+2026-10-19T12:32:29.663613+08:00 opposite_first: attempted=512/1024 accepted=490 evaluations=61576 elapsed=304.5s
+2026-10-19T12:33:09.770750+08:00 opposite_first: attempted=768/1024 accepted=514 evaluations=66945 elapsed=344.6s
+2026-10-19T12:33:27.784296+08:00 opposite_first: attempted=1024/1024 accepted=526 evaluations=70716 elapsed=362.6s
+2026-10-19T12:33:32.035211+08:00 opposite_first complete: 526/1024, 109.27s, ripup +0
+2026-10-19T12:33:32.164478+08:00 search checkpoint saved; auditing exact final line/arc geometry
+2026-10-19T12:33:44.877651+08:00 final exact audit accepted=454/1024, rejected=72, crossings=70502
+2026-10-19T12:33:48.876291+08:00 outputs written: success=454/1024 crossings=70502 runtime=384.428s
+2026-10-19T12:33:48.880304+08:00 complete in 384.514s
+2026-10-19T12:35:48.425758+08:00 reaudit existing best checkpoint under unchanged search crossing policy
+2026-10-19T12:35:59.397009+08:00 final exact audit accepted=526/1024, rejected=0, crossings=98197
+2026-10-19T12:36:03.192575+08:00 outputs written: success=526/1024 crossings=98197 runtime=399.202s
+2026-10-19T12:36:03.197575+08:00 checkpoint revalidation/export completed, accumulated execution=399.273s

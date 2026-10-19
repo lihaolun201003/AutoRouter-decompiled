@@ -261,3 +261,7 @@ docs/                       migration report, fidelity report, divergence analys
 No licence file is included. The routing code is a reconstruction of the legacy
 AutoRouter program. `gdspy`, `matplotlib`, `numpy`, `pandas`, `scipy`,
 `openpyxl` and `PyQt5` remain under their own licences.
+
+## 1024-channel four-side single-layer experiment
+
+The independent four-side module and complete experiment artifacts are available in [four_side_1024/PUBLISHED_RESULTS.md](four_side_1024/PUBLISHED_RESULTS.md). The latest original-AutoRouter adaptation retained 80/1024 routes within a 600-second global budget; 357 routes had not started when the budget expired. It uses one routing layer and explicitly marked virtual-unfolded endpoints. This is a research result, not a fabrication release. Legacy 256/512 routing core files are unchanged.

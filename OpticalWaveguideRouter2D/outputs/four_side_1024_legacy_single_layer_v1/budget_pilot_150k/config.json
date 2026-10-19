@@ -1,0 +1,44 @@
+{
+  "board_mm": [
+    150.0,
+    150.0
+  ],
+  "layer": 0,
+  "routing_layers": 1,
+  "min_radius_mm": 5.0,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.125,
+  "connector_pitch_mm": 9.0,
+  "connector_pitch_status": "provisional",
+  "connector_envelope_width_mm": 12.59,
+  "connector_face_R_max_mm": 7.7,
+  "provisional_visual_depth_mm": 3.0,
+  "ferrule_width_mm": 6.5,
+  "ferrule_height_mm": 2.5,
+  "envelope_status": "IEC Fig9/Table6 full MPO sleeve H, H aligned with board edge; depth visualization provisional",
+  "physical_column_pitch_mm": 0.25,
+  "physical_row_pitch_mm": 0.5,
+  "physical_pitch_status": "IEC 61754-7-3:2019 Fig2 and YD/T 1272.5-2019 FigA.8(b)",
+  "endpoint_mode": "virtual_unfolded",
+  "virtual_pitch_mm": 0.175,
+  "initial_validation_parameters_not_final_glass_process": true,
+  "crossing_small_angle_deg": 10.0,
+  "sagitta_mm": 0.0005,
+  "candidates_per_route": 24,
+  "candidate_evaluation_budget": 150000,
+  "search_seconds": 600.0,
+  "strategies": [
+    "legacy_fixed_pass_order"
+  ],
+  "ripup_routes": 0,
+  "crossing_region_policy": "local clearance / sin(angle), both routes; no whole-pair exemption",
+  "algorithm": "legacy_AutoRouter_four_side_adapter",
+  "group_order": [
+    "SW",
+    "ES",
+    "NW",
+    "EN",
+    "NS",
+    "EW"
+  ]
+}

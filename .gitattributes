@@ -1,3 +1,11 @@
 *.avi filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 *.pptx filter=lfs diff=lfs merge=lfs -text
+
+# Preserve exact bytes and published experiment SHA256 checksums.
+OpticalWaveguideRouter2D/outputs/** -text
+OpticalWaveguideRouter2D/four_side_1024/** -text
+OpticalWaveguideRouter2D/data/optical_1024_multitomulti_connectivity_v1.csv -text
+OpticalWaveguideRouter2D/tests/test_four_side_conflicts.py -text
+OpticalWaveguideRouter2D/tests/test_four_side_legacy_rules.py -text
+docs/reports/four_side_1024*.md -text

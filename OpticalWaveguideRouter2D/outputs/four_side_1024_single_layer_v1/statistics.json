@@ -1,0 +1,816 @@
+{
+  "success_count": 526,
+  "failed_count": 498,
+  "success_rate": 0.513671875,
+  "total_connections": 1024,
+  "layer": 0,
+  "routing_layers": 1,
+  "endpoint_mode": "virtual_unfolded",
+  "mean_length_mm": 159.24492913522238,
+  "max_length_mm": 200.68781297946927,
+  "total_length_mm": 83762.83272512726,
+  "crossing_count": 98197,
+  "crossing_angle_histogram": {
+    "[0,1)": 0,
+    "[1,5)": 76,
+    "[5,10)": 951,
+    "[10,20)": 4981,
+    "[20,30)": 7986,
+    "[30,45)": 16930,
+    "[45,60)": 20543,
+    "[60,75)": 21287,
+    "[75,90]": 25443
+  },
+  "small_angle_threshold_deg": 10,
+  "small_angle_crossing_count": 1027,
+  "spacing_violation_pairs": 0,
+  "overlap_pairs": 0,
+  "self_intersections": 0,
+  "radius_violations": 0,
+  "boundary_violations": 0,
+  "final_audit_removed_count": 0,
+  "minimum_checked_non_crossing_centerline_mm": null,
+  "final_audit": "all retained routes pass exact primitives and all earlier retained routes; rejected routes classified as failures",
+  "min_radius_used_mm": 5.0,
+  "by_pair": {
+    "NS": {
+      "success": 245,
+      "failed": 11
+    },
+    "EW": {
+      "success": 245,
+      "failed": 11
+    },
+    "EN": {
+      "success": 30,
+      "failed": 98
+    },
+    "ES": {
+      "success": 0,
+      "failed": 128
+    },
+    "SW": {
+      "success": 0,
+      "failed": 128
+    },
+    "NW": {
+      "success": 6,
+      "failed": 122
+    }
+  },
+  "failure_reason_counts": {
+    "no_legal_candidate_within_budget": 498
+  },
+  "failed_candidate_rejection_counts": {
+    "spacing_pairs": 8894,
+    "crossing_zone_overlap_pairs": 175
+  },
+  "densest_crossing_cells": [
+    {
+      "x_min_mm": 75,
+      "y_min_mm": 75,
+      "count": 543
+    },
+    {
+      "x_min_mm": 70,
+      "y_min_mm": 70,
+      "count": 522
+    },
+    {
+      "x_min_mm": 80,
+      "y_min_mm": 75,
+      "count": 459
+    },
+    {
+      "x_min_mm": 75,
+      "y_min_mm": 80,
+      "count": 459
+    },
+    {
+      "x_min_mm": 65,
+      "y_min_mm": 75,
+      "count": 412
+    },
+    {
+      "x_min_mm": 75,
+      "y_min_mm": 65,
+      "count": 412
+    },
+    {
+      "x_min_mm": 60,
+      "y_min_mm": 75,
+      "count": 397
+    },
+    {
+      "x_min_mm": 75,
+      "y_min_mm": 60,
+      "count": 397
+    },
+    {
+      "x_min_mm": 75,
+      "y_min_mm": 85,
+      "count": 394
+    },
+    {
+      "x_min_mm": 80,
+      "y_min_mm": 85,
+      "count": 393
+    },
+    {
+      "x_min_mm": 70,
+      "y_min_mm": 75,
+      "count": 388
+    },
+    {
+      "x_min_mm": 85,
+      "y_min_mm": 85,
+      "count": 387
+    },
+    {
+      "x_min_mm": 85,
+      "y_min_mm": 75,
+      "count": 386
+    },
+    {
+      "x_min_mm": 85,
+      "y_min_mm": 80,
+      "count": 386
+    },
+    {
+      "x_min_mm": 70,
+      "y_min_mm": 85,
+      "count": 385
+    },
+    {
+      "x_min_mm": 85,
+      "y_min_mm": 90,
+      "count": 385
+    },
+    {
+      "x_min_mm": 65,
+      "y_min_mm": 70,
+      "count": 382
+    },
+    {
+      "x_min_mm": 70,
+      "y_min_mm": 65,
+      "count": 382
+    },
+    {
+      "x_min_mm": 80,
+      "y_min_mm": 80,
+      "count": 382
+    },
+    {
+      "x_min_mm": 85,
+      "y_min_mm": 70,
+      "count": 380
+    }
+  ],
+  "most_crossed_routes": [
+    {
+      "route_id": 241,
+      "crossings": 495
+    },
+    {
+      "route_id": 497,
+      "crossings": 495
+    },
+    {
+      "route_id": 225,
+      "crossings": 481
+    },
+    {
+      "route_id": 242,
+      "crossings": 481
+    },
+    {
+      "route_id": 498,
+      "crossings": 481
+    },
+    {
+      "route_id": 481,
+      "crossings": 480
+    },
+    {
+      "route_id": 16,
+      "crossings": 469
+    },
+    {
+      "route_id": 226,
+      "crossings": 469
+    },
+    {
+      "route_id": 272,
+      "crossings": 469
+    },
+    {
+      "route_id": 482,
+      "crossings": 468
+    },
+    {
+      "route_id": 209,
+      "crossings": 467
+    },
+    {
+      "route_id": 243,
+      "crossings": 467
+    },
+    {
+      "route_id": 499,
+      "crossings": 467
+    },
+    {
+      "route_id": 465,
+      "crossings": 462
+    },
+    {
+      "route_id": 514,
+      "crossings": 458
+    },
+    {
+      "route_id": 32,
+      "crossings": 457
+    },
+    {
+      "route_id": 210,
+      "crossings": 457
+    },
+    {
+      "route_id": 227,
+      "crossings": 457
+    },
+    {
+      "route_id": 483,
+      "crossings": 456
+    },
+    {
+      "route_id": 288,
+      "crossings": 455
+    }
+  ],
+  "hardest_failed_routes": [
+    {
+      "route_id": 145,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "161": 4,
+        "417": 7,
+        "13": 1,
+        "15": 1,
+        "178": 2,
+        "27": 1,
+        "177": 1,
+        "112": 2,
+        "195": 1,
+        "241": 1,
+        "211": 1,
+        "11": 1,
+        "228": 1
+      }
+    },
+    {
+      "route_id": 401,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "417": 2,
+        "161": 17,
+        "195": 1,
+        "14": 1,
+        "179": 1,
+        "11": 2
+      }
+    },
+    {
+      "route_id": 129,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "161": 5,
+        "417": 3,
+        "12": 1,
+        "268": 2,
+        "226": 2,
+        "111": 2,
+        "300": 1,
+        "178": 1,
+        "177": 1,
+        "11": 2,
+        "195": 1,
+        "194": 1,
+        "16": 1,
+        "246": 1
+      }
+    },
+    {
+      "route_id": 385,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "417": 2,
+        "161": 3,
+        "211": 1,
+        "146": 11,
+        "14": 1,
+        "210": 1,
+        "12": 3,
+        "10": 2
+      }
+    },
+    {
+      "route_id": 113,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "161": 5,
+        "417": 4,
+        "110": 2,
+        "14": 1,
+        "179": 3,
+        "402": 1,
+        "10": 2,
+        "268": 2,
+        "163": 1,
+        "16": 1,
+        "267": 1,
+        "111": 1
+      }
+    },
+    {
+      "route_id": 369,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "417": 1,
+        "161": 12,
+        "12": 3,
+        "147": 2,
+        "130": 1,
+        "111": 1,
+        "10": 2,
+        "11": 2
+      }
+    },
+    {
+      "route_id": 97,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "209": 5,
+        "417": 1,
+        "386": 3,
+        "433": 3,
+        "11": 1,
+        "14": 1,
+        "403": 1,
+        "351": 1,
+        "400": 1,
+        "15": 1,
+        "130": 2,
+        "147": 1,
+        "12": 1,
+        "268": 2
+      }
+    },
+    {
+      "route_id": 353,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "465": 1,
+        "161": 2,
+        "197": 1,
+        "177": 6,
+        "114": 3,
+        "13": 2,
+        "131": 1,
+        "148": 1,
+        "144": 1,
+        "16": 1,
+        "165": 1,
+        "11": 1,
+        "109": 2,
+        "111": 1
+      }
+    },
+    {
+      "route_id": 6,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "12": 1,
+        "288": 2,
+        "10": 3,
+        "181": 1,
+        "271": 1,
+        "162": 4,
+        "270": 2,
+        "165": 1,
+        "180": 3,
+        "148": 3,
+        "147": 1,
+        "197": 1,
+        "272": 1
+      }
+    },
+    {
+      "route_id": 81,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "177": 1,
+        "417": 1,
+        "10": 2,
+        "370": 1,
+        "13": 2,
+        "387": 1,
+        "368": 1,
+        "162": 3,
+        "267": 2,
+        "16": 1,
+        "331": 1,
+        "131": 2,
+        "315": 1,
+        "15": 1,
+        "148": 1,
+        "285": 1,
+        "165": 1,
+        "270": 1
+      }
+    },
+    {
+      "route_id": 262,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "263": 1,
+        "112": 1,
+        "246": 1,
+        "32": 1,
+        "109": 5,
+        "15": 2,
+        "111": 2,
+        "196": 2,
+        "110": 1,
+        "14": 5,
+        "10": 1,
+        "115": 1,
+        "16": 1
+      }
+    },
+    {
+      "route_id": 337,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "433": 1,
+        "161": 2,
+        "182": 1,
+        "114": 2,
+        "13": 1,
+        "115": 1,
+        "112": 1,
+        "11": 2,
+        "165": 4,
+        "209": 2,
+        "148": 1,
+        "132": 1,
+        "125": 1,
+        "12": 1,
+        "131": 1,
+        "109": 1,
+        "111": 1
+      }
+    },
+    {
+      "route_id": 65,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "161": 1,
+        "417": 2,
+        "209": 1,
+        "354": 1,
+        "13": 2,
+        "371": 1,
+        "31": 1,
+        "331": 1,
+        "267": 1,
+        "437": 1,
+        "283": 2,
+        "115": 2,
+        "10": 1,
+        "14": 1,
+        "130": 2,
+        "24": 1,
+        "131": 1,
+        "269": 1,
+        "132": 1
+      }
+    },
+    {
+      "route_id": 321,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "161": 3,
+        "198": 1,
+        "114": 2,
+        "13": 2,
+        "115": 1,
+        "212": 1,
+        "15": 1,
+        "261": 1,
+        "11": 2,
+        "181": 2,
+        "225": 1,
+        "132": 1,
+        "158": 1,
+        "109": 2,
+        "150": 2,
+        "116": 1
+      }
+    },
+    {
+      "route_id": 4,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "288": 2,
+        "13": 1,
+        "271": 1,
+        "10": 1,
+        "147": 2,
+        "162": 3,
+        "280": 3,
+        "265": 4,
+        "114": 4,
+        "12": 1,
+        "179": 1,
+        "272": 1
+      }
+    },
+    {
+      "route_id": 260,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "112": 3,
+        "106": 1,
+        "111": 1,
+        "15": 1,
+        "110": 1,
+        "109": 3,
+        "185": 1,
+        "25": 1,
+        "181": 2,
+        "23": 1,
+        "261": 1,
+        "131": 1,
+        "133": 1,
+        "10": 3,
+        "100": 1,
+        "162": 1,
+        "128": 1
+      }
+    },
+    {
+      "route_id": 33,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "402": 2,
+        "338": 1,
+        "177": 1,
+        "12": 1,
+        "403": 1,
+        "10": 3,
+        "21": 5,
+        "20": 3,
+        "277": 1,
+        "114": 1,
+        "15": 1,
+        "264": 2,
+        "161": 1,
+        "11": 1
+      }
+    },
+    {
+      "route_id": 289,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "146": 2,
+        "114": 2,
+        "183": 1,
+        "105": 2,
+        "147": 1,
+        "110": 2,
+        "13": 2,
+        "106": 1,
+        "134": 3,
+        "148": 1,
+        "109": 1,
+        "111": 1,
+        "182": 1,
+        "11": 1,
+        "161": 1,
+        "112": 1,
+        "122": 1
+      }
+    },
+    {
+      "route_id": 889,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "144": 1,
+        "10": 3,
+        "169": 1,
+        "102": 2,
+        "112": 1,
+        "11": 9,
+        "100": 1,
+        "108": 5,
+        "101": 1
+      }
+    },
+    {
+      "route_id": 762,
+      "evaluated": 24,
+      "reason": "no_legal_candidate_within_budget",
+      "blockers": {
+        "498": 1,
+        "241": 1,
+        "133": 1,
+        "161": 1,
+        "114": 2,
+        "118": 5,
+        "335": 1,
+        "140": 1,
+        "225": 1,
+        "125": 4,
+        "202": 1,
+        "177": 1,
+        "146": 1,
+        "103": 1,
+        "10": 1,
+        "109": 1
+      }
+    }
+  ],
+  "legacy_loss_estimate": {
+    "model": "legacy polymer AutoRouter table and digitized crossing curve; not new glass measurements",
+    "mean_known_components_db": 3.174794785400604,
+    "max_known_components_db": 5.3205820819154175,
+    "sum_known_components_db": 1669.9420571207193,
+    "routes_with_unmodeled_subdegree_crossings": 0,
+    "unmodeled_crossing_incidences": 0,
+    "complete_estimates": true,
+    "crossing_accounting": "one contribution per route at each unique physical crossing; no duplicate pair iteration"
+  },
+  "search": {
+    "strategies": [
+      {
+        "strategy": "csv",
+        "success": 335,
+        "failed": 689,
+        "duration_seconds": 85.21920519997366,
+        "ripup_transactions": 20,
+        "ripup_improvements": 0,
+        "candidate_evaluations_cumulative": 18531,
+        "budget_exhausted": false
+      },
+      {
+        "strategy": "longest",
+        "success": 194,
+        "failed": 830,
+        "duration_seconds": 69.04488890001085,
+        "ripup_transactions": 20,
+        "ripup_improvements": 0,
+        "candidate_evaluations_cumulative": 38323,
+        "budget_exhausted": false
+      },
+      {
+        "strategy": "congested",
+        "success": 268,
+        "failed": 756,
+        "duration_seconds": 78.71619469998404,
+        "ripup_transactions": 20,
+        "ripup_improvements": 1,
+        "candidate_evaluations_cumulative": 56907,
+        "budget_exhausted": false
+      },
+      {
+        "strategy": "opposite_first",
+        "success": 526,
+        "failed": 498,
+        "duration_seconds": 109.27149509999435,
+        "ripup_transactions": 20,
+        "ripup_improvements": 0,
+        "candidate_evaluations_cumulative": 71290,
+        "budget_exhausted": false
+      }
+    ],
+    "best_strategy": "opposite_first",
+    "candidate_evaluations": 71290,
+    "generated_candidates": 20999,
+    "search_runtime_seconds": 366.82491429999936
+  },
+  "gds": {
+    "paths": 526,
+    "layers": [
+      0
+    ],
+    "unit_m": 0.001,
+    "precision_m": 1e-09,
+    "arc_chord_sagitta_mm": 0.0005,
+    "width_mm": 0.05,
+    "status": "research virtual_unfolded geometry; sampled arcs; not a fabrication release"
+  },
+  "mechanical_body_conflict_pairs": 60,
+  "manufacturable_device_certified": false,
+  "total_runtime_seconds": 399.2018320999341,
+  "runtime_scope": "single experiment: input/plot/search/exact audit/figures/exports; separate legacy tests 66.19s",
+  "software": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "spatial_index_backend": "numpy_analytic_bbox"
+  },
+  "tests": {
+    "legacy_passed": 34,
+    "legacy_seconds": 66.19,
+    "geometry_passed": 10,
+    "acceptance_passed": 11,
+    "conflicts_passed": 19,
+    "skipped": 0
+  },
+  "independent_audit": {
+    "passed": true,
+    "errors": [],
+    "route_count": 526,
+    "input_connection_count": 1024,
+    "methods": [
+      "independent geometry.intersections",
+      "independent exact primitive length and pose",
+      "analytic stroke bounds",
+      "dense NumPy nonadjacent segment self intersections",
+      "raw binary GDS UNITS/PATH/LAYER/DATATYPE/WIDTH/XY parser",
+      "independent documented legacy-polymer arithmetic"
+    ],
+    "shapely_available": false,
+    "shapely_additional_simple_failures": [],
+    "source_sha256": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+    "max_endpoint_error_mm": 0.0,
+    "max_direction_vector_error": 5.053215498074303e-16,
+    "max_length_record_error_mm": 2.842170943040401e-14,
+    "independent_total_length_mm": 83762.832725127,
+    "min_radius_mm": 5.0,
+    "self_intersections": 0,
+    "self_overlaps": 0,
+    "pair_overlaps": [],
+    "tangent_contacts": [],
+    "dense_polyline_self_simple_failures": [],
+    "crossing_count": 98197,
+    "exported_crossing_count": 98197,
+    "max_crossing_position_error_mm": 2.7149799812125933e-13,
+    "max_crossing_angle_error_deg": 1.4787793389814397e-06,
+    "crossing_mismatches": [],
+    "legacy_loss": {
+      "max_component_error_db": 8.881784197001252e-16,
+      "mismatched_routes": [],
+      "independent_mean_known_components_db": 3.174794785400605,
+      "model": "old polymer model only, not glass measurements"
+    },
+    "gds": {
+      "passed": true,
+      "errors": [],
+      "paths": 526,
+      "layers": [
+        0
+      ],
+      "unit_m": 0.001,
+      "precision_m": 1e-09,
+      "width_mm": 0.05,
+      "max_width_error_mm": 0.0,
+      "max_endpoint_error_mm": 4.0194366942304644e-14,
+      "polyline_self_simple_failures": [],
+      "sha256": "9654ed11fdc58682870bac5ed40494c849e237bf910d5fb3d645e46a07664631"
+    },
+    "limitations": "Independent audit verifies centers/angles/poses/lengths/simple curves and GDS, not optical fabrication. Local inter-route spacing is separately verified by the main exact conflict audit.",
+    "runtime_seconds": 2.9255250999704003
+  },
+  "by_relation": {
+    "opposite": {
+      "success": 490,
+      "failed": 22
+    },
+    "adjacent": {
+      "success": 36,
+      "failed": 476
+    }
+  }
+}
