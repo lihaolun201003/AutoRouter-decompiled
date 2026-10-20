@@ -1,0 +1,355 @@
+{
+ "schema": "four_side_1024_v2_25d_layers_effect_v1",
+ "generated_utc": "2026-10-20T05:26:31Z",
+ "root": "outputs/four_side_1024_v2_25d_v01",
+ "description": "3 层 vs 5 层对照：回答“增加层数（高度）是否带来布通收益”",
+ "metric_units": {
+  "routed": "routes / 1024 per run",
+  "new_routed": "routes gained over 2D baseline",
+  "transitions": "S-curve transitions (2 per lifted route)",
+  "total_length_mm": "mm"
+ },
+ "schemes": {
+  "A": {
+   "present": {
+    "3": true,
+    "5": true
+   },
+   "layers3": {
+    "routed": 788,
+    "new_routed": 36,
+    "lifted": 36,
+    "flat_added": 0,
+    "transitions": 72,
+    "total_length_mm": 119805.76552,
+    "mean_length_mm": 152.037774,
+    "failed_total": 236,
+    "failed_no_candidate": 42,
+    "failed_unplaceable": 194,
+    "per_plane": {
+     "z1": {
+      "routed": 512,
+      "baseline": 508,
+      "lifted": 4,
+      "new": 4,
+      "failed": 0,
+      "failed_no_candidate": 0,
+      "failed_no_lift_candidate": 0
+     },
+     "z2": {
+      "routed": 276,
+      "baseline": 244,
+      "lifted": 32,
+      "new": 32,
+      "failed": 236,
+      "failed_no_candidate": 42,
+      "failed_no_lift_candidate": 194
+     }
+    },
+    "per_layer_flat_parts": {
+     "0": 516,
+     "1": 36,
+     "2": 308
+    },
+    "validation_passed": true,
+    "crossings_total": 87240,
+    "flattened_crossings_2d": 93753,
+    "crossings_avoided": 6513,
+    "clearance_violations": 0,
+    "curvature_violations": 0,
+    "min_3d_distance_excluding_crossings_mm": 0.080390234,
+    "min_curvature_radius_mm": 39.999999719
+   },
+   "layers5": {
+    "routed": 820,
+    "new_routed": 68,
+    "lifted": 68,
+    "flat_added": 0,
+    "transitions": 136,
+    "total_length_mm": 128895.610821,
+    "mean_length_mm": 157.189769,
+    "failed_total": 204,
+    "failed_no_candidate": 42,
+    "failed_unplaceable": 162,
+    "per_plane": {
+     "z1": {
+      "routed": 512,
+      "baseline": 508,
+      "lifted": 4,
+      "new": 4,
+      "failed": 0,
+      "failed_no_candidate": 0,
+      "failed_no_lift_candidate": 0
+     },
+     "z2": {
+      "routed": 308,
+      "baseline": 244,
+      "lifted": 64,
+      "new": 64,
+      "failed": 204,
+      "failed_no_candidate": 42,
+      "failed_no_lift_candidate": 162
+     }
+    },
+    "per_layer_flat_parts": {
+     "0": 516,
+     "1": 29,
+     "2": 20,
+     "3": 19,
+     "4": 372
+    },
+    "validation_passed": true,
+    "crossings_total": 87279,
+    "flattened_crossings_2d": 104076,
+    "crossings_avoided": 16797,
+    "clearance_violations": 0,
+    "curvature_violations": 0,
+    "min_3d_distance_excluding_crossings_mm": 0.080390234,
+    "min_curvature_radius_mm": 39.999999718
+   },
+   "gain_5_vs_3": {
+    "routed": 32,
+    "new_routed": 32,
+    "lifted": 32,
+    "flat_added": 0,
+    "transitions": 64,
+    "total_length_mm": 9089.845301,
+    "mean_length_mm": 5.151995,
+    "failed_total": -32,
+    "failed_no_candidate": 0,
+    "failed_unplaceable": -32,
+    "flattened_crossings_2d": 10323,
+    "crossings_avoided": 10284
+   },
+   "per_plane": {
+    "z1": {
+     "routed_3": 512,
+     "routed_5": 512,
+     "gain": 0,
+     "lifted_3": 4,
+     "lifted_5": 4,
+     "new_3": 4,
+     "new_5": 4,
+     "failed_3": 0,
+     "failed_5": 0
+    },
+    "z2": {
+     "routed_3": 276,
+     "routed_5": 308,
+     "gain": 32,
+     "lifted_3": 32,
+     "lifted_5": 64,
+     "new_3": 32,
+     "new_5": 64,
+     "failed_3": 236,
+     "failed_5": 204
+    }
+   },
+   "per_layer_flat_parts": {
+    "3": {
+     "0": 516,
+     "1": 36,
+     "2": 308
+    },
+    "5": {
+     "0": 516,
+     "1": 29,
+     "2": 20,
+     "3": 19,
+     "4": 372
+    }
+   },
+   "conclusion": "5 层 820/1024 vs 3 层 788/1024，布通增益 +32（新增 +32，抬升 +32），升降次数 136 vs 72；加入高度有正收益"
+  },
+  "B": {
+   "present": {
+    "3": true,
+    "5": true
+   },
+   "layers3": {
+    "routed": 342,
+    "new_routed": 80,
+    "lifted": 80,
+    "flat_added": 0,
+    "transitions": 160,
+    "total_length_mm": 57663.259699,
+    "mean_length_mm": 168.606023,
+    "failed_total": 682,
+    "failed_no_candidate": 426,
+    "failed_unplaceable": 256,
+    "per_plane": {
+     "z1": {
+      "routed": 128,
+      "baseline": 128,
+      "lifted": 0,
+      "new": 0,
+      "failed": 384,
+      "failed_no_candidate": 384,
+      "failed_no_lift_candidate": 0
+     },
+     "z2": {
+      "routed": 214,
+      "baseline": 134,
+      "lifted": 80,
+      "new": 80,
+      "failed": 298,
+      "failed_no_candidate": 42,
+      "failed_no_lift_candidate": 256
+     }
+    },
+    "per_layer_flat_parts": {
+     "0": 128,
+     "1": 80,
+     "2": 294
+    },
+    "validation_passed": true,
+    "crossings_total": 10822,
+    "flattened_crossings_2d": 21575,
+    "crossings_avoided": 10753,
+    "clearance_violations": 0,
+    "curvature_violations": 0,
+    "min_3d_distance_excluding_crossings_mm": 0.092445592,
+    "min_curvature_radius_mm": 39.9999997
+   },
+   "layers5": {
+    "routed": 383,
+    "new_routed": 121,
+    "lifted": 121,
+    "flat_added": 0,
+    "transitions": 242,
+    "total_length_mm": 68703.397905,
+    "mean_length_mm": 179.38224,
+    "failed_total": 641,
+    "failed_no_candidate": 426,
+    "failed_unplaceable": 215,
+    "per_plane": {
+     "z1": {
+      "routed": 128,
+      "baseline": 128,
+      "lifted": 0,
+      "new": 0,
+      "failed": 384,
+      "failed_no_candidate": 384,
+      "failed_no_lift_candidate": 0
+     },
+     "z2": {
+      "routed": 255,
+      "baseline": 134,
+      "lifted": 121,
+      "new": 121,
+      "failed": 257,
+      "failed_no_candidate": 42,
+      "failed_no_lift_candidate": 215
+     }
+    },
+    "per_layer_flat_parts": {
+     "0": 128,
+     "1": 64,
+     "2": 30,
+     "3": 27,
+     "4": 376
+    },
+    "validation_passed": true,
+    "crossings_total": 11138,
+    "flattened_crossings_2d": 34091,
+    "crossings_avoided": 22953,
+    "clearance_violations": 0,
+    "curvature_violations": 0,
+    "min_3d_distance_excluding_crossings_mm": 0.091116569,
+    "min_curvature_radius_mm": 39.9999997
+   },
+   "gain_5_vs_3": {
+    "routed": 41,
+    "new_routed": 41,
+    "lifted": 41,
+    "flat_added": 0,
+    "transitions": 82,
+    "total_length_mm": 11040.138206,
+    "mean_length_mm": 10.776217,
+    "failed_total": -41,
+    "failed_no_candidate": 0,
+    "failed_unplaceable": -41,
+    "flattened_crossings_2d": 12516,
+    "crossings_avoided": 12200
+   },
+   "per_plane": {
+    "z1": {
+     "routed_3": 128,
+     "routed_5": 128,
+     "gain": 0,
+     "lifted_3": 0,
+     "lifted_5": 0,
+     "new_3": 0,
+     "new_5": 0,
+     "failed_3": 384,
+     "failed_5": 384
+    },
+    "z2": {
+     "routed_3": 214,
+     "routed_5": 255,
+     "gain": 41,
+     "lifted_3": 80,
+     "lifted_5": 121,
+     "new_3": 80,
+     "new_5": 121,
+     "failed_3": 298,
+     "failed_5": 257
+    }
+   },
+   "per_layer_flat_parts": {
+    "3": {
+     "0": 128,
+     "1": 80,
+     "2": 294
+    },
+    "5": {
+     "0": 128,
+     "1": 64,
+     "2": 30,
+     "3": 27,
+     "4": 376
+    }
+   },
+   "conclusion": "5 层 383/1024 vs 3 层 342/1024，布通增益 +41（新增 +41，抬升 +41），升降次数 242 vs 160；加入高度有正收益"
+  }
+ },
+ "totals": {
+  "layers3": {
+   "present_schemes": [
+    "A",
+    "B"
+   ],
+   "denominator": 2048,
+   "routed": 1130,
+   "new_routed": 116,
+   "lifted": 116,
+   "transitions": 232,
+   "total_length_mm": 177469.025219
+  },
+  "layers5": {
+   "present_schemes": [
+    "A",
+    "B"
+   ],
+   "denominator": 2048,
+   "routed": 1203,
+   "new_routed": 189,
+   "lifted": 189,
+   "transitions": 378,
+   "total_length_mm": 197599.008726
+  },
+  "gain_5_vs_3": {
+   "schemes": [
+    "A",
+    "B"
+   ],
+   "denominator": 2048,
+   "routed": 73,
+   "new_routed": 73,
+   "lifted": 73,
+   "transitions": 146
+  }
+ },
+ "warnings": [],
+ "conclusion": "两方案合计：5 层 1203/2048 vs 3 层 1130/2048，净增益 +73；加入高度有正收益"
+}

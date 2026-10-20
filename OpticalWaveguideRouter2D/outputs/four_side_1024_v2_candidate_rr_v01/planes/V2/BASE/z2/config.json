@@ -1,0 +1,100 @@
+{
+ "experiment": "V2_BASE_z2",
+ "topology": "V2",
+ "algorithm": "BASE",
+ "plane": "z2",
+ "z_mm": 0.5,
+ "port_model": "real_2x16_dual_height",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "waveguide_width_mm": 0.05,
+  "min_edge_gap_mm": 0.03,
+  "min_centerline_clearance_mm": 0.08,
+  "min_bend_radius_mm": 40.0,
+  "fixed_radius_40mm": true,
+  "radius_note": "all arcs are exactly R=40 mm (D56 fixed-radius family); this is not a search over all R>=40 mm geometries",
+  "propagation_loss_db_per_cm": 0.05,
+  "bend_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "no femtosecond-laser-written glass bend-loss function is known; R=40 mm is a geometry constraint only, not a measured loss value"
+  },
+  "crossing_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing count is a geometric metric only"
+  },
+  "legacy_polymer_estimate": {
+   "available": true,
+   "status": "legacy_estimate",
+   "note": "the previous polymer bend-loss model may be quoted for comparison only, never as glass truth"
+  },
+  "sagitta_mm": 0.0005,
+  "min_cross_angle_deg": 5.0,
+  "interface_standard": {
+   "name": "IEC 61754-7-3:2019 2x16 MPO",
+   "fiber_column_pitch_mm": 0.25,
+   "fiber_row_pitch_mm": 0.5,
+   "rows": 2,
+   "columns": 16,
+   "connectors_per_side": 16,
+   "connector_pitch_mm": 9.0,
+   "connector_pitch_status": "provisional; full MPO housing interference at 9 mm pitch unresolved"
+  },
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "z_transition": "not_implemented",
+  "layer": 0,
+  "routing_layers_per_plane": 1,
+  "planes": 2,
+  "manufacturing_claim": "simulation under the two-height interface assumption; glass thickness and connector mounting direction are not confirmed, no z transition is implemented, not a claim of manufacturability",
+  "historical_baseline": {
+   "endpoint_mode": "virtual_unfolded",
+   "virtual_port_pitch_mm": 0.175,
+   "radius_mm": 5.0,
+   "edge_gap_mm": 0.125,
+   "clearance_mm": 0.175,
+   "output_dir": "outputs/four_side_1024_v1_v2_abcd"
+  }
+ },
+ "strategy": {
+  "name": "history_recombine",
+  "algorithm": "BASE",
+  "search_performed": false,
+  "source_plane": "z2",
+  "source_algorithm": "C",
+  "source_routes_json": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\planes\\V2\\C\\z2\\routes.json",
+  "source_routes_sha256": "ce6a880e81f744f5a56f1c24815281b9b7ac69ae267d3f7e0b217cec21fef745"
+ },
+ "budget": {
+  "candidate_budget_per_route": null,
+  "eval_budget": null,
+  "time_budget_seconds": null,
+  "ripup_rounds": 0,
+  "seed": null,
+  "note": "no search: the plane geometry is recombined verbatim from the historical solution"
+ },
+ "main_pass": null,
+ "final_audit_removed": 0,
+ "recombination": {
+  "task": "T1: V2 dual-height 698 combined baseline",
+  "kind": "history_recombine",
+  "recombination_script": "four_side_1024/v2opt/audit_baseline.py",
+  "source_plane": "z2",
+  "source_algorithm": "C",
+  "source_routes_json": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\planes\\V2\\C\\z2\\routes.json",
+  "source_routes_sha256": "ce6a880e81f744f5a56f1c24815281b9b7ac69ae267d3f7e0b217cec21fef745",
+  "source_experiment": "V2_C_z2",
+  "frozen_csv": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+  "frozen_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+  "note": "connection identity is a zero-change projection of the frozen V2 CSV through four_side_1024.fslw.ports.load_plane; only the routed geometry of the two historical plane solutions is reused and it is kept byte-identical"
+ }
+}

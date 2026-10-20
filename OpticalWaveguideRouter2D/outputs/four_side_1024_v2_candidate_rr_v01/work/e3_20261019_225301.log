@@ -1,0 +1,19 @@
+22:53:01 command={'command': 'e3', 'plane': 'z2', 'budget': 1600, 'budgets': '200,400,800,1600', 'workers': 8, 'time_limit': 0.0, 'rr_time_limit': 3600.0, 'rounds': 6, 'transactions': 64, 'sizes': [1, 2, 4, 8, 12], 'analysis_budget': 800, 'reinsert_budget': 800, 'max_evals_per_transaction': 12000, 'transaction_seconds': 90.0, 'seed_offset': 0}
+22:53:02 z2: loaded 206 historical routes from routes.json (306 failed records kept)
+22:55:07 sequential_commit: 32/306 applied=6 routed=212 elapsed=125.8s
+22:57:22 sequential_commit: 64/306 applied=6 routed=212 elapsed=260.3s
+22:59:10 sequential_commit: 96/306 applied=6 routed=212 elapsed=368.2s
+22:59:28 sequential_commit: 128/306 applied=6 routed=212 elapsed=386.2s
+23:00:22 sequential_commit: 160/306 applied=23 routed=229 elapsed=440.3s
+23:01:49 sequential_commit: 192/306 applied=23 routed=229 elapsed=527.4s
+23:02:15 sequential_commit: 224/306 applied=24 routed=230 elapsed=553.7s
+23:03:20 sequential_commit: 256/306 applied=36 routed=242 elapsed=618.1s
+23:04:35 sequential_commit: 288/306 applied=37 routed=243 elapsed=693.1s
+23:05:25 E3 phase1 (expanded sequential): routed=243
+23:05:25 R&R round 1: pending=269 analysing=96 budget=800 routed=243
+23:06:16 blocker analysis: 32/96 elapsed=50.8s
+23:07:49 blocker analysis: 64/96 elapsed=143.4s
+23:09:24 blocker analysis: 96/96 elapsed=238.3s
+23:10:32 R&R round 1 done: transactions=64 improving=0 committed=0 gain=0 routed=244 elapsed=307.2s
+23:10:32 E3 done: 243 -> 244 -> C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\planes\V2\E3\z2
+23:10:32 log written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\work\e3_20261019_225301.log

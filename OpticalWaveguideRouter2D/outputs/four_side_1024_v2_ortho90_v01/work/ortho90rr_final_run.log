@@ -1,0 +1,33 @@
+02:12:31 command={'command': 'ortho90rr', 'plane': 'z2', 'label': 'E3X', 'from_checkpoint': 'outputs/four_side_1024_v2_ortho90_v01/checkpoints/order_group_swesnw_z2.json', 'budget': 1600, 'budgets': '200,400,800,1600', 'workers': 10, 'time_limit': 0.0, 'rr_time_limit': 2400.0, 'rounds': 4, 'transactions': 128, 'sizes': [1, 2, 4, 8], 'analysis_budget': 1600, 'reinsert_budget': 1600, 'max_evals_per_transaction': 12000, 'transaction_seconds': 90.0, 'seed_offset': 777, 'targets_per_round': 64, 'analysis_targets': 128, 'min_rounds': 2, 'zero_rounds': 2, 'cycles': 2, 'reinsert_order': 'shuffle', 'escalate_sizes': False}
+02:12:31 z2: restored checkpoint order_group_swesnw_z2.json (134 routed)
+02:12:31 ortho90 continue z2: checkpoint=order_group_swesnw_z2.json routed=134 budget=1600
+02:12:31 ortho90 continue z2 cycle 1: re-insertion order=shuffle, pending=378
+02:13:21 sequential_commit: 32/378 applied=0 routed=134 elapsed=49.8s
+02:14:03 sequential_commit: 64/378 applied=0 routed=134 elapsed=91.8s
+02:14:46 sequential_commit: 96/378 applied=0 routed=134 elapsed=134.7s
+02:15:30 sequential_commit: 128/378 applied=0 routed=134 elapsed=179.2s
+02:16:09 sequential_commit: 160/378 applied=0 routed=134 elapsed=217.8s
+02:17:01 sequential_commit: 192/378 applied=0 routed=134 elapsed=270.3s
+02:17:36 sequential_commit: 224/378 applied=0 routed=134 elapsed=304.7s
+02:18:15 sequential_commit: 256/378 applied=0 routed=134 elapsed=344.2s
+02:18:56 sequential_commit: 288/378 applied=0 routed=134 elapsed=384.6s
+02:19:52 sequential_commit: 320/378 applied=0 routed=134 elapsed=441.1s
+02:20:42 sequential_commit: 352/378 applied=0 routed=134 elapsed=491.1s
+02:21:19 ortho90 continue z2 cycle 1: re-insertion pass 134 -> 134
+02:21:19 R&R round 1: pending=378 analysing=128 budget=1600 routed=134
+02:21:51 parallel blocker analysis: 32/128 elapsed=31.9s
+02:21:55 parallel blocker analysis: 64/128 elapsed=36.5s
+02:22:05 parallel blocker analysis: 96/128 elapsed=46.0s
+02:22:10 parallel blocker analysis: 128/128 elapsed=50.9s
+02:22:10 parallel blocker analysis done: 128 routes, 0 placed, elapsed=51.0s
+02:23:24 R&R round 1 done: transactions=64 improving=0 committed=0 gain=0 routed=134 elapsed=125.1s
+02:23:24 R&R round 2: pending=378 analysing=128 budget=1600 routed=134
+02:23:33 parallel blocker analysis: 32/128 elapsed=8.8s
+02:23:36 parallel blocker analysis: 64/128 elapsed=11.7s
+02:23:55 parallel blocker analysis: 96/128 elapsed=31.2s
+02:24:09 parallel blocker analysis: 128/128 elapsed=45.0s
+02:24:09 parallel blocker analysis done: 128 routes, 0 placed, elapsed=45.1s
+02:25:21 R&R round 2 done: transactions=64 improving=0 committed=0 gain=0 routed=134 elapsed=241.8s
+02:25:21 ortho90 continue z2 cycle 1: final routed=134 (R&R gain=0)
+02:25:21 ortho90 continue z2: 134 -> 134 -> C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_ortho90_v01\planes\V2\ORTHO90\z2
+02:25:21 log written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\work\ortho90rr_20261020_021231.log

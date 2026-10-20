@@ -1,0 +1,4533 @@
+{
+ "schema": "four_side_1024_v2_candidate_rr_v01_final_validation_v1",
+ "task": "T4 / task 9: independent authoritative acceptance of the V2 optimisation round",
+ "generated_at": "2026-10-19T23:32:30+08:00",
+ "project_root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D",
+ "output_root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01",
+ "topology": "V2",
+ "authority": {
+  "validator": "four_side_1024.fslw.validate_fslw",
+  "policy": "strict",
+  "expected_route_count_per_plane": 512,
+  "clearance_mm": 0.08,
+  "radius_mm": 40.0,
+  "note": "each plane is re-audited from its routes.json primitives with the frozen strict validator; the V2 search/candidate modules are never used on the acceptance path"
+ },
+ "labels_processed": [
+  "BASE",
+  "E1",
+  "E2",
+  "E3",
+  "E3X",
+  "Z1OPT",
+  "BEST"
+ ],
+ "labels_missing": [],
+ "all_requested_labels_present": true,
+ "label_order": [
+  "BASE",
+  "E1",
+  "E2",
+  "E3",
+  "Z1OPT",
+  "BEST"
+ ],
+ "planes": {
+  "BASE/z1": {
+   "label": "BASE",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\routes.json",
+   "routes_sha256": "0931eec137aa8cf041775f38ffa490ec815f308030cca8eb1f1c86284c717608",
+   "routes_size_bytes": 714409,
+   "report_wall_seconds": 8.7661442000026,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\audit_strict.json",
+    "sha256": "9f3763d9ba7181bf17426a5b8ca44d6f77df2c10dd83cd265cac02a9f3dbd870",
+    "routes_sha256": "0931eec137aa8cf041775f38ffa490ec815f308030cca8eb1f1c86284c717608",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 8.7661442000026,
+    "compact_report_sha256": "0eb55484d40e0fe85d35418196e6c851745bb978c7ecdc0cad0755a186e66db8",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 492,
+    "failed_status_count": 20,
+    "d56_checked_count": 492,
+    "d56_passed_count": 492,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 492,
+    "candidate_pair_count": 67418,
+    "crossing_count": 66775,
+    "crossing_pair_count": 65758,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 805,
+     "10-20": 1196,
+     "20-30": 375,
+     "30-45": 3659,
+     "45-60": 3590,
+     "60-75": 9773,
+     "75-90": 47377
+    },
+    "small_angle_crossing_count": 805,
+    "min_non_crossing_centerline_mm": 0.08535817975929301,
+    "crossing_window_count": 66775,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 492,
+     "failed_status_count": 20,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 8.741036600004009
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 492,
+     "failed": 20
+    },
+    "routed": 492,
+    "failed": 20,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\statistics.json",
+    "sha256": "2244a43a3d9642fe9f370336eef67293139498a53a3aa23a07a8b4a12c8ab63e",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 492,
+    "unrouted": 20,
+    "audit_passed": true,
+    "crossing_count": 66775,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "9f3763d9ba7181bf17426a5b8ca44d6f77df2c10dd83cd265cac02a9f3dbd870"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 8.807
+  },
+  "BASE/z2": {
+   "label": "BASE",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\routes.json",
+   "routes_sha256": "1f7eca7546c87cdaa81698861389a522583d9342dc987e83d5c8821470acdd65",
+   "routes_size_bytes": 519181,
+   "report_wall_seconds": 2.3730801999990945,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\audit_strict.json",
+    "sha256": "241cc59903b9b225933906cc0e39a8c58d25328f9d3505f677839a2b39f046c6",
+    "routes_sha256": "1f7eca7546c87cdaa81698861389a522583d9342dc987e83d5c8821470acdd65",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 2.3730801999990945,
+    "compact_report_sha256": "dc9232f30d4aea35bb9e9158a5970a3ce810057cbe384c7cbd35fcb295ec50ec",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 206,
+    "failed_status_count": 306,
+    "d56_checked_count": 206,
+    "d56_passed_count": 206,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 206,
+    "candidate_pair_count": 11144,
+    "crossing_count": 7020,
+    "crossing_pair_count": 6391,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 334,
+     "10-20": 793,
+     "20-30": 504,
+     "30-45": 1644,
+     "45-60": 1336,
+     "60-75": 1306,
+     "75-90": 1103
+    },
+    "small_angle_crossing_count": 334,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 7020,
+    "crossing_window_max_mm": 1.0272860041122487,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 206,
+     "failed_status_count": 306,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 2.3581164999995963
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "failed": 306,
+     "routed": 206
+    },
+    "routed": 206,
+    "failed": 306,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\statistics.json",
+    "sha256": "056c0855b20df0f29adaf25d475dae43aa553ef960dc819e0b3fcd7c96f335b2",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 206,
+    "unrouted": 306,
+    "audit_passed": true,
+    "crossing_count": 7020,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "241cc59903b9b225933906cc0e39a8c58d25328f9d3505f677839a2b39f046c6"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 2.405
+  },
+  "E1/z1": {
+   "label": "E1",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\routes.json",
+   "routes_sha256": "6a8abc6415e1c453fcc2b089a45ffb4eeec7d33405daa6d388242cccb9970741",
+   "routes_size_bytes": 485786,
+   "report_wall_seconds": 8.752731200002017,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\audit_strict.json",
+    "sha256": "80acb30165ad844c46e3fded807a50c8fa34f42ba957138f068239b91d15bc02",
+    "routes_sha256": "6a8abc6415e1c453fcc2b089a45ffb4eeec7d33405daa6d388242cccb9970741",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 8.752731200002017,
+    "compact_report_sha256": "ffae70225f51baadd2e7172f6f39f5a6665a9f98e6f3157654a30e3ead4eb501",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 492,
+    "failed_status_count": 20,
+    "d56_checked_count": 492,
+    "d56_passed_count": 492,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 492,
+    "candidate_pair_count": 67418,
+    "crossing_count": 66775,
+    "crossing_pair_count": 65758,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 805,
+     "10-20": 1196,
+     "20-30": 375,
+     "30-45": 3659,
+     "45-60": 3590,
+     "60-75": 9773,
+     "75-90": 47377
+    },
+    "small_angle_crossing_count": 805,
+    "min_non_crossing_centerline_mm": 0.08535817975929301,
+    "crossing_window_count": 66775,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 492,
+     "failed_status_count": 20,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 8.734481299994513
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 492,
+     "failed": 20
+    },
+    "routed": 492,
+    "failed": 20,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\statistics.json",
+    "sha256": "e42e98aeb51d1de15bd35ece172e0edcafe151008dce009dfbfca93b86cde9a4",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 492,
+    "unrouted": 20,
+    "audit_passed": true,
+    "crossing_count": 66775,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "80acb30165ad844c46e3fded807a50c8fa34f42ba957138f068239b91d15bc02"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 8.787
+  },
+  "E1/z2": {
+   "label": "E1",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\routes.json",
+   "routes_sha256": "0249f3914fb2b51c6142ce221900233505a68a81c43629c7a158efc23744ead1",
+   "routes_size_bytes": 673849,
+   "report_wall_seconds": 4.2227486000047065,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\audit_strict.json",
+    "sha256": "7322b3feb6b211c7143f9d9b77b084ad1ca2638fc12634a351e86015a76a06df",
+    "routes_sha256": "0249f3914fb2b51c6142ce221900233505a68a81c43629c7a158efc23744ead1",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 4.2227486000047065,
+    "compact_report_sha256": "0289aa03e523555cda1855d2c24a7a8007966c54876b89ef11d2a0852dea665c",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 243,
+    "failed_status_count": 269,
+    "d56_checked_count": 243,
+    "d56_passed_count": 243,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 243,
+    "candidate_pair_count": 19432,
+    "crossing_count": 14545,
+    "crossing_pair_count": 12270,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 412,
+     "10-20": 1042,
+     "20-30": 852,
+     "30-45": 2570,
+     "45-60": 2505,
+     "60-75": 2813,
+     "75-90": 4351
+    },
+    "small_angle_crossing_count": 412,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 14545,
+    "crossing_window_max_mm": 1.0272860041122487,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 243,
+     "failed_status_count": 269,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 4.193119699993986
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 243,
+     "failed": 269
+    },
+    "routed": 243,
+    "failed": 269,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\statistics.json",
+    "sha256": "4697328c0b859cab6382b61704fb9d8de1d05cb821bace032f4e28a3acbc2cb6",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 243,
+    "unrouted": 269,
+    "audit_passed": true,
+    "crossing_count": 14545,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "7322b3feb6b211c7143f9d9b77b084ad1ca2638fc12634a351e86015a76a06df"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 4.268
+  },
+  "E2/z1": {
+   "label": "E2",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\routes.json",
+   "routes_sha256": "462174d7059c2294d95abc98beb0d6ef1a8816c92951f61f2ac488b93873173d",
+   "routes_size_bytes": 485786,
+   "report_wall_seconds": 8.769357699995453,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\audit_strict.json",
+    "sha256": "76eae350903c106f7cc50d67ba9c44d3c612578f2f0039ab559e1f45c266ab1a",
+    "routes_sha256": "462174d7059c2294d95abc98beb0d6ef1a8816c92951f61f2ac488b93873173d",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 8.769357699995453,
+    "compact_report_sha256": "5ce47fa1847e750bcced67f566a149add996728e54695b9a6a53720acf12839a",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 492,
+    "failed_status_count": 20,
+    "d56_checked_count": 492,
+    "d56_passed_count": 492,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 492,
+    "candidate_pair_count": 67418,
+    "crossing_count": 66775,
+    "crossing_pair_count": 65758,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 805,
+     "10-20": 1196,
+     "20-30": 375,
+     "30-45": 3659,
+     "45-60": 3590,
+     "60-75": 9773,
+     "75-90": 47377
+    },
+    "small_angle_crossing_count": 805,
+    "min_non_crossing_centerline_mm": 0.08535817975929301,
+    "crossing_window_count": 66775,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 492,
+     "failed_status_count": 20,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 8.751408700001775
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 492,
+     "failed": 20
+    },
+    "routed": 492,
+    "failed": 20,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\statistics.json",
+    "sha256": "d6a03d17b6b082b1b1db52d94c3c3d0bf2a8f41b31cb4bdceb2ae7ff293f8fef",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 492,
+    "unrouted": 20,
+    "audit_passed": true,
+    "crossing_count": 66775,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "76eae350903c106f7cc50d67ba9c44d3c612578f2f0039ab559e1f45c266ab1a"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 8.811
+  },
+  "E2/z2": {
+   "label": "E2",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\routes.json",
+   "routes_sha256": "7a3dccb56f771e9736fadca3209e8e5b6264d48c5fc1a8df3401c59281cdc535",
+   "routes_size_bytes": 371188,
+   "report_wall_seconds": 2.2941240000000107,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\audit_strict.json",
+    "sha256": "0f08d28e3a9258acfbaf7aa4db417e7948db2c0ab3a05b4c62fb4d88425e1134",
+    "routes_sha256": "7a3dccb56f771e9736fadca3209e8e5b6264d48c5fc1a8df3401c59281cdc535",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 2.2941240000000107,
+    "compact_report_sha256": "6d3337953534dfe3b76917fce2d2c276627f1f4eea3f7a9dd99abac2b0a38821",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 209,
+    "failed_status_count": 303,
+    "d56_checked_count": 209,
+    "d56_passed_count": 209,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 209,
+    "candidate_pair_count": 11765,
+    "crossing_count": 7478,
+    "crossing_pair_count": 6780,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 338,
+     "10-20": 830,
+     "20-30": 555,
+     "30-45": 1691,
+     "45-60": 1423,
+     "60-75": 1431,
+     "75-90": 1210
+    },
+    "small_angle_crossing_count": 338,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 7478,
+    "crossing_window_max_mm": 1.0272860041122487,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 209,
+     "failed_status_count": 303,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 2.2810555000032764
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "failed": 303,
+     "routed": 209
+    },
+    "routed": 209,
+    "failed": 303,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\statistics.json",
+    "sha256": "38e81a21f573ff01ff0fb5f4b3ebc4117d482e638762a0f4b43e88ec54368971",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 209,
+    "unrouted": 303,
+    "audit_passed": true,
+    "crossing_count": 7478,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "0f08d28e3a9258acfbaf7aa4db417e7948db2c0ab3a05b4c62fb4d88425e1134"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 2.324
+  },
+  "E3/z1": {
+   "label": "E3",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\routes.json",
+   "routes_sha256": "abcbdd72427278996ee827e5ae5d5298d8c8c7d2a12bf5ca03266166bb133804",
+   "routes_size_bytes": 485786,
+   "report_wall_seconds": 7.947271199998795,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\audit_strict.json",
+    "sha256": "b3afcd830387093ac5d76868d4b7d51440781f0c2a0f4269f1448983292f3f1a",
+    "routes_sha256": "abcbdd72427278996ee827e5ae5d5298d8c8c7d2a12bf5ca03266166bb133804",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 7.947271199998795,
+    "compact_report_sha256": "8055b0a4fdb6fdbdccd024b05d081a06066b81c55c7da554c536c27780ac79c3",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 492,
+    "failed_status_count": 20,
+    "d56_checked_count": 492,
+    "d56_passed_count": 492,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 492,
+    "candidate_pair_count": 67418,
+    "crossing_count": 66775,
+    "crossing_pair_count": 65758,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 805,
+     "10-20": 1196,
+     "20-30": 375,
+     "30-45": 3659,
+     "45-60": 3590,
+     "60-75": 9773,
+     "75-90": 47377
+    },
+    "small_angle_crossing_count": 805,
+    "min_non_crossing_centerline_mm": 0.08535817975929301,
+    "crossing_window_count": 66775,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 492,
+     "failed_status_count": 20,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 7.931635900000401
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 492,
+     "failed": 20
+    },
+    "routed": 492,
+    "failed": 20,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\statistics.json",
+    "sha256": "fc7921c6d3eadc07b2845e1a50cb29b44746f38a831268605af867cd4ec5462f",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 492,
+    "unrouted": 20,
+    "audit_passed": true,
+    "crossing_count": 66775,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "b3afcd830387093ac5d76868d4b7d51440781f0c2a0f4269f1448983292f3f1a"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 7.978
+  },
+  "E3/z2": {
+   "label": "E3",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\routes.json",
+   "routes_sha256": "161ac0c288d058dc9f194260aae0c6f722a9e23fa685efaecc6552981320a931",
+   "routes_size_bytes": 487423,
+   "report_wall_seconds": 3.840260800003307,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\audit_strict.json",
+    "sha256": "f141183ef47b749ebb7961cb54dc57d2786bdc3283b9980be13f43909072df5e",
+    "routes_sha256": "161ac0c288d058dc9f194260aae0c6f722a9e23fa685efaecc6552981320a931",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 3.840260800003307,
+    "compact_report_sha256": "da99f2f9e8146537f609cc1700586c6ad804752454592188e5fa1e84103f0c95",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 244,
+    "failed_status_count": 268,
+    "d56_checked_count": 244,
+    "d56_passed_count": 244,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 244,
+    "candidate_pair_count": 19675,
+    "crossing_count": 14779,
+    "crossing_pair_count": 12446,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 415,
+     "10-20": 1044,
+     "20-30": 853,
+     "30-45": 2579,
+     "45-60": 2514,
+     "60-75": 2831,
+     "75-90": 4543
+    },
+    "small_angle_crossing_count": 415,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 14779,
+    "crossing_window_max_mm": 1.055263974656546,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 244,
+     "failed_status_count": 268,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 3.819667000003392
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 244,
+     "failed": 268
+    },
+    "routed": 244,
+    "failed": 268,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\statistics.json",
+    "sha256": "d7a4c925c2a456b282454b7d726d9dffc8f7bb42ea998c07f77017ae75e485e8",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 244,
+    "unrouted": 268,
+    "audit_passed": true,
+    "crossing_count": 14779,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "f141183ef47b749ebb7961cb54dc57d2786bdc3283b9980be13f43909072df5e"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 3.87
+  },
+  "E3X/z1": {
+   "label": "E3X",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\routes.json",
+   "routes_sha256": "8470a8a217efaf410ae44194f8b49e518816b99e741b529b6b231e191e06cc69",
+   "routes_size_bytes": 485790,
+   "report_wall_seconds": 7.89615049999702,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\audit_strict.json",
+    "sha256": "cf0e4aa1c1e0b197fcdf772975291f69203cace7c3cb62e6271927329b9d4e8a",
+    "routes_sha256": "8470a8a217efaf410ae44194f8b49e518816b99e741b529b6b231e191e06cc69",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 7.89615049999702,
+    "compact_report_sha256": "248476313532986af73ba053adc8507b3500666a23aa6aa012362a99c824bb99",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 492,
+    "failed_status_count": 20,
+    "d56_checked_count": 492,
+    "d56_passed_count": 492,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 492,
+    "candidate_pair_count": 67418,
+    "crossing_count": 66775,
+    "crossing_pair_count": 65758,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 805,
+     "10-20": 1196,
+     "20-30": 375,
+     "30-45": 3659,
+     "45-60": 3590,
+     "60-75": 9773,
+     "75-90": 47377
+    },
+    "small_angle_crossing_count": 805,
+    "min_non_crossing_centerline_mm": 0.08535817975929301,
+    "crossing_window_count": 66775,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 492,
+     "failed_status_count": 20,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 7.877334200005862
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 492,
+     "failed": 20
+    },
+    "routed": 492,
+    "failed": 20,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\statistics.json",
+    "sha256": "89011093c281a49f226c2edfe10b88355adc6c6d12d9d92eef8137b5db8ab614",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 492,
+    "unrouted": 20,
+    "audit_passed": true,
+    "crossing_count": 66775,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "cf0e4aa1c1e0b197fcdf772975291f69203cace7c3cb62e6271927329b9d4e8a"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 7.928
+  },
+  "E3X/z2": {
+   "label": "E3X",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\routes.json",
+   "routes_sha256": "8335098441714e23b45fb21295caa0f8f6615f61b72de956fd5aac839a52cfa7",
+   "routes_size_bytes": 492662,
+   "report_wall_seconds": 3.772206000001461,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\audit_strict.json",
+    "sha256": "8df78564d763daf465727264bca18fb646e49c9a75d35e20d46e6e758b368ae3",
+    "routes_sha256": "8335098441714e23b45fb21295caa0f8f6615f61b72de956fd5aac839a52cfa7",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 3.772206000001461,
+    "compact_report_sha256": "1edcca54d7deee22e7302172c3dece467b643bac6b6849b760d697dc77f8db8a",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 244,
+    "failed_status_count": 268,
+    "d56_checked_count": 244,
+    "d56_passed_count": 244,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 244,
+    "candidate_pair_count": 19675,
+    "crossing_count": 14779,
+    "crossing_pair_count": 12446,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 415,
+     "10-20": 1044,
+     "20-30": 853,
+     "30-45": 2579,
+     "45-60": 2514,
+     "60-75": 2831,
+     "75-90": 4543
+    },
+    "small_angle_crossing_count": 415,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 14779,
+    "crossing_window_max_mm": 1.055263974656546,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 244,
+     "failed_status_count": 268,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 3.7513005000000703
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 244,
+     "failed": 268
+    },
+    "routed": 244,
+    "failed": 268,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\statistics.json",
+    "sha256": "7e66466660425d5795410976913a19c994a9c6b577724f69f989bfa4096f9f24",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 244,
+    "unrouted": 268,
+    "audit_passed": true,
+    "crossing_count": 14779,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "8df78564d763daf465727264bca18fb646e49c9a75d35e20d46e6e758b368ae3"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 3.803
+  },
+  "Z1OPT/z1": {
+   "label": "Z1OPT",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\routes.json",
+   "routes_sha256": "3977b191a02c6145e28e773f87e2427c55a57f3b22140081f703700a18cca79e",
+   "routes_size_bytes": 492411,
+   "report_wall_seconds": 8.371440499999153,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\audit_strict.json",
+    "sha256": "ac8fdbf665ee47d8d77fda00249752cc429903b00c5f52b563248d97d07f8fbf",
+    "routes_sha256": "3977b191a02c6145e28e773f87e2427c55a57f3b22140081f703700a18cca79e",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 8.371440499999153,
+    "compact_report_sha256": "cf8212c1bb7e73bab5f97706e093bb28f2376ce59fb4a76786c7ea4878d345c8",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 508,
+    "failed_status_count": 4,
+    "d56_checked_count": 508,
+    "d56_passed_count": 508,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 508,
+    "candidate_pair_count": 71984,
+    "crossing_count": 71362,
+    "crossing_pair_count": 70233,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 887,
+     "10-20": 1313,
+     "20-30": 426,
+     "30-45": 3939,
+     "45-60": 3746,
+     "60-75": 10488,
+     "75-90": 50563
+    },
+    "small_angle_crossing_count": 887,
+    "min_non_crossing_centerline_mm": 0.08314901320523281,
+    "crossing_window_count": 71362,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 508,
+     "failed_status_count": 4,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 8.355032399995252
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 508,
+     "failed": 4
+    },
+    "routed": 508,
+    "failed": 4,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\statistics.json",
+    "sha256": "5f12a9a06e34d799913276fe933aeaf53009b951055500a2bf0d0aa73ea6cbe7",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 508,
+    "unrouted": 4,
+    "audit_passed": true,
+    "crossing_count": 71362,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "ac8fdbf665ee47d8d77fda00249752cc429903b00c5f52b563248d97d07f8fbf"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 8.404
+  },
+  "Z1OPT/z2": {
+   "label": "Z1OPT",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\routes.json",
+   "routes_sha256": "5964a04a118f51b38e000c2278f6d460da85decbf38a10ac0308e7eeec484fbf",
+   "routes_size_bytes": 367232,
+   "report_wall_seconds": 2.1420868999994127,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\audit_strict.json",
+    "sha256": "de07637f5e8a0c68b249ae6b5d45f8ba2876876da42cf0aad1a66d71f68c5572",
+    "routes_sha256": "5964a04a118f51b38e000c2278f6d460da85decbf38a10ac0308e7eeec484fbf",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 2.1420868999994127,
+    "compact_report_sha256": "da4f2c2b4264002cd144d477c144d4988e34cb451a9ed4437d3aff5e38c38bb7",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 206,
+    "failed_status_count": 306,
+    "d56_checked_count": 206,
+    "d56_passed_count": 206,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 206,
+    "candidate_pair_count": 11144,
+    "crossing_count": 7020,
+    "crossing_pair_count": 6391,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 334,
+     "10-20": 793,
+     "20-30": 504,
+     "30-45": 1644,
+     "45-60": 1336,
+     "60-75": 1306,
+     "75-90": 1103
+    },
+    "small_angle_crossing_count": 334,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 7020,
+    "crossing_window_max_mm": 1.0272860041122487,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 206,
+     "failed_status_count": 306,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 2.1253694999977597
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "failed": 306,
+     "routed": 206
+    },
+    "routed": 206,
+    "failed": 306,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\statistics.json",
+    "sha256": "8c92724d866b165450885348ed67c47da58499be1c07e5f031a0129b75bdfb5c",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 206,
+    "unrouted": 306,
+    "audit_passed": true,
+    "crossing_count": 7020,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "de07637f5e8a0c68b249ae6b5d45f8ba2876876da42cf0aad1a66d71f68c5572"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 2.172
+  },
+  "BEST/z1": {
+   "label": "BEST",
+   "plane": "z1",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\routes.json",
+   "routes_sha256": "1e16caba9deb44dd98a80b3fbd0f79ec55a83d37a040f1ed9a58db11edd931b4",
+   "routes_size_bytes": 495939,
+   "report_wall_seconds": 8.569866900004854,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\audit_strict.json",
+    "sha256": "fd672869a45e7b0e5f078afbcebbdf6d8423863ba5370ec0ff0df80b25f7ba22",
+    "routes_sha256": "1e16caba9deb44dd98a80b3fbd0f79ec55a83d37a040f1ed9a58db11edd931b4",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 8.569866900004854,
+    "compact_report_sha256": "d5f7f15cb8017976cd24529a9912ace651f34a4a2d65e607f3f9fd3e04ef74da",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z1",
+    "route_count": 512,
+    "routed_count": 508,
+    "failed_status_count": 4,
+    "d56_checked_count": 508,
+    "d56_passed_count": 508,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 508,
+    "candidate_pair_count": 71984,
+    "crossing_count": 71362,
+    "crossing_pair_count": 70233,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 887,
+     "10-20": 1313,
+     "20-30": 426,
+     "30-45": 3939,
+     "45-60": 3746,
+     "60-75": 10488,
+     "75-90": 50563
+    },
+    "small_angle_crossing_count": 887,
+    "min_non_crossing_centerline_mm": 0.08314901320523281,
+    "crossing_window_count": 71362,
+    "crossing_window_max_mm": 0.9137833999082657,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 508,
+     "failed_status_count": 4,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "opposite": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 8.55283220000274
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 508,
+     "failed": 4
+    },
+    "routed": 508,
+    "failed": 4,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\statistics.json",
+    "sha256": "83cb47b696f043cc46b6e96b8a02c1ce91d51a4950e1a48ca02e2501ea2fea86",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 508,
+    "unrouted": 4,
+    "audit_passed": true,
+    "crossing_count": 71362,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "fd672869a45e7b0e5f078afbcebbdf6d8423863ba5370ec0ff0df80b25f7ba22"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 8.602
+  },
+  "BEST/z2": {
+   "label": "BEST",
+   "plane": "z2",
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2",
+   "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\routes.json",
+   "routes_sha256": "8398401a34c03b533a5941f76d7bdc01cff9ac744bb0983f95c39b9d870b1f2a",
+   "routes_size_bytes": 488800,
+   "report_wall_seconds": 3.9285546999963117,
+   "audit": {
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\audit_strict.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\audit_strict.json",
+    "sha256": "6d9c463a525428bdbfe5c7e5a2b21a85479f1ee400fa1e8c2dee38ade9a81f08",
+    "routes_sha256": "8398401a34c03b533a5941f76d7bdc01cff9ac744bb0983f95c39b9d870b1f2a",
+    "status": "fresh",
+    "written": false,
+    "wall_seconds": 3.9285546999963117,
+    "compact_report_sha256": "60228347eeb13f757b69768655bc61563b77b312e80d151fa95dff493127be21",
+    "fresh_fields_equal_fresh_audit": true,
+    "field_comparison": {
+     "passed": true,
+     "policy_used": true,
+     "route_count": true,
+     "routed_count": true,
+     "d56_checked_count": true,
+     "d56_passed_count": true,
+     "d56_failed_count": true,
+     "violation_pair_count": true,
+     "crossing_count": true,
+     "spacing_violation_pairs": true,
+     "overlap_pairs": true,
+     "crossing_window_overlap_pairs": true
+    }
+   },
+   "validator_report": {
+    "passed": true,
+    "policy_used": "strict",
+    "plane": "z2",
+    "route_count": 512,
+    "routed_count": 244,
+    "failed_status_count": 268,
+    "d56_checked_count": 244,
+    "d56_passed_count": 244,
+    "d56_failed_count": 0,
+    "endpoint_unchecked_count": 0,
+    "pair_audit": "exact_independent",
+    "pair_audited_route_count": 244,
+    "candidate_pair_count": 19675,
+    "crossing_count": 14779,
+    "crossing_pair_count": 12446,
+    "crossing_angle_histogram": {
+     "0-1": 0,
+     "1-5": 0,
+     "5-10": 415,
+     "10-20": 1044,
+     "20-30": 853,
+     "30-45": 2579,
+     "45-60": 2514,
+     "60-75": 2831,
+     "75-90": 4543
+    },
+    "small_angle_crossing_count": 415,
+    "min_non_crossing_centerline_mm": 0.08039023381442009,
+    "crossing_window_count": 14779,
+    "crossing_window_max_mm": 1.055263974656546,
+    "violation_pair_count": 0,
+    "violations": {
+     "spacing_violation_pairs": 0,
+     "overlap_pairs": 0,
+     "touch_pairs": 0,
+     "crossing_window_overlap_pairs": 0,
+     "double_cross_pairs": 0,
+     "crossing_window_excessive_pairs": 0,
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0,
+     "violation_pair_count": 0
+    },
+    "self_checks": {
+     "self_intersections": 0,
+     "self_overlaps": 0,
+     "self_spacing_violations": 0,
+     "radius_violations": 0,
+     "boundary_violations": 0,
+     "diagonal_line_violations": 0,
+     "free_or_short_s_arc_violations": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "structure": {
+     "checked": true,
+     "route_count": 512,
+     "routed_count": 244,
+     "failed_status_count": 268,
+     "ports_used": 1024,
+     "ports_expected": 1024,
+     "route_relation_counts": {
+      "adjacent": 512
+     },
+     "record_plane_conflicts": 0
+    },
+    "process": {
+     "board_mm": 150.0,
+     "radius_mm": 40.0,
+     "waveguide_width_mm": 0.05,
+     "min_edge_gap_mm": 0.03,
+     "centerline_clearance_mm": 0.08,
+     "centerline_clearance_limit_mm": 0.0799999,
+     "sagitta_mm": 0.0005,
+     "parameters_source": "routes.json:process"
+    },
+    "runtime_seconds": 3.9087653999959002
+   },
+   "identity": {
+    "routes_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\routes.json",
+    "record_count": 512,
+    "expected_record_count": 512,
+    "identity_mismatch_count": 0,
+    "identity_mismatches": [],
+    "route_id_order_matches_csv": true,
+    "status_counts": {
+     "routed": 244,
+     "failed": 268
+    },
+    "routed": 244,
+    "failed": 268,
+    "unknown_status_count": 0,
+    "ports_used_unique": 1024,
+    "ports_used_once": true,
+    "csv_path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+    "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "csv_sha256_matches_expected": true,
+    "payload_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+    "payload_csv_sha256_matches_expected": true,
+    "plane_validation_passed": true,
+    "plane_validation_issues": [],
+    "fields_checked": [
+     "route_id",
+     "source_endpoint",
+     "target_endpoint",
+     "pair",
+     "relation",
+     "source_side",
+     "target_side",
+     "source_row",
+     "target_row"
+    ],
+    "passed": true
+   },
+   "statistics": {
+    "wall_seconds": null,
+    "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\statistics.json",
+    "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\statistics.json",
+    "sha256": "0cf4374065e91d0dd47bfaccc738fbc7ad2481687c85ea6162aca12c66dcb57c",
+    "problems_with_cached_file": [],
+    "written": false,
+    "routed": 244,
+    "unrouted": 268,
+    "audit_passed": true,
+    "crossing_count": 14779,
+    "total_violation_count": 0,
+    "audit_source_status": "merged",
+    "audit_sha256_recorded": "6d9c463a525428bdbfe5c7e5a2b21a85479f1ee400fa1e8c2dee38ade9a81f08"
+   },
+   "checks": {
+    "validator_passed": true,
+    "validator_errors_empty": true,
+    "policy_strict": true,
+    "route_count_512": true,
+    "d56_failed_zero": true,
+    "d56_checked_equals_routed": true,
+    "d56_passed_equals_routed": true,
+    "violation_pair_count_zero": true,
+    "all_violation_fields_zero": true,
+    "endpoint_unchecked_zero": true,
+    "structure_checked": true,
+    "radius_40mm": true,
+    "clearance_008mm": true,
+    "width_005mm": true,
+    "identity_passed": true,
+    "routed_counts_consistent": true,
+    "statistics_present": true,
+    "statistics_audit_passed": true,
+    "statistics_merged_from_audit_file": true,
+    "audit_file_frozen_or_fresh": true,
+    "audit_file_consistent": true
+   },
+   "passed": true,
+   "seconds": 3.959
+  }
+ },
+ "combined": {
+  "BASE": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\routes_1024.json",
+     "exists": true,
+     "bytes": 2672724,
+     "sha256": "e6628b093664dbbcc4360445b773bc599a10cd6cda532de065e39f340114b846"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\statistics.json",
+     "exists": true,
+     "bytes": 39882,
+     "sha256": "75d4375c39e2cf9f75e71b30cf6232f4da64ddc37319667da9d394b85590eea4"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\planes_summary.json",
+     "exists": true,
+     "bytes": 6413,
+     "sha256": "a9a1355540c7c57a51583e610468e7981006a8d8c2989e18b828431127fd9efa"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.png",
+     "exists": true,
+     "bytes": 2640194,
+     "sha256": "e35be247fa521c955a4684aea0e847be051feba52f980458dad51d6019d98782"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1000519,
+     "sha256": "4bb787745cd1c01e6ca85b8ec031067fa91d527230808f4999c05999400986cb"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\overlay_3d.png",
+     "exists": true,
+     "bytes": 2854519,
+     "sha256": "e71cf23cadc77527c761dae852fd3c8144f401e95fcae64270c487b77bb57b81"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 714916,
+     "sha256": "d3c6811931962d2afc5d4987b30f3ab2e5dc1e6058ea895dd3720ff8a5ae2086"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 698,
+   "failed_total": 326,
+   "routed_by_plane": {
+    "z1": 492,
+    "z2": 206
+   },
+   "z1_routed": 492,
+   "z2_routed": 206,
+   "expected_routed_total": 698,
+   "statistics_routed": 698,
+   "statistics_unrouted": 326,
+   "connections_total": 1024,
+   "routing_rate": 0.681640625,
+   "expected_routing_rate": 0.681640625,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 73795,
+   "expected_same_plane_crossings": 73795,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 492,
+    "1": 206
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 492,
+     "1": 206
+    },
+    "path_count": 698,
+    "bytes": 714916
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 2640194
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 2854519
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1000519
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "BASE",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  },
+  "E1": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\routes_1024.json",
+     "exists": true,
+     "bytes": 2891239,
+     "sha256": "18b5e7bae2c42f13578c6df77e0481d548191f8cae2595bbd7e808306238e01e"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\statistics.json",
+     "exists": true,
+     "bytes": 40139,
+     "sha256": "6a898947890515eb48cdc3aa541639046cdb0bc1c087a74499a38177e2acdbe1"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\planes_summary.json",
+     "exists": true,
+     "bytes": 6370,
+     "sha256": "c1b4ab1f44e3a7d6a8beffc53214c1001263381b726737c9a64f1bcfd7c72b52"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.png",
+     "exists": true,
+     "bytes": 2979216,
+     "sha256": "406ff2c95288ae63aca63e41600433fa658bb5584579622493fc82397e4ed8bc"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1119587,
+     "sha256": "bcfe1a3929d58a6f5906f664e4f59762c5c3e89770570189b97e671f50e78c3e"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\overlay_3d.png",
+     "exists": true,
+     "bytes": 3043362,
+     "sha256": "b455d9606acd0a6a6da84221b9df4b898d904414011d7c9275f7c776ec46c5cd"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 824394,
+     "sha256": "c2db6a7024c3b4f53fcd25bc9bb5a9932a90fdbc16d2682e80da89c2f0851ce0"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 735,
+   "failed_total": 289,
+   "routed_by_plane": {
+    "z1": 492,
+    "z2": 243
+   },
+   "z1_routed": 492,
+   "z2_routed": 243,
+   "expected_routed_total": 735,
+   "statistics_routed": 735,
+   "statistics_unrouted": 289,
+   "connections_total": 1024,
+   "routing_rate": 0.7177734375,
+   "expected_routing_rate": 0.7177734375,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 81320,
+   "expected_same_plane_crossings": 81320,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 492,
+    "1": 243
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 492,
+     "1": 243
+    },
+    "path_count": 735,
+    "bytes": 824394
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 2979216
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 3043362
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1119587
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "E1",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  },
+  "E2": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\routes_1024.json",
+     "exists": true,
+     "bytes": 2680987,
+     "sha256": "0d2be2310cde942f904f96746a9ec7aafc92b841b9348933f2aaa9bc804339e4"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\statistics.json",
+     "exists": true,
+     "bytes": 39819,
+     "sha256": "8154ce35dfd161ee1e6ebd8a2336e0b609bdc9337ddc85341f890aabf0b53566"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\planes_summary.json",
+     "exists": true,
+     "bytes": 6369,
+     "sha256": "6418989b71364d7e2bea73e9c3d7bc9c374f3c896e2a3f9f51bd085c6a0a2e83"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.png",
+     "exists": true,
+     "bytes": 2675157,
+     "sha256": "0d7ddc706e641daf2bed83a9f8b6306dbf75d675faf283f0f58923e20f5bbab7"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1014062,
+     "sha256": "9513dd7646a372a5f2d76e4e51e546af42307159bcf31106c3c214b2f9b45b48"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\overlay_3d.png",
+     "exists": true,
+     "bytes": 2873965,
+     "sha256": "35d00dd577e3b63eff67d2f34045f4de463a886e2f12d0527bf8e4c7904b708b"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 727918,
+     "sha256": "4afe47b8ff7fcd055576f4950c79d2f67dccd00616052727fe8352a8dd2ca7ca"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 701,
+   "failed_total": 323,
+   "routed_by_plane": {
+    "z1": 492,
+    "z2": 209
+   },
+   "z1_routed": 492,
+   "z2_routed": 209,
+   "expected_routed_total": 701,
+   "statistics_routed": 701,
+   "statistics_unrouted": 323,
+   "connections_total": 1024,
+   "routing_rate": 0.6845703125,
+   "expected_routing_rate": 0.6845703125,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 74253,
+   "expected_same_plane_crossings": 74253,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 492,
+    "1": 209
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 492,
+     "1": 209
+    },
+    "path_count": 701,
+    "bytes": 727918
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 2675157
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 2873965
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1014062
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "E2",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  },
+  "E3": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\routes_1024.json",
+     "exists": true,
+     "bytes": 2896247,
+     "sha256": "69acde9a35451642ed25e89ea6a6b3af53b938480d9831bfd3f011a547726ae0"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\statistics.json",
+     "exists": true,
+     "bytes": 40124,
+     "sha256": "0f06b7e9f985a526e324008e68ad7ea28d0ab369cf4d92ae5accc98cc11a9b09"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\planes_summary.json",
+     "exists": true,
+     "bytes": 6364,
+     "sha256": "e36e52c3a924b3bf79cfb177c4ae43471cfbc2ab045ff68986c9e339c21619be"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.png",
+     "exists": true,
+     "bytes": 2983892,
+     "sha256": "68fc6de40aa2a6577b1bd626135352b6d9c18fcbe0ea36d78e3d259d73184f5d"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1122217,
+     "sha256": "80f2a9c5b13f2039007ddac5a6abef4953b9edb7961fae8be1b5726759632abb"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\overlay_3d.png",
+     "exists": true,
+     "bytes": 3043989,
+     "sha256": "e9cddee2bbdbfef66870c5c94a7178cca7a83ac684655560a8d7aa0c02df46a1"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 826824,
+     "sha256": "d17f4c75a97bd1413dbbb27f114b0573287f3caf74879ebb550d688b48afa727"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 736,
+   "failed_total": 288,
+   "routed_by_plane": {
+    "z1": 492,
+    "z2": 244
+   },
+   "z1_routed": 492,
+   "z2_routed": 244,
+   "expected_routed_total": 736,
+   "statistics_routed": 736,
+   "statistics_unrouted": 288,
+   "connections_total": 1024,
+   "routing_rate": 0.71875,
+   "expected_routing_rate": 0.71875,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 81554,
+   "expected_same_plane_crossings": 81554,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 492,
+    "1": 244
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 492,
+     "1": 244
+    },
+    "path_count": 736,
+    "bytes": 826824
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 2983892
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 3043989
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1122217
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "E3",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  },
+  "E3X": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\routes_1024.json",
+     "exists": true,
+     "bytes": 2903531,
+     "sha256": "b3888deba1cda30d4b9e8f58f9219919892ec94ae19767cf1dfb5f4170393cc1"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\statistics.json",
+     "exists": true,
+     "bytes": 40136,
+     "sha256": "0ba327128c8a13f757ba54181cf4c0fc370a6faa5064383ed2f4dbe2b10d317b"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\planes_summary.json",
+     "exists": true,
+     "bytes": 6381,
+     "sha256": "06b154c98109f8f2e627e91e7906d2c9918ebb9928bac3da07773a300769aeae"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.png",
+     "exists": true,
+     "bytes": 2984189,
+     "sha256": "593ff8e629c08a21d75108f0a368b203a5fe95d39003d1ff9fb3c1cf68451d8a"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1122512,
+     "sha256": "fce0c65b838321a2f90a8a33b502989b8864c069665d894980a976e15e30d242"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\overlay_3d.png",
+     "exists": true,
+     "bytes": 3044747,
+     "sha256": "0aba0ab1222cbc3cda56b69c4a25c0d87aa85880253b47be22b47da7df3f1bec"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 826824,
+     "sha256": "a4f553cab08a36c4a2828cb8dbf30c766d0fa0e851f6b2e02dd9cd355481eead"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 736,
+   "failed_total": 288,
+   "routed_by_plane": {
+    "z1": 492,
+    "z2": 244
+   },
+   "z1_routed": 492,
+   "z2_routed": 244,
+   "expected_routed_total": 736,
+   "statistics_routed": 736,
+   "statistics_unrouted": 288,
+   "connections_total": 1024,
+   "routing_rate": 0.71875,
+   "expected_routing_rate": 0.71875,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 81554,
+   "expected_same_plane_crossings": 81554,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 492,
+    "1": 244
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 492,
+     "1": 244
+    },
+    "path_count": 736,
+    "bytes": 826824
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 2984189
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 3044747
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1122512
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "E3X",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  },
+  "Z1OPT": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\routes_1024.json",
+     "exists": true,
+     "bytes": 2704987,
+     "sha256": "7bb04582401b0ab5e52134483cad0a3a8419c34f5b941c6d0b39503aa9f8353c"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\statistics.json",
+     "exists": true,
+     "bytes": 39889,
+     "sha256": "f81cd3855216ad5d46b2086c3d1fed775ec1b7378d9ac4653745dc42fee22060"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\planes_summary.json",
+     "exists": true,
+     "bytes": 6419,
+     "sha256": "cc976d3594c28de3ec08344bfd094b1aada01b7bd19f9bb0eaae86cb4784cc86"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.png",
+     "exists": true,
+     "bytes": 2682818,
+     "sha256": "4ee13bc991a753d487877a28eb7682f04189f97a5eb7127fa0104362643200ac"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1018237,
+     "sha256": "966e93ec5193f1003eb292cbf91febb7df584b8ebf12d335b481974a4f69e3a5"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\overlay_3d.png",
+     "exists": true,
+     "bytes": 2859070,
+     "sha256": "92ed0cd0394caf03dee2c1d367d56373988618fae0141f39dcd6b5a2377b3468"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 728700,
+     "sha256": "443c7b676eeacbe6c6fd921836fc12c5097d2fb664dafc97013d319137eb85da"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 714,
+   "failed_total": 310,
+   "routed_by_plane": {
+    "z1": 508,
+    "z2": 206
+   },
+   "z1_routed": 508,
+   "z2_routed": 206,
+   "expected_routed_total": 714,
+   "statistics_routed": 714,
+   "statistics_unrouted": 310,
+   "connections_total": 1024,
+   "routing_rate": 0.697265625,
+   "expected_routing_rate": 0.697265625,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 78382,
+   "expected_same_plane_crossings": 78382,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 508,
+    "1": 206
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 508,
+     "1": 206
+    },
+    "path_count": 714,
+    "bytes": 728700
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 2682818
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 2859070
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1018237
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "Z1OPT",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  },
+  "BEST": {
+   "combined_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST",
+   "files": {
+    "routes_1024.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\routes_1024.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\routes_1024.json",
+     "exists": true,
+     "bytes": 2937326,
+     "sha256": "069e892b4dca4105ce68adcb4b10250d77e6d1ee5d0edcb0b9488a622d371d3f"
+    },
+    "statistics.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\statistics.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\statistics.json",
+     "exists": true,
+     "bytes": 40156,
+     "sha256": "f68d3685f8cb0b9dd2cbf3f40980c10d634bdabf6e337609197038e7df8d14b2"
+    },
+    "planes_summary.json": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\planes_summary.json",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\planes_summary.json",
+     "exists": true,
+     "bytes": 6404,
+     "sha256": "82bbfa0ef44160e08ce549f9cbcb7a9751cf8a29de4bb67db94b82e525be337e"
+    },
+    "layer_2d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.png",
+     "exists": true,
+     "bytes": 3029615,
+     "sha256": "b471ab5abc3d4fbd6a84c6df327b61b9a93ae5ee3838ce3bd4ffb35bbeda459a"
+    },
+    "layer_2d.svg": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.svg",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.svg",
+     "exists": true,
+     "bytes": 1139183,
+     "sha256": "9b70a4a1e784c576edf756795c1c62f35681b3329850463e805a51880e88dc66"
+    },
+    "overlay_3d.png": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\overlay_3d.png",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\overlay_3d.png",
+     "exists": true,
+     "bytes": 3049534,
+     "sha256": "eec414b9efd11214152eac77ed4a059356bd899d553960a10b5083a2affa11b6"
+    },
+    "routing_1024_two_height.gds": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\routing_1024_two_height.gds",
+     "relative": "outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\routing_1024_two_height.gds",
+     "exists": true,
+     "bytes": 840608,
+     "sha256": "f88c923cd199a9e7554b7df82be76796ad8258f50a454299a179e748a1226d07"
+    }
+   },
+   "routes_1024_records": 1024,
+   "routes_1024_unique_route_ids": 1024,
+   "routed_total": 752,
+   "failed_total": 272,
+   "routed_by_plane": {
+    "z1": 508,
+    "z2": 244
+   },
+   "z1_routed": 508,
+   "z2_routed": 244,
+   "expected_routed_total": 752,
+   "statistics_routed": 752,
+   "statistics_unrouted": 272,
+   "connections_total": 1024,
+   "routing_rate": 0.734375,
+   "expected_routing_rate": 0.734375,
+   "audit_passed_all_planes": true,
+   "same_plane_crossings": 86141,
+   "expected_same_plane_crossings": 86141,
+   "violations": {
+    "same_plane_total": 0,
+    "complete": true,
+    "by_plane": {
+     "z1": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     },
+     "z2": {
+      "spacing_violation_pairs": 0,
+      "overlap_pairs": 0,
+      "touch_pairs": 0,
+      "crossing_window_overlap_pairs": 0,
+      "self_intersections": 0,
+      "radius_violations": 0,
+      "boundary_violations": 0
+     }
+    },
+    "cross_plane": {
+     "status": "not_a_violation_by_design",
+     "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+     "value": 0
+    }
+   },
+   "same_plane_violation_total": 0,
+   "violations_complete": true,
+   "gds_summary_verified": true,
+   "gds_summary_layers": [
+    0,
+    1
+   ],
+   "gds_summary_paths_per_layer": {
+    "0": 508,
+    "1": 244
+   },
+   "independent_gds_reread": {
+    "exists": true,
+    "verified": true,
+    "layers": [
+     0,
+     1
+    ],
+    "datatypes": [
+     0
+    ],
+    "paths_per_layer": {
+     "0": 508,
+     "1": 244
+    },
+    "path_count": 752,
+    "bytes": 840608
+   },
+   "figure_integrity": {
+    "layer_2d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 3800,
+     "height": 1839,
+     "bytes": 3029615
+    },
+    "overlay_3d.png": {
+     "exists": true,
+     "valid_png": true,
+     "width": 2800,
+     "height": 2200,
+     "bytes": 3049534
+    },
+    "layer_2d.svg": {
+     "exists": true,
+     "valid_svg": true,
+     "bytes": 1139183
+    }
+   },
+   "routes_1024_route_ids_cover_csv": true,
+   "planes_summary_figures": {
+    "layer_2d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.png",
+    "overlay_3d_png": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\overlay_3d.png"
+   },
+   "checks": {
+    "all_files_exist": true,
+    "records_1024": true,
+    "unique_route_ids_1024": true,
+    "ids_cover_csv": true,
+    "routed_equals_z1_plus_z2": true,
+    "routed_by_plane": true,
+    "statistics_routed": true,
+    "statistics_unrouted": true,
+    "connections_total_1024": true,
+    "routing_rate": true,
+    "audit_passed_all_planes": true,
+    "violations_complete": true,
+    "same_plane_violations_zero": true,
+    "same_plane_crossings": true,
+    "gds_summary_verified": true,
+    "gds_summary_layers_0_1": true,
+    "gds_paths_per_layer": true,
+    "independent_gds_layers_0_1": true,
+    "independent_gds_datatypes_0": true,
+    "independent_gds_paths_per_layer": true,
+    "figures_valid": true
+   },
+   "passed": true,
+   "label": "BEST",
+   "status": "reused",
+   "build": {
+    "built": false,
+    "reason": "fresh"
+   }
+  }
+ },
+ "materialized_planes": {
+  "E1": [],
+  "E2": [],
+  "E3": [],
+  "E3X": [],
+  "Z1OPT": [],
+  "BEST": []
+ },
+ "audit_files": {
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z1\\audit_strict.json": {
+   "sha256": "9f3763d9ba7181bf17426a5b8ca44d6f77df2c10dd83cd265cac02a9f3dbd870",
+   "status": "fresh",
+   "routes_sha256": "0931eec137aa8cf041775f38ffa490ec815f308030cca8eb1f1c86284c717608"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BASE\\z2\\audit_strict.json": {
+   "sha256": "241cc59903b9b225933906cc0e39a8c58d25328f9d3505f677839a2b39f046c6",
+   "status": "fresh",
+   "routes_sha256": "1f7eca7546c87cdaa81698861389a522583d9342dc987e83d5c8821470acdd65"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\audit_strict.json": {
+   "sha256": "80acb30165ad844c46e3fded807a50c8fa34f42ba957138f068239b91d15bc02",
+   "status": "fresh",
+   "routes_sha256": "6a8abc6415e1c453fcc2b089a45ffb4eeec7d33405daa6d388242cccb9970741"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\audit_strict.json": {
+   "sha256": "7322b3feb6b211c7143f9d9b77b084ad1ca2638fc12634a351e86015a76a06df",
+   "status": "fresh",
+   "routes_sha256": "0249f3914fb2b51c6142ce221900233505a68a81c43629c7a158efc23744ead1"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z1\\audit_strict.json": {
+   "sha256": "76eae350903c106f7cc50d67ba9c44d3c612578f2f0039ab559e1f45c266ab1a",
+   "status": "fresh",
+   "routes_sha256": "462174d7059c2294d95abc98beb0d6ef1a8816c92951f61f2ac488b93873173d"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E2\\z2\\audit_strict.json": {
+   "sha256": "0f08d28e3a9258acfbaf7aa4db417e7948db2c0ab3a05b4c62fb4d88425e1134",
+   "status": "fresh",
+   "routes_sha256": "7a3dccb56f771e9736fadca3209e8e5b6264d48c5fc1a8df3401c59281cdc535"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z1\\audit_strict.json": {
+   "sha256": "b3afcd830387093ac5d76868d4b7d51440781f0c2a0f4269f1448983292f3f1a",
+   "status": "fresh",
+   "routes_sha256": "abcbdd72427278996ee827e5ae5d5298d8c8c7d2a12bf5ca03266166bb133804"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3\\z2\\audit_strict.json": {
+   "sha256": "f141183ef47b749ebb7961cb54dc57d2786bdc3283b9980be13f43909072df5e",
+   "status": "fresh",
+   "routes_sha256": "161ac0c288d058dc9f194260aae0c6f722a9e23fa685efaecc6552981320a931"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z1\\audit_strict.json": {
+   "sha256": "cf0e4aa1c1e0b197fcdf772975291f69203cace7c3cb62e6271927329b9d4e8a",
+   "status": "fresh",
+   "routes_sha256": "8470a8a217efaf410ae44194f8b49e518816b99e741b529b6b231e191e06cc69"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E3X\\z2\\audit_strict.json": {
+   "sha256": "8df78564d763daf465727264bca18fb646e49c9a75d35e20d46e6e758b368ae3",
+   "status": "fresh",
+   "routes_sha256": "8335098441714e23b45fb21295caa0f8f6615f61b72de956fd5aac839a52cfa7"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z1\\audit_strict.json": {
+   "sha256": "ac8fdbf665ee47d8d77fda00249752cc429903b00c5f52b563248d97d07f8fbf",
+   "status": "fresh",
+   "routes_sha256": "3977b191a02c6145e28e773f87e2427c55a57f3b22140081f703700a18cca79e"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\Z1OPT\\z2\\audit_strict.json": {
+   "sha256": "de07637f5e8a0c68b249ae6b5d45f8ba2876876da42cf0aad1a66d71f68c5572",
+   "status": "fresh",
+   "routes_sha256": "5964a04a118f51b38e000c2278f6d460da85decbf38a10ac0308e7eeec484fbf"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1\\audit_strict.json": {
+   "sha256": "fd672869a45e7b0e5f078afbcebbdf6d8423863ba5370ec0ff0df80b25f7ba22",
+   "status": "fresh",
+   "routes_sha256": "1e16caba9deb44dd98a80b3fbd0f79ec55a83d37a040f1ed9a58db11edd931b4"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2\\audit_strict.json": {
+   "sha256": "6d9c463a525428bdbfe5c7e5a2b21a85479f1ee400fa1e8c2dee38ade9a81f08",
+   "status": "fresh",
+   "routes_sha256": "8398401a34c03b533a5941f76d7bdc01cff9ac744bb0983f95c39b9d870b1f2a"
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\routes_1024.json": {
+   "sha256": "e6628b093664dbbcc4360445b773bc599a10cd6cda532de065e39f340114b846",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\statistics.json": {
+   "sha256": "75d4375c39e2cf9f75e71b30cf6232f4da64ddc37319667da9d394b85590eea4",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\planes_summary.json": {
+   "sha256": "a9a1355540c7c57a51583e610468e7981006a8d8c2989e18b828431127fd9efa",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.png": {
+   "sha256": "e35be247fa521c955a4684aea0e847be051feba52f980458dad51d6019d98782",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\layer_2d.svg": {
+   "sha256": "4bb787745cd1c01e6ca85b8ec031067fa91d527230808f4999c05999400986cb",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\overlay_3d.png": {
+   "sha256": "e71cf23cadc77527c761dae852fd3c8144f401e95fcae64270c487b77bb57b81",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BASE\\routing_1024_two_height.gds": {
+   "sha256": "d3c6811931962d2afc5d4987b30f3ab2e5dc1e6058ea895dd3720ff8a5ae2086",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\routes_1024.json": {
+   "sha256": "18b5e7bae2c42f13578c6df77e0481d548191f8cae2595bbd7e808306238e01e",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\statistics.json": {
+   "sha256": "6a898947890515eb48cdc3aa541639046cdb0bc1c087a74499a38177e2acdbe1",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\planes_summary.json": {
+   "sha256": "c1b4ab1f44e3a7d6a8beffc53214c1001263381b726737c9a64f1bcfd7c72b52",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.png": {
+   "sha256": "406ff2c95288ae63aca63e41600433fa658bb5584579622493fc82397e4ed8bc",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\layer_2d.svg": {
+   "sha256": "bcfe1a3929d58a6f5906f664e4f59762c5c3e89770570189b97e671f50e78c3e",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\overlay_3d.png": {
+   "sha256": "b455d9606acd0a6a6da84221b9df4b898d904414011d7c9275f7c776ec46c5cd",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E1\\routing_1024_two_height.gds": {
+   "sha256": "c2db6a7024c3b4f53fcd25bc9bb5a9932a90fdbc16d2682e80da89c2f0851ce0",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\routes_1024.json": {
+   "sha256": "0d2be2310cde942f904f96746a9ec7aafc92b841b9348933f2aaa9bc804339e4",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\statistics.json": {
+   "sha256": "8154ce35dfd161ee1e6ebd8a2336e0b609bdc9337ddc85341f890aabf0b53566",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\planes_summary.json": {
+   "sha256": "6418989b71364d7e2bea73e9c3d7bc9c374f3c896e2a3f9f51bd085c6a0a2e83",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.png": {
+   "sha256": "0d7ddc706e641daf2bed83a9f8b6306dbf75d675faf283f0f58923e20f5bbab7",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\layer_2d.svg": {
+   "sha256": "9513dd7646a372a5f2d76e4e51e546af42307159bcf31106c3c214b2f9b45b48",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\overlay_3d.png": {
+   "sha256": "35d00dd577e3b63eff67d2f34045f4de463a886e2f12d0527bf8e4c7904b708b",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E2\\routing_1024_two_height.gds": {
+   "sha256": "4afe47b8ff7fcd055576f4950c79d2f67dccd00616052727fe8352a8dd2ca7ca",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\routes_1024.json": {
+   "sha256": "69acde9a35451642ed25e89ea6a6b3af53b938480d9831bfd3f011a547726ae0",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\statistics.json": {
+   "sha256": "0f06b7e9f985a526e324008e68ad7ea28d0ab369cf4d92ae5accc98cc11a9b09",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\planes_summary.json": {
+   "sha256": "e36e52c3a924b3bf79cfb177c4ae43471cfbc2ab045ff68986c9e339c21619be",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.png": {
+   "sha256": "68fc6de40aa2a6577b1bd626135352b6d9c18fcbe0ea36d78e3d259d73184f5d",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\layer_2d.svg": {
+   "sha256": "80f2a9c5b13f2039007ddac5a6abef4953b9edb7961fae8be1b5726759632abb",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\overlay_3d.png": {
+   "sha256": "e9cddee2bbdbfef66870c5c94a7178cca7a83ac684655560a8d7aa0c02df46a1",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3\\routing_1024_two_height.gds": {
+   "sha256": "d17f4c75a97bd1413dbbb27f114b0573287f3caf74879ebb550d688b48afa727",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\routes_1024.json": {
+   "sha256": "b3888deba1cda30d4b9e8f58f9219919892ec94ae19767cf1dfb5f4170393cc1",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\statistics.json": {
+   "sha256": "0ba327128c8a13f757ba54181cf4c0fc370a6faa5064383ed2f4dbe2b10d317b",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\planes_summary.json": {
+   "sha256": "06b154c98109f8f2e627e91e7906d2c9918ebb9928bac3da07773a300769aeae",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.png": {
+   "sha256": "593ff8e629c08a21d75108f0a368b203a5fe95d39003d1ff9fb3c1cf68451d8a",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\layer_2d.svg": {
+   "sha256": "fce0c65b838321a2f90a8a33b502989b8864c069665d894980a976e15e30d242",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\overlay_3d.png": {
+   "sha256": "0aba0ab1222cbc3cda56b69c4a25c0d87aa85880253b47be22b47da7df3f1bec",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\E3X\\routing_1024_two_height.gds": {
+   "sha256": "a4f553cab08a36c4a2828cb8dbf30c766d0fa0e851f6b2e02dd9cd355481eead",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\routes_1024.json": {
+   "sha256": "7bb04582401b0ab5e52134483cad0a3a8419c34f5b941c6d0b39503aa9f8353c",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\statistics.json": {
+   "sha256": "f81cd3855216ad5d46b2086c3d1fed775ec1b7378d9ac4653745dc42fee22060",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\planes_summary.json": {
+   "sha256": "cc976d3594c28de3ec08344bfd094b1aada01b7bd19f9bb0eaae86cb4784cc86",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.png": {
+   "sha256": "4ee13bc991a753d487877a28eb7682f04189f97a5eb7127fa0104362643200ac",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\layer_2d.svg": {
+   "sha256": "966e93ec5193f1003eb292cbf91febb7df584b8ebf12d335b481974a4f69e3a5",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\overlay_3d.png": {
+   "sha256": "92ed0cd0394caf03dee2c1d367d56373988618fae0141f39dcd6b5a2377b3468",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\Z1OPT\\routing_1024_two_height.gds": {
+   "sha256": "443c7b676eeacbe6c6fd921836fc12c5097d2fb664dafc97013d319137eb85da",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\routes_1024.json": {
+   "sha256": "069e892b4dca4105ce68adcb4b10250d77e6d1ee5d0edcb0b9488a622d371d3f",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\statistics.json": {
+   "sha256": "f68d3685f8cb0b9dd2cbf3f40980c10d634bdabf6e337609197038e7df8d14b2",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\planes_summary.json": {
+   "sha256": "82bbfa0ef44160e08ce549f9cbcb7a9751cf8a29de4bb67db94b82e525be337e",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.png": {
+   "sha256": "b471ab5abc3d4fbd6a84c6df327b61b9a93ae5ee3838ce3bd4ffb35bbeda459a",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\layer_2d.svg": {
+   "sha256": "9b70a4a1e784c576edf756795c1c62f35681b3329850463e805a51880e88dc66",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\overlay_3d.png": {
+   "sha256": "eec414b9efd11214152eac77ed4a059356bd899d553960a10b5083a2affa11b6",
+   "status": "combined",
+   "routes_sha256": null
+  },
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\combined\\V2\\BEST\\routing_1024_two_height.gds": {
+   "sha256": "f88c923cd199a9e7554b7df82be76796ad8258f50a454299a179e748a1226d07",
+   "status": "combined",
+   "routes_sha256": null
+  }
+ },
+ "summary": {
+  "all_passed": true,
+  "labels": {
+   "BASE": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   },
+   "E1": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   },
+   "E2": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   },
+   "E3": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   },
+   "E3X": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   },
+   "Z1OPT": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   },
+   "BEST": {
+    "planes": {
+     "z1": true,
+     "z2": true
+    },
+    "planes_passed": true,
+    "combined_passed": true,
+    "combined_required": true,
+    "all_passed": true
+   }
+  },
+  "plane_count": 14,
+  "planes_passed": 14,
+  "combined_count": 7,
+  "combined_passed": 7,
+  "routed_totals": {
+   "BASE": 698,
+   "E1": 735,
+   "E2": 701,
+   "E3": 736,
+   "E3X": 736,
+   "Z1OPT": 714,
+   "BEST": 752
+  },
+  "ranking_by_routed": [
+   "BEST",
+   "E3",
+   "E3X",
+   "E1",
+   "Z1OPT",
+   "E2",
+   "BASE"
+  ],
+  "best_label": "BEST",
+  "base_routed": 698,
+  "delta_vs_base": {
+   "BASE": 0,
+   "E1": 37,
+   "E2": 3,
+   "E3": 38,
+   "E3X": 38,
+   "Z1OPT": 16,
+   "BEST": 54
+  }
+ },
+ "environment": {
+  "python": "3.10.11",
+  "implementation": "CPython",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "script": "four_side_1024\\v2opt\\finalize.py",
+  "authoritative_validator": "four_side_1024.fslw.validate_fslw",
+  "statistics_tool": "four_side_1024.fslw.metrics.build_plane_statistics",
+  "combined_tool": "four_side_1024.fslw.combine.build_combined",
+  "frozen_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+  "frozen_process": {
+   "board_mm": 150.0,
+   "waveguide_width_mm": 0.05,
+   "min_edge_gap_mm": 0.03,
+   "centerline_clearance_mm": 0.08,
+   "min_bend_radius_mm": 40.0,
+   "sagitta_mm": 0.0005,
+   "policy": "strict"
+  }
+ },
+ "timings": {
+  "label_seconds": {
+   "BASE": 11.393,
+   "E1": 13.215,
+   "E2": 11.297,
+   "E3": 11.999,
+   "E3X": 11.879,
+   "Z1OPT": 10.72,
+   "BEST": 12.715
+  },
+  "total_seconds": 83.265
+ },
+ "reproduce": {
+  "command": ".venv\\Scripts\\python.exe -m four_side_1024.v2opt.finalize --root \"outputs\\four_side_1024_v2_candidate_rr_v01\"",
+  "skip_combine_command": ".venv\\Scripts\\python.exe -m four_side_1024.v2opt.finalize --root \"outputs\\four_side_1024_v2_candidate_rr_v01\" --skip-combine",
+  "note": "BASE audit/statistics/combined artefacts are gap-filled only (frozen T1 acceptance record); non-BASE labels are re-derived from their current routes.json"
+ },
+ "notes": [
+  "the authoritative acceptance criterion is validate_fslw strict (clearance 0.080 mm, R=40 mm, 512 route records per height plane); no optimisation module takes part in the verdict",
+  "planes z1 and z2 are independent 2D problems at model heights 0.0 and 0.5 mm; XY-projected cross-plane overlaps are informational only (fslw/SPEC.md section 2)",
+  "a label that only wrote one height plane has the other plane materialised from the frozen BASE plane with identical identity and identical primitives (see materialized_planes)",
+  "BASE artefacts recorded in baseline_acceptance.json are never rewritten; only missing BASE artefacts are gap-filled",
+  "bend loss and crossing loss remain unknown_uncalibrated; the combined statistics report only propagation loss"
+ ]
+}

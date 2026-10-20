@@ -1,0 +1,46 @@
+22:43:11 command={'command': 'sweep', 'plane': 'z2', 'budget': 1600, 'budgets': '200,400,800,1600', 'workers': 10, 'time_limit': 0.0, 'rr_time_limit': 0.0, 'rounds': 6, 'transactions': 64, 'sizes': [1, 2, 4, 8, 12], 'analysis_budget': 800, 'reinsert_budget': 800, 'max_evals_per_transaction': 12000, 'transaction_seconds': 90.0, 'seed_offset': 0}
+22:43:11 z2: loaded 206 historical routes from routes.json (306 failed records kept)
+22:44:40 sweep budget=200: 30/306 routes tested, found=3, elapsed=89.1s
+22:44:40 sweep budget=200: 60/306 routes tested, found=5, elapsed=89.2s
+22:44:40 sweep budget=200: 91/306 routes tested, found=7, elapsed=89.3s
+22:44:41 sweep budget=200: 121/306 routes tested, found=8, elapsed=90.8s
+22:44:43 sweep budget=200: 152/306 routes tested, found=10, elapsed=92.0s
+22:44:51 sweep budget=200: 183/306 routes tested, found=13, elapsed=100.2s
+22:44:51 sweep budget=200: 213/306 routes tested, found=15, elapsed=100.5s
+22:44:53 sweep budget=200: 244/306 routes tested, found=17, elapsed=102.0s
+22:44:54 sweep budget=200: 275/306 routes tested, found=19, elapsed=103.2s
+22:44:57 sweep budget=200: 306/306 routes tested, found=22, elapsed=106.1s
+22:44:57 sweep budget=200: {"budget": 200, "tested": 306, "found": 22, "evaluated": 36057, "seconds": 106.13995290000094, "workers": 10, "by_pair_found": {"EN": 6, "ES": 9, "SW": 5, "NW": 2}, "family_histogram": {"SHIFT_TURN": 16, "TURN_S": 6}}
+22:47:24 sweep budget=400: 30/306 routes tested, found=6, elapsed=147.0s
+22:47:29 sweep budget=400: 60/306 routes tested, found=9, elapsed=151.8s
+22:47:31 sweep budget=400: 91/306 routes tested, found=13, elapsed=153.9s
+22:47:31 sweep budget=400: 121/306 routes tested, found=16, elapsed=154.1s
+22:47:32 sweep budget=400: 152/306 routes tested, found=20, elapsed=154.8s
+22:47:41 sweep budget=400: 183/306 routes tested, found=24, elapsed=164.2s
+22:47:43 sweep budget=400: 213/306 routes tested, found=28, elapsed=165.8s
+22:47:44 sweep budget=400: 244/306 routes tested, found=33, elapsed=167.0s
+22:47:47 sweep budget=400: 275/306 routes tested, found=37, elapsed=169.9s
+22:47:47 sweep budget=400: 306/306 routes tested, found=42, elapsed=170.7s
+22:47:48 sweep budget=400: {"budget": 400, "tested": 306, "found": 42, "evaluated": 58686, "seconds": 170.76577460000044, "workers": 10, "by_pair_found": {"EN": 7, "ES": 20, "SW": 11, "NW": 4}, "family_histogram": {"SHIFT_TURN": 21, "TURN_S": 21}}
+22:50:33 sweep budget=800: 30/306 routes tested, found=6, elapsed=165.9s
+22:50:46 sweep budget=800: 60/306 routes tested, found=9, elapsed=178.4s
+22:50:49 sweep budget=800: 91/306 routes tested, found=15, elapsed=181.1s
+22:50:49 sweep budget=800: 121/306 routes tested, found=19, elapsed=181.6s
+22:50:51 sweep budget=800: 152/306 routes tested, found=25, elapsed=183.4s
+22:50:56 sweep budget=800: 183/306 routes tested, found=34, elapsed=188.0s
+22:50:57 sweep budget=800: 214/306 routes tested, found=42, elapsed=189.5s
+22:50:59 sweep budget=800: 244/306 routes tested, found=47, elapsed=191.2s
+22:51:00 sweep budget=800: 275/306 routes tested, found=56, elapsed=192.9s
+22:51:05 sweep budget=800: 306/306 routes tested, found=62, elapsed=197.5s
+22:51:05 sweep budget=800: {"budget": 800, "tested": 306, "found": 62, "evaluated": 81821, "seconds": 197.54396650000126, "workers": 10, "by_pair_found": {"EN": 15, "ES": 21, "SW": 14, "NW": 12}, "family_histogram": {"TURN_S": 35, "SHIFT_TURN": 27}}
+22:53:50 sweep budget=1600: 30/306 routes tested, found=6, elapsed=164.6s
+22:54:05 sweep budget=1600: 60/306 routes tested, found=10, elapsed=179.7s
+22:54:07 sweep budget=1600: 90/306 routes tested, found=13, elapsed=181.6s
+22:54:11 sweep budget=1600: 121/306 routes tested, found=19, elapsed=186.2s
+22:54:13 sweep budget=1600: 152/306 routes tested, found=25, elapsed=188.2s
+22:54:13 sweep budget=1600: 183/306 routes tested, found=34, elapsed=188.3s
+22:54:15 sweep budget=1600: 213/306 routes tested, found=39, elapsed=189.8s
+22:54:16 sweep budget=1600: 244/306 routes tested, found=48, elapsed=190.9s
+22:54:16 sweep budget=1600: 275/306 routes tested, found=56, elapsed=191.3s
+22:54:20 sweep budget=1600: 306/306 routes tested, found=62, elapsed=194.7s
+22:54:20 sweep budget=1600: {"budget": 1600, "tested": 306, "found": 62, "evaluated": 90851, "seconds": 194.69618230000196, "workers": 10, "by_pair_found": {"EN": 15, "ES": 21, "SW": 14, "NW": 12}, "family_histogram": {"TURN_S": 35, "SHIFT_TURN": 27}}

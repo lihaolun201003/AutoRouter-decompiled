@@ -1,0 +1,476 @@
+{
+ "schema": "four_side_1024_v2_ortho90_z1_lp_feasibility_v1",
+ "geometry": "axis-aligned lines + exact R=40 mm 90-degree quarter arcs only; straight-line lengths are free",
+ "board_mm": [
+  150.0,
+  150.0
+ ],
+ "radius_mm": 40.0,
+ "half_width_mm": 0.025,
+ "method": "exact LP per turn-sign pattern: board bounds + endpoint pose + endpoint tangent; infeasibility is a proof for that pattern, self-intersection can only reject more",
+ "max_turns": 14,
+ "pattern_count": 10923,
+ "dx_groups": {
+  "-24.0": {
+   "route_count": 32,
+   "sample_route_id": 13,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 5,
+   "validated_patterns_tried": 5,
+   "validated_simple_path_found": false,
+   "validated_path": null,
+   "seconds": 15.43
+  },
+  "-16.0": {
+   "route_count": 64,
+   "sample_route_id": 9,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 5,
+   "validated_patterns_tried": 5,
+   "validated_simple_path_found": false,
+   "validated_path": null,
+   "seconds": 15.23
+  },
+  "-8.0": {
+   "route_count": 96,
+   "sample_route_id": 5,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 5,
+   "validated_patterns_tried": 5,
+   "validated_simple_path_found": false,
+   "validated_path": null,
+   "seconds": 15.24
+  },
+  "0.0": {
+   "route_count": 128,
+   "sample_route_id": 1,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [],
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 6,
+   "validated_patterns_tried": 1,
+   "validated_simple_path_found": true,
+   "validated_path": {
+    "turns": [],
+    "lengths": [
+     150.0
+    ],
+    "moves": [
+     [
+      "L",
+      150.0
+     ]
+    ]
+   },
+   "seconds": 14.84
+  },
+  "8.0": {
+   "route_count": 96,
+   "sample_route_id": 17,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 5,
+   "validated_patterns_tried": 5,
+   "validated_simple_path_found": false,
+   "validated_path": null,
+   "seconds": 14.91
+  },
+  "16.0": {
+   "route_count": 64,
+   "sample_route_id": 33,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 5,
+   "validated_patterns_tried": 5,
+   "validated_simple_path_found": false,
+   "validated_path": null,
+   "seconds": 14.82
+  },
+  "24.0": {
+   "route_count": 32,
+   "sample_route_id": 49,
+   "lp_feasible": true,
+   "lp_feasible_pattern_examples": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     -1,
+     1
+    ]
+   ],
+   "lp_feasible_pattern_count": 5,
+   "validated_patterns_tried": 5,
+   "validated_simple_path_found": false,
+   "validated_path": null,
+   "seconds": 14.86
+  }
+ },
+ "conclusion": "For V2 z1 the canonical offsets are dx=0 and |dx| in {8,16,24} mm. dx=0 is realisable as one straight axis line. For the other 384 connections the LP (all turn-sign patterns up to max_turns quarters, free line lengths, board + pose + tangent constraints) only admits loop-like patterns and no LP vertex sampled from them passes the frozen canonical_validate (self-intersection / geometry); the pure-90 candidate generator produces zero candidates for them on an empty board. This is reachability evidence for the current pure-90 path family, not a formal proof of global impossibility."
+}

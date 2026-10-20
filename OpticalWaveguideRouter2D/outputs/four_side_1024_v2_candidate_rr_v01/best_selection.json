@@ -1,0 +1,109 @@
+{
+ "schema": "four_side_1024_v2opt_best_selection_v1",
+ "rule": "z2: max routed among E1/E2/E3 (tie -> E3); z1: Z1OPT if it strictly beats 492 else BASE",
+ "z1": {
+  "selection": {
+   "label": "Z1OPT",
+   "routed": 508,
+   "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\z1opt_z1.json",
+   "summary": {
+    "label": "Z1OPT",
+    "plane": "z1",
+    "initial": 492,
+    "final": 508,
+    "gain": 16,
+    "route_summary": {
+     "routed": 508,
+     "failed": 4,
+     "total": 512,
+     "by_pair": {
+      "NS": {
+       "total": 256,
+       "routed": 256
+      },
+      "EW": {
+       "total": 256,
+       "routed": 252
+      }
+     }
+    },
+    "sequential": {
+     "budget": 1600,
+     "attempted": 20,
+     "applied": 3,
+     "applied_route_ids": [
+      35,
+      243,
+      422
+     ],
+     "routed": 495,
+     "seconds": 47.34227969999847
+    },
+    "ripup": {
+     "budget": 1600,
+     "reinsert_budget": 1600,
+     "analysis_budget": 1600,
+     "use_expanded": true,
+     "sizes": [
+      1,
+      2,
+      4
+     ],
+     "rounds": 3,
+     "routed": 508,
+     "initial_routed": 495,
+     "total_gain": 13,
+     "history": [
+      {
+       "round": 1,
+       "analysed": 17,
+       "transactions": 24,
+       "improving_results": 15,
+       "committed": 8,
+       "gain": 8,
+       "routed": 503,
+       "seconds": 77.58
+      },
+      {
+       "round": 2,
+       "analysed": 9,
+       "transactions": 24,
+       "improving_results": 12,
+       "committed": 4,
+       "gain": 4,
+       "routed": 508,
+       "seconds": 106.67
+      },
+      {
+       "round": 3,
+       "analysed": 4,
+       "transactions": 4,
+       "improving_results": 0,
+       "committed": 0,
+       "gain": 0,
+       "routed": 508,
+       "seconds": 107.35
+      }
+     ],
+     "seconds": 107.35,
+     "seed": 20261019
+    }
+   }
+  },
+  "routed": 508,
+  "out_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1"
+ },
+ "z2": {
+  "selection": {
+   "label": "E3",
+   "routed": 244,
+   "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\E3_z2.json",
+   "summary": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\E3_z2_summary.json"
+  },
+  "routed": 244,
+  "out_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2"
+ },
+ "combined_routed": 752,
+ "baseline_698": 698,
+ "delta_vs_698": 54
+}

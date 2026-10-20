@@ -1,0 +1,22 @@
+01:57:58 command={'command': 'ortho90rr', 'plane': 'z2', 'label': 'E3X', 'from_checkpoint': 'outputs/four_side_1024_v2_ortho90_v01/checkpoints/order_group_ensw_z2.json', 'budget': 1600, 'budgets': '200,400,800,1600', 'workers': 10, 'time_limit': 0.0, 'rr_time_limit': 2400.0, 'rounds': 4, 'transactions': 128, 'sizes': [1, 2, 4, 8], 'analysis_budget': 1600, 'reinsert_budget': 1600, 'max_evals_per_transaction': 12000, 'transaction_seconds': 90.0, 'seed_offset': 777, 'targets_per_round': 64, 'analysis_targets': 128, 'min_rounds': 2, 'zero_rounds': 2, 'cycles': 2, 'escalate_sizes': False}
+01:57:58 z2: restored checkpoint order_group_ensw_z2.json (124 routed)
+01:57:58 ortho90 continue z2: checkpoint=order_group_ensw_z2.json routed=124 budget=1600
+01:58:58 sequential_commit: 32/388 applied=0 routed=124 elapsed=60.0s
+02:00:59 sequential_commit: 64/388 applied=0 routed=124 elapsed=180.7s
+02:02:11 sequential_commit: 96/388 applied=0 routed=124 elapsed=252.9s
+02:02:26 sequential_commit: 128/388 applied=0 routed=124 elapsed=268.0s
+02:03:35 sequential_commit: 160/388 applied=0 routed=124 elapsed=336.7s
+02:05:06 sequential_commit: 192/388 applied=0 routed=124 elapsed=427.5s
+02:05:25 sequential_commit: 224/388 applied=0 routed=124 elapsed=446.9s
+02:05:40 sequential_commit: 256/388 applied=0 routed=124 elapsed=461.7s
+02:06:22 sequential_commit: 288/388 applied=0 routed=124 elapsed=504.1s
+02:06:37 sequential_commit: 320/388 applied=0 routed=124 elapsed=518.8s
+02:07:06 sequential_commit: 352/388 applied=0 routed=124 elapsed=547.3s
+02:08:54 sequential_commit: 384/388 applied=0 routed=124 elapsed=655.9s
+02:09:09 ortho90 continue z2 cycle 1: re-insertion pass 124 -> 124
+02:09:09 R&R round 1: pending=388 analysing=128 budget=1600 routed=124
+02:09:40 parallel blocker analysis: 32/128 elapsed=31.7s
+02:09:56 parallel blocker analysis: 64/128 elapsed=47.3s
+02:10:03 parallel blocker analysis: 96/128 elapsed=53.9s
+02:10:12 parallel blocker analysis: 128/128 elapsed=63.2s
+02:10:12 parallel blocker analysis done: 128 routes, 0 placed, elapsed=63.2s

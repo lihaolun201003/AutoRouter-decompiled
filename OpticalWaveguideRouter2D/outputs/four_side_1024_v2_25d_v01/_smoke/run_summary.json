@@ -1,0 +1,83 @@
+{
+ "schema": "four_side_1024_v2_25d_run_v1",
+ "scheme": "B",
+ "n_layers": 5,
+ "scheme_label": "B_ortho90",
+ "baseline_routed": 262,
+ "statistics": {
+  "baseline_routed": 262,
+  "routed": 272,
+  "new_routed": 10,
+  "lifted": 10,
+  "flat_added": 0,
+  "transitions": 20,
+  "total_length_mm": 44901.880594,
+  "mean_length_mm": 165.080443,
+  "total_xy_length_mm": 44901.638364,
+  "per_plane": {
+   "z1": {
+    "routed": 128,
+    "baseline": 128,
+    "lifted": 0
+   },
+   "z2": {
+    "routed": 144,
+    "baseline": 134,
+    "lifted": 10
+   }
+  },
+  "per_layer_flat_parts": {
+   "0": 128,
+   "1": 10,
+   "2": 0,
+   "3": 0,
+   "4": 154
+  },
+  "failed_no_candidate": 426,
+  "failed_unplaceable": 0
+ },
+ "router": {
+  "scheme": "B",
+  "n_layers": 5,
+  "baseline_routed": 262,
+  "final_routed": 272,
+  "new_routed": 10,
+  "attemptable": 10,
+  "no_candidate": 426,
+  "failed_no_candidate": 426,
+  "failed_unplaceable": 0,
+  "passes": [
+   {
+    "pass_index": 1,
+    "attempted": 10,
+    "placed": 10,
+    "pending": 0,
+    "seconds": 5.11
+   }
+  ],
+  "rr": [],
+  "seconds": 5.11
+ },
+ "config": {
+  "candidate_budget": 300,
+  "flat_probe": 40,
+  "passes": 1,
+  "rr_rounds": 0,
+  "rr_targets": 64,
+  "rr_rip": 2,
+  "limit": 10
+ },
+ "layers_z_mm": [
+  0.0,
+  0.125,
+  0.25,
+  0.375,
+  0.5
+ ],
+ "interface_layer": {
+  "z1": 0,
+  "z2": 4
+ },
+ "routes_file": "outputs\\four_side_1024_v2_25d_v01\\_smoke\\routes_25d.json",
+ "seconds": 5.59
+}

@@ -1,0 +1,155 @@
+{
+ "experiment": "V2_E2_z2",
+ "topology": "V2",
+ "algorithm": "E2",
+ "plane": "z2",
+ "z_mm": 0.5,
+ "port_model": "real_2x16_dual_height",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "waveguide_width_mm": 0.05,
+  "min_edge_gap_mm": 0.03,
+  "min_centerline_clearance_mm": 0.08,
+  "min_bend_radius_mm": 40.0,
+  "fixed_radius_40mm": true,
+  "radius_note": "all arcs are exactly R=40 mm (D56 fixed-radius family); this is not a search over all R>=40 mm geometries",
+  "propagation_loss_db_per_cm": 0.05,
+  "bend_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "no femtosecond-laser-written glass bend-loss function is known; R=40 mm is a geometry constraint only, not a measured loss value"
+  },
+  "crossing_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing count is a geometric metric only"
+  },
+  "legacy_polymer_estimate": {
+   "available": true,
+   "status": "legacy_estimate",
+   "note": "the previous polymer bend-loss model may be quoted for comparison only, never as glass truth"
+  },
+  "sagitta_mm": 0.0005,
+  "min_cross_angle_deg": 5.0,
+  "interface_standard": {
+   "name": "IEC 61754-7-3:2019 2x16 MPO",
+   "fiber_column_pitch_mm": 0.25,
+   "fiber_row_pitch_mm": 0.5,
+   "rows": 2,
+   "columns": 16,
+   "connectors_per_side": 16,
+   "connector_pitch_mm": 9.0,
+   "connector_pitch_status": "provisional; full MPO housing interference at 9 mm pitch unresolved"
+  },
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "z_transition": "not_implemented",
+  "layer": 0,
+  "routing_layers_per_plane": 1,
+  "planes": 2,
+  "manufacturing_claim": "simulation under the two-height interface assumption; glass thickness and connector mounting direction are not confirmed, no z transition is implemented, not a claim of manufacturability",
+  "historical_baseline": {
+   "endpoint_mode": "virtual_unfolded",
+   "virtual_port_pitch_mm": 0.175,
+   "radius_mm": 5.0,
+   "edge_gap_mm": 0.125,
+   "clearance_mm": 0.175,
+   "output_dir": "outputs/four_side_1024_v1_v2_abcd"
+  }
+ },
+ "algorithm_detail": {
+  "name": "E2",
+  "algorithm": "E2",
+  "crossing_policy": "strict",
+  "candidate_budget_per_route": 200,
+  "generator": "original_round3",
+  "r_r_sizes": [
+   1,
+   2,
+   4,
+   8,
+   12
+  ],
+  "r_r_rounds": 6,
+  "r_r_transactions": 64,
+  "seed": 20261019,
+  "strategy": "strengthened_ripup_reroute",
+  "ripup": {
+   "budget": 200,
+   "reinsert_budget": 200,
+   "analysis_budget": 200,
+   "use_expanded": false,
+   "sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "rounds": 2,
+   "routed": 209,
+   "initial_routed": 206,
+   "total_gain": 3,
+   "history": [
+    {
+     "round": 1,
+     "analysed": 96,
+     "transactions": 64,
+     "improving_results": 4,
+     "committed": 2,
+     "gain": 2,
+     "routed": 208,
+     "seconds": 150.38
+    },
+    {
+     "round": 2,
+     "analysed": 96,
+     "transactions": 64,
+     "improving_results": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 209,
+     "seconds": 267.67
+    }
+   ],
+   "seconds": 267.6855041000017,
+   "seed": 20261019,
+   "plane": "z2",
+   "label": "E2",
+   "final_routed": 209,
+   "route_summary": {
+    "routed": 209,
+    "failed": 303,
+    "total": 512,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 64
+     },
+     "ES": {
+      "total": 128,
+      "routed": 39
+     },
+     "SW": {
+      "total": 128,
+      "routed": 44
+     },
+     "NW": {
+      "total": 128,
+      "routed": 62
+     }
+    }
+   }
+  }
+ },
+ "routed": 209,
+ "failed": 303
+}

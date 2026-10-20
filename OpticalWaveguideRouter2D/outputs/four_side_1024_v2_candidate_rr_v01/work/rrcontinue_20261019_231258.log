@@ -1,0 +1,12 @@
+23:12:58 command={'command': 'rrcontinue', 'plane': 'z2', 'label': 'TESTY', 'from_checkpoint': 'outputs/four_side_1024_v2_candidate_rr_v01/checkpoints/E3_z2.json', 'budget': 800, 'budgets': '200,400,800,1600', 'workers': 8, 'time_limit': 0.0, 'rr_time_limit': 600.0, 'rounds': 3, 'transactions': 32, 'sizes': [1, 2, 4], 'analysis_budget': 800, 'reinsert_budget': 800, 'max_evals_per_transaction': 12000, 'transaction_seconds': 90.0, 'seed_offset': 55, 'targets_per_round': 24, 'analysis_targets': 24, 'min_rounds': 3, 'zero_rounds': 2}
+23:12:58 z2: restored checkpoint E3_z2.json (244 routed)
+23:12:58 R&R round 1: pending=268 analysing=24 budget=800 routed=244
+23:13:20 parallel blocker analysis done: 24 routes, 0 placed, elapsed=21.2s
+23:14:58 R&R round 1 done: transactions=26 improving=0 committed=0 gain=0 routed=244 elapsed=119.2s
+23:14:58 R&R round 2: pending=268 analysing=24 budget=800 routed=244
+23:15:18 parallel blocker analysis done: 24 routes, 0 placed, elapsed=20.0s
+23:15:38 R&R round 2 done: transactions=3 improving=0 committed=0 gain=0 routed=244 elapsed=159.8s
+23:15:38 R&R round 3: pending=268 analysing=24 budget=800 routed=244
+23:16:00 parallel blocker analysis done: 24 routes, 0 placed, elapsed=22.2s
+23:16:01 TESTY done: 244 -> 244 -> C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\planes\V2\TESTY\z2
+23:16:01 log written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\work\rrcontinue_20261019_231258.log

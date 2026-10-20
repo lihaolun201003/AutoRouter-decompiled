@@ -1,0 +1,122 @@
+{
+ "schema": "four_side_1024_v2_25d_validation_v1",
+ "label": "_smoke/B_layers5",
+ "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01\\_smoke\\routes_25d.json",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01",
+ "scheme": "B",
+ "n_layers": 5,
+ "passed": true,
+ "failure_reasons": [],
+ "routed": 272,
+ "failed": 752,
+ "total": 1024,
+ "min_3d_distance_mm": 0.105137451,
+ "min_3d_distance_excluding_crossings_mm": 0.105137451,
+ "min_curvature_radius_mm": 39.9999997,
+ "crossings": {
+  "total": 8624,
+  "by_layer": {
+   "0": 4096,
+   "1": 27,
+   "4": 4501
+  }
+ },
+ "violations": [],
+ "violation_kinds": {},
+ "counts": {
+  "violations": 0,
+  "structure_errors": 0,
+  "port_errors": 0,
+  "xy_model_errors": 0,
+  "curvature_violations": 0,
+  "clearance_violations": 0,
+  "layer_2d_violations": 0,
+  "self_clearance_violations": 0,
+  "board_violations": 0
+ },
+ "stats": {
+  "min_layer_gap_mm": 0.125,
+  "transitions": 20,
+  "lifted": 10,
+  "flat_routes": 262,
+  "flat_parts": 292,
+  "total_length_mm": 44901.88060937,
+  "total_xy_length_mm": 44901.638377498,
+  "min_flat_flat_same_layer_mm": 0.105137451,
+  "min_flat_transition_mm": 0.125,
+  "min_transition_transition_mm": null,
+  "min_self_clearance_mm": null,
+  "min_board_margin_mm": 0.08,
+  "min_3d_distance_bound": "measured",
+  "violating_flat_transition_segment_pairs": 0,
+  "violating_transition_transition_segment_pairs": 0,
+  "port_csv_checked": true,
+  "flat_segments": 895163,
+  "transition_segments": 7760,
+  "flat_length_mm": 44746.899927652,
+  "transition_length_mm": 154.979911517
+ },
+ "layer_2d": {
+  "0": {
+   "parts": 128,
+   "crossings": 4096,
+   "crossing_pairs": 4096,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": null,
+   "small_angle_crossings": 0,
+   "runtime_seconds": 0.069
+  },
+  "1": {
+   "parts": 10,
+   "crossings": 27,
+   "crossing_pairs": 27,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.25077639,
+   "small_angle_crossings": 14,
+   "runtime_seconds": 0.006
+  },
+  "4": {
+   "parts": 154,
+   "crossings": 4501,
+   "crossing_pairs": 3588,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.105137451,
+   "small_angle_crossings": 74,
+   "runtime_seconds": 0.797
+  }
+ },
+ "warnings": [],
+ "layers_z_mm": [
+  0.0,
+  0.125,
+  0.25,
+  0.375,
+  0.5
+ ],
+ "interface_layer": {
+  "z1": 0,
+  "z2": 4
+ },
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "radius_mm": 40.0,
+  "min_cross_angle_deg": 5.0,
+  "crossing_policy": "strict"
+ },
+ "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "port_csv_checked": true,
+ "min_3d_distance_definition": "minimum true-3D centreline distance between different routes over all approaches that are NOT legal same-layer strict-2D crossings; same-layer flat/flat pairs are audited by the frozen strict 2D policy, all transition-involved pairs are computed from the independently rebuilt 3D polylines with exact segment/segment refinement",
+ "min_3d_distance_is_resolved": true,
+ "min_3d_distance_including_crossings_mm": 0.0,
+ "clearance_tolerance_mm": 1e-07,
+ "board_margin_tolerance_mm": 1e-09,
+ "runtime_seconds": 1.525,
+ "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01\\validation\\_smoke\\B_layers5.json"
+}

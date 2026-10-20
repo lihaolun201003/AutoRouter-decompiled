@@ -1,0 +1,1645 @@
+{
+ "schema": "four_side_1024_fslw_combined_statistics_v1",
+ "scope": "combined",
+ "tool": "four_side_1024.fslw.metrics",
+ "generated_at": "2026-10-19T23:23:51+0800",
+ "topology": "V2",
+ "algorithm": "E1",
+ "experiment": "V2_E1_combined",
+ "port_model": "real_2x16_dual_height",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "min_radius_mm": 40.0,
+  "radius_mm": 40.0,
+  "fixed_radius_40mm": true,
+  "sagitta_mm": 0.0005,
+  "propagation_loss_db_per_cm": 0.05,
+  "min_cross_angle_deg": 5.0,
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "connections_per_plane": 512,
+  "total_connections": 1024,
+  "source": "four_side_1024.fslw.config (round-2 convention)",
+  "overrides": {
+   "experiment": "V2_E1_z1",
+   "topology": "V2",
+   "algorithm": "E1",
+   "plane": "z1",
+   "z_mm": 0.0,
+   "port_model": "real_2x16_dual_height",
+   "name": "E1",
+   "waveguide_width_mm": 0.05,
+   "min_edge_gap_mm": 0.03,
+   "min_centerline_clearance_mm": 0.08,
+   "min_bend_radius_mm": 40.0,
+   "propagation_loss_db_per_cm": 0.05,
+   "sagitta_mm": 0.0005,
+   "min_cross_angle_deg": 5.0
+  },
+  "plane": "z1",
+  "z_mm": 0.0,
+  "topology": "V2",
+  "algorithm": "E1",
+  "experiment": "V2_E1_z1"
+ },
+ "board_mm": [
+  150.0,
+  150.0
+ ],
+ "z_model": {
+  "z1": 0.0,
+  "z2": 0.5,
+  "z2_minus_z1_mm": 0.5,
+  "note": "model heights; no z transition implemented"
+ },
+ "layer": 0,
+ "planes": {
+  "z1": {
+   "plane": "z1",
+   "z_mm": 0.0,
+   "routed": 492,
+   "unrouted": 20,
+   "connections_total": 512,
+   "routing_rate": 0.9609375,
+   "by_pair": {
+    "NS": {
+     "relation": "opposite",
+     "success": 254,
+     "routed": 254,
+     "failed": 2,
+     "total": 256,
+     "routing_rate": 0.9921875
+    },
+    "EW": {
+     "relation": "opposite",
+     "success": 238,
+     "routed": 238,
+     "failed": 18,
+     "total": 256,
+     "routing_rate": 0.9296875
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "pairs": [
+      "NS",
+      "EW"
+     ],
+     "success": 492,
+     "routed": 492,
+     "failed": 20,
+     "total": 512,
+     "routing_rate": 0.9609375
+    }
+   },
+   "mean_length_mm": 152.15742823847685,
+   "total_length_mm": 74861.45469333061,
+   "crossing_count": 66775,
+   "propagation_loss": {
+    "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+    "propagation_loss_db_per_cm": 0.05,
+    "per_route_db": {},
+    "mean_db": 0.7607871411923841,
+    "max_db": 0.7825023949319436,
+    "min_db": 0.75,
+    "total_db": 374.307273466653,
+    "total_length_cm": 7486.145469333062,
+    "histogram_bin_width_db": 0.1,
+    "histogram": {
+     "0.00-0.10": 0,
+     "0.10-0.20": 0,
+     "0.20-0.30": 0,
+     "0.30-0.40": 0,
+     "0.40-0.50": 0,
+     "0.50-0.60": 0,
+     "0.60-0.70": 0,
+     "0.70-0.80": 492
+    },
+    "percentiles": {
+     "p50": 0.7560547669768781,
+     "p90": 0.7825023949319435,
+     "p99": 0.7825023949319436
+    },
+    "status": "computed_from_analytic_lengths",
+    "value_db": 374.307273466653,
+    "db_per_cm": 0.05,
+    "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+   },
+   "audit_passed": true,
+   "total_violation_count": 0,
+   "statistics_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\routes.json"
+  },
+  "z2": {
+   "plane": "z2",
+   "z_mm": 0.5,
+   "routed": 243,
+   "unrouted": 269,
+   "connections_total": 512,
+   "routing_rate": 0.474609375,
+   "by_pair": {
+    "EN": {
+     "relation": "adjacent",
+     "success": 70,
+     "routed": 70,
+     "failed": 58,
+     "total": 128,
+     "routing_rate": 0.546875
+    },
+    "ES": {
+     "relation": "adjacent",
+     "success": 54,
+     "routed": 54,
+     "failed": 74,
+     "total": 128,
+     "routing_rate": 0.421875
+    },
+    "SW": {
+     "relation": "adjacent",
+     "success": 54,
+     "routed": 54,
+     "failed": 74,
+     "total": 128,
+     "routing_rate": 0.421875
+    },
+    "NW": {
+     "relation": "adjacent",
+     "success": 65,
+     "routed": 65,
+     "failed": 63,
+     "total": 128,
+     "routing_rate": 0.5078125
+    }
+   },
+   "by_relation": {
+    "adjacent": {
+     "pairs": [
+      "EN",
+      "ES",
+      "SW",
+      "NW"
+     ],
+     "success": 243,
+     "routed": 243,
+     "failed": 269,
+     "total": 512,
+     "routing_rate": 0.474609375
+    }
+   },
+   "mean_length_mm": 142.3491599219638,
+   "total_length_mm": 34590.8458610372,
+   "crossing_count": 14545,
+   "propagation_loss": {
+    "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+    "propagation_loss_db_per_cm": 0.05,
+    "per_route_db": {},
+    "mean_db": 0.7117457996098193,
+    "max_db": 1.4350339304003523,
+    "min_db": 0.33040926535897935,
+    "total_db": 172.9542293051861,
+    "total_length_cm": 3459.0845861037205,
+    "histogram_bin_width_db": 0.1,
+    "histogram": {
+     "0.00-0.10": 0,
+     "0.10-0.20": 0,
+     "0.20-0.30": 0,
+     "0.30-0.40": 21,
+     "0.40-0.50": 54,
+     "0.50-0.60": 42,
+     "0.60-0.70": 11,
+     "0.70-0.80": 24,
+     "0.80-0.90": 29,
+     "0.90-1.00": 15,
+     "1.00-1.10": 26,
+     "1.10-1.20": 11,
+     "1.20-1.30": 0,
+     "1.30-1.40": 6,
+     "1.40-1.50": 4
+    },
+    "percentiles": {
+     "p50": 0.6091592653589794,
+     "p90": 1.0901440202001955,
+     "p99": 1.4083156169641622
+    },
+    "status": "computed_from_analytic_lengths",
+    "value_db": 172.9542293051861,
+    "db_per_cm": 0.05,
+    "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+   },
+   "audit_passed": true,
+   "total_violation_count": 0,
+   "statistics_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\routes.json"
+  }
+ },
+ "connections_total": 1024,
+ "connections_per_plane": 512,
+ "routed": 735,
+ "unrouted": 289,
+ "routing_rate": 0.7177734375,
+ "router_reported_routed_total": 0,
+ "by_plane": {
+  "z1": {
+   "routed": 492,
+   "unrouted": 20,
+   "connections_total": 512,
+   "routing_rate": 0.9609375,
+   "z_mm": 0.0
+  },
+  "z2": {
+   "routed": 243,
+   "unrouted": 269,
+   "connections_total": 512,
+   "routing_rate": 0.474609375,
+   "z_mm": 0.5
+  }
+ },
+ "by_relation": {
+  "opposite": {
+   "pairs": [
+    "NS",
+    "EW"
+   ],
+   "success": 492,
+   "routed": 492,
+   "failed": 20,
+   "total": 512,
+   "routing_rate": 0.9609375
+  },
+  "adjacent": {
+   "pairs": [
+    "EN",
+    "ES",
+    "SW",
+    "NW"
+   ],
+   "success": 243,
+   "routed": 243,
+   "failed": 269,
+   "total": 512,
+   "routing_rate": 0.474609375
+  }
+ },
+ "by_pair": {
+  "NS": {
+   "relation": "opposite",
+   "success": 254,
+   "routed": 254,
+   "failed": 2,
+   "total": 256,
+   "routing_rate": 0.9921875
+  },
+  "EW": {
+   "relation": "opposite",
+   "success": 238,
+   "routed": 238,
+   "failed": 18,
+   "total": 256,
+   "routing_rate": 0.9296875
+  },
+  "EN": {
+   "relation": "adjacent",
+   "success": 70,
+   "routed": 70,
+   "failed": 58,
+   "total": 128,
+   "routing_rate": 0.546875
+  },
+  "ES": {
+   "relation": "adjacent",
+   "success": 54,
+   "routed": 54,
+   "failed": 74,
+   "total": 128,
+   "routing_rate": 0.421875
+  },
+  "SW": {
+   "relation": "adjacent",
+   "success": 54,
+   "routed": 54,
+   "failed": 74,
+   "total": 128,
+   "routing_rate": 0.421875
+  },
+  "NW": {
+   "relation": "adjacent",
+   "success": 65,
+   "routed": 65,
+   "failed": 63,
+   "total": 128,
+   "routing_rate": 0.5078125
+  }
+ },
+ "length": {
+  "mean_length_mm": 148.91469463179294,
+  "total_length_mm": 109452.30055436782,
+  "mean_straight_fraction": 0.634469005636194,
+  "total_unnecessary_detour_mm": -9199.199445632545,
+  "mean_unnecessary_detour_mm": -12.515917613105502,
+  "total_bends": 1217
+ },
+ "mean_length_mm": 148.91469463179294,
+ "total_length_mm": 109452.30055436782,
+ "total_bends": 1217,
+ "mean_straight_fraction": 0.634469005636194,
+ "total_unnecessary_detour_mm": -9199.199445632545,
+ "same_plane_crossings": 81320,
+ "same_plane_crossing_angle_histogram": {
+  "0-1": 0,
+  "1-5": 0,
+  "5-10": 1217,
+  "10-20": 2238,
+  "20-30": 1227,
+  "30-45": 6229,
+  "45-60": 6095,
+  "60-75": 12586,
+  "75-90": 51728
+ },
+ "small_angle_crossing_count": 1217,
+ "same_plane_crossing_by_plane": {
+  "z1": 66775,
+  "z2": 14545
+ },
+ "violations": {
+  "same_plane_total": 0,
+  "complete": true,
+  "by_plane": {
+   "z1": {
+    "spacing_violation_pairs": 0,
+    "overlap_pairs": 0,
+    "touch_pairs": 0,
+    "crossing_window_overlap_pairs": 0,
+    "self_intersections": 0,
+    "radius_violations": 0,
+    "boundary_violations": 0
+   },
+   "z2": {
+    "spacing_violation_pairs": 0,
+    "overlap_pairs": 0,
+    "touch_pairs": 0,
+    "crossing_window_overlap_pairs": 0,
+    "self_intersections": 0,
+    "radius_violations": 0,
+    "boundary_violations": 0
+   }
+  },
+  "cross_plane": {
+   "status": "not_a_violation_by_design",
+   "note": "SPEC §2: different glass heights; no cross-plane same-layer conflict test exists",
+   "value": 0
+  }
+ },
+ "propagation_loss": {
+  "status": "computed",
+  "value_db": 547.2615027718391,
+  "total_db": 547.2615027718391,
+  "mean_db": 0.7445734731589647,
+  "total_length_cm": 10945.230055436781,
+  "formula": "Lprop_dB = 0.05 dB/cm * length_cm",
+  "db_per_cm": 0.05,
+  "by_plane": {
+   "z1": {
+    "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+    "propagation_loss_db_per_cm": 0.05,
+    "per_route_db": {},
+    "mean_db": 0.7607871411923841,
+    "max_db": 0.7825023949319436,
+    "min_db": 0.75,
+    "total_db": 374.307273466653,
+    "total_length_cm": 7486.145469333062,
+    "histogram_bin_width_db": 0.1,
+    "histogram": {
+     "0.00-0.10": 0,
+     "0.10-0.20": 0,
+     "0.20-0.30": 0,
+     "0.30-0.40": 0,
+     "0.40-0.50": 0,
+     "0.50-0.60": 0,
+     "0.60-0.70": 0,
+     "0.70-0.80": 492
+    },
+    "percentiles": {
+     "p50": 0.7560547669768781,
+     "p90": 0.7825023949319435,
+     "p99": 0.7825023949319436
+    },
+    "status": "computed_from_analytic_lengths",
+    "value_db": 374.307273466653,
+    "db_per_cm": 0.05,
+    "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+   },
+   "z2": {
+    "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+    "propagation_loss_db_per_cm": 0.05,
+    "per_route_db": {},
+    "mean_db": 0.7117457996098193,
+    "max_db": 1.4350339304003523,
+    "min_db": 0.33040926535897935,
+    "total_db": 172.9542293051861,
+    "total_length_cm": 3459.0845861037205,
+    "histogram_bin_width_db": 0.1,
+    "histogram": {
+     "0.00-0.10": 0,
+     "0.10-0.20": 0,
+     "0.20-0.30": 0,
+     "0.30-0.40": 21,
+     "0.40-0.50": 54,
+     "0.50-0.60": 42,
+     "0.60-0.70": 11,
+     "0.70-0.80": 24,
+     "0.80-0.90": 29,
+     "0.90-1.00": 15,
+     "1.00-1.10": 26,
+     "1.10-1.20": 11,
+     "1.20-1.30": 0,
+     "1.30-1.40": 6,
+     "1.40-1.50": 4
+    },
+    "percentiles": {
+     "p50": 0.6091592653589794,
+     "p90": 1.0901440202001955,
+     "p99": 1.4083156169641622
+    },
+    "status": "computed_from_analytic_lengths",
+    "value_db": 172.9542293051861,
+    "db_per_cm": 0.05,
+    "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+   }
+  },
+  "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+ },
+ "optical_loss_breakdown": {
+  "propagation_loss": {
+   "status": "computed",
+   "value_db": 547.2615027718391,
+   "total_db": 547.2615027718391,
+   "mean_db": 0.7445734731589647,
+   "total_length_cm": 10945.230055436781,
+   "formula": "Lprop_dB = 0.05 dB/cm * length_cm",
+   "db_per_cm": 0.05,
+   "by_plane": {
+    "z1": {
+     "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+     "propagation_loss_db_per_cm": 0.05,
+     "per_route_db": {},
+     "mean_db": 0.7607871411923841,
+     "max_db": 0.7825023949319436,
+     "min_db": 0.75,
+     "total_db": 374.307273466653,
+     "total_length_cm": 7486.145469333062,
+     "histogram_bin_width_db": 0.1,
+     "histogram": {
+      "0.00-0.10": 0,
+      "0.10-0.20": 0,
+      "0.20-0.30": 0,
+      "0.30-0.40": 0,
+      "0.40-0.50": 0,
+      "0.50-0.60": 0,
+      "0.60-0.70": 0,
+      "0.70-0.80": 492
+     },
+     "percentiles": {
+      "p50": 0.7560547669768781,
+      "p90": 0.7825023949319435,
+      "p99": 0.7825023949319436
+     },
+     "status": "computed_from_analytic_lengths",
+     "value_db": 374.307273466653,
+     "db_per_cm": 0.05,
+     "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+    },
+    "z2": {
+     "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+     "propagation_loss_db_per_cm": 0.05,
+     "per_route_db": {},
+     "mean_db": 0.7117457996098193,
+     "max_db": 1.4350339304003523,
+     "min_db": 0.33040926535897935,
+     "total_db": 172.9542293051861,
+     "total_length_cm": 3459.0845861037205,
+     "histogram_bin_width_db": 0.1,
+     "histogram": {
+      "0.00-0.10": 0,
+      "0.10-0.20": 0,
+      "0.20-0.30": 0,
+      "0.30-0.40": 21,
+      "0.40-0.50": 54,
+      "0.50-0.60": 42,
+      "0.60-0.70": 11,
+      "0.70-0.80": 24,
+      "0.80-0.90": 29,
+      "0.90-1.00": 15,
+      "1.00-1.10": 26,
+      "1.10-1.20": 11,
+      "1.20-1.30": 0,
+      "1.30-1.40": 6,
+      "1.40-1.50": 4
+     },
+     "percentiles": {
+      "p50": 0.6091592653589794,
+      "p90": 1.0901440202001955,
+      "p99": 1.4083156169641622
+     },
+     "status": "computed_from_analytic_lengths",
+     "value_db": 172.9542293051861,
+     "db_per_cm": 0.05,
+     "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+    }
+   },
+   "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+  },
+  "bend_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "no femtosecond-laser-written glass bend-loss function is known; R=40 mm is a geometry constraint only, not a measured loss value",
+   "value_db": null
+  },
+  "crossing_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing count is a geometric metric only",
+   "value_db": null,
+   "crossing_count": null
+  },
+  "total_optical_loss": {
+   "status": "not_computable_missing_calibration",
+   "value_db": null,
+   "components_known": [
+    "propagation"
+   ],
+   "components_unknown": [
+    "bend",
+    "crossing"
+   ],
+   "note": "total optical loss cannot be reported until glass bend loss and crossing loss are calibrated; propagation loss alone is reported explicitly"
+  },
+  "legacy_arm": {
+   "included": false,
+   "legacy_polymer_estimate": {
+    "available": true,
+    "status": "legacy_estimate",
+    "note": "the previous polymer bend-loss model may be quoted for comparison only, never as glass truth"
+   },
+   "status": "legacy_estimate_omitted",
+   "note": "the legacy polymer bend-loss model is NOT presented as glass truth and no legacy numbers are embedded here"
+  },
+  "dispersion_penalty": null,
+  "other_losses_note": "no other loss terms are modelled"
+ },
+ "cross_plane_projected_overlap": {
+  "status": "informational_only",
+  "not_a_violation": true,
+  "note": "XY projection of the plane-z1 and plane-z2 centrelines.  Per SPEC §2 the two rows live at different glass heights; projected crossings/overlaps are NOT same-plane conflicts and are never counted as violations.",
+  "projection_sagitta_mm": 0.02,
+  "cross_plane_projected_crossings": 67607,
+  "cross_plane_projected_internal_crossings": 67572,
+  "cross_plane_projected_port_coincidences": 35,
+  "cross_plane_projected_pair_count": 66026,
+  "cross_plane_projected_grid_peak": 352,
+  "cross_plane_projected_grid_peak_cell": [
+   120.0,
+   50.0
+  ],
+  "cross_plane_projected_densest_cells": [
+   {
+    "x_min_mm": 120.0,
+    "y_min_mm": 50.0,
+    "projected_crossings": 352
+   },
+   {
+    "x_min_mm": 50.0,
+    "y_min_mm": 105.0,
+    "projected_crossings": 325
+   },
+   {
+    "x_min_mm": 60.0,
+    "y_min_mm": 70.0,
+    "projected_crossings": 318
+   },
+   {
+    "x_min_mm": 50.0,
+    "y_min_mm": 95.0,
+    "projected_crossings": 309
+   },
+   {
+    "x_min_mm": 5.0,
+    "y_min_mm": 50.0,
+    "projected_crossings": 306
+   },
+   {
+    "x_min_mm": 105.0,
+    "y_min_mm": 140.0,
+    "projected_crossings": 286
+   },
+   {
+    "x_min_mm": 5.0,
+    "y_min_mm": 40.0,
+    "projected_crossings": 284
+   },
+   {
+    "x_min_mm": 95.0,
+    "y_min_mm": 130.0,
+    "projected_crossings": 284
+   },
+   {
+    "x_min_mm": 95.0,
+    "y_min_mm": 70.0,
+    "projected_crossings": 282
+   },
+   {
+    "x_min_mm": 60.0,
+    "y_min_mm": 95.0,
+    "projected_crossings": 278
+   }
+  ],
+  "port_projection_note": "both heights use the same 1024 XY port coordinates, so per-port projection coincidences are guaranteed by the interface model and are classified separately from real projected crossings"
+ },
+ "mean_min_gap_mm": 0.0809471218611645,
+ "route_length_grid_peak_mm": 155.29983840297461,
+ "symmetry": {
+  "z1": {
+   "available": true,
+   "source": "four_side_1024.abcd.connectivity.symmetry_maps semantics (local plane kernel; abcd.metrics transform helpers)",
+   "shape_match_threshold_mm": 0.05,
+   "spec_transform_names": [
+    "rot90",
+    "rot180",
+    "mirror_x",
+    "mirror_y",
+    "diag"
+   ],
+   "n_routes": 512,
+   "n_endpoints": 1024,
+   "note": "per-plane subset: row1->z1 (opposite) / row2->z2 (adjacent); endpoint-level symmetry is a topology property, structurally limited on V1 and only partially complete on V2 - this is not a routing defect",
+   "rot90": {
+    "transform": "rot90",
+    "source_name": "rot90",
+    "matrix": [
+     [
+      0.0,
+      -1.0
+     ],
+     [
+      1.0,
+      0.0
+     ]
+    ],
+    "offset": [
+     150.0,
+     0.0
+    ],
+    "pair_count": 512,
+    "routed_pair_count": 472,
+    "routed_pair_fraction": 0.921875,
+    "shape_checked_pair_count": 472,
+    "shape_match_count": 59,
+    "shape_match_fraction": 0.125,
+    "mapped_route_count": 512,
+    "route_map_complete": true,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 256,
+     "reversed": 256
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "rot180": {
+    "transform": "rot180",
+    "source_name": "rot180",
+    "matrix": [
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      0.0,
+      -1.0
+     ]
+    ],
+    "offset": [
+     150.0,
+     150.0
+    ],
+    "pair_count": 256,
+    "routed_pair_count": 238,
+    "routed_pair_fraction": 0.9296875,
+    "shape_checked_pair_count": 238,
+    "shape_match_count": 60,
+    "shape_match_fraction": 0.25210084033613445,
+    "mapped_route_count": 512,
+    "route_map_complete": true,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 0,
+     "reversed": 512
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "mirror_x": {
+    "transform": "mirror_x",
+    "source_name": "mirror_x",
+    "matrix": [
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0
+     ]
+    ],
+    "offset": [
+     150.0,
+     0.0
+    ],
+    "pair_count": 288,
+    "routed_pair_count": 268,
+    "routed_pair_fraction": 0.9305555555555556,
+    "shape_checked_pair_count": 268,
+    "shape_match_count": 91,
+    "shape_match_fraction": 0.33955223880597013,
+    "mapped_route_count": 512,
+    "route_map_complete": true,
+    "fixed_point_count": 64,
+    "orientation_counts": {
+     "direct": 256,
+     "reversed": 256
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "mirror_y": {
+    "transform": "mirror_y",
+    "source_name": "mirror_y",
+    "matrix": [
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      -1.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     150.0
+    ],
+    "pair_count": 288,
+    "routed_pair_count": 268,
+    "routed_pair_fraction": 0.9305555555555556,
+    "shape_checked_pair_count": 268,
+    "shape_match_count": 91,
+    "shape_match_fraction": 0.33955223880597013,
+    "mapped_route_count": 512,
+    "route_map_complete": true,
+    "fixed_point_count": 64,
+    "orientation_counts": {
+     "direct": 256,
+     "reversed": 256
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "diag": {
+    "transform": "diag",
+    "source_name": "diag",
+    "matrix": [
+     [
+      0.0,
+      1.0
+     ],
+     [
+      1.0,
+      0.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     0.0
+    ],
+    "pair_count": 256,
+    "routed_pair_count": 236,
+    "routed_pair_fraction": 0.921875,
+    "shape_checked_pair_count": 236,
+    "shape_match_count": 59,
+    "shape_match_fraction": 0.25,
+    "mapped_route_count": 512,
+    "route_map_complete": true,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 512,
+     "reversed": 0
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "all_transforms": {
+    "identity": {
+     "name": "identity",
+     "matrix": [
+      [
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 512,
+      "reversed": 0
+     },
+     "fixed_point_count": 512
+    },
+    "rot90": {
+     "name": "rot90",
+     "matrix": [
+      [
+       0.0,
+       -1.0
+      ],
+      [
+       1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      0.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 256,
+      "reversed": 256
+     },
+     "fixed_point_count": 0
+    },
+    "rot180": {
+     "name": "rot180",
+     "matrix": [
+      [
+       -1.0,
+       0.0
+      ],
+      [
+       0.0,
+       -1.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      150.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 512
+     },
+     "fixed_point_count": 0
+    },
+    "rot270": {
+     "name": "rot270",
+     "matrix": [
+      [
+       0.0,
+       1.0
+      ],
+      [
+       -1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      150.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 256,
+      "reversed": 256
+     },
+     "fixed_point_count": 0
+    },
+    "mirror_x": {
+     "name": "mirror_x",
+     "matrix": [
+      [
+       -1.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      0.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 256,
+      "reversed": 256
+     },
+     "fixed_point_count": 64
+    },
+    "mirror_y": {
+     "name": "mirror_y",
+     "matrix": [
+      [
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       -1.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      150.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 256,
+      "reversed": 256
+     },
+     "fixed_point_count": 64
+    },
+    "diag": {
+     "name": "diag",
+     "matrix": [
+      [
+       0.0,
+       1.0
+      ],
+      [
+       1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 512,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    },
+    "diag_anti": {
+     "name": "diag_anti",
+     "matrix": [
+      [
+       0.0,
+       -1.0
+      ],
+      [
+       -1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      150.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 512
+     },
+     "fixed_point_count": 0
+    }
+   }
+  },
+  "z2": {
+   "available": true,
+   "source": "four_side_1024.abcd.connectivity.symmetry_maps semantics (local plane kernel; abcd.metrics transform helpers)",
+   "shape_match_threshold_mm": 0.05,
+   "spec_transform_names": [
+    "rot90",
+    "rot180",
+    "mirror_x",
+    "mirror_y",
+    "diag"
+   ],
+   "n_routes": 512,
+   "n_endpoints": 1024,
+   "note": "per-plane subset: row1->z1 (opposite) / row2->z2 (adjacent); endpoint-level symmetry is a topology property, structurally limited on V1 and only partially complete on V2 - this is not a routing defect",
+   "rot90": {
+    "transform": "rot90",
+    "source_name": "rot90",
+    "matrix": [
+     [
+      0.0,
+      -1.0
+     ],
+     [
+      1.0,
+      0.0
+     ]
+    ],
+    "offset": [
+     150.0,
+     0.0
+    ],
+    "pair_count": 0,
+    "routed_pair_count": 0,
+    "routed_pair_fraction": null,
+    "shape_checked_pair_count": 0,
+    "shape_match_count": 0,
+    "shape_match_fraction": null,
+    "mapped_route_count": 0,
+    "route_map_complete": false,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 0,
+     "reversed": 0
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "rot180": {
+    "transform": "rot180",
+    "source_name": "rot180",
+    "matrix": [
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      0.0,
+      -1.0
+     ]
+    ],
+    "offset": [
+     150.0,
+     150.0
+    ],
+    "pair_count": 0,
+    "routed_pair_count": 0,
+    "routed_pair_fraction": null,
+    "shape_checked_pair_count": 0,
+    "shape_match_count": 0,
+    "shape_match_fraction": null,
+    "mapped_route_count": 0,
+    "route_map_complete": false,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 0,
+     "reversed": 0
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "mirror_x": {
+    "transform": "mirror_x",
+    "source_name": "mirror_x",
+    "matrix": [
+     [
+      -1.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0
+     ]
+    ],
+    "offset": [
+     150.0,
+     0.0
+    ],
+    "pair_count": 0,
+    "routed_pair_count": 0,
+    "routed_pair_fraction": null,
+    "shape_checked_pair_count": 0,
+    "shape_match_count": 0,
+    "shape_match_fraction": null,
+    "mapped_route_count": 0,
+    "route_map_complete": false,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 0,
+     "reversed": 0
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "mirror_y": {
+    "transform": "mirror_y",
+    "source_name": "mirror_y",
+    "matrix": [
+     [
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      -1.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     150.0
+    ],
+    "pair_count": 0,
+    "routed_pair_count": 0,
+    "routed_pair_fraction": null,
+    "shape_checked_pair_count": 0,
+    "shape_match_count": 0,
+    "shape_match_fraction": null,
+    "mapped_route_count": 0,
+    "route_map_complete": false,
+    "fixed_point_count": 0,
+    "orientation_counts": {
+     "direct": 0,
+     "reversed": 0
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "diag": {
+    "transform": "diag",
+    "source_name": "diag",
+    "matrix": [
+     [
+      0.0,
+      1.0
+     ],
+     [
+      1.0,
+      0.0
+     ]
+    ],
+    "offset": [
+     0.0,
+     0.0
+    ],
+    "pair_count": 288,
+    "routed_pair_count": 107,
+    "routed_pair_fraction": 0.3715277777777778,
+    "shape_checked_pair_count": 107,
+    "shape_match_count": 49,
+    "shape_match_fraction": 0.45794392523364486,
+    "mapped_route_count": 512,
+    "route_map_complete": true,
+    "fixed_point_count": 64,
+    "orientation_counts": {
+     "direct": 0,
+     "reversed": 512
+    },
+    "definition": {
+     "routed_pair_fraction": "fraction of topology counterpart pairs (unordered, fixed points included) with both routes routed in this plane",
+     "shape_match_fraction": "both-routed pairs whose transformed path agrees primitive-wise within 0.05 mm"
+    }
+   },
+   "all_transforms": {
+    "identity": {
+     "name": "identity",
+     "matrix": [
+      [
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 512,
+      "reversed": 0
+     },
+     "fixed_point_count": 512
+    },
+    "rot90": {
+     "name": "rot90",
+     "matrix": [
+      [
+       0.0,
+       -1.0
+      ],
+      [
+       1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      0.0
+     ],
+     "mapped_route_count": 0,
+     "route_map_complete": false,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    },
+    "rot180": {
+     "name": "rot180",
+     "matrix": [
+      [
+       -1.0,
+       0.0
+      ],
+      [
+       0.0,
+       -1.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      150.0
+     ],
+     "mapped_route_count": 0,
+     "route_map_complete": false,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    },
+    "rot270": {
+     "name": "rot270",
+     "matrix": [
+      [
+       0.0,
+       1.0
+      ],
+      [
+       -1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      150.0
+     ],
+     "mapped_route_count": 0,
+     "route_map_complete": false,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    },
+    "mirror_x": {
+     "name": "mirror_x",
+     "matrix": [
+      [
+       -1.0,
+       0.0
+      ],
+      [
+       0.0,
+       1.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      0.0
+     ],
+     "mapped_route_count": 0,
+     "route_map_complete": false,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    },
+    "mirror_y": {
+     "name": "mirror_y",
+     "matrix": [
+      [
+       1.0,
+       0.0
+      ],
+      [
+       0.0,
+       -1.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      150.0
+     ],
+     "mapped_route_count": 0,
+     "route_map_complete": false,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    },
+    "diag": {
+     "name": "diag",
+     "matrix": [
+      [
+       0.0,
+       1.0
+      ],
+      [
+       1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "mapped_route_count": 512,
+     "route_map_complete": true,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 512
+     },
+     "fixed_point_count": 64
+    },
+    "diag_anti": {
+     "name": "diag_anti",
+     "matrix": [
+      [
+       0.0,
+       -1.0
+      ],
+      [
+       -1.0,
+       0.0
+      ]
+     ],
+     "offset": [
+      150.0,
+      150.0
+     ],
+     "mapped_route_count": 0,
+     "route_map_complete": false,
+     "orientation_counts": {
+      "direct": 0,
+      "reversed": 0
+     },
+     "fixed_point_count": 0
+    }
+   }
+  }
+ },
+ "symmetry_note": "symmetry is analysed per plane (each plane is an independent 2D problem); combined symmetry is not defined for two different heights",
+ "candidate_evaluations": 0,
+ "runtime_seconds": 0.0,
+ "audit_passed_all_planes": true,
+ "plane_summaries": {
+  "z1": {
+   "plane": "z1",
+   "z_mm": 0.0,
+   "routed": 492,
+   "unrouted": 20,
+   "connections_total": 512,
+   "routing_rate": 0.9609375,
+   "by_pair": {
+    "NS": {
+     "relation": "opposite",
+     "success": 254,
+     "routed": 254,
+     "failed": 2,
+     "total": 256,
+     "routing_rate": 0.9921875
+    },
+    "EW": {
+     "relation": "opposite",
+     "success": 238,
+     "routed": 238,
+     "failed": 18,
+     "total": 256,
+     "routing_rate": 0.9296875
+    }
+   },
+   "by_relation": {
+    "opposite": {
+     "pairs": [
+      "NS",
+      "EW"
+     ],
+     "success": 492,
+     "routed": 492,
+     "failed": 20,
+     "total": 512,
+     "routing_rate": 0.9609375
+    }
+   },
+   "mean_length_mm": 152.15742823847685,
+   "total_length_mm": 74861.45469333061,
+   "crossing_count": 66775,
+   "propagation_loss": {
+    "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+    "propagation_loss_db_per_cm": 0.05,
+    "per_route_db": {},
+    "mean_db": 0.7607871411923841,
+    "max_db": 0.7825023949319436,
+    "min_db": 0.75,
+    "total_db": 374.307273466653,
+    "total_length_cm": 7486.145469333062,
+    "histogram_bin_width_db": 0.1,
+    "histogram": {
+     "0.00-0.10": 0,
+     "0.10-0.20": 0,
+     "0.20-0.30": 0,
+     "0.30-0.40": 0,
+     "0.40-0.50": 0,
+     "0.50-0.60": 0,
+     "0.60-0.70": 0,
+     "0.70-0.80": 492
+    },
+    "percentiles": {
+     "p50": 0.7560547669768781,
+     "p90": 0.7825023949319435,
+     "p99": 0.7825023949319436
+    },
+    "status": "computed_from_analytic_lengths",
+    "value_db": 374.307273466653,
+    "db_per_cm": 0.05,
+    "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+   },
+   "audit_passed": true,
+   "total_violation_count": 0,
+   "statistics_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z1\\routes.json"
+  },
+  "z2": {
+   "plane": "z2",
+   "z_mm": 0.5,
+   "routed": 243,
+   "unrouted": 269,
+   "connections_total": 512,
+   "routing_rate": 0.474609375,
+   "by_pair": {
+    "EN": {
+     "relation": "adjacent",
+     "success": 70,
+     "routed": 70,
+     "failed": 58,
+     "total": 128,
+     "routing_rate": 0.546875
+    },
+    "ES": {
+     "relation": "adjacent",
+     "success": 54,
+     "routed": 54,
+     "failed": 74,
+     "total": 128,
+     "routing_rate": 0.421875
+    },
+    "SW": {
+     "relation": "adjacent",
+     "success": 54,
+     "routed": 54,
+     "failed": 74,
+     "total": 128,
+     "routing_rate": 0.421875
+    },
+    "NW": {
+     "relation": "adjacent",
+     "success": 65,
+     "routed": 65,
+     "failed": 63,
+     "total": 128,
+     "routing_rate": 0.5078125
+    }
+   },
+   "by_relation": {
+    "adjacent": {
+     "pairs": [
+      "EN",
+      "ES",
+      "SW",
+      "NW"
+     ],
+     "success": 243,
+     "routed": 243,
+     "failed": 269,
+     "total": 512,
+     "routing_rate": 0.474609375
+    }
+   },
+   "mean_length_mm": 142.3491599219638,
+   "total_length_mm": 34590.8458610372,
+   "crossing_count": 14545,
+   "propagation_loss": {
+    "formula": "Lprop_dB = propagation_loss_db_per_cm * length_cm",
+    "propagation_loss_db_per_cm": 0.05,
+    "per_route_db": {},
+    "mean_db": 0.7117457996098193,
+    "max_db": 1.4350339304003523,
+    "min_db": 0.33040926535897935,
+    "total_db": 172.9542293051861,
+    "total_length_cm": 3459.0845861037205,
+    "histogram_bin_width_db": 0.1,
+    "histogram": {
+     "0.00-0.10": 0,
+     "0.10-0.20": 0,
+     "0.20-0.30": 0,
+     "0.30-0.40": 21,
+     "0.40-0.50": 54,
+     "0.50-0.60": 42,
+     "0.60-0.70": 11,
+     "0.70-0.80": 24,
+     "0.80-0.90": 29,
+     "0.90-1.00": 15,
+     "1.00-1.10": 26,
+     "1.10-1.20": 11,
+     "1.20-1.30": 0,
+     "1.30-1.40": 6,
+     "1.40-1.50": 4
+    },
+    "percentiles": {
+     "p50": 0.6091592653589794,
+     "p90": 1.0901440202001955,
+     "p99": 1.4083156169641622
+    },
+    "status": "computed_from_analytic_lengths",
+    "value_db": 172.9542293051861,
+    "db_per_cm": 0.05,
+    "optical_loss_scope": "propagation-only; bend loss and crossing loss are unknown_uncalibrated"
+   },
+   "audit_passed": true,
+   "total_violation_count": 0,
+   "statistics_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\E1\\z2\\routes.json"
+  }
+ },
+ "pareto": {
+  "routed": 735,
+  "total_length_mm": 109452.30055436782,
+  "same_plane_crossings": 81320,
+  "propagation_loss_total_db": 547.2615027718391,
+  "strict_violation_count": 0,
+  "lexicographic_objective": [
+   "routed (descending)",
+   "strict_violation_count (ascending)",
+   "same_plane_crossings (ascending)",
+   "total_length_mm (ascending)"
+  ]
+ },
+ "metric_sources": {
+  "per_plane": "planes/<T>/<A>/<PLANE>/statistics.json (recomputed from primitives; strict audit merged when fresh)",
+  "combined": "merged from the two plane statistics; per-plane crossing counts summed as same_plane_crossings",
+  "cross_plane_projected_overlap": "sampled XY projection; informational only, never a violation (SPEC §2)",
+  "losses": "propagation computed; bend/crossing unknown_uncalibrated"
+ },
+ "notes": [
+  "combined layout = plane z1 (row 1, 512 opposite connections) + plane z2 (row 2, 512 adjacent connections) at model heights 0.0/0.5",
+  "each plane is an independent 2D problem at layer=0; the two heights are NOT a waveguide layer stack and no z-transition is implemented",
+  "cross-plane XY-projected overlaps are informational only and never violations (SPEC §2)",
+  "bend loss and crossing loss remain unknown_uncalibrated"
+ ],
+ "recomputation_runtime_seconds": 14.991056299993943
+}

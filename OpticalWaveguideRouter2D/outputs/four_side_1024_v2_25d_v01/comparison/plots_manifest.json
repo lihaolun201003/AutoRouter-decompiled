@@ -1,0 +1,789 @@
+{
+ "schema": "four_side_1024_v2_25d_plots_v1",
+ "tool": "four_side_1024.fsd25d.plots25d",
+ "generated_at": "2026-10-20T13:28:56+0800",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01",
+ "style": {
+  "board_mm": 150.0,
+  "dpi": 200,
+  "plane_colors": {
+   "z1": "#1565c0",
+   "z2": "#c62828"
+  },
+  "geometry_type_colors": {
+   "line": "#1565c0",
+   "arc": "#c62828"
+  },
+  "display_sagitta_mm": 0.005,
+  "display_sagitta_3d_mm": 0.02,
+  "transition_display_step_mm": 0.05,
+  "transition_3d_step_mm": 0.1,
+  "connectors": "64 frozen MPO envelopes (fslw.ports.load_plane V2)",
+  "labels": "English only (no CJK glyphs in figures)"
+ },
+ "runs": [
+  {
+   "run": "schemeA/layers3",
+   "scheme": "A",
+   "n_layers": 3,
+   "layers_z_mm": [
+    0.0,
+    0.25,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 2
+   },
+   "is_smoke": false,
+   "run_dir": "schemeA/layers3",
+   "routes_file": "schemeA/layers3/routes_25d.json",
+   "routes_sha256": "f6e34d2e4e5a28da0f4cc6f428dcdc91a034640f3f3281c0f0dea8904edfc412",
+   "summary_file": "schemeA/layers3/run_summary.json",
+   "routed": 788,
+   "failed": 236,
+   "baseline_routed": 752,
+   "new_routed": 36,
+   "lifted": 36,
+   "flat_added": 0,
+   "transitions": 72,
+   "per_plane": {
+    "z1": {
+     "routed": 512,
+     "baseline": 508,
+     "lifted": 4
+    },
+    "z2": {
+     "routed": 276,
+     "baseline": 244,
+     "lifted": 32
+    }
+   },
+   "per_layer_flat_parts": {
+    "0": 516,
+    "1": 36,
+    "2": 308
+   }
+  },
+  {
+   "run": "schemeA/layers5",
+   "scheme": "A",
+   "n_layers": 5,
+   "layers_z_mm": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 4
+   },
+   "is_smoke": false,
+   "run_dir": "schemeA/layers5",
+   "routes_file": "schemeA/layers5/routes_25d.json",
+   "routes_sha256": "64d3016a5098b780b2b921d66d280680c08fec2e647975959d808b92561a8518",
+   "summary_file": "schemeA/layers5/run_summary.json",
+   "routed": 820,
+   "failed": 204,
+   "baseline_routed": 752,
+   "new_routed": 68,
+   "lifted": 68,
+   "flat_added": 0,
+   "transitions": 136,
+   "per_plane": {
+    "z1": {
+     "routed": 512,
+     "baseline": 508,
+     "lifted": 4
+    },
+    "z2": {
+     "routed": 308,
+     "baseline": 244,
+     "lifted": 64
+    }
+   },
+   "per_layer_flat_parts": {
+    "0": 516,
+    "1": 29,
+    "2": 20,
+    "3": 19,
+    "4": 372
+   }
+  },
+  {
+   "run": "schemeB/layers3",
+   "scheme": "B",
+   "n_layers": 3,
+   "layers_z_mm": [
+    0.0,
+    0.25,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 2
+   },
+   "is_smoke": false,
+   "run_dir": "schemeB/layers3",
+   "routes_file": "schemeB/layers3/routes_25d.json",
+   "routes_sha256": "6bdde4e416ba540477538ab1bfb1387477d08c39449ba734e607160ab0e9c9a7",
+   "summary_file": "schemeB/layers3/run_summary.json",
+   "routed": 342,
+   "failed": 682,
+   "baseline_routed": 262,
+   "new_routed": 80,
+   "lifted": 80,
+   "flat_added": 0,
+   "transitions": 160,
+   "per_plane": {
+    "z1": {
+     "routed": 128,
+     "baseline": 128,
+     "lifted": 0
+    },
+    "z2": {
+     "routed": 214,
+     "baseline": 134,
+     "lifted": 80
+    }
+   },
+   "per_layer_flat_parts": {
+    "0": 128,
+    "1": 80,
+    "2": 294
+   }
+  },
+  {
+   "run": "schemeB/layers5",
+   "scheme": "B",
+   "n_layers": 5,
+   "layers_z_mm": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 4
+   },
+   "is_smoke": false,
+   "run_dir": "schemeB/layers5",
+   "routes_file": "schemeB/layers5/routes_25d.json",
+   "routes_sha256": "ee8ac7ece705d708e2ef6ee6f8f6f11be26e2fcb554f40f0db8069bdc89e3e35",
+   "summary_file": "schemeB/layers5/run_summary.json",
+   "routed": 383,
+   "failed": 641,
+   "baseline_routed": 262,
+   "new_routed": 121,
+   "lifted": 121,
+   "flat_added": 0,
+   "transitions": 242,
+   "per_plane": {
+    "z1": {
+     "routed": 128,
+     "baseline": 128,
+     "lifted": 0
+    },
+    "z2": {
+     "routed": 255,
+     "baseline": 134,
+     "lifted": 121
+    }
+   },
+   "per_layer_flat_parts": {
+    "0": 128,
+    "1": 64,
+    "2": 30,
+    "3": 27,
+    "4": 376
+   }
+  }
+ ],
+ "files": [
+  {
+   "file": "comparison/baseline_vs_25d_schemeA.png",
+   "kind": "baseline_vs_25d",
+   "run": "schemeA/layers5",
+   "description": "frozen 2D baseline 752/1024 vs 2.5D final 820/1024 (2x2 per-plane panels + routed bars)",
+   "baseline_total": 752,
+   "final_total": 820,
+   "baseline_per_plane": {
+    "z1": 508,
+    "z2": 244
+   },
+   "final_per_plane": {
+    "z1": 512,
+    "z2": 308
+   }
+  },
+  {
+   "file": "comparison/baseline_vs_25d_schemeB.png",
+   "kind": "baseline_vs_25d",
+   "run": "schemeB/layers5",
+   "description": "frozen 2D baseline 262/1024 vs 2.5D final 383/1024 (2x2 per-plane panels + routed bars)",
+   "baseline_total": 262,
+   "final_total": 383,
+   "baseline_per_plane": {
+    "z1": 128,
+    "z2": 134
+   },
+   "final_per_plane": {
+    "z1": 128,
+    "z2": 255
+   }
+  },
+  {
+   "file": "comparison/layers_effect.png",
+   "kind": "layers_effect",
+   "run": null,
+   "description": "routed counts: frozen 2D baseline vs 3-layer vs 5-layer 2.5D, per scheme",
+   "values": {
+    "A": {
+     "baseline": 752,
+     "layers3": 788,
+     "layers5": 820
+    },
+    "B": {
+     "baseline": 262,
+     "layers3": 342,
+     "layers5": 383
+    }
+   }
+  },
+  {
+   "file": "comparison/lift_statistics.png",
+   "kind": "lift_statistics",
+   "run": null,
+   "description": "lifted routes and vertical transition counts per run (2 panels)",
+   "total_lifted": 305,
+   "total_transitions": 610
+  },
+  {
+   "file": "comparison/plots_manifest.json",
+   "kind": "plots_manifest",
+   "run": null,
+   "description": "inventory of every figure generated by plots25d"
+  },
+  {
+   "file": "figures/schemeA/layers3/layer_0.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers3",
+   "layer": 0,
+   "z_mm": 0.0,
+   "description": "2D diagram of layer 0 (z=0.000 mm): 516 flat parts, 512 routes touching the layer",
+   "counts": {
+    "layer": 0,
+    "flat_parts": 516,
+    "routes_touching": 512,
+    "z1_routes": 512,
+    "z2_routes": 0,
+    "z1_parts": 516,
+    "z2_parts": 0
+   }
+  },
+  {
+   "file": "figures/schemeA/layers3/layer_1.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers3",
+   "layer": 1,
+   "z_mm": 0.25,
+   "description": "2D diagram of layer 1 (z=0.250 mm): 36 flat parts, 36 routes touching the layer",
+   "counts": {
+    "layer": 1,
+    "flat_parts": 36,
+    "routes_touching": 36,
+    "z1_routes": 4,
+    "z2_routes": 32,
+    "z1_parts": 4,
+    "z2_parts": 32
+   }
+  },
+  {
+   "file": "figures/schemeA/layers3/layer_2.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers3",
+   "layer": 2,
+   "z_mm": 0.5,
+   "description": "2D diagram of layer 2 (z=0.500 mm): 308 flat parts, 276 routes touching the layer",
+   "counts": {
+    "layer": 2,
+    "flat_parts": 308,
+    "routes_touching": 276,
+    "z1_routes": 0,
+    "z2_routes": 276,
+    "z1_parts": 0,
+    "z2_parts": 308
+   }
+  },
+  {
+   "file": "figures/schemeA/layers3/layers_2d.png",
+   "kind": "layers_2d",
+   "run": "schemeA/layers3",
+   "description": "all 3 layers as 2D panels (flat parts, plane colouring)",
+   "layers": [
+    {
+     "layer": 0,
+     "flat_parts": 516,
+     "routes_touching": 512,
+     "z1_routes": 512,
+     "z2_routes": 0,
+     "z1_parts": 516,
+     "z2_parts": 0
+    },
+    {
+     "layer": 1,
+     "flat_parts": 36,
+     "routes_touching": 36,
+     "z1_routes": 4,
+     "z2_routes": 32,
+     "z1_parts": 4,
+     "z2_parts": 32
+    },
+    {
+     "layer": 2,
+     "flat_parts": 308,
+     "routes_touching": 276,
+     "z1_routes": 0,
+     "z2_routes": 276,
+     "z1_parts": 0,
+     "z2_parts": 308
+    }
+   ]
+  },
+  {
+   "file": "figures/schemeA/layers3/top_view_by_height.png",
+   "kind": "top_view_by_height",
+   "run": "schemeA/layers3",
+   "description": "XY top view of 788 routed routes coloured by height z (plasma colorbar)"
+  },
+  {
+   "file": "figures/schemeA/layers3/view3d.png",
+   "kind": "view3d",
+   "run": "schemeA/layers3",
+   "description": "3D centerline view of 788 routed routes (plane colouring, z exaggerated ~122x)",
+   "segments": {
+    "z1": 8968,
+    "z2": 14710
+   },
+   "z_exaggeration": 121.5
+  },
+  {
+   "file": "figures/schemeA/layers5/layer_0.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers5",
+   "layer": 0,
+   "z_mm": 0.0,
+   "description": "2D diagram of layer 0 (z=0.000 mm): 516 flat parts, 512 routes touching the layer",
+   "counts": {
+    "layer": 0,
+    "flat_parts": 516,
+    "routes_touching": 512,
+    "z1_routes": 512,
+    "z2_routes": 0,
+    "z1_parts": 516,
+    "z2_parts": 0
+   }
+  },
+  {
+   "file": "figures/schemeA/layers5/layer_1.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers5",
+   "layer": 1,
+   "z_mm": 0.125,
+   "description": "2D diagram of layer 1 (z=0.125 mm): 29 flat parts, 29 routes touching the layer",
+   "counts": {
+    "layer": 1,
+    "flat_parts": 29,
+    "routes_touching": 29,
+    "z1_routes": 4,
+    "z2_routes": 25,
+    "z1_parts": 4,
+    "z2_parts": 25
+   }
+  },
+  {
+   "file": "figures/schemeA/layers5/layer_2.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers5",
+   "layer": 2,
+   "z_mm": 0.25,
+   "description": "2D diagram of layer 2 (z=0.250 mm): 20 flat parts, 20 routes touching the layer",
+   "counts": {
+    "layer": 2,
+    "flat_parts": 20,
+    "routes_touching": 20,
+    "z1_routes": 0,
+    "z2_routes": 20,
+    "z1_parts": 0,
+    "z2_parts": 20
+   }
+  },
+  {
+   "file": "figures/schemeA/layers5/layer_3.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers5",
+   "layer": 3,
+   "z_mm": 0.375,
+   "description": "2D diagram of layer 3 (z=0.375 mm): 19 flat parts, 19 routes touching the layer",
+   "counts": {
+    "layer": 3,
+    "flat_parts": 19,
+    "routes_touching": 19,
+    "z1_routes": 0,
+    "z2_routes": 19,
+    "z1_parts": 0,
+    "z2_parts": 19
+   }
+  },
+  {
+   "file": "figures/schemeA/layers5/layer_4.png",
+   "kind": "layer_2d",
+   "run": "schemeA/layers5",
+   "layer": 4,
+   "z_mm": 0.5,
+   "description": "2D diagram of layer 4 (z=0.500 mm): 372 flat parts, 308 routes touching the layer",
+   "counts": {
+    "layer": 4,
+    "flat_parts": 372,
+    "routes_touching": 308,
+    "z1_routes": 0,
+    "z2_routes": 308,
+    "z1_parts": 0,
+    "z2_parts": 372
+   }
+  },
+  {
+   "file": "figures/schemeA/layers5/layers_2d.png",
+   "kind": "layers_2d",
+   "run": "schemeA/layers5",
+   "description": "all 5 layers as 2D panels (flat parts, plane colouring)",
+   "layers": [
+    {
+     "layer": 0,
+     "flat_parts": 516,
+     "routes_touching": 512,
+     "z1_routes": 512,
+     "z2_routes": 0,
+     "z1_parts": 516,
+     "z2_parts": 0
+    },
+    {
+     "layer": 1,
+     "flat_parts": 29,
+     "routes_touching": 29,
+     "z1_routes": 4,
+     "z2_routes": 25,
+     "z1_parts": 4,
+     "z2_parts": 25
+    },
+    {
+     "layer": 2,
+     "flat_parts": 20,
+     "routes_touching": 20,
+     "z1_routes": 0,
+     "z2_routes": 20,
+     "z1_parts": 0,
+     "z2_parts": 20
+    },
+    {
+     "layer": 3,
+     "flat_parts": 19,
+     "routes_touching": 19,
+     "z1_routes": 0,
+     "z2_routes": 19,
+     "z1_parts": 0,
+     "z2_parts": 19
+    },
+    {
+     "layer": 4,
+     "flat_parts": 372,
+     "routes_touching": 308,
+     "z1_routes": 0,
+     "z2_routes": 308,
+     "z1_parts": 0,
+     "z2_parts": 372
+    }
+   ]
+  },
+  {
+   "file": "figures/schemeA/layers5/top_view_by_height.png",
+   "kind": "top_view_by_height",
+   "run": "schemeA/layers5",
+   "description": "XY top view of 820 routed routes coloured by height z (plasma colorbar)"
+  },
+  {
+   "file": "figures/schemeA/layers5/view3d.png",
+   "kind": "view3d",
+   "run": "schemeA/layers5",
+   "description": "3D centerline view of 820 routed routes (plane colouring, z exaggerated ~122x)",
+   "segments": {
+    "z1": 8816,
+    "z2": 20152
+   },
+   "z_exaggeration": 121.5
+  },
+  {
+   "file": "figures/schemeB/layers3/layer_0.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers3",
+   "layer": 0,
+   "z_mm": 0.0,
+   "description": "2D diagram of layer 0 (z=0.000 mm): 128 flat parts, 128 routes touching the layer",
+   "counts": {
+    "layer": 0,
+    "flat_parts": 128,
+    "routes_touching": 128,
+    "z1_routes": 128,
+    "z2_routes": 0,
+    "z1_parts": 128,
+    "z2_parts": 0
+   }
+  },
+  {
+   "file": "figures/schemeB/layers3/layer_1.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers3",
+   "layer": 1,
+   "z_mm": 0.25,
+   "description": "2D diagram of layer 1 (z=0.250 mm): 80 flat parts, 80 routes touching the layer",
+   "counts": {
+    "layer": 1,
+    "flat_parts": 80,
+    "routes_touching": 80,
+    "z1_routes": 0,
+    "z2_routes": 80,
+    "z1_parts": 0,
+    "z2_parts": 80
+   }
+  },
+  {
+   "file": "figures/schemeB/layers3/layer_2.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers3",
+   "layer": 2,
+   "z_mm": 0.5,
+   "description": "2D diagram of layer 2 (z=0.500 mm): 294 flat parts, 214 routes touching the layer",
+   "counts": {
+    "layer": 2,
+    "flat_parts": 294,
+    "routes_touching": 214,
+    "z1_routes": 0,
+    "z2_routes": 214,
+    "z1_parts": 0,
+    "z2_parts": 294
+   }
+  },
+  {
+   "file": "figures/schemeB/layers3/layers_2d.png",
+   "kind": "layers_2d",
+   "run": "schemeB/layers3",
+   "description": "all 3 layers as 2D panels (flat parts, plane colouring)",
+   "layers": [
+    {
+     "layer": 0,
+     "flat_parts": 128,
+     "routes_touching": 128,
+     "z1_routes": 128,
+     "z2_routes": 0,
+     "z1_parts": 128,
+     "z2_parts": 0
+    },
+    {
+     "layer": 1,
+     "flat_parts": 80,
+     "routes_touching": 80,
+     "z1_routes": 0,
+     "z2_routes": 80,
+     "z1_parts": 0,
+     "z2_parts": 80
+    },
+    {
+     "layer": 2,
+     "flat_parts": 294,
+     "routes_touching": 214,
+     "z1_routes": 0,
+     "z2_routes": 214,
+     "z1_parts": 0,
+     "z2_parts": 294
+    }
+   ]
+  },
+  {
+   "file": "figures/schemeB/layers3/top_view_by_height.png",
+   "kind": "top_view_by_height",
+   "run": "schemeB/layers3",
+   "description": "XY top view of 342 routed routes coloured by height z (plasma colorbar)"
+  },
+  {
+   "file": "figures/schemeB/layers3/view3d.png",
+   "kind": "view3d",
+   "run": "schemeB/layers3",
+   "description": "3D centerline view of 342 routed routes (plane colouring, z exaggerated ~122x)",
+   "segments": {
+    "z1": 128,
+    "z2": 17828
+   },
+   "z_exaggeration": 121.5
+  },
+  {
+   "file": "figures/schemeB/layers5/layer_0.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers5",
+   "layer": 0,
+   "z_mm": 0.0,
+   "description": "2D diagram of layer 0 (z=0.000 mm): 128 flat parts, 128 routes touching the layer",
+   "counts": {
+    "layer": 0,
+    "flat_parts": 128,
+    "routes_touching": 128,
+    "z1_routes": 128,
+    "z2_routes": 0,
+    "z1_parts": 128,
+    "z2_parts": 0
+   }
+  },
+  {
+   "file": "figures/schemeB/layers5/layer_1.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers5",
+   "layer": 1,
+   "z_mm": 0.125,
+   "description": "2D diagram of layer 1 (z=0.125 mm): 64 flat parts, 64 routes touching the layer",
+   "counts": {
+    "layer": 1,
+    "flat_parts": 64,
+    "routes_touching": 64,
+    "z1_routes": 0,
+    "z2_routes": 64,
+    "z1_parts": 0,
+    "z2_parts": 64
+   }
+  },
+  {
+   "file": "figures/schemeB/layers5/layer_2.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers5",
+   "layer": 2,
+   "z_mm": 0.25,
+   "description": "2D diagram of layer 2 (z=0.250 mm): 30 flat parts, 30 routes touching the layer",
+   "counts": {
+    "layer": 2,
+    "flat_parts": 30,
+    "routes_touching": 30,
+    "z1_routes": 0,
+    "z2_routes": 30,
+    "z1_parts": 0,
+    "z2_parts": 30
+   }
+  },
+  {
+   "file": "figures/schemeB/layers5/layer_3.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers5",
+   "layer": 3,
+   "z_mm": 0.375,
+   "description": "2D diagram of layer 3 (z=0.375 mm): 27 flat parts, 27 routes touching the layer",
+   "counts": {
+    "layer": 3,
+    "flat_parts": 27,
+    "routes_touching": 27,
+    "z1_routes": 0,
+    "z2_routes": 27,
+    "z1_parts": 0,
+    "z2_parts": 27
+   }
+  },
+  {
+   "file": "figures/schemeB/layers5/layer_4.png",
+   "kind": "layer_2d",
+   "run": "schemeB/layers5",
+   "layer": 4,
+   "z_mm": 0.5,
+   "description": "2D diagram of layer 4 (z=0.500 mm): 376 flat parts, 255 routes touching the layer",
+   "counts": {
+    "layer": 4,
+    "flat_parts": 376,
+    "routes_touching": 255,
+    "z1_routes": 0,
+    "z2_routes": 255,
+    "z1_parts": 0,
+    "z2_parts": 376
+   }
+  },
+  {
+   "file": "figures/schemeB/layers5/layers_2d.png",
+   "kind": "layers_2d",
+   "run": "schemeB/layers5",
+   "description": "all 5 layers as 2D panels (flat parts, plane colouring)",
+   "layers": [
+    {
+     "layer": 0,
+     "flat_parts": 128,
+     "routes_touching": 128,
+     "z1_routes": 128,
+     "z2_routes": 0,
+     "z1_parts": 128,
+     "z2_parts": 0
+    },
+    {
+     "layer": 1,
+     "flat_parts": 64,
+     "routes_touching": 64,
+     "z1_routes": 0,
+     "z2_routes": 64,
+     "z1_parts": 0,
+     "z2_parts": 64
+    },
+    {
+     "layer": 2,
+     "flat_parts": 30,
+     "routes_touching": 30,
+     "z1_routes": 0,
+     "z2_routes": 30,
+     "z1_parts": 0,
+     "z2_parts": 30
+    },
+    {
+     "layer": 3,
+     "flat_parts": 27,
+     "routes_touching": 27,
+     "z1_routes": 0,
+     "z2_routes": 27,
+     "z1_parts": 0,
+     "z2_parts": 27
+    },
+    {
+     "layer": 4,
+     "flat_parts": 376,
+     "routes_touching": 255,
+     "z1_routes": 0,
+     "z2_routes": 255,
+     "z1_parts": 0,
+     "z2_parts": 376
+    }
+   ]
+  },
+  {
+   "file": "figures/schemeB/layers5/top_view_by_height.png",
+   "kind": "top_view_by_height",
+   "run": "schemeB/layers5",
+   "description": "XY top view of 383 routed routes coloured by height z (plasma colorbar)"
+  },
+  {
+   "file": "figures/schemeB/layers5/view3d.png",
+   "kind": "view3d",
+   "run": "schemeB/layers5",
+   "description": "3D centerline view of 383 routed routes (plane colouring, z exaggerated ~122x)",
+   "segments": {
+    "z1": 128,
+    "z2": 26217
+   },
+   "z_exaggeration": 121.5
+  }
+ ],
+ "caveats": []
+}

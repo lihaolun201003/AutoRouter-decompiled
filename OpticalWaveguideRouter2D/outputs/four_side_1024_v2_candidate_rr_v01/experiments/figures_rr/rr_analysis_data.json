@@ -1,0 +1,4890 @@
+{
+ "generated_at": "2026-10-19 23:41:46",
+ "out_root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01",
+ "sizes": [
+  1,
+  2,
+  4,
+  8,
+  12
+ ],
+ "base": {
+  "routed": 206,
+  "total": 512,
+  "failed": 306,
+  "evaluated": 38013,
+  "seconds": 320.8210101000004,
+  "route_ids": [
+   545,
+   546,
+   547,
+   548,
+   549,
+   550,
+   551,
+   552,
+   553,
+   554,
+   555,
+   556,
+   557,
+   558,
+   559,
+   560,
+   561,
+   562,
+   563,
+   564,
+   565,
+   566,
+   567,
+   568,
+   569,
+   570,
+   571,
+   572,
+   573,
+   574,
+   575,
+   576,
+   577,
+   578,
+   579,
+   580,
+   581,
+   582,
+   583,
+   584,
+   585,
+   586,
+   587,
+   588,
+   589,
+   590,
+   591,
+   592,
+   593,
+   594,
+   595,
+   596,
+   597,
+   598,
+   599,
+   600,
+   601,
+   602,
+   603,
+   604,
+   605,
+   606,
+   607,
+   608,
+   674,
+   675,
+   676,
+   677,
+   678,
+   679,
+   680,
+   681,
+   682,
+   683,
+   684,
+   685,
+   686,
+   687,
+   688,
+   689,
+   690,
+   691,
+   692,
+   693,
+   694,
+   695,
+   696,
+   697,
+   698,
+   699,
+   700,
+   701,
+   702,
+   703,
+   704,
+   743,
+   746,
+   750,
+   754,
+   760,
+   768,
+   801,
+   802,
+   803,
+   804,
+   805,
+   806,
+   807,
+   808,
+   809,
+   810,
+   811,
+   812,
+   813,
+   814,
+   815,
+   816,
+   817,
+   818,
+   819,
+   820,
+   821,
+   822,
+   823,
+   824,
+   825,
+   826,
+   827,
+   828,
+   829,
+   830,
+   831,
+   832,
+   870,
+   871,
+   872,
+   884,
+   885,
+   886,
+   888,
+   892,
+   893,
+   894,
+   895,
+   929,
+   930,
+   931,
+   932,
+   933,
+   934,
+   935,
+   936,
+   937,
+   938,
+   939,
+   940,
+   941,
+   942,
+   943,
+   944,
+   945,
+   946,
+   947,
+   948,
+   949,
+   950,
+   951,
+   952,
+   953,
+   954,
+   955,
+   956,
+   957,
+   958,
+   959,
+   960,
+   961,
+   962,
+   963,
+   964,
+   965,
+   966,
+   967,
+   968,
+   969,
+   970,
+   971,
+   972,
+   973,
+   974,
+   975,
+   976,
+   977,
+   978,
+   979,
+   980,
+   981,
+   982,
+   983,
+   984,
+   985,
+   987,
+   989,
+   990,
+   991,
+   992
+  ]
+ },
+ "e2": {
+  "available": true,
+  "final_routed": 209,
+  "initial_routed": 206,
+  "gain": 3,
+  "seconds": 267.6855041000017,
+  "history": [
+   {
+    "round": 1,
+    "analysed": 96,
+    "transactions": 64,
+    "improving": 4,
+    "committed": 2,
+    "gain": 2,
+    "routed": 208,
+    "seconds": 150.38,
+    "start_routed": 206,
+    "analysis_placements": 0
+   },
+   {
+    "round": 2,
+    "analysed": 96,
+    "transactions": 64,
+    "improving": 0,
+    "committed": 0,
+    "gain": 0,
+    "routed": 209,
+    "seconds": 267.67,
+    "start_routed": 208,
+    "analysis_placements": 1
+   }
+  ],
+  "route_summary": {
+   "routed": 209,
+   "failed": 303,
+   "total": 512,
+   "by_pair": {
+    "EN": {
+     "total": 128,
+     "routed": 64
+    },
+    "ES": {
+     "total": 128,
+     "routed": 39
+    },
+    "SW": {
+     "total": 128,
+     "routed": 44
+    },
+    "NW": {
+     "total": 128,
+     "routed": 62
+    }
+   }
+  },
+  "log": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\work\\e2_20261019_225302.log",
+  "log_args": {
+   "command": "e2",
+   "plane": "z2",
+   "budget": 1600,
+   "budgets": "200,400,800,1600",
+   "workers": 6,
+   "time_limit": 0.0,
+   "rr_time_limit": 1200.0,
+   "rounds": 6,
+   "transactions": 64,
+   "sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "analysis_budget": 400,
+   "reinsert_budget": 400,
+   "max_evals_per_transaction": 12000,
+   "transaction_seconds": 90.0,
+   "seed_offset": 0
+  },
+  "phase1": null,
+  "new_route_ids": [
+   752,
+   765,
+   875
+  ],
+  "new_route_count": 3,
+  "transaction_gain": 2,
+  "analysis_placements": 1,
+  "still_failed_ids": [
+   513,
+   514,
+   515,
+   516,
+   517,
+   518,
+   519,
+   520,
+   521,
+   522,
+   523,
+   524,
+   525,
+   526,
+   527,
+   528,
+   529,
+   530,
+   531,
+   532,
+   533,
+   534,
+   535,
+   536,
+   537,
+   538,
+   539,
+   540,
+   541,
+   542,
+   543,
+   544,
+   609,
+   610,
+   611,
+   612,
+   613,
+   614,
+   615,
+   616,
+   617,
+   618,
+   619,
+   620,
+   621,
+   622,
+   623,
+   624,
+   625,
+   626,
+   627,
+   628,
+   629,
+   630,
+   631,
+   632,
+   633,
+   634,
+   635,
+   636,
+   637,
+   638,
+   639,
+   640,
+   641,
+   642,
+   643,
+   644,
+   645,
+   646,
+   647,
+   648,
+   649,
+   650,
+   651,
+   652,
+   653,
+   654,
+   655,
+   656,
+   657,
+   658,
+   659,
+   660,
+   661,
+   662,
+   663,
+   664,
+   665,
+   666,
+   667,
+   668,
+   669,
+   670,
+   671,
+   672,
+   673,
+   705,
+   706,
+   707,
+   708,
+   709,
+   710,
+   711,
+   712,
+   713,
+   714,
+   715,
+   716,
+   717,
+   718,
+   719,
+   720,
+   721,
+   722,
+   723,
+   724,
+   725,
+   726,
+   727,
+   728,
+   729,
+   730,
+   731,
+   732,
+   733,
+   734,
+   735,
+   736,
+   737,
+   738,
+   739,
+   740,
+   741,
+   742,
+   744,
+   745,
+   747,
+   748,
+   749,
+   751,
+   753,
+   755,
+   756,
+   757,
+   758,
+   759,
+   761,
+   762,
+   763,
+   764,
+   766,
+   767,
+   769,
+   770,
+   771,
+   772,
+   773,
+   774,
+   775,
+   776,
+   777,
+   778,
+   779,
+   780,
+   781,
+   782,
+   783,
+   784,
+   785,
+   786,
+   787,
+   788,
+   789,
+   790,
+   791,
+   792,
+   793,
+   794,
+   795,
+   796,
+   797,
+   798,
+   799,
+   800,
+   833,
+   834,
+   835,
+   836,
+   837,
+   838,
+   839,
+   840,
+   841,
+   842,
+   843,
+   844,
+   845,
+   846,
+   847,
+   848,
+   849,
+   850,
+   851,
+   852,
+   853,
+   854,
+   855,
+   856,
+   857,
+   858,
+   859,
+   860,
+   861,
+   862,
+   863,
+   864,
+   865,
+   866,
+   867,
+   868,
+   869,
+   873,
+   874,
+   876,
+   877,
+   878,
+   879,
+   880,
+   881,
+   882,
+   883,
+   887,
+   889,
+   890,
+   891,
+   896,
+   897,
+   898,
+   899,
+   900,
+   901,
+   902,
+   903,
+   904,
+   905,
+   906,
+   907,
+   908,
+   909,
+   910,
+   911,
+   912,
+   913,
+   914,
+   915,
+   916,
+   917,
+   918,
+   919,
+   920,
+   921,
+   922,
+   923,
+   924,
+   925,
+   926,
+   927,
+   928,
+   986,
+   988,
+   993,
+   994,
+   995,
+   996,
+   997,
+   998,
+   999,
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023,
+   1024
+  ],
+  "still_failed_count": 303,
+  "active_blockers": {
+   "histogram": {
+    "0": 130,
+    "1": 1,
+    "2": 1,
+    "6": 1,
+    "7": 3,
+    "8": 2,
+    "9": 4,
+    "10": 8,
+    "11": 5,
+    "12": 5,
+    "13": 4,
+    "14": 6,
+    "15": 1,
+    "16": 5,
+    "17": 5,
+    "18": 6,
+    "19": 7,
+    "20": 4,
+    "21": 7,
+    "22": 7,
+    "23": 7,
+    "24": 5,
+    "25": 7,
+    "26": 6,
+    "27": 5,
+    "28": 5,
+    "29": 2,
+    "30": 4,
+    "31": 6,
+    "32": 3,
+    "33": 1,
+    "34": 4,
+    "35": 6,
+    "36": 1,
+    "37": 2,
+    "38": 5,
+    "39": 1,
+    "40": 5,
+    "41": 3,
+    "42": 5,
+    "43": 3,
+    "44": 2,
+    "45": 1,
+    "46": 2
+   },
+   "cumulative_ge": {
+    "1": 173,
+    "2": 172,
+    "4": 171,
+    "8": 167,
+    "12": 148
+   },
+   "n": 303,
+   "mean": 13.752475247524753,
+   "total_active_blocker_links": 4167
+  },
+  "k_table": {
+   "rows": [
+    {
+     "k": 1,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 173,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 2,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 172,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 4,
+     "committed": 1,
+     "gain": 1,
+     "share": 0.5,
+     "gain_share": 0.5,
+     "multi_gain": 0,
+     "unique_targets": 1,
+     "rounds": [
+      1
+     ],
+     "first_commit": 1,
+     "feasible_targets_final": 171,
+     "commits_per_100_feasible": 0.5847953216374269
+    },
+    {
+     "k": 8,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 167,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 12,
+     "committed": 1,
+     "gain": 1,
+     "share": 0.5,
+     "gain_share": 0.5,
+     "multi_gain": 0,
+     "unique_targets": 1,
+     "rounds": [
+      1
+     ],
+     "first_commit": 2,
+     "feasible_targets_final": 148,
+     "commits_per_100_feasible": 0.6756756756756757
+    }
+   ],
+   "committed": 2,
+   "gain": 2
+  },
+  "log_rounds": [
+   {
+    "round": 1,
+    "start": {
+     "round": 1,
+     "pending": 306,
+     "analysing": 96,
+     "budget": 200,
+     "routed": 206
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 96,
+      "elapsed": 98.7
+     },
+     {
+      "done": 64,
+      "total": 96,
+      "elapsed": 102.7
+     },
+     {
+      "done": 96,
+      "total": 96,
+      "elapsed": 106.7
+     }
+    ],
+    "done": {
+     "transactions": 64,
+     "improving": 4,
+     "committed": 2,
+     "gain": 2,
+     "routed": 208,
+     "elapsed": 150.4
+    }
+   },
+   {
+    "round": 2,
+    "start": {
+     "round": 2,
+     "pending": 304,
+     "analysing": 96,
+     "budget": 200,
+     "routed": 208
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 96,
+      "elapsed": 20.9
+     },
+     {
+      "done": 64,
+      "total": 96,
+      "elapsed": 59.1
+     },
+     {
+      "done": 96,
+      "total": 96,
+      "elapsed": 65.9
+     }
+    ],
+    "done": {
+     "transactions": 64,
+     "improving": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 209,
+     "elapsed": 267.7
+    }
+   }
+  ],
+  "checkpoint_timestamp": "2026-10-19T22:57:30.034600+08:00"
+ },
+ "e3_phase1": {
+  "available": true,
+  "routed": 243,
+  "applied_count": 37,
+  "applied_route_ids": [
+   513,
+   519,
+   527,
+   535,
+   537,
+   538,
+   741,
+   744,
+   745,
+   747,
+   749,
+   751,
+   752,
+   753,
+   756,
+   757,
+   758,
+   759,
+   761,
+   764,
+   765,
+   766,
+   767,
+   869,
+   875,
+   876,
+   878,
+   879,
+   880,
+   881,
+   882,
+   887,
+   890,
+   896,
+   897,
+   904,
+   922
+  ],
+  "attempted": 306,
+  "evaluated": 111050,
+  "seconds": 743.4924064999977,
+  "mean_route_seconds": 2.42951633986928,
+  "max_route_seconds": 15.657,
+  "progress": [
+   {
+    "position": 1,
+    "found": true,
+    "routed": 1,
+    "cum_seconds": 4.231
+   },
+   {
+    "position": 2,
+    "found": false,
+    "routed": 1,
+    "cum_seconds": 8.876999999999999
+   },
+   {
+    "position": 3,
+    "found": false,
+    "routed": 1,
+    "cum_seconds": 20.259
+   },
+   {
+    "position": 4,
+    "found": false,
+    "routed": 1,
+    "cum_seconds": 31.814999999999998
+   },
+   {
+    "position": 5,
+    "found": false,
+    "routed": 1,
+    "cum_seconds": 47.471999999999994
+   },
+   {
+    "position": 6,
+    "found": false,
+    "routed": 1,
+    "cum_seconds": 62.85999999999999
+   },
+   {
+    "position": 7,
+    "found": true,
+    "routed": 2,
+    "cum_seconds": 63.550999999999995
+   },
+   {
+    "position": 8,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 74.26599999999999
+   },
+   {
+    "position": 9,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 76.454
+   },
+   {
+    "position": 10,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 78.598
+   },
+   {
+    "position": 11,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 80.943
+   },
+   {
+    "position": 12,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 83.209
+   },
+   {
+    "position": 13,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 86.44
+   },
+   {
+    "position": 14,
+    "found": false,
+    "routed": 2,
+    "cum_seconds": 89.02
+   },
+   {
+    "position": 15,
+    "found": true,
+    "routed": 3,
+    "cum_seconds": 89.554
+   },
+   {
+    "position": 16,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 93.134
+   },
+   {
+    "position": 17,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 94.81700000000001
+   },
+   {
+    "position": 18,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 96.676
+   },
+   {
+    "position": 19,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 98.64
+   },
+   {
+    "position": 20,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 100.598
+   },
+   {
+    "position": 21,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 102.287
+   },
+   {
+    "position": 22,
+    "found": false,
+    "routed": 3,
+    "cum_seconds": 104.471
+   },
+   {
+    "position": 23,
+    "found": true,
+    "routed": 4,
+    "cum_seconds": 105.059
+   },
+   {
+    "position": 24,
+    "found": false,
+    "routed": 4,
+    "cum_seconds": 107.916
+   },
+   {
+    "position": 25,
+    "found": true,
+    "routed": 5,
+    "cum_seconds": 110.286
+   },
+   {
+    "position": 26,
+    "found": true,
+    "routed": 6,
+    "cum_seconds": 112.20400000000001
+   },
+   {
+    "position": 27,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 114.795
+   },
+   {
+    "position": 28,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 117.305
+   },
+   {
+    "position": 29,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 119.79100000000001
+   },
+   {
+    "position": 30,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 122.18200000000002
+   },
+   {
+    "position": 31,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 124.16200000000002
+   },
+   {
+    "position": 32,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 125.74200000000002
+   },
+   {
+    "position": 33,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 130.73200000000003
+   },
+   {
+    "position": 34,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 136.07600000000002
+   },
+   {
+    "position": 35,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 141.34300000000002
+   },
+   {
+    "position": 36,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 145.69500000000002
+   },
+   {
+    "position": 37,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 149.24500000000003
+   },
+   {
+    "position": 38,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 152.81200000000004
+   },
+   {
+    "position": 39,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 156.41100000000003
+   },
+   {
+    "position": 40,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 160.13700000000003
+   },
+   {
+    "position": 41,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 163.86900000000003
+   },
+   {
+    "position": 42,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 167.42700000000002
+   },
+   {
+    "position": 43,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 171.07700000000003
+   },
+   {
+    "position": 44,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 174.67100000000002
+   },
+   {
+    "position": 45,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 178.45300000000003
+   },
+   {
+    "position": 46,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 182.10200000000003
+   },
+   {
+    "position": 47,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 185.76900000000003
+   },
+   {
+    "position": 48,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 189.29900000000004
+   },
+   {
+    "position": 49,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 192.86000000000004
+   },
+   {
+    "position": 50,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 196.32900000000004
+   },
+   {
+    "position": 51,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 200.00900000000004
+   },
+   {
+    "position": 52,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 203.65700000000004
+   },
+   {
+    "position": 53,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 207.13300000000004
+   },
+   {
+    "position": 54,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 210.56400000000005
+   },
+   {
+    "position": 55,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 214.10100000000006
+   },
+   {
+    "position": 56,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 217.86100000000005
+   },
+   {
+    "position": 57,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 223.05900000000005
+   },
+   {
+    "position": 58,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 228.47100000000006
+   },
+   {
+    "position": 59,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 233.93600000000006
+   },
+   {
+    "position": 60,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 239.33900000000006
+   },
+   {
+    "position": 61,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 244.82000000000005
+   },
+   {
+    "position": 62,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 250.08700000000005
+   },
+   {
+    "position": 63,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 255.41800000000003
+   },
+   {
+    "position": 64,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 260.31600000000003
+   },
+   {
+    "position": 65,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 264.254
+   },
+   {
+    "position": 66,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 267.969
+   },
+   {
+    "position": 67,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 271.384
+   },
+   {
+    "position": 68,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 274.70500000000004
+   },
+   {
+    "position": 69,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 277.99100000000004
+   },
+   {
+    "position": 70,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 281.273
+   },
+   {
+    "position": 71,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 284.607
+   },
+   {
+    "position": 72,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 287.937
+   },
+   {
+    "position": 73,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 291.176
+   },
+   {
+    "position": 74,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 294.36699999999996
+   },
+   {
+    "position": 75,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 297.60799999999995
+   },
+   {
+    "position": 76,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 300.8179999999999
+   },
+   {
+    "position": 77,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 304.0439999999999
+   },
+   {
+    "position": 78,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 307.2629999999999
+   },
+   {
+    "position": 79,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 310.4969999999999
+   },
+   {
+    "position": 80,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 313.8159999999999
+   },
+   {
+    "position": 81,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 317.1689999999999
+   },
+   {
+    "position": 82,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 320.5609999999999
+   },
+   {
+    "position": 83,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 323.98099999999994
+   },
+   {
+    "position": 84,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 327.24299999999994
+   },
+   {
+    "position": 85,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 330.60599999999994
+   },
+   {
+    "position": 86,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 334.0059999999999
+   },
+   {
+    "position": 87,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 337.48599999999993
+   },
+   {
+    "position": 88,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 340.8109999999999
+   },
+   {
+    "position": 89,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 344.0929999999999
+   },
+   {
+    "position": 90,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 347.4469999999999
+   },
+   {
+    "position": 91,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 350.8579999999999
+   },
+   {
+    "position": 92,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 354.29899999999986
+   },
+   {
+    "position": 93,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 357.80199999999985
+   },
+   {
+    "position": 94,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 361.26599999999985
+   },
+   {
+    "position": 95,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 364.78799999999984
+   },
+   {
+    "position": 96,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 368.17399999999986
+   },
+   {
+    "position": 97,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 371.63299999999987
+   },
+   {
+    "position": 98,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 371.8129999999999
+   },
+   {
+    "position": 99,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 372.0019999999999
+   },
+   {
+    "position": 100,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 372.2899999999999
+   },
+   {
+    "position": 101,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 372.5669999999999
+   },
+   {
+    "position": 102,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 372.9459999999999
+   },
+   {
+    "position": 103,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 373.3179999999999
+   },
+   {
+    "position": 104,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 373.8479999999999
+   },
+   {
+    "position": 105,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 374.3589999999999
+   },
+   {
+    "position": 106,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 374.58699999999993
+   },
+   {
+    "position": 107,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 374.8089999999999
+   },
+   {
+    "position": 108,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 375.1579999999999
+   },
+   {
+    "position": 109,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 375.5189999999999
+   },
+   {
+    "position": 110,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 375.9699999999999
+   },
+   {
+    "position": 111,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 376.4099999999999
+   },
+   {
+    "position": 112,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 377.0309999999999
+   },
+   {
+    "position": 113,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 377.6579999999999
+   },
+   {
+    "position": 114,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 377.9759999999999
+   },
+   {
+    "position": 115,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 378.2969999999999
+   },
+   {
+    "position": 116,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 378.7229999999999
+   },
+   {
+    "position": 117,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 379.1299999999999
+   },
+   {
+    "position": 118,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 379.6759999999999
+   },
+   {
+    "position": 119,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 380.23399999999987
+   },
+   {
+    "position": 120,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 381.0429999999999
+   },
+   {
+    "position": 121,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 381.81799999999987
+   },
+   {
+    "position": 122,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 382.2809999999999
+   },
+   {
+    "position": 123,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 382.7609999999999
+   },
+   {
+    "position": 124,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 383.31299999999993
+   },
+   {
+    "position": 125,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 383.8999999999999
+   },
+   {
+    "position": 126,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 384.58699999999993
+   },
+   {
+    "position": 127,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 385.14199999999994
+   },
+   {
+    "position": 128,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 386.13899999999995
+   },
+   {
+    "position": 129,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 387.08399999999995
+   },
+   {
+    "position": 130,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 388.59499999999997
+   },
+   {
+    "position": 131,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 389.64599999999996
+   },
+   {
+    "position": 132,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 391.64799999999997
+   },
+   {
+    "position": 133,
+    "found": false,
+    "routed": 6,
+    "cum_seconds": 393.57199999999995
+   },
+   {
+    "position": 134,
+    "found": true,
+    "routed": 7,
+    "cum_seconds": 394.08699999999993
+   },
+   {
+    "position": 135,
+    "found": false,
+    "routed": 7,
+    "cum_seconds": 396.0059999999999
+   },
+   {
+    "position": 136,
+    "found": true,
+    "routed": 8,
+    "cum_seconds": 397.02699999999993
+   },
+   {
+    "position": 137,
+    "found": true,
+    "routed": 9,
+    "cum_seconds": 397.8549999999999
+   },
+   {
+    "position": 138,
+    "found": true,
+    "routed": 10,
+    "cum_seconds": 398.5849999999999
+   },
+   {
+    "position": 139,
+    "found": false,
+    "routed": 10,
+    "cum_seconds": 401.2629999999999
+   },
+   {
+    "position": 140,
+    "found": true,
+    "routed": 11,
+    "cum_seconds": 401.7179999999999
+   },
+   {
+    "position": 141,
+    "found": true,
+    "routed": 12,
+    "cum_seconds": 402.0539999999999
+   },
+   {
+    "position": 142,
+    "found": true,
+    "routed": 13,
+    "cum_seconds": 402.5439999999999
+   },
+   {
+    "position": 143,
+    "found": true,
+    "routed": 14,
+    "cum_seconds": 402.87299999999993
+   },
+   {
+    "position": 144,
+    "found": false,
+    "routed": 14,
+    "cum_seconds": 405.4769999999999
+   },
+   {
+    "position": 145,
+    "found": true,
+    "routed": 15,
+    "cum_seconds": 406.2079999999999
+   },
+   {
+    "position": 146,
+    "found": true,
+    "routed": 16,
+    "cum_seconds": 407.48099999999994
+   },
+   {
+    "position": 147,
+    "found": true,
+    "routed": 17,
+    "cum_seconds": 411.48799999999994
+   },
+   {
+    "position": 148,
+    "found": true,
+    "routed": 18,
+    "cum_seconds": 412.87699999999995
+   },
+   {
+    "position": 149,
+    "found": true,
+    "routed": 19,
+    "cum_seconds": 413.66999999999996
+   },
+   {
+    "position": 150,
+    "found": false,
+    "routed": 19,
+    "cum_seconds": 415.465
+   },
+   {
+    "position": 151,
+    "found": false,
+    "routed": 19,
+    "cum_seconds": 419.652
+   },
+   {
+    "position": 152,
+    "found": true,
+    "routed": 20,
+    "cum_seconds": 420.441
+   },
+   {
+    "position": 153,
+    "found": true,
+    "routed": 21,
+    "cum_seconds": 421.01399999999995
+   },
+   {
+    "position": 154,
+    "found": true,
+    "routed": 22,
+    "cum_seconds": 422.643
+   },
+   {
+    "position": 155,
+    "found": true,
+    "routed": 23,
+    "cum_seconds": 424.176
+   },
+   {
+    "position": 156,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 427.39099999999996
+   },
+   {
+    "position": 157,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 430.616
+   },
+   {
+    "position": 158,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 433.86199999999997
+   },
+   {
+    "position": 159,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 437.04799999999994
+   },
+   {
+    "position": 160,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 440.268
+   },
+   {
+    "position": 161,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 443.41099999999994
+   },
+   {
+    "position": 162,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 446.53299999999996
+   },
+   {
+    "position": 163,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 449.66999999999996
+   },
+   {
+    "position": 164,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 452.75399999999996
+   },
+   {
+    "position": 165,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 455.87499999999994
+   },
+   {
+    "position": 166,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 458.95199999999994
+   },
+   {
+    "position": 167,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 462.04999999999995
+   },
+   {
+    "position": 168,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 465.14599999999996
+   },
+   {
+    "position": 169,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 468.30799999999994
+   },
+   {
+    "position": 170,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 471.56199999999995
+   },
+   {
+    "position": 171,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 474.80499999999995
+   },
+   {
+    "position": 172,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 477.8539999999999
+   },
+   {
+    "position": 173,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 480.93999999999994
+   },
+   {
+    "position": 174,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 484.0849999999999
+   },
+   {
+    "position": 175,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 487.2319999999999
+   },
+   {
+    "position": 176,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 490.3929999999999
+   },
+   {
+    "position": 177,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 493.5429999999999
+   },
+   {
+    "position": 178,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 496.8149999999999
+   },
+   {
+    "position": 179,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 500.0699999999999
+   },
+   {
+    "position": 180,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 503.1889999999999
+   },
+   {
+    "position": 181,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 506.3169999999999
+   },
+   {
+    "position": 182,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 509.4099999999999
+   },
+   {
+    "position": 183,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 512.5169999999999
+   },
+   {
+    "position": 184,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 515.8119999999999
+   },
+   {
+    "position": 185,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 518.9769999999999
+   },
+   {
+    "position": 186,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 522.3189999999998
+   },
+   {
+    "position": 187,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 525.6489999999999
+   },
+   {
+    "position": 188,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 525.9449999999999
+   },
+   {
+    "position": 189,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 526.2479999999999
+   },
+   {
+    "position": 190,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 526.608
+   },
+   {
+    "position": 191,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 526.943
+   },
+   {
+    "position": 192,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 527.35
+   },
+   {
+    "position": 193,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 527.809
+   },
+   {
+    "position": 194,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 528.289
+   },
+   {
+    "position": 195,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 528.783
+   },
+   {
+    "position": 196,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 529.082
+   },
+   {
+    "position": 197,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 529.381
+   },
+   {
+    "position": 198,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 529.761
+   },
+   {
+    "position": 199,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 530.165
+   },
+   {
+    "position": 200,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 530.68
+   },
+   {
+    "position": 201,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 531.193
+   },
+   {
+    "position": 202,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 531.848
+   },
+   {
+    "position": 203,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 532.5329999999999
+   },
+   {
+    "position": 204,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 532.8999999999999
+   },
+   {
+    "position": 205,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 533.2559999999999
+   },
+   {
+    "position": 206,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 533.7539999999999
+   },
+   {
+    "position": 207,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 534.2589999999999
+   },
+   {
+    "position": 208,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 534.9259999999999
+   },
+   {
+    "position": 209,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 535.616
+   },
+   {
+    "position": 210,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 536.447
+   },
+   {
+    "position": 211,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 537.38
+   },
+   {
+    "position": 212,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 537.89
+   },
+   {
+    "position": 213,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 538.405
+   },
+   {
+    "position": 214,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 539.143
+   },
+   {
+    "position": 215,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 539.933
+   },
+   {
+    "position": 216,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 540.959
+   },
+   {
+    "position": 217,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 541.928
+   },
+   {
+    "position": 218,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 543.1899999999999
+   },
+   {
+    "position": 219,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 544.3459999999999
+   },
+   {
+    "position": 220,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 546.2439999999999
+   },
+   {
+    "position": 221,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 548.2119999999999
+   },
+   {
+    "position": 222,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 550.4799999999999
+   },
+   {
+    "position": 223,
+    "found": false,
+    "routed": 23,
+    "cum_seconds": 552.3689999999999
+   },
+   {
+    "position": 224,
+    "found": true,
+    "routed": 24,
+    "cum_seconds": 553.622
+   },
+   {
+    "position": 225,
+    "found": false,
+    "routed": 24,
+    "cum_seconds": 555.544
+   },
+   {
+    "position": 226,
+    "found": false,
+    "routed": 24,
+    "cum_seconds": 557.22
+   },
+   {
+    "position": 227,
+    "found": true,
+    "routed": 25,
+    "cum_seconds": 558.009
+   },
+   {
+    "position": 228,
+    "found": true,
+    "routed": 26,
+    "cum_seconds": 558.784
+   },
+   {
+    "position": 229,
+    "found": false,
+    "routed": 26,
+    "cum_seconds": 561.443
+   },
+   {
+    "position": 230,
+    "found": true,
+    "routed": 27,
+    "cum_seconds": 562.728
+   },
+   {
+    "position": 231,
+    "found": true,
+    "routed": 28,
+    "cum_seconds": 563.0709999999999
+   },
+   {
+    "position": 232,
+    "found": true,
+    "routed": 29,
+    "cum_seconds": 563.4859999999999
+   },
+   {
+    "position": 233,
+    "found": true,
+    "routed": 30,
+    "cum_seconds": 564.1319999999998
+   },
+   {
+    "position": 234,
+    "found": true,
+    "routed": 31,
+    "cum_seconds": 564.7769999999998
+   },
+   {
+    "position": 235,
+    "found": false,
+    "routed": 31,
+    "cum_seconds": 568.1899999999998
+   },
+   {
+    "position": 236,
+    "found": true,
+    "routed": 32,
+    "cum_seconds": 569.6039999999998
+   },
+   {
+    "position": 237,
+    "found": false,
+    "routed": 32,
+    "cum_seconds": 571.5099999999998
+   },
+   {
+    "position": 238,
+    "found": true,
+    "routed": 33,
+    "cum_seconds": 572.3359999999998
+   },
+   {
+    "position": 239,
+    "found": false,
+    "routed": 33,
+    "cum_seconds": 575.1659999999998
+   },
+   {
+    "position": 240,
+    "found": true,
+    "routed": 34,
+    "cum_seconds": 576.5389999999999
+   },
+   {
+    "position": 241,
+    "found": true,
+    "routed": 35,
+    "cum_seconds": 578.0159999999998
+   },
+   {
+    "position": 242,
+    "found": false,
+    "routed": 35,
+    "cum_seconds": 579.7839999999999
+   },
+   {
+    "position": 243,
+    "found": false,
+    "routed": 35,
+    "cum_seconds": 582.5039999999999
+   },
+   {
+    "position": 244,
+    "found": false,
+    "routed": 35,
+    "cum_seconds": 585.8809999999999
+   },
+   {
+    "position": 245,
+    "found": false,
+    "routed": 35,
+    "cum_seconds": 589.3989999999999
+   },
+   {
+    "position": 246,
+    "found": false,
+    "routed": 35,
+    "cum_seconds": 593.1829999999999
+   },
+   {
+    "position": 247,
+    "found": false,
+    "routed": 35,
+    "cum_seconds": 596.3529999999998
+   },
+   {
+    "position": 248,
+    "found": true,
+    "routed": 36,
+    "cum_seconds": 596.5799999999998
+   },
+   {
+    "position": 249,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 598.3999999999999
+   },
+   {
+    "position": 250,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 600.2229999999998
+   },
+   {
+    "position": 251,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 602.7919999999998
+   },
+   {
+    "position": 252,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 605.1379999999998
+   },
+   {
+    "position": 253,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 608.4139999999998
+   },
+   {
+    "position": 254,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 611.6069999999997
+   },
+   {
+    "position": 255,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 614.8089999999997
+   },
+   {
+    "position": 256,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 618.0129999999997
+   },
+   {
+    "position": 257,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 619.5579999999997
+   },
+   {
+    "position": 258,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 621.1139999999997
+   },
+   {
+    "position": 259,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 622.9129999999997
+   },
+   {
+    "position": 260,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 624.7479999999997
+   },
+   {
+    "position": 261,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 626.7979999999997
+   },
+   {
+    "position": 262,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 628.7589999999997
+   },
+   {
+    "position": 263,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 630.8149999999997
+   },
+   {
+    "position": 264,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 632.7989999999998
+   },
+   {
+    "position": 265,
+    "found": false,
+    "routed": 36,
+    "cum_seconds": 634.2199999999998
+   },
+   {
+    "position": 266,
+    "found": true,
+    "routed": 37,
+    "cum_seconds": 635.1479999999998
+   },
+   {
+    "position": 267,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 636.6829999999998
+   },
+   {
+    "position": 268,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 637.9959999999998
+   },
+   {
+    "position": 269,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 639.4979999999997
+   },
+   {
+    "position": 270,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 640.7489999999997
+   },
+   {
+    "position": 271,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 642.1309999999996
+   },
+   {
+    "position": 272,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 643.4899999999997
+   },
+   {
+    "position": 273,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 646.8179999999996
+   },
+   {
+    "position": 274,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 650.1279999999996
+   },
+   {
+    "position": 275,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 653.1679999999996
+   },
+   {
+    "position": 276,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 656.3479999999995
+   },
+   {
+    "position": 277,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 659.7529999999995
+   },
+   {
+    "position": 278,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 663.3769999999995
+   },
+   {
+    "position": 279,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 666.8139999999995
+   },
+   {
+    "position": 280,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 669.8309999999996
+   },
+   {
+    "position": 281,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 672.9339999999995
+   },
+   {
+    "position": 282,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 676.1829999999995
+   },
+   {
+    "position": 283,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 679.1159999999995
+   },
+   {
+    "position": 284,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 681.8519999999995
+   },
+   {
+    "position": 285,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 684.6169999999995
+   },
+   {
+    "position": 286,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 687.3549999999996
+   },
+   {
+    "position": 287,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 690.1789999999995
+   },
+   {
+    "position": 288,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 693.0689999999995
+   },
+   {
+    "position": 289,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 696.2319999999995
+   },
+   {
+    "position": 290,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 699.3459999999995
+   },
+   {
+    "position": 291,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 702.0459999999996
+   },
+   {
+    "position": 292,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 704.8059999999996
+   },
+   {
+    "position": 293,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 707.5489999999996
+   },
+   {
+    "position": 294,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 710.3159999999997
+   },
+   {
+    "position": 295,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 713.0189999999997
+   },
+   {
+    "position": 296,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 715.7889999999996
+   },
+   {
+    "position": 297,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 718.7349999999997
+   },
+   {
+    "position": 298,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 721.6239999999997
+   },
+   {
+    "position": 299,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 724.3659999999996
+   },
+   {
+    "position": 300,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 727.0789999999996
+   },
+   {
+    "position": 301,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 729.7969999999996
+   },
+   {
+    "position": 302,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 732.4899999999996
+   },
+   {
+    "position": 303,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 735.1999999999996
+   },
+   {
+    "position": 304,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 737.9739999999996
+   },
+   {
+    "position": 305,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 740.7079999999996
+   },
+   {
+    "position": 306,
+    "found": false,
+    "routed": 37,
+    "cum_seconds": 743.4319999999997
+   }
+  ]
+ },
+ "e3": {
+  "available": true,
+  "final_routed": 244,
+  "initial_routed": 243,
+  "gain": 1,
+  "seconds": 307.1607969999968,
+  "history": [
+   {
+    "round": 1,
+    "analysed": 96,
+    "transactions": 64,
+    "improving": 0,
+    "committed": 0,
+    "gain": 0,
+    "routed": 244,
+    "seconds": 307.15,
+    "start_routed": 243,
+    "analysis_placements": 1
+   }
+  ],
+  "route_summary": {
+   "routed": 244,
+   "failed": 268,
+   "total": 512,
+   "by_pair": {
+    "EN": {
+     "total": 128,
+     "routed": 71
+    },
+    "ES": {
+     "total": 128,
+     "routed": 54
+    },
+    "SW": {
+     "total": 128,
+     "routed": 54
+    },
+    "NW": {
+     "total": 128,
+     "routed": 65
+    }
+   }
+  },
+  "log": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\work\\e3_20261019_225301.log",
+  "log_args": {
+   "command": "e3",
+   "plane": "z2",
+   "budget": 1600,
+   "budgets": "200,400,800,1600",
+   "workers": 8,
+   "time_limit": 0.0,
+   "rr_time_limit": 3600.0,
+   "rounds": 6,
+   "transactions": 64,
+   "sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "analysis_budget": 800,
+   "reinsert_budget": 800,
+   "max_evals_per_transaction": 12000,
+   "transaction_seconds": 90.0,
+   "seed_offset": 0
+  },
+  "phase1": {
+   "routed": 243,
+   "seconds": 743.4924064999977
+  },
+  "new_route_ids": [
+   513,
+   519,
+   527,
+   528,
+   535,
+   537,
+   538,
+   741,
+   744,
+   745,
+   747,
+   749,
+   751,
+   752,
+   753,
+   756,
+   757,
+   758,
+   759,
+   761,
+   764,
+   765,
+   766,
+   767,
+   869,
+   875,
+   876,
+   878,
+   879,
+   880,
+   881,
+   882,
+   887,
+   890,
+   896,
+   897,
+   904,
+   922
+  ],
+  "new_route_count": 38,
+  "rr_only_new_route_ids": [
+   528
+  ],
+  "rr_only_new_count": 1,
+  "transaction_gain": 0,
+  "analysis_placements": 1,
+  "still_failed_ids": [
+   514,
+   515,
+   516,
+   517,
+   518,
+   520,
+   521,
+   522,
+   523,
+   524,
+   525,
+   526,
+   529,
+   530,
+   531,
+   532,
+   533,
+   534,
+   536,
+   539,
+   540,
+   541,
+   542,
+   543,
+   544,
+   609,
+   610,
+   611,
+   612,
+   613,
+   614,
+   615,
+   616,
+   617,
+   618,
+   619,
+   620,
+   621,
+   622,
+   623,
+   624,
+   625,
+   626,
+   627,
+   628,
+   629,
+   630,
+   631,
+   632,
+   633,
+   634,
+   635,
+   636,
+   637,
+   638,
+   639,
+   640,
+   641,
+   642,
+   643,
+   644,
+   645,
+   646,
+   647,
+   648,
+   649,
+   650,
+   651,
+   652,
+   653,
+   654,
+   655,
+   656,
+   657,
+   658,
+   659,
+   660,
+   661,
+   662,
+   663,
+   664,
+   665,
+   666,
+   667,
+   668,
+   669,
+   670,
+   671,
+   672,
+   673,
+   705,
+   706,
+   707,
+   708,
+   709,
+   710,
+   711,
+   712,
+   713,
+   714,
+   715,
+   716,
+   717,
+   718,
+   719,
+   720,
+   721,
+   722,
+   723,
+   724,
+   725,
+   726,
+   727,
+   728,
+   729,
+   730,
+   731,
+   732,
+   733,
+   734,
+   735,
+   736,
+   737,
+   738,
+   739,
+   740,
+   742,
+   748,
+   755,
+   762,
+   763,
+   769,
+   770,
+   771,
+   772,
+   773,
+   774,
+   775,
+   776,
+   777,
+   778,
+   779,
+   780,
+   781,
+   782,
+   783,
+   784,
+   785,
+   786,
+   787,
+   788,
+   789,
+   790,
+   791,
+   792,
+   793,
+   794,
+   795,
+   796,
+   797,
+   798,
+   799,
+   800,
+   833,
+   834,
+   835,
+   836,
+   837,
+   838,
+   839,
+   840,
+   841,
+   842,
+   843,
+   844,
+   845,
+   846,
+   847,
+   848,
+   849,
+   850,
+   851,
+   852,
+   853,
+   854,
+   855,
+   856,
+   857,
+   858,
+   859,
+   860,
+   861,
+   862,
+   863,
+   864,
+   865,
+   866,
+   867,
+   868,
+   873,
+   874,
+   877,
+   883,
+   889,
+   891,
+   898,
+   899,
+   900,
+   901,
+   902,
+   903,
+   905,
+   906,
+   907,
+   908,
+   909,
+   910,
+   911,
+   912,
+   913,
+   914,
+   915,
+   916,
+   917,
+   918,
+   919,
+   920,
+   921,
+   923,
+   924,
+   925,
+   926,
+   927,
+   928,
+   986,
+   988,
+   993,
+   994,
+   995,
+   996,
+   997,
+   998,
+   999,
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023,
+   1024
+  ],
+  "still_failed_count": 268,
+  "active_blockers": {
+   "histogram": {
+    "0": 42,
+    "1": 21,
+    "2": 19,
+    "3": 13,
+    "4": 10,
+    "5": 9,
+    "6": 4,
+    "7": 11,
+    "8": 2,
+    "25": 2,
+    "26": 2,
+    "28": 1,
+    "29": 1,
+    "31": 1,
+    "32": 1,
+    "34": 1,
+    "39": 1,
+    "40": 1,
+    "41": 2,
+    "44": 2,
+    "45": 1,
+    "46": 2,
+    "47": 1,
+    "49": 2,
+    "51": 1,
+    "52": 3,
+    "53": 2,
+    "54": 1,
+    "57": 2,
+    "58": 1,
+    "60": 1,
+    "61": 2,
+    "62": 1,
+    "63": 2,
+    "64": 3,
+    "65": 1,
+    "66": 1,
+    "68": 2,
+    "71": 3,
+    "72": 3,
+    "75": 4,
+    "76": 1,
+    "77": 1,
+    "78": 2,
+    "82": 2,
+    "84": 1,
+    "85": 1,
+    "88": 3,
+    "91": 1,
+    "92": 1,
+    "95": 1,
+    "96": 3,
+    "97": 2,
+    "98": 2,
+    "99": 1,
+    "100": 1,
+    "101": 3,
+    "102": 1,
+    "103": 2,
+    "104": 1,
+    "105": 4,
+    "106": 3,
+    "107": 1,
+    "108": 1,
+    "109": 1,
+    "111": 2,
+    "112": 3,
+    "113": 2,
+    "114": 6,
+    "115": 2,
+    "116": 2,
+    "117": 1,
+    "118": 1,
+    "119": 2,
+    "120": 1,
+    "122": 1,
+    "125": 1,
+    "126": 1,
+    "127": 1,
+    "131": 1,
+    "133": 2,
+    "138": 2,
+    "139": 3,
+    "140": 1,
+    "141": 1,
+    "143": 2,
+    "145": 1,
+    "152": 2,
+    "158": 1,
+    "167": 1
+   },
+   "cumulative_ge": {
+    "1": 226,
+    "2": 205,
+    "4": 173,
+    "8": 139,
+    "12": 137
+   },
+   "n": 268,
+   "mean": 46.55223880597015,
+   "total_active_blocker_links": 12476
+  },
+  "k_table": {
+   "rows": [
+    {
+     "k": 1,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 226,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 2,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 205,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 4,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 173,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 8,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 139,
+     "commits_per_100_feasible": 0.0
+    },
+    {
+     "k": 12,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null,
+     "feasible_targets_final": 137,
+     "commits_per_100_feasible": 0.0
+    }
+   ],
+   "committed": 0,
+   "gain": 0
+  },
+  "log_rounds": [
+   {
+    "round": 1,
+    "start": {
+     "round": 1,
+     "pending": 269,
+     "analysing": 96,
+     "budget": 800,
+     "routed": 243
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 96,
+      "elapsed": 50.8
+     },
+     {
+      "done": 64,
+      "total": 96,
+      "elapsed": 143.4
+     },
+     {
+      "done": 96,
+      "total": 96,
+      "elapsed": 238.3
+     }
+    ],
+    "done": {
+     "transactions": 64,
+     "improving": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 244,
+     "elapsed": 307.2
+    }
+   }
+  ],
+  "checkpoint_timestamp": "2026-10-19T23:10:32.909310+08:00"
+ },
+ "e3x": {
+  "available": true,
+  "initial_routed": 244,
+  "final_routed": 244,
+  "gain": 0,
+  "seconds": 689.07,
+  "history": [
+   {
+    "round": 1,
+    "analysed": 96,
+    "transactions": 103,
+    "improving": 0,
+    "committed": 0,
+    "gain": 0,
+    "routed": 244,
+    "seconds": 383.28,
+    "start_routed": 244,
+    "analysis_placements": 0,
+    "k_used": 1
+   },
+   {
+    "round": 2,
+    "analysed": 96,
+    "transactions": 66,
+    "improving": 0,
+    "committed": 0,
+    "gain": 0,
+    "routed": 244,
+    "seconds": 557.4,
+    "start_routed": 244,
+    "analysis_placements": 0,
+    "k_used": 2
+   },
+   {
+    "round": 3,
+    "analysed": 76,
+    "transactions": 9,
+    "improving": 0,
+    "committed": 0,
+    "gain": 0,
+    "routed": 244,
+    "seconds": 609.89,
+    "start_routed": 244,
+    "analysis_placements": 0,
+    "k_used": 4
+   }
+  ],
+  "continued_from": "outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\E3_z2.json",
+  "seed": 20261796,
+  "route_summary": {
+   "routed": 244,
+   "failed": 268,
+   "total": 512,
+   "by_pair": {
+    "EN": {
+     "total": 128,
+     "routed": 71
+    },
+    "ES": {
+     "total": 128,
+     "routed": 54
+    },
+    "SW": {
+     "total": 128,
+     "routed": 54
+    },
+    "NW": {
+     "total": 128,
+     "routed": 65
+    }
+   }
+  },
+  "log": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\work\\rrcontinue_20261019_231611.log",
+  "log_args": {
+   "command": "rrcontinue",
+   "plane": "z2",
+   "label": "E3X",
+   "from_checkpoint": "outputs/four_side_1024_v2_candidate_rr_v01/checkpoints/E3_z2.json",
+   "budget": 800,
+   "budgets": "200,400,800,1600",
+   "workers": 10,
+   "time_limit": 0.0,
+   "rr_time_limit": 1800.0,
+   "rounds": 6,
+   "transactions": 128,
+   "sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "analysis_budget": 800,
+   "reinsert_budget": 600,
+   "max_evals_per_transaction": 12000,
+   "transaction_seconds": 90.0,
+   "seed_offset": 777,
+   "targets_per_round": 64,
+   "analysis_targets": 96,
+   "min_rounds": 5,
+   "zero_rounds": 2
+  },
+  "sizes": [
+   1,
+   2,
+   4,
+   8,
+   12
+  ],
+  "new_route_ids": [
+   513,
+   519,
+   527,
+   528,
+   535,
+   537,
+   538,
+   741,
+   744,
+   745,
+   747,
+   749,
+   751,
+   752,
+   753,
+   756,
+   757,
+   758,
+   759,
+   761,
+   764,
+   765,
+   766,
+   767,
+   869,
+   875,
+   876,
+   878,
+   879,
+   880,
+   881,
+   882,
+   887,
+   890,
+   896,
+   897,
+   904,
+   922
+  ],
+  "new_route_count": 38,
+  "extension_new_route_ids": [],
+  "extension_new_count": 0,
+  "transaction_gain": 0,
+  "analysis_placements": 0,
+  "still_failed_ids": [
+   514,
+   515,
+   516,
+   517,
+   518,
+   520,
+   521,
+   522,
+   523,
+   524,
+   525,
+   526,
+   529,
+   530,
+   531,
+   532,
+   533,
+   534,
+   536,
+   539,
+   540,
+   541,
+   542,
+   543,
+   544,
+   609,
+   610,
+   611,
+   612,
+   613,
+   614,
+   615,
+   616,
+   617,
+   618,
+   619,
+   620,
+   621,
+   622,
+   623,
+   624,
+   625,
+   626,
+   627,
+   628,
+   629,
+   630,
+   631,
+   632,
+   633,
+   634,
+   635,
+   636,
+   637,
+   638,
+   639,
+   640,
+   641,
+   642,
+   643,
+   644,
+   645,
+   646,
+   647,
+   648,
+   649,
+   650,
+   651,
+   652,
+   653,
+   654,
+   655,
+   656,
+   657,
+   658,
+   659,
+   660,
+   661,
+   662,
+   663,
+   664,
+   665,
+   666,
+   667,
+   668,
+   669,
+   670,
+   671,
+   672,
+   673,
+   705,
+   706,
+   707,
+   708,
+   709,
+   710,
+   711,
+   712,
+   713,
+   714,
+   715,
+   716,
+   717,
+   718,
+   719,
+   720,
+   721,
+   722,
+   723,
+   724,
+   725,
+   726,
+   727,
+   728,
+   729,
+   730,
+   731,
+   732,
+   733,
+   734,
+   735,
+   736,
+   737,
+   738,
+   739,
+   740,
+   742,
+   748,
+   755,
+   762,
+   763,
+   769,
+   770,
+   771,
+   772,
+   773,
+   774,
+   775,
+   776,
+   777,
+   778,
+   779,
+   780,
+   781,
+   782,
+   783,
+   784,
+   785,
+   786,
+   787,
+   788,
+   789,
+   790,
+   791,
+   792,
+   793,
+   794,
+   795,
+   796,
+   797,
+   798,
+   799,
+   800,
+   833,
+   834,
+   835,
+   836,
+   837,
+   838,
+   839,
+   840,
+   841,
+   842,
+   843,
+   844,
+   845,
+   846,
+   847,
+   848,
+   849,
+   850,
+   851,
+   852,
+   853,
+   854,
+   855,
+   856,
+   857,
+   858,
+   859,
+   860,
+   861,
+   862,
+   863,
+   864,
+   865,
+   866,
+   867,
+   868,
+   873,
+   874,
+   877,
+   883,
+   889,
+   891,
+   898,
+   899,
+   900,
+   901,
+   902,
+   903,
+   905,
+   906,
+   907,
+   908,
+   909,
+   910,
+   911,
+   912,
+   913,
+   914,
+   915,
+   916,
+   917,
+   918,
+   919,
+   920,
+   921,
+   923,
+   924,
+   925,
+   926,
+   927,
+   928,
+   986,
+   988,
+   993,
+   994,
+   995,
+   996,
+   997,
+   998,
+   999,
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023,
+   1024
+  ],
+  "still_failed_count": 268,
+  "k_table": {
+   "rows": [
+    {
+     "k": 1,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null
+    },
+    {
+     "k": 2,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null
+    },
+    {
+     "k": 4,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null
+    },
+    {
+     "k": 8,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null
+    },
+    {
+     "k": 12,
+     "committed": 0,
+     "gain": 0,
+     "share": 0.0,
+     "gain_share": 0.0,
+     "multi_gain": 0,
+     "unique_targets": 0,
+     "rounds": [],
+     "first_commit": null
+    }
+   ],
+   "committed": 0,
+   "gain": 0
+  },
+  "log_rounds": [
+   {
+    "round": 1,
+    "start": {
+     "round": 1,
+     "pending": 268,
+     "analysing": 96,
+     "budget": 800,
+     "routed": 244
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 96,
+      "elapsed": 31.1
+     },
+     {
+      "done": 64,
+      "total": 96,
+      "elapsed": 54.4
+     },
+     {
+      "done": 96,
+      "total": 96,
+      "elapsed": 75.6
+     }
+    ],
+    "done": {
+     "transactions": 103,
+     "improving": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 244,
+     "elapsed": 383.3
+    }
+   },
+   {
+    "round": 2,
+    "start": {
+     "round": 2,
+     "pending": 268,
+     "analysing": 96,
+     "budget": 800,
+     "routed": 244
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 96,
+      "elapsed": 26.8
+     },
+     {
+      "done": 64,
+      "total": 96,
+      "elapsed": 34.5
+     },
+     {
+      "done": 96,
+      "total": 96,
+      "elapsed": 41.9
+     }
+    ],
+    "done": {
+     "transactions": 66,
+     "improving": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 244,
+     "elapsed": 557.4
+    }
+   },
+   {
+    "round": 3,
+    "start": {
+     "round": 3,
+     "pending": 268,
+     "analysing": 76,
+     "budget": 800,
+     "routed": 244
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 76,
+      "elapsed": 11.2
+     },
+     {
+      "done": 64,
+      "total": 76,
+      "elapsed": 25.0
+     }
+    ],
+    "done": {
+     "transactions": 9,
+     "improving": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 244,
+     "elapsed": 609.9
+    }
+   },
+   {
+    "round": 4,
+    "start": {
+     "round": 4,
+     "pending": 268,
+     "analysing": 96,
+     "budget": 800,
+     "routed": 244
+    },
+    "blocker_progress": [
+     {
+      "done": 32,
+      "total": 96,
+      "elapsed": 27.7
+     },
+     {
+      "done": 64,
+      "total": 96,
+      "elapsed": 54.3
+     },
+     {
+      "done": 96,
+      "total": 96,
+      "elapsed": 79.1
+     }
+    ]
+   }
+  ],
+  "checkpoint_timestamp": "2026-10-19T23:27:40.488795+08:00"
+ },
+ "k_combined": {
+  "rows": [
+   {
+    "k": 1,
+    "committed": 0,
+    "gain": 0,
+    "experiments": [
+     {
+      "label": "E2",
+      "committed": 0,
+      "gain": 0
+     },
+     {
+      "label": "E3",
+      "committed": 0,
+      "gain": 0
+     }
+    ],
+    "share": 0.0
+   },
+   {
+    "k": 2,
+    "committed": 0,
+    "gain": 0,
+    "experiments": [
+     {
+      "label": "E2",
+      "committed": 0,
+      "gain": 0
+     },
+     {
+      "label": "E3",
+      "committed": 0,
+      "gain": 0
+     }
+    ],
+    "share": 0.0
+   },
+   {
+    "k": 4,
+    "committed": 1,
+    "gain": 1,
+    "experiments": [
+     {
+      "label": "E2",
+      "committed": 1,
+      "gain": 1
+     },
+     {
+      "label": "E3",
+      "committed": 0,
+      "gain": 0
+     }
+    ],
+    "share": 0.5
+   },
+   {
+    "k": 8,
+    "committed": 0,
+    "gain": 0,
+    "experiments": [
+     {
+      "label": "E2",
+      "committed": 0,
+      "gain": 0
+     },
+     {
+      "label": "E3",
+      "committed": 0,
+      "gain": 0
+     }
+    ],
+    "share": 0.0
+   },
+   {
+    "k": 12,
+    "committed": 1,
+    "gain": 1,
+    "experiments": [
+     {
+      "label": "E2",
+      "committed": 1,
+      "gain": 1
+     },
+     {
+      "label": "E3",
+      "committed": 0,
+      "gain": 0
+     }
+    ],
+    "share": 0.5
+   }
+  ],
+  "committed": 2
+ },
+ "e1": {
+  "available": true,
+  "routed": 243,
+  "attempted": 306,
+  "applied": 37,
+  "applied_route_ids": [
+   513,
+   519,
+   527,
+   535,
+   537,
+   538,
+   741,
+   744,
+   745,
+   747,
+   749,
+   751,
+   752,
+   753,
+   756,
+   757,
+   758,
+   759,
+   761,
+   764,
+   765,
+   766,
+   767,
+   869,
+   875,
+   876,
+   878,
+   879,
+   880,
+   881,
+   882,
+   887,
+   890,
+   896,
+   897,
+   904,
+   922
+  ],
+  "new_route_count": 37,
+  "seconds": 1129.9283617,
+  "by_pair": {
+   "EN": {
+    "total": 128,
+    "routed": 70
+   },
+   "ES": {
+    "total": 128,
+    "routed": 54
+   },
+   "SW": {
+    "total": 128,
+    "routed": 54
+   },
+   "NW": {
+    "total": 128,
+    "routed": 65
+   }
+  },
+  "route_ids": [
+   513,
+   519,
+   527,
+   535,
+   537,
+   538,
+   545,
+   546,
+   547,
+   548,
+   549,
+   550,
+   551,
+   552,
+   553,
+   554,
+   555,
+   556,
+   557,
+   558,
+   559,
+   560,
+   561,
+   562,
+   563,
+   564,
+   565,
+   566,
+   567,
+   568,
+   569,
+   570,
+   571,
+   572,
+   573,
+   574,
+   575,
+   576,
+   577,
+   578,
+   579,
+   580,
+   581,
+   582,
+   583,
+   584,
+   585,
+   586,
+   587,
+   588,
+   589,
+   590,
+   591,
+   592,
+   593,
+   594,
+   595,
+   596,
+   597,
+   598,
+   599,
+   600,
+   601,
+   602,
+   603,
+   604,
+   605,
+   606,
+   607,
+   608,
+   674,
+   675,
+   676,
+   677,
+   678,
+   679,
+   680,
+   681,
+   682,
+   683,
+   684,
+   685,
+   686,
+   687,
+   688,
+   689,
+   690,
+   691,
+   692,
+   693,
+   694,
+   695,
+   696,
+   697,
+   698,
+   699,
+   700,
+   701,
+   702,
+   703,
+   704,
+   741,
+   743,
+   744,
+   745,
+   746,
+   747,
+   749,
+   750,
+   751,
+   752,
+   753,
+   754,
+   756,
+   757,
+   758,
+   759,
+   760,
+   761,
+   764,
+   765,
+   766,
+   767,
+   768,
+   801,
+   802,
+   803,
+   804,
+   805,
+   806,
+   807,
+   808,
+   809,
+   810,
+   811,
+   812,
+   813,
+   814,
+   815,
+   816,
+   817,
+   818,
+   819,
+   820,
+   821,
+   822,
+   823,
+   824,
+   825,
+   826,
+   827,
+   828,
+   829,
+   830,
+   831,
+   832,
+   869,
+   870,
+   871,
+   872,
+   875,
+   876,
+   878,
+   879,
+   880,
+   881,
+   882,
+   884,
+   885,
+   886,
+   887,
+   888,
+   890,
+   892,
+   893,
+   894,
+   895,
+   896,
+   897,
+   904,
+   922,
+   929,
+   930,
+   931,
+   932,
+   933,
+   934,
+   935,
+   936,
+   937,
+   938,
+   939,
+   940,
+   941,
+   942,
+   943,
+   944,
+   945,
+   946,
+   947,
+   948,
+   949,
+   950,
+   951,
+   952,
+   953,
+   954,
+   955,
+   956,
+   957,
+   958,
+   959,
+   960,
+   961,
+   962,
+   963,
+   964,
+   965,
+   966,
+   967,
+   968,
+   969,
+   970,
+   971,
+   972,
+   973,
+   974,
+   975,
+   976,
+   977,
+   978,
+   979,
+   980,
+   981,
+   982,
+   983,
+   984,
+   985,
+   987,
+   989,
+   990,
+   991,
+   992
+  ]
+ },
+ "z1opt": {
+  "available": true,
+  "plane": "z1",
+  "initial_plane_baseline": 492,
+  "initial": 492,
+  "final": 508,
+  "gain": 16,
+  "sequential": {
+   "budget": 1600,
+   "attempted": 20,
+   "applied": 3,
+   "applied_route_ids": [
+    35,
+    243,
+    422
+   ],
+   "routed": 495,
+   "seconds": 47.34227969999847
+  },
+  "ripup": {
+   "budget": 1600,
+   "reinsert_budget": 1600,
+   "analysis_budget": 1600,
+   "use_expanded": true,
+   "sizes": [
+    1,
+    2,
+    4
+   ],
+   "rounds": 3,
+   "routed": 508,
+   "initial_routed": 495,
+   "total_gain": 13,
+   "history": [
+    {
+     "round": 1,
+     "analysed": 17,
+     "transactions": 24,
+     "improving_results": 15,
+     "committed": 8,
+     "gain": 8,
+     "routed": 503,
+     "seconds": 77.58
+    },
+    {
+     "round": 2,
+     "analysed": 9,
+     "transactions": 24,
+     "improving_results": 12,
+     "committed": 4,
+     "gain": 4,
+     "routed": 508,
+     "seconds": 106.67
+    },
+    {
+     "round": 3,
+     "analysed": 4,
+     "transactions": 4,
+     "improving_results": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 508,
+     "seconds": 107.35
+    }
+   ],
+   "seconds": 107.35,
+   "seed": 20261019
+  }
+ },
+ "warnings": [],
+ "comparison": {
+  "e1_new_count": 37,
+  "per": {
+   "e2": {
+    "new_count": 3,
+    "overlap_e1_new": 3,
+    "not_in_e1": 0,
+    "e1_new_not_in_experiment": 34
+   },
+   "e3": {
+    "new_count": 38,
+    "overlap_e1_new": 37,
+    "not_in_e1": 1,
+    "e1_new_not_in_experiment": 0
+   },
+   "e3x": {
+    "new_count": 38,
+    "overlap_e1_new": 37,
+    "not_in_e1": 1,
+    "e1_new_not_in_experiment": 0
+   }
+  }
+ },
+ "cross_checks": [
+  {
+   "label": "E2",
+   "log_committed": 2,
+   "summary_committed": 2,
+   "log_gain": 2,
+   "summary_gain": 2,
+   "consistent": true
+  },
+  {
+   "label": "E3",
+   "log_committed": 0,
+   "summary_committed": 0,
+   "log_gain": 0,
+   "summary_gain": 0,
+   "consistent": true
+  },
+  {
+   "label": "E3X",
+   "log_committed": 0,
+   "summary_committed": 0,
+   "log_gain": 0,
+   "summary_gain": 0,
+   "consistent": true
+  }
+ ],
+ "k_replay": {
+  "generated_at": "2026-10-19 23:40:37",
+  "purpose": "受控 k 规模对照重放：冻结布局上执行一轮 RR.build_transactions 生成的**全部**交易（官方每轮只随机采样 64 笔），统计每个 k 的目标插入/全部回插/净增益成功率",
+  "seed_note": "交易构造 seed = V.SEED + round_index（round_index=1，与官方首轮一致）；B 组额外加 1000",
+  "layouts": {
+   "base": {
+    "kind": "base",
+    "routed": 206,
+    "total": 512,
+    "failed_records": 306,
+    "config": {
+     "budget": 200,
+     "reinsert_budget": 200,
+     "use_expanded": false,
+     "max_evals_per_transaction": 12000,
+     "transaction_seconds": 90.0,
+     "note": "BASE 206/512（历史 V2-C）。E2 官方 config: budget=200、reinsert_budget=min(200,400)=200、原始候选生成器"
+    },
+    "arms": {
+     "A_fewest_blockers": {
+      "targets": {
+       "mode": "fewest",
+       "candidates_with_blockers": 175,
+       "selected": 16,
+       "blocker_counts": [
+        5,
+        5,
+        7,
+        7,
+        7,
+        8,
+        8,
+        9,
+        9,
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        10
+       ]
+      },
+      "transactions": 164,
+      "target_config": {
+       "budget": 200,
+       "reinsert_budget": 200
+      }
+     }
+    },
+    "seconds": 59.77033680000022,
+    "transactions_executed": 164,
+    "arms_results": {
+     "A_fewest_blockers": {
+      "rows": [
+       {
+        "k": 1,
+        "attempted": 44,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 44,
+        "negative": 0,
+        "errors": 0,
+        "evals": 24936,
+        "seconds": 89.6585343999759,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 566.7272727272727,
+        "mean_seconds": 2.037693963635816
+       },
+       {
+        "k": 2,
+        "attempted": 44,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 44,
+        "negative": 0,
+        "errors": 0,
+        "evals": 30717,
+        "seconds": 111.3040125999978,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 698.1136363636364,
+        "mean_seconds": 2.5296366499999503
+       },
+       {
+        "k": 4,
+        "attempted": 48,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 48,
+        "negative": 0,
+        "errors": 0,
+        "evals": 36059,
+        "seconds": 137.37444949999917,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 751.2291666666666,
+        "mean_seconds": 2.8619676979166493
+       },
+       {
+        "k": 8,
+        "attempted": 28,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 26,
+        "negative": 2,
+        "errors": 0,
+        "evals": 22849,
+        "seconds": 102.21194179998565,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 816.0357142857143,
+        "mean_seconds": 3.6504264928566306
+       },
+       {
+        "k": 12,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       }
+      ],
+      "4:0": 48,
+      "2:0": 44,
+      "8:0": 26,
+      "1:0": 44,
+      "8:1": 2
+     },
+     "B_most_blockers": {
+      "rows": [
+       {
+        "k": 1,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 2,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 4,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 8,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 12,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       }
+      ]
+     }
+    }
+   },
+   "e3phase1": {
+    "kind": "e3phase1",
+    "routed": 243,
+    "total": 512,
+    "failed_records": 269,
+    "config": {
+     "budget": 1600,
+     "reinsert_budget": 800,
+     "use_expanded": true,
+     "max_evals_per_transaction": 12000,
+     "transaction_seconds": 90.0,
+     "note": "E3 phase1 243/512（从 checkpoints/E3_phase1_z2.json 重建）。E3 官方 config: budget=1600、reinsert_budget=min(1600,800)=800、扩展候选生成器"
+    },
+    "arms": {
+     "A_fewest_blockers": {
+      "targets": {
+       "mode": "fewest",
+       "candidates_with_blockers": 227,
+       "selected": 8,
+       "blocker_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+       ]
+      },
+      "transactions": 8,
+      "target_config": {
+       "budget": 1600,
+       "reinsert_budget": 800
+      }
+     }
+    },
+    "seconds": 8.729392300003383,
+    "transactions_executed": 8,
+    "arms_results": {
+     "A_fewest_blockers": {
+      "rows": [
+       {
+        "k": 1,
+        "attempted": 8,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 7,
+        "negative": 1,
+        "errors": 0,
+        "evals": 592,
+        "seconds": 51.088968499992916,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 74.0,
+        "mean_seconds": 6.3861210624991145
+       },
+       {
+        "k": 2,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 4,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 8,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 12,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       }
+      ],
+      "1:0": 7,
+      "1:1": 1
+     },
+     "B_most_blockers": {
+      "rows": [
+       {
+        "k": 1,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 2,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 4,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 8,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       },
+       {
+        "k": 12,
+        "attempted": 0,
+        "target_placed": 0,
+        "improving": 0,
+        "zero_gain": 0,
+        "negative": 0,
+        "errors": 0,
+        "evals": 0,
+        "seconds": 0.0,
+        "target_placed_rate": 0.0,
+        "improving_rate": 0.0,
+        "mean_evals": 0.0,
+        "mean_seconds": 0.0
+       }
+      ]
+     }
+    }
+   }
+  },
+  "seconds_total": 68.69823780000297
+ },
+ "figures": [
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_k_scale_gain.png",
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_rr_rounds_curve.png",
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_experiment_compare.png",
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_round_gain_saturation.png",
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_k_availability.png",
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_e3_phase1_progress.png",
+  "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\figures_rr\\fig_k_replay_yield.png"
+ ]
+}

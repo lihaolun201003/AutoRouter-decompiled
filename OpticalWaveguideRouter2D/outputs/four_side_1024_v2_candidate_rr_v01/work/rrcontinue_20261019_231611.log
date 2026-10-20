@@ -1,0 +1,26 @@
+23:16:11 command={'command': 'rrcontinue', 'plane': 'z2', 'label': 'E3X', 'from_checkpoint': 'outputs/four_side_1024_v2_candidate_rr_v01/checkpoints/E3_z2.json', 'budget': 800, 'budgets': '200,400,800,1600', 'workers': 10, 'time_limit': 0.0, 'rr_time_limit': 1800.0, 'rounds': 6, 'transactions': 128, 'sizes': [1, 2, 4, 8, 12], 'analysis_budget': 800, 'reinsert_budget': 600, 'max_evals_per_transaction': 12000, 'transaction_seconds': 90.0, 'seed_offset': 777, 'targets_per_round': 64, 'analysis_targets': 96, 'min_rounds': 5, 'zero_rounds': 2}
+23:16:11 z2: restored checkpoint E3_z2.json (244 routed)
+23:16:11 R&R round 1: pending=268 analysing=96 budget=800 routed=244
+23:16:42 parallel blocker analysis: 32/96 elapsed=31.1s
+23:17:05 parallel blocker analysis: 64/96 elapsed=54.4s
+23:17:27 parallel blocker analysis: 96/96 elapsed=75.6s
+23:17:27 parallel blocker analysis done: 96 routes, 0 placed, elapsed=75.7s
+23:22:34 R&R round 1 done: transactions=103 improving=0 committed=0 gain=0 routed=244 elapsed=383.3s
+23:22:34 R&R round 2: pending=268 analysing=96 budget=800 routed=244
+23:23:01 parallel blocker analysis: 32/96 elapsed=26.8s
+23:23:09 parallel blocker analysis: 64/96 elapsed=34.5s
+23:23:16 parallel blocker analysis: 96/96 elapsed=41.9s
+23:23:16 parallel blocker analysis done: 96 routes, 0 placed, elapsed=41.9s
+23:25:28 R&R round 2 done: transactions=66 improving=0 committed=0 gain=0 routed=244 elapsed=557.4s
+23:25:28 R&R round 3: pending=268 analysing=76 budget=800 routed=244
+23:25:39 parallel blocker analysis: 32/76 elapsed=11.2s
+23:25:53 parallel blocker analysis: 64/76 elapsed=25.0s
+23:25:58 parallel blocker analysis done: 76 routes, 0 placed, elapsed=30.1s
+23:26:21 R&R round 3 done: transactions=9 improving=0 committed=0 gain=0 routed=244 elapsed=609.9s
+23:26:21 R&R round 4: pending=268 analysing=96 budget=800 routed=244
+23:26:48 parallel blocker analysis: 32/96 elapsed=27.7s
+23:27:15 parallel blocker analysis: 64/96 elapsed=54.3s
+23:27:40 parallel blocker analysis: 96/96 elapsed=79.1s
+23:27:40 parallel blocker analysis done: 96 routes, 0 placed, elapsed=79.2s
+23:27:40 E3X done: 244 -> 244 -> C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\planes\V2\E3X\z2
+23:27:40 log written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_candidate_rr_v01\work\rrcontinue_20261019_231611.log

@@ -1,0 +1,1736 @@
+{
+ "schema": "four_side_1024_v2opt_comparison_v1",
+ "historical_abcd": {
+  "V1_A": 575,
+  "V1_B": 553,
+  "V1_C": 543,
+  "V1_D": 527,
+  "V2_A": 681,
+  "V2_B": 677,
+  "V2_C": 694,
+  "V2_D": 638
+ },
+ "baseline": {
+  "v2_c": 694,
+  "recombined_698": true
+ },
+ "planes": {
+  "BASE": {
+   "z1": {
+    "routed": 492,
+    "failed": 20,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 254
+     },
+     "EW": {
+      "total": 256,
+      "routed": 238
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 20
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "z2": {
+    "routed": 206,
+    "failed": 306,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 64
+     },
+     "ES": {
+      "total": 128,
+      "routed": 37
+     },
+     "SW": {
+      "total": 128,
+      "routed": 43
+     },
+     "NW": {
+      "total": 128,
+      "routed": 62
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 178,
+     "no_candidate_generated": 128
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "combined_routed": 698,
+   "combined_rate": 0.681640625
+  },
+  "E1": {
+   "z1": {
+    "routed": 492,
+    "failed": 20,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 254
+     },
+     "EW": {
+      "total": 256,
+      "routed": 238
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 20
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "z2": {
+    "routed": 243,
+    "failed": 269,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 70
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 227,
+     "no_candidate_generated": 42
+    },
+    "new_route_ids": [
+     513,
+     519,
+     527,
+     535,
+     537,
+     538,
+     741,
+     744,
+     745,
+     747,
+     749,
+     751,
+     752,
+     753,
+     756,
+     757,
+     758,
+     759,
+     761,
+     764,
+     765,
+     766,
+     767,
+     869,
+     875,
+     876,
+     878,
+     879,
+     880,
+     881,
+     882,
+     887,
+     890,
+     896,
+     897,
+     904,
+     922
+    ],
+    "new_route_count": 37,
+    "total": 512
+   },
+   "combined_routed": 735,
+   "combined_rate": 0.7177734375
+  },
+  "E2": {
+   "z1": {
+    "routed": 492,
+    "failed": 20,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 254
+     },
+     "EW": {
+      "total": 256,
+      "routed": 238
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 20
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "z2": {
+    "routed": 209,
+    "failed": 303,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 64
+     },
+     "ES": {
+      "total": 128,
+      "routed": 39
+     },
+     "SW": {
+      "total": 128,
+      "routed": 44
+     },
+     "NW": {
+      "total": 128,
+      "routed": 62
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 175,
+     "no_candidate_generated": 128
+    },
+    "new_route_ids": [
+     752,
+     765,
+     875
+    ],
+    "new_route_count": 3,
+    "total": 512
+   },
+   "combined_routed": 701,
+   "combined_rate": 0.6845703125
+  },
+  "E3": {
+   "z1": {
+    "routed": 492,
+    "failed": 20,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 254
+     },
+     "EW": {
+      "total": 256,
+      "routed": 238
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 20
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "z2": {
+    "routed": 244,
+    "failed": 268,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 71
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 226,
+     "no_candidate_generated": 42
+    },
+    "new_route_ids": [
+     513,
+     519,
+     527,
+     528,
+     535,
+     537,
+     538,
+     741,
+     744,
+     745,
+     747,
+     749,
+     751,
+     752,
+     753,
+     756,
+     757,
+     758,
+     759,
+     761,
+     764,
+     765,
+     766,
+     767,
+     869,
+     875,
+     876,
+     878,
+     879,
+     880,
+     881,
+     882,
+     887,
+     890,
+     896,
+     897,
+     904,
+     922
+    ],
+    "new_route_count": 38,
+    "total": 512
+   },
+   "combined_routed": 736,
+   "combined_rate": 0.71875
+  },
+  "E3X": {
+   "z1": {
+    "routed": 492,
+    "failed": 20,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 254
+     },
+     "EW": {
+      "total": 256,
+      "routed": 238
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 20
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "z2": {
+    "routed": 244,
+    "failed": 268,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 71
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 226,
+     "no_candidate_generated": 42
+    },
+    "new_route_ids": [
+     513,
+     519,
+     527,
+     528,
+     535,
+     537,
+     538,
+     741,
+     744,
+     745,
+     747,
+     749,
+     751,
+     752,
+     753,
+     756,
+     757,
+     758,
+     759,
+     761,
+     764,
+     765,
+     766,
+     767,
+     869,
+     875,
+     876,
+     878,
+     879,
+     880,
+     881,
+     882,
+     887,
+     890,
+     896,
+     897,
+     904,
+     922
+    ],
+    "new_route_count": 38,
+    "total": 512
+   },
+   "combined_routed": 736,
+   "combined_rate": 0.71875
+  },
+  "Z1OPT": {
+   "z1": {
+    "routed": 508,
+    "failed": 4,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 256
+     },
+     "EW": {
+      "total": 256,
+      "routed": 252
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 4
+    },
+    "new_route_ids": [
+     35,
+     243,
+     261,
+     282,
+     312,
+     327,
+     349,
+     393,
+     404,
+     409,
+     422,
+     431,
+     471,
+     475,
+     476,
+     496
+    ],
+    "new_route_count": 16,
+    "total": 512
+   },
+   "z2": {
+    "routed": 206,
+    "failed": 306,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 64
+     },
+     "ES": {
+      "total": 128,
+      "routed": 37
+     },
+     "SW": {
+      "total": 128,
+      "routed": 43
+     },
+     "NW": {
+      "total": 128,
+      "routed": 62
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 178,
+     "no_candidate_generated": 128
+    },
+    "new_route_ids": [],
+    "new_route_count": 0,
+    "total": 512
+   },
+   "combined_routed": 714,
+   "combined_rate": 0.697265625
+  },
+  "BEST": {
+   "z1": {
+    "routed": 508,
+    "failed": 4,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 256
+     },
+     "EW": {
+      "total": 256,
+      "routed": 252
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 4
+    },
+    "new_route_ids": [
+     35,
+     243,
+     261,
+     282,
+     312,
+     327,
+     349,
+     393,
+     404,
+     409,
+     422,
+     431,
+     471,
+     475,
+     476,
+     496
+    ],
+    "new_route_count": 16,
+    "total": 512
+   },
+   "z2": {
+    "routed": 244,
+    "failed": 268,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 71
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    },
+    "failure_reasons": {
+     "no_legal_candidate": 226,
+     "no_candidate_generated": 42
+    },
+    "new_route_ids": [
+     513,
+     519,
+     527,
+     528,
+     535,
+     537,
+     538,
+     741,
+     744,
+     745,
+     747,
+     749,
+     751,
+     752,
+     753,
+     756,
+     757,
+     758,
+     759,
+     761,
+     764,
+     765,
+     766,
+     767,
+     869,
+     875,
+     876,
+     878,
+     879,
+     880,
+     881,
+     882,
+     887,
+     890,
+     896,
+     897,
+     904,
+     922
+    ],
+    "new_route_count": 38,
+    "total": 512
+   },
+   "combined_routed": 752,
+   "combined_rate": 0.734375
+  }
+ },
+ "experiments": {
+  "E1": {
+   "budget": 1600,
+   "initial": {
+    "routed": 243,
+    "failed": 269,
+    "total": 512,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 70
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    }
+   },
+   "final": null,
+   "gain": null,
+   "seconds": 1129.9283617,
+   "history": null,
+   "sizes": null,
+   "use_expanded": null,
+   "attempted": 306,
+   "applied": 37,
+   "applied_route_ids": [
+    513,
+    519,
+    527,
+    535,
+    537,
+    538,
+    741,
+    744,
+    745,
+    747,
+    749,
+    751,
+    752,
+    753,
+    756,
+    757,
+    758,
+    759,
+    761,
+    764,
+    765,
+    766,
+    767,
+    869,
+    875,
+    876,
+    878,
+    879,
+    880,
+    881,
+    882,
+    887,
+    890,
+    896,
+    897,
+    904,
+    922
+   ],
+   "routed": 243,
+   "plane": "z2",
+   "label": "E1",
+   "route_summary": {
+    "routed": 243,
+    "failed": 269,
+    "total": 512,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 70
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    }
+   },
+   "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\best_z2.json"
+  },
+  "E2": {
+   "budget": 200,
+   "initial": 206,
+   "final": 209,
+   "gain": 3,
+   "seconds": 267.6855041000017,
+   "history": [
+    {
+     "round": 1,
+     "analysed": 96,
+     "transactions": 64,
+     "improving_results": 4,
+     "committed": 2,
+     "gain": 2,
+     "routed": 208,
+     "seconds": 150.38
+    },
+    {
+     "round": 2,
+     "analysed": 96,
+     "transactions": 64,
+     "improving_results": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 209,
+     "seconds": 267.67
+    }
+   ],
+   "sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "use_expanded": false,
+   "label": "E2",
+   "plane": "z2",
+   "max_rounds": 6,
+   "initial_routed": 206,
+   "final_routed": 209,
+   "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\E2_z2.json",
+   "route_summary": {
+    "routed": 209,
+    "failed": 303,
+    "total": 512,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 64
+     },
+     "ES": {
+      "total": 128,
+      "routed": 39
+     },
+     "SW": {
+      "total": 128,
+      "routed": 44
+     },
+     "NW": {
+      "total": 128,
+      "routed": 62
+     }
+    }
+   }
+  },
+  "E3": {
+   "budget": 1600,
+   "initial": 243,
+   "final": 244,
+   "gain": 1,
+   "seconds": 307.1607969999968,
+   "history": [
+    {
+     "round": 1,
+     "analysed": 96,
+     "transactions": 64,
+     "improving_results": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 244,
+     "seconds": 307.15
+    }
+   ],
+   "sizes": [
+    1,
+    2,
+    4,
+    8,
+    12
+   ],
+   "use_expanded": true,
+   "label": "E3",
+   "plane": "z2",
+   "max_rounds": 6,
+   "initial_routed": 243,
+   "final_routed": 244,
+   "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\E3_z2.json",
+   "route_summary": {
+    "routed": 244,
+    "failed": 268,
+    "total": 512,
+    "by_pair": {
+     "EN": {
+      "total": 128,
+      "routed": 71
+     },
+     "ES": {
+      "total": 128,
+      "routed": 54
+     },
+     "SW": {
+      "total": 128,
+      "routed": 54
+     },
+     "NW": {
+      "total": 128,
+      "routed": 65
+     }
+    }
+   }
+  },
+  "Z1OPT": {
+   "label": "Z1OPT",
+   "plane": "z1",
+   "initial": 492,
+   "final": 508,
+   "gain": 16,
+   "route_summary": {
+    "routed": 508,
+    "failed": 4,
+    "total": 512,
+    "by_pair": {
+     "NS": {
+      "total": 256,
+      "routed": 256
+     },
+     "EW": {
+      "total": 256,
+      "routed": 252
+     }
+    }
+   },
+   "sequential": {
+    "budget": 1600,
+    "attempted": 20,
+    "applied": 3,
+    "applied_route_ids": [
+     35,
+     243,
+     422
+    ],
+    "routed": 495,
+    "seconds": 47.34227969999847
+   },
+   "ripup": {
+    "budget": 1600,
+    "reinsert_budget": 1600,
+    "analysis_budget": 1600,
+    "use_expanded": true,
+    "sizes": [
+     1,
+     2,
+     4
+    ],
+    "rounds": 3,
+    "routed": 508,
+    "initial_routed": 495,
+    "total_gain": 13,
+    "history": [
+     {
+      "round": 1,
+      "analysed": 17,
+      "transactions": 24,
+      "improving_results": 15,
+      "committed": 8,
+      "gain": 8,
+      "routed": 503,
+      "seconds": 77.58
+     },
+     {
+      "round": 2,
+      "analysed": 9,
+      "transactions": 24,
+      "improving_results": 12,
+      "committed": 4,
+      "gain": 4,
+      "routed": 508,
+      "seconds": 106.67
+     },
+     {
+      "round": 3,
+      "analysed": 4,
+      "transactions": 4,
+      "improving_results": 0,
+      "committed": 0,
+      "gain": 0,
+      "routed": 508,
+      "seconds": 107.35
+     }
+    ],
+    "seconds": 107.35,
+    "seed": 20261019
+   }
+  }
+ },
+ "candidate_budget_sweep": [
+  {
+   "budget": 200,
+   "tested": 306,
+   "found": 22,
+   "evaluated": 36057,
+   "seconds": 106.13995290000094,
+   "workers": 10,
+   "found_route_ids": [
+    519,
+    520,
+    527,
+    528,
+    535,
+    536,
+    751,
+    752,
+    753,
+    757,
+    758,
+    759,
+    761,
+    766,
+    767,
+    877,
+    878,
+    879,
+    880,
+    887,
+    904,
+    911
+   ],
+   "by_pair_found": {
+    "EN": 6,
+    "ES": 9,
+    "SW": 5,
+    "NW": 2
+   },
+   "family_histogram": {
+    "SHIFT_TURN": 16,
+    "TURN_S": 6
+   }
+  },
+  {
+   "budget": 400,
+   "tested": 306,
+   "found": 42,
+   "evaluated": 58686,
+   "seconds": 170.76577460000044,
+   "workers": 10,
+   "found_route_ids": [
+    519,
+    520,
+    527,
+    528,
+    535,
+    536,
+    543,
+    741,
+    744,
+    745,
+    747,
+    748,
+    749,
+    751,
+    752,
+    753,
+    755,
+    756,
+    757,
+    758,
+    759,
+    761,
+    762,
+    764,
+    765,
+    766,
+    767,
+    874,
+    875,
+    876,
+    877,
+    878,
+    879,
+    880,
+    881,
+    882,
+    887,
+    890,
+    904,
+    911,
+    927,
+    928
+   ],
+   "by_pair_found": {
+    "EN": 7,
+    "ES": 20,
+    "SW": 11,
+    "NW": 4
+   },
+   "family_histogram": {
+    "SHIFT_TURN": 21,
+    "TURN_S": 21
+   }
+  },
+  {
+   "budget": 800,
+   "tested": 306,
+   "found": 62,
+   "evaluated": 81821,
+   "seconds": 197.54396650000126,
+   "workers": 10,
+   "found_route_ids": [
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    527,
+    528,
+    535,
+    536,
+    537,
+    538,
+    543,
+    741,
+    742,
+    744,
+    745,
+    747,
+    748,
+    749,
+    751,
+    752,
+    753,
+    755,
+    756,
+    757,
+    758,
+    759,
+    761,
+    762,
+    764,
+    765,
+    766,
+    767,
+    869,
+    874,
+    875,
+    876,
+    877,
+    878,
+    879,
+    880,
+    881,
+    882,
+    887,
+    889,
+    890,
+    896,
+    897,
+    898,
+    899,
+    900,
+    901,
+    902,
+    904,
+    911,
+    921,
+    922,
+    927,
+    928
+   ],
+   "by_pair_found": {
+    "EN": 15,
+    "ES": 21,
+    "SW": 14,
+    "NW": 12
+   },
+   "family_histogram": {
+    "TURN_S": 35,
+    "SHIFT_TURN": 27
+   }
+  },
+  {
+   "budget": 1600,
+   "tested": 306,
+   "found": 62,
+   "evaluated": 90851,
+   "seconds": 194.69618230000196,
+   "workers": 10,
+   "found_route_ids": [
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    527,
+    528,
+    535,
+    536,
+    537,
+    538,
+    543,
+    741,
+    742,
+    744,
+    745,
+    747,
+    748,
+    749,
+    751,
+    752,
+    753,
+    755,
+    756,
+    757,
+    758,
+    759,
+    761,
+    762,
+    764,
+    765,
+    766,
+    767,
+    869,
+    874,
+    875,
+    876,
+    877,
+    878,
+    879,
+    880,
+    881,
+    882,
+    887,
+    889,
+    890,
+    896,
+    897,
+    898,
+    899,
+    900,
+    901,
+    902,
+    904,
+    911,
+    921,
+    922,
+    927,
+    928
+   ],
+   "by_pair_found": {
+    "EN": 15,
+    "ES": 21,
+    "SW": 14,
+    "NW": 12
+   },
+   "family_histogram": {
+    "TURN_S": 35,
+    "SHIFT_TURN": 27
+   }
+  }
+ ],
+ "reachability": {
+  "schema": "four_side_1024_v2_candidate_rr_v01_corner_reachability_summary_v1",
+  "task": "T5: independent D56 reachability probe of the 128 historical no_candidate_generated corner routes (V2 z2)",
+  "generated_at": "2026-10-19T23:22:08+08:00",
+  "topology": "V2",
+  "plane": "z2",
+  "historical_routes_json": "outputs\\four_side_1024_fslw_R40_gap30_abcd\\planes\\V2\\C\\z2\\routes.json",
+  "historical_routes_sha256": "ce6a880e81f744f5a56f1c24815281b9b7ac69ae267d3f7e0b217cec21fef745",
+  "failure_reason": "no_candidate_generated",
+  "expected_corner_routes": 128,
+  "corner_routes_found": 128,
+  "process": {
+   "board_mm": 150.0,
+   "radius_mm": 40.0,
+   "width_mm": 0.05,
+   "edge_gap_mm": 0.03,
+   "clearance_mm": 0.08,
+   "sagitta_mm": 0.0005,
+   "frozen_csv": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+   "frozen_csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+   "d56_primitives": "axis-aligned lines + fixed R=40 mm quarter arcs + theta=acos(1-d/(2R)) two-arc short-S only",
+   "crossing_policy": "single height plane; occupancy not considered (empty-board reachability only)"
+  },
+  "method": {
+   "expanded_library": "four_side_1024.v2opt.candext.adjacent_specs + candidates_from_specs on the empty-board oracle (all candidate families)",
+   "deterministic_probe": "structured descending-tail move sequences built by candext.move_path, accepted only by four_side_1024.fslw.geom.canonical_validate",
+   "random_probe": "20000 random move configurations per route (2-9 turning moves, straight lengths solved analytically for the exact q pose), fixed seed",
+   "extended_probe": "100000 additional random attempts per route that had no finding in the first phases",
+   "seed": 20261019,
+   "attempt_seed_rule": "route_seed = SEED*1000003 + route_id*17 + offset",
+   "found_cap": 5,
+   "workers": 4,
+   "prefilter": "independent exact stroked-bbox + exact primitive intersection pre-filter (rejects only obvious illegal geometries; all findings are confirmed by canonical_validate)"
+  },
+  "results": {
+   "expanded_library_zero_candidate_count": 42,
+   "expanded_library_zero_candidate_route_ids": [
+    618,
+    625,
+    626,
+    627,
+    628,
+    633,
+    634,
+    635,
+    636,
+    638,
+    641,
+    642,
+    643,
+    644,
+    649,
+    650,
+    651,
+    652,
+    657,
+    658,
+    769,
+    770,
+    771,
+    772,
+    773,
+    774,
+    777,
+    778,
+    779,
+    780,
+    785,
+    786,
+    1009,
+    1010,
+    1011,
+    1012,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022
+   ],
+   "expanded_library_nonzero_candidate_count": 86,
+   "expanded_library_candidate_min": 0,
+   "expanded_library_candidate_max": 69,
+   "expanded_library_candidate_mean": 20.4375,
+   "expanded_library_candidate_histogram": {
+    "0": 42,
+    "6": 9,
+    "8": 16,
+    "10": 3,
+    "14": 7,
+    "16": 4,
+    "18": 6,
+    "21": 6,
+    "22": 1,
+    "24": 2,
+    "50": 8,
+    "58": 4,
+    "64": 12,
+    "66": 2,
+    "67": 4,
+    "69": 2
+   },
+   "expanded_library_nonzero_candidate_min": 6,
+   "expanded_library_nonzero_candidate_max": 69,
+   "expanded_library_nonzero_candidate_mean": 30.41860465116279,
+   "expanded_family_candidate_totals": {
+    "DOWN_LOOP": 2116,
+    "Z5": 500
+   },
+   "corner_route_profile": {
+    "sx_min": 115.625,
+    "sx_max": 144.375,
+    "qy_min": 5.625,
+    "qy_max": 34.375,
+    "zero_candidate_sx_range": [
+     124.875,
+     144.375
+    ],
+    "zero_candidate_qy_range": [
+     5.625,
+     25.125
+    ],
+    "nonzero_candidate_sx_range": [
+     115.625,
+     144.375
+    ],
+    "nonzero_candidate_qy_range": [
+     5.625,
+     34.375
+    ]
+   },
+   "independent_probe_found_count": 86,
+   "independent_probe_found_route_ids": [
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    619,
+    620,
+    621,
+    622,
+    623,
+    624,
+    629,
+    630,
+    631,
+    632,
+    637,
+    639,
+    640,
+    645,
+    646,
+    647,
+    648,
+    653,
+    654,
+    655,
+    656,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    775,
+    776,
+    781,
+    782,
+    783,
+    784,
+    787,
+    788,
+    789,
+    790,
+    791,
+    792,
+    793,
+    794,
+    795,
+    796,
+    797,
+    798,
+    799,
+    800,
+    993,
+    994,
+    995,
+    996,
+    997,
+    998,
+    999,
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1013,
+    1014,
+    1015,
+    1016,
+    1023,
+    1024
+   ],
+   "random_probe_found_count": 86,
+   "extended_random_new_findings_count": 0,
+   "extended_random_new_finding_route_ids": [],
+   "empty_board_geometry_found_count": 86,
+   "empty_board_geometry_not_found_count": 42,
+   "empty_board_geometry_not_found_route_ids": [
+    618,
+    625,
+    626,
+    627,
+    628,
+    633,
+    634,
+    635,
+    636,
+    638,
+    641,
+    642,
+    643,
+    644,
+    649,
+    650,
+    651,
+    652,
+    657,
+    658,
+    769,
+    770,
+    771,
+    772,
+    773,
+    774,
+    777,
+    778,
+    779,
+    780,
+    785,
+    786,
+    1009,
+    1010,
+    1011,
+    1012,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022
+   ],
+   "attempt_totals": {
+    "deterministic_candidates": 55534,
+    "random_attempts": 946786,
+    "extended_random_attempts": 4200000
+   }
+  },
+  "prefilter_audit": {
+   "known_valid_total": 64,
+   "known_valid_accepted": 64,
+   "known_valid_rejected": 0,
+   "sampled_rejected_total": 1506,
+   "sampled_rejected_confirmed_invalid": 1506,
+   "false_negatives": 0,
+   "note": "pre-filter rejects only; findings are always confirmed by four_side_1024.fslw.geom.canonical_validate"
+  },
+  "count_audit": [
+   {
+    "route_id": 613,
+    "full_queue_count": 64,
+    "filtered_count": 64,
+    "equal": true,
+    "note": "complete candext queue compared against the counted queue (LEFT/Z3 candidates skipped by the self-intersection proof) on a route with non-zero candidates"
+   },
+   {
+    "route_id": 618,
+    "filtered_count": 0,
+    "proof_skips": 5184,
+    "left_skips_self_checked": 2,
+    "note": "zero-candidate route: every skipped LEFT/Z3 spec carried the proven self-intersection condition; the first skipped specs were re-built with candext.build_candidate and returned None"
+   }
+  ],
+  "module_hashes": {
+   "four_side_1024\\v2opt\\reachability_probe.py": "169d6cbeeb59255e623df2aa1903fad231f284bd8e10ad0fdcf0c2c1fa7ea8f7",
+   "four_side_1024\\v2opt\\candext.py": "4ad09f0c283dab5b7a25d824a9f0c67bb7e2959540c2f9beb59813f3901ba329",
+   "four_side_1024\\v2opt\\config.py": "8c490fd370232872d3cc897a0a180f803f9d1ab4937d6d4e28f4b1111f1571f2",
+   "four_side_1024\\fslw\\geom.py": "66ee3cf8ecfc2a6b7d005a25efecea60f6af6f71dacaf0820e330f5678651827",
+   "four_side_1024\\fslw\\config.py": "f44d72826dfa47e2fc7f9b54cd45b082aedfe90db4df0aac4f62daaa4dc861f9",
+   "four_side_1024\\fslw\\ports.py": "d339901f427b8d87c31114ccbdf727fff45b18eeae147f4c7aa3316e44fd44b2",
+   "four_side_1024\\d56\\frames.py": "0d125a71a575d22c11438e7adfc8788b33ab3f91fe9b39c97b4f8c9a70497279",
+   "four_side_1024\\d56\\candidates.py": "4412259f1af50f0f96be917a8b54f8e4e0840f216aaf6abed17d38ce7e61eeec",
+   "four_side_1024\\geometry.py": "b9b7dcca9e450348ee849b1678f62400d5d628ba8f85e4639df1606ce15dc345",
+   "outputs\\four_side_1024_fslw_R40_gap30_abcd\\planes\\V2\\C\\z2\\routes.json": "ce6a880e81f744f5a56f1c24815281b9b7ac69ae267d3f7e0b217cec21fef745"
+  },
+  "environment": {
+   "python": "3.10.11",
+   "platform": "Windows-10-10.0.26200-SP0",
+   "script": "four_side_1024\\v2opt\\reachability_probe.py",
+   "output_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\reachability"
+  },
+  "timings": {
+   "total_seconds": 127.6246542000008,
+   "workers": 4,
+   "route_seconds": {
+    "609": 0.235,
+    "610": 0.358,
+    "611": 0.291,
+    "612": 0.33,
+    "613": 0.199,
+    "614": 0.316,
+    "615": 0.34,
+    "616": 0.311,
+    "617": 1.803,
+    "618": 2.064,
+    "619": 0.303,
+    "620": 0.32,
+    "621": 0.212,
+    "622": 0.231,
+    "623": 0.274,
+    "624": 0.331,
+    "625": 1.814,
+    "626": 2.082,
+    "627": 2.156,
+    "628": 2.031,
+    "629": 0.283,
+    "630": 0.342,
+    "631": 0.264,
+    "632": 0.274,
+    "633": 1.76,
+    "634": 1.88,
+    "635": 1.916,
+    "636": 1.901,
+    "637": 1.776,
+    "638": 2.101,
+    "639": 0.299,
+    "640": 0.202,
+    "641": 1.859,
+    "642": 1.648,
+    "643": 1.953,
+    "644": 2.001,
+    "645": 1.291,
+    "646": 1.761,
+    "647": 0.335,
+    "648": 0.281,
+    "649": 1.871,
+    "650": 2.022,
+    "651": 2.086,
+    "652": 2.205,
+    "653": 0.211,
+    "654": 0.224,
+    "655": 0.284,
+    "656": 0.256,
+    "657": 2.318,
+    "658": 2.18,
+    "659": 0.318,
+    "660": 0.279,
+    "661": 0.298,
+    "662": 0.245,
+    "663": 0.315,
+    "664": 0.25,
+    "665": 0.296,
+    "666": 0.274,
+    "667": 0.324,
+    "668": 0.331,
+    "669": 0.357,
+    "670": 0.279,
+    "671": 0.365,
+    "672": 0.255,
+    "769": 1.76,
+    "770": 1.751,
+    "771": 1.92,
+    "772": 1.879,
+    "773": 2.32,
+    "774": 2.101,
+    "775": 0.201,
+    "776": 0.241,
+    "777": 2.091,
+    "778": 2.078,
+    "779": 2.248,
+    "780": 2.003,
+    "781": 0.275,
+    "782": 0.267,
+    "783": 0.176,
+    "784": 0.332,
+    "785": 2.354,
+    "786": 2.349,
+    "787": 0.196,
+    "788": 0.3,
+    "789": 0.252,
+    "790": 0.298,
+    "791": 0.281,
+    "792": 0.321,
+    "793": 0.342,
+    "794": 0.35,
+    "795": 0.342,
+    "796": 0.361,
+    "797": 0.288,
+    "798": 0.281,
+    "799": 0.268,
+    "800": 0.328,
+    "993": 0.286,
+    "994": 0.352,
+    "995": 0.306,
+    "996": 0.205,
+    "997": 0.365,
+    "998": 0.342,
+    "999": 0.303,
+    "1000": 0.368,
+    "1001": 1.303,
+    "1002": 1.771,
+    "1003": 0.326,
+    "1004": 0.363,
+    "1005": 0.386,
+    "1006": 0.372,
+    "1007": 0.374,
+    "1008": 0.296,
+    "1009": 2.227,
+    "1010": 2.145,
+    "1011": 2.294,
+    "1012": 2.505,
+    "1013": 0.297,
+    "1014": 0.349,
+    "1015": 0.28,
+    "1016": 0.203,
+    "1017": 2.148,
+    "1018": 2.072,
+    "1019": 1.937,
+    "1020": 2.168,
+    "1021": 2.214,
+    "1022": 2.164,
+    "1023": 0.281,
+    "1024": 0.253
+   }
+  },
+  "conclusion": "在 128 条历史 no_candidate_generated 角部路线中：(a) 当前扩展候选库（candext 全候选队列、空板）对 42 条路线产生 0 条合法候选，对 86 条路线产生非零候选（非零候选数范围 6~69）；(b) 独立确定性/随机探针（含每路线 20000 次随机尝试）在 86 条路线上找到了至少 1 条 D56 合法几何；(c) 对仍未找到的 42 条路线追加 100000 次/路线随机尝试，新增发现 0 条。因此，42 条路线在“本次扩展候选库枚举 + 独立确定性枚举 + 20000+100000 次随机尝试”范围内均未找到合法 D56 几何，属于本次枚举/当前扩展候选库下的未找到（不构成绝对不可布通的证明）；其余 86 条路线的失败原因是“扩展搜索未找到/候选池不足”而不是几何族不可达——空板上确实存在合法 D56 几何。预筛审计：64/64 条已知合法候选被预筛接受（0 条误拒）；对预筛拒绝样本的抽样复核中，1506/1506 条被权威验证器同样拒绝，预筛未隐藏任何合法几何。",
+  "caveats": [
+   "结论口径：本报告只说明“在本次枚举 / 当前扩展候选库下未找到合法候选”，不是“物理上绝对不可布通”的数学证明。",
+   "探针只覆盖 D56 三个图元族（正交直线、固定 R=40 mm 90°圆弧、theta=acos(1-d/(2R)) 双弧短 S）；不涉及层切换、放宽半径/间距、自由曲线等被禁止的变体。",
+   "随机探针的 move 序列覆盖 2~9 个转向 move（Q/S），直线长度由端点约束解析求解；不排除更长 move 序列或其他合法拓扑的存在。",
+   "空板可达性只回答“几何族内是否存在合法路径”，不涉及与其他 206 条历史路线的间距冲突；因此即使可达也不代表能在真实布局中布通。",
+   "所有“找到”的几何均由冻结的 four_side_1024.fslw.geom.canonical_validate 确认；预筛只做拒绝、不做接受，并已在运行中审计。"
+  ]
+ },
+ "best_selection": {
+  "schema": "four_side_1024_v2opt_best_selection_v1",
+  "rule": "z2: max routed among E1/E2/E3 (tie -> E3); z1: Z1OPT if it strictly beats 492 else BASE",
+  "z1": {
+   "selection": {
+    "label": "Z1OPT",
+    "routed": 508,
+    "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\z1opt_z1.json",
+    "summary": {
+     "label": "Z1OPT",
+     "plane": "z1",
+     "initial": 492,
+     "final": 508,
+     "gain": 16,
+     "route_summary": {
+      "routed": 508,
+      "failed": 4,
+      "total": 512,
+      "by_pair": {
+       "NS": {
+        "total": 256,
+        "routed": 256
+       },
+       "EW": {
+        "total": 256,
+        "routed": 252
+       }
+      }
+     },
+     "sequential": {
+      "budget": 1600,
+      "attempted": 20,
+      "applied": 3,
+      "applied_route_ids": [
+       35,
+       243,
+       422
+      ],
+      "routed": 495,
+      "seconds": 47.34227969999847
+     },
+     "ripup": {
+      "budget": 1600,
+      "reinsert_budget": 1600,
+      "analysis_budget": 1600,
+      "use_expanded": true,
+      "sizes": [
+       1,
+       2,
+       4
+      ],
+      "rounds": 3,
+      "routed": 508,
+      "initial_routed": 495,
+      "total_gain": 13,
+      "history": [
+       {
+        "round": 1,
+        "analysed": 17,
+        "transactions": 24,
+        "improving_results": 15,
+        "committed": 8,
+        "gain": 8,
+        "routed": 503,
+        "seconds": 77.58
+       },
+       {
+        "round": 2,
+        "analysed": 9,
+        "transactions": 24,
+        "improving_results": 12,
+        "committed": 4,
+        "gain": 4,
+        "routed": 508,
+        "seconds": 106.67
+       },
+       {
+        "round": 3,
+        "analysed": 4,
+        "transactions": 4,
+        "improving_results": 0,
+        "committed": 0,
+        "gain": 0,
+        "routed": 508,
+        "seconds": 107.35
+       }
+      ],
+      "seconds": 107.35,
+      "seed": 20261019
+     }
+    }
+   },
+   "routed": 508,
+   "out_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z1"
+  },
+  "z2": {
+   "selection": {
+    "label": "E3",
+    "routed": 244,
+    "checkpoint": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\checkpoints\\E3_z2.json",
+    "summary": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\experiments\\E3_z2_summary.json"
+   },
+   "routed": 244,
+   "out_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\planes\\V2\\BEST\\z2"
+  },
+  "combined_routed": 752,
+  "baseline_698": 698,
+  "delta_vs_698": 54
+ },
+ "figures": {
+  "score_ladder": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\comparison\\figure_score_ladder.png",
+  "candidate_budget": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\comparison\\figure_candidate_budget.png",
+  "rr_rounds_E2": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\comparison\\figure_rr_rounds_E2.png",
+  "rr_rounds_E3": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_candidate_rr_v01\\comparison\\figure_rr_rounds_E3.png"
+ }
+}

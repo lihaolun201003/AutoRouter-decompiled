@@ -139,3 +139,28 @@ C 四边轮流 batch=16、D 全局联合 + LNS）、独立 strict 校验器 `val
 Phase-3 几何测试 `feasibility.py` 与类别隔离容量 `same_side_capacity.py`。
 全部代码/报告/证据见 `outputs/four_side_1024_v3_huang_R40_gap30_abcd/` 与
 `docs/reports/four_side_1024_v3_huang_R40_gap30_abcd.md`。
+
+## V2 双高度候选扩展 + 强化 R&R（2026-10-20）
+
+`v2opt/` 在 FSLW 双高度模型上扩展候选库（D56 全族，含 Short-S）、做候选预算 200/400/800/1600
+阶梯与强化 R&R 消融。V2 1024 组合最佳 **752/1024（73.44%）**：z1 508/512 + z2 244/512；
+独立 strict 验收双平面 PASS。详见
+[完整报告](../../../docs/reports/four_side_1024_v2_candidate_rr_v01.md)、
+[产物目录](../outputs/four_side_1024_v2_candidate_rr_v01/)。
+
+## 纯正交 90° 圆弧对照（2026-10-20）
+
+只允许轴对齐直线 + 恰好 90° 的 R40 圆弧（禁止 Short-S 与斜线）：**262/1024（25.59%）**，
+z1 128/512（384 条小横向偏移连接在该几何族下无合法候选）+ z2 134/512；相对 752 基线
+-490 条。独立 strict 验收 + 每弧 90° 额外审计 PASS。详见
+[完整报告](../../../docs/reports/four_side_1024_v2_ortho90_v01.md)、
+[产物目录](../outputs/four_side_1024_v2_ortho90_v01/)。
+
+## 五层 2.5D 局部抬升（2026-10-20）
+
+`fsd25d/` 在两组二维已验收布局上做"接口层平坦传播 + 双 R40 弧 S 曲线升降 + 中间层传播"的
+局部抬升，层高 z=[0,0.125,0.25,0.375,0.5] mm（3 层对照）。结果：A 保留 Short-S 从 752 提升到
+**820/1024（3 层 788）**，B 纯正交 90° 从 262 提升到 **383/1024（3 层 342）**；四个 run 全部
+通过独立真三维验收（曲率、端口切向、三维净空、分层 strict 2D，零违规）。详见
+[完整报告](../../../docs/reports/four_side_1024_v2_25d_v01.md)、
+[产物目录](../outputs/four_side_1024_v2_25d_v01/)。

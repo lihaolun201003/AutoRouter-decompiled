@@ -107,6 +107,39 @@ class LineOracle:
                 count += 1
         return count
 
+    def h_crossings(self, y, x0, x1):
+        """Number of accepted vertical segments crossing the horizontal span.
+
+        Ranking aid only (used by the ``v2opt`` expanded candidate queue); it
+        never takes part in any acceptance decision.
+        """
+        tol = self._tol
+        lo = bisect_left(self.v, (x0 - tol,))
+        hi = bisect_right(self.v, (x1 + tol,))
+        count = 0
+        for entry in self.v[lo:hi]:
+            if entry[3] < 0:
+                continue
+            if entry[1] - tol < y < entry[2] + tol:
+                count += 1
+        return count
+
+    def v_crossings(self, x, y0, y1):
+        """Number of accepted horizontal segments crossing the vertical span.
+
+        Ranking aid only; no acceptance decision depends on it.
+        """
+        tol = self._tol
+        lo = bisect_left(self.h, (y0 - tol,))
+        hi = bisect_right(self.h, (y1 + tol,))
+        count = 0
+        for entry in self.h[lo:hi]:
+            if entry[3] < 0:
+                continue
+            if entry[1] - tol < x < entry[2] + tol:
+                count += 1
+        return count
+
     def h_obstacle_ys(self, x0, x1):
         """y coordinates of horizontal segments that interact with x-span."""
         tol = self._tol

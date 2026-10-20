@@ -1,0 +1,142 @@
+{
+ "schema": "four_side_1024_v2_25d_validation_v1",
+ "label": "schemeA/layers5",
+ "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01\\schemeA\\layers5\\routes_25d.json",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01",
+ "scheme": "A",
+ "n_layers": 5,
+ "passed": true,
+ "failure_reasons": [],
+ "routed": 820,
+ "failed": 204,
+ "total": 1024,
+ "min_3d_distance_mm": 0.080390234,
+ "min_3d_distance_excluding_crossings_mm": 0.080390234,
+ "min_curvature_radius_mm": 39.999999718,
+ "crossings": {
+  "total": 87279,
+  "by_layer": {
+   "0": 71362,
+   "1": 329,
+   "2": 281,
+   "3": 144,
+   "4": 15163
+  }
+ },
+ "violations": [],
+ "violation_kinds": {},
+ "counts": {
+  "violations": 0,
+  "structure_errors": 0,
+  "port_errors": 0,
+  "xy_model_errors": 0,
+  "curvature_violations": 0,
+  "clearance_violations": 0,
+  "layer_2d_violations": 0,
+  "self_clearance_violations": 0,
+  "board_violations": 0
+ },
+ "stats": {
+  "min_layer_gap_mm": 0.125,
+  "transitions": 136,
+  "lifted": 68,
+  "flat_routes": 752,
+  "flat_parts": 956,
+  "total_length_mm": 128895.610885634,
+  "total_xy_length_mm": 128894.634489138,
+  "min_flat_flat_same_layer_mm": 0.080390234,
+  "min_flat_transition_mm": 0.09189435,
+  "min_transition_transition_mm": null,
+  "min_self_clearance_mm": null,
+  "min_board_margin_mm": 0.0794,
+  "min_3d_distance_bound": "measured",
+  "violating_flat_transition_segment_pairs": 0,
+  "violating_transition_transition_segment_pairs": 0,
+  "port_csv_checked": true,
+  "flat_segments": 2562153,
+  "transition_segments": 42384,
+  "flat_length_mm": 128049.364953305,
+  "transition_length_mm": 846.242963585
+ },
+ "layer_2d": {
+  "0": {
+   "parts": 516,
+   "crossings": 71362,
+   "crossing_pairs": 70233,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.083149013,
+   "small_angle_crossings": 887,
+   "runtime_seconds": 5.811
+  },
+  "1": {
+   "parts": 29,
+   "crossings": 329,
+   "crossing_pairs": 294,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.25077639,
+   "small_angle_crossings": 36,
+   "runtime_seconds": 0.055
+  },
+  "2": {
+   "parts": 20,
+   "crossings": 281,
+   "crossing_pairs": 174,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.25077639,
+   "small_angle_crossings": 12,
+   "runtime_seconds": 0.044
+  },
+  "3": {
+   "parts": 19,
+   "crossings": 144,
+   "crossing_pairs": 107,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.25077639,
+   "small_angle_crossings": 7,
+   "runtime_seconds": 0.022
+  },
+  "4": {
+   "parts": 372,
+   "crossings": 15163,
+   "crossing_pairs": 12830,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.080390234,
+   "small_angle_crossings": 425,
+   "runtime_seconds": 2.75
+  }
+ },
+ "warnings": [],
+ "layers_z_mm": [
+  0.0,
+  0.125,
+  0.25,
+  0.375,
+  0.5
+ ],
+ "interface_layer": {
+  "z1": 0,
+  "z2": 4
+ },
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "radius_mm": 40.0,
+  "min_cross_angle_deg": 5.0,
+  "crossing_policy": "strict"
+ },
+ "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "port_csv_checked": true,
+ "min_3d_distance_definition": "minimum true-3D centreline distance between different routes over all approaches that are NOT legal same-layer strict-2D crossings; same-layer flat/flat pairs are audited by the frozen strict 2D policy, all transition-involved pairs are computed from the independently rebuilt 3D polylines with exact segment/segment refinement",
+ "min_3d_distance_is_resolved": true,
+ "min_3d_distance_including_crossings_mm": 0.0,
+ "clearance_tolerance_mm": 1e-07,
+ "board_margin_tolerance_mm": 1e-09,
+ "runtime_seconds": 10.576,
+ "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01\\validation\\A\\layers5.json"
+}

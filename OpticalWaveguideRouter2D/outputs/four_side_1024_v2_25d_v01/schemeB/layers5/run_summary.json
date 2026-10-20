@@ -1,0 +1,104 @@
+{
+ "schema": "four_side_1024_v2_25d_run_v1",
+ "scheme": "B",
+ "n_layers": 5,
+ "scheme_label": "B_ortho90",
+ "baseline_routed": 262,
+ "statistics": {
+  "baseline_routed": 262,
+  "routed": 383,
+  "new_routed": 121,
+  "lifted": 121,
+  "flat_added": 0,
+  "transitions": 242,
+  "total_length_mm": 68703.397905,
+  "mean_length_mm": 179.38224,
+  "total_xy_length_mm": 68701.326345,
+  "per_plane": {
+   "z1": {
+    "routed": 128,
+    "baseline": 128,
+    "lifted": 0
+   },
+   "z2": {
+    "routed": 255,
+    "baseline": 134,
+    "lifted": 121
+   }
+  },
+  "per_layer_flat_parts": {
+   "0": 128,
+   "1": 64,
+   "2": 30,
+   "3": 27,
+   "4": 376
+  },
+  "failed_no_candidate": 426,
+  "failed_unplaceable": 215
+ },
+ "router": {
+  "scheme": "B",
+  "n_layers": 5,
+  "baseline_routed": 262,
+  "final_routed": 383,
+  "new_routed": 121,
+  "attemptable": 336,
+  "no_candidate": 426,
+  "failed_no_candidate": 426,
+  "failed_unplaceable": 215,
+  "passes": [
+   {
+    "pass_index": 1,
+    "attempted": 336,
+    "placed": 121,
+    "pending": 215,
+    "seconds": 554.39
+   },
+   {
+    "pass_index": 2,
+    "attempted": 215,
+    "placed": 0,
+    "pending": 215,
+    "seconds": 625.84
+   },
+   {
+    "pass_index": 3,
+    "attempted": 215,
+    "placed": 0,
+    "pending": 215,
+    "seconds": 729.57
+   }
+  ],
+  "rr": [
+   {
+    "round": 1,
+    "gain": 0,
+    "pending": 215,
+    "routed": 383
+   }
+  ],
+  "seconds": 775.82
+ },
+ "config": {
+  "candidate_budget": 400,
+  "flat_probe": 12,
+  "passes": 3,
+  "rr_rounds": 2,
+  "rr_targets": 64,
+  "rr_rip": 2,
+  "limit": 0
+ },
+ "layers_z_mm": [
+  0.0,
+  0.125,
+  0.25,
+  0.375,
+  0.5
+ ],
+ "interface_layer": {
+  "z1": 0,
+  "z2": 4
+ },
+ "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_25d_v01\\schemeB\\layers5\\routes_25d.json",
+ "seconds": 776.32
+}

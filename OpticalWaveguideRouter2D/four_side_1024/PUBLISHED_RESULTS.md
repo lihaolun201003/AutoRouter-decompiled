@@ -133,3 +133,18 @@ python -m four_side_1024.independent_audit --output outputs/four_side_1024_legac
 - `four_side_1024_legacy_two_branch_v2`：本页所述最新80条结果。
 
 历史实验完整保留以便追溯，不能把不同算法或不同预算版本的数字混用。缓存、虚拟环境和旧256/512私有输入不属于本次发布文件。
+
+## 2026-10-20 更新：V2 候选扩展 / 纯正交 90° / 五层 2.5D
+
+| 轮次 | 结果 | 报告 | 产物 |
+|---|---:|---|---|
+| V2 双高度候选扩展 + 强化 R&R | 752/1024（73.44%） | [报告](../../../docs/reports/four_side_1024_v2_candidate_rr_v01.md) | [目录](../outputs/four_side_1024_v2_candidate_rr_v01/) |
+| 纯正交 90° 圆弧对照 | 262/1024（25.59%） | [报告](../../../docs/reports/four_side_1024_v2_ortho90_v01.md) | [目录](../outputs/four_side_1024_v2_ortho90_v01/) |
+| 五层 2.5D 局部抬升（A） | 820/1024（80.08%；3 层 788） | [报告](../../../docs/reports/four_side_1024_v2_25d_v01.md) | [目录](../outputs/four_side_1024_v2_25d_v01/) |
+| 五层 2.5D 局部抬升（B） | 383/1024（37.40%；3 层 342） | 同上 | 同上 |
+
+- 上述结果全部通过独立 strict / 独立三维验收（0 违规）；2.5D 轮次额外检查完整三维最小曲率
+  半径 >= 40 mm、端口切向与真三维净空 >= 0.08 mm。
+- 2.5D 模型只允许"单次升降"（接口层 -> 中间层 -> 接口层），不包含 Native 3D 联合寻路；
+  双高度接口、R=40 mm、30 um 边缘间距等物理参数沿用 FSLW 轮，不宣称可制造。
+- 复现命令见各产物目录的 `REPRODUCE.md` / `REPRODUCE_25D.md`。
