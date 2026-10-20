@@ -50,7 +50,7 @@ G1 改善了几何近距与总长度，E 减少近距最多，但长度与升降
 
 本地虚拟环境、安装依赖、缓存、Office 临时文件及重复 staging 未上传。旧压缩包含原始输入，故以其中已提取且过滤后的工程内容替代。视频和 PPT 使用 Git LFS，克隆后执行 `git lfs pull` 获取完整文件。
 
-排除规则和文件 SHA256 见 [上传清单](UPLOAD_MANIFEST.json)。已有 Git 历史保留，过去提交过的接口工作簿仍可能从旧提交读取；本次同步仅从当前版本移除。
+各上传批次的排除规则和文件 SHA256 见 [2026-10-06 上传快照](UPLOAD_MANIFEST.json) 及根目录 `*UPLOAD_MANIFEST*.json`；这些清单保留各批次的历史路径和哈希，不是当前 HEAD 的实时文件清单。2026-10-20 去重后，原程序统一保留于 `自动排布/AutoRouter/AutoRouter.exe`，原始反编译源码统一保留于 `OpticalWaveguideRouter2D/_reference/`；旧 `jiema/AutoRouter-decompiled/` 的 README 提供跳转。历史清单及实验结果保持原样。已有 Git 历史保留，过去提交过的接口工作簿仍可能从旧提交读取；本次同步仅从当前版本移除。
 
 ## 验证
 

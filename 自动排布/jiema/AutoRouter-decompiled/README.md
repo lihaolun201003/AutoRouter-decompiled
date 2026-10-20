@@ -1,14 +1,18 @@
-# AutoRouter decompiled source
+# Historical AutoRouter decompilation
 
-Python source recovered from the Python 3.8 bytecode in `AutoRouter.exe` with [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor) and decompyle3.
+The recovered source is maintained in one canonical location:
+[OpticalWaveguideRouter2D/_reference](../../../OpticalWaveguideRouter2D/_reference/).
+That directory retains `app.py`, `main.py`, `problem_graph.py`,
+`waveguide_calculator.py`, `wiring_bend_826.py`, and `wiring_rect_826.py`.
 
-- `app.py`: PyQt interface and entry point
-- `main.py`: routing workflow
-- `problem_graph.py`: input parsing and port placement
-- `wiring_rect_826.py`: straight waveguide routing and crossing checks
-- `wiring_bend_826.py`: bend generation and GDS output
-- `waveguide_calculator.py`: waveguide calculations
+The source was recovered from the Python 3.8 bytecode packaged in `AutoRouter.exe`
+using [pyinstxtractor](https://github.com/extremecoders-re/pyinstxtractor) and
+decompyle3. The original executable is retained at
+[自动排布/AutoRouter/AutoRouter.exe](../../AutoRouter/AutoRouter.exe).
+Bundled dependencies and private input data are not included.
 
-These files are reconstructed from bytecode. They passed a Python syntax check, but their behavior has not been validated against the original executable. Decompiled control flow may differ from the original source.
-
-The executable, bundled dependencies, and input data are not included.
+On 2026-10-20 the byte-for-byte duplicate source files and `jiema/AutoRouter.exe`
+copy were removed. This README preserves the old directory as a navigation entry.
+The original decompilation caveats are preserved in the canonical directory's
+README; runnable reconstructed code and validation reports are in
+[OpticalWaveguideRouter2D](../../../OpticalWaveguideRouter2D/).
