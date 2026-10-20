@@ -1,0 +1,405 @@
+{
+ "schema": "four_side_1024_v2_r15_validation_v1",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01",
+ "generated_utc": "2026-10-20T08:58:27Z",
+ "profile": {
+  "name": "R15_min_radius_15mm",
+  "radius_mm": 15.0,
+  "min_curvature_threshold_mm": 14.985,
+  "profile_module": "four_side_1024.r15.profile_r15",
+  "profile_applied": true,
+  "validate25d_radius_mm": 15.0,
+  "validate25d_min_curvature_mm": 14.985,
+  "fslw_config_radius_mm": 15.0,
+  "validate25d_ran": true,
+  "validate25d_exit_code": 0
+ },
+ "items_expected": [
+  "2d/A/z1",
+  "2d/A/z2",
+  "2d/A/combined",
+  "25d/A/layers5",
+  "2d/B/z1",
+  "2d/B/z2",
+  "2d/B/combined",
+  "25d/B/layers5"
+ ],
+ "items": {
+  "2d/A/z1": {
+   "kind": "2d_plane",
+   "label": "A",
+   "plane": "z1",
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\A\\z1\\routes.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\z1.json",
+   "passed": true,
+   "routed": 498,
+   "failed": 14,
+   "total": 512,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "lines": 879,
+    "arcs": 762,
+    "quarter_arcs": 0,
+    "short_s_pairs": 381,
+    "arc_radius_values": [
+     15.0
+    ],
+    "arc_radius_min_mm": 15.0,
+    "arc_radius_max_mm": 15.0,
+    "arc_radius_deviation_max_mm": 0.0,
+    "zero_length_lines": 0,
+    "diagonal_lines": 0,
+    "primitives": 1641
+   },
+   "curvature": null,
+   "crossings": null,
+   "strict_2d_passed": true,
+   "runtime_seconds": 4.47
+  },
+  "2d/A/z2": {
+   "kind": "2d_plane",
+   "label": "A",
+   "plane": "z2",
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\A\\z2\\routes.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\z2.json",
+   "passed": true,
+   "routed": 445,
+   "failed": 67,
+   "total": 512,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "lines": 1083,
+    "arcs": 1155,
+    "quarter_arcs": 645,
+    "short_s_pairs": 255,
+    "arc_radius_values": [
+     15.0
+    ],
+    "arc_radius_min_mm": 15.0,
+    "arc_radius_max_mm": 15.0,
+    "arc_radius_deviation_max_mm": 0.0,
+    "zero_length_lines": 0,
+    "diagonal_lines": 0,
+    "primitives": 2238
+   },
+   "curvature": null,
+   "crossings": null,
+   "strict_2d_passed": true,
+   "runtime_seconds": 7.291
+  },
+  "2d/A/combined": {
+   "kind": "2d_combined",
+   "label": "A",
+   "plane": null,
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\A\\routes_1024.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\combined.json",
+   "passed": true,
+   "routed": 943,
+   "failed": 81,
+   "total": 1024,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "lines": 1962,
+    "arcs": 1917,
+    "quarter_arcs": 645,
+    "short_s_pairs": 636,
+    "arc_radius_values": [
+     15.0
+    ],
+    "arc_radius_min_mm": 15.0,
+    "arc_radius_max_mm": 15.0,
+    "arc_radius_deviation_max_mm": 0.0,
+    "zero_length_lines": 0,
+    "diagonal_lines": 0,
+    "primitives": 3879
+   },
+   "curvature": null,
+   "crossings": null,
+   "strict_2d_passed": null,
+   "runtime_seconds": 11.677
+  },
+  "25d/A/layers5": {
+   "kind": "25d",
+   "label": "A",
+   "plane": null,
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeA\\layers5\\routes_25d.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\25d\\A\\layers5.json",
+   "passed": true,
+   "routed": 985,
+   "failed": 39,
+   "total": 1024,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "flat_arcs": 2003,
+    "flat_lines": 2151,
+    "transitions": 84,
+    "flat_arc_radius_values": [
+     15.0
+    ],
+    "transition_radius_values": [
+     15.0
+    ],
+    "arc_radius_deviation_max_mm": 0.0
+   },
+   "curvature": {
+    "validate25d_radius_mm": 15.0,
+    "min_curvature_threshold_mm": 14.985,
+    "r15_based": true,
+    "min_curvature_radius_mm": 14.999999963,
+    "min_3d_distance_mm": 0.080295032
+   },
+   "crossings": {
+    "total": 137081,
+    "by_layer": {
+     "0": 69072,
+     "1": 424,
+     "2": 48,
+     "3": 16,
+     "4": 67521
+    }
+   },
+   "strict_2d_passed": null,
+   "runtime_seconds": 0.035
+  },
+  "2d/B/z1": {
+   "kind": "2d_plane",
+   "label": "B",
+   "plane": "z1",
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z1\\routes.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\z1.json",
+   "passed": true,
+   "routed": 184,
+   "failed": 328,
+   "total": 512,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "lines": 410,
+    "arcs": 300,
+    "quarter_arcs": 300,
+    "short_s_pairs": 0,
+    "arc_radius_values": [
+     15.0
+    ],
+    "arc_radius_min_mm": 15.0,
+    "arc_radius_max_mm": 15.0,
+    "arc_radius_deviation_max_mm": 0.0,
+    "zero_length_lines": 0,
+    "diagonal_lines": 0,
+    "primitives": 710
+   },
+   "curvature": null,
+   "crossings": null,
+   "strict_2d_passed": true,
+   "runtime_seconds": 1.125
+  },
+  "2d/B/z2": {
+   "kind": "2d_plane",
+   "label": "B",
+   "plane": "z2",
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z2\\routes.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\z2.json",
+   "passed": true,
+   "routed": 331,
+   "failed": 181,
+   "total": 512,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "lines": 1091,
+    "arcs": 841,
+    "quarter_arcs": 841,
+    "short_s_pairs": 0,
+    "arc_radius_values": [
+     15.0
+    ],
+    "arc_radius_min_mm": 15.0,
+    "arc_radius_max_mm": 15.0,
+    "arc_radius_deviation_max_mm": 0.0,
+    "zero_length_lines": 0,
+    "diagonal_lines": 0,
+    "primitives": 1932
+   },
+   "curvature": null,
+   "crossings": null,
+   "strict_2d_passed": true,
+   "runtime_seconds": 5.324
+  },
+  "2d/B/combined": {
+   "kind": "2d_combined",
+   "label": "B",
+   "plane": null,
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\routes_1024.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\combined.json",
+   "passed": true,
+   "routed": 515,
+   "failed": 509,
+   "total": 1024,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "lines": 1501,
+    "arcs": 1141,
+    "quarter_arcs": 1141,
+    "short_s_pairs": 0,
+    "arc_radius_values": [
+     15.0
+    ],
+    "arc_radius_min_mm": 15.0,
+    "arc_radius_max_mm": 15.0,
+    "arc_radius_deviation_max_mm": 0.0,
+    "zero_length_lines": 0,
+    "diagonal_lines": 0,
+    "primitives": 2642
+   },
+   "curvature": null,
+   "crossings": null,
+   "strict_2d_passed": null,
+   "runtime_seconds": 6.51
+  },
+  "25d/B/layers5": {
+   "kind": "25d",
+   "label": "B",
+   "plane": null,
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\routes_25d.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\25d\\B\\layers5.json",
+   "passed": true,
+   "routed": 723,
+   "failed": 301,
+   "total": 1024,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "identity_errors": 0,
+    "geometry_errors": 0,
+    "strict_errors": 0,
+    "pair_audit_errors": 0,
+    "r15_25d_errors": 0,
+    "other_errors": 0
+   },
+   "geometry": {
+    "flat_arcs": 1927,
+    "flat_lines": 2789,
+    "transitions": 416,
+    "flat_arc_radius_values": [
+     15.0
+    ],
+    "transition_radius_values": [
+     15.0
+    ],
+    "arc_radius_deviation_max_mm": 0.0
+   },
+   "curvature": {
+    "validate25d_radius_mm": 15.0,
+    "min_curvature_threshold_mm": 14.985,
+    "r15_based": true,
+    "min_curvature_radius_mm": 14.999999966,
+    "min_3d_distance_mm": 0.08
+   },
+   "crossings": {
+    "total": 63816,
+    "by_layer": {
+     "0": 13724,
+     "1": 2684,
+     "2": 2881,
+     "3": 3663,
+     "4": 40864
+    }
+   },
+   "strict_2d_passed": null,
+   "runtime_seconds": 0.034
+  }
+ },
+ "pending": [],
+ "passed": true,
+ "counts": {
+  "contract_errors": 0,
+  "identity_errors": 0,
+  "geometry_errors": 0,
+  "strict_errors": 0,
+  "pair_audit_errors": 0,
+  "r15_25d_errors": 0,
+  "other_errors": 0,
+  "violations": 0
+ },
+ "geometry": {
+  "arc_count": 10046,
+  "line_count": 11866,
+  "quarter_arc_count": 3572,
+  "short_s_pair_count": 1272,
+  "transition_count": 500,
+  "arc_radius_values": [
+   15.0
+  ],
+  "arc_radius_deviation_max_mm": 0.0,
+  "min_arc_radius_mm": 15.0,
+  "max_arc_radius_mm": 15.0,
+  "all_arcs_exactly_r15": true
+ },
+ "skipped": {
+  "combined": false,
+  "25d": false
+ },
+ "only": [],
+ "runtime_seconds": 60.859
+}

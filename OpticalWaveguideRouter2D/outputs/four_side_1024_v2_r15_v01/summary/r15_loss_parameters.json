@@ -1,0 +1,110 @@
+{
+ "schema": "four_side_1024_v2_r15_loss_parameters_v1",
+ "generated_utc": "2026-10-20T08:58:33Z",
+ "round": "R15",
+ "radius_requirement": {
+  "required_radius_mm": 15.0,
+  "detected_process_radius_mm": 15.0,
+  "radius_ok": true,
+  "fixed_radius_40mm": false,
+  "process_profile": "R15_min_radius_15mm",
+  "source": "planes/V2/A/z1/routes.json:process",
+  "note": "the R15 process requirement is a fixed minimum curvature radius R = 15.0 mm for every planar bend and every 3D elevation S-curve"
+ },
+ "guidance": "No new loss coefficients are introduced in this round. Only the propagation-loss experiment convention is listed as a known parameter; bend / crossing / interlayer losses are unknown and uncalibrated. No total-loss conclusion is produced.",
+ "parameters": {
+  "propagation_loss": {
+   "parameter": "propagation_loss",
+   "value_db_per_cm": 0.05,
+   "status": "experimental_convention_not_measured",
+   "measured": false,
+   "source": "fslw.config experiment convention (PROPAGATION_LOSS_DB_PER_CM) as documented in README_R15 §5",
+   "note": "length-only experiment convention; not a measured glass value"
+  },
+  "bend_loss": {
+   "parameter": "bend_loss",
+   "value": null,
+   "status": "unknown_uncalibrated",
+   "measured": false,
+   "source": "not available in this round",
+   "note": "no calibrated femtosecond-laser-written glass bend-loss function; R=15 mm is a geometry constraint only, not a measured loss value"
+  },
+  "crossing_loss": {
+   "parameter": "crossing_loss",
+   "value": null,
+   "status": "unknown_uncalibrated",
+   "measured": false,
+   "source": "not available in this round",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing counts are geometric metrics only"
+  },
+  "interlayer_effect": {
+   "parameter": "interlayer_effect",
+   "value": null,
+   "status": "unknown_uncalibrated",
+   "measured": false,
+   "source": "not available in this round",
+   "note": "effect of the two 3D elevation S-curves / interlayer travel on loss is not calibrated"
+  }
+ },
+ "total_loss_conclusion": {
+  "produced": false,
+  "reason": "bend loss, crossing loss and interlayer effects are all unknown_uncalibrated; a total-loss number would require invented coefficients, therefore none is reported this round"
+ },
+ "legacy_r40_polymer_model": {
+  "used": false,
+  "note": "the historical polymer bend-loss estimate belongs to the R40 round and is not carried into R15 numbers"
+ },
+ "length_and_count_inputs_only": {
+  "2d_A": {
+   "routed": 943,
+   "failed": 81,
+   "total_length_mm": 149599.532205,
+   "total_length_cm": 14959.95322,
+   "arc_count": 1917,
+   "short_s_arc_count": 1272,
+   "crossing_count": 136182,
+   "min_radius_mm": 15.0
+  },
+  "2d_B": {
+   "routed": 515,
+   "failed": 509,
+   "total_length_mm": 88847.389133,
+   "total_length_cm": 8884.738913,
+   "arc_count": 1141,
+   "short_s_arc_count": 0,
+   "crossing_count": 54184,
+   "min_radius_mm": 15.0
+  },
+  "25d_A": {
+   "routed": 985,
+   "failed": 39,
+   "lifted": 42,
+   "transitions": 84,
+   "flat_length_mm": 159878.157902,
+   "transition_length_mm": 316.073835,
+   "total_length_mm": 160194.231736,
+   "total_length_cm": 16019.423174,
+   "transition_radius_distribution": {
+    "15.000000": 84
+   },
+   "crossing_count": 137081,
+   "min_curvature_radius_mm": 14.999999963
+  },
+  "25d_B": {
+   "routed": 723,
+   "failed": 301,
+   "lifted": 208,
+   "transitions": 416,
+   "flat_length_mm": 134923.516144,
+   "transition_length_mm": 1538.717892,
+   "total_length_mm": 136462.234036,
+   "total_length_cm": 13646.223404,
+   "transition_radius_distribution": {
+    "15.000000": 416
+   },
+   "crossing_count": 63816,
+   "min_curvature_radius_mm": 14.999999966
+  }
+ },
+ "note": "lengths, arc counts and crossing counts are reported here only as geometric inputs. They are deliberately NOT converted into a total loss: that would require the unknown bend/crossing/interlayer coefficients. The single known parameter is the propagation-loss experiment convention 0.05 dB/cm (not measured)."
+}

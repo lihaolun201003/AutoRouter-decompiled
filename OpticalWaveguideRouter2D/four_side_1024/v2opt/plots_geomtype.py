@@ -77,7 +77,8 @@ def render_geomtype_plane(run_dir, output_path, line_color=LINE_COLOR,
                label=f"line (straight): {len(line_segments)} primitives, "
                      f"{line_length:.0f} mm"),
         Line2D([0], [0], color=arc_color, linewidth=1.4,
-               label=f"arc (R=40 mm): {len(arc_segments)} primitives, "
+               label=f"arc (R={(data.get('process') or {}).get('min_bend_radius_mm', 40.0):g} mm): "
+                     f"{len(arc_segments)} primitives, "
                      f"{arc_length:.0f} mm"),
     ]
     ax.legend(handles=handles, loc="upper left", fontsize=7.0, framealpha=0.85)

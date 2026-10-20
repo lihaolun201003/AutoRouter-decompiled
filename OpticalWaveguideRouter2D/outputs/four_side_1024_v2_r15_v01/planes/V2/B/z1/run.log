@@ -1,0 +1,61 @@
+14:45:20 command={'scheme': 'B', 'plane': 'z1', 'order': 'ns_ew_xdesc', 'budget': 1600, 'rr_rounds': 4, 'transactions': 24, 'sizes': '1,2,4', 'analysis_budget': 1600, 'reinsert_budget': 1600, 'rr_time_limit': 1200.0, 'workers': 5, 'targets_per_round': 48, 'analysis_targets': 96, 'min_rounds': 2, 'zero_rounds': 2, 'continue_from': None, 'root': None, 'tag': '', 'limit': 0}
+14:45:20 profile radius=15.0 mm fixed=False
+14:45:20 order=ns_ew_xdesc entries=512 scheme=B
+14:47:41 sequential_commit: 32/512 applied=26 routed=26 elapsed=140.8s
+14:53:58 sequential_commit: 64/512 applied=33 routed=33 elapsed=517.6s
+14:57:34 command={'scheme': 'B', 'plane': 'z1', 'order': 'ns_ew_xdesc', 'budget': 400, 'rr_rounds': 4, 'transactions': 24, 'sizes': '1,2,4', 'analysis_budget': 400, 'reinsert_budget': 400, 'rr_time_limit': 1200.0, 'workers': 5, 'targets_per_round': 48, 'analysis_targets': 96, 'min_rounds': 2, 'zero_rounds': 2, 'continue_from': None, 'root': None, 'tag': '', 'limit': 0}
+14:57:34 profile radius=15.0 mm fixed=False
+14:57:34 order=ns_ew_xdesc entries=512 scheme=B
+14:59:15 sequential_commit: 32/512 applied=25 routed=25 elapsed=101.2s
+15:01:24 sequential_commit: 64/512 applied=31 routed=31 elapsed=230.4s
+15:03:25 sequential_commit: 96/512 applied=40 routed=40 elapsed=350.7s
+15:05:10 sequential_commit: 128/512 applied=48 routed=48 elapsed=455.7s
+15:06:58 sequential_commit: 160/512 applied=58 routed=58 elapsed=564.5s
+15:08:40 sequential_commit: 192/512 applied=68 routed=68 elapsed=665.5s
+15:10:16 sequential_commit: 224/512 applied=76 routed=76 elapsed=761.9s
+15:12:01 sequential_commit: 256/512 applied=83 routed=83 elapsed=867.5s
+15:14:05 sequential_commit: 288/512 applied=101 routed=101 elapsed=991.4s
+15:16:35 sequential_commit: 320/512 applied=109 routed=109 elapsed=1140.5s
+15:18:59 sequential_commit: 352/512 applied=120 routed=120 elapsed=1284.8s
+15:21:04 sequential_commit: 384/512 applied=127 routed=127 elapsed=1409.6s
+15:23:32 sequential_commit: 416/512 applied=139 routed=139 elapsed=1558.5s
+15:25:56 sequential_commit: 448/512 applied=148 routed=148 elapsed=1702.1s
+15:28:25 sequential_commit: 480/512 applied=158 routed=158 elapsed=1851.1s
+15:30:27 sequential_commit: 512/512 applied=165 routed=165 elapsed=1973.4s
+15:30:27 sequential done routed=165 (1973.4s)
+15:30:27 R&R round 1: pending=347 analysing=96 budget=400 routed=165
+15:30:57 parallel blocker analysis: 32/96 elapsed=29.7s
+15:31:31 parallel blocker analysis: 64/96 elapsed=63.3s
+15:32:09 parallel blocker analysis: 96/96 elapsed=101.3s
+15:32:09 parallel blocker analysis done: 96 routes, 1 placed, elapsed=101.5s
+15:34:51   commit 114/k2: 166 -> 167 (+1)
+15:34:51 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\B_z1_rr_round1.json routed=167
+15:34:51   commit 116/k4: 167 -> 168 (+1)
+15:34:51 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\B_z1_rr_round1.json routed=168
+15:34:51 R&R round 1 done: transactions=24 improving=2 committed=2 gain=2 routed=168 elapsed=263.7s
+15:34:51 R&R round 2: pending=344 analysing=96 budget=400 routed=168
+15:35:26 parallel blocker analysis: 32/96 elapsed=34.9s
+15:35:55 parallel blocker analysis: 64/96 elapsed=64.1s
+15:36:29 parallel blocker analysis: 96/96 elapsed=97.7s
+15:36:29 parallel blocker analysis done: 96 routes, 10 placed, elapsed=98.3s
+15:40:05   commit 221/k4: 178 -> 180 (+2)
+15:40:05 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\B_z1_rr_round2.json routed=180
+15:40:05 R&R round 2 done: transactions=24 improving=2 committed=1 gain=2 routed=180 elapsed=577.5s
+15:40:05 R&R round 3: pending=332 analysing=96 budget=400 routed=180
+15:40:52 parallel blocker analysis: 32/96 elapsed=46.6s
+15:41:34 parallel blocker analysis: 64/96 elapsed=89.4s
+15:42:15 parallel blocker analysis: 96/96 elapsed=130.4s
+15:42:15 parallel blocker analysis done: 96 routes, 1 placed, elapsed=130.5s
+15:44:44   commit 388/k2: 181 -> 182 (+1)
+15:44:44 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\B_z1_rr_round3.json routed=182
+15:44:44   commit 63/k4: 182 -> 183 (+1)
+15:44:44 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\B_z1_rr_round3.json routed=183
+15:44:44   commit 61/k4: 183 -> 184 (+1)
+15:44:44 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\B_z1_rr_round3.json routed=184
+15:44:44 R&R round 3 done: transactions=24 improving=3 committed=3 gain=3 routed=184 elapsed=856.3s
+15:44:44 R&R round 4: pending=328 analysing=57 budget=400 routed=184
+15:45:19 parallel blocker analysis: 32/57 elapsed=34.7s
+15:45:43 parallel blocker analysis done: 57 routes, 0 placed, elapsed=58.8s
+15:48:01 R&R round 4 done: transactions=24 improving=1 committed=0 gain=0 routed=184 elapsed=1053.2s
+15:48:01 R&R done routed=184
+15:48:01 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\planes\V2\B\z1 routed=184

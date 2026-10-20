@@ -75,7 +75,9 @@ def render_compare_plane(plane, output_path):
         axes[1], new,
         f'pure orthogonal 90-deg layout (this experiment) | plane {plane} | '
         f'{new_routed}/512 routed',
-        'only axis-aligned lines + exact R=40 mm 90-deg quarter arcs (no short-S)')
+        'only axis-aligned lines + exact '
+        f'R={float((new["data"].get("process") or {}).get("min_bend_radius_mm", 40.0)):g} mm '
+        '90-deg quarter arcs (no short-S)')
     fig.suptitle(
         f'V2 plane {plane}: V2-BEST vs pure orthogonal 90-deg routing  '
         f'({old_routed}/512 -> {new_routed}/512)', fontsize=13, y=0.995)

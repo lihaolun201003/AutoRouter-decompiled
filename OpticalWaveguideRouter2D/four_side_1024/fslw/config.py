@@ -6,12 +6,19 @@ round (see ``fslw/SPEC.md``): they are not yet confirmed fabrication parameters.
 """
 from __future__ import annotations
 
+import os
+
 BOARD_MM = 150.0
 WIDTH_MM = 0.050
 EDGE_GAP_MM = 0.030
 CLEARANCE_MM = WIDTH_MM + EDGE_GAP_MM          # 0.080 mm centreline clearance
-RADIUS_MM = 40.0
-FIXED_RADIUS_40MM = True                       # every arc is exactly 40.0 mm
+#: Default process radius of the historical round (R = 40 mm).  The R15 round
+#: sets the environment variable ``FSLW_PROCESS_RADIUS_MM=15`` before spawning
+#: subprocesses so that multiprocessing workers, which re-import this module,
+#: bind the same radius as their parent instead of silently falling back to 40.
+_ENV_RADIUS_MM = os.environ.get('FSLW_PROCESS_RADIUS_MM')
+RADIUS_MM = float(_ENV_RADIUS_MM) if _ENV_RADIUS_MM else 40.0
+FIXED_RADIUS_40MM = abs(RADIUS_MM - 40.0) <= 1e-12   # every arc is exactly R
 SAGITTA_MM = 0.0005
 MIN_CROSS_ANGLE_DEG = 5.0
 PROPAGATION_LOSS_DB_PER_CM = 0.05
@@ -20,7 +27,8 @@ PROPAGATION_LOSS_DB_PER_CM = 0.05
 #: deliberately absent instead of being replaced by the legacy polymer model.
 BEND_LOSS = dict(status='unknown_uncalibrated',
                   note='no femtosecond-laser-written glass bend-loss function is known; '
-                       'R=40 mm is a geometry constraint only, not a measured loss value')
+                       f'R={RADIUS_MM:g} mm is a geometry constraint only, '
+                       'not a measured loss value')
 CROSSING_LOSS = dict(status='unknown_uncalibrated',
                      note='single-layer crossing optical feasibility not confirmed; '
                           'crossing count is a geometric metric only')
@@ -79,8 +87,8 @@ def process_record(**overrides):
         min_centerline_clearance_mm=CLEARANCE_MM,
         min_bend_radius_mm=RADIUS_MM,
         fixed_radius_40mm=FIXED_RADIUS_40MM,
-        radius_note='all arcs are exactly R=40 mm (D56 fixed-radius family); '
-                    'this is not a search over all R>=40 mm geometries',
+        radius_note=f'all arcs are exactly R={RADIUS_MM:g} mm (fixed-radius '
+                    'family); this is not a search over all larger-R geometries',
         propagation_loss_db_per_cm=PROPAGATION_LOSS_DB_PER_CM,
         bend_loss=BEND_LOSS,
         crossing_loss=CROSSING_LOSS,

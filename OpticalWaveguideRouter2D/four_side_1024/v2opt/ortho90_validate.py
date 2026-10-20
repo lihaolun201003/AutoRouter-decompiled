@@ -5,10 +5,12 @@ frozen authoritative validator (``fslw.validate_fslw.build_report(policy='strict
 and additionally checks the pure-90 geometry rule on every routed primitive:
 
 * every ``kind=line`` segment must be horizontal or vertical;
-* every ``kind=arc`` must have radius exactly 40 mm and |sweep| exactly 90 degrees.
+* every ``kind=arc`` must have radius exactly R and |sweep| exactly 90 degrees,
+  with R read from the frozen process configuration (40 mm in the historical
+  R40 round, 15 mm when the R15 process profile is applied before importing).
 
-It also quantifies how much short-S (non-90-degree arc) the reference V2-BEST (752)
-layout uses, and produces the report's statistics tables.
+It also quantifies how much short-S (non-90-degree arc) the reference layout uses,
+and produces the report's statistics tables.
 """
 from __future__ import annotations
 
@@ -17,12 +19,13 @@ import math
 from collections import Counter
 from pathlib import Path
 
+from ..fslw import config as _fslw_config
 from ..fslw import validate_fslw
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUT = ROOT / 'outputs/four_side_1024_v2_candidate_rr_v01'
 ORTHO90_OUT = ROOT / 'outputs/four_side_1024_v2_ortho90_v01'
-RADIUS = 40.0
+RADIUS = float(_fslw_config.RADIUS_MM)
 QUARTER = math.pi / 2.0
 TOL_LINE = 1e-6
 TOL_ARC = 1e-6
@@ -234,8 +237,8 @@ def main(argv=None):
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     result = dict(schema='four_side_1024_v2_ortho90_validation_v1',
-                  geometry_rule=('lines axis-aligned only; arcs radius=40.0 mm and '
-                                 '|sweep|=90 deg exactly; short-S theta<90 forbidden'),
+                  geometry_rule=(f'lines axis-aligned only; arcs radius={RADIUS:g} mm '
+                                 'and |sweep|=90 deg exactly; short-S theta<90 forbidden'),
                   reference_v2_best={'z1': best_reference_stats('z1'),
                                      'z2': best_reference_stats('z2')},
                   planes={})

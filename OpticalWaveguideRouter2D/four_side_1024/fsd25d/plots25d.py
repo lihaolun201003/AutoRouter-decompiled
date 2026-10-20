@@ -693,7 +693,8 @@ def render_view3d(run, output_path):
         f"(blue), z2 plane at "
         f"{float(run['layers_z_mm'][int(run['interface_layer'].get('z2', run['n_layers'] - 1))]):.3f} mm "
         f"(red) | {lifted} lifted routes, {transitions} vertical S-transitions\n"
-        f"flat parts + two-arc R=40 mm transitions plotted as stored | "
+        f"flat parts + two-arc R={float(run.get('transition_radius_mm') or CFG.RADIUS_MM):g} mm "
+        f"transitions plotted as stored | "
         f"vertical scale exaggerated ~{exaggeration:.0f}x for display",
         fontsize=10.0, y=0.985)
     _save(fig, output_path, tight=False)

@@ -1,0 +1,110 @@
+{
+ "schema": "four_side_1024_v2_25d_run_v1",
+ "scheme": "B",
+ "n_layers": 5,
+ "scheme_label": "B_ortho90",
+ "baseline_routed": 515,
+ "statistics": {
+  "baseline_routed": 515,
+  "routed": 723,
+  "new_routed": 208,
+  "lifted": 208,
+  "flat_added": 0,
+  "transitions": 416,
+  "total_length_mm": 136462.234132,
+  "mean_length_mm": 188.744446,
+  "total_xy_length_mm": 136457.747981,
+  "per_plane": {
+   "z1": {
+    "routed": 332,
+    "baseline": 184,
+    "lifted": 148
+   },
+   "z2": {
+    "routed": 391,
+    "baseline": 331,
+    "lifted": 60
+   }
+  },
+  "per_layer_flat_parts": {
+   "0": 480,
+   "1": 69,
+   "2": 66,
+   "3": 73,
+   "4": 451
+  },
+  "failed_no_candidate": 78,
+  "failed_unplaceable": 222
+ },
+ "router": {
+  "scheme": "B",
+  "n_layers": 5,
+  "baseline_routed": 515,
+  "final_routed": 723,
+  "new_routed": 208,
+  "attemptable": 431,
+  "no_candidate": 78,
+  "failed_no_candidate": 78,
+  "failed_unplaceable": 222,
+  "passes": [
+   {
+    "pass_index": 1,
+    "attempted": 431,
+    "placed": 198,
+    "pending": 233,
+    "seconds": 1264.82
+   },
+   {
+    "pass_index": 2,
+    "attempted": 233,
+    "placed": 0,
+    "pending": 233,
+    "seconds": 1710.34
+   },
+   {
+    "pass_index": 3,
+    "attempted": 233,
+    "placed": 1,
+    "pending": 232,
+    "seconds": 2325.66
+   }
+  ],
+  "rr": [
+   {
+    "round": 1,
+    "gain": 15,
+    "pending": 223,
+    "routed": 722
+   },
+   {
+    "round": 2,
+    "gain": 1,
+    "pending": 222,
+    "routed": 723
+   }
+  ],
+  "seconds": 3255.91
+ },
+ "config": {
+  "candidate_budget": 400,
+  "flat_probe": 12,
+  "passes": 3,
+  "rr_rounds": 2,
+  "rr_targets": 64,
+  "rr_rip": 2,
+  "limit": 0
+ },
+ "layers_z_mm": [
+  0.0,
+  0.125,
+  0.25,
+  0.375,
+  0.5
+ ],
+ "interface_layer": {
+  "z1": 0,
+  "z2": 4
+ },
+ "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\routes_25d.json",
+ "seconds": 3256.66
+}

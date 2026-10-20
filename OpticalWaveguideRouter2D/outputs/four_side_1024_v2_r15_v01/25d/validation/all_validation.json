@@ -1,0 +1,91 @@
+{
+ "schema": "four_side_1024_v2_25d_validation_all_v1",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d",
+ "generated_utc": "2026-10-20T08:57:51Z",
+ "runs": {
+  "schemeA/layers5": {
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeA\\layers5\\routes_25d.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\A\\layers5.json",
+   "scheme": "A",
+   "n_layers": 5,
+   "passed": true,
+   "routed": 985,
+   "failed": 39,
+   "crossings_total": 137081,
+   "crossings_by_layer": {
+    "0": 69072,
+    "1": 424,
+    "2": 48,
+    "3": 16,
+    "4": 67521
+   },
+   "counts": {
+    "violations": 0,
+    "structure_errors": 0,
+    "port_errors": 0,
+    "xy_model_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "layer_2d_violations": 0,
+    "self_clearance_violations": 0,
+    "board_violations": 0
+   },
+   "min_3d_distance_mm": 0.080295032,
+   "min_3d_distance_excluding_crossings_mm": 0.080295032,
+   "min_curvature_radius_mm": 14.999999963,
+   "violations_count": 0,
+   "failure_reasons": []
+  },
+  "schemeB/layers5": {
+   "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\routes_25d.json",
+   "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\B\\layers5.json",
+   "scheme": "B",
+   "n_layers": 5,
+   "passed": true,
+   "routed": 723,
+   "failed": 301,
+   "crossings_total": 63816,
+   "crossings_by_layer": {
+    "0": 13724,
+    "1": 2684,
+    "2": 2881,
+    "3": 3663,
+    "4": 40864
+   },
+   "counts": {
+    "violations": 0,
+    "structure_errors": 0,
+    "port_errors": 0,
+    "xy_model_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "layer_2d_violations": 0,
+    "self_clearance_violations": 0,
+    "board_violations": 0
+   },
+   "min_3d_distance_mm": 0.08,
+   "min_3d_distance_excluding_crossings_mm": 0.08,
+   "min_curvature_radius_mm": 14.999999966,
+   "violations_count": 0,
+   "failure_reasons": []
+  }
+ },
+ "run_labels": [
+  "schemeA/layers5",
+  "schemeB/layers5"
+ ],
+ "passed": true,
+ "counts_total": {
+  "violations": 0,
+  "structure_errors": 0,
+  "port_errors": 0,
+  "xy_model_errors": 0,
+  "curvature_violations": 0,
+  "clearance_violations": 0,
+  "layer_2d_violations": 0,
+  "self_clearance_violations": 0,
+  "board_violations": 0
+ },
+ "min_3d_distance_mm": 0.08,
+ "min_curvature_radius_mm": 14.999999963
+}

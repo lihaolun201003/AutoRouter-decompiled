@@ -1,0 +1,142 @@
+{
+ "schema": "four_side_1024_v2_25d_validation_v1",
+ "label": "schemeB/layers5",
+ "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\routes_25d.json",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d",
+ "scheme": "B",
+ "n_layers": 5,
+ "passed": true,
+ "failure_reasons": [],
+ "routed": 723,
+ "failed": 301,
+ "total": 1024,
+ "min_3d_distance_mm": 0.08,
+ "min_3d_distance_excluding_crossings_mm": 0.08,
+ "min_curvature_radius_mm": 14.999999966,
+ "crossings": {
+  "total": 63816,
+  "by_layer": {
+   "0": 13724,
+   "1": 2684,
+   "2": 2881,
+   "3": 3663,
+   "4": 40864
+  }
+ },
+ "violations": [],
+ "violation_kinds": {},
+ "counts": {
+  "violations": 0,
+  "structure_errors": 0,
+  "port_errors": 0,
+  "xy_model_errors": 0,
+  "curvature_violations": 0,
+  "clearance_violations": 0,
+  "layer_2d_violations": 0,
+  "self_clearance_violations": 0,
+  "board_violations": 0
+ },
+ "stats": {
+  "min_layer_gap_mm": 0.125,
+  "transitions": 416,
+  "lifted": 208,
+  "flat_routes": 515,
+  "flat_parts": 1139,
+  "total_length_mm": 136462.234036218,
+  "total_xy_length_mm": 136457.747826007,
+  "min_flat_flat_same_layer_mm": 0.08,
+  "min_flat_transition_mm": 0.091811639,
+  "min_transition_transition_mm": null,
+  "min_self_clearance_mm": null,
+  "min_board_margin_mm": 0.025,
+  "min_3d_distance_bound": "measured",
+  "violating_flat_transition_segment_pairs": 0,
+  "violating_transition_transition_segment_pairs": 0,
+  "port_csv_checked": true,
+  "flat_segments": 2701126,
+  "transition_segments": 77040,
+  "flat_length_mm": 134923.495191457,
+  "transition_length_mm": 1538.717778696
+ },
+ "layer_2d": {
+  "0": {
+   "parts": 480,
+   "crossings": 13724,
+   "crossing_pairs": 10967,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.094654426,
+   "small_angle_crossings": 47,
+   "runtime_seconds": 1.218
+  },
+  "1": {
+   "parts": 69,
+   "crossings": 2684,
+   "crossing_pairs": 1839,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.107756891,
+   "small_angle_crossings": 23,
+   "runtime_seconds": 0.383
+  },
+  "2": {
+   "parts": 66,
+   "crossings": 2881,
+   "crossing_pairs": 1820,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.154137776,
+   "small_angle_crossings": 23,
+   "runtime_seconds": 0.396
+  },
+  "3": {
+   "parts": 73,
+   "crossings": 3663,
+   "crossing_pairs": 2133,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.153571361,
+   "small_angle_crossings": 26,
+   "runtime_seconds": 0.518
+  },
+  "4": {
+   "parts": 451,
+   "crossings": 40864,
+   "crossing_pairs": 25596,
+   "violations": 0,
+   "min_non_crossing_centerline_mm": 0.08,
+   "small_angle_crossings": 280,
+   "runtime_seconds": 5.376
+  }
+ },
+ "warnings": [],
+ "layers_z_mm": [
+  0.0,
+  0.125,
+  0.25,
+  0.375,
+  0.5
+ ],
+ "interface_layer": {
+  "z1": 0,
+  "z2": 4
+ },
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "radius_mm": 15.0,
+  "min_cross_angle_deg": 5.0,
+  "crossing_policy": "strict"
+ },
+ "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "csv_sha256_expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+ "port_csv_checked": true,
+ "min_3d_distance_definition": "minimum true-3D centreline distance between different routes over all approaches that are NOT legal same-layer strict-2D crossings; same-layer flat/flat pairs are audited by the frozen strict 2D policy, all transition-involved pairs are computed from the independently rebuilt 3D polylines with exact segment/segment refinement",
+ "min_3d_distance_is_resolved": true,
+ "min_3d_distance_including_crossings_mm": 0.0,
+ "clearance_tolerance_mm": 1e-07,
+ "board_margin_tolerance_mm": 1e-09,
+ "runtime_seconds": 10.228,
+ "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\B\\layers5.json"
+}

@@ -1,0 +1,83 @@
+{
+ "schema": "four_side_1024_v2_r15_validation_item_v1",
+ "item": "2d/A/z1",
+ "kind": "2d_plane",
+ "label": "A",
+ "plane": "z1",
+ "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\A\\z1\\routes.json",
+ "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\z1.json",
+ "passed": true,
+ "routed": 498,
+ "failed": 14,
+ "total": 512,
+ "counts": {
+  "violations": 0,
+  "contract_errors": 0,
+  "identity_errors": 0,
+  "geometry_errors": 0,
+  "strict_errors": 0,
+  "pair_audit_errors": 0,
+  "r15_25d_errors": 0,
+  "other_errors": 0
+ },
+ "violations": [],
+ "warnings": [],
+ "geometry": {
+  "lines": 879,
+  "arcs": 762,
+  "quarter_arcs": 0,
+  "short_s_pairs": 381,
+  "arc_radius_values": [
+   15.0
+  ],
+  "arc_radius_min_mm": 15.0,
+  "arc_radius_max_mm": 15.0,
+  "arc_radius_deviation_max_mm": 0.0,
+  "zero_length_lines": 0,
+  "diagonal_lines": 0,
+  "primitives": 1641
+ },
+ "identity": {
+  "v2_port_model_available": true,
+  "v2_error": null,
+  "csv_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+  "csv_sha256_ok": true,
+  "identity_checked": true,
+  "ports_used": 1024,
+  "ports_expected": 1024,
+  "route_ids_not_in_csv": []
+ },
+ "process": {
+  "radius_mm": 15.0,
+  "fixed_radius_40mm": false,
+  "process_profile": "R15_min_radius_15mm",
+  "radius_ok": true,
+  "fixed_radius_40mm_ok": true,
+  "clearance_mm": 0.08,
+  "width_mm": 0.05,
+  "board_mm": [
+   150.0,
+   150.0
+  ]
+ },
+ "strict_2d": {
+  "enabled": true,
+  "radius_mm": 15.0,
+  "policy": "strict",
+  "passed": true,
+  "route_count": 512,
+  "routed_count": 498,
+  "failed_status_count": 14,
+  "d56_passed_count": 498,
+  "d56_failed_count": 0,
+  "violation_pair_count": 0,
+  "violations": 0,
+  "crossing_count": 69072,
+  "crossing_pair_count": 67746,
+  "min_non_crossing_centerline_mm": 0.08029503223048823,
+  "errors": [],
+  "warnings": [],
+  "fixed_radius_40mm": false
+ },
+ "runtime_seconds": 4.47
+}

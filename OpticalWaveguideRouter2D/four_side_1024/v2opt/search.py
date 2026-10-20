@@ -24,6 +24,7 @@ from pathlib import Path
 
 from ..d56.index import prepare
 from ..d56.search import RouteResult
+from ..fslw import config as C
 from . import candext
 from . import config as V
 from .core import LayoutState, router_cfg
@@ -122,7 +123,9 @@ _SWEEP_STATE = {}
 
 def _sweep_worker(task):
     """Multiprocessing worker: load base layout once, test each route separately."""
-    topology, plane, history_path, route_ids, budget, cfg = task
+    topology, plane, history_path, route_ids, budget, cfg, process_radius = task
+    from ..r15 import worker_boot
+    worker_boot.ensure_profile(process_radius)
     key = (topology, plane, str(history_path), json.dumps(cfg, sort_keys=True))
     state = _SWEEP_STATE.get(key)
     if state is None:
@@ -174,7 +177,9 @@ def parallel_sweep(state, route_ids, budget, workers=12, cfg=None, log=print,
     chunks = [[] for _ in range(workers)]
     for position, route_id in enumerate(route_ids):
         chunks[position % workers].append(route_id)
-    tasks = [(state.topology, state.plane, history_path, chunk, int(budget), cfg)
+    process_radius = float(C.RADIUS_MM)
+    tasks = [(state.topology, state.plane, history_path, chunk, int(budget), cfg,
+              process_radius)
              for chunk in chunks if chunk]
     started = time.perf_counter()
     results = []

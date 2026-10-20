@@ -1,0 +1,89 @@
+14:45:20 command={'scheme': 'A', 'plane': 'z1', 'order': 'ns_ew_xdesc', 'budget': 1600, 'rr_rounds': 4, 'transactions': 24, 'sizes': '1,2,4', 'analysis_budget': 1600, 'reinsert_budget': 1600, 'rr_time_limit': 1200.0, 'workers': 5, 'targets_per_round': 48, 'analysis_targets': 96, 'min_rounds': 2, 'zero_rounds': 2, 'continue_from': None, 'root': None, 'tag': '', 'limit': 0}
+14:45:20 profile radius=15.0 mm fixed=False
+14:45:20 order=ns_ew_xdesc entries=512 scheme=A
+14:45:20 sequential_commit: 32/512 applied=32 routed=32 elapsed=0.1s
+14:45:21 sequential_commit: 64/512 applied=64 routed=64 elapsed=0.3s
+14:45:21 sequential_commit: 96/512 applied=96 routed=96 elapsed=0.4s
+14:45:21 sequential_commit: 128/512 applied=128 routed=128 elapsed=0.5s
+14:45:21 sequential_commit: 160/512 applied=160 routed=160 elapsed=0.6s
+14:45:21 sequential_commit: 192/512 applied=192 routed=192 elapsed=0.8s
+14:45:21 sequential_commit: 224/512 applied=224 routed=224 elapsed=0.9s
+14:45:21 sequential_commit: 256/512 applied=256 routed=256 elapsed=1.1s
+14:45:22 sequential_commit: 288/512 applied=286 routed=286 elapsed=1.6s
+14:45:41 sequential_commit: 320/512 applied=306 routed=306 elapsed=20.7s
+14:45:46 sequential_commit: 352/512 applied=333 routed=333 elapsed=26.1s
+14:46:11 sequential_commit: 384/512 applied=355 routed=355 elapsed=50.3s
+14:46:12 sequential_commit: 416/512 applied=382 routed=382 elapsed=51.3s
+14:46:26 sequential_commit: 448/512 applied=408 routed=408 elapsed=65.6s
+14:46:32 sequential_commit: 480/512 applied=436 routed=436 elapsed=71.5s
+14:46:41 sequential_commit: 512/512 applied=465 routed=465 elapsed=80.6s
+14:46:41 sequential done routed=465 (80.6s)
+14:46:41 R&R round 1: pending=47 analysing=47 budget=1600 routed=465
+14:46:49 parallel blocker analysis: 32/47 elapsed=8.3s
+14:46:58 parallel blocker analysis done: 47 routes, 10 placed, elapsed=16.9s
+14:48:00   commit 350/k2: 475 -> 477 (+2)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=477
+14:48:00   commit 326/k1: 477 -> 478 (+1)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=478
+14:48:00   commit 490/k1: 478 -> 479 (+1)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=479
+14:48:00   commit 303/k1: 479 -> 480 (+1)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=480
+14:48:00   commit 288/k1: 480 -> 481 (+1)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=481
+14:48:00   commit 473/k2: 481 -> 482 (+1)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=482
+14:48:00   commit 459/k4: 482 -> 483 (+1)
+14:48:00 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round1.json routed=483
+14:48:00 R&R round 1 done: transactions=24 improving=13 committed=7 gain=8 routed=483 elapsed=79.5s
+14:48:00 R&R round 2: pending=29 analysing=29 budget=1600 routed=483
+14:48:12 parallel blocker analysis done: 29 routes, 1 placed, elapsed=11.2s
+14:49:21   commit 461/k2: 484 -> 486 (+2)
+14:49:21 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=486
+14:49:21   commit 317/k1: 486 -> 487 (+1)
+14:49:21 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=487
+14:49:21   commit 300/k1: 487 -> 488 (+1)
+14:49:21 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=488
+14:49:21   commit 381/k1: 488 -> 489 (+1)
+14:49:21 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=489
+14:49:21   commit 443/k2: 489 -> 490 (+1)
+14:49:21 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=490
+14:49:21   commit 456/k2: 490 -> 491 (+1)
+14:49:21 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=491
+14:49:22   commit 455/k2: 491 -> 492 (+1)
+14:49:22 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=492
+14:49:22   commit 272/k2: 492 -> 493 (+1)
+14:49:22 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round2.json routed=493
+14:49:22 R&R round 2 done: transactions=24 improving=11 committed=8 gain=9 routed=493 elapsed=160.8s
+14:49:22 R&R round 3: pending=19 analysing=19 budget=1600 routed=493
+14:49:27 parallel blocker analysis done: 19 routes, 1 placed, elapsed=4.8s
+14:50:37   commit 363/k1: 494 -> 495 (+1)
+14:50:37 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=495
+14:50:38   commit 382/k1: 495 -> 496 (+1)
+14:50:38 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=496
+14:50:38   commit 450/k1: 496 -> 497 (+1)
+14:50:38 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=497
+14:50:38   commit 322/k1: 497 -> 498 (+1)
+14:50:38 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=498
+14:50:38   commit 452/k1: 498 -> 499 (+1)
+14:50:38 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=499
+14:50:38   commit 387/k1: 499 -> 500 (+1)
+14:50:38 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=500
+14:50:38   commit 409/k2: 500 -> 501 (+1)
+14:50:38 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round3.json routed=501
+14:50:38 R&R round 3 done: transactions=24 improving=7 committed=7 gain=7 routed=501 elapsed=236.9s
+14:50:38 R&R round 4: pending=11 analysing=11 budget=1600 routed=501
+14:50:42 parallel blocker analysis done: 11 routes, 0 placed, elapsed=4.4s
+14:51:47   commit 364/k1: 501 -> 502 (+1)
+14:51:47 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round4.json routed=502
+14:51:47   commit 445/k1: 502 -> 503 (+1)
+14:51:47 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round4.json routed=503
+14:51:47   commit 383/k1: 503 -> 504 (+1)
+14:51:47 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round4.json routed=504
+14:51:47   commit 410/k2: 504 -> 505 (+1)
+14:51:47 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round4.json routed=505
+14:51:47   commit 404/k2: 505 -> 506 (+1)
+14:51:47 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z1_rr_round4.json routed=506
+14:51:47 R&R round 4 done: transactions=24 improving=8 committed=5 gain=5 routed=506 elapsed=306.1s
+14:51:47 R&R done routed=506
+14:51:47 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\planes\V2\A\z1 routed=506

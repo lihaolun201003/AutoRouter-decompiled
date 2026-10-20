@@ -1,0 +1,132 @@
+{
+ "experiment": "V2_B_z2",
+ "topology": "V2",
+ "algorithm": "B",
+ "plane": "z2",
+ "z_mm": 0.5,
+ "port_model": "real_2x16_dual_height",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "waveguide_width_mm": 0.05,
+  "min_edge_gap_mm": 0.03,
+  "min_centerline_clearance_mm": 0.08,
+  "min_bend_radius_mm": 15.0,
+  "fixed_radius_40mm": false,
+  "radius_note": "all arcs are exactly R=15 mm (R15_min_radius_15mm fixed-radius family; 2026-10-20 process requirement)",
+  "propagation_loss_db_per_cm": 0.05,
+  "bend_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "no femtosecond-laser-written glass bend-loss function is known; R=40 mm is a geometry constraint only, not a measured loss value"
+  },
+  "crossing_loss": {
+   "status": "unknown_uncalibrated",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing count is a geometric metric only"
+  },
+  "legacy_polymer_estimate": {
+   "available": true,
+   "status": "legacy_estimate",
+   "note": "the previous polymer bend-loss model may be quoted for comparison only, never as glass truth"
+  },
+  "sagitta_mm": 0.0005,
+  "min_cross_angle_deg": 5.0,
+  "interface_standard": {
+   "name": "IEC 61754-7-3:2019 2x16 MPO",
+   "fiber_column_pitch_mm": 0.25,
+   "fiber_row_pitch_mm": 0.5,
+   "rows": 2,
+   "columns": 16,
+   "connectors_per_side": 16,
+   "connector_pitch_mm": 9.0,
+   "connector_pitch_status": "provisional; full MPO housing interference at 9 mm pitch unresolved"
+  },
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "z_transition": "not_implemented",
+  "layer": 0,
+  "routing_layers_per_plane": 1,
+  "planes": 2,
+  "manufacturing_claim": "simulation under the two-height interface assumption; glass thickness and connector mounting direction are not confirmed, no z transition is implemented, not a claim of manufacturability",
+  "historical_baseline": {
+   "endpoint_mode": "virtual_unfolded",
+   "virtual_port_pitch_mm": 0.175,
+   "radius_mm": 5.0,
+   "edge_gap_mm": 0.125,
+   "clearance_mm": 0.175,
+   "output_dir": "outputs/four_side_1024_v1_v2_abcd"
+  },
+  "radius_mm": 15.0,
+  "process_profile": "R15_min_radius_15mm",
+  "process_profile_note": "2026-10-20 process requirement: every planar bend and every 3D elevation S-curve uses the fixed radius R = 15 mm; this round supersedes the historical R = 40 mm convention and the PDF example radii R = 6000/6137.33 um (the PDF is a shape reference)."
+ },
+ "algorithm_detail": {
+  "name": "R15_B",
+  "algorithm": "B",
+  "crossing_policy": "strict",
+  "process_profile": "R15_min_radius_15mm",
+  "process_profile_note": "2026-10-20 process requirement: every planar bend and every 3D elevation S-curve uses the fixed radius R = 15 mm; this round supersedes the historical R = 40 mm convention and the PDF example radii R = 6000/6137.33 um (the PDF is a shape reference).",
+  "radius_mm": 15.0,
+  "fixed_radius_40mm": false,
+  "geometry_mode": "ortho90",
+  "candidate_budget_per_route": 1600,
+  "generator": "v2opt.ortho90 (axis lines + exact 90-degree arcs only)",
+  "strategy": "group_swesnw sequential commit + strengthened R&R",
+  "order": "group_swesnw",
+  "seed": 20261019,
+  "rr": {
+   "budget": 1600,
+   "reinsert_budget": 800,
+   "analysis_budget": 800,
+   "use_expanded": true,
+   "geometry_mode": "ortho90",
+   "sizes": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "rounds": 2,
+   "routed": 331,
+   "initial_routed": 331,
+   "total_gain": 0,
+   "history": [
+    {
+     "round": 1,
+     "analysed": 128,
+     "transactions": 64,
+     "improving_results": 1,
+     "committed": 0,
+     "gain": 0,
+     "routed": 331,
+     "seconds": 722.32
+    },
+    {
+     "round": 2,
+     "analysed": 53,
+     "transactions": 64,
+     "improving_results": 0,
+     "committed": 0,
+     "gain": 0,
+     "routed": 331,
+     "seconds": 1106.62
+    }
+   ],
+   "seconds": 1106.62,
+   "seed": 20261019,
+   "min_rounds": 2,
+   "zero_gain_rounds_to_stop": 2
+  },
+  "scheme": "B"
+ },
+ "routed": 331,
+ "failed": 181
+}

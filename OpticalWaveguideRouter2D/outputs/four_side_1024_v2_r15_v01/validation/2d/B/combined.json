@@ -1,0 +1,107 @@
+{
+ "schema": "four_side_1024_v2_r15_validation_item_v1",
+ "item": "2d/B/combined",
+ "kind": "2d_combined",
+ "label": "B",
+ "plane": null,
+ "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\routes_1024.json",
+ "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\combined.json",
+ "passed": true,
+ "routed": 515,
+ "failed": 509,
+ "total": 1024,
+ "counts": {
+  "violations": 0,
+  "contract_errors": 0,
+  "identity_errors": 0,
+  "geometry_errors": 0,
+  "strict_errors": 0,
+  "pair_audit_errors": 0,
+  "r15_25d_errors": 0,
+  "other_errors": 0
+ },
+ "violations": [],
+ "warnings": [],
+ "geometry": {
+  "lines": 1501,
+  "arcs": 1141,
+  "quarter_arcs": 1141,
+  "short_s_pairs": 0,
+  "arc_radius_values": [
+   15.0
+  ],
+  "arc_radius_min_mm": 15.0,
+  "arc_radius_max_mm": 15.0,
+  "arc_radius_deviation_max_mm": 0.0,
+  "zero_length_lines": 0,
+  "diagonal_lines": 0,
+  "primitives": 2642
+ },
+ "identity": {
+  "v2_port_model_available": true,
+  "v2_error": null,
+  "csv_sha256": null,
+  "csv_sha256_ok": false,
+  "csv_sha256_note": "combined payload has no top-level csv_sha256; identity is checked per record against the V2 CSV",
+  "route_ids_not_in_csv": 0,
+  "planes": {
+   "z1": {
+    "records": 512,
+    "ports_used": 1024
+   },
+   "z2": {
+    "records": 512,
+    "ports_used": 1024
+   }
+  }
+ },
+ "process": {
+  "radius_mm": 15.0,
+  "fixed_radius_40mm": false,
+  "process_profile": null,
+  "radius_ok": true,
+  "fixed_radius_40mm_ok": true,
+  "clearance_mm": 0.08,
+  "width_mm": 0.05,
+  "board_mm": [
+   150.0,
+   150.0
+  ]
+ },
+ "plane_audits": {
+  "z1": {
+   "plane": "z1",
+   "enabled": true,
+   "radius_mm": 15.0,
+   "policy": "strict",
+   "passed": true,
+   "route_count": 512,
+   "routed_count": 184,
+   "failed_status_count": 328,
+   "d56_failed_count": 0,
+   "violation_pair_count": 0,
+   "crossings": 13342,
+   "min_non_crossing_centerline_mm": 0.09465442566171725,
+   "errors": [],
+   "warnings": []
+  },
+  "z2": {
+   "plane": "z2",
+   "enabled": true,
+   "radius_mm": 15.0,
+   "policy": "strict",
+   "passed": true,
+   "route_count": 512,
+   "routed_count": 331,
+   "failed_status_count": 181,
+   "d56_failed_count": 0,
+   "violation_pair_count": 0,
+   "crossings": 40842,
+   "min_non_crossing_centerline_mm": 0.0799999999999983,
+   "errors": [],
+   "warnings": []
+  }
+ },
+ "cross_plane_policy": "plane z1 and z2 are separate 2D problems; cross-plane XY-projected overlaps are NOT conflicts (frozen SPEC section 2)",
+ "runtime_seconds": 6.51
+}

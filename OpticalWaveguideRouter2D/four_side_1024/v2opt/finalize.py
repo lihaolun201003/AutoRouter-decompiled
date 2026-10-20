@@ -264,7 +264,8 @@ def run_strict_audit(routes_path):
     started = time.perf_counter()
     report = validate_fslw.build_report(
         routes_path=routes_path, policy='strict',
-        expected_route_count=ROUTES_PER_PLANE)
+        expected_route_count=ROUTES_PER_PLANE,
+        radius=float(fslw_config.RADIUS_MM))
     wall = time.perf_counter() - started
     audit = validate_fslw._compact_audit(report, 'strict')  # noqa: SLF001
     audit['wall_seconds'] = wall
@@ -486,6 +487,11 @@ def materialize_plane_from_base(root, label, plane, log):
     acceptance path below re-audits the result with the frozen validator.
     """
     from four_side_1024.v2opt.core import LayoutState  # local: not on audit path
+    if abs(float(fslw_config.RADIUS_MM) - 40.0) > 1e-12:
+        raise RuntimeError(
+            'refusing to materialise a missing plane from the frozen R40 BASE '
+            f'during a non-R40 round (radius={fslw_config.RADIUS_MM:g} mm); '
+            'produce both planes of this label with the R15 runner instead')
     base_routes = plane_dir(root, 'BASE', plane) / 'routes.json'
     if not base_routes.exists():
         raise FileNotFoundError(
@@ -753,7 +759,10 @@ def accept_plane(root, label, plane, force, log):
             (report.get('endpoint_unchecked_count') or 0) == 0,
         'structure_checked':
             (report.get('structure') or {}).get('checked') is True,
-        'radius_40mm': process.get('radius_mm') == 40.0,
+        'radius_matches_process':
+            abs(float(process.get('radius_mm') or -1.0)
+                - float(fslw_config.RADIUS_MM)) < 1e-12,
+        'radius_documented': process.get('radius_mm') is not None,
         'clearance_008mm': abs(float(process.get(
             'centerline_clearance_mm') or 0.0) - 0.08) < 1e-12,
         'width_005mm': process.get('waveguide_width_mm') == 0.05,
@@ -879,7 +888,7 @@ def finalize(args, log=print):
     if missing_labels:
         log(f'missing      : {missing_labels}')
     log(f'authority    : four_side_1024.fslw.validate_fslw policy=strict '
-        f'(route_count=512, R=40 mm, clearance 0.080 mm)')
+        f'(route_count=512, R={fslw_config.RADIUS_MM:g} mm, clearance 0.080 mm)')
     log('=' * 78)
 
     plane_records = {}
@@ -1094,8 +1103,9 @@ def finalize(args, log=print):
         },
         'notes': [
             'the authoritative acceptance criterion is validate_fslw strict '
-            '(clearance 0.080 mm, R=40 mm, 512 route records per height plane); '
-            'no optimisation module takes part in the verdict',
+            '(clearance 0.080 mm, R={radius:g} mm, 512 route records per height '
+            'plane); no optimisation module takes part in the verdict'.format(
+                radius=fslw_config.RADIUS_MM),
             'planes z1 and z2 are independent 2D problems at model heights 0.0 '
             'and 0.5 mm; XY-projected cross-plane overlaps are informational '
             'only (fslw/SPEC.md section 2)',

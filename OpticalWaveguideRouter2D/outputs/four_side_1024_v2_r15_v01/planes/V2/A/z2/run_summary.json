@@ -1,0 +1,89 @@
+{
+ "schema": "four_side_1024_v2_r15_2d_plane_run_v1",
+ "label": "A",
+ "scheme": "A",
+ "plane": "z2",
+ "process_profile": "R15_min_radius_15mm",
+ "radius_mm": 15.0,
+ "routed": 445,
+ "total": 512,
+ "failed": 67,
+ "order_summary": {
+  "continued_from": "outputs\\four_side_1024_v2_r15_v01\\sweep2d\\A_z2_round_robin_N_cw\\checkpoints\\A_z2_round_robin_N_cw.json"
+ },
+ "rr": {
+  "budget": 1600,
+  "reinsert_budget": 800,
+  "analysis_budget": 800,
+  "use_expanded": true,
+  "geometry_mode": "d56",
+  "sizes": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "rounds": 3,
+  "routed": 445,
+  "initial_routed": 437,
+  "total_gain": 8,
+  "history": [
+   {
+    "round": 1,
+    "analysed": 75,
+    "transactions": 64,
+    "improving_results": 5,
+    "committed": 3,
+    "gain": 3,
+    "routed": 442,
+    "seconds": 567.77
+   },
+   {
+    "round": 2,
+    "analysed": 70,
+    "transactions": 64,
+    "improving_results": 3,
+    "committed": 1,
+    "gain": 1,
+    "routed": 444,
+    "seconds": 1173.91
+   },
+   {
+    "round": 3,
+    "analysed": 68,
+    "transactions": 64,
+    "improving_results": 2,
+    "committed": 1,
+    "gain": 1,
+    "routed": 445,
+    "seconds": 1921.3
+   }
+  ],
+  "seconds": 1921.31,
+  "seed": 20261019,
+  "min_rounds": 2,
+  "zero_gain_rounds_to_stop": 2
+ },
+ "config": {
+  "scheme": "A",
+  "plane": "z2",
+  "order": "group_swesnw",
+  "budget": 1600,
+  "rr_rounds": 4,
+  "transactions": 64,
+  "sizes": "1,2,4,8",
+  "analysis_budget": 800,
+  "reinsert_budget": 800,
+  "rr_time_limit": 1800.0,
+  "workers": 8,
+  "targets_per_round": 64,
+  "analysis_targets": 128,
+  "min_rounds": 2,
+  "zero_rounds": 2,
+  "continue_from": "outputs\\four_side_1024_v2_r15_v01\\sweep2d\\A_z2_round_robin_N_cw\\checkpoints\\A_z2_round_robin_N_cw.json",
+  "root": null,
+  "tag": "",
+  "limit": 0
+ },
+ "seconds": 1921.47
+}

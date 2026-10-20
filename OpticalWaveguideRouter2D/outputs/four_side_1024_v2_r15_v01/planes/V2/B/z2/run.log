@@ -1,0 +1,17 @@
+15:35:50 command={'scheme': 'B', 'plane': 'z2', 'order': 'group_swesnw', 'budget': 1600, 'rr_rounds': 4, 'transactions': 64, 'sizes': '1,2,4,8', 'analysis_budget': 800, 'reinsert_budget': 800, 'rr_time_limit': 1800.0, 'workers': 8, 'targets_per_round': 64, 'analysis_targets': 128, 'min_rounds': 2, 'zero_rounds': 2, 'continue_from': 'outputs\\four_side_1024_v2_r15_v01\\sweep2d\\B_z2_round_robin_N_cw\\checkpoints\\B_z2_round_robin_N_cw.json', 'root': None, 'tag': '', 'limit': 0}
+15:35:50 profile radius=15.0 mm fixed=False
+15:35:50 z2: restored checkpoint B_z2_round_robin_N_cw.json (331 routed)
+15:35:50 continued checkpoint outputs\four_side_1024_v2_r15_v01\sweep2d\B_z2_round_robin_N_cw\checkpoints\B_z2_round_robin_N_cw.json routed=331
+15:35:50 R&R round 1: pending=181 analysing=128 budget=800 routed=331
+15:37:13 parallel blocker analysis: 32/128 elapsed=82.5s
+15:38:20 parallel blocker analysis: 64/128 elapsed=150.3s
+15:39:15 parallel blocker analysis: 96/128 elapsed=204.6s
+15:39:42 parallel blocker analysis: 128/128 elapsed=232.0s
+15:39:42 parallel blocker analysis done: 128 routes, 0 placed, elapsed=232.1s
+15:47:53 R&R round 1 done: transactions=64 improving=1 committed=0 gain=0 routed=331 elapsed=722.3s
+15:47:53 R&R round 2: pending=181 analysing=53 budget=800 routed=331
+15:48:11 parallel blocker analysis: 32/53 elapsed=18.2s
+15:48:21 parallel blocker analysis done: 53 routes, 0 placed, elapsed=28.2s
+15:54:17 R&R round 2 done: transactions=64 improving=0 committed=0 gain=0 routed=331 elapsed=1106.6s
+15:54:17 R&R done routed=331
+15:54:17 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\planes\V2\B\z2 routed=331

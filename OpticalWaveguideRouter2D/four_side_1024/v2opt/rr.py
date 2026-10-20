@@ -25,8 +25,20 @@ import time
 
 from ..d56.index import prepare
 from ..d56.search import RouteResult
+from ..fslw import config as _FSLW
 from . import config as V
 from .core import LayoutState, iso_now
+
+
+def _worker_process_radius():
+    """Process radius carried into multiprocessing task payloads.
+
+    Windows ``multiprocessing`` children re-import the routing modules, so the
+    import-time radius binders (``v2opt.candext.R`` etc.) would otherwise fall
+    back to the default 40 mm in a R15 round.  Every payload carries the parent
+    radius and the worker entry points re-apply it via ``r15.worker_boot``.
+    """
+    return float(_FSLW.RADIUS_MM)
 
 
 # ---------------------------------------------------------------------------
@@ -67,6 +79,8 @@ def analyse_blockers(state, route_ids, budget, use_expanded=True, log=print,
 
 def _analysis_worker(payload):
     """Worker: attempt one failed route on a frozen layout snapshot."""
+    from ..r15 import worker_boot
+    worker_boot.ensure_from_payload(payload)
     from . import search as S
     dump = payload['dump']
     route_id = payload['route_id']
@@ -98,9 +112,10 @@ def analyse_blockers_parallel(state, route_ids, budget, use_expanded=True,
                                 use_expanded=use_expanded, log=log,
                                 geometry_mode=geometry_mode)
     dump = state.dump()
+    process_radius = _worker_process_radius()
     tasks = [dict(dump=dump, route_id=route_id, budget=budget,
                   use_expanded=use_expanded, geometry_mode=geometry_mode,
-                  cfg=state.cfg)
+                  process_radius_mm=process_radius, cfg=state.cfg)
              for route_id in route_ids]
     started = time.perf_counter()
     results = []
@@ -256,6 +271,8 @@ def _ordered(ids, mode, rng, state=None):
 # ---------------------------------------------------------------------------
 def execute_transaction(payload):
     """Multiprocessing worker: run one transaction on a private layout copy."""
+    from ..r15 import worker_boot
+    worker_boot.ensure_from_payload(payload)
     from . import search as S
     dump = payload['dump']
     transaction = payload['transaction']
@@ -474,6 +491,7 @@ def ripup_reroute(state, *, budget, use_expanded=True, sizes=(1, 2, 4, 8, 12),
         rng.shuffle(transactions)
         transactions = transactions[:transactions_per_round]
         dump = state.dump()
+        process_radius = _worker_process_radius()
         worker_count = max(1, min(workers, len(transactions)))
         buckets = [[] for _ in range(worker_count)]
         for index, transaction in enumerate(transactions):
@@ -483,6 +501,7 @@ def ripup_reroute(state, *, budget, use_expanded=True, sizes=(1, 2, 4, 8, 12),
                 max_evals_per_transaction=max_evals_per_transaction,
                 transaction_seconds=transaction_seconds,
                 use_expanded=use_expanded, geometry_mode=geometry_mode,
+                process_radius_mm=process_radius,
                 seed=seed + round_index * 7919 + index, cfg=state.cfg))
         tasks = [dict(payloads=bucket) for bucket in buckets if bucket]
         results = []

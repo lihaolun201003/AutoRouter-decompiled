@@ -1,0 +1,179 @@
+{
+ "schema": "four_side_1024_fslw_planes_summary_v1",
+ "tool": "four_side_1024.fslw.combine",
+ "generated_at": "2026-10-20T16:57:23+0800",
+ "topology": "V2",
+ "algorithm": "B",
+ "process": {
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "min_radius_mm": 15.0,
+  "radius_mm": 15.0,
+  "fixed_radius_40mm": false,
+  "sagitta_mm": 0.0005,
+  "propagation_loss_db_per_cm": 0.05,
+  "min_cross_angle_deg": 5.0,
+  "port_model": "real_2x16_dual_height",
+  "plane_z_mm": {
+   "1": 0.0,
+   "2": 0.5
+  },
+  "plane_row": {
+   "z1": 1,
+   "z2": 2
+  },
+  "connections_per_plane": 512,
+  "total_connections": 1024,
+  "source": "four_side_1024.fslw.config (round-2 convention)",
+  "overrides": {
+   "experiment": "V2_B_z1",
+   "topology": "V2",
+   "algorithm": "B",
+   "plane": "z1",
+   "z_mm": 0.0,
+   "port_model": "real_2x16_dual_height",
+   "name": "R15_B",
+   "radius_mm": 15.0,
+   "seed": 20261019,
+   "waveguide_width_mm": 0.05,
+   "min_edge_gap_mm": 0.03,
+   "min_centerline_clearance_mm": 0.08,
+   "min_bend_radius_mm": 15.0,
+   "propagation_loss_db_per_cm": 0.05,
+   "sagitta_mm": 0.0005,
+   "min_cross_angle_deg": 5.0
+  },
+  "plane": "z1",
+  "z_mm": 0.0,
+  "topology": "V2",
+  "algorithm": "B",
+  "experiment": "V2_B_z1",
+  "seed": 20261019
+ },
+ "planes": {
+  "z1": {
+   "plane": "z1",
+   "row": 1,
+   "z_mm": 0.0,
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z1",
+   "routed": 184,
+   "unrouted": 328,
+   "connections_total": 512,
+   "routing_rate": 0.359375,
+   "crossing_count": 13342,
+   "mean_length_mm": 179.55784494878807,
+   "audit_passed": true,
+   "vector_files": {
+    "gds": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z1\\routing_all.gds",
+    "svg": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z1\\routing_all.svg",
+    "created": false
+   }
+  },
+  "z2": {
+   "plane": "z2",
+   "row": 2,
+   "z_mm": 0.5,
+   "run_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z2",
+   "routed": 331,
+   "unrouted": 181,
+   "connections_total": 512,
+   "routing_rate": 0.646484375,
+   "crossing_count": 40842,
+   "mean_length_mm": 168.6064823641018,
+   "audit_passed": true,
+   "vector_files": {
+    "gds": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z2\\routing_all.gds",
+    "svg": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\planes\\V2\\B\\z2\\routing_all.svg",
+    "created": false
+   }
+  }
+ },
+ "combined": {
+  "routed": 515,
+  "unrouted": 509,
+  "connections_total": 1024,
+  "routing_rate": 0.5029296875,
+  "total_length_mm": 88847.3891330947,
+  "same_plane_crossings": 54184,
+  "cross_plane_projected_overlap_informational": 47639,
+  "propagation_loss_total_db": 444.2369456654734
+ },
+ "gds": {
+  "combined": {
+   "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\routing_1024_two_height.gds",
+   "bytes": 921274,
+   "layer_documentation": "routing_1024_two_height.gds: layer 0 = plane z1 (row 1, model height 0.0), layer 1 = plane z2 (row 2, model height 0.5). The two GDS layers represent two PHYSICAL HEIGHTS of the same single-layer process; they are NOT a multi-layer waveguide stack, and no z-transition/via/fanout is implemented. Cross-plane XY projections are not conflicts (SPEC §2).",
+   "layers": [
+    0,
+    1
+   ],
+   "datatypes": [
+    0
+   ],
+   "paths_per_layer": {
+    "0": 184,
+    "1": 331
+   },
+   "plane_counts": {
+    "z1": {
+     "layer": 0,
+     "paths": 184,
+     "routed": 184
+    },
+    "z2": {
+     "layer": 1,
+     "paths": 331,
+     "routed": 331
+    }
+   },
+   "width_mm": 0.05,
+   "arc_chord_sagitta_mm": 0.0005,
+   "unit_m": 0.001,
+   "precision_m": 1e-09,
+   "verified": true,
+   "status": "research dual-height geometry; chordal arcs; not a fabrication release"
+  },
+  "plane_layer_ownership": {
+   "planes/<T>/<A>/z1/routing_all.gds": "single layer 0 (plane z1)",
+   "planes/<T>/<A>/z2/routing_all.gds": "single layer 0 (plane z2)",
+   "routing_1024_two_height.gds": "routing_1024_two_height.gds: layer 0 = plane z1 (row 1, model height 0.0), layer 1 = plane z2 (row 2, model height 0.5). The two GDS layers represent two PHYSICAL HEIGHTS of the same single-layer process; they are NOT a multi-layer waveguide stack, and no z-transition/via/fanout is implemented. Cross-plane XY projections are not conflicts (SPEC §2)."
+  }
+ },
+ "figures": {
+  "layer_2d_png": {
+   "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\layer_2d.png",
+   "svg": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\layer_2d.svg",
+   "kind": "layer_2d",
+   "routed": 515,
+   "per_plane": {
+    "z1": 184,
+    "z2": 331
+   }
+  },
+  "overlay_3d_png": {
+   "file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\overlay_3d.png",
+   "kind": "overlay_3d",
+   "routed": 515,
+   "per_plane": {
+    "z1": 184,
+    "z2": 331
+   },
+   "z_model": {
+    "z1": 0.0,
+    "z2": 0.5,
+    "z2_minus_z1_mm": 0.5,
+    "note": "vertical scale exaggerated for display"
+   }
+  }
+ },
+ "files": {
+  "routes_1024_json": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\routes_1024.json",
+  "statistics_json": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\combined\\V2\\B\\statistics.json"
+ },
+ "wall_seconds": 7.6630901000025915
+}

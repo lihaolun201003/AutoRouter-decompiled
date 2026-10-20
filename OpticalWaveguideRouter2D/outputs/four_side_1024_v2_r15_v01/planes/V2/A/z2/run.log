@@ -1,0 +1,32 @@
+15:11:31 command={'scheme': 'A', 'plane': 'z2', 'order': 'group_swesnw', 'budget': 1600, 'rr_rounds': 4, 'transactions': 64, 'sizes': '1,2,4,8', 'analysis_budget': 800, 'reinsert_budget': 800, 'rr_time_limit': 1800.0, 'workers': 8, 'targets_per_round': 64, 'analysis_targets': 128, 'min_rounds': 2, 'zero_rounds': 2, 'continue_from': 'outputs\\four_side_1024_v2_r15_v01\\sweep2d\\A_z2_round_robin_N_cw\\checkpoints\\A_z2_round_robin_N_cw.json', 'root': None, 'tag': '', 'limit': 0}
+15:11:31 profile radius=15.0 mm fixed=False
+15:11:31 z2: restored checkpoint A_z2_round_robin_N_cw.json (437 routed)
+15:11:31 continued checkpoint outputs\four_side_1024_v2_r15_v01\sweep2d\A_z2_round_robin_N_cw\checkpoints\A_z2_round_robin_N_cw.json routed=437
+15:11:31 R&R round 1: pending=75 analysing=75 budget=800 routed=437
+15:12:34 parallel blocker analysis: 32/75 elapsed=63.2s
+15:13:04 parallel blocker analysis: 64/75 elapsed=93.2s
+15:13:09 parallel blocker analysis done: 75 routes, 2 placed, elapsed=98.2s
+15:20:58   commit 519/k1: 439 -> 440 (+1)
+15:20:58 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z2_rr_round1.json routed=440
+15:20:58   commit 552/k2: 440 -> 441 (+1)
+15:20:58 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z2_rr_round1.json routed=441
+15:20:59   commit 845/k4: 441 -> 442 (+1)
+15:20:59 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z2_rr_round1.json routed=442
+15:20:59 R&R round 1 done: transactions=64 improving=5 committed=3 gain=3 routed=442 elapsed=567.8s
+15:20:59 R&R round 2: pending=70 analysing=70 budget=800 routed=442
+15:22:02 parallel blocker analysis: 32/70 elapsed=63.7s
+15:22:33 parallel blocker analysis: 64/70 elapsed=94.5s
+15:22:35 parallel blocker analysis done: 70 routes, 1 placed, elapsed=96.7s
+15:31:05   commit 545/k1: 443 -> 444 (+1)
+15:31:05 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z2_rr_round2.json routed=444
+15:31:05 R&R round 2 done: transactions=64 improving=3 committed=1 gain=1 routed=444 elapsed=1173.9s
+15:31:05 R&R round 3: pending=68 analysing=68 budget=800 routed=444
+15:32:22 parallel blocker analysis: 32/68 elapsed=77.4s
+15:33:04 parallel blocker analysis: 64/68 elapsed=119.1s
+15:33:06 parallel blocker analysis done: 68 routes, 0 placed, elapsed=121.2s
+15:43:32   commit 888/k8: 444 -> 445 (+1)
+15:43:32 checkpoint written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\checkpoints\A_z2_rr_round3.json routed=445
+15:43:32 R&R round 3 done: transactions=64 improving=2 committed=1 gain=1 routed=445 elapsed=1921.3s
+15:43:32 R&R: time limit reached before round 4
+15:43:32 R&R done routed=445
+15:43:32 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_r15_v01\planes\V2\A\z2 routed=445

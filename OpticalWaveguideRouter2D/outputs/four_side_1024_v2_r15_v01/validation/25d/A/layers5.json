@@ -1,0 +1,81 @@
+{
+ "schema": "four_side_1024_v2_r15_validation_item_v1",
+ "item": "25d/A/layers5",
+ "kind": "25d",
+ "label": "A",
+ "plane": null,
+ "input": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeA\\layers5\\routes_25d.json",
+ "output": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\validation\\25d\\A\\layers5.json",
+ "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\A\\layers5.json",
+ "passed": true,
+ "routed": 985,
+ "failed": 39,
+ "total": 1024,
+ "counts": {
+  "violations": 0,
+  "contract_errors": 0,
+  "identity_errors": 0,
+  "geometry_errors": 0,
+  "strict_errors": 0,
+  "pair_audit_errors": 0,
+  "r15_25d_errors": 0,
+  "other_errors": 0
+ },
+ "violations": [],
+ "warnings": [],
+ "geometry": {
+  "flat_arcs": 2003,
+  "flat_lines": 2151,
+  "transitions": 84,
+  "flat_arc_radius_values": [
+   15.0
+  ],
+  "transition_radius_values": [
+   15.0
+  ],
+  "arc_radius_deviation_max_mm": 0.0
+ },
+ "curvature": {
+  "validate25d_radius_mm": 15.0,
+  "min_curvature_threshold_mm": 14.985,
+  "r15_based": true,
+  "min_curvature_radius_mm": 14.999999963,
+  "min_3d_distance_mm": 0.080295032
+ },
+ "crossings": {
+  "total": 137081,
+  "by_layer": {
+   "0": 69072,
+   "1": 424,
+   "2": 48,
+   "3": 16,
+   "4": 67521
+  }
+ },
+ "postcheck": {
+  "transitions": 84,
+  "lifted": 42,
+  "flat_arcs": 2003,
+  "flat_lines": 2151,
+  "transition_radius_values": [
+   15.0
+  ],
+  "flat_arc_radius_values": [
+   15.0
+  ],
+  "arc_radius_deviation_max_mm": 0.0,
+  "violations": 0,
+  "process_radius_mm": 15.0,
+  "scheme": "A",
+  "n_layers": 5,
+  "layers_z_mm": [
+   0.0,
+   0.125,
+   0.25,
+   0.375,
+   0.5
+  ]
+ },
+ "runtime_seconds": 0.035,
+ "validation_exit_code": 0
+}
