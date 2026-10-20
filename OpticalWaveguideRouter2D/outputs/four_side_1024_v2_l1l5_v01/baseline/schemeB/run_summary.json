@@ -1,0 +1,109 @@
+{
+ "schema": "four_side_1024_v2_l3d_run_summary_v1",
+ "stage": "baseline_l1",
+ "scheme": "B",
+ "stack": "medium_050",
+ "layer_stack": {
+  "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+  "provenance": "unconfirmed_simulation",
+  "formal_acceptance_allowed": false,
+  "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+  "interface_layer": 1,
+  "layers": {
+   "1": {
+    "layer_id": 1,
+    "layer_type": "interface",
+    "physical_z_mm": null,
+    "interface_rows": {
+     "z1": 0.0,
+     "z2": 0.5
+    },
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "2": {
+    "layer_id": 2,
+    "layer_type": "routing",
+    "physical_z_mm": 1.0,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "3": {
+    "layer_id": 3,
+    "layer_type": "routing",
+    "physical_z_mm": 1.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "4": {
+    "layer_id": 4,
+    "layer_type": "routing",
+    "physical_z_mm": 2.0,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "5": {
+    "layer_id": 5,
+    "layer_type": "routing",
+    "physical_z_mm": 2.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "routing_heights_mm": {
+   "2": 1.0,
+   "3": 1.5,
+   "4": 2.0,
+   "5": 2.5
+  }
+ },
+ "config": {
+  "scheme": "B",
+  "stage": "baseline",
+  "stack": "medium_050",
+  "stack_json": null,
+  "budget": 120,
+  "multi_budget": 60,
+  "passes": 3,
+  "rr_rounds": 1,
+  "rr_targets": 48,
+  "rr_rip": 2,
+  "layer_selection": "best",
+  "limit": 0,
+  "out": null,
+  "tag": ""
+ },
+ "routed": 515,
+ "failed": 509,
+ "attempts": 0,
+ "seconds": 0.56
+}

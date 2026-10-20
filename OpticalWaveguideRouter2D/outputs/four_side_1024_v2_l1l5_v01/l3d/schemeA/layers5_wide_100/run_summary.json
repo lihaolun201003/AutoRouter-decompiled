@@ -1,0 +1,220 @@
+{
+ "schema": "four_side_1024_v2_l3d_run_summary_v1",
+ "stage": "single",
+ "scheme": "A",
+ "stack": "wide_100",
+ "layer_stack": {
+  "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+  "provenance": "unconfirmed_simulation",
+  "formal_acceptance_allowed": false,
+  "note": "wide_100: 1.0 mm spacing; exploratory",
+  "interface_layer": 1,
+  "layers": {
+   "1": {
+    "layer_id": 1,
+    "layer_type": "interface",
+    "physical_z_mm": null,
+    "interface_rows": {
+     "z1": 0.0,
+     "z2": 0.5
+    },
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "2": {
+    "layer_id": 2,
+    "layer_type": "routing",
+    "physical_z_mm": 1.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "3": {
+    "layer_id": 3,
+    "layer_type": "routing",
+    "physical_z_mm": 2.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "4": {
+    "layer_id": 4,
+    "layer_type": "routing",
+    "physical_z_mm": 3.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "5": {
+    "layer_id": 5,
+    "layer_type": "routing",
+    "physical_z_mm": 4.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "routing_heights_mm": {
+   "2": 1.5,
+   "3": 2.5,
+   "4": 3.5,
+   "5": 4.5
+  }
+ },
+ "config": {
+  "scheme": "A",
+  "stage": "single",
+  "stack": "wide_100",
+  "stack_json": null,
+  "budget": 120,
+  "multi_budget": 60,
+  "passes": 2,
+  "rr_rounds": 0,
+  "rr_targets": 48,
+  "rr_rip": 2,
+  "layer_selection": "best",
+  "limit": 0,
+  "out": null,
+  "tag": ""
+ },
+ "statistics": {
+  "baseline_routed": 943,
+  "routed": 963,
+  "failed": 61,
+  "new_routed": 20,
+  "lifted": 20,
+  "transitions": 40,
+  "total_length_mm": 156178.170944,
+  "mean_length_mm": 162.178786,
+  "total_xy_length_mm": 156171.32757,
+  "per_plane": {
+   "z1": {
+    "routed": 498,
+    "baseline": 498,
+    "lifted": 0
+   },
+   "z2": {
+    "routed": 465,
+    "baseline": 445,
+    "lifted": 20
+   }
+  },
+  "per_layer_flat_parts": {
+   "1": 983,
+   "2": 12,
+   "3": 6,
+   "4": 2
+  },
+  "per_physical_plane_flat_parts": {
+   "L1@0": 498,
+   "L1@0.5": 485,
+   "L2@1.5": 12,
+   "L3@2.5": 6,
+   "L4@3.5": 2
+  },
+  "per_physical_plane_flat_length_mm": {
+   "L1@0": 76595.314857,
+   "L1@0.5": 73095.680557,
+   "L2@1.5": 2985.420505,
+   "L3@2.5": 2409.007321,
+   "L4@3.5": 720.006082
+  },
+  "transition_layer_pairs": {
+   "1->2": 12,
+   "2->1": 12,
+   "1->3": 6,
+   "3->1": 6,
+   "1->4": 2,
+   "4->1": 2
+  },
+  "transitions_histogram": {
+   "0": 943,
+   "2": 20
+  },
+  "layers_used_histogram": {
+   "1": 943,
+   "1,2": 12,
+   "1,3": 6,
+   "1,4": 2
+  },
+  "layer_sequence_histogram": {
+   "1": 943,
+   "1->2->1": 12,
+   "1->3->1": 6,
+   "1->4->1": 2
+  },
+  "failed_no_candidate": 2,
+  "failed_unplaceable": 59,
+  "z_span_max_mm": 3.0
+ },
+ "router": {
+  "scheme": "A",
+  "stack": "wide_100",
+  "stage": "single",
+  "baseline_routed": 943,
+  "final_routed": 963,
+  "new_routed": 20,
+  "attemptable": 79,
+  "no_candidate": 2,
+  "failed_unplaceable": 59,
+  "flat_added": 0,
+  "passes": [
+   {
+    "pass_index": 1,
+    "stage": "single",
+    "variants": [
+     0
+    ],
+    "attempted": 79,
+    "placed": 20,
+    "pending": 59,
+    "routed": 963,
+    "seconds": 245.69
+   },
+   {
+    "pass_index": 2,
+    "stage": "single",
+    "variants": [
+     1,
+     0
+    ],
+    "attempted": 59,
+    "placed": 0,
+    "pending": 59,
+    "routed": 963,
+    "seconds": 588.86
+   }
+  ],
+  "rr": [],
+  "rejected": {
+   "transition_placement_infeasible": 189
+  },
+  "seconds": 588.87
+ },
+ "seconds": 589.83
+}

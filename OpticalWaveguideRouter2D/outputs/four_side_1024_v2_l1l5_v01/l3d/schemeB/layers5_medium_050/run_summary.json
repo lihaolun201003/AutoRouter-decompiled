@@ -1,0 +1,268 @@
+{
+ "schema": "four_side_1024_v2_l3d_run_summary_v1",
+ "stage": "full",
+ "scheme": "B",
+ "stack": "medium_050",
+ "layer_stack": {
+  "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+  "provenance": "unconfirmed_simulation",
+  "formal_acceptance_allowed": false,
+  "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+  "interface_layer": 1,
+  "layers": {
+   "1": {
+    "layer_id": 1,
+    "layer_type": "interface",
+    "physical_z_mm": null,
+    "interface_rows": {
+     "z1": 0.0,
+     "z2": 0.5
+    },
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "2": {
+    "layer_id": 2,
+    "layer_type": "routing",
+    "physical_z_mm": 1.0,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "3": {
+    "layer_id": 3,
+    "layer_type": "routing",
+    "physical_z_mm": 1.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "4": {
+    "layer_id": 4,
+    "layer_type": "routing",
+    "physical_z_mm": 2.0,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "5": {
+    "layer_id": 5,
+    "layer_type": "routing",
+    "physical_z_mm": 2.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "routing_heights_mm": {
+   "2": 1.0,
+   "3": 1.5,
+   "4": 2.0,
+   "5": 2.5
+  }
+ },
+ "config": {
+  "scheme": "B",
+  "stage": "full",
+  "stack": "medium_050",
+  "stack_json": null,
+  "budget": 120,
+  "multi_budget": 60,
+  "passes": 3,
+  "rr_rounds": 1,
+  "rr_targets": 48,
+  "rr_rip": 2,
+  "layer_selection": "best",
+  "limit": 0,
+  "out": null,
+  "tag": ""
+ },
+ "statistics": {
+  "baseline_routed": 515,
+  "routed": 621,
+  "failed": 403,
+  "new_routed": 106,
+  "lifted": 106,
+  "transitions": 222,
+  "total_length_mm": 116726.190109,
+  "mean_length_mm": 187.964879,
+  "total_xy_length_mm": 116694.186863,
+  "per_plane": {
+   "z1": {
+    "routed": 211,
+    "baseline": 184,
+    "lifted": 27
+   },
+   "z2": {
+    "routed": 410,
+    "baseline": 331,
+    "lifted": 79
+   }
+  },
+  "per_layer_flat_parts": {
+   "1": 727,
+   "2": 34,
+   "3": 21,
+   "5": 26,
+   "4": 35
+  },
+  "per_physical_plane_flat_parts": {
+   "L1@0": 238,
+   "L2@1": 34,
+   "L3@1.5": 21,
+   "L5@2.5": 26,
+   "L4@2": 35,
+   "L1@0.5": 489
+  },
+  "per_physical_plane_flat_length_mm": {
+   "L1@0": 33689.797082,
+   "L2@1": 6572.602955,
+   "L3@1.5": 4895.515649,
+   "L5@2.5": 5632.604122,
+   "L4@2": 7883.102863,
+   "L1@0.5": 56116.672575
+  },
+  "transition_layer_pairs": {
+   "1->2": 33,
+   "2->3": 3,
+   "3->5": 2,
+   "5->1": 25,
+   "2->1": 30,
+   "1->3": 16,
+   "3->1": 18,
+   "1->4": 34,
+   "4->1": 33,
+   "1->5": 23,
+   "4->3": 1,
+   "5->3": 1,
+   "3->2": 1,
+   "4->5": 1,
+   "2->4": 1
+  },
+  "transitions_histogram": {
+   "0": 515,
+   "4": 3,
+   "2": 99,
+   "3": 4
+  },
+  "layers_used_histogram": {
+   "1": 515,
+   "1,2,3,5": 3,
+   "1,2": 29,
+   "1,3": 16,
+   "1,4": 32,
+   "1,5": 22,
+   "1,3,4": 1,
+   "1,2,3": 1,
+   "1,4,5": 1,
+   "1,2,4": 1
+  },
+  "layer_sequence_histogram": {
+   "1": 515,
+   "1->2->3->5->1": 2,
+   "1->2->1": 29,
+   "1->3->1": 16,
+   "1->4->1": 32,
+   "1->5->1": 22,
+   "1->4->3->1": 1,
+   "1->5->3->2->1": 1,
+   "1->2->3->1": 1,
+   "1->4->5->1": 1,
+   "1->2->4->1": 1
+  },
+  "failed_no_candidate": 78,
+  "failed_unplaceable": 325,
+  "z_span_max_mm": 2.5
+ },
+ "router": {
+  "scheme": "B",
+  "stack": "medium_050",
+  "stage": "full",
+  "baseline_routed": 515,
+  "final_routed": 621,
+  "new_routed": 106,
+  "attemptable": 431,
+  "no_candidate": 78,
+  "failed_unplaceable": 325,
+  "flat_added": 0,
+  "passes": [
+   {
+    "pass_index": 1,
+    "stage": "single",
+    "variants": [
+     0
+    ],
+    "attempted": 431,
+    "placed": 98,
+    "pending": 333,
+    "routed": 613,
+    "seconds": 1338.88
+   },
+   {
+    "pass_index": 2,
+    "stage": "multi",
+    "variants": [
+     1,
+     0
+    ],
+    "attempted": 333,
+    "placed": 4,
+    "pending": 329,
+    "routed": 617,
+    "seconds": 3132.24
+   },
+   {
+    "pass_index": 3,
+    "stage": "multi",
+    "variants": [
+     2,
+     1,
+     0
+    ],
+    "attempted": 329,
+    "placed": 3,
+    "pending": 326,
+    "routed": 620,
+    "seconds": 5693.09
+   }
+  ],
+  "rr": [
+   {
+    "round": 1,
+    "gain": 1,
+    "pending": 325,
+    "routed": 621
+   }
+  ],
+  "rejected": {
+   "transition_placement_infeasible": 5894
+  },
+  "seconds": 6555.55
+ },
+ "seconds": 6556.2
+}

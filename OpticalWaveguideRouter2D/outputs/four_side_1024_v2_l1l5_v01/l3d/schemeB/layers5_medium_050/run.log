@@ -1,0 +1,19 @@
+21:28:03 command={'scheme': 'B', 'stage': 'single', 'stack': 'medium_050', 'stack_json': None, 'budget': 80, 'multi_budget': 60, 'passes': 1, 'rr_rounds': 0, 'rr_targets': 48, 'rr_rip': 2, 'layer_selection': 'best', 'limit': 20, 'out': None, 'tag': ''}
+21:28:03 R15 profile radius=15.0 mm
+21:28:03 layer stack medium_050: {"2": 1.0, "3": 1.5, "4": 2.0, "5": 2.5} provenance=unconfirmed_simulation formal_acceptance_allowed=False
+21:28:03 B/medium_050: corrected L1 baseline 515 flat routes, attemptable failed 431, no-2D-candidate 78
+21:28:51 B/medium_050 pass 1 (single): attempted=20 placed=5 pending=15 routed=520 elapsed=47.9s
+21:28:51 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_l1l5_v01\l3d\schemeB\layers5_medium_050\routes_l3d.json
+21:28:51 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_l1l5_v01\l3d\schemeB\layers5_medium_050\run_summary.json
+21:28:51 done in 48.5s
+21:29:10 command={'scheme': 'B', 'stage': 'full', 'stack': 'medium_050', 'stack_json': None, 'budget': 120, 'multi_budget': 60, 'passes': 3, 'rr_rounds': 1, 'rr_targets': 48, 'rr_rip': 2, 'layer_selection': 'best', 'limit': 0, 'out': None, 'tag': ''}
+21:29:10 R15 profile radius=15.0 mm
+21:29:10 layer stack medium_050: {"2": 1.0, "3": 1.5, "4": 2.0, "5": 2.5} provenance=unconfirmed_simulation formal_acceptance_allowed=False
+21:29:11 B/medium_050: corrected L1 baseline 515 flat routes, attemptable failed 431, no-2D-candidate 78
+21:51:29 B/medium_050 pass 1 (single): attempted=431 placed=98 pending=333 routed=613 elapsed=1338.9s
+22:21:23 B/medium_050 pass 2 (multi): attempted=333 placed=4 pending=329 routed=617 elapsed=3132.2s
+23:04:04 B/medium_050 pass 3 (multi): attempted=329 placed=3 pending=326 routed=620 elapsed=5693.1s
+23:18:26 B/medium_050 rr round 1: gain=1 pending=325 routed=621
+23:18:26 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_l1l5_v01\l3d\schemeB\layers5_medium_050\routes_l3d.json
+23:18:26 written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v2_l1l5_v01\l3d\schemeB\layers5_medium_050\run_summary.json
+23:18:26 done in 6556.3s

@@ -179,3 +179,24 @@ B **723/1024**（+208）；全部 8 项独立二维/三维验收 PASS（10,046 �
 `r15/PDF_GEOMETRY.md`，半径硬编码审计见 `r15/RADIUS_AUDIT.md`。详见
 [完整报告](../../../docs/reports/four_side_1024_v2_r15_v01.md)、
 [产物目录](../outputs/four_side_1024_v2_r15_v01/)。
+
+## L1–L5 五层物理模型纠错 + 探索性重做（2026-10-20 R9）
+
+旧五层模型 `z1=L1 / z2=L5` 与高度域 `[0,0.125,0.25,0.375,0.5]` 被纠正：**L1 是接口层，
+同时包含 z1 排（z=0.0 mm）与 z2 排（z=0.5 mm）**；L2–L5 是四个额外布线层，高度未确认，
+本轮作为探索性仿真参数（medium 1.0/1.5/2.0/2.5 mm 等）。允许任意层序与多次平滑升降，
+不同物理 z 的部件对必须满足真实 XYZ 净空 ≥0.08 mm；`layer_id` 与物理 z 彻底解耦。
+
+`l3d/` 新增：`layers.py`（LayerGeometry/LayerStack 严格校验）、`paths.py`（多 transition
+路径装配）、`world.py`（按物理 z 分组的 strict 2D + 真实 3D 世界）、`router.py`（阶段 2/3：
+单次升降比较全部 L2–L5、多次换层、bounded R&R）、`postpass.py`（阶段 4：已成功路线局部
+重新分层）、`validate_l3d.py`（独立三维验收器，拒绝未确认层高的正式验收）、
+`stats_l3d.py` / `plots_l3d.py`、`AUDIT_OLD_25D.md` / `SCHEMA_L3D.md` 等。
+
+修正模型探索性结果：flat-L1 基线 A 943 / B 515；主探索 A **963**（+20）、B **621**（+106）；
+compact/wide 敏感性 A 962–963、B 611；24/31 条 ≥3-transition 多次换层路线；
+8 项独立三维验收 exploratory PASS、0 违规；正式工艺验收因 L2–L5 高度未确认而拒绝。
+旧 R15 五层 985/723 与 R40 五层 820/383 属旧错误模型，仅作历史记录、不可混用。
+详见 [完整报告](../../../docs/reports/four_side_1024_v2_l1l5_v01.md)、
+[产物目录](../outputs/four_side_1024_v2_l1l5_v01/)、
+[旧模型审计](l3d/AUDIT_OLD_25D.md)。

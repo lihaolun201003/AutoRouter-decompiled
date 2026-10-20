@@ -1,0 +1,536 @@
+{
+ "schema": "four_side_1024_v2_l1l5_plots_v1",
+ "tool": "four_side_1024.l3d.plots_l3d",
+ "generated_at": "2026-10-20T23:24:01+0800",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01",
+ "model": {
+  "name": "corrected_L1_L5_physical_model",
+  "interface_layer": {
+   "layer_id": 1,
+   "rows": {
+    "z1": 0.0,
+    "z2": 0.5
+   },
+   "note": "L1 contains BOTH port rows: z1 row 0.0 mm, z2 row 0.5 mm"
+  },
+  "routing_layers": {
+   "L2": 1.0,
+   "L3": 1.5,
+   "L4": 2.0,
+   "L5": 2.5
+  },
+  "provenance": "unconfirmed_simulation",
+  "provenance_note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+  "old_wrong_model": {
+   "description": "The old 2.5D model put z1 on L1 and z2 on L5 and treated the 0.5 mm interface-row spacing as the whole five-layer stack. Old counts are NOT comparable as process results.",
+   "old_25d_counts": {
+    "A": 985,
+    "B": 723
+   },
+   "comparable_as_process_results": false
+  }
+ },
+ "stack": {
+  "name": "medium_050",
+  "rows": {
+   "z1": 0.0,
+   "z2": 0.5
+  },
+  "routing": {
+   "2": 1.0,
+   "3": 1.5,
+   "4": 2.0,
+   "5": 2.5
+  },
+  "provenance": "unconfirmed_simulation",
+  "source": "layer_stacks/medium_050.json",
+  "defaulted": false
+ },
+ "style": {
+  "board_mm": 150.0,
+  "dpi": 200,
+  "radius_mm": 15.0,
+  "plane_colors": {
+   "z1": "#1565c0",
+   "z2": "#c62828"
+  },
+  "display_sagitta_mm": 0.005,
+  "display_sagitta_3d_mm": 0.02,
+  "labels": "English only (no CJK glyphs in figures)"
+ },
+ "runs": [
+  {
+   "label": "baseline_l1_A",
+   "scheme": "A",
+   "stage": "baseline_l1",
+   "max_transitions": 0,
+   "stack": "medium_050",
+   "provenance": "unconfirmed_simulation",
+   "routed": 943,
+   "failed": 81,
+   "total": 1024,
+   "per_row": {
+    "z1": 498,
+    "z2": 445
+   },
+   "n_transitions": 0,
+   "transition_histogram": {
+    "0": 943
+   },
+   "is_smoke": false,
+   "run_dir": "baseline/schemeA",
+   "routes_file": "baseline/schemeA/routes_l3d.json",
+   "routes_sha256": "b2b271a57e3c3e4c6d900bb3326435481ac74238577fcf78e238c8fd15cae183",
+   "transition_radii": []
+  },
+  {
+   "label": "baseline_l1_B",
+   "scheme": "B",
+   "stage": "baseline_l1",
+   "max_transitions": 0,
+   "stack": "medium_050",
+   "provenance": "unconfirmed_simulation",
+   "routed": 515,
+   "failed": 509,
+   "total": 1024,
+   "per_row": {
+    "z1": 184,
+    "z2": 331
+   },
+   "n_transitions": 0,
+   "transition_histogram": {
+    "0": 515
+   },
+   "is_smoke": false,
+   "run_dir": "baseline/schemeB",
+   "routes_file": "baseline/schemeB/routes_l3d.json",
+   "routes_sha256": "9ae7ecd4e725e36f45dc952050a7275dcfca0dc52d5a1a2ca8fef3efefab1cf2",
+   "transition_radii": []
+  },
+  {
+   "label": "multi_B",
+   "scheme": "B",
+   "stage": "multi",
+   "max_transitions": 0,
+   "stack": "medium_050",
+   "provenance": "unconfirmed_simulation",
+   "routed": 515,
+   "failed": 509,
+   "total": 1024,
+   "per_row": {
+    "z1": 184,
+    "z2": 331
+   },
+   "n_transitions": 0,
+   "transition_histogram": {
+    "0": 515
+   },
+   "is_smoke": false,
+   "run_dir": "demo_multi/schemeB/layers5_medium_050",
+   "routes_file": "demo_multi/schemeB/layers5_medium_050/routes_l3d.json",
+   "routes_sha256": "54a74acdbcf91d0a16ed53a02fd6054b77130a9580eb48955b9365e7f2a903f8",
+   "transition_radii": []
+  },
+  {
+   "label": "single+relayer_A",
+   "scheme": "A",
+   "stage": "single+relayer",
+   "max_transitions": 4,
+   "stack": "compact_025",
+   "provenance": "unconfirmed_simulation",
+   "routed": 962,
+   "failed": 62,
+   "total": 1024,
+   "per_row": {
+    "z1": 498,
+    "z2": 464
+   },
+   "n_transitions": 115,
+   "transition_histogram": {
+    "0": 919,
+    "2": 19,
+    "3": 19,
+    "4": 5
+   },
+   "is_smoke": false,
+   "run_dir": "l3d/schemeA/layers5_compact_025",
+   "routes_file": "l3d/schemeA/layers5_compact_025/routes_l3d.json",
+   "routes_sha256": "c50f49587d44ba2cf471393057e2bc75d34976f4fb311232342e4523d4927077",
+   "transition_radii": [
+    15.0
+   ]
+  },
+  {
+   "label": "full+relayer_A",
+   "scheme": "A",
+   "stage": "full+relayer",
+   "max_transitions": 4,
+   "stack": "medium_050",
+   "provenance": "unconfirmed_simulation",
+   "routed": 963,
+   "failed": 61,
+   "total": 1024,
+   "per_row": {
+    "z1": 498,
+    "z2": 465
+   },
+   "n_transitions": 117,
+   "transition_histogram": {
+    "0": 919,
+    "2": 20,
+    "3": 19,
+    "4": 5
+   },
+   "is_smoke": false,
+   "run_dir": "l3d/schemeA/layers5_medium_050",
+   "routes_file": "l3d/schemeA/layers5_medium_050/routes_l3d.json",
+   "routes_sha256": "a067cd9de5fe36eadda3c51bbbd4b3cf18304d0bffbcbe1c0ee70722e62dd0db",
+   "transition_radii": [
+    15.0
+   ]
+  },
+  {
+   "label": "single+relayer_A",
+   "scheme": "A",
+   "stage": "single+relayer",
+   "max_transitions": 4,
+   "stack": "wide_100",
+   "provenance": "unconfirmed_simulation",
+   "routed": 963,
+   "failed": 61,
+   "total": 1024,
+   "per_row": {
+    "z1": 498,
+    "z2": 465
+   },
+   "n_transitions": 117,
+   "transition_histogram": {
+    "0": 919,
+    "2": 20,
+    "3": 19,
+    "4": 5
+   },
+   "is_smoke": false,
+   "run_dir": "l3d/schemeA/layers5_wide_100",
+   "routes_file": "l3d/schemeA/layers5_wide_100/routes_l3d.json",
+   "routes_sha256": "b9843f823f1e53791b407af728478d9a8b91a349483ddbdcc8e5f61dc7fd9c81",
+   "transition_radii": [
+    15.0
+   ]
+  },
+  {
+   "label": "single+relayer_B",
+   "scheme": "B",
+   "stage": "single+relayer",
+   "max_transitions": 4,
+   "stack": "compact_025",
+   "provenance": "unconfirmed_simulation",
+   "routed": 611,
+   "failed": 413,
+   "total": 1024,
+   "per_row": {
+    "z1": 205,
+    "z2": 406
+   },
+   "n_transitions": 268,
+   "transition_histogram": {
+    "0": 491,
+    "2": 96,
+    "3": 20,
+    "4": 4
+   },
+   "is_smoke": false,
+   "run_dir": "l3d/schemeB/layers5_compact_025",
+   "routes_file": "l3d/schemeB/layers5_compact_025/routes_l3d.json",
+   "routes_sha256": "6cc3fa73f8faf7f4beff30a20fbf4ee7ee082d11a4ddc0c34b8d539c60434b1f",
+   "transition_radii": [
+    15.0
+   ]
+  },
+  {
+   "label": "full+relayer_B",
+   "scheme": "B",
+   "stage": "full+relayer",
+   "max_transitions": 4,
+   "stack": "medium_050",
+   "provenance": "unconfirmed_simulation",
+   "routed": 621,
+   "failed": 403,
+   "total": 1024,
+   "per_row": {
+    "z1": 211,
+    "z2": 410
+   },
+   "n_transitions": 298,
+   "transition_histogram": {
+    "0": 491,
+    "2": 99,
+    "3": 24,
+    "4": 7
+   },
+   "is_smoke": false,
+   "run_dir": "l3d/schemeB/layers5_medium_050",
+   "routes_file": "l3d/schemeB/layers5_medium_050/routes_l3d.json",
+   "routes_sha256": "b7cc2220100427e64ce9a68bc137732b1b5c8463bef243d4efc67a18f9df5dd5",
+   "transition_radii": [
+    15.0
+   ]
+  },
+  {
+   "label": "single+relayer_B",
+   "scheme": "B",
+   "stage": "single+relayer",
+   "max_transitions": 4,
+   "stack": "wide_100",
+   "provenance": "unconfirmed_simulation",
+   "routed": 611,
+   "failed": 413,
+   "total": 1024,
+   "per_row": {
+    "z1": 207,
+    "z2": 404
+   },
+   "n_transitions": 265,
+   "transition_histogram": {
+    "0": 491,
+    "2": 96,
+    "3": 23,
+    "4": 1
+   },
+   "is_smoke": false,
+   "run_dir": "l3d/schemeB/layers5_wide_100",
+   "routes_file": "l3d/schemeB/layers5_wide_100/routes_l3d.json",
+   "routes_sha256": "79e6d83bf19b5009176cbe594ac7bea976c5f3759b6220872a9530a1f2de8b0e",
+   "transition_radii": [
+    15.0
+   ]
+  }
+ ],
+ "files": [
+  {
+   "file": "comparison/a_vs_b_l3d.png",
+   "kind": "a_vs_b_l3d",
+   "run": "A, B",
+   "description": "A vs B routed counts and per-interface-row split for the corrected L1-L5 model",
+   "totals": {
+    "A": 963,
+    "B": 621
+   },
+   "per_row": {
+    "A": {
+     "z1": 498,
+     "z2": 465
+    },
+    "B": {
+     "z1": 211,
+     "z2": 410
+    }
+   }
+  },
+  {
+   "file": "comparison/old25d_vs_new_l3d.png",
+   "kind": "old25d_vs_new_l3d",
+   "run": null,
+   "description": "old wrong-model 2.5D counts (985/723) vs new corrected L3D counts - explicitly marked not comparable as process results",
+   "old_counts": {
+    "A": 985,
+    "B": 723
+   },
+   "old_source": {
+    "A": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeA\\layers5\\run_summary.json",
+    "B": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\run_summary.json"
+   },
+   "new_counts": {
+    "A": 963,
+    "B": 621
+   },
+   "comparable_as_process_results": false
+  },
+  {
+   "file": "comparison/plots_manifest.json",
+   "kind": "plots_manifest",
+   "run": null,
+   "description": "inventory of every figure generated by plots_l3d"
+  },
+  {
+   "file": "figures/example_multilayer_route.png",
+   "xz_file": "figures/example_multilayer_route_xz.png",
+   "kind": "example_multilayer_route",
+   "run": "full+relayer_A",
+   "description": "example route 519 with 4 transitions and layer sequence 1-2-3-5-1",
+   "route_id": 519,
+   "plane": "z2",
+   "layer_sequence": [
+    1,
+    2,
+    3,
+    5,
+    1
+   ],
+   "n_transitions": 4,
+   "length_mm": 262.829257
+  },
+  {
+   "file": "figures/example_multilayer_route_xz.png",
+   "kind": "example_multilayer_route_xz",
+   "run": "full+relayer_A",
+   "description": "XZ side view + elevation profile of the example multilayer route 519",
+   "route_id": 519
+  },
+  {
+   "file": "figures/full_1024_layout_3d.png",
+   "kind": "full_1024_layout_3d",
+   "run": "full+relayer_A",
+   "description": "plane-coloured 3D layout of 963 routed L1-L5 routes",
+   "z_exaggeration": 21.9
+  },
+  {
+   "file": "figures/full_1024_layout_height_colored.png",
+   "kind": "full_1024_layout_height_colored",
+   "run": "full+relayer_A",
+   "description": "height-coloured 3D layout of 963 routed L1-L5 routes",
+   "z_exaggeration": 21.9
+  },
+  {
+   "file": "figures/l1_interface_two_rows_zoom.png",
+   "kind": "l1_interface_two_rows_zoom",
+   "run": null,
+   "description": "3D local zoom of a 2x16 MPO connector showing L1 with both port rows (z1=0.0 mm, z2=0.5 mm) and the corrected interface-layer definition",
+   "connector": "N01",
+   "column_pitch_mm": 0.25,
+   "row_pitch_mm": 0.5,
+   "row1_z_mm": 0.0,
+   "row2_z_mm": 0.5
+  },
+  {
+   "file": "figures/layer_L1_routing.png",
+   "kind": "layer_routing_map",
+   "run": "full+relayer_A",
+   "layer_id": 1,
+   "description": "XY routing map of all flat parts on logical layer L1 (963 routes use it)",
+   "routes_using_layer": 963,
+   "flat_parts": 1007,
+   "physical_z": {
+    "z1": 0.0,
+    "z2": 0.5
+   }
+  },
+  {
+   "file": "figures/layer_L2.png",
+   "kind": "layer_routing_map",
+   "run": "full+relayer_A",
+   "layer_id": 2,
+   "description": "XY routing map of all flat parts on logical layer L2 (37 routes use it)",
+   "routes_using_layer": 37,
+   "flat_parts": 37,
+   "physical_z": 1.0
+  },
+  {
+   "file": "figures/layer_L3.png",
+   "kind": "layer_routing_map",
+   "run": "full+relayer_A",
+   "layer_id": 3,
+   "description": "XY routing map of all flat parts on logical layer L3 (24 routes use it)",
+   "routes_using_layer": 24,
+   "flat_parts": 24,
+   "physical_z": 1.5
+  },
+  {
+   "file": "figures/layer_L4.png",
+   "kind": "layer_routing_map",
+   "run": "full+relayer_A",
+   "layer_id": 4,
+   "description": "XY routing map of all flat parts on logical layer L4 (4 routes use it)",
+   "routes_using_layer": 4,
+   "flat_parts": 4,
+   "physical_z": 2.0
+  },
+  {
+   "file": "figures/layer_L5.png",
+   "kind": "layer_routing_map",
+   "run": "full+relayer_A",
+   "layer_id": 5,
+   "description": "XY routing map of all flat parts on logical layer L5 (8 routes use it)",
+   "routes_using_layer": 8,
+   "flat_parts": 8,
+   "physical_z": 2.5
+  },
+  {
+   "file": "figures/layer_stack_physical_heights.png",
+   "kind": "layer_stack_physical_heights",
+   "run": null,
+   "description": "logical layer id axis vs physical z axis; L1 has both port rows, L2-L5 are exploratory routing heights (unconfirmed_simulation)",
+   "stack_name": "medium_050",
+   "stack": {
+    "rows": {
+     "z1": 0.0,
+     "z2": 0.5
+    },
+    "routing": {
+     "2": 1.0,
+     "3": 1.5,
+     "4": 2.0,
+     "5": 2.5
+    }
+   },
+   "provenance": "unconfirmed_simulation"
+  },
+  {
+   "file": "figures/per_layer_counts_and_transitions.png",
+   "kind": "per_layer_counts_and_transitions",
+   "run": "full+relayer_A, full+relayer_B",
+   "description": "routes per logical layer, transitions-per-route histogram and layer-sequence histogram",
+   "layer_route_counts": {
+    "L1": 1584,
+    "L2": 94,
+    "L3": 63,
+    "L4": 45,
+    "L5": 39
+   },
+   "transition_histogram": {
+    "0": 1410,
+    "2": 119,
+    "3": 43,
+    "4": 12
+   },
+   "top_layer_sequences": [
+    [
+     "1",
+     1410
+    ],
+    [
+     "1-2-1",
+     43
+    ],
+    [
+     "1-4-1",
+     33
+    ],
+    [
+     "1-2-3-1",
+     25
+    ],
+    [
+     "1-5-1",
+     23
+    ],
+    [
+     "1-3-1",
+     20
+    ],
+    [
+     "1-3-2-1",
+     6
+    ],
+    [
+     "1-5-3-2-1",
+     5
+    ]
+   ]
+  }
+ ],
+ "caveats": [
+  "scheme A: 4 runs found; using full+relayer_A (963 routed, stage full+relayer) for the main figures; all runs are listed in the manifest",
+  "scheme B: 5 runs found; using full+relayer_B (621 routed, stage full+relayer) for the main figures; all runs are listed in the manifest"
+ ]
+}

@@ -1,0 +1,2318 @@
+{
+ "schema": "four_side_1024_v2_l3d_validation_summary_v1",
+ "title": "独立三维验收报告 — corrected L1–L5 physical layer model (R9)",
+ "validator": "four_side_1024.l3d.validate_l3d",
+ "generated_utc": "2026-10-20T15:26:15Z",
+ "root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01",
+ "formal_acceptance": false,
+ "formal_acceptance_reason": "L2-L5 physical heights are exploratory unconfirmed_simulation parameters (SCHEMA_L3D.md §1); formal process acceptance is refused for every payload. Only exploratory geometry verdicts are reported.",
+ "verdict": "exploratory_pass",
+ "process": {
+  "radius_mm": 15.0,
+  "min_curvature_radius_mm": 14.985,
+  "centerline_clearance_mm": 0.08,
+  "waveguide_width_mm": 0.05,
+  "board_mm": [
+   150.0,
+   150.0
+  ],
+  "interface_rows_mm": {
+   "z1": 0.0,
+   "z2": 0.5
+  }
+ },
+ "aggregate": {
+  "items_validated": 8,
+  "all_exploratory_pass": true,
+  "all_geometry_pass": true,
+  "all_violation_counters_zero": true,
+  "any_formal_acceptance": false,
+  "all_unconfirmed_provenance": true,
+  "all_layer_stacks_valid": true,
+  "exit_code_with_allow_exploratory": {
+   "baseline/schemeA": 0,
+   "baseline/schemeB": 0,
+   "l3d/schemeA/layers5_medium_050": 0,
+   "l3d/schemeA/layers5_compact_025": 0,
+   "l3d/schemeA/layers5_wide_100": 0,
+   "l3d/schemeB/layers5_medium_050": 0,
+   "l3d/schemeB/layers5_compact_025": 0,
+   "l3d/schemeB/layers5_wide_100": 0
+  },
+  "all_exit_codes_zero_with_allow": true,
+  "all_ten_checks_pass": true,
+  "total_routed": 6189,
+  "total_failed": 2003,
+  "total_lifted": 501,
+  "total_transitions": 1180,
+  "total_at_least_3_transitions": 151,
+  "total_relayered_routes": 144,
+  "items_with_pre_existing_at_least_3_transitions": [
+   "l3d/schemeB/layers5_medium_050"
+  ],
+  "min_curvature_radius_mm": 14.999999961,
+  "min_3d_clearance_mm": 0.08,
+  "min_transition_vs_flat_mm": 0.09153962,
+  "min_transition_vs_transition_mm": 0.081737754,
+  "same_plane_crossings_total": 749141,
+  "process": {
+   "radius_mm": 15.0,
+   "min_curvature_radius_mm": 14.985,
+   "centerline_clearance_mm": 0.08,
+   "waveguide_width_mm": 0.05,
+   "board_mm": [
+    150.0,
+    150.0
+   ],
+   "interface_rows_mm": {
+    "z1": 0.0,
+    "z2": 0.5
+   }
+  }
+ },
+ "ten_checks": [
+  {
+   "check": 1,
+   "requirement": "L1 is the interface layer and contains BOTH port rows (z1=0.0 mm, z2=0.5 mm)",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 2,
+   "requirement": "Two same-column ports of the two rows keep their 0.5 mm real 3D distance",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 3,
+   "requirement": "Every route starts/ends exactly on a correct L1 port with the correct row z",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 4,
+   "requirement": "Transitions L1->L2..L5 are legal (R=15, theta/footprint/length from dz, endpoints and horizontal tangent continuity)",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 5,
+   "requirement": "Intermediate-layer / multiple / multi-layer transitions are legal and every layer pair is allowed by the symmetric allowed_transitions graph",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 6,
+   "requirement": "Full 3D curvature: path sampled at <=0.02 mm, min circumradius >= 14.985 mm; flat arcs exactly R=15, lines axis-aligned, transitions analytic R=15",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 7,
+   "requirement": "Transitions / other-layer parts vs L1 row flats: true 3D distance >= 0.08 mm (no crossing exemption across different physical z)",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 8,
+   "requirement": "Same logical layer but different physical height is checked in real 3D; same physical z planar pairs use the frozen strict 2D rules (legal crossings only)",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 9,
+   "requirement": "layer_id is never used as a z coordinate (same layer_id with different z -> distinct planes; different layer_ids at close z -> still checked/rejected)",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  },
+  {
+   "check": 10,
+   "requirement": "Unconfirmed / invalid L2-L5 heights refuse formal acceptance (status=exploratory_only, formal_acceptance=false)",
+   "status": "pass",
+   "items_passed": 8,
+   "items_total": 8
+  }
+ ],
+ "items": [
+  {
+   "id": "baseline/schemeA",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\baseline\\schemeA\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\baseline\\schemeA\\validation\\routes_l3d.validation.json",
+   "scheme": "A",
+   "layer_stack_name": "L1 baseline",
+   "stage": "baseline_l1",
+   "relayered": false,
+   "routed": 943,
+   "failed": 81,
+   "lifted": 0,
+   "transitions": 0,
+   "relayer": null,
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 943,
+     "2": 0,
+     "3": 0,
+     "4+": 0
+    },
+    "histogram_exact": {
+     "0": 943
+    },
+    "at_least_3_transitions": 0,
+    "multi_layer_routes_min_3_layers": 0,
+    "layer_sequence_histogram": {}
+   },
+   "interface_transitions": 0,
+   "intermediate_transitions": 0,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.080295032,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.080295032,
+   "transition_vs_flat_min_mm": null,
+   "transition_vs_transition_min_mm": null,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "crossings": 69072,
+     "min_non_crossing_centerline_mm": 0.080295032,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 445,
+     "routes": 445,
+     "crossings": 67110,
+     "min_non_crossing_centerline_mm": 0.083271974,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 136182,
+   "cross_plane_plane_pairs": 1,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 445,
+     "routes": 445,
+     "label": "L1"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 21.45
+  },
+  {
+   "id": "baseline/schemeB",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\baseline\\schemeB\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\baseline\\schemeB\\validation\\routes_l3d.validation.json",
+   "scheme": "B",
+   "layer_stack_name": "L1 baseline",
+   "stage": "baseline_l1",
+   "relayered": false,
+   "routed": 515,
+   "failed": 509,
+   "lifted": 0,
+   "transitions": 0,
+   "relayer": null,
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 515,
+     "2": 0,
+     "3": 0,
+     "4+": 0
+    },
+    "histogram_exact": {
+     "0": 515
+    },
+    "at_least_3_transitions": 0,
+    "multi_layer_routes_min_3_layers": 0,
+    "layer_sequence_histogram": {}
+   },
+   "interface_transitions": 0,
+   "intermediate_transitions": 0,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.08,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.08,
+   "transition_vs_flat_min_mm": null,
+   "transition_vs_transition_min_mm": null,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 184,
+     "routes": 184,
+     "crossings": 13342,
+     "min_non_crossing_centerline_mm": 0.094654426,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 331,
+     "routes": 331,
+     "crossings": 40842,
+     "min_non_crossing_centerline_mm": 0.08,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 54184,
+   "cross_plane_plane_pairs": 1,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 184,
+     "routes": 184,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 331,
+     "routes": 331,
+     "label": "L1"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 13.234
+  },
+  {
+   "id": "l3d/schemeA/layers5_medium_050",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeA\\layers5_medium_050\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeA\\layers5_medium_050\\validation\\routes_l3d.validation.json",
+   "scheme": "A",
+   "layer_stack_name": "medium_050",
+   "stage": "full+relayer",
+   "relayered": true,
+   "routed": 963,
+   "failed": 61,
+   "lifted": 44,
+   "transitions": 117,
+   "relayer": {
+    "role": "stage4_local_relayering",
+    "reported_relayered": 24,
+    "relayered_list_size": 24,
+    "relayered_n_transitions_histogram": {
+     "3": 19,
+     "4": 5
+    },
+    "pre_existing_at_least_3_transitions": 0
+   },
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 919,
+     "2": 20,
+     "3": 19,
+     "4+": 5
+    },
+    "histogram_exact": {
+     "0": 919,
+     "2": 20,
+     "3": 19,
+     "4": 5
+    },
+    "at_least_3_transitions": 24,
+    "multi_layer_routes_min_3_layers": 24,
+    "layer_sequence_histogram": {
+     "1->2->1": 14,
+     "1->2->3->1": 14,
+     "1->2->3->5->1": 2,
+     "1->2->4->5->1": 1,
+     "1->2->5->1": 1,
+     "1->3->1": 4,
+     "1->3->2->1": 1,
+     "1->3->4->1": 1,
+     "1->4->1": 1,
+     "1->4->2->1": 1,
+     "1->5->1": 1,
+     "1->5->2->1": 1,
+     "1->5->3->2->1": 2
+    }
+   },
+   "interface_transitions": 88,
+   "intermediate_transitions": 29,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.080295032,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.080295032,
+   "transition_vs_flat_min_mm": 0.092376301,
+   "transition_vs_transition_min_mm": 0.087864165,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [
+    15.0
+   ],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "crossings": 69072,
+     "min_non_crossing_centerline_mm": 0.080295032,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 509,
+     "routes": 465,
+     "crossings": 62111,
+     "min_non_crossing_centerline_mm": 0.083271974,
+     "violations": 0
+    },
+    {
+     "plane": "L2 @z=1.0",
+     "z_mm": 1.0,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 37,
+     "routes": 37,
+     "crossings": 221,
+     "min_non_crossing_centerline_mm": 0.723621649,
+     "violations": 0
+    },
+    {
+     "plane": "L3 @z=1.5",
+     "z_mm": 1.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 24,
+     "routes": 24,
+     "crossings": 56,
+     "min_non_crossing_centerline_mm": 1.697174101,
+     "violations": 0
+    },
+    {
+     "plane": "L4 @z=2.0",
+     "z_mm": 2.0,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 4,
+     "routes": 4,
+     "crossings": 0,
+     "min_non_crossing_centerline_mm": 2.930487641,
+     "violations": 0
+    },
+    {
+     "plane": "L5 @z=2.5",
+     "z_mm": 2.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 8,
+     "routes": 8,
+     "crossings": 6,
+     "min_non_crossing_centerline_mm": 2.553641648,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 131466,
+   "cross_plane_plane_pairs": 15,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 509,
+     "routes": 465,
+     "label": "L1"
+    },
+    {
+     "z_mm": 1.0,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 37,
+     "routes": 37,
+     "label": "L2"
+    },
+    {
+     "z_mm": 1.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 24,
+     "routes": 24,
+     "label": "L3"
+    },
+    {
+     "z_mm": 2.0,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 4,
+     "routes": 4,
+     "label": "L4"
+    },
+    {
+     "z_mm": 2.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 8,
+     "routes": 8,
+     "label": "L5"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2,
+     "L2": 1,
+     "L3": 1,
+     "L4": 1,
+     "L5": 1
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 17.914
+  },
+  {
+   "id": "l3d/schemeA/layers5_compact_025",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeA\\layers5_compact_025\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeA\\layers5_compact_025\\validation\\routes_l3d.validation.json",
+   "scheme": "A",
+   "layer_stack_name": "compact_025",
+   "stage": "single+relayer",
+   "relayered": true,
+   "routed": 962,
+   "failed": 62,
+   "lifted": 43,
+   "transitions": 115,
+   "relayer": {
+    "role": "stage4_local_relayering",
+    "reported_relayered": 24,
+    "relayered_list_size": 24,
+    "relayered_n_transitions_histogram": {
+     "3": 19,
+     "4": 5
+    },
+    "pre_existing_at_least_3_transitions": 0
+   },
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 919,
+     "2": 19,
+     "3": 19,
+     "4+": 5
+    },
+    "histogram_exact": {
+     "0": 919,
+     "2": 19,
+     "3": 19,
+     "4": 5
+    },
+    "at_least_3_transitions": 24,
+    "multi_layer_routes_min_3_layers": 24,
+    "layer_sequence_histogram": {
+     "1->2->1": 14,
+     "1->2->3->1": 8,
+     "1->2->3->5->1": 2,
+     "1->2->5->1": 4,
+     "1->3->1": 4,
+     "1->3->5->1": 5,
+     "1->4->1": 1,
+     "1->4->5->1": 1,
+     "1->5->3->1": 1,
+     "1->5->3->2->1": 3
+    }
+   },
+   "interface_transitions": 86,
+   "intermediate_transitions": 29,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.080295032,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.080295032,
+   "transition_vs_flat_min_mm": 0.092377317,
+   "transition_vs_transition_min_mm": 0.093914589,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [
+    15.0
+   ],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "crossings": 69072,
+     "min_non_crossing_centerline_mm": 0.080295032,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 507,
+     "routes": 464,
+     "crossings": 61494,
+     "min_non_crossing_centerline_mm": 0.083271974,
+     "violations": 0
+    },
+    {
+     "plane": "L2 @z=0.75",
+     "z_mm": 0.75,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 31,
+     "routes": 31,
+     "crossings": 230,
+     "min_non_crossing_centerline_mm": 0.723621649,
+     "violations": 0
+    },
+    {
+     "plane": "L3 @z=1.0",
+     "z_mm": 1.0,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 23,
+     "routes": 23,
+     "crossings": 83,
+     "min_non_crossing_centerline_mm": 5.742758011,
+     "violations": 0
+    },
+    {
+     "plane": "L4 @z=1.25",
+     "z_mm": 1.25,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 2,
+     "routes": 2,
+     "crossings": 0,
+     "min_non_crossing_centerline_mm": null,
+     "violations": 0
+    },
+    {
+     "plane": "L5 @z=1.5",
+     "z_mm": 1.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 16,
+     "routes": 16,
+     "crossings": 6,
+     "min_non_crossing_centerline_mm": null,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 130885,
+   "cross_plane_plane_pairs": 15,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 507,
+     "routes": 464,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.75,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 31,
+     "routes": 31,
+     "label": "L2"
+    },
+    {
+     "z_mm": 1.0,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 23,
+     "routes": 23,
+     "label": "L3"
+    },
+    {
+     "z_mm": 1.25,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 2,
+     "routes": 2,
+     "label": "L4"
+    },
+    {
+     "z_mm": 1.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 16,
+     "routes": 16,
+     "label": "L5"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2,
+     "L2": 1,
+     "L3": 1,
+     "L4": 1,
+     "L5": 1
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 17.608
+  },
+  {
+   "id": "l3d/schemeA/layers5_wide_100",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeA\\layers5_wide_100\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeA\\layers5_wide_100\\validation\\routes_l3d.validation.json",
+   "scheme": "A",
+   "layer_stack_name": "wide_100",
+   "stage": "single+relayer",
+   "relayered": true,
+   "routed": 963,
+   "failed": 61,
+   "lifted": 44,
+   "transitions": 117,
+   "relayer": {
+    "role": "stage4_local_relayering",
+    "reported_relayered": 24,
+    "relayered_list_size": 24,
+    "relayered_n_transitions_histogram": {
+     "3": 19,
+     "4": 5
+    },
+    "pre_existing_at_least_3_transitions": 0
+   },
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 919,
+     "2": 20,
+     "3": 19,
+     "4+": 5
+    },
+    "histogram_exact": {
+     "0": 919,
+     "2": 20,
+     "3": 19,
+     "4": 5
+    },
+    "at_least_3_transitions": 24,
+    "multi_layer_routes_min_3_layers": 24,
+    "layer_sequence_histogram": {
+     "1->2->1": 12,
+     "1->2->3->1": 1,
+     "1->2->3->5->1": 2,
+     "1->2->5->1": 1,
+     "1->3->1": 6,
+     "1->3->2->1": 3,
+     "1->3->5->1": 5,
+     "1->4->1": 2,
+     "1->4->2->1": 1,
+     "1->4->3->1": 1,
+     "1->4->5->1": 2,
+     "1->5->2->1": 2,
+     "1->5->3->1": 2,
+     "1->5->3->2->1": 2,
+     "1->5->4->1": 1,
+     "1->5->4->2->1": 1
+    }
+   },
+   "interface_transitions": 88,
+   "intermediate_transitions": 29,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.080295032,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.080295032,
+   "transition_vs_flat_min_mm": 0.092377654,
+   "transition_vs_transition_min_mm": 0.088278149,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [
+    15.0
+   ],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "crossings": 69072,
+     "min_non_crossing_centerline_mm": 0.080295032,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 509,
+     "routes": 465,
+     "crossings": 63267,
+     "min_non_crossing_centerline_mm": 0.083271974,
+     "violations": 0
+    },
+    {
+     "plane": "L2 @z=1.5",
+     "z_mm": 1.5,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 25,
+     "routes": 25,
+     "crossings": 120,
+     "min_non_crossing_centerline_mm": 1.827641298,
+     "violations": 0
+    },
+    {
+     "plane": "L3 @z=2.5",
+     "z_mm": 2.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 22,
+     "routes": 22,
+     "crossings": 82,
+     "min_non_crossing_centerline_mm": 1.678429265,
+     "violations": 0
+    },
+    {
+     "plane": "L4 @z=3.5",
+     "z_mm": 3.5,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 8,
+     "routes": 8,
+     "crossings": 4,
+     "min_non_crossing_centerline_mm": null,
+     "violations": 0
+    },
+    {
+     "plane": "L5 @z=4.5",
+     "z_mm": 4.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 18,
+     "routes": 18,
+     "crossings": 2,
+     "min_non_crossing_centerline_mm": null,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 132547,
+   "cross_plane_plane_pairs": 15,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 498,
+     "routes": 498,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 509,
+     "routes": 465,
+     "label": "L1"
+    },
+    {
+     "z_mm": 1.5,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 25,
+     "routes": 25,
+     "label": "L2"
+    },
+    {
+     "z_mm": 2.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 22,
+     "routes": 22,
+     "label": "L3"
+    },
+    {
+     "z_mm": 3.5,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 8,
+     "routes": 8,
+     "label": "L4"
+    },
+    {
+     "z_mm": 4.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 18,
+     "routes": 18,
+     "label": "L5"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2,
+     "L2": 1,
+     "L3": 1,
+     "L4": 1,
+     "L5": 1
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 17.791
+  },
+  {
+   "id": "l3d/schemeB/layers5_medium_050",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_medium_050\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_medium_050\\validation\\routes_l3d.validation.json",
+   "scheme": "B",
+   "layer_stack_name": "medium_050",
+   "stage": "full+relayer",
+   "relayered": true,
+   "routed": 621,
+   "failed": 403,
+   "lifted": 130,
+   "transitions": 298,
+   "relayer": {
+    "role": "stage4_local_relayering",
+    "reported_relayered": 24,
+    "relayered_list_size": 24,
+    "relayered_n_transitions_histogram": {
+     "3": 20,
+     "4": 4
+    },
+    "pre_existing_at_least_3_transitions": 7
+   },
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 491,
+     "2": 99,
+     "3": 24,
+     "4+": 7
+    },
+    "histogram_exact": {
+     "0": 491,
+     "2": 99,
+     "3": 24,
+     "4": 7
+    },
+    "at_least_3_transitions": 31,
+    "multi_layer_routes_min_3_layers": 31,
+    "layer_sequence_histogram": {
+     "1->2->1": 29,
+     "1->2->3->1": 11,
+     "1->2->3->5->1": 2,
+     "1->2->4->1": 2,
+     "1->3->1": 16,
+     "1->3->2->1": 5,
+     "1->3->5->1": 1,
+     "1->4->1": 32,
+     "1->4->2->1": 3,
+     "1->4->3->1": 1,
+     "1->4->5->1": 1,
+     "1->5->1": 22,
+     "1->5->3->2->1": 3,
+     "1->5->4->2->1": 2
+    }
+   },
+   "interface_transitions": 260,
+   "intermediate_transitions": 38,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.08,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.08,
+   "transition_vs_flat_min_mm": 0.094940178,
+   "transition_vs_transition_min_mm": 0.082218975,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [
+    15.0
+   ],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 238,
+     "routes": 211,
+     "crossings": 13864,
+     "min_non_crossing_centerline_mm": 0.094654426,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 513,
+     "routes": 410,
+     "crossings": 39988,
+     "min_non_crossing_centerline_mm": 0.08,
+     "violations": 0
+    },
+    {
+     "plane": "L2 @z=1.0",
+     "z_mm": 1.0,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 57,
+     "routes": 57,
+     "crossings": 518,
+     "min_non_crossing_centerline_mm": 0.207614934,
+     "violations": 0
+    },
+    {
+     "plane": "L3 @z=1.5",
+     "z_mm": 1.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 39,
+     "routes": 39,
+     "crossings": 296,
+     "min_non_crossing_centerline_mm": 0.125777998,
+     "violations": 0
+    },
+    {
+     "plane": "L4 @z=2.0",
+     "z_mm": 2.0,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 41,
+     "routes": 41,
+     "crossings": 811,
+     "min_non_crossing_centerline_mm": 0.252049043,
+     "violations": 0
+    },
+    {
+     "plane": "L5 @z=2.5",
+     "z_mm": 2.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 31,
+     "routes": 31,
+     "crossings": 354,
+     "min_non_crossing_centerline_mm": 0.836542747,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 55831,
+   "cross_plane_plane_pairs": 15,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 238,
+     "routes": 211,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 513,
+     "routes": 410,
+     "label": "L1"
+    },
+    {
+     "z_mm": 1.0,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 57,
+     "routes": 57,
+     "label": "L2"
+    },
+    {
+     "z_mm": 1.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 39,
+     "routes": 39,
+     "label": "L3"
+    },
+    {
+     "z_mm": 2.0,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 41,
+     "routes": 41,
+     "label": "L4"
+    },
+    {
+     "z_mm": 2.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 31,
+     "routes": 31,
+     "label": "L5"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2,
+     "L2": 1,
+     "L3": 1,
+     "L4": 1,
+     "L5": 1
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 17.275
+  },
+  {
+   "id": "l3d/schemeB/layers5_compact_025",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_compact_025\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_compact_025\\validation\\routes_l3d.validation.json",
+   "scheme": "B",
+   "layer_stack_name": "compact_025",
+   "stage": "single+relayer",
+   "relayered": true,
+   "routed": 611,
+   "failed": 413,
+   "lifted": 120,
+   "transitions": 268,
+   "relayer": {
+    "role": "stage4_local_relayering",
+    "reported_relayered": 24,
+    "relayered_list_size": 24,
+    "relayered_n_transitions_histogram": {
+     "3": 20,
+     "4": 4
+    },
+    "pre_existing_at_least_3_transitions": 0
+   },
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 491,
+     "2": 96,
+     "3": 20,
+     "4+": 4
+    },
+    "histogram_exact": {
+     "0": 491,
+     "2": 96,
+     "3": 20,
+     "4": 4
+    },
+    "at_least_3_transitions": 24,
+    "multi_layer_routes_min_3_layers": 24,
+    "layer_sequence_histogram": {
+     "1->2->1": 51,
+     "1->2->3->1": 1,
+     "1->2->4->1": 1,
+     "1->2->5->1": 2,
+     "1->3->1": 18,
+     "1->3->2->1": 9,
+     "1->3->5->1": 1,
+     "1->4->1": 15,
+     "1->4->5->1": 1,
+     "1->5->1": 12,
+     "1->5->2->1": 3,
+     "1->5->3->2->1": 3,
+     "1->5->4->1": 2,
+     "1->5->4->2->1": 1
+    }
+   },
+   "interface_transitions": 240,
+   "intermediate_transitions": 28,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.08,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.08,
+   "transition_vs_flat_min_mm": 0.09153962,
+   "transition_vs_transition_min_mm": 0.083268397,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [
+    15.0
+   ],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 226,
+     "routes": 205,
+     "crossings": 13350,
+     "min_non_crossing_centerline_mm": 0.094654426,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 505,
+     "routes": 406,
+     "crossings": 38207,
+     "min_non_crossing_centerline_mm": 0.08,
+     "violations": 0
+    },
+    {
+     "plane": "L2 @z=0.75",
+     "z_mm": 0.75,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 71,
+     "routes": 71,
+     "crossings": 1996,
+     "min_non_crossing_centerline_mm": 0.252049043,
+     "violations": 0
+    },
+    {
+     "plane": "L3 @z=1.0",
+     "z_mm": 1.0,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 32,
+     "routes": 32,
+     "crossings": 206,
+     "min_non_crossing_centerline_mm": 0.31609366,
+     "violations": 0
+    },
+    {
+     "plane": "L4 @z=1.25",
+     "z_mm": 1.25,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 20,
+     "routes": 20,
+     "crossings": 212,
+     "min_non_crossing_centerline_mm": 0.221225984,
+     "violations": 0
+    },
+    {
+     "plane": "L5 @z=1.5",
+     "z_mm": 1.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 25,
+     "routes": 25,
+     "crossings": 166,
+     "min_non_crossing_centerline_mm": 0.087655691,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 54137,
+   "cross_plane_plane_pairs": 15,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 226,
+     "routes": 205,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 505,
+     "routes": 406,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.75,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 71,
+     "routes": 71,
+     "label": "L2"
+    },
+    {
+     "z_mm": 1.0,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 32,
+     "routes": 32,
+     "label": "L3"
+    },
+    {
+     "z_mm": 1.25,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 20,
+     "routes": 20,
+     "label": "L4"
+    },
+    {
+     "z_mm": 1.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 25,
+     "routes": 25,
+     "label": "L5"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2,
+     "L2": 1,
+     "L3": 1,
+     "L4": 1,
+     "L5": 1
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 11.809
+  },
+  {
+   "id": "l3d/schemeB/layers5_wide_100",
+   "routes_file": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_wide_100\\routes_l3d.json",
+   "validation_report": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_wide_100\\validation\\routes_l3d.validation.json",
+   "scheme": "B",
+   "layer_stack_name": "wide_100",
+   "stage": "single+relayer",
+   "relayered": true,
+   "routed": 611,
+   "failed": 413,
+   "lifted": 120,
+   "transitions": 265,
+   "relayer": {
+    "role": "stage4_local_relayering",
+    "reported_relayered": 24,
+    "relayered_list_size": 24,
+    "relayered_n_transitions_histogram": {
+     "3": 23,
+     "4": 1
+    },
+    "pre_existing_at_least_3_transitions": 0
+   },
+   "transition_statistics": {
+    "histogram_0_2_3_4plus": {
+     "0": 491,
+     "2": 96,
+     "3": 23,
+     "4+": 1
+    },
+    "histogram_exact": {
+     "0": 491,
+     "2": 96,
+     "3": 23,
+     "4": 1
+    },
+    "at_least_3_transitions": 24,
+    "multi_layer_routes_min_3_layers": 24,
+    "layer_sequence_histogram": {
+     "1->2->1": 21,
+     "1->2->3->1": 3,
+     "1->2->4->1": 2,
+     "1->2->5->1": 2,
+     "1->3->1": 51,
+     "1->3->4->1": 1,
+     "1->3->5->1": 6,
+     "1->4->1": 15,
+     "1->4->2->1": 3,
+     "1->4->5->1": 1,
+     "1->5->1": 9,
+     "1->5->2->1": 1,
+     "1->5->3->1": 2,
+     "1->5->4->1": 2,
+     "1->5->4->2->1": 1
+    }
+   },
+   "interface_transitions": 240,
+   "intermediate_transitions": 25,
+   "back_to_back_transitions": 0,
+   "min_curvature_radius_mm": 14.999999961,
+   "curvature_limit_mm": 14.985,
+   "min_3d_clearance_mm": 0.08,
+   "min_3d_clearance_bound": "measured",
+   "min_flat_flat_same_plane_mm": 0.08,
+   "transition_vs_flat_min_mm": 0.093916137,
+   "transition_vs_transition_min_mm": 0.081737754,
+   "min_self_clearance_mm": null,
+   "flat_arc_radius_values": [
+    15.0
+   ],
+   "transition_radius_values": [
+    15.0
+   ],
+   "same_plane_crossings": [
+    {
+     "plane": "L1 row z1 @z=0.0",
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 230,
+     "routes": 207,
+     "crossings": 13402,
+     "min_non_crossing_centerline_mm": 0.094654426,
+     "violations": 0
+    },
+    {
+     "plane": "L1 row z2 @z=0.5",
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 501,
+     "routes": 404,
+     "crossings": 38324,
+     "min_non_crossing_centerline_mm": 0.08,
+     "violations": 0
+    },
+    {
+     "plane": "L2 @z=1.5",
+     "z_mm": 1.5,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 33,
+     "routes": 33,
+     "crossings": 342,
+     "min_non_crossing_centerline_mm": 0.421242989,
+     "violations": 0
+    },
+    {
+     "plane": "L3 @z=2.5",
+     "z_mm": 2.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 63,
+     "routes": 63,
+     "crossings": 1579,
+     "min_non_crossing_centerline_mm": 0.252049043,
+     "violations": 0
+    },
+    {
+     "plane": "L4 @z=3.5",
+     "z_mm": 3.5,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 25,
+     "routes": 25,
+     "crossings": 210,
+     "min_non_crossing_centerline_mm": 2.923448329,
+     "violations": 0
+    },
+    {
+     "plane": "L5 @z=4.5",
+     "z_mm": 4.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 24,
+     "routes": 24,
+     "crossings": 52,
+     "min_non_crossing_centerline_mm": 1.445349418,
+     "violations": 0
+    }
+   ],
+   "same_plane_crossings_total": 53909,
+   "cross_plane_plane_pairs": 15,
+   "cross_plane_violations": 0,
+   "physical_planes": [
+    {
+     "z_mm": 0.0,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z1"
+     ],
+     "parts": 230,
+     "routes": 207,
+     "label": "L1"
+    },
+    {
+     "z_mm": 0.5,
+     "layer_ids": [
+      1
+     ],
+     "interface_rows": [
+      "z2"
+     ],
+     "parts": 501,
+     "routes": 404,
+     "label": "L1"
+    },
+    {
+     "z_mm": 1.5,
+     "layer_ids": [
+      2
+     ],
+     "interface_rows": [],
+     "parts": 33,
+     "routes": 33,
+     "label": "L2"
+    },
+    {
+     "z_mm": 2.5,
+     "layer_ids": [
+      3
+     ],
+     "interface_rows": [],
+     "parts": 63,
+     "routes": 63,
+     "label": "L3"
+    },
+    {
+     "z_mm": 3.5,
+     "layer_ids": [
+      4
+     ],
+     "interface_rows": [],
+     "parts": 25,
+     "routes": 25,
+     "label": "L4"
+    },
+    {
+     "z_mm": 4.5,
+     "layer_ids": [
+      5
+     ],
+     "interface_rows": [],
+     "parts": 24,
+     "routes": 24,
+     "label": "L5"
+    }
+   ],
+   "layer_id_semantics": {
+    "same_layer_different_z_groups": {
+     "L1": 2,
+     "L2": 1,
+     "L3": 1,
+     "L4": 1,
+     "L5": 1
+    },
+    "different_layer_same_z_groups": 0
+   },
+   "port_model": {
+    "ok": true,
+    "pairs_checked": 1024,
+    "min_row_3d_distance_mm": 0.5
+   },
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "total_violations": 0,
+   "status": "exploratory_only",
+   "formal_acceptance": false,
+   "exploratory_pass": true,
+   "geometry_pass": true,
+   "exit_code": 0,
+   "provenance": "unconfirmed_simulation",
+   "layer_stack_valid": true,
+   "ten_checks": {
+    "1": {
+     "status": "pass",
+     "item": "layer_stack_L1_interface"
+    },
+    "2": {
+     "status": "pass",
+     "item": "port_rows_real_3d_separation"
+    },
+    "3": {
+     "status": "pass",
+     "item": "routes_start_end_on_L1_ports"
+    },
+    "4": {
+     "status": "pass",
+     "item": "transitions_from_interface"
+    },
+    "5": {
+     "status": "pass",
+     "item": "transitions_intermediate_multi"
+    },
+    "6": {
+     "status": "pass",
+     "item": "curvature_3d_min_radius"
+    },
+    "7": {
+     "status": "pass",
+     "item": "transition_vs_L1_clearance"
+    },
+    "8": {
+     "status": "pass",
+     "item": "same_plane_strict_and_cross_plane"
+    },
+    "9": {
+     "status": "pass",
+     "item": "layer_id_is_not_a_z_coordinate"
+    },
+    "10": {
+     "status": "pass",
+     "item": "formal_acceptance"
+    }
+   },
+   "runtime_seconds": 11.052
+  }
+ ],
+ "warnings": [],
+ "notes": [
+  "Every item was validated by rebuilding all geometry from the JSON parameters (transitions from dz/radius, flats from 2D primitives); no router flag or saved validation field was trusted.",
+  "The two baselines contain fixed L1 flats only (0 transitions); the six scheme/stack finals include real multi-transition/multi-layer routes after the stage-4 local re-layering (routed count unchanged).",
+  "Same physical-z flat pairs use the frozen strict 2D pair audit (legal crossing windows allowed); every transition-involved pair and every different-physical-z pair is checked in true 3D with no exemption.",
+  "Exit code with --allow-exploratory is 0 for every item; without the flag the validator returns 3 (formal refusal) for all items."
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "schema": "four_side_1024_v2_l3d_loss_parameters_v1",
+ "generated_utc": "2026-10-20T15:23:52Z",
+ "round": "R9_corrected_L1_L5",
+ "radius_mm": 15.0,
+ "guidance": "No loss coefficients are invented in this round. Only the propagation-loss experiment convention is listed as a known parameter; bend / crossing / interlayer losses are unknown and uncalibrated, and no total-loss conclusion is produced.",
+ "parameters": {
+  "propagation_loss": {
+   "parameter": "propagation_loss",
+   "value_db_per_cm": 0.05,
+   "status": "experimental_convention_not_measured",
+   "measured": false,
+   "source": "fslw.config experiment convention (not a measured value)",
+   "note": "length-only experiment convention; not a measured glass value"
+  },
+  "bend_loss": {
+   "parameter": "bend_loss",
+   "value_db": null,
+   "status": "unknown_uncalibrated",
+   "measured": false,
+   "source": "not available in this round",
+   "note": "no calibrated glass bend-loss function; R=15 mm is a geometry constraint only"
+  },
+  "crossing_loss": {
+   "parameter": "crossing_loss",
+   "value_db": null,
+   "status": "unknown_uncalibrated",
+   "measured": false,
+   "source": "not available in this round",
+   "note": "single-layer crossing optical feasibility not confirmed; crossing counts are geometric only"
+  },
+  "interlayer_loss": {
+   "parameter": "interlayer_loss",
+   "value_db": null,
+   "status": "unknown_uncalibrated",
+   "measured": false,
+   "source": "not available in this round",
+   "note": "multi-layer transitions and interlayer propagation effects are not calibrated"
+  }
+ },
+ "total_loss_conclusion": {
+  "produced": false,
+  "reason": "bend, crossing and interlayer coefficients are all unknown_uncalibrated; a total-loss number would require invented coefficients, so none is reported"
+ },
+ "layer_heights_unconfirmed": {
+  "status": "unconfirmed_simulation",
+  "note": "L2-L5 heights are exploratory simulation inputs, not confirmed process values; this also blocks formal process acceptance"
+ },
+ "geometric_inputs_only": {
+  "note": "lengths / arc counts / transition counts / crossing counts are reported as geometric inputs only and are deliberately NOT converted into total loss",
+  "runs": {
+   "A/compact_025": {
+    "routed": 962,
+    "total_3d_length_mm": 155904.96023,
+    "transitions": 115,
+    "crossings": null
+   },
+   "A/medium_050": {
+    "routed": 963,
+    "total_3d_length_mm": 156179.288068,
+    "transitions": 117,
+    "crossings": null
+   },
+   "A/wide_100": {
+    "routed": 963,
+    "total_3d_length_mm": 156202.851261,
+    "transitions": 117,
+    "crossings": null
+   },
+   "B/compact_025": {
+    "routed": 611,
+    "total_3d_length_mm": 113583.240946,
+    "transitions": 268,
+    "crossings": null
+   },
+   "B/medium_050": {
+    "routed": 621,
+    "total_3d_length_mm": 116731.50066,
+    "transitions": 298,
+    "crossings": null
+   },
+   "B/wide_100": {
+    "routed": 611,
+    "total_3d_length_mm": 113192.032029,
+    "transitions": 265,
+    "crossings": null
+   }
+  }
+ }
+}

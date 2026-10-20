@@ -1,0 +1,1523 @@
+{
+ "schema": "four_side_1024_l3d_old_model_audit_evidence_v1",
+ "round": "R9 (2026-10-20) model correction",
+ "generated_at": "2026-10-20T21:25:50+0800",
+ "purpose": "machine-readable evidence extract for four_side_1024/l3d/AUDIT_OLD_25D.md; every number is read from the delivered old artefacts, nothing is recomputed",
+ "old_model": {
+  "layers_z_mm": [
+   0.0,
+   0.125,
+   0.25,
+   0.375,
+   0.5
+  ],
+  "interface_layer": {
+   "z1": 0,
+   "z2": 4
+  },
+  "z1_interface_height_mm": 0.0,
+  "z2_interface_height_mm": 0.5,
+  "travel_layers_old": {
+   "z1": [
+    1,
+    2,
+    3
+   ],
+   "z2": [
+    1,
+    2,
+    3
+   ]
+  },
+  "vertical_domain_mm": [
+   0.0,
+   0.5
+  ],
+  "transition_radius_mm": 15.0,
+  "partition": "z2 ports were assigned to logical layer 4 = highest layer at z=0.5; the four extra layers were squeezed between the two real interface row heights"
+ },
+ "new_model_reference": {
+  "schema_doc": {
+   "path": "four_side_1024\\l3d\\SCHEMA_L3D.md",
+   "exists": true,
+   "bytes": 7702,
+   "sha256": "61126e7237891383b8761dd5d995b21a858adc71fc7d8375a248816b14c519d9"
+  },
+  "facts": {
+   "interface_layer_id": 1,
+   "interface_rows": {
+    "z1": 0.0,
+    "z2": 0.5
+   },
+   "routing_layer_ids": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "routing_layer_heights": "unconfirmed_simulation (configurable input)",
+   "example_stack_medium_050": {
+    "L2": 1.0,
+    "L3": 1.5,
+    "L4": 2.0,
+    "L5": 2.5
+   },
+   "example_stack_compact_025": {
+    "L2": 0.75,
+    "L3": 1.0,
+    "L4": 1.25,
+    "L5": 1.5
+   },
+   "example_stack_wide_100": {
+    "L2": 1.5,
+    "L3": 2.5,
+    "L4": 3.5,
+    "L5": 4.5
+   },
+   "transitions": "any pair of layers, multiple transitions per route",
+   "formal_acceptance": "refused while L2-L5 heights are unconfirmed_simulation"
+  },
+  "doc_line_refs": {
+   "old_wrong_model": "SCHEMA_L3D.md:6-9",
+   "new_model": "SCHEMA_L3D.md:10-15",
+   "layer_geometry": "SCHEMA_L3D.md:19-26",
+   "stack_invariants": "SCHEMA_L3D.md:27-40",
+   "example_stacks": "SCHEMA_L3D.md:42-53",
+   "route_json": "SCHEMA_L3D.md:55-105",
+   "collision_semantics": "SCHEMA_L3D.md:107-122",
+   "validator_semantics": "SCHEMA_L3D.md:124-142",
+   "implementation_targets": "SCHEMA_L3D.md:144-147"
+  }
+ },
+ "old_artefacts_r15": {
+  "schemeA_layers5": {
+   "source_routes_json": {
+    "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\schemeA\\layers5\\routes_25d.json",
+    "exists": true,
+    "bytes": 2002144,
+    "sha256": "7d1e82fb7742818ecf9cd904d02e1e91b14cc61408253df4dede72e87b382484"
+   },
+   "source_run_summary_json": {
+    "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\schemeA\\layers5\\run_summary.json",
+    "exists": true,
+    "bytes": 2007,
+    "sha256": "c425f2fe1e94f975c83a7df7591fa4cdc2d1b3283ce49e9a9e1fe26b4edcd016"
+   },
+   "source_validation_json": {
+    "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\A\\layers5.json",
+    "exists": true,
+    "bytes": 4161,
+    "sha256": "4e14f1de6e6ea3a3d35742e1f2276f7c36de7be54a7f836aa19be46b1a2946fd"
+   },
+   "schema": "four_side_1024_v2_25d_routes_v1",
+   "scheme": "A",
+   "scheme_label": "A_shortS",
+   "n_layers": 5,
+   "layers_z_mm": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 4
+   },
+   "route_count": 1024,
+   "routed": 985,
+   "failed": 39,
+   "baseline_routed": 943,
+   "statistics": {
+    "baseline_routed": 943,
+    "routed": 985,
+    "new_routed": 42,
+    "lifted": 42,
+    "flat_added": 0,
+    "transitions": 84,
+    "total_length_mm": 160194.231694,
+    "mean_length_mm": 162.633738,
+    "total_xy_length_mm": 160193.252567,
+    "per_plane": {
+     "z1": {
+      "routed": 512,
+      "baseline": 498,
+      "lifted": 14
+     },
+     "z2": {
+      "routed": 473,
+      "baseline": 445,
+      "lifted": 28
+     }
+    },
+    "per_layer_flat_parts": {
+     "0": 526,
+     "1": 32,
+     "2": 6,
+     "3": 4,
+     "4": 501
+    },
+    "failed_no_candidate": 2,
+    "failed_unplaceable": 37
+   },
+   "flat_parts_per_layer": {
+    "0": 526,
+    "1": 32,
+    "2": 6,
+    "3": 4,
+    "4": 501
+   },
+   "flat_layer_z_mm_histogram": {
+    "0@0.0": 526,
+    "1@0.125": 32,
+    "2@0.25": 6,
+    "3@0.375": 4,
+    "4@0.5": 501
+   },
+   "transition_z_pairs_histogram": {
+    "0.0->0.125": 14,
+    "0.125->0.0": 14,
+    "0.125->0.5": 18,
+    "0.25->0.5": 6,
+    "0.375->0.5": 4,
+    "0.5->0.125": 18,
+    "0.5->0.25": 6,
+    "0.5->0.375": 4
+   },
+   "validation": {
+    "passed": true,
+    "counts": {
+     "violations": 0,
+     "structure_errors": 0,
+     "port_errors": 0,
+     "xy_model_errors": 0,
+     "curvature_violations": 0,
+     "clearance_violations": 0,
+     "layer_2d_violations": 0,
+     "self_clearance_violations": 0,
+     "board_violations": 0
+    },
+    "crossings_total": {
+     "total": 137081,
+     "by_layer": {
+      "0": 69072,
+      "1": 424,
+      "2": 48,
+      "3": 16,
+      "4": 67521
+     }
+    },
+    "min_3d_distance_mm": 0.080295032,
+    "min_curvature_radius_mm": 14.999999963,
+    "stats": {
+     "min_layer_gap_mm": 0.125,
+     "transitions": 84,
+     "lifted": 42,
+     "flat_routes": 943,
+     "flat_parts": 1069,
+     "total_length_mm": 160194.231736352,
+     "total_xy_length_mm": 160193.252607811,
+     "min_flat_flat_same_layer_mm": 0.080295032,
+     "min_flat_transition_mm": 0.091635116,
+     "min_transition_transition_mm": null,
+     "min_self_clearance_mm": null,
+     "min_board_margin_mm": 0.0794,
+     "min_3d_distance_bound": "measured",
+     "violating_flat_transition_segment_pairs": 0,
+     "violating_transition_transition_segment_pairs": 0,
+     "port_csv_checked": true,
+     "flat_segments": 3199720,
+     "transition_segments": 15828,
+     "flat_length_mm": 159878.142388354,
+     "transition_length_mm": 316.073811443
+    },
+    "routes": {
+     "routed": null,
+     "failed": null,
+     "baseline_routed": 943,
+     "new_routed": null,
+     "lifted": null,
+     "transitions": null,
+     "layers_z_mm": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5
+     ],
+     "interface_layer": {
+      "z1": 0,
+      "z2": 4
+     },
+     "seconds": 1673.07
+    }
+   },
+   "record_field_inventory": {
+    "routed_record_keys": [
+     "baseline_2d",
+     "family",
+     "flat_length_mm",
+     "interface_layer",
+     "interface_z_mm",
+     "length_mm",
+     "lifted",
+     "mode",
+     "n_transitions",
+     "pair",
+     "params",
+     "parts",
+     "plane",
+     "port",
+     "relation",
+     "route_id",
+     "status",
+     "transition_length_mm",
+     "travel_layer",
+     "travel_z_mm",
+     "xy_length_mm",
+     "z_span_mm"
+    ],
+    "failed_record_keys": [
+     "baseline_2d",
+     "interface_layer",
+     "interface_z_mm",
+     "pair",
+     "plane",
+     "port",
+     "reason",
+     "relation",
+     "route_id",
+     "status"
+    ],
+    "flat_part_keys": [
+     "kind",
+     "layer",
+     "length_mm",
+     "primitives",
+     "z_mm"
+    ],
+    "transition_part_keys": [
+     "direction",
+     "dz_mm",
+     "end",
+     "footprint_mm",
+     "kind",
+     "length_mm",
+     "radius_mm",
+     "start",
+     "z0_mm",
+     "z1_mm"
+    ],
+    "absent_internal_route_fields": [
+     "base_layer",
+     "base_z_mm"
+    ],
+    "route_field_sets": 1,
+    "failed_field_sets": 1
+   },
+   "samples": {
+    "flat_z1": {
+     "route_id": 1,
+     "plane": "z1",
+     "pair": "NS",
+     "relation": "opposite",
+     "status": "routed",
+     "baseline_2d": true,
+     "mode": "flat",
+     "family": null,
+     "params": {},
+     "interface_layer": 0,
+     "interface_z_mm": 0.0,
+     "port": {
+      "p": [
+       5.625,
+       150.0
+      ],
+      "q": [
+       5.625,
+       0.0
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       -0.0,
+       -1.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 0,
+       "z_mm": 0.0,
+       "length_mm": 150.0,
+       "n_primitives": 1
+      }
+     ],
+     "lifted": false,
+     "n_transitions": 0,
+     "travel_layer": null,
+     "travel_z_mm": null,
+     "xy_length_mm": 150.0,
+     "length_mm": 150.0,
+     "flat_length_mm": 150.0,
+     "transition_length_mm": 0,
+     "z_span_mm": 0.0
+    },
+    "flat_z2": {
+     "route_id": 513,
+     "plane": "z2",
+     "pair": "EN",
+     "relation": "adjacent",
+     "status": "routed",
+     "baseline_2d": true,
+     "mode": "flat",
+     "family": null,
+     "params": {},
+     "interface_layer": 4,
+     "interface_z_mm": 0.5,
+     "port": {
+      "p": [
+       7.625,
+       150.0
+      ],
+      "q": [
+       150.0,
+       36.125
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       1.0,
+       -0.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 4,
+       "z_mm": 0.5,
+       "length_mm": 236.935835,
+       "n_primitives": 7
+      }
+     ],
+     "lifted": false,
+     "n_transitions": 0,
+     "travel_layer": null,
+     "travel_z_mm": null,
+     "xy_length_mm": 236.935835,
+     "length_mm": 236.935835,
+     "flat_length_mm": 236.935835,
+     "transition_length_mm": 0,
+     "z_span_mm": 0.0
+    },
+    "lifted_z1": {
+     "route_id": 300,
+     "plane": "z1",
+     "pair": "EW",
+     "relation": "opposite",
+     "status": "routed",
+     "baseline_2d": false,
+     "mode": "lifted",
+     "family": "straight",
+     "params": {},
+     "interface_layer": 0,
+     "interface_z_mm": 0.0,
+     "port": {
+      "p": [
+       150.0,
+       26.375
+      ],
+      "q": [
+       0.0,
+       26.375
+      ],
+      "start_tangent": [
+       -1.0,
+       0.0
+      ],
+      "end_tangent": [
+       -1.0,
+       -0.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 0,
+       "z_mm": 0.0,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      },
+      {
+       "kind": "transition",
+       "start": [
+        148.8,
+        26.375
+       ],
+       "end": [
+        146.064241421,
+        26.375
+       ],
+       "direction": [
+        -1.0,
+        0.0
+       ],
+       "z0_mm": 0.0,
+       "z1_mm": 0.125,
+       "dz_mm": 0.125,
+       "radius_mm": 15.0,
+       "footprint_mm": 2.735758579,
+       "length_mm": 2.739565
+      },
+      {
+       "kind": "flat",
+       "layer": 1,
+       "z_mm": 0.125,
+       "length_mm": 142.128483,
+       "n_primitives": 1
+      },
+      {
+       "kind": "transition",
+       "start": [
+        3.935758579,
+        26.375
+       ],
+       "end": [
+        1.2,
+        26.375
+       ],
+       "direction": [
+        -1.0,
+        0.0
+       ],
+       "z0_mm": 0.125,
+       "z1_mm": 0.0,
+       "dz_mm": -0.125,
+       "radius_mm": 15.0,
+       "footprint_mm": 2.735758579,
+       "length_mm": 2.739565
+      },
+      {
+       "kind": "flat",
+       "layer": 0,
+       "z_mm": 0.0,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      }
+     ],
+     "lifted": true,
+     "n_transitions": 2,
+     "travel_layer": 1,
+     "travel_z_mm": 0.125,
+     "xy_length_mm": 150.0,
+     "length_mm": 150.007612,
+     "flat_length_mm": 144.528483,
+     "transition_length_mm": 5.479129,
+     "z_span_mm": 0.125
+    },
+    "lifted_z2": {
+     "route_id": 539,
+     "plane": "z2",
+     "pair": "EN",
+     "relation": "adjacent",
+     "status": "routed",
+     "baseline_2d": false,
+     "mode": "lifted",
+     "family": "SHIFT_TURN",
+     "params": {
+      "dx_shift_mm": 21.011200000000002,
+      "_dx": 21.011200000000002
+     },
+     "interface_layer": 4,
+     "interface_z_mm": 0.5,
+     "port": {
+      "p": [
+       35.125,
+       150.0
+      ],
+      "q": [
+       150.0,
+       25.625
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       1.0,
+       -0.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 4,
+       "z_mm": 0.5,
+       "length_mm": 38.24485,
+       "n_primitives": 3
+      },
+      {
+       "kind": "transition",
+       "start": [
+        56.1362,
+        121.128304129
+       ],
+       "end": [
+        56.1362,
+        116.399734049
+       ],
+       "direction": [
+        0.0,
+        -1.0
+       ],
+       "z0_mm": 0.5,
+       "z1_mm": 0.125,
+       "dz_mm": -0.375,
+       "radius_mm": 15.0,
+       "footprint_mm": 4.72857008,
+       "length_mm": 4.748371
+      },
+      {
+       "kind": "flat",
+       "layer": 1,
+       "z_mm": 0.125,
+       "length_mm": 172.271909,
+       "n_primitives": 3
+      },
+      {
+       "kind": "transition",
+       "start": [
+        144.07142992,
+        25.625
+       ],
+       "end": [
+        148.8,
+        25.625
+       ],
+       "direction": [
+        1.0,
+        0.0
+       ],
+       "z0_mm": 0.125,
+       "z1_mm": 0.5,
+       "dz_mm": 0.375,
+       "radius_mm": 15.0,
+       "footprint_mm": 4.72857008,
+       "length_mm": 4.748371
+      },
+      {
+       "kind": "flat",
+       "layer": 4,
+       "z_mm": 0.5,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      }
+     ],
+     "lifted": true,
+     "n_transitions": 2,
+     "travel_layer": 1,
+     "travel_z_mm": 0.125,
+     "xy_length_mm": 221.173899,
+     "length_mm": 221.213502,
+     "flat_length_mm": 211.716759,
+     "transition_length_mm": 9.496743,
+     "z_span_mm": 0.375
+    },
+    "failed": {
+     "route_id": 573,
+     "plane": "z2",
+     "pair": "EN",
+     "relation": "adjacent",
+     "status": "failed",
+     "reason": "no_lift_candidate",
+     "baseline_2d": false,
+     "interface_layer": 4,
+     "interface_z_mm": 0.5,
+     "port": {
+      "p": [
+       71.625,
+       150.0
+      ],
+      "q": [
+       150.0,
+       52.625
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       1.0,
+       -0.0
+      ]
+     }
+    }
+   }
+  },
+  "schemeB_layers5": {
+   "source_routes_json": {
+    "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\routes_25d.json",
+    "exists": true,
+    "bytes": 2109589,
+    "sha256": "3c4be7a0288e4770ac8eec6b98a770686c6d6ddc9b1a42880569d4b3f6524d8f"
+   },
+   "source_run_summary_json": {
+    "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\schemeB\\layers5\\run_summary.json",
+    "exists": true,
+    "bytes": 2034,
+    "sha256": "89b87fa840e71c07380cf7c5e2578f3372af9b3fdc98e4a0e95b977b6b7d55ce"
+   },
+   "source_validation_json": {
+    "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\B\\layers5.json",
+    "exists": true,
+    "bytes": 4171,
+    "sha256": "0d7f9561d091ff5526cf2688001975c5f30e32c1ee66ff140cfdd5e023259e02"
+   },
+   "schema": "four_side_1024_v2_25d_routes_v1",
+   "scheme": "B",
+   "scheme_label": "B_ortho90",
+   "n_layers": 5,
+   "layers_z_mm": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 4
+   },
+   "route_count": 1024,
+   "routed": 723,
+   "failed": 301,
+   "baseline_routed": 515,
+   "statistics": {
+    "baseline_routed": 515,
+    "routed": 723,
+    "new_routed": 208,
+    "lifted": 208,
+    "flat_added": 0,
+    "transitions": 416,
+    "total_length_mm": 136462.234132,
+    "mean_length_mm": 188.744446,
+    "total_xy_length_mm": 136457.747981,
+    "per_plane": {
+     "z1": {
+      "routed": 332,
+      "baseline": 184,
+      "lifted": 148
+     },
+     "z2": {
+      "routed": 391,
+      "baseline": 331,
+      "lifted": 60
+     }
+    },
+    "per_layer_flat_parts": {
+     "0": 480,
+     "1": 69,
+     "2": 66,
+     "3": 73,
+     "4": 451
+    },
+    "failed_no_candidate": 78,
+    "failed_unplaceable": 222
+   },
+   "flat_parts_per_layer": {
+    "0": 480,
+    "1": 69,
+    "2": 66,
+    "3": 73,
+    "4": 451
+   },
+   "flat_layer_z_mm_histogram": {
+    "0@0.0": 480,
+    "1@0.125": 69,
+    "2@0.25": 66,
+    "3@0.375": 73,
+    "4@0.5": 451
+   },
+   "transition_z_pairs_histogram": {
+    "0.0->0.125": 54,
+    "0.0->0.25": 47,
+    "0.0->0.375": 47,
+    "0.125->0.0": 54,
+    "0.125->0.5": 15,
+    "0.25->0.0": 47,
+    "0.25->0.5": 19,
+    "0.375->0.0": 47,
+    "0.375->0.5": 26,
+    "0.5->0.125": 15,
+    "0.5->0.25": 19,
+    "0.5->0.375": 26
+   },
+   "validation": {
+    "passed": true,
+    "counts": {
+     "violations": 0,
+     "structure_errors": 0,
+     "port_errors": 0,
+     "xy_model_errors": 0,
+     "curvature_violations": 0,
+     "clearance_violations": 0,
+     "layer_2d_violations": 0,
+     "self_clearance_violations": 0,
+     "board_violations": 0
+    },
+    "crossings_total": {
+     "total": 63816,
+     "by_layer": {
+      "0": 13724,
+      "1": 2684,
+      "2": 2881,
+      "3": 3663,
+      "4": 40864
+     }
+    },
+    "min_3d_distance_mm": 0.08,
+    "min_curvature_radius_mm": 14.999999966,
+    "stats": {
+     "min_layer_gap_mm": 0.125,
+     "transitions": 416,
+     "lifted": 208,
+     "flat_routes": 515,
+     "flat_parts": 1139,
+     "total_length_mm": 136462.234036218,
+     "total_xy_length_mm": 136457.747826007,
+     "min_flat_flat_same_layer_mm": 0.08,
+     "min_flat_transition_mm": 0.091811639,
+     "min_transition_transition_mm": null,
+     "min_self_clearance_mm": null,
+     "min_board_margin_mm": 0.025,
+     "min_3d_distance_bound": "measured",
+     "violating_flat_transition_segment_pairs": 0,
+     "violating_transition_transition_segment_pairs": 0,
+     "port_csv_checked": true,
+     "flat_segments": 2701126,
+     "transition_segments": 77040,
+     "flat_length_mm": 134923.495191457,
+     "transition_length_mm": 1538.717778696
+    },
+    "routes": {
+     "routed": null,
+     "failed": null,
+     "baseline_routed": 515,
+     "new_routed": null,
+     "lifted": null,
+     "transitions": null,
+     "layers_z_mm": [
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5
+     ],
+     "interface_layer": {
+      "z1": 0,
+      "z2": 4
+     },
+     "seconds": 3256.66
+    }
+   },
+   "record_field_inventory": {
+    "routed_record_keys": [
+     "baseline_2d",
+     "family",
+     "flat_length_mm",
+     "interface_layer",
+     "interface_z_mm",
+     "length_mm",
+     "lifted",
+     "mode",
+     "n_transitions",
+     "pair",
+     "params",
+     "parts",
+     "plane",
+     "port",
+     "relation",
+     "route_id",
+     "status",
+     "transition_length_mm",
+     "travel_layer",
+     "travel_z_mm",
+     "xy_length_mm",
+     "z_span_mm"
+    ],
+    "failed_record_keys": [
+     "baseline_2d",
+     "interface_layer",
+     "interface_z_mm",
+     "pair",
+     "plane",
+     "port",
+     "reason",
+     "relation",
+     "route_id",
+     "status"
+    ],
+    "flat_part_keys": [
+     "kind",
+     "layer",
+     "length_mm",
+     "primitives",
+     "z_mm"
+    ],
+    "transition_part_keys": [
+     "direction",
+     "dz_mm",
+     "end",
+     "footprint_mm",
+     "kind",
+     "length_mm",
+     "radius_mm",
+     "start",
+     "z0_mm",
+     "z1_mm"
+    ],
+    "absent_internal_route_fields": [
+     "base_layer",
+     "base_z_mm"
+    ],
+    "route_field_sets": 1,
+    "failed_field_sets": 1
+   },
+   "samples": {
+    "flat_z1": {
+     "route_id": 1,
+     "plane": "z1",
+     "pair": "NS",
+     "relation": "opposite",
+     "status": "routed",
+     "baseline_2d": true,
+     "mode": "flat",
+     "family": null,
+     "params": {},
+     "interface_layer": 0,
+     "interface_z_mm": 0.0,
+     "port": {
+      "p": [
+       5.625,
+       150.0
+      ],
+      "q": [
+       5.625,
+       0.0
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       -0.0,
+       -1.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 0,
+       "z_mm": 0.0,
+       "length_mm": 150.0,
+       "n_primitives": 1
+      }
+     ],
+     "lifted": false,
+     "n_transitions": 0,
+     "travel_layer": null,
+     "travel_z_mm": null,
+     "xy_length_mm": 150.0,
+     "length_mm": 150.0,
+     "flat_length_mm": 150.0,
+     "transition_length_mm": 0,
+     "z_span_mm": 0.0
+    },
+    "flat_z2": {
+     "route_id": 514,
+     "plane": "z2",
+     "pair": "EN",
+     "relation": "adjacent",
+     "status": "routed",
+     "baseline_2d": true,
+     "mode": "flat",
+     "family": null,
+     "params": {},
+     "interface_layer": 4,
+     "interface_z_mm": 0.5,
+     "port": {
+      "p": [
+       7.875,
+       150.0
+      ],
+      "q": [
+       150.0,
+       36.375
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       1.0,
+       -0.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 4,
+       "z_mm": 0.5,
+       "length_mm": 236.435835,
+       "n_primitives": 7
+      }
+     ],
+     "lifted": false,
+     "n_transitions": 0,
+     "travel_layer": null,
+     "travel_z_mm": null,
+     "xy_length_mm": 236.435835,
+     "length_mm": 236.435835,
+     "flat_length_mm": 236.435835,
+     "transition_length_mm": 0,
+     "z_span_mm": 0.0
+    },
+    "lifted_z1": {
+     "route_id": 17,
+     "plane": "z1",
+     "pair": "NS",
+     "relation": "opposite",
+     "status": "routed",
+     "baseline_2d": false,
+     "mode": "lifted",
+     "family": "Z",
+     "params": {
+      "y1_mm": 23.76,
+      "x_mid_mm": 102.08,
+      "y2_mm": 55.04
+     },
+     "interface_layer": 0,
+     "interface_z_mm": 0.0,
+     "port": {
+      "p": [
+       14.625,
+       150.0
+      ],
+      "q": [
+       6.625,
+       0.0
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       -0.0,
+       -1.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 0,
+       "z_mm": 0.0,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      },
+      {
+       "kind": "transition",
+       "start": [
+        14.625,
+        148.8
+       ],
+       "end": [
+        14.625,
+        146.064241421
+       ],
+       "direction": [
+        0.0,
+        -1.0
+       ],
+       "z0_mm": 0.0,
+       "z1_mm": 0.125,
+       "dz_mm": 0.125,
+       "radius_mm": 15.0,
+       "footprint_mm": 2.735758579,
+       "length_mm": 2.739565
+      },
+      {
+       "kind": "flat",
+       "layer": 1,
+       "z_mm": 0.125,
+       "length_mm": 190.966262,
+       "n_primitives": 9
+      },
+      {
+       "kind": "transition",
+       "start": [
+        6.625,
+        3.935758579
+       ],
+       "end": [
+        6.625,
+        1.2
+       ],
+       "direction": [
+        0.0,
+        -1.0
+       ],
+       "z0_mm": 0.125,
+       "z1_mm": 0.0,
+       "dz_mm": -0.125,
+       "radius_mm": 15.0,
+       "footprint_mm": 2.735758579,
+       "length_mm": 2.739565
+      },
+      {
+       "kind": "flat",
+       "layer": 0,
+       "z_mm": 0.0,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      }
+     ],
+     "lifted": true,
+     "n_transitions": 2,
+     "travel_layer": 1,
+     "travel_z_mm": 0.125,
+     "xy_length_mm": 198.83778,
+     "length_mm": 198.845392,
+     "flat_length_mm": 193.366262,
+     "transition_length_mm": 5.479129,
+     "z_span_mm": 0.125
+    },
+    "lifted_z2": {
+     "route_id": 513,
+     "plane": "z2",
+     "pair": "EN",
+     "relation": "adjacent",
+     "status": "routed",
+     "baseline_2d": false,
+     "mode": "lifted",
+     "family": "L",
+     "params": {},
+     "interface_layer": 4,
+     "interface_z_mm": 0.5,
+     "port": {
+      "p": [
+       7.625,
+       150.0
+      ],
+      "q": [
+       150.0,
+       36.125
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       1.0,
+       -0.0
+      ]
+     },
+     "parts": [
+      {
+       "kind": "flat",
+       "layer": 4,
+       "z_mm": 0.5,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      },
+      {
+       "kind": "transition",
+       "start": [
+        7.625,
+        148.8
+       ],
+       "end": [
+        7.625,
+        144.07142992
+       ],
+       "direction": [
+        0.0,
+        -1.0
+       ],
+       "z0_mm": 0.5,
+       "z1_mm": 0.125,
+       "dz_mm": -0.375,
+       "radius_mm": 15.0,
+       "footprint_mm": 4.72857008,
+       "length_mm": 4.748371
+      },
+      {
+       "kind": "flat",
+       "layer": 1,
+       "z_mm": 0.125,
+       "length_mm": 237.954805,
+       "n_primitives": 3
+      },
+      {
+       "kind": "transition",
+       "start": [
+        144.07142992,
+        36.125
+       ],
+       "end": [
+        148.8,
+        36.125
+       ],
+       "direction": [
+        1.0,
+        -0.0
+       ],
+       "z0_mm": 0.125,
+       "z1_mm": 0.5,
+       "dz_mm": 0.375,
+       "radius_mm": 15.0,
+       "footprint_mm": 4.72857008,
+       "length_mm": 4.748371
+      },
+      {
+       "kind": "flat",
+       "layer": 4,
+       "z_mm": 0.5,
+       "length_mm": 1.2,
+       "n_primitives": 1
+      }
+     ],
+     "lifted": true,
+     "n_transitions": 2,
+     "travel_layer": 1,
+     "travel_z_mm": 0.125,
+     "xy_length_mm": 249.811945,
+     "length_mm": 249.851548,
+     "flat_length_mm": 240.354805,
+     "transition_length_mm": 9.496743,
+     "z_span_mm": 0.375
+    },
+    "failed": {
+     "route_id": 27,
+     "plane": "z1",
+     "pair": "NS",
+     "relation": "opposite",
+     "status": "failed",
+     "reason": "no_2d_candidate",
+     "baseline_2d": false,
+     "interface_layer": 0,
+     "interface_z_mm": 0.0,
+     "port": {
+      "p": [
+       17.125,
+       150.0
+      ],
+      "q": [
+       25.125,
+       0.0
+      ],
+      "start_tangent": [
+       0.0,
+       -1.0
+      ],
+      "end_tangent": [
+       -0.0,
+       -1.0
+      ]
+     }
+    }
+   }
+  },
+  "all_validation": {
+   "path": "outputs\\four_side_1024_v2_r15_v01\\25d\\validation\\all_validation.json",
+   "exists": true,
+   "bytes": 2793,
+   "sha256": "ff964fac37ac25f09aa53c42d138fba4430f44a2c8b2c6338144827adae8f441"
+  }
+ },
+ "old_artefacts_r40": {
+  "schemeA/layers3": {
+   "source_summary": {
+    "path": "outputs\\four_side_1024_v2_25d_v01\\schemeA\\layers3\\run_summary.json",
+    "exists": true,
+    "bytes": 1884,
+    "sha256": "b4cb335bea791210b38821aacc3128848cda8da9f404b1d547013432a50a013b"
+   },
+   "baseline_routed": 752,
+   "routed": 788,
+   "lifted": 36,
+   "transitions": 72,
+   "layers_z_mm": [
+    0.0,
+    0.25,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 2
+   },
+   "seconds": 2295.04
+  },
+  "schemeA/layers5": {
+   "source_summary": {
+    "path": "outputs\\four_side_1024_v2_25d_v01\\schemeA\\layers5\\run_summary.json",
+    "exists": true,
+    "bytes": 1934,
+    "sha256": "3ed57622873e205c6966abbb276e40349aa27cb61e768308bbceb91ee138e542"
+   },
+   "baseline_routed": 752,
+   "routed": 820,
+   "lifted": 68,
+   "transitions": 136,
+   "layers_z_mm": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 4
+   },
+   "seconds": 3688.83
+  },
+  "schemeB/layers3": {
+   "source_summary": {
+    "path": "outputs\\four_side_1024_v2_25d_v01\\schemeB\\layers3\\run_summary.json",
+    "exists": true,
+    "bytes": 1886,
+    "sha256": "b98f99b07bea75658327dd1c0eb3515cfe0d1295c09886d44254ba903fcba0c0"
+   },
+   "baseline_routed": 262,
+   "routed": 342,
+   "lifted": 80,
+   "transitions": 160,
+   "layers_z_mm": [
+    0.0,
+    0.25,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 2
+   },
+   "seconds": 649.86
+  },
+  "schemeB/layers5": {
+   "source_summary": {
+    "path": "outputs\\four_side_1024_v2_25d_v01\\schemeB\\layers5\\run_summary.json",
+    "exists": true,
+    "bytes": 1936,
+    "sha256": "e527ac5a9ad69f45b5033299fc84f0fb34efd1377cf11f73a1f95f941cc9b3e6"
+   },
+   "baseline_routed": 262,
+   "routed": 383,
+   "lifted": 121,
+   "transitions": 242,
+   "layers_z_mm": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+   ],
+   "interface_layer": {
+    "z1": 0,
+    "z2": 4
+   },
+   "seconds": 776.32
+  }
+ },
+ "old_2d_baselines_r15": {
+  "A": {
+   "z1_routed": 498,
+   "z2_routed": 445,
+   "total": 943,
+   "validation": {
+    "z1": {
+     "path": "outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\z1.json",
+     "exists": true,
+     "bytes": 2127,
+     "sha256": "63d2df80ef07ab24c62ed510c730f22f927c2da321f2604f2490739b2389ef7b"
+    },
+    "z2": {
+     "path": "outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\z2.json",
+     "exists": true,
+     "bytes": 2131,
+     "sha256": "a500fb71b3231e3b80672fb191cc1f7b61c9fedce96f7ca5243fea1bdfe40bec"
+    },
+    "combined": {
+     "path": "outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\A\\combined.json",
+     "exists": true,
+     "bytes": 2723,
+     "sha256": "c06f15d2dd51e4bfb5537bc6c8b430b0568081d23dbe99a4ff4961ae8351484e"
+    }
+   }
+  },
+  "B": {
+   "z1_routed": 184,
+   "z2_routed": 331,
+   "total": 515,
+   "validation": {
+    "z1": {
+     "path": "outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\z1.json",
+     "exists": true,
+     "bytes": 2129,
+     "sha256": "c9d976729cb16adb482bd98651cfc151661e09167d025e88ac6bdba46798cfa1"
+    },
+    "z2": {
+     "path": "outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\z2.json",
+     "exists": true,
+     "bytes": 2130,
+     "sha256": "e68e0b268630d4bc4f8e96aa318b05604accdc62bd488e7d687fa96c2532ff86"
+    },
+    "combined": {
+     "path": "outputs\\four_side_1024_v2_r15_v01\\validation\\2d\\B\\combined.json",
+     "exists": true,
+     "bytes": 2723,
+     "sha256": "982b8ba77b2e1bbe712e975e784967d16418a89f55330c6790d584305b3b2edb"
+    }
+   }
+  },
+  "note": "separate-plane 2D strict PASS per row; reusable only as the flat L1 geometry of the corrected model, after a true-XYZ re-validation"
+ },
+ "field_impact": {
+  "layers_z_mm": {
+   "old": "top-level array [0, 0.125, 0.25, 0.375, 0.5]; z2 row height 0.5 was layer index 4",
+   "new": "replaced by layer_stack object (L1 interface_rows 0/0.5 + L2..L5 unconfirmed physical heights + provenance); the old array must not be accepted"
+  },
+  "interface_layer_numeric": {
+   "old": "0 for z1 routes, 4 for z2 routes",
+   "new": "logical interface layer is ALWAYS 1 for both rows; row height comes from the port row, not from the layer index"
+  },
+  "interface_z_mm": {
+   "old": "0.0 for z1, 0.5 for z2",
+   "new": "same physical meaning (row height) but must be attached to L1 layer_id 1; new JSON uses start_z_mm/end_z_mm and source_port.z_mm/target_port.z_mm"
+  },
+  "flat_part_layer": {
+   "old": "logical index 0..4 that also encoded the physical height",
+   "new": "renamed layer_id; 0.0/0.5 become row heights of layer_id 1, so old indices 0 and 4 both map to 1 and old indices 1..3 have no counterpart"
+  },
+  "flat_part_z_mm": {
+   "old": "one of the old stack values [0, 0.125, 0.25, 0.375, 0.5]",
+   "new": "physical height; 0.0/0.5 allowed on L1 by row; other heights must equal the (unconfirmed) L2..L5 heights"
+  },
+  "travel_layer": {
+   "old": "1..3 (layer index inside the squeezed 0-0.5 mm domain), null for flat routes",
+   "new": "no single travel layer: replace by layer_sequence[1:-1] / layers_used with ids 2..5; old ids 1..3 are not valid layer ids of the new model"
+  },
+  "travel_z_mm": {
+   "old": "0.125/0.25/0.375 (old intermediate heights)",
+   "new": "no single travel z: layer_z_sequence carries the real physical height of every visited layer (L2..L5 unconfirmed, e.g. 1.0/1.5/2.0/2.5)"
+  },
+  "n_transitions": {
+   "old": "0 or 2 (flat, or up+down)",
+   "new": "any number; layer_sequence length = n_transitions + 1; multi-transition and direct non-adjacent transitions allowed"
+  },
+  "mode": {
+   "old": "\"flat\" or \"lifted\" (binary)",
+   "new": "layer_sequence/lifted replace it; a route may visit several routing layers"
+  },
+  "z_span_mm": {
+   "old": "|travel_z - interface_z| of the single travel layer",
+   "new": "max(layer_z_sequence) - min(layer_z_sequence)"
+  },
+  "transition_part": {
+   "old": "keys start/end/direction/z0_mm/z1_mm/dz_mm/radius_mm/footprint_mm/length_mm",
+   "new": "keys start/end/direction/from_layer/to_layer/z0/z1/dz_mm/radius_mm/theta_rad/footprint_mm/length_mm; transition may connect any pair of distinct layers"
+  },
+  "route_base_fields": {
+   "old": "internal build_route3d output has base_layer/base_z_mm but the delivered JSON drops them and writes interface_layer/interface_z_mm instead",
+   "new": "interface is always layer_id 1; the row height must be carried explicitly (port.z_mm / start_z_mm / end_z_mm)"
+  },
+  "route_port": {
+   "old": "port {p, q, start_tangent, end_tangent} (no z/layer)",
+   "new": "source_port / target_port with xy, z_mm, layer_id; start_z_mm/end_z_mm at route level"
+  },
+  "failure_reason": {
+   "old": "\"no_2d_candidate\" | \"no_lift_candidate\" (old lift search)",
+   "new": "failure taxonomy of the new search (e.g. no L1 candidate, no legal layer-sequence); old \"lift\" notion is obsolete"
+  }
+ },
+ "reuse_conclusion": {
+  "old_25d_results": {
+   "r15_A_layers5_routed": 985,
+   "r15_B_layers5_routed": 723,
+   "r40_A_layers5_routed": 820,
+   "r40_B_layers5_routed": 383,
+   "status": "historical reference only; NOT valid for the corrected L1-L5 model, no acceptance can be inherited"
+  },
+  "reusable_geometry": {
+   "r15_2d_A_flat_L1": 943,
+   "r15_2d_B_flat_L1": 515,
+   "status": "the two accepted R15 2D layouts may be reused as flat L1 geometry (z1 row z=0.0, z2 row z=0.5) but must be re-validated in ONE true-XYZ world with the corrected validator; summing two independent 2D PASSes is not a 3D PASS"
+  },
+  "not_reusable": "old lifted routes / transitions / intermediate flat parts (old heights 0.125/0.25/0.375, old layer ids 1..3) must be re-routed on the corrected stack"
+ },
+ "source_code_refs": {
+  "fsd25d/config25d.py": {
+   "path": "four_side_1024\\fsd25d\\config25d.py",
+   "exists": true,
+   "bytes": 3992,
+   "sha256": "0c299ffc48b8a2ccda7789f46ec9f126c6e93d850dcbe0ce78ad9cbf5ec8efe0"
+  },
+  "fsd25d/path3d.py": {
+   "path": "four_side_1024\\fsd25d\\path3d.py",
+   "exists": true,
+   "bytes": 19578,
+   "sha256": "6dc021dcc8e4f7cf15ad58601d2e7fe9afb46ed15de697541ef195a00f191b13"
+  },
+  "fsd25d/router25d.py": {
+   "path": "four_side_1024\\fsd25d\\router25d.py",
+   "exists": true,
+   "bytes": 22853,
+   "sha256": "40c27d7d90657ac133c3711b9faabaf09b02fef492b271829b4002f1986a8f10"
+  },
+  "fsd25d/world25d.py": {
+   "path": "four_side_1024\\fsd25d\\world25d.py",
+   "exists": true,
+   "bytes": 23646,
+   "sha256": "a597274e5cff94c8c48dab07117d0963050fa7b5d79ef5ab5e0d9cb3815a97c9"
+  },
+  "fsd25d/validate25d.py": {
+   "path": "four_side_1024\\fsd25d\\validate25d.py",
+   "exists": true,
+   "bytes": 99298,
+   "sha256": "1f90b6b4865aef11656cfa632a47b6281025776edcaffa09a8ac1f0177755d7b"
+  },
+  "fsd25d/SCHEMA_25D.md": {
+   "path": "four_side_1024\\fsd25d\\SCHEMA_25D.md",
+   "exists": true,
+   "bytes": 8688,
+   "sha256": "e6627ee7819e4a1e71aea98195d5a75570dcc6dd59709d1f101c0c19e4d6447c"
+  },
+  "r15/run25d_r15.py": {
+   "path": "four_side_1024\\r15\\run25d_r15.py",
+   "exists": true,
+   "bytes": 3943,
+   "sha256": "db86e1c8639386fd8cafde09573db5a228ecde9362bb0395e4675d73ba776d70"
+  },
+  "r15/profile_r15.py": {
+   "path": "four_side_1024\\r15\\profile_r15.py",
+   "exists": true,
+   "bytes": 5934,
+   "sha256": "0b28eddf8a0cd07c46c8e35a021967d6a991c630ffd7738a7bf3270100ec4591"
+  },
+  "fslw/config.py": {
+   "path": "four_side_1024\\fslw\\config.py",
+   "exists": true,
+   "bytes": 5460,
+   "sha256": "1a054f6c018d2291a794b1b904eaebe4b85d16d5ecb2c9e81fe5c6ab3d4f12f0"
+  },
+  "fslw/ports.py": {
+   "path": "four_side_1024\\fslw\\ports.py",
+   "exists": true,
+   "bytes": 12136,
+   "sha256": "d339901f427b8d87c31114ccbdf727fff45b18eeae147f4c7aa3316e44fd44b2"
+  }
+ }
+}

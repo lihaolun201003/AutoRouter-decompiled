@@ -1,0 +1,6247 @@
+{
+ "schema": "four_side_1024_v2_l3d_statistics_v1",
+ "generated_utc": "2026-10-20T15:23:52Z",
+ "generator": "four_side_1024.l3d.stats_l3d",
+ "python_version": "3.10.11",
+ "root": "outputs/four_side_1024_v2_l1l5_v01",
+ "root_abs": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v2_l1l5_v01",
+ "round": "R9_corrected_L1_L5",
+ "model_correction": {
+  "old_model": "WRONG: z1 plane = layer index 0 (z=0), z2 plane = layer index 4 (z=0.5); old 5L results A=985/B=723 are historical only and NOT comparable",
+  "new_model": "L1 is the interface routing layer and contains BOTH port rows (z1 row = 0.0 mm, z2 row = 0.5 mm, both logical layer_id=1); L2-L5 are four additional routing layers with unconfirmed configurable heights; multi-transition routes are allowed",
+  "formal_acceptance": {
+   "granted": false,
+   "reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance is refused while they are unconfirmed"
+  }
+ },
+ "references": {
+  "r15_2d_corrected_l1_baseline": {
+   "A": {
+    "total": 943,
+    "z1": 498,
+    "z2": 445
+   },
+   "B": {
+    "total": 515,
+    "z1": 184,
+    "z2": 331
+   }
+  },
+  "historical_old_5l": {
+   "A": 985,
+   "B": 723,
+   "note": "historical old-5L numbers from the WRONG model (z1=L1 / z2=L5); they are NOT comparable with corrected L1-L5 results and must never be mixed into the corrected numbers"
+  }
+ },
+ "layer_stacks": {
+  "compact_025": {
+   "name": "compact_025",
+   "provenance": "unconfirmed_simulation",
+   "formal_acceptance_allowed": false,
+   "routing_heights_mm": {
+    "2": 0.75,
+    "3": 1.0,
+    "4": 1.25,
+    "5": 1.5
+   },
+   "interface_rows": {
+    "z1": 0.0,
+    "z2": 0.5
+   },
+   "valid": true,
+   "validation_errors": [],
+   "min_plane_gap_mm": 0.25,
+   "physical_planes": [
+    {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_id": 1,
+     "layer_type": "interface",
+     "row": "z1"
+    },
+    {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_id": 1,
+     "layer_type": "interface",
+     "row": "z2"
+    },
+    {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 0.75,
+     "logical_layer_id": 2,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 1.0,
+     "logical_layer_id": 3,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 1.25,
+     "logical_layer_id": 4,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 1.5,
+     "logical_layer_id": 5,
+     "layer_type": "routing",
+     "row": null
+    }
+   ],
+   "note": "compact_025: 0.25 mm spacing; minimum-clearance exploratory stack",
+   "source": "embedded layer_stack payload"
+  },
+  "medium_050": {
+   "name": "medium_050",
+   "provenance": "unconfirmed_simulation",
+   "formal_acceptance_allowed": false,
+   "routing_heights_mm": {
+    "2": 1.0,
+    "3": 1.5,
+    "4": 2.0,
+    "5": 2.5
+   },
+   "interface_rows": {
+    "z1": 0.0,
+    "z2": 0.5
+   },
+   "valid": true,
+   "validation_errors": [],
+   "min_plane_gap_mm": 0.5,
+   "physical_planes": [
+    {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_id": 1,
+     "layer_type": "interface",
+     "row": "z1"
+    },
+    {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_id": 1,
+     "layer_type": "interface",
+     "row": "z2"
+    },
+    {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 1.0,
+     "logical_layer_id": 2,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 1.5,
+     "logical_layer_id": 3,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 2.0,
+     "logical_layer_id": 4,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 2.5,
+     "logical_layer_id": 5,
+     "layer_type": "routing",
+     "row": null
+    }
+   ],
+   "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+   "source": "embedded layer_stack payload"
+  },
+  "wide_100": {
+   "name": "wide_100",
+   "provenance": "unconfirmed_simulation",
+   "formal_acceptance_allowed": false,
+   "routing_heights_mm": {
+    "2": 1.5,
+    "3": 2.5,
+    "4": 3.5,
+    "5": 4.5
+   },
+   "interface_rows": {
+    "z1": 0.0,
+    "z2": 0.5
+   },
+   "valid": true,
+   "validation_errors": [],
+   "min_plane_gap_mm": 1.0,
+   "physical_planes": [
+    {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_id": 1,
+     "layer_type": "interface",
+     "row": "z1"
+    },
+    {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_id": 1,
+     "layer_type": "interface",
+     "row": "z2"
+    },
+    {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 1.5,
+     "logical_layer_id": 2,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 2.5,
+     "logical_layer_id": 3,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 3.5,
+     "logical_layer_id": 4,
+     "layer_type": "routing",
+     "row": null
+    },
+    {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 4.5,
+     "logical_layer_id": 5,
+     "layer_type": "routing",
+     "row": null
+    }
+   ],
+   "note": "wide_100: 1.0 mm spacing; exploratory",
+   "source": "embedded layer_stack payload"
+  }
+ },
+ "baseline": {
+  "A": {
+   "present": true,
+   "scheme": "A",
+   "stage": "baseline_l1",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/baseline/schemeA/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/baseline/schemeA/run_summary.json",
+   "routed": 943,
+   "failed": 81,
+   "total": 1024,
+   "per_plane": {
+    "z1": {
+     "routed": 498,
+     "failed": 14,
+     "z_mm": 0.0,
+     "physical_plane": "L1 z1 row"
+    },
+    "z2": {
+     "routed": 445,
+     "failed": 67,
+     "z_mm": 0.5,
+     "physical_plane": "L1 z2 row"
+    }
+   },
+   "failure_reasons": {
+    "no_legal_candidate": 79,
+    "no_candidate_generated": 2
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 1.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 2.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 2.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 1.0,
+     "3": 1.5,
+     "4": 2.0,
+     "5": 2.5
+    }
+   },
+   "provenance": "unconfirmed_simulation",
+   "two_rows_note": "both port rows belong to L1: z1 row at z=0.0 mm, z2 row at z=0.5 mm; the baseline is a flat-L1 layout on two physical planes of the SAME logical layer",
+   "expected": {
+    "total": 943,
+    "z1": 498,
+    "z2": 445
+   },
+   "matches_expected": true,
+   "per_plane_failure_reasons": {
+    "z1": {
+     "no_legal_candidate": 14
+    },
+    "z2": {
+     "no_legal_candidate": 65,
+     "no_candidate_generated": 2
+    }
+   },
+   "statistics": {
+    "baseline_routed": 943,
+    "failed": 81,
+    "total": 1024,
+    "per_plane": {
+     "z1": {
+      "routed": 498,
+      "failed": 14,
+      "baseline": 498
+     },
+     "z2": {
+      "routed": 445,
+      "failed": 67,
+      "baseline": 445
+     }
+    },
+    "transitions": 0,
+    "lifted": 0,
+    "physical_planes": {
+     "0.0": "L1 z1 row",
+     "0.5": "L1 z2 row"
+    },
+    "note": "corrected L1 interface-layer baseline: both port rows belong to L1, physical heights 0.0 / 0.5 mm; no transition and no old 2.5D result is inherited",
+    "seconds": 0.68
+   }
+  },
+  "B": {
+   "present": true,
+   "scheme": "B",
+   "stage": "baseline_l1",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/baseline/schemeB/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/baseline/schemeB/run_summary.json",
+   "routed": 515,
+   "failed": 509,
+   "total": 1024,
+   "per_plane": {
+    "z1": {
+     "routed": 184,
+     "failed": 328,
+     "z_mm": 0.0,
+     "physical_plane": "L1 z1 row"
+    },
+    "z2": {
+     "routed": 331,
+     "failed": 181,
+     "z_mm": 0.5,
+     "physical_plane": "L1 z2 row"
+    }
+   },
+   "failure_reasons": {
+    "no_legal_candidate": 431,
+    "reanalysis_invalid_current_layout": 76,
+    "no_candidate_generated": 2
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 1.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 2.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 2.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 1.0,
+     "3": 1.5,
+     "4": 2.0,
+     "5": 2.5
+    }
+   },
+   "provenance": "unconfirmed_simulation",
+   "two_rows_note": "both port rows belong to L1: z1 row at z=0.0 mm, z2 row at z=0.5 mm; the baseline is a flat-L1 layout on two physical planes of the SAME logical layer",
+   "expected": {
+    "total": 515,
+    "z1": 184,
+    "z2": 331
+   },
+   "matches_expected": true,
+   "per_plane_failure_reasons": {
+    "z1": {
+     "no_legal_candidate": 252,
+     "reanalysis_invalid_current_layout": 76
+    },
+    "z2": {
+     "no_legal_candidate": 179,
+     "no_candidate_generated": 2
+    }
+   },
+   "statistics": {
+    "baseline_routed": 515,
+    "failed": 509,
+    "total": 1024,
+    "per_plane": {
+     "z1": {
+      "routed": 184,
+      "failed": 328,
+      "baseline": 184
+     },
+     "z2": {
+      "routed": 331,
+      "failed": 181,
+      "baseline": 331
+     }
+    },
+    "transitions": 0,
+    "lifted": 0,
+    "physical_planes": {
+     "0.0": "L1 z1 row",
+     "0.5": "L1 z2 row"
+    },
+    "note": "corrected L1 interface-layer baseline: both port rows belong to L1, physical heights 0.0 / 0.5 mm; no transition and no old 2.5D result is inherited",
+    "seconds": 0.54
+   }
+  }
+ },
+ "runs": {
+  "A/compact_025": {
+   "present": true,
+   "scheme": "A",
+   "stack": "compact_025",
+   "stage": "single+relayer",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeA/layers5_compact_025/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeA/layers5_compact_025/run_summary.json",
+   "run_summary_seconds": 576.72,
+   "run_summary_config": {
+    "scheme": "A",
+    "stage": "single",
+    "stack": "compact_025",
+    "stack_json": null,
+    "budget": 120,
+    "multi_budget": 60,
+    "passes": 2,
+    "rr_rounds": 0,
+    "rr_targets": 48,
+    "rr_rip": 2,
+    "layer_selection": "best",
+    "limit": 0,
+    "out": null,
+    "tag": ""
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "compact_025: 0.25 mm spacing; minimum-clearance exploratory stack",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 0.75,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 1.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 1.25,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 0.75,
+     "3": 1.0,
+     "4": 1.25,
+     "5": 1.5
+    }
+   },
+   "stack_provenance": "unconfirmed_simulation",
+   "stack_formal_acceptance_allowed": false,
+   "stack_valid": true,
+   "stack_validation_errors": [],
+   "min_plane_gap_mm": 0.25,
+   "router_stats": {
+    "scheme": "A",
+    "stack": "compact_025",
+    "stage": "single",
+    "baseline_routed": 943,
+    "final_routed": 962,
+    "new_routed": 19,
+    "attemptable": 79,
+    "no_candidate": 2,
+    "failed_unplaceable": 60,
+    "flat_added": 0,
+    "passes": [
+     {
+      "pass_index": 1,
+      "stage": "single",
+      "variants": [
+       0
+      ],
+      "attempted": 79,
+      "placed": 19,
+      "pending": 60,
+      "routed": 962,
+      "seconds": 236.88
+     },
+     {
+      "pass_index": 2,
+      "stage": "single",
+      "variants": [
+       1,
+       0
+      ],
+      "attempted": 60,
+      "placed": 0,
+      "pending": 60,
+      "routed": 962,
+      "seconds": 575.83
+     }
+    ],
+    "rr": [],
+    "rejected": {
+     "transition_placement_infeasible": 132
+    },
+    "seconds": 575.84
+   },
+   "stats_saved": {
+    "baseline_routed": 943,
+    "routed": 962,
+    "failed": 62,
+    "new_routed": 19,
+    "lifted": 43,
+    "transitions": 115,
+    "total_length_mm": 155904.960225,
+    "mean_length_mm": 162.063368,
+    "total_xy_length_mm": 155901.541226,
+    "per_plane": {
+     "z1": {
+      "routed": 498,
+      "baseline": 498,
+      "lifted": 0
+     },
+     "z2": {
+      "routed": 464,
+      "baseline": 445,
+      "lifted": 19
+     }
+    },
+    "per_layer_flat_parts": {
+     "1": 1005,
+     "2": 31,
+     "3": 23,
+     "5": 16,
+     "4": 2
+    },
+    "per_physical_plane_flat_parts": {
+     "L1@0": 498,
+     "L1@0.5": 507,
+     "L2@0.75": 31,
+     "L3@1": 23,
+     "L5@1.5": 16,
+     "L4@1.25": 2
+    },
+    "per_physical_plane_flat_length_mm": {
+     "L1@0": 76595.314857,
+     "L1@0.5": 69812.056796,
+     "L2@0.75": 4787.336816,
+     "L3@1": 3040.514456,
+     "L5@1.5": 603.415085,
+     "L4@1.25": 485.318633
+    },
+    "transition_layer_pairs": {
+     "1->2": 28,
+     "2->3": 10,
+     "3->1": 13,
+     "3->5": 7,
+     "5->1": 12,
+     "1->5": 4,
+     "5->3": 4,
+     "2->1": 17,
+     "1->3": 9,
+     "3->2": 3,
+     "2->5": 4,
+     "1->4": 2,
+     "4->1": 1,
+     "4->5": 1
+    },
+    "transitions_histogram": {
+     "0": 919,
+     "3": 19,
+     "4": 5,
+     "2": 19
+    },
+    "layers_used_histogram": {
+     "1": 919,
+     "1,2,3": 8,
+     "1,2,3,5": 5,
+     "1,3,5": 6,
+     "1,2": 14,
+     "1,3": 4,
+     "1,2,5": 4,
+     "1,4": 1,
+     "1,4,5": 1
+    },
+    "layer_sequence_histogram": {
+     "1": 919,
+     "1->2->3->1": 8,
+     "1->2->3->5->1": 2,
+     "1->5->3->1": 1,
+     "1->2->1": 14,
+     "1->3->1": 4,
+     "1->5->3->2->1": 3,
+     "1->3->5->1": 5,
+     "1->2->5->1": 4,
+     "1->4->1": 1,
+     "1->4->5->1": 1
+    },
+    "failed_no_candidate": 2,
+    "failed_unplaceable": 60,
+    "z_span_max_mm": 1.0
+   },
+   "process": {
+    "board_mm": [
+     150.0,
+     150.0
+    ],
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "radius_mm": 15.0,
+    "min_cross_angle_deg": 5.0,
+    "crossing_policy": "strict",
+    "propagation_loss_db_per_cm": 0.05,
+    "bend_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "crossing_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "interlayer_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "loss_note": "no total-loss conclusion is produced: bend, crossing and interlayer coefficients are uncalibrated; the 0.05 dB/cm propagation value is an experiment convention, not measured"
+   },
+   "routed": 962,
+   "total": 1024,
+   "failed": 62,
+   "baseline_routed": 943,
+   "new_routed": 19,
+   "added": 19,
+   "flat_l1_routed": 943,
+   "lifted": 43,
+   "transitions": 115,
+   "transitions_histogram": {
+    "0": 919,
+    "2": 19,
+    "3": 19,
+    "4": 5
+   },
+   "transitions_grouped": {
+    "0": 919,
+    "2": 19,
+    "3": 19,
+    "4+": 5
+   },
+   "transition_pairs": [
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 0.25,
+     "dz_abs_mm": 0.25,
+     "count": 28,
+     "theta_deg_total": 207.255991,
+     "footprint_mm_total": 108.217374,
+     "length_mm_total": 108.518983,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 9,
+     "theta_deg_total": 94.277825,
+     "footprint_mm_total": 49.089205,
+     "length_mm_total": 49.363754,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 0.75,
+     "dz_abs_mm": 0.75,
+     "count": 2,
+     "theta_deg_total": 25.677136,
+     "footprint_mm_total": 13.332292,
+     "length_mm_total": 13.444517,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 4,
+     "theta_deg_total": 59.340446,
+     "footprint_mm_total": 30.724583,
+     "length_mm_total": 31.070585,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -0.25,
+     "dz_abs_mm": 0.25,
+     "count": 17,
+     "theta_deg_total": 125.833995,
+     "footprint_mm_total": 65.703406,
+     "length_mm_total": 65.886526,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 3,
+     "dz_signed_mm": 0.25,
+     "dz_abs_mm": 0.25,
+     "count": 10,
+     "theta_deg_total": 74.019997,
+     "footprint_mm_total": 38.649062,
+     "length_mm_total": 38.75678,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 5,
+     "dz_signed_mm": 0.75,
+     "dz_abs_mm": 0.75,
+     "count": 4,
+     "theta_deg_total": 51.354273,
+     "footprint_mm_total": 26.664583,
+     "length_mm_total": 26.889034,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 13,
+     "theta_deg_total": 136.17908,
+     "footprint_mm_total": 70.906629,
+     "length_mm_total": 71.3032,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 2,
+     "dz_signed_mm": -0.25,
+     "dz_abs_mm": 0.25,
+     "count": 3,
+     "theta_deg_total": 22.205999,
+     "footprint_mm_total": 11.594719,
+     "length_mm_total": 11.627034,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 5,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 7,
+     "theta_deg_total": 73.327197,
+     "footprint_mm_total": 38.180492,
+     "length_mm_total": 38.394031,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -0.75,
+     "dz_abs_mm": 0.75,
+     "count": 1,
+     "theta_deg_total": 12.838568,
+     "footprint_mm_total": 6.666146,
+     "length_mm_total": 6.722259,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 5,
+     "dz_signed_mm": 0.25,
+     "dz_abs_mm": 0.25,
+     "count": 1,
+     "theta_deg_total": 7.402,
+     "footprint_mm_total": 3.864906,
+     "length_mm_total": 3.875678,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 12,
+     "theta_deg_total": 178.021339,
+     "footprint_mm_total": 92.173749,
+     "length_mm_total": 93.211755,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 3,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 4,
+     "theta_deg_total": 41.901255,
+     "footprint_mm_total": 21.817424,
+     "length_mm_total": 21.939446,
+     "radius_values_mm": [
+      15.0
+     ]
+    }
+   ],
+   "transition_geometry": {
+    "count": 115,
+    "radius_distribution": {
+     "15.000000": 115
+    },
+    "radius_expected_mm": 15.0,
+    "all_transition_radii_r15": true,
+    "theta_deg_total": 1109.635101,
+    "footprint_mm_total": 577.584569,
+    "length_mm_total": 581.00358
+   },
+   "layers_used_histogram": {
+    "1": 919,
+    "1,2": 14,
+    "1,2,3": 8,
+    "1,2,3,5": 5,
+    "1,2,5": 4,
+    "1,3": 4,
+    "1,3,5": 6,
+    "1,4": 1,
+    "1,4,5": 1
+   },
+   "layer_sequence_histogram": {
+    "1": 919,
+    "1->2->1": 14,
+    "1->2->3->1": 8,
+    "1->2->3->5->1": 2,
+    "1->2->5->1": 4,
+    "1->3->1": 4,
+    "1->3->5->1": 5,
+    "1->4->1": 1,
+    "1->4->5->1": 1,
+    "1->5->3->1": 1,
+    "1->5->3->2->1": 3
+   },
+   "physical_planes": {
+    "L1:z1": {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z1",
+     "routes_touching": 498,
+     "flat_parts": 498,
+     "flat_length_mm": 76595.314857
+    },
+    "L1:z2": {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z2",
+     "routes_touching": 464,
+     "flat_parts": 507,
+     "flat_length_mm": 69812.056796
+    },
+    "L2": {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 0.75,
+     "logical_layer_ids": [
+      2
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 31,
+     "flat_parts": 31,
+     "flat_length_mm": 4787.33682
+    },
+    "L3": {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 1.0,
+     "logical_layer_ids": [
+      3
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 23,
+     "flat_parts": 23,
+     "flat_length_mm": 3040.514458
+    },
+    "L4": {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 1.25,
+     "logical_layer_ids": [
+      4
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 2,
+     "flat_parts": 2,
+     "flat_length_mm": 485.318633
+    },
+    "L5": {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 1.5,
+     "logical_layer_ids": [
+      5
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 16,
+     "flat_parts": 16,
+     "flat_length_mm": 603.415085
+    }
+   },
+   "logical_layers": {
+    "1": {
+     "layer_id": 1,
+     "layer_type": "interface",
+     "physical_z_mm": null,
+     "interface_rows": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "routes_touching": 962,
+     "flat_parts": 1005,
+     "flat_length_mm": 146407.371653,
+     "transition_endpoints": 86
+    },
+    "2": {
+     "layer_id": 2,
+     "layer_type": "routing",
+     "physical_z_mm": 0.75,
+     "interface_rows": {},
+     "routes_touching": 31,
+     "flat_parts": 31,
+     "flat_length_mm": 4787.33682,
+     "transition_endpoints": 62
+    },
+    "3": {
+     "layer_id": 3,
+     "layer_type": "routing",
+     "physical_z_mm": 1.0,
+     "interface_rows": {},
+     "routes_touching": 23,
+     "flat_parts": 23,
+     "flat_length_mm": 3040.514458,
+     "transition_endpoints": 46
+    },
+    "4": {
+     "layer_id": 4,
+     "layer_type": "routing",
+     "physical_z_mm": 1.25,
+     "interface_rows": {},
+     "routes_touching": 2,
+     "flat_parts": 2,
+     "flat_length_mm": 485.318633,
+     "transition_endpoints": 4
+    },
+    "5": {
+     "layer_id": 5,
+     "layer_type": "routing",
+     "physical_z_mm": 1.5,
+     "interface_rows": {},
+     "routes_touching": 16,
+     "flat_parts": 16,
+     "flat_length_mm": 603.415085,
+     "transition_endpoints": 32
+    }
+   },
+   "length": {
+    "xy_total_mm": 155901.541226,
+    "three_d_total_mm": 155904.96023,
+    "flat_total_mm": 155323.956649,
+    "transition_total_mm": 581.00358,
+    "mean_3d_length_mm": 162.063368,
+    "mean_xy_length_mm": 162.059814,
+    "mean_transition_length_per_lifted_mm": 13.511711
+   },
+   "z_span_distribution": {
+    "0.000000": 919,
+    "0.250000": 14,
+    "0.500000": 12,
+    "0.750000": 1,
+    "1.000000": 16
+   },
+   "per_plane": {
+    "z1": {
+     "routed": 498,
+     "baseline": 498,
+     "lifted": 0
+    },
+    "z2": {
+     "routed": 464,
+     "baseline": 445,
+     "lifted": 43
+    }
+   },
+   "failure_reasons": {
+    "unplaceable_in_3d": 60,
+    "no_2d_candidate": 2
+   },
+   "failure_by_plane": {
+    "z1": {
+     "unplaceable_in_3d": 14
+    },
+    "z2": {
+     "unplaceable_in_3d": 46,
+     "no_2d_candidate": 2
+    }
+   },
+   "validation": null,
+   "formal_acceptance_granted": false,
+   "formal_acceptance_status": "NOT_GRANTED",
+   "warnings": [
+    "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+   ],
+   "flat_geometry": {
+    "arc_count": 1968,
+    "straight_length_mm": 122294.07613,
+    "arc_length_mm": 33029.880519,
+    "radius_distribution": {
+     "15.000000": 1968
+    },
+    "expected_radius_mm": 15.0,
+    "all_flat_arcs_r15": true,
+    "unexpected_flat_arc_count": 0
+   },
+   "l1_two_rows_check": {
+    "logical_layer_id": 1,
+    "physical_plane_count": 2,
+    "z_values_mm": [
+     0.0,
+     0.5
+    ],
+    "rows": [
+     "z1",
+     "z2"
+    ],
+    "note": "L1 is ONE logical routing layer with TWO physical planes: z1 row z=0.0 mm and z2 row z=0.5 mm; physical-plane statistics therefore list L1 twice, both with logical layer_id=1"
+   },
+   "failure_analysis": {
+    "from_records": {
+     "failed_total": 62,
+     "no_2d_candidate": 2,
+     "unplaceable_in_3d": 60,
+     "other": {}
+    },
+    "from_run_summary": {
+     "attemptable": 79,
+     "attempted": 139,
+     "unattempted": -60,
+     "no_candidate": 2,
+     "failed_no_candidate": 2,
+     "failed_unplaceable": 60,
+     "flat_added": 0,
+     "rejected": {
+      "transition_placement_infeasible": 132
+     },
+     "passes": [
+      {
+       "pass_index": 1,
+       "stage": "single",
+       "variants": [
+        0
+       ],
+       "attempted": 79,
+       "placed": 19,
+       "pending": 60,
+       "routed": 962,
+       "seconds": 236.88
+      },
+      {
+       "pass_index": 2,
+       "stage": "single",
+       "variants": [
+        1,
+        0
+       ],
+       "attempted": 60,
+       "placed": 0,
+       "pending": 60,
+       "routed": 962,
+       "seconds": 575.83
+      }
+     ]
+    },
+    "transition_placement_infeasible": 132,
+    "blocked_in_3d": 60,
+    "no_2d_candidate": 2,
+    "note": "no_2d_candidate = the accepted R15 2D layout had no candidate for this route; blocked_in_3d = attempted but no legal 3D placement; transition_placement_infeasible = the router rejected a candidate because the elevation S-curve could not be placed on the 2D path; unattempted = attemptable routes not yet tried in this run"
+   },
+   "formal_acceptance_refusal_reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance cannot be granted"
+  },
+  "A/medium_050": {
+   "present": true,
+   "scheme": "A",
+   "stack": "medium_050",
+   "stage": "full+relayer",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeA/layers5_medium_050/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeA/layers5_medium_050/run_summary.json",
+   "run_summary_seconds": 1610.96,
+   "run_summary_config": {
+    "scheme": "A",
+    "stage": "full",
+    "stack": "medium_050",
+    "stack_json": null,
+    "budget": 120,
+    "multi_budget": 60,
+    "passes": 3,
+    "rr_rounds": 1,
+    "rr_targets": 48,
+    "rr_rip": 2,
+    "layer_selection": "best",
+    "limit": 0,
+    "out": null,
+    "tag": ""
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 1.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 2.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 2.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 1.0,
+     "3": 1.5,
+     "4": 2.0,
+     "5": 2.5
+    }
+   },
+   "stack_provenance": "unconfirmed_simulation",
+   "stack_formal_acceptance_allowed": false,
+   "stack_valid": true,
+   "stack_validation_errors": [],
+   "min_plane_gap_mm": 0.5,
+   "router_stats": {
+    "scheme": "A",
+    "stack": "medium_050",
+    "stage": "full",
+    "baseline_routed": 943,
+    "final_routed": 963,
+    "new_routed": 20,
+    "attemptable": 79,
+    "no_candidate": 2,
+    "failed_unplaceable": 59,
+    "flat_added": 0,
+    "passes": [
+     {
+      "pass_index": 1,
+      "stage": "single",
+      "variants": [
+       0
+      ],
+      "attempted": 79,
+      "placed": 20,
+      "pending": 59,
+      "routed": 963,
+      "seconds": 243.05
+     },
+     {
+      "pass_index": 2,
+      "stage": "multi",
+      "variants": [
+       1,
+       0
+      ],
+      "attempted": 59,
+      "placed": 0,
+      "pending": 59,
+      "routed": 963,
+      "seconds": 716.13
+     },
+     {
+      "pass_index": 3,
+      "stage": "multi",
+      "variants": [
+       2,
+       1,
+       0
+      ],
+      "attempted": 59,
+      "placed": 0,
+      "pending": 59,
+      "routed": 963,
+      "seconds": 1123.66
+     }
+    ],
+    "rr": [
+     {
+      "round": 1,
+      "gain": 0,
+      "pending": 59,
+      "routed": 963
+     }
+    ],
+    "rejected": {
+     "transition_placement_infeasible": 342
+    },
+    "seconds": 1610.16
+   },
+   "stats_saved": {
+    "baseline_routed": 943,
+    "routed": 963,
+    "failed": 61,
+    "new_routed": 20,
+    "lifted": 44,
+    "transitions": 117,
+    "total_length_mm": 156179.28807,
+    "mean_length_mm": 162.179946,
+    "total_xy_length_mm": 156171.327575,
+    "per_plane": {
+     "z1": {
+      "routed": 498,
+      "baseline": 498,
+      "lifted": 0
+     },
+     "z2": {
+      "routed": 465,
+      "baseline": 445,
+      "lifted": 20
+     }
+    },
+    "per_layer_flat_parts": {
+     "1": 1007,
+     "2": 37,
+     "3": 24,
+     "5": 8,
+     "4": 4
+    },
+    "per_physical_plane_flat_parts": {
+     "L1@0": 498,
+     "L1@0.5": 509,
+     "L2@1": 37,
+     "L3@1.5": 24,
+     "L5@2.5": 8,
+     "L4@2": 4
+    },
+    "per_physical_plane_flat_length_mm": {
+     "L1@0": 76595.314857,
+     "L1@0.5": 70210.157124,
+     "L2@1": 4761.13638,
+     "L3@1.5": 2494.648716,
+     "L5@2.5": 746.89286,
+     "L4@2": 586.891673
+    },
+    "transition_layer_pairs": {
+     "1->2": 32,
+     "2->3": 16,
+     "3->1": 18,
+     "3->5": 2,
+     "5->1": 5,
+     "1->3": 6,
+     "3->2": 3,
+     "2->1": 19,
+     "2->4": 1,
+     "4->5": 1,
+     "1->5": 4,
+     "5->2": 1,
+     "5->3": 2,
+     "3->4": 1,
+     "4->1": 2,
+     "1->4": 2,
+     "2->5": 1,
+     "4->2": 1
+    },
+    "transitions_histogram": {
+     "0": 919,
+     "3": 19,
+     "4": 5,
+     "2": 20
+    },
+    "layers_used_histogram": {
+     "1": 919,
+     "1,2,3": 15,
+     "1,2,3,5": 4,
+     "1,2,4,5": 1,
+     "1,2": 14,
+     "1,3": 4,
+     "1,2,5": 2,
+     "1,3,4": 1,
+     "1,4": 1,
+     "1,5": 1,
+     "1,2,4": 1
+    },
+    "layer_sequence_histogram": {
+     "1": 919,
+     "1->2->3->1": 14,
+     "1->2->3->5->1": 2,
+     "1->3->2->1": 1,
+     "1->2->4->5->1": 1,
+     "1->2->1": 14,
+     "1->3->1": 4,
+     "1->5->2->1": 1,
+     "1->5->3->2->1": 2,
+     "1->3->4->1": 1,
+     "1->4->1": 1,
+     "1->2->5->1": 1,
+     "1->5->1": 1,
+     "1->4->2->1": 1
+    },
+    "failed_no_candidate": 2,
+    "failed_unplaceable": 59,
+    "z_span_max_mm": 2.0
+   },
+   "process": {
+    "board_mm": [
+     150.0,
+     150.0
+    ],
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "radius_mm": 15.0,
+    "min_cross_angle_deg": 5.0,
+    "crossing_policy": "strict",
+    "propagation_loss_db_per_cm": 0.05,
+    "bend_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "crossing_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "interlayer_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "loss_note": "no total-loss conclusion is produced: bend, crossing and interlayer coefficients are uncalibrated; the 0.05 dB/cm propagation value is an experiment convention, not measured"
+   },
+   "routed": 963,
+   "total": 1024,
+   "failed": 61,
+   "baseline_routed": 943,
+   "new_routed": 20,
+   "added": 20,
+   "flat_l1_routed": 943,
+   "lifted": 44,
+   "transitions": 117,
+   "transitions_histogram": {
+    "0": 919,
+    "2": 20,
+    "3": 19,
+    "4": 5
+   },
+   "transitions_grouped": {
+    "0": 919,
+    "2": 20,
+    "3": 19,
+    "4+": 5
+   },
+   "transition_pairs": [
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 32,
+     "theta_deg_total": 335.210043,
+     "footprint_mm_total": 174.539394,
+     "length_mm_total": 175.515568,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 6,
+     "theta_deg_total": 89.010669,
+     "footprint_mm_total": 46.086874,
+     "length_mm_total": 46.605878,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 1.5,
+     "dz_abs_mm": 1.5,
+     "count": 2,
+     "theta_deg_total": 36.389745,
+     "footprint_mm_total": 18.734994,
+     "length_mm_total": 19.053626,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 4,
+     "theta_deg_total": 84.157879,
+     "footprint_mm_total": 43.081318,
+     "length_mm_total": 44.064962,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 19,
+     "theta_deg_total": 199.030963,
+     "footprint_mm_total": 103.632765,
+     "length_mm_total": 104.212369,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 3,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 16,
+     "theta_deg_total": 167.605021,
+     "footprint_mm_total": 87.269697,
+     "length_mm_total": 87.757784,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 4,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 1,
+     "theta_deg_total": 14.835112,
+     "footprint_mm_total": 7.681146,
+     "length_mm_total": 7.767646,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 5,
+     "dz_signed_mm": 1.5,
+     "dz_abs_mm": 1.5,
+     "count": 1,
+     "theta_deg_total": 18.194872,
+     "footprint_mm_total": 9.367497,
+     "length_mm_total": 9.526813,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 18,
+     "theta_deg_total": 267.032008,
+     "footprint_mm_total": 138.260623,
+     "length_mm_total": 139.817633,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 2,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 3,
+     "theta_deg_total": 31.425942,
+     "footprint_mm_total": 16.363068,
+     "length_mm_total": 16.454585,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 4,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 5,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 2,
+     "theta_deg_total": 29.670223,
+     "footprint_mm_total": 15.362291,
+     "length_mm_total": 15.535293,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -1.5,
+     "dz_abs_mm": 1.5,
+     "count": 2,
+     "theta_deg_total": 36.389745,
+     "footprint_mm_total": 18.734994,
+     "length_mm_total": 19.053626,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 2,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 1,
+     "theta_deg_total": 14.835112,
+     "footprint_mm_total": 7.681146,
+     "length_mm_total": 7.767646,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 5,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 5,
+     "theta_deg_total": 105.197349,
+     "footprint_mm_total": 53.851648,
+     "length_mm_total": 55.081203,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 2,
+     "dz_signed_mm": -1.5,
+     "dz_abs_mm": 1.5,
+     "count": 1,
+     "theta_deg_total": 18.194872,
+     "footprint_mm_total": 9.367497,
+     "length_mm_total": 9.526813,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 3,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 2,
+     "theta_deg_total": 29.670223,
+     "footprint_mm_total": 15.362291,
+     "length_mm_total": 15.535293,
+     "radius_values_mm": [
+      15.0
+     ]
+    }
+   ],
+   "transition_geometry": {
+    "count": 117,
+    "radius_distribution": {
+     "15.000000": 117
+    },
+    "radius_expected_mm": 15.0,
+    "all_transition_radii_r15": true,
+    "theta_deg_total": 1497.800406,
+    "footprint_mm_total": 776.285957,
+    "length_mm_total": 784.246459
+   },
+   "layers_used_histogram": {
+    "1": 919,
+    "1,2": 14,
+    "1,2,3": 15,
+    "1,2,3,5": 4,
+    "1,2,4": 1,
+    "1,2,4,5": 1,
+    "1,2,5": 2,
+    "1,3": 4,
+    "1,3,4": 1,
+    "1,4": 1,
+    "1,5": 1
+   },
+   "layer_sequence_histogram": {
+    "1": 919,
+    "1->2->1": 14,
+    "1->2->3->1": 14,
+    "1->2->3->5->1": 2,
+    "1->2->4->5->1": 1,
+    "1->2->5->1": 1,
+    "1->3->1": 4,
+    "1->3->2->1": 1,
+    "1->3->4->1": 1,
+    "1->4->1": 1,
+    "1->4->2->1": 1,
+    "1->5->1": 1,
+    "1->5->2->1": 1,
+    "1->5->3->2->1": 2
+   },
+   "physical_planes": {
+    "L1:z1": {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z1",
+     "routes_touching": 498,
+     "flat_parts": 498,
+     "flat_length_mm": 76595.314857
+    },
+    "L1:z2": {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z2",
+     "routes_touching": 465,
+     "flat_parts": 509,
+     "flat_length_mm": 70210.157125
+    },
+    "L2": {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 1.0,
+     "logical_layer_ids": [
+      2
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 37,
+     "flat_parts": 37,
+     "flat_length_mm": 4761.136379
+    },
+    "L3": {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 1.5,
+     "logical_layer_ids": [
+      3
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 24,
+     "flat_parts": 24,
+     "flat_length_mm": 2494.648716
+    },
+    "L4": {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 2.0,
+     "logical_layer_ids": [
+      4
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 4,
+     "flat_parts": 4,
+     "flat_length_mm": 586.891673
+    },
+    "L5": {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 2.5,
+     "logical_layer_ids": [
+      5
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 8,
+     "flat_parts": 8,
+     "flat_length_mm": 746.89286
+    }
+   },
+   "logical_layers": {
+    "1": {
+     "layer_id": 1,
+     "layer_type": "interface",
+     "physical_z_mm": null,
+     "interface_rows": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "routes_touching": 963,
+     "flat_parts": 1007,
+     "flat_length_mm": 146805.471982,
+     "transition_endpoints": 88
+    },
+    "2": {
+     "layer_id": 2,
+     "layer_type": "routing",
+     "physical_z_mm": 1.0,
+     "interface_rows": {},
+     "routes_touching": 37,
+     "flat_parts": 37,
+     "flat_length_mm": 4761.136379,
+     "transition_endpoints": 74
+    },
+    "3": {
+     "layer_id": 3,
+     "layer_type": "routing",
+     "physical_z_mm": 1.5,
+     "interface_rows": {},
+     "routes_touching": 24,
+     "flat_parts": 24,
+     "flat_length_mm": 2494.648716,
+     "transition_endpoints": 48
+    },
+    "4": {
+     "layer_id": 4,
+     "layer_type": "routing",
+     "physical_z_mm": 2.0,
+     "interface_rows": {},
+     "routes_touching": 4,
+     "flat_parts": 4,
+     "flat_length_mm": 586.891673,
+     "transition_endpoints": 8
+    },
+    "5": {
+     "layer_id": 5,
+     "layer_type": "routing",
+     "physical_z_mm": 2.5,
+     "interface_rows": {},
+     "routes_touching": 8,
+     "flat_parts": 8,
+     "flat_length_mm": 746.89286,
+     "transition_endpoints": 16
+    }
+   },
+   "length": {
+    "xy_total_mm": 156171.327575,
+    "three_d_total_mm": 156179.288068,
+    "flat_total_mm": 155395.041609,
+    "transition_total_mm": 784.246459,
+    "mean_3d_length_mm": 162.179946,
+    "mean_xy_length_mm": 162.17168,
+    "mean_transition_length_per_lifted_mm": 17.823783
+   },
+   "z_span_distribution": {
+    "0.000000": 919,
+    "0.500000": 14,
+    "1.000000": 19,
+    "1.500000": 3,
+    "2.000000": 8
+   },
+   "per_plane": {
+    "z1": {
+     "routed": 498,
+     "baseline": 498,
+     "lifted": 0
+    },
+    "z2": {
+     "routed": 465,
+     "baseline": 445,
+     "lifted": 44
+    }
+   },
+   "failure_reasons": {
+    "unplaceable_in_3d": 59,
+    "no_2d_candidate": 2
+   },
+   "failure_by_plane": {
+    "z1": {
+     "unplaceable_in_3d": 14
+    },
+    "z2": {
+     "unplaceable_in_3d": 45,
+     "no_2d_candidate": 2
+    }
+   },
+   "validation": null,
+   "formal_acceptance_granted": false,
+   "formal_acceptance_status": "NOT_GRANTED",
+   "warnings": [
+    "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+   ],
+   "flat_geometry": {
+    "arc_count": 1971,
+    "straight_length_mm": 122304.31176,
+    "arc_length_mm": 33090.729849,
+    "radius_distribution": {
+     "15.000000": 1971
+    },
+    "expected_radius_mm": 15.0,
+    "all_flat_arcs_r15": true,
+    "unexpected_flat_arc_count": 0
+   },
+   "l1_two_rows_check": {
+    "logical_layer_id": 1,
+    "physical_plane_count": 2,
+    "z_values_mm": [
+     0.0,
+     0.5
+    ],
+    "rows": [
+     "z1",
+     "z2"
+    ],
+    "note": "L1 is ONE logical routing layer with TWO physical planes: z1 row z=0.0 mm and z2 row z=0.5 mm; physical-plane statistics therefore list L1 twice, both with logical layer_id=1"
+   },
+   "failure_analysis": {
+    "from_records": {
+     "failed_total": 61,
+     "no_2d_candidate": 2,
+     "unplaceable_in_3d": 59,
+     "other": {}
+    },
+    "from_run_summary": {
+     "attemptable": 79,
+     "attempted": 197,
+     "unattempted": -118,
+     "no_candidate": 2,
+     "failed_no_candidate": 2,
+     "failed_unplaceable": 59,
+     "flat_added": 0,
+     "rejected": {
+      "transition_placement_infeasible": 342
+     },
+     "passes": [
+      {
+       "pass_index": 1,
+       "stage": "single",
+       "variants": [
+        0
+       ],
+       "attempted": 79,
+       "placed": 20,
+       "pending": 59,
+       "routed": 963,
+       "seconds": 243.05
+      },
+      {
+       "pass_index": 2,
+       "stage": "multi",
+       "variants": [
+        1,
+        0
+       ],
+       "attempted": 59,
+       "placed": 0,
+       "pending": 59,
+       "routed": 963,
+       "seconds": 716.13
+      },
+      {
+       "pass_index": 3,
+       "stage": "multi",
+       "variants": [
+        2,
+        1,
+        0
+       ],
+       "attempted": 59,
+       "placed": 0,
+       "pending": 59,
+       "routed": 963,
+       "seconds": 1123.66
+      }
+     ]
+    },
+    "transition_placement_infeasible": 342,
+    "blocked_in_3d": 59,
+    "no_2d_candidate": 2,
+    "note": "no_2d_candidate = the accepted R15 2D layout had no candidate for this route; blocked_in_3d = attempted but no legal 3D placement; transition_placement_infeasible = the router rejected a candidate because the elevation S-curve could not be placed on the 2D path; unattempted = attemptable routes not yet tried in this run"
+   },
+   "formal_acceptance_refusal_reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance cannot be granted"
+  },
+  "A/wide_100": {
+   "present": true,
+   "scheme": "A",
+   "stack": "wide_100",
+   "stage": "single+relayer",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeA/layers5_wide_100/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeA/layers5_wide_100/run_summary.json",
+   "run_summary_seconds": 589.83,
+   "run_summary_config": {
+    "scheme": "A",
+    "stage": "single",
+    "stack": "wide_100",
+    "stack_json": null,
+    "budget": 120,
+    "multi_budget": 60,
+    "passes": 2,
+    "rr_rounds": 0,
+    "rr_targets": 48,
+    "rr_rip": 2,
+    "layer_selection": "best",
+    "limit": 0,
+    "out": null,
+    "tag": ""
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "wide_100: 1.0 mm spacing; exploratory",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 2.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 3.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 4.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 1.5,
+     "3": 2.5,
+     "4": 3.5,
+     "5": 4.5
+    }
+   },
+   "stack_provenance": "unconfirmed_simulation",
+   "stack_formal_acceptance_allowed": false,
+   "stack_valid": true,
+   "stack_validation_errors": [],
+   "min_plane_gap_mm": 1.0,
+   "router_stats": {
+    "scheme": "A",
+    "stack": "wide_100",
+    "stage": "single",
+    "baseline_routed": 943,
+    "final_routed": 963,
+    "new_routed": 20,
+    "attemptable": 79,
+    "no_candidate": 2,
+    "failed_unplaceable": 59,
+    "flat_added": 0,
+    "passes": [
+     {
+      "pass_index": 1,
+      "stage": "single",
+      "variants": [
+       0
+      ],
+      "attempted": 79,
+      "placed": 20,
+      "pending": 59,
+      "routed": 963,
+      "seconds": 245.69
+     },
+     {
+      "pass_index": 2,
+      "stage": "single",
+      "variants": [
+       1,
+       0
+      ],
+      "attempted": 59,
+      "placed": 0,
+      "pending": 59,
+      "routed": 963,
+      "seconds": 588.86
+     }
+    ],
+    "rr": [],
+    "rejected": {
+     "transition_placement_infeasible": 189
+    },
+    "seconds": 588.87
+   },
+   "stats_saved": {
+    "baseline_routed": 943,
+    "routed": 963,
+    "failed": 61,
+    "new_routed": 20,
+    "lifted": 44,
+    "transitions": 117,
+    "total_length_mm": 156202.851267,
+    "mean_length_mm": 162.204415,
+    "total_xy_length_mm": 156171.327574,
+    "per_plane": {
+     "z1": {
+      "routed": 498,
+      "baseline": 498,
+      "lifted": 0
+     },
+     "z2": {
+      "routed": 465,
+      "baseline": 445,
+      "lifted": 20
+     }
+    },
+    "per_layer_flat_parts": {
+     "1": 1007,
+     "2": 25,
+     "5": 18,
+     "3": 22,
+     "4": 8
+    },
+    "per_physical_plane_flat_parts": {
+     "L1@0": 498,
+     "L1@0.5": 509,
+     "L2@1.5": 25,
+     "L5@4.5": 18,
+     "L3@2.5": 22,
+     "L4@3.5": 8
+    },
+    "per_physical_plane_flat_length_mm": {
+     "L1@0": 76595.314857,
+     "L1@0.5": 70824.718257,
+     "L2@1.5": 3332.921397,
+     "L5@4.5": 384.752322,
+     "L3@2.5": 3040.669278,
+     "L4@3.5": 784.072275
+    },
+    "transition_layer_pairs": {
+     "1->2": 16,
+     "2->5": 1,
+     "5->1": 10,
+     "1->3": 14,
+     "3->5": 7,
+     "1->4": 6,
+     "4->2": 2,
+     "2->1": 21,
+     "4->5": 2,
+     "3->2": 5,
+     "1->5": 8,
+     "5->2": 2,
+     "3->1": 10,
+     "2->3": 3,
+     "5->3": 4,
+     "5->4": 2,
+     "4->1": 3,
+     "4->3": 1
+    },
+    "transitions_histogram": {
+     "0": 919,
+     "3": 19,
+     "2": 20,
+     "4": 5
+    },
+    "layers_used_histogram": {
+     "1": 919,
+     "1,2,5": 3,
+     "1,3,5": 7,
+     "1,2,4": 1,
+     "1,4,5": 3,
+     "1,2,3": 4,
+     "1,2": 12,
+     "1,3": 6,
+     "1,2,3,5": 4,
+     "1,2,4,5": 1,
+     "1,4": 2,
+     "1,3,4": 1
+    },
+    "layer_sequence_histogram": {
+     "1": 919,
+     "1->2->5->1": 1,
+     "1->3->5->1": 5,
+     "1->4->2->1": 1,
+     "1->4->5->1": 2,
+     "1->3->2->1": 3,
+     "1->5->2->1": 2,
+     "1->2->1": 12,
+     "1->3->1": 6,
+     "1->2->3->1": 1,
+     "1->5->3->2->1": 2,
+     "1->2->3->5->1": 2,
+     "1->5->3->1": 2,
+     "1->5->4->2->1": 1,
+     "1->4->1": 2,
+     "1->5->4->1": 1,
+     "1->4->3->1": 1
+    },
+    "failed_no_candidate": 2,
+    "failed_unplaceable": 59,
+    "z_span_max_mm": 4.0
+   },
+   "process": {
+    "board_mm": [
+     150.0,
+     150.0
+    ],
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "radius_mm": 15.0,
+    "min_cross_angle_deg": 5.0,
+    "crossing_policy": "strict",
+    "propagation_loss_db_per_cm": 0.05,
+    "bend_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "crossing_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "interlayer_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "loss_note": "no total-loss conclusion is produced: bend, crossing and interlayer coefficients are uncalibrated; the 0.05 dB/cm propagation value is an experiment convention, not measured"
+   },
+   "routed": 963,
+   "total": 1024,
+   "failed": 61,
+   "baseline_routed": 943,
+   "new_routed": 20,
+   "added": 20,
+   "flat_l1_routed": 943,
+   "lifted": 44,
+   "transitions": 117,
+   "transitions_histogram": {
+    "0": 919,
+    "2": 20,
+    "3": 19,
+    "4": 5
+   },
+   "transitions_grouped": {
+    "0": 919,
+    "2": 20,
+    "3": 19,
+    "4+": 5
+   },
+   "transition_pairs": [
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 16,
+     "theta_deg_total": 237.361785,
+     "footprint_mm_total": 122.898332,
+     "length_mm_total": 124.28234,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 14,
+     "theta_deg_total": 294.552577,
+     "footprint_mm_total": 150.784615,
+     "length_mm_total": 154.227369,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 3.0,
+     "dz_abs_mm": 3.0,
+     "count": 6,
+     "theta_deg_total": 155.051597,
+     "footprint_mm_total": 78.460181,
+     "length_mm_total": 81.184826,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 4.0,
+     "dz_abs_mm": 4.0,
+     "count": 8,
+     "theta_deg_total": 239.411479,
+     "footprint_mm_total": 119.733036,
+     "length_mm_total": 125.355557,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 21,
+     "theta_deg_total": 311.537343,
+     "footprint_mm_total": 161.304061,
+     "length_mm_total": 163.120571,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 3,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 3,
+     "theta_deg_total": 44.505335,
+     "footprint_mm_total": 23.043437,
+     "length_mm_total": 23.302939,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 5,
+     "dz_signed_mm": 3.0,
+     "dz_abs_mm": 3.0,
+     "count": 1,
+     "theta_deg_total": 25.841933,
+     "footprint_mm_total": 13.076697,
+     "length_mm_total": 13.530804,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 10,
+     "theta_deg_total": 210.394698,
+     "footprint_mm_total": 107.703296,
+     "length_mm_total": 110.162406,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 2,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 5,
+     "theta_deg_total": 74.175558,
+     "footprint_mm_total": 38.405729,
+     "length_mm_total": 38.838231,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 5,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 7,
+     "theta_deg_total": 147.276288,
+     "footprint_mm_total": 75.392307,
+     "length_mm_total": 77.113684,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -3.0,
+     "dz_abs_mm": 3.0,
+     "count": 3,
+     "theta_deg_total": 77.525798,
+     "footprint_mm_total": 39.23009,
+     "length_mm_total": 40.592413,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 2,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 2,
+     "theta_deg_total": 42.07894,
+     "footprint_mm_total": 21.540659,
+     "length_mm_total": 22.032481,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 3,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 1,
+     "theta_deg_total": 14.835112,
+     "footprint_mm_total": 7.681146,
+     "length_mm_total": 7.767646,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 5,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 2,
+     "theta_deg_total": 29.670223,
+     "footprint_mm_total": 15.362291,
+     "length_mm_total": 15.535293,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -4.0,
+     "dz_abs_mm": 4.0,
+     "count": 10,
+     "theta_deg_total": 299.264349,
+     "footprint_mm_total": 149.666295,
+     "length_mm_total": 156.694447,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 2,
+     "dz_signed_mm": -3.0,
+     "dz_abs_mm": 3.0,
+     "count": 2,
+     "theta_deg_total": 51.683866,
+     "footprint_mm_total": 26.153394,
+     "length_mm_total": 27.061609,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 3,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 4,
+     "theta_deg_total": 84.157879,
+     "footprint_mm_total": 43.081318,
+     "length_mm_total": 44.064962,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 4,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 2,
+     "theta_deg_total": 29.670223,
+     "footprint_mm_total": 15.362291,
+     "length_mm_total": 15.535293,
+     "radius_values_mm": [
+      15.0
+     ]
+    }
+   ],
+   "transition_geometry": {
+    "count": 117,
+    "radius_distribution": {
+     "15.000000": 117
+    },
+    "radius_expected_mm": 15.0,
+    "all_transition_radii_r15": true,
+    "theta_deg_total": 2368.994982,
+    "footprint_mm_total": 1208.879177,
+    "length_mm_total": 1240.402872
+   },
+   "layers_used_histogram": {
+    "1": 919,
+    "1,2": 12,
+    "1,2,3": 4,
+    "1,2,3,5": 4,
+    "1,2,4": 1,
+    "1,2,4,5": 1,
+    "1,2,5": 3,
+    "1,3": 6,
+    "1,3,4": 1,
+    "1,3,5": 7,
+    "1,4": 2,
+    "1,4,5": 3
+   },
+   "layer_sequence_histogram": {
+    "1": 919,
+    "1->2->1": 12,
+    "1->2->3->1": 1,
+    "1->2->3->5->1": 2,
+    "1->2->5->1": 1,
+    "1->3->1": 6,
+    "1->3->2->1": 3,
+    "1->3->5->1": 5,
+    "1->4->1": 2,
+    "1->4->2->1": 1,
+    "1->4->3->1": 1,
+    "1->4->5->1": 2,
+    "1->5->2->1": 2,
+    "1->5->3->1": 2,
+    "1->5->3->2->1": 2,
+    "1->5->4->1": 1,
+    "1->5->4->2->1": 1
+   },
+   "physical_planes": {
+    "L1:z1": {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z1",
+     "routes_touching": 498,
+     "flat_parts": 498,
+     "flat_length_mm": 76595.314857
+    },
+    "L1:z2": {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z2",
+     "routes_touching": 465,
+     "flat_parts": 509,
+     "flat_length_mm": 70824.718258
+    },
+    "L2": {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 1.5,
+     "logical_layer_ids": [
+      2
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 25,
+     "flat_parts": 25,
+     "flat_length_mm": 3332.921399
+    },
+    "L3": {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 2.5,
+     "logical_layer_ids": [
+      3
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 22,
+     "flat_parts": 22,
+     "flat_length_mm": 3040.669279
+    },
+    "L4": {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 3.5,
+     "logical_layer_ids": [
+      4
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 8,
+     "flat_parts": 8,
+     "flat_length_mm": 784.072275
+    },
+    "L5": {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 4.5,
+     "logical_layer_ids": [
+      5
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 18,
+     "flat_parts": 18,
+     "flat_length_mm": 384.752322
+    }
+   },
+   "logical_layers": {
+    "1": {
+     "layer_id": 1,
+     "layer_type": "interface",
+     "physical_z_mm": null,
+     "interface_rows": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "routes_touching": 963,
+     "flat_parts": 1007,
+     "flat_length_mm": 147420.033114,
+     "transition_endpoints": 88
+    },
+    "2": {
+     "layer_id": 2,
+     "layer_type": "routing",
+     "physical_z_mm": 1.5,
+     "interface_rows": {},
+     "routes_touching": 25,
+     "flat_parts": 25,
+     "flat_length_mm": 3332.921399,
+     "transition_endpoints": 50
+    },
+    "3": {
+     "layer_id": 3,
+     "layer_type": "routing",
+     "physical_z_mm": 2.5,
+     "interface_rows": {},
+     "routes_touching": 22,
+     "flat_parts": 22,
+     "flat_length_mm": 3040.669279,
+     "transition_endpoints": 44
+    },
+    "4": {
+     "layer_id": 4,
+     "layer_type": "routing",
+     "physical_z_mm": 3.5,
+     "interface_rows": {},
+     "routes_touching": 8,
+     "flat_parts": 8,
+     "flat_length_mm": 784.072275,
+     "transition_endpoints": 16
+    },
+    "5": {
+     "layer_id": 5,
+     "layer_type": "routing",
+     "physical_z_mm": 4.5,
+     "interface_rows": {},
+     "routes_touching": 18,
+     "flat_parts": 18,
+     "flat_length_mm": 384.752322,
+     "transition_endpoints": 36
+    }
+   },
+   "length": {
+    "xy_total_mm": 156171.327574,
+    "three_d_total_mm": 156202.851261,
+    "flat_total_mm": 154962.448389,
+    "transition_total_mm": 1240.402872,
+    "mean_3d_length_mm": 162.204415,
+    "mean_xy_length_mm": 162.17168,
+    "mean_transition_length_per_lifted_mm": 28.190974
+   },
+   "z_span_distribution": {
+    "0.000000": 919,
+    "1.000000": 12,
+    "2.000000": 10,
+    "3.000000": 4,
+    "4.000000": 18
+   },
+   "per_plane": {
+    "z1": {
+     "routed": 498,
+     "baseline": 498,
+     "lifted": 0
+    },
+    "z2": {
+     "routed": 465,
+     "baseline": 445,
+     "lifted": 44
+    }
+   },
+   "failure_reasons": {
+    "unplaceable_in_3d": 59,
+    "no_2d_candidate": 2
+   },
+   "failure_by_plane": {
+    "z1": {
+     "unplaceable_in_3d": 14
+    },
+    "z2": {
+     "unplaceable_in_3d": 45,
+     "no_2d_candidate": 2
+    }
+   },
+   "validation": null,
+   "formal_acceptance_granted": false,
+   "formal_acceptance_status": "NOT_GRANTED",
+   "warnings": [
+    "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+   ],
+   "flat_geometry": {
+    "arc_count": 1971,
+    "straight_length_mm": 121871.71854,
+    "arc_length_mm": 33090.729849,
+    "radius_distribution": {
+     "15.000000": 1971
+    },
+    "expected_radius_mm": 15.0,
+    "all_flat_arcs_r15": true,
+    "unexpected_flat_arc_count": 0
+   },
+   "l1_two_rows_check": {
+    "logical_layer_id": 1,
+    "physical_plane_count": 2,
+    "z_values_mm": [
+     0.0,
+     0.5
+    ],
+    "rows": [
+     "z1",
+     "z2"
+    ],
+    "note": "L1 is ONE logical routing layer with TWO physical planes: z1 row z=0.0 mm and z2 row z=0.5 mm; physical-plane statistics therefore list L1 twice, both with logical layer_id=1"
+   },
+   "failure_analysis": {
+    "from_records": {
+     "failed_total": 61,
+     "no_2d_candidate": 2,
+     "unplaceable_in_3d": 59,
+     "other": {}
+    },
+    "from_run_summary": {
+     "attemptable": 79,
+     "attempted": 138,
+     "unattempted": -59,
+     "no_candidate": 2,
+     "failed_no_candidate": 2,
+     "failed_unplaceable": 59,
+     "flat_added": 0,
+     "rejected": {
+      "transition_placement_infeasible": 189
+     },
+     "passes": [
+      {
+       "pass_index": 1,
+       "stage": "single",
+       "variants": [
+        0
+       ],
+       "attempted": 79,
+       "placed": 20,
+       "pending": 59,
+       "routed": 963,
+       "seconds": 245.69
+      },
+      {
+       "pass_index": 2,
+       "stage": "single",
+       "variants": [
+        1,
+        0
+       ],
+       "attempted": 59,
+       "placed": 0,
+       "pending": 59,
+       "routed": 963,
+       "seconds": 588.86
+      }
+     ]
+    },
+    "transition_placement_infeasible": 189,
+    "blocked_in_3d": 59,
+    "no_2d_candidate": 2,
+    "note": "no_2d_candidate = the accepted R15 2D layout had no candidate for this route; blocked_in_3d = attempted but no legal 3D placement; transition_placement_infeasible = the router rejected a candidate because the elevation S-curve could not be placed on the 2D path; unattempted = attemptable routes not yet tried in this run"
+   },
+   "formal_acceptance_refusal_reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance cannot be granted"
+  },
+  "B/compact_025": {
+   "present": true,
+   "scheme": "B",
+   "stack": "compact_025",
+   "stage": "single+relayer",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeB/layers5_compact_025/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeB/layers5_compact_025/run_summary.json",
+   "run_summary_seconds": 1940.95,
+   "run_summary_config": {
+    "scheme": "B",
+    "stage": "single",
+    "stack": "compact_025",
+    "stack_json": null,
+    "budget": 120,
+    "multi_budget": 60,
+    "passes": 2,
+    "rr_rounds": 0,
+    "rr_targets": 48,
+    "rr_rip": 2,
+    "layer_selection": "best",
+    "limit": 0,
+    "out": null,
+    "tag": ""
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "compact_025: 0.25 mm spacing; minimum-clearance exploratory stack",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 0.75,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 1.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 1.25,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 0.75,
+     "3": 1.0,
+     "4": 1.25,
+     "5": 1.5
+    }
+   },
+   "stack_provenance": "unconfirmed_simulation",
+   "stack_formal_acceptance_allowed": false,
+   "stack_valid": true,
+   "stack_validation_errors": [],
+   "min_plane_gap_mm": 0.25,
+   "router_stats": {
+    "scheme": "B",
+    "stack": "compact_025",
+    "stage": "single",
+    "baseline_routed": 515,
+    "final_routed": 611,
+    "new_routed": 96,
+    "attemptable": 431,
+    "no_candidate": 78,
+    "failed_unplaceable": 335,
+    "flat_added": 0,
+    "passes": [
+     {
+      "pass_index": 1,
+      "stage": "single",
+      "variants": [
+       0
+      ],
+      "attempted": 431,
+      "placed": 95,
+      "pending": 336,
+      "routed": 610,
+      "seconds": 1276.94
+     },
+     {
+      "pass_index": 2,
+      "stage": "single",
+      "variants": [
+       1,
+       0
+      ],
+      "attempted": 336,
+      "placed": 1,
+      "pending": 335,
+      "routed": 611,
+      "seconds": 1940.14
+     }
+    ],
+    "rr": [],
+    "rejected": {
+     "transition_placement_infeasible": 1734
+    },
+    "seconds": 1940.15
+   },
+   "stats_saved": {
+    "baseline_routed": 515,
+    "routed": 611,
+    "failed": 413,
+    "new_routed": 96,
+    "lifted": 120,
+    "transitions": 268,
+    "total_length_mm": 113583.24094,
+    "mean_length_mm": 185.897285,
+    "total_xy_length_mm": 113572.240729,
+    "per_plane": {
+     "z1": {
+      "routed": 205,
+      "baseline": 184,
+      "lifted": 21
+     },
+     "z2": {
+      "routed": 406,
+      "baseline": 331,
+      "lifted": 75
+     }
+    },
+    "per_layer_flat_parts": {
+     "1": 731,
+     "2": 71,
+     "3": 32,
+     "4": 20,
+     "5": 25
+    },
+    "per_physical_plane_flat_parts": {
+     "L1@0": 226,
+     "L2@0.75": 71,
+     "L3@1": 32,
+     "L4@1.25": 20,
+     "L5@1.5": 25,
+     "L1@0.5": 505
+    },
+    "per_physical_plane_flat_length_mm": {
+     "L1@0": 33089.043471,
+     "L2@0.75": 12693.791793,
+     "L3@1": 4299.670385,
+     "L4@1.25": 4248.811692,
+     "L5@1.5": 3807.718451,
+     "L1@0.5": 53971.373628
+    },
+    "transition_layer_pairs": {
+     "1->2": 55,
+     "2->1": 67,
+     "1->3": 28,
+     "3->1": 19,
+     "1->4": 16,
+     "4->1": 18,
+     "1->5": 21,
+     "5->1": 16,
+     "5->4": 3,
+     "3->2": 12,
+     "2->5": 2,
+     "5->3": 3,
+     "4->2": 1,
+     "5->2": 3,
+     "3->5": 1,
+     "2->3": 1,
+     "2->4": 1,
+     "4->5": 1
+    },
+    "transitions_histogram": {
+     "0": 491,
+     "2": 96,
+     "3": 20,
+     "4": 4
+    },
+    "layers_used_histogram": {
+     "1": 491,
+     "1,2": 51,
+     "1,3": 18,
+     "1,4": 15,
+     "1,5": 12,
+     "1,4,5": 3,
+     "1,2,3": 10,
+     "1,2,5": 5,
+     "1,2,3,5": 3,
+     "1,2,4,5": 1,
+     "1,3,5": 1,
+     "1,2,4": 1
+    },
+    "layer_sequence_histogram": {
+     "1": 491,
+     "1->2->1": 51,
+     "1->3->1": 18,
+     "1->4->1": 15,
+     "1->5->1": 12,
+     "1->5->4->1": 2,
+     "1->3->2->1": 9,
+     "1->2->5->1": 2,
+     "1->5->3->2->1": 3,
+     "1->5->4->2->1": 1,
+     "1->5->2->1": 3,
+     "1->3->5->1": 1,
+     "1->2->3->1": 1,
+     "1->2->4->1": 1,
+     "1->4->5->1": 1
+    },
+    "failed_no_candidate": 78,
+    "failed_unplaceable": 335,
+    "z_span_max_mm": 1.5
+   },
+   "process": {
+    "board_mm": [
+     150.0,
+     150.0
+    ],
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "radius_mm": 15.0,
+    "min_cross_angle_deg": 5.0,
+    "crossing_policy": "strict",
+    "propagation_loss_db_per_cm": 0.05,
+    "bend_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "crossing_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "interlayer_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "loss_note": "no total-loss conclusion is produced: bend, crossing and interlayer coefficients are uncalibrated; the 0.05 dB/cm propagation value is an experiment convention, not measured"
+   },
+   "routed": 611,
+   "total": 1024,
+   "failed": 413,
+   "baseline_routed": 515,
+   "new_routed": 96,
+   "added": 96,
+   "flat_l1_routed": 515,
+   "lifted": 120,
+   "transitions": 268,
+   "transitions_histogram": {
+    "0": 491,
+    "2": 96,
+    "3": 20,
+    "4": 4
+   },
+   "transitions_grouped": {
+    "0": 491,
+    "2": 96,
+    "3": 20,
+    "4+": 4
+   },
+   "transition_pairs": [
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 0.25,
+     "dz_abs_mm": 0.25,
+     "count": 49,
+     "theta_deg_total": 362.697985,
+     "footprint_mm_total": 189.380404,
+     "length_mm_total": 189.908221,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 0.75,
+     "dz_abs_mm": 0.75,
+     "count": 6,
+     "theta_deg_total": 77.031409,
+     "footprint_mm_total": 39.996875,
+     "length_mm_total": 40.333551,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 23,
+     "theta_deg_total": 240.932218,
+     "footprint_mm_total": 125.450189,
+     "length_mm_total": 126.151815,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 5,
+     "theta_deg_total": 74.175558,
+     "footprint_mm_total": 38.405729,
+     "length_mm_total": 38.838231,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 0.75,
+     "dz_abs_mm": 0.75,
+     "count": 12,
+     "theta_deg_total": 154.062818,
+     "footprint_mm_total": 79.99375,
+     "length_mm_total": 80.667103,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 1.25,
+     "dz_abs_mm": 1.25,
+     "count": 4,
+     "theta_deg_total": 66.391369,
+     "footprint_mm_total": 34.278273,
+     "length_mm_total": 34.762439,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 15,
+     "theta_deg_total": 222.526674,
+     "footprint_mm_total": 115.217186,
+     "length_mm_total": 116.514694,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 1.5,
+     "dz_abs_mm": 1.5,
+     "count": 6,
+     "theta_deg_total": 109.169234,
+     "footprint_mm_total": 56.204982,
+     "length_mm_total": 57.160877,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -0.75,
+     "dz_abs_mm": 0.75,
+     "count": 6,
+     "theta_deg_total": 77.031409,
+     "footprint_mm_total": 39.996875,
+     "length_mm_total": 40.333551,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -0.25,
+     "dz_abs_mm": 0.25,
+     "count": 61,
+     "theta_deg_total": 451.521981,
+     "footprint_mm_total": 235.759279,
+     "length_mm_total": 236.416356,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 3,
+     "dz_signed_mm": 0.25,
+     "dz_abs_mm": 0.25,
+     "count": 1,
+     "theta_deg_total": 7.402,
+     "footprint_mm_total": 3.864906,
+     "length_mm_total": 3.875678,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 4,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 5,
+     "dz_signed_mm": 0.75,
+     "dz_abs_mm": 0.75,
+     "count": 2,
+     "theta_deg_total": 25.677136,
+     "footprint_mm_total": 13.332292,
+     "length_mm_total": 13.444517,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 5,
+     "theta_deg_total": 74.175558,
+     "footprint_mm_total": 38.405729,
+     "length_mm_total": 38.838231,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 14,
+     "theta_deg_total": 146.654394,
+     "footprint_mm_total": 76.360985,
+     "length_mm_total": 76.788061,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 2,
+     "dz_signed_mm": -0.25,
+     "dz_abs_mm": 0.25,
+     "count": 12,
+     "theta_deg_total": 88.823996,
+     "footprint_mm_total": 46.378875,
+     "length_mm_total": 46.508136,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 5,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -1.25,
+     "dz_abs_mm": 1.25,
+     "count": 4,
+     "theta_deg_total": 66.391369,
+     "footprint_mm_total": 34.278273,
+     "length_mm_total": 34.762439,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -0.75,
+     "dz_abs_mm": 0.75,
+     "count": 14,
+     "theta_deg_total": 179.739954,
+     "footprint_mm_total": 93.326041,
+     "length_mm_total": 94.11162,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 2,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 5,
+     "dz_signed_mm": 0.25,
+     "dz_abs_mm": 0.25,
+     "count": 1,
+     "theta_deg_total": 7.402,
+     "footprint_mm_total": 3.864906,
+     "length_mm_total": 3.875678,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -1.5,
+     "dz_abs_mm": 1.5,
+     "count": 6,
+     "theta_deg_total": 109.169234,
+     "footprint_mm_total": 56.204982,
+     "length_mm_total": 57.160877,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 10,
+     "theta_deg_total": 148.351116,
+     "footprint_mm_total": 76.811457,
+     "length_mm_total": 77.676463,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 2,
+     "dz_signed_mm": -0.75,
+     "dz_abs_mm": 0.75,
+     "count": 3,
+     "theta_deg_total": 38.515704,
+     "footprint_mm_total": 19.998437,
+     "length_mm_total": 20.166776,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 3,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 3,
+     "theta_deg_total": 31.425942,
+     "footprint_mm_total": 16.363068,
+     "length_mm_total": 16.454585,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 4,
+     "dz_signed_mm": -0.25,
+     "dz_abs_mm": 0.25,
+     "count": 3,
+     "theta_deg_total": 22.205999,
+     "footprint_mm_total": 11.594719,
+     "length_mm_total": 11.627034,
+     "radius_values_mm": [
+      15.0
+     ]
+    }
+   ],
+   "transition_geometry": {
+    "count": 268,
+    "radius_distribution": {
+     "15.000000": 268
+    },
+    "radius_expected_mm": 15.0,
+    "all_transition_radii_r15": true,
+    "theta_deg_total": 2812.900996,
+    "footprint_mm_total": 1461.83128,
+    "length_mm_total": 1472.831517
+   },
+   "layers_used_histogram": {
+    "1": 491,
+    "1,2": 51,
+    "1,2,3": 10,
+    "1,2,3,5": 3,
+    "1,2,4": 1,
+    "1,2,4,5": 1,
+    "1,2,5": 5,
+    "1,3": 18,
+    "1,3,5": 1,
+    "1,4": 15,
+    "1,4,5": 3,
+    "1,5": 12
+   },
+   "layer_sequence_histogram": {
+    "1": 491,
+    "1->2->1": 51,
+    "1->2->3->1": 1,
+    "1->2->4->1": 1,
+    "1->2->5->1": 2,
+    "1->3->1": 18,
+    "1->3->2->1": 9,
+    "1->3->5->1": 1,
+    "1->4->1": 15,
+    "1->4->5->1": 1,
+    "1->5->1": 12,
+    "1->5->2->1": 3,
+    "1->5->3->2->1": 3,
+    "1->5->4->1": 2,
+    "1->5->4->2->1": 1
+   },
+   "physical_planes": {
+    "L1:z1": {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z1",
+     "routes_touching": 205,
+     "flat_parts": 226,
+     "flat_length_mm": 33089.043471
+    },
+    "L1:z2": {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z2",
+     "routes_touching": 406,
+     "flat_parts": 505,
+     "flat_length_mm": 53971.373628
+    },
+    "L2": {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 0.75,
+     "logical_layer_ids": [
+      2
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 71,
+     "flat_parts": 71,
+     "flat_length_mm": 12693.791805
+    },
+    "L3": {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 1.0,
+     "logical_layer_ids": [
+      3
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 32,
+     "flat_parts": 32,
+     "flat_length_mm": 4299.670384
+    },
+    "L4": {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 1.25,
+     "logical_layer_ids": [
+      4
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 20,
+     "flat_parts": 20,
+     "flat_length_mm": 4248.811692
+    },
+    "L5": {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 1.5,
+     "logical_layer_ids": [
+      5
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 25,
+     "flat_parts": 25,
+     "flat_length_mm": 3807.718449
+    }
+   },
+   "logical_layers": {
+    "1": {
+     "layer_id": 1,
+     "layer_type": "interface",
+     "physical_z_mm": null,
+     "interface_rows": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "routes_touching": 611,
+     "flat_parts": 731,
+     "flat_length_mm": 87060.417098,
+     "transition_endpoints": 240
+    },
+    "2": {
+     "layer_id": 2,
+     "layer_type": "routing",
+     "physical_z_mm": 0.75,
+     "interface_rows": {},
+     "routes_touching": 71,
+     "flat_parts": 71,
+     "flat_length_mm": 12693.791805,
+     "transition_endpoints": 142
+    },
+    "3": {
+     "layer_id": 3,
+     "layer_type": "routing",
+     "physical_z_mm": 1.0,
+     "interface_rows": {},
+     "routes_touching": 32,
+     "flat_parts": 32,
+     "flat_length_mm": 4299.670384,
+     "transition_endpoints": 64
+    },
+    "4": {
+     "layer_id": 4,
+     "layer_type": "routing",
+     "physical_z_mm": 1.25,
+     "interface_rows": {},
+     "routes_touching": 20,
+     "flat_parts": 20,
+     "flat_length_mm": 4248.811692,
+     "transition_endpoints": 40
+    },
+    "5": {
+     "layer_id": 5,
+     "layer_type": "routing",
+     "physical_z_mm": 1.5,
+     "interface_rows": {},
+     "routes_touching": 25,
+     "flat_parts": 25,
+     "flat_length_mm": 3807.718449,
+     "transition_endpoints": 50
+    }
+   },
+   "length": {
+    "xy_total_mm": 113572.240729,
+    "three_d_total_mm": 113583.240946,
+    "flat_total_mm": 112110.409428,
+    "transition_total_mm": 1472.831517,
+    "mean_3d_length_mm": 185.897285,
+    "mean_xy_length_mm": 185.879281,
+    "mean_transition_length_per_lifted_mm": 12.273596
+   },
+   "z_span_distribution": {
+    "0.000000": 491,
+    "0.250000": 45,
+    "0.500000": 23,
+    "0.750000": 18,
+    "1.000000": 24,
+    "1.250000": 4,
+    "1.500000": 6
+   },
+   "per_plane": {
+    "z1": {
+     "routed": 205,
+     "baseline": 184,
+     "lifted": 21
+    },
+    "z2": {
+     "routed": 406,
+     "baseline": 331,
+     "lifted": 99
+    }
+   },
+   "failure_reasons": {
+    "unplaceable_in_3d": 335,
+    "no_2d_candidate": 78
+   },
+   "failure_by_plane": {
+    "z1": {
+     "unplaceable_in_3d": 231,
+     "no_2d_candidate": 76
+    },
+    "z2": {
+     "unplaceable_in_3d": 104,
+     "no_2d_candidate": 2
+    }
+   },
+   "validation": null,
+   "formal_acceptance_granted": false,
+   "formal_acceptance_status": "NOT_GRANTED",
+   "warnings": [
+    "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+   ],
+   "flat_geometry": {
+    "arc_count": 1548,
+    "straight_length_mm": 75636.51872,
+    "arc_length_mm": 36473.890708,
+    "radius_distribution": {
+     "15.000000": 1548
+    },
+    "expected_radius_mm": 15.0,
+    "all_flat_arcs_r15": true,
+    "unexpected_flat_arc_count": 0
+   },
+   "l1_two_rows_check": {
+    "logical_layer_id": 1,
+    "physical_plane_count": 2,
+    "z_values_mm": [
+     0.0,
+     0.5
+    ],
+    "rows": [
+     "z1",
+     "z2"
+    ],
+    "note": "L1 is ONE logical routing layer with TWO physical planes: z1 row z=0.0 mm and z2 row z=0.5 mm; physical-plane statistics therefore list L1 twice, both with logical layer_id=1"
+   },
+   "failure_analysis": {
+    "from_records": {
+     "failed_total": 413,
+     "no_2d_candidate": 78,
+     "unplaceable_in_3d": 335,
+     "other": {}
+    },
+    "from_run_summary": {
+     "attemptable": 431,
+     "attempted": 767,
+     "unattempted": -336,
+     "no_candidate": 78,
+     "failed_no_candidate": 78,
+     "failed_unplaceable": 335,
+     "flat_added": 0,
+     "rejected": {
+      "transition_placement_infeasible": 1734
+     },
+     "passes": [
+      {
+       "pass_index": 1,
+       "stage": "single",
+       "variants": [
+        0
+       ],
+       "attempted": 431,
+       "placed": 95,
+       "pending": 336,
+       "routed": 610,
+       "seconds": 1276.94
+      },
+      {
+       "pass_index": 2,
+       "stage": "single",
+       "variants": [
+        1,
+        0
+       ],
+       "attempted": 336,
+       "placed": 1,
+       "pending": 335,
+       "routed": 611,
+       "seconds": 1940.14
+      }
+     ]
+    },
+    "transition_placement_infeasible": 1734,
+    "blocked_in_3d": 335,
+    "no_2d_candidate": 78,
+    "note": "no_2d_candidate = the accepted R15 2D layout had no candidate for this route; blocked_in_3d = attempted but no legal 3D placement; transition_placement_infeasible = the router rejected a candidate because the elevation S-curve could not be placed on the 2D path; unattempted = attemptable routes not yet tried in this run"
+   },
+   "formal_acceptance_refusal_reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance cannot be granted"
+  },
+  "B/medium_050": {
+   "present": true,
+   "scheme": "B",
+   "stack": "medium_050",
+   "stage": "full+relayer",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeB/layers5_medium_050/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeB/layers5_medium_050/run_summary.json",
+   "run_summary_seconds": 6556.2,
+   "run_summary_config": {
+    "scheme": "B",
+    "stage": "full",
+    "stack": "medium_050",
+    "stack_json": null,
+    "budget": 120,
+    "multi_budget": 60,
+    "passes": 3,
+    "rr_rounds": 1,
+    "rr_targets": 48,
+    "rr_rip": 2,
+    "layer_selection": "best",
+    "limit": 0,
+    "out": null,
+    "tag": ""
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 1.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 2.0,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 2.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 1.0,
+     "3": 1.5,
+     "4": 2.0,
+     "5": 2.5
+    }
+   },
+   "stack_provenance": "unconfirmed_simulation",
+   "stack_formal_acceptance_allowed": false,
+   "stack_valid": true,
+   "stack_validation_errors": [],
+   "min_plane_gap_mm": 0.5,
+   "router_stats": {
+    "scheme": "B",
+    "stack": "medium_050",
+    "stage": "full",
+    "baseline_routed": 515,
+    "final_routed": 621,
+    "new_routed": 106,
+    "attemptable": 431,
+    "no_candidate": 78,
+    "failed_unplaceable": 325,
+    "flat_added": 0,
+    "passes": [
+     {
+      "pass_index": 1,
+      "stage": "single",
+      "variants": [
+       0
+      ],
+      "attempted": 431,
+      "placed": 98,
+      "pending": 333,
+      "routed": 613,
+      "seconds": 1338.88
+     },
+     {
+      "pass_index": 2,
+      "stage": "multi",
+      "variants": [
+       1,
+       0
+      ],
+      "attempted": 333,
+      "placed": 4,
+      "pending": 329,
+      "routed": 617,
+      "seconds": 3132.24
+     },
+     {
+      "pass_index": 3,
+      "stage": "multi",
+      "variants": [
+       2,
+       1,
+       0
+      ],
+      "attempted": 329,
+      "placed": 3,
+      "pending": 326,
+      "routed": 620,
+      "seconds": 5693.09
+     }
+    ],
+    "rr": [
+     {
+      "round": 1,
+      "gain": 1,
+      "pending": 325,
+      "routed": 621
+     }
+    ],
+    "rejected": {
+     "transition_placement_infeasible": 5894
+    },
+    "seconds": 6555.55
+   },
+   "stats_saved": {
+    "baseline_routed": 515,
+    "routed": 621,
+    "failed": 403,
+    "new_routed": 106,
+    "lifted": 130,
+    "transitions": 298,
+    "total_length_mm": 116731.50067,
+    "mean_length_mm": 187.973431,
+    "total_xy_length_mm": 116694.18687,
+    "per_plane": {
+     "z1": {
+      "routed": 211,
+      "baseline": 184,
+      "lifted": 27
+     },
+     "z2": {
+      "routed": 410,
+      "baseline": 331,
+      "lifted": 79
+     }
+    },
+    "per_layer_flat_parts": {
+     "1": 751,
+     "2": 57,
+     "3": 39,
+     "5": 31,
+     "4": 41
+    },
+    "per_physical_plane_flat_parts": {
+     "L1@0": 238,
+     "L2@1": 57,
+     "L3@1.5": 39,
+     "L5@2.5": 31,
+     "L4@2": 41,
+     "L1@0.5": 513
+    },
+    "per_physical_plane_flat_length_mm": {
+     "L1@0": 33689.797082,
+     "L2@1": 6718.955816,
+     "L3@1.5": 5095.177496,
+     "L5@2.5": 5635.104122,
+     "L4@2": 7996.119281,
+     "L1@0.5": 55142.708214
+    },
+    "transition_layer_pairs": {
+     "1->2": 44,
+     "2->3": 13,
+     "3->5": 3,
+     "5->1": 26,
+     "2->1": 42,
+     "1->3": 22,
+     "3->1": 28,
+     "1->4": 37,
+     "4->1": 34,
+     "1->5": 27,
+     "4->3": 1,
+     "5->3": 3,
+     "3->2": 8,
+     "5->4": 2,
+     "4->2": 5,
+     "4->5": 1,
+     "2->4": 2
+    },
+    "transitions_histogram": {
+     "0": 491,
+     "4": 7,
+     "2": 99,
+     "3": 24
+    },
+    "layers_used_histogram": {
+     "1": 491,
+     "1,2,3,5": 5,
+     "1,2": 29,
+     "1,3": 16,
+     "1,4": 32,
+     "1,5": 22,
+     "1,3,4": 1,
+     "1,2,3": 16,
+     "1,2,4,5": 2,
+     "1,4,5": 1,
+     "1,3,5": 1,
+     "1,2,4": 5
+    },
+    "layer_sequence_histogram": {
+     "1": 491,
+     "1->2->3->5->1": 2,
+     "1->2->1": 29,
+     "1->3->1": 16,
+     "1->4->1": 32,
+     "1->5->1": 22,
+     "1->4->3->1": 1,
+     "1->5->3->2->1": 3,
+     "1->2->3->1": 11,
+     "1->3->2->1": 5,
+     "1->5->4->2->1": 2,
+     "1->4->5->1": 1,
+     "1->3->5->1": 1,
+     "1->2->4->1": 2,
+     "1->4->2->1": 3
+    },
+    "failed_no_candidate": 78,
+    "failed_unplaceable": 325,
+    "z_span_max_mm": 2.5
+   },
+   "process": {
+    "board_mm": [
+     150.0,
+     150.0
+    ],
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "radius_mm": 15.0,
+    "min_cross_angle_deg": 5.0,
+    "crossing_policy": "strict",
+    "propagation_loss_db_per_cm": 0.05,
+    "bend_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "crossing_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "interlayer_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "loss_note": "no total-loss conclusion is produced: bend, crossing and interlayer coefficients are uncalibrated; the 0.05 dB/cm propagation value is an experiment convention, not measured"
+   },
+   "routed": 621,
+   "total": 1024,
+   "failed": 403,
+   "baseline_routed": 515,
+   "new_routed": 106,
+   "added": 106,
+   "flat_l1_routed": 515,
+   "lifted": 130,
+   "transitions": 298,
+   "transitions_histogram": {
+    "0": 491,
+    "2": 99,
+    "3": 24,
+    "4": 7
+   },
+   "transitions_grouped": {
+    "0": 491,
+    "2": 99,
+    "3": 24,
+    "4+": 7
+   },
+   "transition_pairs": [
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 35,
+     "theta_deg_total": 366.635985,
+     "footprint_mm_total": 190.902462,
+     "length_mm_total": 191.970153,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 9,
+     "theta_deg_total": 133.516004,
+     "footprint_mm_total": 69.130312,
+     "length_mm_total": 69.908816,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 16,
+     "theta_deg_total": 237.361785,
+     "footprint_mm_total": 122.898332,
+     "length_mm_total": 124.28234,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 1.5,
+     "dz_abs_mm": 1.5,
+     "count": 6,
+     "theta_deg_total": 109.169234,
+     "footprint_mm_total": 56.204982,
+     "length_mm_total": 57.160877,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 1.5,
+     "dz_abs_mm": 1.5,
+     "count": 31,
+     "theta_deg_total": 564.041043,
+     "footprint_mm_total": 290.392407,
+     "length_mm_total": 295.331199,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 6,
+     "theta_deg_total": 126.236819,
+     "footprint_mm_total": 64.621978,
+     "length_mm_total": 66.097444,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 21,
+     "theta_deg_total": 441.828865,
+     "footprint_mm_total": 226.176922,
+     "length_mm_total": 231.341053,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 2.5,
+     "dz_abs_mm": 2.5,
+     "count": 6,
+     "theta_deg_total": 141.338786,
+     "footprint_mm_total": 71.937473,
+     "length_mm_total": 74.004815,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 8,
+     "theta_deg_total": 118.680893,
+     "footprint_mm_total": 61.449166,
+     "length_mm_total": 62.14117,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 34,
+     "theta_deg_total": 356.160671,
+     "footprint_mm_total": 185.448106,
+     "length_mm_total": 186.485291,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 3,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 13,
+     "theta_deg_total": 136.17908,
+     "footprint_mm_total": 70.906629,
+     "length_mm_total": 71.3032,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 4,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 2,
+     "theta_deg_total": 29.670223,
+     "footprint_mm_total": 15.362291,
+     "length_mm_total": 15.535293,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -1.5,
+     "dz_abs_mm": 1.5,
+     "count": 7,
+     "theta_deg_total": 127.364106,
+     "footprint_mm_total": 65.572479,
+     "length_mm_total": 66.68769,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 21,
+     "theta_deg_total": 311.537343,
+     "footprint_mm_total": 161.304061,
+     "length_mm_total": 163.120571,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 2,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 8,
+     "theta_deg_total": 83.802511,
+     "footprint_mm_total": 43.634848,
+     "length_mm_total": 43.878892,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 5,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 3,
+     "theta_deg_total": 44.505335,
+     "footprint_mm_total": 23.043437,
+     "length_mm_total": 23.302939,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 5,
+     "theta_deg_total": 105.197349,
+     "footprint_mm_total": 53.851648,
+     "length_mm_total": 55.081203,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -1.5,
+     "dz_abs_mm": 1.5,
+     "count": 29,
+     "theta_deg_total": 527.651298,
+     "footprint_mm_total": 271.657413,
+     "length_mm_total": 276.277573,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 2,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 5,
+     "theta_deg_total": 74.175558,
+     "footprint_mm_total": 38.405729,
+     "length_mm_total": 38.838231,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 3,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 5,
+     "dz_signed_mm": 0.5,
+     "dz_abs_mm": 0.5,
+     "count": 1,
+     "theta_deg_total": 10.475314,
+     "footprint_mm_total": 5.454356,
+     "length_mm_total": 5.484862,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -2.5,
+     "dz_abs_mm": 2.5,
+     "count": 7,
+     "theta_deg_total": 164.89525,
+     "footprint_mm_total": 83.927052,
+     "length_mm_total": 86.338951,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 19,
+     "theta_deg_total": 399.749926,
+     "footprint_mm_total": 204.636263,
+     "length_mm_total": 209.308572,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 3,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 3,
+     "theta_deg_total": 44.505335,
+     "footprint_mm_total": 23.043437,
+     "length_mm_total": 23.302939,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 4,
+     "dz_signed_mm": -0.5,
+     "dz_abs_mm": 0.5,
+     "count": 2,
+     "theta_deg_total": 20.950628,
+     "footprint_mm_total": 10.908712,
+     "length_mm_total": 10.969723,
+     "radius_values_mm": [
+      15.0
+     ]
+    }
+   ],
+   "transition_geometry": {
+    "count": 298,
+    "radius_distribution": {
+     "15.000000": 298
+    },
+    "radius_expected_mm": 15.0,
+    "all_transition_radii_r15": true,
+    "theta_deg_total": 4686.104653,
+    "footprint_mm_total": 2416.32485,
+    "length_mm_total": 2453.638659
+   },
+   "layers_used_histogram": {
+    "1": 491,
+    "1,2": 29,
+    "1,2,3": 16,
+    "1,2,3,5": 5,
+    "1,2,4": 5,
+    "1,2,4,5": 2,
+    "1,3": 16,
+    "1,3,4": 1,
+    "1,3,5": 1,
+    "1,4": 32,
+    "1,4,5": 1,
+    "1,5": 22
+   },
+   "layer_sequence_histogram": {
+    "1": 491,
+    "1->2->1": 29,
+    "1->2->3->1": 11,
+    "1->2->3->5->1": 2,
+    "1->2->4->1": 2,
+    "1->3->1": 16,
+    "1->3->2->1": 5,
+    "1->3->5->1": 1,
+    "1->4->1": 32,
+    "1->4->2->1": 3,
+    "1->4->3->1": 1,
+    "1->4->5->1": 1,
+    "1->5->1": 22,
+    "1->5->3->2->1": 3,
+    "1->5->4->2->1": 2
+   },
+   "physical_planes": {
+    "L1:z1": {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z1",
+     "routes_touching": 211,
+     "flat_parts": 238,
+     "flat_length_mm": 33689.797082
+    },
+    "L1:z2": {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z2",
+     "routes_touching": 410,
+     "flat_parts": 513,
+     "flat_length_mm": 55142.708215
+    },
+    "L2": {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 1.0,
+     "logical_layer_ids": [
+      2
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 57,
+     "flat_parts": 57,
+     "flat_length_mm": 6718.955812
+    },
+    "L3": {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 1.5,
+     "logical_layer_ids": [
+      3
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 39,
+     "flat_parts": 39,
+     "flat_length_mm": 5095.177497
+    },
+    "L4": {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 2.0,
+     "logical_layer_ids": [
+      4
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 41,
+     "flat_parts": 41,
+     "flat_length_mm": 7996.119276
+    },
+    "L5": {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 2.5,
+     "logical_layer_ids": [
+      5
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 31,
+     "flat_parts": 31,
+     "flat_length_mm": 5635.104118
+    }
+   },
+   "logical_layers": {
+    "1": {
+     "layer_id": 1,
+     "layer_type": "interface",
+     "physical_z_mm": null,
+     "interface_rows": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "routes_touching": 621,
+     "flat_parts": 751,
+     "flat_length_mm": 88832.505297,
+     "transition_endpoints": 260
+    },
+    "2": {
+     "layer_id": 2,
+     "layer_type": "routing",
+     "physical_z_mm": 1.0,
+     "interface_rows": {},
+     "routes_touching": 57,
+     "flat_parts": 57,
+     "flat_length_mm": 6718.955812,
+     "transition_endpoints": 114
+    },
+    "3": {
+     "layer_id": 3,
+     "layer_type": "routing",
+     "physical_z_mm": 1.5,
+     "interface_rows": {},
+     "routes_touching": 39,
+     "flat_parts": 39,
+     "flat_length_mm": 5095.177497,
+     "transition_endpoints": 78
+    },
+    "4": {
+     "layer_id": 4,
+     "layer_type": "routing",
+     "physical_z_mm": 2.0,
+     "interface_rows": {},
+     "routes_touching": 41,
+     "flat_parts": 41,
+     "flat_length_mm": 7996.119276,
+     "transition_endpoints": 82
+    },
+    "5": {
+     "layer_id": 5,
+     "layer_type": "routing",
+     "physical_z_mm": 2.5,
+     "interface_rows": {},
+     "routes_touching": 31,
+     "flat_parts": 31,
+     "flat_length_mm": 5635.104118,
+     "transition_endpoints": 62
+    }
+   },
+   "length": {
+    "xy_total_mm": 116694.18687,
+    "three_d_total_mm": 116731.50066,
+    "flat_total_mm": 114277.862001,
+    "transition_total_mm": 2453.638659,
+    "mean_3d_length_mm": 187.973431,
+    "mean_xy_length_mm": 187.913344,
+    "mean_transition_length_per_lifted_mm": 18.874144
+   },
+   "z_span_distribution": {
+    "0.000000": 491,
+    "0.500000": 22,
+    "1.000000": 33,
+    "1.500000": 38,
+    "2.000000": 29,
+    "2.500000": 8
+   },
+   "per_plane": {
+    "z1": {
+     "routed": 211,
+     "baseline": 184,
+     "lifted": 27
+    },
+    "z2": {
+     "routed": 410,
+     "baseline": 331,
+     "lifted": 103
+    }
+   },
+   "failure_reasons": {
+    "unplaceable_in_3d": 325,
+    "no_2d_candidate": 78
+   },
+   "failure_by_plane": {
+    "z1": {
+     "unplaceable_in_3d": 225,
+     "no_2d_candidate": 76
+    },
+    "z2": {
+     "unplaceable_in_3d": 100,
+     "no_2d_candidate": 2
+    }
+   },
+   "validation": null,
+   "formal_acceptance_granted": false,
+   "formal_acceptance_status": "NOT_GRANTED",
+   "warnings": [
+    "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+   ],
+   "flat_geometry": {
+    "arc_count": 1618,
+    "straight_length_mm": 76154.63515,
+    "arc_length_mm": 38123.226851,
+    "radius_distribution": {
+     "15.000000": 1618
+    },
+    "expected_radius_mm": 15.0,
+    "all_flat_arcs_r15": true,
+    "unexpected_flat_arc_count": 0
+   },
+   "l1_two_rows_check": {
+    "logical_layer_id": 1,
+    "physical_plane_count": 2,
+    "z_values_mm": [
+     0.0,
+     0.5
+    ],
+    "rows": [
+     "z1",
+     "z2"
+    ],
+    "note": "L1 is ONE logical routing layer with TWO physical planes: z1 row z=0.0 mm and z2 row z=0.5 mm; physical-plane statistics therefore list L1 twice, both with logical layer_id=1"
+   },
+   "failure_analysis": {
+    "from_records": {
+     "failed_total": 403,
+     "no_2d_candidate": 78,
+     "unplaceable_in_3d": 325,
+     "other": {}
+    },
+    "from_run_summary": {
+     "attemptable": 431,
+     "attempted": 1093,
+     "unattempted": -662,
+     "no_candidate": 78,
+     "failed_no_candidate": 78,
+     "failed_unplaceable": 325,
+     "flat_added": 0,
+     "rejected": {
+      "transition_placement_infeasible": 5894
+     },
+     "passes": [
+      {
+       "pass_index": 1,
+       "stage": "single",
+       "variants": [
+        0
+       ],
+       "attempted": 431,
+       "placed": 98,
+       "pending": 333,
+       "routed": 613,
+       "seconds": 1338.88
+      },
+      {
+       "pass_index": 2,
+       "stage": "multi",
+       "variants": [
+        1,
+        0
+       ],
+       "attempted": 333,
+       "placed": 4,
+       "pending": 329,
+       "routed": 617,
+       "seconds": 3132.24
+      },
+      {
+       "pass_index": 3,
+       "stage": "multi",
+       "variants": [
+        2,
+        1,
+        0
+       ],
+       "attempted": 329,
+       "placed": 3,
+       "pending": 326,
+       "routed": 620,
+       "seconds": 5693.09
+      }
+     ]
+    },
+    "transition_placement_infeasible": 5894,
+    "blocked_in_3d": 325,
+    "no_2d_candidate": 78,
+    "note": "no_2d_candidate = the accepted R15 2D layout had no candidate for this route; blocked_in_3d = attempted but no legal 3D placement; transition_placement_infeasible = the router rejected a candidate because the elevation S-curve could not be placed on the 2D path; unattempted = attemptable routes not yet tried in this run"
+   },
+   "formal_acceptance_refusal_reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance cannot be granted"
+  },
+  "B/wide_100": {
+   "present": true,
+   "scheme": "B",
+   "stack": "wide_100",
+   "stage": "single+relayer",
+   "source_routes": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeB/layers5_wide_100/routes_l3d.json",
+   "source_summary": "outputs/four_side_1024_v2_l1l5_v01/l3d/schemeB/layers5_wide_100/run_summary.json",
+   "run_summary_seconds": 2685.0,
+   "run_summary_config": {
+    "scheme": "B",
+    "stage": "single",
+    "stack": "wide_100",
+    "stack_json": null,
+    "budget": 120,
+    "multi_budget": 60,
+    "passes": 2,
+    "rr_rounds": 0,
+    "rr_targets": 48,
+    "rr_rip": 2,
+    "layer_selection": "best",
+    "limit": 0,
+    "out": null,
+    "tag": ""
+   },
+   "layer_stack": {
+    "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+    "provenance": "unconfirmed_simulation",
+    "formal_acceptance_allowed": false,
+    "note": "wide_100: 1.0 mm spacing; exploratory",
+    "interface_layer": 1,
+    "layers": {
+     "1": {
+      "layer_id": 1,
+      "layer_type": "interface",
+      "physical_z_mm": null,
+      "interface_rows": {
+       "z1": 0.0,
+       "z2": 0.5
+      },
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "2": {
+      "layer_id": 2,
+      "layer_type": "routing",
+      "physical_z_mm": 1.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "3": {
+      "layer_id": 3,
+      "layer_type": "routing",
+      "physical_z_mm": 2.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "4": {
+      "layer_id": 4,
+      "layer_type": "routing",
+      "physical_z_mm": 3.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     },
+     "5": {
+      "layer_id": 5,
+      "layer_type": "routing",
+      "physical_z_mm": 4.5,
+      "interface_rows": {},
+      "allowed_transitions": [
+       1,
+       2,
+       3,
+       4,
+       5
+      ]
+     }
+    },
+    "routing_heights_mm": {
+     "2": 1.5,
+     "3": 2.5,
+     "4": 3.5,
+     "5": 4.5
+    }
+   },
+   "stack_provenance": "unconfirmed_simulation",
+   "stack_formal_acceptance_allowed": false,
+   "stack_valid": true,
+   "stack_validation_errors": [],
+   "min_plane_gap_mm": 1.0,
+   "router_stats": {
+    "scheme": "B",
+    "stack": "wide_100",
+    "stage": "single",
+    "baseline_routed": 515,
+    "final_routed": 611,
+    "new_routed": 96,
+    "attemptable": 431,
+    "no_candidate": 78,
+    "failed_unplaceable": 335,
+    "flat_added": 0,
+    "passes": [
+     {
+      "pass_index": 1,
+      "stage": "single",
+      "variants": [
+       0
+      ],
+      "attempted": 431,
+      "placed": 92,
+      "pending": 339,
+      "routed": 607,
+      "seconds": 1618.0
+     },
+     {
+      "pass_index": 2,
+      "stage": "single",
+      "variants": [
+       1,
+       0
+      ],
+      "attempted": 339,
+      "placed": 4,
+      "pending": 335,
+      "routed": 611,
+      "seconds": 2684.24
+     }
+    ],
+    "rr": [],
+    "rejected": {
+     "transition_placement_infeasible": 5068
+    },
+    "seconds": 2684.24
+   },
+   "stats_saved": {
+    "baseline_routed": 515,
+    "routed": 611,
+    "failed": 413,
+    "new_routed": 96,
+    "lifted": 120,
+    "transitions": 265,
+    "total_length_mm": 113192.032041,
+    "mean_length_mm": 185.257008,
+    "total_xy_length_mm": 113108.319594,
+    "per_plane": {
+     "z1": {
+      "routed": 207,
+      "baseline": 184,
+      "lifted": 23
+     },
+     "z2": {
+      "routed": 404,
+      "baseline": 331,
+      "lifted": 73
+     }
+    },
+    "per_layer_flat_parts": {
+     "1": 731,
+     "5": 24,
+     "2": 33,
+     "3": 63,
+     "4": 25
+    },
+    "per_physical_plane_flat_parts": {
+     "L1@0": 230,
+     "L5@4.5": 24,
+     "L2@1.5": 33,
+     "L3@2.5": 63,
+     "L4@3.5": 25,
+     "L1@0.5": 501
+    },
+    "per_physical_plane_flat_length_mm": {
+     "L1@0": 33177.946935,
+     "L5@4.5": 2129.080493,
+     "L2@1.5": 5468.062935,
+     "L3@2.5": 11022.764465,
+     "L4@3.5": 4298.24864,
+     "L1@0.5": 54055.631604
+    },
+    "transition_layer_pairs": {
+     "1->5": 15,
+     "5->1": 18,
+     "1->2": 28,
+     "2->1": 26,
+     "1->3": 58,
+     "3->1": 56,
+     "1->4": 19,
+     "4->1": 20,
+     "2->4": 2,
+     "5->4": 3,
+     "3->5": 6,
+     "4->2": 4,
+     "5->2": 1,
+     "2->3": 3,
+     "5->3": 2,
+     "4->5": 1,
+     "2->5": 2,
+     "3->4": 1
+    },
+    "transitions_histogram": {
+     "0": 491,
+     "2": 96,
+     "3": 23,
+     "4": 1
+    },
+    "layers_used_histogram": {
+     "1": 491,
+     "1,5": 9,
+     "1,2": 21,
+     "1,3": 51,
+     "1,4": 15,
+     "1,2,4": 5,
+     "1,4,5": 3,
+     "1,3,5": 8,
+     "1,2,5": 3,
+     "1,2,3": 3,
+     "1,2,4,5": 1,
+     "1,3,4": 1
+    },
+    "layer_sequence_histogram": {
+     "1": 491,
+     "1->5->1": 9,
+     "1->2->1": 21,
+     "1->3->1": 51,
+     "1->4->1": 15,
+     "1->2->4->1": 2,
+     "1->5->4->1": 2,
+     "1->3->5->1": 6,
+     "1->4->2->1": 3,
+     "1->5->2->1": 1,
+     "1->2->3->1": 3,
+     "1->5->3->1": 2,
+     "1->4->5->1": 1,
+     "1->2->5->1": 2,
+     "1->5->4->2->1": 1,
+     "1->3->4->1": 1
+    },
+    "failed_no_candidate": 78,
+    "failed_unplaceable": 335,
+    "z_span_max_mm": 4.5
+   },
+   "process": {
+    "board_mm": [
+     150.0,
+     150.0
+    ],
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "radius_mm": 15.0,
+    "min_cross_angle_deg": 5.0,
+    "crossing_policy": "strict",
+    "propagation_loss_db_per_cm": 0.05,
+    "bend_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "crossing_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "interlayer_loss": {
+     "status": "unknown_uncalibrated"
+    },
+    "loss_note": "no total-loss conclusion is produced: bend, crossing and interlayer coefficients are uncalibrated; the 0.05 dB/cm propagation value is an experiment convention, not measured"
+   },
+   "routed": 611,
+   "total": 1024,
+   "failed": 413,
+   "baseline_routed": 515,
+   "new_routed": 96,
+   "added": 96,
+   "flat_l1_routed": 515,
+   "lifted": 120,
+   "transitions": 265,
+   "transitions_histogram": {
+    "0": 491,
+    "2": 96,
+    "3": 23,
+    "4": 1
+   },
+   "transitions_grouped": {
+    "0": 491,
+    "2": 96,
+    "3": 23,
+    "4+": 1
+   },
+   "transition_pairs": [
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 20,
+     "theta_deg_total": 296.702232,
+     "footprint_mm_total": 153.622915,
+     "length_mm_total": 155.352925,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 2,
+     "dz_signed_mm": 1.5,
+     "dz_abs_mm": 1.5,
+     "count": 8,
+     "theta_deg_total": 145.558979,
+     "footprint_mm_total": 74.939976,
+     "length_mm_total": 76.214503,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 51,
+     "theta_deg_total": 1073.012959,
+     "footprint_mm_total": 549.28681,
+     "length_mm_total": 561.828271,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 3,
+     "dz_signed_mm": 2.5,
+     "dz_abs_mm": 2.5,
+     "count": 7,
+     "theta_deg_total": 164.89525,
+     "footprint_mm_total": 83.927052,
+     "length_mm_total": 86.338951,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 3.0,
+     "dz_abs_mm": 3.0,
+     "count": 15,
+     "theta_deg_total": 387.628991,
+     "footprint_mm_total": 196.150452,
+     "length_mm_total": 202.962065,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 4,
+     "dz_signed_mm": 3.5,
+     "dz_abs_mm": 3.5,
+     "count": 4,
+     "theta_deg_total": 111.811546,
+     "footprint_mm_total": 56.249444,
+     "length_mm_total": 58.544389,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 4.0,
+     "dz_abs_mm": 4.0,
+     "count": 11,
+     "theta_deg_total": 329.190784,
+     "footprint_mm_total": 164.632925,
+     "length_mm_total": 172.363891,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 1,
+     "to_layer": 5,
+     "dz_signed_mm": 4.5,
+     "dz_abs_mm": 4.5,
+     "count": 4,
+     "theta_deg_total": 127.153322,
+     "footprint_mm_total": 63.213923,
+     "length_mm_total": 66.577324,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -1.5,
+     "dz_abs_mm": 1.5,
+     "count": 8,
+     "theta_deg_total": 145.558979,
+     "footprint_mm_total": 74.939976,
+     "length_mm_total": 76.214503,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 1,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 18,
+     "theta_deg_total": 267.032008,
+     "footprint_mm_total": 138.260623,
+     "length_mm_total": 139.817633,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 3,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 3,
+     "theta_deg_total": 44.505335,
+     "footprint_mm_total": 23.043437,
+     "length_mm_total": 23.302939,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 4,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 2,
+     "theta_deg_total": 42.07894,
+     "footprint_mm_total": 21.540659,
+     "length_mm_total": 22.032481,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 2,
+     "to_layer": 5,
+     "dz_signed_mm": 3.0,
+     "dz_abs_mm": 3.0,
+     "count": 2,
+     "theta_deg_total": 51.683866,
+     "footprint_mm_total": 26.153394,
+     "length_mm_total": 27.061609,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -2.5,
+     "dz_abs_mm": 2.5,
+     "count": 7,
+     "theta_deg_total": 164.89525,
+     "footprint_mm_total": 83.927052,
+     "length_mm_total": 86.338951,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 1,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 49,
+     "theta_deg_total": 1030.934019,
+     "footprint_mm_total": 527.746151,
+     "length_mm_total": 539.79579,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 4,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 1,
+     "theta_deg_total": 14.835112,
+     "footprint_mm_total": 7.681146,
+     "length_mm_total": 7.767646,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 3,
+     "to_layer": 5,
+     "dz_signed_mm": 2.0,
+     "dz_abs_mm": 2.0,
+     "count": 6,
+     "theta_deg_total": 126.236819,
+     "footprint_mm_total": 64.621978,
+     "length_mm_total": 66.097444,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -3.5,
+     "dz_abs_mm": 3.5,
+     "count": 4,
+     "theta_deg_total": 111.811546,
+     "footprint_mm_total": 56.249444,
+     "length_mm_total": 58.544389,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 1,
+     "dz_signed_mm": -3.0,
+     "dz_abs_mm": 3.0,
+     "count": 16,
+     "theta_deg_total": 413.470924,
+     "footprint_mm_total": 209.227149,
+     "length_mm_total": 216.49287,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 2,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 4,
+     "theta_deg_total": 84.157879,
+     "footprint_mm_total": 43.081318,
+     "length_mm_total": 44.064962,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 4,
+     "to_layer": 5,
+     "dz_signed_mm": 1.0,
+     "dz_abs_mm": 1.0,
+     "count": 1,
+     "theta_deg_total": 14.835112,
+     "footprint_mm_total": 7.681146,
+     "length_mm_total": 7.767646,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -4.5,
+     "dz_abs_mm": 4.5,
+     "count": 4,
+     "theta_deg_total": 127.153322,
+     "footprint_mm_total": 63.213923,
+     "length_mm_total": 66.577324,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 1,
+     "dz_signed_mm": -4.0,
+     "dz_abs_mm": 4.0,
+     "count": 14,
+     "theta_deg_total": 418.970088,
+     "footprint_mm_total": 209.532814,
+     "length_mm_total": 219.372225,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 2,
+     "dz_signed_mm": -3.0,
+     "dz_abs_mm": 3.0,
+     "count": 1,
+     "theta_deg_total": 25.841933,
+     "footprint_mm_total": 13.076697,
+     "length_mm_total": 13.530804,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 3,
+     "dz_signed_mm": -2.0,
+     "dz_abs_mm": 2.0,
+     "count": 2,
+     "theta_deg_total": 42.07894,
+     "footprint_mm_total": 21.540659,
+     "length_mm_total": 22.032481,
+     "radius_values_mm": [
+      15.0
+     ]
+    },
+    {
+     "from_layer": 5,
+     "to_layer": 4,
+     "dz_signed_mm": -1.0,
+     "dz_abs_mm": 1.0,
+     "count": 3,
+     "theta_deg_total": 44.505335,
+     "footprint_mm_total": 23.043437,
+     "length_mm_total": 23.302939,
+     "radius_values_mm": [
+      15.0
+     ]
+    }
+   ],
+   "transition_geometry": {
+    "count": 265,
+    "radius_distribution": {
+     "15.000000": 265
+    },
+    "radius_expected_mm": 15.0,
+    "all_transition_radii_r15": true,
+    "theta_deg_total": 5806.539469,
+    "footprint_mm_total": 2956.584501,
+    "length_mm_total": 3040.296956
+   },
+   "layers_used_histogram": {
+    "1": 491,
+    "1,2": 21,
+    "1,2,3": 3,
+    "1,2,4": 5,
+    "1,2,4,5": 1,
+    "1,2,5": 3,
+    "1,3": 51,
+    "1,3,4": 1,
+    "1,3,5": 8,
+    "1,4": 15,
+    "1,4,5": 3,
+    "1,5": 9
+   },
+   "layer_sequence_histogram": {
+    "1": 491,
+    "1->2->1": 21,
+    "1->2->3->1": 3,
+    "1->2->4->1": 2,
+    "1->2->5->1": 2,
+    "1->3->1": 51,
+    "1->3->4->1": 1,
+    "1->3->5->1": 6,
+    "1->4->1": 15,
+    "1->4->2->1": 3,
+    "1->4->5->1": 1,
+    "1->5->1": 9,
+    "1->5->2->1": 1,
+    "1->5->3->1": 2,
+    "1->5->4->1": 2,
+    "1->5->4->2->1": 1
+   },
+   "physical_planes": {
+    "L1:z1": {
+     "key": "L1:z1",
+     "label": "L1 z1 row",
+     "z_mm": 0.0,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z1",
+     "routes_touching": 207,
+     "flat_parts": 230,
+     "flat_length_mm": 33177.946935
+    },
+    "L1:z2": {
+     "key": "L1:z2",
+     "label": "L1 z2 row",
+     "z_mm": 0.5,
+     "logical_layer_ids": [
+      1
+     ],
+     "layer_type": "interface",
+     "row": "z2",
+     "routes_touching": 404,
+     "flat_parts": 501,
+     "flat_length_mm": 54055.631605
+    },
+    "L2": {
+     "key": "L2",
+     "label": "L2",
+     "z_mm": 1.5,
+     "logical_layer_ids": [
+      2
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 33,
+     "flat_parts": 33,
+     "flat_length_mm": 5468.062936
+    },
+    "L3": {
+     "key": "L3",
+     "label": "L3",
+     "z_mm": 2.5,
+     "logical_layer_ids": [
+      3
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 63,
+     "flat_parts": 63,
+     "flat_length_mm": 11022.76446
+    },
+    "L4": {
+     "key": "L4",
+     "label": "L4",
+     "z_mm": 3.5,
+     "logical_layer_ids": [
+      4
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 25,
+     "flat_parts": 25,
+     "flat_length_mm": 4298.248642
+    },
+    "L5": {
+     "key": "L5",
+     "label": "L5",
+     "z_mm": 4.5,
+     "logical_layer_ids": [
+      5
+     ],
+     "layer_type": "routing",
+     "row": null,
+     "routes_touching": 24,
+     "flat_parts": 24,
+     "flat_length_mm": 2129.080494
+    }
+   },
+   "logical_layers": {
+    "1": {
+     "layer_id": 1,
+     "layer_type": "interface",
+     "physical_z_mm": null,
+     "interface_rows": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "routes_touching": 611,
+     "flat_parts": 731,
+     "flat_length_mm": 87233.57854,
+     "transition_endpoints": 240
+    },
+    "2": {
+     "layer_id": 2,
+     "layer_type": "routing",
+     "physical_z_mm": 1.5,
+     "interface_rows": {},
+     "routes_touching": 33,
+     "flat_parts": 33,
+     "flat_length_mm": 5468.062936,
+     "transition_endpoints": 66
+    },
+    "3": {
+     "layer_id": 3,
+     "layer_type": "routing",
+     "physical_z_mm": 2.5,
+     "interface_rows": {},
+     "routes_touching": 63,
+     "flat_parts": 63,
+     "flat_length_mm": 11022.76446,
+     "transition_endpoints": 126
+    },
+    "4": {
+     "layer_id": 4,
+     "layer_type": "routing",
+     "physical_z_mm": 3.5,
+     "interface_rows": {},
+     "routes_touching": 25,
+     "flat_parts": 25,
+     "flat_length_mm": 4298.248642,
+     "transition_endpoints": 50
+    },
+    "5": {
+     "layer_id": 5,
+     "layer_type": "routing",
+     "physical_z_mm": 4.5,
+     "interface_rows": {},
+     "routes_touching": 24,
+     "flat_parts": 24,
+     "flat_length_mm": 2129.080494,
+     "transition_endpoints": 48
+    }
+   },
+   "length": {
+    "xy_total_mm": 113108.319594,
+    "three_d_total_mm": 113192.032029,
+    "flat_total_mm": 110151.735073,
+    "transition_total_mm": 3040.296956,
+    "mean_3d_length_mm": 185.257008,
+    "mean_xy_length_mm": 185.119999,
+    "mean_transition_length_per_lifted_mm": 25.335808
+   },
+   "z_span_distribution": {
+    "0.000000": 491,
+    "1.000000": 13,
+    "1.500000": 8,
+    "2.000000": 47,
+    "2.500000": 7,
+    "3.000000": 17,
+    "3.500000": 4,
+    "4.000000": 20,
+    "4.500000": 4
+   },
+   "per_plane": {
+    "z1": {
+     "routed": 207,
+     "baseline": 184,
+     "lifted": 23
+    },
+    "z2": {
+     "routed": 404,
+     "baseline": 331,
+     "lifted": 97
+    }
+   },
+   "failure_reasons": {
+    "unplaceable_in_3d": 335,
+    "no_2d_candidate": 78
+   },
+   "failure_by_plane": {
+    "z1": {
+     "unplaceable_in_3d": 229,
+     "no_2d_candidate": 76
+    },
+    "z2": {
+     "unplaceable_in_3d": 106,
+     "no_2d_candidate": 2
+    }
+   },
+   "validation": null,
+   "formal_acceptance_granted": false,
+   "formal_acceptance_status": "NOT_GRANTED",
+   "warnings": [
+    "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+   ],
+   "flat_geometry": {
+    "arc_count": 1496,
+    "straight_length_mm": 74903.065499,
+    "arc_length_mm": 35248.669573,
+    "radius_distribution": {
+     "15.000000": 1496
+    },
+    "expected_radius_mm": 15.0,
+    "all_flat_arcs_r15": true,
+    "unexpected_flat_arc_count": 0
+   },
+   "l1_two_rows_check": {
+    "logical_layer_id": 1,
+    "physical_plane_count": 2,
+    "z_values_mm": [
+     0.0,
+     0.5
+    ],
+    "rows": [
+     "z1",
+     "z2"
+    ],
+    "note": "L1 is ONE logical routing layer with TWO physical planes: z1 row z=0.0 mm and z2 row z=0.5 mm; physical-plane statistics therefore list L1 twice, both with logical layer_id=1"
+   },
+   "failure_analysis": {
+    "from_records": {
+     "failed_total": 413,
+     "no_2d_candidate": 78,
+     "unplaceable_in_3d": 335,
+     "other": {}
+    },
+    "from_run_summary": {
+     "attemptable": 431,
+     "attempted": 770,
+     "unattempted": -339,
+     "no_candidate": 78,
+     "failed_no_candidate": 78,
+     "failed_unplaceable": 335,
+     "flat_added": 0,
+     "rejected": {
+      "transition_placement_infeasible": 5068
+     },
+     "passes": [
+      {
+       "pass_index": 1,
+       "stage": "single",
+       "variants": [
+        0
+       ],
+       "attempted": 431,
+       "placed": 92,
+       "pending": 339,
+       "routed": 607,
+       "seconds": 1618.0
+      },
+      {
+       "pass_index": 2,
+       "stage": "single",
+       "variants": [
+        1,
+        0
+       ],
+       "attempted": 339,
+       "placed": 4,
+       "pending": 335,
+       "routed": 611,
+       "seconds": 2684.24
+      }
+     ]
+    },
+    "transition_placement_infeasible": 5068,
+    "blocked_in_3d": 335,
+    "no_2d_candidate": 78,
+    "note": "no_2d_candidate = the accepted R15 2D layout had no candidate for this route; blocked_in_3d = attempted but no legal 3D placement; transition_placement_infeasible = the router rejected a candidate because the elevation S-curve could not be placed on the 2D path; unattempted = attemptable routes not yet tried in this run"
+   },
+   "formal_acceptance_refusal_reason": "L2-L5 physical heights are unconfirmed_simulation; formal process acceptance cannot be granted"
+  }
+ },
+ "validation": {},
+ "comparison": {
+  "primary": [
+   "medium_050 corrected L1-L5"
+  ],
+  "r15_2d_baseline": {
+   "A": {
+    "total": 943,
+    "z1": 498,
+    "z2": 445
+   },
+   "B": {
+    "total": 515,
+    "z1": 184,
+    "z2": 331
+   }
+  },
+  "historical_old_5l": {
+   "A": 985,
+   "B": 723,
+   "note": "historical old-5L numbers from the WRONG model (z1=L1 / z2=L5); they are NOT comparable with corrected L1-L5 results and must never be mixed into the corrected numbers"
+  },
+  "old_model_note": "historical old-5L numbers from the WRONG model (z1=L1 / z2=L5); they are NOT comparable with corrected L1-L5 results and must never be mixed into the corrected numbers",
+  "primary_rows": [
+   {
+    "scheme": "A",
+    "stack": "medium_050",
+    "corrected_routed": 963,
+    "corrected_added": 20,
+    "corrected_lifted": 44,
+    "corrected_transitions": 117,
+    "corrected_total_length_mm": 156179.288068,
+    "r15_2d_baseline": 943,
+    "delta_vs_r15_2d": 20,
+    "baseline_payload_routed": 943,
+    "historical_old_5l": 985,
+    "delta_vs_old_5l": -22,
+    "old_5l_comparable": false,
+    "exploratory_validation": null,
+    "formal_acceptance_granted": false
+   },
+   {
+    "scheme": "B",
+    "stack": "medium_050",
+    "corrected_routed": 621,
+    "corrected_added": 106,
+    "corrected_lifted": 130,
+    "corrected_transitions": 298,
+    "corrected_total_length_mm": 116731.50066,
+    "r15_2d_baseline": 515,
+    "delta_vs_r15_2d": 106,
+    "baseline_payload_routed": 515,
+    "historical_old_5l": 723,
+    "delta_vs_old_5l": -102,
+    "old_5l_comparable": false,
+    "exploratory_validation": null,
+    "formal_acceptance_granted": false
+   }
+  ],
+  "sensitivity_rows": [
+   {
+    "stack": "medium_050",
+    "heights_mm": {
+     "2": 1.0,
+     "3": 1.5,
+     "4": 2.0,
+     "5": 2.5
+    },
+    "provenance": "unconfirmed_simulation",
+    "stack_valid": true,
+    "min_plane_gap_mm": 0.5,
+    "formal_acceptance_allowed": false,
+    "present_schemes": {
+     "A": {
+      "present": true,
+      "routed": 963,
+      "added": 20,
+      "lifted": 44,
+      "transitions": 117,
+      "validation": null
+     },
+     "B": {
+      "present": true,
+      "routed": 621,
+      "added": 106,
+      "lifted": 130,
+      "transitions": 298,
+      "validation": null
+     }
+    }
+   },
+   {
+    "stack": "compact_025",
+    "heights_mm": {
+     "2": 0.75,
+     "3": 1.0,
+     "4": 1.25,
+     "5": 1.5
+    },
+    "provenance": "unconfirmed_simulation",
+    "stack_valid": true,
+    "min_plane_gap_mm": 0.25,
+    "formal_acceptance_allowed": false,
+    "present_schemes": {
+     "A": {
+      "present": true,
+      "routed": 962,
+      "added": 19,
+      "lifted": 43,
+      "transitions": 115,
+      "validation": null
+     },
+     "B": {
+      "present": true,
+      "routed": 611,
+      "added": 96,
+      "lifted": 120,
+      "transitions": 268,
+      "validation": null
+     }
+    }
+   },
+   {
+    "stack": "wide_100",
+    "heights_mm": {
+     "2": 1.5,
+     "3": 2.5,
+     "4": 3.5,
+     "5": 4.5
+    },
+    "provenance": "unconfirmed_simulation",
+    "stack_valid": true,
+    "min_plane_gap_mm": 1.0,
+    "formal_acceptance_allowed": false,
+    "present_schemes": {
+     "A": {
+      "present": true,
+      "routed": 963,
+      "added": 20,
+      "lifted": 44,
+      "transitions": 117,
+      "validation": null
+     },
+     "B": {
+      "present": true,
+      "routed": 611,
+      "added": 96,
+      "lifted": 120,
+      "transitions": 265,
+      "validation": null
+     }
+    }
+   }
+  ],
+  "formal_acceptance": {
+   "granted": false,
+   "reason": "L2-L5 physical heights are unconfirmed_simulation simulation inputs; formal process acceptance is refused for every stack"
+  }
+ },
+ "loss_parameters": {
+  "schema": "four_side_1024_v2_l3d_loss_parameters_v1",
+  "generated_utc": "2026-10-20T15:23:52Z",
+  "round": "R9_corrected_L1_L5",
+  "radius_mm": 15.0,
+  "guidance": "No loss coefficients are invented in this round. Only the propagation-loss experiment convention is listed as a known parameter; bend / crossing / interlayer losses are unknown and uncalibrated, and no total-loss conclusion is produced.",
+  "parameters": {
+   "propagation_loss": {
+    "parameter": "propagation_loss",
+    "value_db_per_cm": 0.05,
+    "status": "experimental_convention_not_measured",
+    "measured": false,
+    "source": "fslw.config experiment convention (not a measured value)",
+    "note": "length-only experiment convention; not a measured glass value"
+   },
+   "bend_loss": {
+    "parameter": "bend_loss",
+    "value_db": null,
+    "status": "unknown_uncalibrated",
+    "measured": false,
+    "source": "not available in this round",
+    "note": "no calibrated glass bend-loss function; R=15 mm is a geometry constraint only"
+   },
+   "crossing_loss": {
+    "parameter": "crossing_loss",
+    "value_db": null,
+    "status": "unknown_uncalibrated",
+    "measured": false,
+    "source": "not available in this round",
+    "note": "single-layer crossing optical feasibility not confirmed; crossing counts are geometric only"
+   },
+   "interlayer_loss": {
+    "parameter": "interlayer_loss",
+    "value_db": null,
+    "status": "unknown_uncalibrated",
+    "measured": false,
+    "source": "not available in this round",
+    "note": "multi-layer transitions and interlayer propagation effects are not calibrated"
+   }
+  },
+  "total_loss_conclusion": {
+   "produced": false,
+   "reason": "bend, crossing and interlayer coefficients are all unknown_uncalibrated; a total-loss number would require invented coefficients, so none is reported"
+  },
+  "layer_heights_unconfirmed": {
+   "status": "unconfirmed_simulation",
+   "note": "L2-L5 heights are exploratory simulation inputs, not confirmed process values; this also blocks formal process acceptance"
+  },
+  "geometric_inputs_only": {
+   "note": "lengths / arc counts / transition counts / crossing counts are reported as geometric inputs only and are deliberately NOT converted into total loss",
+   "runs": {
+    "A/compact_025": {
+     "routed": 962,
+     "total_3d_length_mm": 155904.96023,
+     "transitions": 115,
+     "crossings": null
+    },
+    "A/medium_050": {
+     "routed": 963,
+     "total_3d_length_mm": 156179.288068,
+     "transitions": 117,
+     "crossings": null
+    },
+    "A/wide_100": {
+     "routed": 963,
+     "total_3d_length_mm": 156202.851261,
+     "transitions": 117,
+     "crossings": null
+    },
+    "B/compact_025": {
+     "routed": 611,
+     "total_3d_length_mm": 113583.240946,
+     "transitions": 268,
+     "crossings": null
+    },
+    "B/medium_050": {
+     "routed": 621,
+     "total_3d_length_mm": 116731.50066,
+     "transitions": 298,
+     "crossings": null
+    },
+    "B/wide_100": {
+     "routed": 611,
+     "total_3d_length_mm": 113192.032029,
+     "transitions": 265,
+     "crossings": null
+    }
+   }
+  }
+ },
+ "per_route_counts": {
+  "per_route_rows": 6144,
+  "layer_usage_rows": 66,
+  "transition_pair_rows": 127
+ },
+ "failure_summary": {
+  "total_by_reason": {
+   "unplaceable_in_3d": 1173,
+   "no_2d_candidate": 240
+  },
+  "per_run": {
+   "A/compact_025": {
+    "failed": 62,
+    "reasons": {
+     "unplaceable_in_3d": 60,
+     "no_2d_candidate": 2
+    }
+   },
+   "A/medium_050": {
+    "failed": 61,
+    "reasons": {
+     "unplaceable_in_3d": 59,
+     "no_2d_candidate": 2
+    }
+   },
+   "A/wide_100": {
+    "failed": 61,
+    "reasons": {
+     "unplaceable_in_3d": 59,
+     "no_2d_candidate": 2
+    }
+   },
+   "B/compact_025": {
+    "failed": 413,
+    "reasons": {
+     "unplaceable_in_3d": 335,
+     "no_2d_candidate": 78
+    }
+   },
+   "B/medium_050": {
+    "failed": 403,
+    "reasons": {
+     "unplaceable_in_3d": 325,
+     "no_2d_candidate": 78
+    }
+   },
+   "B/wide_100": {
+    "failed": 413,
+    "reasons": {
+     "unplaceable_in_3d": 335,
+     "no_2d_candidate": 78
+    }
+   }
+  }
+ },
+ "warnings": [
+  "L3D validation reports not found under outputs/four_side_1024_v2_l1l5_v01/validation (validation block null)",
+  "A/compact_025: independent L3D validation report not found (validation block null)",
+  "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)",
+  "A/medium_050: independent L3D validation report not found (validation block null)",
+  "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)",
+  "A/wide_100: independent L3D validation report not found (validation block null)",
+  "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)",
+  "B/compact_025: independent L3D validation report not found (validation block null)",
+  "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)",
+  "B/medium_050: independent L3D validation report not found (validation block null)",
+  "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)",
+  "B/wide_100: independent L3D validation report not found (validation block null)",
+  "layer stack provenance is unconfirmed_simulation: formal process acceptance is NOT granted (heights are simulation inputs)"
+ ]
+}

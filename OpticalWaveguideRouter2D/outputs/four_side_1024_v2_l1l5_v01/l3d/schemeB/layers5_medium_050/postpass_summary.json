@@ -1,0 +1,474 @@
+{
+ "schema": "four_side_1024_v2_l3d_postpass_v1",
+ "input": "outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_medium_050\\routes_l3d.json",
+ "output": "outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_medium_050\\routes_l3d.json",
+ "radius_mm": 15.0,
+ "layer_stack": {
+  "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+  "provenance": "unconfirmed_simulation",
+  "formal_acceptance_allowed": false,
+  "note": "medium_050: 0.5 mm spacing above the top interface row; exploratory",
+  "interface_layer": 1,
+  "layers": {
+   "1": {
+    "layer_id": 1,
+    "layer_type": "interface",
+    "physical_z_mm": null,
+    "interface_rows": {
+     "z1": 0.0,
+     "z2": 0.5
+    },
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "2": {
+    "layer_id": 2,
+    "layer_type": "routing",
+    "physical_z_mm": 1.0,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "3": {
+    "layer_id": 3,
+    "layer_type": "routing",
+    "physical_z_mm": 1.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "4": {
+    "layer_id": 4,
+    "layer_type": "routing",
+    "physical_z_mm": 2.0,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "5": {
+    "layer_id": 5,
+    "layer_type": "routing",
+    "physical_z_mm": 2.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "routing_heights_mm": {
+   "2": 1.0,
+   "3": 1.5,
+   "4": 2.0,
+   "5": 2.5
+  }
+ },
+ "relayer": {
+  "role": "stage4_local_relayering",
+  "candidate_routes": 476,
+  "attempts": 79,
+  "relayered": 24,
+  "routed_unchanged": true,
+  "sequences": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "seconds": 210.86,
+  "relayered_routes": [
+   {
+    "route_id": 640,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     5,
+     4,
+     2,
+     1
+    ],
+    "n_transitions": 4,
+    "length_mm": 392.453147
+   },
+   {
+    "route_id": 1021,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 370.597236
+   },
+   {
+    "route_id": 632,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     5,
+     4,
+     2,
+     1
+    ],
+    "n_transitions": 4,
+    "length_mm": 322.513147
+   },
+   {
+    "route_id": 867,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     3,
+     5,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 279.044747
+   },
+   {
+    "route_id": 564,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 278.273346
+   },
+   {
+    "route_id": 562,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 277.373346
+   },
+   {
+    "route_id": 566,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 277.373346
+   },
+   {
+    "route_id": 538,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 274.913346
+   },
+   {
+    "route_id": 921,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 269.833346
+   },
+   {
+    "route_id": 903,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     5,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 4,
+    "length_mm": 264.079257
+   },
+   {
+    "route_id": 894,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     4,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 256.212157
+   },
+   {
+    "route_id": 901,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 255.333346
+   },
+   {
+    "route_id": 911,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     5,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 4,
+    "length_mm": 254.579257
+   },
+   {
+    "route_id": 527,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 254.083346
+   },
+   {
+    "route_id": 518,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 253.583346
+   },
+   {
+    "route_id": 636,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 251.755016
+   },
+   {
+    "route_id": 543,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 249.959456
+   },
+   {
+    "route_id": 544,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 249.459456
+   },
+   {
+    "route_id": 899,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     4,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 246.962157
+   },
+   {
+    "route_id": 891,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     4,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 246.212157
+   },
+   {
+    "route_id": 516,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 245.083346
+   },
+   {
+    "route_id": 526,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     3,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 245.083346
+   },
+   {
+    "route_id": 764,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     3,
+     2,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 244.833346
+   },
+   {
+    "route_id": 919,
+    "original_layer_sequence": [
+     1
+    ],
+    "new_layer_sequence": [
+     1,
+     2,
+     4,
+     1
+    ],
+    "n_transitions": 3,
+    "length_mm": 244.962157
+   }
+  ]
+ },
+ "log": [
+  "23:19:20 postpass routes=outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_medium_050\\routes_l3d.json stack=four_side_1024_v2_l3d_layer_stack_v1 radius=15.0",
+  "23:19:21 relayer: 476 flat candidate routes, 28 multi-layer sequences, targets=24",
+  "23:19:27 relayer: route 640 -> L1-L5-L4-L2-L1 (4 transitions)",
+  "23:19:34 relayer: route 1021 -> L1-L2-L3-L1 (3 transitions)",
+  "23:19:52 relayer: route 632 -> L1-L5-L4-L2-L1 (4 transitions)",
+  "23:20:58 relayer: route 867 -> L1-L3-L5-L1 (3 transitions)",
+  "23:21:01 relayer: route 564 -> L1-L2-L3-L1 (3 transitions)",
+  "23:21:07 relayer: route 562 -> L1-L3-L2-L1 (3 transitions)",
+  "23:21:08 relayer: route 566 -> L1-L3-L2-L1 (3 transitions)",
+  "23:21:09 relayer: route 538 -> L1-L2-L3-L1 (3 transitions)",
+  "23:21:09 relayer: route 921 -> L1-L2-L3-L1 (3 transitions)",
+  "23:21:34 relayer: route 903 -> L1-L5-L3-L2-L1 (4 transitions)",
+  "23:21:50 relayer: route 894 -> L1-L4-L2-L1 (3 transitions)",
+  "23:21:51 relayer: route 901 -> L1-L3-L2-L1 (3 transitions)",
+  "23:22:03 relayer: route 911 -> L1-L5-L3-L2-L1 (4 transitions)",
+  "23:22:03 relayer: route 527 -> L1-L2-L3-L1 (3 transitions)",
+  "23:22:06 relayer: route 518 -> L1-L2-L3-L1 (3 transitions)",
+  "23:22:12 relayer: route 636 -> L1-L3-L2-L1 (3 transitions)",
+  "23:22:12 relayer: route 543 -> L1-L2-L3-L1 (3 transitions)",
+  "23:22:13 relayer: route 544 -> L1-L2-L3-L1 (3 transitions)",
+  "23:22:29 relayer: route 899 -> L1-L4-L2-L1 (3 transitions)",
+  "23:22:31 relayer: route 891 -> L1-L4-L2-L1 (3 transitions)",
+  "23:22:48 relayer: route 516 -> L1-L2-L3-L1 (3 transitions)",
+  "23:22:49 relayer: route 526 -> L1-L2-L3-L1 (3 transitions)",
+  "23:22:51 relayer: route 764 -> L1-L3-L2-L1 (3 transitions)",
+  "23:22:52 relayer: route 919 -> L1-L2-L4-L1 (3 transitions)",
+  "23:22:52 kept router output as outputs\\four_side_1024_v2_l1l5_v01\\l3d\\schemeB\\layers5_medium_050\\routes_l3d_router.json"
+ ]
+}

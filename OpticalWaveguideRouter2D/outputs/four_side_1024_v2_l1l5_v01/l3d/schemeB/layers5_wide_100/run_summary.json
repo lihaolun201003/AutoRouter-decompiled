@@ -1,0 +1,227 @@
+{
+ "schema": "four_side_1024_v2_l3d_run_summary_v1",
+ "stage": "single",
+ "scheme": "B",
+ "stack": "wide_100",
+ "layer_stack": {
+  "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+  "provenance": "unconfirmed_simulation",
+  "formal_acceptance_allowed": false,
+  "note": "wide_100: 1.0 mm spacing; exploratory",
+  "interface_layer": 1,
+  "layers": {
+   "1": {
+    "layer_id": 1,
+    "layer_type": "interface",
+    "physical_z_mm": null,
+    "interface_rows": {
+     "z1": 0.0,
+     "z2": 0.5
+    },
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "2": {
+    "layer_id": 2,
+    "layer_type": "routing",
+    "physical_z_mm": 1.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "3": {
+    "layer_id": 3,
+    "layer_type": "routing",
+    "physical_z_mm": 2.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "4": {
+    "layer_id": 4,
+    "layer_type": "routing",
+    "physical_z_mm": 3.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   },
+   "5": {
+    "layer_id": 5,
+    "layer_type": "routing",
+    "physical_z_mm": 4.5,
+    "interface_rows": {},
+    "allowed_transitions": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ]
+   }
+  },
+  "routing_heights_mm": {
+   "2": 1.5,
+   "3": 2.5,
+   "4": 3.5,
+   "5": 4.5
+  }
+ },
+ "config": {
+  "scheme": "B",
+  "stage": "single",
+  "stack": "wide_100",
+  "stack_json": null,
+  "budget": 120,
+  "multi_budget": 60,
+  "passes": 2,
+  "rr_rounds": 0,
+  "rr_targets": 48,
+  "rr_rip": 2,
+  "layer_selection": "best",
+  "limit": 0,
+  "out": null,
+  "tag": ""
+ },
+ "statistics": {
+  "baseline_routed": 515,
+  "routed": 611,
+  "failed": 413,
+  "new_routed": 96,
+  "lifted": 96,
+  "transitions": 192,
+  "total_length_mm": 113167.916822,
+  "mean_length_mm": 185.21754,
+  "total_xy_length_mm": 113108.319586,
+  "per_plane": {
+   "z1": {
+    "routed": 207,
+    "baseline": 184,
+    "lifted": 23
+   },
+   "z2": {
+    "routed": 404,
+    "baseline": 331,
+    "lifted": 73
+   }
+  },
+  "per_layer_flat_parts": {
+   "1": 707,
+   "5": 9,
+   "2": 21,
+   "3": 51,
+   "4": 15
+  },
+  "per_physical_plane_flat_parts": {
+   "L1@0": 230,
+   "L5@4.5": 9,
+   "L2@1.5": 21,
+   "L3@2.5": 51,
+   "L4@3.5": 15,
+   "L1@0.5": 477
+  },
+  "per_physical_plane_flat_length_mm": {
+   "L1@0": 33177.946935,
+   "L5@4.5": 1802.238449,
+   "L2@1.5": 5163.431684,
+   "L3@2.5": 10985.870363,
+   "L4@3.5": 3750.412968,
+   "L1@0.5": 56086.905963
+  },
+  "transition_layer_pairs": {
+   "1->5": 9,
+   "5->1": 9,
+   "1->2": 21,
+   "2->1": 21,
+   "1->3": 51,
+   "3->1": 51,
+   "1->4": 15,
+   "4->1": 15
+  },
+  "transitions_histogram": {
+   "0": 515,
+   "2": 96
+  },
+  "layers_used_histogram": {
+   "1": 515,
+   "1,5": 9,
+   "1,2": 21,
+   "1,3": 51,
+   "1,4": 15
+  },
+  "layer_sequence_histogram": {
+   "1": 515,
+   "1->5->1": 9,
+   "1->2->1": 21,
+   "1->3->1": 51,
+   "1->4->1": 15
+  },
+  "failed_no_candidate": 78,
+  "failed_unplaceable": 335,
+  "z_span_max_mm": 4.5
+ },
+ "router": {
+  "scheme": "B",
+  "stack": "wide_100",
+  "stage": "single",
+  "baseline_routed": 515,
+  "final_routed": 611,
+  "new_routed": 96,
+  "attemptable": 431,
+  "no_candidate": 78,
+  "failed_unplaceable": 335,
+  "flat_added": 0,
+  "passes": [
+   {
+    "pass_index": 1,
+    "stage": "single",
+    "variants": [
+     0
+    ],
+    "attempted": 431,
+    "placed": 92,
+    "pending": 339,
+    "routed": 607,
+    "seconds": 1618.0
+   },
+   {
+    "pass_index": 2,
+    "stage": "single",
+    "variants": [
+     1,
+     0
+    ],
+    "attempted": 339,
+    "placed": 4,
+    "pending": 335,
+    "routed": 611,
+    "seconds": 2684.24
+   }
+  ],
+  "rr": [],
+  "rejected": {
+   "transition_placement_infeasible": 5068
+  },
+  "seconds": 2684.24
+ },
+ "seconds": 2685.0
+}

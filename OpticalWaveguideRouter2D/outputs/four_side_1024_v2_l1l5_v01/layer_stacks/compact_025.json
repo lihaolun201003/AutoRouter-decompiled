@@ -1,0 +1,83 @@
+{
+ "schema": "four_side_1024_v2_l3d_layer_stack_v1",
+ "provenance": "unconfirmed_simulation",
+ "formal_acceptance_allowed": false,
+ "note": "compact_025: 0.25 mm spacing; minimum-clearance exploratory stack",
+ "interface_layer": 1,
+ "layers": {
+  "1": {
+   "layer_id": 1,
+   "layer_type": "interface",
+   "physical_z_mm": null,
+   "interface_rows": {
+    "z1": 0.0,
+    "z2": 0.5
+   },
+   "allowed_transitions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "2": {
+   "layer_id": 2,
+   "layer_type": "routing",
+   "physical_z_mm": 0.75,
+   "interface_rows": {},
+   "allowed_transitions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "3": {
+   "layer_id": 3,
+   "layer_type": "routing",
+   "physical_z_mm": 1.0,
+   "interface_rows": {},
+   "allowed_transitions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "4": {
+   "layer_id": 4,
+   "layer_type": "routing",
+   "physical_z_mm": 1.25,
+   "interface_rows": {},
+   "allowed_transitions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "5": {
+   "layer_id": 5,
+   "layer_type": "routing",
+   "physical_z_mm": 1.5,
+   "interface_rows": {},
+   "allowed_transitions": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  }
+ },
+ "routing_heights_mm": {
+  "2": 0.75,
+  "3": 1.0,
+  "4": 1.25,
+  "5": 1.5
+ }
+}

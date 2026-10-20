@@ -166,3 +166,27 @@ python -m four_side_1024.independent_audit --output outputs/four_side_1024_legac
 - R40 全部历史结果保留，两轮数字不混用；本轮只做单次升降 2.5D，不含 Native 3D 联合寻路；
   损耗系数待标定，不输出总损耗结论。复现命令见
   `outputs/four_side_1024_v2_r15_v01/REPRODUCE_R15.md`。
+
+## 2026-10-20 更新（R9）：L1–L5 物理模型纠错（探索性结果）
+
+> **重要更正**：本文件上一条 2026-10-20 R15 更新中的“五层 2.5D + Short-S 985 / 纯正交 723”
+> 以及更早的 R40 五层 820/383、3 层 788/342，均使用了错误的旧模型
+> `z1=L1 / z2=L5` + 高度域 `[0,0.125,0.25,0.375,0.5]`，**不可作为五层结果继承或混用**，
+> 仅保留为历史记录。正确模型：**L1 是接口层并同时包含 z1 排（z=0.0 mm）与
+> z2 排（z=0.5 mm）两排端口**；L2–L5 为四个额外布线层，高度师兄尚未确认。
+
+| 轮次 | 修正 L1 基线 | 主探索（medium_050） | 敏感性 compact/wide | 报告 | 产物 |
+|---|---:|---:|---:|---|---|
+| A（D56 + Short-S） | 943 | **963**（+20） | 962 / 963 | [报告](../../../docs/reports/four_side_1024_v2_l1l5_v01.md) | [目录](../outputs/four_side_1024_v2_l1l5_v01/) |
+| B（纯正交 90°） | 515 | **621**（+106） | 611 / 611 | 同上 | 同上 |
+
+- 修正模型允许任意层序与多次平滑升降（含 L1→L2→L3→L5→L1 等 4 次 transition 路径）；
+  A/B 主探索分别有 24/31 条 ≥3-transition 路线。
+- 8 项独立三维验收全部 `exploratory_only` PASS（0 违规；min 曲率 14.999999961 mm；
+  min 真实 3D 净空 0.080000 mm；min transition-vs-flat 0.091540 mm；
+  min transition-vs-transition 0.081738 mm）。
+- **正式工艺验收未授予**：L2–L5 高度为 `unconfirmed_simulation`，`formal_acceptance=false`。
+- 旧 R15 五层 985/723 / R40 五层 820/383 不可比；R15 二维 A 943 / B 515 作为修正 L1
+  flat 基线重新在统一 3D 环境验收通过。
+- 复现命令见 `outputs/four_side_1024_v2_l1l5_v01/REPRODUCE_L3D.md`；旧模型错误逐条审计见
+  `four_side_1024/l3d/AUDIT_OLD_25D.md`。
