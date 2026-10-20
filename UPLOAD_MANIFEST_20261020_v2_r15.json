@@ -94,9 +94,17 @@
   ],
   "note": "the changed files keep the historical R40 default behaviour (no env var => radius 40) and add the R15 process-radius hook plus worker radius propagation; R40 reruns are unchanged."
  },
- "total_bytes": 50099566,
- "file_count": 161,
+ "total_bytes": 50144231,
+ "file_count": 165,
  "files": {
+  "OpticalWaveguideRouter2D/four_side_1024/PUBLISHED_RESULTS.md": {
+   "size": 12030,
+   "sha256": "f2efc43a250b64d3f38b1eb80a484a42a5be807c8f8031b36e7c3b3da2686116"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/README.md": {
+   "size": 14047,
+   "sha256": "b8e147b5c9cc3756c89c763a8e28bc7eafb933d4c8cc9f11412fd6e877e3fdb3"
+  },
   "OpticalWaveguideRouter2D/four_side_1024/fsd25d/plots25d.py": {
    "size": 57580,
    "sha256": "a9684a192a49a37e4234dc588f41a0300e63651d89f4117211efc396e9b9eef8"
@@ -228,6 +236,10 @@
   "OpticalWaveguideRouter2D/outputs/four_side_1024_v2_r15_v01/REPRODUCE_R15.md": {
    "size": 7714,
    "sha256": "522c516852a26e16f09e34013d0a905d12ae8561ddb89da91010865a7aadb4a3"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v2_r15_v01/UPLOAD_README.md": {
+   "size": 3946,
+   "sha256": "66f2b967067ade1121813c306bbf175d00526934ca120e0242a34d6dd3867d35"
   },
   "OpticalWaveguideRouter2D/outputs/four_side_1024_v2_r15_v01/checkpoints/A_z1_ns_ew_xdesc.json": {
    "size": 330940,
@@ -737,6 +749,10 @@
    "size": 1604,
    "sha256": "6a02304e4f6b3e69809b6b5a44c89af7951351d581ba45271d5e6a6b917cf4b2"
   },
+  "README.md": {
+   "size": 14642,
+   "sha256": "fb0fc3d0f826fe165477894241b9d9f127d589c4f9c20b54ad333919607d3303"
+  },
   "docs/reports/four_side_1024_v2_r15_v01.md": {
    "size": 31265,
    "sha256": "0b8f3fdbbc7d19ad0691f7e7975e49bf457315dc540ceebdaf8592a10eedad63"
@@ -799,5 +815,6 @@
    ]
   },
   "regeneration": "python -m four_side_1024.r15.plots_r15 (figures, comparison); four_side_1024.fslw.plots / fsd25d.plots25d for per-run renders"
- }
+ },
+ "files_note": "file_count/files list every uploaded file except this manifest itself (self-hash is not representable); staged README/PUBLISHED_RESULTS/UPLOAD_README edits are included as individual entries."
 }
