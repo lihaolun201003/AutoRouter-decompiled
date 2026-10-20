@@ -106,9 +106,17 @@
   "changed": [],
   "note": "new l3d package only; the historical fsd25d/r15/fslw/v2opt code and all R15/R40 output directories are unchanged."
  },
- "total_bytes": 44508312,
- "file_count": 94,
+ "total_bytes": 44560729,
+ "file_count": 98,
  "files": {
+  "OpticalWaveguideRouter2D/four_side_1024/PUBLISHED_RESULTS.md": {
+   "size": 13824,
+   "sha256": "acf3a5f652ea04b18d245450096f72e1697acbf03b26e11ca5d2e6ee90dad4fe"
+  },
+  "OpticalWaveguideRouter2D/four_side_1024/README.md": {
+   "size": 15686,
+   "sha256": "f1d2c307bc14d2929779add4f7d065c8e95bb70764f2b45b2812dc5f1ad061cb"
+  },
   "OpticalWaveguideRouter2D/four_side_1024/l3d/AUDIT_OLD_25D.md": {
    "size": 50334,
    "sha256": "5d24415ff727ae2bf12a9796a6e536458dc4f5a839efef7460ff02a976408bb8"
@@ -180,6 +188,10 @@
   "OpticalWaveguideRouter2D/outputs/four_side_1024_v2_l1l5_v01/REPRODUCE_L3D.md": {
    "size": 6642,
    "sha256": "14b1670623c508dab7549bd03adee3bda741b11b7272e3170da725bfb3af236b"
+  },
+  "OpticalWaveguideRouter2D/outputs/four_side_1024_v2_l1l5_v01/UPLOAD_README.md": {
+   "size": 4545,
+   "sha256": "d39641110f2eb42b53a48a9b9391856721b7e180bf0b27b43663d0232829a6ec"
   },
   "OpticalWaveguideRouter2D/outputs/four_side_1024_v2_l1l5_v01/baseline/schemeA/routes_l3d.json": {
    "size": 2021069,
@@ -481,6 +493,10 @@
    "size": 5691,
    "sha256": "844be9fe04724e1ef2f72c100d0bd6400fd280775450b45eb6d19bf17fc408f3"
   },
+  "README.md": {
+   "size": 18362,
+   "sha256": "417ef68cca2eace63a324016c02f9c8708d8d03669ac42ce863a391ccc0037a0"
+  },
   "docs/reports/four_side_1024_v2_l1l5_v01.md": {
    "size": 22930,
    "sha256": "7280845874f1eb80be49366f6c03cb650c2109c32c6ec3e96ccb5a5c235a26e3"
@@ -489,5 +505,6 @@
  "omitted": {
   "reason": "this round uploads the complete exploratory output tree; nothing from the L3D result set is omitted.",
   "categories": {}
- }
+ },
+ "files_note": "file_count/files list every uploaded file except this manifest itself (self-hash is not representable); the staged README / four_side_1024 README / PUBLISHED_RESULTS / per-output UPLOAD_README edits are included as individual entries."
 }
