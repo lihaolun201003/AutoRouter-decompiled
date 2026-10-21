@@ -1,0 +1,563 @@
+{
+  "schema": "v3_c4_independent_acceptance/1.0",
+  "script": "validate_v3_c4.py",
+  "verified_from_saved_files": true,
+  "independent_of_generator": true,
+  "checks": [
+    {
+      "id": "V01",
+      "category": "CSV",
+      "name": "CSV 文件存在且使用 UTF-8-SIG（含 BOM）",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V02",
+      "category": "CSV",
+      "name": "CSV 表头为项目固定 12 列且顺序一致",
+      "expected": [
+        "route_id",
+        "source_side",
+        "source_connector",
+        "source_row",
+        "source_column",
+        "source_channel",
+        "target_side",
+        "target_connector",
+        "target_row",
+        "target_column",
+        "target_channel",
+        "relation"
+      ],
+      "actual": [
+        "route_id",
+        "source_side",
+        "source_connector",
+        "source_row",
+        "source_column",
+        "source_channel",
+        "target_side",
+        "target_connector",
+        "target_row",
+        "target_column",
+        "target_channel",
+        "relation"
+      ],
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V03",
+      "category": "CSV",
+      "name": "CSV 恰好 1024 条数据行",
+      "expected": 1024,
+      "actual": 1024,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V04",
+      "category": "CSV",
+      "name": "CSV 行尾为 CRLF（与现有 V1/V2 一致）",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V05",
+      "category": "CSV",
+      "name": "route_id 为 1..1024 连续且唯一",
+      "expected": "1..1024",
+      "actual": "count=1024, min=1, max=1024",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V06",
+      "category": "CSV",
+      "name": "connector/row/column/channel 符合物理端口编号规则",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "V07",
+      "category": "CSV",
+      "name": "relation 与两端边类别一致（对边 opposite / 邻边 adjacent）",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V08",
+      "category": "CSV",
+      "name": "source 与 target 位于不同边",
+      "expected": 1024,
+      "actual": 1024,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V09",
+      "category": "CSV",
+      "name": "类别计数 NS 256, EW 256, EN 128, ES 128, SW 128, NW 128",
+      "expected": {
+        "NS": 256,
+        "EW": 256,
+        "EN": 128,
+        "ES": 128,
+        "SW": 128,
+        "NW": 128
+      },
+      "actual": {
+        "NS": 256,
+        "EW": 256,
+        "EN": 128,
+        "ES": 128,
+        "SW": 128,
+        "NW": 128
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V10",
+      "category": "CSV",
+      "name": "有向边对 N→S 256, E→W 256, N→E/E→S/S→W/W→N 各 128",
+      "expected": {
+        "N->S": 256,
+        "E->W": 256,
+        "N->E": 128,
+        "E->S": 128,
+        "S->W": 128,
+        "W->N": 128
+      },
+      "actual": {
+        "N->S": 256,
+        "E->W": 256,
+        "N->E": 128,
+        "E->S": 128,
+        "S->W": 128,
+        "W->N": 128
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V11",
+      "category": "CSV",
+      "name": "row1 全为对边（512）、row2 全为邻边（512），同行连接",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "V12",
+      "category": "端口",
+      "name": "2048 个物理端口各被使用且仅使用一次",
+      "expected": {
+        "unique": 2048,
+        "used_once": true
+      },
+      "actual": {
+        "unique": 2048,
+        "used_once": true
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V13",
+      "category": "端口",
+      "name": "每边 512 个端口全部使用",
+      "expected": {
+        "N": 512,
+        "E": 512,
+        "S": 512,
+        "W": 512
+      },
+      "actual": {
+        "N": 512,
+        "E": 512,
+        "S": 512,
+        "W": 512
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V14",
+      "category": "端口",
+      "name": "64 个接头各使用 32 个通道",
+      "expected": {
+        "connectors": 64,
+        "channels": 32
+      },
+      "actual": {
+        "connectors": 64,
+        "channels": [
+          32
+        ]
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V15",
+      "category": "坐标",
+      "name": "端口身份→(x,y,z) 物理模型独立复算一致且均在 150×150 板内",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V16",
+      "category": "坐标",
+      "name": "与仓库 four_side_1024/fslw/ports.py build_plane_endpoints() 完全一致",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V17",
+      "category": "坐标",
+      "name": "物理高度 row1→0.0 mm、row2→0.5 mm",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V18",
+      "category": "坐标",
+      "name": "2048 个端口的三维坐标互不相同（两排 XY 可重合、z 不同）",
+      "expected": 2048,
+      "actual": 2048,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V19",
+      "category": "对称",
+      "name": "全连接集合 rot90 后仍为同一无序连接集合（端口级）",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V20",
+      "category": "对称",
+      "name": "全连接集合 rot180 后仍为同一无序连接集合（端口级）",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V21",
+      "category": "对称",
+      "name": "全连接集合 rot270 后仍为同一无序连接集合（端口级）",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V22",
+      "category": "对称",
+      "name": "每条连接在其四元旋转轨道中有另外 3 条连接，共 256 组",
+      "expected": {
+        "groups": 256,
+        "orbit_errors": 0
+      },
+      "actual": {
+        "groups": 256,
+        "orbit_errors": 0
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V23",
+      "category": "V2",
+      "name": "V2 输入 CSV SHA256 与冻结值一致",
+      "expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+      "actual": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V24",
+      "category": "V2",
+      "name": "V2 对边 512 条（route_id 1..512）在 V3 CSV 中逐字段完全一致",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": "[]"
+    },
+    {
+      "id": "V25",
+      "category": "V2",
+      "name": "V2 原对边 512 条在真实物理坐标下严格 90° 旋转对称",
+      "expected": {
+        "rot90": 0,
+        "rot180": 0,
+        "rot270": 0
+      },
+      "actual": {
+        "rot90": 0,
+        "rot180": 0,
+        "rot270": 0
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V26",
+      "category": "V2",
+      "name": "V2 原邻边 512 条不具备 90° 旋转对称（说明必须重设计）",
+      "expected": {
+        "missing_rot90": 512
+      },
+      "actual": {
+        "missing_rot90": 512
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V27",
+      "category": "Excel",
+      "name": "工作簿可打开且恰好 5 个指定 Sheet",
+      "expected": [
+        "1024连接总表",
+        "四边接口表",
+        "旋转对称组",
+        "统计与验证",
+        "来源与说明"
+      ],
+      "actual": [
+        "1024连接总表",
+        "四边接口表",
+        "旋转对称组",
+        "统计与验证",
+        "来源与说明"
+      ],
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V28",
+      "category": "Excel",
+      "name": "Sheet1 连接总表 1024 行、前 12 列表头与 CSV 相同",
+      "expected": {
+        "rows": 1024,
+        "fields": [
+          "route_id",
+          "source_side",
+          "source_connector",
+          "source_row",
+          "source_column",
+          "source_channel",
+          "target_side",
+          "target_connector",
+          "target_row",
+          "target_column",
+          "target_channel",
+          "relation"
+        ]
+      },
+      "actual": {
+        "rows": 1024,
+        "fields": [
+          "route_id",
+          "source_side",
+          "source_connector",
+          "source_row",
+          "source_column",
+          "source_channel",
+          "target_side",
+          "target_connector",
+          "target_row",
+          "target_column",
+          "target_channel",
+          "relation"
+        ]
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V29",
+      "category": "Excel",
+      "name": "Sheet1 的 1024 条连接与 CSV 逐字段一致、坐标/Z 高度符合物理模型",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "V30",
+      "category": "Excel",
+      "name": "Sheet2 四边接口表 2048 行",
+      "expected": 2048,
+      "actual": 2048,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V31",
+      "category": "Excel",
+      "name": "Sheet2 的 2048 个端口各出现一次且对端端口/坐标与 CSV 一致",
+      "expected": {
+        "unique": 2048,
+        "used_once": true
+      },
+      "actual": {
+        "unique": 2048,
+        "used_once": true
+      },
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "V32",
+      "category": "Excel",
+      "name": "Sheet3 恰好 256 组、每组 4 条、覆盖全部 1024 条且 90° 相位正确",
+      "expected": {
+        "groups": 256,
+        "unique_routes": 1024,
+        "errors": 0
+      },
+      "actual": {
+        "groups": 256,
+        "unique_routes": 1024,
+        "errors": 0
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V33",
+      "category": "Excel",
+      "name": "数据表冻结表头、启用自动筛选、表头加粗",
+      "expected": {
+        "1024连接总表": "freeze+filter+bold",
+        "四边接口表": "freeze+filter+bold",
+        "旋转对称组": "freeze+filter+bold"
+      },
+      "actual": {
+        "1024连接总表": "freeze+filter+bold",
+        "四边接口表": "freeze+filter+bold",
+        "旋转对称组": "freeze+filter+bold"
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V34",
+      "category": "Excel",
+      "name": "Sheet4 统计与验证：全部校验结果为 PASS、无 FAIL",
+      "expected": {
+        "fail": 0,
+        "pass>=30": true
+      },
+      "actual": {
+        "fail": 0,
+        "pass": 39
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V35",
+      "category": "Excel",
+      "name": "Sheet5 来源与说明记录输出 CSV SHA256 与 V2 输入 SHA256",
+      "expected": {
+        "csv_sha_recorded": true,
+        "v2_sha_recorded": true
+      },
+      "actual": {
+        "csv_sha_recorded": true,
+        "v2_sha_recorded": true
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V36",
+      "category": "记录",
+      "name": "validation_v3_c4.json 存在且 summary.all_pass 为 true",
+      "expected": {
+        "all_pass": true
+      },
+      "actual": {
+        "all_pass": true
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V37",
+      "category": "记录",
+      "name": "validation JSON 记录的 CSV/XLSX SHA256 与实际文件一致",
+      "expected": {
+        "csv": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+        "xlsx": "7d68efdfb3ef76676d1877723290af18093417ad8d288f34b17df77bec9fe419"
+      },
+      "actual": {
+        "csv": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+        "xlsx": "7d68efdfb3ef76676d1877723290af18093417ad8d288f34b17df77bec9fe419"
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V38",
+      "category": "文件",
+      "name": "生成脚本、生成报告、配对比较文件均存在",
+      "expected": {
+        "generator": true,
+        "report": true,
+        "comparison": true
+      },
+      "actual": {
+        "generator": true,
+        "report": true,
+        "comparison": true
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "V39",
+      "category": "文件",
+      "name": "历史 V1/V2 CSV 未被修改（SHA256 不变）",
+      "expected": {
+        "V1": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+        "V2": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e"
+      },
+      "actual": {
+        "V1": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+        "V2": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e"
+      },
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "total": 39,
+    "pass_count": 39,
+    "fail_count": 0,
+    "all_pass": true
+  }
+}

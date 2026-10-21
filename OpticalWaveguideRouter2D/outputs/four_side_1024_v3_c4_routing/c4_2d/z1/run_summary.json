@@ -1,0 +1,71 @@
+{
+ "name": "V3_C4_2D",
+ "algorithm": "C4_2D",
+ "process_profile": "R15_min_radius_15mm",
+ "radius_mm": 15.0,
+ "fixed_radius_40mm": false,
+ "geometry_mode": "d56",
+ "crossing_policy": "exact",
+ "candidate_generator": "v2opt.candext (D56 lines + 90 deg arcs + short-S)",
+ "candidate_budget_per_group": 1600,
+ "strategy": "easy group order, representative search + rot90 lift, atomic group commit",
+ "order": "easy",
+ "forced_symmetry": true,
+ "group_count": 128,
+ "routed_groups": 127,
+ "failed_groups": 1,
+ "plane": "z1",
+ "routed": 508,
+ "total": 512,
+ "failed": 4,
+ "seconds": 49.64,
+ "group_order": "easy",
+ "budget": 1600,
+ "rr": {
+  "rounds": [
+   {
+    "round": 1,
+    "recovered": 7,
+    "routed_routes": 508,
+    "failed_groups": 1,
+    "seconds": 6.2
+   },
+   {
+    "round": 2,
+    "recovered": 0,
+    "routed_routes": 508,
+    "failed_groups": 1,
+    "seconds": 8.28
+   }
+  ],
+  "recovered": 7,
+  "seconds": 8.28
+ },
+ "retry_history": [
+  {
+   "pass_index": 1,
+   "attempted": 1,
+   "applied_groups": 0,
+   "routed_routes": 508,
+   "failed_groups": 1,
+   "seconds": 1.67
+  },
+  {
+   "pass_index": 2,
+   "attempted": 1,
+   "applied_groups": 0,
+   "routed_routes": 508,
+   "failed_groups": 1,
+   "seconds": 1.89
+  },
+  {
+   "pass_index": 3,
+   "attempted": 1,
+   "applied_groups": 0,
+   "routed_routes": 508,
+   "failed_groups": 1,
+   "seconds": 2.04
+  }
+ ],
+ "checkpoint": "outputs\\four_side_1024_v3_c4_routing\\c4_2d\\z1\\checkpoint.json"
+}

@@ -1,0 +1,79 @@
+{
+ "name": "V3_FREE_2D_RR",
+ "algorithm": "FREE_2D",
+ "process_profile": "R15_min_radius_15mm",
+ "radius_mm": 15.0,
+ "fixed_radius_40mm": false,
+ "geometry_mode": "d56",
+ "crossing_policy": "exact",
+ "candidate_generator": "v2opt.candext (D56 lines + 90 deg arcs + short-S)",
+ "candidate_budget_per_route": 1600,
+ "strategy": "sequential commit + serial strengthened R&R",
+ "forced_symmetry": false,
+ "rr": {
+  "budget": 1600,
+  "reinsert_budget": 800,
+  "analysis_budget": 1600,
+  "sizes": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "rounds": 4,
+  "routed": 495,
+  "initial_routed": 463,
+  "total_gain": 32,
+  "history": [
+   {
+    "round": 1,
+    "analysed": 36,
+    "transactions": 24,
+    "improving_results": 14,
+    "committed": 13,
+    "gain": 14,
+    "routed": 477,
+    "seconds": 158.97
+   },
+   {
+    "round": 2,
+    "analysed": 13,
+    "transactions": 24,
+    "improving_results": 8,
+    "committed": 6,
+    "gain": 6,
+    "routed": 484,
+    "seconds": 331.52
+   },
+   {
+    "round": 3,
+    "analysed": 28,
+    "transactions": 24,
+    "improving_results": 10,
+    "committed": 5,
+    "gain": 5,
+    "routed": 490,
+    "seconds": 485.49
+   },
+   {
+    "round": 4,
+    "analysed": 22,
+    "transactions": 24,
+    "improving_results": 8,
+    "committed": 3,
+    "gain": 5,
+    "routed": 495,
+    "seconds": 650.45
+   }
+  ],
+  "seconds": 650.45,
+  "seed": 20261019
+ },
+ "plane": "z1",
+ "routed": 495,
+ "total": 512,
+ "failed": 17,
+ "seconds": 650.46,
+ "validation_passed": true,
+ "checkpoint": "outputs\\four_side_1024_v3_c4_routing\\free_2d\\z1\\checkpoint.json"
+}

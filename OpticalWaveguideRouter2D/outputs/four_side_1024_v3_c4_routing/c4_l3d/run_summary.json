@@ -1,0 +1,43 @@
+{
+ "experiment": "V3_C4_L3D",
+ "stack": "medium_050",
+ "routed": 964,
+ "failed": 60,
+ "lifted": 0,
+ "transitions": 0,
+ "routed_groups": 241,
+ "failed_groups": 15,
+ "flat_retry": {
+  "z1": {
+   "attempted": 1,
+   "applied_groups": 0,
+   "routed_routes": 508,
+   "seconds": 1.65
+  },
+  "z2": {
+   "attempted": 14,
+   "applied_groups": 0,
+   "routed_routes": 456,
+   "seconds": 87.83
+  }
+ },
+ "seconds": 247.47,
+ "validation_passed": true,
+ "c4_symmetry_passed": true,
+ "l3d_validator": {
+  "status": "exploratory_only",
+  "exploratory_pass": true,
+  "geometry_pass": true,
+  "counts": {
+   "violations": 0,
+   "contract_errors": 0,
+   "port_errors": 0,
+   "geometry_errors": 0,
+   "curvature_violations": 0,
+   "clearance_violations": 0,
+   "same_plane_violations": 0,
+   "self_clearance_violations": 0,
+   "other_errors": 0
+  }
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "four_side_1024_v3c4_all_validation_v1",
+ "generated_at_local": "2026-10-21T02:04:31+0800",
+ "validation": [
+  {
+   "experiment": "free_2d",
+   "records": 1024,
+   "routed": 948,
+   "failed": 76,
+   "per_plane": {
+    "z1": {
+     "routed": 495,
+     "total": 512
+    },
+    "z2": {
+     "routed": 453,
+     "total": 512
+    }
+   },
+   "total_length_mm": 115470.081635,
+   "groups": {
+    "total": 256,
+    "routed": 224,
+    "failed": 32
+   },
+   "validation_passed": true,
+   "combined_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_routing\\free_2d\\routes_1024.json",
+   "combined_sha256": "89cdbf3d5fb86a645b5def636721d66b289cfda7989f8820cb51f54669673b86"
+  },
+  {
+   "experiment": "c4_2d",
+   "records": 1024,
+   "routed": 964,
+   "failed": 60,
+   "per_plane": {
+    "z1": {
+     "routed": 508,
+     "total": 512
+    },
+    "z2": {
+     "routed": 456,
+     "total": 512
+    }
+   },
+   "total_length_mm": 118583.038739,
+   "groups": {
+    "total": 256,
+    "routed": 241,
+    "failed": 15
+   },
+   "validation_passed": true,
+   "combined_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_routing\\c4_2d\\routes_1024.json",
+   "combined_sha256": "a30a606fd4c06c2e3f93c9883921438c9cd8e56c514e78f9882ee6f9b21a4a3f"
+  },
+  {
+   "experiment": "c4_l3d",
+   "records": 1024,
+   "routed": 964,
+   "failed": 60,
+   "lifted": 0,
+   "routed_groups": 241,
+   "failed_groups": 15,
+   "seconds": 247.47,
+   "total_length_mm": 118583.038712,
+   "per_plane": {
+    "z1": {
+     "routed": 508,
+     "lifted": 0
+    },
+    "z2": {
+     "routed": 456,
+     "lifted": 0
+    }
+   },
+   "validation_passed": true,
+   "l3d_validator_status": "exploratory_only",
+   "l3d_exploratory_pass": true,
+   "c4_symmetry_passed": true,
+   "routes_sha256": "3899abc26661fccf23d241bf49b7d83b3f7877897b5b760ceca66d8c616d9cf4",
+   "identity": {
+    "records": 1024,
+    "csv_sha256": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+    "errors": [],
+    "error_count": 0,
+    "passed": true
+   }
+  }
+ ],
+ "all_pass": true,
+ "note": "file lists / per-route geometry / checkpoints are in each experiment directory; this file only records the integrated PASS/FAIL"
+}

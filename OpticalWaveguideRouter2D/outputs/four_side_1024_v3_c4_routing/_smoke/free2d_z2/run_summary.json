@@ -1,0 +1,34 @@
+{
+ "name": "V3_FREE_2D",
+ "algorithm": "FREE_2D",
+ "process_profile": "R15_min_radius_15mm",
+ "radius_mm": 15.0,
+ "fixed_radius_40mm": false,
+ "geometry_mode": "d56",
+ "crossing_policy": "exact",
+ "candidate_generator": "v2opt.candext (D56 lines + 90 deg arcs + short-S)",
+ "candidate_budget_per_route": 400,
+ "strategy": "group_swesnw sequential commit",
+ "order": "group_swesnw",
+ "seed": null,
+ "forced_symmetry": false,
+ "retry_passes": 0,
+ "plane": "z2",
+ "routed": 1,
+ "total": 512,
+ "failed": 511,
+ "seconds": 93.39,
+ "sequential": {
+  "budget": 400,
+  "attempted": 16,
+  "applied": 1,
+  "applied_route_ids": [
+   772
+  ],
+  "routed": 1,
+  "seconds": 93.35367430000042
+ },
+ "retries": [],
+ "validation_passed": true,
+ "checkpoint": "outputs\\four_side_1024_v3_c4_routing\\_smoke\\free2d_z2\\checkpoint_z2.json"
+}

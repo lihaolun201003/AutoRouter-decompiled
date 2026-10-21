@@ -1,0 +1,12 @@
+02:04:22 [combine] identity check: records=1024 errors=0 csv_sha=de7e382d3fbf
+02:04:22 [validate2d] full coverage: records=1024 routed=948 ports=2048 -> PASS
+02:04:25 [validate2d] free_2d_z1: routed=495 failed=17 geometry_errors=0 strict_violations=0 -> PASS
+02:04:26 [validate2d] free_2d_z2: routed=453 failed=59 geometry_errors=0 strict_violations=0 -> PASS
+02:04:26 [combine] free_2d: routed=948 failed=76 groups={'total': 256, 'routed': 224, 'failed': 32} combined_validation=PASS
+02:04:26 [combine] identity check: records=1024 errors=0 csv_sha=de7e382d3fbf
+02:04:30 [validate2d] c4_2d_z1: routed=508 failed=4 geometry_errors=0 strict_violations=0 -> PASS
+02:04:31 [validate2d] c4_2d_z2: routed=456 failed=56 geometry_errors=0 strict_violations=0 -> PASS
+02:04:31 [validate2d] C4 groups: complete=241 partial=0 empty=15 errors=0 -> PASS
+02:04:31 [combine] c4_2d: routed=964 failed=60 groups={'total': 256, 'routed': 241, 'failed': 15} combined_validation=PASS
+02:04:31 [combine] identity check: records=1024 errors=0 csv_sha=de7e382d3fbf
+02:04:31 [combine] c4_l3d: routed=964 lifted=0 validation=PASS

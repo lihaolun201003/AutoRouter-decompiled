@@ -1,0 +1,148 @@
+00:52:53 V3_C4_L3D stack=medium_050 heights={'2': 1.0, '3': 1.5, '4': 2.0, '5': 2.5} provenance=unconfirmed_simulation
+00:52:54 z1: loaded C4_2D baseline 480/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z1\routes.json
+00:52:54 z1: baseline routed=480/512 failed_groups=8
+00:53:15 C4 sequential: 8/8 groups applied=0 routed_routes=480 elapsed=21.7s
+00:53:15 z1: flat retry recovered groups=0 routed=480
+00:53:16 z1: lift phase groups=8 world_routes=480
+00:53:16 z1: LIFTED group 82 layers=[1, 2, 1] xy_len=152.0 trans=2
+00:53:16 z1: LIFTED group 103 layers=[1, 2, 1] xy_len=152.0 trans=2
+00:53:16 z1: LIFTED group 123 layers=[1, 2, 1] xy_len=152.0 trans=2
+00:53:16 z1: LIFTED group 53 layers=[1, 2, 1] xy_len=156.0 trans=2
+00:53:16 z1: LIFTED group 56 layers=[1, 2, 1] xy_len=156.0 trans=2
+00:53:16 z1: LIFTED group 95 layers=[1, 2, 3, 1] xy_len=156.0 trans=3
+00:53:16 z1: LIFTED group 49 layers=[1, 3, 1] xy_len=161.7 trans=2
+00:53:16 z1: LIFTED group 115 layers=[1, 2, 1] xy_len=161.7 trans=2
+00:53:16 z2: loaded C4_2D baseline 444/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z2\routes.json
+00:53:16 z2: baseline routed=444/512 failed_groups=17
+00:54:26 C4 sequential: 8/17 groups applied=0 routed_routes=444 elapsed=69.6s
+00:55:45 C4 sequential: 16/17 groups applied=0 routed_routes=444 elapsed=149.0s
+00:55:54 z2: flat retry recovered groups=0 routed=444
+00:55:54 z2: lift phase groups=17 world_routes=444
+00:55:56 z2: lift FAILED group 240 evaluated=40 built=232
+00:56:07 z2: lift FAILED group 241 evaluated=40 built=232
+00:56:14 z2: lift FAILED group 242 evaluated=40 built=232
+00:56:21 z2: lift FAILED group 243 evaluated=40 built=232
+00:56:28 z2: lift FAILED group 244 evaluated=40 built=232
+00:56:35 z2: lift FAILED group 245 evaluated=40 built=232
+00:56:43 z2: lift FAILED group 246 evaluated=40 built=232
+00:56:50 z2: lift FAILED group 247 evaluated=40 built=232
+00:56:58 z2: lift FAILED group 248 evaluated=40 built=232
+00:57:05 z2: lift FAILED group 249 evaluated=40 built=232
+00:57:17 z2: lift FAILED group 250 evaluated=40 built=232
+00:57:23 z2: lift FAILED group 251 evaluated=40 built=232
+00:57:34 z2: lift FAILED group 252 evaluated=40 built=232
+00:57:44 z2: lift FAILED group 253 evaluated=40 built=232
+00:58:00 z2: lift FAILED group 254 evaluated=0 built=0
+00:58:14 z2: lift FAILED group 255 evaluated=0 built=0
+00:58:30 z2: lift FAILED group 256 evaluated=0 built=0
+00:58:30 written outputs\four_side_1024_v3_c4_routing\c4_l3d\routes_l3d.json routed=956 lifted=32
+00:58:30 [validate3d] C4 groups: complete=239 partial=0 empty=17 errors=0 -> PASS
+00:58:30 [validate3d] running l3d.validate_l3d.validate_payload with V3-C4 identity injected
+00:58:39 [validate3d] validator status=exploratory_only exploratory_pass=False geometry_pass=False counts=OrderedDict([('violations', 20), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 20), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+00:58:39 V3_C4_L3D done routed=956 lifted=32 validation=FAIL
+01:02:29 V3_C4_L3D stack=medium_050 heights={'2': 1.0, '3': 1.5, '4': 2.0, '5': 2.5} provenance=unconfirmed_simulation
+01:02:29 z1: loaded C4_2D baseline 480/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z1\routes.json
+01:02:29 z1: baseline routed=480/512 failed_groups=8
+01:02:48 C4 sequential: 8/8 groups applied=0 routed_routes=480 elapsed=19.1s
+01:02:48 z1: flat retry recovered groups=0 routed=480
+01:02:48 z2: loaded C4_2D baseline 444/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z2\routes.json
+01:02:48 z2: baseline routed=444/512 failed_groups=17
+01:03:55 C4 sequential: 8/17 groups applied=0 routed_routes=444 elapsed=67.1s
+01:04:48 C4 sequential: 16/17 groups applied=0 routed_routes=444 elapsed=120.0s
+01:04:55 z2: flat retry recovered groups=0 routed=444
+01:04:55 3D world: 924 flat L1 routes from both planes
+01:04:55 z1: lift phase groups=8
+01:04:56 z1: lift FAILED group 82 evaluated=40 built=232
+01:04:57 z1: lift FAILED group 103 evaluated=40 built=232
+01:04:57 z1: lift FAILED group 123 evaluated=40 built=232
+01:04:58 z1: lift FAILED group 53 evaluated=40 built=232
+01:04:58 z1: lift FAILED group 56 evaluated=40 built=232
+01:04:59 z1: lift FAILED group 95 evaluated=40 built=232
+01:04:59 z1: lift FAILED group 49 evaluated=40 built=232
+01:05:00 z1: lift FAILED group 115 evaluated=40 built=232
+01:05:00 z2: lift phase groups=17
+01:05:01 z2: lift FAILED group 240 evaluated=40 built=232
+01:05:07 z2: lift FAILED group 241 evaluated=40 built=232
+01:05:13 z2: lift FAILED group 242 evaluated=40 built=232
+01:05:19 z2: lift FAILED group 243 evaluated=40 built=232
+01:05:24 z2: lift FAILED group 244 evaluated=40 built=232
+01:05:29 z2: lift FAILED group 245 evaluated=40 built=232
+01:05:35 z2: lift FAILED group 246 evaluated=40 built=232
+01:05:40 z2: lift FAILED group 247 evaluated=40 built=232
+01:05:46 z2: lift FAILED group 248 evaluated=40 built=232
+01:05:51 z2: lift FAILED group 249 evaluated=40 built=232
+01:05:57 z2: lift FAILED group 250 evaluated=40 built=232
+01:06:03 z2: lift FAILED group 251 evaluated=40 built=232
+01:06:12 z2: lift FAILED group 252 evaluated=40 built=232
+01:06:22 z2: lift FAILED group 253 evaluated=40 built=232
+01:06:34 z2: lift FAILED group 254 evaluated=0 built=0
+01:06:47 z2: lift FAILED group 255 evaluated=0 built=0
+01:07:01 z2: lift FAILED group 256 evaluated=0 built=0
+01:07:01 written outputs\four_side_1024_v3_c4_routing\c4_l3d\routes_l3d.json routed=924 lifted=0
+01:07:01 [validate3d] C4 groups: complete=231 partial=0 empty=25 errors=0 -> PASS
+01:07:01 [validate3d] running l3d.validate_l3d.validate_payload with V3-C4 identity injected
+01:07:08 [validate3d] validator status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+01:07:08 V3_C4_L3D done routed=924 lifted=0 validation=PASS
+01:29:57 V3_C4_L3D stack=medium_050 heights={'2': 1.0, '3': 1.5, '4': 2.0, '5': 2.5} provenance=unconfirmed_simulation
+01:29:57 z1: loaded C4_2D baseline 508/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z1\routes.json
+01:29:57 z1: baseline routed=508/512 failed_groups=1
+01:29:58 z1: flat retry recovered groups=0 routed=508
+01:29:58 z2: loaded C4_2D baseline 448/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z2\routes.json
+01:29:58 z2: baseline routed=448/512 failed_groups=16
+01:30:41 C4 sequential: 8/16 groups applied=2 routed_routes=456 elapsed=42.9s
+01:31:32 C4 sequential: 16/16 groups applied=2 routed_routes=456 elapsed=93.3s
+01:31:32 z2: flat retry recovered groups=2 routed=456
+01:31:32 3D world: 964 flat L1 routes from both planes
+01:31:32 z1: lift phase groups=1
+01:31:33 z1: lift FAILED group 53 evaluated=60 built=336
+01:31:33 z2: lift phase groups=14
+01:31:37 z2: lift FAILED group 241 evaluated=60 built=333
+01:31:40 z2: lift FAILED group 242 evaluated=60 built=333
+01:31:44 z2: lift FAILED group 243 evaluated=60 built=333
+01:31:48 z2: lift FAILED group 244 evaluated=60 built=333
+01:31:51 z2: lift FAILED group 245 evaluated=60 built=333
+01:31:55 z2: lift FAILED group 246 evaluated=60 built=333
+01:31:59 z2: lift FAILED group 248 evaluated=60 built=333
+01:32:03 z2: lift FAILED group 249 evaluated=60 built=334
+01:32:06 z2: lift FAILED group 250 evaluated=60 built=334
+01:32:14 z2: lift FAILED group 251 evaluated=60 built=336
+01:32:22 z2: lift FAILED group 252 evaluated=60 built=336
+01:32:34 z2: lift FAILED group 254 evaluated=0 built=0
+01:32:45 z2: lift FAILED group 255 evaluated=0 built=0
+01:32:57 z2: lift FAILED group 256 evaluated=0 built=0
+01:32:57 written outputs\four_side_1024_v3_c4_routing\c4_l3d\routes_l3d.json routed=964 lifted=0
+01:32:57 [validate3d] C4 groups: complete=241 partial=0 empty=15 errors=0 -> PASS
+01:32:57 [validate3d] running l3d.validate_l3d.validate_payload with V3-C4 identity injected
+01:33:04 [validate3d] validator status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+01:33:04 V3_C4_L3D done routed=964 lifted=0 validation=PASS
+01:55:24 V3_C4_L3D stack=medium_050 heights={'2': 1.0, '3': 1.5, '4': 2.0, '5': 2.5} provenance=unconfirmed_simulation
+01:55:24 z1: loaded C4_2D baseline 508/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z1\routes.json
+01:55:24 z1: baseline routed=508/512 failed_groups=1
+01:55:25 z1: flat retry recovered groups=0 routed=508
+01:55:25 z2: loaded C4_2D baseline 456/512 from C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\four_side_1024_v3_c4_routing\c4_2d\z2\routes.json
+01:55:26 z2: baseline routed=456/512 failed_groups=14
+01:56:17 C4 sequential: 8/14 groups applied=0 routed_routes=456 elapsed=51.1s
+01:56:53 z2: flat retry recovered groups=0 routed=456
+01:56:54 3D world: 964 flat L1 routes from both planes
+01:56:54 z1: lift phase groups=1
+01:56:55 z1: lift FAILED group 53 evaluated=120 built=624
+01:56:55 z2: lift phase groups=14
+01:57:04 z2: lift FAILED group 241 evaluated=120 built=624
+01:57:14 z2: lift FAILED group 242 evaluated=120 built=624
+01:57:22 z2: lift FAILED group 243 evaluated=120 built=624
+01:57:31 z2: lift FAILED group 244 evaluated=120 built=624
+01:57:40 z2: lift FAILED group 245 evaluated=120 built=624
+01:57:50 z2: lift FAILED group 247 evaluated=120 built=624
+01:57:59 z2: lift FAILED group 249 evaluated=120 built=624
+01:58:12 z2: lift FAILED group 250 evaluated=119 built=617
+01:58:24 z2: lift FAILED group 251 evaluated=33 built=276
+01:58:37 z2: lift FAILED group 252 evaluated=33 built=276
+01:58:49 z2: lift FAILED group 253 evaluated=33 built=276
+01:59:01 z2: lift FAILED group 254 evaluated=0 built=0
+01:59:12 z2: lift FAILED group 255 evaluated=0 built=0
+01:59:24 z2: lift FAILED group 256 evaluated=0 built=0
+01:59:24 written outputs\four_side_1024_v3_c4_routing\c4_l3d\routes_l3d.json routed=964 lifted=0
+01:59:24 [validate3d] C4 groups: complete=241 partial=0 empty=15 errors=0 -> PASS
+01:59:24 [validate3d] running l3d.validate_l3d.validate_payload with V3-C4 identity injected
+01:59:31 [validate3d] validator status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+01:59:31 V3_C4_L3D done routed=964 lifted=0 validation=PASS

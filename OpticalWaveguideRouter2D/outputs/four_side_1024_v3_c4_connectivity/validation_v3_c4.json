@@ -1,0 +1,813 @@
+{
+  "schema": "v3_c4_connectivity_validation/1.0",
+  "generated_at_local": "2026-10-21T00:26:43+08:00",
+  "generated_at_utc": "2026-10-20T16:26:43+00:00",
+  "generator": {
+    "script": "generate_v3_c4.py",
+    "version": "1.0.0",
+    "sha256": "e18798a92c61c2e0adc5c79d2dcdf8cf7cb62cea6d64fb84e0053ffee3812ca5"
+  },
+  "design": {
+    "name": "V3-C4",
+    "rotation_center_mm": [
+      75.0,
+      75.0
+    ],
+    "rot90": "(x,y) -> (150-y, x)",
+    "row1": "V2 opposite 512 kept verbatim (route_id 1..512)",
+    "row2": "adjacent 512 regenerated from 256 port orbits, mirror pairing X<->150-X",
+    "orbit_mapping": [
+      "T(N(i,j))=W(i,j)",
+      "T(W(i,j))=S(17-i,17-j)",
+      "T(S(i,j))=E(i,j)",
+      "T(E(i,j))=N(17-i,17-j)"
+    ],
+    "group_count": 256
+  },
+  "files": {
+    "csv": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_connectivity\\optical_1024_multitomulti_connectivity_v3_c4_symmetric.csv",
+      "sha256": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+      "size_bytes": 41357,
+      "rows": 1024
+    },
+    "xlsx": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_connectivity\\fiberBoard1024_V3_C4_四边旋转对称连接表.xlsx",
+      "sha256": "7d68efdfb3ef76676d1877723290af18093417ad8d288f34b17df77bec9fe419",
+      "size_bytes": 344283
+    },
+    "report": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_connectivity\\generation_report.md",
+      "sha256": "9c217c245c76b9eb3b52fe27b850c11af11e4f1d9bc04b7939aa518337a0edec"
+    },
+    "pairing_comparison": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_connectivity\\pairing_comparison_v3_c4.json",
+      "sha256": "3e919fd36a0ea4d08d5c2752d3b1dfa72ffdba3d6473054f688135a5d37c0382"
+    }
+  },
+  "inputs": {
+    "v2": {
+      "path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v2_symmetric.csv",
+      "sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+      "expected_sha256": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+      "exists": true,
+      "role": "row1 opposite 512 kept verbatim"
+    },
+    "v1": {
+      "path": "C:\\Users\\lihao\\Desktop\\optical_1024_multitomulti_connectivity_v1.csv",
+      "sha256": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+      "expected_sha256": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+      "exists": true,
+      "role": "historical, not modified"
+    },
+    "reference_csv": {
+      "path": "C:\\Users\\lihao\\Desktop\\fiberBoard1024_黄志杰风格_光纤配对.csv.csv",
+      "sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+      "expected_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23",
+      "repo_copy_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_fiber_pairs.csv",
+      "repo_copy_sha256": "76d91316e0933a64b8c822fd541faa2bda571fdef97e49b64f75b55cf4a6cf23"
+    },
+    "reference_xlsx": {
+      "path": "C:\\Users\\lihao\\Desktop\\fiberBoard1024_黄志杰风格_四边接口连接.xlsx.xlsx",
+      "sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+      "expected_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de",
+      "repo_copy_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\data\\v3_huang\\fiberBoard1024_huang_four_side_connectors.xlsx",
+      "repo_copy_sha256": "4d285f5667fa922849b3371525944e12feca1dae1bc07c0d5cd40be3b38b32de"
+    },
+    "v2_diff_file": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v1_v2_abcd\\connectivity\\diff_v1_v2.csv",
+      "exists": true,
+      "sha256": "d3c091ef6e43053e0f4e183c8f6e0751320fbf34e64a8595b55e58217fb817a5",
+      "note": "V1/V2 per-route diff from the repository; V2 CSV itself found on Desktop"
+    }
+  },
+  "fslw_reference_import": {
+    "ok": true,
+    "error": null,
+    "module": "four_side_1024.fslw.ports.build_plane_endpoints"
+  },
+  "statistics": {
+    "connections": 1024,
+    "ports": 2048,
+    "connectors": 64,
+    "channels_per_connector": 32,
+    "relation_counts": {
+      "opposite": 512,
+      "adjacent": 512
+    },
+    "pair_counts": {
+      "NS": 256,
+      "EW": 256,
+      "EN": 128,
+      "ES": 128,
+      "SW": 128,
+      "NW": 128
+    },
+    "directed_side_pair_counts": {
+      "N->S": 256,
+      "E->W": 256,
+      "N->E": 128,
+      "E->S": 128,
+      "S->W": 128,
+      "W->N": 128
+    },
+    "row_counts": {
+      "row1": 512,
+      "row2": 512
+    },
+    "side_usage": {
+      "N": 512,
+      "E": 512,
+      "S": 512,
+      "W": 512
+    },
+    "rotation_groups": {
+      "total": 256,
+      "opposite": 128,
+      "adjacent": 128
+    },
+    "rotation_closure_missing": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "z_mm": {
+      "row1": 0.0,
+      "row2": 0.5
+    },
+    "board_mm": [
+      150.0,
+      150.0
+    ],
+    "interface": {
+      "connector_pitch_mm": 9.0,
+      "first_connector_center_mm": 7.5,
+      "column_pitch_mm": 0.25,
+      "row_pitch_mm": 0.5,
+      "rows": 2,
+      "columns": 16,
+      "connectors_per_side": 16
+    },
+    "geometry_proxy": {
+      "adjacent_l_crossings": 0,
+      "adjacent_l_overlaps": 0,
+      "adjacent_total_len_mm": 39936.0,
+      "adjacent_min_leg_mm": 5.625,
+      "adjacent_max_leg_mm": 72.375,
+      "hard_leg_lt_r15": 72,
+      "note": "单弯 L 代理几何估计；非实际布线结果"
+    },
+    "r15": {
+      "radius_mm": 15.0,
+      "adjacent_simple_l_feasible": 440,
+      "adjacent_simple_l_infeasible": 72,
+      "opposite_along_shift_counts": {
+        "0.0": 128,
+        "8.0": 192,
+        "16.0": 128,
+        "24.0": 64
+      },
+      "note": "端点几何估计，不是布线可行性结论；CSV 不固定路径"
+    }
+  },
+  "r15": {
+    "radius_mm": 15.0,
+    "width_mm": 0.05,
+    "edge_gap_mm": 0.03,
+    "clearance_mm": 0.08,
+    "adjacent_simple_l_feasible": 440,
+    "adjacent_simple_l_infeasible": 72,
+    "opposite_along_shift_counts": {
+      "0.0": 128,
+      "8.0": 192,
+      "16.0": 128,
+      "24.0": 64
+    },
+    "note": "JSON 中 R15 数值为端点几何估计，不是布线可行性结论"
+  },
+  "checks": [
+    {
+      "id": "C01",
+      "category": "CSV结构",
+      "name": "CSV 表头与项目现有格式完全一致（固定 12 列，顺序不变）",
+      "expected": "固定 12 列表头",
+      "actual": "12 列",
+      "pass_": true,
+      "detail": "route_id, source_side, source_connector, source_row, source_column, source_channel, target_side, target_connector, target_row, target_column, target_channel, relation"
+    },
+    {
+      "id": "C02",
+      "category": "CSV结构",
+      "name": "CSV 数据行数恰好 1024",
+      "expected": 1024,
+      "actual": 1024,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C03",
+      "category": "CSV结构",
+      "name": "CSV 使用 UTF-8-SIG（含 BOM）编码",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C04",
+      "category": "CSV结构",
+      "name": "CSV 行尾为 CRLF",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C05",
+      "category": "CSV结构",
+      "name": "每行 12 个字段、无额外列",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C06",
+      "category": "CSV结构",
+      "name": "route_id 为 1..1024 连续且唯一",
+      "expected": "1..1024 连续且唯一",
+      "actual": "数量=1024, 最小=1, 最大=1024",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C07",
+      "category": "CSV结构",
+      "name": "source/target 位于不同边",
+      "expected": 1024,
+      "actual": 1024,
+      "pass_": true,
+      "detail": "所有 1024 条连接的源边与目标边均不同"
+    },
+    {
+      "id": "C08",
+      "category": "CSV结构",
+      "name": "connector/row/column/channel 符合物理端口编号规则",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "C09",
+      "category": "CSV结构",
+      "name": "relation 取值与两端边类别一致",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "C10",
+      "category": "连接分布",
+      "name": "对边/邻边类别计数：NS 256, EW 256，邻边四类（EN/ES/SW/NW 排序键）各 128",
+      "expected": {
+        "NS": 256,
+        "EW": 256,
+        "EN": 128,
+        "ES": 128,
+        "SW": 128,
+        "NW": 128
+      },
+      "actual": {
+        "NS": 256,
+        "EW": 256,
+        "EN": 128,
+        "ES": 128,
+        "SW": 128,
+        "NW": 128
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C11",
+      "category": "连接分布",
+      "name": "relation 计数：opposite 512, adjacent 512",
+      "expected": {
+        "opposite": 512,
+        "adjacent": 512
+      },
+      "actual": {
+        "opposite": 512,
+        "adjacent": 512
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C12",
+      "category": "连接分布",
+      "name": "有向边对计数 N→S 256, E→W 256, N→E/E→S/S→W/W→N 各 128",
+      "expected": {
+        "N->S": 256,
+        "E->W": 256,
+        "N->E": 128,
+        "E->S": 128,
+        "S->W": 128,
+        "W->N": 128
+      },
+      "actual": {
+        "N->S": 256,
+        "E->W": 256,
+        "N->E": 128,
+        "E->S": 128,
+        "S->W": 128,
+        "W->N": 128
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C13",
+      "category": "行/层分配",
+      "name": "所有连接 source_row==target_row；对边全为 row1、邻边全为 row2",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "C14",
+      "category": "端口占用",
+      "name": "2048 个物理端口各被使用且仅使用一次",
+      "expected": {
+        "unique_ports": 2048,
+        "usage_counts": [
+          1
+        ]
+      },
+      "actual": {
+        "unique_ports": 2048,
+        "usage_counts": [
+          1
+        ]
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C15",
+      "category": "端口占用",
+      "name": "每边 512 个端口（每排 256）全部使用",
+      "expected": {
+        "N": 512,
+        "E": 512,
+        "S": 512,
+        "W": 512
+      },
+      "actual": {
+        "N": 512,
+        "E": 512,
+        "S": 512,
+        "W": 512
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C16",
+      "category": "端口占用",
+      "name": "64 个接头各使用 32 个不同通道（16 列 × 2 排）",
+      "expected": {
+        "64": 32
+      },
+      "actual": {
+        "64": 32
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C17",
+      "category": "端口坐标",
+      "name": "CSV 端口身份与 fslw/ports.py 物理坐标公式一致（全部 2048 次使用）",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "C18",
+      "category": "端口坐标",
+      "name": "与仓库 four_side_1024/fslw/ports.py 的 build_plane_endpoints() 坐标完全一致",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "C19",
+      "category": "行/层分配",
+      "name": "物理高度：row1 -> z=0.0 mm，row2 -> z=0.5 mm",
+      "expected": {
+        "row1_z": 0.0,
+        "row2_z": 0.5
+      },
+      "actual": {
+        "row1_z": 0.0,
+        "row2_z": 0.5
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C20",
+      "category": "旋转对称",
+      "name": "全连接集合 rot90 后仍为同一无序连接集合（端口级）",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C21",
+      "category": "旋转对称",
+      "name": "全连接集合 rot180 后仍为同一无序连接集合（端口级）",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C22",
+      "category": "旋转对称",
+      "name": "全连接集合 rot270 后仍为同一无序连接集合（端口级）",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C23",
+      "category": "旋转对称",
+      "name": "每条连接在其四元旋转轨道中有另外 3 条连接（共 256 组）",
+      "expected": {
+        "groups": 256,
+        "group_size": 4
+      },
+      "actual": {
+        "groups": 256,
+        "bad": 0
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C24",
+      "category": "V2继承",
+      "name": "V2 CSV SHA256 与冻结值一致",
+      "expected": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+      "actual": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C25",
+      "category": "V2继承",
+      "name": "V2 对边 512 条（route_id 1..512）在 V3 CSV 中逐字段完全一致",
+      "expected": 0,
+      "actual": 0,
+      "pass_": true,
+      "detail": "差异数=0"
+    },
+    {
+      "id": "C26",
+      "category": "V2继承",
+      "name": "V2 原对边 512 条在真实物理坐标下严格 90° 旋转对称（缺失数 0/0/0）",
+      "expected": {
+        "rot90": 0,
+        "rot180": 0,
+        "rot270": 0
+      },
+      "actual": {
+        "rot90": 0,
+        "rot180": 0,
+        "rot270": 0
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C27",
+      "category": "V2继承",
+      "name": "V2 对边 512 条保留、邻边 512 条未被整体继承（重新设计）",
+      "expected": {
+        "kept_opposite": 512,
+        "v2_adjacent_fully_reused": false
+      },
+      "actual": {
+        "kept_opposite": 512,
+        "same_connections_as_v2_adjacent": 32,
+        "v2_adjacent_fully_reused": false
+      },
+      "pass_": true,
+      "detail": "row2 邻边为全新 C4 对称设计；与 V2 邻边仅有 32/512 条端点对偶然相同，V2 邻边本身 90° 旋转缺失 512/512，不可能整体继承"
+    },
+    {
+      "id": "C28",
+      "category": "格式约定",
+      "name": "route_id 分块沿用 V2 习惯：NS 1-256 / EW 257-512 / NE 513-640 / ES 641-768 / SW 769-896 / WN 897-1024",
+      "expected": true,
+      "actual": true,
+      "pass_": true,
+      "detail": "仅为排序约定，不影响连接集合内容"
+    },
+    {
+      "id": "C29",
+      "category": "几何参数",
+      "name": "接口与工艺参数与现有配置一致",
+      "expected": {
+        "board_mm": [
+          150.0,
+          150.0
+        ],
+        "connector_pitch_mm": 9.0,
+        "first_center_mm": 7.5,
+        "column_pitch_mm": 0.25,
+        "row_pitch_mm": 0.5,
+        "rows": 2,
+        "columns": 16,
+        "connectors_per_side": 16,
+        "z_row1_mm": 0.0,
+        "z_row2_mm": 0.5,
+        "min_radius_mm": 15.0,
+        "waveguide_width_mm": 0.05,
+        "min_edge_gap_mm": 0.03,
+        "min_clearance_mm": 0.08
+      },
+      "actual": {
+        "board_mm": [
+          150.0,
+          150.0
+        ],
+        "connector_pitch_mm": 9.0,
+        "first_center_mm": 7.5,
+        "column_pitch_mm": 0.25,
+        "row_pitch_mm": 0.5,
+        "rows": 2,
+        "columns": 16,
+        "connectors_per_side": 16,
+        "z_row1_mm": 0.0,
+        "z_row2_mm": 0.5,
+        "min_radius_mm": 15.0,
+        "waveguide_width_mm": 0.05,
+        "min_edge_gap_mm": 0.03,
+        "min_clearance_mm": 0.08
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "C30",
+      "category": "文件安全",
+      "name": "历史 V1/V2 CSV 未被修改（SHA256 不变）",
+      "expected": {
+        "V1": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+        "V2": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e"
+      },
+      "actual": {
+        "V1": "0ecce47109f9223e8407928c423ad5d9272186938cc267877a6158936e0e428b",
+        "V2": "49dd9e89c4ea506d04638ae34eb06a0d8163d479de80869804c881ee1c43915e"
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E01",
+      "category": "Excel结构",
+      "name": "工作簿可被 openpyxl 正常打开且恰好 5 个 Sheet",
+      "expected": [
+        "1024连接总表",
+        "四边接口表",
+        "旋转对称组",
+        "统计与验证",
+        "来源与说明"
+      ],
+      "actual": [
+        "1024连接总表",
+        "四边接口表",
+        "旋转对称组",
+        "统计与验证",
+        "来源与说明"
+      ],
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E02",
+      "category": "Excel总表",
+      "name": "Sheet1 连接总表 1024 行，前 12 列与 CSV 表头一致",
+      "expected": {
+        "rows": 1024,
+        "csv_fields": [
+          "route_id",
+          "source_side",
+          "source_connector",
+          "source_row",
+          "source_column",
+          "source_channel",
+          "target_side",
+          "target_connector",
+          "target_row",
+          "target_column",
+          "target_channel",
+          "relation"
+        ]
+      },
+      "actual": {
+        "rows": 1024,
+        "csv_fields": [
+          "route_id",
+          "source_side",
+          "source_connector",
+          "source_row",
+          "source_column",
+          "source_channel",
+          "target_side",
+          "target_connector",
+          "target_row",
+          "target_column",
+          "target_channel",
+          "relation"
+        ]
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E03",
+      "category": "Excel总表",
+      "name": "Excel 1024 条连接的 12 个 CSV 字段与 CSV 完全一致（含坐标/Z 高度）",
+      "expected": [],
+      "actual": [],
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "E04",
+      "category": "Excel接口表",
+      "name": "Sheet2 四边接口表恰好 2048 行",
+      "expected": 2048,
+      "actual": 2048,
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E05",
+      "category": "Excel接口表",
+      "name": "2048 个物理端口各出现一次、坐标/Z/对端端口与 CSV 一致",
+      "expected": {
+        "unique": 2048,
+        "used_once": true
+      },
+      "actual": {
+        "unique": 2048,
+        "used_once": true
+      },
+      "pass_": true,
+      "detail": "violations=0"
+    },
+    {
+      "id": "E06",
+      "category": "Excel旋转组",
+      "name": "Sheet3 旋转对称组恰好 256 组（每组 4 条路线）",
+      "expected": {
+        "groups": 256,
+        "routes": 1024
+      },
+      "actual": {
+        "groups": 256,
+        "routes": 1024
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E07",
+      "category": "Excel旋转组",
+      "name": "每个旋转组的 0°/90°/180°/270° 路线经 rot90 严格依次对应，且覆盖全部 1024 条",
+      "expected": {
+        "unique_routes": 1024,
+        "phase_errors": 0
+      },
+      "actual": {
+        "unique_routes": 1024,
+        "phase_errors": 0
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E08",
+      "category": "Excel格式",
+      "name": "三个数据表均冻结表头并启用自动筛选",
+      "expected": {
+        "1024连接总表": "freeze+filter",
+        "四边接口表": "freeze+filter",
+        "旋转对称组": "freeze+filter"
+      },
+      "actual": {
+        "1024连接总表": "freeze+filter",
+        "四边接口表": "freeze+filter",
+        "旋转对称组": "freeze+filter"
+      },
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "id": "E09",
+      "category": "Excel说明",
+      "name": "Sheet4 统计与验证、Sheet5 来源与说明均非空",
+      "expected": {
+        "sheet4_rows>0": true,
+        "sheet5_rows>0": true
+      },
+      "actual": {
+        "sheet4_rows>0": true,
+        "sheet5_rows>0": true
+      },
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "total": 39,
+    "pass_count": 39,
+    "fail_count": 0,
+    "all_pass": true,
+    "verified_from_saved_files": true
+  },
+  "pairing_strategies": {
+    "A_nested_mirror_X_150-X (chosen)": {
+      "name": "A_nested_mirror_X_150-X (chosen)",
+      "n": 512,
+      "crossings": 0,
+      "overlaps": 0,
+      "total_len_mm": 39936.0,
+      "hard_leg_lt_r15": 72,
+      "min_leg_mm": 5.625,
+      "max_leg_mm": 72.375,
+      "rotation_closure_missing": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "B_mirror_bottom_perimeter": {
+      "name": "B_mirror_bottom_perimeter",
+      "n": 512,
+      "crossings": 131584,
+      "overlaps": 512,
+      "total_len_mm": 113664.0,
+      "hard_leg_lt_r15": 0,
+      "min_leg_mm": 77.625,
+      "max_leg_mm": 144.375,
+      "rotation_closure_missing": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "C_random_matching_seed20261021": {
+      "name": "C_random_matching_seed20261021",
+      "n": 512,
+      "crossings": 14700,
+      "overlaps": 0,
+      "total_len_mm": 39936.0,
+      "hard_leg_lt_r15": 128,
+      "min_leg_mm": 5.625,
+      "max_leg_mm": 72.375,
+      "rotation_closure_missing": {
+        "1": 0,
+        "2": 0,
+        "3": 0
+      }
+    },
+    "D_v2_original_adjacent": {
+      "name": "D_v2_original_adjacent",
+      "n": 512,
+      "crossings": 61824,
+      "overlaps": 256,
+      "total_len_mm": 75776.0,
+      "hard_leg_lt_r15": 64,
+      "min_leg_mm": 5.625,
+      "max_leg_mm": 142.375,
+      "rotation_closure_missing": {
+        "1": 512,
+        "2": 512,
+        "3": 512
+      }
+    }
+  }
+}

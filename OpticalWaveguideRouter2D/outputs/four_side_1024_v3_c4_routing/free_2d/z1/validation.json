@@ -1,0 +1,160 @@
+{
+ "schema": "four_side_1024_v3_c4_2d_validation_v1",
+ "plane": "z1",
+ "label": "V3_FREE_2D_RR_z1",
+ "csv_sha256": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+ "radius_mm": 15.0,
+ "board_mm": 150.0,
+ "clearance_mm": 0.08,
+ "strict_policy": "fslw.validate_fslw strict",
+ "routed": 495,
+ "failed": 17,
+ "total": 512,
+ "geometry_errors": [],
+ "geometry_error_count": 0,
+ "pair_parse_errors": [],
+ "pair_audit": {
+  "policy": "strict",
+  "candidate_pair_count": 68279,
+  "crossing_count": 68054,
+  "crossing_pair_count": 66786,
+  "min_non_crossing_centerline_mm": 0.12694342993923885,
+  "violations": [],
+  "violation_count": 0
+ },
+ "total_length_mm": 76113.4491,
+ "mean_length_mm": 153.7645,
+ "failed_routes": [
+  {
+   "route_id": 317,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 322,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 357,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 375,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 381,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 394,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 421,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 423,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 427,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 428,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 439,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 442,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 447,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 451,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 488,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 497,
+   "reason": "no_legal_candidate"
+  },
+  {
+   "route_id": 504,
+   "reason": "no_legal_candidate"
+  }
+ ],
+ "passed": true,
+ "errors": [],
+ "experiment": "V3_FREE_2D",
+ "rr": {
+  "budget": 1600,
+  "reinsert_budget": 800,
+  "analysis_budget": 1600,
+  "sizes": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "rounds": 4,
+  "routed": 495,
+  "initial_routed": 463,
+  "total_gain": 32,
+  "history": [
+   {
+    "round": 1,
+    "analysed": 36,
+    "transactions": 24,
+    "improving_results": 14,
+    "committed": 13,
+    "gain": 14,
+    "routed": 477,
+    "seconds": 158.97
+   },
+   {
+    "round": 2,
+    "analysed": 13,
+    "transactions": 24,
+    "improving_results": 8,
+    "committed": 6,
+    "gain": 6,
+    "routed": 484,
+    "seconds": 331.52
+   },
+   {
+    "round": 3,
+    "analysed": 28,
+    "transactions": 24,
+    "improving_results": 10,
+    "committed": 5,
+    "gain": 5,
+    "routed": 490,
+    "seconds": 485.49
+   },
+   {
+    "round": 4,
+    "analysed": 22,
+    "transactions": 24,
+    "improving_results": 8,
+    "committed": 3,
+    "gain": 5,
+    "routed": 495,
+    "seconds": 650.45
+   }
+  ],
+  "seconds": 650.45,
+  "seed": 20261019
+ },
+ "seconds": 650.46
+}

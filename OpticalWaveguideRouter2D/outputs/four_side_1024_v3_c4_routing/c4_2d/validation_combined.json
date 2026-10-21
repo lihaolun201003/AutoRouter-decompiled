@@ -1,0 +1,349 @@
+{
+ "schema": "four_side_1024_v3c4_c4_2d_combined_validation_v1",
+ "experiment": "c4_2d",
+ "passed": true,
+ "combined_routes_sha256": "a30a606fd4c06c2e3f93c9883921438c9cd8e56c514e78f9882ee6f9b21a4a3f",
+ "identity": {
+  "records": 1024,
+  "csv_sha256": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+  "errors": [],
+  "error_count": 0,
+  "passed": true
+ },
+ "coverage": null,
+ "plane_audits": {
+  "z1": {
+   "schema": "four_side_1024_v3_c4_2d_validation_v1",
+   "plane": "z1",
+   "label": "c4_2d_z1",
+   "csv_sha256": "",
+   "radius_mm": 15.0,
+   "board_mm": 150.0,
+   "clearance_mm": 0.08,
+   "strict_policy": "fslw.validate_fslw strict",
+   "routed": 508,
+   "failed": 4,
+   "total": 512,
+   "geometry_errors": [],
+   "geometry_error_count": 0,
+   "pair_parse_errors": [],
+   "pair_audit": {
+    "policy": "strict",
+    "candidate_pair_count": 71832,
+    "crossing_count": 71524,
+    "crossing_pair_count": 70264,
+    "min_non_crossing_centerline_mm": 0.3703903658950711,
+    "violations": [],
+    "violation_count": 0
+   },
+   "total_length_mm": 78085.2956,
+   "mean_length_mm": 153.7112,
+   "failed_routes": [
+    {
+     "route_id": 53,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 228,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 285,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 460,
+     "reason": "no_legal_quad"
+    }
+   ],
+   "passed": true,
+   "errors": []
+  },
+  "z2": {
+   "schema": "four_side_1024_v3_c4_2d_validation_v1",
+   "plane": "z2",
+   "label": "c4_2d_z2",
+   "csv_sha256": "",
+   "radius_mm": 15.0,
+   "board_mm": 150.0,
+   "clearance_mm": 0.08,
+   "strict_policy": "fslw.validate_fslw strict",
+   "routed": 456,
+   "failed": 56,
+   "total": 512,
+   "geometry_errors": [],
+   "geometry_error_count": 0,
+   "pair_parse_errors": [],
+   "pair_audit": {
+    "policy": "strict",
+    "candidate_pair_count": 26644,
+    "crossing_count": 5184,
+    "crossing_pair_count": 2556,
+    "min_non_crossing_centerline_mm": 0.08948618873419001,
+    "violations": [],
+    "violation_count": 0
+   },
+   "total_length_mm": 40497.7431,
+   "mean_length_mm": 88.8108,
+   "failed_routes": [
+    {
+     "route_id": 625,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 626,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 627,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 628,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 629,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 631,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 633,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 634,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 635,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 636,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 637,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 638,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 639,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 640,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 641,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 642,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 643,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 644,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 645,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 646,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 647,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 648,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 650,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 652,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 653,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 654,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 655,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 656,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 769,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 770,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 771,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 772,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 773,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 774,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 775,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 776,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 778,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 780,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 781,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 782,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 783,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 784,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1009,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1010,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1011,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1012,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1013,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1015,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1017,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1018,
+     "reason": "no_legal_quad"
+    },
+    {
+     "route_id": 1019,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 1020,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 1021,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 1022,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 1023,
+     "reason": "no_candidate_generated"
+    },
+    {
+     "route_id": 1024,
+     "reason": "no_candidate_generated"
+    }
+   ],
+   "passed": true,
+   "errors": []
+  }
+ },
+ "c4_symmetry": {
+  "complete_groups": 241,
+  "partial_groups": 0,
+  "empty_groups": 15,
+  "errors": [],
+  "error_count": 0,
+  "passed": true
+ },
+ "statistics": {
+  "experiment": "c4_2d",
+  "records": 1024,
+  "routed": 964,
+  "failed": 60,
+  "per_plane": {
+   "z1": {
+    "routed": 508,
+    "total": 512
+   },
+   "z2": {
+    "routed": 456,
+    "total": 512
+   }
+  },
+  "total_length_mm": 118583.038739,
+  "groups": {
+   "total": 256,
+   "routed": 241,
+   "failed": 15
+  },
+  "forced_symmetry": true
+ }
+}
