@@ -1,0 +1,30 @@
+10:38:10 [v4] V4 CSV sha256=10dab38047b46d6ea1b885361fc50a931c11dc15b6fc36b25f018b1e2da941d9 connectivity=PASS
+10:38:10 [v4] same group 241: inserted bulge=2 routed_routes=460
+10:38:10 [v4] same group 242: inserted bulge=28 routed_routes=464
+10:38:10 [v4] same group 243: inserted bulge=30 routed_routes=468
+10:38:10 [v4] same group 244: inserted bulge=32 routed_routes=472
+10:38:11 [v4] same group 245: inserted bulge=36 routed_routes=476
+10:38:11 [v4] same group 247: inserted bulge=26 routed_routes=480
+10:38:11 [v4] same group 249: inserted bulge=38 routed_routes=484
+10:38:11 [v4] same group 250: inserted bulge=40 routed_routes=488
+10:38:11 [v4] same group 251: inserted bulge=42 routed_routes=492
+10:38:11 [v4] same group 252: inserted bulge=46 routed_routes=496
+10:38:12 [v4] same group 253: inserted bulge=50 routed_routes=500
+10:38:12 [v4] same group 254: inserted bulge=48 routed_routes=504
+10:38:12 [v4] same group 255: inserted bulge=56 routed_routes=508
+10:38:12 [v4] same group 256: inserted bulge=52 routed_routes=512
+10:38:12 [v4] same-side groups inserted: 14/14 (56 routes) in 2.4s
+10:38:12 [v4] attempting bounded recovery of remaining opposite group 53 ...
+10:38:29 [v4] z1 group 53 recovery: not_recovered
+10:38:34 [validate2d] V4_z1: routed=508 failed=4 geometry_errors=0 strict_violations=0 -> PASS
+10:38:36 [validate2d] V4_z2: routed=512 failed=0 geometry_errors=0 strict_violations=0 -> PASS
+10:38:36 [validate2d] C4 groups: complete=255 partial=0 empty=1 errors=0 -> PASS
+10:38:36 [validate2d] full coverage: records=1024 routed=1020 ports=2048 -> PASS
+10:38:36 [v4] identity: records=1024 errors=0 -> PASS
+10:38:36 [v4] integrated validation -> PASS
+10:38:39 [v4] figure plots\01_overview_1024.png
+10:38:40 [v4] figure plots\02_row1_opposite.png
+10:38:41 [v4] figure plots\03_row2_adjacent_same.png
+10:38:45 [v4] figure plots\04_same_side_u_zoom.png
+10:38:49 [v4] figure plots\05_3d_two_rows.png
+10:38:49 [v4] DONE routed=1020/1024 (delta 56) same-side=56/56 validation=PASS in 39.5s

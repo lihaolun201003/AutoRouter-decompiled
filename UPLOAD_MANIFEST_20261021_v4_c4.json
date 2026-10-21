@@ -1,0 +1,245 @@
+{
+  "schema": "autorouter_v4_c4_upload_manifest_v1",
+  "date_local": "2026-10-21",
+  "base_commit": "fee2fb7ed66b698d0b168cd3b919a8bb05f9123e",
+  "requested_entry": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/README.md",
+  "scope": [
+    "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/expanded.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/plots_opt.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/v4_connectivity.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/v4_route.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/v4_run.py"
+  ],
+  "payload_file_count": 29,
+  "payload_bytes": 19171093,
+  "integrity": "Payload files preserve the saved local bytes. File hashes below exclude this manifest itself.",
+  "experiment": {
+    "topology": "V4_C4",
+    "routed": 1020,
+    "failed": 4,
+    "total": 1024,
+    "connections_by_relation": {
+      "opposite": 512,
+      "adjacent": 456,
+      "same": 56
+    },
+    "routed_by_relation": {
+      "opposite": 508,
+      "adjacent": 456,
+      "same": 56
+    },
+    "complete_rotation_groups": 255,
+    "total_rotation_groups": 256,
+    "topology_changed_vs_v3": true,
+    "comparison_scope": "The 56-connection increase comes from re-pairing 14 failed adjacent groups into same-side groups, rather than improving routing on unchanged V3 connectivity.",
+    "layer_mode": "Two fixed physical rows z=0.0/0.5 mm; no inter-layer lifts.",
+    "newly_routed_same_side_connections": 56
+  },
+  "input_sha256": {
+    "v3_csv": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+    "v4_csv": "10dab38047b46d6ea1b885361fc50a931c11dc15b6fc36b25f018b1e2da941d9"
+  },
+  "documentation_notes": [
+    "The opening README parenthesis lists 512 opposite connections in the V3 964-route baseline. 512 is the requested count; the successfully routed baseline is 508 opposite + 456 adjacent = 964. The result table and saved data use the correct counts.",
+    "Per-plane csv_sha256 and nested plane validation metadata retain the V3 provenance hash. The separate v4_csv_sha256 fields and top-level connectivity validation identify the V4 CSV; all 1024 saved route identities were checked against V4 connections."
+  ],
+  "publication_checks": {
+    "source_modules_ast_parsed_and_imported": 5,
+    "cli_help_passed": [
+      "v4_connectivity",
+      "v4_run"
+    ],
+    "connectivity_validation_passed": true,
+    "csv_fields_compared_to_saved_connections": 12288,
+    "csv_and_excel_sha256_verified": true,
+    "strict_plane_validation_passed": {
+      "z1": true,
+      "z2": true
+    },
+    "c4_symmetry_passed": true,
+    "complete_groups": 255,
+    "partial_groups": 0,
+    "port_coverage_passed": true,
+    "route_identity_passed": true,
+    "routing_optimization_rerun": false,
+    "figures_regenerated": false,
+    "inherited_v3_successful_geometries_preserved": 964
+  },
+  "files": [
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/checkpoint.json",
+      "bytes": 6538,
+      "sha256": "562912a235f6f2cc1745f91e0d19fab4727babd18f3ae90b08feb791a4fb8be6",
+      "git_blob_sha": "013c3a553fb8eab7e065eb8ee62987641562c15c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/connectivity.log",
+      "bytes": 1136,
+      "sha256": "eda4064362d670fe3a34e3d53d5b09c269b290ff49f90843b573134a0e163c28",
+      "git_blob_sha": "dbc11afe6b58f666539adcb77bd0884f8f693a90"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/failed_routes.json",
+      "bytes": 10123,
+      "sha256": "deff070c311b2c2ca0349f91bed45f03c08df675269379da21f27f67b3488c7f",
+      "git_blob_sha": "15bcb6e5daec244766c4cce80b6dee809ff85ccc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/optical_1024_multitomulti_connectivity_v4_c4_symmetric.csv",
+      "bytes": 41133,
+      "sha256": "10dab38047b46d6ea1b885361fc50a931c11dc15b6fc36b25f018b1e2da941d9",
+      "git_blob_sha": "ebbded22ff2572f97ffaa0860be8692d324d2cac"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/optical_1024_multitomulti_connectivity_v4_c4_symmetric.xlsx",
+      "bytes": 200066,
+      "sha256": "220d02c7d396a98ea096b0c1b57e81ffcd53fee3d75bf331dbe008b07bca5b6f",
+      "git_blob_sha": "a00b91c352dc5324567bf8b3808e56354f87ff93"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/01_overview_1024.png",
+      "bytes": 2953509,
+      "sha256": "26526fb155090b494c8d8ad158b308a19ddb788713d71796cff3352eba5d76e9",
+      "git_blob_sha": "3143318a78b7f70de61c6f2a4d99b8785e4c13da"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/01_overview_1024.svg",
+      "bytes": 1288313,
+      "sha256": "383bfdacfdfacf3b146c0fe187cb83016a564d41732e131a083908a916c22049",
+      "git_blob_sha": "6d9c58a56bcdaa669f0f84f2e63b3a0882d1c376"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/02_row1_opposite.png",
+      "bytes": 1334075,
+      "sha256": "e36634c3830810b96e4ccbd3ca87aab3c1ee7f182e60139ef6094069d7996121",
+      "git_blob_sha": "c8303a458beaca69c17379651fda6a89352225b3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/02_row1_opposite.svg",
+      "bytes": 618333,
+      "sha256": "cacfbaf410a3a8eeccfa2848158f09d4938ddd0afff16d3ce90cb41643896806",
+      "git_blob_sha": "9ea26814c3892ddde1c71e6b2cecb6f10b8a9f77"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/03_row2_adjacent_same.png",
+      "bytes": 1614119,
+      "sha256": "ad70a40b1e31c1e9b5a4a78a3bb11c57356c093865168559b92bf89c716e0cd0",
+      "git_blob_sha": "93ce988047e7a97466930a78a0d135040014fd63"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/03_row2_adjacent_same.svg",
+      "bytes": 735395,
+      "sha256": "16d06be03c0e6fbee6098fe9d0240f5f9a762e75ad52072e3812ce21ec23b637",
+      "git_blob_sha": "51b5a718508463fd09b85558bb6372a4f668a571"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/04_same_side_u_zoom.png",
+      "bytes": 1404481,
+      "sha256": "6d08707d8bee0cb0c733109042f5539256e7a1b188023d49d1983c00ef0340bc",
+      "git_blob_sha": "7d459477fb3661265a294740368863febf0fee5c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/04_same_side_u_zoom.svg",
+      "bytes": 2385925,
+      "sha256": "2790a5fef5ff1a1fa8b79b9952ca2e08910e6e0dcfb46c634d862093597dcb5b",
+      "git_blob_sha": "1d32e5b700cc579ec299fae55687662ba934de2c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/05_3d_two_rows.png",
+      "bytes": 2828740,
+      "sha256": "c8b76c9b7bfe8ef1e724d33d4eafb1f50d3801d2e10c02d0a7ec5a45f8f74728",
+      "git_blob_sha": "645b484d9eb15c5d9ffca5a3b6949f711e096282"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/plots/05_3d_two_rows.svg",
+      "bytes": 1114607,
+      "sha256": "45678d21543876ab33c822c2b66c4bbad4ce15224a618ea6b7ee1075f7becd38",
+      "git_blob_sha": "c3e2453fd3c2ea1436825d1a2882690ba0f9e8e9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/README.md",
+      "bytes": 4940,
+      "sha256": "bbf50946fcc3d42f00e658d38fd1f1f57138a44edc0698a5848e39be1b83260e",
+      "git_blob_sha": "9a69c5634dac059496a79497f2a6bcc56d205907"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/routes_1024.json",
+      "bytes": 1050878,
+      "sha256": "ca1aa952f5893c8ae811d2c5f0543cf396ca4918594292b06e3705f65f49a275",
+      "git_blob_sha": "864d216db0ac075c23d6e1402a3c08a4ff03cb2d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/routes_z1.json",
+      "bytes": 526897,
+      "sha256": "b375f3ffd7e6853ad0456239aeb05bccbe68e9f7c21dbca241b7b0d9596eaa37",
+      "git_blob_sha": "942beb1844c531e0e2c3d83d6fb41facb308eb69"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/routes_z2.json",
+      "bytes": 502796,
+      "sha256": "b807f91be91d259bf248ebcf68459ec6f6cc79f6f781e9bb9174c01c2bb97b0f",
+      "git_blob_sha": "11cb31fd0a14701e96dab422e8289836d80d74f6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/run.log",
+      "bytes": 2042,
+      "sha256": "c1b03055e9cb48578164e497fdad65ba4496fb96902829f0d9cc2523cfae938d",
+      "git_blob_sha": "cc4977b40a57d0bba1f539df0c2ac6fa426e1c53"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/run_summary.json",
+      "bytes": 7471,
+      "sha256": "9adaa4a3e001e57b268ce7ba23afef8c6f8f77e25f39084346958989273f9db2",
+      "git_blob_sha": "34a7e3e5f4cdae1464b01ef42e2cdeed22d69808"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/v4_connectivity_data.json",
+      "bytes": 442166,
+      "sha256": "90cad1657ed8aa9a8b3d61bf5010aa460cc437199d852c2884d3eea090454a0c",
+      "git_blob_sha": "8f9a107d3decc29d07c88a882ab3e86788f5f0e0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/validation.json",
+      "bytes": 4429,
+      "sha256": "fb3371413d24ad6e23bd718a2f9ad560063d012d7d9aeee5a361768412cb6d64",
+      "git_blob_sha": "f22c7e2a6aa99af73f72a2c8a2c387a104edf3c7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/four_side_1024_v4_c4_routing/validation_connectivity.json",
+      "bytes": 1661,
+      "sha256": "0ec50bbd2ce2ee1df399ea813b3e6ae37b6894587250b0e9781d5bdc49887b24",
+      "git_blob_sha": "363739cb9b561373fed83081af080241cf3ad694"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/expanded.py",
+      "bytes": 5126,
+      "sha256": "204c582e14b83f74efa37d532510952aa9f8303d803bf906f7299a3291d7434a",
+      "git_blob_sha": "1c545ca2277f4e289bfc2481cf76c5cdeba905d2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/plots_opt.py",
+      "bytes": 16142,
+      "sha256": "5b538fa209f6cec276fb76fa32dea8d20cf4c21d527f7148fd0aedb4f61457da",
+      "git_blob_sha": "e64500f49b0b92abd20481d12615125ea01b5bf5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/v4_connectivity.py",
+      "bytes": 23693,
+      "sha256": "8619a40d44e4a2dfbaf78fe87f207f6ffb20b542a5947edf3cebca725f1f05f3",
+      "git_blob_sha": "57817e74d60c47b94299ded6aac5afc6cc33dfc3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/v4_route.py",
+      "bytes": 23194,
+      "sha256": "4672db8187bc1585eb1275065846768228ebab666e8927c87d25c752b6f6c8d9",
+      "git_blob_sha": "bae78d66589428159e20136a3ad45dcf5e0bcccc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/v4_run.py",
+      "bytes": 23165,
+      "sha256": "b90b87de139d182ec5943b3acb720f30bfdfaf2f1b49fa260728757876a5f72f",
+      "git_blob_sha": "f2754471b04b3d4b4359bc202bc097b36007dae8"
+    }
+  ]
+}

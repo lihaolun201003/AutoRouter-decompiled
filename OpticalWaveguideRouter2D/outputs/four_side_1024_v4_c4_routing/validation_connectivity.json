@@ -1,0 +1,55 @@
+{
+ "schema": "four_side_1024_v4_connectivity_validation_v1",
+ "rows": 1024,
+ "ports": 2048,
+ "relation_counts": {
+  "opposite": 512,
+  "adjacent": 456,
+  "same": 56
+ },
+ "pair_counts": {
+  "NS": 256,
+  "EW": 256,
+  "EN": 114,
+  "NN": 14,
+  "EE": 14,
+  "ES": 114,
+  "SS": 14,
+  "SW": 114,
+  "NW": 114,
+  "WW": 14
+ },
+ "row_counts": {
+  "1": 512,
+  "2": 512
+ },
+ "groups": 256,
+ "group_kinds": {
+  "opposite": 128,
+  "adjacent": 114,
+  "same": 14
+ },
+ "same_side_per_side": {
+  "N": 14,
+  "E": 14,
+  "S": 14,
+  "W": 14
+ },
+ "rotation_closure": {
+  "90deg": 0,
+  "180deg": 0,
+  "270deg": 0
+ },
+ "errors": [],
+ "error_count": 0,
+ "passed": true,
+ "csv_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v4_c4_routing\\optical_1024_multitomulti_connectivity_v4_c4_symmetric.csv",
+ "csv_sha256": "10dab38047b46d6ea1b885361fc50a931c11dc15b6fc36b25f018b1e2da941d9",
+ "excel_path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v4_c4_routing\\optical_1024_multitomulti_connectivity_v4_c4_symmetric.xlsx",
+ "excel_sha256": "220d02c7d396a98ea096b0c1b57e81ffcd53fee3d75bf331dbe008b07bca5b6f",
+ "v3_sources": {
+  "csv": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_connectivity\\optical_1024_multitomulti_connectivity_v3_c4_symmetric.csv",
+  "sha256": "de7e382d3fbf94033eb323ccc64914739e14bde5793191389341896b717f0430",
+  "routing_root": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v3_c4_routing"
+ }
+}

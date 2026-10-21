@@ -1,0 +1,446 @@
+{
+ "schema": "four_side_1024_v4_c4_run_summary_v1",
+ "routed": 1020,
+ "total": 1024,
+ "delta_vs_v3_964": 56,
+ "routed_by_plane": {
+  "z1": 508,
+  "z2": 512
+ },
+ "routed_by_relation": {
+  "opposite": 508,
+  "adjacent": 456,
+  "same": 56
+ },
+ "total_by_relation": {
+  "opposite": 512,
+  "adjacent": 456,
+  "same": 56
+ },
+ "same_side": {
+  "total": 56,
+  "routed": 56,
+  "groups": 14,
+  "inserted_groups": 14
+ },
+ "params": {
+  "name": "V4_C4",
+  "algorithm": "C4_2D",
+  "geometry_mode": "d56",
+  "radius_mm": 15.0,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "board_mm": 150.0,
+  "crossing_policy": "exact",
+  "same_side_u_family": "r15.u_geometry quarter_pair (straight + 90deg arc + middle straight + 90deg arc + straight)",
+  "same_side_u_bulge_mm": [
+   2.0,
+   26.0,
+   28.0,
+   30.0,
+   32.0,
+   36.0,
+   38.0,
+   40.0,
+   42.0,
+   46.0,
+   48.0,
+   50.0,
+   52.0,
+   56.0
+  ],
+  "strategy": "keep V3 964 routes; insert 14 same-side C4 groups atomically; group-level rip-up only if needed",
+  "forced_symmetry": true
+ },
+ "runtime_seconds": {
+  "same_side_insert": 2.41,
+  "z1_recovery": 16.77,
+  "total": 26.8
+ },
+ "same_side_insert_info": [
+  {
+   "group_id": 241,
+   "status": "inserted",
+   "route_ids": [
+    625,
+    1009,
+    784,
+    656
+   ],
+   "params": {
+    "bulge_mm": 2.0,
+    "middle_straight_mm": 101.25,
+    "separation_mm": 131.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 152.3739
+  },
+  {
+   "group_id": 242,
+   "status": "inserted",
+   "route_ids": [
+    626,
+    1010,
+    783,
+    655
+   ],
+   "params": {
+    "bulge_mm": 28.0,
+    "middle_straight_mm": 101.75,
+    "separation_mm": 131.75,
+    "radius_mm": 15.0
+   },
+   "length_mm": 204.8739
+  },
+  {
+   "group_id": 243,
+   "status": "inserted",
+   "route_ids": [
+    627,
+    1011,
+    782,
+    654
+   ],
+   "params": {
+    "bulge_mm": 30.0,
+    "middle_straight_mm": 102.25,
+    "separation_mm": 132.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 209.3739
+  },
+  {
+   "group_id": 244,
+   "status": "inserted",
+   "route_ids": [
+    628,
+    1012,
+    781,
+    653
+   ],
+   "params": {
+    "bulge_mm": 32.0,
+    "middle_straight_mm": 102.75,
+    "separation_mm": 132.75,
+    "radius_mm": 15.0
+   },
+   "length_mm": 213.8739
+  },
+  {
+   "group_id": 245,
+   "status": "inserted",
+   "route_ids": [
+    629,
+    1013,
+    780,
+    652
+   ],
+   "params": {
+    "bulge_mm": 36.0,
+    "middle_straight_mm": 103.25,
+    "separation_mm": 133.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 222.3739
+  },
+  {
+   "group_id": 247,
+   "status": "inserted",
+   "route_ids": [
+    631,
+    1015,
+    778,
+    650
+   ],
+   "params": {
+    "bulge_mm": 26.0,
+    "middle_straight_mm": 104.25,
+    "separation_mm": 134.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 203.3739
+  },
+  {
+   "group_id": 249,
+   "status": "inserted",
+   "route_ids": [
+    633,
+    1017,
+    776,
+    648
+   ],
+   "params": {
+    "bulge_mm": 38.0,
+    "middle_straight_mm": 105.25,
+    "separation_mm": 135.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 228.3739
+  },
+  {
+   "group_id": 250,
+   "status": "inserted",
+   "route_ids": [
+    634,
+    1018,
+    775,
+    647
+   ],
+   "params": {
+    "bulge_mm": 40.0,
+    "middle_straight_mm": 105.75,
+    "separation_mm": 135.75,
+    "radius_mm": 15.0
+   },
+   "length_mm": 232.8739
+  },
+  {
+   "group_id": 251,
+   "status": "inserted",
+   "route_ids": [
+    635,
+    1019,
+    774,
+    646
+   ],
+   "params": {
+    "bulge_mm": 42.0,
+    "middle_straight_mm": 106.25,
+    "separation_mm": 136.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 237.3739
+  },
+  {
+   "group_id": 252,
+   "status": "inserted",
+   "route_ids": [
+    636,
+    1020,
+    773,
+    645
+   ],
+   "params": {
+    "bulge_mm": 46.0,
+    "middle_straight_mm": 106.75,
+    "separation_mm": 136.75,
+    "radius_mm": 15.0
+   },
+   "length_mm": 245.8739
+  },
+  {
+   "group_id": 253,
+   "status": "inserted",
+   "route_ids": [
+    637,
+    1021,
+    772,
+    644
+   ],
+   "params": {
+    "bulge_mm": 50.0,
+    "middle_straight_mm": 107.25,
+    "separation_mm": 137.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 254.3739
+  },
+  {
+   "group_id": 254,
+   "status": "inserted",
+   "route_ids": [
+    638,
+    1022,
+    771,
+    643
+   ],
+   "params": {
+    "bulge_mm": 48.0,
+    "middle_straight_mm": 107.75,
+    "separation_mm": 137.75,
+    "radius_mm": 15.0
+   },
+   "length_mm": 250.8739
+  },
+  {
+   "group_id": 255,
+   "status": "inserted",
+   "route_ids": [
+    639,
+    1023,
+    770,
+    642
+   ],
+   "params": {
+    "bulge_mm": 56.0,
+    "middle_straight_mm": 108.25,
+    "separation_mm": 138.25,
+    "radius_mm": 15.0
+   },
+   "length_mm": 267.3739
+  },
+  {
+   "group_id": 256,
+   "status": "inserted",
+   "route_ids": [
+    640,
+    1024,
+    769,
+    641
+   ],
+   "params": {
+    "bulge_mm": 52.0,
+    "middle_straight_mm": 108.75,
+    "separation_mm": 138.75,
+    "radius_mm": 15.0
+   },
+   "length_mm": 259.8739
+  }
+ ],
+ "z1_group53_recovery": {
+  "status": "not_recovered",
+  "attempts": [
+   {
+    "kind": "direct",
+    "valid": false,
+    "evaluated": 2703,
+    "seconds": 9.16
+   },
+   {
+    "kind": "rip",
+    "size": 1,
+    "valid": false,
+    "ripped": [
+     59
+    ],
+    "seconds": 15.11
+   },
+   {
+    "kind": "rip",
+    "size": 2,
+    "valid": false,
+    "ripped": [
+     59,
+     29
+    ],
+    "seconds": 15.34
+   },
+   {
+    "kind": "rip",
+    "size": 3,
+    "valid": false,
+    "ripped": [
+     59,
+     29,
+     17
+    ],
+    "seconds": 15.57
+   },
+   {
+    "kind": "rip",
+    "size": 4,
+    "valid": false,
+    "ripped": [
+     59,
+     29,
+     17,
+     30
+    ],
+    "seconds": 15.8
+   },
+   {
+    "kind": "rip",
+    "size": 6,
+    "valid": false,
+    "ripped": [
+     59,
+     29,
+     17,
+     30,
+     36,
+     60
+    ],
+    "seconds": 16.03
+   },
+   {
+    "kind": "rip",
+    "size": 8,
+    "valid": false,
+    "ripped": [
+     59,
+     29,
+     17,
+     30,
+     36,
+     60,
+     54,
+     34
+    ],
+    "seconds": 16.29
+   },
+   {
+    "kind": "rip",
+    "size": 12,
+    "valid": false,
+    "ripped": [
+     59,
+     29,
+     17,
+     30,
+     36,
+     60,
+     54,
+     34,
+     27,
+     35,
+     49,
+     15
+    ],
+    "seconds": 16.52
+   },
+   {
+    "kind": "rip",
+    "size": 16,
+    "valid": false,
+    "ripped": [
+     59,
+     29,
+     17,
+     30,
+     36,
+     60,
+     54,
+     34,
+     27,
+     35,
+     49,
+     15,
+     47,
+     10,
+     25,
+     48
+    ],
+    "seconds": 16.77
+   }
+  ],
+  "seconds": 16.77
+ },
+ "validation_passed": true,
+ "timestamp": "2026-10-21T10:38:36",
+ "figures": {
+  "plots_dir": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\four_side_1024_v4_c4_routing\\plots",
+  "files": [
+   "plots\\01_overview_1024.png",
+   "plots\\01_overview_1024.svg",
+   "plots\\02_row1_opposite.png",
+   "plots\\02_row1_opposite.svg",
+   "plots\\03_row2_adjacent_same.png",
+   "plots\\03_row2_adjacent_same.svg",
+   "plots\\04_same_side_u_zoom.png",
+   "plots\\04_same_side_u_zoom.svg",
+   "plots\\05_3d_two_rows.png",
+   "plots\\05_3d_two_rows.svg"
+  ]
+ }
+}
