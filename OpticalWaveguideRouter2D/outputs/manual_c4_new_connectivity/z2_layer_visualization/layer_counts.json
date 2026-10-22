@@ -1,13 +1,15 @@
 {
- "schema": "manual_c4_z2_layer_visualization_v1",
+ "schema": "manual_c4_layer_visualization_v1",
  "stage": "z2_only_per_layer_3d",
+ "plane": "z2",
+ "hidden_plane": "z1/row1",
  "source": {
   "routes_l3d": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\phase5_dynamic_optimization\\after\\routes_l3d.json",
   "routes_l3d_sha256": "dcf42e4e509ba6f8247e15515e548b007ac7dc286cc3ff3544574f64d00c1ee3",
   "layer_stack": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\phase5_dynamic_optimization\\after\\layer_stack.json",
   "layer_stack_sha256": "9bfaf9c1e4366b3d806e8c29133cc2030fa614aee83f4b6a4f4d1ff3eb522313"
  },
- "scope": "z2 (row2) only; z1 (row1) routes are hidden",
+ "scope": "z2 only; z1/row1 routes are hidden",
  "definition": "a route counts for a layer iff at least one FLAT part lies on that layer (transitions passing through the height do not count); each selected route is drawn as its complete 3D path",
  "axes": {
   "xlim": [
@@ -37,7 +39,7 @@
   ],
   "dpi": 230
  },
- "z2_routed_total": 512,
+ "routed_total": 512,
  "layers": {
   "L1_z2": {
    "layer_id": 1,
@@ -679,12 +681,13 @@
    "svg": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\z2_layer_visualization\\L5_3d.svg"
   }
  },
- "generated_at": "2026-10-23T00:28:05",
+ "generated_at": "2026-10-23T00:39:56",
  "counts": {
   "L1_z2": 512,
   "L2": 8,
   "L3": 16,
   "L4": 20,
   "L5": 28
- }
+ },
+ "z2_routed_total": 512
 }

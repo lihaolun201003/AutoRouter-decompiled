@@ -96,6 +96,21 @@
 route_id 列表、判定口径与源文件 sha256。生成脚本：
 `four_side_1024/manual_c4/z2_layer_plots.py`。
 
+### z1（row1）逐层独立三维图（`z1_layer_visualization/`，同样式）
+
+与 z2 完全同口径、同坐标/视角/画布，仅渲染原始 **z1 的 512 条**（z2/row2 完全隐藏）：
+
+| 文件 | 层 / 物理高度 | 波导数 |
+|---|---|---:|
+| `L1_z1_3d.png/.svg` | L1-z1，z = 0.0 mm（接口层 row1） | 512 |
+| `L2_3d.png/.svg` | L2，z = 1.0 mm | 116 |
+| `L3_3d.png/.svg` | L3，z = 1.5 mm | 20 |
+| `L4_3d.png/.svg` | L4，z = 2.0 mm | 4 |
+| `L5_3d.png/.svg` | L5，z = 2.5 mm | 8 |
+
+z1 中 148 条被抬升（L2–L5 分别为 116/20/4/8，合计 148），因此跨层 appearances
+= 512 + 148 = 660。`z1_layer_visualization/layer_counts.json` 含各层 route_id 列表。
+
 ## 验收与报告
 
 - `verification/`：**独立验收脚本与报告**（不 import 生产代码，从原始 CSV + 权威端口
@@ -130,8 +145,9 @@ $env:PYTHONPATH = (Get-Location).Path
 # 对照表与摘要
 & $py -m four_side_1024.manual_c4.report
 
-# 附加：z2（row2）逐层独立三维图
-& $py -m four_side_1024.manual_c4.z2_layer_plots
+# 附加：逐层独立三维图（--plane z2 为 row2；--plane z1 为 row1）
+& $py -m four_side_1024.manual_c4.z2_layer_plots --plane z2
+& $py -m four_side_1024.manual_c4.z2_layer_plots --plane z1
 ```
 
 ## 物理约束（全部沿用，未放宽）

@@ -1,23 +1,23 @@
-"""Per-layer true-3D figures of the **z2 (row 2)** waveguides after Manual-C4 dynamic V2.
+"""Per-layer true-3D figures of the Manual-C4 dynamic-V2 waveguides, by interface row.
 
-Visualisation only: the routing result is read from
+The routing result is read from
 ``outputs/manual_c4_new_connectivity/phase5_dynamic_optimization/after/routes_l3d.json``
-and nothing is re-routed or modified.
+and nothing is re-routed or modified (visualisation only).
 
-Layer usage rule (constraint 3/4 of the task):
+``--plane z2`` (default) renders the original **z2 / row 2** connections and hides
+z1/row 1; ``--plane z1`` renders the original **z1 / row 1** connections and hides
+z2/row 2.  Layer usage rule (constraint 3/4 of the task):
 
-* only the original ``plane == 'z2'`` connections (512 of them) are considered;
-  all z1 (row 1) routes are hidden;
 * a route is shown in a layer figure **iff it has at least one flat (horizontal
   propagation) part on that very layer** - a route that merely passes through the
   height inside a transition S curve is *not* counted as using the layer;
 * every selected route is drawn as its complete true 3D path (all flat parts of
   other layers + all R=15 rise/fall transitions), so the figure is not a sketch.
 
-All five figures share identical axes limits, view angle and box scale.  Outputs:
-``L1_z2_3d``, ``L2_3d``, ``L3_3d``, ``L4_3d``, ``L5_3d`` (PNG + SVG) and
-``layer_counts.json`` under
-``outputs/manual_c4_new_connectivity/z2_layer_visualization/``.
+Within one plane all five figures share identical axes limits, view angle and box
+scale.  Outputs (``L1_<plane>_3d`` + ``L2_3d``..``L5_3d``, PNG + SVG) and
+``layer_counts.json`` go to
+``outputs/manual_c4_new_connectivity/<plane>_layer_visualization/``.
 """
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ from ..v3c4.profile import apply as apply_profile  # radius binder, no side effe
 
 ROOT = Path(__file__).resolve().parents[2]
 AFTER_DIR = ROOT / 'outputs/manual_c4_new_connectivity/phase5_dynamic_optimization/after'
-OUT_DIR = ROOT / 'outputs/manual_c4_new_connectivity/z2_layer_visualization'
+OUT_ROOT = ROOT / 'outputs/manual_c4_new_connectivity'
 
 XLIM = (-5.0, 155.0)
 YLIM = (-5.0, 155.0)
@@ -42,12 +42,29 @@ FIGSIZE = (13.2, 11.2)
 DPI = 230
 BOARD = 150.0
 
-#: highlight colour of the layer that the figure is about
-HIGHLIGHT = {1: '#e07b1a', 2: '#2f9e44', 3: '#7048e8', 4: '#e03131', 5: '#0c8599'}
-#: muted colours of the other flat heights
+#: highlight colour of the layer that the figure is about (L2..L5 shared by rows)
+HIGHLIGHT = {1: '#1f6fd6', 2: '#2f9e44', 3: '#7048e8', 4: '#e03131', 5: '#0c8599'}
+#: muted colours of the other flat heights (z1 = 0.0, z2 = 0.5)
 MUTED = {0.0: '#1f6fd6', 0.5: '#e07b1a', 1.0: '#2f9e44', 1.5: '#7048e8',
          2.0: '#e03131', 2.5: '#0c8599'}
 TRANSITION = '#8c8c8c'
+
+PLANE_CONF = {
+    'z2': dict(
+        plane='z2', label='z2（row2）', hidden='z1/row1',
+        out_dir='z2_layer_visualization',
+        l1=dict(key='L1_z2', title='L1-z2', layer_id=1, z_mm=0.5,
+                note='接口层第二排 / row2（初始高度）', color='#e07b1a'),
+        high_color={2: '#2f9e44', 3: '#7048e8', 4: '#e03131', 5: '#0c8599'},
+    ),
+    'z1': dict(
+        plane='z1', label='z1（row1）', hidden='z2/row2',
+        out_dir='z1_layer_visualization',
+        l1=dict(key='L1_z1', title='L1-z1', layer_id=1, z_mm=0.0,
+                note='接口层第一排 / row1（初始高度）', color='#1f6fd6'),
+        high_color={2: '#2f9e44', 3: '#7048e8', 4: '#e03131', 5: '#0c8599'},
+    ),
+}
 
 
 def _read_json(path):
@@ -58,24 +75,29 @@ def _sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def layer_specs(stack_payload):
-    """Five figure specs: L1-z2 (0.5 mm) + L2..L5 from the saved layer stack."""
-    specs = [dict(key='L1_z2', title='L1-z2', layer_id=1, z_mm=0.5,
-                  note='接口层第二排 / row2（初始高度）')]
+def plane_routes(payload, plane):
+    """The 512 routed connections of one interface row (the other row excluded)."""
+    routes = [record for record in payload['routes']
+              if record.get('status') == 'routed' and record.get('plane') == plane]
+    if len(routes) != 512:
+        raise ValueError(f'expected 512 routed {plane} routes, got {len(routes)}')
+    return routes
+
+
+def layer_specs(stack_payload, plane):
+    """Five figure specs: L1-<plane> (initial height) + L2..L5 from the stack."""
+    conf = PLANE_CONF[plane]
+    l1 = conf['l1']
+    specs = [dict(key=l1['key'], title=l1['title'], layer_id=1,
+                  z_mm=float(l1['z_mm']), note=l1['note'],
+                  color=l1['color'])]
     for layer_id in (2, 3, 4, 5):
         z = round(float(stack_payload['layers'][str(layer_id)]['physical_z_mm']), 6)
         specs.append(dict(key=f'L{layer_id}', title=f'L{layer_id}',
-                          layer_id=layer_id, z_mm=z, note=f'布线层 L{layer_id}'))
+                          layer_id=layer_id, z_mm=z,
+                          note=f'布线层 L{layer_id}',
+                          color=conf['high_color'][layer_id]))
     return specs
-
-
-def z2_routed(payload):
-    """The 512 routed z2 (row 2) routes; z1 routes are excluded here."""
-    routes = [record for record in payload['routes']
-              if record.get('status') == 'routed' and record.get('plane') == 'z2']
-    if len(routes) != 512:
-        raise ValueError(f'expected 512 routed z2 routes, got {len(routes)}')
-    return routes
 
 
 def _uses_layer(record, spec):
@@ -102,7 +124,7 @@ def _part_samples(part):
     return sample(part)
 
 
-def _draw_reference(ax, z_mm, color='#e07b1a'):
+def _draw_reference(ax, z_mm, color):
     """Faint board outline + the current layer plane (visual reference only)."""
     from mpl_toolkits.mplot3d.art3d import Poly3DCollection
     corners = [(0, 0), (BOARD, 0), (BOARD, BOARD), (0, BOARD)]
@@ -121,7 +143,7 @@ def _draw_reference(ax, z_mm, color='#e07b1a'):
 
 def _draw_route(ax, record, spec):
     """Complete true 3D route; the current-layer flat parts are highlighted."""
-    highlight = HIGHLIGHT[int(spec['layer_id'])]
+    highlight = spec['color']
     z_wanted = float(spec['z_mm'])
     layer_id = int(spec['layer_id'])
     for part in record['parts']:
@@ -147,9 +169,10 @@ def _draw_route(ax, record, spec):
                     solid_capstyle='round', zorder=4)
 
 
-def _decorate(ax, spec, count):
+def _decorate(ax, spec, count, plane):
     from matplotlib.lines import Line2D
 
+    conf = PLANE_CONF[plane]
     ax.set_xlim(*XLIM)
     ax.set_ylim(*YLIM)
     ax.set_zlim(*ZLIM)
@@ -163,12 +186,13 @@ def _decorate(ax, spec, count):
     ax.set_box_aspect(BOX_ASPECT)
     ax.grid(True)
     ax.set_title(
-        f'z2（row2）波导 — {spec["title"]} 单层三维布线图\n'
+        f'{conf["label"]}波导 — {spec["title"]} 单层三维布线图\n'
         f'层：{spec["title"]}（{spec["note"]}）　物理高度：z = {spec["z_mm"]:g} mm　'
         f'使用该层水平传播的波导：{count} 条\n'
-        '（每条显示完整 XYZ 路线，含上升/下降段和其他高度的部分；z1/row1 已隐藏）',
+        f'（每条显示完整 XYZ 路线，含上升/下降段和其他高度的部分；'
+        f'{conf["hidden"]} 已隐藏）',
         fontsize=11.5, pad=14)
-    handles = [Line2D([0], [0], color=HIGHLIGHT[int(spec['layer_id'])], lw=2.4,
+    handles = [Line2D([0], [0], color=spec['color'], lw=2.4,
                       label=f'{spec["title"]} 上水平传播（本图主体）'),
                Line2D([0], [0], color='#9a9a9a', lw=1.4, alpha=0.8,
                       label='其他高度的水平段（按层淡化着色）'),
@@ -187,39 +211,44 @@ def _save(fig, png_path):
     return png_path
 
 
-def plot_all(after_dir=None, out_dir=None, log=print):
+def plot_plane(plane='z2', after_dir=None, out_dir=None, log=print):
     apply_profile()
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
 
+    if plane not in PLANE_CONF:
+        raise ValueError(f'plane must be one of {sorted(PLANE_CONF)}')
+    conf = PLANE_CONF[plane]
     plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'DejaVu Sans']
     plt.rcParams['axes.unicode_minus'] = False
 
     after_dir = Path(after_dir or AFTER_DIR)
-    out_dir = Path(out_dir or OUT_DIR)
+    out_dir = Path(out_dir or (OUT_ROOT / conf['out_dir']))
     out_dir.mkdir(parents=True, exist_ok=True)
     routes_payload = _read_json(after_dir / 'routes_l3d.json')
     stack_payload = _read_json(after_dir / 'layer_stack.json')
-    routes = z2_routed(routes_payload)
-    specs = layer_specs(stack_payload)
+    routes = plane_routes(routes_payload, plane)
+    specs = layer_specs(stack_payload, plane)
 
     manifest = dict(
-        schema='manual_c4_z2_layer_visualization_v1',
-        stage='z2_only_per_layer_3d',
+        schema='manual_c4_layer_visualization_v1',
+        stage=f'{plane}_only_per_layer_3d',
+        plane=plane,
+        hidden_plane=conf['hidden'],
         source=dict(
             routes_l3d=str(after_dir / 'routes_l3d.json'),
             routes_l3d_sha256=_sha256(after_dir / 'routes_l3d.json'),
             layer_stack=str(after_dir / 'layer_stack.json'),
             layer_stack_sha256=_sha256(after_dir / 'layer_stack.json')),
-        scope='z2 (row2) only; z1 (row1) routes are hidden',
+        scope=f'{plane} only; {conf["hidden"]} routes are hidden',
         definition='a route counts for a layer iff at least one FLAT part lies '
                    'on that layer (transitions passing through the height do '
                    'not count); each selected route is drawn as its complete '
                    '3D path',
         axes=dict(xlim=XLIM, ylim=YLIM, zlim=ZLIM, view=VIEW,
                   box_aspect=BOX_ASPECT, figsize=FIGSIZE, dpi=DPI),
-        z2_routed_total=len(routes),
+        routed_total=len(routes),
         layers={},
         generated_at=time.strftime('%Y-%m-%dT%H:%M:%S'),
     )
@@ -229,16 +258,16 @@ def plot_all(after_dir=None, out_dir=None, log=print):
         fig = plt.figure(figsize=FIGSIZE)
         ax = fig.add_subplot(111, projection='3d')
         fig.subplots_adjust(left=0.01, right=0.99, bottom=0.045, top=0.885)
-        _draw_reference(ax, spec['z_mm'], HIGHLIGHT[int(spec['layer_id'])])
+        _draw_reference(ax, spec['z_mm'], spec['color'])
         for record in selected:
             _draw_route(ax, record, spec)
         if not selected:
             ax.text2D(0.5, 0.5, '该层没有波导', transform=ax.transAxes,
                       ha='center', va='center', fontsize=20, color='#888888')
-        _decorate(ax, spec, len(selected))
+        _decorate(ax, spec, len(selected), plane)
         fig.text(0.5, 0.015,
                  '数据来源：manual_c4_new_connectivity/phase5_dynamic_optimization/'
-                 'after/routes_l3d.json（1024/1024 布通；仅渲染其中 z2 的 512 条，'
+                 f'after/routes_l3d.json（1024/1024 布通；仅渲染其中 {plane} 的 512 条，'
                  '不重新布线、不修改任何路线）',
                  ha='center', va='center', fontsize=8, color='#666666')
         png = _save(fig, out_dir / f'{spec["key"]}_3d.png')
@@ -248,24 +277,28 @@ def plot_all(after_dir=None, out_dir=None, log=print):
             title=spec['title'], note=spec['note'],
             count=len(selected), route_ids=route_ids, png=str(png),
             svg=str(png.with_suffix('.svg')))
-        log(f'[z2-layer] {spec["key"]} z={spec["z_mm"]:g} mm: '
+        log(f'[layer-plot] {plane} {spec["key"]} z={spec["z_mm"]:g} mm: '
             f'{len(selected)} routes -> {png.name}')
     counts = {key: value['count'] for key, value in manifest['layers'].items()}
     manifest['counts'] = counts
+    if plane == 'z2':
+        manifest['z2_routed_total'] = len(routes)
     (out_dir / 'layer_counts.json').write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding='utf-8')
-    log(f'[z2-layer] counts: {counts}')
-    log(f'[z2-layer] written {out_dir}')
+    log(f'[layer-plot] {plane} counts: {counts}')
+    log(f'[layer-plot] written {out_dir}')
     return manifest
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--plane', choices=['z1', 'z2'], default='z2')
     parser.add_argument('--after-dir', type=Path, default=None)
     parser.add_argument('--out', type=Path, default=None)
     args = parser.parse_args(argv)
-    manifest = plot_all(after_dir=args.after_dir, out_dir=args.out,
-                        log=lambda message: print(message, flush=True))
+    manifest = plot_plane(plane=args.plane, after_dir=args.after_dir,
+                          out_dir=args.out,
+                          log=lambda message: print(message, flush=True))
     print(json.dumps(manifest['counts'], ensure_ascii=False))
     return manifest
 
