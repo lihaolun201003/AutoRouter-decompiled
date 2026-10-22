@@ -1,0 +1,310 @@
+{
+ "schema": "manual_c4_phase2_independent_verification_v1",
+ "verifier": "pipeline-analyst (read-only independent verifier)",
+ "generated_at": "2026-10-22T23:24:52",
+ "repo": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D",
+ "phase": "phase2_2d",
+ "passed": true,
+ "failed_checks": [],
+ "runtime_seconds": 6.61,
+ "numbers": {
+  "input_sha256": {
+   "manual_z1": "74e43d068d5844719ae0f0d5c13ee76fb2523a6846cebbf4e4489f80e8d82ffc",
+   "manual_z2": "5e74b26704573680af52a3a019fd9114053d1bb308c52928d5b83fe7520e4028",
+   "connectivity_1024": "4c425adde0795a96b5b65eb471ea89fb000b45209e074db16787ac617f71d7f8",
+   "connectivity_json": "b4f5c46940d7993b34f4d49d6f128b8b83b9b263fe22ab8731d698bd02fa9eea",
+   "routes_1024": "277d0f78688b2a3cb10919ee552e9bbe6f1586f3a42b054a5cc651ff86466856",
+   "routes_z1": "0ce8c42cb88ff44eec4bbd6c5c4adf30840579835f28b363df1c3cc7f497f45f",
+   "routes_z2": "e3056b5cf5a10e9281d2ff1dcf11047707bf24e6aef5b69643856c14020c4d92",
+   "failed_routes": "4f565d89801a7a6b319b57862624d19531f69e79570e7a1ff6a930974233a1a3",
+   "phase2_validation": "3e16c177e5924c78986c2a6835a221216522174b401b9feb3b8ccabf5977e772",
+   "phase2_summary": "5587997895fd29b9bae74a56187d9d01ae06e7bd78d4202ce3d390e06abf830a"
+  },
+  "input_exists": {
+   "manual_z1": true,
+   "manual_z2": true,
+   "connectivity_1024": true,
+   "connectivity_json": true,
+   "routes_1024": true,
+   "routes_z1": true,
+   "routes_z2": true,
+   "failed_routes": true,
+   "phase2_validation": true,
+   "phase2_summary": true
+  },
+  "csv_rows": {
+   "connectivity_1024": 1024,
+   "manual_z1": 512,
+   "manual_z2": 512
+  },
+  "csv_sha256": {
+   "connectivity_1024": "4c425adde0795a96b5b65eb471ea89fb000b45209e074db16787ac617f71d7f8",
+   "manual_z1": "74e43d068d5844719ae0f0d5c13ee76fb2523a6846cebbf4e4489f80e8d82ffc",
+   "manual_z2": "5e74b26704573680af52a3a019fd9114053d1bb308c52928d5b83fe7520e4028"
+  },
+  "port_usage": {
+   "unique_ports": 2048,
+   "max_usage": 1,
+   "expected_ports": 2048
+  },
+  "c4_groups": {
+   "total": 256,
+   "per_plane": {
+    "z1": 128,
+    "z2": 128
+   },
+   "per_kind": {
+    "opposite": 68,
+    "same": 64,
+    "adjacent": 124
+   },
+   "json_groups": 256
+  },
+  "rotation_closure": {
+   "degree90": 0,
+   "degree180": 0,
+   "degree270": 0
+  },
+  "crossings": {
+   "z1": {
+    "crossing_count": 30608,
+    "crossing_pair_count": 29376,
+    "unique_pairs": 29376,
+    "violation_pairs": 0,
+    "violations": 0,
+    "min_non_crossing_centerline_mm": 0.25204904266964334,
+    "length_total_mm": 53867.3268
+   },
+   "z2": {
+    "crossing_count": 14992,
+    "crossing_pair_count": 13208,
+    "unique_pairs": 13208,
+    "violation_pairs": 0,
+    "violations": 0,
+    "min_non_crossing_centerline_mm": 0.15429073946193453,
+    "length_total_mm": 43571.1137
+   }
+  },
+  "unique_crossing_pairs_total": 42584,
+  "crossing_summary": {
+   "z1_pairs": 29376,
+   "z2_pairs": 13208,
+   "total_unique_pairs": 42584,
+   "z1_points": 30608,
+   "z2_points": 14992,
+   "total_points": 45600
+  },
+  "relation_counts": {
+   "opposite": 272,
+   "same": 256,
+   "adjacent": 496
+  },
+  "total_length_mm_rederived": 97438.4405,
+  "total_length_mm_reported": 97438.4405
+ },
+ "checks": {
+  "input_files_present": {
+   "passed": true,
+   "detail": {
+    "manual_z1": true,
+    "manual_z2": true,
+    "connectivity_1024": true,
+    "connectivity_json": true,
+    "routes_1024": true,
+    "routes_z1": true,
+    "routes_z2": true,
+    "failed_routes": true,
+    "phase2_validation": true,
+    "phase2_summary": true
+   }
+  },
+  "port_model": {
+   "passed": true,
+   "endpoints": 2048
+  },
+  "connectivity_table_ids": {
+   "passed": true,
+   "detail": [],
+   "connections": 1024,
+   "unique_ids": 1024
+  },
+  "manual_csv_matches_connectivity": {
+   "passed": true,
+   "detail": [],
+   "pairs_checked": 1024
+  },
+  "port_coverage_2048_once": {
+   "passed": true,
+   "detail": {
+    "z1": {
+     "ports": 1024,
+     "used": 1024,
+     "ok": true
+    },
+    "z2": {
+     "ports": 1024,
+     "used": 1024,
+     "ok": true
+    }
+   },
+   "unique_ports": 2048
+  },
+  "c4_orbit_structure": {
+   "passed": true,
+   "detail": [],
+   "orbits": 256,
+   "connections": 1024
+  },
+  "c4_groups_match_manifest": {
+   "passed": true,
+   "detail": [],
+   "groups": 256,
+   "kinds": {
+    "opposite": 68,
+    "same": 64,
+    "adjacent": 124
+   }
+  },
+  "rotation_closure_90_180_270": {
+   "passed": true,
+   "detail": [],
+   "rotations_checked": 768
+  },
+  "routes_1024_identity": {
+   "passed": true,
+   "detail": [],
+   "records": 1024,
+   "routed": 1024,
+   "failed": 0
+  },
+  "pair_metadata_consistent": {
+   "passed": true,
+   "detail": [],
+   "pair_values": {
+    "NS": 136,
+    "EW": 136,
+    "N": 64,
+    "NW": 124,
+    "W": 64,
+    "S": 64,
+    "E": 64,
+    "SW": 124,
+    "ES": 124,
+    "EN": 124
+   },
+   "convention": "same-side pair = single side (e.g. N); mixed = sorted two sides"
+  },
+  "routes_1024_header": {
+   "passed": true,
+   "detail": {
+    "routed": 1024,
+    "failed": 0,
+    "total": 1024,
+    "groups": 256
+   }
+  },
+  "failed_routes_empty": {
+   "passed": true,
+   "detail": "dict"
+  },
+  "per_plane_matches_combined": {
+   "passed": true,
+   "detail": [],
+   "records": 1024
+  },
+  "fslw_strict_2d_audit": {
+   "passed": true,
+   "detail": {
+    "z1": {
+     "passed": true,
+     "records": 512,
+     "geometry_error_count": 0,
+     "geometry_errors": [],
+     "radius_errors": 0,
+     "orthographic_errors": 0,
+     "chain_errors": 0,
+     "crossing_count": 30608,
+     "crossing_pair_count": 29376,
+     "unique_pairs": 29376,
+     "violation_pairs": 0,
+     "violations": 0,
+     "min_non_crossing_centerline_mm": 0.25204904266964334,
+     "length_total_mm": 53867.3268
+    },
+    "z2": {
+     "passed": true,
+     "records": 512,
+     "geometry_error_count": 0,
+     "geometry_errors": [],
+     "radius_errors": 0,
+     "orthographic_errors": 0,
+     "chain_errors": 0,
+     "crossing_count": 14992,
+     "crossing_pair_count": 13208,
+     "unique_pairs": 13208,
+     "violation_pairs": 0,
+     "violations": 0,
+     "min_non_crossing_centerline_mm": 0.15429073946193453,
+     "length_total_mm": 43571.1137
+    }
+   },
+   "crossings": {
+    "z1": {
+     "crossing_count": 30608,
+     "crossing_pair_count": 29376,
+     "unique_pairs": 29376,
+     "violation_pairs": 0,
+     "violations": 0,
+     "min_non_crossing_centerline_mm": 0.25204904266964334,
+     "length_total_mm": 53867.3268
+    },
+    "z2": {
+     "crossing_count": 14992,
+     "crossing_pair_count": 13208,
+     "unique_pairs": 13208,
+     "violation_pairs": 0,
+     "violations": 0,
+     "min_non_crossing_centerline_mm": 0.15429073946193453,
+     "length_total_mm": 43571.1137
+    }
+   }
+  },
+  "producer_reported_crossings_match": {
+   "passed": true,
+   "detail": []
+  },
+  "c4_geometric_rotation_256x3": {
+   "passed": true,
+   "detail": [],
+   "forward": 691,
+   "checked": 768,
+   "reversed": 77
+  },
+  "crossing_statistics_consistent": {
+   "passed": true,
+   "detail": {
+    "z1_pairs": 29376,
+    "z2_pairs": 13208,
+    "total_unique_pairs": 42584,
+    "z1_points": 30608,
+    "z2_points": 14992,
+    "total_points": 45600
+   }
+  },
+  "relation_counts_expected": {
+   "passed": true,
+   "detail": {
+    "opposite": 272,
+    "same": 256,
+    "adjacent": 496
+   }
+  },
+  "total_length_matches": {
+   "passed": true,
+   "detail": {
+    "rederived": 97438.4405,
+    "reported": 97438.4405
+   }
+  }
+ }
+}

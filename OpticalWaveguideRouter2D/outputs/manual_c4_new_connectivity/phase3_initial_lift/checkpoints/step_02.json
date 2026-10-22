@@ -1,0 +1,131 @@
+{
+ "history": [
+  {
+   "group_id": 209,
+   "layer_id": 2,
+   "removed_pairs": 624,
+   "pair_count_after": 41960,
+   "length_delta_mm": 0.244,
+   "seconds": 1.58
+  },
+  {
+   "group_id": 208,
+   "layer_id": 2,
+   "removed_pairs": 816,
+   "pair_count_after": 41144,
+   "length_delta_mm": 0.244,
+   "seconds": 3.08
+  }
+ ],
+ "group_plans": {
+  "209": {
+   "group_id": 209,
+   "kind": "opposite",
+   "plane": "z2",
+   "route_ids": [
+    593,
+    882,
+    883,
+    595
+   ],
+   "layer_id": 2,
+   "layer_z_mm": 1.0,
+   "rise_start_mm": 16.128613,
+   "fall_start_mm": 126.737457,
+   "footprint_mm": 5.454356057317866,
+   "removed_crossing_points": 816,
+   "removed_crossing_pairs": 624,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 0,
+   "pair_count_after": 41960,
+   "high_spans_mm": {
+    "593": [
+     [
+      23.3962,
+      124.9242
+     ]
+    ],
+    "882": [
+     [
+      23.3962,
+      124.9242
+     ]
+    ],
+    "883": [
+     [
+      23.3962,
+      124.9242
+     ]
+    ],
+    "595": [
+     [
+      25.0758,
+      126.6038
+     ]
+    ]
+   },
+   "length_delta_mm": 0.2440435600399269,
+   "status": "lifted"
+  },
+  "208": {
+   "group_id": 208,
+   "kind": "opposite",
+   "plane": "z2",
+   "route_ids": [
+    592,
+    880,
+    881,
+    594
+   ],
+   "layer_id": 2,
+   "layer_z_mm": 1.0,
+   "rise_start_mm": 1.2,
+   "fall_start_mm": 143.075,
+   "footprint_mm": 5.454356057317866,
+   "removed_crossing_points": 1008,
+   "removed_crossing_pairs": 816,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 4,
+   "pair_count_after": 41144,
+   "high_spans_mm": {
+    "592": [
+     [
+      8.4676,
+      141.2617
+     ]
+    ],
+    "880": [
+     [
+      8.4676,
+      141.2617
+     ]
+    ],
+    "881": [
+     [
+      8.4676,
+      141.2617
+     ]
+    ],
+    "594": [
+     [
+      8.7383,
+      141.5324
+     ]
+    ]
+   },
+   "length_delta_mm": 0.2440435600398132,
+   "status": "lifted"
+  }
+ },
+ "pair_count": 41144,
+ "lifted_routes": [
+  592,
+  593,
+  594,
+  595,
+  880,
+  881,
+  882,
+  883
+ ]
+}

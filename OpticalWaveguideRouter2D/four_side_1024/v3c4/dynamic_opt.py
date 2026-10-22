@@ -97,7 +97,7 @@ def _polyline_segments(points):
 
 class DynamicOptimizer:
     def __init__(self, out_dir=None, b_root=None, cache_path=None, log=print,
-                 time_limit=1800.0):
+                 time_limit=1800.0, v4_root=None):
         apply_profile()
         from .lift_cross import CrossingLifter, position_on_route
         from . import lift_cross as LC
@@ -109,6 +109,8 @@ class DynamicOptimizer:
         self.log = log
         self.time_limit = float(time_limit)
         self.started = time.perf_counter()
+        self.v4_root = v4_root
+        self.topology_label = 'V4-C4'
         repo = Path(__file__).resolve().parents[2]
         self.out_dir = Path(out_dir or (repo / OUT_ROOT_NAME))
         self.out_dir.mkdir(parents=True, exist_ok=True)
@@ -120,10 +122,11 @@ class DynamicOptimizer:
             'b_validation_sha256': _sha256(self.b_root / 'validation.json'),
             'b_summary_sha256': _sha256(self.b_root / 'summary.json'),
             'crossing_cache_sha256': _sha256(cache) if cache.exists() else None,
+            'routing_root': str(v4_root) if v4_root is not None else None,
         }
         self.log(f'[dyn] input hashes: {self.input_hashes}')
 
-        self.lifter = CrossingLifter(out_dir=self.out_dir, log=log)
+        self.lifter = CrossingLifter(out_dir=self.out_dir, v4_root=v4_root, log=log)
         self.stack = self.lifter.stack
         self.safe = float(self.lifter.safe_length)
         self.transition_margin = float(self.lifter.transition_margin)
@@ -559,14 +562,19 @@ class DynamicOptimizer:
         routes = self.current_routes if routes_override is None else routes_override
         records = []
         for rid in sorted(routes):
-            record = dict(routes[rid])
-            record['route_id'] = int(rid)
-            record['status'] = 'routed'
-            records.append(record)
+            # The rescheduled route dict only carries the geometry / layer fields;
+            # the connection identity (endpoints, relation, pair, sides, rows) must
+            # be taken verbatim from the routing manifest (it never changes when a
+            # quartet is moved between layers / intervals).
+            base = dict(self.lifter.records[int(rid)])
+            base.update(routes[rid])
+            base['route_id'] = int(rid)
+            base['status'] = 'routed'
+            records.append(base)
         records.extend(dict(record) for record in self.failed_records)
         records.sort(key=lambda item: int(item['route_id']))
         return dict(schema='four_side_1024_v2_l3d_routes_v1',
-                    experiment='V4_C4_DYNAMIC_LAYER_OPTIMIZATION',
+                    experiment=f'{self.topology_label}_DYNAMIC_LAYER_OPTIMIZATION',
                     note='XY paths/ports/connections unchanged; dynamic layer '
                          'reassignment of already lifted C4 quartets',
                     layer_stack=self.stack.to_dict(),
@@ -1007,7 +1015,8 @@ class DynamicOptimizer:
         validation = validation or {}
         return dict(
             schema='v4_c4_dynamic_layer_optimization_summary_v1',
-            routed_before=1020, routed_after=len(self.routed_ids),
+            routed_before=len(self.lifter.routed),
+            routed_after=len(self.routed_ids),
             unique_crossing_pairs_before=int(self.initial_pair_count),
             unique_crossing_pairs_after=int(len(self.pair_set)),
             crossing_reduction=int(self.initial_pair_count - len(self.pair_set)),

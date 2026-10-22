@@ -1,0 +1,140 @@
+{
+ "schema": "manual_c4_3d_independent_verification_v1",
+ "verifier": "pipeline-analyst (read-only independent verifier)",
+ "stage": "phase3",
+ "generated_at": "2026-10-22T23:27:38",
+ "passed": true,
+ "failed_checks": [],
+ "warnings": [],
+ "runtime_seconds": 14.35,
+ "numbers": {
+  "target": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\phase4_ablation\\_cache_builder",
+  "phase3_layout": {
+   "records": 1024,
+   "routed": 1024,
+   "failed": 0,
+   "lifted_routes": 0,
+   "transitions": 0,
+   "high_layers": {},
+   "stack_heights_mm": {
+    "2": 1.0,
+    "3": 1.5,
+    "4": 2.0,
+    "5": 2.5
+   }
+  },
+  "phase3_files": {
+   "routes_sha256": "25613762ba465ab9ef2588106b96170e150d5b1a0b4647407ed96b8dad9ca330",
+   "summary_sha256": "7a22023d1265ed650582da2a7a566bc31cb50421605129d732ec05672240fd28",
+   "summary_exists": true
+  },
+  "phase3_crossings": {
+   "points_by_height": {
+    "0.0": 30608,
+    "0.5": 14992
+   },
+   "pairs_by_height": {
+    "0.0": 29376,
+    "0.5": 13208
+   },
+   "points_total": 45600,
+   "unique_pairs": 42584
+  },
+  "phase3_crossing_baseline": {
+   "expected": 42584,
+   "reported_before": 42584,
+   "after": 42584,
+   "delta": 0
+  },
+  "phase3_validation": {
+   "passed": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "min_curvature_radius_mm": 14.999999965,
+   "min_3d_clearance_mm": 0.154290739,
+   "unique_ports_used": 2048,
+   "status": "exploratory_only"
+  }
+ },
+ "checks": {
+  "phase3_payload_and_identity": {
+   "passed": true,
+   "detail": [],
+   "routed": 1024,
+   "failed": 0
+  },
+  "phase3_xyz_ports": {
+   "passed": true,
+   "detail": [],
+   "routed": 1024
+  },
+  "phase3_xy_replay_and_layer_model": {
+   "passed": true,
+   "detail": [],
+   "lifted_routes": 0,
+   "transitions": 0
+  },
+  "phase3_c4_rotations_3d": {
+   "passed": true,
+   "detail": [],
+   "checks": 768,
+   "reversed_routes": 77,
+   "complete_groups": 256
+  },
+  "phase3_crossing_statistics": {
+   "passed": true,
+   "detail": [],
+   "unique_pairs": 42584,
+   "points_total": 45600,
+   "pairs_by_height": {
+    "0.0": 29376,
+    "0.5": 13208
+   }
+  },
+  "phase3_crossing_reduction": {
+   "passed": true,
+   "detail": "no lifted groups in this layout -> reduction not required",
+   "before": 42584,
+   "after": 42584
+  },
+  "phase3_l3d_validator": {
+   "passed": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "status": "exploratory_only",
+   "geometry_pass": true,
+   "exploratory_pass": true,
+   "min_curvature_radius_mm": 14.999999965,
+   "min_3d_clearance_mm": 0.154290739,
+   "unique_ports_used": 2048,
+   "violations": 0
+  },
+  "phase3_summary_consistency": {
+   "passed": true,
+   "detail": [],
+   "routed": 1024,
+   "lifted_groups": 0,
+   "lifted_routes": 0,
+   "transitions": 0,
+   "validation_status": "exploratory_only"
+  }
+ }
+}

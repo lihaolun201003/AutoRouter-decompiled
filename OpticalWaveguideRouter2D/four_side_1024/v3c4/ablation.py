@@ -41,14 +41,14 @@ def _read_json(path):
 # ---------------------------------------------------------------------------
 # smoke tests (small number of C4 groups per configuration)
 # ---------------------------------------------------------------------------
-def run_smoke(root, cache_path, groups=2, log=print):
+def run_smoke(root, cache_path, groups=2, v4_root=None, log=print):
     from . import lift_cross_run
     results = {}
     for config in CONFIGS:
         smoke_dir = Path(root) / config['name'] / 'smoke'
         log(f'[ablation] smoke {config["name"]} heights={config["heights"]}')
         result = lift_cross_run.run(
-            out_dir=smoke_dir, heights=config['heights'],
+            out_dir=smoke_dir, v4_root=v4_root, heights=config['heights'],
             crossing_cache=str(cache_path), smoke_groups=groups,
             time_limit=600.0, plots=False, log=log)
         validation = result.get('validation') or {}
@@ -68,7 +68,8 @@ def run_smoke(root, cache_path, groups=2, log=print):
 # ---------------------------------------------------------------------------
 # full four runs (parallel, identical budget)
 # ---------------------------------------------------------------------------
-def run_full(root, cache_path, max_groups=150, time_limit=3000.0, log=print):
+def run_full(root, cache_path, max_groups=150, time_limit=3000.0, v4_root=None,
+             log=print):
     root = Path(root)
     env = dict(__import__('os').environ)
     env['PYTHONPATH'] = str(repo_root())
@@ -84,6 +85,8 @@ def run_full(root, cache_path, max_groups=150, time_limit=3000.0, log=print):
                    '--crossing-cache', str(cache_path),
                    '--max-groups', str(max_groups),
                    '--time-limit', str(time_limit)]
+        if v4_root is not None:
+            command += ['--v4-root', str(v4_root)]
         log_file = open(out_dir / 'process.log', 'a', encoding='utf-8')
         process = subprocess.Popen(command, stdout=log_file, stderr=subprocess.STDOUT,
                                    env=env)
@@ -100,7 +103,7 @@ def run_full(root, cache_path, max_groups=150, time_limit=3000.0, log=print):
 # ---------------------------------------------------------------------------
 # post-processing: comparison table + combined 3D figure
 # ---------------------------------------------------------------------------
-def build_comparison(root, log=print):
+def build_comparison(root, label='V4-C4', log=print):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -146,15 +149,16 @@ def build_comparison(root, log=print):
                                         len(summary.get('reverted_group_ids') or [])),
         ))
     table = dict(schema='v4_c4_layer_height_ablation_table_v1',
+                 topology_label=label,
                  configs=CONFIGS, results=rows,
-                 notes=['all four runs start from the same un-lifted V4 1020-route '
-                        'baseline',
+                 notes=[f'all four runs start from the same un-lifted {label} '
+                        '1024-channel baseline',
                         'crossing statistics use unique (route_id_a, route_id_b) '
                         'pairs deduplicated across all physical heights',
                         'L2-L5 heights are exploratory process assumptions; '
                         'geometry PASS is not a formal manufacturing acceptance'])
     _write_json(root / 'ablation_table.json', table, indent=1)
-    lines = ['# V4-C4 L2–L5 层间距对照实验（交叉规避式三维抬升）', '',
+    lines = [f'# {label} L2–L5 层间距对照实验（交叉规避式三维抬升）', '',
              '| 指标 | 0.25 mm (A) | 0.50 mm (B) | 0.75 mm (C) | 1.00 mm (D) |',
              '|---|---:|---:|---:|---:|']
     keys = [('布通数', 'routed'), ('剩余唯一交叉线路对',
@@ -167,7 +171,7 @@ def build_comparison(root, log=print):
             ('运行时间 (s)', 'runtime_seconds'),
             ('终止原因', 'termination'),
             ('几何验收', 'geometry_pass')]
-    for label, key in keys:
+    for metric_label, key in keys:
         values = []
         for row in rows:
             value = row.get(key)
@@ -179,8 +183,8 @@ def build_comparison(root, log=print):
                 values.append(f'{value:.3f}')
             else:
                 values.append(str(value))
-        lines.append('| ' + label + ' | ' + ' | '.join(values) + ' |')
-    lines += ['', '每组从同一 V4 未抬升 1020 条基线独立开始，预算相同 '
+        lines.append('| ' + metric_label + ' | ' + ' | '.join(values) + ' |')
+    lines += ['', f'每组从同一 {label} 未抬升 1024 条基线独立开始，预算相同 '
                   '（max_groups=150, time_limit=3000 s）。',
               'L2–L5 层高为探索性工艺假设，几何 PASS 不等同于正式制造验收。']
     (root / 'ablation_table.md').write_text('\n'.join(lines) + '\n',
@@ -231,7 +235,7 @@ def build_comparison(root, log=print):
         handles.append(Line2D([0], [0], color=color, lw=2, label=f'L{layer_id}'))
     handles.append(Line2D([0], [0], color='#7a7a7a', lw=2, label='S transition'))
     fig.legend(handles=handles, loc='upper right', fontsize=9)
-    fig.suptitle('V4-C4 层间距对照：四组实际三维布线图（统一坐标范围与颜色映射）',
+    fig.suptitle(f'{label} 层间距对照：四组实际三维布线图（统一坐标范围与颜色映射）',
                  fontsize=14)
     png = root / 'ablation_3d_compare.png'
     fig.savefig(png, dpi=200, bbox_inches='tight')
@@ -244,6 +248,10 @@ def build_comparison(root, log=print):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=None)
+    parser.add_argument('--v4-root', type=Path, default=None,
+                        help='routing root providing routes_1024.json '
+                             '(default: historical V4-C4 routing root)')
+    parser.add_argument('--label', default='V4-C4')
     parser.add_argument('--smoke', action='store_true')
     parser.add_argument('--full', action='store_true')
     parser.add_argument('--postprocess', action='store_true')
@@ -266,17 +274,19 @@ def main(argv=None):
         from . import lift_cross_run
         log('[ablation] building shared un-lifted crossing cache ...')
         lift_cross_run.run(out_dir=root / '_cache_builder',
+                           v4_root=args.v4_root,
                            crossing_cache=str(cache_path),
                            heights=None, max_groups=0, time_limit=1.0,
                            plots=False, log=log)
     if args.smoke:
-        run_smoke(root, cache_path, groups=args.smoke_groups, log=log)
+        run_smoke(root, cache_path, groups=args.smoke_groups,
+                  v4_root=args.v4_root, log=log)
     if args.full:
         run_full(root, cache_path, max_groups=args.max_groups,
-                 time_limit=args.time_limit, log=log)
-        build_comparison(root, log=log)
+                 time_limit=args.time_limit, v4_root=args.v4_root, log=log)
+        build_comparison(root, label=args.label, log=log)
     if args.postprocess:
-        build_comparison(root, log=log)
+        build_comparison(root, label=args.label, log=log)
     log_handle.close()
 
 

@@ -1,0 +1,199 @@
+{
+ "schema": "manual_c4_3d_independent_verification_v1",
+ "verifier": "pipeline-analyst (read-only independent verifier)",
+ "stage": "phase3",
+ "generated_at": "2026-10-22T23:52:57",
+ "passed": true,
+ "failed_checks": [],
+ "warnings": [],
+ "runtime_seconds": 8.27,
+ "numbers": {
+  "target": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\phase3_initial_lift",
+  "phase3_layout": {
+   "records": 1024,
+   "routed": 1024,
+   "failed": 0,
+   "lifted_routes": 188,
+   "transitions": 376,
+   "high_layers": {
+    "2": 104,
+    "4": 24,
+    "3": 32,
+    "5": 28
+   },
+   "stack_heights_mm": {
+    "2": 1.0,
+    "3": 1.5,
+    "4": 2.0,
+    "5": 2.5
+   }
+  },
+  "phase3_files": {
+   "routes_sha256": "235ca2886b648df85da65b152728ffa19263ba0364ab1c13ef9728848b44f729",
+   "summary_sha256": "4b82120024c869ac1ce3f97df888e73a9fdaf76985a8ef18801812557ee825f6",
+   "summary_exists": true
+  },
+  "phase3_crossings": {
+   "points_by_height": {
+    "0.0": 18096,
+    "0.5": 7416,
+    "1.0": 20,
+    "1.5": 24,
+    "2.0": 0,
+    "2.5": 8
+   },
+   "pairs_by_height": {
+    "0.0": 17936,
+    "0.5": 7328,
+    "1.0": 20,
+    "1.5": 20,
+    "2.0": 0,
+    "2.5": 4
+   },
+   "points_total": 25564,
+   "unique_pairs": 25308
+  },
+  "phase3_crossing_baseline": {
+   "expected": 42584,
+   "reported_before": 42584,
+   "after": 25308,
+   "delta": 17276
+  },
+  "phase3_validation": {
+   "passed": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "min_curvature_radius_mm": 14.999999965,
+   "min_3d_clearance_mm": 0.086214914,
+   "unique_ports_used": 2048,
+   "status": "exploratory_only"
+  },
+  "phase3_lift_plans": {
+   "lifted": 47,
+   "rejected": 42,
+   "reverted": 11
+  }
+ },
+ "checks": {
+  "phase3_payload_and_identity": {
+   "passed": true,
+   "detail": [],
+   "routed": 1024,
+   "failed": 0
+  },
+  "phase3_xyz_ports": {
+   "passed": true,
+   "detail": [],
+   "routed": 1024
+  },
+  "phase3_xy_replay_and_layer_model": {
+   "passed": true,
+   "detail": [],
+   "lifted_routes": 188,
+   "transitions": 376
+  },
+  "phase3_c4_rotations_3d": {
+   "passed": true,
+   "detail": [],
+   "checks": 768,
+   "reversed_routes": 77,
+   "complete_groups": 256
+  },
+  "phase3_crossing_statistics": {
+   "passed": true,
+   "detail": [],
+   "unique_pairs": 25308,
+   "points_total": 25564,
+   "pairs_by_height": {
+    "0.0": 17936,
+    "0.5": 7328,
+    "1.0": 20,
+    "1.5": 20,
+    "2.0": 0,
+    "2.5": 4
+   }
+  },
+  "phase3_crossing_reduction": {
+   "passed": true,
+   "detail": {
+    "before": 42584,
+    "after": 25308,
+    "lifted_groups": 47
+   }
+  },
+  "phase3_crossings_before": {
+   "passed": true,
+   "detail": [],
+   "pair_count": 42584,
+   "expected": 42584
+  },
+  "phase3_l3d_validator": {
+   "passed": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "status": "exploratory_only",
+   "geometry_pass": true,
+   "exploratory_pass": true,
+   "min_curvature_radius_mm": 14.999999965,
+   "min_3d_clearance_mm": 0.086214914,
+   "unique_ports_used": 2048,
+   "violations": 0
+  },
+  "phase3_validation_artifact": {
+   "passed": true,
+   "detail": [],
+   "status": "exploratory_only",
+   "min_3d_clearance_mm": 0.086214914
+  },
+  "phase3_lift_plans_consistent": {
+   "passed": true,
+   "detail": [],
+   "lifted": 47,
+   "rejected": 42,
+   "reverted": 11
+  },
+  "phase3_summary_consistency": {
+   "passed": true,
+   "detail": [],
+   "routed": 1024,
+   "lifted_groups": 47,
+   "lifted_routes": 188,
+   "transitions": 376,
+   "remaining_unique_pairs": 25308,
+   "repair_rounds": 5,
+   "reverted_groups": 11,
+   "termination": "no_more_candidates"
+  },
+  "phase3_checkpoint_consistency": {
+   "passed": true,
+   "detail": [],
+   "pair_count_after": 25308,
+   "lifted_groups": 47
+  },
+  "phase3_step_checkpoints_present": {
+   "passed": true,
+   "detail": {
+    "step_checkpoints": 58,
+    "lifted_groups": 47
+   }
+  }
+ }
+}

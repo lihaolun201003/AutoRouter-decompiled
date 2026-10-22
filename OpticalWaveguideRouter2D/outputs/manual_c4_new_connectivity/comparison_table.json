@@ -1,0 +1,96 @@
+{
+ "schema": "manual_c4_comparison_table_v1",
+ "topology": "MANUAL_C4",
+ "reference": "V4-C4 (historical)",
+ "rows": [
+  {
+   "metric": "二维布通数（条）",
+   "new": 1024,
+   "old": 1020,
+   "new_text": "1,024 / 1024",
+   "old_text": "1,020 / 1024"
+  },
+  {
+   "metric": "二维 C4 四元组（全部布通）",
+   "new": 256,
+   "old": 255,
+   "new_text": "256 / 256",
+   "old_text": "255 / 256"
+  },
+  {
+   "metric": "初始三维抬升后剩余唯一交叉线路对",
+   "new": 25308,
+   "old": 56032,
+   "new_text": "25,308",
+   "old_text": "56,032"
+  },
+  {
+   "metric": "A 组 0.25 mm：剩余唯一交叉对",
+   "new": 20416,
+   "old": 47192,
+   "new_text": "20,416",
+   "old_text": "47,192"
+  },
+  {
+   "metric": "B 组 0.50 mm：剩余唯一交叉对",
+   "new": 25308,
+   "old": 55484,
+   "new_text": "25,308",
+   "old_text": "55,484"
+  },
+  {
+   "metric": "C 组 0.75 mm：剩余唯一交叉对",
+   "new": 20820,
+   "old": 46112,
+   "new_text": "20,820",
+   "old_text": "46,112"
+  },
+  {
+   "metric": "D 组 1.00 mm：剩余唯一交叉对",
+   "new": 21392,
+   "old": 45204,
+   "new_text": "21,392",
+   "old_text": "45,204"
+  },
+  {
+   "metric": "B 组动态优化 V2 最终剩余唯一交叉对",
+   "new": 23356,
+   "old": 49992,
+   "new_text": "23,356",
+   "old_text": "49,992"
+  },
+  {
+   "metric": "动态优化 V2：单一/联合重调度/失败组救回",
+   "new": null,
+   "old": null,
+   "new_text": "4 / 1 / 8",
+   "old_text": "13 / 1 / 6"
+  },
+  {
+   "metric": "初始三维抬升：抬升四元组 / 升降次数",
+   "new": null,
+   "old": null,
+   "new_text": "47 / 376",
+   "old_text": "86 / 688"
+  },
+  {
+   "metric": "三维总长变化（mm）",
+   "new": null,
+   "old": null,
+   "new_text": "47.1",
+   "old_text": "118.0"
+  },
+  {
+   "metric": "初始三维运行时间（s）",
+   "new": null,
+   "old": null,
+   "new_text": "397.1",
+   "old_text": "—"
+  }
+ ],
+ "notes": [
+  "新 CSV 为全新人工配对，旧 V4-C4 数字仅作参考，不是预期值",
+  "交叉数为跨全部物理高度、按唯一 (route_id_a, route_id_b) 去重",
+  "层高为探索性参数，几何 PASS 不代表制造工艺正式验收"
+ ]
+}

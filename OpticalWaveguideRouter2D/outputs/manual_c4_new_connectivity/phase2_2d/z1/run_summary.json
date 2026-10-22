@@ -1,0 +1,40 @@
+{
+ "name": "MANUAL_C4_2D",
+ "algorithm": "C4_2D",
+ "process_profile": "R15_min_radius_15mm",
+ "radius_mm": 15.0,
+ "fixed_radius_40mm": false,
+ "geometry_mode": "d56",
+ "crossing_policy": "exact",
+ "candidate_generator": "v2opt.candext (D56 lines + 90 deg arcs + short-S) and r15.u_geometry (same-side U, quarter_pair, R=15)",
+ "candidate_budget_per_group": 1600,
+ "strategy": "easy group order, representative search + rot90 lift, atomic group commit (including same-side U groups)",
+ "order": "easy",
+ "forced_symmetry": true,
+ "group_count": 128,
+ "routed_groups": 128,
+ "failed_groups": 0,
+ "same_side_groups": 16,
+ "plane": "z1",
+ "routed": 512,
+ "total": 512,
+ "failed": 0,
+ "seconds": 10.22,
+ "group_order": "easy",
+ "budget": 1600,
+ "rr": {
+  "rounds": [
+   {
+    "round": 1,
+    "recovered": 0,
+    "routed_routes": 512,
+    "failed_groups": 0,
+    "seconds": 0.0
+   }
+  ],
+  "recovered": 0,
+  "seconds": 0.0
+ },
+ "retry_history": [],
+ "checkpoint": "outputs\\manual_c4_new_connectivity\\phase2_2d\\z1\\checkpoint.json"
+}

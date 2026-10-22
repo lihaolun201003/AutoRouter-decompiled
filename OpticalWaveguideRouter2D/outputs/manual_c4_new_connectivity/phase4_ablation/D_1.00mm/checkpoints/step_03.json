@@ -1,0 +1,192 @@
+{
+ "history": [
+  {
+   "group_id": 209,
+   "layer_id": 2,
+   "removed_pairs": 560,
+   "pair_count_after": 42024,
+   "length_delta_mm": 0.692,
+   "seconds": 2.3
+  },
+  {
+   "group_id": 208,
+   "layer_id": 2,
+   "removed_pairs": 768,
+   "pair_count_after": 41256,
+   "length_delta_mm": 0.692,
+   "seconds": 4.42
+  },
+  {
+   "group_id": 19,
+   "layer_id": 2,
+   "removed_pairs": 256,
+   "pair_count_after": 41000,
+   "length_delta_mm": 1.2745,
+   "seconds": 6.71
+  }
+ ],
+ "group_plans": {
+  "209": {
+   "group_id": 209,
+   "kind": "opposite",
+   "plane": "z2",
+   "route_ids": [
+    593,
+    882,
+    883,
+    595
+   ],
+   "layer_id": 2,
+   "layer_z_mm": 1.5,
+   "rise_start_mm": 16.128613,
+   "fall_start_mm": 124.510667,
+   "footprint_mm": 7.681145747868607,
+   "removed_crossing_points": 752,
+   "removed_crossing_pairs": 560,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 0,
+   "pair_count_after": 42024,
+   "high_spans_mm": {
+    "593": [
+     [
+      25.623,
+      122.6974
+     ]
+    ],
+    "882": [
+     [
+      25.623,
+      122.6974
+     ]
+    ],
+    "883": [
+     [
+      25.623,
+      122.6974
+     ]
+    ],
+    "595": [
+     [
+      27.3026,
+      124.377
+     ]
+    ]
+   },
+   "length_delta_mm": 0.6920040985443165,
+   "status": "lifted"
+  },
+  "208": {
+   "group_id": 208,
+   "kind": "opposite",
+   "plane": "z2",
+   "route_ids": [
+    592,
+    880,
+    881,
+    594
+   ],
+   "layer_id": 2,
+   "layer_z_mm": 1.5,
+   "rise_start_mm": 1.2,
+   "fall_start_mm": 141.091685,
+   "footprint_mm": 7.681145747868607,
+   "removed_crossing_points": 960,
+   "removed_crossing_pairs": 768,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 4,
+   "pair_count_after": 41256,
+   "high_spans_mm": {
+    "592": [
+     [
+      10.6944,
+      139.2784
+     ]
+    ],
+    "880": [
+     [
+      10.6944,
+      139.2784
+     ]
+    ],
+    "881": [
+     [
+      10.6944,
+      139.2784
+     ]
+    ],
+    "594": [
+     [
+      10.7216,
+      139.3056
+     ]
+    ]
+   },
+   "length_delta_mm": 0.6920040985442029,
+   "status": "lifted"
+  },
+  "19": {
+   "group_id": 19,
+   "kind": "opposite",
+   "plane": "z1",
+   "route_ids": [
+    20,
+    247,
+    248,
+    21
+   ],
+   "layer_id": 2,
+   "layer_z_mm": 1.5,
+   "rise_start_mm": 45.902131,
+   "fall_start_mm": 104.057503,
+   "footprint_mm": 9.3674969975976,
+   "removed_crossing_points": 320,
+   "removed_crossing_pairs": 256,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 4,
+   "pair_count_after": 41000,
+   "high_spans_mm": {
+    "20": [
+     [
+      57.0829,
+      102.2442
+     ]
+    ],
+    "247": [
+     [
+      57.0829,
+      102.2442
+     ]
+    ],
+    "248": [
+     [
+      57.0829,
+      102.2442
+     ]
+    ],
+    "21": [
+     [
+      57.0829,
+      102.2442
+     ]
+    ]
+   },
+   "length_delta_mm": 1.2745270491843712,
+   "status": "lifted"
+  }
+ },
+ "pair_count": 41000,
+ "lifted_routes": [
+  20,
+  21,
+  247,
+  248,
+  592,
+  593,
+  594,
+  595,
+  880,
+  881,
+  882,
+  883
+ ]
+}

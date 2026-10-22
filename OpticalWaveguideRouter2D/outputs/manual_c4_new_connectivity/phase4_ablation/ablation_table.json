@@ -1,0 +1,221 @@
+{
+ "schema": "v4_c4_layer_height_ablation_table_v1",
+ "topology_label": "MANUAL-C4",
+ "configs": [
+  {
+   "name": "A_0.25mm",
+   "heights": [
+    0.75,
+    1.0,
+    1.25,
+    1.5
+   ]
+  },
+  {
+   "name": "B_0.50mm",
+   "heights": [
+    1.0,
+    1.5,
+    2.0,
+    2.5
+   ]
+  },
+  {
+   "name": "C_0.75mm",
+   "heights": [
+    1.25,
+    2.0,
+    2.75,
+    3.5
+   ]
+  },
+  {
+   "name": "D_1.00mm",
+   "heights": [
+    1.5,
+    2.5,
+    3.5,
+    4.5
+   ]
+  }
+ ],
+ "results": [
+  {
+   "name": "A_0.25mm",
+   "layer_heights_mm": [
+    0.75,
+    1.0,
+    1.25,
+    1.5
+   ],
+   "routed": 1024,
+   "remaining_unique_crossing_pairs": 20416,
+   "crossing_reduction_ratio": 0.520571,
+   "crossing_pairs_before": 42584,
+   "crossing_points_by_height": {
+    "0.0": 17728,
+    "0.5": 2500,
+    "0.75": 188,
+    "1.0": 188,
+    "1.25": 36,
+    "1.5": 160
+   },
+   "new_high_layer_crossing_pairs": 204,
+   "lifted_groups": 72,
+   "transitions": 576,
+   "length_delta_mm": 37.8792,
+   "length_total_after_mm": 97476.3197,
+   "min_3d_clearance_mm": 0.081609912,
+   "runtime_seconds": 594.93,
+   "termination": "no_more_candidates",
+   "validation_status": "exploratory_only",
+   "geometry_pass": true,
+   "validation_counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "reverted_groups": 3
+  },
+  {
+   "name": "B_0.50mm",
+   "layer_heights_mm": [
+    1.0,
+    1.5,
+    2.0,
+    2.5
+   ],
+   "routed": 1024,
+   "remaining_unique_crossing_pairs": 25308,
+   "crossing_reduction_ratio": 0.405692,
+   "crossing_pairs_before": 42584,
+   "crossing_points_by_height": {
+    "0.0": 18096,
+    "0.5": 7416,
+    "1.0": 20,
+    "1.5": 24,
+    "2.0": 0,
+    "2.5": 8
+   },
+   "new_high_layer_crossing_pairs": 0,
+   "lifted_groups": 47,
+   "transitions": 376,
+   "length_delta_mm": 47.0732,
+   "length_total_after_mm": 97485.5137,
+   "min_3d_clearance_mm": 0.086214914,
+   "runtime_seconds": 399.44,
+   "termination": "no_more_candidates",
+   "validation_status": "exploratory_only",
+   "geometry_pass": true,
+   "validation_counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "reverted_groups": 11
+  },
+  {
+   "name": "C_0.75mm",
+   "layer_heights_mm": [
+    1.25,
+    2.0,
+    2.75,
+    3.5
+   ],
+   "routed": 1024,
+   "remaining_unique_crossing_pairs": 20820,
+   "crossing_reduction_ratio": 0.511084,
+   "crossing_pairs_before": 42584,
+   "crossing_points_by_height": {
+    "0.0": 15792,
+    "0.5": 5296,
+    "1.25": 48,
+    "2.0": 44,
+    "2.75": 40,
+    "3.5": 28
+   },
+   "new_high_layer_crossing_pairs": 36,
+   "lifted_groups": 67,
+   "transitions": 536,
+   "length_delta_mm": 124.3898,
+   "length_total_after_mm": 97562.8303,
+   "min_3d_clearance_mm": 0.091518627,
+   "runtime_seconds": 579.56,
+   "termination": "no_more_candidates",
+   "validation_status": "exploratory_only",
+   "geometry_pass": true,
+   "validation_counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "reverted_groups": 5
+  },
+  {
+   "name": "D_1.00mm",
+   "layer_heights_mm": [
+    1.5,
+    2.5,
+    3.5,
+    4.5
+   ],
+   "routed": 1024,
+   "remaining_unique_crossing_pairs": 21392,
+   "crossing_reduction_ratio": 0.497652,
+   "crossing_pairs_before": 42584,
+   "crossing_points_by_height": {
+    "0.0": 16880,
+    "0.5": 4716,
+    "1.5": 40,
+    "2.5": 52,
+    "3.5": 32,
+    "4.5": 12
+   },
+   "new_high_layer_crossing_pairs": 8,
+   "lifted_groups": 66,
+   "transitions": 528,
+   "length_delta_mm": 175.1034,
+   "length_total_after_mm": 97613.5439,
+   "min_3d_clearance_mm": 0.082167281,
+   "runtime_seconds": 620.71,
+   "termination": "no_more_candidates",
+   "validation_status": "exploratory_only",
+   "geometry_pass": true,
+   "validation_counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "reverted_groups": 3
+  }
+ ],
+ "notes": [
+  "all four runs start from the same un-lifted MANUAL-C4 1024-channel baseline",
+  "crossing statistics use unique (route_id_a, route_id_b) pairs deduplicated across all physical heights",
+  "L2-L5 heights are exploratory process assumptions; geometry PASS is not a formal manufacturing acceptance"
+ ]
+}

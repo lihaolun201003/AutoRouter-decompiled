@@ -86,7 +86,8 @@ def _save(fig, png_path):
     plt.close(fig)
 
 
-def _figures(out_dir, optimizer, before_payload, after_payload, log=print):
+def _figures(out_dir, optimizer, before_payload, after_payload,
+             label='V4-C4', log=print):
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -104,14 +105,15 @@ def _figures(out_dir, optimizer, before_payload, after_payload, log=print):
     fig = plt.figure(figsize=(12, 11))
     ax = fig.add_subplot(111, projection='3d')
     _draw_routes(ax, before_routes, style, linewidth=0.5, alpha=0.75)
-    _decorate(ax, '优化前：V4-C4 三维抬升结果（B 组 0.50 mm）— 1020 routes')
+    _decorate(ax, f'优化前：{label} 三维抬升结果（B 组 0.50 mm）— '
+                  f'{len(before_routes)} routes')
     _save(fig, figures / 'before_3d.png')
     log(f'[dyn] figure before_3d.png')
 
     fig = plt.figure(figsize=(12, 11))
     ax = fig.add_subplot(111, projection='3d')
     _draw_routes(ax, after_routes, style, linewidth=0.5, alpha=0.75)
-    _decorate(ax, '优化后：动态换层与局部重调度 — 1020 routes，'
+    _decorate(ax, f'优化后：动态换层与局部重调度 — {len(after_routes)} routes，'
                   f'唯一交叉对 {optimizer.initial_pair_count} -> '
                   f'{len(optimizer.pair_set)}')
     _save(fig, figures / 'after_3d.png')
@@ -156,14 +158,15 @@ def _figures(out_dir, optimizer, before_payload, after_payload, log=print):
                            f'（组 {group_ids}，层 '
                            f'{action.get("old_layers", action.get("old_layer"))} -> '
                            f'{action.get("new_layers", action.get("new_layer"))}）')
-        fig.suptitle('V4-C4 动态换层前后局部三维对比（统一坐标范围与视角）',
+        fig.suptitle(f'{label} 动态换层前后局部三维对比（统一坐标范围与视角）',
                      fontsize=13)
         _save(fig, figures / 'joint_swap_zoom_before_after.png')
         log('[dyn] figure joint_swap_zoom_before_after.png')
     return sorted(path.name for path in figures.iterdir())
 
 
-def run(out_dir=None, b_root=None, cache_path=None, time_limit=1800.0, log=print):
+def run(out_dir=None, b_root=None, cache_path=None, time_limit=1800.0,
+        v4_root=None, label='V4-C4', log=print):
     apply_profile()
     from .dynamic_opt import DynamicOptimizer
     from .lift_cross import validate_payload_v4
@@ -184,14 +187,16 @@ def run(out_dir=None, b_root=None, cache_path=None, time_limit=1800.0, log=print
         'b_validation_sha256': _sha256(b_root / 'validation.json'),
         'b_summary_sha256': _sha256(b_root / 'summary.json'),
         'crossing_cache_sha256': _sha256(cache) if cache.exists() else None,
-        'source_note': 'baseline = V4-C4 0.50 mm layer-spacing ablation group B',
+        'routing_root': str(v4_root) if v4_root is not None else None,
+        'source_note': f'baseline = {label} 0.50 mm layer-spacing ablation group B',
     }
     _write_json(out_dir / 'input_hashes.json', input_hashes, indent=1)
     before_payload = _read_json(b_root / 'routes_l3d.json')
 
     optimizer = DynamicOptimizer(out_dir=out_dir, b_root=b_root,
                                  cache_path=cache, log=log,
-                                 time_limit=time_limit)
+                                 time_limit=time_limit, v4_root=v4_root)
+    optimizer.topology_label = label
     optimize_info = optimizer.optimize()
     validation, after_payload = optimizer.validate_routes()
     _write_json(out_dir / 'after' / 'routes_l3d.json', after_payload)
@@ -228,8 +233,10 @@ def run(out_dir=None, b_root=None, cache_path=None, time_limit=1800.0, log=print
                 indent=1)
     summary = optimizer.summary(validation=validation)
     summary.update(optimize_info)
+    summary['topology_label'] = label
+    summary['routing_root'] = str(v4_root) if v4_root is not None else None
     summary['figures'] = _figures(out_dir, optimizer, before_payload,
-                                  after_payload, log=log)
+                                  after_payload, label=label, log=log)
     _write_json(out_dir / 'summary.json', summary, indent=1)
     checkpoint = dict(
         schema='v4_c4_dynamic_layer_optimization_checkpoint_v1',
@@ -258,6 +265,10 @@ def main(argv=None):
     parser.add_argument('--out', type=Path, default=None)
     parser.add_argument('--b-root', type=Path, default=None)
     parser.add_argument('--cache', type=Path, default=None)
+    parser.add_argument('--v4-root', type=Path, default=None,
+                        help='routing root providing routes_1024.json '
+                             '(default: historical V4-C4 routing root)')
+    parser.add_argument('--label', default='V4-C4')
     parser.add_argument('--time-limit', type=float, default=1800.0)
     args = parser.parse_args(argv)
     repo = Path(__file__).resolve().parents[2]
@@ -272,7 +283,8 @@ def main(argv=None):
         log_handle.flush()
 
     result = run(out_dir=out_dir, b_root=args.b_root,
-                 cache_path=args.cache, time_limit=args.time_limit, log=log)
+                 cache_path=args.cache, time_limit=args.time_limit,
+                 v4_root=args.v4_root, label=args.label, log=log)
     log_handle.close()
     summary = result['summary']
     print(json.dumps({key: summary[key] for key in

@@ -1,0 +1,68 @@
+{
+ "radius_mm": 15.0,
+ "board_mm": 150.0,
+ "min_clearance_mm": 0.08,
+ "width_mm": 0.05,
+ "planes": {
+  "z1": {
+   "connections": 512,
+   "relations": {
+    "opposite": 264,
+    "same": 64,
+    "adjacent": 184
+   },
+   "groups": null,
+   "same_side": {
+    "count": 64,
+    "min_separation_mm": 41.25,
+    "max_separation_mm": 48.75,
+    "below_2R": 0,
+    "feasible_families": [
+     "quarter_pair"
+    ]
+   },
+   "adjacent": {
+    "count": 184,
+    "min_leg_mm": 15.125,
+    "max_leg_mm": 36.375,
+    "direct_L_feasible": 184
+   },
+   "opposite": {
+    "count": 264,
+    "lateral_shift_mm": [
+     0.0
+    ]
+   }
+  },
+  "z2": {
+   "connections": 512,
+   "relations": {
+    "adjacent": 312,
+    "same": 192,
+    "opposite": 8
+   },
+   "groups": null,
+   "same_side": {
+    "count": 192,
+    "min_separation_mm": 32.25,
+    "max_separation_mm": 48.75,
+    "below_2R": 0,
+    "feasible_families": [
+     "quarter_pair"
+    ]
+   },
+   "adjacent": {
+    "count": 312,
+    "min_leg_mm": 15.125,
+    "max_leg_mm": 72.375,
+    "direct_L_feasible": 312
+   },
+   "opposite": {
+    "count": 8,
+    "lateral_shift_mm": [
+     0.0
+    ]
+   }
+  }
+ }
+}
