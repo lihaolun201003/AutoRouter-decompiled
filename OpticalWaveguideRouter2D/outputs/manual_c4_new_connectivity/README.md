@@ -76,6 +76,26 @@
   失败重试分阶段记录；`summary.json`、`checkpoint.json`、`figures/`（优化前后 3D 与
   联合调度局部放大）、`run.log`、`input_hashes.json`
 
+## 附加可视化：z2（row2）逐层独立三维图（`z2_layer_visualization/`）
+
+基于阶段 5 最终结果 `phase5_dynamic_optimization/after/routes_l3d.json` 的**纯可视化**
+（不重新布线、不修改任何路线/层高/连接）：只渲染原始 z2 的 512 条波导（z1/row1 完全隐藏），
+每张图只包含**在该层有 flat（水平传播）段**的波导，并绘制其完整 XYZ 路线（含升降段与其他
+高度部分；仅在升降 S 曲线中经过该高度的波导不计入）。
+
+| 文件 | 层 / 物理高度 | 波导数 |
+|---|---|---:|
+| `L1_z2_3d.png/.svg` | L1-z2，z = 0.5 mm（接口层 row2） | 512 |
+| `L2_3d.png/.svg` | L2，z = 1.0 mm | 8 |
+| `L3_3d.png/.svg` | L3，z = 1.5 mm | 16 |
+| `L4_3d.png/.svg` | L4，z = 2.0 mm | 20 |
+| `L5_3d.png/.svg` | L5，z = 2.5 mm | 28 |
+
+五图使用完全相同的坐标范围（x/y −5..155 mm、z −0.1..2.7 mm）、视角（elev 26°, azim
+−58°）、比例与画布（3036×2576 px，230 dpi）；`layer_counts.json` 记录各层数量、
+route_id 列表、判定口径与源文件 sha256。生成脚本：
+`four_side_1024/manual_c4/z2_layer_plots.py`。
+
 ## 验收与报告
 
 - `verification/`：**独立验收脚本与报告**（不 import 生产代码，从原始 CSV + 权威端口
@@ -109,6 +129,9 @@ $env:PYTHONPATH = (Get-Location).Path
 
 # 对照表与摘要
 & $py -m four_side_1024.manual_c4.report
+
+# 附加：z2（row2）逐层独立三维图
+& $py -m four_side_1024.manual_c4.z2_layer_plots
 ```
 
 ## 物理约束（全部沿用，未放宽）
