@@ -44,7 +44,15 @@ PORT_MARGIN_MM = 1.2
 SEGMENT_MARGIN_MM = 0.25
 MIN_TRAVEL_MM = 5.0
 CROSSING_EXCLUSION_MARGIN_MM = 0.2
-SAFE_TRANSITION_LENGTH_MM = 1.8   # dz grows to 0.08 after ~1.55 mm
+
+
+def safe_transition_length(clearance=0.08, extra=0.03, radius=RADIUS_MM):
+    """Horizontal length of the S-curve until its height exceeds the
+    clearance (plus a small extra), derived from the actual S geometry:
+    dz(u) = R*(1-cos(asin(u/R))) = u^2/(2R) until u = R."""
+    reach = float(clearance) + float(extra)
+    return math.sqrt(max(0.0, 2.0 * float(radius) * reach - reach * reach))
+
 MAX_PLANS_PER_GROUP = 24
 LAYER_IDS = (2, 3, 4, 5)
 LAYER_COLORS = {0.0: '#1f6fd6', 0.5: '#e07b1a', 1.0: '#2f9e44',
@@ -262,15 +270,14 @@ def route_high_span_stored(member_route, record):
     return (float(start_s), float(end_s))
 
 
-def route_elevated_span_stored(member_route, record):
+def route_elevated_span_stored(member_route, record, safe):
     """Span where the route is either on the high layer or high enough
     (>= clearance) inside the climb/descent S-curves."""
     span = route_high_span_stored(member_route, record)
     if span is None:
         return None
-    safe = SAFE_TRANSITION_LENGTH_MM
-    low = span[0] + safe
-    high = span[1] - safe
+    low = span[0] + float(safe)
+    high = span[1] - float(safe)
     if high <= low:
         return (span[0], span[1])
     return (float(low), float(high))
@@ -346,7 +353,8 @@ def count_pair_crossings(primitives_a, primitives_b):
 # planner / optimizer
 # ---------------------------------------------------------------------------
 class CrossingLifter:
-    def __init__(self, v4_root=None, out_dir=None, log=print):
+    def __init__(self, v4_root=None, out_dir=None, log=print,
+                 stack_name=None, heights=None, clearance=0.08):
         apply_profile()
         from ..l3d import layers as LL
         from ..l3d.world import World
@@ -354,6 +362,7 @@ class CrossingLifter:
         from . import inputs as V3
 
         self.log = log
+        self.clearance = float(clearance)
         self.L3 = L3
         self.V3 = V3
         default_v4 = Path(__file__).resolve().parents[2] / \
@@ -376,7 +385,15 @@ class CrossingLifter:
         for group in self.groups:
             for phase, rid in enumerate(group['route_ids']):
                 self.route_group[int(rid)] = (int(group['group_id']), phase)
-        self.stack = LL.build_stack('medium_050')
+        if heights is not None:
+            layer_heights = {int(index) + 2: float(value)
+                             for index, value in enumerate(heights)}
+            self.stack = LL.build_stack('ablation_custom',
+                                        heights=layer_heights)
+        else:
+            self.stack = LL.build_stack(stack_name or 'medium_050')
+        self.safe_length = safe_transition_length(self.clearance)
+        self.transition_margin = self.clearance + 0.25
         self.world = World(self.stack)
         self.base_routes = {}
         self.primitives = {}
@@ -403,7 +420,42 @@ class CrossingLifter:
         self.group_crossing_priority = {}
 
     # -- initial analysis --------------------------------------------------
-    def analyze(self):
+    def _finalize_analysis(self):
+        priority = Counter()
+        for _z, a, b, *_rest in self.crossings:
+            priority[a] += 1
+            priority[b] += 1
+        self.route_priority = priority
+        for group in self.groups:
+            ids = [int(rid) for rid in group['route_ids']]
+            if any(rid not in self.routed for rid in ids):
+                continue
+            score = sum(priority[rid] for rid in ids)
+            if score:
+                self.group_crossing_priority[int(group['group_id'])] = score
+        self.log(f'[lift] before: pairs={self.initial_pair_count} '
+                 f'points={self.initial_crossing_count} '
+                 f'per-plane={ {k: v["crossing_pair_count"] for k, v in self.before_reports.items()} }')
+
+    def analyze(self, cache_path=None):
+        if cache_path and Path(cache_path).exists():
+            cached = _read_json(cache_path)
+            self.crossings = [tuple(item) for item in cached['crossings']]
+            self.initial_crossings = list(self.crossings)
+            self.before_reports = {float(key): value
+                                   for key, value in cached['reports'].items()}
+            self.before_pairs_by_plane = {
+                float(key): {(int(pair[0]), int(pair[1])) for pair in pairs}
+                for key, pairs in cached['pairs'].items()}
+            self.pair_set = set()
+            for plane_pairs in self.before_pairs_by_plane.values():
+                self.pair_set |= plane_pairs
+            self.initial_pair_count = len(self.pair_set)
+            self.initial_crossing_count = len(self.crossings)
+            self.log(f'[lift] loaded crossing cache {cache_path} '
+                     f'({self.initial_pair_count} pairs)')
+            self._finalize_analysis()
+            return
         entries = defaultdict(list)
         for rid, primitives in self.primitives.items():
             entries[row_z(self.row[rid])].append((rid, primitives))
@@ -419,21 +471,15 @@ class CrossingLifter:
             self.pair_set |= plane_pairs
         self.initial_pair_count = len(self.pair_set)
         self.initial_crossing_count = len(self.crossings)
-        priority = Counter()
-        for _z, a, b, *_rest in self.crossings:
-            priority[a] += 1
-            priority[b] += 1
-        self.route_priority = priority
-        for group in self.groups:
-            ids = [int(rid) for rid in group['route_ids']]
-            if any(rid not in self.routed for rid in ids):
-                continue
-            score = sum(priority[rid] for rid in ids)
-            if score:
-                self.group_crossing_priority[int(group['group_id'])] = score
-        self.log(f'[lift] before: pairs={self.initial_pair_count} '
-                 f'points={self.initial_crossing_count} '
-                 f'per-plane={ {k: v["crossing_pair_count"] for k, v in reports.items()} }')
+        if cache_path:
+            _write_json(cache_path, dict(
+                crossings=[list(item) for item in self.crossings],
+                reports={str(key): value for key, value in self.before_reports.items()},
+                pairs={str(key): sorted([list(pair) for pair in pairs])
+                       for key, pairs in self.before_pairs_by_plane.items()}),
+                indent=None)
+            self.log(f'[lift] crossing cache written {cache_path}')
+        self._finalize_analysis()
 
     def _crossings_involving(self, route_ids):
         ids = set(int(rid) for rid in route_ids)
@@ -496,7 +542,7 @@ class CrossingLifter:
         qy = cy + radius * math.sin(point_angle)
         return math.hypot(px - qx, py - qy)
 
-    def _plane_min_distance(self, point, z_plane):
+    def _plane_min_distance(self, point, z_plane, threshold=None):
         cache = getattr(self, '_plane_cache', None)
         if cache is None:
             self._refresh_plane_cache()
@@ -504,6 +550,7 @@ class CrossingLifter:
         entries = cache.get(round(float(z_plane), 9)) or []
         px, py = float(point[0]), float(point[1])
         best = float('inf')
+        limit = float(threshold) if threshold is not None else float('inf')
         for _part_id, prepared, bbox in entries:
             if px < bbox[0] - 0.6 or px > bbox[2] + 0.6:
                 continue
@@ -513,7 +560,7 @@ class CrossingLifter:
                 distance = self._point_primitive_distance(px, py, prim)
                 if distance < best:
                     best = distance
-                    if best <= 0.33:
+                    if best <= limit:
                         return best
         return best
 
@@ -544,7 +591,9 @@ class CrossingLifter:
         return (low + high) / 2.0
 
     def _transition_clearance_ok(self, point, direction, z0, z1, footprint,
-                                 radius=RADIUS_MM, margin=0.33):
+                                 radius=RADIUS_MM, margin=None):
+        if margin is None:
+            margin = self.transition_margin
         z_low, z_high = sorted((float(z0), float(z1)))
         crossed = [z for z in (getattr(self, '_plane_cache', None) or {})
                    if z_low + 1e-9 < z < z_high - 1e-9]
@@ -552,7 +601,7 @@ class CrossingLifter:
             u = self._transition_u_for_z(z_plane, z0, z1, radius, footprint)
             px = float(point[0]) + float(direction[0]) * u
             py = float(point[1]) + float(direction[1]) * u
-            if self._plane_min_distance((px, py), z_plane) < margin:
+            if self._plane_min_distance((px, py), z_plane, margin) < margin:
                 return False
         return True
 
@@ -589,7 +638,7 @@ class CrossingLifter:
                     _add(position - footprint - margin, low, high)
                     _add(position + margin, low, high)
             ordered = sorted(candidate_starts)
-            safe = SAFE_TRANSITION_LENGTH_MM
+            safe = self.safe_length
 
             def _free_rise(start):
                 return _free_zone(start, start + safe, positions, margin)
@@ -770,7 +819,9 @@ class CrossingLifter:
             high_spans = {}
             ok = True
             for rid in ids:
-                span = route_elevated_span_stored(routes[rid], self.routed[rid])
+                span = route_elevated_span_stored(routes[rid],
+                                                  self.routed[rid],
+                                                  self.safe_length)
                 if span is None:
                     ok = False
                     break

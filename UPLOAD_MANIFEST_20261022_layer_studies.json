@@ -1,0 +1,3412 @@
+{
+  "schema": "autorouter_layer_studies_upload_manifest_v1",
+  "date_local": "2026-10-22",
+  "base_commit": "5b59e6f93a6d42e5b2bb8908e0e40f398a52e70a",
+  "requested_entries": [
+    "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/README.md",
+    "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/README.md"
+  ],
+  "scope": [
+    "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/",
+    "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/ablation.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/dynamic_opt.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/dynamic_run.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/lift_cross.py",
+    "OpticalWaveguideRouter2D/four_side_1024/v3c4/lift_cross_run.py"
+  ],
+  "payload_file_count": 535,
+  "payload_bytes": 271103413,
+  "integrity": "Saved experiment artefacts and code preserve original bytes. Both published READMEs add provenance/metric notes, with separate source and published SHA256. This manifest excludes itself from payload hashes.",
+  "ablation_results": [
+    {
+      "name": "A_0.25mm",
+      "layer_heights_mm": [
+        0.75,
+        1.0,
+        1.25,
+        1.5
+      ],
+      "routed": 1020,
+      "remaining_unique_crossing_pairs": 47192,
+      "lifted_groups": 88,
+      "transitions": 704,
+      "length_delta_mm": 66.6422,
+      "termination": "no_more_candidates",
+      "validation_status": "exploratory_only",
+      "geometry_pass": true
+    },
+    {
+      "name": "B_0.50mm",
+      "layer_heights_mm": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "routed": 1020,
+      "remaining_unique_crossing_pairs": 55484,
+      "lifted_groups": 83,
+      "transitions": 664,
+      "length_delta_mm": 111.3079,
+      "termination": "no_more_candidates",
+      "validation_status": "exploratory_only",
+      "geometry_pass": true
+    },
+    {
+      "name": "C_0.75mm",
+      "layer_heights_mm": [
+        1.25,
+        2.0,
+        2.75,
+        3.5
+      ],
+      "routed": 1020,
+      "remaining_unique_crossing_pairs": 46112,
+      "lifted_groups": 102,
+      "transitions": 816,
+      "length_delta_mm": 261.6684,
+      "termination": "no_more_candidates",
+      "validation_status": "exploratory_only",
+      "geometry_pass": true
+    },
+    {
+      "name": "D_1.00mm",
+      "layer_heights_mm": [
+        1.5,
+        2.5,
+        3.5,
+        4.5
+      ],
+      "routed": 1020,
+      "remaining_unique_crossing_pairs": 45204,
+      "lifted_groups": 97,
+      "transitions": 776,
+      "length_delta_mm": 369.942,
+      "termination": "no_more_candidates",
+      "validation_status": "exploratory_only",
+      "geometry_pass": true
+    }
+  ],
+  "dynamic_result": {
+    "routed_before": 1020,
+    "routed_after": 1020,
+    "unique_crossing_pairs_before": 55484,
+    "unique_crossing_pairs_after": 49992,
+    "single_group_reschedules": 13,
+    "dynamic_layer_changes": 8,
+    "interval_moves": 5,
+    "joint_reschedules": 1,
+    "recovered_failed_groups": 6,
+    "lifted_groups_after": 89,
+    "transitions_after": 712,
+    "length_delta_mm": 11.717,
+    "accepted_actions": 20,
+    "time_limit_seconds": 2400.0,
+    "runtime_seconds": 3054.43,
+    "retry_stage_runtime_seconds": 615.18
+  },
+  "documentation_notes": {
+    "metric": "All comparison/main results use route-id pairs deduplicated across all physical heights, not flat-part object-pair counts. Legacy summary fields are retained as source artefacts.",
+    "dynamic_aliases": "pair_count=51788, version/layout_version=14 and retry_actions=0 are pre-recovery aliases; final unique pairs=49992, lifted groups=89, transitions=712, accepted actions=20.",
+    "dynamic_validation_path": "The final independent validation is after/validation.json, not root validation.json.",
+    "dynamic_compact_schema": "Some reconstructed routes omit redundant 2D identity/group fields; restore these by fixed V4 route_id mapping and after/layer_assignments.json. Physical ports and 3D parts are retained.",
+    "action_pair_lists": "removed_pairs/added_pairs lists are truncated affected-pair samples (up to 200) rather than complete set differences; scalar before/after counts form a strictly decreasing 20-action chain.",
+    "budget": "The reported 2400 s is the main-phase budget; runtime includes a subsequent recovery stage.",
+    "formal_acceptance": false,
+    "process_assumptions": "All L2-L5 height configurations remain exploratory."
+  },
+  "publication_checks": {
+    "completed_cases": [
+      {
+        "case": "A_0.25mm",
+        "routed": 1020,
+        "failed": 4,
+        "unique_crossing_pairs_global": 47192,
+        "transitions": 704,
+        "geometry_pass": true,
+        "exploratory_pass": true,
+        "formal_acceptance": false,
+        "violations": 0,
+        "complete_c4_groups": 255
+      },
+      {
+        "case": "B_0.50mm",
+        "routed": 1020,
+        "failed": 4,
+        "unique_crossing_pairs_global": 55484,
+        "transitions": 664,
+        "geometry_pass": true,
+        "exploratory_pass": true,
+        "formal_acceptance": false,
+        "violations": 0,
+        "complete_c4_groups": 255
+      },
+      {
+        "case": "C_0.75mm",
+        "routed": 1020,
+        "failed": 4,
+        "unique_crossing_pairs_global": 46112,
+        "transitions": 816,
+        "geometry_pass": true,
+        "exploratory_pass": true,
+        "formal_acceptance": false,
+        "violations": 0,
+        "complete_c4_groups": 255
+      },
+      {
+        "case": "D_1.00mm",
+        "routed": 1020,
+        "failed": 4,
+        "unique_crossing_pairs_global": 45204,
+        "transitions": 776,
+        "geometry_pass": true,
+        "exploratory_pass": true,
+        "formal_acceptance": false,
+        "violations": 0,
+        "complete_c4_groups": 255
+      },
+      {
+        "case": "dynamic_after",
+        "routed": 1020,
+        "failed": 4,
+        "unique_crossing_pairs_global": 49992,
+        "transitions": 712,
+        "geometry_pass": true,
+        "exploratory_pass": true,
+        "formal_acceptance": false,
+        "violations": 0,
+        "complete_c4_groups": 255
+      }
+    ],
+    "input_hashes_verified": 5,
+    "dynamic_before_matches_B_byte_for_byte": true,
+    "new_or_modified_modules_imported": 5,
+    "cli_help_passed": [
+      "ablation",
+      "dynamic_run"
+    ],
+    "optimization_rerun": false,
+    "accepted_action_count_chain_checked": 20,
+    "routing_optimization_rerun": false,
+    "figures_regenerated": false
+  },
+  "files": [
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoint.json",
+      "bytes": 75817,
+      "sha256": "19a9727c2d53c23afdee41a3d8296f4a6821c3a950202d0a38d40d62c74c0ddf",
+      "git_blob_sha": "cd2a42997137a631460d498b786ed7acdf42aad6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_01.json",
+      "bytes": 1126,
+      "sha256": "73c873ca983d6043dc1d4cec3b8422e9031e2f770bc9438e84ea49225a9a40c0",
+      "git_blob_sha": "3f48922f5414f2655452694fe6b3463140aee317"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_02.json",
+      "bytes": 2160,
+      "sha256": "d37e95b2925ecce3fd12cf3a9c3c2f2a503f8b85756701a7561b943a02c5b6af",
+      "git_blob_sha": "0722b070c9d79b528b22b572d04b51784accfa92"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_03.json",
+      "bytes": 3189,
+      "sha256": "97b1d16ac7a34c26845d5c5086bb6eefb87afe26bd8f54f5ac22b23d573c8427",
+      "git_blob_sha": "b2d11229f18d1460de736607a8c7ba3881e91fcb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_04.json",
+      "bytes": 4208,
+      "sha256": "d329f0cabbd413a24c5f2f5bc385c162c7a573a4cb9f3c6d4b7995b2a4e6e578",
+      "git_blob_sha": "fb62beb396c571daeab9a1b5efddd76e4158b4f8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_05.json",
+      "bytes": 5229,
+      "sha256": "1d8810d05d901cc13e623ddcd83229464f0d57791c24da0c4ea72fd61f63d6fd",
+      "git_blob_sha": "6dc06b73cfa9285bbca6a561b0c0f7747b582227"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_06.json",
+      "bytes": 6347,
+      "sha256": "b24c2398f6f7c1d7d9dbcddffaaec36e352b082d82a8675a690d3b1872f645f1",
+      "git_blob_sha": "f76415c879929a880094f43a36ae9e66d613b452"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_07.json",
+      "bytes": 7366,
+      "sha256": "cbe0261db84916182bf557edc92c27d4de5fa2810fbef3d6bee353bc3ca74e92",
+      "git_blob_sha": "451a0279eb7052980d3aad8b0e55b4fd68c31add"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_08.json",
+      "bytes": 8492,
+      "sha256": "677f28868981b75c39de31f079c0efac7ae9e050a10da9fb3fcea6ddfa0c3893",
+      "git_blob_sha": "ddd11c791131684016a9dd11502e12b0c73dbb0d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_09.json",
+      "bytes": 9511,
+      "sha256": "7e780c28c99a839c9187bf0ad0fda30ad18a325be5623bfdcbcf286705355623",
+      "git_blob_sha": "71401de19e07457a03225375a17d1ed559959930"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_10.json",
+      "bytes": 10636,
+      "sha256": "453250dcfd6b21ab3578a21fef9156564f376729e8a3fc4be29c0d8f97875911",
+      "git_blob_sha": "df383ca5006615d42dbde6b77936dc70fbc0c398"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_11.json",
+      "bytes": 11655,
+      "sha256": "a92076e36f8ae989f7154e42c155176a2a07ab5f9064329289fd38e9686766c1",
+      "git_blob_sha": "b64745874d16711ed60ff3eb40554a17fb7ab255"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_12.json",
+      "bytes": 12673,
+      "sha256": "0d45b75f718dc29b20c623187af9ffccf61fb79dc84681313ee8b45b3cd7a756",
+      "git_blob_sha": "cce80cec3cf4c02cfe324f165ffef590b74cd34c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_13.json",
+      "bytes": 13686,
+      "sha256": "dc02afb7dd59835d2bc7d1907a5236bc8d45ce24142d94f2aff5e2e701f25d5f",
+      "git_blob_sha": "dd778eebe94a28a39c74fabdab6f3c73938ec029"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_14.json",
+      "bytes": 14709,
+      "sha256": "61e86bce055c73463a0f1b38e8cea93f66a25bcac5743ada7e4a9324bb466a48",
+      "git_blob_sha": "4eba04a331c0223bd62239f057cfcfeb19af1383"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_15.json",
+      "bytes": 16032,
+      "sha256": "ee4bfa08b0285fa756d4108a92b19bd2788dc912ee31f28c10ec37a405a94908",
+      "git_blob_sha": "2915e30e139c4eea8200a6c41ebe7a2f0abc15ab"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_16.json",
+      "bytes": 17045,
+      "sha256": "87b4c231909acc97452f1181ab59925ec4d56e8082eca4c0180b290c8778d1a7",
+      "git_blob_sha": "81b7a07cfeb0c4a844f71cdcd3bb41c3e07eaf9d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_17.json",
+      "bytes": 18068,
+      "sha256": "e022be6b52e1d4620f28e3ee7d9daa7e39fee684fa5418570d9ffa82ab1af9ed",
+      "git_blob_sha": "e223e6405a68d88203018911c86b9d4f8ff61dc6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_18.json",
+      "bytes": 19581,
+      "sha256": "39b2dd32310e85f908d5aae9513003c2384c54b13283bb3ad0af2619a636edbb",
+      "git_blob_sha": "a2335f23a4c52fc1ed5703195129e657f156e015"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_19.json",
+      "bytes": 20606,
+      "sha256": "e0c76a866f57fb07f49102f80a1307640bd84165d3be739e5f4d74b1927fedf9",
+      "git_blob_sha": "190b9c04059b8d4fb411ee42fb7d2acf9688fdcf"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_20.json",
+      "bytes": 21631,
+      "sha256": "642556bfbde81e4dc87ba284a3001f0447ba2dcdeedf5ab8dfd3a81b5f785714",
+      "git_blob_sha": "0704f9ff7983b840cfbe38170e5f91e8143291e3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_21.json",
+      "bytes": 22653,
+      "sha256": "fa1802a170af4ea49f0e6c6f6fd144055e044c808394cd2bec7711e284648808",
+      "git_blob_sha": "132af4c708dfa72d4ef4700d43ba0a318b831801"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_22.json",
+      "bytes": 23675,
+      "sha256": "a9a7bb2f683e842c5dc505f175b858b662624643f8e3f656fe8fef861111342f",
+      "git_blob_sha": "285b46e896503887ce4850a2f8644794555f18cc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_23.json",
+      "bytes": 24686,
+      "sha256": "b137af0a2d5c905e7fb5ba5a5bcac9b93757250794ad5317574c2ebcd3571570",
+      "git_blob_sha": "f2e40db47d7e170bd60ddd9126593b3a442d9950"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_24.json",
+      "bytes": 25711,
+      "sha256": "8610c9539490bbaa8e567f5b940fe7de3c8767ba3621ec494b6fa0b0bb404874",
+      "git_blob_sha": "3983eaf4e5b50858448960d792a0b519cd0f3b6e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_25.json",
+      "bytes": 26737,
+      "sha256": "b10fc554ebdd55707d56371befb5a63ee97be5889edac90d647ea5726a8c21d1",
+      "git_blob_sha": "c6fe2e9d1046be6bf0f26a48a8a8bac0f5284c88"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_26.json",
+      "bytes": 27755,
+      "sha256": "79bb6f11ab36583f9f061f64075892d284898848fc47a2c040a3cc1211be8849",
+      "git_blob_sha": "cc277c397db9b6ab6e1043f56fcc916d89269f5d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_27.json",
+      "bytes": 28779,
+      "sha256": "72a8e5a1b7030d4da9d9622f17699cfadf7bca504cee01a40997d6356749da87",
+      "git_blob_sha": "c829d8c1a9646dd7e411a3af1d91361c9a07532d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_28.json",
+      "bytes": 29800,
+      "sha256": "f2642a761b68222d596ae9fb530b28e4150c175ecae5407c38127a30e827e6e4",
+      "git_blob_sha": "ba990859b8d235101d7126340bd390fa878f8602"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_29.json",
+      "bytes": 30824,
+      "sha256": "242793ede80804d84ddba3cc05168c4dd775fa09276c72fb9451d21bbbf65f06",
+      "git_blob_sha": "41e6c1ddecebb3c4079e63eed554e5fefedcab3a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_30.json",
+      "bytes": 31849,
+      "sha256": "d9baaac42fefd390de23da885347be33a513d0b98ab2c83aa51e2a058342f171",
+      "git_blob_sha": "f6a52d5f13b83847025b56d85b8047cc3126bb32"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_31.json",
+      "bytes": 32864,
+      "sha256": "a81af8a1c933e778e96e7f4c6a343ad20478e4ebfb7fab8a4e258e20ed711d3b",
+      "git_blob_sha": "c440b25f6e59e0b3c4cbb13f21051f72dec25b98"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_32.json",
+      "bytes": 33879,
+      "sha256": "74a805e71d492ef3d74748e603b64f782a7ec00c181043045b6b8480d3303081",
+      "git_blob_sha": "f26c56e31c9f36bb94fa194d4127ba821187c57c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_33.json",
+      "bytes": 34907,
+      "sha256": "f2ff297ae5940c5bff51104bc583bfa5baf3acc296adb11debcdbf1ae2c9264f",
+      "git_blob_sha": "a2a2229368e8ac9a9e68eef2ff4dbb7ea5032998"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_34.json",
+      "bytes": 35935,
+      "sha256": "d5163b6612b16670c8186a8261628484d92ea785a34d589637a1406f2eaf0c77",
+      "git_blob_sha": "9407b25ca6b1fe0fc04fd9302e0115358fd5060b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_35.json",
+      "bytes": 36963,
+      "sha256": "18418d4761017de8f3129ff512a37ed5f62ed67523ab13ec107768cf5be2d71a",
+      "git_blob_sha": "64f02ca20f189b3616370c533535118f4b3784fa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_36.json",
+      "bytes": 37985,
+      "sha256": "ba7c1d918439be0598138811b7e5a629dd50d0f127569e0792e9f3099280d659",
+      "git_blob_sha": "6edee8e787a9142693d2cb02fd8aad49a6083601"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_37.json",
+      "bytes": 39013,
+      "sha256": "891b4cd85e1227c8a2244ad264699ebfac94cc4a3d739ac7da7f31c8e0fd2116",
+      "git_blob_sha": "97045c02c0b16be4da917e21dc8b7d9f8d349425"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_38.json",
+      "bytes": 40043,
+      "sha256": "48f66849678cb0666ece2a53d29924bec14186a10946f679a3180148d920bae5",
+      "git_blob_sha": "87eb5aa21028300fd4eb4248ffe0db5d3040f3c7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_39.json",
+      "bytes": 41169,
+      "sha256": "04ff53add1ca460785e84409c96ba93317e1aebc02cf9c165c615256050e0f57",
+      "git_blob_sha": "cf609738c2370f58e6d616f78ed76d920d76e139"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_40.json",
+      "bytes": 42192,
+      "sha256": "f9f7442a5429571579b7b7200d83b8c6d9f9635e438999e35a7f887ecc69c925",
+      "git_blob_sha": "c96ba008aa6e06e88d88384b38dc968f21c61368"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_41.json",
+      "bytes": 43212,
+      "sha256": "487805989ddc47a5755b0e9021d8053ce18c23c231a20ba5aaf186dff8b3eed7",
+      "git_blob_sha": "1c9d22c17a5e5263798c90046842878953fca7b0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_42.json",
+      "bytes": 44226,
+      "sha256": "3f7da9bfda4709c92a84d6018154de31201aa1d880dcfbcbfbe7956006421d26",
+      "git_blob_sha": "49ca439d44767470b88e2f3d75514c642c49bace"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_43.json",
+      "bytes": 45247,
+      "sha256": "7bec91bddd33acd967c473d18bfe47c619f5f73715b09bf5bce9ca09c6372d0f",
+      "git_blob_sha": "bdda29b037d40c8e43923b1e581b2f3b53715264"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_44.json",
+      "bytes": 46270,
+      "sha256": "3ef562cc4a4615fd3b9e70b7f32dcdb18153ada8323a2042cf30c402e8216a9b",
+      "git_blob_sha": "069ea977bbc567d2f808a9e8f8e13853d962125f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_45.json",
+      "bytes": 47291,
+      "sha256": "ca52017f968fcc104a2bba9086ce9f0db4a67aa4eb05a537e2b87c18ceada041",
+      "git_blob_sha": "71ca461e02da4d5109bcf79039719a288132eba7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_46.json",
+      "bytes": 48416,
+      "sha256": "7cf9f740261155222f4b97ee657a71ac30c58b371ebb0567790598828a089ce1",
+      "git_blob_sha": "425b64914924050491ad09378f9040ef12405fca"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_47.json",
+      "bytes": 49535,
+      "sha256": "a04a8ab1506a3af8f6b144e045f90a778be26020cbc27a203ef5cc185b0a1037",
+      "git_blob_sha": "73941a7ff223b010cc18d420df033f2ccfce8c16"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_48.json",
+      "bytes": 50556,
+      "sha256": "0d5a78a4650000e4cb2c06cd42a03f0f29252be409d0ceeb4b13b3563c61aac8",
+      "git_blob_sha": "000804e00a3c6ca5062a0a1fa6e4cf5440bd84a5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_49.json",
+      "bytes": 51882,
+      "sha256": "a25f38b70c5a03d0b5050d10d9f0c5bd6bb3db51f36d82846df9497d3588ee52",
+      "git_blob_sha": "67d158b9919a7601e56a9eca30aae4b2c878c7b6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_50.json",
+      "bytes": 52911,
+      "sha256": "71a128380bfc613140680095b6efa07f472a5a7d19ecba78501c8465f16396f8",
+      "git_blob_sha": "188379e78c999caead0d78d6d14a655e91d9a290"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_51.json",
+      "bytes": 53932,
+      "sha256": "e3af39b835145a94e75afc8d49b29619ca063c57faa2f9fce6ebd469bc1f6d58",
+      "git_blob_sha": "cd2d59b57c21d6fbbb147ebfb8ecffcb8dacefa6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_52.json",
+      "bytes": 54955,
+      "sha256": "0d5cd7a31e995b848518c5a491063bd4fc61c0882373e830a94e52f8907eec28",
+      "git_blob_sha": "68b880c6b8c911fc61319a545e945e9d7a652c62"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_53.json",
+      "bytes": 55975,
+      "sha256": "6288d3892128c6a9c5fd678ce3b9375ba4c6310988adc9fddae3d932089dea38",
+      "git_blob_sha": "f56558e0f5cb9dfdbfd69e0c78f9e4175fe06cd8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_54.json",
+      "bytes": 56995,
+      "sha256": "4b0dc0897bcc03333eb12523ad45ef9ae43dd29e2af492bd879979d7a0a18bf7",
+      "git_blob_sha": "94e934be39592fd53c53da09d14ca4dc1c18da61"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_55.json",
+      "bytes": 58015,
+      "sha256": "d9a722109af8d778f81801741666fadf9a0c091d80c5ede6ab2797e0094f5bda",
+      "git_blob_sha": "06e1c06460572991baf49fa3f57d49316ec6a7a9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_56.json",
+      "bytes": 59041,
+      "sha256": "84972996f261f7e4ea56409e3e1add9c02a0f6494588b8014828d62a49fcdff8",
+      "git_blob_sha": "1de8f712edbb308c31232f923d48c47402af9089"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_57.json",
+      "bytes": 60065,
+      "sha256": "bd49012c17de8231398d148a9c76346962d563195609f4a066e48aa5d6e1692a",
+      "git_blob_sha": "869ecccbb72962d41981d78f620329cec92461de"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_58.json",
+      "bytes": 61187,
+      "sha256": "7175ab5c86496b367e1ecbaea20654baef4fc0ae00a56d0d0e435c713e39a5d0",
+      "git_blob_sha": "ffc039595852c0de151270988a181404cf03d3b5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_59.json",
+      "bytes": 62211,
+      "sha256": "9f6651cc139fa705af3094305aa54aa29b5be137d83aae37058731354a1a0db3",
+      "git_blob_sha": "16f51c8692f5e5e7782a5cb2af1e11e885d65899"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_60.json",
+      "bytes": 63239,
+      "sha256": "49d46b022ae06f5f90dfe2567b58e05a74c1362654398abeec02d5136834c406",
+      "git_blob_sha": "21f5331bf286b14e0babe096a7b7a9c1a2f49045"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_61.json",
+      "bytes": 64267,
+      "sha256": "50aada10fa9943c671da38514c6e0b74b4b1ad5500ebef10220636167cfbc623",
+      "git_blob_sha": "c8372ab519a69c73f93d2a0a5f5a03b3623837fe"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_62.json",
+      "bytes": 65492,
+      "sha256": "6fea57e0b252418a4d0f56d3498c5b0e939f432f9c59d0f969427a98d57cbeec",
+      "git_blob_sha": "34c615d145880c897f0572ed9c7c0692e7426eb1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_63.json",
+      "bytes": 66507,
+      "sha256": "300d5dcce0aa392291663d8d28ba09ac72992936a08283266025ecc5301e8c47",
+      "git_blob_sha": "442d2ccda025b815c32da36df835e25443063c00"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_64.json",
+      "bytes": 67522,
+      "sha256": "97467abd9e8d17d9bcf0ae693f7f49737fb2430b0a8a71fb50f59626786767b6",
+      "git_blob_sha": "c1f5c97b1d06fb5f00c2f4977dfe5e2bc6b769e3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_65.json",
+      "bytes": 68631,
+      "sha256": "4c035e09ef71a20561d012571d6dfe50be189ee9a565cefc9f4e9efebafc23ea",
+      "git_blob_sha": "454a415fa3b31b7278cb1728f3a81f824b26fb71"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_66.json",
+      "bytes": 69751,
+      "sha256": "bcec9fca3ec8812fe5f0f03b7b508f0eee047437e98fa3bc9016fd4e067e4de6",
+      "git_blob_sha": "ef4b9ed971db3f1482aca4097c6a7e93ac7b9a46"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_67.json",
+      "bytes": 70776,
+      "sha256": "d8ded59e65de97581c05f9768aceb1a855207fb98789d3e3426135ce488c02e8",
+      "git_blob_sha": "8e7529150d92388c519a0f3fa52276b0ccfbf83a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_68.json",
+      "bytes": 71801,
+      "sha256": "e57f5ae2de0c0fb2854c0e66a0d5b6f83c62e2ba63806a4095696afa8138ee06",
+      "git_blob_sha": "44d98fb3656ef6541c47f91f051c55765b144757"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_69.json",
+      "bytes": 72920,
+      "sha256": "0781efb58c5560815ad21072940c515c08efc8e30cd7efc12273054839e09b71",
+      "git_blob_sha": "ba77eddca9060a6d86e66400aeb90de48c447cf4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_70.json",
+      "bytes": 74047,
+      "sha256": "f28dc0ef6d69f59c7abec82a5ac82ea2e624213762d90eb3528c0bf49b911423",
+      "git_blob_sha": "d994b87f77f4ef79a72c06929d3e04123aedd9cf"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_71.json",
+      "bytes": 75074,
+      "sha256": "b2dce83525fa9963fba0dff326013bb9c13fe71749b72ef6fc3a878f7e901752",
+      "git_blob_sha": "8c2a6d79f81deeedcdb642609287339250171629"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_72.json",
+      "bytes": 76100,
+      "sha256": "991e497950c9144309c7fce2ae58f13884508e579b28a28fa7cb19d43da18ee5",
+      "git_blob_sha": "703f548a8210c9231ce498bc9648d0e3bf1c61ce"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_73.json",
+      "bytes": 77124,
+      "sha256": "55b5947f6752aedb12f20e1d47632b98abda1d668efac367d89e82a31d1a3fb4",
+      "git_blob_sha": "ccebc8f73c135ab15d0f2784ca2fa22d29a75e1b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_74.json",
+      "bytes": 78246,
+      "sha256": "ff8369faa20b10c425957f7bf3ebebbcbdbf5c1bd856b5004d14ff5bfeadd0f8",
+      "git_blob_sha": "17bc4d9a4218dd2f7e8fb8ecc73e0a12ded21a58"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_75.json",
+      "bytes": 79273,
+      "sha256": "74f273730ccd158b24826dfde46bdfe97950c381116f6d62e826ae2cf964ab73",
+      "git_blob_sha": "ca537c287c99cf2128d1995f375e13367dd19d76"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_76.json",
+      "bytes": 80296,
+      "sha256": "18d69f01f8a4491e2215a802de99c866e63f74f9d38ec5b1bfeef91ec364041c",
+      "git_blob_sha": "f8d93559fe0bb5bbef5846594f9a91cfa0553bdb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_77.json",
+      "bytes": 81317,
+      "sha256": "dc36257aa077db13eabed69f57be68b0cbbd42a5b5fbb2d886bb34c1ae26d402",
+      "git_blob_sha": "decc0f5156b3a9d839598755d9870bbadc4be34d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_78.json",
+      "bytes": 82439,
+      "sha256": "78ffc54a6f496a92cc762ad443374258d96c989bbcb8cbb4eef5bbfee6e975c2",
+      "git_blob_sha": "563d5fb24026947a2bbfc085768986e93a6c5927"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_79.json",
+      "bytes": 83668,
+      "sha256": "bdbe2cf91692e6bdea28b02cb4e92853fd3aefe889fdf5e1ee4c14cb705ce843",
+      "git_blob_sha": "f9924d18ac0212f3b5e5096cc7d65bf7f628ff2b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_80.json",
+      "bytes": 84789,
+      "sha256": "4c49360a00507258458789cf4c8e00207238ce02a62a5141d9dd8757f4c2fa2b",
+      "git_blob_sha": "f8e8160b28f8196ab71a68d0984016dbac560ed1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_81.json",
+      "bytes": 85910,
+      "sha256": "52ba920f2a80eca32b6453832c324b4611bd645e679be7e859d5a0c26c737a16",
+      "git_blob_sha": "c502d9930bb75c12675027e85a5a1a39adc7e274"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_82.json",
+      "bytes": 86932,
+      "sha256": "682ebaa33260a57852d475140b56e1cfe98a486468a007047dbe11cddd588ee2",
+      "git_blob_sha": "8d31b27bb3f21513a982419bea63a21ee5595a24"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_83.json",
+      "bytes": 87957,
+      "sha256": "a99680f9a9aa48e032a7b80d4e48cbd57634d2e9af597b04cb8757fb84ea57f5",
+      "git_blob_sha": "5c376fd4405c1b7adf196ff1f50851794d600f72"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_84.json",
+      "bytes": 89182,
+      "sha256": "b981f103cf1a256f5a779983bc5dd34cf431fb735e0a0613df6f0b83c0be72c9",
+      "git_blob_sha": "9e8367ad968262558b168e9273855373bb056c85"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_85.json",
+      "bytes": 90303,
+      "sha256": "7a1af4655f7649a7b0068f5ef3c2b905eeba4aa2dbac7fc15168dd65a6f8da85",
+      "git_blob_sha": "4ba69fc9a87f9767e8aef5738c88cfdcb0f8eea4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_86.json",
+      "bytes": 91326,
+      "sha256": "e2756904d7fd395d750d40e2b5719ace51559f9c38ce3eb3ddaad7c528715283",
+      "git_blob_sha": "7a86d733c29c36bb2f3268b60259774d4dfe15cc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_87.json",
+      "bytes": 92349,
+      "sha256": "a1444f8f2b3e8fa790e8cfdf19e5e829d62df2015fcbef4ac5f5e1b3ab17407a",
+      "git_blob_sha": "3d28e8f2b4ee12f08281d241939131a69e2c20be"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_88.json",
+      "bytes": 93370,
+      "sha256": "fdcd55f09721180aa017ab6b32233d2c5c5c8b6db11d3c05000cfa2884ec6b53",
+      "git_blob_sha": "360a4fe1eacd16b1f9fbb9a97158d16a442ff42d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_89.json",
+      "bytes": 95591,
+      "sha256": "2ed590ebad1a0c87921b4775a6e1102664a8d47a4c953c6130203c9fb1af0fae",
+      "git_blob_sha": "bf839049452935d1e6551556bea393703f35afac"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/checkpoints/step_90.json",
+      "bytes": 96717,
+      "sha256": "2e7b37615bbb4c54bf229a6dcaf3d24d6851c2bc7728282e2fd6f5339d20cd72",
+      "git_blob_sha": "98d5e9a85e76a3c4459d017b0d0a838dd4584491"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/crossings_after.json",
+      "bytes": 5467296,
+      "sha256": "66eab27a5b1ec1ffb29205d23ff1972f111543091e4421e92cb1ab7a53acc7bb",
+      "git_blob_sha": "7882907cb3d2262759d4538ab743ffc24b7c556b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/crossings_before.json",
+      "bytes": 9153253,
+      "sha256": "769c778b47d2ff4244ab3326e4c27d9af6b8a269815209bf43dc9e194e682234",
+      "git_blob_sha": "067b7e14cdba32c92e1a1922d735a6223c3c8571"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/layer_stack.json",
+      "bytes": 976,
+      "sha256": "47f344b2a4afeed84033283d55851fa50f34ec1852df07c62be06435c80db8c6",
+      "git_blob_sha": "0df39b4812abe11a834b3916baea3b4f01eebd14"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/lift_plans.json",
+      "bytes": 92924,
+      "sha256": "07ef339e08d5dfd26fc50598bec93b3c6ee80398e99560b45d77ecc257f3ed2e",
+      "git_blob_sha": "facdd0302f2396b49b2418c463d196d9265758a8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/01_before_after_xy.png",
+      "bytes": 5084750,
+      "sha256": "4f6c19f412d13a0bfc400b5265e10c14c456830adb6079a087b25ff9c8f743e1",
+      "git_blob_sha": "914c86c167eba11c5f6f636bd3816a1a370d9ec8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/01_before_after_xy.svg",
+      "bytes": 2662336,
+      "sha256": "aa9cc9cd9b9ab657a4cb54a4038c5cb886461986dfaaec1da1e8bd97569a5bfb",
+      "git_blob_sha": "f1ae8c3bcaecaeac6414fb0ce2fbc2c24f3cb7b5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/02_3d_full.png",
+      "bytes": 2667787,
+      "sha256": "0e8d64b5388b86d8e4d3e360709e5e4e754224e92184b31a4f9e733b3df0016e",
+      "git_blob_sha": "6e60b08caadf0d22cc9453523e391efd04060472"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/02_3d_full.svg",
+      "bytes": 1614415,
+      "sha256": "a74dcf6e4d2f794034cb4d1a00eebee23da86e93bf104d5cee13200da7fae5e7",
+      "git_blob_sha": "fb69c83c9fc3583d0c24ca8c2480409dd110a394"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/03_layers.png",
+      "bytes": 1787548,
+      "sha256": "1a5e50db909300859bbfb8c1dc80b778fb1b222dfa63598afe54ff54af8a235d",
+      "git_blob_sha": "4c55f7e59e63a46182bb1460cc567049df2c2be5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/03_layers.svg",
+      "bytes": 1544784,
+      "sha256": "0908b2a5f6a4d6a9d46c76dbdb489c81e04df49ef4560953fe3803cfe595e937",
+      "git_blob_sha": "7c8e44b31036add5bac442f5b09f14563f8a3e67"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/04_early_climb_zoom.png",
+      "bytes": 1696211,
+      "sha256": "811eca91f1125cd931bd54af22c9108a7ef8cce654619ad68c7af3fb7c985bcf",
+      "git_blob_sha": "a3810f8a444b50203c3bc0c161aa9b8a4c3f37b7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/04_early_climb_zoom.svg",
+      "bytes": 2708106,
+      "sha256": "2a4c26004fdb777942c119e1a6336b15a62526984dc903c290c3af8a23f3dd31",
+      "git_blob_sha": "843ef4f94272ebc5b2e3a25ce6dda5d73a04692a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/05_crossing_region_before_after.png",
+      "bytes": 2868724,
+      "sha256": "d2a15e7330ba7e0ac106cbc112697d5590b45b927cfa5a96feb099037a91f4b9",
+      "git_blob_sha": "40dbed5b192025bbd3c5f2c6cd4fb22106f04ba1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/plots/05_crossing_region_before_after.svg",
+      "bytes": 8635339,
+      "sha256": "f0ee46fd586e775c668f31f1e47edcc5f40b3febac4b0afdf816e78ee5108239",
+      "git_blob_sha": "9ed470f31806e91c1ec43eaa19320c9c147b98ea"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/process.log",
+      "bytes": 9716,
+      "sha256": "87684e90205750b6c905cf69ac4758a762382e7b065eea486a9c19930f472298",
+      "git_blob_sha": "e7befd6c461e5d9f6775ba6a4b4b5c894d4ba7e3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/routes_l3d.json",
+      "bytes": 2276637,
+      "sha256": "f9677ccaba7171ae4770e39979839b54de4ba65be944b19d8370e4d754ad28b9",
+      "git_blob_sha": "e21dc58a55bca0d04921203f6cddbe1ff1f0997e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/run.log",
+      "bytes": 9471,
+      "sha256": "4befe09c2b7b7363d778ad767f7ee8ab67ad7898195380f58a4f2e3478735f3e",
+      "git_blob_sha": "5c86aa0fdf7d83e6ef328c7c166f15c52a6958b2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/smoke/checkpoints/step_01.json",
+      "bytes": 1126,
+      "sha256": "7cc420926e868baa27d040c4aa83356c7b7640198e86193fddd88b373b67e57c",
+      "git_blob_sha": "b5b9dc6bc8e21b561f4b000ba59bdf7b4514d20f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/smoke/checkpoints/step_02.json",
+      "bytes": 2160,
+      "sha256": "c9354060dc8a675f0db6ef35d0b208fcb0ea7f3b26d54d465fbf3910425cdfe3",
+      "git_blob_sha": "0231a6dbad9b5347a66159139171815229588cbe"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/smoke/routes_l3d.json",
+      "bytes": 1945048,
+      "sha256": "dd6dd4ff7ca86db9689768c838d96f0f34ef949900ad38c5e7476d4fc5dd69fa",
+      "git_blob_sha": "ec477a2c9b9da53d014e1049620d325140ed3eac"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/smoke/smoke_summary.json",
+      "bytes": 897,
+      "sha256": "84357c208e139a61da0a374257df7a3e466d2be8a0ad5759500bc418ccf3ad0f",
+      "git_blob_sha": "a5a47fd7d3dbb89b2923f48bc01773729b7ec4e7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/smoke/smoke_validation.json",
+      "bytes": 29004,
+      "sha256": "e798d277c11903b924aa79ec92408acd6ff0ed77d70f34157666debd0b7c971f",
+      "git_blob_sha": "1e001e747d0a8d30347ca17427d6381409b79344"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/summary.json",
+      "bytes": 2687854,
+      "sha256": "a231e46a781e1d1b50913858a2cc75d97633e5e03829aa6fff5075f41c93a7d3",
+      "git_blob_sha": "9679287d602748b47a2fe5f7d65ce3f5807ba3a9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/A_0.25mm/validation.json",
+      "bytes": 39231,
+      "sha256": "82436df307df635440eecc9576da140ac42600efbb810d42759bd5e4d06c5757",
+      "git_blob_sha": "ffb7f55cf95c41a921b945fe9d94f46267a9ecf5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/ablation_3d_compare.png",
+      "bytes": 4060786,
+      "sha256": "88d2f072c80c5dba5c75aeab5e18be314e9002b98cfe0c0500146f52b6af0485",
+      "git_blob_sha": "277262cc1af0074870fc2cc3536f8990b8569ee0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/ablation_3d_compare.svg",
+      "bytes": 6012686,
+      "sha256": "0f23b3382ce543740cb1b58c22452c269f32ecb9685b373c418451b3cdb8517b",
+      "git_blob_sha": "f96d3392c0e9fa39a0ba8010ac96b29f83e3e98e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/ablation_run.log",
+      "bytes": 5015,
+      "sha256": "b6e403a71361396eb6de64137840a545d3b4f7b8c381de7ce67c76d9b7e6d5e1",
+      "git_blob_sha": "a664a1f6960cf734e1eb0e76709b0cae5ed4b764"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/ablation_table.json",
+      "bytes": 5048,
+      "sha256": "5f97f3883f9749aa1c5f0a189242bd0d0ce357d1c935fabf6f893892cef6c21e",
+      "git_blob_sha": "22645525665c886323cf3f04673f7a9ac5462685"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/ablation_table.md",
+      "bytes": 986,
+      "sha256": "c632c0a16a6ea9586562b8b72544c8181457cff636956afc84f9229b613ab940",
+      "git_blob_sha": "6de96a0a36c5f0ceb82bfd1ad30999f31380a672"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoint.json",
+      "bytes": 71494,
+      "sha256": "05e54185bc57f080436768df16a124c4ba7baf711b7e7e799ad18769d748af1c",
+      "git_blob_sha": "0fbbb78f98f9b7ea0117e4b446297c2c49f21609"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_01.json",
+      "bytes": 1122,
+      "sha256": "3d6db7847d11d74ebadf7eef3acc2a73b8c3d297c1b72467cf959dbc8cb95c83",
+      "git_blob_sha": "7fd898ebb602fa980842224ce5279e3d0e169e00"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_02.json",
+      "bytes": 2156,
+      "sha256": "e349a33167397ade8b28d5e3d23efbe229d74e60d3a6599fe3903eaef1d9dd78",
+      "git_blob_sha": "c5b018483f3cdffb9d5d76482b7905db26ec7c85"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_03.json",
+      "bytes": 3187,
+      "sha256": "26834129f7fd9e52e5abcbe7ba4acc456d349d840ffc65af0cfee2c0ac01944c",
+      "git_blob_sha": "130bc509439d6a8201e81d7f3f00728689a1cf99"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_04.json",
+      "bytes": 4203,
+      "sha256": "ba2c9e3066e5bf74c341f6fa95fab6554fca8929c096124ea5a18216d0cbbdb8",
+      "git_blob_sha": "abd9f8bdb62b137888caec2d59a9a8e37fa895e5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_05.json",
+      "bytes": 5218,
+      "sha256": "018408bcea181a6b313a559b27bf6a991b54e82600d8b308b6fa8b78eb8314b3",
+      "git_blob_sha": "4142c707fb1b48b5658b734b854c4e46b9294ec9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_06.json",
+      "bytes": 6336,
+      "sha256": "f5bcfec66a29be6b4b9f8298f46e0934ec0fc6bdc8452c269609171016cdc682",
+      "git_blob_sha": "63e9c5231432964446fd8f5781e93ce5386ddeaf"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_07.json",
+      "bytes": 7355,
+      "sha256": "7f121e1d4460fb73cd96799c934269a4b4332c51e1373b6ff85bfea36909ca96",
+      "git_blob_sha": "19c88d92cdd1278227642e3915b63f21b6e6cb5c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_08.json",
+      "bytes": 8472,
+      "sha256": "890241a910a0ca7727a30c1fc3b38a39f24f444a7c43836e2966d17411b371da",
+      "git_blob_sha": "4a00b73193723e7640de100ac41526de6941c618"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_09.json",
+      "bytes": 9491,
+      "sha256": "89aa3378856b34ecfd9e9a5b0e6e58d6e6dbe6c6102fd6cf1a7dce1dce3c34ba",
+      "git_blob_sha": "aebe929813593db78776a39b776da8cdb908e4de"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_10.json",
+      "bytes": 10515,
+      "sha256": "34c79ac88b2929ba225580ff99d25d95b08d45bb3856fe56e073ddd70f949d82",
+      "git_blob_sha": "6ae9182a85dbf6a55e39caa42af0650a3041c660"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_11.json",
+      "bytes": 11638,
+      "sha256": "03a46141a86c69af4b2a22556c6cdad83115eaea28e60482bb1dd96a3f6b12ac",
+      "git_blob_sha": "4db88a420370ed287ce8c4122fba1fb05a372e7b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_12.json",
+      "bytes": 12664,
+      "sha256": "b409ca4bb6d8a7fa730188016f4a0779aa62078ac8c735eef75be08af2de5422",
+      "git_blob_sha": "64e05587960d4425db160a3a47961963b4d213a7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_13.json",
+      "bytes": 13780,
+      "sha256": "b5fc8276391d2561f74ade5734a34308f1bfa336866f2d36533a5d979f89b2d3",
+      "git_blob_sha": "52095268a2d7763d58752f2bf60ec24fbd5b54ea"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_14.json",
+      "bytes": 15089,
+      "sha256": "983ad7b0105044bbc0982cea42b34270a8995757e64add7aecadfa525987c833",
+      "git_blob_sha": "3a0f9e791bffb47332644b6dc921f5c231eea56d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_15.json",
+      "bytes": 16109,
+      "sha256": "7b4ed67845c2b1a21a55b7d224ef89b5c9c868efba3075530ddeedc144d50a6a",
+      "git_blob_sha": "152c0506360b40fb1da48735bdbd6cb6fe522e88"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_16.json",
+      "bytes": 17128,
+      "sha256": "5bfab92081165816ca120314ba6fe37d21f9bc5cbe4db5967915ff3328ce5200",
+      "git_blob_sha": "5f5dc1d39ffacf11a40369550517fb66c275b9c3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_17.json",
+      "bytes": 18144,
+      "sha256": "fcb41a8991ed3637bf5b227ae6ffb4ea8dbf3912819da5fb2de81ca24d7e803a",
+      "git_blob_sha": "12e2bd8ddde2cddb07a7bbef7efdc33279d610bd"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_18.json",
+      "bytes": 19167,
+      "sha256": "3d25d648725b9c1da49d87181c425eb5d210618be805ebf4b84c8d67a91a52c1",
+      "git_blob_sha": "10d82ea3b6a91bed0edd602b7dfc0575d41d6105"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_19.json",
+      "bytes": 20287,
+      "sha256": "ab1827060652045fbf38664a90197e59e9cdc776c164e75626c5b692a41aab33",
+      "git_blob_sha": "e78e5b77116ccc40164d023aa2921fecfcb1c7c4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_20.json",
+      "bytes": 21313,
+      "sha256": "6033f06754f58e2fcad13fe262d762a657a7a1663a87feb5c29cc2994a38a6da",
+      "git_blob_sha": "af448c73a7a4dad362da3a97e224af730d251ae2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_21.json",
+      "bytes": 22335,
+      "sha256": "7e28c698dc1e7911460ac9e6691ba55e2bfe7b6244a5a36e030d01245ef2205d",
+      "git_blob_sha": "407d473118247894c4d07b7d2dadc3425a8ea8f8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_22.json",
+      "bytes": 23354,
+      "sha256": "c18f3d36587597d04a0e463d330d317f9155637f405461a4f6dfe5d05f811fd8",
+      "git_blob_sha": "e0b3018c5739bf35e93297e212d7f0b33b4ed688"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_23.json",
+      "bytes": 24373,
+      "sha256": "77cb1ff92e7581d7628dd8993b044a224f6f4bfba77ab16fb1b766bf85276870",
+      "git_blob_sha": "73a50c5a9148706192cdf5aa220c14c7d940819b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_24.json",
+      "bytes": 25400,
+      "sha256": "0ede9c2be5ee3abdc5a8c9f0e07fea90a947b7a455759b32935a922c93a67c76",
+      "git_blob_sha": "774a14cb2de2a4ffcc7ad3711d53ee14fff302e0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_25.json",
+      "bytes": 26423,
+      "sha256": "a764eebd87f141267323a79aeff832535008de0b583b2faf7224cd9d683f7db6",
+      "git_blob_sha": "b210fd1569c7ad7e5cfcfbed792acd59dc8376ec"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_26.json",
+      "bytes": 27445,
+      "sha256": "c86dfd2d1bf775666fe2200a928460e4327460cabd7dbdf5d9be682851ecdc5b",
+      "git_blob_sha": "d41e33195c92eff30ded25f1c602fb14110497fa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_27.json",
+      "bytes": 28458,
+      "sha256": "2b8c9c5f9a6605eb1db6b99b6a3d22a0ce5da19e0648de4bfd60777ab9c41edb",
+      "git_blob_sha": "04062e377432d1869c9548009990bf851b2428ff"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_28.json",
+      "bytes": 29479,
+      "sha256": "0a11b16b988da4e8ab019eb40d8b32fa756045ed38d7cb5cc1172918aded5a2f",
+      "git_blob_sha": "9ee535cc30a00922619564bd5237d3da1c1cd92d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_29.json",
+      "bytes": 30600,
+      "sha256": "514c8a451d451f8e0b7e8e02bfea7cd517bf6346e6443e868ffcf4d8f8974f83",
+      "git_blob_sha": "25b50a01fe6ead853576e9a988c4ecc9d4252fc9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_30.json",
+      "bytes": 31622,
+      "sha256": "76ba56b864777d876ac3d131599f97c9dacccd9f7d33852b871431fa490cb8ba",
+      "git_blob_sha": "e669786c2e11cf72a4b381cf93c0e70560483aa0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_31.json",
+      "bytes": 32641,
+      "sha256": "215689226c96ec7bc0ac6a806799390c9820bd2722866fafd904009147bfb591",
+      "git_blob_sha": "bce77aeca9d57f32019521067c47dbd611450115"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_32.json",
+      "bytes": 33655,
+      "sha256": "84fe628961d878e5338fd51f03cd147eec8245be2f2274b77987adbc437abcc7",
+      "git_blob_sha": "85f4595979950b1510b8cbe0daf15e5eed4c983b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_33.json",
+      "bytes": 34677,
+      "sha256": "f36f7d9e47fe06d825ef8496a8a9e5d281c2147357fd11b5dcc79ef8f32269af",
+      "git_blob_sha": "f9d450fd23574e49ce4f52dfaa99ceff1d918fc7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_34.json",
+      "bytes": 35704,
+      "sha256": "583c87967d270f2b7ec8a49ebf34d561fc850430e3af84b24db6bcedf92c079a",
+      "git_blob_sha": "d91f39a51ad8bbdd4dadad2f970a486c96c8a248"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_35.json",
+      "bytes": 36728,
+      "sha256": "b36992c7a7c4d8f9182fe7bee1f5617fe0f6e2d3e7c8a666e6b0a91995953063",
+      "git_blob_sha": "8a1c570659a3a8254316866cbbf5fa7776d95a27"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_36.json",
+      "bytes": 37748,
+      "sha256": "234a51e420a1c6c9d5beaaa3457011c19c1339b463ed98648d05dbe9ed8078cf",
+      "git_blob_sha": "6acb5b556961a6dc9ab679bf0fdbe420c0274dbb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_37.json",
+      "bytes": 38773,
+      "sha256": "37df079bdccd398d778e13e48b111e29252de1281732b1d28fd9b07601b90eb0",
+      "git_blob_sha": "8417792723c97092912a36baae7d114844da23cf"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_38.json",
+      "bytes": 39806,
+      "sha256": "dd7fe1650330695b7bd2e9bff7645e7dc424e37f75c915fddf092612155c650c",
+      "git_blob_sha": "fff2779d2bb19e67ad9a7b58d9f2bfd85dcc48f7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_39.json",
+      "bytes": 40831,
+      "sha256": "757aea0bf515cde7c1ad53574d82ebb008f4a633b002c78d89a153478d8e9b48",
+      "git_blob_sha": "9ec8c5d5af497dee46e27cc6643a39f158e0ef7a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_40.json",
+      "bytes": 41855,
+      "sha256": "23100697fc15249e4f993f903d6cfa8c06d66badaabb903ee0bf89d6e3955286",
+      "git_blob_sha": "6809cd63a7d282e7d4731b6a708cf21f77cbc294"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_41.json",
+      "bytes": 42879,
+      "sha256": "a3fdec89f00e23df39f1ea4977b6620d0f2fd701f1bf73aa8294ebf9920c6935",
+      "git_blob_sha": "48d9f28ca2c603f88a50cc98acee2ea4684a2c8d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_42.json",
+      "bytes": 44004,
+      "sha256": "54a90954d4364cdff13a9ab50717bd7054980ddeca9da4e0c12008306498471f",
+      "git_blob_sha": "6dec268d335e92a02a47b1e60ae311aaaefd5e8b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_43.json",
+      "bytes": 45025,
+      "sha256": "b8a3e764e3d76a8fb9f0c7ddac89384edf3599013dca9dd4b44447fad1d575d1",
+      "git_blob_sha": "2c3f2680be378ba5087684b81de88cd850cb9cba"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_44.json",
+      "bytes": 46151,
+      "sha256": "7fb3e2b9e43e1753b45d18942781756016f9eef02dbe0afe64efea973e1f6e3c",
+      "git_blob_sha": "5c12024a83adca73f2fd894026ae4d7d9b71c03d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_45.json",
+      "bytes": 47163,
+      "sha256": "6fb6f5220594c41d267f5584203e0d2403e7e1266183917ea07bb6c44ad895e8",
+      "git_blob_sha": "8a150672aa05dfd536d7f8aa9393e09dc4be02f7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_46.json",
+      "bytes": 48283,
+      "sha256": "1051312100df129a527c71856cca8ca6ecc6749662eb37b13a8f71a76e555933",
+      "git_blob_sha": "2897ea0121ce08ad91e679647f18b6c04b996d3e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_47.json",
+      "bytes": 49512,
+      "sha256": "f48b9f8ac10cccd9fd396e85e6dc95b0b7124ee80a62e8cbbfb0100655b8d371",
+      "git_blob_sha": "9cd10a35c3e15e7f469c4d24707c4fd2c3f31fcc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_48.json",
+      "bytes": 50535,
+      "sha256": "aa43665a5692ddbddab57246d29ed172a91704a6a7e043024503e6d7e9eca2b9",
+      "git_blob_sha": "f894b3baa7f4d5f62cb42abea5c981d4a62e82ac"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_49.json",
+      "bytes": 51557,
+      "sha256": "e60f93595188d55c3488857a102dcf5428e5de511e4e1ca8c5cd0e95276a35b7",
+      "git_blob_sha": "07c0be15f6ab82af8ebbf2056b5966571addbdce"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_50.json",
+      "bytes": 52581,
+      "sha256": "6622e9adfa9a1f6663c4d18a36cc6aaccced6455b3a459579bb0571166822f4b",
+      "git_blob_sha": "dd10a55e3c6f60f2a134a517c3cda101aa374788"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_51.json",
+      "bytes": 53594,
+      "sha256": "665b7493d1f2969b17c8a997e900bf0d6a54c932529592a5e7d3e4aaa8fba40b",
+      "git_blob_sha": "efd479b276578a1584a44a103f504c23c3b02684"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_52.json",
+      "bytes": 54620,
+      "sha256": "eeed9e3f7ab93c56af69dc2a5bb1e0209d3c223258ff11c9ada5159c11b7dc03",
+      "git_blob_sha": "db6658a3de0c7fb344cb9693f95bbb6ddf2cd6bc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_53.json",
+      "bytes": 55649,
+      "sha256": "80392d5e56271e97eab89f80ea946eecb993049c1259b7fd9adedb93888bb8b4",
+      "git_blob_sha": "6a2f9da7715db53781d178cbc11f611819a63af2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_54.json",
+      "bytes": 56778,
+      "sha256": "41324692379975e5c978bc968196e1c16ae01208812dfb8f8b0e99b91c09ea9a",
+      "git_blob_sha": "f22805c02058c57339ec92803fdc11a6c180aaeb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_55.json",
+      "bytes": 57803,
+      "sha256": "4a24f5af4b77119c50cc354572b1ebd0e2dc87a7dce1cdd0bb904e685656c5ca",
+      "git_blob_sha": "82b1313de9ab396b29d4a5d55d91915927f7942c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_56.json",
+      "bytes": 58824,
+      "sha256": "d21ae601cfe8d98c5a1ca6b3c6c6026e6c96b7030eff9fa37164b2f1a7c3b5ea",
+      "git_blob_sha": "78de760ae210f5e245545805efd032bc1d6f3c00"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_57.json",
+      "bytes": 59842,
+      "sha256": "0ad119e7b2b7f5d81c86c2fc5068a6c8a57d72e98373168f9ca8ac283348602d",
+      "git_blob_sha": "b3ebc75cf1b010200f93e3eca313b1407c88aa3f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_58.json",
+      "bytes": 60863,
+      "sha256": "3d9c083efb010b7148efe037ee987e5e6b95ceb20a3e2ec316fb145fe4e7423a",
+      "git_blob_sha": "6f52a432de7fd59302f875d5b1ae6cc1a05860fd"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_59.json",
+      "bytes": 61886,
+      "sha256": "3f757d980fdb9b5cb0eee072f527cea7c706df93d87e50b1e377abc03ef6037b",
+      "git_blob_sha": "4a7b2bdd4218933a3634270dc1ffe3674b170f61"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_60.json",
+      "bytes": 62909,
+      "sha256": "8dabfadd29071f324004d0f067f12400dc50e45811364b56800ee7553fb9224d",
+      "git_blob_sha": "73b618806d45bc9359871e893c86bf2af5b3aff2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_61.json",
+      "bytes": 63920,
+      "sha256": "40d286b622f0701dcc8b1f2f4fdfc60ad7568c2520ca2245344508e04c3311db",
+      "git_blob_sha": "9c75afac81dcac48e4c49d8d44d3f5d3c63cc8dc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_62.json",
+      "bytes": 64947,
+      "sha256": "55e0d5c8b588a962fe27e7091022a9a425d91cae7bc9e8e7d8e62bcca3ac0a2c",
+      "git_blob_sha": "5075a68e339011eb48b7dd4be6bfeda3b1aab586"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_63.json",
+      "bytes": 65971,
+      "sha256": "6aef7145f6d763f03f07e759497a72b6e9c8c57db1fc88a028b3d8292c029070",
+      "git_blob_sha": "4d6fe1d6fe905ba0c43fc41d12fbfdac8612cebe"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_64.json",
+      "bytes": 66993,
+      "sha256": "c4660a9f69d5b463d808408ba3b1dc64a496ca04204a13bc7f54a228a7c2d368",
+      "git_blob_sha": "30e306e6c09a64a0da588b65669725fa9d00efc5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_65.json",
+      "bytes": 68014,
+      "sha256": "136f4c5ee4aa2da034e845f1f1eba50c17f994e3c455061184dd3033ee40dc0f",
+      "git_blob_sha": "ed5ba9b3919e09522da4378b922d7ab81df89001"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_66.json",
+      "bytes": 69033,
+      "sha256": "dc30da0857d771cf1f4f063b2b90fd2132069dbb322a5931c20f71e4fffc10bc",
+      "git_blob_sha": "511620a164996423d5d6fd70c9554d30fa127fa7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_67.json",
+      "bytes": 70058,
+      "sha256": "7a9f15a8b780d53a10acc3314bbee207dbdcdcd817c4affdce1aeb06ad4f78d8",
+      "git_blob_sha": "7d41d92ae0bd9baf72048267ead65bb9141284b0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_68.json",
+      "bytes": 71080,
+      "sha256": "096346920d3b06850079b3cee82286302a91d457828b0001b10fb9f0fcb25e83",
+      "git_blob_sha": "bb063103c0da570fba7436ca308591abb087be7f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_69.json",
+      "bytes": 72112,
+      "sha256": "8141ffa135999de18c1d12e9f72615e96f253b5c2093e6232ae124f4baaa7a50",
+      "git_blob_sha": "240bb1aa7d9627871d3610f6ae9da9d5b9e63fa0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_70.json",
+      "bytes": 73325,
+      "sha256": "093867c056a9a1bf69f7b54aaa3ad961faf099e9ce03a8b90f4dec24a0a7be62",
+      "git_blob_sha": "04a4133173c62ff119118aeb84d0cd0581206dc3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_71.json",
+      "bytes": 74544,
+      "sha256": "6acc318b300da086abdca2def33f5d2c1b712d18ed6859341c70596140bfd97b",
+      "git_blob_sha": "132ce38eeef5ce485f07e93af387120f19d6ec3f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_72.json",
+      "bytes": 75745,
+      "sha256": "ee6bbedac0b9f5ba9cba011a33c1e1d97128686df3283e76209871871b5df0f3",
+      "git_blob_sha": "5f8d679a9ce7a523c6e6421a161059b18d220f48"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_73.json",
+      "bytes": 76757,
+      "sha256": "507a68db1beab59cf9aff8394cc097b4403fe250a56d625fe4df33db4e555a2f",
+      "git_blob_sha": "26232e477295d060e647609f473556ce3e6aedd0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_74.json",
+      "bytes": 77872,
+      "sha256": "f163293aa6dff6e6f377deaa19d8d0c7c96ae2d8f9bcc89974019a27fe710821",
+      "git_blob_sha": "c8bf48b494f87082f7afd3d55e58541d0c7cc11f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_75.json",
+      "bytes": 78890,
+      "sha256": "908ca2b6841c4348231203c9670dda3bf026b32115976a1646c1661177d8dfa9",
+      "git_blob_sha": "ab4d27c6593372d5d78551906ce8d366bd13e84e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_76.json",
+      "bytes": 80102,
+      "sha256": "61f49291a1286262ff3a76df9a1bc908f00e15939bbd2d06ae3aa8ee2e8d79ef",
+      "git_blob_sha": "2979323f7385f608d18b7c90d0b105ab63da8e7b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_77.json",
+      "bytes": 81129,
+      "sha256": "4545b5555c7340b71fb18d979b582afc8a423a33523d0d02505b84638aac7549",
+      "git_blob_sha": "70c0349054d61a878f81f1cf974e8ded0b27a837"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_78.json",
+      "bytes": 82541,
+      "sha256": "bceaadd4385230fe14344f9cbfe6d11d3c626785fbb7babc6f7e623630bb1359",
+      "git_blob_sha": "6f7b1ad7b95d569dfbb5e0563967b65cce8bd701"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_79.json",
+      "bytes": 83561,
+      "sha256": "becbd8f26c693bd00c287448cf4f044bc3ab836a1cef87d501eab2be6c248d16",
+      "git_blob_sha": "32ad909831dba865ca9d2f44895c34f9b97eef49"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_80.json",
+      "bytes": 84683,
+      "sha256": "c9633f8358775c0fcbbb1ed18295c8dc4e54d07506ac1a20b0139398ff54ffac",
+      "git_blob_sha": "653044e78408d3181fdb5c697ee88c18a6e0bb0c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_81.json",
+      "bytes": 85707,
+      "sha256": "40d34644f2b3582cf751586880b83921c5610cf0cad1b0d0e0256b27ad5a114d",
+      "git_blob_sha": "7b995c8e6c48062be9a8f6ca567e8fd17ce883d0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_82.json",
+      "bytes": 86727,
+      "sha256": "954e8d3f4113c30e42e21add2bba03594d886d21d0cdfce7269ae2fb3b4f90b5",
+      "git_blob_sha": "7d4b67a4e363ed885a09e56dd82e0baa083f9402"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_83.json",
+      "bytes": 87944,
+      "sha256": "c84c632b565877eb0fde88ba43824d9e687de68e40d5e09c51335ab0a91f3eee",
+      "git_blob_sha": "584beed47fd2ef08ee44d01050031dcb9109af85"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_84.json",
+      "bytes": 89056,
+      "sha256": "5f2f88b68f2d47ae39b991952523f198040da9df3f653094760c9b6677f636ab",
+      "git_blob_sha": "9dfcf3b1734c9684cf728792c181ba999e91447e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_85.json",
+      "bytes": 90181,
+      "sha256": "8e9077a3228aa9fff27067e544a622d5e140dc044a9d0296cebd6d5cee939f4f",
+      "git_blob_sha": "6112540cf3947d7c97abf7eddb1d82673c7096be"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_86.json",
+      "bytes": 91204,
+      "sha256": "a14e75860c585a4215250febcf9478cbf115eaea5547b7a143af49551e303a5e",
+      "git_blob_sha": "ab322fed2e19babf5f108fd312f7491e9cd3e6bb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_87.json",
+      "bytes": 92229,
+      "sha256": "8ac5a8155bd6018bfacfd10aa6e45381e0a837c2e6925c49d3b52197b9f46c19",
+      "git_blob_sha": "836785e28eba8735761099fa30d9d53a390b45b0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_88.json",
+      "bytes": 93251,
+      "sha256": "888a29df6b0c432d7e3fbfbf7c7612b94096d8f8f0eb45638696b656645bb48f",
+      "git_blob_sha": "1d341b534f27a470a05c7855f55a2be55f56c51c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_89.json",
+      "bytes": 94272,
+      "sha256": "2abeb5037f0e20e7c933192c4e3867977ff8148648164530c7f43b6bc93d0139",
+      "git_blob_sha": "041c680049cf6e7d7510b638429850d84e89a3ff"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_90.json",
+      "bytes": 95292,
+      "sha256": "3c7929a7cb0e822c019e85c2a21f947905a577d4e21bc4347ce3ba168887d4e1",
+      "git_blob_sha": "4618cc6523c4a3be87dd324533a44d51b833ccff"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_91.json",
+      "bytes": 96312,
+      "sha256": "8da80727e62e9569a682dbeb1c47f348cd10ba2b2a7195b2484fe7a8e688df17",
+      "git_blob_sha": "60601732f18c066d9e2dbaed95a86d278a586cc4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_92.json",
+      "bytes": 97330,
+      "sha256": "1f24a1357cbe28a63ddebe6b29769c7077e70b0195480404c806efb2eb3da246",
+      "git_blob_sha": "3495cc07a4d3295cd9a1e61b610d52f81eb75528"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_93.json",
+      "bytes": 98351,
+      "sha256": "dc60423538ea99198b3291f1a6c51fcc71c5bdc676529299c47f58385d529e34",
+      "git_blob_sha": "826a26366c40b0a37d2b4d49e0f4c272f00e3154"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_94.json",
+      "bytes": 99662,
+      "sha256": "53b52c796f32f998fb82913b4bdd064468074eec335b445a9a282969a1d0c627",
+      "git_blob_sha": "cfa22661d55058bd63791861452a4625e641cb88"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_95.json",
+      "bytes": 101284,
+      "sha256": "204a9a91537aff413b6524347848d7092c02623f88dda0d4ef1181797f3a194b",
+      "git_blob_sha": "d564266e8fd9be36f7c36d954f596fdb3ad79d33"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/checkpoints/step_96.json",
+      "bytes": 102701,
+      "sha256": "132b70fa8b672d4f336bff030448dd15064d556ec957a2963b16adc687709cb7",
+      "git_blob_sha": "caf0599d17c02392e14b886d6df095a8793f1788"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/crossings_after.json",
+      "bytes": 6418698,
+      "sha256": "9f506e15dc54a4d025701c311c79df48306d4a50f78a2e371569fed338d838a6",
+      "git_blob_sha": "c52fda1230f9af7b03e92714ef83839e69f98745"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/crossings_before.json",
+      "bytes": 9153253,
+      "sha256": "769c778b47d2ff4244ab3326e4c27d9af6b8a269815209bf43dc9e194e682234",
+      "git_blob_sha": "067b7e14cdba32c92e1a1922d735a6223c3c8571"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/layer_stack.json",
+      "bytes": 972,
+      "sha256": "0e2b369aa937c87b93317dfa57922f36eedb0652f016577e9376c8463ef5b6e3",
+      "git_blob_sha": "f8c5156185e900650875efba05511f2f15111e6c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/lift_plans.json",
+      "bytes": 90240,
+      "sha256": "8fb21cfae059dee54443def8b40d81198c57335ed94a2b3ea26c962dc2c6a288",
+      "git_blob_sha": "f8c5134c0bf19e69ba07c9d8fef9d183a70cda36"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/01_before_after_xy.png",
+      "bytes": 5076153,
+      "sha256": "b94d1377fc3e7db5ae195ec136b8b10545eef7e9e3c61b04e447c04d49429447",
+      "git_blob_sha": "89db606773feaf2be8701e9304e1eec24a637e9a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/01_before_after_xy.svg",
+      "bytes": 2571064,
+      "sha256": "57a99972e4cbe99d149b32a034fd38adb6dc54578b4af5618be635a912ec7bfa",
+      "git_blob_sha": "271a55f8c4d1a964c70ef27a53e0a11ed0469477"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/02_3d_full.png",
+      "bytes": 2825397,
+      "sha256": "2dcbd4f9572e085a1fbf7a7f2a037d17f96d01188d053fc14e22bc3773a62044",
+      "git_blob_sha": "15d19e87089460f1c43448e33b130841d8750a09"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/02_3d_full.svg",
+      "bytes": 1551710,
+      "sha256": "d20b795103446ec790a64323e4cd84f0b0af67c1011c2db81105e71c2fa48aa2",
+      "git_blob_sha": "69510b0dc9cd578fd7c83b33bcb84e7098467e2b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/03_layers.png",
+      "bytes": 1745840,
+      "sha256": "0a325ebcf76960f4badb9dc19c1a12f9d187de8eaf66ed4f41019ee72dff1894",
+      "git_blob_sha": "2f9f819f9f966cac1608991dbe20e5b109ded6e9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/03_layers.svg",
+      "bytes": 1534553,
+      "sha256": "c8a744e37a7706b554c4a82488ba75524ec09e344fd767ab89a8cf43c1c2d6b1",
+      "git_blob_sha": "e74c4da1f848a44951990ca728ef3d8d5ff66fa7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/04_early_climb_zoom.png",
+      "bytes": 1826683,
+      "sha256": "00474a1cabb3c73eaca218000a913b9b236d1f0a41492ccaea86e517a16b96e9",
+      "git_blob_sha": "9e5a0c08d9e67e5cd94921ad15c5cc039a44a48a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/04_early_climb_zoom.svg",
+      "bytes": 2613639,
+      "sha256": "67a7ef8428fa0f6738c5d7fbdf0265f17f23db60c2c872f5dfdbcb86af951653",
+      "git_blob_sha": "a11214a046f77df0339bb146c9faa880cb09406b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/05_crossing_region_before_after.png",
+      "bytes": 2859415,
+      "sha256": "baf8b6a2f3df86d0f234be8ddafb6f636d2fe32b25efe1e365c22b16c632f8a2",
+      "git_blob_sha": "9b4f4d1d8a2280fa6a875de4741c806621e1e3ac"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/plots/05_crossing_region_before_after.svg",
+      "bytes": 8819707,
+      "sha256": "a31fa9da2cb72b0be6ef5a52d50a58d44ddf51b90ea948e6b75dd6c128682093",
+      "git_blob_sha": "61af78b05661bfcada17f95c1bdcdca0e1345dc4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/process.log",
+      "bytes": 11211,
+      "sha256": "2f1fe1565f4309cf267c0435fe82614eae96e76be611df836fd8e7dba5b374e1",
+      "git_blob_sha": "7ae33610947036f92314c463455a954718c2c322"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/routes_l3d.json",
+      "bytes": 2255234,
+      "sha256": "a28e415b6a114859eddb376e4ae2ba12786543cdec9138dcd2723950c4426189",
+      "git_blob_sha": "7b20581fb0c05ddb74d0c0316af7cded56d13eb4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/run.log",
+      "bytes": 10965,
+      "sha256": "2274fc0b044ae493ff69946d7863073c831e1190165aa219d125f6b41df2180e",
+      "git_blob_sha": "a93da59c294a126604a03afd8bc2d19b56ef8db0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/smoke/checkpoints/step_01.json",
+      "bytes": 1122,
+      "sha256": "afb3af34219fbd7e3be9cbe32e3f6730a503dfef4b9b589a3f151fa71c2f6e66",
+      "git_blob_sha": "34bfdbc5d88d6159b40b0121be4eae311f212dfd"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/smoke/checkpoints/step_02.json",
+      "bytes": 2156,
+      "sha256": "1157a7a371af6c43e8165ad3d5cc915c84dff05c64072c6dc9d4631367aaffca",
+      "git_blob_sha": "f79b2cccaf339355f1035cc2225d008d771e4290"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/smoke/routes_l3d.json",
+      "bytes": 1944990,
+      "sha256": "42bd2253f9b31f9dd6694b88797e61b2a09cc4a0c7bcbf29a6447b56ee383b3d",
+      "git_blob_sha": "5af4e24f35594f0420eed139b1677143c346c4d6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/smoke/smoke_summary.json",
+      "bytes": 894,
+      "sha256": "76caa886847847aaa5741283637451e0567c18d5e6bb1f8bd6daef6c7b81bd3e",
+      "git_blob_sha": "06b7eda348d5dabbbc420d274f1b66ccabd5e565"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/smoke/smoke_validation.json",
+      "bytes": 28954,
+      "sha256": "ca3f12f26edfbb540f588cddd2fc085495e3a10a7f9dbb976383910f017a1d86",
+      "git_blob_sha": "0346ac9a215ee9580839f6df4967acc6800b3b3c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/summary.json",
+      "bytes": 2988852,
+      "sha256": "3eac33f5728c4ab33d81d8746a0cc42213b3fb339d2c86c4b36dc93fc1f92af3",
+      "git_blob_sha": "c61b8ab662bba0341827262acf5208d493fa8543"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/B_0.50mm/validation.json",
+      "bytes": 39105,
+      "sha256": "81dc5437f12c4ba429c598b1ab6cd36d7886cb6a234473083a3d058fcd88bac0",
+      "git_blob_sha": "f6b5ff89d3275498b9c79457fd5f871159ae3861"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/baseline_crossings.json",
+      "bytes": 8549342,
+      "sha256": "f1450326f8961b10cf3316c8fb3f20b05d82c888d72389d1827c86455f60f0e8",
+      "git_blob_sha": "2410848239fa1db683d3a9b7487ca9137ad7b089"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoint.json",
+      "bytes": 87766,
+      "sha256": "30de8b823ae016038a6531a6a3a88d90b01e7040ca0d867a8d79af055a058045",
+      "git_blob_sha": "5b7a66fc35666518321507e88da7f3a5d211bb3c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_01.json",
+      "bytes": 1124,
+      "sha256": "1f7e386f4e78e4cee48f430c648ff6f38496b35dac3514ffbd31eef139dff171",
+      "git_blob_sha": "62e10e97dcc56fa558b204d1810d19b82a43dfaa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_02.json",
+      "bytes": 2159,
+      "sha256": "13aad9030d275ac1c3b97cdf370cd26406fd031a58e893218efddbbbb7603182",
+      "git_blob_sha": "7162507499e424c8d70c4919db6477d029baa51a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_03.json",
+      "bytes": 3189,
+      "sha256": "93c0b3f7a3bd65924f94fd7af1149eb80091e9b653970587362fc17fa43bbcf5",
+      "git_blob_sha": "e73685b2bb77792bce3f3b02a59498d7d4d8e103"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_04.json",
+      "bytes": 4205,
+      "sha256": "8352af7d131692346ffb0c94ce1c2154e4dec6acd4ccd23b2e227e290a60f75b",
+      "git_blob_sha": "9eb501e1de14418e0e26cdb4c817be62988161c0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_05.json",
+      "bytes": 5222,
+      "sha256": "f764ab08a750cb1a4778666d7ec9ef23ec64f757a8b74969ae40a8bf01048f76",
+      "git_blob_sha": "064613121aa8c71a588f4714243ce2ab9565404e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_06.json",
+      "bytes": 6340,
+      "sha256": "5c8b68e7e79c9b371c908c55c8d153b408e687654bca3a7506d8116668edb141",
+      "git_blob_sha": "c4c696c73314cfb3304355a04f1e14db0d478b31"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_07.json",
+      "bytes": 7361,
+      "sha256": "f285b75f4803d217c108e3f0aa8919ddf0433555029aa40fa18881e645f87c73",
+      "git_blob_sha": "b04f151a419e71999cfe670c6528bf81d79f8732"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_08.json",
+      "bytes": 8387,
+      "sha256": "c235d1c9433a6bbf8640c1a18cd4b1d29eaf2bbaf3a9ec1b85f5b6186febb5ec",
+      "git_blob_sha": "45c37353bd819188e3dbc215247987909774172b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_09.json",
+      "bytes": 9414,
+      "sha256": "b02b87a49602033ea1a7d7d19efe3b82c90b827a4d54e9f11be21d724ed62de8",
+      "git_blob_sha": "0dbd25e09fc58bbe758db9733ed982f49e01ac04"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_10.json",
+      "bytes": 10540,
+      "sha256": "3bc225e9a64b78510d25a69a3ea3e1b728cf692ddaec59fac8902555c602edfc",
+      "git_blob_sha": "3fc06236130c4fcd70a606648689d49e8d311517"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_100.json",
+      "bytes": 104741,
+      "sha256": "9ee6068f8b1a7f16c9018af32414aa7cb733634355f59ba304fa165c54d62eb4",
+      "git_blob_sha": "dd7aaa071f8716618fbc983bcbb0f77e32f3e0d1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_101.json",
+      "bytes": 105863,
+      "sha256": "f67b2319ac9af306782cd329f1fcb5f809d2566adaf10e8cd5c9b7cb64dd381f",
+      "git_blob_sha": "a4feefbb6fbf6fbd5e95f875849f1d75784774c8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_102.json",
+      "bytes": 106885,
+      "sha256": "03a35abcccf57c00800a4ea92fc6c9a3afcbd59fce65e097a572d0153da70dae",
+      "git_blob_sha": "5676501a96c88509ee438c3ea8b3040873119378"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_103.json",
+      "bytes": 107907,
+      "sha256": "428cff21ba445fc857dd9fd36b8affc930580db9613671e433f23f52f36eda0e",
+      "git_blob_sha": "567718e8934095d46eb90b024e4c32628aef054e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_104.json",
+      "bytes": 109535,
+      "sha256": "1f2d31031a12d043f49655225083e1876659df16ed78010807d6a72f943a35ba",
+      "git_blob_sha": "cc6035b571ac3d03ea313a4a0588ebc648c17579"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_105.json",
+      "bytes": 110556,
+      "sha256": "bc942010e6a28df70ae2d7023ced98f7a642a6b31be1f0a7ab1986a49cc7fdff",
+      "git_blob_sha": "c93cb180158adc3a81d339e2c07b36adf52c8bb1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_106.json",
+      "bytes": 111577,
+      "sha256": "8f726ca97a372fe432f11c19b59addc57b3904c139b6d98f5f97fd7e4b151acb",
+      "git_blob_sha": "99157f772d870f847e955dbb4ef3540fb0c633e1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_107.json",
+      "bytes": 112600,
+      "sha256": "25cd2c7377afd81493c3bbfa03a8e249f118963a566b66dc471e05652c463019",
+      "git_blob_sha": "1ade2d8374b2162afe17eee6957c91db1c8d09b3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_108.json",
+      "bytes": 114029,
+      "sha256": "2716762773d35cb33a483e92bee7a4879c36741eab11f73330de80460cd0aaf2",
+      "git_blob_sha": "0c460e2813e51e02cbe764286ad2fd0ee739b352"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_11.json",
+      "bytes": 11566,
+      "sha256": "038012acba7771d0d3a37acc73279474bcbadf7c98c078ec6af66c8c8504bced",
+      "git_blob_sha": "eb36ea8575e9dbc9caec7f0044b28108a802cf28"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_12.json",
+      "bytes": 12690,
+      "sha256": "197ab6343706eea2ab9d699c73c34a79408bab6e37bca21b4751da87c8242d36",
+      "git_blob_sha": "f083c4b9508a9a8c28736fc2cfafcdf1ef4da48c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_13.json",
+      "bytes": 13914,
+      "sha256": "5e55ef108050efc253e32be5d12e1133ebc89ea147c92916dddae690dfc85844",
+      "git_blob_sha": "a589bc7fb86a57b1994757085e484d1057a6a552"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_14.json",
+      "bytes": 14936,
+      "sha256": "e51200acf41946c9da6caea4638e9cc1cc385f9835d7ae24be3e0d1d3b637133",
+      "git_blob_sha": "29eadc2ab1cea1aa861a00edef8997cd22ee2409"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_15.json",
+      "bytes": 16159,
+      "sha256": "177d49f0258cb9abe336e750c86081005ec5b515a690c8a702902613bd0b4242",
+      "git_blob_sha": "2d9324a5b19983828b79f30b59419743f21901ad"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_16.json",
+      "bytes": 17182,
+      "sha256": "348b22834cd68db031d1dd825b693635b880cb38cd90e2642273e5f6f762bdaf",
+      "git_blob_sha": "9f1d997b9022b73f10c437bb2eb34db2866eea29"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_17.json",
+      "bytes": 18208,
+      "sha256": "e5f8dbac9b28e204ee7d239f0e901f47ebeca4ecccad57bf3af5ae1d84026e11",
+      "git_blob_sha": "0419f2c3d18b78d3e3e5e5fc632fc7f8510d5c2e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_18.json",
+      "bytes": 19223,
+      "sha256": "a67811e74b0de366f49daa2abc413fa14d7eb9b0e2ab1c0b959d7e1b58414d72",
+      "git_blob_sha": "f85d00287051d10dd8a516de673e7c3209727731"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_19.json",
+      "bytes": 20243,
+      "sha256": "d310f3568dd13ca507606234518b0584428229fb649cdfde077b6ddb78506b31",
+      "git_blob_sha": "6cc94d9dc48ecb7220e883e914ab729016ecb7f3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_20.json",
+      "bytes": 21364,
+      "sha256": "78516883bc806db2ee2447fc4521db8ad1aaeee97675499a4ce8d462df5dca5f",
+      "git_blob_sha": "7394942da02cfcecc22dc9238975f6de2f7f769a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_21.json",
+      "bytes": 22386,
+      "sha256": "1cbd52b3604a85f69bb455b9637965e3f9874486362a572e3984cd8d806e8677",
+      "git_blob_sha": "b9a777f6ff620902bc440c56e5a46b3958cce873"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_22.json",
+      "bytes": 23411,
+      "sha256": "925143ad42573ddbed9784060f869df3bc295c484f4580e6d5613a3011fff104",
+      "git_blob_sha": "431750938ec130609180b811d6707aec8832d03d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_23.json",
+      "bytes": 24441,
+      "sha256": "f8d3e694e9216ee7123959cb37e15ce7370d929bf06f3c5a342c95113326e0cc",
+      "git_blob_sha": "5a05a2f035270b15b291fb43a5f5569da92c805c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_24.json",
+      "bytes": 25463,
+      "sha256": "e82bcae6aa8d79297b9553004d1091ffd9475e66cdb0d4d1d8636f5ba9c11c53",
+      "git_blob_sha": "6a682f658aab302e5c23edfd8742f7931c9220d3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_25.json",
+      "bytes": 26585,
+      "sha256": "1addb64bc9ebf574c811fa345f1e66e12d761a5c36905ea2f6e5db586ec8e812",
+      "git_blob_sha": "cf4a61f3248ee42ecd9431eabce549fda2598452"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_26.json",
+      "bytes": 27608,
+      "sha256": "3ef9790e3610fad74e8eeafdca405e9d3d1822c500c2a1d169c74fda3bd12ce8",
+      "git_blob_sha": "fbd321d4acd43e3018f0f592219633a9f3727bd6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_27.json",
+      "bytes": 28630,
+      "sha256": "2df46fb5146d693ab5e8795f8b382086ccf3cf89e1c58d230a65934dcbf3facb",
+      "git_blob_sha": "6cfa6c8ed4865de4b4db0d5a6ffb760985f7bb33"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_28.json",
+      "bytes": 29656,
+      "sha256": "4feea145240acd60b80e6986cbd58b8d94e058d9f03e6ea20bf7d3c7a5033a14",
+      "git_blob_sha": "72ef5850dbf365473b406ddac9704a321611187f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_29.json",
+      "bytes": 30682,
+      "sha256": "ac46057cb90b3d3c9ef813b360a2e32f4b674bbe44365a8c62d503dff303aa4f",
+      "git_blob_sha": "6df2dfd8217d0137cbef8ecbaa8cdcdd59cbdbb5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_30.json",
+      "bytes": 31700,
+      "sha256": "19e12ba179526e37a06994447116e6cbfe9ad234ca90d421bfd581a75fcc0e4a",
+      "git_blob_sha": "ce89f05510f0c5abbebb9d41ca2ad72bfcd34aa8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_31.json",
+      "bytes": 32734,
+      "sha256": "8282179514f47c16d336927ce11af30783f8f2df02cde891e083bfce98b93181",
+      "git_blob_sha": "b1632677c4e29eddfa6cb504b4410984a4dd8fd0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_32.json",
+      "bytes": 33757,
+      "sha256": "56af97204a97fcca9e8daccbbae062e6bb850c53505cc147591bfe00ffb8ccdb",
+      "git_blob_sha": "c4c94c8b1f14c50ff4922948e4634bd4aaf2a1db"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_33.json",
+      "bytes": 34776,
+      "sha256": "a1eeee5ca88047d1b374b088c88cd274f0e7127c6f02083cbdf958f0682fc86b",
+      "git_blob_sha": "9d78ad7b888e3ccff7f25fb219f696c893f2248a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_34.json",
+      "bytes": 35798,
+      "sha256": "03e8cbbe8e1b743eb4b6026d57c6037ac4befe06a57462852a2a7f2a68613330",
+      "git_blob_sha": "aa3967e867a412b261d58bdeb8886bb9cecf0ee4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_35.json",
+      "bytes": 36820,
+      "sha256": "f4f9e131314efd9c59550cb5a13cb18b7424c6e3d71ddb87a93c4e0c9a062451",
+      "git_blob_sha": "23734f45245a12193d5c4aa8039f8b0c349d21e7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_36.json",
+      "bytes": 37945,
+      "sha256": "02a5f52e4b8edb9481fac3e75f7e19a6876db967b9ccb12b97b7a443ad324df9",
+      "git_blob_sha": "3cf5ee80679a2bb6a234e0358fb4d351c2a3106e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_37.json",
+      "bytes": 38969,
+      "sha256": "fd986d59f42d925736a5bbea6a8374e2c3afc97efd644d4901c396b8fbac62c2",
+      "git_blob_sha": "5b16fa64fb249202d1fd7b33a86aa8257cf93663"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_38.json",
+      "bytes": 39997,
+      "sha256": "dbfb2682e16e1d1514fd350e2c1e66e338e7bfb3cc496e1c37978cac250a4c2d",
+      "git_blob_sha": "477037d5fe62370325c5e3e6194f4f81b44dac75"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_39.json",
+      "bytes": 41022,
+      "sha256": "9871da78136d0717549dd83cd8e74174c963e7749ca2d6292f8e74fc29a6f231",
+      "git_blob_sha": "f928ba3578a6f2e2ab580df86ae9f7e22dbc6030"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_40.json",
+      "bytes": 42047,
+      "sha256": "4ca02b0b507e0c273daf792e661df486734d2f3b3782c6e5628747ea19f7ff7e",
+      "git_blob_sha": "1b01c94c41397c2a90dbe43e30dcd1427093c1ec"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_41.json",
+      "bytes": 43067,
+      "sha256": "6c25e21f237d3719be08608e4ae0ad3b044261097758a4163be2708d6b33051a",
+      "git_blob_sha": "ac0152d3025466dc47064c891c3ddc9532595fb9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_42.json",
+      "bytes": 44090,
+      "sha256": "b8cd729b698187d2e451414b1882d75e306b53c088a2b8e00b37db08a7161c72",
+      "git_blob_sha": "344822eaee642d55cfb023e7daf732468299809a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_43.json",
+      "bytes": 45111,
+      "sha256": "3edf939c766b03ea1b85ea720ea3bf127298af7c76083fb3180286adea1dbbe2",
+      "git_blob_sha": "03082af1f7f7be2a254476316c5ea2da764e94a4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_44.json",
+      "bytes": 46138,
+      "sha256": "fcf67863ac26c0d24a75d55e69b2f392998447b089594f11bf9c5ebc6b575dfc",
+      "git_blob_sha": "1e7091b789069d195ff0acb6e92dd278691fb6e5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_45.json",
+      "bytes": 47161,
+      "sha256": "a8d00a7972a8e0df3e84a0149aca7fe6c999354b6ba60f3d41e6c0a86034f294",
+      "git_blob_sha": "29dfc4c774599e997e39f6db02755fb80f109a4e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_46.json",
+      "bytes": 48184,
+      "sha256": "4a77ad35724263d5ae02a45ba3c6b849e0de779d234395b7e4644bb0ed04e470",
+      "git_blob_sha": "3e4b7457d0bd0c352ef8fa7b383fb8619e1db607"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_47.json",
+      "bytes": 49205,
+      "sha256": "5bb921beb6f06d5a0976a091eefc89aaf1ea554dc2f45881a4da5837737d3f8d",
+      "git_blob_sha": "c1d2cd15ee748e0d38a4ec2f086fcf1759745e7a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_48.json",
+      "bytes": 50218,
+      "sha256": "90deec055afac416f58af8e2f2d524f1a641d77a38ce45e068f8c3ed905de003",
+      "git_blob_sha": "a179c211c716b55fa831fcab14b3f58189ffa392"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_49.json",
+      "bytes": 51238,
+      "sha256": "98074a468b1602100d5979ed64ba3be8b073c3454a60fb82d8e542843315d6dc",
+      "git_blob_sha": "21b42d4e6fd44a75f91ca00c0204d2c7d9c13a52"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_50.json",
+      "bytes": 52252,
+      "sha256": "089b4c4da91254727c009e6c68d2e991dd225d8e8e0b78d4cd0e6d8324da7290",
+      "git_blob_sha": "c0284942ea2f41ba07299b9c9652629af1740256"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_51.json",
+      "bytes": 53275,
+      "sha256": "d5a597e43b2aad52973469dc116e22f3df03f7f6c755a88b04db98db983bb49a",
+      "git_blob_sha": "4081a41c4ae7c926707fb3d988d0566b9a109ded"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_52.json",
+      "bytes": 54300,
+      "sha256": "95cd47ad71e0c4d5c5f9180d9f06cfce26987cf98f30bc40bab1cc815a73b4cd",
+      "git_blob_sha": "beec2893b5fc514242a495b92e1d555e6c88920e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_53.json",
+      "bytes": 55526,
+      "sha256": "224cac890c8f90bcb4f1c2742538023b32e68da3e8404188abee2e4b91071060",
+      "git_blob_sha": "67b1868fc84cee123650c89f2693cec2222e5f0f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_54.json",
+      "bytes": 56547,
+      "sha256": "415671578ac5a3294618b839c022b74ad83164393ecc30b28dc88dfc7b91d579",
+      "git_blob_sha": "765b1c81500b65890bf2b0fd26c847533d803dc6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_55.json",
+      "bytes": 57672,
+      "sha256": "babfe6964199fe0cdde795d9b54161692134a432ddf95873e6679530f0dfae3d",
+      "git_blob_sha": "9d65c94b9f86c6b9421b7c742a62efd34873d9b6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_56.json",
+      "bytes": 58692,
+      "sha256": "fd7a8549d3fcab800bd5a8c4379a8fa8f1a54866570969e499582e51ea30ac10",
+      "git_blob_sha": "c46be235a3866957146bddd3ca821b4076c011ea"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_57.json",
+      "bytes": 59713,
+      "sha256": "3f0934cb95dd0dd4818860810744ec289405f417081dffbbd2e982ec23bca872",
+      "git_blob_sha": "6d34b577d5367e781ef5b46e60208aef113af37f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_58.json",
+      "bytes": 60735,
+      "sha256": "f0f8a682305d206cc616f37cb6a021c863084a1c2383c4332517b6e47303039d",
+      "git_blob_sha": "cbdd35dd7e7d057f0f729427a245d24f4bef1c30"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_59.json",
+      "bytes": 61767,
+      "sha256": "0d7d4eede3ea04aeca8d0a8af8573f87ad45c5b3d9715a34e01ae5551976af9b",
+      "git_blob_sha": "c302fbcd2d245f0265c41591bdf3d9d3517811b3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_60.json",
+      "bytes": 62790,
+      "sha256": "403df93e1468b03bf1e742aac176095e4ae65bce00a57e3cf990dbdf345b929f",
+      "git_blob_sha": "c053774132a11c885236f7737ecca5b23edacf4e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_61.json",
+      "bytes": 63812,
+      "sha256": "eca71bb30a5ba965641d8f5f90a31367f7c4778f7cfa5720625e644521097648",
+      "git_blob_sha": "8f6ba5d12b57772ebfabc770cefa9d0cb82e478a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_62.json",
+      "bytes": 64840,
+      "sha256": "77dfb7e937e68a5378df798f3fe421c8d4578526375393b9acdc8c2f0367831b",
+      "git_blob_sha": "2eec1ad4e8cce97c01fe208995cea846d222aa30"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_63.json",
+      "bytes": 65860,
+      "sha256": "30664c872e1879a206d7cc27cd01b215ffa1bf5384e066ff4009996456dbdf46",
+      "git_blob_sha": "e71149324d0e15f35e1f9eca4ab39a0fd005249d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_64.json",
+      "bytes": 66881,
+      "sha256": "7b664109ec645015138ea18ca846a80ec63dc2542c3114e7ff4dcc8d740b9ede",
+      "git_blob_sha": "d73cabfee01bf696d8722ceec3c64b76413a46bd"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_65.json",
+      "bytes": 67902,
+      "sha256": "39d6aabc684d74160ff831458d782ce3ca8bc7c7743bd93e73e4396e99654dc7",
+      "git_blob_sha": "7fb02292a2bce394a6b460bba4657cb829a317ff"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_66.json",
+      "bytes": 68923,
+      "sha256": "457da5a7b062aa1b066e15fed9752c26ed588bb5e6601fcb0a577a5c8767a804",
+      "git_blob_sha": "cc97d9f285532517938d0e49d313f1ad993fd03c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_67.json",
+      "bytes": 69944,
+      "sha256": "d09aa86a01919a93d782975612cad3db3083dfb8e903316011e58c586295e293",
+      "git_blob_sha": "7b7f378e73ee20ceff5212d036bafdf362f511f2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_68.json",
+      "bytes": 70964,
+      "sha256": "c32d998dd90dc3e1500868d5dd701d8b05907655eeb051ea3a87a0c120783b51",
+      "git_blob_sha": "6486a5cd1f32dfad796157a2e097a1585af1dc48"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_69.json",
+      "bytes": 71990,
+      "sha256": "f95beee6dd105ebecd344cd9926b3fe9c61ea43d1db18ebb8a93ae632e0b5af1",
+      "git_blob_sha": "deb0abe6d50da26fe4d5661549565a0f1887401d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_70.json",
+      "bytes": 73110,
+      "sha256": "ec154f86863ca01a019c1b888f32ee30cd64cec371694f3c9a5a5f240fc10f4d",
+      "git_blob_sha": "4fd5d08758b50e6fd3deae8b960f747688704b6e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_71.json",
+      "bytes": 74135,
+      "sha256": "a9dc57179c2cde33be0c5dc5b72d114d15ffadf14d1ce9b0a6ee6fb4593d075a",
+      "git_blob_sha": "78de35b6f8879fbaff061594eb441658f8adce93"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_72.json",
+      "bytes": 75158,
+      "sha256": "0437969717549675cac4b83d5bbfe98d588dedfb3a9a4afbe8f5a8b621c55d27",
+      "git_blob_sha": "b7583d069835159832b6696395451d7df45854cc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_73.json",
+      "bytes": 76180,
+      "sha256": "a50f0c0d36e793b681365be7ff6e9dd8ce13bd0335f94105d8c6a91913273bed",
+      "git_blob_sha": "0eddf8f2d43b6c41e2efe7471ae17b5c92cf2c3e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_74.json",
+      "bytes": 77201,
+      "sha256": "2ba3993b0d9a2004a84fb631db8c44dc1152f25ee28bc0d0769bf7c3f71e1d40",
+      "git_blob_sha": "0746919445b776bf1c19cb5505c321344e70d079"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_75.json",
+      "bytes": 78215,
+      "sha256": "265299f48e227f07f5a13bf4aa3b3df9aa430867b719a0a60d58ac15f9438722",
+      "git_blob_sha": "878bdc2f750e0da882bd9d899dac057323c3318a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_76.json",
+      "bytes": 79229,
+      "sha256": "5ce50e03c9c890f349b6824e8be8d7b0b3174e9dc2c7358f132608d32561bedc",
+      "git_blob_sha": "ecb7738467fe3ac473a974e2b9d682d869a18a7f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_77.json",
+      "bytes": 80243,
+      "sha256": "2d52d59fba4eec907ded35f7f278c8c763feaa8e05569483b8b729361d749440",
+      "git_blob_sha": "917e7668eedbefcd8dfabd9170b275b4832dac7b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_78.json",
+      "bytes": 81261,
+      "sha256": "be613044993042a112c06a7b8fbc3482480c8b1acc73f8d7dfc949124a5024cc",
+      "git_blob_sha": "2c0e46d48058b4664f318faad852c2a0ad79f1dc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_79.json",
+      "bytes": 82482,
+      "sha256": "f97f2903767add06ea43cabe0ca0195acbfc43251763f9732810356162d2fb16",
+      "git_blob_sha": "9a5a9e8ccd4fb15eaeab32a12f2a48f42c2ac11a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_80.json",
+      "bytes": 83603,
+      "sha256": "14b9b5caef7e7ec2349fcafaccb47594cda6124d811581681b12fa241934ee08",
+      "git_blob_sha": "800e39ab5e372f244c566812023b3d7681f6a095"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_81.json",
+      "bytes": 84625,
+      "sha256": "eb41383361566e94aeedc0ff4c19ab10d583bb02f5e0a9c478f3b52a2775ae0b",
+      "git_blob_sha": "92a674ebdec8b7daabc9e3433a8817a59647c937"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_82.json",
+      "bytes": 85648,
+      "sha256": "e5954ad4b2479dee9f8019bb5b905f9793b50ad20ccc4e98aeecdaa9bf1cbd19",
+      "git_blob_sha": "880bc94433857cfb45547c1c8154bcbfa9d28494"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_83.json",
+      "bytes": 86768,
+      "sha256": "3372b7b453fe1e5bef5a8e27f657c69e8eea98abb521c1fa62da7be48aef95e7",
+      "git_blob_sha": "b14017c315ddeddd720c678f3886d460c5dfdea7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_84.json",
+      "bytes": 87784,
+      "sha256": "1e27adf45ad0e2edb6a46def078489e05c19ed472d502c8e585324cdcf4b956f",
+      "git_blob_sha": "afdd0363ec9ef100bf8c57dffd9662fc29a6d59f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_85.json",
+      "bytes": 89015,
+      "sha256": "b0c95cbede992894b246372d2b45a07d52a9f2dc484312a84d69dcc4a9ea028f",
+      "git_blob_sha": "46fc49ca3364da755a6b8f95f003a8aee7743112"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_86.json",
+      "bytes": 90044,
+      "sha256": "9130d6738f2ed58d4875a850f0d08fd6911975c135a75ba9f17bdfe47cbacbbd",
+      "git_blob_sha": "0e46d74f12d00fac5472777cb8d021670ba3de9d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_87.json",
+      "bytes": 91066,
+      "sha256": "85d31d0a25e7a7b51b1f1ddf54c336ef88b9843c088b7b6f8bd9df8ad4f6394a",
+      "git_blob_sha": "e76775297704c92f389015ddedc5108265776db8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_88.json",
+      "bytes": 92085,
+      "sha256": "fe4cdcf916de39443233313fa6fb86815241e44bf7b553ba1477c0231bd01547",
+      "git_blob_sha": "bf4dd563523c8047bf942697eeff96167ce6ec82"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_89.json",
+      "bytes": 93206,
+      "sha256": "a8738f8b94f510e22aee45cfc37d4d6702e3b9cf6adc2aa8d8f0175f7bc3c28e",
+      "git_blob_sha": "4ee3b6c05fbe05c19969ecfe2710739d765dc02c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_90.json",
+      "bytes": 94329,
+      "sha256": "36f9ea0b4988578f25c495c99eb8373bfc9b4caaddeb25351799c16b59e4a305",
+      "git_blob_sha": "e5aa3e8abb8dde2656d55c125e155ccdce69d69e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_91.json",
+      "bytes": 95350,
+      "sha256": "9840a43ad8901f4027bc7900b0440b116ebf46333568be2c6c21dc20b42f7355",
+      "git_blob_sha": "b3981776a362eb3e0ec2eec0416fde6eae583ffe"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_92.json",
+      "bytes": 96371,
+      "sha256": "8b03d9be5da27859bc9c17d8bb21f3481feed710e5006c4d846e0271fb32d992",
+      "git_blob_sha": "fee0724ff86726eed1696cf816f4db6f93057ff4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_93.json",
+      "bytes": 97388,
+      "sha256": "fd9850ad6933291dcd5da0ddadd41748fe363945fe1f4da72b302a3231f371bd",
+      "git_blob_sha": "ba25482292f0c5fff294b2d3fff20adb6bb941ae"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_94.json",
+      "bytes": 98414,
+      "sha256": "e940b27c3ed5b6d7f8b4df6d4126f388637626d5cf596fa4c6881ec382ff4657",
+      "git_blob_sha": "2f18e6e4480b3fe4e5f21702e8b9a1edd0d82ad5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_95.json",
+      "bytes": 99428,
+      "sha256": "1f8f608333716515864528597a30bc7d524f0c01911aa5ac778bf7d39eb84af8",
+      "git_blob_sha": "591ec2d4870de28a28622effed825caf5ca5331a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_96.json",
+      "bytes": 100448,
+      "sha256": "ba5ba3a76b1ef789f2c8c71699b06948e367f8d531f1d109baeeac04efadbdd2",
+      "git_blob_sha": "c09b7ecbc3c091146316bd02c18fc5808984f463"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_97.json",
+      "bytes": 101462,
+      "sha256": "61ffb97cc29a815a575021229724c21781b360b088fb3c70297cf7152d922851",
+      "git_blob_sha": "d6394fc872dec0839319dde446c4b180f5387777"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_98.json",
+      "bytes": 102591,
+      "sha256": "a1d29e767f53aca88761a0509e25e3fa24e5e5e558d7407a438527a6cc01333b",
+      "git_blob_sha": "13a3891bb75e3532f9fab3b5d8a1665a426477a3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/checkpoints/step_99.json",
+      "bytes": 103612,
+      "sha256": "2b9cd53d0e2ff90b640dc44334fb85ebbd4f23973e974f450336dd6fb058a4d5",
+      "git_blob_sha": "2e817c49aa0756cec70299839d1d73340664ba24"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/crossings_after.json",
+      "bytes": 5373143,
+      "sha256": "f03fc16486de50e0c807c25dde072c60eb18505ce5a5da58c4324fb3805d6ab9",
+      "git_blob_sha": "5a8459d088541ff57ec3dba5070fda2d049b57d2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/crossings_before.json",
+      "bytes": 9153253,
+      "sha256": "769c778b47d2ff4244ab3326e4c27d9af6b8a269815209bf43dc9e194e682234",
+      "git_blob_sha": "067b7e14cdba32c92e1a1922d735a6223c3c8571"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/layer_stack.json",
+      "bytes": 976,
+      "sha256": "1fea1a82f9565c81bbf34b358f1adea76f347a5829ac4ff29c8286a5b1ec64e9",
+      "git_blob_sha": "157dbb659d8af632446c09ecd9085722683414c7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/lift_plans.json",
+      "bytes": 106557,
+      "sha256": "250d6ada103897aba57a61a2acd9d501767dfb7df5a5bb62b5ff8659f1193af5",
+      "git_blob_sha": "fc4c2ac0b6a36d5860bd2cded90e8e161ade3f9d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/01_before_after_xy.png",
+      "bytes": 5062111,
+      "sha256": "61b5d7035ea065c29dcc5a2177e19f6b3ad849eddaefcc42ddec27fcb9c81ced",
+      "git_blob_sha": "8a206bb93b41a707231ee2e2a6b3ab9ec4e94c1b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/01_before_after_xy.svg",
+      "bytes": 2557175,
+      "sha256": "8c70429fe8d92f8e801afa86175a53f54a6703e88dd7469442418418ddcd3b26",
+      "git_blob_sha": "c5eba5527e5ace8136e68103f858d97df135d162"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/02_3d_full.png",
+      "bytes": 3200931,
+      "sha256": "fb33e9a0d564453b90e38014f1d14faf1287946296e9c14103ca6dd062eabc92",
+      "git_blob_sha": "131e5ec5fffeb13f5f394fd034ab229abc6e581e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/02_3d_full.svg",
+      "bytes": 1682662,
+      "sha256": "f6956f108063b2690675749a22081d1a85fb44780307976164045d96f2112b38",
+      "git_blob_sha": "b3512e37c462ce4505c1dc8e2803559723bcc3b0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/03_layers.png",
+      "bytes": 1766384,
+      "sha256": "df1e5c3c3106e4dc4242ac5828d199c594e7667c87840238110567cac6a2c8bc",
+      "git_blob_sha": "61083840a84a5d27dd9a5e5db39d99673c1bf8b6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/03_layers.svg",
+      "bytes": 1570744,
+      "sha256": "fbf1d7af76ae2c5ae564b7e549fcbec23631d428a421d214ef3cae5c892a9b19",
+      "git_blob_sha": "87303efd841659a63b1553034b2e937231cc1f48"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/04_early_climb_zoom.png",
+      "bytes": 1685262,
+      "sha256": "7fd48c2a821dd6055b29d718b422c5688fc38b6ca0bce51dd7f14b446e7915b4",
+      "git_blob_sha": "83c2000abcfdd89b1baadf2bd7c99a7480c20d92"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/04_early_climb_zoom.svg",
+      "bytes": 2599524,
+      "sha256": "09354dc6771489695ed734899caea7a99b92e9a0155550505e90c25ae6a741f5",
+      "git_blob_sha": "bcc2aa4d8b0a7b7c8ab79b2d5e9abd08ebeeba57"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/05_crossing_region_before_after.png",
+      "bytes": 2875330,
+      "sha256": "9b59d93510b54e63e5889d2830a95bc04a50651f3bae2588643e7a5bb722185f",
+      "git_blob_sha": "dd4ffca796494839672f580ca2958cde5fec067f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/plots/05_crossing_region_before_after.svg",
+      "bytes": 8277594,
+      "sha256": "0bd22b0255a66de9af812fb4acb2397e4f34de523d589356140c0c8cc260e2d8",
+      "git_blob_sha": "47c058bd2e6780124bd926547baf191bc33a5d4b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/process.log",
+      "bytes": 11208,
+      "sha256": "087f26e0a27fc214bb2234427d543cf96c606354d78276a32997316d88640c46",
+      "git_blob_sha": "900edb52ce903023b1232d98fd3f1f77443a4370"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/routes_l3d.json",
+      "bytes": 2330508,
+      "sha256": "007ef41dcd3cd858128976e3908fd8cdbec68425c0bf5b017ad43dc3c593dc4d",
+      "git_blob_sha": "bf3b59c9f95d4e3582e6286afc55312634565172"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/run.log",
+      "bytes": 10961,
+      "sha256": "066247d6a6c091a2b581d446e5120d5b22188b6f856353adef6b74aa6ce8cf15",
+      "git_blob_sha": "cf86411a4a23d3aedb2a1712b601d781e50ef40f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/smoke/checkpoints/step_01.json",
+      "bytes": 1124,
+      "sha256": "556bcfac572ce6497ca39e226d4982108fbbe1d764c001e36b29d0d7ef598119",
+      "git_blob_sha": "db439672eded634bfb0a76ea5174bf89f39a916f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/smoke/checkpoints/step_02.json",
+      "bytes": 2159,
+      "sha256": "32968e2cf026c50c8cb49b2e79dd4bda31552ca7aaf6f73119840ff850eb908b",
+      "git_blob_sha": "b3520491b35bc885c9aa44798d523561ee7a6ce8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/smoke/routes_l3d.json",
+      "bytes": 1945044,
+      "sha256": "a151cc014c784f21f025d2f703d2226cf6134e30a6d8928196ddba7cc8c39168",
+      "git_blob_sha": "788df1c86601ff77d6f1f840887a8a8c43b26d5c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/smoke/smoke_summary.json",
+      "bytes": 898,
+      "sha256": "70fd03f1ede62108d1825bb2270062906a9f7dd166cf92ac5b480c2e3c7892ee",
+      "git_blob_sha": "f69fbddb77c2cca1e36592e9ea6d69a390a6e897"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/smoke/smoke_validation.json",
+      "bytes": 28974,
+      "sha256": "ccdb96fe10a3f680744c35ff9d1644d74bdd4d854706f68fc94859f118401ba5",
+      "git_blob_sha": "5556e4729961f81e9c8af1a82f1d275d906dd5a0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/summary.json",
+      "bytes": 2638355,
+      "sha256": "d5d92e60ddca23fd4f99fb09ba1de1542446919b3a4feddd7de3b99172f5f57b",
+      "git_blob_sha": "d2300a5265c71914ca3bcb1d3547c43e6393e941"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/C_0.75mm/validation.json",
+      "bytes": 39235,
+      "sha256": "92e3770633a05f4a25f12fc63d5705deeeeb03e7cd5cc43e4332961fc63ebbb0",
+      "git_blob_sha": "098522e4f7925864240678a6e1de80a73ea5a944"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoint.json",
+      "bytes": 83432,
+      "sha256": "557d14817acf10ca955052217ae669d4a67254cfcf79d95aeae17d02b5127b8e",
+      "git_blob_sha": "d9d0c515d49cd63335c76bf88e1bf0a39cd03207"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_01.json",
+      "bytes": 1122,
+      "sha256": "6d9dacd5d66e4b5cf8e3e4757f5c0107be84a4d549229fa7d558d09441f9b5ee",
+      "git_blob_sha": "423b7487895624a22a9bd862ee77b7887cf09119"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_02.json",
+      "bytes": 2156,
+      "sha256": "ccd05fc4089d62f4137a1d7dbd17bc54f09d6296a37965a66842c297082964e7",
+      "git_blob_sha": "27985ee461ec63d095f3ebdd50a77553374ab10d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_03.json",
+      "bytes": 3184,
+      "sha256": "12f5f6ec58fcc688d352219e52c7c95c461cf92adfbf200cad9ccb06447429b2",
+      "git_blob_sha": "fe31b060d00f7b3988106b0a0fa1481f08756075"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_04.json",
+      "bytes": 4199,
+      "sha256": "d762381e1f980e175550688c8bdcea2d41c48ca4881efd378b1856978063f355",
+      "git_blob_sha": "a57a44297cd5647af89de99060543d1378de86c1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_05.json",
+      "bytes": 5216,
+      "sha256": "00b7c2091a30d45bdf8ede00704ad14cb312a2041cf2d7bdd9c16ac07c6ceaa5",
+      "git_blob_sha": "46794c3a4361f51da7cf246053dce00ef0a25163"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_06.json",
+      "bytes": 6334,
+      "sha256": "49317bc927b2a9f6be0b21c561615f4b9a3ee2a34aab659e075c8311c7e6dfa6",
+      "git_blob_sha": "6a3c805afa03382f8523e542acedafe5a7efd920"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_07.json",
+      "bytes": 7353,
+      "sha256": "8739d5b3a8d16679bb6116dfecd6cfec17b51fae3ab9cf2e492eaeb3bb8c8505",
+      "git_blob_sha": "ae9e4ac59cb0eac95ceb9d74351f907757ff59df"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_08.json",
+      "bytes": 8376,
+      "sha256": "4c25a71b0034ddddf619fb57dfeed7d086aec6ff01bfe32605a3eee27d540203",
+      "git_blob_sha": "94cbae65a4fadffe8064a04359376d3ba8f8f0fa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_09.json",
+      "bytes": 9497,
+      "sha256": "61358c22c15f2f30aa8bebaca814c091c65db0ef01aa97dd4ce458dfaf60ed5b",
+      "git_blob_sha": "b084926c2078e8ebe02e5505ac1e6652a35d683e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_10.json",
+      "bytes": 10523,
+      "sha256": "485783ea3a0acc9589b92e41f3febc794772cafa64fdab9e51ce3b2fc19c78bb",
+      "git_blob_sha": "d0a546b6b8074372483b7a8ccc95e7439747bc69"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_100.json",
+      "bytes": 105903,
+      "sha256": "fc75c0815e78c068ddb214f993d6169676508e0f007167456e2a8ae305e554ac",
+      "git_blob_sha": "b4de9f801a82a7f53d197cfd0a8b3dc9ce2e3e6c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_101.json",
+      "bytes": 107020,
+      "sha256": "d2acc22699c2610e2b9691ab48b07c0715580fa121d9da6b2a518ee74f701cc9",
+      "git_blob_sha": "53683b01de2241ad06216ccbc0ec427cea0b11cb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_102.json",
+      "bytes": 108042,
+      "sha256": "3d350a14fdb19c6123cf9861cedeeb49e3f9d5156ba4e10a6c3ec704c2caa603",
+      "git_blob_sha": "106bc40b4bf42b9223d7de24784344d6eab23bab"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_11.json",
+      "bytes": 11646,
+      "sha256": "be70a0f1de51cdb4b3104e7cdbc572f956d4426745fbc626b38b3d735b2df579",
+      "git_blob_sha": "744ef4399c37d3b4a8e6371c911ab54bef51cf6f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_12.json",
+      "bytes": 12769,
+      "sha256": "2c1f8d5710cfd7522b9863fd42e7c6cdcae9c8fdfb4575df7f546646618b2cec",
+      "git_blob_sha": "29d93baadbd0aaa23d35297f07c04ab7028c388a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_13.json",
+      "bytes": 13788,
+      "sha256": "568c7963754e54acc4ae3f68c5b871bd192499e9301d82bf08f952fc2920f447",
+      "git_blob_sha": "f543e8796120412252d5e8e1f838b5f213aad807"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_14.json",
+      "bytes": 14815,
+      "sha256": "01f134c27368f5a3f904c48713cc3f6d6c95a2ddde6519a97efcef3b6b9fd54d",
+      "git_blob_sha": "2bffed033c0df614e5905982a4a62c199d25bd67"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_15.json",
+      "bytes": 16041,
+      "sha256": "fbe21a9e5fa1c835cca46464b27d0c58afffa0c38328178036bd0a7aff26611c",
+      "git_blob_sha": "e2280a028b2ec1cd9629f5e4bfb7fa7c03b63203"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_16.json",
+      "bytes": 17164,
+      "sha256": "07f715a44f3e1614dc2df04df2dd7fce41e8dd620a85096de2747f1f59227c86",
+      "git_blob_sha": "f65357f596241d20736dfda98d4fce9f015b5937"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_17.json",
+      "bytes": 18187,
+      "sha256": "a9abc8e0558d50940bf219e116724292cd36d7c529c77ef864377b60fc9b3424",
+      "git_blob_sha": "9bcc9ab7a285bd108c57631469300b2ff2cf7f5b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_18.json",
+      "bytes": 19310,
+      "sha256": "c6fcb63dc17ec77130aacc795325ed093d4a67c42e5e9d5c63d67cad6a6e187f",
+      "git_blob_sha": "8737f5c6f3e1055bfd5de6b5f8e19840a6845f65"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_19.json",
+      "bytes": 20331,
+      "sha256": "9853032787c447c9d02d85624fbefb5c51020df28476f90706591507bacd77e5",
+      "git_blob_sha": "fd808b3c45fb9e8183b5117bec50276bfd269970"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_20.json",
+      "bytes": 21357,
+      "sha256": "7c3eb86f19b373bba170dbbc0d92dc958c9707dfc8459a71d66555b7a8bd2f03",
+      "git_blob_sha": "1929bb0e6ff4e95922d2e76daeccf7dd6be83f88"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_21.json",
+      "bytes": 22379,
+      "sha256": "f7da0ea048c1ab0d285cd5ec5db9c499333a7dad46d14b4364009073961645e2",
+      "git_blob_sha": "cae05b7563e3e8fdcaa0b3ca7b9613b6dfe742dd"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_22.json",
+      "bytes": 23401,
+      "sha256": "67ddade59d8e5c09f517ff01c6dfb320fe03d8f8476a741b87dab8ca63e9d176",
+      "git_blob_sha": "eb00d4fb33539ab5350a690581c3b6b96bace64b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_23.json",
+      "bytes": 24422,
+      "sha256": "2c91166ee03923f3bc0eeea57747ca88a62ea2a43680fbf6cc10f1bb091aeb26",
+      "git_blob_sha": "3b8b73806a7d22cac63edc6e2d14823a44e691d3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_24.json",
+      "bytes": 25445,
+      "sha256": "0960e190ca9668b02b7fbc66752d639168e7a222deae423b55ab48d0ca94bf5b",
+      "git_blob_sha": "41f6f88eedb308fc4ccbee7d66c404167f24cdf1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_25.json",
+      "bytes": 26468,
+      "sha256": "ae2dd7a6ac7c713007857062c7b26c6e1c31bf9640db5c84e6a1c5567c5f950d",
+      "git_blob_sha": "3cffec407834761ed3e5f64efa15961913a668c5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_26.json",
+      "bytes": 27591,
+      "sha256": "219536656fc5d5373a923304004f0dbe98f7fda9c1e9328790cf7e9c718515f1",
+      "git_blob_sha": "a9254dc75655432a06cf2c28bd7f5a30b388fa93"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_27.json",
+      "bytes": 28605,
+      "sha256": "6e37b8d5d9e99ca2e104896d4d56b3478a8dae1e856003431a1762320d5ee953",
+      "git_blob_sha": "3617239a267eef2d08fe55e62822778b65042f2b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_28.json",
+      "bytes": 29636,
+      "sha256": "05cbfd3a11ba50ed116187bbd68c90f48e5e04ce01ddb00cbd277dcf5718291f",
+      "git_blob_sha": "56d6846c426ffb71d71072b27442fee805035f6e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_29.json",
+      "bytes": 30659,
+      "sha256": "688a5e352f140fafdd34706f2a2040a2045653928fda6a21ba16ada407e26792",
+      "git_blob_sha": "33366aec19456774cbbdc908abbca809e45e0343"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_30.json",
+      "bytes": 31686,
+      "sha256": "9e2efe16b093fb6ad3cb83356d017f5ce19dd0923512c261f1eaae21e75f88c6",
+      "git_blob_sha": "7dc124f282ec61511993af6acdea29adaf207027"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_31.json",
+      "bytes": 32704,
+      "sha256": "c4f6c0b1247485ea9ff6f22af3f2c1eddf8ee8178872ff24121226937c2273be",
+      "git_blob_sha": "8bb9093432a1a6d05cc242e5b73cbcdabbe1fbc4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_32.json",
+      "bytes": 33718,
+      "sha256": "5053a39b495e805fb41c1e96c13bbdf38e83540fc2c0c88c017098a7ccdac569",
+      "git_blob_sha": "6ae02f46c0f8abf0f0126a4513ecd04e9c737bf4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_33.json",
+      "bytes": 34846,
+      "sha256": "68a8ff38946f020b74e924c471a00f0fae478ac48b2435a84f008296cdd11a63",
+      "git_blob_sha": "a157381dda77affc23c11ddf5f2bec873c00ba22"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_34.json",
+      "bytes": 35862,
+      "sha256": "f14b7817473b112e07718605324282f3370be49c71a286ee3de6bbaa98d0393f",
+      "git_blob_sha": "de24c2d22c151238eb32ebfbae2b8369cd4d7e79"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_35.json",
+      "bytes": 36889,
+      "sha256": "a38bf7be0f2ac4c709b44ec257dd046306dfb6b3930b1daeead3ed293437a12c",
+      "git_blob_sha": "4f79d474b387a13e45bfe3d679fbf26d27f55404"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_36.json",
+      "bytes": 37913,
+      "sha256": "dc409715ef5dcf4d9802c71da9abefa44d3fec9f100f6bebfb27c458ad48aab2",
+      "git_blob_sha": "62319b6ebfa7b85177bef4dcc06e92b1f1ba9697"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_37.json",
+      "bytes": 38938,
+      "sha256": "31e9bc39102522dca391dcf4b323b18021ae15c5eb00c759b8dc5b5bdc909ccb",
+      "git_blob_sha": "7f895a2a3d317907dd93b60357e966cbe6d41451"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_38.json",
+      "bytes": 39955,
+      "sha256": "d62559a67c7476c3baadaef0d3037810f128eac9a53e9e963397e0afdabd2b46",
+      "git_blob_sha": "311ec3338833083763e889292b9b9a635a542828"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_39.json",
+      "bytes": 40987,
+      "sha256": "418a549002627edeb76216a06c02642ff73b0db7b047e00e190f60ac4b559d55",
+      "git_blob_sha": "2d3c65edc3e2139cb077a6a002fd9b3766b1127f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_40.json",
+      "bytes": 42013,
+      "sha256": "74f927e3d940968afe6bb456cad96a8c7e06156c1a066df1303f0d8510859470",
+      "git_blob_sha": "b61ae7bdb796f2196e0dcf407e7cdd42033f1272"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_41.json",
+      "bytes": 43231,
+      "sha256": "7fec183e679c99d2e0d9d99e0a82b9c42ad5148fa38379b3a9e00cb84e268892",
+      "git_blob_sha": "818189bc916951662bae4d55c55f8e13dc432cb9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_42.json",
+      "bytes": 44254,
+      "sha256": "e95226c68dfa3e5123094d9b2feca54c63097c472d8652be3697aca55b7fa4f7",
+      "git_blob_sha": "986411542984d04f8e7760edff0167ab1ff8b939"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_43.json",
+      "bytes": 45277,
+      "sha256": "8ac52fce8779dfa2b26e233ffe2aa50c5bc167d966cbce12e68331ee003443f5",
+      "git_blob_sha": "2c4498c04c1fcb88d40a24d69ee2e027f3610c66"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_44.json",
+      "bytes": 46305,
+      "sha256": "0002b1942959bd52f7055d48b8b259a776a2f2e479098978a3500f378bebfd16",
+      "git_blob_sha": "782a9d2c043244668a5b35ed3a24e321ce07b7c7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_45.json",
+      "bytes": 47331,
+      "sha256": "b4f7e9b50e3c443d30cc84f2295b2afcd861dc504fa6cff2b38989629e414fa3",
+      "git_blob_sha": "62138328086c4514659311f579cd9084e8c11bdf"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_46.json",
+      "bytes": 48358,
+      "sha256": "d576185202fd792999f3bcf039bf0a1d36b79088f28d299a3ebbd97739ac0def",
+      "git_blob_sha": "2e4d02698fb131eb7ec7b6754d0aec9489b5ed20"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_47.json",
+      "bytes": 49383,
+      "sha256": "b46c1b1b1556c7da9ead44aa081e42a33016a1dc2f2f0085583b1d53c4219992",
+      "git_blob_sha": "9beeff4218bbe60bdc34323639f7e1dcf1eff956"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_48.json",
+      "bytes": 50407,
+      "sha256": "1fdabd197a88bcfba2a3153741293bddcbea0c697648bbec96d46d0386df759b",
+      "git_blob_sha": "cc39c526493e0c71e0225fc403a2d73edc6a5ce4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_49.json",
+      "bytes": 51432,
+      "sha256": "8589383c72c35633b4a9ad21e16f97b90a03ef03cfb1d23250f7fcebed492f8e",
+      "git_blob_sha": "1d8a576711d055f8e61dcd93739d29524bd082d0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_50.json",
+      "bytes": 52456,
+      "sha256": "02a9ff5f26d0138083925437f99ed500fc47fca6b6d13ee3dc626f63245ee9e5",
+      "git_blob_sha": "bf6cb70048e81b9b95616ead32f3d3b46f6f80a3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_51.json",
+      "bytes": 53488,
+      "sha256": "7af34d3ec811c56f1d9fc7b2b4afbf408071eb966658aba67a06817c8e34d363",
+      "git_blob_sha": "dc829aed7e8da1746aad76954f6f77c9be15c619"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_52.json",
+      "bytes": 54507,
+      "sha256": "5880562530f7d34388824891d5c9a62cce6d9415b5863f43986e4ceabd424933",
+      "git_blob_sha": "78e78367f3a4a39bcc616865bdaf3334a1cd5f12"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_53.json",
+      "bytes": 55531,
+      "sha256": "94aa2d076477e8483691b1ae17476cc893f2bb930b68c5158395af6433b00403",
+      "git_blob_sha": "0e5ac1405517e3df4191d1f51530502a22b8754b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_54.json",
+      "bytes": 56553,
+      "sha256": "5c2e4af78fa6aeebc2da97184ecb2dbb253caa4fa862224fba82e36a0fdbfa00",
+      "git_blob_sha": "759436d84ef814829abdb1d33f963daaf0dfa0e8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_55.json",
+      "bytes": 57571,
+      "sha256": "6a41f1e2c46981c453d99595743a320fdffe7beef335faefd199957b11bf0114",
+      "git_blob_sha": "3dbb9fe996fb6fb2fdde06a2b2b6d8017d462b1f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_56.json",
+      "bytes": 58590,
+      "sha256": "dbeb373c4b266c2581b8c0ee2b213d0a4523d4827982e4c3ad4f74c33099e206",
+      "git_blob_sha": "43322258c70d9ef6518853d7d6760315ea9f4f65"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_57.json",
+      "bytes": 59612,
+      "sha256": "056625324ffbf7b2d9edb09a339bcf88ed1145c9652579c8a44b873c9d9b6873",
+      "git_blob_sha": "4d98d553fa5771bf192f4fb60766c75f42f36060"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_58.json",
+      "bytes": 60743,
+      "sha256": "2dacbe4967604a91c760261108fbe11ecdd232967db836e616cfe0e9fa9865a6",
+      "git_blob_sha": "46ced450c13bf3a4afe7c4cea5e461620f445c5b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_59.json",
+      "bytes": 61771,
+      "sha256": "30c88eb628bdd275b597f93388c206e120130f1a0eed21bd56554be414eb0fa5",
+      "git_blob_sha": "82ae530fd4ef46250d513da6d88e54eb1b82c95f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_60.json",
+      "bytes": 62890,
+      "sha256": "df025c56ae516d35d8e502b0c7af70e8e2af402188bd2f6a39a5af5b62d0109a",
+      "git_blob_sha": "d2c5087a83734d5bd6779d85c9436ce0ab724868"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_61.json",
+      "bytes": 63913,
+      "sha256": "8be1ced041349196e61dfdc80d9e544d469a1c6aced4b83710ad482ebf2c58b2",
+      "git_blob_sha": "f9afadfe0ca4d232ac476eabab82a7ee490c6c81"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_62.json",
+      "bytes": 64933,
+      "sha256": "3bc9c1b0483d0df87a0ed255d7095c94a96a7a9fb2576bcf2674f750faafe46b",
+      "git_blob_sha": "29be3926a904e71a52b9e39d97a6724943c0e707"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_63.json",
+      "bytes": 65956,
+      "sha256": "a5aa8494da26834880b2759efc8a7f13070b5852a725c84e5a79a1e0da680b4f",
+      "git_blob_sha": "7b0c8733bba046d67110073798bb5db13779f8e7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_64.json",
+      "bytes": 66981,
+      "sha256": "37dc333b6668fc81319d7eafa3ca69183dbc0fe8cf1942de03cc972d1424936a",
+      "git_blob_sha": "450502811fed4966331f5906bbe8349f6f8d8833"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_65.json",
+      "bytes": 68010,
+      "sha256": "ba221f00d29df5b0fc6e63e79dbc9a2f56ff4536ac44ef592e53506b68c475d5",
+      "git_blob_sha": "8e48794891765932545cdaef487bef7b5d2399a5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_66.json",
+      "bytes": 69030,
+      "sha256": "26d5b4055efbef14140345adf4584593904a43d2a122515d861268696144542a",
+      "git_blob_sha": "7db0dc1bdcd2809b6e9bcbc9583206b027bf8d1a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_67.json",
+      "bytes": 70062,
+      "sha256": "ebab7f0cd3cd91ccaa2b79b27ff86e52f0e97efe9b62c1d218b98103f9c8472f",
+      "git_blob_sha": "a8124b979ffc0b13d2a2d3cb748dd796707ef719"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_68.json",
+      "bytes": 71184,
+      "sha256": "0bfa6fb9b98d1c1704269d3e2019278f8773d9473c2cf74d0a70348ca5b6b991",
+      "git_blob_sha": "ff7750ed90416ee97c96a2e1ca473431a8140098"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_69.json",
+      "bytes": 72413,
+      "sha256": "9d5b84429aaf8038bfbcba7c9fce72d6a5a1fda7853addd6fe6eced246a28b62",
+      "git_blob_sha": "312f88231821d7d62665d4b4134b71d9cc0599c2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_70.json",
+      "bytes": 73433,
+      "sha256": "444cd865de287df55f8bc39f1ea2090d4fef1536ff1b31b96cfb2150400c45e6",
+      "git_blob_sha": "1d2defcc05ee0499c92d6a4ac9754b48e3017326"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_71.json",
+      "bytes": 74837,
+      "sha256": "10124e4db0a0cec11761e6389161e236276400c40b75a3f05022e9f1f9ff420d",
+      "git_blob_sha": "600a592834a5411d60e729ab32e3776ac1522ce6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_72.json",
+      "bytes": 75856,
+      "sha256": "99691abe4c4ae685bceffa0602fa2dd85e6d99b75e7605fc37cec759bb491d03",
+      "git_blob_sha": "f4236fb51fb5e66fb6e1a845e7248fe7c57b48aa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_73.json",
+      "bytes": 76971,
+      "sha256": "9066427ea7a9f62eee60885ef900a3f11181d7175c324121137b73b84b75fa09",
+      "git_blob_sha": "53f5f24e150fa1147dadbc1b07539134f65d3701"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_74.json",
+      "bytes": 78086,
+      "sha256": "d95d81d1351369caf0e2395e931f46c2921443a24841c67fba296ab9f0fb88d4",
+      "git_blob_sha": "7bdecc2bc487f166582082dde614a875fac4c971"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_75.json",
+      "bytes": 79104,
+      "sha256": "651410a90bfc0818c6477d20d8ec695926cda6641dd8133188a171974b465c0f",
+      "git_blob_sha": "b9bf2477fb356164fc7455e2492cb4fa3aa2d3d7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_76.json",
+      "bytes": 80129,
+      "sha256": "56c2bea0955902f26480e86663375bd0bfd210024b0add1046f1b1419f078e7d",
+      "git_blob_sha": "8f019b56f71cf1dc3a4e542c80ecca97eff2ddfc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_77.json",
+      "bytes": 81246,
+      "sha256": "e6bc6e2de7ce72a44215bad7b81b45466c89b0a44d9f1b8df3d0a6811721e088",
+      "git_blob_sha": "c004a7e5f8eeb92e3e10496ea5dc840ecfe0078a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_78.json",
+      "bytes": 82266,
+      "sha256": "87cc5690d8b54a13844cdd4f10710de79fd608860c619a3a69b58d725d792fac",
+      "git_blob_sha": "41a699b5e3f5768c90ea6ae2b93a4d5ab86d5e7f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_79.json",
+      "bytes": 83292,
+      "sha256": "5e855c5038c2baa5adbec21f0a12931ceac5d609a48b2c14596eefd2d143aad7",
+      "git_blob_sha": "3f9f23ce85393c97bfd282bacab0dd72bffc27e7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_80.json",
+      "bytes": 84315,
+      "sha256": "71d10e0b113bc10d45471e26becfcfae58036862e4f7f2a62fa584c56d08d03a",
+      "git_blob_sha": "222bafa77e513e6785e419a1b0a2735804e858c5"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_81.json",
+      "bytes": 85538,
+      "sha256": "fc4673d3e3bc717f7973dc09cdf5c96bf190ecbbb83a40316c0a0c41ec52f8c1",
+      "git_blob_sha": "35d07bf514571adfa5d82360f7f146a99a6c6bc8"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_82.json",
+      "bytes": 86654,
+      "sha256": "7beceec14935c5849c120904aacafe6698f4157a96e21c69162c71e576007de6",
+      "git_blob_sha": "8cde478ab382b87e7ce28b16f154322bc2363e2f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_83.json",
+      "bytes": 87868,
+      "sha256": "f24d625fa40d84ac327071aee9c475f04eb81a0cce6344156a763654417dcf9c",
+      "git_blob_sha": "b449078fe569f67715655e626078d36bbdd3a49b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_84.json",
+      "bytes": 88888,
+      "sha256": "b052da75fb1e4a9f1a438e1aac9808d723f1f66381ea71cda124bdd552e07954",
+      "git_blob_sha": "70d658471aa09888e68e3a866f05c8778fda1eba"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_85.json",
+      "bytes": 90008,
+      "sha256": "697a525df1e53ecc740f0c51b40cb58709a51cd6380c8918f211c57c003a8297",
+      "git_blob_sha": "de1f6ca98d24faca985a1074306fcbfc9386452c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_86.json",
+      "bytes": 91234,
+      "sha256": "a524a8b49ac5a2a46065a10358c9cd603e28fe077868280efbe53fa3f890b7e1",
+      "git_blob_sha": "9281922d9b338aa809528ea5349c74096aae3d76"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_87.json",
+      "bytes": 92253,
+      "sha256": "e0a3d3c5157dfa8468e48166cad1f113aa34698c707a91dc03ba47655539e0c6",
+      "git_blob_sha": "389204ba6b42989c631bd34c70236a43dc271510"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_88.json",
+      "bytes": 93370,
+      "sha256": "4e87a69f43d387ac24a3091cc5c89ab5fb6cb6ce5a3b3b2e93105a5f4c1daa93",
+      "git_blob_sha": "2ebba11c991992553aa4a9ae6c329497e1de6064"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_89.json",
+      "bytes": 94390,
+      "sha256": "cbe2e81aca89f2679c9e498636a8715772cd9a4c1b50d0a2f125e26e80e609ce",
+      "git_blob_sha": "24ef6c6d3ae7e52584422a99eed641e6cbbdf5fc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_90.json",
+      "bytes": 95410,
+      "sha256": "10bc7c1852b51c2a6cf9c42d5841195c617ae692eb908b148e9f0d1d48f3a935",
+      "git_blob_sha": "9fbfd5369a9470e4c3881685a8a2e2bdd22705b7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_91.json",
+      "bytes": 96430,
+      "sha256": "63899b4195bec1fd5656c8dd90948b4114e6a60cd3f0a9062f7eeb6b7cbd275b",
+      "git_blob_sha": "c8bbff09c1aff1bc341fd4025d791c3e7d59ca80"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_92.json",
+      "bytes": 97451,
+      "sha256": "d8ae429a078104e278e0d29d7c281e86c15ee9a6c5b3651f422bc482da3e3fdf",
+      "git_blob_sha": "4b891e2101ea4c995420746ff8ea8b8a41ba48b4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_93.json",
+      "bytes": 98466,
+      "sha256": "e3dccf2d9cddd28ccfc1a4418c504f3ff0020d5cba92c957f4991942c5c7dbd9",
+      "git_blob_sha": "b6227bd670ec46a08354d9bbfbcf5ede19411733"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_94.json",
+      "bytes": 99486,
+      "sha256": "50671640b931c2f153ef8238c0d1d2c4d0717ede9aed51585c8400a1cfd07756",
+      "git_blob_sha": "2061a74efcc64b41c90db077b8e381d690862b03"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_95.json",
+      "bytes": 100502,
+      "sha256": "7fda882c522df7116cecc2b9058cdc570bcb5ca32dcea7efd3e7358b630575ad",
+      "git_blob_sha": "aca4033a2387088d661f077bad681571789ea9f2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_96.json",
+      "bytes": 101521,
+      "sha256": "054f9373062e8873a811fee507ea0b82ea64ba652fd4e64c93cdd546e4d35da3",
+      "git_blob_sha": "9271e2da0e6cd620ce6e5c923013bdf1d4d6c3bb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_97.json",
+      "bytes": 102541,
+      "sha256": "14511ff31aed17fb47e9f9676e333fb486defada4f95946c0118baf982c2c674",
+      "git_blob_sha": "7ac1e607d3680246eaaaefa2a9e1158507a3dcba"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_98.json",
+      "bytes": 103560,
+      "sha256": "bb4d9282d8f7dec74ab26f2ef0861182c7fb8909f5d006eeb8583048610340df",
+      "git_blob_sha": "187a908cff0af2a8be5a7f17a0df363ccc971390"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/checkpoints/step_99.json",
+      "bytes": 104579,
+      "sha256": "ccd3f05f6670a977aad30b7dffa533f6741a9111450ef78acb70d3d073af6bf9",
+      "git_blob_sha": "657c970c481b40b95532c498cf32a18cb42715ef"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/crossings_after.json",
+      "bytes": 5248606,
+      "sha256": "f095c17d77c8f5945588028d33cd559d47c3a31d6c3bb1d74ffa3f63588a3938",
+      "git_blob_sha": "1c799220a7011486b3b4db2d7e4e622c87d11c27"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/crossings_before.json",
+      "bytes": 9153253,
+      "sha256": "769c778b47d2ff4244ab3326e4c27d9af6b8a269815209bf43dc9e194e682234",
+      "git_blob_sha": "067b7e14cdba32c92e1a1922d735a6223c3c8571"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/layer_stack.json",
+      "bytes": 972,
+      "sha256": "69bdad388b950ea305dce57ae108b8205d7be8e25bd3308979fa450ddcdece8b",
+      "git_blob_sha": "f22f146ac0deef69cc781c62f7f8043c34c9942d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/lift_plans.json",
+      "bytes": 101540,
+      "sha256": "d8c4199f33f166165261f1b65389590bef8baa5864a87a1c6936eeff39998041",
+      "git_blob_sha": "c0fc9500586ad505755f5ab1ab3ea100daa0a5e1"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/01_before_after_xy.png",
+      "bytes": 5082390,
+      "sha256": "d46841bf25ea3aa1c1e7a54e22a4aff0beaa22a05ca2b244f55b1ee71dd1774b",
+      "git_blob_sha": "e496f117dbf04d6c462f51ef0caf8b378df082e7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/01_before_after_xy.svg",
+      "bytes": 2536862,
+      "sha256": "bbbeffa0b92f9822cbeed3582de6137e5cf6c39baba3c349ed52d4e95f81e790",
+      "git_blob_sha": "e2f72ce18ed9eb2b70b5c800435a8d3179346cc0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/02_3d_full.png",
+      "bytes": 3398882,
+      "sha256": "76d38f4d7860c37bf0edffc7cc0b73ae377a2b29892459b63629020d7c566a67",
+      "git_blob_sha": "12d368194fb882dfea2d9ffa1280c900a2d60eb4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/02_3d_full.svg",
+      "bytes": 1688163,
+      "sha256": "75b51a7bd958629f574f6a792ed06d3bc5e1ecd08813f3360842b90e176c8b5f",
+      "git_blob_sha": "cb5e576d82049dc2fa8bc6bf38d6e82b2e0f8b7b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/03_layers.png",
+      "bytes": 1777335,
+      "sha256": "3388567920b578b0c85554d59b6dcdf9d261887011f5d6a74c9ebbcfa9cf7a5f",
+      "git_blob_sha": "2a66d1b97e327e726fa6135c0eefcd93de9e0c3e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/03_layers.svg",
+      "bytes": 1561770,
+      "sha256": "1cf9277280be21df8b24898454352de24ac2cce867486ab7e39f7761c2afac1f",
+      "git_blob_sha": "fae778d0b00a501a33c87c742dfbaa0d2a244c09"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/04_early_climb_zoom.png",
+      "bytes": 1685558,
+      "sha256": "0b589bc160a89b60c0d6baf5f03d912d9f61ad43645b238a870b30e5590a63a2",
+      "git_blob_sha": "d591aafc9b423508feb5401d94c1976076d2ea81"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/04_early_climb_zoom.svg",
+      "bytes": 2579379,
+      "sha256": "7030b874a1d4a3b4f47c104c79599ee95597f5514877280e8f7c7367043125ee",
+      "git_blob_sha": "e3d5a3f408bb5e08cf0bc6f702ed359faa38189b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/05_crossing_region_before_after.png",
+      "bytes": 2861558,
+      "sha256": "ac654cd6d9a72f7907bc6237bd6c0b7746236e25baff3a70444b27abf7d931e5",
+      "git_blob_sha": "1f72056376ace2706d4d2579e626e0ae8def6c0e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/plots/05_crossing_region_before_after.svg",
+      "bytes": 8121605,
+      "sha256": "fd7b3786700c90851af900fa3e2113f7112a091b5ca4dca41b4c9c01be4e45f6",
+      "git_blob_sha": "87a050a2720aad80d74391c812e55e658645dacc"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/process.log",
+      "bytes": 11177,
+      "sha256": "0fcd8af20aa40786d335b746990bc79e0e602c5128505639b1d3f94c6ca9ef9b",
+      "git_blob_sha": "ac6dbd42ffe0580d64c4f8f119c819958c1bd5bb"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/routes_l3d.json",
+      "bytes": 2310105,
+      "sha256": "46983cae4bae19c7d633c4728ddc4ab7e820667638eb8b392d88498996622519",
+      "git_blob_sha": "c0771a562c76ca4b7d48c0c6c91dfaa15afb08b6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/run.log",
+      "bytes": 10932,
+      "sha256": "a2d27c0547ddc6a25e4c37581d5b7569111da9c9b814a7d6d3a9d531a5701a43",
+      "git_blob_sha": "8dd895ab6cff9c18d8d8a3a8fd5fe575cda27a72"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/smoke/checkpoints/step_01.json",
+      "bytes": 1122,
+      "sha256": "32f9b5f5e58abd66ee4c56b5fa5b904012442a732e764359aebfd017c9ff8be4",
+      "git_blob_sha": "fe5668b1f8300153591b13ddb20137215250a8d9"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/smoke/checkpoints/step_02.json",
+      "bytes": 2156,
+      "sha256": "3e818844636869003567571bb19ce2449bc6098abfff8ab9f1d2733b0f2c9dc5",
+      "git_blob_sha": "5a7bfe9c21f5f66a6fde189d5262f026535ce7d6"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/smoke/routes_l3d.json",
+      "bytes": 1944988,
+      "sha256": "af23b4e8b74710e7103bd45bd246cc9d2fe87c24e2e33d28c4a84cfdf63c28d0",
+      "git_blob_sha": "bcaf01f2efd00a24ed5b7c92beb659fd9128aa3e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/smoke/smoke_summary.json",
+      "bytes": 895,
+      "sha256": "6a187825a8e6726403e29e8952ad0df60d49389a3cd6827bebbb33888cbba8f9",
+      "git_blob_sha": "d1fa4cf67e651cfd03e167e2ad3b5fb9b1528386"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/smoke/smoke_validation.json",
+      "bytes": 28905,
+      "sha256": "49b6daf494331b4286fec692e3a04da710fd4f91aebfbe34d4620774de46b7d4",
+      "git_blob_sha": "98330e2a1f97c714e8e71f053a20c532966eb216"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/summary.json",
+      "bytes": 2583653,
+      "sha256": "e95b1c802dd4e0bd16e1a257add4a1a22e924f8fe577b88b1bd1082d4b718ca1",
+      "git_blob_sha": "2d9c1a0f9f4b57080cfdff39b51fecfaf0b49a20"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/D_1.00mm/validation.json",
+      "bytes": 39117,
+      "sha256": "55d642ea2e46e5d4a96460d9f92af1527c5cbe8672ec3661137714798dc4a93c",
+      "git_blob_sha": "31f4459f5574cfe50adadc6e5230c7e6a2e6574f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/README.md",
+      "bytes": 4701,
+      "sha256": "b4b07b7c12cec6505c1fba0e0d2cacdbaf139502e48a3fb2c05a2f319eec872e",
+      "git_blob_sha": "bb9a75566ccbc3d21bc7d4bbcdc7dd20b9ad9231",
+      "source_bytes": 4183,
+      "source_sha256": "2c51d4b54096dc66b9d0a7070efb400c1f142f88dd136a6727209c7f10bdddec",
+      "publication_change": "Added a prominent publication note; original README body preserved."
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_layer_height_ablation/smoke_results.json",
+      "bytes": 1847,
+      "sha256": "889f5a0a8c21eda33ec79e7a54163cac47ddd73965e4d92c31f2d55d7e8d77cf",
+      "git_blob_sha": "e1c833cd368928616286236d13edd0ec942e0b07"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/actions.json",
+      "bytes": 402348,
+      "sha256": "73e73f99d35f8cd93a3a979ff467ae34a0f822aefd1f9aacb0fbfaa9bec2782d",
+      "git_blob_sha": "71d7b0f1bac05f702af33da11f7d273cd5a22d25"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/after/layer_assignments.json",
+      "bytes": 59646,
+      "sha256": "b0f00c7e6248c0fa22e6ab25ee5ee49f03d6ce1965ce95bf18293a8a6dc2f39a",
+      "git_blob_sha": "43cc99f823d00db9472deccde12ba6052b92eafa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/after/layer_stack.json",
+      "bytes": 981,
+      "sha256": "9bfaf9c1e4366b3d806e8c29133cc2030fa614aee83f4b6a4f4d1ff3eb522313",
+      "git_blob_sha": "eb3630cc65eed96db39eb30d02df283e5c5b9e8e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/after/routes_l3d.json",
+      "bytes": 2235145,
+      "sha256": "e8c975935d31319def8447ce32ec2a72ccce4c691f3a4f49e165a0c4ea806339",
+      "git_blob_sha": "892c5dd3a46175d7a6c0fd739f731adbfe5c220e"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/after/validation.json",
+      "bytes": 39126,
+      "sha256": "e770ba262368696860de58a7d45fc854a3e986e15789b5325d6f430144b36907",
+      "git_blob_sha": "ed93f30793024d751beaa730d005e4c3792b2379"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/before/layer_stack.json",
+      "bytes": 972,
+      "sha256": "0e2b369aa937c87b93317dfa57922f36eedb0652f016577e9376c8463ef5b6e3",
+      "git_blob_sha": "f8c5156185e900650875efba05511f2f15111e6c"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/before/lift_plans.json",
+      "bytes": 90240,
+      "sha256": "8fb21cfae059dee54443def8b40d81198c57335ed94a2b3ea26c962dc2c6a288",
+      "git_blob_sha": "f8c5134c0bf19e69ba07c9d8fef9d183a70cda36"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/before/routes_l3d.json",
+      "bytes": 2255234,
+      "sha256": "a28e415b6a114859eddb376e4ae2ba12786543cdec9138dcd2723950c4426189",
+      "git_blob_sha": "7b20581fb0c05ddb74d0c0316af7cded56d13eb4"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/before/summary.json",
+      "bytes": 2988852,
+      "sha256": "3eac33f5728c4ab33d81d8746a0cc42213b3fb339d2c86c4b36dc93fc1f92af3",
+      "git_blob_sha": "c61b8ab662bba0341827262acf5208d493fa8543"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/before/validation.json",
+      "bytes": 39105,
+      "sha256": "81dc5437f12c4ba429c598b1ab6cd36d7886cb6a234473083a3d058fcd88bac0",
+      "git_blob_sha": "f6b5ff89d3275498b9c79457fd5f871159ae3861"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/checkpoint.json",
+      "bytes": 437464,
+      "sha256": "79ec4b29eb3e86c9a6b6ebb3694e516ff0fa1bad9884044b4a62186ffe80069e",
+      "git_blob_sha": "06a401d81f665b96fc27fbfcde63b5d5338df06d"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/figures/after_3d.png",
+      "bytes": 2467035,
+      "sha256": "a6f790e727ebd073029eddac20434622e7f596ba1e6e7c13552704e8090c2d83",
+      "git_blob_sha": "a5c695390597322e3ccf1450f7c2de083c397ab0"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/figures/after_3d.svg",
+      "bytes": 1583065,
+      "sha256": "8d881a8a088b55a6e7a1a9272b3e300c924b81a68a2f1564331b621f3efe68b3",
+      "git_blob_sha": "e472b5f64ed645d7263c98d1cf48917ec4137692"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/figures/before_3d.png",
+      "bytes": 2397345,
+      "sha256": "73eaa9f2893b60f0b6351c290cbb4b83664338e42cd782c38256aeeabb400571",
+      "git_blob_sha": "eaa65e42bdc77e707771d35bfb1b0d9e889fc2c3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/figures/before_3d.svg",
+      "bytes": 1527936,
+      "sha256": "31dfecf69656ae34f790e8bdff9566db8c2c2a9d4a8a153214fcee877811a044",
+      "git_blob_sha": "af2f853fadcae18646c1f87a0210c8e2209183c7"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/figures/joint_swap_zoom_before_after.png",
+      "bytes": 759052,
+      "sha256": "8320120f817d73cbb8285b969f194e6cc8fae51dd24312fb7d91b39bdc4a8ba8",
+      "git_blob_sha": "0c123679311a3111c64eba8273ae24f4846bf927"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/figures/joint_swap_zoom_before_after.svg",
+      "bytes": 228863,
+      "sha256": "30778f5fb7da3b2bdea91a1c7bd732c6267e8f6b3f3a396b4be49ed0ab43ad19",
+      "git_blob_sha": "d05dae0528701ff15f3622f15c74d4c7b43bbf9f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/input_hashes.json",
+      "bytes": 544,
+      "sha256": "82a2330e2d84a3a1da67700854366346f9dc59dfd97df1dcdb1616079bb76a56",
+      "git_blob_sha": "5ee888bcf2f86e3248266a56579d37a9fe9c0c1b"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/README.md",
+      "bytes": 4231,
+      "sha256": "e8c22c692408414e724ddedca24f365a253953a29ae3efcb56d76261f3e8064a",
+      "git_blob_sha": "fdd8dd0e4bc1cd357d21d1e4a44557f6a8034759",
+      "source_bytes": 3410,
+      "source_sha256": "954fa81535bce77d79f511327751311a1a9e22f5212d0c6b1552434e122ef4d9",
+      "publication_change": "Added a prominent publication note; original README body preserved."
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/run.log",
+      "bytes": 8878,
+      "sha256": "001fa553e60fc257a7d4dcd8c22f2eb3fa35d4895dadf3be2376ee930585f39e",
+      "git_blob_sha": "694660425ce47ca8ab18c5686249d94721c87971"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/smoke_test/actions.json",
+      "bytes": 66706,
+      "sha256": "c906b0f0e44f820bab0427005071fa225e10d9d88f4a6633fea3818cd87ac726",
+      "git_blob_sha": "475f5c11d1438454241aa8c30c31214d8dae6b96"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/smoke_test/run.log",
+      "bytes": 3270,
+      "sha256": "b16417cf6bcd823ecf28c3cc6fd9fc0b03ef671b763015b7a492f11783ee5685",
+      "git_blob_sha": "f469bf3446c5315b12435d497d3b076f5d320835"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/smoke_test/summary.json",
+      "bytes": 1969,
+      "sha256": "7f1b5a37666b2cb6eaf15a836fbe7cc9686509595848634fc8ade0367cf44dc6",
+      "git_blob_sha": "e83fc66a40cbd468296916e4d249a4fc3b13bba2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/smoke_test/validation.json",
+      "bytes": 39120,
+      "sha256": "ef03242c66d5d1be60fb79f0993138fb5b5bcf9db17eb1f7e803f07ccb2c0506",
+      "git_blob_sha": "ed7b5879e901582723ddc0d37693d1760e5ecc5f"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/stage_records.json",
+      "bytes": 383722,
+      "sha256": "94d0c16a782e4ed550605723c52278521aaea3a33624f1c2bfd60ca1947e7abf",
+      "git_blob_sha": "ca0483857eb51e15b11701c7108c910f65714806"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/outputs/v4_c4_dynamic_layer_optimization/summary.json",
+      "bytes": 3220,
+      "sha256": "fa49d4d94924f9e6516f82102626e6637068df3769b8fade64041e1445ef3667",
+      "git_blob_sha": "9b3b4d01580b7c0d9d2e3866794e5cccb8c6e630"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/ablation.py",
+      "bytes": 13125,
+      "sha256": "2516905816f1f3c5ac15044e6d0f3f5f4371feae3ddab3c9a0bc6204f706103b",
+      "git_blob_sha": "5200fb86255ccfe74a25950a6446d6174cb578f2"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/dynamic_opt.py",
+      "bytes": 49742,
+      "sha256": "d2db1a7aec0d7872d70e9fcde3d921052713a6843149a0927fc2756cef453aae",
+      "git_blob_sha": "f0c7d790a1baff0e1f504bddf1e748a928f8ac0a"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/dynamic_run.py",
+      "bytes": 12593,
+      "sha256": "34d8d949475e8db6796824b53f2f5304bc004e8f111373c45c2539f6fbe3eb60",
+      "git_blob_sha": "cea6fa3273d1916e58a74c8b1d8e0625fa81c3b3"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/lift_cross.py",
+      "bytes": 52159,
+      "sha256": "ad14b2b3da4d3c90e872e049070d7ac7dcfafa17d45d88c6dc9620f6e4ddfd72",
+      "git_blob_sha": "dd5651130d417c0f5b87c552ef4dbe3b716221fa"
+    },
+    {
+      "path": "OpticalWaveguideRouter2D/four_side_1024/v3c4/lift_cross_run.py",
+      "bytes": 29544,
+      "sha256": "71da1d3de7f88d172664adc5b1a17eaf4c72dca880341d5432b3619cedb8952e",
+      "git_blob_sha": "47f78d26420a559c82b98a9afb0fedb902b1405e"
+    }
+  ]
+}

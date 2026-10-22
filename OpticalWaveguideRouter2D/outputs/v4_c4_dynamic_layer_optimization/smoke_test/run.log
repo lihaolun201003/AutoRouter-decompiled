@@ -1,0 +1,21 @@
+22:05:11 [dyn] input hashes: {'b_routes_l3d_sha256': 'a28e415b6a114859eddb376e4ae2ba12786543cdec9138dcd2723950c4426189', 'b_layer_stack_sha256': '0e2b369aa937c87b93317dfa57922f36eedb0652f016577e9376c8463ef5b6e3', 'b_validation_sha256': '81dc5437f12c4ba429c598b1ab6cd36d7886cb6a234473083a3d058fcd88bac0', 'b_summary_sha256': '3eac33f5728c4ab33d81d8746a0cc42213b3fb339d2c86c4b36dc93fc1f92af3', 'crossing_cache_sha256': 'f1450326f8961b10cf3316c8fb3f20b05d82c888d72389d1827c86455f60f0e8'}
+22:05:12 [dyn] current layout: routed=1020 lifted_routes=332 lifted_groups=83
+22:05:12 [dyn] initial unique crossing pairs=55484
+22:05:43 [lift] running repository l3d validate_payload with V4-C4 identity
+22:05:52 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+22:05:52 [dyn] single interval_move group 21 L2->2 pairs 55484->55296
+22:06:08 [lift] running repository l3d validate_payload with V4-C4 identity
+22:06:17 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+22:06:17 [dyn] single dynamic_layer_change group 51 L5->3 pairs 55296->55292
+22:06:58 [lift] running repository l3d validate_payload with V4-C4 identity
+22:07:09 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+22:07:10 [dyn] single dynamic_layer_change group 19 L2->5 pairs 55292->55068
+22:12:53 [lift] running repository l3d validate_payload with V4-C4 identity
+22:13:11 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+22:13:12 [dyn] single dynamic_layer_change group 40 L3->5 pairs 55068->54980
+22:13:12 [lift] running repository l3d validate_payload with V4-C4 identity
+22:13:30 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+22:13:37 [dyn] figure before_3d.png
+22:13:43 [dyn] figure after_3d.png
+22:13:44 [dyn] figure joint_swap_zoom_before_after.png
+22:13:45 [dyn] DONE pairs 55484 -> 54980, single=4, joint=0, retry=0, validation=exploratory_only

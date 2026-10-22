@@ -1,0 +1,131 @@
+{
+ "history": [
+  {
+   "group_id": 221,
+   "layer_id": 2,
+   "removed_pairs": 484,
+   "pair_count_after": 86020,
+   "length_delta_mm": 0.692,
+   "seconds": 1.85
+  },
+  {
+   "group_id": 240,
+   "layer_id": 4,
+   "removed_pairs": 480,
+   "pair_count_after": 85540,
+   "length_delta_mm": 3.6329,
+   "seconds": 3.82
+  }
+ ],
+ "group_plans": {
+  "221": {
+   "group_id": 221,
+   "kind": "adjacent",
+   "plane": "z2",
+   "route_ids": [
+    605,
+    989,
+    804,
+    676
+   ],
+   "layer_id": 2,
+   "layer_z_mm": 1.5,
+   "rise_start_mm": 31.298145,
+   "fall_start_mm": 293.639525,
+   "footprint_mm": 7.681145747868607,
+   "removed_crossing_points": 1412,
+   "removed_crossing_pairs": 484,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 6,
+   "pair_count_after": 86020,
+   "high_spans_mm": {
+    "605": [
+     [
+      40.7925,
+      291.8263
+     ]
+    ],
+    "989": [
+     [
+      40.7925,
+      291.8263
+     ]
+    ],
+    "804": [
+     [
+      40.7925,
+      291.8263
+     ]
+    ],
+    "676": [
+     [
+      40.7925,
+      291.8263
+     ]
+    ]
+   },
+   "length_delta_mm": 0.6920040985442029,
+   "status": "lifted"
+  },
+  "240": {
+   "group_id": 240,
+   "kind": "adjacent",
+   "plane": "z2",
+   "route_ids": [
+    624,
+    1008,
+    785,
+    657
+   ],
+   "layer_id": 4,
+   "layer_z_mm": 3.5,
+   "rise_start_mm": 24.268145,
+   "fall_start_mm": 238.14398,
+   "footprint_mm": 13.076696830622017,
+   "removed_crossing_points": 1116,
+   "removed_crossing_pairs": 480,
+   "added_crossing_pairs": 0,
+   "added_crossing_pairs_total": 10,
+   "pair_count_after": 85540,
+   "high_spans_mm": {
+    "624": [
+     [
+      39.1581,
+      236.3307
+     ]
+    ],
+    "1008": [
+     [
+      39.1581,
+      236.3307
+     ]
+    ],
+    "785": [
+     [
+      39.1581,
+      236.3307
+     ]
+    ],
+    "657": [
+     [
+      39.1581,
+      236.3307
+     ]
+    ]
+   },
+   "length_delta_mm": 3.6328601861268908,
+   "status": "lifted"
+  }
+ },
+ "pair_count": 85540,
+ "lifted_routes": [
+  605,
+  624,
+  657,
+  676,
+  785,
+  804,
+  989,
+  1008
+ ]
+}

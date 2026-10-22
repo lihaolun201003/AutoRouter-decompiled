@@ -1,0 +1,46 @@
+21:18:04 [ablation] smoke A_0.25mm heights=[0.75, 1.0, 1.25, 1.5]
+21:18:05 [lift] loaded crossing cache C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\v4_c4_layer_height_ablation\baseline_crossings.json (86504 pairs)
+21:18:05 [lift] before: pairs=86504 points=92196 per-plane={0.0: 70264, 0.5: 16240}
+21:18:07 [lift] group 221 (adjacent) -> L2 removed=556 pairs now=85948 len+0.1mm
+21:18:09 [lift] group 240 (adjacent) -> L3 removed=532 pairs now=85416 len+0.2mm
+21:18:09 [lift] running repository l3d validate_payload with V4-C4 identity
+21:18:18 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+21:18:18 [lift] smoke done groups=2 routes=8 pairs=85416 validation=exploratory_only
+21:18:18 [ablation] smoke A_0.25mm: groups=2 validation=exploratory_only
+21:18:18 [ablation] smoke B_0.50mm heights=[1.0, 1.5, 2.0, 2.5]
+21:18:19 [lift] loaded crossing cache C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\v4_c4_layer_height_ablation\baseline_crossings.json (86504 pairs)
+21:18:19 [lift] before: pairs=86504 points=92196 per-plane={0.0: 70264, 0.5: 16240}
+21:18:21 [lift] group 221 (adjacent) -> L3 removed=484 pairs now=86020 len+0.7mm
+21:18:23 [lift] group 240 (adjacent) -> L2 removed=536 pairs now=85484 len+0.2mm
+21:18:23 [lift] running repository l3d validate_payload with V4-C4 identity
+21:18:31 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+21:18:31 [lift] smoke done groups=2 routes=8 pairs=85484 validation=exploratory_only
+21:18:31 [ablation] smoke B_0.50mm: groups=2 validation=exploratory_only
+21:18:31 [ablation] smoke C_0.75mm heights=[1.25, 2.0, 2.75, 3.5]
+21:18:32 [lift] loaded crossing cache C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\v4_c4_layer_height_ablation\baseline_crossings.json (86504 pairs)
+21:18:32 [lift] before: pairs=86504 points=92196 per-plane={0.0: 70264, 0.5: 16240}
+21:18:34 [lift] group 221 (adjacent) -> L2 removed=492 pairs now=86012 len+0.4mm
+21:18:36 [lift] group 240 (adjacent) -> L4 removed=512 pairs now=85500 len+2.4mm
+21:18:36 [lift] running repository l3d validate_payload with V4-C4 identity
+21:18:45 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+21:18:45 [lift] smoke done groups=2 routes=8 pairs=85500 validation=exploratory_only
+21:18:45 [ablation] smoke C_0.75mm: groups=2 validation=exploratory_only
+21:18:45 [ablation] smoke D_1.00mm heights=[1.5, 2.5, 3.5, 4.5]
+21:18:46 [lift] loaded crossing cache C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\v4_c4_layer_height_ablation\baseline_crossings.json (86504 pairs)
+21:18:46 [lift] before: pairs=86504 points=92196 per-plane={0.0: 70264, 0.5: 16240}
+21:18:48 [lift] group 221 (adjacent) -> L2 removed=484 pairs now=86020 len+0.7mm
+21:18:50 [lift] group 240 (adjacent) -> L4 removed=480 pairs now=85540 len+3.6mm
+21:18:50 [lift] running repository l3d validate_payload with V4-C4 identity
+21:18:59 [lift] 3D validator: status=exploratory_only exploratory_pass=True geometry_pass=True counts=OrderedDict([('violations', 0), ('contract_errors', 0), ('port_errors', 0), ('geometry_errors', 0), ('curvature_violations', 0), ('clearance_violations', 0), ('same_plane_violations', 0), ('self_clearance_violations', 0), ('other_errors', 0)])
+21:18:59 [lift] smoke done groups=2 routes=8 pairs=85540 validation=exploratory_only
+21:18:59 [ablation] smoke D_1.00mm: groups=2 validation=exploratory_only
+21:20:44 [ablation] started A_0.25mm pid=19916
+21:20:44 [ablation] started B_0.50mm pid=36716
+21:20:44 [ablation] started C_0.75mm pid=20188
+21:20:44 [ablation] started D_1.00mm pid=25480
+21:34:48 [ablation] finished A_0.25mm exit=0
+21:35:12 [ablation] finished B_0.50mm exit=0
+21:35:12 [ablation] finished C_0.75mm exit=0
+21:37:20 [ablation] finished D_1.00mm exit=0
+21:37:21 [ablation] table written C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\v4_c4_layer_height_ablation\ablation_table.md
+21:37:33 [ablation] combined 3D figure C:\Users\lihao\Desktop\Graduation Project\OpticalWaveguideRouter2D\outputs\v4_c4_layer_height_ablation\ablation_3d_compare.png

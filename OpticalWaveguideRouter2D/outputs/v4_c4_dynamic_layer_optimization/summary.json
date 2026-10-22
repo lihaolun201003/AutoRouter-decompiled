@@ -1,0 +1,111 @@
+{
+ "schema": "v4_c4_dynamic_layer_optimization_summary_v1",
+ "routed_before": 1020,
+ "routed_after": 1020,
+ "unique_crossing_pairs_before": 55484,
+ "unique_crossing_pairs_after": 49992,
+ "crossing_reduction": 5492,
+ "crossing_reduction_ratio": 0.098983,
+ "single_group_reschedules": 13,
+ "dynamic_layer_changes": 8,
+ "interval_moves": 5,
+ "joint_reschedules": 1,
+ "recovered_failed_groups": 6,
+ "recovered_group_ids": [
+  38,
+  15,
+  7,
+  4,
+  3,
+  255
+ ],
+ "joint_attempts": 65,
+ "retry_attempts": 8,
+ "lifted_groups_after": 89,
+ "transitions_after": 712,
+ "length_total_before_mm": 131427.2845,
+ "length_total_after_mm": 131439.0015,
+ "length_delta_mm": 11.717,
+ "validation_status": "exploratory_only",
+ "validation_pass": true,
+ "validation_counts": {
+  "violations": 0,
+  "contract_errors": 0,
+  "port_errors": 0,
+  "geometry_errors": 0,
+  "curvature_violations": 0,
+  "clearance_violations": 0,
+  "same_plane_violations": 0,
+  "self_clearance_violations": 0,
+  "other_errors": 0
+ },
+ "layout_version": 14,
+ "accepted_actions": 20,
+ "rejected_candidates": 125,
+ "input_hashes": {
+  "b_routes_l3d_sha256": "a28e415b6a114859eddb376e4ae2ba12786543cdec9138dcd2723950c4426189",
+  "b_layer_stack_sha256": "0e2b369aa937c87b93317dfa57922f36eedb0652f016577e9376c8463ef5b6e3",
+  "b_validation_sha256": "81dc5437f12c4ba429c598b1ab6cd36d7886cb6a234473083a3d058fcd88bac0",
+  "b_summary_sha256": "3eac33f5728c4ab33d81d8746a0cc42213b3fb339d2c86c4b36dc93fc1f92af3",
+  "crossing_cache_sha256": "f1450326f8961b10cf3316c8fb3f20b05d82c888d72389d1827c86455f60f0e8"
+ },
+ "layer_heights_mm": {
+  "2": 1.0,
+  "3": 1.5,
+  "4": 2.0,
+  "5": 2.5
+ },
+ "time_limit_seconds": 2400.0,
+ "runtime_seconds": 3054.43,
+ "timestamp": "2026-10-21T22:55:20",
+ "single_actions": 13,
+ "joint_actions": 1,
+ "retry_actions": 0,
+ "pair_count": 51788,
+ "version": 14,
+ "figures": [
+  "after_3d.png",
+  "after_3d.svg",
+  "before_3d.png",
+  "before_3d.svg",
+  "joint_swap_zoom_before_after.png",
+  "joint_swap_zoom_before_after.svg"
+ ],
+ "retry_stage_runtime_seconds": 615.18,
+ "params": {
+  "radius_mm": 15.0,
+  "board_mm": 150.0,
+  "width_mm": 0.05,
+  "edge_gap_mm": 0.03,
+  "clearance_mm": 0.08,
+  "layer_heights_mm": {
+   "2": 1.0,
+   "3": 1.5,
+   "4": 2.0,
+   "5": 2.5
+  },
+  "baseline": "V4-C4 0.50 mm layer-spacing ablation group B (verified 3D result)",
+  "time_limit_seconds": 2400.0,
+  "max_single_actions": 24,
+  "max_joint_actions": 8,
+  "max_retry_actions": 8,
+  "max_plans_per_group": 30,
+  "max_single_validations": 3,
+  "max_joint_validations": 2,
+  "strict_transition_clearance_mm": 0.09,
+  "hard_rules": "no 2D reroute; fixed L2-L5 heights; transitions only on straight segments; one climb + one descent per route; strict C4 atomic groups; unique crossing pairs must strictly decrease; independent 3D validator checked before every commit"
+ },
+ "reject_reason_counts": {
+  "true_3d_clearance": 125
+ },
+ "stage_record_counts": {
+  "dynamic_layer_changes": 8,
+  "interval_moves": 5,
+  "joint_reschedules": 1,
+  "failed_retries": 6,
+  "recovered_failed_groups": 6,
+  "revert_to_flat": 0,
+  "joint_attempts": 65,
+  "retry_attempts": 8
+ }
+}
