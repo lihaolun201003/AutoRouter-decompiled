@@ -109,3 +109,30 @@ B（z1/z2 连接表整体交换）：1024/1024；邻边 496；对边 **66/68 组
 u/opposite assignment、validation、summary、15 图组、READY/ARTEFACTS_READY）、
 `_work/`（可行性扫描、参数、基世界、checkpoints）、顶层 `comparison_table.*`、
 `verification/`（独立验收脚本与报告）。A 为最优可行方案；B 如实报告规则分层不可行。
+
+---
+
+# 追加：Hybrid C2/C4 Directional Layer Routing（2026-10-23）
+
+新增（不影响既有输出）：
+
+- `four_side_1024/manual_c4/hybrid_c2_c4.py`：混合对称性方向分层框架——z1 对边按
+  端口方向拆成 66 横向 + 66 纵向 C2 二元组；C2 二元组共享升降参数、严格 180°旋转；
+  目标方向抬升 L2 的构造（base + S 升降 + L2 直线）；z2 严格 C4（U/对边/邻边与
+  Structured A 逐字段相同）；完整 XYZ 验收与交叉类型分解；
+- `four_side_1024/manual_c4/run_hybrid_c2_c4.py`：H/V 装配 + 权威验收 + 交叉削减分析
+  + C2 分配文档；
+- `four_side_1024/manual_c4/hybrid_c2_c4_plots.py`、`hybrid_comparison.py`：每组 13
+  组图件（整体前后 3D、逐层、横/纵独立、方向分屏、仅对边 3D、密集区放大）与
+  H/V/旧 A/旧 Spatial 对照；
+- `four_side_1024/tests_manual_c4/test_hybrid_c2_c4.py`：混合 C2/C4 身份、方向分层、
+  U/z2 固定保持、C2/C4 旋转、C2/C4 混合验收与交叉削减测试。
+
+H/V 结果：1024/1024 布通；64/66 个 C2 二元组抬升（2 对失败保留 L1-z1 并记录）；
+z1 横纵同层交叉 10928→7032（−3896）、z=0 交叉 17576→11952（−5624）、全局唯一交叉
+19584→12960（−6624）、升降 944→784、min3D 0.0917；权威 3D exploratory PASS。
+主要瓶颈：z2 接口层相邻路线与目标方向 line 同排并行（parallel shadow），R15+dz=1.0
+的 S 升降足印 7.68mm 使 34 个 C2 二元组只能用深窗口，base 直线段留在 z=0 造成剩余
+横纵交叉；2 对（group 2/3 方向对）无可行升降参数。详见
+`outputs/manual_c4_new_connectivity/hybrid_c2_c4_directional/` 的 README、
+crossing_analysis 与 verification。

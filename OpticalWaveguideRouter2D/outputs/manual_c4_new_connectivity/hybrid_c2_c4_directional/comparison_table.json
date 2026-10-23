@@ -1,0 +1,174 @@
+{
+ "schema": "hybrid_c2_c4_comparison_v1",
+ "columns": [
+  "Hybrid H",
+  "Hybrid V",
+  "旧 Structured A",
+  "旧 Spatial U-bundle"
+ ],
+ "rows": [
+  {
+   "metric": "总布通数",
+   "values": {
+    "Hybrid H": 1024,
+    "Hybrid V": 1024,
+    "旧 Structured A": 1024,
+    "旧 Spatial U-bundle": 1024
+   }
+  },
+  {
+   "metric": "C2 二元组抬升数",
+   "values": {
+    "Hybrid H": 64,
+    "Hybrid V": 64,
+    "旧 Structured A": null,
+    "旧 Spatial U-bundle": null
+   }
+  },
+  {
+   "metric": "z1 横纵同层交叉对",
+   "values": {
+    "Hybrid H": 7032,
+    "Hybrid V": 7032,
+    "旧 Structured A": 10928,
+    "旧 Spatial U-bundle": null
+   }
+  },
+  {
+   "metric": "z=0 交叉对",
+   "values": {
+    "Hybrid H": 11952,
+    "Hybrid V": 11952,
+    "旧 Structured A": 17576,
+    "旧 Spatial U-bundle": null
+   }
+  },
+  {
+   "metric": "L2 交叉对",
+   "values": {
+    "Hybrid H": 0,
+    "Hybrid V": 0,
+    "旧 Structured A": 1000,
+    "旧 Spatial U-bundle": null
+   }
+  },
+  {
+   "metric": "全局唯一交叉对",
+   "values": {
+    "Hybrid H": 12960,
+    "Hybrid V": 12960,
+    "旧 Structured A": 19584,
+    "旧 Spatial U-bundle": 12824
+   }
+  },
+  {
+   "metric": "升降次数",
+   "values": {
+    "Hybrid H": 784,
+    "Hybrid V": 784,
+    "旧 Structured A": 944,
+    "旧 Spatial U-bundle": 824
+   }
+  },
+  {
+   "metric": "三维总长 (mm)",
+   "values": {
+    "Hybrid H": 98019.9262,
+    "Hybrid V": 98019.9262,
+    "旧 Structured A": 98033.7663,
+    "旧 Spatial U-bundle": 98539.0127
+   }
+  },
+  {
+   "metric": "最小三维净空 (mm)",
+   "values": {
+    "Hybrid H": 0.091700023,
+    "Hybrid V": 0.091700023,
+    "旧 Structured A": 0.091700023,
+    "旧 Spatial U-bundle": 0.083207287
+   }
+  },
+  {
+   "metric": "独立 3D 验收",
+   "values": {
+    "Hybrid H": "exploratory_only",
+    "Hybrid V": "exploratory_only",
+    "旧 Structured A": "exploratory_only",
+    "旧 Spatial U-bundle": "exploratory_only"
+   }
+  },
+  {
+   "metric": "L1-z1 波导数量",
+   "values": {
+    "Hybrid H": 512,
+    "Hybrid V": 512,
+    "旧 Structured A": 512,
+    "旧 Spatial U-bundle": 512
+   }
+  },
+  {
+   "metric": "L1-z2 波导数量",
+   "values": {
+    "Hybrid H": 512,
+    "Hybrid V": 512,
+    "旧 Structured A": 512,
+    "旧 Spatial U-bundle": 512
+   }
+  },
+  {
+   "metric": "L2 波导数量",
+   "values": {
+    "Hybrid H": 136,
+    "Hybrid V": 136,
+    "旧 Structured A": 216,
+    "旧 Spatial U-bundle": 252
+   }
+  },
+  {
+   "metric": "L3 波导数量",
+   "values": {
+    "Hybrid H": 128,
+    "Hybrid V": 128,
+    "旧 Structured A": 128,
+    "旧 Spatial U-bundle": 80
+   }
+  },
+  {
+   "metric": "L4 波导数量",
+   "values": {
+    "Hybrid H": 64,
+    "Hybrid V": 64,
+    "旧 Structured A": 64,
+    "旧 Spatial U-bundle": 68
+   }
+  },
+  {
+   "metric": "L5 波导数量",
+   "values": {
+    "Hybrid H": 64,
+    "Hybrid V": 64,
+    "旧 Structured A": 64,
+    "旧 Spatial U-bundle": 12
+   }
+  }
+ ],
+ "reductions_vs_A": {
+  "Hybrid H": {
+   "z0_reduction": 5624,
+   "global_reduction": 6624,
+   "z1_hv_reduction": 3896
+  },
+  "Hybrid V": {
+   "z0_reduction": 5624,
+   "global_reduction": 6624,
+   "z1_hv_reduction": 3896
+  }
+ },
+ "notes": [
+  "H：z1 横向 E↔W 全部优先升 L2，纵向 N↔S 留在 L1-z1；V 为反向对照。z1 只要求 C2（180°旋转），z2 保持严格 C4 且 U 线束固定为 Structured-A。",
+  "A 的 z1 横纵同层交叉对 = 10928（z=0 为 9928、L2 为 1000，由结构化分层交叉分解得到；A 官方 summary 的 z=0 计数为 18600，本表统一用独立 fslw 审计的唯一交叉对口径 17576）；H/V 把两个方向放到不同物理高度后，剩余的 7032 对全部来自\"抬升方向的 z=0 base 直线段\"与\"保留方向\"的同层交叉（深升降窗口导致），并非目标层平面交叉。",
+  "z=0 总交叉对从 17576 降到 11952（减少 5624）；全局唯一交叉对从 19584 降到 12960（减少 6624）。",
+  "深升降窗口的结构性原因：z2 接口层相邻路线在 z=0.5 与 z1 横向 line 同排并行（parallel shadow），R15 + dz=1.0 的 S 升降足印 7.68mm，无法在影子段之前完成上升；34 个 C2 二元组只能选择深窗口。这是本轮主要瓶颈（详见 shadow_bottleneck_analysis.json）。",
+  "层高为探索性参数，3D 验收为 exploratory PASS（formal_acceptance=false）。"
+ ]
+}

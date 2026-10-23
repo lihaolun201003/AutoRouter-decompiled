@@ -1,0 +1,81 @@
+{
+ "variant": "H",
+ "baseline": {
+  "source": "structured_layer_routing/A/routes_1024.json",
+  "unique_crossing_pairs": 19584,
+  "crossing_pairs_by_height": {
+   "0.0": 17576,
+   "1.0": 1000,
+   "1.5": 0,
+   "0.5": 1008,
+   "2.0": 0,
+   "2.5": 0
+  },
+  "crossing_breakdown_by_height": {
+   "0.0": {
+    "opposite_z1_EW x opposite_z1_NS": 9928,
+    "adjacent x opposite_z1_NS": 3312,
+    "opposite_z1_NS x same_U": 1024,
+    "opposite_z1_EW x same_U": 1024,
+    "adjacent x opposite_z1_EW": 3312
+   },
+   "1.0": {
+    "opposite_z1_EW x opposite_z1_NS": 1000
+   },
+   "1.5": {},
+   "0.5": {
+    "adjacent x opposite_z2_NS": 496,
+    "adjacent x opposite_z2_EW": 496,
+    "opposite_z2_EW x opposite_z2_NS": 16
+   },
+   "2.0": {},
+   "2.5": {}
+  },
+  "z1_hv_same_height_pairs": 10928,
+  "z1_hv_breakdown_by_height": {
+   "0.0": 9928,
+   "1.0": 1000
+  },
+  "z0_total_pairs": 17576,
+  "l2_total_pairs": 1000
+ },
+ "result": {
+  "unique_crossing_pairs": 12960,
+  "crossing_pairs_by_height": {
+   "0.0": 11952,
+   "1.0": 0,
+   "1.5": 0,
+   "0.5": 1008,
+   "2.0": 0,
+   "2.5": 0
+  },
+  "crossing_breakdown_by_height": {
+   "0.0": {
+    "opposite_z1_EW x opposite_z1_NS": 7032,
+    "adjacent x opposite_z1_NS": 3312,
+    "opposite_z1_NS x same_U": 1024,
+    "adjacent x opposite_z1_EW": 1096
+   },
+   "1.0": {},
+   "1.5": {},
+   "0.5": {
+    "adjacent x opposite_z2_NS": 496,
+    "adjacent x opposite_z2_EW": 496,
+    "opposite_z2_EW x opposite_z2_NS": 16
+   },
+   "2.0": {},
+   "2.5": {}
+  },
+  "z1_hv_same_height_pairs": 7032,
+  "z1_hv_breakdown_by_height": {
+   "0.0": 7032
+  },
+  "z0_total_pairs": 11952,
+  "l2_total_pairs": 0
+ },
+ "reduction": {
+  "z1_hv_same_height_reduction": 3896,
+  "z0_total_reduction": 5624,
+  "global_reduction": 6624
+ }
+}

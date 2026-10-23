@@ -1,0 +1,149 @@
+{
+ "variant": "H",
+ "routed": 1024,
+ "c2_pairs_total": 66,
+ "c2_pairs_lifted": 64,
+ "c2_pairs_failed": 2,
+ "c2_failures": {
+  "2": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+  "3": "no feasible C2 lift against the fixed world (kept on L1-z1)"
+ },
+ "lifted_direction": "EW (horizontal)",
+ "kept_direction": "NS (vertical)",
+ "lifted_routes": 128,
+ "kept_flat_routes": 136,
+ "unique_crossing_pairs": 12960,
+ "crossing_pairs_by_height": {
+  "0.0": 11952,
+  "1.0": 0,
+  "1.5": 0,
+  "0.5": 1008,
+  "2.0": 0,
+  "2.5": 0
+ },
+ "crossing_breakdown_by_height": {
+  "0.0": {
+   "opposite_z1_EW x opposite_z1_NS": 7032,
+   "adjacent x opposite_z1_NS": 3312,
+   "opposite_z1_NS x same_U": 1024,
+   "adjacent x opposite_z1_EW": 1096
+  },
+  "1.0": {},
+  "1.5": {},
+  "0.5": {
+   "adjacent x opposite_z2_NS": 496,
+   "adjacent x opposite_z2_EW": 496,
+   "opposite_z2_EW x opposite_z2_NS": 16
+  },
+  "2.0": {},
+  "2.5": {}
+ },
+ "z1_hv_same_height_pairs": 7032,
+ "z1_hv_breakdown_by_height": {
+  "0.0": 7032
+ },
+ "transitions": 784,
+ "total_length_mm": 98019.9262,
+ "layer_counts": {
+  "L1-z1": {
+   "count": 512,
+   "layer_id": 1,
+   "z_mm": 0.0,
+   "plane_counts": {
+    "z1": 512
+   }
+  },
+  "L1-z2": {
+   "count": 512,
+   "layer_id": 1,
+   "z_mm": 0.5,
+   "plane_counts": {
+    "z2": 512
+   }
+  },
+  "L2": {
+   "count": 136,
+   "layer_id": 2,
+   "z_mm": 1.0,
+   "plane_counts": {
+    "z1": 128,
+    "z2": 8
+   }
+  },
+  "L3": {
+   "count": 128,
+   "layer_id": 3,
+   "z_mm": 1.5,
+   "plane_counts": {
+    "z1": 64,
+    "z2": 64
+   }
+  },
+  "L4": {
+   "count": 64,
+   "layer_id": 4,
+   "z_mm": 2.0,
+   "plane_counts": {
+    "z2": 64
+   }
+  },
+  "L5": {
+   "count": 64,
+   "layer_id": 5,
+   "z_mm": 2.5,
+   "plane_counts": {
+    "z2": 64
+   }
+  }
+ },
+ "validation_status": "exploratory_only",
+ "validation_exploratory_pass": true,
+ "validation_counts": {
+  "violations": 0,
+  "contract_errors": 0,
+  "port_errors": 0,
+  "geometry_errors": 0,
+  "curvature_violations": 0,
+  "clearance_violations": 0,
+  "same_plane_violations": 0,
+  "self_clearance_violations": 0,
+  "other_errors": 0
+ },
+ "validation_violations": 0,
+ "min_3d_clearance_mm": 0.091700023,
+ "min_curvature_radius_mm": 14.999999964,
+ "runtime_seconds": 69.89,
+ "u_routes_preserved": 256,
+ "experiment": "MANUAL_C4_HYBRID_C2_C4_DIRECTIONAL_H",
+ "baseline": "structured_layer_routing/A/routes_1024.json",
+ "z1_hv_reduction": {
+  "z1_hv_same_height_reduction": 3896,
+  "z0_total_reduction": 5624,
+  "global_reduction": 6624
+ },
+ "crossing_analysis": "crossing_analysis.json",
+ "pair_assignment": "c2_pair_assignment.json",
+ "figures": [
+  "figures/01_before_3d.png",
+  "figures/02_after_3d.png",
+  "figures/03_L1_z1.png",
+  "figures/04_L1_z2.png",
+  "figures/05_L2.png",
+  "figures/06_L3.png",
+  "figures/07_L4.png",
+  "figures/08_L5.png",
+  "figures/09_z1_horizontal.png",
+  "figures/10_z1_vertical.png",
+  "figures/11_z1_direction_split.png",
+  "figures/12_opposite_only_3d.png",
+  "figures/13_dense_region_zoom.png"
+ ],
+ "delivery": {
+  "routes": "routes_1024.json",
+  "c2_pair_assignment": "c2_pair_assignment.json",
+  "validation": "validation.json",
+  "summary": "summary.json",
+  "crossing_analysis": "crossing_analysis.json",
+  "figures": "figures/"
+ }
+}

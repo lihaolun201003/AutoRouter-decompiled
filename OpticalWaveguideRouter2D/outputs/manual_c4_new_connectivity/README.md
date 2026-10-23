@@ -136,6 +136,19 @@ B **1024/1024、对边 66/68 组集中 L2（264 条）、几何验收 PASS，但
 A 为最优可行方案；B 作为"指定分层不可行性"的对照。详见该目录 `README.md`、
 `comparison_table.md` 与 `verification/`。
 
+## Hybrid C2/C4 方向分层实验（`hybrid_c2_c4_directional/`）
+
+基于 Structured A，把 z1 的 264 条对边按方向拆为横向 E↔W 132 条与纵向 N↔S 132 条
+（各 66 个 C2 二元组），z1 只要求 C2（180°旋转）；H 组横向全部升 L2、纵向留 L1-z1，
+V 组反向。z2 保持严格 C4，U 线束（L3/L4/L5）、z2 对边 L2、邻边接口层全部固定为
+Structured A。结果：H/V 均 **1024/1024 布通**、权威 3D exploratory PASS（9 类 counts
+全 0、min3D 0.0917）；C2 抬升 **64/66 对**（2 对失败保留接口层并记录）；z1 横纵
+同层交叉对 **10928 → 7032（−35.7%）**、z=0 交叉对 **17576 → 11952（−32.0%）**、
+全局唯一交叉对 **19584 → 12960（−33.8%）**、升降 **944 → 784**。剩余 7032 对横纵
+交叉全部来自"抬升方向留在 z=0 的 base 直线段"（深升降窗口；z2 接口层 parallel
+shadow 瓶颈，34 对），详见该目录 `README.md`、`crossing_analysis.json` 与
+`verification/`。
+
 ## 验收与报告
 
 - `verification/`：**独立验收脚本与报告**（不 import 生产代码，从原始 CSV + 权威端口
