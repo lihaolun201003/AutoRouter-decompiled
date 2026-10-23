@@ -111,6 +111,17 @@ route_id 列表、判定口径与源文件 sha256。生成脚本：
 z1 中 148 条被抬升（L2–L5 分别为 116/20/4/8，合计 148），因此跨层 appearances
 = 512 + 148 = 660。`z1_layer_visualization/layer_counts.json` 含各层 route_id 列表。
 
+## 空间分组式 U 形线束三维布线优化（`spatial_u_bundle_optimization/`）
+
+基于阶段 5（动态优化 V2）的 1024/1024 结果，对指定的 64 个同边 U 形 C4 四元组
+（group 20–35 → L2、144–159 → L2、160–175 → L3、176–191 → L4，共 256 条）重构造
+"延长入口直线 → S 上升 → 目标层 90°圆弧 + 中间直线 + 90°圆弧 → S 下降 → 延长出口
+直线"的空间分组式三维线束，其余路线保持。结果：目标分层 **64/64**、1024/1024 布通、
+全局唯一交叉对 **23,356 → 12,824**（仅修改 U 的 u-only 变体为 12,408）、同层 U-U
+交叉对 **104 → 0**；两版均独立 3D 几何验收 exploratory PASS。阻挡的非 U 四元组
+（group 11）在 final 变体中被重抬到 L5 并逐条记录，u-only/final 分开对照。详见该目录
+`README.md`、`comparison_table.md` 与 `verification/`。
+
 ## 验收与报告
 
 - `verification/`：**独立验收脚本与报告**（不 import 生产代码，从原始 CSV + 权威端口

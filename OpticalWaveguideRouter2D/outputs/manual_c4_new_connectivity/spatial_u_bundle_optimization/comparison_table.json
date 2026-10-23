@@ -1,0 +1,75 @@
+{
+ "schema": "manual_c4_spatial_u_bundle_comparison_v1",
+ "columns": [
+  "基线：Manual-C4 动态优化 V2",
+  "仅修改 U：spatial U-bundle (u-only)",
+  "最终：spatial U-bundle (final)"
+ ],
+ "rows": [
+  {
+   "metric": "总布通数",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": 1024,
+    "仅修改 U：spatial U-bundle (u-only)": 1024,
+    "最终：spatial U-bundle (final)": 1024
+   }
+  },
+  {
+   "metric": "唯一交叉线路对（全局去重）",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": 23356,
+    "仅修改 U：spatial U-bundle (u-only)": 12408,
+    "最终：spatial U-bundle (final)": 12824
+   }
+  },
+  {
+   "metric": "同层 U-U 交叉对",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": 104,
+    "仅修改 U：spatial U-bundle (u-only)": 0,
+    "最终：spatial U-bundle (final)": 0
+   }
+  },
+  {
+   "metric": "升降次数",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": 440,
+    "仅修改 U：spatial U-bundle (u-only)": 824,
+    "最终：spatial U-bundle (final)": 824
+   }
+  },
+  {
+   "metric": "三维总路径长度 (mm)",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": 97495.7612,
+    "仅修改 U：spatial U-bundle (u-only)": 98635.0733,
+    "最终：spatial U-bundle (final)": 98539.0127
+   }
+  },
+  {
+   "metric": "最小三维净空 (mm)",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": 0.083207287,
+    "仅修改 U：spatial U-bundle (u-only)": 0.083207287,
+    "最终：spatial U-bundle (final)": 0.083207287
+   }
+  },
+  {
+   "metric": "独立几何验收",
+   "values": {
+    "基线：Manual-C4 动态优化 V2": "exploratory_only",
+    "仅修改 U：spatial U-bundle (u-only)": "exploratory_only",
+    "最终：spatial U-bundle (final)": "exploratory_only"
+   }
+  }
+ ],
+ "target_quartets": 64,
+ "target_quartets_reached": 64,
+ "target_quartets_failed": 0,
+ "notes": [
+  "U-only: 仅重建 256 条目标 U 路线，其他路线（含阻挡组 11）保持 V2 原样",
+  "final: 额外把阻挡的非 U C4 四元组（group 11）从 L3 重抬到 L5，已逐条记录，属于分开比较的局部重路由阶段",
+  "交叉数为跨全部物理高度按唯一 (route_id_a, route_id_b) 去重",
+  "层高为探索性参数，几何 PASS 不等于制造工艺正式验收"
+ ]
+}

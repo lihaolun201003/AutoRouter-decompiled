@@ -40,3 +40,36 @@
 150×150 mm、row1 z=0 / row2 z=0.5 mm、端口位置与切向固定、升降只在直线段、每条最多
 一次上升/下降、C4 四元组原子提交、交叉按唯一 (route_id_a, route_id_b) 跨全部高度去重
 ——均未改动；层高仍为探索性参数，3D 验收为 exploratory PASS，不代表制造工艺正式验收。
+
+---
+
+# 追加：空间分组式 U 形线束三维布线实验（2026-10-23）
+
+新增（不影响任何既有输出）：
+
+- `four_side_1024/manual_c4/spatial_u_bundle.py`：U 线束几何构造器（端口→延长入口直线→
+  S 上升→目标层 90° 圆弧+中间直线+90° 圆弧→S 下降→延长出口直线→端口；复用
+  `r15.u_geometry._quarter_pair` 与 `v3c4.lift_cross.lift_route`）、逐四元组可行性扫描 /
+  嵌套深度链分配、与固定 768 条路线的增量 3D 检查（`l3d.world.World`）、payload 组装、
+  指标计算；
+- `four_side_1024/manual_c4/run_spatial_u_bundle.py`：实验 runner（搜索缓存、分层分配、
+  "仅修改 U"与"含局部重路由"两个变体、权威 `validate_payload_v4` 验收、对照表、图）；
+- `four_side_1024/manual_c4/spatial_u_bundle_plots.py`：前后 3D 总图、6 张逐层图、4 张
+  U 线束局部放大图；
+- `four_side_1024/tests_manual_c4/test_spatial_u_bundle.py`：构造/C4/分配/未改动路线/
+  验收产物的快速测试。
+
+明确记录的局部重路由（仅 final 变体，与"仅修改 U"分开比较）：
+
+- 非 U C4 四元组 **group 11**（z1 对边，route_id 12 / 231 / 232 / 29）原本被 V2 抬到
+  L3（z=1.5 mm）；其 L3 长直线与 z2 第二组四角 U（group 167，目标 L3）的端口/直线在
+  同一物理平面共线，任何参数都无法避免冲突。final 变体把该四元组整体重新抬升到
+  L5（z=2.5 mm，`a_in=64, a_out=48`，2D 拓扑/端口/连接不变），并在
+  `u_layer_assignment.json` 的 `modified_non_u_routes` 与 `validation.json` 中逐条记录。
+  仅修改 U 的变体（`routes_1024_u_only.json`）不移动任何非 U 路线，因此 group 167
+  保留 V2 原始几何、目标 L3 未完成（63/64），失败原因记为"被其他非 U 路线阻挡
+  （L3 同层共线冲突）"。
+
+约束核对：仍为 R=15、宽 0.05、净空 0.08、板面 150×150、接口高度 0/0.5、C4 四元组
+原子旋转、升降仅在 2D 直线段、每条 ≤1 升 1 降、目标层分配固定 L2/L2/L3/L4；未修改
+任何端口配对。层高 L2–L5 仍为探索性参数，3D 验收 exploratory PASS。

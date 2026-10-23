@@ -1,0 +1,833 @@
+{
+ "group_id": 11,
+ "target_layer": 5,
+ "layer_z": 2.5,
+ "a_in": 64.0,
+ "a_out": 48.0,
+ "routes": [
+  {
+   "route_id": 12,
+   "plane": "z1",
+   "source_endpoint": "N01:1:9",
+   "target_endpoint": "S01:1:9",
+   "relation": "opposite",
+   "pair": "NS",
+   "source_side": "N",
+   "target_side": "S",
+   "source_row": 1,
+   "target_row": 1,
+   "source_column": 9,
+   "target_column": 9,
+   "source_channel": 9,
+   "target_channel": 9,
+   "z_mm": 0.0,
+   "source_port": {
+    "xy": [
+     7.625,
+     150.0
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "target_port": {
+    "xy": [
+     7.625,
+     0.0
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "start_z_mm": 0.0,
+   "end_z_mm": 0.0,
+   "layer_sequence": [
+    1,
+    5,
+    1
+   ],
+   "layer_z_sequence": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "n_transitions": 2,
+   "lifted": true,
+   "layers_used": [
+    1,
+    5
+   ],
+   "xy_length_mm": 150.0,
+   "length_mm": 150.68911412277726,
+   "z_span_mm": 2.5,
+   "parts": [
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 64.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        150.0
+       ],
+       "p1": [
+        7.625,
+        104.347869
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        104.347869
+       ],
+       "p1": [
+        7.625,
+        94.9803720024024
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        94.9803720024024
+       ],
+       "p1": [
+        7.625,
+        86.0
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      7.625,
+      86.0
+     ],
+     "direction": [
+      0.0,
+      -1.0
+     ],
+     "z0": 0.0,
+     "z1": 2.5,
+     "dz_mm": 2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      7.625,
+      74.0104211917182
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 1,
+     "to_layer": 5
+    },
+    {
+     "kind": "flat",
+     "layer_id": 5,
+     "z_mm": 2.5,
+     "length_mm": 14.020842383436388,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        74.0104211917182
+       ],
+       "p1": [
+        7.625,
+        59.989578808281806
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      7.625,
+      59.989578808281806
+     ],
+     "direction": [
+      0.0,
+      -1.0
+     ],
+     "z0": 2.5,
+     "z1": 0.0,
+     "dz_mm": -2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      7.625,
+      48.00000000000001
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 5,
+     "to_layer": 1
+    },
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 47.999999999999986,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        48.0
+       ],
+       "p1": [
+        7.625,
+        10.567497000000003
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        10.567497000000003
+       ],
+       "p1": [
+        7.625,
+        1.200000002402403
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        7.625,
+        1.2000000024023905
+       ],
+       "p1": [
+        7.625,
+        0.0
+       ]
+      }
+     ]
+    }
+   ],
+   "status": "routed"
+  },
+  {
+   "route_id": 231,
+   "plane": "z1",
+   "source_endpoint": "W01:1:9",
+   "target_endpoint": "E01:1:9",
+   "relation": "opposite",
+   "pair": "EW",
+   "source_side": "W",
+   "target_side": "E",
+   "source_row": 1,
+   "target_row": 1,
+   "source_column": 9,
+   "target_column": 9,
+   "source_channel": 9,
+   "target_channel": 9,
+   "z_mm": 0.0,
+   "source_port": {
+    "xy": [
+     0.0,
+     7.625
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "target_port": {
+    "xy": [
+     150.0,
+     7.625
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "start_z_mm": 0.0,
+   "end_z_mm": 0.0,
+   "layer_sequence": [
+    1,
+    5,
+    1
+   ],
+   "layer_z_sequence": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "n_transitions": 2,
+   "lifted": true,
+   "layers_used": [
+    1,
+    5
+   ],
+   "xy_length_mm": 150.0,
+   "length_mm": 150.68911412277726,
+   "z_span_mm": 2.5,
+   "parts": [
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 64.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        0.0,
+        7.625
+       ],
+       "p1": [
+        45.652131,
+        7.625
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        45.652131,
+        7.625
+       ],
+       "p1": [
+        55.019627997597595,
+        7.625
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        55.019627997597595,
+        7.625
+       ],
+       "p1": [
+        64.0,
+        7.625
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      64.0,
+      7.625
+     ],
+     "direction": [
+      1.0,
+      0.0
+     ],
+     "z0": 0.0,
+     "z1": 2.5,
+     "dz_mm": 2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      75.9895788082818,
+      7.625
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 1,
+     "to_layer": 5
+    },
+    {
+     "kind": "flat",
+     "layer_id": 5,
+     "z_mm": 2.5,
+     "length_mm": 14.020842383436388,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        75.9895788082818,
+        7.625
+       ],
+       "p1": [
+        90.0104211917182,
+        7.625
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      90.0104211917182,
+      7.625
+     ],
+     "direction": [
+      1.0,
+      0.0
+     ],
+     "z0": 2.5,
+     "z1": 0.0,
+     "dz_mm": -2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      102.0,
+      7.625
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 5,
+     "to_layer": 1
+    },
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 48.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        102.0,
+        7.625
+       ],
+       "p1": [
+        139.432503,
+        7.625
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        139.432503,
+        7.625
+       ],
+       "p1": [
+        148.7999999975976,
+        7.625
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        148.7999999975976,
+        7.625
+       ],
+       "p1": [
+        150.0,
+        7.625
+       ]
+      }
+     ]
+    }
+   ],
+   "status": "routed"
+  },
+  {
+   "route_id": 232,
+   "plane": "z1",
+   "source_endpoint": "S16:1:8",
+   "target_endpoint": "N16:1:8",
+   "relation": "opposite",
+   "pair": "NS",
+   "source_side": "S",
+   "target_side": "N",
+   "source_row": 1,
+   "target_row": 1,
+   "source_column": 8,
+   "target_column": 8,
+   "source_channel": 8,
+   "target_channel": 8,
+   "z_mm": 0.0,
+   "source_port": {
+    "xy": [
+     142.375,
+     0.0
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "target_port": {
+    "xy": [
+     142.375,
+     150.0
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "start_z_mm": 0.0,
+   "end_z_mm": 0.0,
+   "layer_sequence": [
+    1,
+    5,
+    1
+   ],
+   "layer_z_sequence": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "n_transitions": 2,
+   "lifted": true,
+   "layers_used": [
+    1,
+    5
+   ],
+   "xy_length_mm": 150.0,
+   "length_mm": 150.68911412277726,
+   "z_span_mm": 2.5,
+   "parts": [
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 64.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        0.0
+       ],
+       "p1": [
+        142.375,
+        45.652131
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        45.652131
+       ],
+       "p1": [
+        142.375,
+        55.019627997597595
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        55.019627997597595
+       ],
+       "p1": [
+        142.375,
+        64.0
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      142.375,
+      64.0
+     ],
+     "direction": [
+      0.0,
+      1.0
+     ],
+     "z0": 0.0,
+     "z1": 2.5,
+     "dz_mm": 2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      142.375,
+      75.9895788082818
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 1,
+     "to_layer": 5
+    },
+    {
+     "kind": "flat",
+     "layer_id": 5,
+     "z_mm": 2.5,
+     "length_mm": 14.020842383436388,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        75.9895788082818
+       ],
+       "p1": [
+        142.375,
+        90.0104211917182
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      142.375,
+      90.0104211917182
+     ],
+     "direction": [
+      0.0,
+      1.0
+     ],
+     "z0": 2.5,
+     "z1": 0.0,
+     "dz_mm": -2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      142.375,
+      102.0
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 5,
+     "to_layer": 1
+    },
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 48.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        102.0
+       ],
+       "p1": [
+        142.375,
+        139.432503
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        139.432503
+       ],
+       "p1": [
+        142.375,
+        148.7999999975976
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        142.375,
+        148.7999999975976
+       ],
+       "p1": [
+        142.375,
+        150.0
+       ]
+      }
+     ]
+    }
+   ],
+   "status": "routed"
+  },
+  {
+   "route_id": 29,
+   "plane": "z1",
+   "source_endpoint": "W16:1:8",
+   "target_endpoint": "E16:1:8",
+   "relation": "opposite",
+   "pair": "EW",
+   "source_side": "W",
+   "target_side": "E",
+   "source_row": 1,
+   "target_row": 1,
+   "source_column": 8,
+   "target_column": 8,
+   "source_channel": 8,
+   "target_channel": 8,
+   "z_mm": 0.0,
+   "source_port": {
+    "xy": [
+     0.0,
+     142.375
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "target_port": {
+    "xy": [
+     150.0,
+     142.375
+    ],
+    "z_mm": 0.0,
+    "layer_id": 1
+   },
+   "start_z_mm": 0.0,
+   "end_z_mm": 0.0,
+   "layer_sequence": [
+    1,
+    5,
+    1
+   ],
+   "layer_z_sequence": [
+    0.0,
+    2.5,
+    0.0
+   ],
+   "n_transitions": 2,
+   "lifted": true,
+   "layers_used": [
+    1,
+    5
+   ],
+   "xy_length_mm": 150.0,
+   "length_mm": 150.68911412277726,
+   "z_span_mm": 2.5,
+   "parts": [
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 48.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        0.0,
+        142.375
+       ],
+       "p1": [
+        1.2000000024023905,
+        142.375
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        1.2000000024023905,
+        142.375
+       ],
+       "p1": [
+        10.567497000000003,
+        142.375
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        10.567497000000003,
+        142.375
+       ],
+       "p1": [
+        48.0,
+        142.375
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      48.0,
+      142.375
+     ],
+     "direction": [
+      1.0,
+      0.0
+     ],
+     "z0": 0.0,
+     "z1": 2.5,
+     "dz_mm": 2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      59.9895788082818,
+      142.375
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 1,
+     "to_layer": 5
+    },
+    {
+     "kind": "flat",
+     "layer_id": 5,
+     "z_mm": 2.5,
+     "length_mm": 14.020842383436388,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        59.989578808281806,
+        142.375
+       ],
+       "p1": [
+        74.0104211917182,
+        142.375
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "transition",
+     "start": [
+      74.0104211917182,
+      142.375
+     ],
+     "direction": [
+      1.0,
+      0.0
+     ],
+     "z0": 2.5,
+     "z1": 0.0,
+     "dz_mm": -2.5,
+     "radius_mm": 15.0,
+     "footprint_mm": 11.9895788082818,
+     "theta_rad": 0.4111378623223478,
+     "end": [
+      86.0,
+      142.375
+     ],
+     "length_mm": 12.334135869670433,
+     "from_layer": 5,
+     "to_layer": 1
+    },
+    {
+     "kind": "flat",
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "length_mm": 64.0,
+     "primitives": [
+      {
+       "kind": "line",
+       "p0": [
+        86.0,
+        142.375
+       ],
+       "p1": [
+        94.9803720024024,
+        142.375
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        94.9803720024024,
+        142.375
+       ],
+       "p1": [
+        104.347869,
+        142.375
+       ]
+      },
+      {
+       "kind": "line",
+       "p0": [
+        104.347869,
+        142.375
+       ],
+       "p1": [
+        150.0,
+        142.375
+       ]
+      }
+     ]
+    }
+   ],
+   "status": "routed"
+  }
+ ]
+}

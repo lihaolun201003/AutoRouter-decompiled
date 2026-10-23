@@ -1,0 +1,1725 @@
+{
+ "schema": "manual_c4_spatial_u_bundle_verification_v1",
+ "generated": "2026-10-23T11:06:56",
+ "verifier": "independent: own geometry/C4/metrics; frozen lift_cross.validate_payload_v4 (v4_root=phase2_2d) for the authoritative 3D pass",
+ "campaign": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity",
+ "verdict": "PASS",
+ "checks": [
+  {
+   "name": "u_only_payload_contract",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "routes": 1024,
+    "routed": 1024
+   }
+  },
+  {
+   "name": "u_only_identity",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "unique_endpoints": 2048,
+    "unique_ports_expected": 2048
+   }
+  },
+  {
+   "name": "final_payload_contract",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "routes": 1024,
+    "routed": 1024
+   }
+  },
+  {
+   "name": "final_identity",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "unique_endpoints": 2048,
+    "unique_ports_expected": 2048
+   }
+  },
+  {
+   "name": "u_only_route_geometry",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "routes": 1024,
+    "transitions": 824,
+    "lifted": 412,
+    "flat": 612,
+    "issue_count": 0,
+    "issue_kinds": {}
+   }
+  },
+  {
+   "name": "final_route_geometry",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "routes": 1024,
+    "transitions": 824,
+    "lifted": 412,
+    "flat": 612,
+    "issue_count": 0,
+    "issue_kinds": {}
+   }
+  },
+  {
+   "name": "u_only_target_quartets",
+   "passed": true,
+   "detail": {
+    "target": 64,
+    "reached": 63,
+    "failed": [
+     167
+    ],
+    "problems": [
+     {
+      "group_id": 167,
+      "target_layer": 3,
+      "rebuilt": false,
+      "errors": [
+       [
+        551,
+        "high_layer",
+        4,
+        3
+       ],
+       [
+        551,
+        "high_layer_z",
+        2.0,
+        1.5
+       ],
+       [
+        551,
+        "layer_sequence",
+        [
+         1,
+         4,
+         1
+        ]
+       ],
+       [
+        773,
+        "high_layer",
+        4,
+        3
+       ]
+      ]
+     }
+    ],
+    "details": {
+     "20": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "21": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "22": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "23": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "24": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "25": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "26": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "27": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "28": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "29": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "30": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "31": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "32": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "33": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "34": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "35": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "144": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "145": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "146": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "147": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "148": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "149": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "150": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "151": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "152": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "153": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "154": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "155": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "156": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "157": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "158": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "159": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "160": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "161": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "162": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "163": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "164": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "165": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "166": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "167": {
+      "rebuilt": false,
+      "ok": false,
+      "target_layer": 3,
+      "errors": [
+       [
+        551,
+        "high_layer",
+        4,
+        3
+       ],
+       [
+        551,
+        "high_layer_z",
+        2.0,
+        1.5
+       ],
+       [
+        551,
+        "layer_sequence",
+        [
+         1,
+         4,
+         1
+        ]
+       ],
+       [
+        773,
+        "high_layer",
+        4,
+        3
+       ],
+       [
+        773,
+        "high_layer_z",
+        2.0,
+        1.5
+       ],
+       [
+        773,
+        "layer_sequence",
+        [
+         1,
+         4,
+         1
+        ]
+       ]
+      ]
+     },
+     "168": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "169": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "170": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "171": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "172": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "173": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "174": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "175": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "176": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "177": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "178": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "179": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "180": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "181": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "182": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "183": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "184": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "185": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "186": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "187": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "188": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "189": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "190": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "191": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     }
+    }
+   },
+   "numbers": {
+    "reached": 63,
+    "failed": 1
+   }
+  },
+  {
+   "name": "u_only_c4_rotation_symmetry",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "audited_groups": 63,
+    "audited_members": 189
+   }
+  },
+  {
+   "name": "final_target_quartets",
+   "passed": true,
+   "detail": {
+    "target": 64,
+    "reached": 64,
+    "failed": [],
+    "problems": [],
+    "details": {
+     "20": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "21": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "22": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "23": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "24": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "25": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "26": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "27": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "28": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "29": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "30": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "31": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "32": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "33": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "34": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "35": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "144": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "145": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "146": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "147": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "148": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "149": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "150": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "151": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "152": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "153": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "154": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "155": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "156": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "157": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "158": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "159": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 2,
+      "errors": []
+     },
+     "160": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "161": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "162": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "163": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "164": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "165": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "166": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "167": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "168": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "169": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "170": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "171": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "172": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "173": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "174": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "175": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 3,
+      "errors": []
+     },
+     "176": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "177": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "178": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "179": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "180": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "181": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "182": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "183": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "184": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "185": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "186": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "187": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "188": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "189": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "190": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     },
+     "191": {
+      "rebuilt": true,
+      "ok": true,
+      "target_layer": 4,
+      "errors": []
+     }
+    }
+   },
+   "numbers": {
+    "reached": 64,
+    "failed": 0
+   }
+  },
+  {
+   "name": "final_c4_rotation_symmetry",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "audited_groups": 64,
+    "audited_members": 192
+   }
+  },
+  {
+   "name": "u_only_v2_invariance",
+   "passed": true,
+   "detail": {
+    "non_target": 768,
+    "changed": []
+   },
+   "numbers": {
+    "non_target": 768,
+    "changed": 0
+   }
+  },
+  {
+   "name": "final_v2_invariance",
+   "passed": true,
+   "detail": {
+    "non_target": 764,
+    "changed": []
+   },
+   "numbers": {
+    "non_target": 764,
+    "changed": 0
+   }
+  },
+  {
+   "name": "final_moved_group11",
+   "passed": true,
+   "detail": {
+    "expected_group": 11,
+    "route_ids": [
+     12,
+     29,
+     231,
+     232
+    ],
+    "report": [
+     {
+      "route_id": 12,
+      "identity_unchanged": true,
+      "ports_unchanged": true,
+      "layer_before": [
+       1,
+       3,
+       1
+      ],
+      "layer_after": [
+       1,
+       5,
+       1
+      ],
+      "z_before": [
+       0.0,
+       1.5,
+       0.0
+      ],
+      "z_after": [
+       0.0,
+       2.5,
+       0.0
+      ],
+      "n_transitions": 2,
+      "high_flat_z": [
+       2.5
+      ],
+      "changed_fields": [
+       "bend_count",
+       "c4_symmetry",
+       "candidate",
+       "layer",
+       "layer_sequence",
+       "layer_z_sequence",
+       "layers_used",
+       "length_cm",
+       "length_mm",
+       "parts",
+       "primitives",
+       "propagation_loss_db",
+       "rotation_group_id",
+       "rotation_phase",
+       "source_channel",
+       "source_column",
+       "target_channel",
+       "target_column",
+       "z_span_mm"
+      ],
+      "geometry_ok": true
+     },
+     {
+      "route_id": 29,
+      "identity_unchanged": true,
+      "ports_unchanged": true,
+      "layer_before": [
+       1,
+       3,
+       1
+      ],
+      "layer_after": [
+       1,
+       5,
+       1
+      ],
+      "z_before": [
+       0.0,
+       1.5,
+       0.0
+      ],
+      "z_after": [
+       0.0,
+       2.5,
+       0.0
+      ],
+      "n_transitions": 2,
+      "high_flat_z": [
+       2.5
+      ],
+      "changed_fields": [
+       "bend_count",
+       "c4_symmetry",
+       "candidate",
+       "layer",
+       "layer_sequence",
+       "layer_z_sequence",
+       "layers_used",
+       "length_cm",
+       "length_mm",
+       "parts",
+       "primitives",
+       "propagation_loss_db",
+       "rotation_group_id",
+       "rotation_phase",
+       "source_channel",
+       "source_column",
+       "target_channel",
+       "target_column",
+       "z_span_mm"
+      ],
+      "geometry_ok": true
+     },
+     {
+      "route_id": 231,
+      "identity_unchanged": true,
+      "ports_unchanged": true,
+      "layer_before": [
+       1,
+       3,
+       1
+      ],
+      "layer_after": [
+       1,
+       5,
+       1
+      ],
+      "z_before": [
+       0.0,
+       1.5,
+       0.0
+      ],
+      "z_after": [
+       0.0,
+       2.5,
+       0.0
+      ],
+      "n_transitions": 2,
+      "high_flat_z": [
+       2.5
+      ],
+      "changed_fields": [
+       "bend_count",
+       "c4_symmetry",
+       "candidate",
+       "layer",
+       "layer_sequence",
+       "layer_z_sequence",
+       "layers_used",
+       "length_cm",
+       "length_mm",
+       "parts",
+       "primitives",
+       "propagation_loss_db",
+       "rotation_group_id",
+       "rotation_phase",
+       "source_channel",
+       "source_column",
+       "target_channel",
+       "target_column",
+       "z_span_mm"
+      ],
+      "geometry_ok": true
+     },
+     {
+      "route_id": 232,
+      "identity_unchanged": true,
+      "ports_unchanged": true,
+      "layer_before": [
+       1,
+       3,
+       1
+      ],
+      "layer_after": [
+       1,
+       5,
+       1
+      ],
+      "z_before": [
+       0.0,
+       1.5,
+       0.0
+      ],
+      "z_after": [
+       0.0,
+       2.5,
+       0.0
+      ],
+      "n_transitions": 2,
+      "high_flat_z": [
+       2.5
+      ],
+      "changed_fields": [
+       "bend_count",
+       "c4_symmetry",
+       "candidate",
+       "layer",
+       "layer_sequence",
+       "layer_z_sequence",
+       "layers_used",
+       "length_cm",
+       "length_mm",
+       "parts",
+       "primitives",
+       "propagation_loss_db",
+       "rotation_group_id",
+       "rotation_phase",
+       "source_channel",
+       "source_column",
+       "target_channel",
+       "target_column",
+       "z_span_mm"
+      ],
+      "geometry_ok": true
+     }
+    ]
+   },
+   "numbers": {
+    "moved_routes": 4
+   }
+  },
+  {
+   "name": "final_moved_group11_geometry",
+   "passed": true,
+   "detail": {
+    "note": "each flat part must be one continuous sub-chain; a gap equal to an old transition footprint indicates the 2D chain was assembled from flattened parts of the already-lifted route",
+    "findings": [
+     {
+      "route_id": 12,
+      "old_layer": [
+       1,
+       3,
+       1
+      ],
+      "new_layer": [
+       1,
+       5,
+       1
+      ],
+      "flat_discontinuities": []
+     },
+     {
+      "route_id": 231,
+      "old_layer": [
+       1,
+       3,
+       1
+      ],
+      "new_layer": [
+       1,
+       5,
+       1
+      ],
+      "flat_discontinuities": []
+     },
+     {
+      "route_id": 232,
+      "old_layer": [
+       1,
+       3,
+       1
+      ],
+      "new_layer": [
+       1,
+       5,
+       1
+      ],
+      "flat_discontinuities": []
+     },
+     {
+      "route_id": 29,
+      "old_layer": [
+       1,
+       3,
+       1
+      ],
+      "new_layer": [
+       1,
+       5,
+       1
+      ],
+      "flat_discontinuities": []
+     }
+    ]
+   }
+  },
+  {
+   "name": "baseline_l3d_validator",
+   "passed": true,
+   "detail": {
+    "errors": [],
+    "group_hits": {}
+   },
+   "numbers": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "min_curvature_radius_mm": 14.999999965,
+    "min_3d_clearance_mm": 0.083207287,
+    "violations": 0,
+    "runtime_seconds": 4.694,
+    "wall_seconds": 4.71
+   }
+  },
+  {
+   "name": "u_only_l3d_validator",
+   "passed": true,
+   "detail": {
+    "errors": [],
+    "group_hits": {}
+   },
+   "numbers": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "min_curvature_radius_mm": 14.999999961,
+    "min_3d_clearance_mm": 0.083207287,
+    "violations": 0,
+    "runtime_seconds": 4.025,
+    "wall_seconds": 4.03
+   }
+  },
+  {
+   "name": "final_l3d_validator",
+   "passed": true,
+   "detail": {
+    "errors": [],
+    "group_hits": {}
+   },
+   "numbers": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "min_curvature_radius_mm": 14.999999961,
+    "min_3d_clearance_mm": 0.083207287,
+    "violations": 0,
+    "runtime_seconds": 4.286,
+    "wall_seconds": 4.3
+   }
+  },
+  {
+   "name": "final_metrics_match_production",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "comparison_table_match",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "mismatches": 0
+   }
+  },
+  {
+   "name": "u_layer_assignment",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "rows": 64,
+    "reached": 64,
+    "failed": [],
+    "failed_reasons": {}
+   }
+  },
+  {
+   "name": "validation_artifact",
+   "passed": true,
+   "detail": [],
+   "numbers": {
+    "final_label": "final"
+   }
+  },
+  {
+   "name": "figures",
+   "passed": true,
+   "detail": {
+    "figure_stems_expected": 12,
+    "present_stems": 12,
+    "missing": [],
+    "summary_figures": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\figures",
+    "figure_log_error": "11:02:45 [u-bundle] figures failed: SyntaxError: unterminated string literal (detected at line 39) (spatial_u_bundle_plots.py, line 39)",
+    "problems": []
+   }
+  },
+  {
+   "name": "products_stable_during_run",
+   "passed": true,
+   "detail": []
+  }
+ ],
+ "numbers": {
+  "inputs": {
+   "connectivity": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\inputs\\connectivity_1024.json",
+    "sha256": "b4f5c46940d7993b34f4d49d6f128b8b83b9b263fe22ab8731d698bd02fa9eea"
+   },
+   "baseline_routes": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\phase5_dynamic_optimization\\after\\routes_l3d.json",
+    "sha256": "dcf42e4e509ba6f8247e15515e548b007ac7dc286cc3ff3544574f64d00c1ee3"
+   },
+   "verifier_script": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\verification\\verify_spatial_u_bundle.py",
+    "sha256": "dd6df372397eee1fdf97bba7eb2d0bb475b851046a085c1dfd47cba9767363d0"
+   },
+   "u_only_payload": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\routes_1024_u_only.json",
+    "sha256": "cd304675fe33b6079708b1f9156da0c0b3d809f78bfa328ea110469d16153cb0"
+   },
+   "final_payload": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\routes_1024.json",
+    "sha256": "5e4ea22c80a5315b5b5d27cc77f1778be3ef95b9b76b5759e1ece120e34c9316"
+   },
+   "u_layer_assignment.json": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\u_layer_assignment.json",
+    "sha256": "48ee49135c27419d682eb2c545c4945a40a00138275d953d4e0e1c467116c975"
+   },
+   "validation.json": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\validation.json",
+    "sha256": "bae8c765fd0c0ac44dc9f00b2c3d33628aa6153a29f13f764b08aa99a67df351"
+   },
+   "summary.json": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\summary.json",
+    "sha256": "e84e6d759c7341debad6b8697cfbeff71388c7790cdcbb0e4b43bffcdb6b555d"
+   },
+   "comparison_table.json": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\comparison_table.json",
+    "sha256": "1f3a62925ccc285bf09b41a5ba9ad6f23bfe02750f0d0fb1374c5fffbab6ea00"
+   }
+  },
+  "config": {
+   "radius": 15.0,
+   "clearance": 0.08,
+   "board": 150.0,
+   "width": 0.05,
+   "stack": {
+    "2": 1.0,
+    "3": 1.5,
+    "4": 2.0,
+    "5": 2.5
+   },
+   "target_layer": {
+    "20": 2,
+    "21": 2,
+    "22": 2,
+    "23": 2,
+    "24": 2,
+    "25": 2,
+    "26": 2,
+    "27": 2,
+    "28": 2,
+    "29": 2,
+    "30": 2,
+    "31": 2,
+    "32": 2,
+    "33": 2,
+    "34": 2,
+    "35": 2,
+    "144": 2,
+    "145": 2,
+    "146": 2,
+    "147": 2,
+    "148": 2,
+    "149": 2,
+    "150": 2,
+    "151": 2,
+    "152": 2,
+    "153": 2,
+    "154": 2,
+    "155": 2,
+    "156": 2,
+    "157": 2,
+    "158": 2,
+    "159": 2,
+    "160": 3,
+    "161": 3,
+    "162": 3,
+    "163": 3,
+    "164": 3,
+    "165": 3,
+    "166": 3,
+    "167": 3,
+    "168": 3,
+    "169": 3,
+    "170": 3,
+    "171": 3,
+    "172": 3,
+    "173": 3,
+    "174": 3,
+    "175": 3,
+    "176": 4,
+    "177": 4,
+    "178": 4,
+    "179": 4,
+    "180": 4,
+    "181": 4,
+    "182": 4,
+    "183": 4,
+    "184": 4,
+    "185": 4,
+    "186": 4,
+    "187": 4,
+    "188": 4,
+    "189": 4,
+    "190": 4,
+    "191": 4
+   }
+  },
+  "baseline": {
+   "routed": 1024,
+   "failed": 0,
+   "unique_crossing_pairs": 23356,
+   "unique_crossing_pairs_by_height": {
+    "0.0": 15952,
+    "0.5": 7328,
+    "1.0": 36,
+    "1.5": 32,
+    "2.0": 0,
+    "2.5": 8
+   },
+   "crossing_points_by_height": {
+    "0.0": 16096,
+    "0.5": 7416,
+    "1.0": 36,
+    "1.5": 36,
+    "2.0": 0,
+    "2.5": 12
+   },
+   "crossing_points_total": 23596,
+   "strict_2d_violations": 0,
+   "same_layer_u_u_crossing_pairs": 104,
+   "transitions": 440,
+   "total_length_mm": 97495.7612,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 124,
+    "L3": 36,
+    "L4": 24,
+    "L5": 36
+   },
+   "plane_route_counts": {
+    "z1": 512,
+    "z2": 512
+   },
+   "validation_status": "exploratory_only",
+   "min_3d_clearance_mm": 0.083207287,
+   "min_curvature_radius_mm": 14.999999965
+  },
+  "u_only": {
+   "routed": 1024,
+   "failed": 0,
+   "unique_crossing_pairs": 12408,
+   "unique_crossing_pairs_by_height": {
+    "0.0": 11712,
+    "0.5": 116,
+    "1.0": 528,
+    "1.5": 48,
+    "2.0": 0,
+    "2.5": 4
+   },
+   "crossing_points_by_height": {
+    "0.0": 11712,
+    "0.5": 116,
+    "1.0": 632,
+    "1.5": 48,
+    "2.0": 0,
+    "2.5": 4
+   },
+   "crossing_points_total": 12512,
+   "strict_2d_violations": 0,
+   "same_layer_u_u_crossing_pairs": 0,
+   "transitions": 824,
+   "total_length_mm": 98635.0733,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 252,
+    "L3": 80,
+    "L4": 72,
+    "L5": 8
+   },
+   "plane_route_counts": {
+    "z1": 512,
+    "z2": 512
+   },
+   "target_reached": 63,
+   "validation_status": "exploratory_only",
+   "min_3d_clearance_mm": 0.083207287,
+   "min_curvature_radius_mm": 14.999999961
+  },
+  "final": {
+   "routed": 1024,
+   "failed": 0,
+   "unique_crossing_pairs": 12824,
+   "unique_crossing_pairs_by_height": {
+    "0.0": 12160,
+    "0.5": 116,
+    "1.0": 528,
+    "1.5": 16,
+    "2.0": 0,
+    "2.5": 4
+   },
+   "crossing_points_by_height": {
+    "0.0": 12160,
+    "0.5": 116,
+    "1.0": 632,
+    "1.5": 16,
+    "2.0": 0,
+    "2.5": 4
+   },
+   "crossing_points_total": 12928,
+   "strict_2d_violations": 0,
+   "same_layer_u_u_crossing_pairs": 0,
+   "transitions": 824,
+   "total_length_mm": 98539.0127,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 252,
+    "L3": 80,
+    "L4": 68,
+    "L5": 12
+   },
+   "plane_route_counts": {
+    "z1": 512,
+    "z2": 512
+   },
+   "target_reached": 64,
+   "validation_status": "exploratory_only",
+   "min_3d_clearance_mm": 0.083207287,
+   "min_curvature_radius_mm": 14.999999961,
+   "baseline_pairs": 23356,
+   "pair_delta": -10532
+  },
+  "target_reached": {
+   "u_only": {
+    "reached": 63,
+    "failed": [
+     167
+    ]
+   },
+   "final": {
+    "reached": 64,
+    "failed": []
+   }
+  },
+  "validator": {
+   "baseline": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "counts": {
+     "violations": 0,
+     "contract_errors": 0,
+     "port_errors": 0,
+     "geometry_errors": 0,
+     "curvature_violations": 0,
+     "clearance_violations": 0,
+     "same_plane_violations": 0,
+     "self_clearance_violations": 0,
+     "other_errors": 0
+    },
+    "min_curvature_radius_mm": 14.999999965,
+    "min_3d_clearance_mm": 0.083207287,
+    "violations": 0,
+    "runtime_seconds": 4.694,
+    "wall_seconds": 4.71
+   },
+   "u_only": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "counts": {
+     "violations": 0,
+     "contract_errors": 0,
+     "port_errors": 0,
+     "geometry_errors": 0,
+     "curvature_violations": 0,
+     "clearance_violations": 0,
+     "same_plane_violations": 0,
+     "self_clearance_violations": 0,
+     "other_errors": 0
+    },
+    "min_curvature_radius_mm": 14.999999961,
+    "min_3d_clearance_mm": 0.083207287,
+    "violations": 0,
+    "runtime_seconds": 4.025,
+    "wall_seconds": 4.03
+   },
+   "final": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "counts": {
+     "violations": 0,
+     "contract_errors": 0,
+     "port_errors": 0,
+     "geometry_errors": 0,
+     "curvature_violations": 0,
+     "clearance_violations": 0,
+     "same_plane_violations": 0,
+     "self_clearance_violations": 0,
+     "other_errors": 0
+    },
+    "min_curvature_radius_mm": 14.999999961,
+    "min_3d_clearance_mm": 0.083207287,
+    "violations": 0,
+    "runtime_seconds": 4.286,
+    "wall_seconds": 4.3
+   }
+  },
+  "pair_reduction": {
+   "baseline": 23356,
+   "u_only": 12408,
+   "final": 12824,
+   "delta_final": -10532
+  },
+  "production_mismatches": [],
+  "runtime_seconds": 18.43,
+  "verdict": "PASS"
+ },
+ "root_causes": [],
+ "warnings": []
+}
