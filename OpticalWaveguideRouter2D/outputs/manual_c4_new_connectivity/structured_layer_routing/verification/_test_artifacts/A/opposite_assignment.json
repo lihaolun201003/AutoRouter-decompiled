@@ -1,0 +1,7398 @@
+{
+ "schema": "structured_layer_opposite_assignment_v1",
+ "group": "A",
+ "total_groups": 68,
+ "total_routes": 272,
+ "l2_groups": 55,
+ "l2_routes": 220,
+ "exception_groups": 13,
+ "exception_routes": 52,
+ "exception_reasons": {
+  "2": "flat_fallback",
+  "3": "flat_fallback",
+  "36": "flat_fallback",
+  "49": "flat_fallback",
+  "50": "flat_fallback",
+  "113": "flat_fallback",
+  "114": "flat_fallback",
+  "115": "flat_fallback",
+  "116": "flat_fallback",
+  "121": "flat_fallback_conflict",
+  "126": "flat_fallback_conflict",
+  "127": "flat_fallback_conflict",
+  "128": "flat_fallback_conflict"
+ },
+ "groups": [
+  {
+   "group_id": 1,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    1,
+    211,
+    212,
+    2
+   ],
+   "rise_fall": {
+    "1": {
+     "rise_start_xy": [
+      72.375,
+      89.2
+     ],
+     "rise_end_xy": [
+      72.375,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      72.375,
+      68.481146
+     ],
+     "fall_end_xy": [
+      72.375,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "211": {
+     "rise_start_xy": [
+      60.8,
+      72.375
+     ],
+     "rise_end_xy": [
+      68.481146,
+      72.375
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      72.375
+     ],
+     "fall_end_xy": [
+      89.2,
+      72.375
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "212": {
+     "rise_start_xy": [
+      77.625,
+      60.8
+     ],
+     "rise_end_xy": [
+      77.625,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      77.625,
+      81.518854
+     ],
+     "fall_end_xy": [
+      77.625,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "2": {
+     "rise_start_xy": [
+      60.8,
+      77.625
+     ],
+     "rise_end_xy": [
+      68.481146,
+      77.625
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      77.625
+     ],
+     "fall_end_xy": [
+      89.2,
+      77.625
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 2,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    3,
+    213,
+    214,
+    38
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 3,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    4,
+    215,
+    216,
+    37
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 4,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    5,
+    217,
+    218,
+    36
+   ],
+   "rise_fall": {
+    "5": {
+     "rise_start_xy": [
+      9.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      9.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      9.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      9.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "217": {
+     "rise_start_xy": [
+      62.8,
+      9.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      9.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      9.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      9.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "218": {
+     "rise_start_xy": [
+      140.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      140.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      140.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      140.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "36": {
+     "rise_start_xy": [
+      87.2,
+      140.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      140.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      140.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      140.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 5,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    6,
+    219,
+    220,
+    35
+   ],
+   "rise_fall": {
+    "6": {
+     "rise_start_xy": [
+      9.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      9.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      9.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      9.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "219": {
+     "rise_start_xy": [
+      62.8,
+      9.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      9.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      9.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      9.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "220": {
+     "rise_start_xy": [
+      140.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      140.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      140.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      140.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "35": {
+     "rise_start_xy": [
+      62.8,
+      140.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      140.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      140.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      140.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 6,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    7,
+    221,
+    222,
+    34
+   ],
+   "rise_fall": {
+    "7": {
+     "rise_start_xy": [
+      8.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      8.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      8.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      8.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "221": {
+     "rise_start_xy": [
+      87.2,
+      8.875
+     ],
+     "rise_end_xy": [
+      79.518854,
+      8.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      8.875
+     ],
+     "fall_end_xy": [
+      62.8,
+      8.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "222": {
+     "rise_start_xy": [
+      141.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      141.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      141.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      141.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "34": {
+     "rise_start_xy": [
+      87.2,
+      141.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      141.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      141.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      141.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 7,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    8,
+    223,
+    224,
+    33
+   ],
+   "rise_fall": {
+    "8": {
+     "rise_start_xy": [
+      8.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      8.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      8.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      8.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "223": {
+     "rise_start_xy": [
+      62.8,
+      8.625
+     ],
+     "rise_end_xy": [
+      70.481146,
+      8.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      8.625
+     ],
+     "fall_end_xy": [
+      87.2,
+      8.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "224": {
+     "rise_start_xy": [
+      141.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      141.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      141.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      141.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "33": {
+     "rise_start_xy": [
+      62.8,
+      141.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      141.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      141.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      141.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 8,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    9,
+    225,
+    226,
+    32
+   ],
+   "rise_fall": {
+    "9": {
+     "rise_start_xy": [
+      8.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      8.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      8.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      8.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "225": {
+     "rise_start_xy": [
+      62.8,
+      8.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      8.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      8.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      8.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "226": {
+     "rise_start_xy": [
+      141.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      141.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      141.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      141.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "32": {
+     "rise_start_xy": [
+      87.2,
+      141.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      141.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      141.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      141.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 9,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    10,
+    227,
+    228,
+    31
+   ],
+   "rise_fall": {
+    "10": {
+     "rise_start_xy": [
+      8.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      8.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      8.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      8.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "227": {
+     "rise_start_xy": [
+      62.8,
+      8.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      8.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      8.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      8.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "228": {
+     "rise_start_xy": [
+      141.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      141.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      141.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      141.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "31": {
+     "rise_start_xy": [
+      62.8,
+      141.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      141.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      141.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      141.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 10,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    11,
+    229,
+    230,
+    30
+   ],
+   "rise_fall": {
+    "11": {
+     "rise_start_xy": [
+      7.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      7.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      7.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      7.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "229": {
+     "rise_start_xy": [
+      87.2,
+      7.875
+     ],
+     "rise_end_xy": [
+      79.518854,
+      7.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      7.875
+     ],
+     "fall_end_xy": [
+      62.8,
+      7.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "230": {
+     "rise_start_xy": [
+      142.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      142.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      142.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      142.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "30": {
+     "rise_start_xy": [
+      87.2,
+      142.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      142.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      142.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      142.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 11,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    12,
+    231,
+    232,
+    29
+   ],
+   "rise_fall": {
+    "12": {
+     "rise_start_xy": [
+      7.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      7.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      7.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      7.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "231": {
+     "rise_start_xy": [
+      62.8,
+      7.625
+     ],
+     "rise_end_xy": [
+      70.481146,
+      7.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      7.625
+     ],
+     "fall_end_xy": [
+      87.2,
+      7.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "232": {
+     "rise_start_xy": [
+      142.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      142.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      142.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      142.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "29": {
+     "rise_start_xy": [
+      62.8,
+      142.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      142.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      142.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      142.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 12,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    13,
+    233,
+    234,
+    28
+   ],
+   "rise_fall": {
+    "13": {
+     "rise_start_xy": [
+      7.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      7.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      7.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      7.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "233": {
+     "rise_start_xy": [
+      87.2,
+      7.375
+     ],
+     "rise_end_xy": [
+      79.518854,
+      7.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      7.375
+     ],
+     "fall_end_xy": [
+      62.8,
+      7.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "234": {
+     "rise_start_xy": [
+      142.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      142.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      142.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      142.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "28": {
+     "rise_start_xy": [
+      87.2,
+      142.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      142.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      142.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      142.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 13,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    14,
+    235,
+    236,
+    27
+   ],
+   "rise_fall": {
+    "14": {
+     "rise_start_xy": [
+      7.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      7.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      7.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      7.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "235": {
+     "rise_start_xy": [
+      62.8,
+      7.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      7.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      7.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      7.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "236": {
+     "rise_start_xy": [
+      142.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      142.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      142.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      142.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "27": {
+     "rise_start_xy": [
+      62.8,
+      142.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      142.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      142.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      142.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 14,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    15,
+    237,
+    238,
+    26
+   ],
+   "rise_fall": {
+    "15": {
+     "rise_start_xy": [
+      6.875,
+      87.2
+     ],
+     "rise_end_xy": [
+      6.875,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      6.875,
+      70.481146
+     ],
+     "fall_end_xy": [
+      6.875,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "237": {
+     "rise_start_xy": [
+      62.8,
+      6.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      6.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      6.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      6.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "238": {
+     "rise_start_xy": [
+      143.125,
+      62.8
+     ],
+     "rise_end_xy": [
+      143.125,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      143.125,
+      79.518854
+     ],
+     "fall_end_xy": [
+      143.125,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "26": {
+     "rise_start_xy": [
+      87.2,
+      143.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      143.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      143.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      143.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 15,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    16,
+    239,
+    240,
+    25
+   ],
+   "rise_fall": {
+    "16": {
+     "rise_start_xy": [
+      6.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      6.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      6.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      6.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "239": {
+     "rise_start_xy": [
+      87.2,
+      6.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      6.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      6.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      6.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "240": {
+     "rise_start_xy": [
+      143.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      143.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      143.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      143.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "25": {
+     "rise_start_xy": [
+      62.8,
+      143.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      143.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      143.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      143.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 16,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    17,
+    241,
+    242,
+    24
+   ],
+   "rise_fall": {
+    "17": {
+     "rise_start_xy": [
+      6.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      6.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      6.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      6.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "241": {
+     "rise_start_xy": [
+      62.8,
+      6.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      6.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      6.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      6.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "242": {
+     "rise_start_xy": [
+      143.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      143.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      143.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      143.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "24": {
+     "rise_start_xy": [
+      87.2,
+      143.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      143.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      143.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      143.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 17,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    18,
+    243,
+    244,
+    23
+   ],
+   "rise_fall": {
+    "18": {
+     "rise_start_xy": [
+      6.125,
+      62.8
+     ],
+     "rise_end_xy": [
+      6.125,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      6.125,
+      79.518854
+     ],
+     "fall_end_xy": [
+      6.125,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "243": {
+     "rise_start_xy": [
+      87.2,
+      6.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      6.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      6.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      6.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "244": {
+     "rise_start_xy": [
+      143.875,
+      87.2
+     ],
+     "rise_end_xy": [
+      143.875,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      143.875,
+      70.481146
+     ],
+     "fall_end_xy": [
+      143.875,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "23": {
+     "rise_start_xy": [
+      62.8,
+      143.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      143.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      143.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      143.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 18,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    19,
+    245,
+    246,
+    22
+   ],
+   "rise_fall": {
+    "19": {
+     "rise_start_xy": [
+      5.875,
+      87.2
+     ],
+     "rise_end_xy": [
+      5.875,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      5.875,
+      70.481146
+     ],
+     "fall_end_xy": [
+      5.875,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "245": {
+     "rise_start_xy": [
+      62.8,
+      5.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      5.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      5.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      5.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "246": {
+     "rise_start_xy": [
+      144.125,
+      62.8
+     ],
+     "rise_end_xy": [
+      144.125,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      144.125,
+      79.518854
+     ],
+     "fall_end_xy": [
+      144.125,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "22": {
+     "rise_start_xy": [
+      87.2,
+      144.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      144.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      144.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      144.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 19,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    20,
+    247,
+    248,
+    21
+   ],
+   "rise_fall": {
+    "20": {
+     "rise_start_xy": [
+      5.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      5.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      5.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      5.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "247": {
+     "rise_start_xy": [
+      87.2,
+      5.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      5.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      5.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      5.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "248": {
+     "rise_start_xy": [
+      144.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      144.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      144.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      144.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "21": {
+     "rise_start_xy": [
+      62.8,
+      144.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      144.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      144.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      144.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 36,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    55,
+    281,
+    282,
+    84
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 37,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    56,
+    283,
+    284,
+    70
+   ],
+   "rise_fall": {
+    "56": {
+     "rise_start_xy": [
+      72.125,
+      89.2
+     ],
+     "rise_end_xy": [
+      72.125,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      72.125,
+      68.481146
+     ],
+     "fall_end_xy": [
+      72.125,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "283": {
+     "rise_start_xy": [
+      60.8,
+      72.125
+     ],
+     "rise_end_xy": [
+      68.481146,
+      72.125
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      72.125
+     ],
+     "fall_end_xy": [
+      89.2,
+      72.125
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "284": {
+     "rise_start_xy": [
+      77.875,
+      60.8
+     ],
+     "rise_end_xy": [
+      77.875,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      77.875,
+      81.518854
+     ],
+     "fall_end_xy": [
+      77.875,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "70": {
+     "rise_start_xy": [
+      60.8,
+      77.875
+     ],
+     "rise_end_xy": [
+      68.481146,
+      77.875
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      77.875
+     ],
+     "fall_end_xy": [
+      89.2,
+      77.875
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 38,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    57,
+    285,
+    286,
+    71
+   ],
+   "rise_fall": {
+    "57": {
+     "rise_start_xy": [
+      71.875,
+      60.8
+     ],
+     "rise_end_xy": [
+      71.875,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      71.875,
+      81.518854
+     ],
+     "fall_end_xy": [
+      71.875,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "285": {
+     "rise_start_xy": [
+      89.2,
+      71.875
+     ],
+     "rise_end_xy": [
+      81.518854,
+      71.875
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      68.481146,
+      71.875
+     ],
+     "fall_end_xy": [
+      60.8,
+      71.875
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "286": {
+     "rise_start_xy": [
+      78.125,
+      89.2
+     ],
+     "rise_end_xy": [
+      78.125,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      78.125,
+      68.481146
+     ],
+     "fall_end_xy": [
+      78.125,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "71": {
+     "rise_start_xy": [
+      89.2,
+      78.125
+     ],
+     "rise_end_xy": [
+      81.518854,
+      78.125
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      68.481146,
+      78.125
+     ],
+     "fall_end_xy": [
+      60.8,
+      78.125
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 39,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    58,
+    287,
+    288,
+    72
+   ],
+   "rise_fall": {
+    "58": {
+     "rise_start_xy": [
+      71.625,
+      89.2
+     ],
+     "rise_end_xy": [
+      71.625,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      71.625,
+      68.481146
+     ],
+     "fall_end_xy": [
+      71.625,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "287": {
+     "rise_start_xy": [
+      60.8,
+      71.625
+     ],
+     "rise_end_xy": [
+      68.481146,
+      71.625
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      71.625
+     ],
+     "fall_end_xy": [
+      89.2,
+      71.625
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "288": {
+     "rise_start_xy": [
+      78.375,
+      60.8
+     ],
+     "rise_end_xy": [
+      78.375,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      78.375,
+      81.518854
+     ],
+     "fall_end_xy": [
+      78.375,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "72": {
+     "rise_start_xy": [
+      60.8,
+      78.375
+     ],
+     "rise_end_xy": [
+      68.481146,
+      78.375
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      78.375
+     ],
+     "fall_end_xy": [
+      89.2,
+      78.375
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 40,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    59,
+    289,
+    290,
+    73
+   ],
+   "rise_fall": {
+    "59": {
+     "rise_start_xy": [
+      71.375,
+      60.8
+     ],
+     "rise_end_xy": [
+      71.375,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      71.375,
+      81.518854
+     ],
+     "fall_end_xy": [
+      71.375,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "289": {
+     "rise_start_xy": [
+      89.2,
+      71.375
+     ],
+     "rise_end_xy": [
+      81.518854,
+      71.375
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      68.481146,
+      71.375
+     ],
+     "fall_end_xy": [
+      60.8,
+      71.375
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "290": {
+     "rise_start_xy": [
+      78.625,
+      89.2
+     ],
+     "rise_end_xy": [
+      78.625,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      78.625,
+      68.481146
+     ],
+     "fall_end_xy": [
+      78.625,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "73": {
+     "rise_start_xy": [
+      89.2,
+      78.625
+     ],
+     "rise_end_xy": [
+      81.518854,
+      78.625
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      68.481146,
+      78.625
+     ],
+     "fall_end_xy": [
+      60.8,
+      78.625
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 41,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    60,
+    291,
+    292,
+    74
+   ],
+   "rise_fall": {
+    "60": {
+     "rise_start_xy": [
+      71.125,
+      89.2
+     ],
+     "rise_end_xy": [
+      71.125,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      71.125,
+      68.481146
+     ],
+     "fall_end_xy": [
+      71.125,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "291": {
+     "rise_start_xy": [
+      60.8,
+      71.125
+     ],
+     "rise_end_xy": [
+      68.481146,
+      71.125
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      71.125
+     ],
+     "fall_end_xy": [
+      89.2,
+      71.125
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "292": {
+     "rise_start_xy": [
+      78.875,
+      60.8
+     ],
+     "rise_end_xy": [
+      78.875,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      78.875,
+      81.518854
+     ],
+     "fall_end_xy": [
+      78.875,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "74": {
+     "rise_start_xy": [
+      60.8,
+      78.875
+     ],
+     "rise_end_xy": [
+      68.481146,
+      78.875
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.518854,
+      78.875
+     ],
+     "fall_end_xy": [
+      89.2,
+      78.875
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 42,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 60.8,
+   "a_out": 60.8,
+   "route_ids": [
+    61,
+    293,
+    294,
+    75
+   ],
+   "rise_fall": {
+    "61": {
+     "rise_start_xy": [
+      70.875,
+      60.8
+     ],
+     "rise_end_xy": [
+      70.875,
+      68.481146
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.875,
+      81.518854
+     ],
+     "fall_end_xy": [
+      70.875,
+      89.2
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "293": {
+     "rise_start_xy": [
+      89.2,
+      70.875
+     ],
+     "rise_end_xy": [
+      81.518854,
+      70.875
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      68.481146,
+      70.875
+     ],
+     "fall_end_xy": [
+      60.8,
+      70.875
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "294": {
+     "rise_start_xy": [
+      79.125,
+      89.2
+     ],
+     "rise_end_xy": [
+      79.125,
+      81.518854
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.125,
+      68.481146
+     ],
+     "fall_end_xy": [
+      79.125,
+      60.8
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "75": {
+     "rise_start_xy": [
+      89.2,
+      79.125
+     ],
+     "rise_end_xy": [
+      81.518854,
+      79.125
+     ],
+     "rise_start_mm": 60.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      68.481146,
+      79.125
+     ],
+     "fall_end_xy": [
+      60.8,
+      79.125
+     ],
+     "fall_start_mm": 81.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 43,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 61.2,
+   "a_out": 61.2,
+   "route_ids": [
+    62,
+    295,
+    296,
+    76
+   ],
+   "rise_fall": {
+    "62": {
+     "rise_start_xy": [
+      70.625,
+      88.8
+     ],
+     "rise_end_xy": [
+      70.625,
+      81.118854
+     ],
+     "rise_start_mm": 61.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.625,
+      68.881146
+     ],
+     "fall_end_xy": [
+      70.625,
+      61.2
+     ],
+     "fall_start_mm": 81.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "295": {
+     "rise_start_xy": [
+      61.2,
+      70.625
+     ],
+     "rise_end_xy": [
+      68.881146,
+      70.625
+     ],
+     "rise_start_mm": 61.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.118854,
+      70.625
+     ],
+     "fall_end_xy": [
+      88.8,
+      70.625
+     ],
+     "fall_start_mm": 81.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "296": {
+     "rise_start_xy": [
+      79.375,
+      61.2
+     ],
+     "rise_end_xy": [
+      79.375,
+      68.881146
+     ],
+     "rise_start_mm": 61.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.375,
+      81.118854
+     ],
+     "fall_end_xy": [
+      79.375,
+      88.8
+     ],
+     "fall_start_mm": 81.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "76": {
+     "rise_start_xy": [
+      61.2,
+      79.375
+     ],
+     "rise_end_xy": [
+      68.881146,
+      79.375
+     ],
+     "rise_start_mm": 61.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      81.118854,
+      79.375
+     ],
+     "fall_end_xy": [
+      88.8,
+      79.375
+     ],
+     "fall_start_mm": 81.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 44,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 61.6,
+   "a_out": 61.599999999999994,
+   "route_ids": [
+    63,
+    297,
+    298,
+    77
+   ],
+   "rise_fall": {
+    "63": {
+     "rise_start_xy": [
+      70.375,
+      61.6
+     ],
+     "rise_end_xy": [
+      70.375,
+      69.281146
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.375,
+      80.718854
+     ],
+     "fall_end_xy": [
+      70.375,
+      88.4
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "297": {
+     "rise_start_xy": [
+      88.4,
+      70.375
+     ],
+     "rise_end_xy": [
+      80.718854,
+      70.375
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.281146,
+      70.375
+     ],
+     "fall_end_xy": [
+      61.6,
+      70.375
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "298": {
+     "rise_start_xy": [
+      79.625,
+      88.4
+     ],
+     "rise_end_xy": [
+      79.625,
+      80.718854
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.625,
+      69.281146
+     ],
+     "fall_end_xy": [
+      79.625,
+      61.6
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "77": {
+     "rise_start_xy": [
+      88.4,
+      79.625
+     ],
+     "rise_end_xy": [
+      80.718854,
+      79.625
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.281146,
+      79.625
+     ],
+     "fall_end_xy": [
+      61.6,
+      79.625
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 45,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 57.2,
+   "a_out": 57.19999999999999,
+   "route_ids": [
+    64,
+    299,
+    300,
+    78
+   ],
+   "rise_fall": {
+    "64": {
+     "rise_start_xy": [
+      70.125,
+      92.8
+     ],
+     "rise_end_xy": [
+      70.125,
+      85.118854
+     ],
+     "rise_start_mm": 57.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.125,
+      64.881146
+     ],
+     "fall_end_xy": [
+      70.125,
+      57.2
+     ],
+     "fall_start_mm": 85.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "299": {
+     "rise_start_xy": [
+      57.2,
+      70.125
+     ],
+     "rise_end_xy": [
+      64.881146,
+      70.125
+     ],
+     "rise_start_mm": 57.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      85.118854,
+      70.125
+     ],
+     "fall_end_xy": [
+      92.8,
+      70.125
+     ],
+     "fall_start_mm": 85.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "300": {
+     "rise_start_xy": [
+      79.875,
+      57.2
+     ],
+     "rise_end_xy": [
+      79.875,
+      64.881146
+     ],
+     "rise_start_mm": 57.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.875,
+      85.118854
+     ],
+     "fall_end_xy": [
+      79.875,
+      92.8
+     ],
+     "fall_start_mm": 85.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "78": {
+     "rise_start_xy": [
+      57.2,
+      79.875
+     ],
+     "rise_end_xy": [
+      64.881146,
+      79.875
+     ],
+     "rise_start_mm": 57.2,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      85.118854,
+      79.875
+     ],
+     "fall_end_xy": [
+      92.8,
+      79.875
+     ],
+     "fall_start_mm": 85.205355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 46,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 52.8,
+   "a_out": 52.8,
+   "route_ids": [
+    65,
+    301,
+    302,
+    79
+   ],
+   "rise_fall": {
+    "65": {
+     "rise_start_xy": [
+      69.875,
+      52.8
+     ],
+     "rise_end_xy": [
+      69.875,
+      60.481146
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.875,
+      89.518854
+     ],
+     "fall_end_xy": [
+      69.875,
+      97.2
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "301": {
+     "rise_start_xy": [
+      97.2,
+      69.875
+     ],
+     "rise_end_xy": [
+      89.518854,
+      69.875
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      60.481146,
+      69.875
+     ],
+     "fall_end_xy": [
+      52.8,
+      69.875
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "302": {
+     "rise_start_xy": [
+      80.125,
+      97.2
+     ],
+     "rise_end_xy": [
+      80.125,
+      89.518854
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.125,
+      60.481146
+     ],
+     "fall_end_xy": [
+      80.125,
+      52.8
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "79": {
+     "rise_start_xy": [
+      97.2,
+      80.125
+     ],
+     "rise_end_xy": [
+      89.518854,
+      80.125
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      60.481146,
+      80.125
+     ],
+     "fall_end_xy": [
+      52.8,
+      80.125
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 47,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 52.8,
+   "a_out": 52.8,
+   "route_ids": [
+    66,
+    303,
+    304,
+    80
+   ],
+   "rise_fall": {
+    "66": {
+     "rise_start_xy": [
+      69.625,
+      97.2
+     ],
+     "rise_end_xy": [
+      69.625,
+      89.518854
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.625,
+      60.481146
+     ],
+     "fall_end_xy": [
+      69.625,
+      52.8
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "303": {
+     "rise_start_xy": [
+      52.8,
+      69.625
+     ],
+     "rise_end_xy": [
+      60.481146,
+      69.625
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      89.518854,
+      69.625
+     ],
+     "fall_end_xy": [
+      97.2,
+      69.625
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "304": {
+     "rise_start_xy": [
+      80.375,
+      52.8
+     ],
+     "rise_end_xy": [
+      80.375,
+      60.481146
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.375,
+      89.518854
+     ],
+     "fall_end_xy": [
+      80.375,
+      97.2
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "80": {
+     "rise_start_xy": [
+      52.8,
+      80.375
+     ],
+     "rise_end_xy": [
+      60.481146,
+      80.375
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      89.518854,
+      80.375
+     ],
+     "fall_end_xy": [
+      97.2,
+      80.375
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 48,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 52.8,
+   "a_out": 52.8,
+   "route_ids": [
+    67,
+    305,
+    306,
+    81
+   ],
+   "rise_fall": {
+    "67": {
+     "rise_start_xy": [
+      69.375,
+      52.8
+     ],
+     "rise_end_xy": [
+      69.375,
+      60.481146
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.375,
+      89.518854
+     ],
+     "fall_end_xy": [
+      69.375,
+      97.2
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "305": {
+     "rise_start_xy": [
+      97.2,
+      69.375
+     ],
+     "rise_end_xy": [
+      89.518854,
+      69.375
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      60.481146,
+      69.375
+     ],
+     "fall_end_xy": [
+      52.8,
+      69.375
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "306": {
+     "rise_start_xy": [
+      80.625,
+      97.2
+     ],
+     "rise_end_xy": [
+      80.625,
+      89.518854
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.625,
+      60.481146
+     ],
+     "fall_end_xy": [
+      80.625,
+      52.8
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "81": {
+     "rise_start_xy": [
+      97.2,
+      80.625
+     ],
+     "rise_end_xy": [
+      89.518854,
+      80.625
+     ],
+     "rise_start_mm": 52.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      60.481146,
+      80.625
+     ],
+     "fall_end_xy": [
+      52.8,
+      80.625
+     ],
+     "fall_start_mm": 89.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 49,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    68,
+    307,
+    308,
+    82
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 50,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    69,
+    309,
+    310,
+    83
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 97,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    147,
+    449,
+    450,
+    179
+   ],
+   "rise_fall": {
+    "147": {
+     "rise_start_xy": [
+      41.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      41.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      41.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      41.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "449": {
+     "rise_start_xy": [
+      62.8,
+      41.625
+     ],
+     "rise_end_xy": [
+      70.481146,
+      41.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      41.625
+     ],
+     "fall_end_xy": [
+      87.2,
+      41.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "450": {
+     "rise_start_xy": [
+      108.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      108.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      108.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      108.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "179": {
+     "rise_start_xy": [
+      62.8,
+      108.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      108.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      108.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      108.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 98,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    148,
+    451,
+    452,
+    180
+   ],
+   "rise_fall": {
+    "148": {
+     "rise_start_xy": [
+      41.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      41.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      41.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      41.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "451": {
+     "rise_start_xy": [
+      87.2,
+      41.875
+     ],
+     "rise_end_xy": [
+      79.518854,
+      41.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      41.875
+     ],
+     "fall_end_xy": [
+      62.8,
+      41.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "452": {
+     "rise_start_xy": [
+      108.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      108.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      108.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      108.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "180": {
+     "rise_start_xy": [
+      87.2,
+      108.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      108.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      108.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      108.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 99,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    149,
+    453,
+    454,
+    181
+   ],
+   "rise_fall": {
+    "149": {
+     "rise_start_xy": [
+      42.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      42.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      42.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      42.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "453": {
+     "rise_start_xy": [
+      62.8,
+      42.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      42.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      42.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      42.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "454": {
+     "rise_start_xy": [
+      107.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      107.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      107.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      107.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "181": {
+     "rise_start_xy": [
+      62.8,
+      107.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      107.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      107.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      107.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 100,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    150,
+    455,
+    456,
+    182
+   ],
+   "rise_fall": {
+    "150": {
+     "rise_start_xy": [
+      42.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      42.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      42.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      42.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "455": {
+     "rise_start_xy": [
+      87.2,
+      42.375
+     ],
+     "rise_end_xy": [
+      79.518854,
+      42.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      42.375
+     ],
+     "fall_end_xy": [
+      62.8,
+      42.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "456": {
+     "rise_start_xy": [
+      107.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      107.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      107.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      107.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "182": {
+     "rise_start_xy": [
+      87.2,
+      107.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      107.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      107.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      107.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 101,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    151,
+    457,
+    458,
+    183
+   ],
+   "rise_fall": {
+    "151": {
+     "rise_start_xy": [
+      42.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      42.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      42.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      42.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "457": {
+     "rise_start_xy": [
+      62.8,
+      42.625
+     ],
+     "rise_end_xy": [
+      70.481146,
+      42.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      42.625
+     ],
+     "fall_end_xy": [
+      87.2,
+      42.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "458": {
+     "rise_start_xy": [
+      107.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      107.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      107.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      107.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "183": {
+     "rise_start_xy": [
+      62.8,
+      107.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      107.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      107.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      107.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 102,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    152,
+    459,
+    460,
+    184
+   ],
+   "rise_fall": {
+    "152": {
+     "rise_start_xy": [
+      42.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      42.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      42.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      42.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "459": {
+     "rise_start_xy": [
+      87.2,
+      42.875
+     ],
+     "rise_end_xy": [
+      79.518854,
+      42.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      42.875
+     ],
+     "fall_end_xy": [
+      62.8,
+      42.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "460": {
+     "rise_start_xy": [
+      107.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      107.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      107.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      107.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "184": {
+     "rise_start_xy": [
+      87.2,
+      107.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      107.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      107.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      107.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 103,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    153,
+    461,
+    462,
+    185
+   ],
+   "rise_fall": {
+    "153": {
+     "rise_start_xy": [
+      43.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      43.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      43.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      43.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "461": {
+     "rise_start_xy": [
+      62.8,
+      43.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      43.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      43.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      43.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "462": {
+     "rise_start_xy": [
+      106.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      106.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      106.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      106.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "185": {
+     "rise_start_xy": [
+      62.8,
+      106.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      106.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      106.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      106.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 104,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    154,
+    463,
+    464,
+    186
+   ],
+   "rise_fall": {
+    "154": {
+     "rise_start_xy": [
+      43.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      43.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      43.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      43.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "463": {
+     "rise_start_xy": [
+      87.2,
+      43.375
+     ],
+     "rise_end_xy": [
+      79.518854,
+      43.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      43.375
+     ],
+     "fall_end_xy": [
+      62.8,
+      43.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "464": {
+     "rise_start_xy": [
+      106.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      106.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      106.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      106.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "186": {
+     "rise_start_xy": [
+      87.2,
+      106.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      106.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      106.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      106.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 105,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    155,
+    465,
+    466,
+    187
+   ],
+   "rise_fall": {
+    "155": {
+     "rise_start_xy": [
+      43.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      43.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      43.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      43.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "465": {
+     "rise_start_xy": [
+      62.8,
+      43.625
+     ],
+     "rise_end_xy": [
+      70.481146,
+      43.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      43.625
+     ],
+     "fall_end_xy": [
+      87.2,
+      43.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "466": {
+     "rise_start_xy": [
+      106.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      106.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      106.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      106.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "187": {
+     "rise_start_xy": [
+      62.8,
+      106.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      106.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      106.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      106.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 106,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    156,
+    467,
+    468,
+    188
+   ],
+   "rise_fall": {
+    "156": {
+     "rise_start_xy": [
+      43.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      43.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      43.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      43.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "467": {
+     "rise_start_xy": [
+      87.2,
+      43.875
+     ],
+     "rise_end_xy": [
+      79.518854,
+      43.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      43.875
+     ],
+     "fall_end_xy": [
+      62.8,
+      43.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "468": {
+     "rise_start_xy": [
+      106.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      106.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      106.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      106.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "188": {
+     "rise_start_xy": [
+      87.2,
+      106.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      106.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      106.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      106.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 107,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    157,
+    469,
+    470,
+    189
+   ],
+   "rise_fall": {
+    "157": {
+     "rise_start_xy": [
+      44.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      44.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      44.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      44.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "469": {
+     "rise_start_xy": [
+      62.8,
+      44.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      44.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      44.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      44.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "470": {
+     "rise_start_xy": [
+      105.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      105.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      105.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      105.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "189": {
+     "rise_start_xy": [
+      62.8,
+      105.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      105.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      105.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      105.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 108,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    158,
+    471,
+    472,
+    190
+   ],
+   "rise_fall": {
+    "158": {
+     "rise_start_xy": [
+      44.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      44.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      44.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      44.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "471": {
+     "rise_start_xy": [
+      62.8,
+      44.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      44.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      44.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      44.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "472": {
+     "rise_start_xy": [
+      105.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      105.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      105.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      105.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "190": {
+     "rise_start_xy": [
+      87.2,
+      105.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      105.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      105.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      105.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 109,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    159,
+    473,
+    474,
+    191
+   ],
+   "rise_fall": {
+    "159": {
+     "rise_start_xy": [
+      44.625,
+      62.8
+     ],
+     "rise_end_xy": [
+      44.625,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      44.625,
+      79.518854
+     ],
+     "fall_end_xy": [
+      44.625,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "473": {
+     "rise_start_xy": [
+      87.2,
+      44.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      44.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      44.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      44.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "474": {
+     "rise_start_xy": [
+      105.375,
+      87.2
+     ],
+     "rise_end_xy": [
+      105.375,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      105.375,
+      70.481146
+     ],
+     "fall_end_xy": [
+      105.375,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "191": {
+     "rise_start_xy": [
+      62.8,
+      105.375
+     ],
+     "rise_end_xy": [
+      70.481146,
+      105.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      105.375
+     ],
+     "fall_end_xy": [
+      87.2,
+      105.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 110,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    160,
+    475,
+    476,
+    192
+   ],
+   "rise_fall": {
+    "160": {
+     "rise_start_xy": [
+      44.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      44.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      44.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      44.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "475": {
+     "rise_start_xy": [
+      87.2,
+      44.875
+     ],
+     "rise_end_xy": [
+      79.518854,
+      44.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      44.875
+     ],
+     "fall_end_xy": [
+      62.8,
+      44.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "476": {
+     "rise_start_xy": [
+      105.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      105.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      105.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      105.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "192": {
+     "rise_start_xy": [
+      87.2,
+      105.125
+     ],
+     "rise_end_xy": [
+      79.518854,
+      105.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      105.125
+     ],
+     "fall_end_xy": [
+      62.8,
+      105.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 111,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    161,
+    477,
+    478,
+    193
+   ],
+   "rise_fall": {
+    "161": {
+     "rise_start_xy": [
+      45.125,
+      87.2
+     ],
+     "rise_end_xy": [
+      45.125,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      45.125,
+      70.481146
+     ],
+     "fall_end_xy": [
+      45.125,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "477": {
+     "rise_start_xy": [
+      62.8,
+      45.125
+     ],
+     "rise_end_xy": [
+      70.481146,
+      45.125
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      45.125
+     ],
+     "fall_end_xy": [
+      87.2,
+      45.125
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "478": {
+     "rise_start_xy": [
+      104.875,
+      62.8
+     ],
+     "rise_end_xy": [
+      104.875,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      104.875,
+      79.518854
+     ],
+     "fall_end_xy": [
+      104.875,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "193": {
+     "rise_start_xy": [
+      62.8,
+      104.875
+     ],
+     "rise_end_xy": [
+      70.481146,
+      104.875
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      79.518854,
+      104.875
+     ],
+     "fall_end_xy": [
+      87.2,
+      104.875
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 112,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 62.8,
+   "a_out": 62.8,
+   "route_ids": [
+    162,
+    479,
+    480,
+    194
+   ],
+   "rise_fall": {
+    "162": {
+     "rise_start_xy": [
+      45.375,
+      62.8
+     ],
+     "rise_end_xy": [
+      45.375,
+      70.481146
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      45.375,
+      79.518854
+     ],
+     "fall_end_xy": [
+      45.375,
+      87.2
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "479": {
+     "rise_start_xy": [
+      87.2,
+      45.375
+     ],
+     "rise_end_xy": [
+      79.518854,
+      45.375
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      45.375
+     ],
+     "fall_end_xy": [
+      62.8,
+      45.375
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "480": {
+     "rise_start_xy": [
+      104.625,
+      87.2
+     ],
+     "rise_end_xy": [
+      104.625,
+      79.518854
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      104.625,
+      70.481146
+     ],
+     "fall_end_xy": [
+      104.625,
+      62.8
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "194": {
+     "rise_start_xy": [
+      87.2,
+      104.625
+     ],
+     "rise_end_xy": [
+      79.518854,
+      104.625
+     ],
+     "rise_start_mm": 62.8,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      70.481146,
+      104.625
+     ],
+     "fall_end_xy": [
+      62.8,
+      104.625
+     ],
+     "fall_start_mm": 79.605355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 113,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    163,
+    481,
+    482,
+    195
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 114,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    164,
+    483,
+    484,
+    196
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 115,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    165,
+    485,
+    486,
+    198
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 116,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    166,
+    487,
+    488,
+    197
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback"
+  },
+  {
+   "group_id": 117,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 61.599999999999994,
+   "a_out": 61.599999999999994,
+   "route_ids": [
+    167,
+    489,
+    490,
+    199
+   ],
+   "rise_fall": {
+    "167": {
+     "rise_start_xy": [
+      60.625,
+      88.4
+     ],
+     "rise_end_xy": [
+      60.625,
+      80.718854
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      60.625,
+      69.281146
+     ],
+     "fall_end_xy": [
+      60.625,
+      61.6
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "489": {
+     "rise_start_xy": [
+      61.6,
+      60.625
+     ],
+     "rise_end_xy": [
+      69.281146,
+      60.625
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.718854,
+      60.625
+     ],
+     "fall_end_xy": [
+      88.4,
+      60.625
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "490": {
+     "rise_start_xy": [
+      89.375,
+      61.6
+     ],
+     "rise_end_xy": [
+      89.375,
+      69.281146
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      89.375,
+      80.718854
+     ],
+     "fall_end_xy": [
+      89.375,
+      88.4
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "199": {
+     "rise_start_xy": [
+      61.6,
+      89.375
+     ],
+     "rise_end_xy": [
+      69.281146,
+      89.375
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.718854,
+      89.375
+     ],
+     "fall_end_xy": [
+      88.4,
+      89.375
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 118,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 61.6,
+   "a_out": 61.599999999999994,
+   "route_ids": [
+    168,
+    491,
+    492,
+    200
+   ],
+   "rise_fall": {
+    "168": {
+     "rise_start_xy": [
+      60.875,
+      61.6
+     ],
+     "rise_end_xy": [
+      60.875,
+      69.281146
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      60.875,
+      80.718854
+     ],
+     "fall_end_xy": [
+      60.875,
+      88.4
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "491": {
+     "rise_start_xy": [
+      88.4,
+      60.875
+     ],
+     "rise_end_xy": [
+      80.718854,
+      60.875
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.281146,
+      60.875
+     ],
+     "fall_end_xy": [
+      61.6,
+      60.875
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "492": {
+     "rise_start_xy": [
+      89.125,
+      88.4
+     ],
+     "rise_end_xy": [
+      89.125,
+      80.718854
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      89.125,
+      69.281146
+     ],
+     "fall_end_xy": [
+      89.125,
+      61.6
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "200": {
+     "rise_start_xy": [
+      88.4,
+      89.125
+     ],
+     "rise_end_xy": [
+      80.718854,
+      89.125
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.281146,
+      89.125
+     ],
+     "fall_end_xy": [
+      61.6,
+      89.125
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 119,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 61.599999999999994,
+   "a_out": 61.599999999999994,
+   "route_ids": [
+    169,
+    493,
+    494,
+    201
+   ],
+   "rise_fall": {
+    "169": {
+     "rise_start_xy": [
+      61.125,
+      88.4
+     ],
+     "rise_end_xy": [
+      61.125,
+      80.718854
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.125,
+      69.281146
+     ],
+     "fall_end_xy": [
+      61.125,
+      61.6
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "493": {
+     "rise_start_xy": [
+      61.6,
+      61.125
+     ],
+     "rise_end_xy": [
+      69.281146,
+      61.125
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.718854,
+      61.125
+     ],
+     "fall_end_xy": [
+      88.4,
+      61.125
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "494": {
+     "rise_start_xy": [
+      88.875,
+      61.6
+     ],
+     "rise_end_xy": [
+      88.875,
+      69.281146
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.875,
+      80.718854
+     ],
+     "fall_end_xy": [
+      88.875,
+      88.4
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "201": {
+     "rise_start_xy": [
+      61.6,
+      88.875
+     ],
+     "rise_end_xy": [
+      69.281146,
+      88.875
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.718854,
+      88.875
+     ],
+     "fall_end_xy": [
+      88.4,
+      88.875
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 120,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 61.6,
+   "a_out": 61.599999999999994,
+   "route_ids": [
+    170,
+    495,
+    496,
+    202
+   ],
+   "rise_fall": {
+    "170": {
+     "rise_start_xy": [
+      61.375,
+      61.6
+     ],
+     "rise_end_xy": [
+      61.375,
+      69.281146
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.375,
+      80.718854
+     ],
+     "fall_end_xy": [
+      61.375,
+      88.4
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "495": {
+     "rise_start_xy": [
+      88.4,
+      61.375
+     ],
+     "rise_end_xy": [
+      80.718854,
+      61.375
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.281146,
+      61.375
+     ],
+     "fall_end_xy": [
+      61.6,
+      61.375
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "496": {
+     "rise_start_xy": [
+      88.625,
+      88.4
+     ],
+     "rise_end_xy": [
+      88.625,
+      80.718854
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.625,
+      69.281146
+     ],
+     "fall_end_xy": [
+      88.625,
+      61.6
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "202": {
+     "rise_start_xy": [
+      88.4,
+      88.625
+     ],
+     "rise_end_xy": [
+      80.718854,
+      88.625
+     ],
+     "rise_start_mm": 61.6,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.281146,
+      88.625
+     ],
+     "fall_end_xy": [
+      61.6,
+      88.625
+     ],
+     "fall_start_mm": 80.805355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 121,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    171,
+    497,
+    498,
+    203
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback_conflict"
+  },
+  {
+   "group_id": 122,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 54.0,
+   "a_out": 54.0,
+   "route_ids": [
+    172,
+    499,
+    500,
+    204
+   ],
+   "rise_fall": {
+    "172": {
+     "rise_start_xy": [
+      61.875,
+      54.0
+     ],
+     "rise_end_xy": [
+      61.875,
+      61.681146
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.875,
+      88.318854
+     ],
+     "fall_end_xy": [
+      61.875,
+      96.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "499": {
+     "rise_start_xy": [
+      96.0,
+      61.875
+     ],
+     "rise_end_xy": [
+      88.318854,
+      61.875
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.681146,
+      61.875
+     ],
+     "fall_end_xy": [
+      54.0,
+      61.875
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "500": {
+     "rise_start_xy": [
+      88.125,
+      96.0
+     ],
+     "rise_end_xy": [
+      88.125,
+      88.318854
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.125,
+      61.681146
+     ],
+     "fall_end_xy": [
+      88.125,
+      54.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "204": {
+     "rise_start_xy": [
+      96.0,
+      88.125
+     ],
+     "rise_end_xy": [
+      88.318854,
+      88.125
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.681146,
+      88.125
+     ],
+     "fall_end_xy": [
+      54.0,
+      88.125
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 123,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 54.0,
+   "a_out": 54.0,
+   "route_ids": [
+    173,
+    501,
+    502,
+    205
+   ],
+   "rise_fall": {
+    "173": {
+     "rise_start_xy": [
+      62.125,
+      96.0
+     ],
+     "rise_end_xy": [
+      62.125,
+      88.318854
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      62.125,
+      61.681146
+     ],
+     "fall_end_xy": [
+      62.125,
+      54.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "501": {
+     "rise_start_xy": [
+      54.0,
+      62.125
+     ],
+     "rise_end_xy": [
+      61.681146,
+      62.125
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.318854,
+      62.125
+     ],
+     "fall_end_xy": [
+      96.0,
+      62.125
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "502": {
+     "rise_start_xy": [
+      87.875,
+      54.0
+     ],
+     "rise_end_xy": [
+      87.875,
+      61.681146
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      87.875,
+      88.318854
+     ],
+     "fall_end_xy": [
+      87.875,
+      96.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "205": {
+     "rise_start_xy": [
+      54.0,
+      87.875
+     ],
+     "rise_end_xy": [
+      61.681146,
+      87.875
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.318854,
+      87.875
+     ],
+     "fall_end_xy": [
+      96.0,
+      87.875
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 124,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 54.0,
+   "a_out": 54.0,
+   "route_ids": [
+    174,
+    503,
+    504,
+    206
+   ],
+   "rise_fall": {
+    "174": {
+     "rise_start_xy": [
+      62.375,
+      54.0
+     ],
+     "rise_end_xy": [
+      62.375,
+      61.681146
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      62.375,
+      88.318854
+     ],
+     "fall_end_xy": [
+      62.375,
+      96.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "503": {
+     "rise_start_xy": [
+      96.0,
+      62.375
+     ],
+     "rise_end_xy": [
+      88.318854,
+      62.375
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.681146,
+      62.375
+     ],
+     "fall_end_xy": [
+      54.0,
+      62.375
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "504": {
+     "rise_start_xy": [
+      87.625,
+      96.0
+     ],
+     "rise_end_xy": [
+      87.625,
+      88.318854
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      87.625,
+      61.681146
+     ],
+     "fall_end_xy": [
+      87.625,
+      54.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "206": {
+     "rise_start_xy": [
+      96.0,
+      87.625
+     ],
+     "rise_end_xy": [
+      88.318854,
+      87.625
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      61.681146,
+      87.625
+     ],
+     "fall_end_xy": [
+      54.0,
+      87.625
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 125,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 54.0,
+   "a_out": 54.0,
+   "route_ids": [
+    175,
+    505,
+    506,
+    207
+   ],
+   "rise_fall": {
+    "175": {
+     "rise_start_xy": [
+      62.625,
+      96.0
+     ],
+     "rise_end_xy": [
+      62.625,
+      88.318854
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      62.625,
+      61.681146
+     ],
+     "fall_end_xy": [
+      62.625,
+      54.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "505": {
+     "rise_start_xy": [
+      54.0,
+      62.625
+     ],
+     "rise_end_xy": [
+      61.681146,
+      62.625
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.318854,
+      62.625
+     ],
+     "fall_end_xy": [
+      96.0,
+      62.625
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "506": {
+     "rise_start_xy": [
+      87.375,
+      54.0
+     ],
+     "rise_end_xy": [
+      87.375,
+      61.681146
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      87.375,
+      88.318854
+     ],
+     "fall_end_xy": [
+      87.375,
+      96.0
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    },
+    "207": {
+     "rise_start_xy": [
+      54.0,
+      87.375
+     ],
+     "rise_end_xy": [
+      61.681146,
+      87.375
+     ],
+     "rise_start_mm": 54.0,
+     "rise_z_mm": [
+      0.0,
+      1.0
+     ],
+     "fall_start_xy": [
+      88.318854,
+      87.375
+     ],
+     "fall_end_xy": [
+      96.0,
+      87.375
+     ],
+     "fall_start_mm": 88.405355,
+     "fall_z_mm": [
+      1.0,
+      0.0
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 126,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    176,
+    507,
+    508,
+    208
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback_conflict"
+  },
+  {
+   "group_id": 127,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    177,
+    509,
+    510,
+    209
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback_conflict"
+  },
+  {
+   "group_id": 128,
+   "status": "flat_interface_exception",
+   "actual": "interface_flat",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": null,
+   "a_out": null,
+   "route_ids": [
+    178,
+    511,
+    512,
+    210
+   ],
+   "rise_fall": {},
+   "reason": "flat_fallback_conflict"
+  },
+  {
+   "group_id": 208,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 63.599999999999994,
+   "a_out": 63.599999999999994,
+   "route_ids": [
+    592,
+    880,
+    881,
+    594
+   ],
+   "rise_fall": {
+    "592": {
+     "rise_start_xy": [
+      14.625,
+      86.4
+     ],
+     "rise_end_xy": [
+      14.625,
+      80.945644
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      14.625,
+      69.054356
+     ],
+     "fall_end_xy": [
+      14.625,
+      63.6
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    },
+    "880": {
+     "rise_start_xy": [
+      63.6,
+      14.625
+     ],
+     "rise_end_xy": [
+      69.054356,
+      14.625
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.945644,
+      14.625
+     ],
+     "fall_end_xy": [
+      86.4,
+      14.625
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    },
+    "881": {
+     "rise_start_xy": [
+      135.375,
+      63.6
+     ],
+     "rise_end_xy": [
+      135.375,
+      69.054356
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      135.375,
+      80.945644
+     ],
+     "fall_end_xy": [
+      135.375,
+      86.4
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    },
+    "594": {
+     "rise_start_xy": [
+      63.6,
+      135.375
+     ],
+     "rise_end_xy": [
+      69.054356,
+      135.375
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      80.945644,
+      135.375
+     ],
+     "fall_end_xy": [
+      86.4,
+      135.375
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    }
+   },
+   "reason": null
+  },
+  {
+   "group_id": 209,
+   "status": "L2",
+   "actual": "L2",
+   "target_layer": 2,
+   "target_z_mm": 1.0,
+   "a_in": 63.6,
+   "a_out": 63.599999999999994,
+   "route_ids": [
+    593,
+    882,
+    883,
+    595
+   ],
+   "rise_fall": {
+    "593": {
+     "rise_start_xy": [
+      14.875,
+      63.6
+     ],
+     "rise_end_xy": [
+      14.875,
+      69.054356
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      14.875,
+      80.945644
+     ],
+     "fall_end_xy": [
+      14.875,
+      86.4
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    },
+    "882": {
+     "rise_start_xy": [
+      86.4,
+      14.875
+     ],
+     "rise_end_xy": [
+      80.945644,
+      14.875
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.054356,
+      14.875
+     ],
+     "fall_end_xy": [
+      63.6,
+      14.875
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    },
+    "883": {
+     "rise_start_xy": [
+      135.125,
+      86.4
+     ],
+     "rise_end_xy": [
+      135.125,
+      80.945644
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      135.125,
+      69.054356
+     ],
+     "fall_end_xy": [
+      135.125,
+      63.6
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    },
+    "595": {
+     "rise_start_xy": [
+      86.4,
+      135.125
+     ],
+     "rise_end_xy": [
+      80.945644,
+      135.125
+     ],
+     "rise_start_mm": 63.6,
+     "rise_z_mm": [
+      0.5,
+      1.0
+     ],
+     "fall_start_xy": [
+      69.054356,
+      135.125
+     ],
+     "fall_end_xy": [
+      63.6,
+      135.125
+     ],
+     "fall_start_mm": 80.976149,
+     "fall_z_mm": [
+      1.0,
+      0.5
+     ]
+    }
+   },
+   "reason": null
+  }
+ ]
+}

@@ -1,0 +1,5527 @@
+{
+ "schema": "manual_c4_structured_layer_routing_verification_v1",
+ "generated": "2026-10-23T13:29:32",
+ "verifier": "independent: own geometry / C4 / structured-layer / metric recomputation; frozen v3c4.lift_cross.validate_payload_v4 (A: phase2_2d identity; B: generated row-swapped identity) for the authoritative 3D pass; frozen fslw strict pair audit for same-height crossings",
+ "campaign": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity",
+ "groups": {
+  "A": {
+   "label": "A",
+   "verdict": "FAIL",
+   "core_pass": false,
+   "artifacts_pass": false,
+   "checks": [
+    {
+     "name": "ready_artifact",
+     "passed": true,
+     "category": "info"
+    },
+    {
+     "name": "artefacts_ready_gate",
+     "passed": false,
+     "category": "artifacts",
+     "detail": "ARTEFACTS_READY missing (group not finalised)"
+    },
+    {
+     "name": "payload_contract",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "routes": 1024,
+      "routed": 1024,
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\routes_1024.json",
+      "sha256": "3e9dd009c696f50b5e18b72299ac91b0c2535c5ed404bc15ffb04a6c56b2dadd"
+     }
+    },
+    {
+     "name": "identity_and_ports",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "unique_endpoints": 2048,
+      "expected_endpoints": 2048,
+      "mismatch_count": 0
+     }
+    },
+    {
+     "name": "rule_adjacent_interface",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "ok": 496,
+      "expected": 496
+     }
+    },
+    {
+     "name": "rule_opposite_L2",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "groups_l2": 55,
+      "groups_exception": 13,
+      "routes_l2": 220,
+      "routes_exception": 52
+     }
+    },
+    {
+     "name": "rule_opposite_exceptions_documented",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "exception_groups": 13,
+      "documented": 13
+     }
+    },
+    {
+     "name": "rule_u_target_layers",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "reached": 64,
+      "failed": [],
+      "expected": 64
+     }
+    },
+    {
+     "name": "rule_u_failures_documented",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "failed_groups": []
+     }
+    },
+    {
+     "name": "route_geometry",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "issue_count": 0,
+      "issue_kinds": {},
+      "routes": 1024,
+      "transitions": 952,
+      "lifted": 476,
+      "flat": 548,
+      "issues": 0
+     }
+    },
+    {
+     "name": "xy_2d_chain_invariance",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "checked_non_u_routes": 768,
+      "issue_count": 0
+     }
+    },
+    {
+     "name": "u_quartet_geometry",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "groups_ok": 64,
+      "groups_total": 64,
+      "details": {
+       "20": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         39,
+         131,
+         249,
+         250
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "21": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         40,
+         132,
+         251,
+         252
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "22": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         41,
+         133,
+         253,
+         254
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "23": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         42,
+         134,
+         255,
+         256
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "24": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         43,
+         135,
+         257,
+         258
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "25": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         44,
+         136,
+         259,
+         260
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "26": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         45,
+         137,
+         261,
+         262
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "27": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         46,
+         138,
+         263,
+         264
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "28": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         47,
+         139,
+         265,
+         266
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "29": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         48,
+         140,
+         267,
+         268
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "30": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         49,
+         141,
+         269,
+         270
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "31": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         50,
+         142,
+         271,
+         272
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "32": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         51,
+         143,
+         273,
+         274
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "33": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         52,
+         144,
+         275,
+         276
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "34": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         53,
+         145,
+         277,
+         278
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "35": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         54,
+         146,
+         279,
+         280
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "144": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         528,
+         704,
+         705,
+         706
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "145": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         529,
+         707,
+         708,
+         709
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "146": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         530,
+         710,
+         711,
+         712
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "147": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         531,
+         713,
+         714,
+         715
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "148": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         532,
+         716,
+         717,
+         718
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "149": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         533,
+         719,
+         720,
+         721
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "150": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         534,
+         722,
+         723,
+         724
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "151": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         535,
+         725,
+         726,
+         727
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "152": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         536,
+         728,
+         729,
+         730
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "153": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         537,
+         731,
+         732,
+         733
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "154": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         538,
+         734,
+         735,
+         736
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "155": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         539,
+         737,
+         738,
+         739
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "156": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         540,
+         740,
+         741,
+         742
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "157": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         541,
+         743,
+         744,
+         745
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "158": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         542,
+         746,
+         747,
+         748
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "159": {
+        "target_layer": 3,
+        "target_z": 1.5,
+        "route_ids": [
+         543,
+         749,
+         750,
+         751
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "160": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         544,
+         752,
+         753,
+         754
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "161": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         545,
+         755,
+         756,
+         757
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "162": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         546,
+         758,
+         759,
+         760
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "163": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         547,
+         761,
+         762,
+         763
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "164": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         548,
+         764,
+         765,
+         766
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "165": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         549,
+         767,
+         768,
+         769
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "166": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         550,
+         770,
+         771,
+         772
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "167": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         551,
+         773,
+         774,
+         775
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "168": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         552,
+         776,
+         777,
+         778
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "169": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         553,
+         779,
+         780,
+         781
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "170": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         554,
+         782,
+         783,
+         784
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "171": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         555,
+         785,
+         786,
+         787
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "172": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         556,
+         788,
+         789,
+         790
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "173": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         557,
+         791,
+         792,
+         793
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "174": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         558,
+         794,
+         795,
+         796
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "175": {
+        "target_layer": 4,
+        "target_z": 2.0,
+        "route_ids": [
+         559,
+         797,
+         798,
+         799
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "176": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         560,
+         596,
+         800,
+         801
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "177": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         561,
+         597,
+         802,
+         803
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "178": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         562,
+         598,
+         804,
+         805
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "179": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         563,
+         599,
+         806,
+         807
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "180": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         564,
+         600,
+         808,
+         809
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "181": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         565,
+         601,
+         810,
+         811
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "182": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         566,
+         602,
+         812,
+         813
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "183": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         567,
+         603,
+         814,
+         815
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "184": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         568,
+         604,
+         816,
+         817
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "185": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         569,
+         605,
+         818,
+         819
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "186": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         570,
+         606,
+         820,
+         821
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "187": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         571,
+         607,
+         822,
+         823
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "188": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         572,
+         608,
+         824,
+         825
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "189": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         573,
+         609,
+         826,
+         827
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "190": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         574,
+         610,
+         828,
+         829
+        ],
+        "ok": true,
+        "errors": []
+       },
+       "191": {
+        "target_layer": 5,
+        "target_z": 2.5,
+        "route_ids": [
+         575,
+         611,
+         830,
+         831
+        ],
+        "ok": true,
+        "errors": []
+       }
+      }
+     }
+    },
+    {
+     "name": "opposite_L2_straight",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "groups": 55,
+      "issue_count": 0
+     }
+    },
+    {
+     "name": "c4_strict_rotation",
+     "passed": true,
+     "category": "core",
+     "detail": [],
+     "numbers": {
+      "audited_members": 768,
+      "groups": 256,
+      "error_count": 0
+     }
+    },
+    {
+     "name": "authoritative_3d_validator",
+     "passed": false,
+     "category": "core",
+     "detail": [
+      {
+       "problem": "exploratory_pass is not true"
+      },
+      {
+       "problem": "non-zero validator counts",
+       "counts": {
+        "violations": 190,
+        "clearance_violations": 140,
+        "same_plane_violations": 50
+       }
+      },
+      {
+       "problem": "min 3D clearance",
+       "actual": 2.3339e-05
+      },
+      {
+       "problem": "violations present",
+       "count": 190,
+       "unique_pairs": 57,
+       "reproduced": 12,
+       "unreproduced": 0,
+       "sample": [
+        {
+         "kind": "transition_vs_flat",
+         "route_a": 1,
+         "route_b": 203,
+         "validator_occurrences": 20,
+         "validator_sample": [
+          {
+           "detail": "distance=0.0692421495 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0692421495,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0736170854 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0736170854,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0507834937 at (72.375,88.4215884,0.0202111062)",
+           "distance_mm": 0.0507834937,
+           "position_xy": [
+            72.375,
+            88.4215884
+           ]
+          }
+         ],
+         "group_a": 1,
+         "group_b": 121,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.02267205,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           72.375,
+           88.376249,
+           0.022638
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           72.375,
+           88.375,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        }
+       ]
+      }
+     ],
+     "numbers": {
+      "status": "exploratory_only",
+      "exploratory_pass": false,
+      "geometry_pass": false,
+      "formal_acceptance": false,
+      "min_curvature_radius_mm": 14.999999964,
+      "min_3d_clearance_mm": 2.3339e-05,
+      "min_3d_clearance_bound": "measured",
+      "violation_count": 190,
+      "strict_2d_crossing_count": 20040,
+      "total_length_mm": 98034.458304949,
+      "runtime_seconds": 5.29,
+      "violation_evidence": {
+       "unique_pairs": 57,
+       "evidence": [
+        {
+         "kind": "transition_vs_flat",
+         "route_a": 1,
+         "route_b": 203,
+         "validator_occurrences": 20,
+         "validator_sample": [
+          {
+           "detail": "distance=0.0692421495 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0692421495,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0736170854 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0736170854,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0507834937 at (72.375,88.4215884,0.0202111062)",
+           "distance_mm": 0.0507834937,
+           "position_xy": [
+            72.375,
+            88.4215884
+           ]
+          }
+         ],
+         "group_a": 1,
+         "group_b": 121,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.02267205,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           72.375,
+           88.376249,
+           0.022638
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           72.375,
+           88.375,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 6,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.125,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.125,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 5,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.125,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.125,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 6,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.125,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.125,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 5,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.125,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.125,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 7,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.875,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.875,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 6,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.875,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.875,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 7,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.875,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.875,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 6,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.875,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.875,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 8,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.625,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.625,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 7,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.625,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.625,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 8,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.625,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.625,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 7,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.625,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.625,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 9,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.375,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.375,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 8,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.375,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.375,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 9,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.375,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.375,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 8,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.375,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.375,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 10,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.125,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.125,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 9,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.125,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.125,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        }
+       ],
+       "reproduced": 12,
+       "unreproduced": 0,
+       "kind_counts": {
+        "spacing": 50,
+        "transition_vs_flat": 140
+       }
+      }
+     }
+    },
+    {
+     "name": "summary_experiment_label",
+     "passed": true,
+     "category": "info",
+     "detail": {
+      "experiment": "MANUAL_C4_STRUCTURED_LAYER_ROUTING_A",
+      "group": "A_original"
+     }
+    },
+    {
+     "name": "metrics_match_production_summary",
+     "passed": true,
+     "category": "metrics",
+     "detail": [],
+     "numbers": {
+      "mismatch_count": 0,
+      "validator_available": true
+     }
+    },
+    {
+     "name": "u_layer_assignment_artifact",
+     "passed": false,
+     "category": "artifacts",
+     "detail": "u_layer_assignment.json missing"
+    },
+    {
+     "name": "opposite_assignment_artifact",
+     "passed": false,
+     "category": "artifacts",
+     "detail": "opposite_assignment.json missing"
+    },
+    {
+     "name": "validation_artifact",
+     "passed": true,
+     "category": "artifacts",
+     "detail": [],
+     "numbers": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\validation.json",
+      "sha256": "1fcbaddb82fc997d54d4f1d5d6385c7405c14c0e13352ee3dca649773c45ab25"
+     }
+    },
+    {
+     "name": "figures",
+     "passed": false,
+     "category": "info",
+     "detail": "figures/ missing"
+    },
+    {
+     "name": "comparison_table_artifact",
+     "passed": false,
+     "category": "info",
+     "detail": "comparison_table.json not generated yet"
+    },
+    {
+     "name": "products_stable_during_run",
+     "passed": true,
+     "category": "core",
+     "detail": []
+    }
+   ],
+   "numbers": {
+    "config": {
+     "radius_mm": 15.0,
+     "clearance_mm": 0.08,
+     "width_mm": 0.05,
+     "board_mm": 150.0,
+     "row_z": {
+      "z1": 0.0,
+      "z2": 0.5
+     },
+     "stack": {
+      "2": 1.0,
+      "3": 1.5,
+      "4": 2.0,
+      "5": 2.5
+     },
+     "target_u_layer": {
+      "20": [
+       3,
+       1.5
+      ],
+      "21": [
+       3,
+       1.5
+      ],
+      "22": [
+       3,
+       1.5
+      ],
+      "23": [
+       3,
+       1.5
+      ],
+      "24": [
+       3,
+       1.5
+      ],
+      "25": [
+       3,
+       1.5
+      ],
+      "26": [
+       3,
+       1.5
+      ],
+      "27": [
+       3,
+       1.5
+      ],
+      "28": [
+       3,
+       1.5
+      ],
+      "29": [
+       3,
+       1.5
+      ],
+      "30": [
+       3,
+       1.5
+      ],
+      "31": [
+       3,
+       1.5
+      ],
+      "32": [
+       3,
+       1.5
+      ],
+      "33": [
+       3,
+       1.5
+      ],
+      "34": [
+       3,
+       1.5
+      ],
+      "35": [
+       3,
+       1.5
+      ],
+      "144": [
+       3,
+       1.5
+      ],
+      "145": [
+       3,
+       1.5
+      ],
+      "146": [
+       3,
+       1.5
+      ],
+      "147": [
+       3,
+       1.5
+      ],
+      "148": [
+       3,
+       1.5
+      ],
+      "149": [
+       3,
+       1.5
+      ],
+      "150": [
+       3,
+       1.5
+      ],
+      "151": [
+       3,
+       1.5
+      ],
+      "152": [
+       3,
+       1.5
+      ],
+      "153": [
+       3,
+       1.5
+      ],
+      "154": [
+       3,
+       1.5
+      ],
+      "155": [
+       3,
+       1.5
+      ],
+      "156": [
+       3,
+       1.5
+      ],
+      "157": [
+       3,
+       1.5
+      ],
+      "158": [
+       3,
+       1.5
+      ],
+      "159": [
+       3,
+       1.5
+      ],
+      "160": [
+       4,
+       2.0
+      ],
+      "161": [
+       4,
+       2.0
+      ],
+      "162": [
+       4,
+       2.0
+      ],
+      "163": [
+       4,
+       2.0
+      ],
+      "164": [
+       4,
+       2.0
+      ],
+      "165": [
+       4,
+       2.0
+      ],
+      "166": [
+       4,
+       2.0
+      ],
+      "167": [
+       4,
+       2.0
+      ],
+      "168": [
+       4,
+       2.0
+      ],
+      "169": [
+       4,
+       2.0
+      ],
+      "170": [
+       4,
+       2.0
+      ],
+      "171": [
+       4,
+       2.0
+      ],
+      "172": [
+       4,
+       2.0
+      ],
+      "173": [
+       4,
+       2.0
+      ],
+      "174": [
+       4,
+       2.0
+      ],
+      "175": [
+       4,
+       2.0
+      ],
+      "176": [
+       5,
+       2.5
+      ],
+      "177": [
+       5,
+       2.5
+      ],
+      "178": [
+       5,
+       2.5
+      ],
+      "179": [
+       5,
+       2.5
+      ],
+      "180": [
+       5,
+       2.5
+      ],
+      "181": [
+       5,
+       2.5
+      ],
+      "182": [
+       5,
+       2.5
+      ],
+      "183": [
+       5,
+       2.5
+      ],
+      "184": [
+       5,
+       2.5
+      ],
+      "185": [
+       5,
+       2.5
+      ],
+      "186": [
+       5,
+       2.5
+      ],
+      "187": [
+       5,
+       2.5
+      ],
+      "188": [
+       5,
+       2.5
+      ],
+      "189": [
+       5,
+       2.5
+      ],
+      "190": [
+       5,
+       2.5
+      ],
+      "191": [
+       5,
+       2.5
+      ]
+     },
+     "swap_rows": false
+    },
+    "inputs": {
+     "connectivity": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\inputs\\connectivity_1024.json",
+      "sha256": "b4f5c46940d7993b34f4d49d6f128b8b83b9b263fe22ab8731d698bd02fa9eea"
+     },
+     "phase2_2d_sha256": {
+      "z1": "0ce8c42cb88ff44eec4bbd6c5c4adf30840579835f28b363df1c3cc7f497f45f",
+      "z2": "e3056b5cf5a10e9281d2ff1dcf11047707bf24e6aef5b69643856c14020c4d92"
+     },
+     "verifier": {
+      "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\verification\\verify_structured_layer_routing.py",
+      "sha256": "a521c77f38135f14870f80d37cc47e125e0fbc6129eaa274555583b558be354d"
+     }
+    },
+    "provenance_before": {
+     "routes_1024.json": {
+      "size": 2280538,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "3e9dd009c696f50b5e18b72299ac91b0c2535c5ed404bc15ffb04a6c56b2dadd"
+     },
+     "summary.json": {
+      "size": 17456,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "67546d5166fe733358845c54bd97f30ff089ba7cff996d5826163b6955fdaec6"
+     },
+     "validation.json": {
+      "size": 80972,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "1fcbaddb82fc997d54d4f1d5d6385c7405c14c0e13352ee3dca649773c45ab25"
+     },
+     "READY": {
+      "size": 5,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+     },
+     "run.log": {
+      "size": 487,
+      "mtime": "2026-10-23T12:45:34",
+      "sha256": "b57f45cc69c1d4162f985e26fcbaa9d483763910a9ec341ec52f8b05581da5fe"
+     },
+     "stage3a.log": {
+      "size": 3054,
+      "mtime": "2026-10-23T13:14:40",
+      "sha256": "a2673fe36ea5d614587c28d215d0dacdfe2ef51a467f37da683977e78ca5fe68"
+     },
+     "stage3b.log": {
+      "size": 5673,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "abe634387e87c5f194be417de7947ef06baece74561072d541625e246ca5265b"
+     }
+    },
+    "payload": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\routes_1024.json",
+     "sha256": "3e9dd009c696f50b5e18b72299ac91b0c2535c5ed404bc15ffb04a6c56b2dadd",
+     "routes": 1024,
+     "routed": 1024
+    },
+    "recomputed_metrics": {
+     "routed": 1024,
+     "failed": 0,
+     "unique_crossing_pairs": 19016,
+     "crossing_pairs_by_height": {
+      "0.0": 18100,
+      "0.5": 1008,
+      "1.0": 932,
+      "1.5": 0,
+      "2.0": 0,
+      "2.5": 0
+     },
+     "crossing_points_by_height": {
+      "0.0": 18100,
+      "0.5": 1008,
+      "1.0": 932,
+      "1.5": 0,
+      "2.0": 0,
+      "2.5": 0
+     },
+     "crossing_points_total": 20040,
+     "strict_2d_violations": 296,
+     "same_layer_u_u_crossing_pairs": 0,
+     "transitions": 952,
+     "total_length_mm": 98034.4583,
+     "layer_counts": {
+      "L1-z1": {
+       "count": 512,
+       "layer_id": 1,
+       "z_mm": 0.0,
+       "plane_counts": {
+        "z1": 512
+       },
+       "route_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512
+       ]
+      },
+      "L1-z2": {
+       "count": 512,
+       "layer_id": 1,
+       "z_mm": 0.5,
+       "plane_counts": {
+        "z2": 512
+       },
+       "route_ids": [
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898,
+        899,
+        900,
+        901,
+        902,
+        903,
+        904,
+        905,
+        906,
+        907,
+        908,
+        909,
+        910,
+        911,
+        912,
+        913,
+        914,
+        915,
+        916,
+        917,
+        918,
+        919,
+        920,
+        921,
+        922,
+        923,
+        924,
+        925,
+        926,
+        927,
+        928,
+        929,
+        930,
+        931,
+        932,
+        933,
+        934,
+        935,
+        936,
+        937,
+        938,
+        939,
+        940,
+        941,
+        942,
+        943,
+        944,
+        945,
+        946,
+        947,
+        948,
+        949,
+        950,
+        951,
+        952,
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963,
+        964,
+        965,
+        966,
+        967,
+        968,
+        969,
+        970,
+        971,
+        972,
+        973,
+        974,
+        975,
+        976,
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        986,
+        987,
+        988,
+        989,
+        990,
+        991,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997,
+        998,
+        999,
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1023,
+        1024
+       ]
+      },
+      "L2": {
+       "count": 220,
+       "layer_id": 2,
+       "z_mm": 1.0,
+       "plane_counts": {
+        "z1": 212,
+        "z2": 8
+       },
+       "route_ids": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        167,
+        168,
+        169,
+        170,
+        172,
+        173,
+        174,
+        175,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        199,
+        200,
+        201,
+        202,
+        204,
+        205,
+        206,
+        207,
+        211,
+        212,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        592,
+        593,
+        594,
+        595,
+        880,
+        881,
+        882,
+        883
+       ]
+      },
+      "L3": {
+       "count": 128,
+       "layer_id": 3,
+       "z_mm": 1.5,
+       "plane_counts": {
+        "z1": 64,
+        "z2": 64
+       },
+       "route_ids": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751
+       ]
+      },
+      "L4": {
+       "count": 64,
+       "layer_id": 4,
+       "z_mm": 2.0,
+       "plane_counts": {
+        "z2": 64
+       },
+       "route_ids": [
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799
+       ]
+      },
+      "L5": {
+       "count": 64,
+       "layer_id": 5,
+       "z_mm": 2.5,
+       "plane_counts": {
+        "z2": 64
+       },
+       "route_ids": [
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831
+       ]
+      }
+     },
+     "routes_by_height": {
+      "0.0": 788,
+      "1.0": 220,
+      "1.5": 128,
+      "0.5": 712,
+      "2.0": 64,
+      "2.5": 64
+     },
+     "distinct_routes_by_height": {
+      "0.0": 512,
+      "1.0": 220,
+      "1.5": 128,
+      "0.5": 512,
+      "2.0": 64,
+      "2.5": 64
+     },
+     "plane_route_counts": {
+      "z1": 512,
+      "z2": 512
+     },
+     "relation_counts": {
+      "opposite": 272,
+      "same": 256,
+      "adjacent": 496
+     },
+     "own_geometry_crossings": {
+      "unique_crossing_pairs": 19016,
+      "crossing_pairs_by_height": {
+       "0.0": 17076,
+       "0.5": 1008,
+       "1.0": 932,
+       "1.5": 0,
+       "2.0": 0,
+       "2.5": 0
+      },
+      "crossing_points_by_height": {
+       "0.0": 18100,
+       "0.5": 1008,
+       "1.0": 932,
+       "1.5": 0,
+       "2.0": 0,
+       "2.5": 0
+      },
+      "frozen_unique_crossing_pairs": 19016,
+      "seconds": 0.38
+     }
+    },
+    "validator": {
+     "status": "exploratory_only",
+     "exploratory_pass": false,
+     "geometry_pass": false,
+     "formal_acceptance": false,
+     "counts": {
+      "violations": 190,
+      "contract_errors": 0,
+      "port_errors": 0,
+      "geometry_errors": 0,
+      "curvature_violations": 0,
+      "clearance_violations": 140,
+      "same_plane_violations": 50,
+      "self_clearance_violations": 0,
+      "other_errors": 0
+     },
+     "min_curvature_radius_mm": 14.999999964,
+     "min_3d_clearance_mm": 2.3339e-05,
+     "min_3d_clearance_bound": "measured",
+     "violation_count": 190,
+     "strict_2d_crossing_count": 20040,
+     "total_length_mm": 98034.458304949,
+     "runtime_seconds": 5.29,
+     "violation_evidence": {
+      "unique_pairs": 57,
+      "evidence": [
+       {
+        "kind": "transition_vs_flat",
+        "route_a": 1,
+        "route_b": 203,
+        "validator_occurrences": 20,
+        "validator_sample": [
+         {
+          "detail": "distance=0.0692421495 at (72.375,88.4415304,0.0191881454)",
+          "distance_mm": 0.0692421495,
+          "position_xy": [
+           72.375,
+           88.4415304
+          ]
+         },
+         {
+          "detail": "distance=0.0736170854 at (72.375,88.4415304,0.0191881454)",
+          "distance_mm": 0.0736170854,
+          "position_xy": [
+           72.375,
+           88.4415304
+          ]
+         },
+         {
+          "detail": "distance=0.0507834937 at (72.375,88.4215884,0.0202111062)",
+          "distance_mm": 0.0507834937,
+          "position_xy": [
+           72.375,
+           88.4215884
+          ]
+         }
+        ],
+        "group_a": 1,
+        "group_b": 121,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.02267205,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          72.375,
+          88.376249,
+          0.022638
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          72.375,
+          88.375,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 5,
+        "route_b": 208,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (9.375,87.1625)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           9.375,
+           87.1625
+          ]
+         }
+        ],
+        "group_a": 4,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          9.375,
+          87.125001,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          9.375,
+          87.125,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 5,
+        "route_b": 507,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (9.375,62.8375)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           9.375,
+           62.8375
+          ]
+         }
+        ],
+        "group_a": 4,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 3,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          9.375,
+          62.874999,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          9.375,
+          62.875,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 6,
+        "route_b": 208,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (9.125,87.1625)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           9.125,
+           87.1625
+          ]
+         }
+        ],
+        "group_a": 5,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          9.125,
+          87.125001,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          9.125,
+          87.125,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 6,
+        "route_b": 507,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (9.125,62.8375)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           9.125,
+           62.8375
+          ]
+         }
+        ],
+        "group_a": 5,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 3,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          9.125,
+          62.874999,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          9.125,
+          62.875,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 7,
+        "route_b": 208,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.875,87.1625)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.875,
+           87.1625
+          ]
+         }
+        ],
+        "group_a": 6,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 3,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.875,
+          87.125001,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.875,
+          87.125,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 7,
+        "route_b": 507,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.875,62.8375)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.875,
+           62.8375
+          ]
+         }
+        ],
+        "group_a": 6,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.875,
+          62.874999,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.875,
+          62.875,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 8,
+        "route_b": 208,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.625,87.1625)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.625,
+           87.1625
+          ]
+         }
+        ],
+        "group_a": 7,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.625,
+          87.125001,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.625,
+          87.125,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 8,
+        "route_b": 507,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.625,62.8375)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.625,
+           62.8375
+          ]
+         }
+        ],
+        "group_a": 7,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 3,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.625,
+          62.874999,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.625,
+          62.875,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 9,
+        "route_b": 208,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.375,87.1625)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.375,
+           87.1625
+          ]
+         }
+        ],
+        "group_a": 8,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.375,
+          87.125001,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.375,
+          87.125,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 9,
+        "route_b": 507,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.375,62.8375)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.375,
+           62.8375
+          ]
+         }
+        ],
+        "group_a": 8,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 3,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.375,
+          62.874999,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.375,
+          62.875,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       },
+       {
+        "kind": "spacing",
+        "route_a": 10,
+        "route_b": 208,
+        "validator_occurrences": 1,
+        "validator_sample": [
+         {
+          "detail": "z=0.0 distance=0.07500000000000284 at (8.125,87.1625)",
+          "distance_mm": 0.07500000000000284,
+          "z_mm": 0.0,
+          "position_xy": [
+           8.125,
+           87.1625
+          ]
+         }
+        ],
+        "group_a": 9,
+        "group_b": 126,
+        "relation_a": "opposite",
+        "relation_b": "opposite",
+        "plane_a": "z1",
+        "plane_b": "z1",
+        "layer_sequence_a": [
+         1,
+         2,
+         1
+        ],
+        "layer_sequence_b": [
+         1
+        ],
+        "independent_min_3d_distance_mm": 0.000187908,
+        "independent_min_location": {
+         "route_a_part": 1,
+         "route_a_kind": "transition",
+         "route_a_point": [
+          8.125,
+          87.125001,
+          0.000188
+         ],
+         "route_b_part": 0,
+         "route_b_kind": "flat",
+         "route_b_point": [
+          8.125,
+          87.125,
+          0.0
+         ]
+        },
+        "independent_reproduced": true
+       }
+      ],
+      "reproduced": 12,
+      "unreproduced": 0,
+      "kind_counts": {
+       "spacing": 50,
+       "transition_vs_flat": 140
+      }
+     }
+    },
+    "production_summary": {
+     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\summary.json",
+     "keys": [
+      "adjacent_on_interface",
+      "crossing_pairs_by_height",
+      "crossing_points_by_height",
+      "experiment",
+      "failed",
+      "group",
+      "layer_counts",
+      "min_3d_clearance_mm",
+      "min_curvature_radius_mm",
+      "opposite_exception_routes",
+      "opposite_exceptions",
+      "opposite_on_L2_groups",
+      "opposite_on_L2_routes",
+      "opposite_total_routes",
+      "routed",
+      "routes_by_height",
+      "same_layer_u_u_crossing_pairs",
+      "total_length_mm",
+      "transitions",
+      "u_failures",
+      "u_rebuilt_routes",
+      "unique_crossing_pairs",
+      "validation_counts",
+      "validation_exploratory_pass",
+      "validation_geometry_pass",
+      "validation_status",
+      "validation_violations"
+     ]
+    },
+    "provenance_after": {
+     "routes_1024.json": {
+      "size": 2280538,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "3e9dd009c696f50b5e18b72299ac91b0c2535c5ed404bc15ffb04a6c56b2dadd"
+     },
+     "summary.json": {
+      "size": 17456,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "67546d5166fe733358845c54bd97f30ff089ba7cff996d5826163b6955fdaec6"
+     },
+     "validation.json": {
+      "size": 80972,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "1fcbaddb82fc997d54d4f1d5d6385c7405c14c0e13352ee3dca649773c45ab25"
+     },
+     "READY": {
+      "size": 5,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+     },
+     "run.log": {
+      "size": 487,
+      "mtime": "2026-10-23T12:45:34",
+      "sha256": "b57f45cc69c1d4162f985e26fcbaa9d483763910a9ec341ec52f8b05581da5fe"
+     },
+     "stage3a.log": {
+      "size": 3054,
+      "mtime": "2026-10-23T13:14:40",
+      "sha256": "a2673fe36ea5d614587c28d215d0dacdfe2ef51a467f37da683977e78ca5fe68"
+     },
+     "stage3b.log": {
+      "size": 5673,
+      "mtime": "2026-10-23T13:19:39",
+      "sha256": "abe634387e87c5f194be417de7947ef06baece74561072d541625e246ca5265b"
+     }
+    },
+    "seconds": 7.57,
+    "group_summary": {
+     "routed": 1024,
+     "unique_crossing_pairs": 19016,
+     "transitions": 952,
+     "total_length_mm": 98034.4583,
+     "layer_counts": {
+      "L1-z1": 512,
+      "L1-z2": 512,
+      "L2": 220,
+      "L3": 128,
+      "L4": 64,
+      "L5": 64
+     },
+     "opposite_l2_routes": 220,
+     "opposite_exception_routes": 52,
+     "u_groups_reached": 64,
+     "u_groups_total": 64,
+     "validator": {
+      "status": "exploratory_only",
+      "exploratory_pass": false,
+      "geometry_pass": false,
+      "formal_acceptance": false,
+      "counts": {
+       "violations": 190,
+       "contract_errors": 0,
+       "port_errors": 0,
+       "geometry_errors": 0,
+       "curvature_violations": 0,
+       "clearance_violations": 140,
+       "same_plane_violations": 50,
+       "self_clearance_violations": 0,
+       "other_errors": 0
+      },
+      "min_curvature_radius_mm": 14.999999964,
+      "min_3d_clearance_mm": 2.3339e-05,
+      "min_3d_clearance_bound": "measured",
+      "violation_count": 190,
+      "strict_2d_crossing_count": 20040,
+      "total_length_mm": 98034.458304949,
+      "runtime_seconds": 5.29,
+      "violation_evidence": {
+       "unique_pairs": 57,
+       "evidence": [
+        {
+         "kind": "transition_vs_flat",
+         "route_a": 1,
+         "route_b": 203,
+         "validator_occurrences": 20,
+         "validator_sample": [
+          {
+           "detail": "distance=0.0692421495 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0692421495,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0736170854 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0736170854,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0507834937 at (72.375,88.4215884,0.0202111062)",
+           "distance_mm": 0.0507834937,
+           "position_xy": [
+            72.375,
+            88.4215884
+           ]
+          }
+         ],
+         "group_a": 1,
+         "group_b": 121,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.02267205,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           72.375,
+           88.376249,
+           0.022638
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           72.375,
+           88.375,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 6,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.125,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.125,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 5,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.125,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.125,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 6,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.125,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.125,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 5,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.125,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.125,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 7,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.875,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.875,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 6,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.875,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.875,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 7,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.875,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.875,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 6,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.875,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.875,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 8,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.625,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.625,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 7,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.625,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.625,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 8,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.625,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.625,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 7,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.625,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.625,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 9,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.375,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.375,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 8,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.375,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.375,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 9,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.375,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.375,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 8,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.375,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.375,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 10,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (8.125,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            8.125,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 9,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           8.125,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           8.125,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        }
+       ],
+       "reproduced": 12,
+       "unreproduced": 0,
+       "kind_counts": {
+        "spacing": 50,
+        "transition_vs_flat": 140
+       }
+      }
+     }
+    }
+   },
+   "warnings": [],
+   "root_causes": [
+    {
+     "item": "artefacts_ready_gate",
+     "detail": "ARTEFACTS_READY missing (group not finalised)"
+    },
+    {
+     "item": "authoritative_3d_validator",
+     "detail": [
+      {
+       "problem": "exploratory_pass is not true"
+      },
+      {
+       "problem": "non-zero validator counts",
+       "counts": {
+        "violations": 190,
+        "clearance_violations": 140,
+        "same_plane_violations": 50
+       }
+      },
+      {
+       "problem": "min 3D clearance",
+       "actual": 2.3339e-05
+      },
+      {
+       "problem": "violations present",
+       "count": 190,
+       "unique_pairs": 57,
+       "reproduced": 12,
+       "unreproduced": 0,
+       "sample": [
+        {
+         "kind": "transition_vs_flat",
+         "route_a": 1,
+         "route_b": 203,
+         "validator_occurrences": 20,
+         "validator_sample": [
+          {
+           "detail": "distance=0.0692421495 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0692421495,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0736170854 at (72.375,88.4415304,0.0191881454)",
+           "distance_mm": 0.0736170854,
+           "position_xy": [
+            72.375,
+            88.4415304
+           ]
+          },
+          {
+           "detail": "distance=0.0507834937 at (72.375,88.4215884,0.0202111062)",
+           "distance_mm": 0.0507834937,
+           "position_xy": [
+            72.375,
+            88.4215884
+           ]
+          }
+         ],
+         "group_a": 1,
+         "group_b": 121,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.02267205,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           72.375,
+           88.376249,
+           0.022638
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           72.375,
+           88.375,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 208,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,87.1625)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            87.1625
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 1,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           87.125001,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           87.125,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        },
+        {
+         "kind": "spacing",
+         "route_a": 5,
+         "route_b": 507,
+         "validator_occurrences": 1,
+         "validator_sample": [
+          {
+           "detail": "z=0.0 distance=0.07500000000000284 at (9.375,62.8375)",
+           "distance_mm": 0.07500000000000284,
+           "z_mm": 0.0,
+           "position_xy": [
+            9.375,
+            62.8375
+           ]
+          }
+         ],
+         "group_a": 4,
+         "group_b": 126,
+         "relation_a": "opposite",
+         "relation_b": "opposite",
+         "plane_a": "z1",
+         "plane_b": "z1",
+         "layer_sequence_a": [
+          1,
+          2,
+          1
+         ],
+         "layer_sequence_b": [
+          1
+         ],
+         "independent_min_3d_distance_mm": 0.000187908,
+         "independent_min_location": {
+          "route_a_part": 3,
+          "route_a_kind": "transition",
+          "route_a_point": [
+           9.375,
+           62.874999,
+           0.000188
+          ],
+          "route_b_part": 0,
+          "route_b_kind": "flat",
+          "route_b_point": [
+           9.375,
+           62.875,
+           0.0
+          ]
+         },
+         "independent_reproduced": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "item": "u_layer_assignment_artifact",
+     "detail": "u_layer_assignment.json missing"
+    },
+    {
+     "item": "opposite_assignment_artifact",
+     "detail": "opposite_assignment.json missing"
+    },
+    {
+     "item": "figures",
+     "detail": "figures/ missing"
+    },
+    {
+     "item": "comparison_table_artifact",
+     "detail": "comparison_table.json not generated yet"
+    }
+   ],
+   "differences": []
+  },
+  "B": {
+   "label": "B",
+   "verdict": "FAIL",
+   "core_pass": false,
+   "artifacts_pass": false,
+   "checks": [
+    {
+     "name": "ready_artifact",
+     "passed": false,
+     "category": "artifacts",
+     "detail": "READY not found (timeout after 5400.0s or --no-wait)"
+    },
+    {
+     "name": "payload_file",
+     "passed": false,
+     "category": "core",
+     "detail": "routes_1024.json missing"
+    }
+   ],
+   "numbers": {},
+   "warnings": [],
+   "root_causes": [
+    {
+     "item": "ready_artifact",
+     "detail": "READY not found (timeout after 5400.0s or --no-wait)"
+    },
+    {
+     "item": "payload_file",
+     "detail": "routes_1024.json missing"
+    }
+   ],
+   "differences": []
+  }
+ },
+ "cross_group": null,
+ "comparison": {
+  "columns": [
+   "v2_pre_u_baseline",
+   "old_spatial_u_bundle",
+   "A"
+  ],
+  "rows": {
+   "routed": {
+    "v2_pre_u_baseline": 1024,
+    "old_spatial_u_bundle": 1024,
+    "A": 1024
+   },
+   "failed": {
+    "v2_pre_u_baseline": 0,
+    "old_spatial_u_bundle": 0,
+    "A": 0
+   },
+   "unique_crossing_pairs": {
+    "v2_pre_u_baseline": 23356,
+    "old_spatial_u_bundle": 12824,
+    "A": 19016
+   },
+   "same_layer_u_u_crossing_pairs": {
+    "v2_pre_u_baseline": 104,
+    "old_spatial_u_bundle": 0,
+    "A": 0
+   },
+   "transitions": {
+    "v2_pre_u_baseline": 440,
+    "old_spatial_u_bundle": 824,
+    "A": 952
+   },
+   "total_length_mm": {
+    "v2_pre_u_baseline": 97495.7612,
+    "old_spatial_u_bundle": 98539.0127,
+    "A": 98034.4583
+   },
+   "crossing_pairs_by_height": {
+    "v2_pre_u_baseline": {
+     "0.0": 15952,
+     "0.5": 7328,
+     "1.0": 36,
+     "1.5": 32,
+     "2.0": 0,
+     "2.5": 8
+    },
+    "old_spatial_u_bundle": {
+     "0.0": 12160,
+     "0.5": 116,
+     "1.0": 528,
+     "1.5": 16,
+     "2.0": 0,
+     "2.5": 4
+    },
+    "A": {
+     "0.0": 18100,
+     "0.5": 1008,
+     "1.0": 932,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    }
+   },
+   "layer_counts": {
+    "v2_pre_u_baseline": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 124,
+     "L3": 36,
+     "L4": 24,
+     "L5": 36
+    },
+    "old_spatial_u_bundle": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 252,
+     "L3": 80,
+     "L4": 68,
+     "L5": 12
+    },
+    "A": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 220,
+     "L3": 128,
+     "L4": 64,
+     "L5": 64
+    }
+   },
+   "min_3d_clearance_mm": {
+    "A": 2.3339e-05,
+    "B": null
+   },
+   "min_curvature_radius_mm": {
+    "A": 14.999999964,
+    "B": null
+   },
+   "validator_status": {
+    "A": "exploratory_only",
+    "B": null
+   },
+   "validator_exploratory_pass": {
+    "A": false,
+    "B": null
+   },
+   "opposite_l2_routes": {
+    "A": 220,
+    "B": null
+   },
+   "opposite_exception_routes": {
+    "A": 52,
+    "B": null
+   },
+   "u_groups_reached": {
+    "A": 64,
+    "B": null
+   },
+   "u_groups_total": {
+    "A": 64,
+    "B": null
+   }
+  },
+  "notes": [
+   "old_spatial_u_bundle = spatial_u_bundle_optimization/routes_1024.json (final accepted Spatial-U result; its own acceptance report: 12824 unique pairs, 824 transitions, 98539.0127 mm).",
+   "v2_pre_u_baseline = phase5_dynamic_optimization/after/routes_l3d.json; this is the 23356-crossing / 440-transition baseline quoted for the V2 experiment before the U-bundle rebuild.",
+   "A/B are independently recomputed from the saved payloads; crossings use the frozen fslw strict pair audit per physical height; unique pairs are deduplicated by route pair across all heights."
+  ]
+ },
+ "comparison_table": {
+  "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\comparison_table.json",
+  "exists": false,
+  "checked": false,
+  "passed": null,
+  "matches": [],
+  "mismatches": []
+ },
+ "verdict": "FAIL"
+}

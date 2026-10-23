@@ -1,0 +1,137 @@
+{
+ "schema": "manual_c4_structured_layer_routing_verification_v1",
+ "generated": "2026-10-23T13:05:52",
+ "verifier": "independent: own geometry / C4 / structured-layer / metric recomputation; frozen v3c4.lift_cross.validate_payload_v4 (A: phase2_2d identity; B: generated row-swapped identity) for the authoritative 3D pass; frozen fslw strict pair audit for same-height crossings",
+ "campaign": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity",
+ "groups": {
+  "B": {
+   "label": "B",
+   "verdict": "FAIL",
+   "core_pass": true,
+   "artifacts_pass": false,
+   "checks": [
+    {
+     "name": "ready_artifact",
+     "passed": false,
+     "category": "artifacts",
+     "detail": "timeout after 5400.0s"
+    }
+   ],
+   "numbers": {},
+   "warnings": [],
+   "root_causes": [
+    {
+     "item": "ready_artifact",
+     "detail": "timeout after 5400.0s"
+    }
+   ],
+   "differences": []
+  }
+ },
+ "comparison": {
+  "columns": [
+   "v2_pre_u_baseline",
+   "old_spatial_u_bundle"
+  ],
+  "rows": {
+   "routed": {
+    "v2_pre_u_baseline": 1024,
+    "old_spatial_u_bundle": 1024
+   },
+   "failed": {
+    "v2_pre_u_baseline": 0,
+    "old_spatial_u_bundle": 0
+   },
+   "unique_crossing_pairs": {
+    "v2_pre_u_baseline": 23356,
+    "old_spatial_u_bundle": 12824
+   },
+   "same_layer_u_u_crossing_pairs": {
+    "v2_pre_u_baseline": 104,
+    "old_spatial_u_bundle": 0
+   },
+   "transitions": {
+    "v2_pre_u_baseline": 440,
+    "old_spatial_u_bundle": 824
+   },
+   "total_length_mm": {
+    "v2_pre_u_baseline": 97495.7612,
+    "old_spatial_u_bundle": 98539.0127
+   },
+   "crossing_pairs_by_height": {
+    "v2_pre_u_baseline": {
+     "0.0": 15952,
+     "0.5": 7328,
+     "1.0": 36,
+     "1.5": 32,
+     "2.0": 0,
+     "2.5": 8
+    },
+    "old_spatial_u_bundle": {
+     "0.0": 12160,
+     "0.5": 116,
+     "1.0": 528,
+     "1.5": 16,
+     "2.0": 0,
+     "2.5": 4
+    }
+   },
+   "layer_counts": {
+    "v2_pre_u_baseline": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 124,
+     "L3": 36,
+     "L4": 24,
+     "L5": 36
+    },
+    "old_spatial_u_bundle": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 252,
+     "L3": 80,
+     "L4": 68,
+     "L5": 12
+    }
+   },
+   "min_3d_clearance_mm": {
+    "A": null,
+    "B": null
+   },
+   "min_curvature_radius_mm": {
+    "A": null,
+    "B": null
+   },
+   "validator_status": {
+    "A": null,
+    "B": null
+   },
+   "validator_exploratory_pass": {
+    "A": null,
+    "B": null
+   },
+   "opposite_l2_routes": {
+    "A": null,
+    "B": null
+   },
+   "opposite_exception_routes": {
+    "A": null,
+    "B": null
+   },
+   "u_groups_reached": {
+    "A": null,
+    "B": null
+   },
+   "u_groups_total": {
+    "A": null,
+    "B": null
+   }
+  },
+  "notes": [
+   "old_spatial_u_bundle = spatial_u_bundle_optimization/routes_1024.json (final accepted Spatial-U result; its own acceptance report: 12824 unique pairs, 824 transitions, 98539.0127 mm).",
+   "v2_pre_u_baseline = phase5_dynamic_optimization/after/routes_l3d.json; this is the 23356-crossing / 440-transition baseline quoted for the V2 experiment before the U-bundle rebuild.",
+   "A/B are independently recomputed from the saved payloads; crossings use the frozen fslw strict pair audit per physical height; unique pairs are deduplicated by route pair across all heights."
+  ]
+ },
+ "verdict": "FAIL"
+}

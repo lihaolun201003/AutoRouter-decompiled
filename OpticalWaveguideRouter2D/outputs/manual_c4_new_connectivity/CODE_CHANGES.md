@@ -73,3 +73,39 @@
 约束核对：仍为 R=15、宽 0.05、净空 0.08、板面 150×150、接口高度 0/0.5、C4 四元组
 原子旋转、升降仅在 2D 直线段、每条 ≤1 升 1 降、目标层分配固定 L2/L2/L3/L4；未修改
 任何端口配对。层高 L2–L5 仍为探索性参数，3D 验收 exploratory PASS。
+
+---
+
+# 追加：结构化分层布线 A/B 实验（2026-10-23）
+
+新增（不影响既有输出）：
+
+- `four_side_1024/manual_c4/structured_layer_routing.py`：结构化分层框架——连接/2D
+  底图加载（可选 z1↔z2 行交换）、全平铺基底、对边 L2 直通构造（延长 base + S 升降 +
+  C4 四元组）、U 目标层重构（90°圆弧/中间直线/延长直线）、组内成员互检、逐组 3D
+  可行性扫描、例外优先/困难组优先装配、payload 组装、权威验收与指标；
+- `four_side_1024/manual_c4/structured_layer_plots.py`：A/B 图件（整体前后 3D、
+  L1-z1…L5 逐层、仅对边 3D/L2、对边升降局部放大、仅 U 3D 与 U L3/L4/L5）；
+- `four_side_1024/manual_c4/structured_comparison.py`：A/B/旧 Spatial/前置 V2 对照表；
+- `four_side_1024/tests_manual_c4/test_structured_layer_routing.py`：A/B 身份/端口/
+  规则分层/C4/验收/交付物测试。
+
+方法要点：先把 1024 条已验收的 Manual-C4 2D 走线全部平铺在接口层（合法三维初始
+布局），再在对边/U 的目标层上逐组抬升；完整 XYZ 检查（含组内成员互检与跨层升降
+段），失败组保留接口层平铺并逐组记录原因（不伪造成功）。
+
+A（原 z1/z2 分配）：1024/1024；邻边 496 接口层；对边 **54/68 组（216 条）集中 L2**，
+14 组（56 条，5.5%）例外保留接口层（同列影子路线导致升降过渡与 0.08 净空冲突）；
+U **64/64**（L3=128、L4=64、L5=64）；唯一交叉对 19584、升降 944、总长 98033.77 mm、
+min3D 0.0917；权威 3D PASS（counts 全 0）；独立验收 PASS（25/25）。
+
+B（z1/z2 连接表整体交换）：1024/1024；邻边 496；对边 **66/68 组（264 条）集中 L2**，
+2 组例外；U 仅 **16/64** 达标（48 组失败：行交换后原 z2 的 U 落到 z1 基排，其端口列
+在 z2 行被对边连接占用，接口平面同列升降过渡与 0.08 净空结构性冲突；含角部
+144–175 全部 32 组 + 中部 16 组；全部保留接口层并逐组记录）；唯一交叉对 26152、
+升降 656、总长 99554.33 mm、min3D 0.0849；权威 3D PASS（counts 全 0）。
+
+产物：`outputs/manual_c4_new_connectivity/structured_layer_routing/{A,B}/`（routes、
+u/opposite assignment、validation、summary、15 图组、READY/ARTEFACTS_READY）、
+`_work/`（可行性扫描、参数、基世界、checkpoints）、顶层 `comparison_table.*`、
+`verification/`（独立验收脚本与报告）。A 为最优可行方案；B 如实报告规则分层不可行。

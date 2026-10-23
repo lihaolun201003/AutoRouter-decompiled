@@ -1,0 +1,166 @@
+{
+ "label": "selftest_old_spatial",
+ "verdict": "PASS",
+ "core_pass": true,
+ "artifacts_pass": true,
+ "checks": [
+  {
+   "name": "payload_contract",
+   "passed": true,
+   "category": "core",
+   "detail": [],
+   "numbers": {
+    "routes": 1024,
+    "routed": 1024,
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\routes_1024.json",
+    "sha256": "5e4ea22c80a5315b5b5d27cc77f1778be3ef95b9b76b5759e1ece120e34c9316"
+   }
+  },
+  {
+   "name": "identity_and_ports",
+   "passed": true,
+   "category": "core",
+   "detail": [],
+   "numbers": {
+    "unique_endpoints": 2048,
+    "expected_endpoints": 2048,
+    "mismatch_count": 0
+   }
+  },
+  {
+   "name": "route_geometry",
+   "passed": true,
+   "category": "core",
+   "detail": [],
+   "numbers": {
+    "issue_count": 0,
+    "issue_kinds": {},
+    "routes": 1024,
+    "transitions": 824,
+    "lifted": 412,
+    "flat": 612,
+    "issues": 0
+   }
+  },
+  {
+   "name": "c4_strict_rotation",
+   "passed": true,
+   "category": "core",
+   "detail": [],
+   "numbers": {
+    "audited_members": 768,
+    "groups": 256,
+    "error_count": 0
+   }
+  },
+  {
+   "name": "known_old_spatial_metrics",
+   "passed": true,
+   "category": "core",
+   "detail": {
+    "actual": {
+     "routed": 1024,
+     "unique_crossing_pairs": 12824,
+     "transitions": 824,
+     "total_length_mm": 98539.0127
+    },
+    "expected": {
+     "routed": 1024,
+     "unique_crossing_pairs": 12824,
+     "transitions": 824,
+     "total_length_mm": 98539.0127
+    }
+   }
+  },
+  {
+   "name": "known_old_spatial_layers",
+   "passed": true,
+   "category": "core",
+   "detail": {
+    "actual": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 252,
+     "L3": 80,
+     "L4": 68,
+     "L5": 12
+    },
+    "expected": {
+     "L1-z1": 512,
+     "L1-z2": 512,
+     "L2": 252,
+     "L3": 80,
+     "L4": 68,
+     "L5": 12
+    }
+   }
+  },
+  {
+   "name": "authoritative_3d_validator",
+   "passed": true,
+   "category": "core",
+   "detail": [],
+   "numbers": {
+    "status": "exploratory_only",
+    "exploratory_pass": true,
+    "geometry_pass": true,
+    "formal_acceptance": false,
+    "min_curvature_radius_mm": 14.999999961,
+    "min_3d_clearance_mm": 0.083207287,
+    "min_3d_clearance_bound": "measured",
+    "violation_count": 0,
+    "strict_2d_crossing_count": 12928,
+    "total_length_mm": 98539.012693709,
+    "runtime_seconds": 4.73
+   }
+  }
+ ],
+ "numbers": {
+  "payload": {
+   "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\spatial_u_bundle_optimization\\routes_1024.json",
+   "sha256": "5e4ea22c80a5315b5b5d27cc77f1778be3ef95b9b76b5759e1ece120e34c9316",
+   "routed": 1024
+  },
+  "validator": {
+   "status": "exploratory_only",
+   "exploratory_pass": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "min_3d_clearance_mm": 0.083207287,
+   "min_curvature_radius_mm": 14.999999961
+  },
+  "metrics": {
+   "routed": 1024,
+   "unique_crossing_pairs": 12824,
+   "transitions": 824,
+   "total_length_mm": 98539.0127
+  },
+  "seconds": -1792389846.6
+ },
+ "warnings": [],
+ "root_causes": [],
+ "differences": [],
+ "known_values": {
+  "routed": 1024,
+  "unique_crossing_pairs": 12824,
+  "transitions": 824,
+  "total_length_mm": 98539.0127
+ },
+ "v2_pre_u_baseline": {
+  "note": "the 23356-crossing figure quoted for the old baseline is the V2 pre-U payload (phase5_dynamic_optimization/after/routes_l3d.json), not the final Spatial-U-bundle file",
+  "known": {
+   "unique_crossing_pairs": 23356,
+   "transitions": 440,
+   "total_length_mm": 97495.7612
+  }
+ }
+}
