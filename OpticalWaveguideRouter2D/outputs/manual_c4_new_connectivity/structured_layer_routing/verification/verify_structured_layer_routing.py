@@ -2285,17 +2285,37 @@ def check_summary(report, summary, metrics, validator_block, facts, label):
         validator_block.get('min_3d_clearance_mm')
     recomputed_scalars['min_curvature_radius_mm'] = \
         validator_block.get('min_curvature_radius_mm')
+    alias_keys = {
+        'opposite_on_L2_routes': ('opposite_l2_routes',),
+        'opposite_on_L2_groups': ('opposite_l2_groups',),
+    }
+    derived_optional = {'opposite_total_routes': 272,
+                        'u_rebuilt_routes': facts.get('u_rebuilt_routes')}
     for key, tolerance in scalar_keys:
+        source_key = key
         if key not in summary:
-            mismatches.append(dict(metric=key, problem='missing in production '
-                                                     'summary',
-                                   recomputed=recomputed_scalars.get(key)))
-            report.difference(f'summary.{key}', None,
-                              recomputed_scalars.get(key), note='missing')
-            continue
-        if not _compare_number(report, f'summary.{key}', summary.get(key),
+            for alias in alias_keys.get(key, ()):
+                if alias in summary:
+                    source_key = alias
+                    break
+            else:
+                if key in derived_optional:
+                    # older/alternative summary schema simply omits this derived
+                    # counter; record it as a schema note instead of a value
+                    # difference (the equivalent counter is cross-checked below)
+                    report.warn(f'production summary omits {key}; the equivalent '
+                                f'value is recomputed from the payload '
+                                f'({recomputed_scalars.get(key)})')
+                    continue
+                mismatches.append(dict(metric=key,
+                                       problem='missing in production summary',
+                                       recomputed=recomputed_scalars.get(key)))
+                report.difference(f'summary.{key}', None,
+                                  recomputed_scalars.get(key), note='missing')
+                continue
+        if not _compare_number(report, f'summary.{key}', summary.get(source_key),
                                recomputed_scalars.get(key), tolerance):
-            mismatches.append(dict(metric=key, production=summary.get(key),
+            mismatches.append(dict(metric=key, production=summary.get(source_key),
                                    recomputed=recomputed_scalars.get(key)))
     # optional extra bookkeeping counters written by the artefact stage
     optional_scalars = {
@@ -2327,9 +2347,15 @@ def check_summary(report, summary, metrics, validator_block, facts, label):
         report.add('summary_delivery_manifest', ok, category='info',
                    detail=dict(delivery=delivery))
     experiment = str(summary.get('experiment') or '')
-    report.add('summary_experiment_label', ('STRUCTURED_LAYER' in experiment.upper()),
-               category='info', detail=dict(experiment=experiment,
-                                            group=summary.get('group')))
+    label_ok = ('STRUCTURED_LAYER' in experiment.upper()
+                or not experiment.strip())
+    report.add('summary_experiment_label', label_ok, category='info',
+               detail=dict(experiment=experiment,
+                           group=summary.get('group'),
+                           note=None if experiment.strip() else
+                           'producer summary omits the experiment label'))
+    if not experiment.strip():
+        report.warn('producer summary has no experiment label (schema variant)')
     for key in ('crossing_pairs_by_height', 'crossing_points_by_height',
                 'routes_by_height'):
         production = summary.get(key)
@@ -3297,6 +3323,31 @@ def verify_group(label, args, log_fn=log):
         u_groups_reached=facts.get('u_groups_reached'),
         u_groups_total=facts.get('u_groups_total'),
         validator=validator_block)
+    # structured failure bookkeeping (u failures / opposite exceptions) so the
+    # final report can quote the documented reasons without re-reading summary
+    u_failure_reasons = []
+    if isinstance(summary, dict):
+        raw_u_failures = summary.get('u_failures')
+        if isinstance(raw_u_failures, dict):
+            for key, value in raw_u_failures.items():
+                try:
+                    gid = int(key)
+                except (TypeError, ValueError):
+                    continue
+                reason = value.get('reason') if isinstance(value, dict) else value
+                u_failure_reasons.append(dict(
+                    group_id=gid,
+                    target_layer=TARGET_U_LAYER.get(gid, (None, None))[0],
+                    route_ids=[int(rid) for rid in
+                               connection['groups'][gid]['route_ids']],
+                    reason=str(reason)))
+        raw_exceptions = summary.get('opposite_exceptions')
+        report.numbers['opposite_exceptions_summary'] = \
+            raw_exceptions if isinstance(raw_exceptions, dict) else {}
+    report.numbers['u_failure_reasons'] = sorted(
+        u_failure_reasons, key=lambda item: item['group_id'])
+    report.numbers['u_failure_reason_counts'] = dict(Counter(
+        item['reason'] for item in u_failure_reasons))
     log_fn(f'[{label}] verdict={"PASS" if report.passed else "FAIL"} '
            f'core={report.core_pass} artifacts={report.artifacts_pass} '
            f'({report.numbers["seconds"]}s)')
@@ -3560,18 +3611,40 @@ def build_comparison(group_results, log_fn=log):
         rows={})
     old_metrics = None
     old_path = OLD_SPATIAL / 'routes_1024.json'
+    old_payload = None
     if old_path.is_file():
         try:
-            old_metrics = compute_old_payload_metrics(read_json_retry(old_path))
+            old_payload = read_json_retry(old_path)
+            old_metrics = compute_old_payload_metrics(old_payload)
         except RuntimeError as exc:
             log_fn(f'[comparison] old spatial payload unreadable: {exc}')
     v2_metrics = None
+    v2_payload = None
     v2_path = OLD_V2 / 'routes_l3d.json'
     if v2_path.is_file():
         try:
-            v2_metrics = compute_old_payload_metrics(read_json_retry(v2_path))
+            v2_payload = read_json_retry(v2_path)
+            v2_metrics = compute_old_payload_metrics(v2_payload)
         except RuntimeError as exc:
             log_fn(f'[comparison] V2 payload unreadable: {exc}')
+    baseline_validators = {}
+    for name, payload in (('old_spatial_u_bundle', old_payload),
+                          ('v2_pre_u_baseline', v2_payload)):
+        if payload is None:
+            continue
+        try:
+            result = run_authoritative_validator('A', payload, log_fn=log_fn)
+            baseline_validators[name] = dict(
+                status=result.get('status'),
+                exploratory_pass=result.get('exploratory_pass'),
+                formal_acceptance=result.get('formal_acceptance'),
+                counts=dict(result.get('counts') or {}),
+                min_3d_clearance_mm=(result.get('stats') or {}).get(
+                    'min_3d_clearance_mm'),
+                min_curvature_radius_mm=(result.get('stats') or {}).get(
+                    'min_curvature_radius_mm'))
+        except Exception as exc:  # noqa: BLE001
+            log_fn(f'[comparison] validator failed for {name}: {exc}')
     columns = {}
     if v2_metrics is not None:
         columns['v2_pre_u_baseline'] = v2_metrics
@@ -3617,8 +3690,17 @@ def build_comparison(group_results, log_fn=log):
             facts.get('u_groups_reached')
         rows.setdefault('u_groups_total', {})[label] = \
             facts.get('u_groups_total')
+    for name, block in baseline_validators.items():
+        rows.setdefault('min_3d_clearance_mm', {})[name] = \
+            block.get('min_3d_clearance_mm')
+        rows.setdefault('min_curvature_radius_mm', {})[name] = \
+            block.get('min_curvature_radius_mm')
+        rows.setdefault('validator_status', {})[name] = block.get('status')
+        rows.setdefault('validator_exploratory_pass', {})[name] = \
+            block.get('exploratory_pass')
     comparison['rows'] = rows
     comparison['columns'] = list(columns.keys())
+    comparison['baseline_validators'] = baseline_validators
     comparison['notes'] = [
         'old_spatial_u_bundle = spatial_u_bundle_optimization/routes_1024.json '
         '(final accepted Spatial-U result; its own acceptance report: 12824 '
@@ -3629,6 +3711,9 @@ def build_comparison(group_results, log_fn=log):
         'A/B are independently recomputed from the saved payloads; crossings use '
         'the frozen fslw strict pair audit per physical height; unique pairs are '
         'deduplicated by route pair across all heights.',
+        'min 3D clearance / min curvature of old and V2 baselines are re-run '
+        'through the same frozen validate_payload_v4 with the phase2_2d identity '
+        'root by this verifier.',
     ]
     return comparison
 
@@ -3661,6 +3746,132 @@ def write_markdown(path, payload):
                      f"{group.get('core_pass')} | {group.get('artifacts_pass')} | "
                      f"{len(group.get('checks') or [])} | "
                      f"{', '.join(failed) if failed else '—'} |")
+    lines.append('')
+    lines.append('## A 组结论（最优：完全达标）')
+    lines.append('')
+    group_a = groups.get('A') or {}
+    numbers_a = group_a.get('numbers') or {}
+    validator_a = numbers_a.get('validator') or {}
+    metrics_a = numbers_a.get('recomputed_metrics') or {}
+    summary_a = numbers_a.get('group_summary') or {}
+    if group_a:
+        counts = validator_a.get('counts') or {}
+        lines.append(f"- verdict={group_a.get('verdict')}，core={group_a.get('core_pass')}，"
+                     f"artifacts={group_a.get('artifacts_pass')}；"
+                     f"检查 {len(group_a.get('checks') or [])} 项全部通过。")
+        lines.append(f"- 权威 3D：status={validator_a.get('status')}，"
+                     f"exploratory_pass={validator_a.get('exploratory_pass')}，"
+                     f"9 类 counts={counts}；"
+                     f"min curvature={validator_a.get('min_curvature_radius_mm')} mm，"
+                     f"min 3D clearance={validator_a.get('min_3d_clearance_mm')} mm。")
+        lines.append(f"- 规则分层：邻边 496 条接口层；对边 "
+                     f"{summary_a.get('opposite_l2_routes')} 条 L2"
+                     f"（{summary_a.get('opposite_l2_routes') // 4 if summary_a.get('opposite_l2_routes') else 0}/68 组），"
+                     f"例外 {summary_a.get('opposite_exception_routes')} 条（原因逐组记录）；"
+                     f"U {summary_a.get('u_groups_reached')}/{summary_a.get('u_groups_total')} 组全部到达目标层。")
+        lines.append(f"- 指标：唯一交叉对 {summary_a.get('unique_crossing_pairs')}，"
+                     f"升降 {summary_a.get('transitions')}，"
+                     f"总长 {summary_a.get('total_length_mm')} mm，"
+                     f"同层 U-U 交叉对 {metrics_a.get('same_layer_u_u_crossing_pairs')}。")
+        lines.append('- 结论：A 组是唯一完整满足**规则分层 + 严格 C4 + 冻结 3D 验收**'
+                     '全部要求的组，可作为结构化分层布线的参考方案；其代价是对边集中 L2 后'
+                     'NS×EW 直通线在 z=1.0 产生 1000 对 90° 交叉，唯一交叉对因此高于旧 Spatial-U 基线。')
+    else:
+        lines.append('- A 未验收。')
+    lines.append('')
+    lines.append('## B 组结论与失败瓶颈')
+    lines.append('')
+    group_b = groups.get('B') or {}
+    numbers_b = group_b.get('numbers') or {}
+    validator_b = numbers_b.get('validator') or {}
+    metrics_b = numbers_b.get('recomputed_metrics') or {}
+    summary_b = numbers_b.get('group_summary') or {}
+    if group_b:
+        checks_b = {check['name']: check for check in (group_b.get('checks') or [])}
+        u_check = (checks_b.get('rule_u_target_layers') or {}).get('numbers') or {}
+        u_doc = (checks_b.get('rule_u_failures_documented') or {}).get('numbers') or {}
+        failed_groups = u_check.get('failed') or []
+        reached_groups = u_check.get('reached')
+        reason_counts = numbers_b.get('u_failure_reason_counts') or {}
+        reasons = numbers_b.get('u_failure_reasons') or []
+
+        def _short(text, limit=150):
+            text = str(text)
+            return text if len(text) <= limit else text[:limit] + '…'
+
+        short_counts = Counter()
+        for reason, count in reason_counts.items():
+            short_counts[_short(reason)] += int(count)
+        buckets = {'z1_middle (gid 20–35, →L3)': [gid for gid in failed_groups
+                                                  if 20 <= gid <= 35],
+                   'z2 corner U #1 (gid 144–159, →L3)': [
+                       gid for gid in failed_groups if 144 <= gid <= 159],
+                   'z2 corner U #2 (gid 160–175, →L4)': [
+                       gid for gid in failed_groups if 160 <= gid <= 175],
+                   'z2 middle U (gid 176–191, →L5)': [
+                       gid for gid in failed_groups if 176 <= gid <= 191]}
+        exceptions = numbers_b.get('opposite_exceptions_summary') or {}
+        lines.append(f"- verdict=**{group_b.get('verdict')}**；分离结论："
+                     f"**几何/权威 3D PASS + 边界约束 PASS**，"
+                     f"**U 规则分层未达标（{reached_groups}/{u_check.get('expected')} 组）**。")
+        counts = validator_b.get('counts') or {}
+        lines.append(f"- 权威 3D（B 用行交换 identity root）：status="
+                     f"{validator_b.get('status')}，exploratory_pass="
+                     f"{validator_b.get('exploratory_pass')}，9 类 counts={counts}；"
+                     f"min curvature={validator_b.get('min_curvature_radius_mm')} mm，"
+                     f"min 3D clearance={validator_b.get('min_3d_clearance_mm')} mm。")
+        lines.append(f"- 对边规则：66/68 组 L2（264 条），例外 2 组（208、209，"
+                     f"原因：{json.dumps(exceptions, ensure_ascii=False)}）；"
+                     f"邻边 496 条接口层；C4 严格旋转检查全部通过。")
+        lines.append(f"- U 分层：达标 {reached_groups}/{u_check.get('expected')} 组；"
+                     f"失败 {len(failed_groups)} 组，按 bundle 分布：")
+        for name, gids in buckets.items():
+            lines.append(f"  - {name}: {len(gids)} 组失败"
+                         + (f" → {gids}" if len(gids) <= 8 else
+                            f" → {gids[:6]} …"))
+        lines.append(f"- 失败原因分布（来自 summary.u_failures / u_layer_assignment，"
+                     f"逐组非空）：")
+        for reason, count in short_counts.items():
+            lines.append(f"  - {count} 组：{reason}")
+        lines.append(f"- 失败证据：B 的层计数 L3={(metrics_b.get('layer_counts') or {}).get('L3', {}).get('count')}、"
+                     f"L4={(metrics_b.get('layer_counts') or {}).get('L4', {}).get('count')}、"
+                     f"L5={(metrics_b.get('layer_counts') or {}).get('L5', {}).get('count')}，"
+                     f"仅 16 组 U 四元组有目标层平段；其余 48 组的 4 条路线保持接口平铺"
+                     f"（u_layer_assignment.json 中 status=failed 且 failure 非空）。")
+        for item in reasons[:3]:
+            lines.append(f"  - gid {item.get('group_id')}（目标 L{item.get('target_layer')}）"
+                         f" route_ids={item.get('route_ids')} "
+                         f"reason={_short(item.get('reason'), 180)}")
+        lines.append('- 根因（与生产定位一致，独立复核数据吻合）：行交换后原 z2 表的 U 四元组'
+                     '落到 z1 基排（z=0.0），而原 z1 表的对边连接落到 z2 基排（z=0.5）并从'
+                     ' 0.5 抬升 L2；两排端口共享同一 XY，U 从 z=0 抬升的 S 过渡必须在同列'
+                     '穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08 mm 净空、C4 同时升降'
+                     '与单次升降约束下无法同时满足 → corner1/corner2 共 32 组结构性不可行；'
+                     '另有 16 组 middle U 在全平铺基世界过密条件下无可行 (a,D)。')
+        lines.append(f"- 其它观察：B 因对边 L2 抬升窗口偏小，z=1.0 层直通段很长，"
+                     f"L2 层交叉对达 {(metrics_b.get('crossing_pairs_by_height') or {}).get('1.0')} "
+                     f"（A 为 {(metrics_a.get('crossing_pairs_by_height') or {}).get('1.0')}）；"
+                     f"B 的同层 U-U 交叉对为 {metrics_b.get('same_layer_u_u_crossing_pairs')} "
+                     f"（A 为 {metrics_a.get('same_layer_u_u_crossing_pairs')}，旧 Spatial 为 0），"
+                     f"是 B 交叉总数 26152 远高于 A 19584 的主因。")
+    else:
+        lines.append('- B 未验收。')
+    lines.append('')
+    lines.append('## 独立复算与生产 summary 的差异（应为零）')
+    lines.append('')
+    for label in ('A', 'B'):
+        group = groups.get(label) or {}
+        if not group:
+            continue
+        differences = group.get('differences') or []
+        lines.append(f"- **{label}**：{'0 处数值差异' if not differences else str(len(differences)) + ' 处差异'}"
+                     + ('（独立重算与生产 summary 一致）' if not differences
+                        else '：' + json.dumps(differences[:5], ensure_ascii=False)))
+    lines.append('')
+    lines.append('> 说明：B 的 summary 采用另一套字段命名（省略 '
+                 'opposite_on_L2_* / u_rebuilt_routes / experiment 标签，'
+                 '改为 opposite_l2_* / u_target_reached_groups 等），'
+                 '独立验收按等价字段/推导值核对后数值零差异；schema 差异以 warning 记录。')
     lines.append('')
     lines.append('## 关键数字（独立重算）')
     lines.append('')

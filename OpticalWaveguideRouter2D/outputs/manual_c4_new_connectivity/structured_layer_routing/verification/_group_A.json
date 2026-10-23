@@ -5,6 +5,18 @@
  "artifacts_pass": true,
  "checks": [
   {
+   "name": "process_config",
+   "passed": true,
+   "category": "core",
+   "detail": [],
+   "numbers": {
+    "radius_mm": 15.0,
+    "width_mm": 0.05,
+    "clearance_mm": 0.08,
+    "board_mm": 150.0
+   }
+  },
+  {
    "name": "ready_artifact",
    "passed": true,
    "category": "info"
@@ -936,7 +948,7 @@
     "violation_count": 0,
     "strict_2d_crossing_count": 20608,
     "total_length_mm": 98033.76630085,
-    "runtime_seconds": 5.23
+    "runtime_seconds": 4.51
    }
   },
   {
@@ -960,7 +972,8 @@
    "category": "info",
    "detail": {
     "experiment": "MANUAL_C4_STRUCTURED_LAYER_ROUTING_A",
-    "group": "A"
+    "group": "A",
+    "note": null
    }
   },
   {
@@ -982,7 +995,7 @@
     "rows": 64,
     "coverage": 64,
     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\u_layer_assignment.json",
-    "sha256": "88205363a7f77097fc69805fa48bbda83e213ba90274f4796e7cdf3d789a93a5"
+    "sha256": "47564fedb96df4b8617674dae5032922417ccc670cbf7a93e2812de5a87e83a7"
    }
   },
   {
@@ -994,7 +1007,7 @@
     "rows": 68,
     "coverage": 68,
     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\opposite_assignment.json",
-    "sha256": "4753cabcde03b0616716386a48a7c1ebe3e6f4121994b83992a2b755417ff2af"
+    "sha256": "de56fb4485601cd7bce2f60ab51d10c7c8bb0a6f8aa3163d8c1657e25ea58754"
    }
   },
   {
@@ -1065,9 +1078,18 @@
   },
   {
    "name": "comparison_table_artifact",
-   "passed": false,
+   "passed": true,
    "category": "info",
-   "detail": "comparison_table.json not generated yet"
+   "detail": {
+    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\comparison_table.json",
+    "sha256": "388ccb82fea547c10c24bab9dad539a698497ce08a8dafd85a8bdad000744998",
+    "keys": [
+     "columns",
+     "notes",
+     "rows",
+     "schema"
+    ]
+   }
   },
   {
    "name": "products_stable_during_run",
@@ -1363,7 +1385,7 @@
    },
    "verifier": {
     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\verification\\verify_structured_layer_routing.py",
-    "sha256": "8a1b71c91a388cd98acc52a3d6ae3ee40f0e06a2caec66f7d37064d5d78f3669"
+    "sha256": "7308c70f87ffdf53f78f01354851ba2661eff0412a12888076069614e32a11f1"
    }
   },
   "provenance_before": {
@@ -1373,9 +1395,9 @@
     "sha256": "66baa95da02ba1e461b078078cf295a796a720aab2e5c0a72876079ffb0a8cc9"
    },
    "summary.json": {
-    "size": 17882,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "381b1776c4d6caa0bdd27eda42b6a8edb00d6084165ae8308d6823bb59428128"
+    "size": 23283,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "b18725e60affbd9fe97a828e2729a7593f91083f16b3d48e7ef83eb43e21754d"
    },
    "validation.json": {
     "size": 41137,
@@ -1383,14 +1405,14 @@
     "sha256": "a6b7f86f70464695d59359493598ce2c46186b16b87ad4882f29760105af53b1"
    },
    "u_layer_assignment.json": {
-    "size": 136195,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "88205363a7f77097fc69805fa48bbda83e213ba90274f4796e7cdf3d789a93a5"
+    "size": 136260,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "47564fedb96df4b8617674dae5032922417ccc670cbf7a93e2812de5a87e83a7"
    },
    "opposite_assignment.json": {
-    "size": 114412,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "4753cabcde03b0616716386a48a7c1ebe3e6f4121994b83992a2b755417ff2af"
+    "size": 123036,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "de56fb4485601cd7bce2f60ab51d10c7c8bb0a6f8aa3163d8c1657e25ea58754"
    },
    "READY": {
     "size": 5,
@@ -1398,9 +1420,9 @@
     "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
    },
    "ARTEFACTS_READY": {
-    "size": 5,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    "size": 7,
+    "mtime": "2026-10-23T14:34:30",
+    "sha256": "83e24203f3532a5d379e2dfcab2a0bffa0b0d059eddc22ab04155ed229343ef3"
    },
    "run.log": {
     "size": 487,
@@ -3068,6 +3090,27 @@
     "opposite": 272,
     "same": 256,
     "adjacent": 496
+   },
+   "own_geometry_crossings": {
+    "unique_crossing_pairs": 19584,
+    "crossing_pairs_by_height": {
+     "0.0": 17576,
+     "0.5": 1008,
+     "1.0": 1000,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    },
+    "crossing_points_by_height": {
+     "0.0": 18600,
+     "0.5": 1008,
+     "1.0": 1000,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    },
+    "frozen_unique_crossing_pairs": 19584,
+    "seconds": 0.32
    }
   },
   "validator": {
@@ -3092,17 +3135,19 @@
    "violation_count": 0,
    "strict_2d_crossing_count": 20608,
    "total_length_mm": 98033.76630085,
-   "runtime_seconds": 5.23
+   "runtime_seconds": 4.51
   },
   "production_summary": {
    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\A\\summary.json",
    "keys": [
     "adjacent_on_interface",
+    "best_solution_note",
     "crossing_pairs_by_height",
     "crossing_points_by_height",
     "delivery",
     "experiment",
     "failed",
+    "figures",
     "group",
     "layer_counts",
     "min_3d_clearance_mm",
@@ -3110,6 +3155,7 @@
     "opposite_exception_groups",
     "opposite_exception_routes",
     "opposite_exceptions",
+    "opposite_failure_reason",
     "opposite_l2_groups",
     "opposite_l2_routes",
     "opposite_on_L2_groups",
@@ -3121,6 +3167,7 @@
     "total_length_mm",
     "transitions",
     "u_failed_groups",
+    "u_failure_bundle_counts",
     "u_failures",
     "u_rebuilt_routes",
     "u_target_reached_groups",
@@ -3139,9 +3186,9 @@
     "sha256": "66baa95da02ba1e461b078078cf295a796a720aab2e5c0a72876079ffb0a8cc9"
    },
    "summary.json": {
-    "size": 17882,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "381b1776c4d6caa0bdd27eda42b6a8edb00d6084165ae8308d6823bb59428128"
+    "size": 23283,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "b18725e60affbd9fe97a828e2729a7593f91083f16b3d48e7ef83eb43e21754d"
    },
    "validation.json": {
     "size": 41137,
@@ -3149,14 +3196,14 @@
     "sha256": "a6b7f86f70464695d59359493598ce2c46186b16b87ad4882f29760105af53b1"
    },
    "u_layer_assignment.json": {
-    "size": 136195,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "88205363a7f77097fc69805fa48bbda83e213ba90274f4796e7cdf3d789a93a5"
+    "size": 136260,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "47564fedb96df4b8617674dae5032922417ccc670cbf7a93e2812de5a87e83a7"
    },
    "opposite_assignment.json": {
-    "size": 114412,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "4753cabcde03b0616716386a48a7c1ebe3e6f4121994b83992a2b755417ff2af"
+    "size": 123036,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "de56fb4485601cd7bce2f60ab51d10c7c8bb0a6f8aa3163d8c1657e25ea58754"
    },
    "READY": {
     "size": 5,
@@ -3164,9 +3211,9 @@
     "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
    },
    "ARTEFACTS_READY": {
-    "size": 5,
-    "mtime": "2026-10-23T13:48:46",
-    "sha256": "b24d6d33736ecd5604a4b17bc9c6481039fac362bb7df044ef1c10a2bfd21db6"
+    "size": 7,
+    "mtime": "2026-10-23T14:34:30",
+    "sha256": "83e24203f3532a5d379e2dfcab2a0bffa0b0d059eddc22ab04155ed229343ef3"
    },
    "run.log": {
     "size": 487,
@@ -3219,7 +3266,7 @@
     ]
    }
   },
-  "seconds": 6.91,
+  "seconds": 6.43,
   "group_summary": {
    "routed": 1024,
    "unique_crossing_pairs": 19584,
@@ -3259,16 +3306,29 @@
     "violation_count": 0,
     "strict_2d_crossing_count": 20608,
     "total_length_mm": 98033.76630085,
-    "runtime_seconds": 5.23
+    "runtime_seconds": 4.51
    }
-  }
+  },
+  "opposite_exceptions_summary": {
+   "2": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "3": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "41": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "42": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "43": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "44": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "45": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "46": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "47": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "48": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "49": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "113": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "118": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。",
+   "120": "L1→L2 的 S 升降段必须从接口层穿过 z=0.5 平面；Manual-C4 二维底图中同列/同排（另一接口排）的平铺路线形成共线/近平行影子，0.08mm 净空、C4 四元组同时升降与\"每条最多 1 升 1 降\"约束下无合法 (a,D)/绕行方案，保留接口层平铺并记录为少量例外。"
+  },
+  "u_failure_reasons": [],
+  "u_failure_reason_counts": {}
  },
  "warnings": [],
- "root_causes": [
-  {
-   "item": "comparison_table_artifact",
-   "detail": "comparison_table.json not generated yet"
-  }
- ],
+ "root_causes": [],
  "differences": []
 }

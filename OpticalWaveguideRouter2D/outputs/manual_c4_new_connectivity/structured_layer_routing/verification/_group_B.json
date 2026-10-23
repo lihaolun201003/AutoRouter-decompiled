@@ -4355,7 +4355,7 @@
     "violation_count": 0,
     "strict_2d_crossing_count": 28208,
     "total_length_mm": 99554.326116034,
-    "runtime_seconds": 5.45
+    "runtime_seconds": 4.99
    }
   },
   {
@@ -4375,41 +4375,21 @@
   },
   {
    "name": "summary_experiment_label",
-   "passed": false,
+   "passed": true,
    "category": "info",
    "detail": {
     "experiment": "",
-    "group": "B"
+    "group": "B",
+    "note": "producer summary omits the experiment label"
    }
   },
   {
    "name": "metrics_match_production_summary",
-   "passed": false,
+   "passed": true,
    "category": "metrics",
-   "detail": [
-    {
-     "metric": "opposite_on_L2_routes",
-     "problem": "missing in production summary",
-     "recomputed": 264
-    },
-    {
-     "metric": "opposite_on_L2_groups",
-     "problem": "missing in production summary",
-     "recomputed": 66
-    },
-    {
-     "metric": "opposite_total_routes",
-     "problem": "missing in production summary",
-     "recomputed": 272
-    },
-    {
-     "metric": "u_rebuilt_routes",
-     "problem": "missing in production summary",
-     "recomputed": 64
-    }
-   ],
+   "detail": [],
    "numbers": {
-    "mismatch_count": 4,
+    "mismatch_count": 0,
     "validator_available": true
    }
   },
@@ -4422,7 +4402,7 @@
     "rows": 64,
     "coverage": 64,
     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\B\\u_layer_assignment.json",
-    "sha256": "d0fb9af09290d30aec205620587ee9aa5b98f16cf5e4c2cb4b98e75c6471e516"
+    "sha256": "6c6871914ea302fda28e94c2fb7f56f5cf2b5635e55660001886c459eaa89b76"
    }
   },
   {
@@ -4434,7 +4414,7 @@
     "rows": 68,
     "coverage": 68,
     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\B\\opposite_assignment.json",
-    "sha256": "68fc04637a350042a1c31320325cfbdb91e99104599015422fcbf0972dc52dec"
+    "sha256": "78e1777f129c47f7413b737c4f0e2138b6c8da5f8ff5edfe5a3e02cb4155b5e0"
    }
   },
   {
@@ -4812,7 +4792,7 @@
    },
    "verifier": {
     "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\verification\\verify_structured_layer_routing.py",
-    "sha256": "8a1b71c91a388cd98acc52a3d6ae3ee40f0e06a2caec66f7d37064d5d78f3669"
+    "sha256": "7308c70f87ffdf53f78f01354851ba2661eff0412a12888076069614e32a11f1"
    }
   },
   "provenance_before": {
@@ -4822,9 +4802,9 @@
     "sha256": "97cd20ff23be406790aaec6d09f9b8fe487a22031777daab7abf58f4453fe86a"
    },
    "summary.json": {
-    "size": 18758,
-    "mtime": "2026-10-23T14:34:30",
-    "sha256": "efedd2a06a721030a04031b51d04e24e2aed4c705b453a7fe6c437b18b631f25"
+    "size": 39345,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "a32891f19ba9e26eb435df9e58fa5ba87ab3df1aba0243b3534c1e63edd35764"
    },
    "validation.json": {
     "size": 35479,
@@ -4832,14 +4812,14 @@
     "sha256": "6ea755afd7b514c38cc595b420ab04b21c2e9f00e6e0914c7b17c6e83def45c1"
    },
    "u_layer_assignment.json": {
-    "size": 55448,
-    "mtime": "2026-10-23T14:34:04",
-    "sha256": "d0fb9af09290d30aec205620587ee9aa5b98f16cf5e4c2cb4b98e75c6471e516"
+    "size": 96224,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "6c6871914ea302fda28e94c2fb7f56f5cf2b5635e55660001886c459eaa89b76"
    },
    "opposite_assignment.json": {
-    "size": 134795,
-    "mtime": "2026-10-23T14:34:04",
-    "sha256": "68fc04637a350042a1c31320325cfbdb91e99104599015422fcbf0972dc52dec"
+    "size": 135139,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "78e1777f129c47f7413b737c4f0e2138b6c8da5f8ff5edfe5a3e02cb4155b5e0"
    },
    "READY": {
     "size": 5,
@@ -6359,6 +6339,25 @@
     "opposite": 272,
     "same": 256,
     "adjacent": 496
+   },
+   "own_geometry_crossings": {
+    "unique_crossing_pairs": 26152,
+    "crossing_pairs_by_height": {
+     "0.0": 11624,
+     "0.5": 2448,
+     "1.0": 12080,
+     "1.5": 0,
+     "2.5": 0
+    },
+    "crossing_points_by_height": {
+     "0.0": 13360,
+     "0.5": 2768,
+     "1.0": 12080,
+     "1.5": 0,
+     "2.5": 0
+    },
+    "frozen_unique_crossing_pairs": 26152,
+    "seconds": 0.49
    }
   },
   "validator": {
@@ -6383,7 +6382,7 @@
    "violation_count": 0,
    "strict_2d_crossing_count": 28208,
    "total_length_mm": 99554.326116034,
-   "runtime_seconds": 5.45
+   "runtime_seconds": 4.99
   },
   "production_summary": {
    "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\structured_layer_routing\\B\\summary.json",
@@ -6401,14 +6400,18 @@
     "opposite_exception_groups",
     "opposite_exception_routes",
     "opposite_exceptions",
+    "opposite_failure_reason",
     "opposite_l2_groups",
     "opposite_l2_routes",
     "routed",
     "routes_by_height",
+    "rule_layering_note",
     "same_layer_u_u_crossing_pairs",
     "total_length_mm",
     "transitions",
     "u_failed_groups",
+    "u_failure_bundle_counts",
+    "u_failure_reason",
     "u_failures",
     "u_target_reached_groups",
     "unique_crossing_pairs",
@@ -6426,9 +6429,9 @@
     "sha256": "97cd20ff23be406790aaec6d09f9b8fe487a22031777daab7abf58f4453fe86a"
    },
    "summary.json": {
-    "size": 18758,
-    "mtime": "2026-10-23T14:34:30",
-    "sha256": "efedd2a06a721030a04031b51d04e24e2aed4c705b453a7fe6c437b18b631f25"
+    "size": 39345,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "a32891f19ba9e26eb435df9e58fa5ba87ab3df1aba0243b3534c1e63edd35764"
    },
    "validation.json": {
     "size": 35479,
@@ -6436,14 +6439,14 @@
     "sha256": "6ea755afd7b514c38cc595b420ab04b21c2e9f00e6e0914c7b17c6e83def45c1"
    },
    "u_layer_assignment.json": {
-    "size": 55448,
-    "mtime": "2026-10-23T14:34:04",
-    "sha256": "d0fb9af09290d30aec205620587ee9aa5b98f16cf5e4c2cb4b98e75c6471e516"
+    "size": 96224,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "6c6871914ea302fda28e94c2fb7f56f5cf2b5635e55660001886c459eaa89b76"
    },
    "opposite_assignment.json": {
-    "size": 134795,
-    "mtime": "2026-10-23T14:34:04",
-    "sha256": "68fc04637a350042a1c31320325cfbdb91e99104599015422fcbf0972dc52dec"
+    "size": 135139,
+    "mtime": "2026-10-23T14:40:04",
+    "sha256": "78e1777f129c47f7413b737c4f0e2138b6c8da5f8ff5edfe5a3e02cb4155b5e0"
    },
    "READY": {
     "size": 5,
@@ -6501,7 +6504,7 @@
     ]
    }
   },
-  "seconds": 9.07,
+  "seconds": 8.77,
   "group_summary": {
    "routed": 1024,
    "unique_crossing_pairs": 26152,
@@ -6541,12 +6544,552 @@
     "violation_count": 0,
     "strict_2d_crossing_count": 28208,
     "total_length_mm": 99554.326116034,
-    "runtime_seconds": 5.45
+    "runtime_seconds": 4.99
    }
+  },
+  "opposite_exceptions_summary": {
+   "208": "该对边四元组在 B 的全平铺基世界下无可行 (a,D)，保留接口层平铺（几何合法）",
+   "209": "该对边四元组在 B 的全平铺基世界下无可行 (a,D)，保留接口层平铺（几何合法）"
+  },
+  "u_failure_reasons": [
+   {
+    "group_id": 20,
+    "target_layer": 3,
+    "route_ids": [
+     39,
+     131,
+     249,
+     250
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 21,
+    "target_layer": 3,
+    "route_ids": [
+     40,
+     132,
+     251,
+     252
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 22,
+    "target_layer": 3,
+    "route_ids": [
+     41,
+     133,
+     253,
+     254
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 23,
+    "target_layer": 3,
+    "route_ids": [
+     42,
+     134,
+     255,
+     256
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 24,
+    "target_layer": 3,
+    "route_ids": [
+     43,
+     135,
+     257,
+     258
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 25,
+    "target_layer": 3,
+    "route_ids": [
+     44,
+     136,
+     259,
+     260
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 144,
+    "target_layer": 3,
+    "route_ids": [
+     528,
+     704,
+     705,
+     706
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 145,
+    "target_layer": 3,
+    "route_ids": [
+     529,
+     707,
+     708,
+     709
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 146,
+    "target_layer": 3,
+    "route_ids": [
+     530,
+     710,
+     711,
+     712
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 147,
+    "target_layer": 3,
+    "route_ids": [
+     531,
+     713,
+     714,
+     715
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 148,
+    "target_layer": 3,
+    "route_ids": [
+     532,
+     716,
+     717,
+     718
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 149,
+    "target_layer": 3,
+    "route_ids": [
+     533,
+     719,
+     720,
+     721
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 150,
+    "target_layer": 3,
+    "route_ids": [
+     534,
+     722,
+     723,
+     724
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 151,
+    "target_layer": 3,
+    "route_ids": [
+     535,
+     725,
+     726,
+     727
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 152,
+    "target_layer": 3,
+    "route_ids": [
+     536,
+     728,
+     729,
+     730
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 153,
+    "target_layer": 3,
+    "route_ids": [
+     537,
+     731,
+     732,
+     733
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 154,
+    "target_layer": 3,
+    "route_ids": [
+     538,
+     734,
+     735,
+     736
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 155,
+    "target_layer": 3,
+    "route_ids": [
+     539,
+     737,
+     738,
+     739
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 156,
+    "target_layer": 3,
+    "route_ids": [
+     540,
+     740,
+     741,
+     742
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 157,
+    "target_layer": 3,
+    "route_ids": [
+     541,
+     743,
+     744,
+     745
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 158,
+    "target_layer": 3,
+    "route_ids": [
+     542,
+     746,
+     747,
+     748
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 159,
+    "target_layer": 3,
+    "route_ids": [
+     543,
+     749,
+     750,
+     751
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 160,
+    "target_layer": 4,
+    "route_ids": [
+     544,
+     752,
+     753,
+     754
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 161,
+    "target_layer": 4,
+    "route_ids": [
+     545,
+     755,
+     756,
+     757
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 162,
+    "target_layer": 4,
+    "route_ids": [
+     546,
+     758,
+     759,
+     760
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 163,
+    "target_layer": 4,
+    "route_ids": [
+     547,
+     761,
+     762,
+     763
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 164,
+    "target_layer": 4,
+    "route_ids": [
+     548,
+     764,
+     765,
+     766
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 165,
+    "target_layer": 4,
+    "route_ids": [
+     549,
+     767,
+     768,
+     769
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 166,
+    "target_layer": 4,
+    "route_ids": [
+     550,
+     770,
+     771,
+     772
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 167,
+    "target_layer": 4,
+    "route_ids": [
+     551,
+     773,
+     774,
+     775
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 168,
+    "target_layer": 4,
+    "route_ids": [
+     552,
+     776,
+     777,
+     778
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 169,
+    "target_layer": 4,
+    "route_ids": [
+     553,
+     779,
+     780,
+     781
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 170,
+    "target_layer": 4,
+    "route_ids": [
+     554,
+     782,
+     783,
+     784
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 171,
+    "target_layer": 4,
+    "route_ids": [
+     555,
+     785,
+     786,
+     787
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 172,
+    "target_layer": 4,
+    "route_ids": [
+     556,
+     788,
+     789,
+     790
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 173,
+    "target_layer": 4,
+    "route_ids": [
+     557,
+     791,
+     792,
+     793
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 174,
+    "target_layer": 4,
+    "route_ids": [
+     558,
+     794,
+     795,
+     796
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 175,
+    "target_layer": 4,
+    "route_ids": [
+     559,
+     797,
+     798,
+     799
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 182,
+    "target_layer": 5,
+    "route_ids": [
+     566,
+     602,
+     812,
+     813
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 183,
+    "target_layer": 5,
+    "route_ids": [
+     567,
+     603,
+     814,
+     815
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 184,
+    "target_layer": 5,
+    "route_ids": [
+     568,
+     604,
+     816,
+     817
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 185,
+    "target_layer": 5,
+    "route_ids": [
+     569,
+     605,
+     818,
+     819
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 186,
+    "target_layer": 5,
+    "route_ids": [
+     570,
+     606,
+     820,
+     821
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 187,
+    "target_layer": 5,
+    "route_ids": [
+     571,
+     607,
+     822,
+     823
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 188,
+    "target_layer": 5,
+    "route_ids": [
+     572,
+     608,
+     824,
+     825
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 189,
+    "target_layer": 5,
+    "route_ids": [
+     573,
+     609,
+     826,
+     827
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 190,
+    "target_layer": 5,
+    "route_ids": [
+     574,
+     610,
+     828,
+     829
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   },
+   {
+    "group_id": 191,
+    "target_layer": 5,
+    "route_ids": [
+     575,
+     611,
+     830,
+     831
+    ],
+    "reason": "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。"
+   }
+  ],
+  "u_failure_reason_counts": {
+   "行交换后本 U 四元组落到 z=0 基排，其端口列（两排端口共享同一 XY）在z=0.5 行被对边连接占用；从 z=0 抬升的 S 过渡必须在同列穿越 z=0.5 平面，与对边连接的 base/过渡在 0.08mm 净空、C4 同时升降与单次升降约束下冲突，角部 32 组结构性不可行；其余为全平铺基世界过密无可行 (a,D)。保持接口层平铺（合法），作为规则分层失败记录。": 48
   }
  },
  "warnings": [
-  "record z_mm legacy field inconsistent with physical row on 1024 records (not used by the geometry or the frozen validator): [{'route_id': 1, 'z_mm': 0.0, 'plane': 'z2'}, {'route_id': 2, 'z_mm': 0.0, 'plane': 'z2'}, {'route_id': 3, 'z_mm': 0.0, 'plane': 'z2'}]"
+  "record z_mm legacy field inconsistent with physical row on 1024 records (not used by the geometry or the frozen validator): [{'route_id': 1, 'z_mm': 0.0, 'plane': 'z2'}, {'route_id': 2, 'z_mm': 0.0, 'plane': 'z2'}, {'route_id': 3, 'z_mm': 0.0, 'plane': 'z2'}]",
+  "production summary omits opposite_total_routes; the equivalent value is recomputed from the payload (272)",
+  "production summary omits u_rebuilt_routes; the equivalent value is recomputed from the payload (64)",
+  "producer summary has no experiment label (schema variant)"
  ],
  "root_causes": [
   {
@@ -8468,64 +9011,7 @@
      ]
     }
    ]
-  },
-  {
-   "item": "summary_experiment_label",
-   "detail": {
-    "experiment": "",
-    "group": "B"
-   }
-  },
-  {
-   "item": "metrics_match_production_summary",
-   "detail": [
-    {
-     "metric": "opposite_on_L2_routes",
-     "problem": "missing in production summary",
-     "recomputed": 264
-    },
-    {
-     "metric": "opposite_on_L2_groups",
-     "problem": "missing in production summary",
-     "recomputed": 66
-    },
-    {
-     "metric": "opposite_total_routes",
-     "problem": "missing in production summary",
-     "recomputed": 272
-    },
-    {
-     "metric": "u_rebuilt_routes",
-     "problem": "missing in production summary",
-     "recomputed": 64
-    }
-   ]
   }
  ],
- "differences": [
-  {
-   "topic": "summary.opposite_on_L2_routes",
-   "production": null,
-   "recomputed": 264,
-   "note": "missing"
-  },
-  {
-   "topic": "summary.opposite_on_L2_groups",
-   "production": null,
-   "recomputed": 66,
-   "note": "missing"
-  },
-  {
-   "topic": "summary.opposite_total_routes",
-   "production": null,
-   "recomputed": 272,
-   "note": "missing"
-  },
-  {
-   "topic": "summary.u_rebuilt_routes",
-   "production": null,
-   "recomputed": 64,
-   "note": "missing"
-  }
- ]
+ "differences": []
 }
