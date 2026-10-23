@@ -122,6 +122,19 @@ python <scan_pairs.py> V
 & $py -m four_side_1024.manual_c4.hybrid_comparison
 ```
 
+## 独立验收（混合 C2/C4）
+
+`verification/`（独立验收员，未 import 生产 hybrid 模块）结论：**H = PASS，V = PASS
+（每组 11/11 检查项全过）**。独立复算与生产 summary/crossing_analysis/validation
+零差异：C2 132/132 对（66 EW + 66 NS）在"180°旋转 + 遍历方向反转"关系下最大偏差
+7.1e-14 mm；z2 C4 144 组/432 成员最大偏差 6.7e-14 mm；U 256/256、z2 对边 8/8、
+邻边 496/496 与 Structured A 逐字段一致；权威 3D exploratory PASS、9 类 counts 全 0、
+min curvature≈15、min3D 0.0917；交叉/升降/总长/层计数与 summary 完全一致。
+瓶颈表述经独立几何复核：32 个深窗口对的 blocker 均为 z2 接口层固定路线，其中
+21/32 可精确解释深阈值、11/32 由额外 z2 接口层 shadow（binding obstacle 全在
+z=0.5，切向夹角 6.6°–41.6°）进一步收紧；2 个失败组由接口层 shadow + 同线 L2 固定
+段占用导致 160 个对称候选 a 全部被阻挡。
+
 ## 约束口径
 
 板面 150×150 mm；R=15 mm；宽 0.05 mm；非豁免最小中心线净空 0.08 mm；接口高度

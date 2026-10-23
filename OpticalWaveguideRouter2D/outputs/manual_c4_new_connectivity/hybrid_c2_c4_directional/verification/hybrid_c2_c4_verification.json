@@ -1,0 +1,2229 @@
+{
+ "schema": "hybrid_c2_c4_verification_v1",
+ "experiment": "MANUAL_C4_HYBRID_C2_C4_DIRECTIONAL",
+ "generated_at": "2026-10-23T15:47:12",
+ "verdict": {
+  "H": "PASS",
+  "V": "PASS",
+  "overall": "PASS"
+ },
+ "script": {
+  "path": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\hybrid_c2_c4_directional\\verification\\verify_hybrid_c2_c4.py",
+  "sha256": "a621ef3916a06099fdd8e9f7a0bd96abedf8534b0c9399a3d2943b2caebe8331"
+ },
+ "targets": {
+  "H": {
+   "directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\hybrid_c2_c4_directional\\H",
+   "artefact_sha256": {
+    "routes_1024.json": "fe7a00a5fba22a276cbcd9a7185182bde3f999134880f3454a57af6793622960",
+    "c2_pair_assignment.json": "7bdb01bbf608b82799ea5491e6c6f107270d33103664db3ce44e1f5a6af37297",
+    "validation.json": "32b029105fba1baa3576b67e81c9bf756c14a5b56a31d5e372ab5b0795847c02",
+    "summary.json": "08f64f21aae76a2f1a83a3629e8d3c08f1c2fafec08f9547a470971fab13d5bf",
+    "crossing_analysis.json": "aa23fac8b5db944dd87241c4bb2f8952581f2e9d5129ca0c5e886678d214bdc6"
+   }
+  },
+  "V": {
+   "directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\hybrid_c2_c4_directional\\V",
+   "artefact_sha256": {
+    "routes_1024.json": "39b9969d14b06a7de51c7a6ecd63a6fcf0b85d59fd0205e6bfcffd20ee3f8d68",
+    "c2_pair_assignment.json": "19436115e0cc8f1eaf5ef97c727518e09410f995b0ad7fe404580b482ac39821",
+    "validation.json": "2bae52431977cea9345c31f4d909bf8924dd14668f87e7d4725fdde6619febdf",
+    "summary.json": "7892a9281c9e44cd67fd14372356d28e777b8b943a85224ed83ce6da3114b71d",
+    "crossing_analysis.json": "9eaba069b48826dbe8a5d4144eeed77d1a19f6b109a75becf604974fc945bab4"
+   }
+  }
+ },
+ "checks": {
+  "H": {
+   "identity_ports": {
+    "passed": true,
+    "error_count": 0
+   },
+   "payload_layer_stack": {
+    "passed": true,
+    "error_count": 0
+   },
+   "symmetry": {
+    "passed": true,
+    "error_count": 0
+   },
+   "fixed_preservation": {
+    "passed": true,
+    "error_count": 0
+   },
+   "layer_rules": {
+    "passed": true,
+    "error_count": 0
+   },
+   "geometry": {
+    "passed": true,
+    "error_count": 0
+   },
+   "metrics": {
+    "passed": true,
+    "error_count": 0
+   },
+   "authoritative_3d": {
+    "passed": true,
+    "error_count": 0
+   },
+   "bottleneck": {
+    "passed": true,
+    "error_count": 0
+   },
+   "artefacts": {
+    "passed": true,
+    "error_count": 0
+   },
+   "independence": {
+    "passed": true,
+    "error_count": 0
+   }
+  },
+  "V": {
+   "identity_ports": {
+    "passed": true,
+    "error_count": 0
+   },
+   "payload_layer_stack": {
+    "passed": true,
+    "error_count": 0
+   },
+   "symmetry": {
+    "passed": true,
+    "error_count": 0
+   },
+   "fixed_preservation": {
+    "passed": true,
+    "error_count": 0
+   },
+   "layer_rules": {
+    "passed": true,
+    "error_count": 0
+   },
+   "geometry": {
+    "passed": true,
+    "error_count": 0
+   },
+   "metrics": {
+    "passed": true,
+    "error_count": 0
+   },
+   "authoritative_3d": {
+    "passed": true,
+    "error_count": 0
+   },
+   "bottleneck": {
+    "passed": true,
+    "error_count": 0
+   },
+   "artefacts": {
+    "passed": true,
+    "error_count": 0
+   },
+   "independence": {
+    "passed": true,
+    "error_count": 0
+   }
+  }
+ },
+ "design_constraints": {
+  "board_mm": 150.0,
+  "waveguide_width_mm": 0.05,
+  "min_centerline_clearance_mm": 0.08,
+  "bend_radius_mm": 15.0,
+  "interface_heights_mm": {
+   "z1": 0.0,
+   "z2": 0.5
+  },
+  "routing_heights_mm": {
+   "2": 1.0,
+   "3": 1.5,
+   "4": 2.0,
+   "5": 2.5
+  },
+  "max_transitions_per_route": 2,
+  "transitions_on_straight_segments_only": true,
+  "full_xyz_clearance_check": "frozen validate_payload_v4 (l3d, exploratory)",
+  "ports_total": 2048,
+  "connections_total": 1024
+ },
+ "core_numbers": {
+  "H": {
+   "verdict": "PASS",
+   "routed": 1024,
+   "c2_pairs": 132,
+   "c2_pairs_lifted": 64,
+   "c2_pairs_failed": 2,
+   "c2_failed_groups": [
+    2,
+    3
+   ],
+   "c2_max_deviation_mm": 7.105427357601002e-14,
+   "c4_groups": 144,
+   "c4_member_checks": 432,
+   "c4_max_deviation_mm": 6.674942990534282e-14,
+   "z1_adjacent_c4_groups": 46,
+   "z1_adjacent_c4_max_deviation_mm": 4.0194366942304644e-14,
+   "unique_crossing_pairs": 12960,
+   "crossing_pairs_by_height": {
+    "0.0": 11952,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_points_by_height": {
+    "0.0": 12464,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "z1_hv_same_height_pairs": 7032,
+   "z0_total_pairs": 11952,
+   "l2_total_pairs": 0,
+   "transitions": 784,
+   "total_length_mm": 98019.9262,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 136,
+    "L3": 128,
+    "L4": 64,
+    "L5": 64
+   },
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "validation_status": "exploratory_only",
+   "exploratory_pass": true,
+   "formal_acceptance": false,
+   "geometry_issues": {
+    "structure": 0,
+    "primitive": 0,
+    "flat_part": 0,
+    "transition": 0,
+    "on_straight": 0,
+    "continuity": 0,
+    "layer_profile": 0,
+    "length": 0,
+    "board": 0,
+    "chain_2d": 0
+   },
+   "fixed_preservation": {
+    "U": {
+     "records": 256,
+     "contract_identical": 256,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    },
+    "z2_opposite": {
+     "records": 8,
+     "contract_identical": 8,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    },
+    "adjacent": {
+     "records": 496,
+     "contract_identical": 496,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    },
+    "z1_adjacent": {
+     "records": 184,
+     "contract_identical": 184,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    }
+   },
+   "layer_rules": {
+    "lifted_direction": "EW",
+    "kept_direction": "NS",
+    "lifted_groups": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117,
+     118,
+     119,
+     120,
+     121,
+     122,
+     123,
+     124,
+     125,
+     126,
+     127,
+     128
+    ],
+    "failed_groups": [
+     2,
+     3
+    ],
+    "failed_group_details": {
+     "2": {
+      "assignment_status": "kept_L1_z1",
+      "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+      "direction": "EW",
+      "route_ids": [
+       38,
+       213
+      ],
+      "route_states": {
+       "213": "flat",
+       "38": "flat"
+      }
+     },
+     "3": {
+      "assignment_status": "kept_L1_z1",
+      "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+      "direction": "EW",
+      "route_ids": [
+       37,
+       215
+      ],
+      "route_states": {
+       "215": "flat",
+       "37": "flat"
+      }
+     }
+    }
+   },
+   "summary_diff": [],
+   "crossing_analysis_diff": [],
+   "production_validation_diff": [],
+   "bottleneck_conclusion": {
+    "claim": "the 34 deep-window C2 pairs are all caused by fixed z2 interface-layer parallel shadows",
+    "verified": true,
+    "deep_pairs_with_listed_z2_parallel_shadow": 32,
+    "deep_pairs_without_listed_blocker_but_double_shadow_proved": 2,
+    "pairs_where_listed_blocker_exactly_predicts_threshold": 21,
+    "pairs_where_additional_z2_shadow_tightens": 11,
+    "all_binding_obstacles_on_z2_interface": true,
+    "caveat": "for 11/32 pairs the listed single blocker blocks the whole early window but a second z2-interface shadow sets the exact deep threshold; every binding obstacle found is still fixed z2-layer geometry at z=0.5 mm"
+   },
+   "artefact_sha256": {
+    "routes_1024.json": "fe7a00a5fba22a276cbcd9a7185182bde3f999134880f3454a57af6793622960",
+    "c2_pair_assignment.json": "7bdb01bbf608b82799ea5491e6c6f107270d33103664db3ce44e1f5a6af37297",
+    "validation.json": "32b029105fba1baa3576b67e81c9bf756c14a5b56a31d5e372ab5b0795847c02",
+    "summary.json": "08f64f21aae76a2f1a83a3629e8d3c08f1c2fafec08f9547a470971fab13d5bf",
+    "crossing_analysis.json": "aa23fac8b5db944dd87241c4bb2f8952581f2e9d5129ca0c5e886678d214bdc6"
+   }
+  },
+  "V": {
+   "verdict": "PASS",
+   "routed": 1024,
+   "c2_pairs": 132,
+   "c2_pairs_lifted": 64,
+   "c2_pairs_failed": 2,
+   "c2_failed_groups": [
+    2,
+    3
+   ],
+   "c2_max_deviation_mm": 7.105427357601002e-14,
+   "c4_groups": 144,
+   "c4_member_checks": 432,
+   "c4_max_deviation_mm": 6.674942990534282e-14,
+   "z1_adjacent_c4_groups": 46,
+   "z1_adjacent_c4_max_deviation_mm": 4.0194366942304644e-14,
+   "unique_crossing_pairs": 12960,
+   "crossing_pairs_by_height": {
+    "0.0": 11952,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_points_by_height": {
+    "0.0": 12464,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "z1_hv_same_height_pairs": 7032,
+   "z0_total_pairs": 11952,
+   "l2_total_pairs": 0,
+   "transitions": 784,
+   "total_length_mm": 98019.9262,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 136,
+    "L3": 128,
+    "L4": 64,
+    "L5": 64
+   },
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "validation_status": "exploratory_only",
+   "exploratory_pass": true,
+   "formal_acceptance": false,
+   "geometry_issues": {
+    "structure": 0,
+    "primitive": 0,
+    "flat_part": 0,
+    "transition": 0,
+    "on_straight": 0,
+    "continuity": 0,
+    "layer_profile": 0,
+    "length": 0,
+    "board": 0,
+    "chain_2d": 0
+   },
+   "fixed_preservation": {
+    "U": {
+     "records": 256,
+     "contract_identical": 256,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    },
+    "z2_opposite": {
+     "records": 8,
+     "contract_identical": 8,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    },
+    "adjacent": {
+     "records": 496,
+     "contract_identical": 496,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    },
+    "z1_adjacent": {
+     "records": 184,
+     "contract_identical": 184,
+     "validator_annotation_differences": 0,
+     "annotation_keys": {}
+    }
+   },
+   "layer_rules": {
+    "lifted_direction": "NS",
+    "kept_direction": "EW",
+    "lifted_groups": [
+     1,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117,
+     118,
+     119,
+     120,
+     121,
+     122,
+     123,
+     124,
+     125,
+     126,
+     127,
+     128
+    ],
+    "failed_groups": [
+     2,
+     3
+    ],
+    "failed_group_details": {
+     "2": {
+      "assignment_status": "kept_L1_z1",
+      "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+      "direction": "NS",
+      "route_ids": [
+       3,
+       214
+      ],
+      "route_states": {
+       "3": "flat",
+       "214": "flat"
+      }
+     },
+     "3": {
+      "assignment_status": "kept_L1_z1",
+      "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+      "direction": "NS",
+      "route_ids": [
+       4,
+       216
+      ],
+      "route_states": {
+       "4": "flat",
+       "216": "flat"
+      }
+     }
+    }
+   },
+   "summary_diff": [],
+   "crossing_analysis_diff": [],
+   "production_validation_diff": [],
+   "bottleneck_conclusion": {
+    "claim": "the 34 deep-window C2 pairs are all caused by fixed z2 interface-layer parallel shadows",
+    "verified": true,
+    "deep_pairs_with_listed_z2_parallel_shadow": 32,
+    "deep_pairs_without_listed_blocker_but_double_shadow_proved": 2,
+    "pairs_where_listed_blocker_exactly_predicts_threshold": 21,
+    "pairs_where_additional_z2_shadow_tightens": 11,
+    "all_binding_obstacles_on_z2_interface": true,
+    "caveat": "for 11/32 pairs the listed single blocker blocks the whole early window but a second z2-interface shadow sets the exact deep threshold; every binding obstacle found is still fixed z2-layer geometry at z=0.5 mm"
+   },
+   "artefact_sha256": {
+    "routes_1024.json": "39b9969d14b06a7de51c7a6ecd63a6fcf0b85d59fd0205e6bfcffd20ee3f8d68",
+    "c2_pair_assignment.json": "19436115e0cc8f1eaf5ef97c727518e09410f995b0ad7fe404580b482ac39821",
+    "validation.json": "2bae52431977cea9345c31f4d909bf8924dd14668f87e7d4725fdde6619febdf",
+    "summary.json": "7892a9281c9e44cd67fd14372356d28e777b8b943a85224ed83ce6da3114b71d",
+    "crossing_analysis.json": "9eaba069b48826dbe8a5d4144eeed77d1a19f6b109a75becf604974fc945bab4"
+   }
+  }
+ },
+ "symmetry": {
+  "H": {
+   "c2": {
+    "pairs": 132,
+    "passed": 132,
+    "directions": {
+     "EW": 66,
+     "NS": 66
+    },
+    "route_directions": {
+     "EW": 132,
+     "NS": 132
+    },
+    "max_deviation_mm": 7.105427357601002e-14,
+    "reversed_order_counts": {
+     "('EW', True)": 53,
+     "('NS', False)": 66,
+     "('EW', False)": 13
+    }
+   },
+   "c4": {
+    "groups": 144,
+    "categories": {
+     "same": 64,
+     "z2_opposite": 2,
+     "z2_adjacent": 78
+    },
+    "member_checks": 432,
+    "members_passed": 432,
+    "max_deviation_mm": 6.674942990534282e-14,
+    "reversed_order_counts": {
+     "(1, False)": 122,
+     "(2, False)": 144,
+     "(3, False)": 142,
+     "(1, True)": 22,
+     "(3, True)": 2
+    }
+   },
+   "z1_adjacent_c4": {
+    "groups": 46,
+    "member_checks": 138,
+    "passed": 46,
+    "max_deviation_mm": 4.0194366942304644e-14
+   }
+  },
+  "V": {
+   "c2": {
+    "pairs": 132,
+    "passed": 132,
+    "directions": {
+     "EW": 66,
+     "NS": 66
+    },
+    "route_directions": {
+     "EW": 132,
+     "NS": 132
+    },
+    "max_deviation_mm": 7.105427357601002e-14,
+    "reversed_order_counts": {
+     "('EW', True)": 53,
+     "('NS', False)": 66,
+     "('EW', False)": 13
+    }
+   },
+   "c4": {
+    "groups": 144,
+    "categories": {
+     "same": 64,
+     "z2_opposite": 2,
+     "z2_adjacent": 78
+    },
+    "member_checks": 432,
+    "members_passed": 432,
+    "max_deviation_mm": 6.674942990534282e-14,
+    "reversed_order_counts": {
+     "(1, False)": 122,
+     "(2, False)": 144,
+     "(3, False)": 142,
+     "(1, True)": 22,
+     "(3, True)": 2
+    }
+   },
+   "z1_adjacent_c4": {
+    "groups": 46,
+    "member_checks": 138,
+    "passed": 46,
+    "max_deviation_mm": 4.0194366942304644e-14
+   }
+  }
+ },
+ "symmetry_method": {
+  "C2": "B_path(s) = R180(A_path(L - s)): rigid 180 deg rotation plus traversal reversal (physical ports are fixed); implemented by sampling both 3D paths by arc length, rotating A, choosing the B traversal orientation from the endpoint distances, point-wise comparison at 1e-6 mm; the transition contract compares rotated start/end, rotated direction, z0/z1, theta/footprint/length and layers, with reversed-B transitions mapped back (start<->end, direction negated, z0<->z1, from/to swapped)",
+  "C4": "rigid 90 deg rotation about the board centre; same sampling/contract machinery; group members are ordered by the phase2_2d rotation_phase 0/1/2/3 and compared with R^k for k=1,2,3",
+  "tolerance_mm": 1e-06,
+  "direction_convention": "+90 deg rotation of a free vector is (dx,dy)->(-dy,dx); a 180 deg rotation therefore maps a direction to its negation"
+ },
+ "fixed_preservation": {
+  "H": {
+   "U": {
+    "records": 256,
+    "contract_identical": 256,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   },
+   "z2_opposite": {
+    "records": 8,
+    "contract_identical": 8,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   },
+   "adjacent": {
+    "records": 496,
+    "contract_identical": 496,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   },
+   "z1_adjacent": {
+    "records": 184,
+    "contract_identical": 184,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   }
+  },
+  "V": {
+   "U": {
+    "records": 256,
+    "contract_identical": 256,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   },
+   "z2_opposite": {
+    "records": 8,
+    "contract_identical": 8,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   },
+   "adjacent": {
+    "records": 496,
+    "contract_identical": 496,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   },
+   "z1_adjacent": {
+    "records": 184,
+    "contract_identical": 184,
+    "validator_annotation_differences": 0,
+    "annotation_keys": {}
+   }
+  }
+ },
+ "layer_rules": {
+  "H": {
+   "lifted_direction": "EW",
+   "kept_direction": "NS",
+   "lifted_groups": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128
+   ],
+   "failed_groups": [
+    2,
+    3
+   ],
+   "failed_group_details": {
+    "2": {
+     "assignment_status": "kept_L1_z1",
+     "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+     "direction": "EW",
+     "route_ids": [
+      38,
+      213
+     ],
+     "route_states": {
+      "213": "flat",
+      "38": "flat"
+     }
+    },
+    "3": {
+     "assignment_status": "kept_L1_z1",
+     "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+     "direction": "EW",
+     "route_ids": [
+      37,
+      215
+     ],
+     "route_states": {
+      "215": "flat",
+      "37": "flat"
+     }
+    }
+   }
+  },
+  "V": {
+   "lifted_direction": "NS",
+   "kept_direction": "EW",
+   "lifted_groups": [
+    1,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128
+   ],
+   "failed_groups": [
+    2,
+    3
+   ],
+   "failed_group_details": {
+    "2": {
+     "assignment_status": "kept_L1_z1",
+     "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+     "direction": "NS",
+     "route_ids": [
+      3,
+      214
+     ],
+     "route_states": {
+      "3": "flat",
+      "214": "flat"
+     }
+    },
+    "3": {
+     "assignment_status": "kept_L1_z1",
+     "failure_reason": "no feasible C2 lift against the fixed world (kept on L1-z1)",
+     "direction": "NS",
+     "route_ids": [
+      4,
+      216
+     ],
+     "route_states": {
+      "4": "flat",
+      "216": "flat"
+     }
+    }
+   }
+  }
+ },
+ "geometry": {
+  "H": {
+   "routes": 1024,
+   "flat_primitives": 3824,
+   "flat_lines": 2816,
+   "flat_arcs": 1008,
+   "transitions": 784,
+   "record_primitives_checked": 896,
+   "flat_chain_checked": 632,
+   "reconstructed_chain_checked": 136,
+   "u_actual_chain_skipped": 256,
+   "u_actual_chain_note": "U (same) routes were rebuilt on L3/L4/L5 in Structured A; their reference primitives field must equal phase2_2d (checked) and their full geometry must equal Structured A (checked in section 3)",
+   "issues": {
+    "structure": {
+     "count": 0,
+     "samples": []
+    },
+    "primitive": {
+     "count": 0,
+     "samples": []
+    },
+    "flat_part": {
+     "count": 0,
+     "samples": []
+    },
+    "transition": {
+     "count": 0,
+     "samples": []
+    },
+    "on_straight": {
+     "count": 0,
+     "samples": []
+    },
+    "continuity": {
+     "count": 0,
+     "samples": []
+    },
+    "layer_profile": {
+     "count": 0,
+     "samples": []
+    },
+    "length": {
+     "count": 0,
+     "samples": []
+    },
+    "board": {
+     "count": 0,
+     "samples": []
+    },
+    "chain_2d": {
+     "count": 0,
+     "samples": []
+    }
+   }
+  },
+  "V": {
+   "routes": 1024,
+   "flat_primitives": 3824,
+   "flat_lines": 2816,
+   "flat_arcs": 1008,
+   "transitions": 784,
+   "record_primitives_checked": 896,
+   "flat_chain_checked": 632,
+   "reconstructed_chain_checked": 136,
+   "u_actual_chain_skipped": 256,
+   "u_actual_chain_note": "U (same) routes were rebuilt on L3/L4/L5 in Structured A; their reference primitives field must equal phase2_2d (checked) and their full geometry must equal Structured A (checked in section 3)",
+   "issues": {
+    "structure": {
+     "count": 0,
+     "samples": []
+    },
+    "primitive": {
+     "count": 0,
+     "samples": []
+    },
+    "flat_part": {
+     "count": 0,
+     "samples": []
+    },
+    "transition": {
+     "count": 0,
+     "samples": []
+    },
+    "on_straight": {
+     "count": 0,
+     "samples": []
+    },
+    "continuity": {
+     "count": 0,
+     "samples": []
+    },
+    "layer_profile": {
+     "count": 0,
+     "samples": []
+    },
+    "length": {
+     "count": 0,
+     "samples": []
+    },
+    "board": {
+     "count": 0,
+     "samples": []
+    },
+    "chain_2d": {
+     "count": 0,
+     "samples": []
+    }
+   }
+  }
+ },
+ "metrics": {
+  "H": {
+   "independent_metrics": {
+    "routed": 1024,
+    "unique_crossing_pairs": 12960,
+    "crossing_pairs_by_height": {
+     "0.0": 11952,
+     "0.5": 1008,
+     "1.0": 0,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    },
+    "crossing_points_by_height": {
+     "0.0": 12464,
+     "0.5": 1008,
+     "1.0": 0,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    },
+    "crossing_breakdown_by_height": {
+     "0.0": {
+      "opposite_z1_EW x opposite_z1_NS": 7032,
+      "adjacent x opposite_z1_NS": 3312,
+      "opposite_z1_NS x same_U": 1024,
+      "adjacent x opposite_z1_EW": 1096
+     },
+     "0.5": {
+      "adjacent x opposite_z2_NS": 496,
+      "adjacent x opposite_z2_EW": 496,
+      "opposite_z2_EW x opposite_z2_NS": 16
+     },
+     "1.0": {},
+     "1.5": {},
+     "2.0": {},
+     "2.5": {}
+    },
+    "z1_hv_same_height_pairs": 7032,
+    "z1_hv_breakdown_by_height": {
+     "0.0": 7032
+    },
+    "z0_total_pairs": 11952,
+    "l2_total_pairs": 0,
+    "total_crossing_points": 13472,
+    "transitions": 784,
+    "total_length_mm": 98019.9262,
+    "layer_counts": {
+     "L1-z1": {
+      "count": 512,
+      "layer_id": 1,
+      "z_mm": 0.0,
+      "plane_counts": {
+       "z1": 512
+      }
+     },
+     "L1-z2": {
+      "count": 512,
+      "layer_id": 1,
+      "z_mm": 0.5,
+      "plane_counts": {
+       "z2": 512
+      }
+     },
+     "L2": {
+      "count": 136,
+      "layer_id": 2,
+      "z_mm": 1.0,
+      "plane_counts": {
+       "z1": 128,
+       "z2": 8
+      }
+     },
+     "L3": {
+      "count": 128,
+      "layer_id": 3,
+      "z_mm": 1.5,
+      "plane_counts": {
+       "z1": 64,
+       "z2": 64
+      }
+     },
+     "L4": {
+      "count": 64,
+      "layer_id": 4,
+      "z_mm": 2.0,
+      "plane_counts": {
+       "z2": 64
+      }
+     },
+     "L5": {
+      "count": 64,
+      "layer_id": 5,
+      "z_mm": 2.5,
+      "plane_counts": {
+       "z2": 64
+      }
+     }
+    }
+   },
+   "summary_diff": [],
+   "crossing_analysis_diff": [],
+   "baseline_metric_semantics": {
+    "A_summary_per_height_are_points": true,
+    "A_summary_z0_points": 18600,
+    "independent_A_z0_unique_pairs": 17576,
+    "independent_A_z0_crossing_points": 18600,
+    "note": "the A artefact reports crossing POINTS per height (18600 at z=0), while the hybrid crossing_analysis baseline uses unique route PAIRS per height (17576 at z=0); the global unique-pair count 19584 agrees in both口径"
+   },
+   "reduction": {
+    "z1_hv_same_height_reduction": 3896,
+    "z0_total_reduction": 5624,
+    "global_reduction": 6624
+   }
+  },
+  "V": {
+   "independent_metrics": {
+    "routed": 1024,
+    "unique_crossing_pairs": 12960,
+    "crossing_pairs_by_height": {
+     "0.0": 11952,
+     "0.5": 1008,
+     "1.0": 0,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    },
+    "crossing_points_by_height": {
+     "0.0": 12464,
+     "0.5": 1008,
+     "1.0": 0,
+     "1.5": 0,
+     "2.0": 0,
+     "2.5": 0
+    },
+    "crossing_breakdown_by_height": {
+     "0.0": {
+      "opposite_z1_EW x opposite_z1_NS": 7032,
+      "adjacent x opposite_z1_NS": 1096,
+      "opposite_z1_EW x same_U": 1024,
+      "adjacent x opposite_z1_EW": 3312
+     },
+     "0.5": {
+      "adjacent x opposite_z2_NS": 496,
+      "adjacent x opposite_z2_EW": 496,
+      "opposite_z2_EW x opposite_z2_NS": 16
+     },
+     "1.0": {},
+     "1.5": {},
+     "2.0": {},
+     "2.5": {}
+    },
+    "z1_hv_same_height_pairs": 7032,
+    "z1_hv_breakdown_by_height": {
+     "0.0": 7032
+    },
+    "z0_total_pairs": 11952,
+    "l2_total_pairs": 0,
+    "total_crossing_points": 13472,
+    "transitions": 784,
+    "total_length_mm": 98019.9262,
+    "layer_counts": {
+     "L1-z1": {
+      "count": 512,
+      "layer_id": 1,
+      "z_mm": 0.0,
+      "plane_counts": {
+       "z1": 512
+      }
+     },
+     "L1-z2": {
+      "count": 512,
+      "layer_id": 1,
+      "z_mm": 0.5,
+      "plane_counts": {
+       "z2": 512
+      }
+     },
+     "L2": {
+      "count": 136,
+      "layer_id": 2,
+      "z_mm": 1.0,
+      "plane_counts": {
+       "z1": 128,
+       "z2": 8
+      }
+     },
+     "L3": {
+      "count": 128,
+      "layer_id": 3,
+      "z_mm": 1.5,
+      "plane_counts": {
+       "z1": 64,
+       "z2": 64
+      }
+     },
+     "L4": {
+      "count": 64,
+      "layer_id": 4,
+      "z_mm": 2.0,
+      "plane_counts": {
+       "z2": 64
+      }
+     },
+     "L5": {
+      "count": 64,
+      "layer_id": 5,
+      "z_mm": 2.5,
+      "plane_counts": {
+       "z2": 64
+      }
+     }
+    }
+   },
+   "summary_diff": [],
+   "crossing_analysis_diff": [],
+   "baseline_metric_semantics": {
+    "A_summary_per_height_are_points": true,
+    "A_summary_z0_points": 18600,
+    "independent_A_z0_unique_pairs": 17576,
+    "independent_A_z0_crossing_points": 18600,
+    "note": "the A artefact reports crossing POINTS per height (18600 at z=0), while the hybrid crossing_analysis baseline uses unique route PAIRS per height (17576 at z=0); the global unique-pair count 19584 agrees in both口径"
+   },
+   "reduction": {
+    "z1_hv_same_height_reduction": 3896,
+    "z0_total_reduction": 5624,
+    "global_reduction": 6624
+   }
+  },
+  "A_baseline": {
+   "unique_crossing_pairs": 19584,
+   "crossing_pairs_by_height": {
+    "0.0": 17576,
+    "0.5": 1008,
+    "1.0": 1000,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_points_by_height": {
+    "0.0": 18600,
+    "0.5": 1008,
+    "1.0": 1000,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_breakdown_by_height": {
+    "0.0": {
+     "opposite_z1_EW x opposite_z1_NS": 9928,
+     "adjacent x opposite_z1_NS": 3312,
+     "opposite_z1_NS x same_U": 1024,
+     "opposite_z1_EW x same_U": 1024,
+     "adjacent x opposite_z1_EW": 3312
+    },
+    "0.5": {
+     "adjacent x opposite_z2_NS": 496,
+     "adjacent x opposite_z2_EW": 496,
+     "opposite_z2_EW x opposite_z2_NS": 16
+    },
+    "1.0": {
+     "opposite_z1_EW x opposite_z1_NS": 1000
+    },
+    "1.5": {},
+    "2.0": {},
+    "2.5": {}
+   },
+   "z1_hv_same_height_pairs": 10928,
+   "z1_hv_breakdown_by_height": {
+    "0.0": 9928,
+    "1.0": 1000
+   },
+   "transitions": 944,
+   "total_length_mm": 98033.7663,
+   "layer_counts": {
+    "L1-z1": {
+     "count": 512,
+     "layer_id": 1,
+     "z_mm": 0.0,
+     "plane_counts": {
+      "z1": 512
+     }
+    },
+    "L1-z2": {
+     "count": 512,
+     "layer_id": 1,
+     "z_mm": 0.5,
+     "plane_counts": {
+      "z2": 512
+     }
+    },
+    "L2": {
+     "count": 216,
+     "layer_id": 2,
+     "z_mm": 1.0,
+     "plane_counts": {
+      "z1": 208,
+      "z2": 8
+     }
+    },
+    "L3": {
+     "count": 128,
+     "layer_id": 3,
+     "z_mm": 1.5,
+     "plane_counts": {
+      "z1": 64,
+      "z2": 64
+     }
+    },
+    "L4": {
+     "count": 64,
+     "layer_id": 4,
+     "z_mm": 2.0,
+     "plane_counts": {
+      "z2": 64
+     }
+    },
+    "L5": {
+     "count": 64,
+     "layer_id": 5,
+     "z_mm": 2.5,
+     "plane_counts": {
+      "z2": 64
+     }
+    }
+   }
+  },
+  "Spatial_cross_check": {
+   "summary_unique_crossing_pairs": 12824,
+   "independent_unique_crossing_pairs": 12824,
+   "independent_crossing_points": 12928
+  }
+ },
+ "authoritative_3d": {
+  "H": {
+   "validator": "four_side_1024.l3d.validate_l3d",
+   "status": "exploratory_only",
+   "exploratory_pass": true,
+   "formal_acceptance": false,
+   "geometry_pass": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "violations": 0,
+   "violation_kinds": {},
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "transition_count": 784,
+   "routed": 1024,
+   "total_length_mm": 98019.926218879,
+   "warnings": [
+    "payload has no process record"
+   ],
+   "runtime_seconds": 4.272,
+   "production_diff": [],
+   "same_plane_crossing_points": 13472
+  },
+  "V": {
+   "validator": "four_side_1024.l3d.validate_l3d",
+   "status": "exploratory_only",
+   "exploratory_pass": true,
+   "formal_acceptance": false,
+   "geometry_pass": true,
+   "counts": {
+    "violations": 0,
+    "contract_errors": 0,
+    "port_errors": 0,
+    "geometry_errors": 0,
+    "curvature_violations": 0,
+    "clearance_violations": 0,
+    "same_plane_violations": 0,
+    "self_clearance_violations": 0,
+    "other_errors": 0
+   },
+   "violations": 0,
+   "violation_kinds": {},
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "transition_count": 784,
+   "routed": 1024,
+   "total_length_mm": 98019.926218879,
+   "warnings": [
+    "payload has no process record"
+   ],
+   "runtime_seconds": 4.187,
+   "production_diff": [],
+   "same_plane_crossing_points": 13472
+  }
+ },
+ "bottleneck": {
+  "H": {
+   "n_deep": 34,
+   "n_parallel": 32,
+   "n_crossing": 0,
+   "deep_pair_status_counts": {
+    "deep_only": 32,
+    "no_feasible_parameters": 2
+   },
+   "early_window_blocked_pairs": 34,
+   "pairs_where_listed_blocker_exactly_predicts_threshold": 21,
+   "pairs_where_additional_z2_shadow_tightens": 11,
+   "all_binding_obstacles_on_z2_interface": true,
+   "failed_groups": [
+    2,
+    3
+   ],
+   "footprint_mm": 7.681146,
+   "failed_pair_shadow_structure": [
+    {
+     "group_id": 2,
+     "members": [
+      {
+       "route_id": 213,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 14.875,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      },
+      {
+       "route_id": 38,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 135.125,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      }
+     ]
+    },
+    {
+     "group_id": 3,
+     "members": [
+      {
+       "route_id": 215,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 14.625,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      },
+      {
+       "route_id": 37,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 135.375,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      }
+     ]
+    }
+   ],
+   "verified": true,
+   "caveat": "for 11/32 pairs the listed single blocker blocks the whole early window but a second z2-interface shadow sets the exact deep threshold; every binding obstacle found is still fixed z2-layer geometry at z=0.5 mm"
+  },
+  "V": {
+   "n_deep": 34,
+   "n_parallel": 32,
+   "n_crossing": 0,
+   "deep_pair_status_counts": {
+    "deep_only": 32,
+    "no_feasible_parameters": 2
+   },
+   "early_window_blocked_pairs": 34,
+   "pairs_where_listed_blocker_exactly_predicts_threshold": 21,
+   "pairs_where_additional_z2_shadow_tightens": 11,
+   "all_binding_obstacles_on_z2_interface": true,
+   "failed_groups": [
+    2,
+    3
+   ],
+   "footprint_mm": 7.681146,
+   "failed_pair_shadow_structure": [
+    {
+     "group_id": 2,
+     "members": [
+      {
+       "route_id": 3,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 14.875,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      },
+      {
+       "route_id": 214,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 135.125,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      }
+     ]
+    },
+    {
+     "group_id": 3,
+     "members": [
+      {
+       "route_id": 4,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 14.625,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      },
+      {
+       "route_id": 216,
+       "interface_shadow_segments": 2,
+       "line_coordinate_mm": 135.375,
+       "interface_shadow_gaps_mm": [
+        [
+         63.6,
+         86.4
+        ]
+       ],
+       "max_interface_gap_mm": 22.8,
+       "l2_shadow_segments": 1,
+       "grid_candidates": 160,
+       "interface_shadow_blocked_candidates": 148,
+       "l2_shadow_blocked_candidates": 160,
+       "all_candidates_blocked": true,
+       "transition_footprint_mm": 7.681146
+      }
+     ]
+    }
+   ],
+   "verified": true,
+   "caveat": "for 11/32 pairs the listed single blocker blocks the whole early window but a second z2-interface shadow sets the exact deep threshold; every binding obstacle found is still fixed z2-layer geometry at z=0.5 mm"
+  }
+ },
+ "artefacts": {
+  "H": {
+   "directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\hybrid_c2_c4_directional\\H",
+   "files": {
+    "routes_1024.json": {
+     "exists": true,
+     "bytes": 2146954,
+     "sha256": "fe7a00a5fba22a276cbcd9a7185182bde3f999134880f3454a57af6793622960"
+    },
+    "c2_pair_assignment.json": {
+     "exists": true,
+     "bytes": 30314,
+     "sha256": "7bdb01bbf608b82799ea5491e6c6f107270d33103664db3ce44e1f5a6af37297"
+    },
+    "validation.json": {
+     "exists": true,
+     "bytes": 41068,
+     "sha256": "32b029105fba1baa3576b67e81c9bf756c14a5b56a31d5e372ab5b0795847c02"
+    },
+    "summary.json": {
+     "exists": true,
+     "bytes": 3372,
+     "sha256": "08f64f21aae76a2f1a83a3629e8d3c08f1c2fafec08f9547a470971fab13d5bf"
+    },
+    "crossing_analysis.json": {
+     "exists": true,
+     "bytes": 1820,
+     "sha256": "aa23fac8b5db944dd87241c4bb2f8952581f2e9d5129ca0c5e886678d214bdc6"
+    },
+    "READY": {
+     "exists": true,
+     "bytes": 7,
+     "sha256": "83e24203f3532a5d379e2dfcab2a0bffa0b0d059eddc22ab04155ed229343ef3",
+     "content": "ready"
+    },
+    "ARTEFACTS_READY": {
+     "exists": true,
+     "bytes": 7,
+     "sha256": "83e24203f3532a5d379e2dfcab2a0bffa0b0d059eddc22ab04155ed229343ef3",
+     "content": "ready"
+    },
+    "run.log": {
+     "exists": true,
+     "bytes": 3416,
+     "sha256": "61e1a9747725dc6687b60390d32ec158eb09de7929c506af91be555a4cfa6ca4"
+    }
+   },
+   "figures": {
+    "01_before_3d.png": {
+     "exists": true,
+     "bytes": 1441159,
+     "sha256": "bbb2f1d62a1863c995d4e133027625cb09bc8633ed733e50c442f3a417baf527"
+    },
+    "01_before_3d.svg": {
+     "exists": true,
+     "bytes": 1724056,
+     "sha256": "299b1dfec40d35fab673f116a844419492eb3a8b9dca9c5c38b94cfc4e95f98f"
+    },
+    "02_after_3d.png": {
+     "exists": true,
+     "bytes": 1428251,
+     "sha256": "7325239826acd114ebaad181a41fd584e3a4c09a57b3f10a34a667367cc7ca51"
+    },
+    "02_after_3d.svg": {
+     "exists": true,
+     "bytes": 1581253,
+     "sha256": "78d554774cdbc91f0f40ce1cc9ebb307a521ce34f7ca6c4e693028d4915273bb"
+    },
+    "03_L1_z1.png": {
+     "exists": true,
+     "bytes": 1434098,
+     "sha256": "c187a3cbd97b88676844457cf8a0b826ab928959ed80df8f9207ed4858c1480d"
+    },
+    "03_L1_z1.svg": {
+     "exists": true,
+     "bytes": 714613,
+     "sha256": "8e9f91af29131527ddaf5352344aeed237368eaadf9258a6ecd3e1b0a4bbc084"
+    },
+    "04_L1_z2.png": {
+     "exists": true,
+     "bytes": 1570337,
+     "sha256": "4d6a749b5623ebf47248b70cb34a67b67b34334e96a2c48a6314b36c329527a0"
+    },
+    "04_L1_z2.svg": {
+     "exists": true,
+     "bytes": 947475,
+     "sha256": "3e4b1b0de273d096b47dfb92b29864cb9a6794eaceb429dd3507cdac1953eb31"
+    },
+    "05_L2.png": {
+     "exists": true,
+     "bytes": 971162,
+     "sha256": "53f945f535125c34b025a1e721ca22c989ea11a4abb0f99f78ee0bcc3a57beb7"
+    },
+    "05_L2.svg": {
+     "exists": true,
+     "bytes": 408373,
+     "sha256": "769b49341200b9083b87db72be2623dcc3eff6a1a01a1999e2e75c20c14c7c01"
+    },
+    "06_L3.png": {
+     "exists": true,
+     "bytes": 974683,
+     "sha256": "ebad83d149ece16ac314162ad2c7167ea2eae6df4a5a89aa1a973a70fe209649"
+    },
+    "06_L3.svg": {
+     "exists": true,
+     "bytes": 468429,
+     "sha256": "5718ddd725832ec864f34f10d913a979320ff7e16eab1721c8bbab3548495d4f"
+    },
+    "07_L4.png": {
+     "exists": true,
+     "bytes": 730101,
+     "sha256": "2bcc083ff6876fbb4be17ea8700c7ebdab0b691ec82e9740308f6364018c33d7"
+    },
+    "07_L4.svg": {
+     "exists": true,
+     "bytes": 272081,
+     "sha256": "2f86f777d3e22193e36832b9025c3f6c44d5163456629f15253e97a5b3d436c5"
+    },
+    "08_L5.png": {
+     "exists": true,
+     "bytes": 770607,
+     "sha256": "e4046e0afc3cce3a6bc0a54a522b7449f211c1ce5ad65dccecada32f065115d3"
+    },
+    "08_L5.svg": {
+     "exists": true,
+     "bytes": 278442,
+     "sha256": "bc584c912caf7f0dbb92b5f6ab508f8d9ac45f4c8a70da9a3f20d9bb093a49e4"
+    },
+    "09_z1_horizontal.png": {
+     "exists": true,
+     "bytes": 900133,
+     "sha256": "85cd552cc60c85caed9bca1ecf936d99e20342abd38056c9e4ebe1090ac3bf28"
+    },
+    "09_z1_horizontal.svg": {
+     "exists": true,
+     "bytes": 324744,
+     "sha256": "0afddd1efcd7cf33734c6c9c6f067a6cd68cd9ab220d13bca450b078da871d9b"
+    },
+    "10_z1_vertical.png": {
+     "exists": true,
+     "bytes": 861634,
+     "sha256": "388277a1d43b8df722b882b46cf3cdca511fb67840c2b1e1b65982a4aa6e71df"
+    },
+    "10_z1_vertical.svg": {
+     "exists": true,
+     "bytes": 69972,
+     "sha256": "25a94a625fbc74427910f52cf0afaf75d851c92ec27917ffbf53eadfb9ce07c3"
+    },
+    "11_z1_direction_split.png": {
+     "exists": true,
+     "bytes": 1260041,
+     "sha256": "519f8905b97c9d478391dcdd71cc367d73a090a9f3cb55ecd7c721b5c9607740"
+    },
+    "11_z1_direction_split.svg": {
+     "exists": true,
+     "bytes": 359480,
+     "sha256": "99b11b119d97231c5497067b5fbf2171e9d5b0b18d375284ec94d84d65832082"
+    },
+    "12_opposite_only_3d.png": {
+     "exists": true,
+     "bytes": 1307772,
+     "sha256": "abce13bd96e581bac6c598fb88b784ca33b24c3e9f2a5b1e3c25a037ff0d8243"
+    },
+    "12_opposite_only_3d.svg": {
+     "exists": true,
+     "bytes": 411750,
+     "sha256": "ee1df5d1f9e504c05d5e1d653a765fc20c58965170f987abd88baaf22c094981"
+    },
+    "13_dense_region_zoom.png": {
+     "exists": true,
+     "bytes": 6391540,
+     "sha256": "58ed143181197dca72ebf4049c197db553166d445f19ca5cc49f3013171adf3c"
+    },
+    "13_dense_region_zoom.svg": {
+     "exists": true,
+     "bytes": 2947881,
+     "sha256": "c36d7e92b730c3202decb6061cab2bfc8ebbc4ae0436028254bad6a1aec1a5a0"
+    }
+   },
+   "figure_pairs": 13,
+   "figure_files": 26
+  },
+  "V": {
+   "directory": "C:\\Users\\lihao\\Desktop\\Graduation Project\\OpticalWaveguideRouter2D\\outputs\\manual_c4_new_connectivity\\hybrid_c2_c4_directional\\V",
+   "files": {
+    "routes_1024.json": {
+     "exists": true,
+     "bytes": 2147042,
+     "sha256": "39b9969d14b06a7de51c7a6ecd63a6fcf0b85d59fd0205e6bfcffd20ee3f8d68"
+    },
+    "c2_pair_assignment.json": {
+     "exists": true,
+     "bytes": 30198,
+     "sha256": "19436115e0cc8f1eaf5ef97c727518e09410f995b0ad7fe404580b482ac39821"
+    },
+    "validation.json": {
+     "exists": true,
+     "bytes": 41067,
+     "sha256": "2bae52431977cea9345c31f4d909bf8924dd14668f87e7d4725fdde6619febdf"
+    },
+    "summary.json": {
+     "exists": true,
+     "bytes": 3371,
+     "sha256": "7892a9281c9e44cd67fd14372356d28e777b8b943a85224ed83ce6da3114b71d"
+    },
+    "crossing_analysis.json": {
+     "exists": true,
+     "bytes": 1820,
+     "sha256": "9eaba069b48826dbe8a5d4144eeed77d1a19f6b109a75becf604974fc945bab4"
+    },
+    "READY": {
+     "exists": true,
+     "bytes": 7,
+     "sha256": "83e24203f3532a5d379e2dfcab2a0bffa0b0d059eddc22ab04155ed229343ef3",
+     "content": "ready"
+    },
+    "ARTEFACTS_READY": {
+     "exists": true,
+     "bytes": 7,
+     "sha256": "83e24203f3532a5d379e2dfcab2a0bffa0b0d059eddc22ab04155ed229343ef3",
+     "content": "ready"
+    },
+    "run.log": {
+     "exists": true,
+     "bytes": 2236,
+     "sha256": "62f92ee2fca3a285bf136ae5078393a2fa4d4e19b8b7e9397123f2191e3a35c6"
+    }
+   },
+   "figures": {
+    "01_before_3d.png": {
+     "exists": true,
+     "bytes": 1441159,
+     "sha256": "bbb2f1d62a1863c995d4e133027625cb09bc8633ed733e50c442f3a417baf527"
+    },
+    "01_before_3d.svg": {
+     "exists": true,
+     "bytes": 1724056,
+     "sha256": "13d4ca474d5ecf3e8606a687bc72dae08a8b85044045589b9a2eaed1d2fb5a54"
+    },
+    "02_after_3d.png": {
+     "exists": true,
+     "bytes": 1427990,
+     "sha256": "5a19b3683eb854a3f167a919432a33099266fcd235da2df708d91f53d971be9c"
+    },
+    "02_after_3d.svg": {
+     "exists": true,
+     "bytes": 1555784,
+     "sha256": "430fa3b6c1aba424a5b1af1e93c83b4d66085741df5e607f5c4307b9b7fd0726"
+    },
+    "03_L1_z1.png": {
+     "exists": true,
+     "bytes": 1419438,
+     "sha256": "fa4aaf076e673cbf1b3b66af7129c904ac62596d7d2a23773a5d10d468a145bf"
+    },
+    "03_L1_z1.svg": {
+     "exists": true,
+     "bytes": 688901,
+     "sha256": "658f875808f4e6bbbe73439be751ffb649b724a67f57e06c6449710a54ef3c68"
+    },
+    "04_L1_z2.png": {
+     "exists": true,
+     "bytes": 1570337,
+     "sha256": "4d6a749b5623ebf47248b70cb34a67b67b34334e96a2c48a6314b36c329527a0"
+    },
+    "04_L1_z2.svg": {
+     "exists": true,
+     "bytes": 947475,
+     "sha256": "096b044ab31e3286d7066ff0158a7d9c812f7658150fa1c916e8ce1b819828fe"
+    },
+    "05_L2.png": {
+     "exists": true,
+     "bytes": 1053939,
+     "sha256": "a7596203ed31a03baa74544a51f0a4b42e4e5aee0b5a6e4390c656843224acb5"
+    },
+    "05_L2.svg": {
+     "exists": true,
+     "bytes": 382665,
+     "sha256": "f1693665ff2f25f97fd22e4664e5d686b92537ed1f2f3b49f6ac2c628d57b070"
+    },
+    "06_L3.png": {
+     "exists": true,
+     "bytes": 974683,
+     "sha256": "ebad83d149ece16ac314162ad2c7167ea2eae6df4a5a89aa1a973a70fe209649"
+    },
+    "06_L3.svg": {
+     "exists": true,
+     "bytes": 468429,
+     "sha256": "0e29bec7cd57e0ed6aacc3453bbaadbf38169ea9852be2264ddf520ea59cc237"
+    },
+    "07_L4.png": {
+     "exists": true,
+     "bytes": 730101,
+     "sha256": "2bcc083ff6876fbb4be17ea8700c7ebdab0b691ec82e9740308f6364018c33d7"
+    },
+    "07_L4.svg": {
+     "exists": true,
+     "bytes": 272081,
+     "sha256": "dca01a7331e2aa9ee0d294e8c4f6465b288cd6e98c791ac3a28d144d041aa192"
+    },
+    "08_L5.png": {
+     "exists": true,
+     "bytes": 770607,
+     "sha256": "e4046e0afc3cce3a6bc0a54a522b7449f211c1ce5ad65dccecada32f065115d3"
+    },
+    "08_L5.svg": {
+     "exists": true,
+     "bytes": 278442,
+     "sha256": "63afd2f89873c168cdc8def0abfbed358f8a7fdef9d2931c29387564ea5d763c"
+    },
+    "09_z1_horizontal.png": {
+     "exists": true,
+     "bytes": 750585,
+     "sha256": "0252a1fb650a760d67d0c4a61beeb3ba3eaaffadfebc775a4952e8336c29ef62"
+    },
+    "09_z1_horizontal.svg": {
+     "exists": true,
+     "bytes": 70200,
+     "sha256": "ce571178167a87620a02454301d7423d76f3e4e2b2baf11d1b9957ce45bb7ce5"
+    },
+    "10_z1_vertical.png": {
+     "exists": true,
+     "bytes": 974869,
+     "sha256": "f13a9abbe7f01a472cc7df84ccb4d5b5d97ebf9262b7d3ffbd96345da2a21597"
+    },
+    "10_z1_vertical.svg": {
+     "exists": true,
+     "bytes": 298804,
+     "sha256": "5d1a6064acc51474eca4f383ae9d54c0016682a4692c308e537a5cfdd694c352"
+    },
+    "11_z1_direction_split.png": {
+     "exists": true,
+     "bytes": 1254654,
+     "sha256": "6902849c99253f0bfeaa280b612197b58cb5df16dc56e6fc102d333a6b3da5a6"
+    },
+    "11_z1_direction_split.svg": {
+     "exists": true,
+     "bytes": 333764,
+     "sha256": "e4cf659e24f6958d7a361f8ad281c1cc1888629ab9e1e0ddf2046c62b1aaf48f"
+    },
+    "12_opposite_only_3d.png": {
+     "exists": true,
+     "bytes": 1300600,
+     "sha256": "ce9342af3b9c251f48a819f42548d865cd6d5fdf2ccbba3a12696baea4fc3a6c"
+    },
+    "12_opposite_only_3d.svg": {
+     "exists": true,
+     "bytes": 386035,
+     "sha256": "4c72517e716489da42acc4cfa350cf3f4ce77f2c28f3de0e11059727304e6a2e"
+    },
+    "13_dense_region_zoom.png": {
+     "exists": true,
+     "bytes": 6348901,
+     "sha256": "ac4eac45247d84c3e8acd0c141ae231406d7e5e4517a1cb7bbf62329d5f7fe49"
+    },
+    "13_dense_region_zoom.svg": {
+     "exists": true,
+     "bytes": 2918921,
+     "sha256": "99f144060abde684fd8078c54cc22780c7d429bf0e695580c72261143297e4e3"
+    }
+   },
+   "figure_pairs": 13,
+   "figure_files": 26
+  }
+ },
+ "production_diffs": {
+  "H": {
+   "summary_metric_diffs": [],
+   "crossing_analysis_diffs": [],
+   "validation_report_diffs": [],
+   "fixed_record_validator_annotation": {
+    "fixed_records": 760,
+    "fixed_records_with_annotation": {
+     "_back_to_back_transitions": 760
+    },
+    "rebuilt_z1_opposite_records": 264,
+    "rebuilt_z1_opposite_with_annotation": 0,
+    "note": "the 760 fixed records keep the l3d validator annotation written during Structured A; the 264 rebuilt z1-opposite records lack it by construction (the frozen validator recomputes it)"
+   }
+  },
+  "V": {
+   "summary_metric_diffs": [],
+   "crossing_analysis_diffs": [],
+   "validation_report_diffs": [],
+   "fixed_record_validator_annotation": {
+    "fixed_records": 760,
+    "fixed_records_with_annotation": {
+     "_back_to_back_transitions": 760
+    },
+    "rebuilt_z1_opposite_records": 264,
+    "rebuilt_z1_opposite_with_annotation": 0,
+    "note": "the 760 fixed records keep the l3d validator annotation written during Structured A; the 264 rebuilt z1-opposite records lack it by construction (the frozen validator recomputes it)"
+   }
+  }
+ },
+ "comparison_4way": {
+  "A_Structured": {
+   "source": "structured_layer_routing/A/routes_1024.json",
+   "routed": 1024,
+   "unique_crossing_pairs": 19584,
+   "crossing_pairs_by_height": {
+    "0.0": 17576,
+    "0.5": 1008,
+    "1.0": 1000,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_points_by_height": {
+    "0.0": 18600,
+    "0.5": 1008,
+    "1.0": 1000,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "z1_hv_same_height_pairs": 10928,
+   "z0_total_pairs": 17576,
+   "l2_total_pairs": 1000,
+   "transitions": 944,
+   "total_length_mm": 98033.7663,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 216,
+    "L3": 128,
+    "L4": 64,
+    "L5": 64
+   },
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "validation_status": "exploratory_only",
+   "independent_note": "crossings/transitions/length/layer counts independently recomputed from the A payload; min clearance/curvature cited from the A artefact"
+  },
+  "Spatial_U_bundle": {
+   "source": "spatial_u_bundle_optimization/routes_1024.json",
+   "routed": 1024,
+   "unique_crossing_pairs": 12824,
+   "transitions": 824,
+   "total_length_mm": 98539.0127,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 252,
+    "L3": 80,
+    "L4": 68,
+    "L5": 12
+   },
+   "min_3d_clearance_mm": 0.083207287,
+   "min_curvature_radius_mm": 14.999999961,
+   "validation_status": "exploratory_only",
+   "unique_crossing_pairs_from_summary": 12824,
+   "independent_note": "crossing count cross-checked by the independent audit; other fields cited from the Spatial artefact"
+  },
+  "Hybrid_H": {
+   "source": "hybrid_c2_c4_directional/H/routes_1024.json",
+   "routed": 1024,
+   "c2_pairs": 132,
+   "c2_pairs_lifted": 64,
+   "c2_pairs_failed": 2,
+   "c4_groups": 144,
+   "unique_crossing_pairs": 12960,
+   "crossing_pairs_by_height": {
+    "0.0": 11952,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_points_by_height": {
+    "0.0": 12464,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "z1_hv_same_height_pairs": 7032,
+   "z0_total_pairs": 11952,
+   "l2_total_pairs": 0,
+   "transitions": 784,
+   "total_length_mm": 98019.9262,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 136,
+    "L3": 128,
+    "L4": 64,
+    "L5": 64
+   },
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "validation_status": "exploratory_only",
+   "exploratory_pass": true,
+   "formal_acceptance": false,
+   "independent_note": "fully independently recomputed"
+  },
+  "Hybrid_V": {
+   "source": "hybrid_c2_c4_directional/V/routes_1024.json",
+   "routed": 1024,
+   "c2_pairs": 132,
+   "c2_pairs_lifted": 64,
+   "c2_pairs_failed": 2,
+   "c4_groups": 144,
+   "unique_crossing_pairs": 12960,
+   "crossing_pairs_by_height": {
+    "0.0": 11952,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "crossing_points_by_height": {
+    "0.0": 12464,
+    "0.5": 1008,
+    "1.0": 0,
+    "1.5": 0,
+    "2.0": 0,
+    "2.5": 0
+   },
+   "z1_hv_same_height_pairs": 7032,
+   "z0_total_pairs": 11952,
+   "l2_total_pairs": 0,
+   "transitions": 784,
+   "total_length_mm": 98019.9262,
+   "layer_counts": {
+    "L1-z1": 512,
+    "L1-z2": 512,
+    "L2": 136,
+    "L3": 128,
+    "L4": 64,
+    "L5": 64
+   },
+   "min_3d_clearance_mm": 0.091700023,
+   "min_curvature_radius_mm": 14.999999964,
+   "validation_status": "exploratory_only",
+   "exploratory_pass": true,
+   "formal_acceptance": false,
+   "independent_note": "fully independently recomputed"
+  },
+  "reductions_H_vs_A": {
+   "z1_hv_same_height_reduction": 3896,
+   "z0_total_reduction": 5624,
+   "global_reduction": 6624
+  },
+  "reductions_V_vs_A": {
+   "z1_hv_same_height_reduction": 3896,
+   "z0_total_reduction": 5624,
+   "global_reduction": 6624
+  }
+ },
+ "notes": {
+  "A_crossing_semantics": "A 产物 summary 的逐高度交叉数字是交叉点数（z=0: 18600），crossing_analysis baseline 用逐高度唯一 route 对数（z=0: 17576）；全局唯一交叉对 19584 两口径一致。",
+  "items": [
+   "独立性：脚本未 import 生产 hybrid 模块 (`four_side_1024.manual_c4.hybrid_c2_c4` / `run_hybrid_*`)；身份/对称/规则/几何/交叉指标全部独立实现，仅 3D 权威验收使用任务指定的冻结入口 `validate_payload_v4`。",
+   "A 基线口径：A 产物 summary 的逐高度数字是**交叉点**数（z=0 为 18600）；本实验 crossing_analysis 的 baseline 使用**逐高度唯一 route 对**（z=0 为 17576）。两者全局唯一交叉对一致（19584）。H/V 结果两种口径分别为：z=0 唯一对 11952 / 交叉点 12464。",
+   "固定保持：H/V 两组的 760 条固定记录（U 256、z2 对边 8、邻边 496）与 Structured-A 记录逐字段完全一致（包括 l3d 校验器在 A 阶段写入的内部注解 `_back_to_back_transitions`，值 0）；仅本轮重新生成的 264 条 z1 对边记录（128 提升 + 136 平铺）不携带该内部注解，属预期且不影响几何/合同（冻结校验器会重新计算该注解）。",
+   "2D 链口径：`primitives` 参照字段在 896 条记录上与 phase2_2d 完全一致（128 条 C2 提升记录无该字段）；632 条接口平铺记录的实际 2D 链与 phase2_2d 一致；128 条 C2 提升 + 8 条 z2 对边提升记录由直线片段重建后与 phase2_2d 一致。U 256 条在 Structured A 中已按 U 线束重建（其实际 2D 链不等于 phase2_2d），本轮按任务要求保持与 A 逐字段一致（section 3 已验证）。",
+   "瓶颈结论：`shadow_bottleneck_analysis.json` 的 34 个深窗口对结论成立，但需精确表述：32 个 deep_only 对列出的 blocker 均为 z2 接口层固定路线的 parallel shadow，独立几何验证确认其单独封死 a≤20 mm 的最早窗口；其中部分对的精确深阈值由额外 z2 接口层 shadow 收紧。2 个失败组由 z2 接口层 shadow + L2 层占用共同导致不可行。",
+   "权威 3D：exploratory_pass=true、9 类 counts 全 0、formal_acceptance=false（层高为未确认仿真参数，formal 被拒是预期行为）；min 3D clearance 0.0917 mm > 0.08 mm，min curvature 14.999999964 mm ≥ 15 mm - 容差。",
+   "限制：交叉指标采用“中心线交点/唯一 route 对”几何口径（与生产 strict policy 的 crossings 定义一致，独立实现已逐项复现生产数字）；未对图形内容做像素级复核，仅校验 13×2 图像文件存在、格式与尺寸；Spatial U-bundle 仅交叉计数做了独立交叉核对，其余指标引用其产物。"
+  ],
+  "bottleneck_caveat": "32 个 deep_only 对中 11 个的精确深阈值由额外 z2 接口层 shadow 收紧；所有 binding obstacle 均为 z2 层 z=0.5 固定几何。"
+ },
+ "files": {
+  "_group_H.json": {
+   "bytes": 266680
+  },
+  "_group_V.json": {
+   "bytes": 266671
+  },
+  "hybrid_c2_c4_verification.json": {
+   "bytes": 57868
+  },
+  "hybrid_c2_c4_verification.md": {
+   "bytes": 11331
+  }
+ }
+}
